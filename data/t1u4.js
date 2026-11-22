@@ -3,7 +3,7 @@ ICA.addUnit({
   id:"t1u4", track:"t1", n:4, title:"Networks and the internet", icon:"🌐",
   blurb:"What really happens between your device and the rest of the world: packets, routers and undersea cables, IP addresses and DNS, your home Wi-Fi, how the web loads a page, and what “fast internet” actually means.",
   goals:[
-    "Explain how data crosses the internet in packets, through routers, ISPs, cables and data centres",
+    "Explain how data crosses the internet in packets, through routers, ISPs, cables and data centers",
     "Tell public from private IP addresses and explain what DNS does and how it fails",
     "Understand your modem, router and Wi-Fi, and secure a home router using current official advice",
     "Describe what happens when a web page loads, and use cookies, cache and extensions sensibly",
@@ -20,14 +20,14 @@ ICA.addUnit({
    goals:[
      "Explain what a network is and why the internet is called a network of networks",
      "Describe how data is split into packets and passed from router to router",
-     "Name the physical parts: ISPs, fibre and mobile links, undersea cables and data centres",
+     "Name the physical parts: ISPs, fiber and mobile links, undersea cables and data centers",
      "Explain what “the cloud” physically is"
    ],
    learn:[
     {h:"A network of networks", body:[
       {lead:"When you send a message, it doesn’t fly through the air to the other person. It hops through dozens of machines, most of them joined by cables."},
       "A [[network]] is simply two or more devices connected so they can exchange data. Your phone, laptop and printer, all joined to your home Wi-Fi, form a small network. A school, a hospital or an office has a bigger one. Each of these is called a [[lan|local area network (LAN)]]: a network in one place.",
-      "The [[internet]] is what you get when millions of these networks agree to connect to each other and pass data along. That’s why it’s often called a **network of networks**. No single company or government owns it. Thousands of organisations each run a piece, and they connect using shared rules called [[protocol|protocols]], so that a phone made by one company can talk to a server run by another on the far side of the world.",
+      "The [[internet]] is what you get when millions of these networks agree to connect to each other and pass data along. That’s why it’s often called a **network of networks**. No single company or government owns it. Thousands of organizations each run a piece, and they connect using shared rules called [[protocol|protocols]], so that a phone made by one company can talk to a server run by another on the far side of the world.",
       "Your way in is an [[isp|internet service provider (ISP)]]: the company you pay for home broadband or a mobile plan. Your ISP connects your home network or your phone to its own network, and it connects to other ISPs and networks, and so on outwards. Networks that span cities, countries or the world are called [[wan|wide area networks (WANs)]]; the internet is the biggest of all.",
       {table:[
         ["Word","Plain meaning","Example"],
@@ -65,34 +65,34 @@ ICA.addUnit({
     {h:"Routers: passing packets along", body:[
       "A [[router]] is a device whose job is to pass packets between networks. When a packet arrives, the router reads the destination address in the header, checks its routing table (a list of which direction leads where) and sends the packet one step closer. The next router does the same. This step-by-step forwarding is called **routing**.",
       "No single router knows the whole route. Each only knows the best **next step**, a bit like a series of road signs. That design makes the internet resilient: if a cable is cut or a router fails, routers learn about it and send traffic another way. Packets from the same photo can even take different paths and still arrive.",
-      {fig:'<svg viewBox="0 0 340 470"><defs><marker id="u4a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="70" y="10" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Your phone</text><text class="s" x="170" y="52" text-anchor="middle">photo → packets 1, 2, 3</text><path class="d-ink" d="M170 64 L170 86" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-panel" x="70" y="90" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="113" text-anchor="middle">Home router</text><text class="s" x="170" y="132" text-anchor="middle">first hop: Wi-Fi to the line</text><path class="d-ink" d="M170 144 L170 166" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-gold" x="70" y="170" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="193" text-anchor="middle">Your ISP</text><text class="s" x="170" y="212" text-anchor="middle">your provider’s routers</text><path class="d-ink" d="M130 224 L92 256" stroke-width="2" marker-end="url(#u4a1)"/><path class="d-ink" d="M210 224 L248 256" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-panel" x="10" y="260" width="150" height="66" rx="10" stroke-width="2"/><text x="85" y="283" text-anchor="middle">Other networks</text><text class="s" x="85" y="301" text-anchor="middle">more routers</text><text class="s" x="85" y="317" text-anchor="middle">carry packets 1, 3</text><rect class="d-panel" x="180" y="260" width="150" height="66" rx="10" stroke-width="2"/><text x="255" y="283" text-anchor="middle">Undersea cable</text><text class="s" x="255" y="301" text-anchor="middle">light in glass fibre</text><text class="s" x="255" y="317" text-anchor="middle">carries packet 2</text><path class="d-ink" d="M85 326 L132 358" stroke-width="2" marker-end="url(#u4a1)"/><path class="d-ink" d="M255 326 L208 358" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-sage" x="70" y="362" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="385" text-anchor="middle">Server in a data centre</text><text class="s" x="170" y="404" text-anchor="middle">puts 1, 2, 3 back in order</text><text class="s" x="170" y="442" text-anchor="middle">Each packet may take its own route.</text><text class="s" x="170" y="460" text-anchor="middle">Missing ones are sent again.</text></svg>', alt:"A phone splits a photo into packets 1, 2 and 3. They go to the home router, then to the ISP. Packets 1 and 3 travel through other networks’ routers; packet 2 travels through an undersea cable. All arrive at a server in a data centre, which puts them back in order.", cap:"A photo’s journey. Routers pass each packet one step closer; the server reassembles them."},
-      "Your home router is the first hop. It joins your home network to your ISP’s network. From there your packets may pass through ten, twenty or more routers belonging to different organisations before they reach their destination. You can see this for yourself in the Apply task.",
+      {fig:'<svg viewBox="0 0 340 470"><defs><marker id="u4a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="70" y="10" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Your phone</text><text class="s" x="170" y="52" text-anchor="middle">photo → packets 1, 2, 3</text><path class="d-ink" d="M170 64 L170 86" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-panel" x="70" y="90" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="113" text-anchor="middle">Home router</text><text class="s" x="170" y="132" text-anchor="middle">first hop: Wi-Fi to the line</text><path class="d-ink" d="M170 144 L170 166" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-gold" x="70" y="170" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="193" text-anchor="middle">Your ISP</text><text class="s" x="170" y="212" text-anchor="middle">your provider’s routers</text><path class="d-ink" d="M130 224 L92 256" stroke-width="2" marker-end="url(#u4a1)"/><path class="d-ink" d="M210 224 L248 256" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-panel" x="10" y="260" width="150" height="66" rx="10" stroke-width="2"/><text x="85" y="283" text-anchor="middle">Other networks</text><text class="s" x="85" y="301" text-anchor="middle">more routers</text><text class="s" x="85" y="317" text-anchor="middle">carry packets 1, 3</text><rect class="d-panel" x="180" y="260" width="150" height="66" rx="10" stroke-width="2"/><text x="255" y="283" text-anchor="middle">Undersea cable</text><text class="s" x="255" y="301" text-anchor="middle">light in glass fiber</text><text class="s" x="255" y="317" text-anchor="middle">carries packet 2</text><path class="d-ink" d="M85 326 L132 358" stroke-width="2" marker-end="url(#u4a1)"/><path class="d-ink" d="M255 326 L208 358" stroke-width="2" marker-end="url(#u4a1)"/><rect class="d-sage" x="70" y="362" width="200" height="54" rx="10" stroke-width="2"/><text x="170" y="385" text-anchor="middle">Server in a data center</text><text class="s" x="170" y="404" text-anchor="middle">puts 1, 2, 3 back in order</text><text class="s" x="170" y="442" text-anchor="middle">Each packet may take its own route.</text><text class="s" x="170" y="460" text-anchor="middle">Missing ones are sent again.</text></svg>', alt:"A phone splits a photo into packets 1, 2 and 3. They go to the home router, then to the ISP. Packets 1 and 3 travel through other networks’ routers; packet 2 travels through an undersea cable. All arrive at a server in a data center, which puts them back in order.", cap:"A photo’s journey. Routers pass each packet one step closer; the server reassembles them."},
+      "Your home router is the first hop. It joins your home network to your ISP’s network. From there your packets may pass through ten, twenty or more routers belonging to different organizations before they reach their destination. You can see this for yourself in the Apply task.",
       {tip:"Routers read the **header**, the envelope, to decide where a packet goes. With [[https|HTTPS]] (see {{public-wifi-https}}), the payload of a web page is encrypted, so the routers along the way can’t read your messages or passwords."}
     ]},
     {h:"The physical internet: wires, light and radio", body:[
       "The internet is surprisingly physical. Your data usually reaches your ISP in one of these ways:",
       {table:[
         ["Connection","How it reaches you"],
-        ["Fibre","Pulses of light in thin glass fibres, often all the way to the home"],
+        ["Fiber","Pulses of light in thin glass fibers, often all the way to the home"],
         ["Cable","Signals on the same kind of cable used for cable TV"],
         ["DSL (phone line)","Signals on a copper telephone line"],
         ["Mobile data (4G, 5G)","Radio to a nearby mobile mast, then by cable from the mast"],
         ["Satellite","Radio to a satellite and down to a ground station, useful where cables don’t reach"]
       ]},
       "Notice that even wireless connections usually stay wireless only for the first stretch. After the mast, the satellite ground station or your router, the data is almost always back on cables.",
-      "Between countries and continents, data travels through [[undersea-cable|undersea cables]] laid across the sea floor. Inside, hair-thin glass fibres carry data as light. According to TeleGeography, a research company that maps them, there are more than 600 active and planned submarine cables, over 1.5 million kilometres in all, and along most of their route a cable is roughly as thick as a garden hose. Satellites carry only a tiny share of international traffic; cables carry far more data at lower cost.",
+      "Between countries and continents, data travels through [[undersea-cable|undersea cables]] laid across the sea floor. Inside, hair-thin glass fibers carry data as light. According to TeleGeography, a research company that maps them, there are more than 600 active and planned submarine cables, over 1.5 million kilometers in all, and along most of their route a cable is roughly as thick as a garden hose. Satellites carry only a tiny share of international traffic; cables carry far more data at lower cost.",
       "Cables do get damaged, roughly 200 times a year worldwide, mostly by fishing gear and ships’ anchors rather than sabotage or sharks. Because routers can send traffic around a broken cable, most people never notice, although places served by only one or two cables can see serious slowdowns until a repair ship fixes the break.",
       {warn:"Weather can affect the first wireless stretch (heavy rain can disrupt some satellite links, and walls weaken Wi-Fi), but “the internet” as a whole doesn’t depend on the sky. It runs mostly on cables in the ground and under the sea."}
     ]},
     {h:"What “the cloud” physically is", body:[
-      "When your photos are “in the cloud” (see {{cloud-storage}}), they aren’t floating anywhere. [[cloud|The cloud]] means computers owned by a company, which you use over the internet instead of your own device. Those computers live in [[data-center|data centres]]: large, secure buildings full of racks of [[web-server|servers]] and storage drives.",
+      "When your photos are “in the cloud” (see {{cloud-storage}}), they aren’t floating anywhere. [[cloud|The cloud]] means computers owned by a company, which you use over the internet instead of your own device. Those computers live in [[data-center|data centers]]: large, secure buildings full of racks of [[web-server|servers]] and storage drives.",
       {list:[
-        "**Power and cooling.** Thousands of computers produce a lot of heat, so data centres have serious cooling systems and backup power such as batteries and generators.",
+        "**Power and cooling.** Thousands of computers produce a lot of heat, so data centers have serious cooling systems and backup power such as batteries and generators.",
         "**Copies in more than one place.** Big providers usually keep data on several drives and often in more than one building or region, so one broken drive or one power cut doesn’t lose your files.",
-        "**Fast links.** Data centres sit on very high-capacity connections, often close to where many networks meet."
+        "**Fast links.** Data centers sit on very high-capacity connections, often close to where many networks meet."
       ]},
-      {ex:"Mei opens a shared document on her phone in Lisbon. Her request travels over mobile data to her ISP, through several networks, perhaps through an undersea cable, to a data centre in another country. A server there reads the file from its drives, splits it into packets and sends them back. The whole round trip usually takes a fraction of a second.", label:"Worked example: opening a cloud document"},
-      "Knowing this explains a few everyday things. Cloud files need a connection unless you’ve made them available offline (Lesson 5 and {{sync}}). A problem at a provider’s data centre can take a service down for millions of people at once. And because the computers are in real places, laws about data can depend on which country they’re in.",
+      {ex:"Mei opens a shared document on her phone in Lisbon. Her request travels over mobile data to her ISP, through several networks, perhaps through an undersea cable, to a data center in another country. A server there reads the file from its drives, splits it into packets and sends them back. The whole round trip usually takes a fraction of a second.", label:"Worked example: opening a cloud document"},
+      "Knowing this explains a few everyday things. Cloud files need a connection unless you’ve made them available offline (Lesson 5 and {{sync}}). A problem at a provider’s data center can take a service down for millions of people at once. And because the computers are in real places, laws about data can depend on which country they’re in.",
       "One more layer sits inside those buildings. A single physical server is usually split into several [[virtual-machine|virtual machines]], and companies rent them, ready-made platforms or whole finished apps; Unit 12, Lesson 3 explains these as {{cloud-service-models|IaaS, PaaS and SaaS}}."
     ]},
     {h:"Common misconceptions", body:[
@@ -101,14 +101,14 @@ ICA.addUnit({
         "**“Wi-Fi is the internet.”** Wi-Fi only links your device to your router. If the router’s connection to your ISP fails, you can have full Wi-Fi bars and no internet.",
         "**“The web and the internet are the same.”** The web is one service on the internet; email, calls and apps are others.",
         "**“My message travels as one piece along one wire.”** It’s split into packets that may take different routes and are reassembled at the end.",
-        "**“The cloud is somewhere in the sky.”** It’s servers in data centres: physical buildings you could drive to.",
-        "**“Someone owns and controls the whole internet.”** Thousands of organisations run parts of it and cooperate through shared protocols."
+        "**“The cloud is somewhere in the sky.”** It’s servers in data centers: physical buildings you could drive to.",
+        "**“Someone owns and controls the whole internet.”** Thousands of organizations run parts of it and cooperate through shared protocols."
       ]}
     ]}
    ],
    try:[
     {id:"t1u4-l1-x1", type:"sort", q:"Sort each item: is it part of the internet itself (the delivery system), or a service that runs over it?", buckets:["The internet itself","A service that uses the internet"], items:[
-      {t:"An undersea fibre-optic cable", b:0, why:"Cables are the physical links that carry packets. They’re part of the delivery system."},
+      {t:"An undersea fiber-optic cable", b:0, why:"Cables are the physical links that carry packets. They’re part of the delivery system."},
       {t:"The routers in an ISP’s network", b:0, why:"Routers forward packets between networks. They’re the internet’s junctions."},
       {t:"A mobile phone mast", b:0, why:"A mast is the first link for mobile data, connecting your phone to the provider’s network."},
       {t:"The World Wide Web", b:1, why:"The web is one service (pages in a browser) that travels over the internet."},
@@ -116,11 +116,11 @@ ICA.addUnit({
       {t:"A video-call app", b:1, why:"Video calls are a service; their packets ride on the internet like everything else."}
     ]},
     {id:"t1u4-l1-x2", type:"order", q:"Kenji’s phone uploads a photo to his cloud storage. Put the steps in order.", items:[
-      {t:"The phone splits the photo into numbered packets, each addressed to the cloud server.", why:"Data is always packetised first; each packet gets a header with addresses and a sequence number."},
+      {t:"The phone splits the photo into numbered packets, each addressed to the cloud server.", why:"Data is always packetized first; each packet gets a header with addresses and a sequence number."},
       {t:"The packets go over Wi-Fi to his home router.", why:"The home router is the first hop out of his home network."},
       {t:"The router passes them to his ISP’s network.", why:"The ISP connects his home network to the rest of the internet."},
       {t:"Routers in other networks forward each packet one step closer, possibly by different routes.", why:"Each router only decides the next hop; packets can take different paths."},
-      {t:"The server in the data centre collects the packets, asks again for any missing ones and rebuilds the photo.", why:"Reassembly happens at the destination, using the sequence numbers. Missing pieces are resent."}
+      {t:"The server in the data center collects the packets, asks again for any missing ones and rebuilds the photo.", why:"Reassembly happens at the destination, using the sequence numbers. Missing pieces are resent."}
     ]},
     {id:"t1u4-l1-x3", type:"mcq", q:"Priya is downloading a 200 MB file. One packet is damaged on the way. What happens?", options:[
       {t:"Only that packet is sent again, and the download carries on.", ok:true, why:"Right. Each packet is numbered, so the receiving device can spot the gap and ask for just that piece. This is what TCP does for files and web pages."},
@@ -137,25 +137,25 @@ ICA.addUnit({
     {id:"t1u4-l1-x5", type:"match", q:"Match each part of the internet to its job.", pairs:[
       ["ISP","Connects your home or phone to the rest of the internet","Your internet service provider is your on-ramp: the broadband or mobile company you pay."],
       ["Router","Reads each packet’s destination and sends it one step closer","Routers make the forwarding decisions, one hop at a time."],
-      ["Undersea cable","Carries data between continents as light in glass fibres","Most international traffic crosses the sea floor in fibre-optic cables."],
-      ["Data centre","A building full of servers where websites and cloud services run","The cloud is physically made of these buildings."],
+      ["Undersea cable","Carries data between continents as light in glass fibers","Most international traffic crosses the sea floor in fiber-optic cables."],
+      ["Data center","A building full of servers where websites and cloud services run","The cloud is physically made of these buildings."],
       ["Packet","A small, addressed and numbered chunk of data","Everything you send is split into packets and reassembled at the destination."]
     ]},
     {id:"t1u4-l1-x6", type:"sort", q:"How good is the postal analogy? Sort each statement.", buckets:["Accurate about packets","Misleading about packets"], items:[
       {t:"Each piece carries a destination address and a return address.", b:0, why:"Every packet header holds the sender’s and receiver’s IP addresses."},
       {t:"Pieces can travel by different routes and arrive out of order.", b:0, why:"Routers choose the next hop for each packet, so paths can differ. The receiver reorders them."},
       {t:"A lost piece can be requested again from the sender.", b:0, why:"For files and web pages, missing packets are automatically resent."},
-      {t:"Your message travels as one complete item from start to finish.", b:1, why:"Data is split into many packets; it’s never one item travelling whole."},
+      {t:"Your message travels as one complete item from start to finish.", b:1, why:"Data is split into many packets; it’s never one item traveling whole."},
       {t:"Once sent, the sender no longer has the original.", b:1, why:"Packets are copies. The sender keeps the original file."},
       {t:"Delivery across the world takes days.", b:1, why:"Each hop takes a tiny fraction of a second; whole journeys are usually well under a second."}
     ]},
     {id:"t1u4-l1-x7", type:"mcq", q:"Mei’s photos are “stored in the cloud”. Where are they physically?", options:[
-      {t:"On drives in servers in her provider’s data centres", ok:true, why:"The cloud is other people’s computers. Her photos are on drives in data-centre buildings, often copied to more than one place."},
-      {t:"In satellites orbiting the Earth", why:"Satellites can carry some internet traffic, but cloud data is stored in data centres on the ground."},
+      {t:"On drives in servers in her provider’s data centers", ok:true, why:"The cloud is other people’s computers. Her photos are on drives in data-center buildings, often copied to more than one place."},
+      {t:"In satellites orbiting the Earth", why:"Satellites can carry some internet traffic, but cloud data is stored in data centers on the ground."},
       {t:"Spread in small pieces across other users’ phones", why:"Mainstream cloud storage doesn’t use other people’s devices. It uses the provider’s own servers."},
       {t:"Only on her own phone, with the word “cloud” as a label", why:"If they were only on her phone, she couldn’t open them from another device. Cloud copies live on the provider’s servers (her phone may also keep copies)."}
     ]},
-      {id:"t1u4-l1-x8", type:"explain", q:"Explain to a friend how a photo she sends gets across the internet. Use the words “packet” and “router”.", hint:"Think of the 600-page manuscript split into numbered envelopes, then make the picture accurate.", model:"The photo isn’t sent as one piece. It is split into many small packets. Each has a header, like the writing on an envelope, with the sender’s and receiver’s IP addresses and a number saying where that piece fits, plus a payload: the piece of the photo itself. Routers pass each packet along: a router reads the destination address and sends it one step closer, without knowing the whole route. Packets may take different routes and arrive out of order, so the receiver puts them back together by number, and any missing ones are resent.", points:["Says the photo is split into many small packets", "Says each packet carries addresses and a number in its header", "Says routers pass packets on step by step towards the destination", "Says the packets are put back in order at the other end (missing ones resent)"]}
+      {id:"t1u4-l1-x8", type:"explain", q:"Explain to a friend how a photo she sends gets across the internet. Use the words “packet” and “router”.", hint:"Think of the 600-page manuscript split into numbered envelopes, then make the picture accurate.", model:"The photo isn’t sent as one piece. It is split into many small packets. Each has a header, like the writing on an envelope, with the sender’s and receiver’s IP addresses and a number saying where that piece fits, plus a payload: the piece of the photo itself. Routers pass each packet along: a router reads the destination address and sends it one step closer, without knowing the whole route. Packets may take different routes and arrive out of order, so the receiver puts them back together by number, and any missing ones are resent.", points:["Says the photo is split into many small packets", "Says each packet carries addresses and a number in its header", "Says routers pass packets on step by step toward the destination", "Says the packets are put back in order at the other end (missing ones resent)"]}
    ],
    apply:{intro:"See the physical internet for yourself. None of this changes any settings.", tasks:[
      {t:"Trace the route to a website", how:{
@@ -165,7 +165,7 @@ ICA.addUnit({
        phone:["iPhone and Android don’t include a trace tool. Free network-tools apps can do it, but you don’t need one: do this task on a computer if you can, or skip to the next task."]
      }},
      {t:"Find the undersea cables near you", how:["Open TeleGeography’s free map at **submarinecablemap.com**.","Find the country or coast nearest to you and tap a cable to see where it lands and who owns it.","Notice how many cables connect your region to the rest of the world. Places with only one or two are more exposed to outages when a cable breaks."]},
-     {t:"Work out how your home or phone connects", how:["Look at where your internet line enters your home (if you have one): is it fibre, a cable-TV style cable, a phone line, or a 4G/5G box?","Check your ISP’s app or account page, or the label on the box, for the connection type.","On your phone, note whether it shows 4G, 5G or another symbol when you’re not on Wi-Fi."]}
+     {t:"Work out how your home or phone connects", how:["Look at where your internet line enters your home (if you have one): is it fiber, a cable-TV style cable, a phone line, or a 4G/5G box?","Check your ISP’s app or account page, or the label on the box, for the connection type.","On your phone, note whether it shows 4G, 5G or another symbol when you’re not on Wi-Fi."]}
    ], proof:"You know roughly how many hops your data takes to reach a website (or have seen it on a map), and what kind of connection carries your data out of your home or phone."},
    read:[
      {book:"wss", where:"Section 1.2 “Computer Hardware and Networks”, subsections “Networks” and “Network Hardware”"},
@@ -187,7 +187,7 @@ ICA.addUnit({
       {lead:"A packet can only be delivered if it has an address on it. On the internet, that address is a string of numbers."},
       "An [[ip-address|IP address]] (Internet Protocol address) identifies a device’s connection on a network, so that packets can find it. It works like a postal address: routers read it to decide where to send each packet next. Unlike a serial number stamped on your laptop at the factory, an IP address is **given to your device when it joins a network**, and it changes when you move to a different network, just as your postal address changes when you move house.",
       "The most familiar kind is an [[ipv4|IPv4]] address, written as four numbers separated by dots, such as `192.168.1.23`. Each number is one [[byte]] (8 [[bit|bits]]), so it can only go from 0 to 255. Four bytes make 32 bits in all, which allows 2³² = 4,294,967,296 different addresses: about 4.3 billion.",
-      "That sounded like plenty in the 1980s. It isn’t enough for a world with billions of phones, laptops, TVs and sensors. The regional organisations that hand out addresses have run out, or almost run out, of new IPv4 addresses. The long-term fix is [[ipv6|IPv6]], which uses 128 bits per address: enough for every device anyone can imagine, many times over.",
+      "That sounded like plenty in the 1980s. It isn’t enough for a world with billions of phones, laptops, TVs and sensors. The regional organizations that hand out addresses have run out, or almost run out, of new IPv4 addresses. The long-term fix is [[ipv6|IPv6]], which uses 128 bits per address: enough for every device anyone can imagine, many times over.",
       {table:[
         ["","IPv4","IPv6"],
         ["Size","32 bits","128 bits"],
@@ -224,7 +224,7 @@ ICA.addUnit({
     {h:"DNS: the internet’s contacts list", body:[
       "Nobody wants to type `192.0.2.10` to visit a website. People remember names. So the internet has a system that translates names into numbers, called the [[dns|Domain Name System (DNS)]].",
       "**The simple version.** Think of the contacts list on your phone. You tap “Ana” and the phone dials her number; you never need to remember the digits. DNS does the same for the internet: you type a [[domain-name|domain name]] such as `example.org`, and DNS looks up the IP address for it, so your device knows where to send the packets.",
-      "**The accurate version.** There’s no single giant contacts list. DNS is spread across many servers around the world, each responsible for a part of the name. Your device asks a helper called a [[dns-resolver|DNS resolver]], usually run by your ISP (or by another organisation you choose), to do the looking up for you:",
+      "**The accurate version.** There’s no single giant contacts list. DNS is spread across many servers around the world, each responsible for a part of the name. Your device asks a helper called a [[dns-resolver|DNS resolver]], usually run by your ISP (or by another organization you choose), to do the looking up for you:",
       {fig:'<svg viewBox="0 0 340 400"><defs><marker id="u4a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="10" y="8" width="320" height="46" rx="10" stroke-width="2"/><text x="170" y="28" text-anchor="middle">1. Your device asks its resolver</text><text class="s" x="170" y="46" text-anchor="middle">“Where is example.org?”</text><path class="d-ink" d="M170 54 L170 70" stroke-width="2" marker-end="url(#u4a2)"/><rect class="d-panel" x="10" y="72" width="320" height="46" rx="10" stroke-width="2"/><text x="170" y="92" text-anchor="middle">2. Resolver checks its cache</text><text class="s" x="170" y="110" text-anchor="middle">already known? answer at once (step 6)</text><path class="d-ink" d="M170 118 L170 134" stroke-width="2" marker-end="url(#u4a2)"/><rect class="d-gold" x="10" y="136" width="320" height="46" rx="10" stroke-width="2"/><text x="170" y="156" text-anchor="middle">3. Asks a root server</text><text class="s" x="170" y="174" text-anchor="middle">reply: “ask the .org servers”</text><path class="d-ink" d="M170 182 L170 198" stroke-width="2" marker-end="url(#u4a2)"/><rect class="d-gold" x="10" y="200" width="320" height="46" rx="10" stroke-width="2"/><text x="170" y="220" text-anchor="middle">4. Asks the .org servers</text><text class="s" x="170" y="238" text-anchor="middle">reply: “ask example.org’s servers”</text><path class="d-ink" d="M170 246 L170 262" stroke-width="2" marker-end="url(#u4a2)"/><rect class="d-gold" x="10" y="264" width="320" height="46" rx="10" stroke-width="2"/><text x="170" y="284" text-anchor="middle">5. Asks example.org’s own servers</text><text class="s" x="170" y="302" text-anchor="middle">reply: “192.0.2.10”</text><path class="d-ink" d="M170 310 L170 326" stroke-width="2" marker-end="url(#u4a2)"/><rect class="d-sage" x="10" y="328" width="320" height="62" rx="10" stroke-width="2"/><text x="170" y="348" text-anchor="middle">6. Resolver answers and remembers</text><text class="s" x="170" y="366" text-anchor="middle">your device connects to 192.0.2.10;</text><text class="s" x="170" y="382" text-anchor="middle">the answer is cached for a while</text></svg>', alt:"Six steps: the device asks its resolver where example.org is; the resolver checks its cache; if needed it asks a root server, which points to the .org servers, which point to example.org’s own servers, which reply with the address 192.0.2.10; the resolver answers the device and caches the result.", cap:"A DNS lookup. Most of the time, a cached answer skips steps 3–5."},
       "The key idea is **caching**: remembering answers. Your browser, your device and the resolver all keep recent answers for a set time chosen by the domain’s owner, so popular names are usually answered instantly. That’s also why, when a website moves to a new address, some people reach the new one before others: their caches update at different times.",
       {key:"DNS turns names into IP addresses. A resolver does the work, asking a chain of servers from the right-hand end of the name leftwards, and caching the answers."}
@@ -238,7 +238,7 @@ ICA.addUnit({
         "Everything works again on mobile data, which uses a different resolver."
       ]},
       {ex:"Tomás’s laptop says “This site can’t be reached: DNS address could not be found” for every website, but the music he was already streaming keeps playing.\nStep 1: Try another device on the same Wi-Fi. Same problem, so it isn’t the laptop.\nStep 2: Restart the router (unplug, wait 30 seconds, plug back in). Restarting clears its cache and reconnects to the ISP.\nStep 3: If it still fails, check the ISP’s status page on mobile data; their resolver may be having an outage.\nStep 4 (optional, advanced): set a different DNS resolver on the device or router.", label:"Worked example: a DNS outage"},
-      "Several organisations run free public resolvers that you can choose instead of your ISP’s, and many devices can encrypt DNS lookups (Android calls this **Private DNS**; browsers may call it “secure DNS”). Changing resolver can help during an outage, but it doesn’t make your connection faster in general and isn’t something most people need to do."
+      "Several organizations run free public resolvers that you can choose instead of your ISP’s, and many devices can encrypt DNS lookups (Android calls this **Private DNS**; browsers may call it “secure DNS”). Changing resolver can help during an outage, but it doesn’t make your connection faster in general and isn’t something most people need to do."
     ]},
     {h:"Domain names and top-level domains", body:[
       "A domain name is read from **right to left**, from the most general part to the most specific, the same way DNS looks it up. (Unit 3 showed how to find the real domain in a web address: see {{url-anatomy}}.)",
@@ -248,10 +248,10 @@ ICA.addUnit({
         ["Kind","Examples","Good to know"],
         ["Generic","`.com`, `.org`, `.net`, and newer ones like `.shop` or `.app`","Open to almost anyone, anywhere."],
         ["Country code","`.jp`, `.de`, `.br`, `.ng`, `.uk`","Two letters for a country or territory. Some have rules about who can register."],
-        ["Restricted","`.gov`, `.edu`","Only for particular kinds of organisation (in practice mostly in the United States)."]
+        ["Restricted","`.gov`, `.edu`","Only for particular kinds of organization (in practice mostly in the United States)."]
       ]},
       "Some countries add a second level, as in `.co.uk` or `.com.au`, which behaves like one ending. And some country codes are used worldwide for their look: `.tv` belongs to Tuvalu and `.io` to the British Indian Ocean Territory, yet both are popular with businesses everywhere.",
-      "Nobody truly *buys* a domain name. You rent the right to use it from a **registrar**, usually a year at a time, and renew it to keep it. If an organisation forgets to renew, someone else can register the name, which is one reason an old link can suddenly lead somewhere unexpected.",
+      "Nobody truly *buys* a domain name. You rent the right to use it from a **registrar**, usually a year at a time, and renew it to keep it. If an organization forgets to renew, someone else can register the name, which is one reason an old link can suddenly lead somewhere unexpected.",
       {warn:"A TLD tells you very little about trustworthiness. A `.com` can be a scam and a `.xyz` can be legitimate. What matters is the **whole** registered domain, and whether it’s the one you expected (see {{url-anatomy}})."}
     ]},
     {h:"Common misconceptions", body:[
@@ -315,7 +315,7 @@ ICA.addUnit({
     {id:"t1u4-l2-x7", type:"match", q:"Match each top-level domain to the best description.", pairs:[
       ["`.com`","Generic: open to almost anyone, anywhere","Originally for companies, but today anyone can register one."],
       ["`.jp`","Country code for Japan","Two-letter TLDs belong to countries or territories."],
-      ["`.gov`","Restricted to government bodies","Only eligible organisations can register under it (in practice, mainly US government)."],
+      ["`.gov`","Restricted to government bodies","Only eligible organizations can register under it (in practice, mainly US government)."],
       ["`.tv`","Country code (Tuvalu) used worldwide by many businesses","Some country codes are popular for their look, so they don’t prove where a site is based."]
     ]},
       {id:"t1u4-l2-x8", type:"explain", q:"Every website shows “Server not found”, yet the Wi-Fi has full bars and a video call that was already running carries on. Explain why DNS is a likely cause.", hint:"What has to happen before your browser can contact a site by name? Why doesn’t the running call need it?", model:"Almost everything online starts with a DNS lookup, which turns a name like `example.org` into an IP address. Your device asks a DNS resolver, usually run by your ISP, to do this. If the resolver stops answering, the browser can’t find the address of any new site, so it says “Server not found”, even though the connection itself is fine. That is why the Wi-Fi bars look normal and the video call keeps going: it already knows the address it needs. Trying mobile data, which uses a different resolver, is a quick test.", points:["Says DNS turns names into IP addresses", "Says a resolver does the lookup for your device", "Explains that the connection works but new names can’t be looked up", "Explains why the running call is unaffected (it already has the address)"]}
@@ -353,14 +353,14 @@ ICA.addUnit({
       {lead:"Most homes have a box (or two) with blinking lights that nobody quite understands. It usually does three or four different jobs at once."},
       {table:[
         ["Device","Its job","Analogy"],
-        ["[[modem|Modem]]","Translates between your provider’s line (fibre, cable, phone line or 5G) and ordinary network data","An interpreter at the border"],
+        ["[[modem|Modem]]","Translates between your provider’s line (fiber, cable, phone line or 5G) and ordinary network data","An interpreter at the border"],
         ["[[router|Router]]","Joins your home network to the internet, gives your devices private addresses and directs traffic between them","A building’s receptionist"],
         ["Wi-Fi access point","Sends and receives the radio signal your devices join","The building’s intercom"],
         ["Switch (network ports)","Lets several devices plug in with cables","A power strip, but for data"]
       ]},
-      "“Modem” is short for modulator-demodulator: it turns data into the kind of signal your line carries and back again. With fibre, this box is often called an ONT (optical network terminal). Many ISPs supply a single box that combines a modem, a router, an access point and a switch; they may call it a router, a hub or a gateway. Others supply a separate modem, and you plug your own router into it.",
+      "“Modem” is short for modulator-demodulator: it turns data into the kind of signal your line carries and back again. With fiber, this box is often called an ONT (optical network terminal). Many ISPs supply a single box that combines a modem, a router, an access point and a switch; they may call it a router, a hub or a gateway. Others supply a separate modem, and you plug your own router into it.",
       "The router also marks a boundary. On one side is your [[lan|local network (LAN)]], with private addresses (Lesson 2). On the other side is the [[wan|WAN]]: your ISP and the internet. Router settings pages often use exactly these labels.",
-      {fig:'<svg viewBox="0 0 340 450"><defs><marker id="u4a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="170" y="16" text-anchor="middle">OUTSIDE: the WAN</text><rect class="d-panel" x="40" y="24" width="260" height="50" rx="10" stroke-width="2"/><text x="170" y="45" text-anchor="middle">Provider’s line</text><text class="s" x="170" y="63" text-anchor="middle">fibre, cable, phone line or 5G</text><path class="d-ink" d="M170 74 L170 94" stroke-width="2" marker-end="url(#u4a3)"/><rect class="d-gold" x="40" y="96" width="260" height="50" rx="10" stroke-width="2"/><text x="170" y="117" text-anchor="middle">Modem (or fibre box)</text><text class="s" x="170" y="135" text-anchor="middle">translates the line’s signal</text><path class="d-ink" d="M10 164 L330 164" stroke-width="2" stroke-dasharray="6 5"/><text class="s" x="250" y="182" text-anchor="middle">INSIDE: your LAN</text><path class="d-ink" d="M170 146 L170 190" stroke-width="2" marker-end="url(#u4a3)"/><rect class="d-lup" x="40" y="192" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Router + Wi-Fi</text><text class="s" x="170" y="231" text-anchor="middle">directs traffic, hands out</text><text class="s" x="170" y="247" text-anchor="middle">private addresses, makes Wi-Fi</text><path class="d-ink" d="M110 254 L57 300" stroke-width="2"/><path class="d-ink" d="M170 254 L170 300" stroke-width="2" stroke-dasharray="4 4"/><path class="d-ink" d="M230 254 L283 300" stroke-width="2" stroke-dasharray="4 4"/><rect class="d-panel" x="6" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="57" y="323" text-anchor="middle">Desktop</text><text class="s" x="57" y="342" text-anchor="middle">by cable</text><rect class="d-panel" x="119" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="170" y="323" text-anchor="middle">Phone</text><text class="s" x="170" y="342" text-anchor="middle">by Wi-Fi</text><rect class="d-sage" x="232" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="283" y="323" text-anchor="middle">Mesh node</text><text class="s" x="283" y="342" text-anchor="middle">repeats Wi-Fi</text><path class="d-ink" d="M283 354 L283 382" stroke-width="2" stroke-dasharray="4 4"/><rect class="d-panel" x="232" y="384" width="102" height="54" rx="8" stroke-width="2"/><text x="283" y="407" text-anchor="middle">Tablet</text><text class="s" x="283" y="426" text-anchor="middle">far room</text><text class="s" x="110" y="400" text-anchor="middle">solid line = cable</text><text class="s" x="110" y="418" text-anchor="middle">dashed = Wi-Fi</text></svg>', alt:"The provider’s line enters the home and reaches a modem. A dashed boundary separates the outside WAN from the inside LAN. The router with Wi-Fi connects a desktop by cable, a phone by Wi-Fi, and a mesh node by Wi-Fi, which repeats the signal to a tablet in a far room.", cap:"A typical home network. Often the modem and router are one box."}
+      {fig:'<svg viewBox="0 0 340 450"><defs><marker id="u4a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="170" y="16" text-anchor="middle">OUTSIDE: the WAN</text><rect class="d-panel" x="40" y="24" width="260" height="50" rx="10" stroke-width="2"/><text x="170" y="45" text-anchor="middle">Provider’s line</text><text class="s" x="170" y="63" text-anchor="middle">fiber, cable, phone line or 5G</text><path class="d-ink" d="M170 74 L170 94" stroke-width="2" marker-end="url(#u4a3)"/><rect class="d-gold" x="40" y="96" width="260" height="50" rx="10" stroke-width="2"/><text x="170" y="117" text-anchor="middle">Modem (or fiber box)</text><text class="s" x="170" y="135" text-anchor="middle">translates the line’s signal</text><path class="d-ink" d="M10 164 L330 164" stroke-width="2" stroke-dasharray="6 5"/><text class="s" x="250" y="182" text-anchor="middle">INSIDE: your LAN</text><path class="d-ink" d="M170 146 L170 190" stroke-width="2" marker-end="url(#u4a3)"/><rect class="d-lup" x="40" y="192" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Router + Wi-Fi</text><text class="s" x="170" y="231" text-anchor="middle">directs traffic, hands out</text><text class="s" x="170" y="247" text-anchor="middle">private addresses, makes Wi-Fi</text><path class="d-ink" d="M110 254 L57 300" stroke-width="2"/><path class="d-ink" d="M170 254 L170 300" stroke-width="2" stroke-dasharray="4 4"/><path class="d-ink" d="M230 254 L283 300" stroke-width="2" stroke-dasharray="4 4"/><rect class="d-panel" x="6" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="57" y="323" text-anchor="middle">Desktop</text><text class="s" x="57" y="342" text-anchor="middle">by cable</text><rect class="d-panel" x="119" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="170" y="323" text-anchor="middle">Phone</text><text class="s" x="170" y="342" text-anchor="middle">by Wi-Fi</text><rect class="d-sage" x="232" y="300" width="102" height="54" rx="8" stroke-width="2"/><text x="283" y="323" text-anchor="middle">Mesh node</text><text class="s" x="283" y="342" text-anchor="middle">repeats Wi-Fi</text><path class="d-ink" d="M283 354 L283 382" stroke-width="2" stroke-dasharray="4 4"/><rect class="d-panel" x="232" y="384" width="102" height="54" rx="8" stroke-width="2"/><text x="283" y="407" text-anchor="middle">Tablet</text><text class="s" x="283" y="426" text-anchor="middle">far room</text><text class="s" x="110" y="400" text-anchor="middle">solid line = cable</text><text class="s" x="110" y="418" text-anchor="middle">dashed = Wi-Fi</text></svg>', alt:"The provider’s line enters the home and reaches a modem. A dashed boundary separates the outside WAN from the inside LAN. The router with Wi-Fi connects a desktop by cable, a phone by Wi-Fi, and a mesh node by Wi-Fi, which repeats the signal to a tablet in a far room.", cap:"A typical home network. Often the modem and router are one box."}
     ]},
     {h:"Wi-Fi in plain terms, and the three bands", body:[
       "[[wifi|Wi-Fi]] is a way of sending network data by radio over a short distance, between your devices and an access point. Each Wi-Fi network has a name, called its [[ssid|SSID]], and usually a password. Wi-Fi only covers the link to your router. What happens after that depends on your router’s connection to your ISP.",
@@ -368,7 +368,7 @@ ICA.addUnit({
       "Wi-Fi uses radio bands measured in gigahertz (GHz). Most routers offer two or three:",
       {table:[
         ["Band","Strengths","Trade-offs"],
-        ["2.4 GHz","Reaches further and passes through walls better; many smart-home gadgets only support this band","Slower; crowded, because microwaves, cordless phones, Bluetooth and neighbours’ networks share it"],
+        ["2.4 GHz","Reaches further and passes through walls better; many smart-home gadgets only support this band","Slower; crowded, because microwaves, cordless phones, Bluetooth and neighbors’ networks share it"],
         ["5 GHz","Faster; less interference","Shorter range; walls and floors weaken it more"],
         ["6 GHz","Newest; lots of room, so the least congestion","Needs a Wi-Fi 6E or Wi-Fi 7 device and router; range similar to 5 GHz; not allowed in every country; requires WPA3 security"]
       ]},
@@ -385,7 +385,7 @@ ICA.addUnit({
       "If one router can’t cover the whole home, there are three common fixes:",
       {table:[
         ["Option","How it works","Best for"],
-        ["[[mesh-wifi|Mesh Wi-Fi]]","Several matching units work together to create one network that devices move through seamlessly","Larger or multi-storey homes"],
+        ["[[mesh-wifi|Mesh Wi-Fi]]","Several matching units work together to create one network that devices move through seamlessly","Larger or multi-story homes"],
         ["Wi-Fi extender","Plugs into a socket and repeats the signal; sometimes creates a second network name","One weak room, on a budget"],
         ["Ethernet cable","A wired connection from the router to the device or to a second access point","Desktops, TVs, consoles, video calls"]
       ]},
@@ -410,7 +410,7 @@ ICA.addUnit({
         ["Typical use","Internet at home, work, cafés","Headphones, keyboards, watches, car audio","Internet on the move"],
         ["Gets you online?","Yes, if the router is online","Not usually by itself","Yes"]
       ]},
-      "Bluetooth’s range varies widely with the design of the devices: the Bluetooth Special Interest Group says it can be anything from less than a metre to more than a kilometre. For everyday gadgets like headphones, think “the same room”."
+      "Bluetooth’s range varies widely with the design of the devices: the Bluetooth Special Interest Group says it can be anything from less than a meter to more than a kilometer. For everyday gadgets like headphones, think “the same room”."
     ]},
     {h:"Securing your home router", body:[
       "Your router is the front door of your home network, and it’s a computer with its own software ([[firmware]]). Government agencies give consistent advice. This list draws on CISA’s guide to securing home Wi-Fi, the US National Security Agency’s best practices for home networks, and Apple’s recommended router settings:",
@@ -450,7 +450,7 @@ ICA.addUnit({
       {t:"Shares airspace with microwaves, cordless phones and Bluetooth", b:0, why:"These all use the 2.4 GHz range, so it can get crowded."},
       {t:"Many smart plugs and cameras can only use this band", b:0, why:"Many smart-home gadgets support only 2.4 GHz, which is why they sometimes fail to join."},
       {t:"Faster when you’re close to the router", b:1, why:"Higher bands carry more data, but over a shorter distance."},
-      {t:"More room, so less congestion from neighbours", b:1, why:"There are more and wider channels at 5 and especially 6 GHz."},
+      {t:"More room, so less congestion from neighbors", b:1, why:"There are more and wider channels at 5 and especially 6 GHz."},
       {t:"Weakened more by walls and floors", b:1, why:"Higher frequencies are absorbed more by obstacles."}
     ]},
     {id:"t1u4-l3-x3", type:"sort", q:"Hana is setting up her new router. Which actions improve its security?", buckets:["Improves security","Doesn’t help, or makes it worse"], items:[
@@ -499,7 +499,7 @@ ICA.addUnit({
        chromeos:["Open **Settings → Network → Wi-Fi** and select your network.","Some ChromeOS versions show the security type and frequency in the network details; others don’t. If yours doesn’t, check the router’s app instead."],
        phone:["iPhone: **Settings → Wi-Fi**, tap the ⓘ next to your network. iPhone doesn’t normally show the band, but it warns **Weak Security** if the network uses an old method such as WEP or WPA.","Android: **Settings → Network & internet → Internet**, tap the settings icon next to your network. Many phones show **Frequency** and **Security** there (sometimes under **Advanced**). Names vary by phone maker."]
      }},
-     {t:"Check your router against the security list", how:["Find the router’s app or admin address. The address is often printed on a label on the router (commonly something like `192.168.0.1` or `192.168.1.1`), and it’s the **Router** or **Default Gateway** address you found in Lesson 2.","Sign in. If it still uses the default admin password, change it to a long, unique one and save it in your password manager.","Check the Wi-Fi security is **WPA3**, **WPA2/WPA3** or **WPA2 (AES)**, and the Wi-Fi password is a long passphrase.","Turn on automatic firmware updates (or check for an update now).","Turn off **remote management**, **WPS** and **UPnP** if you don’t need them, and turn on a **guest network** for visitors and smart gadgets.","Look at the list of connected devices and investigate any you don’t recognise."]},
+     {t:"Check your router against the security list", how:["Find the router’s app or admin address. The address is often printed on a label on the router (commonly something like `192.168.0.1` or `192.168.1.1`), and it’s the **Router** or **Default Gateway** address you found in Lesson 2.","Sign in. If it still uses the default admin password, change it to a long, unique one and save it in your password manager.","Check the Wi-Fi security is **WPA3**, **WPA2/WPA3** or **WPA2 (AES)**, and the Wi-Fi password is a long passphrase.","Turn on automatic firmware updates (or check for an update now).","Turn off **remote management**, **WPS** and **UPnP** if you don’t need them, and turn on a **guest network** for visitors and smart gadgets.","Look at the list of connected devices and investigate any you don’t recognize."]},
      {t:"Set up a hotspot safely", how:{
        win:["Connect to your phone’s hotspot like any Wi-Fi network.","Then open **Settings → Network & internet → Wi-Fi**, select that network and turn on **Metered connection**, so Windows holds back large downloads."],
        mac:["Connect to the hotspot from the Wi-Fi menu. (iPhone hotspots may also appear under **Personal Hotspots**.)","Open **System Settings → Wi-Fi**, click **Details** next to the hotspot and turn on **Low Data Mode**."],
@@ -525,14 +525,14 @@ ICA.addUnit({
     {h:"Browsers, websites and servers", body:[
       {lead:"Every time you open a web page, two computers have a short, very fast conversation."},
       "A [[web-browser|web browser]] is the app you use to open web pages: for example Chrome, Edge, Safari, Firefox or Samsung Internet. Its job is to ask for pages and turn what comes back into something you can read, click and scroll.",
-      "A [[website]] is a collection of pages and files under one domain name, such as `example.org`. Those files live on a [[web-server|web server]]: a computer, usually in a data centre (Lesson 1), running software that waits for requests and answers them. A big website may use thousands of servers in many countries, but to your browser it behaves like one.",
+      "A [[website]] is a collection of pages and files under one domain name, such as `example.org`. Those files live on a [[web-server|web server]]: a computer, usually in a data center (Lesson 1), running software that waits for requests and answers them. A big website may use thousands of servers in many countries, but to your browser it behaves like one.",
       "This arrangement is called **client and server**. Your browser is the client: it asks. The server serves: it answers. The same pattern sits behind most apps too. When a weather app shows today’s forecast, it has asked a server for it in much the same way. Unit 12, Lesson 5 follows such a request all the way through an app, from the screen to the server’s database and back.",
       {table:[
         ["Word","Plain meaning","Example"],
         ["Browser","The app that asks for and shows pages","Firefox on Lucía’s laptop"],
         ["Website","Pages and files under one domain","`example.org`"],
         ["Web page","One document on a website, with its own address","`example.org/menu`"],
-        ["Web server","The computer that stores the files and answers requests","A server in a data centre"]
+        ["Web server","The computer that stores the files and answers requests","A server in a data center"]
       ]}
     ]},
     {h:"Requests and responses", body:[
@@ -542,7 +542,7 @@ ICA.addUnit({
         "**Connect securely.** It opens a connection to the server and, for HTTPS, the two agree on encryption keys so nobody in between can read what follows.",
         "**Request.** The browser sends an HTTP request, such as `GET /menu`: “please send me the page called /menu”. It includes extra details called headers: which browser it is, which languages it prefers, and any cookies it has for this site.",
         "**Response.** The server replies with a **status code** (such as `200 OK`), more headers, and the page’s main file, written in HTML.",
-        "**More requests.** The HTML mentions other files: images, style sheets (which set the look), scripts (which add behaviour), fonts. The browser requests each one. A single modern page often needs dozens.",
+        "**More requests.** The HTML mentions other files: images, style sheets (which set the look), scripts (which add behavior), fonts. The browser requests each one. A single modern page often needs dozens.",
         "**Draw the page.** As the files arrive, the browser assembles and displays the page."
       ]},
       {fig:'<svg viewBox="0 0 340 420"><defs><marker id="u4a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="6" y="8" width="110" height="40" rx="8" stroke-width="2"/><text x="61" y="33" text-anchor="middle">Browser</text><rect class="d-sage" x="224" y="8" width="110" height="40" rx="8" stroke-width="2"/><text x="279" y="33" text-anchor="middle">Web server</text><path class="d-ink" d="M61 48 L61 414" stroke-width="1" stroke-dasharray="4 4"/><path class="d-ink" d="M279 48 L279 414" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="72" text-anchor="middle">1. Request: GET /menu</text><path class="d-ink" d="M63 82 L275 82" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="98" text-anchor="middle">“please send the menu page”</text><text x="170" y="128" text-anchor="middle">2. Response: 200 OK</text><path class="d-ink" d="M277 138 L65 138" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="154" text-anchor="middle">HTML + Set-Cookie: lang=es</text><text x="170" y="184" text-anchor="middle">3. GET logo, styles, scripts</text><path class="d-ink" d="M63 194 L275 194" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="210" text-anchor="middle">one page needs many files</text><text x="170" y="240" text-anchor="middle">4. 200 OK + the files</text><path class="d-ink" d="M277 250 L65 250" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="266" text-anchor="middle">browser keeps copies in its cache</text><text class="s" x="170" y="296" text-anchor="middle">… the next visit …</text><text x="170" y="322" text-anchor="middle">5. GET /menu + Cookie: lang=es</text><path class="d-ink" d="M63 332 L275 332" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="348" text-anchor="middle">logo and styles come from the cache</text><text x="170" y="378" text-anchor="middle">6. 200 OK: menu in Spanish</text><path class="d-ink" d="M277 388 L65 388" stroke-width="2" marker-end="url(#u4a4)"/><text class="s" x="170" y="404" text-anchor="middle">fewer files to download</text></svg>', alt:"A browser and a web server exchange messages. 1: the browser requests GET /menu. 2: the server responds 200 OK with HTML and sets a cookie lang=es. 3: the browser requests the logo, styles and scripts. 4: the server sends them and the browser keeps copies in its cache. On the next visit, 5: the browser requests /menu and sends the cookie lang=es, using cached logo and styles. 6: the server replies with the menu in Spanish.", cap:"Requests and responses. The cookie remembers a choice; the cache saves downloading files again."},
@@ -591,7 +591,7 @@ ICA.addUnit({
       "**Tabs.** Each open tab is a page your browser keeps alive, using memory ([[ram]]). Dozens of tabs can slow an older computer. Most browsers now put tabs you haven’t looked at for a while to sleep (Chrome calls this Memory Saver; Edge calls it sleeping tabs). If your device crawls, closing tabs is a quick first step (see {{task-manager}}).",
       "**Extensions.** A [[browser-extension|browser extension]] (or add-on) is a small program that adds features to your browser: a password manager, an ad blocker, a translator. Some need wide access, such as permission to “read and change all your data on all websites”. That is powerful: a bad or hijacked extension could see everything you type into web pages.",
       {list:[
-        "Install extensions only from your browser’s official store, from publishers you recognise.",
+        "Install extensions only from your browser’s official store, from publishers you recognize.",
         "Read the permissions before you add one. Do they match what it does?",
         "Keep few, and remove the ones you no longer use.",
         "Be wary of extensions you’re pushed to install by a pop-up or a stranger."
@@ -647,9 +647,9 @@ ICA.addUnit({
       {t:"His internet connection becomes faster.", why:"Clearing cookies doesn’t change connection speed. If anything, pages may load slightly slower at first."}
     ]},
     {id:"t1u4-l4-x6", type:"mcq", q:"A pop-up tells Sione to install a free “PDF converter” browser extension. It asks for permission to “read and change all your data on all websites”. Which are sensible responses? Choose all that apply.", options:[
-      {t:"Don’t install it from the pop-up; if he needs a converter, look in the browser’s official store for a well-known publisher", ok:true, why:"Pop-ups pushing extensions are a common trick. Official stores and recognised publishers are much safer."},
+      {t:"Don’t install it from the pop-up; if he needs a converter, look in the browser’s official store for a well-known publisher", ok:true, why:"Pop-ups pushing extensions are a common trick. Official stores and recognized publishers are much safer."},
       {t:"Question why a converter needs access to every website", ok:true, why:"Permissions should match the job. Access to all sites would let it see everything he types, including on banking pages."},
-      {t:"While he’s at it, check the extensions he already has and remove any he doesn’t use or recognise", ok:true, why:"Fewer extensions means fewer programs with access to his pages."},
+      {t:"While he’s at it, check the extensions he already has and remove any he doesn’t use or recognize", ok:true, why:"Fewer extensions means fewer programs with access to his pages."},
       {t:"Install it, because extensions can’t see what he types", why:"Extensions with broad permissions can read and change page content, including forms."},
       {t:"Install it and use a private window to stay safe", why:"Private windows don’t stop a malicious extension (some extensions can run in private windows if allowed)."}
     ]},
@@ -659,7 +659,7 @@ ICA.addUnit({
       {t:"Only the next person who uses the computer", why:"The opposite: the next user is the one person private mode protects her from (as long as she closed the window)."},
       {t:"Only her email provider, because she signed in", why:"Her email provider knows, but so do other sites she visited and the network she used."}
     ]},
-      {id:"t1u4-l4-x8", type:"explain", q:"Explain why clearing your browser’s cookies signs you out of websites.", size:"2–3 sentences", hint:"Does HTTP remember you between requests? Think of a cloakroom ticket.", model:"HTTP has no memory: each request reaches the server on its own, as if from a stranger. To recognise you, a site asks your browser to store a cookie, a small piece of text like a cloakroom ticket, and your browser sends it back with every later request to that site, so the server knows it is you and that you are signed in. If you delete the cookies, the browser has no ticket to show, so the site treats you as a stranger: you are signed out and your preferences are reset.", points:["Says HTTP has no memory between requests", "Says a cookie is small text the site stores in your browser", "Says the browser sends it back with each request so the site recognises you", "Says deleting it means the site no longer knows you"]}
+      {id:"t1u4-l4-x8", type:"explain", q:"Explain why clearing your browser’s cookies signs you out of websites.", size:"2–3 sentences", hint:"Does HTTP remember you between requests? Think of a cloakroom ticket.", model:"HTTP has no memory: each request reaches the server on its own, as if from a stranger. To recognize you, a site asks your browser to store a cookie, a small piece of text like a cloakroom ticket, and your browser sends it back with every later request to that site, so the server knows it is you and that you are signed in. If you delete the cookies, the browser has no ticket to show, so the site treats you as a stranger: you are signed out and your preferences are reset.", points:["Says HTTP has no memory between requests", "Says a cookie is small text the site stores in your browser", "Says the browser sends it back with each request so the site recognizes you", "Says deleting it means the site no longer knows you"]}
    ],
    apply:{intro:"Get to know your browser’s cookie, cache and extension settings. You won’t need to delete anything important.", tasks:[
      {t:"Look at one site’s cookies and data", how:{
@@ -676,7 +676,7 @@ ICA.addUnit({
      }},
      {t:"Review your extensions", how:{
        win:["Chrome: type `chrome://extensions` in the address bar. Edge: `edge://extensions`. Firefox: `about:addons`.","For each extension, ask: Do I use it? Do I know who made it? Remove any you don’t need."],
-       mac:["Safari: **Safari → Settings → Extensions**. Chrome, Edge and Firefox: as on Windows.","Remove anything you don’t use or don’t recognise."],
+       mac:["Safari: **Safari → Settings → Extensions**. Chrome, Edge and Firefox: as on Windows.","Remove anything you don’t use or don’t recognize."],
        chromeos:["Type `chrome://extensions` in the address bar, review each one and remove what you don’t need."],
        phone:["iPhone: **Settings → Apps → Safari → Extensions** (older iOS: **Settings → Safari → Extensions**).","Android: most phone browsers have few or no extensions; if yours does, check them in its settings."]
      }}
@@ -702,7 +702,7 @@ ICA.addUnit({
       {lead:"An internet connection can be fast in two quite different ways, and most frustrations come from mixing them up."},
       "[[bandwidth|Bandwidth]] is how much data a connection can carry per second. It’s what internet plans advertise, in megabits per second ([[mbps|Mbps]]) or gigabits per second (Gbps). Think of it as the **width of a road**: more lanes, more cars at once.",
       "[[latency|Latency]] is the delay: how long it takes for a small piece of data to get to the other end and for a reply to come back, measured in milliseconds (ms). Speed tests often call it **ping**. Think of it as the **length of the trip**: even an empty, eight-lane road takes a while if it crosses a continent.",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="u4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Bandwidth: how much per second</text><rect class="d-panel" x="20" y="32" width="300" height="64" rx="6" stroke-width="2"/><path class="d-ink" d="M24 48 L316 48 M24 64 L316 64 M24 80 L316 80" stroke-width="1" stroke-dasharray="6 6"/><rect class="d-lup" x="40" y="35" width="26" height="10" rx="2"/><rect class="d-lup" x="110" y="51" width="26" height="10" rx="2"/><rect class="d-lup" x="70" y="67" width="26" height="10" rx="2"/><rect class="d-lup" x="180" y="83" width="26" height="10" rx="2"/><rect class="d-lup" x="220" y="35" width="26" height="10" rx="2"/><rect class="d-lup" x="260" y="67" width="26" height="10" rx="2"/><text class="s" x="170" y="114" text-anchor="middle">wide: lots of data at once</text><rect class="d-panel" x="20" y="126" width="300" height="18" rx="6" stroke-width="2"/><rect class="d-lup" x="150" y="130" width="26" height="10" rx="2"/><text class="s" x="170" y="162" text-anchor="middle">narrow: big files take longer</text><text x="170" y="200" text-anchor="middle">Latency: how long each trip takes</text><circle class="d-gold" cx="30" cy="226" r="8" stroke-width="2"/><path class="d-ink" d="M40 226 L118 226" stroke-width="2" marker-end="url(#u4a5)"/><text class="s" x="200" y="230" text-anchor="middle">nearby server: quick reply</text><circle class="d-gold" cx="30" cy="262" r="8" stroke-width="2"/><path class="d-ink" d="M40 262 L318 262" stroke-width="2" marker-end="url(#u4a5)"/><text class="s" x="180" y="282" text-anchor="middle">far away or via satellite: slower reply</text><text class="s" x="170" y="314" text-anchor="middle">A wide road can still be a long trip.</text></svg>', alt:"Top: a wide road with many cars side by side, labelled lots of data at once, and a narrow road with one car, labelled big files take longer. Bottom: a short arrow to a nearby server gets a quick reply; a long arrow to a far-away server or via satellite gets a slower reply.", cap:"Bandwidth is the width of the road; latency is the length of the trip. You need both."},
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="u4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Bandwidth: how much per second</text><rect class="d-panel" x="20" y="32" width="300" height="64" rx="6" stroke-width="2"/><path class="d-ink" d="M24 48 L316 48 M24 64 L316 64 M24 80 L316 80" stroke-width="1" stroke-dasharray="6 6"/><rect class="d-lup" x="40" y="35" width="26" height="10" rx="2"/><rect class="d-lup" x="110" y="51" width="26" height="10" rx="2"/><rect class="d-lup" x="70" y="67" width="26" height="10" rx="2"/><rect class="d-lup" x="180" y="83" width="26" height="10" rx="2"/><rect class="d-lup" x="220" y="35" width="26" height="10" rx="2"/><rect class="d-lup" x="260" y="67" width="26" height="10" rx="2"/><text class="s" x="170" y="114" text-anchor="middle">wide: lots of data at once</text><rect class="d-panel" x="20" y="126" width="300" height="18" rx="6" stroke-width="2"/><rect class="d-lup" x="150" y="130" width="26" height="10" rx="2"/><text class="s" x="170" y="162" text-anchor="middle">narrow: big files take longer</text><text x="170" y="200" text-anchor="middle">Latency: how long each trip takes</text><circle class="d-gold" cx="30" cy="226" r="8" stroke-width="2"/><path class="d-ink" d="M40 226 L118 226" stroke-width="2" marker-end="url(#u4a5)"/><text class="s" x="200" y="230" text-anchor="middle">nearby server: quick reply</text><circle class="d-gold" cx="30" cy="262" r="8" stroke-width="2"/><path class="d-ink" d="M40 262 L318 262" stroke-width="2" marker-end="url(#u4a5)"/><text class="s" x="180" y="282" text-anchor="middle">far away or via satellite: slower reply</text><text class="s" x="170" y="314" text-anchor="middle">A wide road can still be a long trip.</text></svg>', alt:"Top: a wide road with many cars side by side, labeled lots of data at once, and a narrow road with one car, labeled big files take longer. Bottom: a short arrow to a nearby server gets a quick reply; a long arrow to a far-away server or via satellite gets a slower reply.", cap:"Bandwidth is the width of the road; latency is the length of the trip. You need both."},
       {table:[
         ["Activity","Mostly needs","Why"],
         ["Downloading a big file or backing up photos","Bandwidth","Lots of data; a small delay at the start doesn’t matter"],
@@ -721,7 +721,7 @@ ICA.addUnit({
     ]},
     {h:"Upload vs download", body:[
       "To [[download]] is to receive data: opening pages, streaming, downloading files. To [[upload]] is to send data: posting photos, backing up to the cloud, sending large attachments, and your own camera and microphone in a video call.",
-      "Many home connections are **asymmetric**: much faster down than up. Cable and phone-line plans often are; fibre plans are more often the same in both directions. This matters if you upload a lot.",
+      "Many home connections are **asymmetric**: much faster down than up. Cable and phone-line plans often are; fiber plans are more often the same in both directions. This matters if you upload a lot.",
       {table:[
         ["Zoom video call (from Zoom’s published requirements)","Up","Down"],
         ["One-to-one, 720p HD","1.2 Mbps","1.2 Mbps"],
@@ -829,7 +829,7 @@ ICA.addUnit({
       "\nJitter: ", {t:"2 ms", flag:false, why:"Steady: good for calls."},
       "\nLoaded latency while uploading: ", {t:"420 ms", flag:true, why:"When his upload is busy, delay shoots up. That’s why calls break up while files are uploading."},
       "\nTest server: ", {t:"in his own city", flag:false, why:"A nearby server is normal and gives a fair reading."}
-    ], why:"His fix is about upload: a plan with faster upload (fibre plans are often symmetric), or scheduling big uploads outside call times."},
+    ], why:"His fix is about upload: a plan with faster upload (fiber plans are often symmetric), or scheduling big uploads outside call times."},
     {id:"t1u4-l5-x4", type:"number", q:"A one-to-one HD video call uses about 1.2 Mbps in each direction. How many **megabytes** does one hour of the call **download**? (1 byte = 8 bits; 1 hour = 3,600 seconds.)", answer:540, tol:5, unit:"MB", why:"1.2 megabits per second × 3,600 seconds = 4,320 megabits. ÷ 8 = 540 megabytes. Uploading your own video uses about the same again, so roughly 1 GB per hour in total, which matters on a mobile data plan.", wrongs:[
       {v:4320, tol:10, why:"That’s megabits. Divide by 8 to turn bits into bytes."},
       {v:1080, tol:10, why:"That adds upload and download together. The question asks only for the download side."},
@@ -891,7 +891,7 @@ ICA.addUnit({
       {t:"That site has a problem; his internet is fine", ok:true, why:"The internet is the delivery system, and the web is one service on it. One site failing while other services work points to that site."},
       {t:"His Wi-Fi signal is too weak to load websites", why:"The messaging app uses the same Wi-Fi and works fine. A weak signal would affect it too."}
     ]},
-    {id:"t1u4-cp02", lesson:"t1u4-l4", level:1, q:"On enrolment day, a college website shows “503 Service Unavailable”. What does this most likely mean for Abebe?", options:[
+    {id:"t1u4-cp02", lesson:"t1u4-l4", level:1, q:"On enrollment day, a college website shows “503 Service Unavailable”. What does this most likely mean for Abebe?", options:[
       {t:"He typed the address wrong, so the page doesn’t exist", why:"A wrong address usually gives a 404. Codes starting with 5 point to a problem at the server."},
       {t:"The site is busy or down for now, so he should try later", ok:true, why:"503 means the service is temporarily unavailable. It is the website’s problem, not his, and it is usually temporary."},
       {t:"He isn’t allowed to see the page, so the college has blocked him", why:"“Not allowed” is 403 Forbidden. 503 means the server can’t handle the request right now."},
@@ -916,7 +916,7 @@ ICA.addUnit({
       {t:"Her IP address is blocked by the bakery", why:"Being blocked would show an error, not the old site. She is being sent to the old address."}
     ]},
     {id:"t1u4-cp06", lesson:"t1u4-l3", level:2, q:"Wanjiru’s router sits inside a metal cabinet in a corner of the hallway. Her laptop works well next to it, but Wi-Fi is weak in her bedroom. What is the best first step?", options:[
-      {t:"Hide the network name so fewer neighbours use the signal", why:"Hiding the network name doesn’t improve coverage, and it isn’t real protection either."},
+      {t:"Hide the network name so fewer neighbors use the signal", why:"Hiding the network name doesn’t improve coverage, and it isn’t real protection either."},
       {t:"Pay for a faster internet plan so the signal reaches every room", why:"Her laptop works well next to the router, so the plan is fine. The problem is how far the Wi-Fi reaches."},
       {t:"Move the router out of the cabinet, to a central, higher spot", ok:true, why:"Metal blocks signals, and corners waste coverage. Better placement is free and often fixes weak rooms."},
       {t:"Switch every device to the 6 GHz band", why:"Higher bands carry more data but reach less far through walls. That would likely make the bedroom worse."}
@@ -924,7 +924,7 @@ ICA.addUnit({
     {id:"t1u4-cp07", lesson:"t1u4-l4", level:2, q:"Yuki adds shoes to a basket on a shop website without signing in. She closes the tab. The next day the shoes are still in her basket. What made this possible?", options:[
       {t:"A cookie her browser stored and then sent back on her next visit", ok:true, why:"A cookie works like a cloakroom ticket. The browser shows it on each visit, so the site can find her basket."},
       {t:"The browser cache saved a copy of the shop’s logo and pages", why:"The cache stores copies of files such as images and style sheets to load pages faster. It doesn’t tell the site who she is."},
-      {t:"The site recognised her IP address", why:"IP addresses change and are often shared, so they are a poor way to recognise one person. Cookies do this job."},
+      {t:"The site recognized her IP address", why:"IP addresses change and are often shared, so they are a poor way to recognize one person. Cookies do this job."},
       {t:"DNS remembered what she put in the basket for the next visit", why:"DNS only turns names into IP addresses. It knows nothing about baskets."}
     ]},
     {id:"t1u4-cp08", lesson:"t1u4-l5", level:2, q:"Kalani edits videos at home. Her plan is 500 Mbps down and 20 Mbps up. Films stream perfectly, but sending large files to clients is slow. Which change would help most?", options:[
@@ -933,7 +933,7 @@ ICA.addUnit({
       {t:"Turning on Low Data Mode", why:"Low Data Mode reduces background data use. It doesn’t make her uploads faster."},
       {t:"Clearing her browser cache", why:"The cache affects how web pages load. It has nothing to do with upload speed."}
     ]},
-    {id:"t1u4-cp09", lesson:"t1u4-l2", level:3, q:"Arjun and his neighbour each see `192.168.1.20` as their laptop’s address. A “what is my IP” search shows a different address for each home. Arjun worries someone copied his address. What is true?", options:[
+    {id:"t1u4-cp09", lesson:"t1u4-l2", level:3, q:"Arjun and his neighbor each see `192.168.1.20` as their laptop’s address. A “what is my IP” search shows a different address for each home. Arjun worries someone copied his address. What is true?", options:[
       {t:"Someone has copied his address, so he should change his Wi-Fi password now", why:"Nothing was copied. Private addresses are reused in millions of homes by design."},
       {t:"The two laptops will keep receiving each other’s packets", why:"Private addresses never appear on the internet itself. Each router uses its own public address, so packets reach the right home."},
       {t:"They are private addresses; each home’s router has its own public one", ok:true, why:"`192.168.x.x` is a private range. Each router swaps it for its own public address (NAT), so the same private number in two homes causes no clash."},
@@ -977,15 +977,15 @@ ICA.addUnit({
         ["[[router|Router]]","A device that passes data between networks"],
         ["[[protocol|Protocol]]","An agreed set of rules for communicating"]
       ]},
-      "Data travels as small [[packet|packets]] (see {{packets-routing}}). From your device, packets go to your home router, then to your ISP, then through other networks’ routers to the destination: often a server in a data centre (see {{cables-data-centres}}). Replies come back the same way.",
-      "How you reach your ISP varies: fibre, cable, a phone line (DSL), mobile masts (4G/5G) or satellite. Usually only the first stretch is wireless; after that, the data travels almost entirely on cables.",
+      "Data travels as small [[packet|packets]] (see {{packets-routing}}). From your device, packets go to your home router, then to your ISP, then through other networks’ routers to the destination: often a server in a data center (see {{cables-data-centres}}). Replies come back the same way.",
+      "How you reach your ISP varies: fiber, cable, a phone line (DSL), mobile masts (4G/5G) or satellite. Usually only the first stretch is wireless; after that, the data travels almost entirely on cables.",
       "Useful diagnosis: if one website fails but other apps work, the internet is fine and that site has a problem. If nothing works on any device at home, the problem is between your router and the internet (see {{home-network}}). If websites fail but things already running continue, suspect DNS (see {{dns}}).",
       "Organisations publish their own networks’ rules for joining, but the core protocols are open standards, published by bodies such as the Internet Engineering Task Force (IETF). That openness is why devices from different makers, running different software, can all exchange data."
      ],
      pro:[
       "Technically, the internet is a set of independently operated networks called **autonomous systems** (ISPs, universities, large companies, cloud providers). They exchange traffic either by paying a larger provider for **transit** or by **peering**, an agreement to swap traffic directly, often at an internet exchange point where many networks meet in one building.",
-      "Routes between autonomous systems are announced with the **Border Gateway Protocol (BGP)**. Each network tells its neighbours which address ranges it can reach. Mistakes or deliberate false announcements can send traffic the wrong way for a while; such incidents are why large outages sometimes affect services far from where the error happened.",
-      "The protocols are usually described in layers: physical links (fibre, radio), local delivery (Ethernet, Wi-Fi), **IP** for addressing and routing across networks, **TCP** or **UDP** for delivering data between programs (TCP adds reliability and ordering; UDP is lighter, suited to live audio and video), and application protocols such as HTTP, DNS and email protocols on top.",
+      "Routes between autonomous systems are announced with the **Border Gateway Protocol (BGP)**. Each network tells its neighbors which address ranges it can reach. Mistakes or deliberate false announcements can send traffic the wrong way for a while; such incidents are why large outages sometimes affect services far from where the error happened.",
+      "The protocols are usually described in layers: physical links (fiber, radio), local delivery (Ethernet, Wi-Fi), **IP** for addressing and routing across networks, **TCP** or **UDP** for delivering data between programs (TCP adds reliability and ordering; UDP is lighter, suited to live audio and video), and application protocols such as HTTP, DNS and email protocols on top.",
       "IP is a **best-effort** service: it doesn’t promise delivery. Reliability is added at the ends, by the devices themselves. This “smart edges, simple core” design is a big reason the internet scaled so well and survives failures.",
       {tip:"When troubleshooting, think in layers: is the device connected (Wi-Fi/cable)? Does it have an address? Can it reach the router? Can it resolve names (DNS)? Does the particular service answer? Each “yes” narrows the problem."}
      ]
@@ -1028,33 +1028,33 @@ ICA.addUnit({
     read:[{book:"wss", where:"Section 1.3, subsection “The Internet: From Inception to Today” (packet switching)"}],
     sources:[{t:"MDN: How the web works (packets)", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works"},{t:"MDN: How does the Internet work?", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Howto/Web_mechanics/How_does_the_Internet_work"}], checked:"2026-11"},
 
-   {id:"cables-data-centres", title:"Cables, data centres and the physical cloud", aka:["undersea cables","submarine cables","data centers","the cloud","servers"], tags:["networks","cloud"],
-    summary:"The physical internet: fibre and undersea cables, mobile masts and satellites, and the data centres where the cloud lives.",
+   {id:"cables-data-centres", title:"Cables, data centers and the physical cloud", aka:["undersea cables","submarine cables","data centers","the cloud","servers"], tags:["networks","cloud"],
+    summary:"The physical internet: fiber and undersea cables, mobile masts and satellites, and the data centers where the cloud lives.",
     levels:{
      starter:[
-      "The internet is mostly cables. Wireless links (Wi-Fi, mobile data, satellite) usually cover only the first short stretch from your device. After that, data travels through cables, much of it as light in thin glass fibres.",
+      "The internet is mostly cables. Wireless links (Wi-Fi, mobile data, satellite) usually cover only the first short stretch from your device. After that, data travels through cables, much of it as light in thin glass fibers.",
       "Between continents, data crosses the sea floor in [[undersea-cable|undersea cables]]. TeleGeography, which maps them, counts more than 600 active and planned cables, and says most are about as thick as a garden hose along most of their route.",
-      "[[cloud|The cloud]] means using computers owned by a company over the internet. Those computers sit in [[data-center|data centres]]: secure buildings full of servers and storage drives, with powerful cooling and backup power.",
+      "[[cloud|The cloud]] means using computers owned by a company over the internet. Those computers sit in [[data-center|data centers]]: secure buildings full of servers and storage drives, with powerful cooling and backup power.",
       {key:"Your cloud photos are on real drives in real buildings, reached through real cables."}
      ],
      builder:[
       {table:[
         ["Link","How it works","Notes"],
-        ["Fibre","Light pulses in glass","Highest capacity; used for most long-distance links"],
+        ["Fiber","Light pulses in glass","Highest capacity; used for most long-distance links"],
         ["Cable / DSL","Electrical signals on cable-TV or phone lines","Common for homes"],
         ["Mobile (4G/5G)","Radio to a mast, then cables","Works on the move"],
         ["Satellite","Radio to a satellite and back down","Reaches remote places; small share of international traffic"]
       ]},
       "According to TeleGeography, submarine cables suffer roughly 200 faults a year worldwide, most caused by fishing gear and ship anchors; sabotage and shark bites are very rare. Because traffic can be rerouted, most faults go unnoticed, but regions with few cables can see slowdowns until a repair ship mends the break.",
-      "Inside data centres, providers usually keep several copies of data, often in separate buildings or regions, so a broken drive or local power cut doesn’t lose your files. This is also why a provider outage can affect millions of people at once, and why cloud files need a connection unless you’ve made them available offline (see {{cloud-storage}}).",
-      "A data centre’s location matters for latency (nearer is quicker; see {{bandwidth-latency}}) and sometimes for law: rules about personal data can depend on which country stores it.",
-      "Mobile masts are themselves linked to the provider’s network by fibre or point-to-point radio, so even mobile data spends most of its journey on cables."
+      "Inside data centers, providers usually keep several copies of data, often in separate buildings or regions, so a broken drive or local power cut doesn’t lose your files. This is also why a provider outage can affect millions of people at once, and why cloud files need a connection unless you’ve made them available offline (see {{cloud-storage}}).",
+      "A data center’s location matters for latency (nearer is quicker; see {{bandwidth-latency}}) and sometimes for law: rules about personal data can depend on which country stores it.",
+      "Mobile masts are themselves linked to the provider’s network by fiber or point-to-point radio, so even mobile data spends most of its journey on cables."
      ],
      pro:[
-      "TeleGeography estimated over 1.5 million kilometres of submarine cable in service in early 2026. Ownership has shifted: traditionally consortia of telecom carriers built cables, but large content and cloud companies are now major investors in new systems. Satellites remain important for remote areas and broadcasting, but carry only a small share of international capacity; the FCC figure TeleGeography cites is 0.37% of US international capacity.",
+      "TeleGeography estimated over 1.5 million kilometers of submarine cable in service in early 2026. Ownership has shifted: traditionally consortia of telecom carriers built cables, but large content and cloud companies are now major investors in new systems. Satellites remain important for remote areas and broadcasting, but carry only a small share of international capacity; the FCC figure TeleGeography cites is 0.37% of US international capacity.",
       "Cloud providers divide their infrastructure into **regions** (geographic areas) and, within them, separate facilities with independent power and networking, so services can survive the loss of one building. Customers and services choose regions for latency, resilience and legal reasons.",
       "Content delivery networks (CDNs) keep copies of popular content (video, images, software updates) in many cities close to users, so most of what you stream or download doesn’t cross an ocean at all. That’s a large part of why everyday browsing feels fast even to distant sites.",
-      "Data centres use a great deal of electricity, much of it for cooling. Efficiency is often reported as **PUE** (power usage effectiveness): total facility power divided by the power used by the computing equipment, where 1.0 would be perfect.",
+      "Data centers use a great deal of electricity, much of it for cooling. Efficiency is often reported as **PUE** (power usage effectiveness): total facility power divided by the power used by the computing equipment, where 1.0 would be perfect.",
       {tip:"When a big online service goes down, check its official status page from another connection. If it’s a provider outage, there’s nothing to fix on your side."}
      ]
     },
@@ -1085,10 +1085,10 @@ ICA.addUnit({
       "Day to day, most devices use IPv4 and IPv6 side by side automatically. If a website and your ISP both support IPv6, your device may use it without you noticing; nothing changes in how you browse. And because each IPv4 number is one byte, it runs from 0 to 255: an address such as `192.168.1.256` is impossible."
      ],
      pro:[
-      "Address blocks are distributed hierarchically: IANA allocates large blocks to five Regional Internet Registries (such as the RIPE NCC for Europe, the Middle East and parts of Central Asia), which allocate to ISPs and organisations, which assign to customers. The registries have exhausted, or nearly exhausted, their free pools of new IPv4 addresses, so most IPv4 space now changes hands through transfers.",
+      "Address blocks are distributed hierarchically: IANA allocates large blocks to five Regional Internet Registries (such as the RIPE NCC for Europe, the Middle East and parts of Central Asia), which allocate to ISPs and organizations, which assign to customers. The registries have exhausted, or nearly exhausted, their free pools of new IPv4 addresses, so most IPv4 space now changes hands through transfers.",
       "Prefix notation (CIDR) describes ranges: `192.168.1.0/24` means the first 24 bits are fixed, giving 256 addresses. IPv6 networks normally use /64 subnets, and ISPs often give a customer site a whole /48 or /56, enough for vast numbers of devices.",
       "Because of scarcity, many mobile and some broadband providers use **carrier-grade NAT**, sharing one public IPv4 address among many customers. That complicates hosting services at home and makes IP-based identification less reliable. IPv6 removes the need for NAT, though home routers still block unsolicited incoming connections with a firewall.",
-      "Devices often have several addresses at once: an IPv4 private address, a public IPv6 address, and temporary IPv6 “privacy addresses” that change regularly to make tracking harder. Phones and computers can also use a private, randomised hardware (MAC) address per Wi-Fi network for the same reason.",
+      "Devices often have several addresses at once: an IPv4 private address, a public IPv6 address, and temporary IPv6 “privacy addresses” that change regularly to make tracking harder. Phones and computers can also use a private, randomized hardware (MAC) address per Wi-Fi network for the same reason.",
       "Reserved ranges for documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` and `2001:db8::/32`) are safe to use in examples because they never belong to real devices."
      ]
     },
@@ -1114,7 +1114,7 @@ ICA.addUnit({
         "Those servers give the address. The resolver passes it on and caches it for the time the domain owner set."
       ]},
       "Signs of a DNS problem: errors mentioning DNS or “server not found” on every site; full Wi-Fi bars; a call or stream that was already running keeps going; everything works on mobile data.",
-      "What to do: try another device; restart the router (Microsoft suggests unplugging the router and modem for at least 30 seconds); check your ISP’s status page using mobile data. Advanced users can switch to a different resolver: several organisations run free public ones, and Android’s **Settings → Network & internet → Private DNS** (location varies by phone maker) lets you choose an encrypted DNS provider.",
+      "What to do: try another device; restart the router (Microsoft suggests unplugging the router and modem for at least 30 seconds); check your ISP’s status page using mobile data. Advanced users can switch to a different resolver: several organizations run free public ones, and Android’s **Settings → Network & internet → Private DNS** (location varies by phone maker) lets you choose an encrypted DNS provider.",
       {tip:"Caching explains why a website that just moved can work for one person and not another: their resolvers remembered the old address for different lengths of time."},
       "Your home router often acts as a middleman, passing your devices’ questions to the ISP’s resolver and caching the answers itself. That’s one reason restarting it can clear a stuck DNS problem."
      ],
@@ -1147,12 +1147,12 @@ ICA.addUnit({
         ["Generic","`.com`, `.org`, `.net`, `.shop`, `.app`","Open to almost anyone"],
         ["Country code","`.jp`, `.de`, `.ng`, `.br`, `.uk`","Two letters; rules vary by country"],
         ["Second-level endings","`.co.uk`, `.com.au`, `.co.jp`","Behave like one ending"],
-        ["Restricted","`.gov`, `.edu`","Only eligible organisations"]
+        ["Restricted","`.gov`, `.edu`","Only eligible organizations"]
       ]},
-      "Domains are rented, not bought. You pay a **registrar** for the right to use a name, usually yearly, and renew to keep it. If an organisation lets a domain lapse, someone else may register it, and old links or email addresses at that domain may then lead to the new owner.",
+      "Domains are rented, not bought. You pay a **registrar** for the right to use a name, usually yearly, and renew to keep it. If an organization lets a domain lapse, someone else may register it, and old links or email addresses at that domain may then lead to the new owner.",
       "What a TLD does **not** tell you: whether a site is trustworthy (scams use every ending), or where a business is based (`.tv` is Tuvalu’s code and `.io` the British Indian Ocean Territory’s, yet both are used worldwide).",
       "Domain labels can be up to 63 characters and are case-insensitive: `Example.ORG` and `example.org` are the same domain.",
-      "When you see an unfamiliar domain, ask whether it’s the one you expected for that organisation. Banks, governments and shops usually keep the same registered domain everywhere, with subdomains for different services (`help.`, `login.`, `shop.`). A different registered domain, even one containing the brand’s name, belongs to someone else until proven otherwise."
+      "When you see an unfamiliar domain, ask whether it’s the one you expected for that organization. Banks, governments and shops usually keep the same registered domain everywhere, with subdomains for different services (`help.`, `login.`, `shop.`). A different registered domain, even one containing the brand’s name, belongs to someone else until proven otherwise."
      ],
      pro:[
       "The DNS is a tree. The root sits above all TLDs; each TLD is run by a **registry**, which keeps the authoritative list of registered names and their name servers. Registrars sell registrations to the public and pass them to the registry. ICANN coordinates the root and the policies for generic TLDs; country-code TLDs set many of their own rules.",
@@ -1186,7 +1186,7 @@ ICA.addUnit({
       ]},
       "Apple and Google recommend one network name across all bands, so devices choose automatically. Wi-Fi generations are numbered by the Wi-Fi Alliance: Wi-Fi 4, 5, 6, 6E and 7. A connection works at the highest level both ends support.",
       "Hotspot good practice: set a strong password; turn it off when done; keep the phone charged; mark the connection as metered or low-data on the laptop so updates and backups don’t eat the allowance; check whether your plan limits hotspot use. Android’s help notes that a Wi-Fi hotspot can share with up to 10 devices and that some carriers limit or charge for tethering.",
-      "Bluetooth uses the 2.4 GHz band. Its range depends heavily on the devices; the Bluetooth Special Interest Group says it can be anywhere from under a metre to over a kilometre. For headphones and keyboards, expect roughly a room.",
+      "Bluetooth uses the 2.4 GHz band. Its range depends heavily on the devices; the Bluetooth Special Interest Group says it can be anywhere from under a meter to over a kilometer. For headphones and keyboards, expect roughly a room.",
       "When Wi-Fi is weak, some phones switch to mobile data on their own (iPhone calls this Wi-Fi Assist; many Android phones have a similar option), which can quietly use your allowance."
      ],
      pro:[
@@ -1206,7 +1206,7 @@ ICA.addUnit({
      starter:[
       "Most homes have one or two boxes that do several jobs:",
       {list:[
-        "A [[modem]] translates between your provider’s line (fibre, cable, phone line or 5G) and normal network data.",
+        "A [[modem]] translates between your provider’s line (fiber, cable, phone line or 5G) and normal network data.",
         "A [[router]] joins your home network to the internet, gives each device a private address and directs traffic.",
         "A **Wi-Fi access point** makes the wireless signal, usually built into the router."
       ]},
@@ -1219,7 +1219,7 @@ ICA.addUnit({
       {table:[
         ["Fix","Good for","Watch out for"],
         ["Move the router","Free first step","Cable length to the line"],
-        ["Mesh Wi-Fi","Large or multi-storey homes","Cost; place units within good range of each other"],
+        ["Mesh Wi-Fi","Large or multi-story homes","Cost; place units within good range of each other"],
         ["Extender","One weak room","May create a second network name; can halve speed"],
         ["Ethernet cable","Desktops, TVs, video calls","Running cables through the home"]
       ]},
@@ -1267,12 +1267,12 @@ ICA.addUnit({
         ["Wi-Fi passphrase","Several random words: CISA says 16+ characters, the NSA 20+","Stops guessing"],
         ["Firmware","Automatic updates on","Fixes known flaws"],
         ["Remote management","Off","Keeps settings off the internet"],
-        ["WPS","Off","CISA says it raises the risk of unauthorised access"],
+        ["WPS","Off","CISA says it raises the risk of unauthorized access"],
         ["UPnP","Off (after smart devices are set up)","Can let malware open the router"],
         ["Network name","Not the default, no personal details","Doesn’t advertise who you are or the router model"],
         ["Guest network","On, with its own password","Keeps visitors and gadgets away from your devices"]
       ]},
-      "Check the list of connected devices now and then, and remove any you don’t recognise. Keep the router somewhere physically secure: someone with access can factory-reset it.",
+      "Check the list of connected devices now and then, and remove any you don’t recognize. Keep the router somewhere physically secure: someone with access can factory-reset it.",
       {warn:"Hiding the network name isn’t real protection. Apple and the NSA both say hidden networks can still be found; security comes from WPA3 or WPA2 and a strong passphrase."},
       "Note what you changed, and keep the new admin password in your password manager. A factory reset brings back every default, including the old admin password, so repeat the checklist after any reset."
      ],
@@ -1397,8 +1397,8 @@ ICA.addUnit({
       "Steadiness matters too: a connection with modest bandwidth but low, stable latency often gives better calls than a fast one that jitters."
      ],
      pro:[
-      "MDN defines bandwidth as how much information can pass through a connection in a given time, and latency as the time for data to travel from source to destination, usually measured as a round trip. Throughput (what you actually get) is limited by the slowest link, by protocol overheads and by latency itself: TCP ramps up gradually and waits for acknowledgements, so high-latency links may not reach their full bandwidth on a single connection.",
-      "Signals in fibre travel at roughly two-thirds of the speed of light in a vacuum, so distance alone sets a floor on latency: an intercontinental round trip takes tens of milliseconds or more, and satellites in high geostationary orbit add far more. Newer low-orbit satellite systems reduce that delay considerably.",
+      "MDN defines bandwidth as how much information can pass through a connection in a given time, and latency as the time for data to travel from source to destination, usually measured as a round trip. Throughput (what you actually get) is limited by the slowest link, by protocol overheads and by latency itself: TCP ramps up gradually and waits for acknowledgments, so high-latency links may not reach their full bandwidth on a single connection.",
+      "Signals in fiber travel at roughly two-thirds of the speed of light in a vacuum, so distance alone sets a floor on latency: an intercontinental round trip takes tens of milliseconds or more, and satellites in high geostationary orbit add far more. Newer low-orbit satellite systems reduce that delay considerably.",
       "**Bufferbloat** is the name for latency that rises sharply under load because network equipment queues too much data. Speed tests that report “loaded” or “working” latency reveal it. Some routers offer smart queue management (often called SQM) to keep latency low while the line is busy.",
       "Wi-Fi adds its own delay and loss, especially at range or on crowded 2.4 GHz channels. A cable often lowers both latency and jitter even when bandwidth looks the same."
      ]
@@ -1482,8 +1482,8 @@ ICA.addUnit({
       "Android lets you exempt trusted apps under **Data Saver → Unrestricted data**. Windows lets you set a data limit per network and warns as you approach it. Apple’s Low Data Mode settings for Wi-Fi networks sync across your devices through iCloud.",
       "Offline-capable web apps use browser storage to keep working without a connection and sync later; clearing site data can remove unsynced offline changes, so let them sync first.",
       "Video data use scales with resolution and frame rate; many apps’ “auto” setting adapts to your connection, which can quietly use a lot on fast mobile networks. Setting a fixed lower quality on mobile data is the most effective single saving.",
-      {tip:"Before travelling abroad, check roaming charges. Downloading maps and media at home avoids most roaming data use."},
-      "When you reconnect after working offline, give your devices time on Wi-Fi to sync before switching off or travelling again, and check that offline edits have uploaded, especially for shared documents where conflicts can appear."
+      {tip:"Before traveling abroad, check roaming charges. Downloading maps and media at home avoids most roaming data use."},
+      "When you reconnect after working offline, give your devices time on Wi-Fi to sync before switching off or traveling again, and check that offline edits have uploaded, especially for shared documents where conflicts can appear."
      ]
     },
     related:["bandwidth-latency","wifi-mobile-data","cloud-storage","sync"],
@@ -1497,9 +1497,9 @@ ICA.addUnit({
    {id:"isp", term:"ISP (internet service provider)", def:"The company that connects your home or phone to the internet: your broadband or mobile provider.", codex:"how-the-internet-works"},
    {id:"protocol", term:"Protocol", def:"An agreed set of rules for how devices communicate, such as IP, TCP, HTTP or DNS.", codex:"how-the-internet-works"},
    {id:"packet", term:"Packet", def:"A small chunk of data with a header (addresses and a sequence number) and a payload (part of your data). Everything sent online travels as packets.", codex:"packets-routing"},
-   {id:"router", term:"Router", def:"A device that passes packets between networks, choosing the next step towards each destination. Your home router joins your home network to the internet.", codex:"packets-routing"},
-   {id:"undersea-cable", term:"Undersea cable", def:"A fibre-optic cable laid on the sea floor, carrying data between countries and continents as light.", codex:"cables-data-centres"},
-   {id:"data-center", term:"Data centre (data center)", def:"A secure building full of servers and storage, with cooling and backup power, where websites and cloud services run.", codex:"cables-data-centres"},
+   {id:"router", term:"Router", def:"A device that passes packets between networks, choosing the next step toward each destination. Your home router joins your home network to the internet.", codex:"packets-routing"},
+   {id:"undersea-cable", term:"Undersea cable", def:"A fiber-optic cable laid on the sea floor, carrying data between countries and continents as light.", codex:"cables-data-centres"},
+   {id:"data-center", term:"Data center (data center)", def:"A secure building full of servers and storage, with cooling and backup power, where websites and cloud services run.", codex:"cables-data-centres"},
    {id:"ip-address", term:"IP address", def:"The numeric address that identifies a device’s connection on a network, so packets can be delivered to it, such as `192.168.1.23`.", codex:"ip-addresses"},
    {id:"ipv4", term:"IPv4", def:"The original form of IP address: four numbers from 0 to 255 separated by dots (32 bits), allowing about 4.3 billion addresses.", codex:"ip-addresses"},
    {id:"ipv6", term:"IPv6", def:"The newer form of IP address: 128 bits, written as groups of hexadecimal separated by colons, with room for vastly more devices.", codex:"ip-addresses"},
@@ -1513,7 +1513,7 @@ ICA.addUnit({
    {id:"ssid", term:"SSID (network name)", def:"The name of a Wi-Fi network, the one you pick from the list. Avoid personal details in it.", codex:"wifi-mobile-data"},
    {id:"mobile-data", term:"Mobile data", def:"Internet access through your mobile provider’s masts using 4G, 5G or similar. Also called cellular data.", codex:"wifi-mobile-data"},
    {id:"hotspot", term:"Hotspot", def:"A device or place that shares an internet connection over Wi-Fi. A phone’s personal hotspot shares its mobile data with other devices.", codex:"wifi-mobile-data"},
-   {id:"modem", term:"Modem", def:"The device that translates between your provider’s line (fibre, cable, phone line or 5G) and ordinary network data. Often built into the router.", codex:"home-network"},
+   {id:"modem", term:"Modem", def:"The device that translates between your provider’s line (fiber, cable, phone line or 5G) and ordinary network data. Often built into the router.", codex:"home-network"},
    {id:"mesh-wifi", term:"Mesh Wi-Fi", def:"Several matching units that work together to spread one Wi-Fi network across a large home.", codex:"home-network"},
    {id:"wpa3", term:"WPA3", def:"The current, strongest security for Wi-Fi networks. WPA2 with AES is the older acceptable option; WEP is broken and the original WPA is outdated and weak.", codex:"router-security"},
    {id:"web-browser", term:"Web browser", def:"The app that requests web pages and displays them, such as Chrome, Edge, Safari or Firefox.", codex:"how-the-web-works"},
@@ -1534,7 +1534,7 @@ ICA.addUnit({
    /* ---- Lesson 1 ---- */
    {id:"t1u4-q01", lesson:"t1u4-l1", level:1, q:"Why is the internet called a “network of networks”?", options:[
      {t:"It is made of many separately run networks that agree to pass each other’s data", ok:true, why:"Homes, ISPs, universities and companies each run their own networks; joined together, they form the internet."},
-     {t:"It is one giant network owned by a single international company", why:"No single organisation owns the internet. Thousands of organisations each run a part."},
+     {t:"It is one giant network owned by a single international company", why:"No single organization owns the internet. Thousands of organizations each run a part."},
      {t:"Every home has exactly two networks", why:"That has nothing to do with the phrase. It describes how the whole internet is built."},
      {t:"Wi-Fi networks connect directly to each other over the air worldwide", why:"Wi-Fi covers only a short distance. Most of the internet is joined by cables."}
    ]},
@@ -1557,10 +1557,10 @@ ICA.addUnit({
      {t:"Email and video calls are part of the web", why:"They use their own protocols over the internet; the web is pages in a browser."}
    ]},
    {id:"t1u4-q05", lesson:"t1u4-l1", level:2, q:"How does most data travel between continents?", options:[
-     {t:"Through fibre-optic cables on the sea floor", ok:true, why:"Undersea cables carry far more data than satellites, at lower cost."},
+     {t:"Through fiber-optic cables on the sea floor", ok:true, why:"Undersea cables carry far more data than satellites, at lower cost."},
      {t:"Mostly by satellite", why:"Satellites carry only a small share of international traffic; they’re useful for remote areas."},
      {t:"By long-range Wi-Fi", why:"Wi-Fi covers only short distances."},
-     {t:"Over the old telephone network’s copper wires", why:"Long-distance links are fibre today, mostly in undersea cables between continents."}
+     {t:"Over the old telephone network’s copper wires", why:"Long-distance links are fiber today, mostly in undersea cables between continents."}
    ]},
    {id:"t1u4-q06", lesson:"t1u4-l1", level:3, q:"Amara’s streaming video glitches for a second, then carries on. Her file download, running at the same time, finishes perfectly. Why the difference?", options:[
      {t:"Live video skips late packets; downloads resend missing ones", ok:true, why:"Live media prefers timeliness, so a lost packet causes a glitch. File transfers use TCP, which resends missing packets until the file is complete."},
@@ -1569,8 +1569,8 @@ ICA.addUnit({
      {t:"Video is never split into packets", why:"Video travels in packets like everything else."}
    ]},
    {id:"t1u4-q07", lesson:"t1u4-l1", level:2, q:"What is “the cloud”, physically?", options:[
-     {t:"Servers and storage in data centres, used over the internet", ok:true, why:"Cloud services run on real computers in secure buildings with cooling and backup power."},
-     {t:"Satellites that store data in orbit", why:"Cloud data is stored on the ground, in data centres."},
+     {t:"Servers and storage in data centers, used over the internet", ok:true, why:"Cloud services run on real computers in secure buildings with cooling and backup power."},
+     {t:"Satellites that store data in orbit", why:"Cloud data is stored on the ground, in data centers."},
      {t:"Space on other users’ phones", why:"Mainstream cloud services use the provider’s own servers."},
      {t:"A special, protected part of your own phone or laptop’s storage", why:"Your device may keep copies, but the cloud copies are on the provider’s servers."}
    ]},
@@ -1643,7 +1643,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u4-q19", lesson:"t1u4-l3", level:1, q:"What does a modem do?", options:[
-     {t:"Translates between your provider’s line and ordinary network data", ok:true, why:"It turns the line’s signal (fibre, cable, phone line, 5G) into data your router can use, and back."},
+     {t:"Translates between your provider’s line and ordinary network data", ok:true, why:"It turns the line’s signal (fiber, cable, phone line, 5G) into data your router can use, and back."},
      {t:"Makes the Wi-Fi signal", why:"That’s the access point, often built into the router."},
      {t:"Turns domain names into IP addresses", why:"That’s the job of DNS, not the modem."},
      {t:"Blocks viruses from websites", why:"That isn’t a modem’s job."}
@@ -1662,7 +1662,7 @@ ICA.addUnit({
    ]},
    {id:"t1u4-q22", lesson:"t1u4-l3", level:2, q:"What is a mesh Wi-Fi system?", options:[
      {t:"Several units that spread one Wi-Fi network across a home", ok:true, why:"Mesh units share one network name, so devices move between them smoothly."},
-     {t:"A metal screen fitted to block your neighbours’ Wi-Fi signals", why:"Mesh refers to linked units, not physical screens."},
+     {t:"A metal screen fitted to block your neighbors’ Wi-Fi signals", why:"Mesh refers to linked units, not physical screens."},
      {t:"A way to combine two internet plans", why:"Mesh spreads one connection’s Wi-Fi; it doesn’t combine plans."},
      {t:"A type of mobile data", why:"Mesh is home Wi-Fi equipment."}
    ]},
@@ -1745,7 +1745,7 @@ ICA.addUnit({
      {t:"Her email account is now deleted", why:"Closing a private window doesn’t affect her account."},
      {t:"The next person to use the computer will be able to open her email", why:"Closing the private window discards its cookies, so she isn’t left signed in."}
    ]},
-   {id:"t1u4-q36", lesson:"t1u4-l4", level:3, q:"An extension that “changes the colour of web pages” asks for permission to read and change all data on all websites. What should Kenji conclude?", options:[
+   {id:"t1u4-q36", lesson:"t1u4-l4", level:3, q:"An extension that “changes the color of web pages” asks for permission to read and change all data on all websites. What should Kenji conclude?", options:[
      {t:"Install it only from the official store and a trusted publisher", ok:true, why:"It technically needs page access, but broad access means it could read anything he types. Install it only from the official store and a publisher he trusts, or choose a tool with narrower access."},
      {t:"Permissions don’t matter for extensions", why:"They matter greatly: broad access lets an extension see passwords and messages typed into pages."},
      {t:"He should install it from a pop-up link instead of the official store", why:"Pop-up installs are riskier than official stores."},

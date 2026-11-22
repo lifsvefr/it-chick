@@ -7,7 +7,7 @@ ICA.addUnit({
     "Write SELECT queries with WHERE, ORDER BY and LIMIT, and predict their results",
     "Summarise data with COUNT, SUM and AVG, GROUP BY and HAVING, and handle NULL correctly",
     "Combine tables with inner and left joins, and check that a join hasn’t lost or doubled rows",
-    "Use DB Browser for SQLite, import a CSV, design normalised tables, spot SQL dialect differences and explain how programs avoid SQL injection"
+    "Use DB Browser for SQLite, import a CSV, design normalized tables, spot SQL dialect differences and explain how programs avoid SQL injection"
   ],
   read:[
     {book:"dcss", where:"Data Management with SQL for Social Scientists (an “alpha” lesson, still being developed): episodes “What is a relational database?”, “Using DB Browser for SQLite”, “The Select Statement”, “Missing Data”, “Aggregations”, “Creating tables and views” and “Joins”", note:"The lesson’s source is at github.com/datacarpentry/sql-socialsci. It uses a real (simplified) farm survey in DB Browser for SQLite."},
@@ -16,7 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u9-l1", title:"What a database is", minutes:50,
-   hook:{q:"Which of these almost certainly has an SQL database engine running inside it?", options:["A smartphone","A web browser such as Chrome, Firefox or Safari","Both of them","Neither: databases only live on big servers"], answer:2, reveal:"**Both.** SQLite, a small database engine, is built into every Android phone and iPhone and into the Chrome, Firefox and Safari browsers, according to SQLite’s own documentation. Apps use it to keep messages, settings and history. Databases aren’t only giant systems in data centres. This lesson explains what a database is, how its tables link together, and when it beats one big spreadsheet."},
+   hook:{q:"Which of these almost certainly has an SQL database engine running inside it?", options:["A smartphone","A web browser such as Chrome, Firefox or Safari","Both of them","Neither: databases only live on big servers"], answer:2, reveal:"**Both.** SQLite, a small database engine, is built into every Android phone and iPhone and into the Chrome, Firefox and Safari browsers, according to SQLite’s own documentation. Apps use it to keep messages, settings and history. Databases aren’t only giant systems in data centers. This lesson explains what a database is, how its tables link together, and when it beats one big spreadsheet."},
    goals:[
      "Say what a database, a table, a row and a column are",
      "Explain primary keys and foreign keys, and draw how tables link",
@@ -34,7 +34,7 @@ ICA.addUnit({
       {key:"A database stores each fact once, in the table where it belongs, and links tables with keys. A query puts the pieces back together when you ask a question."}
     ]},
     {h:"Tables, rows and columns", body:[
-      "A [[database]] is an organised collection of data that a program can search, change and combine. The databases in this unit are **relational**: the data lives in tables that relate to each other.",
+      "A [[database]] is an organized collection of data that a program can search, change and combine. The databases in this unit are **relational**: the data lives in tables that relate to each other.",
       {list:[
         "A [[table-db|table]] holds one kind of thing: members, or plots, or harvests.",
         "Each [[row-record|row]] (also called a record) is one of those things: one member, one harvest.",
@@ -64,7 +64,7 @@ ICA.addUnit({
         "“Who joined first?” needs only `members`.",
         "“How many kilograms of squash?” needs only `harvests`.",
         "“Who grew the most tomatoes?” needs `harvests` for the weights and `members` for the names: a **join** (Lesson 4).",
-        "“Which bed produced the most per square metre?” needs all three."
+        "“Which bed produced the most per square meter?” needs all three."
       ]}
     ]},
     {h:"Why not just a spreadsheet?", body:[
@@ -75,7 +75,7 @@ ICA.addUnit({
     ]},
     {h:"Database systems, and where SQLite fits", body:[
       "The software that stores a database and answers queries is a [[dbms|database management system]]. Almost all relational systems speak [[sql|SQL]] (Structured Query Language; people say “S-Q-L” or “sequel”). The core of SQL is the same everywhere, so what you learn here carries over.",
-      "Most systems are **client–server**: a server program runs on a computer, often in a data centre, and many users and programs connect to it over a network. PostgreSQL, MySQL and its offshoot MariaDB, Microsoft SQL Server and Oracle Database work this way.",
+      "Most systems are **client–server**: a server program runs on a computer, often in a data center, and many users and programs connect to it over a network. PostgreSQL, MySQL and its offshoot MariaDB, Microsoft SQL Server and Oracle Database work this way.",
       "[[sqlite|SQLite]] is different. There is no server: it’s a small library built into the app that uses it, and the whole database is one ordinary file you can copy, email or back up. That’s why it fits inside phones, browsers and desktop apps, and SQLite’s documentation lists it in every Android device, iPhone, Mac and Windows 10 machine, and in the Firefox, Chrome and Safari browsers.",
       "SQLite has limits. Its documentation says it allows many readers at once but only one writer at a time. A busy website where many people change data at the same moment needs a client–server system.",
       "The Data Lab runs SQLite inside your browser using **sql.js**, a version of SQLite compiled to [[webassembly|WebAssembly]]. Your queries run on your device and nothing is sent anywhere.",
@@ -137,7 +137,7 @@ ICA.addUnit({
    goals:[
      "Write SELECT … FROM … to choose columns, and read the result table",
      "Filter rows with WHERE, using comparisons, AND, OR, IN, BETWEEN and LIKE",
-     "Quote text correctly and recognise the errors that wrong quotes cause",
+     "Quote text correctly and recognize the errors that wrong quotes cause",
      "Sort with ORDER BY (ASC, DESC, several columns) and know where NULLs go",
      "Use LIMIT for “top n” questions, and know that other databases write it differently"
    ],
@@ -155,7 +155,7 @@ ICA.addUnit({
         "Two hyphens start a comment: `-- everything after this on the line is ignored`."
       ]},
       {warn:"Leave out a comma and SQL may not complain. `SELECT crop kg FROM harvests` runs, but returns **one** column called kg, full of crop names: SQL read `kg` as a new name for `crop`. A comma just before FROM (`SELECT crop, kg, FROM`) gives “syntax error” instead."},
-      {lab:"dl-sql-select", t:"Practise: SELECT two columns"}
+      {lab:"dl-sql-select", t:"Practice: SELECT two columns"}
     ]},
     {h:"The order you write, and the order it runs", body:[
       "A query has clauses that must be written in a fixed order. The database doesn’t carry them out in that order, though. Knowing the real order explains many rules in this unit.",
@@ -168,8 +168,8 @@ ICA.addUnit({
       {ex:"id member_id crop  kg  month\n 1     1     beans 2.5 2026-06\n 3     2     beans 1   2026-06\n 6     4     beans 3   2026-07", mono:true, label:"Result (3 rows)"},
       {table:[["Operator","Means","Example"],["=","equal to","crop = 'kale'"],["!= or <>","not equal to","crop <> 'beans'"],["<, >","less than, more than","kg > 3"],["<=, >=","at most, at least","joined >= 2023"]]},
       "Numbers are written as they are. **Text goes in single quotes**: `'beans'`. Without quotes, SQL thinks `beans` is a column name, and SQLite answers “no such column: beans”.",
-      "In SQLite, `=` compares text exactly, capitals included. `WHERE crop = 'Beans'` finds nothing, because the data says `beans`. PostgreSQL behaves the same way. Some other systems, such as MySQL and SQL Server with their usual settings, ignore case when comparing text; it depends on a setting called the collation. Unit 2’s advice to keep categories consistently spelt pays off here.",
-      {lab:"dl-sql-where", t:"Practise: WHERE, only the beans"}
+      "In SQLite, `=` compares text exactly, capitals included. `WHERE crop = 'Beans'` finds nothing, because the data says `beans`. PostgreSQL behaves the same way. Some other systems, such as MySQL and SQL Server with their usual settings, ignore case when comparing text; it depends on a setting called the collation. Unit 2’s advice to keep categories consistently spelled pays off here.",
+      {lab:"dl-sql-where", t:"Practice: WHERE, only the beans"}
     ]},
     {h:"Combining conditions", body:[
       "`AND` needs both conditions to be true; `OR` needs at least one; `NOT` flips a condition.",
@@ -195,7 +195,7 @@ ICA.addUnit({
       "SQLite bends this rule. If text in double quotes doesn’t match any column, SQLite treats it as text, so `WHERE crop = \"beans\"` works in SQLite and in the Data Lab. PostgreSQL gave the error “column \"beans\" does not exist” for the same query. Worse, a misspelt column in double quotes doesn’t fail in SQLite: `SELECT \"crops\" FROM harvests` returned the word crops on every row instead of an error. SQLite’s own documentation calls this a “misfeature”, and its command-line program has switched it off by default since version 3.41.0 (2023). Use single quotes for text, always.",
       "Two more traps:",
       {list:[
-        "**Curly quotes.** Word processors and some phone keyboards turn `'` into ‘ or ’. SQL doesn’t recognise them: SQLite read `‘beans’` as a column name. If your keyboard does this, use the Data Lab’s `'` button, or turn off “smart punctuation”.",
+        "**Curly quotes.** Word processors and some phone keyboards turn `'` into ‘ or ’. SQL doesn’t recognize them: SQLite read `‘beans’` as a column name. If your keyboard does this, use the Data Lab’s `'` button, or turn off “smart punctuation”.",
         "**Apostrophes inside text.** To write O’Neill as SQL text, double the apostrophe: `'O''Neill'`. An unmatched quote gives “unrecognized token”."
       ]}
     ]},
@@ -205,7 +205,7 @@ ICA.addUnit({
       "`ORDER BY` sorts by one or more columns. `ASC` (smallest first, A to Z) is the default; `DESC` reverses it. With several columns, later ones break ties: `ORDER BY crop, kg DESC` puts the crops in A–Z order and, within each crop, the heaviest harvest first.",
       {key:"Without ORDER BY, row order is not part of the answer. SQLite’s documentation says it’s “undefined”. If order matters, sort."},
       "Where do missing values go? SQLite treats NULL as smaller than any value, so `ORDER BY plot_id` put Eitan (NULL) first. PostgreSQL does the opposite and puts NULLs last in ascending order; we checked. Both accept `NULLS FIRST` or `NULLS LAST` when you want to choose.",
-      {lab:"dl-sql-order", t:"Practise: ORDER BY, newest members first"}
+      {lab:"dl-sql-order", t:"Practice: ORDER BY, newest members first"}
     ]},
     {h:"LIMIT: the top few, and two extras", body:[
       {code:"SELECT crop, kg\nFROM harvests\nORDER BY kg DESC\nLIMIT 3;", lang:"sql"},
@@ -217,7 +217,7 @@ ICA.addUnit({
         "`SELECT DISTINCT crop FROM harvests` removes repeated rows: it lists each crop once (beans, kale, squash, tomatoes).",
         "`AS` gives a result column a name, and SELECT can calculate: `SELECT crop, kg * 1000 AS grams FROM harvests WHERE crop = 'kale'` gives kale 3500 and kale 1500."
       ]},
-      {lab:"dl-sql-limit", t:"Practise: the three biggest harvests"}
+      {lab:"dl-sql-limit", t:"Practice: the three biggest harvests"}
     ]}
    ],
    try:[
@@ -273,7 +273,7 @@ ICA.addUnit({
    read:[{book:"dcss", where:"Data Management with SQL for Social Scientists → “The Select Statement” (sections “Simple SQL queries using the Select statement”, “The WHERE clause”, “Using more complex logical expressions in the WHERE clause” and “Sorting results”)"},{book:"swc", where:"Databases and SQL → “Selecting Data”, “Sorting and Removing Duplicates” and “Filtering”", note:"Software Carpentry’s SQL lesson, at swcarpentry.github.io/sql-novice-survey."}]
   },
   /* ===================== LESSON 3 ===================== */
-  {id:"t3u9-l3", title:"Counting and summarising: GROUP BY, HAVING and NULL", minutes:55,
+  {id:"t3u9-l3", title:"Counting and summarizing: GROUP BY, HAVING and NULL", minutes:55,
    hook:{q:"The garden has six members. One of them, Eitan, has no plot, so his plot_id is NULL. What does `SELECT COUNT(plot_id) FROM members;` return?", options:["6","5","1","An error, because of the NULL"], answer:1, reveal:"**5.** `COUNT(*)` counts rows (6), but `COUNT(plot_id)` counts only the rows where plot_id has a value, and NULL means “no value”. Missing values quietly change counts and averages unless you know the rules. This lesson covers summaries (count, total, average), summaries per group, filtering groups, and how NULL behaves."},
    goals:[
      "Summarise a whole table with COUNT, SUM, AVG, MIN and MAX",
@@ -291,11 +291,11 @@ ICA.addUnit({
       "Add `AS` to give results readable names, and `ROUND(value, digits)` to tidy decimals: `SELECT COUNT(*) AS harvests, ROUND(AVG(kg), 2) AS avg_kg FROM harvests;`",
       "Aggregates work on whatever is left after `WHERE`. How many harvests weighed more than 3 kg?",
       {code:"SELECT COUNT(*) FROM harvests WHERE kg > 3;", lang:"sql", cap:"Result: 6. With `kg >= 3` it would be 7, because one harvest of beans weighed exactly 3 kg."},
-      {lab:"dl-sql-count", t:"Practise: COUNT, how many big harvests?"}
+      {lab:"dl-sql-count", t:"Practice: COUNT, how many big harvests?"}
     ]},
     {h:"GROUP BY: one answer per group", body:[
       "Usually you want a summary **per something**: per crop, per bed, per month. [[group-by-sql|GROUP BY]] splits the rows into groups that share a value, and each aggregate then runs once per group.",
-      {fig:'<svg viewBox="0 0 340 404"><defs><marker id="t3u9g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="12" y="20" class="s">1. ten rows from harvests</text><rect class="d-sage" x="12" y="30" width="150" height="22" rx="5"/><text x="22" y="46">beans 2.5</text><rect class="d-rose" x="178" y="30" width="150" height="22" rx="5"/><text x="188" y="46">tomatoes 4</text><rect class="d-sage" x="12" y="56" width="150" height="22" rx="5"/><text x="22" y="72">beans 1</text><rect class="d-lup" x="178" y="56" width="150" height="22" rx="5"/><text x="188" y="72">kale 3.5</text><rect class="d-rose" x="12" y="82" width="150" height="22" rx="5"/><text x="22" y="98">tomatoes 8</text><rect class="d-sage" x="178" y="82" width="150" height="22" rx="5"/><text x="188" y="98">beans 3</text><rect class="d-gold" x="12" y="108" width="150" height="22" rx="5"/><text x="22" y="124">squash 10.5</text><rect class="d-lup" x="178" y="108" width="150" height="22" rx="5"/><text x="188" y="124">kale 1.5</text><rect class="d-rose" x="12" y="134" width="150" height="22" rx="5"/><text x="22" y="150">tomatoes 5.5</text><rect class="d-gold" x="178" y="134" width="150" height="22" rx="5"/><text x="188" y="150">squash 6.5</text><path class="d-ink" d="M170,162 V184" stroke-width="2" marker-end="url(#t3u9g)"/><text x="12" y="202" class="s">2. GROUP BY crop: one pile per crop</text><rect class="d-sage" x="12" y="210" width="154" height="40" rx="6" stroke-width="1.5"/><text x="22" y="226">beans</text><text x="22" y="243" class="s">2.5 · 1 · 3</text><rect class="d-lup" x="174" y="210" width="154" height="40" rx="6" stroke-width="1.5"/><text x="184" y="226">kale</text><text x="184" y="243" class="s">3.5 · 1.5</text><rect class="d-gold" x="12" y="256" width="154" height="40" rx="6" stroke-width="1.5"/><text x="22" y="272">squash</text><text x="22" y="289" class="s">10.5 · 6.5</text><rect class="d-rose" x="174" y="256" width="154" height="40" rx="6" stroke-width="1.5"/><text x="184" y="272">tomatoes</text><text x="184" y="289" class="s">4 · 8 · 5.5</text><path class="d-ink" d="M170,302 V324" stroke-width="2" marker-end="url(#t3u9g)"/><text x="12" y="340" class="s">3. SUM(kg) for each pile: one row each</text><rect class="d-sage" x="12" y="348" width="154" height="24" rx="5" stroke-width="2"/><text x="22" y="365">beans 6.5</text><rect class="d-lup" x="174" y="348" width="154" height="24" rx="5" stroke-width="2"/><text x="184" y="365">kale 5</text><rect class="d-gold" x="12" y="376" width="154" height="24" rx="5" stroke-width="2"/><text x="22" y="393">squash 17</text><rect class="d-rose" x="174" y="376" width="154" height="24" rx="5" stroke-width="2"/><text x="184" y="393">tomatoes 17.5</text></svg>', alt:"Ten harvest rows, coloured by crop, are sorted into four piles (beans 2.5, 1 and 3; kale 3.5 and 1.5; squash 10.5 and 6.5; tomatoes 4, 8 and 5.5). SUM then turns each pile into one row: beans 6.5, kale 5, squash 17, tomatoes 17.5.", cap:"GROUP BY in three steps: split the rows into groups, run the aggregate on each group, combine the answers into a result with one row per group."},
+      {fig:'<svg viewBox="0 0 340 404"><defs><marker id="t3u9g" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="12" y="20" class="s">1. ten rows from harvests</text><rect class="d-sage" x="12" y="30" width="150" height="22" rx="5"/><text x="22" y="46">beans 2.5</text><rect class="d-rose" x="178" y="30" width="150" height="22" rx="5"/><text x="188" y="46">tomatoes 4</text><rect class="d-sage" x="12" y="56" width="150" height="22" rx="5"/><text x="22" y="72">beans 1</text><rect class="d-lup" x="178" y="56" width="150" height="22" rx="5"/><text x="188" y="72">kale 3.5</text><rect class="d-rose" x="12" y="82" width="150" height="22" rx="5"/><text x="22" y="98">tomatoes 8</text><rect class="d-sage" x="178" y="82" width="150" height="22" rx="5"/><text x="188" y="98">beans 3</text><rect class="d-gold" x="12" y="108" width="150" height="22" rx="5"/><text x="22" y="124">squash 10.5</text><rect class="d-lup" x="178" y="108" width="150" height="22" rx="5"/><text x="188" y="124">kale 1.5</text><rect class="d-rose" x="12" y="134" width="150" height="22" rx="5"/><text x="22" y="150">tomatoes 5.5</text><rect class="d-gold" x="178" y="134" width="150" height="22" rx="5"/><text x="188" y="150">squash 6.5</text><path class="d-ink" d="M170,162 V184" stroke-width="2" marker-end="url(#t3u9g)"/><text x="12" y="202" class="s">2. GROUP BY crop: one pile per crop</text><rect class="d-sage" x="12" y="210" width="154" height="40" rx="6" stroke-width="1.5"/><text x="22" y="226">beans</text><text x="22" y="243" class="s">2.5 · 1 · 3</text><rect class="d-lup" x="174" y="210" width="154" height="40" rx="6" stroke-width="1.5"/><text x="184" y="226">kale</text><text x="184" y="243" class="s">3.5 · 1.5</text><rect class="d-gold" x="12" y="256" width="154" height="40" rx="6" stroke-width="1.5"/><text x="22" y="272">squash</text><text x="22" y="289" class="s">10.5 · 6.5</text><rect class="d-rose" x="174" y="256" width="154" height="40" rx="6" stroke-width="1.5"/><text x="184" y="272">tomatoes</text><text x="184" y="289" class="s">4 · 8 · 5.5</text><path class="d-ink" d="M170,302 V324" stroke-width="2" marker-end="url(#t3u9g)"/><text x="12" y="340" class="s">3. SUM(kg) for each pile: one row each</text><rect class="d-sage" x="12" y="348" width="154" height="24" rx="5" stroke-width="2"/><text x="22" y="365">beans 6.5</text><rect class="d-lup" x="174" y="348" width="154" height="24" rx="5" stroke-width="2"/><text x="184" y="365">kale 5</text><rect class="d-gold" x="12" y="376" width="154" height="24" rx="5" stroke-width="2"/><text x="22" y="393">squash 17</text><rect class="d-rose" x="174" y="376" width="154" height="24" rx="5" stroke-width="2"/><text x="184" y="393">tomatoes 17.5</text></svg>', alt:"Ten harvest rows, colored by crop, are sorted into four piles (beans 2.5, 1 and 3; kale 3.5 and 1.5; squash 10.5 and 6.5; tomatoes 4, 8 and 5.5). SUM then turns each pile into one row: beans 6.5, kale 5, squash 17, tomatoes 17.5.", cap:"GROUP BY in three steps: split the rows into groups, run the aggregate on each group, combine the answers into a result with one row per group."},
       {code:"SELECT crop, COUNT(*) AS n, SUM(kg) AS total_kg\nFROM harvests\nGROUP BY crop\nORDER BY total_kg DESC;", lang:"sql"},
       {table:[["crop","n","total_kg"],["tomatoes","3","17.5"],["squash","2","17"],["beans","3","6.5"],["kale","2","5"]]},
       {key:"The GROUP BY rule: every column in SELECT must either be listed in GROUP BY or sit inside an aggregate. Each result row stands for a whole group, so a plain column needs one value per group."},
@@ -303,10 +303,10 @@ ICA.addUnit({
       "Our test happened to return the groups in A–Z order, but that’s a side effect. Add `ORDER BY` whenever order matters.",
       {ex:"Question: how many plots, and how much area, does each bed have?\n\nSELECT bed, COUNT(*) AS plots, SUM(size_m2) AS area\nFROM plots\nGROUP BY bed;\n\nbed    plots  area\nEast   1      10\nNorth  2      10\nSouth  2      13", mono:true, label:"Worked example"},
       "Read it group by group: the North bed holds plots 1 and 2 (6 + 4 = 10 m²), the South bed plots 3 and 4 (8 + 5 = 13 m²), and the East bed only plot 5 (10 m²). Notice that North and East have the same area but different numbers of plots. One query, two summaries, and each row of the result stands for a whole bed. You can group by more than one column, too: `GROUP BY crop, month` gives one row for each crop in each month.",
-      {lab:"dl-sql-groupby", t:"Practise: GROUP BY, total per crop"}
+      {lab:"dl-sql-groupby", t:"Practice: GROUP BY, total per crop"}
     ]},
     {h:"WHERE or HAVING?", body:[
-      "Which crops totalled more than 10 kg? The obvious attempt fails:",
+      "Which crops totaled more than 10 kg? The obvious attempt fails:",
       {code:"SELECT crop, SUM(kg) FROM harvests\nWHERE SUM(kg) > 10\nGROUP BY crop;", lang:"sql", cap:"SQLite says: misuse of aggregate: SUM(). PostgreSQL says: aggregate functions are not allowed in WHERE."},
       "Remember the running order. `WHERE` looks at single rows **before** the groups exist, so there’s no total for it to test. [[having-sql|HAVING]] is the filter that runs **after** grouping:",
       {code:"SELECT crop, SUM(kg)\nFROM harvests\nGROUP BY crop\nHAVING SUM(kg) > 10;", lang:"sql"},
@@ -314,7 +314,7 @@ ICA.addUnit({
       "The full running order is now: **FROM → WHERE → GROUP BY → HAVING → SELECT → ORDER BY → LIMIT**. You can use both filters in one query. Which crops had at least two harvests heavier than 3 kg?",
       {code:"SELECT crop, COUNT(*) AS big\nFROM harvests\nWHERE kg > 3\nGROUP BY crop\nHAVING COUNT(*) >= 2;", lang:"sql", cap:"WHERE first drops the light harvests; GROUP BY piles up the rest; HAVING keeps piles of 2 or more. Result: squash 2, tomatoes 3."},
       {tip:"SQLite also lets HAVING use a name made in SELECT: `SUM(kg) AS total … HAVING total > 10` works, and the Data Carpentry lesson uses this style. PostgreSQL rejects it (“column \"total\" does not exist”): its documentation says output-column names can be used in ORDER BY and GROUP BY, but not in WHERE or HAVING. Repeating `SUM(kg)` works everywhere."},
-      {lab:"dl-sql-having", t:"Practise: HAVING, crops over 10 kg"}
+      {lab:"dl-sql-having", t:"Practice: HAVING, crops over 10 kg"}
     ]},
     {h:"NULL: the value that isn’t there", body:[
       "[[null-sql|NULL]] is SQL’s marker for a missing value: unknown, not recorded, or not applicable. Eitan’s plot_id is NULL because he has no plot. NULL isn’t zero, isn’t empty text and isn’t the word “NULL”; it’s the absence of a value. (Unit 2 recommended NULL as the way to mark [[missing-value|missing values]] in data headed for SQL.)",
@@ -323,7 +323,7 @@ ICA.addUnit({
       "So `WHERE plot_id = NULL` never finds anything: in the Data Lab it runs, but the result is just the column heading (name) and “0 rows.”. To test for missing values, use `IS NULL` and `IS NOT NULL`:",
       {code:"SELECT name FROM members WHERE plot_id IS NULL;", lang:"sql", cap:"Result: Eitan."},
       {warn:"NULL also hides from “not equal” tests. Chen has plot 3, so you might expect `WHERE plot_id != 3` to return the other five members. It returned four: Ama, Bilal, Dana and Fatou. Eitan’s NULL isn’t “not 3”; it’s unknown, so his row is dropped. If you mean “anyone not on plot 3”, write `WHERE plot_id != 3 OR plot_id IS NULL`. `NOT IN (1, 2)` drops NULLs in the same way."},
-      {lab:"dl-sql-null", t:"Practise: NULL, members without a plot"}
+      {lab:"dl-sql-null", t:"Practice: NULL, members without a plot"}
     ]},
     {h:"NULL inside summaries", body:[
       {code:"SELECT COUNT(*), COUNT(plot_id), COUNT(DISTINCT plot_id)\nFROM members;", lang:"sql", cap:"Result: 6, 5, 5."},
@@ -340,7 +340,7 @@ ICA.addUnit({
       "When a query fails, SQLite names the problem. The Data Lab shows the message after “SQLite says:”, with a plain-language note. The common ones:",
       {table:[["SQLite says","Usual cause"],["no such column: beans","Text without quotes, or a misspelt column name"],["no such table: harvest","A misspelt table name"],["near \"FROM\": syntax error","Something wrong just before FROM, often a stray comma"],["unrecognized token","A quote that was opened but never closed"],["misuse of aggregate: COUNT()","An aggregate in WHERE; use HAVING after GROUP BY"],["ambiguous column name: id","Two joined tables share a column name (Lesson 4)"]]},
       "Read the message, look just before the word it quotes, and change one thing at a time.",
-      {lab:"dl-sql-fix", t:"Practise: fix the query"}
+      {lab:"dl-sql-fix", t:"Practice: fix the query"}
     ]}
    ],
    try:[
@@ -367,7 +367,7 @@ ICA.addUnit({
       {t:"Eitan, because his plot_id is NULL", ok:true, why:"Right. Comparing NULL with 3 gives “unknown”, and WHERE drops unknowns. Add `OR plot_id IS NULL` if members without a plot should be included."},
       {t:"Chen, because he’s on plot 3", why:"Chen is meant to be left out; that’s why he expected five, not six. The surprise is the sixth member."},
       {t:"Fatou, because `!=` doesn’t work in SQLite", why:"`!=` works in SQLite (as does `<>`), and Fatou (plot 5) is in the result."},
-      {t:"Nobody; the database has a bug", why:"It’s standard SQL behaviour: comparisons with NULL are neither true nor false."}
+      {t:"Nobody; the database has a bug", why:"It’s standard SQL behavior: comparisons with NULL are neither true nor false."}
     ]},
     {id:"t3u9-l3-x5", type:"number", q:"What does `SELECT COUNT(plot_id) FROM members;` return? (Six members; Eitan’s plot_id is NULL.)", answer:5, tol:0, unit:"members", why:"COUNT(column) counts only the values that aren’t NULL: five members have a plot.", wrongs:[
       {v:6, tol:0, why:"That’s COUNT(*), which counts rows. COUNT(plot_id) skips the NULL."},
@@ -389,7 +389,7 @@ ICA.addUnit({
       ["SELECT MAX(kg) FROM harvests","10.5","Eitan’s squash is the heaviest harvest."],
       ["SELECT MIN(kg) FROM harvests","1","Bilal’s 1 kg of beans is the lightest."]
     ]},
-    {id:"t3u9-l3-x8", type:"explain", q:"To find crops whose harvests totalled more than 10 kg, explain why `WHERE SUM(kg) > 10` fails but `HAVING SUM(kg) > 10` after `GROUP BY crop` works.", model:"WHERE runs before grouping: it checks single rows one at a time, when no group totals exist yet, so an aggregate like `SUM(kg)` has nothing to test, and SQLite reports “misuse of aggregate”. GROUP BY then splits the rows into crops, and the aggregates are computed per group. HAVING runs after grouping, so it can filter whole groups by their totals: here squash (17 kg) and tomatoes (17.5 kg). A query can use both: WHERE to filter rows, HAVING to filter groups.", points:["Says WHERE filters single rows before groups exist", "Says GROUP BY computes the aggregates per group", "Says HAVING filters groups after grouping", "Mentions that both can be used in one query, or names the result"]}
+    {id:"t3u9-l3-x8", type:"explain", q:"To find crops whose harvests totaled more than 10 kg, explain why `WHERE SUM(kg) > 10` fails but `HAVING SUM(kg) > 10` after `GROUP BY crop` works.", model:"WHERE runs before grouping: it checks single rows one at a time, when no group totals exist yet, so an aggregate like `SUM(kg)` has nothing to test, and SQLite reports “misuse of aggregate”. GROUP BY then splits the rows into crops, and the aggregates are computed per group. HAVING runs after grouping, so it can filter whole groups by their totals: here squash (17 kg) and tomatoes (17.5 kg). A query can use both: WHERE to filter rows, HAVING to filter groups.", points:["Says WHERE filters single rows before groups exist", "Says GROUP BY computes the aggregates per group", "Says HAVING filters groups after grouping", "Mentions that both can be used in one query, or names the result"]}
    ],
    apply:{intro:"Use the Data Lab on any device. Try each challenge before opening a hint.", tasks:[
      {t:"Solve the summary challenges", how:["In **Labs → Data Lab**, do **COUNT: how many big harvests?**, **GROUP BY: total per crop**, **HAVING: crops over 10 kg**, **NULL: members without a plot** and **Fix the query**.","For **Fix the query**, press ▶ Run first and read the error before you change anything.","After each pass, read the explanation: some mention a rule from this lesson that SQLite doesn’t enforce."]},
@@ -404,7 +404,7 @@ ICA.addUnit({
      "Write an inner JOIN … ON that matches a foreign key to a primary key",
      "Explain a join as “pair every row, keep the matches”, and spot a missing or wrong ON",
      "Use LEFT JOIN to keep unmatched rows, and find them with IS NULL",
-     "Join and then summarise, checking totals for lost or doubled rows",
+     "Join and then summarize, checking totals for lost or doubled rows",
      "Declare keys in SQL and switch on foreign-key checks in SQLite"
    ],
    learn:[
@@ -424,7 +424,7 @@ ICA.addUnit({
       ]},
       "Long table names get tiring, so joins usually give each table a short **alias** with `AS`. This version also sorts and keeps the top three:",
       {code:"SELECT m.name, h.crop, h.kg\nFROM harvests AS h\nJOIN members AS m ON h.member_id = m.id\nORDER BY h.kg DESC\nLIMIT 3;", lang:"sql", cap:"Result: Eitan squash 10.5, Chen tomatoes 8, Dana squash 6.5. Everything from Lesson 2 works on a joined result."},
-      {lab:"dl-sql-join", t:"Practise: JOIN, who grew what"}
+      {lab:"dl-sql-join", t:"Practice: JOIN, who grew what"}
     ]},
     {h:"What a join really does", body:[
       "Here’s a model that’s exactly right, even though databases use faster methods behind the scenes: **pair every row of the first table with every row of the second, then keep the pairs where ON is true.**",
@@ -445,7 +445,7 @@ ICA.addUnit({
       {warn:"The order of tables matters for a LEFT JOIN: the left one is kept whole. And a condition on the right-hand table belongs in ON, not WHERE. Adding `WHERE p.bed = 'North'` to the left join above returns only Ama and Bilal, because Eitan’s NULL bed fails the test. SQLite’s documentation explains this difference between ON and WHERE for left joins."},
       "There are also `RIGHT JOIN` (keep every row of the right table) and `FULL OUTER JOIN` (keep unmatched rows from both). SQLite added both in version 3.39.0 (2022), so older SQLite tools may not have them. A right join is just a left join with the tables swapped."
     ]},
-    {h:"Join, then summarise", body:[
+    {h:"Join, then summarize", body:[
       "Joins and GROUP BY work together. How much did each bed produce? Harvests know the member, members know the plot, plots know the bed, so it takes two joins:",
       {code:"SELECT p.bed, SUM(h.kg) AS kg\nFROM harvests AS h\nJOIN members AS m ON h.member_id = m.id\nJOIN plots AS p ON m.plot_id = p.id\nGROUP BY p.bed\nORDER BY kg DESC;", lang:"sql"},
       {table:[["bed","kg"],["South","21"],["North","9"],["East","5.5"]]},
@@ -455,7 +455,7 @@ ICA.addUnit({
       "Grouping by `m.id` as well as `m.name` keeps two members who share a name apart. (On the garden data every member has at least one harvest; the Data Lab’s second test database includes one who doesn’t, which is why its JOIN challenge catches a left join from members.)"
     ]},
     {h:"Keys keep joins honest", body:[
-      "Joins go wrong when a table has more matches than you expect. Try totalling the plot area after joining plots to harvests:",
+      "Joins go wrong when a table has more matches than you expect. Try totaling the plot area after joining plots to harvests:",
       {code:"SELECT SUM(p.size_m2)\nFROM plots AS p\nJOIN members AS m ON m.plot_id = p.id\nJOIN harvests AS h ON h.member_id = m.id;", lang:"sql", cap:"Result: 56. But the plots cover only 33 m² (SELECT SUM(size_m2) FROM plots)."},
       "Each plot row is repeated once per harvest from it, so plots with two harvests are counted twice. This **fan-out** is the most common way joined numbers go wrong. Summarise each table at its own level (plots by plot, harvests by harvest), or check counts before and after each join.",
       "You can write the links into the schema so the database guards them:",
@@ -503,17 +503,17 @@ ICA.addUnit({
       ["FULL OUTER JOIN … ON","Matches, plus unmatched rows from both sides","It’s a left join and a right join together (in SQLite since 3.39.0)."]
     ]},
     {id:"t3u9-l4-x7", type:"mcq", q:"Joining plots → members → harvests and running `SUM(p.size_m2)` gives 56 m², but the plots cover 33 m². Why?", options:[
-      {t:"Each plot row is repeated once per harvest", ok:true, why:"Right: fan-out. Each plot’s size is added several times. Total plot area from the plots table on its own, or summarise harvests first and join afterwards."},
+      {t:"Each plot row is repeated once per harvest", ok:true, why:"Right: fan-out. Each plot’s size is added several times. Total plot area from the plots table on its own, or summarize harvests first and join afterwards."},
       {t:"The join dropped some plots", why:"Dropping plots would make the total smaller than 33, not bigger."},
       {t:"SQLite rounds REAL numbers up when it adds them", why:"No rounding happens; the extra area comes from repeated rows."},
       {t:"size_m2 is stored as text", why:"Text would cause odd sorting, not a larger sum. The values are numbers."}
     ]},
-    {id:"t3u9-l4-x8", type:"explain", q:"Totalling the garden’s harvests by bed with two inner joins (harvests → members → plots) gives 35.5 kg, but the garden harvested 46 kg in all. Explain where the missing 10.5 kg went, and how to fix it.", model:"An inner join keeps only rows that find a match. Eitan’s 10.5 kg of squash joins to members fine, but his `plot_id` is NULL, so the second join to plots finds no matching plot and drops the row. Making that join a LEFT JOIN keeps every row from the left side and fills the plot columns with NULL, so a fourth row appears: bed NULL, 10.5 kg. The general habit: compare totals and row counts before and after each join, so lost or doubled rows are a decision, not an accident.", points:["Says an inner join drops rows with no match", "Identifies Eitan’s harvest and his NULL `plot_id` as the cause", "Says a LEFT JOIN keeps the row, with NULL for the bed", "Recommends checking totals or row counts after each join"]}
+    {id:"t3u9-l4-x8", type:"explain", q:"Totaling the garden’s harvests by bed with two inner joins (harvests → members → plots) gives 35.5 kg, but the garden harvested 46 kg in all. Explain where the missing 10.5 kg went, and how to fix it.", model:"An inner join keeps only rows that find a match. Eitan’s 10.5 kg of squash joins to members fine, but his `plot_id` is NULL, so the second join to plots finds no matching plot and drops the row. Making that join a LEFT JOIN keeps every row from the left side and fills the plot columns with NULL, so a fourth row appears: bed NULL, 10.5 kg. The general habit: compare totals and row counts before and after each join, so lost or doubled rows are a decision, not an accident.", points:["Says an inner join drops rows with no match", "Identifies Eitan’s harvest and his NULL `plot_id` as the cause", "Says a LEFT JOIN keeps the row, with NULL for the bed", "Recommends checking totals or row counts after each join"]}
    ],
    apply:{intro:"Use the Data Lab on any device. After each join, check the number of rows against what you expect: the Data Lab prints the count under each result (it shows the first 50 rows, then “…and 10 more rows.” for a 60-row result).", tasks:[
      {t:"Solve the JOIN challenge, then explore", how:["In **Labs → Data Lab**, do **JOIN: who grew what**.","In the same editor, write the inner join of members and plots, press ▶ Run, and count the rows. Then change JOIN to LEFT JOIN and run it again. Who appears?","Add `WHERE p.id IS NULL` to the left join. What question does the result answer?"]},
-     {t:"Answer a three-table question", how:["Write a query for each member’s kilograms per square metre: join members to plots and to harvests, group by member, and calculate `ROUND(SUM(h.kg) / p.size_m2, 2)` (put `p.size_m2` in GROUP BY too).","Sort it highest first. Who uses their plot most intensively?","Explain in one sentence why Eitan isn’t in your result, and whether that’s right for this question."], write:"My query, the top member, and my sentence about Eitan…"}
-   ], proof:"The JOIN challenge solved; 5 rows from the inner join and 6 from the left join (Eitan with a NULL bed); and kilograms per square metre: Dana 1.9, Chen 1.44, Ama 1.08, Bilal 0.63, Fatou 0.55 (Eitan has no plot, so no area to divide by)."},
+     {t:"Answer a three-table question", how:["Write a query for each member’s kilograms per square meter: join members to plots and to harvests, group by member, and calculate `ROUND(SUM(h.kg) / p.size_m2, 2)` (put `p.size_m2` in GROUP BY too).","Sort it highest first. Who uses their plot most intensively?","Explain in one sentence why Eitan isn’t in your result, and whether that’s right for this question."], write:"My query, the top member, and my sentence about Eitan…"}
+   ], proof:"The JOIN challenge solved; 5 rows from the inner join and 6 from the left join (Eitan with a NULL bed); and kilograms per square meter: Dana 1.9, Chen 1.44, Ama 1.08, Bilal 0.63, Fatou 0.55 (Eitan has no plot, so no area to divide by)."},
    read:[{book:"dcss", where:"Data Management with SQL for Social Scientists → “Joins” (sections “About table joins”, “Different join types” and “Using different join types in analysing your data”)"},{book:"swc", where:"Databases and SQL → “Combining Data”"}]
   },
   /* ===================== LESSON 5 ===================== */
@@ -522,7 +522,7 @@ ICA.addUnit({
    goals:[
      "Install and use DB Browser for SQLite, and know when changes are saved",
      "Import a CSV into a table, check the column types, and join it to existing data",
-     "Apply the rules of good table design (normalisation) in plain terms, including linking tables",
+     "Apply the rules of good table design (normalization) in plain terms, including linking tables",
      "Recognise common SQL dialect differences between SQLite, PostgreSQL, MySQL and SQL Server",
      "Explain SQL injection and why programs use placeholders instead of pasting text into SQL"
    ],
@@ -566,20 +566,20 @@ ICA.addUnit({
         "**No redundant information**: don’t copy a member’s joining year onto every harvest. Store it once and point at it.",
         "**Units are stored explicitly**: a column called `kg`, or a separate units column, never “2.5 kg” typed into the values."
       ]},
-      {fig:'<svg viewBox="0 0 340 316"><defs><marker id="t3u9n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="10" y="10" width="320" height="92" rx="8" stroke-width="2"/><text x="20" y="32">One big sheet</text><text x="20" y="52" class="s">member · joined · bed · size_m2 ·</text><text x="20" y="69" class="s">crop · kg · month</text><text x="20" y="90" class="s">Ama, 2021, North, 6 repeated on every row</text><path class="d-ink" d="M170,108 V130" stroke-width="2" marker-end="url(#t3u9n)"/><text x="182" y="124" class="s">split by kind of thing</text><rect class="d-lup" x="6" y="140" width="104" height="100" rx="8" stroke-width="2"/><text x="58" y="160" text-anchor="middle">members</text><text x="14" y="180" class="mono">id</text><text x="14" y="197" class="mono">name</text><text x="14" y="214" class="mono">joined</text><text x="14" y="231" class="mono">plot_id</text><rect class="d-gold" x="118" y="140" width="104" height="83" rx="8" stroke-width="2"/><text x="170" y="160" text-anchor="middle">plots</text><text x="126" y="180" class="mono">id</text><text x="126" y="197" class="mono">bed</text><text x="126" y="214" class="mono">size_m2</text><rect class="d-sage" x="230" y="140" width="104" height="117" rx="8" stroke-width="2"/><text x="282" y="160" text-anchor="middle">harvests</text><text x="238" y="180" class="mono">id</text><text x="238" y="197" class="mono">member_id</text><text x="238" y="214" class="mono">crop</text><text x="238" y="231" class="mono">kg</text><text x="238" y="248" class="mono">month</text><text x="170" y="284" text-anchor="middle" class="s">Each fact is stored once: to move Ama</text><text x="170" y="302" text-anchor="middle" class="s">to another plot, change one value.</text></svg>', alt:"A pink box labelled One big sheet, with columns member, joined, bed, size_m2, crop, kg and month, notes that Ama, 2021, North, 6 is repeated on every row. An arrow labelled split by kind of thing leads to three tables: members (id, name, joined, plot_id), plots (id, bed, size_m2) and harvests (id, member_id, crop, kg, month).", cap:"Normalising the garden’s first spreadsheet. Each kind of thing gets its own table, and keys link them."},
-      "Database textbooks name the first steps of normalisation **normal forms**. You don’t need the theory to use them:",
+      {fig:'<svg viewBox="0 0 340 316"><defs><marker id="t3u9n" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="10" y="10" width="320" height="92" rx="8" stroke-width="2"/><text x="20" y="32">One big sheet</text><text x="20" y="52" class="s">member · joined · bed · size_m2 ·</text><text x="20" y="69" class="s">crop · kg · month</text><text x="20" y="90" class="s">Ama, 2021, North, 6 repeated on every row</text><path class="d-ink" d="M170,108 V130" stroke-width="2" marker-end="url(#t3u9n)"/><text x="182" y="124" class="s">split by kind of thing</text><rect class="d-lup" x="6" y="140" width="104" height="100" rx="8" stroke-width="2"/><text x="58" y="160" text-anchor="middle">members</text><text x="14" y="180" class="mono">id</text><text x="14" y="197" class="mono">name</text><text x="14" y="214" class="mono">joined</text><text x="14" y="231" class="mono">plot_id</text><rect class="d-gold" x="118" y="140" width="104" height="83" rx="8" stroke-width="2"/><text x="170" y="160" text-anchor="middle">plots</text><text x="126" y="180" class="mono">id</text><text x="126" y="197" class="mono">bed</text><text x="126" y="214" class="mono">size_m2</text><rect class="d-sage" x="230" y="140" width="104" height="117" rx="8" stroke-width="2"/><text x="282" y="160" text-anchor="middle">harvests</text><text x="238" y="180" class="mono">id</text><text x="238" y="197" class="mono">member_id</text><text x="238" y="214" class="mono">crop</text><text x="238" y="231" class="mono">kg</text><text x="238" y="248" class="mono">month</text><text x="170" y="284" text-anchor="middle" class="s">Each fact is stored once: to move Ama</text><text x="170" y="302" text-anchor="middle" class="s">to another plot, change one value.</text></svg>', alt:"A pink box labeled One big sheet, with columns member, joined, bed, size_m2, crop, kg and month, notes that Ama, 2021, North, 6 is repeated on every row. An arrow labeled split by kind of thing leads to three tables: members (id, name, joined, plot_id), plots (id, bed, size_m2) and harvests (id, member_id, crop, kg, month).", cap:"Normalising the garden’s first spreadsheet. Each kind of thing gets its own table, and keys link them."},
+      "Database textbooks name the first steps of normalization **normal forms**. You don’t need the theory to use them:",
       {table:[["Normal form","In plain words","Garden example of breaking it"],["First (1NF)","One value per cell; no repeating columns such as crop1, crop2","“beans, kale” in one crop cell"],["Second (2NF)","If the key has two parts, every other column depends on both parts","A member’s name stored in a table keyed by member and work day"],["Third (3NF)","Every other column depends only on the key, not on another non-key column","Storing bed in members: bed belongs to the plot, not the member"]]},
       "A **many-to-many** link needs a table of its own. Members come to many work days, and each work day has many members, so a linking table records each attendance, with a two-column primary key so that nobody is counted twice:",
       {code:"CREATE TABLE attendance (\n  member_id INTEGER,\n  workday_id INTEGER,\n  PRIMARY KEY (member_id, workday_id)\n);", lang:"sql", cap:"Adding the same pair twice fails with “UNIQUE constraint failed”. Two joins (to members and to a workdays table) turn the pairs back into names and dates."},
       "Normalised tables are for **storing** data. For analysis or a chart you often want one wide table again, and a query makes it on demand. `CREATE VIEW` saves a query under a name, so `SELECT * FROM harvest_log` can always give the joined, readable version without storing anything twice. Use clear, lower-case column names with underscores (Unit 2’s advice); spaces in names force you to quote them in every query."
     ]},
     {h:"SQL dialects: same language, different accents", body:[
-      "Each database system adds to SQL and bends a few rules: its [[sql-dialect|dialect]]. The core you’ve learnt (SELECT, WHERE, GROUP BY, JOIN) works everywhere. These are the differences that surprise people most; the SQLite and PostgreSQL columns were tested for this unit, and the last column describes MySQL and SQL Server with their usual default settings.",
+      "Each database system adds to SQL and bends a few rules: its [[sql-dialect|dialect]]. The core you’ve learned (SELECT, WHERE, GROUP BY, JOIN) works everywhere. These are the differences that surprise people most; the SQLite and PostgreSQL columns were tested for this unit, and the last column describes MySQL and SQL Server with their usual default settings.",
       {table:[["Task","SQLite","PostgreSQL","MySQL / SQL Server"],["First 3 rows","LIMIT 3","LIMIT 3, or FETCH FIRST 3 ROWS ONLY","MySQL: LIMIT 3. SQL Server: SELECT TOP 3"],["Is 'Beans' = 'beans'?","No","No","Usually yes (it depends on the collation)"],["LIKE and capitals","Ignores case (English letters only)","Case-sensitive; ILIKE ignores case","Follows the collation"],["\"double quotes\"","Text, if no column has that name","Always a name","MySQL: text. SQL Server: a name"],["NULLs, sorting ascending","First","Last","First"],["Alias used in HAVING","Allowed","Error","MySQL allows it; SQL Server doesn’t"],["Column not in GROUP BY","Allowed (value from one row)","Error","Error"],["Wrong type, such as text in an INTEGER column","Stored anyway (unless STRICT)","Error","Usually an error"]]},
       {tip:"When a query from a website or a colleague fails, check which system it was written for. “Top 5” questions, date functions and joining text (`||` in SQLite and PostgreSQL, `+` in SQL Server, which added `||` only in SQL Server 2025, and `CONCAT()` in most) are where dialects differ most."}
     ]},
     {h:"SQL injection, and why programs use placeholders", body:[
-      "Websites and apps that use databases build SQL inside their code. If a program glues text that someone typed straight into a query, that text can change the query itself. That’s [[sql-injection|SQL injection]], a long-known and serious security flaw: OWASP, the open web-security foundation, says it can expose or change a database’s contents, and sometimes worse. The fix is simple and standard: a [[parameterised-query|parameterised query]] (also called a prepared statement) sends the SQL with a placeholder, and sends the typed value separately, so the value is always treated as data, never as SQL. OWASP lists this as the first, primary defence, and calls hand-made “escaping” of quotes strongly discouraged.",
+      "Websites and apps that use databases build SQL inside their code. If a program glues text that someone typed straight into a query, that text can change the query itself. That’s [[sql-injection|SQL injection]], a long-known and serious security flaw: OWASP, the open web-security foundation, says it can expose or change a database’s contents, and sometimes worse. The fix is simple and standard: a [[parameterised-query|parameterized query]] (also called a prepared statement) sends the SQL with a placeholder, and sends the typed value separately, so the value is always treated as data, never as SQL. OWASP lists this as the first, primary defense, and calls hand-made “escaping” of quotes strongly discouraged.",
       {code:"import sqlite3\n\ncon = sqlite3.connect(\"garden.sqlite\")\nname = input(\"Member name: \")\nrows = con.execute(\n    \"SELECT id, joined FROM members WHERE name = ?\",\n    (name,),\n).fetchall()\nprint(rows)", lang:"py", label:"Python", cap:"The `?` is the placeholder; `(name,)` supplies its value. We tested it with `Siobhán O'Neill` (found her, apostrophe and all) and with deliberately tricky input (no rows, and no change to the query)."},
       "You won’t write programs like this in the Data Lab, but it’s worth knowing for any app you build, and for judging tools you rely on. If you ever find a form that breaks when you type an apostrophe, report it to whoever runs the site."
     ]}
@@ -629,7 +629,7 @@ ICA.addUnit({
       {t:"Write the keywords in lower case", why:"Keyword case doesn’t matter in any of these systems."},
       {t:"Change SUM to TOTAL", why:"TOTAL() exists only in SQLite; PostgreSQL would then fail for a second reason."}
     ]},
-    {id:"t3u9-l5-x8", type:"explain", q:"Explain what SQL injection is, and why a parameterised query (one using a placeholder such as `?`) prevents it.", model:"If a program glues text that someone typed straight into an SQL string, that text becomes part of the query itself. A carefully crafted entry, or even a stray apostrophe, can then change what the query does and expose or alter the database. A parameterised query sends the SQL with a placeholder, such as `WHERE name = ?`, and sends the typed value separately. The database always treats that value as data, never as SQL, whatever characters it contains. OWASP lists this as the primary defence; hand-made escaping is strongly discouraged.", points:["Says typed text pasted into SQL can change the query", "Mentions the risk: exposing or changing the database", "Explains that a placeholder sends the value separately from the SQL", "Says the value is then treated as data, never as code"]}
+    {id:"t3u9-l5-x8", type:"explain", q:"Explain what SQL injection is, and why a parameterized query (one using a placeholder such as `?`) prevents it.", model:"If a program glues text that someone typed straight into an SQL string, that text becomes part of the query itself. A carefully crafted entry, or even a stray apostrophe, can then change what the query does and expose or alter the database. A parameterized query sends the SQL with a placeholder, such as `WHERE name = ?`, and sends the typed value separately. The database always treats that value as data, never as SQL, whatever characters it contains. OWASP lists this as the primary defense; hand-made escaping is strongly discouraged.", points:["Says typed text pasted into SQL can change the query", "Mentions the risk: exposing or changing the database", "Explains that a placeholder sends the value separately from the SQL", "Says the value is then treated as data, never as code"]}
    ],
    apply:{intro:"Installing DB Browser is optional and needs a computer. On a phone or a locked computer, read the steps and use the Data Lab for the queries.", tasks:[
      {t:"Install DB Browser for SQLite (optional, computer only)", how:{
@@ -721,7 +721,7 @@ ICA.addUnit({
       "**Kinds of system.** Client–server systems (PostgreSQL, MySQL and MariaDB, Microsoft SQL Server, Oracle Database) run a server program that many users connect to over a network. **SQLite** is embedded: a library inside the app, with the whole database in one file. SQLite’s documentation lists it in every Android device, iPhone, Mac and Windows 10 machine and in the Firefox, Chrome and Safari browsers.",
       "**Choosing.** SQLite suits apps, single-user analysis, data files to share and teaching. Its documentation notes that it allows many readers but only one writer at a time, so a website where many people change data at once needs a client–server system.",
       "**Moving data.** CSV is the usual bridge to and from spreadsheets; query results can go back into a sheet for charts.",
-      "“NoSQL” systems (document, key–value and graph stores) organise data differently and suit some jobs, but relational tables and SQL remain the common language of data work."
+      "“NoSQL” systems (document, key–value and graph stores) organize data differently and suit some jobs, but relational tables and SQL remain the common language of data work."
      ],
      pro:[
       "**Types differ by system.** SQLite stores five storage classes (NULL, INTEGER, REAL, TEXT, BLOB) and uses **flexible typing**: a column’s declared type is a preference, so text can be stored in an INTEGER column. Its documentation calls this a feature, while acknowledging it confuses people moving to rigidly typed systems. `STRICT` tables (SQLite 3.37.0, 2021) enforce declared types. PostgreSQL rejects wrong types at insert time.",
@@ -747,12 +747,12 @@ ICA.addUnit({
       "**A sneaky mistake.** Leaving out a comma doesn’t always cause an error: `SELECT crop kg FROM harvests` returns one column, named kg, holding the crop names, because a name after a column is read as an alias.",
       "**Case of names.** SQLite (and PostgreSQL, for unquoted names) ignores the case of table and column names, so `select Crop from Harvests` works. Values are another matter: `'Beans'` and `'beans'` are different text in SQLite.",
       "**Reading a result.** Check three things every time: the column headings (are they the ones you asked for?), the number of rows (does it match what you expect?) and a few values you can verify by eye. Most mistakes show up in one of the three before they reach a report.",
-      "**Practise** in the Data Lab: run any query with ▶ Run before you check it."
+      "**Practice** in the Data Lab: run any query with ▶ Run before you check it."
      ],
      pro:[
       "**Quoting identifiers.** Standard SQL uses double quotes for names (`\"plot size\"`) and single quotes for text. SQLite also accepts a double-quoted string as text when no column of that name exists, a compatibility “misfeature” in its own words. A misspelt double-quoted column then silently becomes text (`SELECT \"crops\" FROM harvests` returns the word crops on every row). The sqlite3 command-line program disables this by default since 3.41.0; the library, sql.js and many tools still allow it. PostgreSQL always treats double quotes as names.",
       "**Literals.** Double an apostrophe inside text: `'O''Neill'`. SQLite distinguishes integer and text literals (`3` vs `'3'`), and its flexible typing can make mixed-type comparisons surprising, which is one more reason to store numbers as numbers.",
-      "**Reading is safe; writing isn’t.** INSERT, UPDATE and DELETE change data. In DB Browser such changes stay pending until Write Changes; in a program they happen inside transactions. Practise them on a copy.",
+      "**Reading is safe; writing isn’t.** INSERT, UPDATE and DELETE change data. In DB Browser such changes stay pending until Write Changes; in a program they happen inside transactions. Practice them on a copy.",
       "**Keyword names.** SQLite lets many keywords be used as column names when the meaning is clear; other systems don’t. Avoid names like `order`, `group` or `select` for portability.",
       "**SELECT * in saved work.** It’s ideal for a first look, but name the columns in queries you keep: if someone adds or reorders columns later, a `SELECT *` query silently changes shape, and anything that reads its result by position breaks."
      ]},
@@ -792,7 +792,7 @@ ICA.addUnit({
    {id:"sql-aggregates", title:"Aggregates, GROUP BY, HAVING and NULL", aka:["GROUP BY","HAVING","COUNT","aggregate functions"], tags:["sql","databases","statistics"], summary:"COUNT, SUM, AVG, MIN and MAX turn many rows into one value; GROUP BY gives one per group; HAVING filters groups; NULLs are skipped.",
     levels:{
      starter:[
-      "Aggregate functions summarise many rows: `COUNT(*)` counts rows, `SUM` adds, `AVG` averages, `MIN` and `MAX` find the extremes. `SELECT COUNT(*), SUM(kg) FROM harvests` gives one row: 10 harvests, 46 kg.",
+      "Aggregate functions summarize many rows: `COUNT(*)` counts rows, `SUM` adds, `AVG` averages, `MIN` and `MAX` find the extremes. `SELECT COUNT(*), SUM(kg) FROM harvests` gives one row: 10 harvests, 46 kg.",
       "**GROUP BY** gives one summary per group: `SELECT crop, SUM(kg) FROM harvests GROUP BY crop` totals each crop. It’s the SQL version of a pivot table.",
       "**HAVING** filters the groups: `HAVING SUM(kg) > 10` keeps crops with big totals. WHERE filters single rows before grouping; HAVING filters groups after.",
       "**NULL** means a value is missing. Aggregates skip it, so `COUNT(plot_id)` counts only members who have a plot. Test for it with `IS NULL`, never `= NULL`.",
@@ -862,7 +862,7 @@ ICA.addUnit({
       "**Habits.** Keep a copy of the database file before big changes, keep useful queries in a text file (Execute SQL can save and open .sql files), and write down where imported data came from."
      ],
      pro:[
-      "**SQL injection.** If a program builds SQL by joining strings with user input, crafted input can change the query’s structure. OWASP’s SQL Injection Prevention Cheat Sheet names parameterised queries (prepared statements) as the first primary defence, adds least privilege for the database account, and strongly discourages relying on hand-made escaping. In Python’s sqlite3: `con.execute(\"SELECT id FROM members WHERE name = ?\", (name,))`. Placeholders bind values only; table or column names that vary must come from a fixed list the program controls.",
+      "**SQL injection.** If a program builds SQL by joining strings with user input, crafted input can change the query’s structure. OWASP’s SQL Injection Prevention Cheat Sheet names parameterized queries (prepared statements) as the first primary defense, adds least privilege for the database account, and strongly discourages relying on hand-made escaping. In Python’s sqlite3: `con.execute(\"SELECT id FROM members WHERE name = ?\", (name,))`. Placeholders bind values only; table or column names that vary must come from a fixed list the program controls.",
       "**Foreign keys** are off by default in SQLite itself; in code you run `PRAGMA foreign_keys = ON;` per connection (it has no effect inside an open transaction). DB Browser for SQLite opens databases with foreign keys enabled by default (a Preferences setting), so the same file can refuse a row in DB Browser that another program accepts.",
       "**Double-quoted strings.** Library builds of SQLite (including sql.js) still accept `\"text\"` as a string when no column matches; the sqlite3 CLI has disabled this by default since 3.41.0. Write single quotes so your SQL behaves the same everywhere.",
       "**Files and safety.** An SQLite file is easy to copy, which makes backups simple and leaks easy too: a database of members’ details is personal data, so store and share it accordingly.",
@@ -871,10 +871,10 @@ ICA.addUnit({
     related:["relational-databases","database-design","csv-files"], read:[{book:"dcss", where:"Data Management with SQL for Social Scientists → “Using DB Browser for SQLite” and “Creating tables and views”"}],
     sources:[{t:"DB Browser for SQLite (project source and install notes on GitHub)", url:"https://github.com/sqlitebrowser/sqlitebrowser"},{t:"OWASP Cheat Sheet Series: SQL Injection Prevention Cheat Sheet", url:"https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html"},{t:"SQLite: Foreign Key Support", url:"https://www.sqlite.org/foreignkeys.html"}], checked:"2026-11"},
 
-   {id:"database-design", title:"Good table design (normalisation)", aka:["normalisation","normalization","normal forms","schema design"], tags:["data","databases","data management"], summary:"Store each fact once, in the table where it belongs: atomic values, a key for every row, no redundant copies, explicit units.",
+   {id:"database-design", title:"Good table design (normalization)", aka:["normalization","normalization","normal forms","schema design"], tags:["data","databases","data management"], summary:"Store each fact once, in the table where it belongs: atomic values, a key for every row, no redundant copies, explicit units.",
     levels:{
      starter:[
-      "Good table design means **each fact is stored once, in the one place it belongs**. This is called normalisation.",
+      "Good table design means **each fact is stored once, in the one place it belongs**. This is called normalization.",
       "A single spreadsheet of harvests that repeats each member’s joining year and bed on every row seems convenient, but a change must be made on every row, and a missed row makes the data contradict itself. Splitting it into members, plots and harvests, linked by IDs, means a correction happens in one place.",
       "Four practical rules from Software Carpentry: keep values **atomic** (one value per cell); give every record a **primary key**; store **no redundant information**; and store **units explicitly** (a column called `kg`, not “2.5 kg” in the cells).",
       "When you need one wide table for a chart, build it with a query instead of storing it twice."
@@ -888,8 +888,8 @@ ICA.addUnit({
       "**A quick test.** For each column, ask “what is this a fact about?”. If the answer isn’t the thing the table’s rows stand for (a member’s joining year in a harvests table), the column belongs in another table. And ask whether any change would have to be made in more than one row; if so, a fact is stored twice."
      ],
      pro:[
-      "**Normalise for storage, reshape for analysis.** Analysis tools often want one wide (or long) table. A `VIEW` stores the joining query, not the data, so it never goes stale. Data Carpentry’s lesson suggests naming views so they’re recognisable (for example a v prefix).",
-      "**When to break the rules.** Data warehouses and published datasets are often deliberately denormalised for speed or convenience; that’s fine when the copy is generated from a normalised source and never edited by hand.",
+      "**Normalise for storage, reshape for analysis.** Analysis tools often want one wide (or long) table. A `VIEW` stores the joining query, not the data, so it never goes stale. Data Carpentry’s lesson suggests naming views so they’re recognizable (for example a v prefix).",
+      "**When to break the rules.** Data warehouses and published datasets are often deliberately denormalized for speed or convenience; that’s fine when the copy is generated from a normalized source and never edited by hand.",
       "**Keys.** Surrogate keys (meaningless integers) survive name changes; natural keys (a national ID, an ISBN) can change, repeat (two copies of one book share an ISBN) or be sensitive personal data. Composite keys suit linking tables.",
       "**Constraints as documentation.** `CHECK (kg > 0)` or `CHECK (bed IN ('North', 'South', 'East'))` both prevents bad rows and tells the next person what the data may contain. Like validation in a spreadsheet, it’s cheapest to add before data arrives.",
       "**History.** If values change over time (a member moves plot), decide whether you need the history. Overwriting loses it; a table of plot assignments with start and end dates keeps it.",
@@ -899,7 +899,7 @@ ICA.addUnit({
     sources:[{t:"Software Carpentry: Databases and SQL, episode “Data Hygiene” (lesson source on GitHub)", url:"https://github.com/swcarpentry/sql-novice-survey"},{t:"Data Carpentry: Data Management with SQL for Social Scientists, episode “Creating tables and views” (lesson source on GitHub)", url:"https://github.com/datacarpentry/sql-socialsci"},{t:"SQLite: STRICT Tables", url:"https://www.sqlite.org/stricttables.html"}], checked:"2026-11"}
   ],
   terms:[
-   {id:"database", term:"Database", def:"An organised collection of data that a program can search, change and combine. In this unit, a set of related tables.", codex:"relational-databases"},
+   {id:"database", term:"Database", def:"An organized collection of data that a program can search, change and combine. In this unit, a set of related tables.", codex:"relational-databases"},
    {id:"table-db", term:"Table (database)", def:"A named set of rows that all have the same columns, holding one kind of thing, such as members or harvests.", codex:"relational-databases"},
    {id:"row-record", term:"Row (record)", def:"One entry in a table, such as one member or one harvest. Also called a record.", codex:"relational-databases"},
    {id:"column-field", term:"Column (field)", def:"One named property in a table, with the same kind of value in every row, such as kg. Also called a field.", codex:"relational-databases"},
@@ -917,7 +917,7 @@ ICA.addUnit({
    {id:"aggregate-function", term:"Aggregate function", def:"A function that turns many rows into one value: COUNT, SUM, AVG, MIN or MAX.", codex:"sql-aggregates"},
    {id:"having-sql", term:"HAVING", def:"An SQL clause that filters groups after GROUP BY, such as HAVING SUM(kg) > 10. WHERE filters single rows before grouping.", codex:"sql-aggregates"},
    {id:"left-join", term:"LEFT JOIN", def:"A join that keeps every row of the first (left) table, filling the other table’s columns with NULL where nothing matches.", codex:"sql-joins"},
-   {id:"normalisation", term:"Normalisation", def:"Designing tables so each fact is stored once, in the table where it belongs, with keys linking the tables. Also spelt normalization.", codex:"database-design"},
+   {id:"normalisation", term:"Normalisation", def:"Designing tables so each fact is stored once, in the table where it belongs, with keys linking the tables. Also spelled normalization.", codex:"database-design"},
    {id:"sql-dialect", term:"SQL dialect", def:"One database system’s version of SQL. The core is shared, but details differ, such as LIMIT in SQLite and TOP in SQL Server.", codex:"sql-filter-sort"},
    {id:"sql-injection", term:"SQL injection", def:"An attack on a program that pastes typed text straight into SQL, where crafted text changes what the query does.", codex:"sqlite-tools"},
    {id:"parameterised-query", term:"Parameterised query", def:"A query written with placeholders (such as ?) whose values are sent separately, so typed text is always treated as data, never as SQL. Also called a prepared statement.", codex:"sqlite-tools"}
@@ -997,7 +997,7 @@ ICA.addUnit({
      {t:"Use == instead of =", why:"SQLite accepts == as well, but the missing quotes are the problem."},
      {t:"Write BEANS in capitals", why:"Unquoted, it’s still read as a column name, and the stored value is lower case."}]},
    {id:"t3u9-q15", lesson:"t3u9-l2", level:3, q:"Mei copies a query from a word-processor document and gets “no such column: ‘kale’”. The query looks right. What’s the most likely cause?", options:[
-     {t:"The quotes are curly, which SQL doesn’t accept", ok:true, why:"Retype the curly ‘ ’ as straight ' quotes. Word processors and some keyboards convert quotes. SQL only recognises the straight apostrophe."},
+     {t:"The quotes are curly, which SQL doesn’t accept", ok:true, why:"Retype the curly ‘ ’ as straight ' quotes. Word processors and some keyboards convert quotes. SQL only recognizes the straight apostrophe."},
      {t:"There is no kale in the table", why:"Then the query would run and return no rows, not report a missing column."},
      {t:"kale must be in capitals", why:"Case would change which rows match, not cause a column error."},
      {t:"The query needs a semicolon at the start as well as the end", why:"Semicolons end statements; they don’t cause this error."}]},
@@ -1086,7 +1086,7 @@ ICA.addUnit({
      {t:"Use LEFT JOIN instead", why:"The join type doesn’t change which id you mean."},
      {t:"Remove the ON condition", why:"Then every row would pair with every row."}]},
    {id:"t3u9-q32", lesson:"t3u9-l4", level:3, q:"Priya joins orders (one row per order, with a delivery fee) to order_items (one row per item) and sums the delivery fees. The total is far higher than the fees really charged. Why?", options:[
-     {t:"Each order’s fee is repeated once per item", ok:true, why:"So it’s added several times: fan-out. Sum fees from the orders table on its own, or summarise items first and join afterwards."},
+     {t:"Each order’s fee is repeated once per item", ok:true, why:"So it’s added several times: fan-out. Sum fees from the orders table on its own, or summarize items first and join afterwards."},
      {t:"SUM doesn’t work after a join", why:"SUM works; it adds the repeated rows the join produced."},
      {t:"The join dropped some orders that had no items", why:"Dropping rows would make the total smaller, not larger."},
      {t:"Fees must be stored as text", why:"Text would make sums wrong in other ways; numbers are right. The repetition is the problem."}]},
@@ -1122,8 +1122,8 @@ ICA.addUnit({
      {t:"DESC sorts smallest first", why:"DESC sorts largest first; the problem is the type."},
      {t:"The CSV had a header row", why:"A header row would appear as data if the box were unticked, but it wouldn’t cause this order."},
      {t:"SQLite can’t sort numbers bigger than 9 correctly", why:"It sorts numbers correctly when they’re stored as numbers."}]},
-   {id:"t3u9-q39", lesson:"t3u9-l5", level:3, q:"Priya’s community-centre booking app builds its query by gluing the typed name into the SQL text. Names with apostrophes break it. What’s the right fix?", options:[
-     {t:"Use a parameterised query with a placeholder", ok:true, why:"The name is sent separately as data. It fixes the apostrophe bug and closes the SQL injection hole at the same time."},
+   {id:"t3u9-q39", lesson:"t3u9-l5", level:3, q:"Priya’s community-center booking app builds its query by gluing the typed name into the SQL text. Names with apostrophes break it. What’s the right fix?", options:[
+     {t:"Use a parameterized query with a placeholder", ok:true, why:"The name is sent separately as data. It fixes the apostrophe bug and closes the SQL injection hole at the same time."},
      {t:"Ask users not to type apostrophes", why:"Real names contain apostrophes, and attackers won’t follow instructions."},
      {t:"Delete apostrophes from names before searching", why:"That corrupts real names and doesn’t stop other crafted input."},
      {t:"Switch to double quotes in the SQL", why:"Then names with double quotes would break it instead, and the injection hole remains."}]},
@@ -1132,8 +1132,8 @@ ICA.addUnit({
      {t:"joined, holding 2021", why:"One value in one cell."},
      {t:"kg, holding 2.5", why:"One number, with the unit in the column name: good design."},
      {t:"member_id, holding 3", why:"A single foreign-key value."}]},
-   {id:"t3u9-q41", lesson:"t3u9-l5", level:2, q:"A school database has students and courses. Each student takes many courses and each course has many students. How should enrolment be stored?", options:[
-     {t:"A linking table of student_id and course_id pairs", ok:true, why:"For example enrolments(student_id, course_id), with both columns as its primary key. Many-to-many links need their own table; the two-part key prevents duplicate enrolments."},
+   {id:"t3u9-q41", lesson:"t3u9-l5", level:2, q:"A school database has students and courses. Each student takes many courses and each course has many students. How should enrollment be stored?", options:[
+     {t:"A linking table of student_id and course_id pairs", ok:true, why:"For example enrollments(student_id, course_id), with both columns as its primary key. Many-to-many links need their own table; the two-part key prevents duplicate enrollments."},
      {t:"A course_id column in students", why:"One column can hold only one course per student."},
      {t:"A list of student names in one cell of the courses table", why:"Not atomic, and names repeat across tables."},
      {t:"A separate table for each course", why:"Tables per course multiply with every new course, and every query has to change."}]},
@@ -1154,7 +1154,7 @@ ICA.addUnit({
      {t:"A phone app for browsing and editing databases on the go", why:"It’s a desktop program; on a phone, use the Data Lab."}]},
    {id:"t3u9-q45", lesson:"t3u9-l5", level:3, q:"Ana’s teammate wants one wide table (member, bed, crop, kg) for a chart, and suggests storing it instead of the three tables. What’s the better approach?", options:[
      {t:"Keep the three tables and make the wide one with a query or VIEW", ok:true, why:"A view always reflects the current data; a stored copy goes stale and invites contradictions."},
-     {t:"Replace the three tables with the single wide one for simplicity", why:"That brings back the repetition and update problems normalisation solved."},
+     {t:"Replace the three tables with the single wide one for simplicity", why:"That brings back the repetition and update problems normalization solved."},
      {t:"Keep both and edit them separately", why:"Two editable copies will eventually disagree."},
      {t:"Charts can’t use SQL results", why:"Query results export to CSV or feed charts directly."}]}
   ]

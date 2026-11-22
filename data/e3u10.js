@@ -148,7 +148,7 @@ ICA.addUnit({
         [
          "いくら～ても",
          "however much",
-         "いくら[練習]{れんしゅう}しても、[上手]{じょうず}になりません。\nHowever much I practise, I don’t get any better."
+         "いくら[練習]{れんしゅう}しても、[上手]{じょうず}になりません。\nHowever much I practice, I don’t get any better."
         ],
         [
          "どんなに～ても",
@@ -314,7 +314,7 @@ ICA.addUnit({
         [
          "する-noun",
          "N さえ すれば",
-         "[練習]{れんしゅう}さえすれば、[上手]{じょうず}になります。\nAs long as you practise, you’ll improve."
+         "[練習]{れんしゅう}さえすれば、[上手]{じょうず}になります。\nAs long as you practice, you’ll improve."
         ]
        ]
       },
@@ -783,10 +783,10 @@ ICA.addUnit({
       },
       {
        fig: "<svg viewBox=\"0 0 340 352\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">Where the event sits in time</text><text x=\"12\" y=\"48\">～あいだ: all through</text><rect class=\"d-soft\" x=\"40\" y=\"58\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"40\" y=\"78\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"170\" y=\"108\" text-anchor=\"middle\">the main action fills the period</text><text x=\"12\" y=\"136\">～あいだに: at one point inside</text><rect class=\"d-soft\" x=\"40\" y=\"146\" width=\"260\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><circle class=\"d-rose\" cx=\"150\" cy=\"174\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"198\" text-anchor=\"middle\">one event, somewhere in the period</text><text x=\"12\" y=\"226\">～うちに: before it changes</text><rect class=\"d-sage\" x=\"40\" y=\"236\" width=\"170\" height=\"14\" rx=\"4\" stroke-width=\"1.5\"/><path class=\"d-ink\" d=\"M218 236V252\" stroke-width=\"2.5\"/><text class=\"s\" x=\"258\" y=\"248\" text-anchor=\"middle\">change</text><circle class=\"d-rose\" cx=\"130\" cy=\"264\" r=\"8\" stroke-width=\"2\"/><text x=\"12\" y=\"296\">～たびに: every time</text><circle class=\"d-rose\" cx=\"70\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"140\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"210\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"280\" cy=\"312\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"340\" text-anchor=\"middle\">the same result each time it happens</text></svg>",
-       alt: "Four timelines. あいだ: a background bar with a second bar of the same length beneath it; the main action fills the period. あいだに: a background bar with one dot under it; one event somewhere in the period. うちに: a shorter bar that ends at a vertical line labelled change, with a dot before the line. たびに: four dots in a row; the same result each time it happens.",
+       alt: "Four timelines. あいだ: a background bar with a second bar of the same length beneath it; the main action fills the period. あいだに: a background bar with one dot under it; one event somewhere in the period. うちに: a shorter bar that ends at a vertical line labeled change, with a dot before the line. たびに: four dots in a row; the same result each time it happens.",
        cap: "Ask: does the main action fill the period, happen once inside it, beat a change, or repeat?"
       },
-      "Each section below takes one pattern. The last section puts them side by side with their nearest neighbours."
+      "Each section below takes one pattern. The last section puts them side by side with their nearest neighbors."
      ]
     },
     {
@@ -877,7 +877,7 @@ ICA.addUnit({
        label: "～あいだ: all through the period"
       },
       {
-       ex: "夏休みの[間]{あいだ}に、[運転免許]{うんてんめんきょ}を[取]{と}りました。\nI got my driving licence during the summer holiday.\n\n母が[寝]{ね}ている[間]{あいだ}に、[部屋]{へや}を[掃除]{そうじ}しました。\nI cleaned the room while my mother was asleep.",
+       ex: "夏休みの[間]{あいだ}に、[運転免許]{うんてんめんきょ}を[取]{と}りました。\nI got my driving license during the summer holiday.\n\n母が[寝]{ね}ている[間]{あいだ}に、[部屋]{へや}を[掃除]{そうじ}しました。\nI cleaned the room while my mother was asleep.",
        label: "～あいだに: once, inside the period"
       },
       {
@@ -918,7 +918,7 @@ ICA.addUnit({
       "At the end of a sentence, ～[最中]{さいちゅう}だ (～[最中]{さいちゅう}です) says that you are in the thick of something right now, as in the last example.",
       "[最中]{さいちゅう} is for an **activity** with a busy peak: a meeting, a meal, a shower, a game. It doesn’t suit long states: for “while I was living in Tokyo”, say 東京に住んでいた[間]{あいだ}に or 住んでいたとき, not ✗ 住んでいる[最中]{さいちゅう}に.",
       {
-       h: "Near neighbours"
+       h: "Near neighbors"
       },
       {
        list: [
@@ -2046,7 +2046,7 @@ ICA.addUnit({
       {
        h: "Other わけ patterns"
       },
-      "Unit 9 taught ～わけだ, “so that’s why” ([[wake]], {{hazu-wake-beki}}). Two more look similar but mean something quite different, so learn to recognise them:",
+      "Unit 9 taught ～わけだ, “so that’s why” ([[wake]], {{hazu-wake-beki}}). Two more look similar but mean something quite different, so learn to recognize them:",
       {
        table: [
         [
@@ -2080,7 +2080,7 @@ ICA.addUnit({
        lead: "Dictionary form + [[koto-wa-nai|ことはない]] means “there’s no need to”. It reassures or advises: don’t bother, don’t worry. Politely: ことはありません."
       },
       {
-       ex: "[心配]{しんぱい}することはありませんよ。\nThere’s no need to worry.\n\nわざわざ[来]{く}ることはないよ。電話で[十分]{じゅうぶん}だから。\nYou don’t need to come all this way. A phone call is enough.\n\n[謝]{あやま}ることはないよ。あなたのせいじゃないんだから。\nThere’s no need to apologise. It isn’t your fault.",
+       ex: "[心配]{しんぱい}することはありませんよ。\nThere’s no need to worry.\n\nわざわざ[来]{く}ることはないよ。電話で[十分]{じゅうぶん}だから。\nYou don’t need to come all this way. A phone call is enough.\n\n[謝]{あやま}ることはないよ。あなたのせいじゃないんだから。\nThere’s no need to apologize. It isn’t your fault.",
        label: "～ことはない"
       },
       "It is close to ～なくてもいい ([[nakute-mo-ii]], Unit 6), but more emphatic: ～なくてもいい simply gives permission not to do something; ～ことはない says firmly that it isn’t necessary, usually to reassure or encourage the listener. わざわざ (go to the trouble of) and そんなに (that much) often come with it.",
@@ -2137,7 +2137,7 @@ ICA.addUnit({
        label: "～ものだ: advice"
       },
       "This ものだ appeals to **common sense**: everyone knows that’s how you behave. It is what parents, teachers and older colleagues say, and it can sound preachy between equals.",
-      "Compare ～べきだ ([[beki]], Unit 9). べき gives **your own** judgment of what is right: もっと勉強するべきだ (you ought to study more). ものだ presents the advice as a general rule of good behaviour."
+      "Compare ～べきだ ([[beki]], Unit 9). べき gives **your own** judgment of what is right: もっと勉強するべきだ (you ought to study more). ものだ presents the advice as a general rule of good behavior."
      ]
     },
     {
@@ -2247,7 +2247,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "The full reference is in {{partial-negation}}, and ～ものだ and ～っけ are summarised in {{n3-grammar-patterns-2}}.",
+      "The full reference is in {{partial-negation}}, and ～ものだ and ～っけ are summarized in {{n3-grammar-patterns-2}}.",
       {
        terms: [
         "wake-de-wa-nai",
@@ -2287,20 +2287,20 @@ ICA.addUnit({
     {
      id: "e3u10-l4-x2",
      type: "mcq",
-     q: "A friend keeps apologising for being five minutes late. You want to reassure her. Complete: 「[謝]{あやま}る（　）よ。」",
+     q: "A friend keeps apologizing for being five minutes late. You want to reassure her. Complete: 「[謝]{あやま}る（　）よ。」",
      options: [
       {
        t: "ことはない",
        ok: true,
-       why: "Right. ～ことはない: “there’s no need to apologise.”"
+       why: "Right. ～ことはない: “there’s no need to apologize.”"
       },
       {
        t: "ものだ",
-       why: "～ものだ would mean “you should apologise”, the opposite of reassuring her."
+       why: "～ものだ would mean “you should apologize”, the opposite of reassuring her."
       },
       {
        t: "わけではない",
-       why: "“It’s not that you apologise” makes no sense as reassurance."
+       why: "“It’s not that you apologize” makes no sense as reassurance."
       },
       {
        t: "っけ",
@@ -2646,7 +2646,7 @@ ICA.addUnit({
          "Examples"
         ],
         [
-         "colour or substance noun",
+         "color or substance noun",
          "-ish, has a touch of",
          "白っぽい (whitish), 水っぽい (watery)"
         ],
@@ -2674,7 +2674,7 @@ ICA.addUnit({
       "Note the reading [怒]{おこ}りっぽい, from [怒]{おこ}る (get angry).",
       "**～っぽい is mostly casual.** It belongs to everyday speech. A few っぽい words are ordinary vocabulary in any style (白っぽい服, “whitish clothes”, even appears in news reports), but in formal speech and writing choose another word for most of them: [風邪]{かぜ}[気味]{ぎみ} rather than [風邪]{かぜ}っぽい. In very casual speech, especially among younger speakers, it can even follow a whole sentence: [彼]{かれ}、[来]{こ}ないっぽい (looks like he isn’t coming). Recognise this, but don’t use it in polite speech.",
       {
-       tip: "子どもっぽい (childish) criticises an adult; 子どもらしい (just as a child should be) praises a child. That らしい is the “typical of” use from Unit 7 ([[rashii]])."
+       tip: "子どもっぽい (childish) criticizes an adult; 子どもらしい (just as a child should be) praises a child. That らしい is the “typical of” use from Unit 7 ([[rashii]])."
       }
      ]
     },
@@ -2811,7 +2811,7 @@ ICA.addUnit({
       "Respectful **お～です** describes the other person’s state: [部長]{ぶちょう}がお待ちです (the manager is waiting for you), お急ぎですか (are you in a hurry?), ポイントカードはお持ちですか (do you have a points card?). Like お～になる, it is a regular pattern: お + ます stem + です.",
       "お見えになる stacks two forms (お～になる on 見える, which already means “come” respectfully), but it is accepted by custom. The Academic Japanese track explains the five kinds of keigo and these fine points in {{keigo-system}} and {{keigo-mistakes}}.",
       {
-       tip: "You don’t need to produce every form. Start by **recognising** them, and use a few set phrases well. Respect shows more in a careful です・ます than in a shaky special verb."
+       tip: "You don’t need to produce every form. Start by **recognizing** them, and use a few set phrases well. Respect shows more in a careful です・ます than in a shaky special verb."
       }
      ]
     },
@@ -2831,7 +2831,7 @@ ICA.addUnit({
         "**でございます**: the very polite です ([[teineigo|[丁寧語]{ていねいご}]])."
        ]
       },
-      "You will also hear shop phrases such as 「こちら、カレーになります」 for 「カレーでございます」 and 「千円からお[預]{あず}かりします」 for 「千円お[預]{あず}かりします」. They are very common, but many people and guides criticise them as “part-time-job keigo” (バイト[敬語]{けいご}). You don’t need to copy them: ～でございます and 千円お[預]{あず}かりします are always safe."
+      "You will also hear shop phrases such as 「こちら、カレーになります」 for 「カレーでございます」 and 「千円からお[預]{あず}かりします」 for 「千円お[預]{あず}かりします」. They are very common, but many people and guides criticize them as “part-time-job keigo” (バイト[敬語]{けいご}). You don’t need to copy them: ～でございます and 千円お[預]{あず}かりします are always safe."
      ]
     },
     {
@@ -2874,7 +2874,7 @@ ICA.addUnit({
        alt: "A staircase of five steps, rising to the right. From the bottom: まって (friends), まってください (polite), まっていただけますか (softer), おまちいただけますか, おまちいただけないでしょうか. An arrow up the side reads more respect, more distance.",
        cap: "Each step up adds respect, and distance. Choose the step that fits the person and the request."
       },
-      "～ていただけますか is the humble potential of いただく: “could I receive the favour of…?”. A negative question (～ていただけませんか) or でしょうか softens it further. Add a cushion phrase ([[kushion-kotoba]]) for a bigger request: [恐]{おそ}れ入りますが、こちらにお名前をご[記入]{きにゅう}いただけますか (Excuse me, could you write your name here?).",
+      "～ていただけますか is the humble potential of いただく: “could I receive the favor of…?”. A negative question (～ていただけませんか) or でしょうか softens it further. Add a cushion phrase ([[kushion-kotoba]]) for a bigger request: [恐]{おそ}れ入りますが、こちらにお名前をご[記入]{きにゅう}いただけますか (Excuse me, could you write your name here?).",
       "The levels are a guide, not a rule: tone, the size of the request and your relationship matter too. With friends, the top steps sound cold or even sarcastic."
      ]
     },
@@ -2915,7 +2915,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "Keigo takes years for everyone, including Japanese speakers starting their first job. People forgive small slips when your respect is clear, so keep practising the set phrases until they come out on their own.",
+      "Keigo takes years for everyone, including Japanese speakers starting their first job. People forgive small slips when your respect is clear, so keep practicing the set phrases until they come out on their own.",
       "Lessons 6 and 7 finish the N3 grammar of this track with fifteen more patterns that you will meet in almost every N3 text, from ～まま and ～しかない to ～とたん and ～わりに.",
       "The keigo in this lesson is collected in {{keigo-in-practice}}, the suffixes in {{feelings-and-tendencies}}, and all the patterns of the unit in {{n3-grammar-patterns-2}}.",
       {
@@ -2971,7 +2971,7 @@ ICA.addUnit({
       [
        "白っぽい",
        "whitish",
-       "Colour + っぽい: close to white."
+       "Color + っぽい: close to white."
       ],
       [
        "[曇]{くも}りがち",
@@ -3075,7 +3075,7 @@ ICA.addUnit({
       },
       {
        t: "[申]{もう}し[訳]{わけ}ございません。[松本]{まつもと}はただいま[席]{せき}を外しております。",
-       why: "She apologises and explains that her colleague is away, without さん."
+       why: "She apologizes and explains that her colleague is away, without さん."
       },
       {
        t: "[念]{ねん}のため、お[電話番号]{でんわばんごう}を[伺]{うかが}ってもよろしいでしょうか。",
@@ -3172,7 +3172,7 @@ ICA.addUnit({
       },
       {
        t: "すみません、写真を[撮]{と}っていただけますか。",
-       why: "This is polite: “could I receive the favour of…?”."
+       why: "This is polite: “could I receive the favor of…?”."
       },
       {
        t: "すみません、写真を[撮]{と}ってくださいませんか。",
@@ -3233,7 +3233,7 @@ ICA.addUnit({
     }
    ],
    apply: {
-    intro: "Practise the suffixes on yourself, and rehearse keigo for situations you will really meet. Keep the notes for yourself.",
+    intro: "Practice the suffixes on yourself, and rehearse keigo for situations you will really meet. Keep the notes for yourself.",
     tasks: [
      {
       t: "Describe yourself and your week",
@@ -3410,7 +3410,7 @@ ICA.addUnit({
       "The second use is “all the time, without a break”. 立ちっぱなし is “standing the whole time”, and [負]{ま}けっぱなし is “losing again and again”: 工場の仕事は、[一日中]{いちにちじゅう}立ちっぱなしです (At the plant, I’m on my feet all day).",
       {
        fig: "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">A state that carries on</text><rect class=\"d-sage\" x=\"6\" y=\"32\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">～たまま: the state lasts</text><rect class=\"d-panel\" x=\"190\" y=\"62\" width=\"64\" height=\"24\" rx=\"6\" stroke-width=\"1.5\"/><text x=\"222\" y=\"79\" text-anchor=\"middle\">ねた</text><path class=\"d-ink\" d=\"M222 86V96\" stroke-width=\"2\"/><circle class=\"d-rose\" cx=\"34\" cy=\"102\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"80\" text-anchor=\"middle\">つけた</text><rect class=\"d-gold\" x=\"44\" y=\"96\" width=\"280\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"184\" y=\"126\" text-anchor=\"middle\">でんきが ついている (still on)</text><text class=\"s\" x=\"170\" y=\"144\" text-anchor=\"middle\">B happens while A’s result is still there</text><rect class=\"d-rose\" x=\"6\" y=\"166\" width=\"328\" height=\"122\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"188\">～っぱなし: left that way</text><circle class=\"d-rose\" cx=\"34\" cy=\"226\" r=\"7\" stroke-width=\"2\"/><text class=\"s\" x=\"34\" y=\"208\" text-anchor=\"middle\">あけた</text><rect class=\"d-soft\" x=\"44\" y=\"220\" width=\"250\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"312\" y=\"232\" text-anchor=\"middle\">!</text><text class=\"s\" x=\"170\" y=\"256\" text-anchor=\"middle\">done, then nobody changed it back</text><text class=\"s\" x=\"170\" y=\"276\" text-anchor=\"middle\">(and it shouldn’t have been left)</text></svg>",
-       alt: "Two panels. ～たまま, the state lasts: a dot labelled つけた starts a long bar labelled でんきが ついている (still on), and a box labelled ねた sits above the middle of the bar; B happens while A’s result is still there. ～っぱなし, left that way: a dot labelled あけた starts a bar that runs on to an exclamation mark; done, then nobody changed it back (and it shouldn’t have been left).",
+       alt: "Two panels. ～たまま, the state lasts: a dot labeled つけた starts a long bar labeled でんきが ついている (still on), and a box labeled ねた sits above the middle of the bar; B happens while A’s result is still there. ～っぱなし, left that way: a dot labeled あけた starts a bar that runs on to an exclamation mark; done, then nobody changed it back (and it shouldn’t have been left).",
        cap: "まま: a state carries on while something else happens. っぱなし: something was left that way, and someone should have dealt with it."
       },
       {
@@ -3538,7 +3538,7 @@ ICA.addUnit({
       },
       "とおり is often written 通り, the same word as 通り (street). Straight after a noun, without の, it becomes **どおり**: [予定]{よてい}どおり (as planned), 時間どおり (on time).",
       "に is often left out, especially in 思ったとおり and after どおり. At the end of a sentence it becomes とおりだ: そのとおりです (That’s exactly right).",
-      "A near neighbour is ～ように: 前にも言ったように (as I said before) also means “as”. ように points back to something; とおり matches it exactly, step by step. For “so that” ([[you-ni]], Unit 9), only ように works."
+      "A near neighbor is ～ように: 前にも言ったように (as I said before) also means “as”. ように points back to something; とおり matches it exactly, step by step. For “so that” ([[you-ni]], Unit 9), only ように works."
      ]
     },
     {
@@ -3636,7 +3636,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex: "[部屋]{へや}の電気がついている。トビーさんは、まだ起きているに[違]{ちが}いない。\nThe light is on in his room. Toby must still be awake.\n\nあの店は、いつも[行列]{ぎょうれつ}ができている。おいしいに[違]{ちが}いない。\nThere’s always a queue at that shop. It must be good.\n\n一万円でブランドのバッグ？にせものに[決]{き}まってるよ。\nA designer bag for ten thousand yen? It’s obviously a fake.\n\n毎日[練習]{れんしゅう}しているんだから、[上手]{じょうず}になるに[決]{き}まっています。\nYou practise every day, so of course you’ll get better.",
+       ex: "[部屋]{へや}の電気がついている。トビーさんは、まだ起きているに[違]{ちが}いない。\nThe light is on in his room. Toby must still be awake.\n\nあの店は、いつも[行列]{ぎょうれつ}ができている。おいしいに[違]{ちが}いない。\nThere’s always a queue at that shop. It must be good.\n\n一万円でブランドのバッグ？にせものに[決]{き}まってるよ。\nA designer bag for ten thousand yen? It’s obviously a fake.\n\n毎日[練習]{れんしゅう}しているんだから、[上手]{じょうず}になるに[決]{き}まっています。\nYou practice every day, so of course you’ll get better.",
        label: "Being sure"
       },
       "Polite forms: ～に[違]{ちが}いありません, ～に[決]{き}まっています. ～に[違]{ちが}いない sounds a little written; in conversation people often say きっと～と思う, or ～に[決]{き}まってる.",
@@ -3815,7 +3815,7 @@ ICA.addUnit({
       },
       {
        t: "Someone has just turned the kitchen tap on for her.",
-       why: "っぱなし is about something left that way, usually carelessly, not a favour."
+       why: "っぱなし is about something left that way, usually carelessly, not a favor."
       },
       {
        t: "The water in the kitchen has stopped coming out.",
@@ -4086,7 +4086,7 @@ ICA.addUnit({
       },
       {
        fig: "<svg viewBox=\"0 0 340 392\"><text x=\"170\" y=\"20\" text-anchor=\"middle\">Four ways to place an event</text><text x=\"12\" y=\"48\">～たとたん: the instant after</text><path class=\"d-ink\" d=\"M20 74H320\" stroke-width=\"1.5\"/><circle class=\"d-sage\" cx=\"110\" cy=\"74\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"110\" y=\"98\" text-anchor=\"middle\">A</text><circle class=\"d-rose\" cx=\"134\" cy=\"74\" r=\"8\" stroke-width=\"2\"/><text class=\"s\" x=\"140\" y=\"98\" text-anchor=\"middle\">B!</text><text class=\"s\" x=\"170\" y=\"118\" text-anchor=\"middle\">B comes at once, often as a surprise</text><text x=\"12\" y=\"146\">～ついでに: on the same trip</text><path class=\"d-ink\" d=\"M20 178H140V158H200V178H320\" stroke-width=\"2\" fill=\"none\"/><rect class=\"d-gold\" x=\"148\" y=\"150\" width=\"44\" height=\"18\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"170\" y=\"164\" text-anchor=\"middle\">B</text><text class=\"s\" x=\"60\" y=\"196\" text-anchor=\"middle\">A (main)</text><text class=\"s\" x=\"280\" y=\"196\" text-anchor=\"middle\">A (main)</text><text class=\"s\" x=\"170\" y=\"214\" text-anchor=\"middle\">a small extra (B) on the way</text><text x=\"12\" y=\"242\">～ていらい: ever since</text><circle class=\"d-rose\" cx=\"40\" cy=\"268\" r=\"8\" stroke-width=\"2\"/><rect class=\"d-sage\" x=\"50\" y=\"262\" width=\"240\" height=\"12\" rx=\"4\" stroke-width=\"1.5\"/><text class=\"s\" x=\"308\" y=\"272\" text-anchor=\"middle\">now</text><text class=\"s\" x=\"170\" y=\"294\" text-anchor=\"middle\">from a turning point up to now</text><text x=\"12\" y=\"322\">から～にかけて: spread over</text><rect class=\"d-soft\" x=\"40\" y=\"334\" width=\"260\" height=\"20\" rx=\"8\" stroke-width=\"1.5\" stroke-dasharray=\"5 4\"/><circle class=\"d-inkf\" cx=\"80\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"130\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"150\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"215\" cy=\"344\" r=\"3\"/><circle class=\"d-inkf\" cx=\"262\" cy=\"344\" r=\"3\"/><text class=\"s\" x=\"170\" y=\"378\" text-anchor=\"middle\">somewhere over the span, roughly</text></svg>",
-       alt: "Four timelines. ～たとたん, the instant after: dot A, and right beside it dot B with an exclamation mark; B comes at once, often as a surprise. ～ついでに, on the same trip: a line labelled A (main) with a small step up to a box B in the middle; a small extra on the way. ～ていらい, ever since: a dot followed by a long bar to now; from a turning point up to now. から～にかけて, spread over: a dashed box with dots scattered inside; somewhere over the span, roughly.",
+       alt: "Four timelines. ～たとたん, the instant after: dot A, and right beside it dot B with an exclamation mark; B comes at once, often as a surprise. ～ついでに, on the same trip: a line labeled A (main) with a small step up to a box B in the middle; a small extra on the way. ～ていらい, ever since: a dot followed by a long bar to now; from a turning point up to now. から～にかけて, spread over: a dashed box with dots scattered inside; somewhere over the span, roughly.",
        cap: "とたん: at once. ついでに: on the same trip. 以来: ever since. にかけて: spread over a span."
       },
       "Each section below takes one pattern. Then come three patterns for focus and topic, and three for contrast."
@@ -4105,7 +4105,7 @@ ICA.addUnit({
       "The verb before とたん is always in the **た-form**: A has just happened. ✗ 開けるとたん is wrong.",
       "B is something that **happens**, not something you decide to do. So you can’t use とたん for your own planned action, or for a request: ✗ 家に帰ったとたん、シャワーを[浴]{あ}びた sounds wrong, because showering is your choice. Say 家に帰って、すぐシャワーを[浴]{あ}びた. For a request, use ～たら、すぐ: 着いたら、すぐ電話してください.",
       {
-       h: "Near neighbours"
+       h: "Near neighbors"
       },
       {
        list: [
@@ -4170,17 +4170,17 @@ ICA.addUnit({
        ex: "今夜から[明日]{あした}の朝にかけて、強い雨が[降]{ふ}るでしょう。\nHeavy rain is expected from tonight into tomorrow morning.\n\n三月の終わりから四月にかけて、[桜]{さくら}が[咲]{さ}きます。\nThe cherry trees blossom from late March into April.\n\n[関東]{かんとう}から東北にかけて、[雪]{ゆき}が[降]{ふ}っています。\nIt is snowing over a wide area, from Kantō to Tōhoku.",
        label: "から～にかけて"
       },
-      "Compare から～まで ([[particle-kara-made]], Unit 2), which gives an exact start and end: 九時から五時まで[働]{はたら}く (I work from nine to five). A timetable needs まで; a weather forecast, with rain at times over a period, uses にかけて. にかけて can also stand alone: [年末]{ねんまつ}にかけて (towards the end of the year)."
+      "Compare から～まで ([[particle-kara-made]], Unit 2), which gives an exact start and end: 九時から五時まで[働]{はたら}く (I work from nine to five). A timetable needs まで; a weather forecast, with rain at times over a period, uses にかけて. にかけて can also stand alone: [年末]{ねんまつ}にかけて (toward the end of the year)."
      ]
     },
     {
-     h: "～を中心に: centred on",
+     h: "～を中心に: centered on",
      body: [
       {
-       lead: "Noun + [[o-chuushin-ni|を中心に(して)]] means “centred on”, “mainly”: the noun is the main part of a wider set. Before another noun, use を中心とした."
+       lead: "Noun + [[o-chuushin-ni|を中心に(して)]] means “centered on”, “mainly”: the noun is the main part of a wider set. Before another noun, use を中心とした."
       },
       {
-       ex: "この町は、[港]{みなと}を中心に[発展]{はってん}してきた。\nThis town grew up around its harbour.\n\nこのアプリは、[若]{わか}い人を中心に人気がある。\nThis app is popular, mainly among young people.\n\n[今日]{きょう}の[授業]{じゅぎょう}では、N3の[文法]{ぶんぽう}を中心に[復習]{ふくしゅう}します。\nIn today’s class, we’ll review, focusing mainly on N3 grammar.",
+       ex: "この町は、[港]{みなと}を中心に[発展]{はってん}してきた。\nThis town grew up around its harbor.\n\nこのアプリは、[若]{わか}い人を中心に人気がある。\nThis app is popular, mainly among young people.\n\n[今日]{きょう}の[授業]{じゅぎょう}では、N3の[文法]{ぶんぽう}を中心に[復習]{ふくしゅう}します。\nIn today’s class, we’ll review, focusing mainly on N3 grammar.",
        label: "～を中心に"
       },
       "Other things are included too: older people may use the app, and the class may review some kanji. を中心に just tells you where the weight is. You will also see N を中心とした N: 駅を中心とした[地域]{ちいき} (the area around the station).",
@@ -4301,7 +4301,7 @@ ICA.addUnit({
        lead: "Noun or plain form + [[bakari-ka|ばかりか]] means “not only A, but even B”. B goes further than you would expect, so it often has も, まで or さえ."
       },
       {
-       ex: "大雨で、電車ばかりか、バスまで止まった。\nThe heavy rain stopped not only the trains but even the buses.\n\n[彼]{かれ}は[約束]{やくそく}の時間に[遅]{おく}れたばかりか、[謝]{あやま}りもしなかった。\nNot only was he late, he didn’t even apologise.\n\nこの本は、子どもばかりか[大人]{おとな}にも人気がある。\nThis book is popular not only with children but with adults too.",
+       ex: "大雨で、電車ばかりか、バスまで止まった。\nThe heavy rain stopped not only the trains but even the buses.\n\n[彼]{かれ}は[約束]{やくそく}の時間に[遅]{おく}れたばかりか、[謝]{あやま}りもしなかった。\nNot only was he late, he didn’t even apologize.\n\nこの本は、子どもばかりか[大人]{おとな}にも人気がある。\nThis book is popular not only with children but with adults too.",
        label: "～ばかりか"
       },
       "な-adjectives take な: [静]{しず}かなばかりか. Compare ～だけでなく (Lesson 1, [[dake-de-naku]]): ばかりか is stronger and more written, and the second part is the surprising one. It can’t end in a request, an order or your own plan: ✗ [野菜]{やさい}ばかりか[果物]{くだもの}も食べてください is wrong; say [野菜]{やさい}だけでなく[果物]{くだもの}も食べてください. Don’t confuse it with ～ばかり (“nothing but”, [[bakari]], Unit 9). Some lists put ～ばかりか at N2.",
@@ -4350,11 +4350,11 @@ ICA.addUnit({
       "That completes the N3 grammar in this track. Unit 11 turns to the N3 kanji, which you have been reading with furigana in this unit. Short daily review pays off, and forgetting and relearning is a normal part of it.",
       {
        lab: "kl-n3",
-       t: "Practise: the N3 kanji, many of which appear in this unit’s examples"
+       t: "Practice: the N3 kanji, many of which appear in this unit’s examples"
       },
       {
        lab: "kl-n3-vocab",
-       t: "Practise: N3 vocabulary, including the words in this unit"
+       t: "Practice: N3 vocabulary, including the words in this unit"
       },
       "The patterns of this lesson are collected in {{time-range-focus-contrast}}, and all the patterns of the unit in {{n3-grammar-patterns-2}}.",
       {
@@ -4401,7 +4401,7 @@ ICA.addUnit({
       ],
       [
        "～を中心に",
-       "mainly, centred on",
+       "mainly, centered on",
        "The main part of a wider set."
       ]
      ]
@@ -4796,7 +4796,7 @@ ICA.addUnit({
       {t:"「家で料理するより[比]{くら}べて、外で食べるのはお金がかかります。」", why:"より and に[比]{くら}べて are two ways to compare. Use one of them: 料理するより, or 料理するのに[比]{くら}べて."},
       {t:"「家で料理するのに[比]{くら}べて、外で食べるのはお金がかかります。」", ok:true, why:"Verb + の + に[比]{くら}べて sets up the comparison: “compared with cooking at home”."}]},
     {id:"e3u10-cp07", lesson:"e3u10-l5", level:1, q:"Kaito’s new T-shirt has cartoon bears on it. Toby teases him that it looks like a child’s. Which word fits? 「そのTシャツ、ちょっと＿＿ね。」", options:[
-      {t:"子どもっぽい", ok:true, why:"Noun + っぽい is “seems like (but isn’t)”: 子どもっぽい criticises something of an adult’s for looking childish."},
+      {t:"子どもっぽい", ok:true, why:"Noun + っぽい is “seems like (but isn’t)”: 子どもっぽい criticizes something of an adult’s for looking childish."},
       {t:"子どもらしい", why:"らしい here means “just as a child should be”. It praises a real child, and Kaito is 19."},
       {t:"子どもがち", why:"がち follows a verb stem or a few nouns for unwelcome habits, as in 病気がち. It doesn’t say what something looks like."},
       {t:"子ども気味", why:"気味 is “a touch of” a state you feel now, as in [風邪]{かぜ}気味. It doesn’t describe how something looks."}]},
@@ -4900,7 +4900,7 @@ ICA.addUnit({
      "**Concessive question words.** いくら, どんなに, 何, だれ, どこ, いつ with ～ても are common in speech and writing. In formal writing you will also meet ～ようとも and ～にしても (usually taught after N3), which you can read as relatives of ～としても.",
      "**としても and として.** A bare noun + としても is として (“as”, Unit 9) + も: 親としても[心配]{しんぱい}だ (as a parent too, I’m worried). The concessive needs だ: 親だとしても. Look for だ, た or a dictionary form before と.",
      "**さえ and すら.** Written Japanese also uses ～すら and ～ですら, an older equivalent of さえ. ～さえ also has a less common “on top of that” use in narrative: 雨が[降]{ふ}り出し、風さえ[吹]{ふ}いてきた (it began to rain, and the wind even started to blow). Learners mostly need “even” and “as long as”.",
-     "**さえ～ば and ～ば～ほど.** Both use ば, but they say different things: [練習]{れんしゅう}さえすれば[上手]{じょうず}になる (practice is all it takes) against [練習]{れんしゅう}すればするほど[上手]{じょうず}になる (the more you practise, the better you get; see [[ba-hodo]]).",
+     "**さえ～ば and ～ば～ほど.** Both use ば, but they say different things: [練習]{れんしゅう}さえすれば[上手]{じょうず}になる (practice is all it takes) against [練習]{れんしゅう}すればするほど[上手]{じょうず}になる (the more you practice, the better you get; see [[ba-hodo]]).",
      "**Tests and textbooks.** Questions on these patterns usually hinge on form (でも after nouns, な before だけでなく, すれば after さえ) or on のに against ても with a future or a request. When a sentence could take more than one, a careful question gives a context that leaves only one."
     ]
    },
@@ -4958,7 +4958,7 @@ ICA.addUnit({
    levels: {
     starter: [
      "**～うちに** means “while (it lasts)”: do something before a situation ends. [温]{あたた}かいうちに食べてください (Eat it while it’s warm). With a negative, “before”: [忘]{わす}れないうちにメモする (make a note before I forget).",
-     "**～[間]{あいだ}** means “all through a period”: 夏休みの[間]{あいだ}、ずっと[働]{はたら}いていた (I worked all through the summer holiday). **～[間]{あいだ}に** means “at some point during it”: 夏休みの[間]{あいだ}に[免許]{めんきょ}を[取]{と}った (I got my licence during the summer holiday).",
+     "**～[間]{あいだ}** means “all through a period”: 夏休みの[間]{あいだ}、ずっと[働]{はたら}いていた (I worked all through the summer holiday). **～[間]{あいだ}に** means “at some point during it”: 夏休みの[間]{あいだ}に[免許]{めんきょ}を[取]{と}った (I got my license during the summer holiday).",
      "**～たびに** means “every time”: この歌を聞くたびに[泣]{な}いてしまう (Every time I hear this song, I cry).",
      "**～[最中]{さいちゅう}に** means “right in the middle of”, usually when something interrupts: [会議]{かいぎ}の[最中]{さいちゅう}に電話が[鳴]{な}った (The phone rang right in the middle of the meeting).",
      "A quick test: does the main action fill the period (～[間]{あいだ}), happen once in it (～[間]{あいだ}に), beat a change (～うちに), repeat (～たびに) or interrupt (～[最中]{さいちゅう}に)?"
@@ -5110,7 +5110,7 @@ ICA.addUnit({
      "**～ば～ほど** (the more…, the more…) is a separate pattern, taught in Unit 9 ([[ba-hodo]]). Don’t read 安ければ安いほど as a comparison with a standard.",
      "**～に[比]{くら}べて in writing.** Reports and news prefer ～に[比]{くら}べて, ～と[比]{くら}べると and the more formal ～に[比]{ひ}して (often listed at N1). In academic Japanese, a phrase like 前年に[比]{くら}べて[増加]{ぞうか}した is typical; see {{written-vs-spoken-japanese}}.",
      "**くらい after こ・そ・あ・ど.** これくらい, それぐらい and どのくらい (how much, how long) are very common in speech. どのくらいかかりますか (How long does it take?) is the everyday question about time and distance.",
-     "**～かわりに.** A related pattern, ～かわりに (instead of; in exchange for; but to make up for it), is summarised in {{n3-grammar-patterns-2}}."
+     "**～かわりに.** A related pattern, ～かわりに (instead of; in exchange for; but to make up for it), is summarized in {{n3-grammar-patterns-2}}."
     ]
    },
    related: [
@@ -5288,7 +5288,7 @@ ICA.addUnit({
      "**Objects.** ～がち keeps the verb’s object ([傘]{かさ}を[忘]{わす}れがちだ); ～っぽい makes an adjective about the person and can’t ([忘]{わす}れっぽい人).",
      "**Good habits.** がち usually sounds wrong for good habits; use よく or ～ことが多い: [週末]{しゅうまつ}は[公園]{こうえん}に行くことが多い.",
      "**Overlap.** [風邪]{かぜ}っぽい and [風邪]{かぜ}[気味]{ぎみ} both mean you feel a cold coming on; っぽい is for friends, [気味]{ぎみ} for work. Learn the common combinations as words rather than building new ones freely.",
-     "**っぽい and らしい.** 子どもっぽい criticises an adult as childish; 子どもらしい praises a child for being just as a child should be ([[rashii]])."
+     "**っぽい and らしい.** 子どもっぽい criticizes an adult as childish; 子どもらしい praises a child for being just as a child should be ([[rashii]])."
     ],
     pro: [
      "**Very casual っぽい.** Among younger speakers, っぽい also follows whole plain clauses as a casual “seems”: 雨、[降]{ふ}るっぽい. This is informal and is avoided in polite speech and writing; ようだ, みたい or らしい ({{appearance-sou-you-rashii}}) cover the same ground in standard Japanese.",
@@ -5353,7 +5353,7 @@ ICA.addUnit({
      "The rule from Unit 7 still holds: **respectful** forms ([尊敬語]{そんけいご}) for what others do, **humble** forms ([謙譲語]{けんじょうご}) for what you and your side do.",
      "Useful new forms: お見えになる and お[越]{こ}しになる (they come), お目にかかる (I meet you), [差]{さ}し上げる (I give), お待ちです (they are waiting).",
      "For requests, there is a ladder: 待って → 待ってください → 待っていただけますか → お待ちいただけないでしょうか. Each step adds respect and distance.",
-     "Start by recognising these forms and learning a few set phrases well. Everyone, including Japanese speakers in their first job, takes years to feel at home in keigo."
+     "Start by recognizing these forms and learning a few set phrases well. Everyone, including Japanese speakers in their first job, takes years to feel at home in keigo."
     ],
     builder: [
      {
@@ -5391,7 +5391,7 @@ ICA.addUnit({
       ]
      },
      "**お～です** (お待ちです, お持ちですか, お急ぎですか) is a respectful way to describe the other person’s state. It is a regular pattern, like お～になる: Tae Kim’s guide teaches it as “お + stem + です”, and IRODORI Pre-Intermediate teaches it in Lesson 12.",
-     "**Shops.** [何名様]{なんめいさま}ですか, ご注文はお[決]{き}まりですか, かしこまりました, お待たせいたしました, ～でございます. Common shop phrases such as 「～になります」 and 「～からお[預]{あず}かりします」 are often criticised as “part-time-job keigo”; the safe standard forms are ～でございます and 千円お[預]{あず}かりします.",
+     "**Shops.** [何名様]{なんめいさま}ですか, ご注文はお[決]{き}まりですか, かしこまりました, お待たせいたしました, ～でございます. Common shop phrases such as 「～になります」 and 「～からお[預]{あず}かりします」 are often criticized as “part-time-job keigo”; the safe standard forms are ～でございます and 千円お[預]{あず}かりします.",
      "**The phone.** いつもお世話になっております; [松本]{まつもと}はただいま[席]{せき}を外しております (no さん for your colleague to an outsider); お電話いたしましょうか; [伺]{うかが}ってもよろしいでしょうか; [申]{もう}し[伝]{つた}えます.",
      "**Visitors.** お[越]{こ}しいただき、ありがとうございます; [担当]{たんとう}の者が[参]{まい}ります (者 for your side, [方]{かた} for theirs).",
      "**Requests.** ～ていただけますか (humble potential of いただく), ～ていただけませんか (softer), お～いただけますか, お～いただけないでしょうか, with a cushion phrase such as [恐]{おそ}れ入りますが ([[kushion-kotoba]])."
@@ -5402,7 +5402,7 @@ ICA.addUnit({
      "**Potential forms.** ご～できる is the potential of humble ご～する, so 「ご[利用]{りよう}できます」 for customers is a common slip. The guidelines’ fix is ご[利用]{りよう}になれます; ご[利用]{りよう}いただけます is also widely used.",
      "**[参]{まい}る for trains.** 電車が[参]{まい}ります uses [参]{まい}る as [丁重語]{ていちょうご} ([謙譲語]{けんじょうご}Ⅱ): polite to the listeners, raising no one. That is why it can describe a train.",
      "**～させていただく** has spread widely and is often felt to be overused. The guidelines treat it as fitting when you act with the other person’s permission and benefit from it; e1u8 covers this in {{keigo-mistakes}}.",
-     "**Manual keigo.** The set phrases taught in shop and call-centre manuals (マニュアル[敬語]{けいご}), such as 「～になります」 for 「～でございます」, are widely discussed and often criticised in Japan. Learners can rely on the standard forms and simply recognise the others."
+     "**Manual keigo.** The set phrases taught in shop and call-center manuals (マニュアル[敬語]{けいご}), such as 「～になります」 for 「～でございます」, are widely discussed and often criticized in Japan. Learners can rely on the standard forms and simply recognize the others."
     ]
    },
    related: [
@@ -5601,7 +5601,7 @@ ICA.addUnit({
        ],
        [
         "～を中心に",
-        "centred on, mainly",
+        "centered on, mainly",
         "[若]{わか}い人を中心に人気がある。"
        ],
        [
@@ -5626,7 +5626,7 @@ ICA.addUnit({
     pro: [
      "**～ものだ** has three main uses. (1) What is natural: 人は[間違]{まちが}えるものだ, often with feeling: 時間がたつのは早いものだ. (2) What one should do, by common sense: 話は[最後]{さいご}まで聞くものだ; negative ～ものではない. (3) With the た-form, fond memories of a past habit: よくこの川で[泳]{およ}いだものだ. Casual: もんだ. Compare ～べきだ (Unit 9), the speaker’s own judgment. Don’t confuse it with the casual excuse ～もん (だって知らなかったんだもん).",
      "**～っけ** checks something you half remember. Casual: ～だっけ, ～だったっけ, ～たっけ, ～んだっけ; polite: ～でしたっけ, ～ましたっけ, ～んでしたっけ. It suits conversation with friends, colleagues and teachers, but not customers or formal settings, where a direct polite question is better (お名前をもう一度[伺]{うかが}ってもよろしいでしょうか). In stories, ～たっけ can also look back with nostalgia.",
-     "**Choosing between near neighbours** is the hard part of N3: ～ても or ～のに, ～[間]{あいだ} or ～[間]{あいだ}に, ほど or くらい, っぽい or [気味]{ぎみ}, まま or っぱなし, わりに or にしては. Each lesson has a comparison table; when real overlap exists, the lessons say so, and good test questions give a context that leaves only one answer.",
+     "**Choosing between near neighbors** is the hard part of N3: ～ても or ～のに, ～[間]{あいだ} or ～[間]{あいだ}に, ほど or くらい, っぽい or [気味]{ぎみ}, まま or っぱなし, わりに or にしては. Each lesson has a comparison table; when real overlap exists, the lessons say so, and good test questions give a context that leaves only one answer.",
      "**What comes next.** N2 grammar (in most published lists) adds more formal and written patterns, many built on the ones here: ～にしても, ～ようとも, ～ものの, ～ものなら, ～に[際]{さい}して. The Academic Japanese track (from {{academic-japanese}}) uses many of them."
     ]
    },
@@ -5754,7 +5754,7 @@ ICA.addUnit({
     pro: [
      "**まま with the dictionary form.** In set phrases まま follows a dictionary or passive form: 言われるまま(に) (just as one is told, without question), 思うまま (as one pleases). For a state that carries on, use the た-form.",
      "**っぱなし and its level.** Several published N3 lists include ～っぱなし; others place it at N2. It is common in speech (つけっぱなし, 出しっぱなし, 開けっぱなし) and in phrases like [勝]{か}ちっぱなし or [負]{ま}けっぱなし (a winning or losing streak).",
-     "**～ず alone.** In writing, ～ず without に joins clauses like a て-form: [彼]{かれ}は何も言わず、帰った. It also survives in set phrases such as [相変]{あいか}わらず (as always) and 知らず知らず (without realising).",
+     "**～ず alone.** In writing, ～ず without に joins clauses like a て-form: [彼]{かれ}は何も言わず、帰った. It also survives in set phrases such as [相変]{あいか}わらず (as always) and 知らず知らず (without realizing).",
      "**とおり and ように.** 前に[述]{の}べたように (as stated before) points back to something; [説明書]{せつめいしょ}のとおりに matches a model step by step. The reading changes after a bare noun: [予定]{よてい}どおり, 時間どおり.",
      "**ふりをする.** The subject acts on purpose, so it is a person or an animal (死んだふりをする動物, animals that play dead), not a thing. ～ような[顔]{かお}をする (look as if) and the more written ～そぶりを見せる (show signs of) are close relatives.",
      "**しかない, ほかない, ざるを[得]{え}ない.** ～ほかない (and ～ほかはない) is a written equivalent of ～しかない. ～ざるを[得]{え}ない (N2) says you are forced to do something against your will.",
@@ -5819,14 +5819,14 @@ ICA.addUnit({
     "grammar",
     "n3"
    ],
-   summary: "How to say “the moment that” (～たとたん), “while you’re at it” (～ついでに), “ever since” (～て以来), “from … through” (～から～にかけて), “centred on” (～を中心に), “concerning” (～に[関]{かん}して), “for…, considering…” (～わりに, ～にしては) and “not only… but even” (～ばかりか).",
+   summary: "How to say “the moment that” (～たとたん), “while you’re at it” (～ついでに), “ever since” (～て以来), “from … through” (～から～にかけて), “centered on” (～を中心に), “concerning” (～に[関]{かん}して), “for…, considering…” (～わりに, ～にしては) and “not only… but even” (～ばかりか).",
    levels: {
     starter: [
      "**～たとたん(に)**: the moment that. ドアを開けたとたん、ねこが入ってきた. The second part happens by itself, often by surprise.",
      "**～ついでに**: while you’re at it. コンビニに行くついでに、[牛乳]{ぎゅうにゅう}を買ってきて.",
      "**～て以来**: ever since. 日本に来て以来、[日記]{にっき}を書いている.",
      "**～から～にかけて**: from … through …, roughly. 今夜から[明日]{あした}の朝にかけて雨.",
-     "**～を中心に**: mainly, centred on. [若]{わか}い人を中心に人気がある.",
+     "**～を中心に**: mainly, centered on. [若]{わか}い人を中心に人気がある.",
      "**～に[関]{かん}して / ～に[関]{かん}する**: about, in formal language. [防災]{ぼうさい}に[関]{かん}する[資料]{しりょう}.",
      "**～わりに / ～にしては**: for…, considering…. [値段]{ねだん}のわりにおいしい; [初]{はじ}めてにしては[上手]{じょうず}だ.",
      "**～ばかりか**: not only… but even. 電車ばかりか、バスまで止まった."
@@ -6110,7 +6110,7 @@ ICA.addUnit({
   },
   {
    id: "o-chuushin-ni",
-   term: "～を中心に (centred on, mainly)",
+   term: "～を中心に (centered on, mainly)",
    def: "Noun + を中心に(して): the noun is the main part of a wider set. [若]{わか}い人を中心に人気がある. Before a noun: を中心とした.",
    codex: "time-range-focus-contrast"
   },
@@ -6344,7 +6344,7 @@ ICA.addUnit({
    id: "e3u10-q09",
    lesson: "e3u10-l1",
    level: 1,
-   q: "Which is the correct way to say “As long as you practise, you’ll improve”?",
+   q: "Which is the correct way to say “As long as you practice, you’ll improve”?",
    options: [
     {
      t: "[練習]{れんしゅう}さえすれば、[上手]{じょうず}になります。",
@@ -7053,7 +7053,7 @@ ICA.addUnit({
     },
     {
      t: "Advice: what you should do",
-     why: "Growing old isn’t a choice or a rule of behaviour."
+     why: "Growing old isn’t a choice or a rule of behavior."
     },
     {
      t: "A memory: what I used to do",
@@ -7136,7 +7136,7 @@ ICA.addUnit({
     },
     {
      t: "お名前を言ってください。",
-     why: "A bare request with ください sounds blunt to a guest, and it doesn’t apologise for asking again."
+     why: "A bare request with ください sounds blunt to a guest, and it doesn’t apologize for asking again."
     }
    ]
   },
@@ -7772,21 +7772,21 @@ ICA.addUnit({
    q: "「この町は、[港]{みなと}を中心に[発展]{はってん}してきた。」 What does it say about the town?",
    options: [
     {
-     t: "It grew up around its harbour.",
+     t: "It grew up around its harbor.",
      ok: true,
-     why: "～を中心に: the harbour is the centre, and the town grew around it."
+     why: "～を中心に: the harbor is the center, and the town grew around it."
     },
     {
-     t: "It was built in place of a harbour.",
+     t: "It was built in place of a harbor.",
      why: "“In place of” is ～かわりに."
     },
     {
-     t: "It is about to build a harbour in the centre.",
+     t: "It is about to build a harbor in the center.",
      why: "～てきた reports growth up to now; nothing is about to be built."
     },
     {
-     t: "It grew everywhere except near the harbour.",
-     why: "を中心に puts the harbour at the centre of the growth."
+     t: "It grew everywhere except near the harbor.",
+     why: "を中心に puts the harbor at the center of the growth."
     }
    ]
   },

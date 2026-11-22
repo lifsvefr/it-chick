@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Decide whether a survey suits a research question, and choose a mode and an online tool with privacy in mind",
     "Write and test clear, neutral questions with fair answer options",
-    "Design and analyse Likert-type rating questions correctly",
+    "Design and analyze Likert-type rating questions correctly",
     "Explain sampling frames, response rates, nonresponse bias and the margin of error, and calculate them",
     "Summarise survey results honestly with frequency tables, averages, standard deviation and cross-tabs"
   ],
@@ -58,7 +58,7 @@ ICA.addUnit({
       "Many large surveys now mix modes, for example a web form with a paper or phone option for people who prefer it."
     ]},
     {h:"The shape of a questionnaire", body:[
-      "Order matters. Pew Research Center’s questionnaire guidance notes that the order in which questions are asked can influence how people respond, because earlier questions set the context for later ones. Asking about a bad experience first can colour every later rating.",
+      "Order matters. Pew Research Center’s questionnaire guidance notes that the order in which questions are asked can influence how people respond, because earlier questions set the context for later ones. Asking about a bad experience first can color every later rating.",
       {list:[
         "**Open with a short introduction**: who is asking, why, how long it takes, how answers are kept, that taking part is voluntary and questions can be skipped. This is part of [[informed-consent|informed consent]].",
         "**Start with easy, relevant questions** that show the survey is about what the introduction promised.",
@@ -71,7 +71,7 @@ ICA.addUnit({
     ]},
     {h:"Choosing an online tool, and where the data goes", body:[
       "Most small surveys today are built online. Several tools are free or have free plans; checked November 2026, and plans change, so look at each one’s current pricing page.",
-      {table:[["Tool","Cost and access","Data location notes"],["Google Forms","Free with a Google account; responses can go straight to Google Sheets","Stored by Google; some paid Google Workspace plans let organisations choose where some data is stored"],["Microsoft Forms","Free with a Microsoft account (up to 200 responses per form on free personal accounts)","Stored by Microsoft; work and school accounts follow the organisation’s settings"],["LimeSurvey","Open source: install it free on your own server, or use the hosted Cloud (a small free plan of 25 responses a month, or paid plans)","Cloud lets you pick the server country (e.g. Germany, Finland, Canada, Australia)"],["KoboToolbox","Built for field data collection, works offline; free Community plan for students, non-profits and educational institutions, paid plans for personal or business use","Choose the Global server or the European Union server"],["Qualtrics","Paid; many universities and companies hold licences","Set by the licence holder"]]},
+      {table:[["Tool","Cost and access","Data location notes"],["Google Forms","Free with a Google account; responses can go straight to Google Sheets","Stored by Google; some paid Google Workspace plans let organizations choose where some data is stored"],["Microsoft Forms","Free with a Microsoft account (up to 200 responses per form on free personal accounts)","Stored by Microsoft; work and school accounts follow the organization’s settings"],["LimeSurvey","Open source: install it free on your own server, or use the hosted Cloud (a small free plan of 25 responses a month, or paid plans)","Cloud lets you pick the server country (e.g. Germany, Finland, Canada, Australia)"],["KoboToolbox","Built for field data collection, works offline; free Community plan for students, non-profits and educational institutions, paid plans for personal or business use","Choose the Global server or the European Union server"],["Qualtrics","Paid; many universities and companies hold licenses","Set by the license holder"]]},
       "Why location matters: survey answers are often [[personal-data|personal data]]. Data-protection laws such as the EU’s [[gdpr|GDPR]] set rules about storing and transferring it, and research ethics committees usually ask where data will be kept and who can see it (see {{data-protection-laws}} and {{research-ethics}}). Rules differ by country and institution, so check yours.",
       {list:[
         "**Collect only what you need.** Don’t ask for names or email addresses unless you must, for example to send a prize.",
@@ -100,7 +100,7 @@ ICA.addUnit({
     {id:"t4u8-l1-x3", type:"match", q:"Match each answering problem to the step of the answering process where it happens.", pairs:[
       ["Lucía isn’t sure whether “household” includes her student son who lives away in term time","Understand","She is unsure what the question means, so it fails at the first step."],
       ["Tomás reports a hospital visit from 14 months ago as being “in the last year”","Recall","Placing an event in the wrong period is a memory problem."],
-      ["Asked for monthly spending on transport, Mei guesses rather than adding up dozens of fares","Judge","Turning memories into a number is the judgement step; hard sums lead to guesses."],
+      ["Asked for monthly spending on transport, Mei guesses rather than adding up dozens of fares","Judge","Turning memories into a number is the judgment step; hard sums lead to guesses."],
       ["Oluwaseun’s true answer is “twice a month”, but the options only offer “weekly” or “never”","Report","He knows his answer but can’t fit it into the options offered."]
     ]},
     {id:"t4u8-l1-x4", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies, is planning a survey of older residents in a rural district about access to health services. Many residents don’t use the internet. Which plan is best?", options:[
@@ -153,9 +153,9 @@ ICA.addUnit({
       {tip:"Define the time period, the unit and the thing. Then read the question aloud as if you were someone with a very different life from yours."}
     ]},
     {h:"Questions that push", body:[
-      "A [[leading-question|leading question]] nudges people towards one answer: “Don’t you agree that the new opening hours are better?” A **loaded question** uses emotionally charged words (“wasteful”, “heroic”, “so-called experts”) that make one answer feel right. An **assumption** builds in something that may not be true: “How much did you enjoy the workshop?” assumes the person enjoyed it.",
+      "A [[leading-question|leading question]] nudges people toward one answer: “Don’t you agree that the new opening hours are better?” A **loaded question** uses emotionally charged words (“wasteful”, “heroic”, “so-called experts”) that make one answer feel right. An **assumption** builds in something that may not be true: “How much did you enjoy the workshop?” assumes the person enjoyed it.",
       {table:[["Problem","Example","Neutral version"],["Leading","Don’t you agree the park needs more lighting?","How would you rate the lighting in the park?"],["Loaded","Should the council stop wasting money on art?","How should the council’s arts budget change: increase, stay the same, decrease?"],["Assumption","How much did you enjoy the workshop?","How would you rate the workshop overall?"]]},
-      "A quieter push is the agree–disagree format itself. Many people tend to agree with statements whatever they say, which is called [[acquiescence-bias|acquiescence bias]]. Pew Research Center notes this is stronger among less educated and less informed respondents, and Krosnick and Presser recommend asking about the thing directly instead. Rather than “Agree or disagree: my commute is stressful”, ask “How stressful is your commute?” with labelled options from “Not at all” to “Extremely”."
+      "A quieter push is the agree–disagree format itself. Many people tend to agree with statements whatever they say, which is called [[acquiescence-bias|acquiescence bias]]. Pew Research Center notes this is stronger among less educated and less informed respondents, and Krosnick and Presser recommend asking about the thing directly instead. Rather than “Agree or disagree: my commute is stressful”, ask “How stressful is your commute?” with labeled options from “Not at all” to “Extremely”."
     ]},
     {h:"Two questions in one, and double negatives", body:[
       "A [[double-barrelled-question|double-barrelled question]] asks about two things but allows one answer: “How satisfied are you with the cost and quality of the bus service?” Someone who finds it cheap but unreliable can’t answer truthfully, and you can’t tell which part any answer refers to. Look for “and” or “or” joining two different things, and split them into two questions.",
@@ -166,7 +166,7 @@ ICA.addUnit({
       "Options need to be **exhaustive** (everyone has an answer) and **mutually exclusive** (no one fits two). Overlapping ranges are a classic slip: if the bands are 18–25 and 25–35, where does a 25-year-old go? Write 18–24, 25–34, 35–44 and so on. Add “Other (please specify)” when you can’t list every possibility, and “Not applicable” when a question won’t apply to some people.",
       "Rating options should be **balanced**: as many positive as negative steps, with equal-feeling gaps. An unbalanced list makes people look more positive than they are.",
       {fig:'<svg viewBox="0 0 340 300"><text x="87" y="22" text-anchor="middle">Unbalanced</text><text x="253" y="22" text-anchor="middle">Balanced</text><rect class="d-sage" x="8" y="36" width="158" height="36" rx="8" stroke-width="1.5"/><text x="87" y="59" text-anchor="middle">Very satisfied</text><rect class="d-sage" x="8" y="80" width="158" height="36" rx="8" stroke-width="1.5"/><text x="87" y="103" text-anchor="middle">Satisfied</text><rect class="d-sage" x="8" y="124" width="158" height="36" rx="8" stroke-width="1.5"/><text x="87" y="147" text-anchor="middle">Quite satisfied</text><rect class="d-sage" x="8" y="168" width="158" height="36" rx="8" stroke-width="1.5"/><text x="87" y="191" text-anchor="middle">Slightly satisfied</text><rect class="d-rose" x="8" y="212" width="158" height="36" rx="8" stroke-width="1.5"/><text x="87" y="235" text-anchor="middle">Dissatisfied</text><rect class="d-sage" x="174" y="36" width="158" height="36" rx="8" stroke-width="1.5"/><text x="253" y="59" text-anchor="middle">Very satisfied</text><rect class="d-sage" x="174" y="80" width="158" height="36" rx="8" stroke-width="1.5"/><text x="253" y="103" text-anchor="middle">Satisfied</text><rect class="d-panel" x="174" y="124" width="158" height="36" rx="8" stroke-width="1.5"/><text x="253" y="147" text-anchor="middle">Neither</text><rect class="d-rose" x="174" y="168" width="158" height="36" rx="8" stroke-width="1.5"/><text x="253" y="191" text-anchor="middle">Dissatisfied</text><rect class="d-rose" x="174" y="212" width="158" height="36" rx="8" stroke-width="1.5"/><text x="253" y="235" text-anchor="middle">Very dissatisfied</text><text class="s" x="87" y="272" text-anchor="middle">4 positive, 1 negative</text><text class="s" x="87" y="290" text-anchor="middle">tilts results upward</text><text class="s" x="253" y="272" text-anchor="middle">2 positive, a middle,</text><text class="s" x="253" y="290" text-anchor="middle">2 negative</text></svg>', alt:"Two columns of five answer options. Left, unbalanced: Very satisfied, Satisfied, Quite satisfied, Slightly satisfied, Dissatisfied, which is four positive options and one negative. Right, balanced: Very satisfied, Satisfied, Neither, Dissatisfied, Very dissatisfied, which is two positive, a neutral middle and two negative.", cap:"An unbalanced scale offers four ways to be satisfied and one way not to be. A balanced scale mirrors its two sides."},
-      "Order matters as well. Krosnick and Presser report that when people **read** a list, they lean towards options near the top (a primacy effect); when they **hear** a list on the phone, they lean towards the last ones (a recency effect). For unordered lists, such as reasons or brands, many tools can shuffle the order for each respondent. Never shuffle a rating scale: its order carries meaning."
+      "Order matters as well. Krosnick and Presser report that when people **read** a list, they lean toward options near the top (a primacy effect); when they **hear** a list on the phone, they lean toward the last ones (a recency effect). For unordered lists, such as reasons or brands, many tools can shuffle the order for each respondent. Never shuffle a rating scale: its order carries meaning."
     ]},
     {h:"“Don’t know” and “Prefer not to say”", body:[
       "Should you offer “Don’t know”? It depends on the question. For a factual question that some people genuinely can’t answer (“What year was your home built?”), “Don’t know” is an honest option and forcing a guess creates fake precision.",
@@ -204,8 +204,8 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t4u8-l2-x1", type:"spot", q:"Fatima drafted this questionnaire for a community sports centre. Tap each question that has a problem.", ask:"has a problem", parts:[
-      {t:"1. In the past 4 weeks, how many times did you visit the centre?", flag:false, why:"Clear: a defined period and a countable thing."},
+    {id:"t4u8-l2-x1", type:"spot", q:"Fatima drafted this questionnaire for a community sports center. Tap each question that has a problem.", ask:"has a problem", parts:[
+      {t:"1. In the past 4 weeks, how many times did you visit the center?", flag:false, why:"Clear: a defined period and a countable thing."},
       "\n",
       {t:"2. How satisfied are you with the changing rooms and the café?", flag:true, why:"Double-barrelled: someone could like the café and dislike the changing rooms. Ask about each separately."},
       "\n",
@@ -213,20 +213,20 @@ ICA.addUnit({
       "\n",
       {t:"4. How would you rate the cleanliness of the pool? (Very good / Good / Neither / Poor / Very poor)", flag:false, why:"Neutral wording and a balanced five-point scale."},
       "\n",
-      {t:"5. Don’t you agree the centre should stay open later?", flag:true, why:"Leading: “Don’t you agree” pushes people towards yes. Ask “What closing time would suit you best?” or “Should the centre stay open later? Yes / No / No opinion”."},
+      {t:"5. Don’t you agree the center should stay open later?", flag:true, why:"Leading: “Don’t you agree” pushes people toward yes. Ask “What closing time would suit you best?” or “Should the center stay open later? Yes / No / No opinion”."},
       "\n",
       {t:"6. Do you disagree that the gym should not be closed on Sundays?", flag:true, why:"A double negative (“disagree” + “not closed”). Ask directly: “Should the gym be open on Sundays?”"},
       "\n",
-      {t:"7. Is there anything else you’d like to tell us about the centre?", flag:false, why:"A good open question to finish, inviting comments without steering them."}
+      {t:"7. Is there anything else you’d like to tell us about the center?", flag:false, why:"A good open question to finish, inviting comments without steering them."}
     ]},
     {id:"t4u8-l2-x2", type:"match", q:"Match each flawed question to the best fix.", pairs:[
       ["How much did you enjoy the training course?","Ask “How would you rate the training course?” with balanced options","The original assumes enjoyment; a neutral rating lets people say it was poor."],
       ["How often do you use public transport? (Often / Sometimes / Rarely)","Ask about a defined period with countable options, such as days in the past 7","“Often” means different things to different people; counts in a fixed period don’t."],
       ["Over the past year, how many times did you buy fruit?","Ask about a shorter recent period, such as the past 7 days","Nobody can count a year of fruit purchases; a short period reduces guessing and telescoping."],
-      ["Agree or disagree: My neighbourhood is safe at night.","Ask “How safe or unsafe do you feel walking in your neighbourhood at night?”","Asking directly avoids acquiescence bias, the tendency to agree with statements."]
+      ["Agree or disagree: My neighborhood is safe at night.","Ask “How safe or unsafe do you feel walking in your neighborhood at night?”","Asking directly avoids acquiescence bias, the tendency to agree with statements."]
     ]},
     {id:"t4u8-l2-x3", type:"sort", q:"Which problem does each question have?", buckets:["Leading or loaded","Double-barrelled","Assumes something that may be untrue"], items:[
-      {t:"Should the town stop pouring money into its failing museum?", b:0, why:"“Pouring money” and “failing” are loaded words that push towards yes."},
+      {t:"Should the town stop pouring money into its failing museum?", b:0, why:"“Pouring money” and “failing” are loaded words that push toward yes."},
       {t:"How useful and enjoyable were the parenting sessions?", b:1, why:"Useful and enjoyable are two different things in one question."},
       {t:"Which streaming service do you use most?", b:2, why:"It assumes the person uses a streaming service. Add “I don’t use any” or ask a filter question first."},
       {t:"Most dentists recommend flossing every day. Do you floss every day?", b:0, why:"Quoting what experts recommend pressures people to say yes."},
@@ -271,11 +271,11 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t4u8-l3", title:"Likert scales and rating questions", minutes:50,
-   hook:{q:"The “Likert scale” is named after the American social scientist Rensis Likert. What was his original 1932 publication designed to measure?", options:["Customer satisfaction with products","People’s attitudes","Intelligence","Physical pain"], answer:1, reveal:"**Attitudes.** Likert’s 1932 monograph was titled *A Technique for the Measurement of Attitudes*. People rated a set of statements (for example, on topics such as war and international relations) from “strongly approve” to “strongly disapprove”, and their item scores were added up into one total. That idea, many statements combined into one score, is what “Likert scale” strictly means. This lesson shows how to design and analyse these questions correctly."},
+   hook:{q:"The “Likert scale” is named after the American social scientist Rensis Likert. What was his original 1932 publication designed to measure?", options:["Customer satisfaction with products","People’s attitudes","Intelligence","Physical pain"], answer:1, reveal:"**Attitudes.** Likert’s 1932 monograph was titled *A Technique for the Measurement of Attitudes*. People rated a set of statements (for example, on topics such as war and international relations) from “strongly approve” to “strongly disapprove”, and their item scores were added up into one total. That idea, many statements combined into one score, is what “Likert scale” strictly means. This lesson shows how to design and analyze these questions correctly."},
    goals:[
      "Tell a Likert item from a Likert scale, and build a simple scale score",
      "Choose the number of points, labels and whether to include a midpoint",
-     "Explain why rating answers are ordinal and summarise them appropriately",
+     "Explain why rating answers are ordinal and summarize them appropriately",
      "Check common claims about Likert scales against the evidence"
    ],
    learn:[
@@ -290,11 +290,11 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 296"><defs><marker id="t4u8-l3-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text class="s" x="108" y="22" text-anchor="middle">Four items, answers 1–5</text><rect class="d-lup" x="8" y="34" width="200" height="50" rx="8" stroke-width="1.5"/><text x="18" y="55">Item 1 → 5</text><text class="s" x="18" y="74">I know where to look</text><rect class="d-lup" x="8" y="94" width="200" height="50" rx="8" stroke-width="1.5"/><text x="18" y="115">Item 2 → 4</text><text class="s" x="18" y="134">I can judge its quality</text><rect class="d-rose" x="8" y="154" width="200" height="50" rx="8" stroke-width="1.5"/><text x="18" y="175">Item 3 ↺ 2 → 4</text><text class="s" x="18" y="194">I find it confusing</text><rect class="d-lup" x="8" y="214" width="200" height="50" rx="8" stroke-width="1.5"/><text x="18" y="235">Item 4 → 4</text><text class="s" x="18" y="254">I can use what I find</text><path class="d-ink" d="M208 59 L238 130" stroke-width="1.5" marker-end="url(#t4u8-l3-a)"/><path class="d-ink" d="M208 119 L236 140" stroke-width="1.5" marker-end="url(#t4u8-l3-a)"/><path class="d-ink" d="M208 179 L236 160" stroke-width="1.5" marker-end="url(#t4u8-l3-a)"/><path class="d-ink" d="M208 239 L238 170" stroke-width="1.5" marker-end="url(#t4u8-l3-a)"/><rect class="d-sage" x="240" y="100" width="92" height="96" rx="10" stroke-width="2"/><text x="286" y="124" text-anchor="middle">Scale</text><text x="286" y="144" text-anchor="middle">score</text><text x="286" y="168" text-anchor="middle">17</text><text class="s" x="286" y="186" text-anchor="middle">of 20</text><text class="s" x="170" y="286" text-anchor="middle">↺ reversed item: score = 6 − answer</text></svg>', alt:"Four item boxes on the left feed arrows into a Scale score box on the right. Item 1, I know where to look, answer 5. Item 2, I can judge its quality, answer 4. Item 3, I find it confusing, is reverse-worded: its answer 2 becomes 4. Item 4, I can use what I find, answer 4. The scale score is 17 out of 20. A note says a reversed item is scored 6 minus the answer.", cap:"A Likert scale combines several items about one idea. A negatively worded item is reverse-scored before adding."},
       "In the diagram, item 3 is worded the other way round: agreeing with “I find it confusing” means **less** confidence. Before adding, it is **reverse-scored**. On a 1–5 scale, the new score is 6 minus the answer, so 2 becomes 4 (on a 1–7 scale it is 8 minus the answer). Forgetting this step is one of the most common analysis errors.",
       "Reverse-worded items are often included to catch people who tick the same column throughout. Krosnick and Presser warn they have costs too: some people misread them, and they don’t fully cancel out acquiescence. If you use them, word them simply and avoid double negatives.",
-      "Before treating items as one scale, researchers check that they hang together, for example with a statistic called Cronbach’s alpha, which is linked to [[reliability]]. Better still, use an **established scale** that has already been tested for [[validity]], and check its licence: some are free to use, others need permission or payment."
+      "Before treating items as one scale, researchers check that they hang together, for example with a statistic called Cronbach’s alpha, which is linked to [[reliability]]. Better still, use an **established scale** that has already been tested for [[validity]], and check its license: some are free to use, others need permission or payment."
     ]},
     {h:"How many points, and how to label them", body:[
       "There is no single correct number. Five and seven points are the most common. Krosnick and Presser’s review found that reliability tends to rise from two points up to about seven and then levels off, and concluded that seven points are probably best in many cases, with caveats for telephone surveys, where people must remember the options.",
-      "**Label every point with words** where you can. Their review found that fully labelled scales are more reliable than ones with words only at the ends (“1 = Strongly disagree … 7 = Strongly agree” with bare numbers in between). Choose labels that feel evenly spaced.",
+      "**Label every point with words** where you can. Their review found that fully labeled scales are more reliable than ones with words only at the ends (“1 = Strongly disagree … 7 = Strongly agree” with bare numbers in between). Choose labels that feel evenly spaced.",
       {table:[["Kind","Example labels","Use for"],["Bipolar (two opposite sides)","Very dissatisfied · Dissatisfied · Neither · Satisfied · Very satisfied","Feelings that can go either way"],["Unipolar (none to a lot)","Not at all · Slightly · Moderately · Very · Extremely","Amounts: how useful, how often, how worried"],["Frequency","Never · Rarely · Sometimes · Often · Always","How often something happens"]]},
       {tip:"Preview rating questions on a phone. Wide grids with many columns can be cramped or displayed differently on small screens, which can change how people answer."}
     ]},
@@ -342,9 +342,9 @@ ICA.addUnit({
     ], hint2:"Flip the reverse-worded item with 6 − answer, then add all four."},
     {id:"t4u8-l3-x3", type:"spot", q:"Kenji designed this rating question for a staff survey. Tap each part that is a design problem.", ask:"a design problem", parts:[
       "“How supported do you feel by your manager?”  ",
-      {t:"1 = Not at all supported", flag:false, why:"Labelling the end points is good; the problem would be leaving the middle unlabelled."},
+      {t:"1 = Not at all supported", flag:false, why:"Labeling the end points is good; the problem would be leaving the middle unlabelled."},
       "  ·  ",
-      {t:"2, 3, 4, 5, 6 with no labels", flag:true, why:"Unlabelled middle points are less reliable than fully labelled ones; people guess what “4” means."},
+      {t:"2, 3, 4, 5, 6 with no labels", flag:true, why:"Unlabelled middle points are less reliable than fully labeled ones; people guess what “4” means."},
       "  ·  ",
       {t:"7 = Completely supported", flag:false, why:"A clear end label on a unipolar scale (from none to complete)."},
       "  ·  ",
@@ -364,23 +364,23 @@ ICA.addUnit({
     ]},
     {id:"t4u8-l3-x5", type:"match", q:"Match each design choice to its main consequence.", pairs:[
       ["Removing the neutral midpoint","People with genuinely neutral views are pushed to one side","Krosnick and Presser report this reduces accuracy."],
-      ["Labelling every point with words","Answers are more reliable","Fully labelled scales outperform end-labelled ones in their review."],
+      ["Labeling every point with words","Answers are more reliable","Fully labeled scales outperform end-labeled ones in their review."],
       ["Using agree–disagree statements","Some people agree whatever the statement says","That’s acquiescence bias; asking directly reduces it."],
       ["Forgetting to reverse-score a negatively worded item","The scale score is wrong for everyone","Agreement with that item means the opposite, so it must be flipped first."]
     ]},
     {id:"t4u8-l3-x6", type:"mcq", q:"Amara wants to measure how much a training course helped participants. She is choosing between “Agree or disagree: The course helped me” and “How much did the course help you? (Not at all / A little / Somewhat / Quite a lot / A great deal)”. Which is better, and why?", options:[
-      {t:"The second: it asks directly, with labelled options, avoiding acquiescence bias.", ok:true, why:"Asking directly about “how much” matches what she wants to measure, and the labels describe amounts evenly from none to a great deal. The options are unipolar: they run in one direction only."},
+      {t:"The second: it asks directly, with labeled options, avoiding acquiescence bias.", ok:true, why:"Asking directly about “how much” matches what she wants to measure, and the labels describe amounts evenly from none to a great deal. The options are unipolar: they run in one direction only."},
       {t:"The first, because agree–disagree statements are the only real Likert-style format.", why:"Likert’s original items used approve–disapprove, but direct rating questions are generally more reliable and valid."},
       {t:"The first, because people answer statements faster.", why:"Speed isn’t the goal if the format adds bias. Direct questions are not noticeably harder."},
       {t:"They are identical in quality; the choice doesn’t matter.", why:"Research comparing the formats finds real differences in reliability and validity."}
     ]},
     {id:"t4u8-l3-x7", type:"explain", q:"Two teams both have a mean of 3 on a single five-point rating question. Explain why that mean could hide something important, and what you should report instead.", size:"3–4 sentences", hint:"What kind of data are rating answers, and what can a distribution show that a mean can’t?", model:"Rating answers are ordinal: the order means something, but the gaps between options aren’t known, so a mean of a single item can mislead. A mean of 3 could come from everyone choosing the middle option, or from half choosing 1 and half choosing 5. One team is united and neutral; the other is split down the middle. So I’d report the frequency distribution (how many chose each option), with the median or mode, and say which summary I used.", points:["Says rating answers are ordinal", "Gives an example of the same mean from very different answers", "Recommends showing the frequency distribution", "Mentions the median or mode as safer summaries"]}
    ],
-   apply:{intro:"Practise designing and checking rating questions. No data collection from strangers is needed.", tasks:[
-     {t:"Look at an established scale", how:["Search for a published, freely available scale in a field that interests you (for example a wellbeing, loneliness, job satisfaction or health literacy scale; national statistics offices and open-access journals publish some).","Note how many items it has, how many points, whether every point is labelled, and whether any items are reverse-worded.","Check its licence or terms of use: is it free for your purpose?"], write:"Scale name and source… Items, points, labels… Reversed items… Licence…"},
-     {t:"Draft a four-item scale of your own", how:["Pick one idea to measure (for example, “confidence using a spreadsheet”).","Write four items that each touch a different side of it.","Choose direct wording and fully labelled options, or agree–disagree if you have a reason.","Write down how you will score it, including any reversed item."], write:"The idea… Four items… Labels… Scoring rule…"},
+   apply:{intro:"Practice designing and checking rating questions. No data collection from strangers is needed.", tasks:[
+     {t:"Look at an established scale", how:["Search for a published, freely available scale in a field that interests you (for example a wellbeing, loneliness, job satisfaction or health literacy scale; national statistics offices and open-access journals publish some).","Note how many items it has, how many points, whether every point is labeled, and whether any items are reverse-worded.","Check its license or terms of use: is it free for your purpose?"], write:"Scale name and source… Items, points, labels… Reversed items… License…"},
+     {t:"Draft a four-item scale of your own", how:["Pick one idea to measure (for example, “confidence using a spreadsheet”).","Write four items that each touch a different side of it.","Choose direct wording and fully labeled options, or agree–disagree if you have a reason.","Write down how you will score it, including any reversed item."], write:"The idea… Four items… Labels… Scoring rule…"},
      {t:"Preview it on a phone", how:["Build the four items in your survey tool, using its multiple-choice or rating question type.","Preview the form on a phone, or shrink your browser window.","Check whether all labels are readable and whether the layout changes on a small screen."], write:"How it looked on a phone… What I changed…"}
-   ], proof:"Notes on one established scale (including its licence), your own four-item scale with a scoring rule, and notes from previewing it on a phone."},
+   ], proof:"Notes on one established scale (including its license), your own four-item scale with a scoring rule, and notes from previewing it on a phone."},
    read:[
      {book:"bhatt", where:"Chapter 6, “Measurement of Constructs”", note:"Covers rating scales and scaling methods, including Likert’s."},
      {book:"bhatt", where:"Chapter 7, “Scale Reliability and Validity”", note:"Explains how researchers check that items work together and measure what they claim."}
@@ -388,7 +388,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t4u8-l4", title:"Who answers: samples, nonresponse and the margin of error", minutes:60,
-   hook:{q:"In 1936 the US magazine *The Literary Digest* mailed about 10 million ballots and got 2.4 million back. The replies said Alf Landon would beat President Franklin Roosevelt. What happened?", options:["Landon won narrowly","Landon won easily","Roosevelt won in a landslide","The result was a near tie"], answer:2, reveal:"**Roosevelt won in a landslide.** A huge number of replies didn’t help, because of *who* replied. The names came mostly from telephone directories and car registrations, which in 1936 leaned towards wealthier people, and Landon supporters were more likely to send the ballot back. Those are coverage error and nonresponse bias, the two big ideas of this lesson, along with the margin of error."},
+   hook:{q:"In 1936 the US magazine *The Literary Digest* mailed about 10 million ballots and got 2.4 million back. The replies said Alf Landon would beat President Franklin Roosevelt. What happened?", options:["Landon won narrowly","Landon won easily","Roosevelt won in a landslide","The result was a near tie"], answer:2, reveal:"**Roosevelt won in a landslide.** A huge number of replies didn’t help, because of *who* replied. The names came mostly from telephone directories and car registrations, which in 1936 leaned toward wealthier people, and Landon supporters were more likely to send the ballot back. Those are coverage error and nonresponse bias, the two big ideas of this lesson, along with the margin of error."},
    goals:[
      "Trace the path from population to sampling frame to sample to respondents, and name the error at each step",
      "Calculate a response rate and explain why a low one is a warning rather than proof of bias",
@@ -405,7 +405,7 @@ ICA.addUnit({
     {h:"Sampling frames and coverage", body:[
       "[[coverage-error|Coverage error]] happens when the frame doesn’t match the population: some people can’t be selected at all, or some are listed twice, or people outside the population slip in. It only causes **bias** if the missing people differ from those included on what you are measuring, but they often do.",
       {table:[["Frame","Who it may miss"],["Members’ email list","Members without email, or with old addresses"],["Landline phone directory","People with only mobile phones, unlisted numbers"],["Visitors to a website","Everyone who doesn’t visit it"],["Patients attending a clinic this month","People who need care but can’t get there"]]},
-      "In 1936 the *Literary Digest* frame, mainly telephone directories and car registrations, leaned towards wealthier households, which leaned towards Landon. No number of replies from that list could fix it.",
+      "In 1936 the *Literary Digest* frame, mainly telephone directories and car registrations, leaned toward wealthier households, which leaned toward Landon. No number of replies from that list could fix it.",
       {tip:"Write down your frame and ask: who is in my population but not on this list? If you can’t fix the gap, describe it honestly in your report."}
     ]},
     {h:"How the sample is drawn", body:[
@@ -479,7 +479,7 @@ ICA.addUnit({
     {id:"t4u8-l4-x5", type:"sort", q:"Does the margin of error account for each of these?", buckets:["Included in the margin of error","Not included"], items:[
       {t:"Chance differences between a random sample and the population", b:0, why:"That is exactly what the margin of error measures."},
       {t:"People without internet access who couldn’t take a web survey", b:1, why:"That’s coverage error, which the formula ignores."},
-      {t:"A leading question that pushed answers towards “yes”", b:1, why:"That’s measurement error from wording. A bigger sample would just measure the same bias more precisely."},
+      {t:"A leading question that pushed answers toward “yes”", b:1, why:"That’s measurement error from wording. A bigger sample would just measure the same bias more precisely."},
       {t:"People who ignored the invitation and differ from those who replied", b:1, why:"That’s nonresponse bias, which the margin of error doesn’t include."},
       {t:"Having 400 rather than 1,600 respondents", b:0, why:"Sample size is in the formula: four times as many respondents halves the margin."},
       {t:"A sample made up of volunteers who clicked a link on social media", b:1, why:"For a self-selected sample, the margin-of-error formula doesn’t describe anything meaningful."}
@@ -499,7 +499,7 @@ ICA.addUnit({
     {id:"t4u8-l4-x8", type:"explain", q:"A staff survey got a 20% response rate, and a manager says: “So the results must be biased.” Explain why that doesn’t automatically follow, and what you could check.", size:"3–4 sentences", hint:"Bias depends on how the non-responders differ, not just on how many there are.", model:"A low response rate is a warning, not proof. Nonresponse bias only happens if the people who didn’t answer differ from those who did on the things being measured; in one Pew experiment, surveys with about 25% and 50% response rates gave statistically indistinguishable results on 77 of 84 measures. But it can be serious if responding is linked to the answer, for example if the most stretched staff had no time to reply. I’d compare respondents with known staff figures, compare early and late responders, and follow up some non-responders.", points:["Says a low response rate is a warning, not proof of bias", "Explains bias depends on non-responders differing on what is measured", "Gives an example of how it could bias this survey", "Names a check (compare with known figures, early vs late responders, or follow-up)"]}
    ],
    apply:{intro:"Look at real surveys with a critical eye, and plan the numbers for your own.", tasks:[
-     {t:"Read a published survey’s methods", how:["Find a survey report from a national statistics office, a research organisation (for example Pew Research Center or a university survey centre) or a government department.","Find its methods or technical section.","Note: the population, the sampling frame, how the sample was drawn, the mode, the response rate (and how it was calculated), whether results were weighted, and the margin of error."], write:"Survey and year… Population and frame… Sampling… Mode… Response rate… Weighting… Margin of error… Who might be missing?…"},
+     {t:"Read a published survey’s methods", how:["Find a survey report from a national statistics office, a research organization (for example Pew Research Center or a university survey center) or a government department.","Find its methods or technical section.","Note: the population, the sampling frame, how the sample was drawn, the mode, the response rate (and how it was calculated), whether results were weighted, and the margin of error."], write:"Survey and year… Population and frame… Sampling… Mode… Response rate… Weighting… Margin of error… Who might be missing?…"},
      {t:"Build a margin-of-error calculator in a spreadsheet", how:["In any spreadsheet app, type sample sizes 100, 200, 400, 800 and 1600 in cells A2 to A6.","In B2 type `=1.96*SQRT(0.5*(1-0.5)/A2)*100` and fill it down to B6. (In locales that use a comma as the decimal mark, type the decimals as 1,96 and 0,5; see {{common-functions}}.)","Check that B4 shows about 4.9 and that each doubling of n shrinks the margin by less each time."], write:"My results… What happens when n doubles?…"},
      {t:"Plan your own sample", how:["Describe the population for your planned survey and the frame you could use.","List who might be missing from the frame.","Decide whether you can draw a probability sample. If not, write one sentence describing the sample honestly for your report."], write:"Population… Frame… Who’s missing… Probability sample or not… My honest description…"}
    ], proof:"Notes on one real survey’s methods, a working margin-of-error table, and a written sampling plan that names its gaps."},
@@ -528,13 +528,13 @@ ICA.addUnit({
         "Keep blanks and special answers distinct: a blank (skipped), “Don’t know”, “Not applicable” and “Prefer not to say” mean different things.",
         "For “tick all that apply” questions, many tools put all choices in one cell; split them into one yes/no column per option.",
         "Write a short **codebook**: each column’s question wording, its possible answers, and how missing answers are coded.",
-        "Check for impossible values (an age of 230) and duplicate submissions before analysing."
+        "Check for impossible values (an age of 230) and duplicate submissions before analyzing."
       ]},
       {tip:"Make a note of every cleaning step. If someone asks why a total changed, you can show exactly what you did."}
     ]},
     {h:"Frequency tables and the right denominator", body:[
       "A [[frequency-table|frequency table]] lists each answer, how many people gave it (the **count**), and the percentage. In a spreadsheet, COUNTIF counts matching answers (see {{countif-sumif}}) and a [[pivot-table|pivot table]] can build the whole table at once (see {{pivot-tables}}).",
-      {lab:"fl-countif", t:"Practise: count matching answers with COUNTIF"},
+      {lab:"fl-countif", t:"Practice: count matching answers with COUNTIF"},
       "The crucial choice is the **denominator**: percent of what? Here are 250 respondents’ answers to “The new opening hours suit me”, where 30 people skipped the question.",
       {table:[["Answer","Count","% of all 250","Valid %"],["Strongly agree","40","16.0%","18.2%"],["Agree","85","34.0%","38.6%"],["Neither","50","20.0%","22.7%"],["Disagree","30","12.0%","13.6%"],["Strongly disagree","15","6.0%","6.8%"],["No answer","30","12.0%","—"],["Total","250","100%","100% (n = 220)"]]},
       "The [[valid-percent|valid percentage]] leaves out people who didn’t answer, so it uses 220 as the denominator. “Agree or strongly agree” is 125 people: **50.0%** of all respondents, or **56.8%** of those who answered. Both are correct; they answer different questions. Say which one you report, and always give **n**, the number it’s based on.",
@@ -551,13 +551,13 @@ ICA.addUnit({
         "The [[median-stat|median]]: the middle value when sorted (with an even count, the mean of the two middle values). Function: MEDIAN.",
         "The [[mode-stat|mode]]: the most common value or category. Function: MODE (Excel also has MODE.SNGL)."
       ]},
-      {lab:"fl-average", t:"Practise: calculate an average with AVERAGE"},
+      {lab:"fl-average", t:"Practice: calculate an average with AVERAGE"},
       "Which to use depends on the **kind** of data:",
-      {table:[["Kind of data","Example","Sensible “middle”"],["Categories with no order","Main way of travelling to work","Mode only"],["Ordered categories (ordinal)","A five-point rating","Median and mode; mean with care (Lesson 3)"],["Numbers, roughly symmetric","Height, test scores","Mean (and median)"],["Numbers with a long tail","Income, hours volunteered","Median, plus the mean if useful"]]},
+      {table:[["Kind of data","Example","Sensible “middle”"],["Categories with no order","Main way of traveling to work","Mode only"],["Ordered categories (ordinal)","A five-point rating","Median and mode; mean with care (Lesson 3)"],["Numbers, roughly symmetric","Height, test scores","Mean (and median)"],["Numbers with a long tail","Income, hours volunteered","Median, plus the mean if useful"]]},
       "In the warm-up, the mean (7 hours) is pulled up by one person who gave 30 hours; the median (5) and mode (5) describe the typical volunteer. Remove the 30, and the mean drops to 4.1 while the median only moves to 4.5. Medians resist extreme values; means don’t. Neither is “the right average” in general: report what describes your data honestly, and say which you used. The spreadsheet unit’s {{common-functions}} entry has more on these functions."
     ]},
     {h:"Spread: the standard deviation", body:[
-      "Two groups can share a mean but differ hugely in how spread out they are. The [[standard-deviation|standard deviation]] (SD) summarises spread: roughly, how far values typically sit from the mean. A small SD means answers cluster closely; a large SD means they are spread out.",
+      "Two groups can share a mean but differ hugely in how spread out they are. The [[standard-deviation|standard deviation]] (SD) summarizes spread: roughly, how far values typically sit from the mean. A small SD means answers cluster closely; a large SD means they are spread out.",
       {ex:"Values: 3, 5, 7, 9   (n = 4)\n1. Mean = (3 + 5 + 7 + 9) ÷ 4 = 6\n2. Differences from the mean: −3, −1, 1, 3\n3. Square them: 9, 1, 1, 9   → sum = 20\n4. Divide by n − 1: 20 ÷ 3 = 6.67   (the variance)\n5. Square root: √6.67 = 2.58   (the standard deviation)", label:"Worked example", mono:true},
       "Why n − 1? When your data is a **sample** and you are estimating the spread in the wider population, dividing by n − 1 corrects a slight underestimate. If your data is the **entire** group you care about, divide by n instead, giving 2.24 here. Spreadsheet functions: STDEV.S (sample) and STDEV.P (whole population) in Excel, Google Sheets and LibreOffice Calc. The older STDEV (sample) and STDEVP (population) work in all of these and in Apple Numbers, which doesn’t have STDEV.S.",
       "Report the SD alongside the mean, for example “mean 6.0 hours (SD 2.6)”. For data with a long tail, the SD is inflated by extreme values just as the mean is: in the volunteer data it is 8.7 hours with the 30 included and 1.4 without. There, the median and the range (or the middle half of the values, the interquartile range) describe the spread better."
@@ -607,8 +607,8 @@ ICA.addUnit({
       {v:18.2, tol:0.1, why:"18.2% is “Strongly agree” alone (40 ÷ 220). The question asks for both options combined."},
       {v:0.568, tol:0.002, why:"That’s the proportion. Multiply by 100 for a percentage."}
     ], hint2:"Add the two counts, then divide by the number who answered, not everyone."},
-    {id:"t4u8-l5-x2", type:"mcq", q:"Which “middle” value best summarises answers to “What is your main way of travelling to school?” (Walk / Bus / Car / Bicycle / Other)?", options:[
-      {t:"The mode: the most common answer", ok:true, why:"These are categories with no order, so only the mode makes sense: it tells you the most common way of travelling."},
+    {id:"t4u8-l5-x2", type:"mcq", q:"Which “middle” value best summarizes answers to “What is your main way of traveling to school?” (Walk / Bus / Car / Bicycle / Other)?", options:[
+      {t:"The mode: the most common answer", ok:true, why:"These are categories with no order, so only the mode makes sense: it tells you the most common way of traveling."},
       {t:"The mean of the codes 1 to 5", why:"Codes are just labels here; a mean of 2.7 would mean nothing, because “Bus” isn’t halfway between anything."},
       {t:"The median", why:"A median needs ordered values. Walk, bus and car have no natural order from low to high."},
       {t:"The standard deviation", why:"The standard deviation describes spread in numbers, not the typical answer, and doesn’t apply to unordered categories."}
@@ -646,7 +646,7 @@ ICA.addUnit({
     ]},
     {id:"t4u8-l5-x7", type:"sort", q:"For each set of survey results, which summary of the “typical” value fits best?", buckets:["Mean","Median","Mode"], items:[
       {t:"Monthly household income in a town (a few very high earners)", b:1, why:"Income has a long tail; the median isn’t pulled up by a few very high values."},
-      {t:"Favourite type of library event (talks, film, crafts, storytime)", b:2, why:"Unordered categories: only the most common answer makes sense."},
+      {t:"Favorite type of library event (talks, film, crafts, storytime)", b:2, why:"Unordered categories: only the most common answer makes sense."},
       {t:"Scores on a 40-question knowledge quiz, roughly symmetric with no extreme values", b:0, why:"For roughly symmetric numbers, the mean uses all the information and suits further analysis."},
       {t:"A single five-point item from “Very poor” to “Very good”", b:1, why:"Ordinal answers have a meaningful order but unknown distances, so the median is the conventional choice (with the distribution)."},
       {t:"Country of birth of respondents", b:2, why:"Categories with no order: report the most common, and ideally the full frequency table."},
@@ -654,7 +654,7 @@ ICA.addUnit({
     ]},
     {id:"t4u8-l5-x8", type:"explain", q:"Explain the difference between a percentage of all respondents and a valid percentage, using an example, and why a report must say which one it uses.", size:"3–4 sentences", hint:"Percent of what? Think about people who skipped the question.", model:"A percentage of all respondents uses everyone who took the survey as the denominator; a valid percentage leaves out people who skipped the question. If 250 people took part, 30 skipped a question and 125 agreed, that’s 50.0% of all respondents but 56.8% of the 220 who answered. Both are correct but answer different questions, so a report must say which it used and give n; otherwise a writer could switch between them to make results look better.", points:["Defines both denominators correctly", "Gives a worked example showing different percentages", "Says both are correct but answer different questions", "Says to state which was used and give n"]}
    ],
-   apply:{intro:"Practise on a small invented dataset in any spreadsheet app (Excel, Google Sheets, LibreOffice Calc or Numbers), then write an honest summary.", tasks:[
+   apply:{intro:"Practice on a small invented dataset in any spreadsheet app (Excel, Google Sheets, LibreOffice Calc or Numbers), then write an honest summary.", tasks:[
      {t:"Build a frequency table with valid percentages", how:["In column A, type these 12 answers to “How useful was the session?”, one per row from A2: Very, Very, Quite, Not, Quite, Very, (leave blank), Quite, Extremely, Very, (leave blank), Quite.","In C2 to C5 type the options: Not, Quite, Very, Extremely.","In D2 type `=COUNTIF($A$2:$A$13,C2)` and fill down to D5.","In D6 type `=SUM(D2:D5)` to get the number who answered (it should be 10).","In E2 type `=D2/$D$6` and fill down, then format as percentages. These are valid percentages.","Note how the percentages would change if you divided by all 12 instead."], write:"Counts… Valid percentages… Percentages of all 12… Which I’d report and why…"},
      {t:"See how one value changes the summaries", how:["Type 2, 3, 3, 4, 5, 5, 5, 6, 30 in a column.","Calculate `=AVERAGE(…)`, `=MEDIAN(…)`, `=MODE(…)` and `=STDEV(…)` for the range.","Delete the 30 and watch which numbers change the most."], write:"With 30: mean, median, mode, SD… Without 30… Which summary I’d report…"},
      {t:"Write an honest one-paragraph summary", how:["Using your frequency table, write three or four sentences a reader could trust.","Include n, the denominator you used, the exact question wording, and one limitation (for example, it was a tiny convenience sample).","Check it against the list of misleading summaries in this lesson."], write:"My summary…"}
@@ -680,7 +680,7 @@ ICA.addUnit({
      {t:"Strongly disagree · Disagree · Neither · Agree · Strongly agree", why:"Agree–disagree labels don’t match a “how useful” question, and asking about the quality directly is usually more reliable."},
      {t:"Never · Rarely · Sometimes · Often · Always", why:"These are frequency labels, for how often something happens, not how useful it was."},
      {t:"Not useful · Useful · Very useful · Extremely useful", why:"This is unbalanced: three ways to say useful and one to say not. It makes results look more positive."},
-     {t:"Not at all useful · Slightly · Moderately · Very · Extremely useful", ok:true, why:"“How useful” is an amount from none to a lot, so a fully labelled unipolar scale fits."}]},
+     {t:"Not at all useful · Slightly · Moderately · Very · Extremely useful", ok:true, why:"“How useful” is an amount from none to a lot, so a fully labeled unipolar scale fits."}]},
    {id:"t4u8-cp04", lesson:"t4u8-l1", level:2, q:"Wei wants to ask former members why they left his gym, but he doesn’t yet know what reasons people give. What is the best plan?", options:[
      {t:"Write his own list of five likely reasons and use it in the survey", why:"A closed list steers answers and hides the ones he didn’t think of. People rarely go beyond the options offered."},
      {t:"Pilot an open question, then build a closed list plus “Other”", ok:true, why:"This follows Pew’s advice: the open pilot catches the unexpected, and the closed list makes the main survey quick to answer and count."},
@@ -734,20 +734,20 @@ ICA.addUnit({
      starter:[
       "A [[survey]] asks many people the same questions in the same way, so the answers can be counted and compared. It’s the right tool when your question is about **how many**, **how often** or **how much**, and how that differs between groups or changes over time.",
       "It’s a weaker tool for **why** questions that need follow-up, for proving cause and effect, and for things people can’t remember or don’t want to admit. Interviews, experiments, observation or existing records may fit better.",
-      "Answering a question takes four quick steps: understand it, recall the information, form a judgement, and fit it to the options. Each step can go wrong, which is why wording and answer options matter so much.",
+      "Answering a question takes four quick steps: understand it, recall the information, form a judgment, and fit it to the options. Each step can go wrong, which is why wording and answer options matter so much.",
       {key:"Before you write a question, check whether someone has already measured what you need, for example a national statistics office."}
      ],
      builder:[
-      "**Format.** [[closed-question|Closed questions]] (fixed options) are quick and easy to count but steer people towards the listed answers; [[open-question|open questions]] catch the unexpected but need coding. Pew Research Center found that offering “the economy” as an option raised it from 35% (unprompted) to 58%.",
+      "**Format.** [[closed-question|Closed questions]] (fixed options) are quick and easy to count but steer people toward the listed answers; [[open-question|open questions]] catch the unexpected but need coding. Pew Research Center found that offering “the economy” as an option raised it from 35% (unprompted) to 58%.",
       "**Mode.** Web and paper forms are self-administered; phone and face-to-face surveys use interviewers. Interviewers help with complex or long surveys and people with low literacy, but they increase socially desirable answers. Web-only surveys miss people offline. Many surveys mix modes.",
       "**Order.** Earlier questions set the context for later ones. Open with an introduction that supports [[informed-consent|informed consent]], then easy, relevant questions; group by topic; use skip logic; put personal background questions near the end unless needed for eligibility; and keep it short.",
-      "**A planning habit:** for every question, write down how you will analyse the answer. Questions with no planned use are cut.",
+      "**A planning habit:** for every question, write down how you will analyze the answer. Questions with no planned use are cut.",
       "**Testing.** Every questionnaire needs testing before launch; see {{piloting}}.",
-      {ex:"Research question: How do adult learners in our evening classes travel, and does travel time affect attendance?\nQ1 Main way of travelling → frequency table (mode)\nQ2 Usual travel time in minutes → median and range\nQ3 Classes missed in the past 4 weeks → cross-tab with Q2 bands\nQ4 Age band → only if needed to compare groups", label:"A planning table", mono:true},
+      {ex:"Research question: How do adult learners in our evening classes travel, and does travel time affect attendance?\nQ1 Main way of traveling → frequency table (mode)\nQ2 Usual travel time in minutes → median and range\nQ3 Classes missed in the past 4 weeks → cross-tab with Q2 bands\nQ4 Age band → only if needed to compare groups", label:"A planning table", mono:true},
       "If a question has no line in a table like this, it probably doesn’t belong in the survey. Writing the table first also shows you which answer formats you need: a number, a category, or a rating."
      ],
      pro:[
-      "Survey methodologists describe answering with the four-stage model of Tourangeau, Rips and Rasinski (*The Psychology of Survey Response*, 2000): comprehension, retrieval, judgement and response. Krosnick’s idea of **satisficing**, giving a merely acceptable answer to save effort, explains many effects: choosing the first reasonable option in a visual list (primacy), the last one heard on the phone (recency), agreeing with statements, and picking “Don’t know”.",
+      "Survey methodologists describe answering with the four-stage model of Tourangeau, Rips and Rasinski (*The Psychology of Survey Response*, 2000): comprehension, retrieval, judgment and response. Krosnick’s idea of **satisficing**, giving a merely acceptable answer to save effort, explains many effects: choosing the first reasonable option in a visual list (primacy), the last one heard on the phone (recency), agreeing with statements, and picking “Don’t know”.",
       "Context effects come in two kinds. **Assimilation** makes answers to later questions more like earlier ones; **contrast** makes them more different. Pew reports examples of several percentage points from order alone, and notes that asking a specific question before a general one often produces a contrast effect. For trend measurement, wording and order must stay fixed across waves.",
       "**Mode effects** combine coverage (who can be reached), measurement (social desirability, primacy versus recency) and nonresponse. Mixed-mode designs trade comparability for coverage; when comparing modes or waves, check whether a change might simply be a mode change.",
       "The **total survey error** framework (see {{survey-sampling}}) is the standard way to think about all these errors together: coverage, sampling, nonresponse, measurement and processing.",
@@ -761,7 +761,7 @@ ICA.addUnit({
     summary:"How to write clear, neutral questions with balanced, complete answer options, and handle memory, sensitive topics and “Don’t know”.",
     levels:{
      starter:[
-      "A good question means the same thing to everyone and doesn’t push anyone towards an answer. Common problems:",
+      "A good question means the same thing to everyone and doesn’t push anyone toward an answer. Common problems:",
       {list:[
         "**Vague words**: “regularly”, “recently”, “household”.",
         "[[leading-question|Leading questions]]: “Don’t you agree…?”",
@@ -777,14 +777,14 @@ ICA.addUnit({
      builder:[
       "**Be specific about time and units**: “In the past 7 days, on how many days…” beats “How often do you…”. Short, recent reference periods reduce forgetting and **telescoping** (pulling older events into the period).",
       "**Ask directly rather than agree–disagree.** Agree–disagree items invite [[acquiescence-bias|acquiescence bias]]. “How stressful is your commute?” (Not at all … Extremely) usually works better than “Agree or disagree: My commute is stressful.”",
-      "**Order effects in lists**: in visual lists people favour early options; in spoken lists, later ones. Randomise the order of unordered lists; never of rating scales.",
+      "**Order effects in lists**: in visual lists people favor early options; in spoken lists, later ones. Randomise the order of unordered lists; never of rating scales.",
       "**“Don’t know” and “Prefer not to say”.** “Don’t know” is honest for factual questions some people can’t answer. For opinions, research reviewed by Krosnick and Presser found it doesn’t reliably improve data quality and can become an easy exit. “Prefer not to say” respects people’s right to decline personal questions. Keep these options visually separate from scales and as separate codes in the data.",
       "**Sensitive questions**: use self-completion, ranges, face-saving wording, explain why you ask, and place them later. This reduces [[social-desirability-bias|social desirability bias]].",
       "**Filter questions** prevent assumptions: ask “Do you have a car?” before asking how often people drive it, and use skip logic so others don’t see the follow-up. Where you can’t list every possibility, add “Other (please specify)” and read those answers: if many people write the same thing, it deserves its own option next time."
      ],
      pro:[
-      "Krosnick and Presser (2010) found the conventional rules of thumb largely supported by experiments, and added evidence-based refinements: fully label rating points; prefer construct-specific questions to agree–disagree, yes–no or true–false formats (acquiescence averages around 10% in their review); be wary of reversed items as a fix for acquiescence; and use decomposition, landmarks and bounded recall for behavioural frequency questions. They also note that people should not have to do calculations the researcher can do.",
-      "For sensitive behaviours, the evidence favours self-administered modes (web, paper, audio computer-assisted) over interviewers. Specialised techniques such as the **randomised response technique** and the **item count (list) technique** give individual privacy by design, at the cost of statistical precision.",
+      "Krosnick and Presser (2010) found the conventional rules of thumb largely supported by experiments, and added evidence-based refinements: fully label rating points; prefer construct-specific questions to agree–disagree, yes–no or true–false formats (acquiescence averages around 10% in their review); be wary of reversed items as a fix for acquiescence; and use decomposition, landmarks and bounded recall for behavioral frequency questions. They also note that people should not have to do calculations the researcher can do.",
+      "For sensitive behaviors, the evidence favors self-administered modes (web, paper, audio computer-assisted) over interviewers. Specialised techniques such as the **randomized response technique** and the **item count (list) technique** give individual privacy by design, at the cost of statistical precision.",
       "**Cross-cultural and translated surveys** need more than translation: concepts, examples and response scales may not carry the same meaning. Teams commonly use structured approaches such as team translation with review and adjudication, followed by cognitive testing in each language.",
       "**Check-all-that-apply versus forced choice**: when people tick options in a long list, they may stop reading carefully; asking yes/no for each option takes longer but forces a decision on each.",
       "Wording effects can be large. Pew Research Center reports question-wording and context experiments with differences of 10 percentage points or more, so publish exact wording with every result."
@@ -794,7 +794,7 @@ ICA.addUnit({
     sources:[{t:"Krosnick & Presser (2010), Question and Questionnaire Design (author’s copy, Stanford)", url:"https://web.stanford.edu/dept/communication/faculty/krosnick/docs/2010/2010%20Handbook%20of%20Survey%20Research.pdf"},{t:"Pew Research Center: Writing Survey Questions", url:"https://www.pewresearch.org/writing-survey-questions/"}], checked:"2026-11"},
 
    {id:"likert-scales", title:"Likert scales and rating questions", aka:["Likert item","Likert-type item","rating scale","agree-disagree scale","midpoint","reverse scoring"], tags:["research","surveys","measurement"],
-    summary:"What Likert items and scales are, how to design the points and labels, and how to analyse ordinal ratings honestly.",
+    summary:"What Likert items and scales are, how to design the points and labels, and how to analyze ordinal ratings honestly.",
     levels:{
      starter:[
       "A rating question asks people to place their answer on an ordered set of options, such as **Strongly disagree · Disagree · Neither · Agree · Strongly agree**.",
@@ -805,7 +805,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Points.** Five and seven are common. Krosnick and Presser found reliability rises up to about seven points and then levels off.",
-      "**Labels.** Label every point with words; fully labelled scales are more reliable than end-labelled ones. Use **bipolar** labels for feelings with two sides (dissatisfied ↔ satisfied) and **unipolar** labels for amounts (Not at all … Extremely).",
+      "**Labels.** Label every point with words; fully labeled scales are more reliable than end-labeled ones. Use **bipolar** labels for feelings with two sides (dissatisfied ↔ satisfied) and **unipolar** labels for amounts (Not at all … Extremely).",
       "**Consistency.** Within one questionnaire, keep the direction of scales the same (for example, always negative on the left or top) so people don’t have to keep re-reading the labels.",
       "**Midpoint.** Omitting it pushes genuinely neutral people to one side; studies have found midpoints can improve reliability and validity. Keep “Don’t know” separate from the scale.",
       "**Scale scores.** Add (or average) the items, reverse-scoring any negatively worded item first: on a 1–k scale, reversed score = (k + 1) − answer. Check the items hang together (for example with Cronbach’s alpha, a [[reliability]] statistic) and prefer established scales with evidence of [[validity]].",
@@ -813,9 +813,9 @@ ICA.addUnit({
       {ex:"Four items on a 1–5 scale; item 3 is reverse-worded.\nAnswers: 4, 5, 2, 3\nReverse item 3: 6 − 2 = 4\nTotal: 4 + 5 + 4 + 3 = 16 (possible range 4–20)\nMean item score: 16 ÷ 4 = 4.0 (on the original 1–5 scale)", label:"Worked example", mono:true}
      ],
      pro:[
-      "**The ordinal-versus-interval debate.** Strictly ordinal data supports medians, percentiles and non-parametric tests. Sullivan and Artino (2013) summarise both sides: means of single items can mislead, but Norman (2010) and others showed that parametric tests (t-tests, ANOVA, regression) are robust with Likert data, particularly summed scales with several items and adequate samples. Many journals accept both; transparency matters more than the choice.",
+      "**The ordinal-versus-interval debate.** Strictly ordinal data supports medians, percentiles and non-parametric tests. Sullivan and Artino (2013) summarize both sides: means of single items can mislead, but Norman (2010) and others showed that parametric tests (t-tests, ANOVA, regression) are robust with Likert data, particularly summed scales with several items and adequate samples. Many journals accept both; transparency matters more than the choice.",
       "**Acquiescence and reversed items.** Agree–disagree formats invite acquiescence. Balancing a scale with reversed items reduces its effect on total scores but doesn’t remove it, and reversed items can introduce misreading and their own method factors. Construct-specific question formats are an alternative where comparability with established scales isn’t needed.",
-      "**Response styles** differ between people and cultures (some favour extremes, others the middle), which complicates cross-national comparison of rating data. Methods such as anchoring vignettes have been developed to adjust for this.",
+      "**Response styles** differ between people and cultures (some favor extremes, others the middle), which complicates cross-national comparison of rating data. Methods such as anchoring vignettes have been developed to adjust for this.",
       "**Visual design** matters on the web: spacing, whether options are shown vertically or as a grid, and how they reflow on phones can shift answers. Grids also encourage “straight-lining” (the same answer down a column).",
       "**Missing items**: if someone skips one item of a multi-item scale, a common approach is to average the items they did answer, provided most were answered; the rule should be decided in advance and reported. Established scales often specify their own scoring and missing-data rules.",
       "Likert’s 1932 monograph described a more complex statistical (“sigma”) scoring method, but also reported that simply scoring the categories 1 to 5 gave totals correlating about 0.99 with it. Later writers such as Ferguson (1941) cite this as a reason the simple method spread."
@@ -845,7 +845,7 @@ ICA.addUnit({
       "**Finite population correction**: when the sample is a large share of the population, n_adj = n ÷ (1 + (n − 1) ÷ N). For N = 600 and ±5 points, 384.16 becomes about 235. With expected nonresponse, inviting everyone (a census attempt) is often simpler for small populations.",
       "**Design effect**: stratification can reduce variance; clustering and weighting usually increase it. The design effect (deff) is the ratio of the actual variance to that of a simple random sample of the same size, and the effective sample size is n ÷ deff. Pew notes that weighting makes the margin of error larger and that good pollsters report the adjusted figure.",
       "**Total survey error**: a widely used version of the framework, from Robert Groves and colleagues, groups errors into representation (coverage, sampling, nonresponse, adjustment) and measurement (validity, measurement error, processing). Salganik’s *Bit by Bit* (Section 3.3) gives a readable account of representation and measurement errors. Large “big data” or opt-in samples can have tiny sampling error yet large bias, which is why a famously huge sample like the 1936 *Literary Digest* poll (2.4 million replies) failed.",
-      "**Probability-based online panels** recruit members offline (for example by address-based sampling) and then survey them online, combining a known selection mechanism with web efficiency. Opt-in panels rely on modelling and weighting, which some studies find can work for some measures and fail for others.",
+      "**Probability-based online panels** recruit members offline (for example by address-based sampling) and then survey them online, combining a known selection mechanism with web efficiency. Opt-in panels rely on modeling and weighting, which some studies find can work for some measures and fail for others.",
       "The confidence-interval logic behind the margin of error is the same as in Unit 3 of this track."
      ]},
     related:["nonresponse-bias","survey-research","descriptive-statistics","crosstabs"],
@@ -890,23 +890,23 @@ ICA.addUnit({
         "**Microsoft Forms**: free with a Microsoft account; free personal accounts allow up to 200 responses per form.",
         "**LimeSurvey**: open-source software you can install yourself, or use as a hosted Cloud service (the free Cloud plan is small: 25 responses a month).",
         "**KoboToolbox**: designed for field data collection, including offline; its free Community plan is for students, non-profits and educational institutions, with paid plans for personal or business use.",
-        "**Qualtrics**: a paid platform many universities and organisations licence."
+        "**Qualtrics**: a paid platform many universities and organizations license."
       ]},
       "Whatever you use, ask: where are the answers stored, who can see them, and does the tool record anything that identifies people?",
       "Also check the practical things: does the form work well on a phone, can people save and come back, and can you download the answers as a spreadsheet?",
       {key:"A survey is only anonymous if the tool truly collects nothing identifying."}
      ],
      builder:[
-      "**Choosing.** Consider cost and response limits, question types (rating grids, skip logic, randomised option order), phone friendliness, offline needs, languages, export formats ([[csv|CSV]] for analysis), accessibility, and what your organisation or ethics committee approves.",
-      "**Data location.** LimeSurvey Cloud asks you to choose the server country when you create an instance (options include Australia, Canada, Finland, Germany, Singapore, the United Kingdom and the USA), and LimeSurvey Community Edition stores data wherever you install it. KoboToolbox runs a Global server and a European Union server for people who need data hosted in the EU. Google and Microsoft store personal-account data under their standard terms; some paid organisational plans offer more control over where some data is stored.",
+      "**Choosing.** Consider cost and response limits, question types (rating grids, skip logic, randomized option order), phone friendliness, offline needs, languages, export formats ([[csv|CSV]] for analysis), accessibility, and what your organization or ethics committee approves.",
+      "**Data location.** LimeSurvey Cloud asks you to choose the server country when you create an instance (options include Australia, Canada, Finland, Germany, Singapore, the United Kingdom and the USA), and LimeSurvey Community Edition stores data wherever you install it. KoboToolbox runs a Global server and a European Union server for people who need data hosted in the EU. Google and Microsoft store personal-account data under their standard terms; some paid organizational plans offer more control over where some data is stored.",
       "**Identity settings.** Many tools can record sign-in email addresses, require sign-in, limit people to one response, or log technical details such as IP addresses. Turn off what you don’t need, and describe accurately what you collect: “anonymous” and confidential are different promises.",
       "**Law and ethics.** Survey answers are often [[personal-data|personal data]]. Laws such as the EU’s [[gdpr|GDPR]] regulate storage and transfers, and research ethics committees expect a data plan (see {{data-protection-laws}} and {{research-ethics}}). Rules vary by country and institution.",
-      "**Accessibility.** Test the form with a screen reader or your device’s zoom settings if you can, use clear labels rather than images of text, avoid colour-only cues, and keep grids small. People using assistive technology or older phones should be able to answer as easily as everyone else."
+      "**Accessibility.** Test the form with a screen reader or your device’s zoom settings if you can, use clear labels rather than images of text, avoid color-only cues, and keep grids small. People using assistive technology or older phones should be able to answer as easily as everyone else."
      ],
      pro:[
       "**Offline and field collection.** KoboToolbox forms can be completed offline in the KoboCollect Android app, or in web forms that cache in the browser once opened online, with submissions sent when a connection returns. Its documentation says data on both servers is stored with Amazon Web Services.",
       "**Self-hosting.** Installing LimeSurvey Community Edition (GNU GPL v2 or later) on your institution’s server keeps data in-house and removes response limits, but makes you responsible for security, backups and updates.",
-      "**Organisational accounts.** Work or school Microsoft 365 and Google Workspace accounts follow the organisation’s settings, may restrict responses to people inside it (which records identity), and may store data in specific regions under the organisation’s contract. Ask your IT or research office which tools are approved for personal or sensitive data.",
+      "**Organisational accounts.** Work or school Microsoft 365 and Google Workspace accounts follow the organization’s settings, may restrict responses to people inside it (which records identity), and may store data in specific regions under the organization’s contract. Ask your IT or research office which tools are approved for personal or sensitive data.",
       "**Linked data.** Responses often flow into a spreadsheet or cloud folder whose sharing settings differ from the form’s. Check both, and remember collaborators and anyone with a results link.",
       "**Retention.** Decide in advance how long raw responses are kept, where de-identified copies live, and how deletion is done; data-protection laws generally require you not to keep personal data longer than necessary.",
       "**Microsoft Forms limits** (per Microsoft’s support page): up to 200 responses per form for free personal accounts, 1,000 for paid personal accounts, and far more for work and school accounts; limits change, so check before planning a large survey."
@@ -935,7 +935,7 @@ ICA.addUnit({
       "Keep a simple log for each question: what testers said, what you changed, and why. It makes the methods section of your report easy to write."
      ],
      pro:[
-      "Krosnick and Presser describe four main pretesting methods: conventional pretests (a small field trial with interviewer debriefing), cognitive interviewing, **behaviour coding** (systematically coding interviewer–respondent exchanges, such as requests for clarification or interviewers changing wording, which have been linked to lower item reliability), and expert review. Each finds different problems, so they are often combined.",
+      "Krosnick and Presser describe four main pretesting methods: conventional pretests (a small field trial with interviewer debriefing), cognitive interviewing, **behavior coding** (systematically coding interviewer–respondent exchanges, such as requests for clarification or interviewers changing wording, which have been linked to lower item reliability), and expert review. Each finds different problems, so they are often combined.",
       "They caution that thinking aloud may itself change how people answer, so cognitive interviews are better at revealing misunderstandings than at reproducing the real survey experience.",
       "Other methods include **split-ballot experiments** (randomly giving two versions of a question in a pilot to compare results), **paradata** from web surveys (time per question, changed answers, break-off points), and **respondent debriefing** questions at the end of a pilot.",
       "For translated or cross-cultural surveys, cognitive testing in each language and cultural group checks whether concepts carry the same meaning, not just whether the words were translated correctly.",
@@ -949,7 +949,7 @@ ICA.addUnit({
     summary:"Frequency tables, valid percentages, the mean, median and mode, and the standard deviation, with when to use each and how to calculate them.",
     levels:{
      starter:[
-      "Descriptive statistics summarise what your data says about the people who answered.",
+      "Descriptive statistics summarize what your data says about the people who answered.",
       {list:[
         "A [[frequency-table|frequency table]] lists each answer with its count and percentage.",
         "A [[valid-percent|valid percentage]] leaves out people who didn’t answer that question. Always say which denominator you used, and give n.",
@@ -1001,10 +1001,10 @@ ICA.addUnit({
      pro:[
       "**Testing association.** The chi-square test of independence asks whether a pattern as strong as the one observed would be unlikely if there were no association in the population. It assumes a probability sample and reasonably large expected counts in each cell (a common rule of thumb is at least 5). A significant result says nothing about the size or importance of the difference; report the percentages and, where useful, an effect-size measure such as Cramér’s V. Unit 3 of this track covers significance testing.",
       "**Simpson’s paradox**: an association in a combined table can shrink, vanish or reverse within every subgroup when a third variable is controlled, because the groups have different compositions. This is why layered tables or multivariable models matter.",
-      "**Ordinal variables** in cross-tabs (rating by group) can be summarised by comparing distributions or medians; collapsing categories should be decided in advance and reported.",
+      "**Ordinal variables** in cross-tabs (rating by group) can be summarized by comparing distributions or medians; collapsing categories should be decided in advance and reported.",
       "**Weighted cross-tabs** should use survey weights for percentages, while reporting unweighted bases so readers know how many people each figure rests on.",
       "**Multiple comparisons**: scanning dozens of cross-tabs for “interesting” differences will turn up some by chance alone, so decide on the main comparisons in advance.",
-      "**Small cells and disclosure**: in small surveys, a cross-tab cell with one or two people can identify someone (the only respondent over 65 in a small team, for example). Many organisations suppress or merge small cells before publishing for this reason."
+      "**Small cells and disclosure**: in small surveys, a cross-tab cell with one or two people can identify someone (the only respondent over 65 in a small team, for example). Many organizations suppress or merge small cells before publishing for this reason."
      ]},
     related:["descriptive-statistics","correlation-causation","survey-sampling","pivot-tables"],
     read:[{book:"bhatt", where:"Chapter 14, “Quantitative Analysis: Descriptive Statistics”"}],
@@ -1015,7 +1015,7 @@ ICA.addUnit({
    {id:"closed-question", term:"Closed question", def:"A question with a fixed list of answers to choose from, such as multiple choice or a rating scale.", codex:"survey-design"},
    {id:"open-question", term:"Open question", def:"A question people answer in their own words. It catches unexpected answers but must be read and coded before counting.", codex:"survey-design"},
    {id:"likert-scale", term:"Likert scale", def:"Strictly, a set of rating items about one idea whose scores are combined into one total; loosely, any agree–disagree rating question. Named after Rensis Likert (1932).", codex:"likert-scales"},
-   {id:"leading-question", term:"Leading question", def:"A question worded to push people towards a particular answer, such as “Don’t you agree that…?”", codex:"question-wording"},
+   {id:"leading-question", term:"Leading question", def:"A question worded to push people toward a particular answer, such as “Don’t you agree that…?”", codex:"question-wording"},
    {id:"double-barrelled-question", term:"Double-barrelled question", def:"A question that asks about two things but allows only one answer, such as “How satisfied are you with the cost and quality?”", codex:"question-wording"},
    {id:"response-rate", term:"Response rate", def:"The percentage of eligible people invited to a survey who completed it. Say how you calculated it.", codex:"nonresponse-bias"},
    {id:"nonresponse-bias-term", term:"Nonresponse bias", def:"Error that arises when the people who don’t answer a survey differ from those who do on the things being measured.", codex:"nonresponse-bias"},
@@ -1046,7 +1046,7 @@ ICA.addUnit({
    {id:"t4u8-q02", lesson:"t4u8-l1", level:2, q:"Kenji wants to know how the number of people living alone in his country has changed since 2000. What should he do first?", options:[
      {t:"Look for census or official statistics that already measure it", ok:true, why:"National statistics offices often publish exactly this. Collecting new data would be slower and less accurate."},
      {t:"Run an online survey of his social media followers", why:"His followers aren’t a fair sample of the country, and a single survey can’t measure change since 2000."},
-     {t:"Interview ten neighbours", why:"Ten neighbours can’t describe a national trend over 25 years."},
+     {t:"Interview ten neighbors", why:"Ten neighbors can’t describe a national trend over 25 years."},
      {t:"Design an experiment", why:"Nothing is being tested by changing a condition; this is a question about an existing trend."}
    ]},
    {id:"t4u8-q03", lesson:"t4u8-l1", level:1, q:"What is the main drawback of closed questions?", options:[
@@ -1061,7 +1061,7 @@ ICA.addUnit({
      {t:"Report, judge, recall, understand", why:"Reporting the answer is the last step, not the first."},
      {t:"Judge, report, understand, recall", why:"Judging needs the information you recall, which needs understanding first."}
    ]},
-   {id:"t4u8-q05", lesson:"t4u8-l1", level:2, q:"In which mode are people most likely to over-report socially approved behaviour, such as giving to charity?", options:[
+   {id:"t4u8-q05", lesson:"t4u8-l1", level:2, q:"In which mode are people most likely to over-report socially approved behavior, such as giving to charity?", options:[
      {t:"A face-to-face interview", ok:true, why:"An interviewer’s presence increases the pull to give answers that look good."},
      {t:"A web form completed alone", why:"Self-completed forms reduce social desirability effects."},
      {t:"A paper form posted back without a name", why:"Self-completed, unnamed paper forms also reduce the pressure to look good."},
@@ -1151,7 +1151,7 @@ ICA.addUnit({
      {t:"A set of rating items about one idea, combined into a single score", ok:true, why:"Likert’s 1932 method added up responses to several statements."},
      {t:"Any single question with five options", why:"A single rating question is a Likert-type item, not a scale."},
      {t:"An open question about attitudes", why:"Likert items are closed, with fixed ordered options."},
-     {t:"A single rating scale that must always have exactly seven labelled points", why:"Likert scales can have different numbers of points; Likert’s own example used five."}
+     {t:"A single rating scale that must always have exactly seven labeled points", why:"Likert scales can have different numbers of points; Likert’s own example used five."}
    ]},
    {id:"t4u8-q20", lesson:"t4u8-l3", level:2, q:"On a 1–7 scale, a respondent answers 3 to a reverse-worded item. What is the reversed score?", options:[
      {t:"5", ok:true, why:"Reversed score = (7 + 1) − 3 = 5."},
@@ -1165,11 +1165,11 @@ ICA.addUnit({
      {t:"Because they have no order at all", why:"That would be nominal (unordered) data."},
      {t:"Because the answers are always normally distributed", why:"Ordinal refers to the type of scale, not the distribution."}
    ]},
-   {id:"t4u8-q22", lesson:"t4u8-l3", level:1, q:"What did Krosnick and Presser’s review find about labelling scale points?", options:[
-     {t:"Labelling every point with words tends to give more reliable answers", ok:true, why:"That works better than labelling only the ends. Full verbal labels reduce guessing about what middle numbers mean."},
+   {id:"t4u8-q22", lesson:"t4u8-l3", level:1, q:"What did Krosnick and Presser’s review find about labeling scale points?", options:[
+     {t:"Labeling every point with words tends to give more reliable answers", ok:true, why:"That works better than labeling only the ends. Full verbal labels reduce guessing about what middle numbers mean."},
      {t:"Only numbers should ever be used", why:"Numeric-only scales are harder to interpret."},
      {t:"Labels make no difference", why:"The evidence shows labels do matter for reliability."},
-     {t:"Only the midpoint should be labelled, so people aren’t led by the words", why:"That leaves most points unclear."}
+     {t:"Only the midpoint should be labeled, so people aren’t led by the words", why:"That leaves most points unclear."}
    ]},
    {id:"t4u8-q23", lesson:"t4u8-l3", level:2, q:"Where should a “Don’t know” option go on a five-point agreement scale?", options:[
      {t:"Separate from the scale, after the last point", ok:true, why:"Keeping it apart stops it being read as a neutral rating."},
@@ -1179,13 +1179,13 @@ ICA.addUnit({
    ]},
    {id:"t4u8-q24", lesson:"t4u8-l3", level:3, q:"Two departments both have a mean of 3.0 on a five-point item. In Department A, almost everyone chose 3. In Department B, half chose 1 and half chose 5. What should the report do?", options:[
      {t:"Show each department’s full distribution, not just the mean", ok:true, why:"Identical means hide a united group and a split one. The distribution is the honest summary for ordinal ratings; the mean alone hides the difference."},
-     {t:"Report that the departments are identical", why:"They are very different: one is neutral, the other is polarised."},
+     {t:"Report that the departments are identical", why:"They are very different: one is neutral, the other is polarized."},
      {t:"Report only the medians, which will show the difference clearly", why:"Both medians are 3 here too, so they also hide the split."},
      {t:"Drop Department B as an outlier", why:"Polarised answers are a real finding, not an error."}
    ]},
    {id:"t4u8-q25", lesson:"t4u8-l3", level:2, q:"What does the evidence say about removing the neutral midpoint from a rating scale?", options:[
      {t:"It pushes genuinely neutral people to one side, which can reduce accuracy", ok:true, why:"Krosnick and Presser report this and cite studies finding midpoints improved reliability and validity."},
-     {t:"It always improves data quality", why:"The evidence doesn’t support that; many studies favour a midpoint."},
+     {t:"It always improves data quality", why:"The evidence doesn’t support that; many studies favor a midpoint."},
      {t:"It has no effect at all", why:"It changes where neutral people put their answers."},
      {t:"It is required by Likert’s original 1932 method, so it always improves accuracy", why:"Likert’s original categories included an “undecided” middle option."}
    ]},
@@ -1196,7 +1196,7 @@ ICA.addUnit({
      {t:"Social Science Research", why:"That is Bhattacherjee’s textbook."}
    ]},
    {id:"t4u8-q27", lesson:"t4u8-l3", level:3, q:"Hana wants to measure how confident nurses feel using a new records system. She could adopt a published, tested scale or write her own items. Which consideration is most important?", options:[
-     {t:"A tested scale has evidence behind it, but she must check its licence and fit", ok:true, why:"A tested scale has evidence of reliability and validity and allows comparison. Established scales save work and are comparable, but some require permission or payment and may not suit every context."},
+     {t:"A tested scale has evidence behind it, but she must check its license and fit", ok:true, why:"A tested scale has evidence of reliability and validity and allows comparison. Established scales save work and are comparable, but some require permission or payment and may not suit every context."},
      {t:"Writing her own is always better because it’s new", why:"New items lack evidence of reliability and validity and can’t be compared with other studies."},
      {t:"Published scales are free to use in every case", why:"Some scales are copyrighted and need permission or payment."},
      {t:"The number of items doesn’t matter, so a single item she writes herself is enough", why:"One item is less reliable for a broad idea like confidence; that’s why scales use several."}
@@ -1221,7 +1221,7 @@ ICA.addUnit({
      {t:"The 95% confidence level", why:"The confidence level is built into the 1.96."}
    ]},
    {id:"t4u8-q31", lesson:"t4u8-l4", level:2, q:"What happened in the 1936 Literary Digest poll?", options:[
-     {t:"About 2.4 million replies predicted Landon would win, but Roosevelt won in a landslide", ok:true, why:"A frame skewed towards wealthier people and differential response defeated the huge sample."},
+     {t:"About 2.4 million replies predicted Landon would win, but Roosevelt won in a landslide", ok:true, why:"A frame skewed toward wealthier people and differential response defeated the huge sample."},
      {t:"A small sample of 1,000 correctly predicted Landon’s victory", why:"Landon lost; and the Digest poll was enormous, not small."},
      {t:"The poll was accurate to within 1 point", why:"It was badly wrong."},
      {t:"It was the first poll to use random sampling", why:"It used lists of telephone and car owners, not random sampling."}
@@ -1293,7 +1293,7 @@ ICA.addUnit({
      {t:"MEDIAN", why:"MEDIAN finds the middle value, not the spread."},
      {t:"COUNTIF", why:"COUNTIF counts cells that meet a condition."}
    ]},
-   {id:"t4u8-q43", lesson:"t4u8-l5", level:1, q:"Which “average” makes sense for respondents’ favourite season?", options:[
+   {id:"t4u8-q43", lesson:"t4u8-l5", level:1, q:"Which “average” makes sense for respondents’ favorite season?", options:[
      {t:"The mode", ok:true, why:"Seasons are categories without a low-to-high order, so only the most common answer makes sense."},
      {t:"The mean", why:"There’s no meaningful number to average."},
      {t:"The median", why:"A median needs an order from low to high, which seasons don’t have here."},

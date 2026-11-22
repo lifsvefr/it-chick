@@ -9,7 +9,7 @@ ICA.addUnit({
   goals:[
     "Explain how kanji were built and find the radical and other parts in a kanji",
     "Write kanji in the standard stroke order and count their strokes",
-    "Tell on readings from kun readings, read okurigana, and recognise common special readings",
+    "Tell on readings from kun readings, read okurigana, and recognize common special readings",
     "Read and write the 80 kanji on common N5 lists, with their meanings, main readings and everyday words",
     "Learn N5 vocabulary in useful groups, with the particles and opposites that go with each word",
     "Read short N5 texts (signs, messages, notices, a simple email) with a clear strategy",
@@ -54,11 +54,11 @@ ICA.addUnit({
     ]},
     {h:"Stroke order: seven rules of thumb and a famous pair", body:[
       "Each kanji is written with a fixed number of strokes ([画]{かく}) in a standard order, its [[stroke-order]] ([筆順]{ひつじゅん}). The orders taught in Japanese schools are based on a 1958 Ministry of Education guide for teachers ([筆順指導]{ひつじゅんしどう}の[手]{て}びき). The guide says it chose one order per kanji so that teaching would be consistent, not to call other orders wrong, and some kanji have more than one accepted order. But the standard order makes your kanji balanced and readable, and it makes counting strokes reliable.",
-      "You don’t have to memorise an order for every kanji. A handful of rules of thumb covers most of them. They are a simplified version of the guide’s principles, so each one has exceptions.",
-      {table:[["Rule","Example"],["1 Top to bottom","三: the three lines from the top down"],["2 Left to right","川: left stroke first; 休: 亻 before 木"],["3 Horizontal before a vertical that crosses it","十: 一 first, then the vertical"],["4 Left-falling ノ before right-falling ㇏","人, 八, 入"],["5 Centre first in small symmetrical kanji","小 and 水: the middle stroke first"],["6 Outside before inside, close the box last","日 and 国: the bottom line is the last stroke"],["7 A stroke that cuts through everything comes last","中: the long vertical goes last"]]},
-      {fig:'<svg viewBox="0 0 340 236"><text x="170" y="18" text-anchor="middle">Numbers show the order of strokes</text><rect class="d-panel" x="6" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M18 92 H72" stroke-width="4"/><path class="d-ink" d="M45 52 V152" stroke-width="4"/><text x="14" y="84">1</text><text x="50" y="58">2</text><text x="45" y="200" text-anchor="middle">十</text><text class="s" x="45" y="218" text-anchor="middle">rule 3</text><rect class="d-panel" x="90" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M129 56 C126 100 118 128 98 152" stroke-width="4"/><path class="d-ink" d="M130 96 C140 124 150 140 162 150" stroke-width="4"/><text x="112" y="62">1</text><text x="148" y="122">2</text><text x="129" y="200" text-anchor="middle">人</text><text class="s" x="129" y="218" text-anchor="middle">rule 4</text><rect class="d-panel" x="174" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M213 46 V146 L204 138" stroke-width="4"/><path class="d-ink" d="M198 80 L184 120" stroke-width="4"/><path class="d-ink" d="M228 80 L244 118" stroke-width="4"/><text x="218" y="52">1</text><text x="184" y="80">2</text><text x="236" y="80">3</text><text x="213" y="200" text-anchor="middle">小</text><text class="s" x="213" y="218" text-anchor="middle">rule 5</text><rect class="d-panel" x="258" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M272 74 V122" stroke-width="4"/><path class="d-ink" d="M272 74 H322 V122" stroke-width="4"/><path class="d-ink" d="M272 116 H322" stroke-width="4"/><path class="d-ink" d="M297 44 V164" stroke-width="4"/><text x="262" y="100">1</text><text x="306" y="68">2</text><text x="306" y="112">3</text><text x="302" y="160">4</text><text x="297" y="200" text-anchor="middle">中</text><text class="s" x="297" y="218" text-anchor="middle">rule 7</text></svg>', alt:"Four kanji with numbered strokes. 十: 1 the horizontal, 2 the vertical. 人: 1 the left-falling stroke, 2 the right-falling stroke. 小: 1 the centre stroke with a hook, 2 the left dot, 3 the right dot. 中: 1 the left side of the box, 2 the top and right side, 3 the bottom, 4 the long vertical through the middle.", cap:"Check any kanji’s order in a dictionary such as Jisho, which shows a stroke-order diagram."},
+      "You don’t have to memorize an order for every kanji. A handful of rules of thumb covers most of them. They are a simplified version of the guide’s principles, so each one has exceptions.",
+      {table:[["Rule","Example"],["1 Top to bottom","三: the three lines from the top down"],["2 Left to right","川: left stroke first; 休: 亻 before 木"],["3 Horizontal before a vertical that crosses it","十: 一 first, then the vertical"],["4 Left-falling ノ before right-falling ㇏","人, 八, 入"],["5 Center first in small symmetrical kanji","小 and 水: the middle stroke first"],["6 Outside before inside, close the box last","日 and 国: the bottom line is the last stroke"],["7 A stroke that cuts through everything comes last","中: the long vertical goes last"]]},
+      {fig:'<svg viewBox="0 0 340 236"><text x="170" y="18" text-anchor="middle">Numbers show the order of strokes</text><rect class="d-panel" x="6" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M18 92 H72" stroke-width="4"/><path class="d-ink" d="M45 52 V152" stroke-width="4"/><text x="14" y="84">1</text><text x="50" y="58">2</text><text x="45" y="200" text-anchor="middle">十</text><text class="s" x="45" y="218" text-anchor="middle">rule 3</text><rect class="d-panel" x="90" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M129 56 C126 100 118 128 98 152" stroke-width="4"/><path class="d-ink" d="M130 96 C140 124 150 140 162 150" stroke-width="4"/><text x="112" y="62">1</text><text x="148" y="122">2</text><text x="129" y="200" text-anchor="middle">人</text><text class="s" x="129" y="218" text-anchor="middle">rule 4</text><rect class="d-panel" x="174" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M213 46 V146 L204 138" stroke-width="4"/><path class="d-ink" d="M198 80 L184 120" stroke-width="4"/><path class="d-ink" d="M228 80 L244 118" stroke-width="4"/><text x="218" y="52">1</text><text x="184" y="80">2</text><text x="236" y="80">3</text><text x="213" y="200" text-anchor="middle">小</text><text class="s" x="213" y="218" text-anchor="middle">rule 5</text><rect class="d-panel" x="258" y="30" width="78" height="150" rx="6" stroke-width="1.5"/><path class="d-ink" d="M272 74 V122" stroke-width="4"/><path class="d-ink" d="M272 74 H322 V122" stroke-width="4"/><path class="d-ink" d="M272 116 H322" stroke-width="4"/><path class="d-ink" d="M297 44 V164" stroke-width="4"/><text x="262" y="100">1</text><text x="306" y="68">2</text><text x="306" y="112">3</text><text x="302" y="160">4</text><text x="297" y="200" text-anchor="middle">中</text><text class="s" x="297" y="218" text-anchor="middle">rule 7</text></svg>', alt:"Four kanji with numbered strokes. 十: 1 the horizontal, 2 the vertical. 人: 1 the left-falling stroke, 2 the right-falling stroke. 小: 1 the center stroke with a hook, 2 the left dot, 3 the right dot. 中: 1 the left side of the box, 2 the top and right side, 3 the bottom, 4 the long vertical through the middle.", cap:"Check any kanji’s order in a dictionary such as Jisho, which shows a stroke-order diagram."},
       "A famous pair shows why you should check: [右]{みぎ} (right) starts with the slanting ノ stroke, but [左]{ひだり} (left) starts with the horizontal 一. They look almost the same, so they are often taught side by side.",
-      "Strokes also end in three different ways, and your teacher or a dictionary diagram will show which: a stop (とめ), a little hook (はね), or a sweep that fades out (はらい). In 小, the centre stroke ends with a hook. You can see the same hook at the bottom of 水 and 何."
+      "Strokes also end in three different ways, and your teacher or a dictionary diagram will show which: a stop (とめ), a little hook (はね), or a sweep that fades out (はらい). In 小, the center stroke ends with a hook. You can see the same hook at the bottom of 水 and 何."
     ]},
     {h:"Counting strokes and looking kanji up", body:[
       "Stroke counts follow from the rules, with one surprise for beginners: a box is **3** strokes, not 4. In 口 (mouth), the left side is one stroke, the top and right side together are one stroke (it turns the corner without lifting), and the bottom is one stroke. So 日 has 4 strokes, 国 has 8, and 何 (亻 + 可) has 7.",
@@ -67,7 +67,7 @@ ICA.addUnit({
       {tip:"Search a kanji on Jisho.org and add “#kanji” (for example, “休 #kanji”). The kanji page shows its meanings, on and kun readings, stroke count, radical, parts, a stroke-order diagram and words that use it. No account is needed."},
       "How to learn kanji without burning out:",
       {list:["**Learn kanji through words.** [電車]{でんしゃ} (train) teaches you two kanji and a word you can use today.","**Learn the parts.** Once you know 言, you have a head start on 語, 話 and 読.","**Write each new kanji a few times by hand**, saying a word that uses it. Writing helps memory even if you mostly type.","**Review a little every day.** You will forget some kanji: that is normal and expected. [[spaced-review|Spaced review]], seeing each kanji again just as you start to forget it, fixes this better than long cramming sessions."]},
-      {lab:"kl-n5", t:"Practise: start the N5 kanji deck (10 new kanji a day is plenty)"}
+      {lab:"kl-n5", t:"Practice: start the N5 kanji deck (10 new kanji a day is plenty)"}
     ]}
    ],
    try:[
@@ -117,7 +117,7 @@ ICA.addUnit({
       {t:"The long vertical through the middle", why:"Rule 7: a stroke that cuts through everything comes last."}
     ]},
     {id:"e3u4-l1-x7", type:"mcq", q:"右 (right) and 左 (left) look almost the same. How do their first strokes differ?", options:[
-      {t:"右 starts with the slanting ノ; 左 starts with the horizontal 一", ok:true, why:"Right. This is the famous pair: 右 breaks the usual pattern, so it is worth practising both."},
+      {t:"右 starts with the slanting ノ; 左 starts with the horizontal 一", ok:true, why:"Right. This is the famous pair: 右 breaks the usual pattern, so it is worth practicing both."},
       {t:"Both start with the horizontal 一, as rule 3 says", why:"That is true for 左 only. 右 starts with the slanting stroke."},
       {t:"Both start with the slanting ノ", why:"That is true for 右 only. 左 starts with the horizontal."},
       {t:"The order doesn’t matter for these two", why:"Japanese schools teach a standard order for both, and the two are often taught side by side because they differ."}
@@ -157,7 +157,7 @@ ICA.addUnit({
      reveal:"**Most kanji have two kinds of reading.** When Japan borrowed kanji, it borrowed a Chinese pronunciation (いち, the *on* reading) and also matched each kanji to a Japanese word with the same meaning (ひと, the *kun* reading). Both are correct; the word decides which one you use. This lesson shows you how to tell which reading a word needs."},
    goals:[
      "Explain on readings and kun readings and use clues to choose between them",
-     "Read okurigana and recognise common special readings such as 今日 and [大人]{おとな}",
+     "Read okurigana and recognize common special readings such as 今日 and [大人]{おとな}",
      "Read and write the 14 number kanji and the 14 time kanji with their main readings and words",
      "Read prices and times written in kanji, including sound changes such as さんびゃく and ろっぷん"
    ],
@@ -165,7 +165,7 @@ ICA.addUnit({
     {h:"Two kinds of reading", body:[
       {lead:"Most kanji have an **on reading** ([音読]{おんよ}み, from Chinese) and a **kun reading** ([訓読]{くんよ}み, a native Japanese word). Dictionaries write on readings in katakana and kun readings in hiragana."},
       "An [[on-yomi|on reading]] ([音読]{おんよ}み) is based on how the kanji was pronounced in Chinese when Japan borrowed it. A [[kun-yomi|kun reading]] ([訓読]{くんよ}み) is the Japanese word that already existed for that meaning. The mountain kanji 山 is read サン (from Chinese) in [富士山]{ふじさん} and やま (the Japanese word for mountain) when it stands alone.",
-      {fig:'<svg viewBox="0 0 340 258"><text x="170" y="18" text-anchor="middle">One kanji, two kinds of reading</text><text transform="translate(170 92) scale(3.2)" text-anchor="middle">山</text><rect class="d-lup" x="8" y="122" width="156" height="128" rx="8" stroke-width="1.5"/><text x="86" y="144" text-anchor="middle">On reading 音読み</text><text x="86" y="170" text-anchor="middle">サン</text><text class="s" x="86" y="190" text-anchor="middle">from Chinese</text><text class="s" x="86" y="210" text-anchor="middle">富士山 ふじさん</text><text class="s" x="86" y="228" text-anchor="middle">火山 かざん</text><rect class="d-sage" x="176" y="122" width="156" height="128" rx="8" stroke-width="1.5"/><text x="254" y="144" text-anchor="middle">Kun reading 訓読み</text><text x="254" y="170" text-anchor="middle">やま</text><text class="s" x="254" y="190" text-anchor="middle">a Japanese word</text><text class="s" x="254" y="210" text-anchor="middle">山 やま (alone)</text><path class="d-ink" d="M146 106 L100 120" stroke-width="2"/><path class="d-ink" d="M194 106 L240 120" stroke-width="2"/></svg>', alt:"The kanji 山 in the centre. On the left, the on reading サン, from Chinese, used in 富士山 (ふじさん) and 火山 (かざん). On the right, the kun reading やま, a Japanese word, used when 山 stands alone.", cap:"Dictionaries and the Kanji Lab show on readings in katakana and kun readings in hiragana."},
+      {fig:'<svg viewBox="0 0 340 258"><text x="170" y="18" text-anchor="middle">One kanji, two kinds of reading</text><text transform="translate(170 92) scale(3.2)" text-anchor="middle">山</text><rect class="d-lup" x="8" y="122" width="156" height="128" rx="8" stroke-width="1.5"/><text x="86" y="144" text-anchor="middle">On reading 音読み</text><text x="86" y="170" text-anchor="middle">サン</text><text class="s" x="86" y="190" text-anchor="middle">from Chinese</text><text class="s" x="86" y="210" text-anchor="middle">富士山 ふじさん</text><text class="s" x="86" y="228" text-anchor="middle">火山 かざん</text><rect class="d-sage" x="176" y="122" width="156" height="128" rx="8" stroke-width="1.5"/><text x="254" y="144" text-anchor="middle">Kun reading 訓読み</text><text x="254" y="170" text-anchor="middle">やま</text><text class="s" x="254" y="190" text-anchor="middle">a Japanese word</text><text class="s" x="254" y="210" text-anchor="middle">山 やま (alone)</text><path class="d-ink" d="M146 106 L100 120" stroke-width="2"/><path class="d-ink" d="M194 106 L240 120" stroke-width="2"/></svg>', alt:"The kanji 山 in the center. On the left, the on reading サン, from Chinese, used in 富士山 (ふじさん) and 火山 (かざん). On the right, the kun reading やま, a Japanese word, used when 山 stands alone.", cap:"Dictionaries and the Kanji Lab show on readings in katakana and kun readings in hiragana."},
       "Some kanji have more than one on reading, because Japan borrowed Chinese pronunciations at different times and from different regions. 生 is セイ in [先生]{せんせい} but ショウ in [一生]{いっしょう} (a lifetime). Some kanji have no kun reading at all (校 has only on readings, and コウ is the one you need; 電 is only デン), and a few, such as 何, are nearly always read with their kun readings.",
       {key:"A kanji is not one sound. It is a meaning with several possible readings, and the word around it tells you which one to use."}
     ]},
@@ -173,7 +173,7 @@ ICA.addUnit({
       "You will learn readings word by word, but three clues help you guess, and they are right most of the time:",
       {table:[["What you see","Usual reading","Examples"],["Two or more kanji together, no kana","On","[電車]{でんしゃ} train, [学生]{がくせい} student, [毎日]{まいにち} every day"],["A kanji followed by kana (okurigana)","Kun","[食]{た}べる eat, [高]{たか}い high, [休]{やす}む rest"],["A kanji standing alone as a noun","Usually kun","[山]{やま} mountain, [水]{みず} water, [人]{ひと} person"]]},
       "These are tendencies, not rules. Some compounds use kun readings: [出口]{でぐち} (exit) and [名前]{なまえ} (name) are kun + kun. Some mix the two: [毎朝]{まいあさ} (every morning) is マイ (on) + あさ (kun). And some kanji standing alone use their on reading: [本]{ほん} (book), [円]{えん} (yen), [気]{き} (spirit, feeling).",
-      {tip:"When you learn a new kanji, don’t try to memorise every reading on its dictionary page. Learn the readings that come in words you need, one word at a time. The rest will come with new words."}
+      {tip:"When you learn a new kanji, don’t try to memorize every reading on its dictionary page. Learn the readings that come in words you need, one word at a time. The rest will come with new words."}
     ]},
     {h:"Okurigana: kana that finish the word", body:[
       "[[okurigana|Okurigana]] ([送]{おく}り[仮名]{がな}) are the hiragana written after a kanji to complete a word, usually a verb or an adjective. The kanji holds the part that never changes; the okurigana carry the part that does.",
@@ -200,7 +200,7 @@ ICA.addUnit({
       {table:[["Kanji","Meaning","Main readings","Common words"],["年","year","On ネン · Kun とし","[来年]{らいねん} next year · [毎年]{まいとし} every year · ★[今年]{ことし} this year"],["月","moon; month","On ゲツ, ガツ · Kun つき","[月]{つき} moon · [一月]{いちがつ} January · [月曜日]{げつようび} Monday"],["日","sun; day","On ニチ, ジツ · Kun ひ, か","[毎日]{まいにち} every day · [日本]{にほん} Japan · ★[今日]{きょう} today"],["時","time; hour","On ジ · Kun とき","[時間]{じかん} time; hours · [一時]{いちじ} one o’clock · [時々]{ときどき} sometimes"],["分","minute; part; understand","On フン, ブン · Kun わ(かる), わ(ける)","[五分]{ごふん} five minutes · [半分]{はんぶん} half · [分]{わ}かる understand"],["半","half","On ハン","[半分]{はんぶん} half · [三時半]{さんじはん} half past three · [半年]{はんとし} half a year"],["午","noon","On ゴ","[午前]{ごぜん} a.m.; morning · [午後]{ごご} p.m.; afternoon"],["前","front; before","On ゼン · Kun まえ","[前]{まえ} front; before · [名前]{なまえ} name · [午前]{ごぜん} a.m."],["後","after; behind","On ゴ, コウ · Kun あと, うし(ろ)","[後]{あと}で later · [後]{うし}ろ behind · [午後]{ごご} p.m."],["今","now","On コン · Kun いま","[今]{いま} now · [今月]{こんげつ} this month · [今晩]{こんばん} this evening"],["毎","every","On マイ","[毎日]{まいにち} every day · [毎朝]{まいあさ} every morning · [毎月]{まいつき} every month"],["何","what","Kun なに, なん","[何]{なに} what · [何時]{なんじ} what time · [何人]{なんにん} how many people"],["間","interval; between","On カン · Kun あいだ, ま","[時間]{じかん} time; hours · [一週間]{いっしゅうかん} a week · [間]{あいだ} between; during"],["先","ahead; earlier","On セン · Kun さき","[先週]{せんしゅう} last week · [先月]{せんげつ} last month · [先生]{せんせい} teacher"]]},
       "Watch 分 after numbers: it is ふん or ぷん depending on the number before it. [五分]{ごふん} and [九分]{きゅうふん}, but [一分]{いっぷん}, [三分]{さんぷん}, [六分]{ろっぷん} and [十分]{じゅっぷん}. And watch 四, 七 and 九 on the clock: [四時]{よじ}, [七時]{しちじ} and [九時]{くじ}.",
       "Time words come in sets. Learn them together: [先週]{せんしゅう} (last week), [今週]{こんしゅう} (this week), [来週]{らいしゅう} (next week); [先月]{せんげつ}, [今月]{こんげつ}, [来月]{らいげつ}. Year is the odd one out: [去年]{きょねん} (last year), ★[今年]{ことし}, [来年]{らいねん}.",
-      {lab:"kl-n5", t:"Practise: the number and time kanji in your daily N5 review"}
+      {lab:"kl-n5", t:"Practice: the number and time kanji in your daily N5 review"}
     ]}
    ],
    try:[
@@ -258,7 +258,7 @@ ICA.addUnit({
     ]}
    ],
    apply:{
-    intro:"Practise readings with numbers and times from your own life.",
+    intro:"Practice readings with numbers and times from your own life.",
     tasks:[
      {t:"Write your week in kanji", how:[
        "Write five times you do something regularly, in kanji with furigana, for example [午前七時]{ごぜんしちじ}, [午後六時半]{ごごろくじはん}.",
@@ -335,7 +335,7 @@ ICA.addUnit({
       {ex:"はじめまして。チェスカ・イババオです。フィリピンから[来]{き}ました。[父]{ちち}も[母]{はは}もフィリピン[人]{じん}です。[今]{いま}、[汐浦]{しおうら}[大学]{だいがく}の[学生]{がくせい}です。[日本語]{にほんご}の[先生]{せんせい}は、うちの[大家]{おおや}さんです。[毎週]{まいしゅう}[土曜日]{どようび}に、[友]{とも}だちと[山]{やま}に[行]{い}きます。", label:"Cheska’s self-introduction"},
       {list:["Where are Cheska’s parents from? (父も母も**フィリピン人**です: both of them are Filipino.)","What does Cheska do? ([汐浦]{しおうら}[大学]{だいがく}の**[学生]{がくせい}**です: she is a student at Shioura University.)","Who is her Japanese teacher? (うちの[大家]{おおや}さんです: her landlady.)","What does she do on Saturdays? ([毎週土曜日]{まいしゅうどようび}に、友だちと**山**に[行]{い}きます: she goes to the mountains with friends every Saturday.)"]},
       "Notice how much the kanji helped: the people (父, 母, [学生]{がくせい}, [先生]{せんせい}), the places ([大学]{だいがく}, 山) and the time ([毎週土曜日]{まいしゅうどようび}) all stand out from the hiragana grammar around them. That is the skill Lesson 5 builds on.",
-      {lab:"kl-n5", t:"Practise: people, places, directions and nature kanji"}
+      {lab:"kl-n5", t:"Practice: people, places, directions and nature kanji"}
     ]}
    ],
    try:[
@@ -395,7 +395,7 @@ ICA.addUnit({
     ]}
    ],
    apply:{
-    intro:"Use the new kanji to describe your own home, family and neighbourhood.",
+    intro:"Use the new kanji to describe your own home, family and neighborhood.",
     tasks:[
      {t:"Label five things at home", how:[
        "Choose five objects at home. For each, write where it is with a position kanji, for example [本]{ほん}はテーブルの[上]{うえ}にあります。 or ねこはベッドの[下]{した}にいます。",
@@ -413,7 +413,7 @@ ICA.addUnit({
        "Check every reading, especially 人 (じん / にん / ひと)."
      ], write:"Sentence 1… 2… 3… My question to a friend…"}
     ],
-    proof:"Five position sentences about your home, a labelled map with the four directions, and three family sentences that use the inside/outside words correctly."},
+    proof:"Five position sentences about your home, a labeled map with the four directions, and three family sentences that use the inside/outside words correctly."},
    read:[
     {book:"irodori", where:"Starter, Lessons 3 “Nice to meet you.” and 4 “I live in Tokyo.”: [漢字]{かんじ}のことば (Kanji Words)", note:"[名前]{なまえ}, [国]{くに}, [父]{ちち}, [母]{はは}, [子]{こ}ども, [日本]{にほん}."},
     {book:"irodori", where:"Starter, Lessons 8 “Where is Yamada-san?”, 9 “Lunch is from noon to 1 o’clock.” and 13 “Does this bus go to the airport?”: [漢字]{かんじ}のことば (Kanji Words)", note:"上, 下, 中; the days of the week; 東, 西, 南, 北."}
@@ -438,7 +438,7 @@ ICA.addUnit({
       "The okurigana pattern helps you tell related verbs apart. [出]{で}る (go out) and [出]{だ}す (take something out) share 出; [入]{はい}る (enter) and [入]{い}れる (put in) share 入. In each pair, one verb is about you moving and the other is about you moving something."
     ]},
     {h:"Describing words", body:[
-      {table:[["Kanji","Meaning","Main readings","Common words"],["大","big","On ダイ, タイ · Kun おお(きい)","[大]{おお}きい big · [大学]{だいがく} university · [大切]{たいせつ} important · ★[大人]{おとな} adult"],["小","small","On ショウ · Kun ちい(さい), こ, お","[小]{ちい}さい small · [小学校]{しょうがっこう} primary school · [小川]{おがわ} stream"],["高","high; expensive","On コウ · Kun たか(い)","[高]{たか}い high, tall, expensive · [高校]{こうこう} high school"],["長","long; chief","On チョウ · Kun なが(い)","[長]{なが}い long · [社長]{しゃちょう} company president · [校長]{こうちょう} head teacher"],["白","white","On ハク · Kun しろ, しろ(い)","[白]{しろ}い white · [白]{しろ} white (the colour) · [面白]{おもしろ}い interesting"]]},
+      {table:[["Kanji","Meaning","Main readings","Common words"],["大","big","On ダイ, タイ · Kun おお(きい)","[大]{おお}きい big · [大学]{だいがく} university · [大切]{たいせつ} important · ★[大人]{おとな} adult"],["小","small","On ショウ · Kun ちい(さい), こ, お","[小]{ちい}さい small · [小学校]{しょうがっこう} primary school · [小川]{おがわ} stream"],["高","high; expensive","On コウ · Kun たか(い)","[高]{たか}い high, tall, expensive · [高校]{こうこう} high school"],["長","long; chief","On チョウ · Kun なが(い)","[長]{なが}い long · [社長]{しゃちょう} company president · [校長]{こうちょう} head teacher"],["白","white","On ハク · Kun しろ, しろ(い)","[白]{しろ}い white · [白]{しろ} white (the color) · [面白]{おもしろ}い interesting"]]},
       "大 and 小 have a second adjective form that only goes before a noun: [大]{おお}きな[家]{いえ} (a big house), [小]{ちい}さな[店]{みせ} (a small shop). [大]{おお}きい[家]{いえ} means the same. At the end of a sentence, only 大きい and 小さい work: [家]{いえ}は[大]{おお}きいです.",
       "長 is also a noun meaning “head, chief”, which is why it ends many job titles: [社長]{しゃちょう} (company president), [校長]{こうちょう} (head teacher). And 白 is hidden inside [面白]{おもしろ}い (interesting), a word you will use often."
     ]},
@@ -460,9 +460,9 @@ ICA.addUnit({
     ]},
     {h:"How to learn words that stick", body:[
       "How many words is N5? There is no official list (Lesson 5 explains why), and common lists differ. Most contain several hundred words; the N5 words deck in this course’s Kanji Lab has 630. Don’t worry about the exact number: the words in this unit and in Units 2 and 3 are the heart of it.",
-      {list:["**Learn words in a phrase, not alone.** [電車]{でんしゃ}に[乗]{の}る teaches the word, its particle and a picture at once.","**Learn both directions.** Seeing [安]{やす}い and remembering “cheap” is easier than seeing “cheap” and producing [安]{やす}い. Practise both.","**Collect families.** When you learn 電, gather [電気]{でんき}, [電車]{でんしゃ} and [電話]{でんわ}.","**Use pairs and groups**: opposites, family words, the days of the week, [先週]{せんしゅう}・[今週]{こんしゅう}・[来週]{らいしゅう}.","**Meet words again in reading.** Short texts at your level, such as graded readers (Lesson 5), show words in context and fix them in memory.","**Review a little every day.** Forgetting is normal; the Kanji Lab brings each word back just as you start to forget it."]},
+      {list:["**Learn words in a phrase, not alone.** [電車]{でんしゃ}に[乗]{の}る teaches the word, its particle and a picture at once.","**Learn both directions.** Seeing [安]{やす}い and remembering “cheap” is easier than seeing “cheap” and producing [安]{やす}い. Practice both.","**Collect families.** When you learn 電, gather [電気]{でんき}, [電車]{でんしゃ} and [電話]{でんわ}.","**Use pairs and groups**: opposites, family words, the days of the week, [先週]{せんしゅう}・[今週]{こんしゅう}・[来週]{らいしゅう}.","**Meet words again in reading.** Short texts at your level, such as graded readers (Lesson 5), show words in context and fix them in memory.","**Review a little every day.** Forgetting is normal; the Kanji Lab brings each word back just as you start to forget it."]},
       {tip:"Katakana words are some of the easiest N5 vocabulary, because many come from English: テレビ, バス, タクシー. But the meaning sometimes shifts. パソコン is a personal computer, and コンビニ is a convenience store: shortened words that English speakers might not guess."},
-      {lab:"kl-n5-vocab", t:"Practise: the N5 words deck (start with 10 new words a day)"}
+      {lab:"kl-n5-vocab", t:"Practice: the N5 words deck (start with 10 new words a day)"}
     ]}
    ],
    try:[
@@ -557,7 +557,7 @@ ICA.addUnit({
   /* ===================== LESSON 5 ===================== */
   {id:"e3u4-l5", title:"Reading short N5 texts, the JLPT and your study plan", minutes:55,
    hook:{q:"Does the JLPT publish official lists of the kanji and words you need for each level?", options:["Yes, for every level","Only for N5","No: it has published no official lists since the test was revised in 2010","Only for N1"], answer:2,
-     reveal:"**No.** Since the 2010 revision, the JLPT has not published lists of vocabulary, kanji or grammar; it says the goal is communication, not memorising lists. The N5 lists in textbooks, websites and this course are estimates, mostly based on the old test’s lists and on textbooks. That is why lists differ a little, and why reading real texts matters as much as any list."},
+     reveal:"**No.** Since the 2010 revision, the JLPT has not published lists of vocabulary, kanji or grammar; it says the goal is communication, not memorizing lists. The N5 lists in textbooks, websites and this course are estimates, mostly based on the old test’s lists and on textbooks. That is why lists differ a little, and why reading real texts matters as much as any list."},
    goals:[
      "Use a step-by-step strategy to read a short text: type, question, kanji you know, grammar clues",
      "Read common signs, a text message, a notice and a simple email at N5 level",
@@ -573,7 +573,7 @@ ICA.addUnit({
       {tip:"Unknown words are normal, even for advanced learners. Underline them, keep going, and see whether the rest of the text explains them. Look up only the words you still need at the end."}
     ]},
     {h:"Signs", body:[
-      "Signs use short, set words, often with kanji above N5. You don’t need to know every kanji: learn these as whole shapes, the way you recognise a logo.",
+      "Signs use short, set words, often with kanji above N5. You don’t need to know every kanji: learn these as whole shapes, the way you recognize a logo.",
       {table:[["Sign","Reading","Meaning"],["[入口]{いりぐち} / [出口]{でぐち}","いりぐち / でぐち","entrance / exit"],["[押]{お}す / [引]{ひ}く","おす / ひく","push / pull (on doors)"],["お[手洗]{てあら}い","おてあらい","toilets (with [男]{おとこ} and [女]{おんな} on the doors)"],["[営業中]{えいぎょうちゅう}","えいぎょうちゅう","open (for business)"],["[準備中]{じゅんびちゅう}","じゅんびちゅう","not open yet (preparing)"],["[本日休業]{ほんじつきゅうぎょう}","ほんじつきゅうぎょう","closed today"],["[禁煙]{きんえん}","きんえん","no smoking"],["[立入禁止]{たちいりきんし}","たちいりきんし","no entry"]]},
       "Look at what the N5 kanji tell you even in the harder signs. 中 in [営業中]{えいぎょうちゅう} and [準備中]{じゅんびちゅう} means “in the middle of”; [本日休業]{ほんじつきゅうぎょう} contains [本日]{ほんじつ} (today, formal) and 休 (rest); 入 in [立入禁止]{たちいりきんし} tells you the sign is about going in.",
       {warn:"[準備中]{じゅんびちゅう} on a restaurant door means it is **not** open, even if you can see people inside. It is often shown between lunch and dinner. [営業中]{えいぎょうちゅう} means you can go in."}
@@ -600,7 +600,7 @@ ICA.addUnit({
     {h:"The JLPT in brief", body:[
       "The [[jlpt|Japanese-Language Proficiency Test]] ([日本語能力試験]{にほんごのうりょくしけん}, JLPT) is the best-known test of Japanese as a foreign language. It is run by the Japan Foundation (outside Japan) and Japan Educational Exchanges and Services (JEES, in Japan). It has five levels, from [[jlpt-n5|N5]] (easiest) to N1 (hardest). The official one-line descriptions:",
       {table:[["Level","Official summary"],["N1","The ability to understand Japanese used in a variety of circumstances"],["N2","The ability to understand Japanese used in everyday situations, and in a variety of circumstances to a certain degree"],["N3","The ability to understand Japanese used in everyday situations to a certain degree"],["N4","The ability to understand basic Japanese"],["N5","The ability to understand some basic Japanese"]]},
-      "For reading, the JLPT says an N5 learner “is able to read and understand typical expressions and sentences written in hiragana, katakana, and basic kanji”: exactly what this unit practises. Units 5–8 of this course aim at [[jlpt-n4|N4]] and Units 9–12 at [[jlpt-n3|N3]].",
+      "For reading, the JLPT says an N5 learner “is able to read and understand typical expressions and sentences written in hiragana, katakana, and basic kanji”: exactly what this unit practices. Units 5–8 of this course aim at [[jlpt-n4|N4]] and Units 9–12 at [[jlpt-n3|N3]].",
       {fig:'<svg viewBox="0 0 340 290"><text x="170" y="18" text-anchor="middle">The N5 test (paper, multiple choice)</text><rect class="d-lup" x="10" y="34" width="80" height="70" rx="6" stroke-width="1.5"/><text x="50" y="56" text-anchor="middle">Vocabulary</text><text class="s" x="50" y="76" text-anchor="middle">kanji, words</text><text x="50" y="96" text-anchor="middle">20 min</text><rect class="d-lup" x="98" y="34" width="150" height="70" rx="6" stroke-width="1.5"/><text x="173" y="56" text-anchor="middle">Grammar · Reading</text><text class="s" x="173" y="76" text-anchor="middle">sentences, short texts</text><text x="173" y="96" text-anchor="middle">40 min</text><rect class="d-sage" x="256" y="34" width="74" height="70" rx="6" stroke-width="1.5"/><text x="293" y="56" text-anchor="middle">Listening</text><text class="s" x="293" y="76" text-anchor="middle">audio</text><text x="293" y="96" text-anchor="middle">30 min</text><text x="170" y="134" text-anchor="middle">Scored in two parts</text><rect class="d-gold" x="10" y="146" width="238" height="56" rx="6" stroke-width="1.5"/><text x="129" y="170" text-anchor="middle">Vocabulary/Grammar · Reading</text><text x="129" y="190" text-anchor="middle">0–120 (need 38+)</text><rect class="d-gold" x="256" y="146" width="74" height="56" rx="6" stroke-width="1.5"/><text x="293" y="170" text-anchor="middle">Listening</text><text x="293" y="190" text-anchor="middle">0–60 (19+)</text><rect class="d-panel" x="10" y="216" width="320" height="58" rx="6" stroke-width="1.5"/><text x="170" y="240" text-anchor="middle">Total 0–180: pass with 80 or more,</text><text x="170" y="260" text-anchor="middle">and the minimum in both parts</text></svg>', alt:"The N5 test has three sections: Vocabulary (kanji and words), 20 minutes; Grammar and Reading, 40 minutes; Listening, 30 minutes. It is scored in two parts: Language Knowledge (Vocabulary/Grammar) and Reading together, 0 to 120, with a minimum of 38; and Listening, 0 to 60, with a minimum of 19. The total is 0 to 180, and you pass with 80 or more and the minimum in both parts.", cap:"Times and pass marks from jlpt.jp (checked November 2026). Times changed in December 2020; check before you book."},
       {list:["**Kanji in the test.** The vocabulary section includes kanji reading (choose the reading of an underlined kanji word) and orthography (choose the right kanji for a word written in hiragana). Both need the readings and words in Lessons 2–4.","**Scores are scaled.** The JLPT says it uses a scaled score system based on item response theory, not simply points per correct answer.","**Sectional pass marks.** You must reach the total pass mark *and* the minimum in each part. A high total with a very low Listening score is a fail.","**N4** has the same structure (25, 55 and 35 minutes) with a total pass mark of 90. **N3** has three scoring parts (0–60 each, 19 needed in each) and a total pass mark of 95."]},
       "**When and where.** The test is held twice a year, in July and December. In 2026 the dates are Sunday 5 July and Sunday 6 December. Some cities outside Japan hold only one of the two. Outside Japan you apply through the local host institution listed on jlpt.jp, and applications close well before the test date. Details such as test times have changed before, so always check [jlpt.jp](https://www.jlpt.jp/e/) for your own test.",
@@ -613,8 +613,8 @@ ICA.addUnit({
       {list:["**Be honest with Again.** Pressing Good on a card you half knew only makes it come back too late.","**Keep new cards low.** 10 new cards a day is about 70 a week in each deck. Reviews grow as you add cards, so 20 a day can become hard to keep up.","**Missed a day? Just continue.** Due cards simply wait for you, and each session shows them before any new cards. If there are a lot, do the reviews and stop there for the day; the new cards will still be waiting."]},
       "**Free reading at your level.** A [[graded-reader]] is a short book written for learners, with limited kanji and vocabulary. The non-profit group NPO多言語多読 (Tadoku) offers [free graded readers](https://tadoku.org/japanese/en/free-books-en/) that you can read online or download as PDFs; start at their lowest levels (Level Start and Level 0). The Japan Foundation’s course [*IRODORI: Japanese for Life in Japan*](https://www.irodori.jpf.go.jp/en/index.html) is free to download, with audio, and covers everyday situations from the Starter (A1) level up. From Lesson 3 of Starter, each lesson has a short [漢字]{かんじ}のことば (Kanji Words) section of everyday kanji.",
       {key:"Forgetting is part of learning, not a sign of failure. Come back tomorrow, press Again without guilt, and the kanji will stick."},
-      {lab:"kl-n5", t:"Practise: today’s N5 kanji review"},
-      {lab:"kl-n5-vocab", t:"Practise: today’s N5 vocabulary review"}
+      {lab:"kl-n5", t:"Practice: today’s N5 kanji review"},
+      {lab:"kl-n5-vocab", t:"Practice: today’s N5 vocabulary review"}
     ]}
    ],
    try:[
@@ -675,7 +675,7 @@ ICA.addUnit({
      {t:"Read a real sign or notice", how:[
        "Find a photo of a Japanese sign, a shop’s opening hours or a short notice (a travel site, a map’s street view, or a photo you took).",
        "Use the five steps: type, question, kanji and numbers, endings, check.",
-       "Write what it says in English, and list the kanji you recognised."
+       "Write what it says in English, and list the kanji you recognized."
      ], write:"What it was… what I worked out… kanji I knew… words I looked up…"},
      {t:"Write a short invitation", how:[
        "Write a message to a friend like Rodrigo’s: day, time, place and activity, with ～ませんか and ～ましょう.",
@@ -685,8 +685,8 @@ ICA.addUnit({
      {t:"Try official JLPT N5 sample questions", how:[
        "Go to jlpt.jp, choose “Let’s Try Sample Questions!”, then N5. One sample question is shown for each type of test item.",
        "Try the vocabulary items (kanji reading and orthography) first.",
-       "Note which question types felt easy and which you need to practise."
-     ], write:"Easy types… hard types… what I’ll practise…"},
+       "Note which question types felt easy and which you need to practice."
+     ], write:"Easy types… hard types… what I’ll practice…"},
      {t:"Set your daily routine", how:[
        "Choose a time of day for your Kanji Lab session (for example, after breakfast).",
        "Decide on your new cards a day (the Lab offers 5, 10 or 20; 10 is a good start) and one short reading source.",
@@ -757,7 +757,7 @@ ICA.addUnit({
       {t:"No: in N3, Reading is a separate part, and 18 is below 19", ok:true, why:"N3 has three scoring parts, 0–60 each, and each needs 19. The total of 98 is above 95, but Reading fails."},
       {t:"Yes: Language Knowledge and Reading together make 58, above 38", why:"That is how N5 and N4 count, as one part out of 120. N3 scores Language Knowledge and Reading separately, 0–60 each."},
       {t:"No: the N3 total pass mark is 100", why:"N3 needs 95 in total, so 98 would be enough. The problem is Reading: 18 is below the minimum of 19."}]},
-    {id:"e3u4-cp12", lesson:"e3u4-l4", level:3, q:"Cheska meets a neighbour’s dog. Which pair fills both gaps? 「＿＿[犬]{いぬ}ですね。[目]{め}も＿＿ね。」", options:[
+    {id:"e3u4-cp12", lesson:"e3u4-l4", level:3, q:"Cheska meets a neighbor’s dog. Which pair fills both gaps? 「＿＿[犬]{いぬ}ですね。[目]{め}も＿＿ね。」", options:[
       {t:"[大]{おお}きい / [大]{おお}きなです", why:"[大]{おお}きい[犬]{いぬ} is fine, but 大きな can’t end a sentence. At the end, only 大きい works: [目]{め}も[大]{おお}きいですね."},
       {t:"[大]{おお}きな / [大]{おお}きいです", ok:true, why:"大きな goes only before a noun (大きな犬). At the end of a sentence, use 大きい: [目]{め}も[大]{おお}きいですね."},
       {t:"[大]{おお}きな / [大]{おお}きなです", why:"The first gap is right, but 大きな only goes before a noun. At the end of a sentence, say 大きいです."},
@@ -788,7 +788,7 @@ ICA.addUnit({
      ]
     },
     related:["radicals","on-and-kun-readings","n5-kanji","japanese-writing-system"],
-    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"文化庁『ぶんかる』: 常用漢字表は，どのように決められたか (Agency for Cultural Affairs, 2016, on the 2010 list of 2,136 kanji)", url:"https://www.bunka.go.jp/prmagazine/rensai/kotoba/kotoba_010.html"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
+    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"文化庁『ぶんかる』: 常用漢字表は，どのように決められたか (Agency for Cultural Affairs, 2016, on the 2010 list of 2,136 kanji)", url:"https://www.bunka.go.jp/prmagazine/rensai/kotoba/kotoba_010.html"},{t:"EDRDG license statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
 
    {id:"radicals", title:"Radicals and components (部首)", aka:["部首","bushu","radical","kanji parts"], tags:["japanese","kanji","dictionaries"],
@@ -804,7 +804,7 @@ ICA.addUnit({
       "Radicals are named partly by their position. Japanese speakers use these names to describe kanji, and dictionaries group radicals by position too.",
       {table:[["Position","Name","N5 examples"],["Left","へん","亻 にんべん (休, 何); 言 ごんべん (語, 話, 読); 木 きへん (校); 日 ひへん (時)"],["Right","つくり","頁 おおがい ([顔]{かお}, [頭]{あたま})"],["Top","かんむり","雨 あめかんむり (電); 宀 うかんむり ([家]{いえ})"],["Bottom","あし","儿 ひとあし (先)"],["Top and left","たれ","广 まだれ ([店]{みせ})"],["Left and bottom","にょう","辶 しんにょう ([近]{ちか}い, [週]{しゅう})"],["Around","かまえ","囗 くにがまえ (国, 四); 門 もんがまえ (間)"]]},
       "Some components are kanji in their own right (日, 木, 口, 言), and some exist only as parts (亻, 辶, 宀). Japanese speakers often spell out a kanji by its parts, for example 「にんべんに[木]{き}」 (person radical plus tree) for 休, which is handy when you hear a name and need to know how it is written.",
-      "Several radicals change shape depending on where they sit. 人 becomes 亻 on the left; 水 becomes 氵 (さんずい), as in [海]{うみ} (sea); 手 becomes 扌 (てへん). Knowing both forms helps you recognise the family.",
+      "Several radicals change shape depending on where they sit. 人 becomes 亻 on the left; 水 becomes 氵 (さんずい), as in [海]{うみ} (sea); 手 becomes 扌 (てへん). Knowing both forms helps you recognize the family.",
       "To look up a kanji you can’t read, use a dictionary’s parts search: on Jisho.org you pick the components you can see, and the list narrows to the kanji that contain them ([[jisho-tool]]). Handwriting input is another option, and works best in the standard [[stroke-order|stroke order]]."
      ],
      pro:[
@@ -862,13 +862,13 @@ ICA.addUnit({
      ],
      pro:[
       "Stroke counts in the N5 set run from 1 (一) to 14 (聞, 語 and 読). Many N5 kanji are themselves radicals or common components (人, 日, 月, 木, 水, 火, 金, 土, 山, 川, 女, 子, 小, 大, 雨, 門 in 間 and 聞), which makes them the foundation for later kanji.",
-      "Look-alikes worth practising side by side:",
+      "Look-alikes worth practicing side by side:",
       {table:[["Pair","How to tell them apart"],["人 / 入 / 八","人 (person): the right stroke starts on the left one. 入 (enter): the left stroke starts on the right one. 八 (eight): the strokes don’t touch."],["右 / 左","Same shape on top; 右 has 口 below, 左 has 工. Different first strokes."],["日 / 白 / 百","白 adds a short stroke on top of 日; 百 adds 一 on top of 白."],["大 / 天","天 adds 一 on top of 大."],["休 / 体","休 is 亻 + 木; 体 (body, N4) is 亻 + 本."],["間 / 聞","間 has 日 inside the gate; 聞 has 耳 (ear)."],["午 / 牛","午 (noon) has no stroke poking through the top; 牛 (cow) does."]]},
       "Lists differ: the JLPT has published no official kanji list since 2010, and the N5 lists in circulation are mostly based on the pre-2010 test’s lists. This course uses an 80-kanji list, cross-checked against KANJIDIC2 for meanings, readings and stroke counts."
      ]
     },
     related:["how-kanji-work","on-and-kun-readings","n5-vocabulary","jlpt-overview"],
-    sources:[{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"KanjiVG (stroke order data)", url:"https://kanjivg.tagaini.net/"}],
+    sources:[{t:"EDRDG license statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"KanjiVG (stroke order data)", url:"https://kanjivg.tagaini.net/"}],
     checked:"2026-11"},
 
    {id:"n5-vocabulary", title:"N5 vocabulary", aka:["N5 words","JLPT N5 vocabulary","core vocabulary"], tags:["japanese","vocabulary","jlpt","n5"],
@@ -1014,7 +1014,7 @@ ICA.addUnit({
      {t:"As proof that all kanji are pictures", why:"Most kanji are meaning + sound compounds, not pictures."}
    ]},
    {id:"e3u4-q08", lesson:"e3u4-l1", level:2, q:"右 (right) and 左 (left) look almost the same. Which statement about writing them is correct?", options:[
-     {t:"右 starts with the slanting ノ; 左 starts with the horizontal 一", ok:true, why:"Right. This is the famous stroke-order pair, worth practising side by side."},
+     {t:"右 starts with the slanting ノ; 左 starts with the horizontal 一", ok:true, why:"Right. This is the famous stroke-order pair, worth practicing side by side."},
      {t:"Both start with 一", why:"Only 左 starts with 一. 右 starts with ノ."},
      {t:"Both start with ノ", why:"Only 右 starts with ノ. 左 starts with 一."},
      {t:"Both start with the box or the 工 at the bottom", why:"Both start with the top strokes; the parts below come after."}
@@ -1231,7 +1231,7 @@ ICA.addUnit({
      {t:"Twice a year, in July and December", ok:true, why:"Right. In 2026 the dates are 5 July and 6 December. Some cities outside Japan hold only one of the two sessions."},
      {t:"Every month, online", why:"The JLPT is a paper test held twice a year, not monthly."},
      {t:"Once a year, in April", why:"It is held in July and December."},
-     {t:"Whenever you book it, at a test centre", why:"There are fixed dates, twice a year, and you apply well in advance."}
+     {t:"Whenever you book it, at a test center", why:"There are fixed dates, twice a year, and you apply well in advance."}
    ]},
    {id:"e3u4-q44", lesson:"e3u4-l5", level:3, q:"Cheska pressed Good on a Kanji Lab card she had only half remembered. What is the likely effect?", options:[
      {t:"The card comes back later than it should", ok:true, why:"Right. Good moves a card to a longer gap, so she may forget it by then. If she didn’t really know it, Again (once more at the end of the session, then tomorrow) would serve her better."},

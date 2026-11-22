@@ -74,10 +74,10 @@ ICA.addUnit({
         "**Availability**: you can *use* the information when you need it. Ransomware locking your photos breaks availability."
       ]},
       {fig:'<svg viewBox="0 0 340 386"><text x="170" y="20" text-anchor="middle">Confidentiality</text><text class="s" x="170" y="38" text-anchor="middle">only the right people can see it</text><text class="s" x="170" y="56" text-anchor="middle">broken by: someone reads your email</text><path class="d-ink" d="M170,98 L255,250 L85,250 Z" fill="none" stroke-width="2"/><circle class="d-rose" cx="170" cy="98" r="28" stroke-width="2"/><text x="170" y="103" text-anchor="middle">C</text><circle class="d-lup" cx="85" cy="250" r="28" stroke-width="2"/><text x="85" y="255" text-anchor="middle">I</text><circle class="d-sage" cx="255" cy="250" r="28" stroke-width="2"/><text x="255" y="255" text-anchor="middle">A</text><text x="170" y="196" text-anchor="middle">your</text><text x="170" y="214" text-anchor="middle">information</text><text x="85" y="300" text-anchor="middle">Integrity</text><text class="s" x="85" y="318" text-anchor="middle">it’s correct and</text><text class="s" x="85" y="334" text-anchor="middle">unchanged</text><text class="s" x="85" y="356" text-anchor="middle">broken by: invoice</text><text class="s" x="85" y="372" text-anchor="middle">details altered</text><text x="255" y="300" text-anchor="middle">Availability</text><text class="s" x="255" y="318" text-anchor="middle">you can use it</text><text class="s" x="255" y="334" text-anchor="middle">when needed</text><text class="s" x="255" y="356" text-anchor="middle">broken by:</text><text class="s" x="255" y="372" text-anchor="middle">ransomware</text></svg>', alt:"A triangle with Confidentiality at the top, Integrity at bottom left and Availability at bottom right, each with an example of how it is broken.", cap:"The three things security protects. Most attacks damage at least one."},
-      "Different defences protect different corners. [[encryption|Encryption]] mostly protects confidentiality. Backups protect availability (see {{backup}}). Checking a change of bank details by phoning a number you already know protects integrity. Thinking “which corner is at risk?” helps you pick the right defence."
+      "Different defenses protect different corners. [[encryption|Encryption]] mostly protects confidentiality. Backups protect availability (see {{backup}}). Checking a change of bank details by phoning a number you already know protects integrity. Thinking “which corner is at risk?” helps you pick the right defense."
     ]},
     {h:"The habits that stop most attacks", body:[
-      "Government security agencies publish basic advice for the public, and it is strikingly consistent. In the United States, CISA’s **Secure Our World** campaign lists four steps: use strong passwords and a password manager, turn on multifactor authentication, recognise and report phishing, and update software. The UK NCSC’s **Top tips for staying secure online** cover the same ground and add backing up your data and using three random words for passwords.",
+      "Government security agencies publish basic advice for the public, and it is strikingly consistent. In the United States, CISA’s **Secure Our World** campaign lists four steps: use strong passwords and a password manager, turn on multifactor authentication, recognize and report phishing, and update software. The UK NCSC’s **Top tips for staying secure online** cover the same ground and add backing up your data and using three random words for passwords.",
       {table:[
         ["Habit","What it blocks","Lesson"],
         ["A strong, separate password for every account (a password manager makes this easy)","Credential stuffing after data breaches; guessing","2"],
@@ -111,7 +111,7 @@ ICA.addUnit({
     {id:"t1u3-l1-x2", type:"match", q:"Match each situation to the threat it shows.", pairs:[
       ["A text says your parcel is held and links to a page asking for a small fee and your card details.","Phishing","A fake message that tricks you into entering information or paying is phishing (by text, it’s called smishing)."],
       ["Your files suddenly have strange names and a note demands payment to unlock them.","Ransomware","Locking files and demanding payment is ransomware, a kind of malware."],
-      ["A shop you used years ago announces that hackers copied its customer database.","Data breach","Stolen data held by an organisation is a data breach. You didn’t do anything wrong, but your details are now out there."],
+      ["A shop you used years ago announces that hackers copied its customer database.","Data breach","Stolen data held by an organization is a data breach. You didn’t do anything wrong, but your details are now out there."],
       ["Someone signs in to your account using a password that leaked from a different website.","Credential stuffing","Trying leaked username and password pairs on other sites is credential stuffing. It only works because the password was reused."],
       ["A caller says they’re from your internet provider’s “security team” and asks you to read out a code you just received.","Social engineering","Manipulating a person, using authority and urgency, is social engineering. That code is probably the key to your account."]
     ]},
@@ -121,7 +121,7 @@ ICA.addUnit({
       {t:"Ransomware makes a community group’s membership spreadsheet unreadable.", b:2, why:"The group can’t use its own data: availability. (Some ransomware also steals data, which would add confidentiality.)"},
       {t:"A photo-sharing site leaks users’ private albums.", b:0, why:"Private photos were exposed to the wrong people: confidentiality."},
       {t:"Someone edits a shared recipe document so the oven temperature is dangerously wrong.", b:1, why:"The content was changed without permission and is now wrong: integrity."},
-      {t:"A stolen laptop held the only copy of Hana’s thesis.", b:2, why:"Hana can no longer use her work: availability. Backups are the defence here."}
+      {t:"A stolen laptop held the only copy of Hana’s thesis.", b:2, why:"Hana can no longer use her work: availability. Backups are the defense here."}
     ]},
     {id:"t1u3-l1-x4", type:"order", q:"Put this attack chain in the order it happens.", items:[
       {t:"A forum Oluwaseun used years ago is breached and its password list leaks.", why:"Everything starts with a data breach at a site that isn’t his main account."},
@@ -143,11 +143,11 @@ ICA.addUnit({
       {t:"Macs have no built-in malware protection.", why:"They do: macOS includes Gatekeeper and XProtect. The flaw is thinking malware is the only threat."},
       {t:"There’s no flaw; he’s completely safe.", why:"Phishing, scams, data breaches and reused passwords affect Mac users as much as anyone."}
     ]},
-      {id:"t1u3-l1-x7", type:"explain", q:"A neighbour says: “Hackers won’t bother with me. I’m nobody important.” Explain why that is mistaken, and why the truth is partly good news.", hint:"Think of the burglar trying every door handle on the street.", model:"Most attacks aren’t aimed at anyone in particular. Programs send millions of scam messages, try millions of leaked passwords and scan millions of devices, and the attacker only needs a few to work, like a burglar trying every door handle. An ordinary person still has things worth taking: money, and accounts such as email, which can reset almost every other account. The good news is that attackers look for the unlocked doors, so a few solid habits (unique passwords, two-step verification, pausing before acting on messages, updates and backups) put you out of reach of most attacks.", points:["Says attacks are automated and sent to huge numbers of people", "Names something an ordinary person has that is worth stealing", "Says a few basic habits stop most attacks"]}
+      {id:"t1u3-l1-x7", type:"explain", q:"A neighbor says: “Hackers won’t bother with me. I’m nobody important.” Explain why that is mistaken, and why the truth is partly good news.", hint:"Think of the burglar trying every door handle on the street.", model:"Most attacks aren’t aimed at anyone in particular. Programs send millions of scam messages, try millions of leaked passwords and scan millions of devices, and the attacker only needs a few to work, like a burglar trying every door handle. An ordinary person still has things worth taking: money, and accounts such as email, which can reset almost every other account. The good news is that attackers look for the unlocked doors, so a few solid habits (unique passwords, two-step verification, pausing before acting on messages, updates and backups) put you out of reach of most attacks.", points:["Says attacks are automated and sent to huge numbers of people", "Names something an ordinary person has that is worth stealing", "Says a few basic habits stop most attacks"]}
    ],
    apply:{intro:"Take stock of your own situation. You don’t need to fix anything yet; later lessons cover the fixes. Just see where you stand.", tasks:[
      {t:"List your most important accounts", how:["Write down (on paper or in a private note) your **main email account(s)** first: they can reset most other accounts.","Add accounts that hold money or could cost money: banking, payment apps, online shops with a saved card.","Add accounts people would trust messages from: messaging apps and social media.","Add accounts with irreplaceable things: cloud photo storage, work or study accounts.","Do **not** write passwords on this list. It’s a list of names only."]},
-     {t:"Run your main account’s security checkup", how:["Most big account providers have a security review page. Search their help pages for “security checkup” or open the account’s security settings.","Google accounts: open **myaccount.google.com** and choose **Security** (there is a **Security Checkup**).","Microsoft accounts: open **account.microsoft.com** and choose **Security**.","Apple Account on iPhone: **Settings → [your name] → Sign-In & Security**. On a Mac: **System Settings → [your name] → Sign-In & Security**.","Other providers: look for **Security**, **Login & security** or **Privacy & security** in account settings.","Note anything that looks unfamiliar, such as devices you don’t recognise or a recovery phone number that isn’t yours."]},
+     {t:"Run your main account’s security checkup", how:["Most big account providers have a security review page. Search their help pages for “security checkup” or open the account’s security settings.","Google accounts: open **myaccount.google.com** and choose **Security** (there is a **Security Checkup**).","Microsoft accounts: open **account.microsoft.com** and choose **Security**.","Apple Account on iPhone: **Settings → [your name] → Sign-In & Security**. On a Mac: **System Settings → [your name] → Sign-In & Security**.","Other providers: look for **Security**, **Login & security** or **Privacy & security** in account settings.","Note anything that looks unfamiliar, such as devices you don’t recognize or a recovery phone number that isn’t yours."]},
      {t:"Mark which of the five habits you already have", how:["For each account on your list, note: Is the password used anywhere else? Is two-step verification on?","For each device, note: Are updates automatic? Is there a screen lock?","Note whether your important files have a backup."]}
    ], proof:"A private list of your key accounts (no passwords) with a note beside each of what’s already protected and what isn’t. You’ll fix the gaps in Lessons 2–5."},
    read:[
@@ -198,7 +198,7 @@ ICA.addUnit({
     ]},
     {h:"What current official guidance says", body:[
       "For years, websites forced people to use capitals, numbers and symbols, and to change passwords every few months. Research showed these rules backfired: people made predictable tweaks (`Password1!` became `Password2!`) and wrote passwords down. Official guidance has changed.",
-      "The main standard is the US National Institute of Standards and Technology’s **NIST Special Publication 800-63B**, *Digital Identity Guidelines: Authentication and Authenticator Management*. Its current revision, **SP 800-63B-4**, was published in **July 2025**. It’s written for organisations that run sign-in systems, but it tells you what good services should do, and why:",
+      "The main standard is the US National Institute of Standards and Technology’s **NIST Special Publication 800-63B**, *Digital Identity Guidelines: Authentication and Authenticator Management*. Its current revision, **SP 800-63B-4**, was published in **July 2025**. It’s written for organizations that run sign-in systems, but it tells you what good services should do, and why:",
       {table:[
         ["Topic","What SP 800-63B-4 says"],
         ["Minimum length","At least **15 characters** when a password is the only way to sign in; at least **8** when it’s one part of multi-factor sign-in."],
@@ -222,10 +222,10 @@ ICA.addUnit({
         "Use this kind of passphrase for the few passwords you must remember: your device sign-in, your main email and your password manager."
       ]},
       {ex:"Suppose a generator picks from a list of 2,000 words.\nOne word: 2,000 possibilities.\nTwo words: 2,000 × 2,000 = 4,000,000.\nThree words: 2,000 × 2,000 × 2,000 = 8,000,000,000 (8 billion).\nFour words: × 2,000 again = 16,000,000,000,000 (16 trillion).\nEvery extra word multiplies the attacker’s work by 2,000. That’s why length wins.", label:"Worked example: why each word helps so much"},
-      "This maths only holds if the words are truly random. If you pick “my dog loves walks”, an attacker’s program that tries common phrases will find it far sooner."
+      "This math only holds if the words are truly random. If you pick “my dog loves walks”, an attacker’s program that tries common phrases will find it far sooner."
     ]},
     {h:"Why reuse is the real danger", body:[
-      "Data breaches happen to big and small organisations all the time, and you can’t control them. When one happens, lists of email addresses and passwords end up being traded. Attackers then run [[credential-stuffing|credential stuffing]]: programs that try each leaked pair on hundreds of other services.",
+      "Data breaches happen to big and small organizations all the time, and you can’t control them. When one happens, lists of email addresses and passwords end up being traded. Attackers then run [[credential-stuffing|credential stuffing]]: programs that try each leaked pair on hundreds of other services.",
       {fig:'<svg viewBox="0 0 340 312"><defs><marker id="t1u3-l2-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-gold" x="85" y="8" width="170" height="54" rx="10" stroke-width="2"/><text x="170" y="31" text-anchor="middle">Breached site</text><text class="s" x="170" y="50" text-anchor="middle">e.g. an old forum</text><path class="d-ink" d="M170,63 L170,87" stroke-width="2" marker-end="url(#t1u3-l2-mk)"/><rect class="d-panel" x="85" y="90" width="170" height="54" rx="10" stroke-width="2"/><text x="170" y="113" text-anchor="middle">Leaked list</text><text class="s" x="170" y="132" text-anchor="middle">email + password</text><path class="d-ink" d="M170,145 L170,166 M60.4,166 L279.6,166" stroke-width="2" fill="none"/><path class="d-ink" d="M60.4,166 L60.4,189" stroke-width="2" marker-end="url(#t1u3-l2-mk)"/><path class="d-ink" d="M170,166 L170,189" stroke-width="2" marker-end="url(#t1u3-l2-mk)"/><path class="d-ink" d="M279.6,166 L279.6,189" stroke-width="2" marker-end="url(#t1u3-l2-mk)"/><rect class="d-rose" x="9.4" y="192" width="102" height="84" rx="10" stroke-width="2"/><text x="60.4" y="214" text-anchor="middle">Email</text><text class="s" x="60.4" y="234" text-anchor="middle">same</text><text class="s" x="60.4" y="250" text-anchor="middle">password:</text><text class="s" x="60.4" y="266" text-anchor="middle">opened</text><rect class="d-sage" x="119" y="192" width="102" height="84" rx="10" stroke-width="2"/><text x="170" y="214" text-anchor="middle">Bank</text><text class="s" x="170" y="234" text-anchor="middle">unique</text><text class="s" x="170" y="250" text-anchor="middle">password:</text><text class="s" x="170" y="266" text-anchor="middle">fails</text><rect class="d-rose" x="228.6" y="192" width="102" height="84" rx="10" stroke-width="2"/><text x="279.6" y="214" text-anchor="middle">Shop</text><text class="s" x="279.6" y="234" text-anchor="middle">same</text><text class="s" x="279.6" y="250" text-anchor="middle">password:</text><text class="s" x="279.6" y="266" text-anchor="middle">opened</text><text class="s" x="170" y="300" text-anchor="middle">Programs try each pair on many sites</text></svg>', alt:"A breached site leaks a list of emails and passwords. The list is tried on an email account and a shop, which open because the same password was reused, and on a bank, which stays closed because its password was unique.", cap:"Credential stuffing: one leak opens every account that shares the password."},
       "This is why a long, clever password used in five places is weaker in practice than five different mediocre passwords. The weakest site you ever signed up for decides the safety of all the others that share its password.",
       {key:"Reuse turns one company’s breach into your problem. A unique password for every account contains the damage to one place."}
@@ -245,7 +245,7 @@ ICA.addUnit({
         ["Separate apps","Bitwarden, 1Password, KeePassXC and others","Work across different browsers and systems. Some are free, some are paid."]
       ]},
       "“Isn’t putting all my passwords in one place risky?” It’s a fair question. The answer is that the alternative, reusing a few passwords, is much riskier. Protect the manager well: a strong passphrase only for it, two-step verification on it, and updates on your devices. The NCSC notes that saving passwords in your browser is fine on your **own** devices, but never on shared or public computers.",
-      {warn:"Never type a real password into a practice tool, a quiz, a “how strong is my password?” website you don’t know, or a form someone sent you. Practise with made-up examples only."}
+      {warn:"Never type a real password into a practice tool, a quiz, a “how strong is my password?” website you don’t know, or a form someone sent you. Practice with made-up examples only."}
     ]},
     {h:"Has my email been in a breach?", body:[
       "[Have I Been Pwned](https://haveibeenpwned.com/) is a free, long-running service that collects data from public breaches. You type your email address and it lists the known breaches that included it. (“Pwned” is internet slang for “taken over”.) The NCSC mentions it as one option, and many password managers and security apps offer a similar check.",
@@ -367,7 +367,7 @@ ICA.addUnit({
       "This is called [[mfa-fatigue|MFA fatigue]] or push bombing. **Number matching**, where the sign-in screen shows a number you must type or pick on your phone, defeats it: you can’t match a number you can’t see.",
       {h:"“Please read me the code”"},
       "A caller, text or chat says they’re from your bank, your phone company or a delivery firm. They say a code is about to arrive and ask you to read it back “to verify you”. That code is the key to your account; whoever asks for it is usually trying to sign in **as you** at that very moment.",
-      {warn:"A real organisation will never ask you to read out or forward a sign-in code. If anyone asks, end the conversation. Then contact the organisation using a number or website you already know."}
+      {warn:"A real organization will never ask you to read out or forward a sign-in code. If anyone asks, end the conversation. Then contact the organization using a number or website you already know."}
     ]},
     {h:"How passkeys work, in plain terms", body:[
       "A [[passkey]] replaces a password with a pair of matched digital keys. You don’t see or type either of them.",
@@ -498,7 +498,7 @@ ICA.addUnit({
         "**Scarcity**: something in short supply, such as tickets, a prize, a cure or a deal.",
         "**Current events**: tax season, a big news story, a recent data breach, the holidays."
       ]},
-      {key:"The feeling of “I must act right now” is itself the warning sign. Real organisations can wait while you check."}
+      {key:"The feeling of “I must act right now” is itself the warning sign. Real organizations can wait while you check."}
     ]},
     {h:"Reading a web address: find the real domain", body:[
       "A [[url|URL]] is a web address. It looks like one long string, but it has parts, and only one part tells you who really runs the site: the [[domain|domain]]. All the company names and addresses in this lesson are made up.",
@@ -523,7 +523,7 @@ ICA.addUnit({
         "**[[lookalike-domain|Look-alike]] characters.** `rn` looks like `m` (`rnicrosoft`), `0` like `o`, `1` or `I` like `l`. Some letters from other alphabets look identical to Latin ones; browsers sometimes show such domains in a coded form starting with `xn--`.",
         "**Extra words.** `northwindbank-login.com`, `northwindbank-support.com` and `northwindbank.help` are all different domains, and may belong to anyone.",
         "**Link text vs real link.** The words you click can say one address while the link goes somewhere else. On a computer, rest the pointer on a link (without clicking) and look at the bottom corner of the browser or mail app. On a phone, press and hold the link to see a preview of the address.",
-        "**[[url-shortener|Link shorteners]].** Short links hide the destination. Real organisations do use them, so they’re not proof of a scam, but you can’t check where they go at a glance. Go to the organisation’s site or app yourself instead.",
+        "**[[url-shortener|Link shorteners]].** Short links hide the destination. Real organizations do use them, so they’re not proof of a scam, but you can’t check where they go at a glance. Go to the organization’s site or app yourself instead.",
         "**The padlock.** A padlock or `https://` means the connection is encrypted. It does **not** mean the site is honest. Scam sites use [[https|HTTPS]] too."
       ]},
       {tip:"The safest habit doesn’t involve reading links at all: don’t use links in unexpected messages to sign in or pay. Open the app, use a bookmark, or type the address you already know."}
@@ -539,12 +539,12 @@ ICA.addUnit({
         "An attachment ending in `.html`, which opens a web page from your device, often a fake sign-in form."
       ]},
       {warn:"Be wary of attachments you didn’t expect, especially files that open web pages (`.html`, `.htm`), programs (`.exe`, `.msi`, `.apk`, `.dmg`), compressed or disk-image files that hide what’s inside (`.zip`, `.iso`), and documents that ask you to “enable editing” or “enable content”. If it’s unexpected, check with the sender another way before opening it."},
-      "Spear phishing at work often skips links and attachments entirely. A message that seems to come from a manager or supplier asks for an urgent payment, gift cards, or a change of bank details. The defence is a process: verify any payment or bank-detail change by calling a number you already have, never one in the message."
+      "Spear phishing at work often skips links and attachments entirely. A message that seems to come from a manager or supplier asks for an urgent payment, gift cards, or a change of bank details. The defense is a process: verify any payment or bank-detail change by calling a number you already have, never one in the message."
     ]},
     {h:"Texts, calls, QR codes and cloned voices", body:[
       {list:[
         "**Smishing.** Texts about parcels, unpaid tolls or fines, tax refunds or bank alerts, with a link. The same rules apply as for email; the address is just harder to inspect on a small screen.",
-        "**Vishing.** A caller claims to be your bank, the police, a tech company or the tax office. Caller ID can be faked, so a familiar number proves nothing. Common asks: read out a code, move money to a “safe account”, or install an app that lets them control your device. Real organisations don’t do any of these.",
+        "**Vishing.** A caller claims to be your bank, the police, a tech company or the tax office. Caller ID can be faked, so a familiar number proves nothing. Common asks: read out a code, move money to a “safe account”, or install an app that lets them control your device. Real organizations don’t do any of these.",
         "**Quishing.** A QR code is just a link you can’t read. Fake stickers on parking meters, posters or restaurant tables, and QR codes in emails, can lead to fake payment pages. The NCSC advises being wary of QR codes in emails. After scanning, your phone usually shows the address before opening it: check the domain.",
         "**AI-cloned voices and [[deepfake|deepfakes]].** A short clip of someone’s voice, for example from a video they posted, can be enough to imitate it. A call that sounds exactly like a relative in trouble may not be them. The US Federal Trade Commission’s advice: don’t trust the voice; hang up and call the person on a number you know is theirs, or check with someone else in the family.",
         "**Moving you to another app.** Scams often start in one place (a dating site, a marketplace, a job ad, social media) and quickly push you to a private chat app, where the platform’s protections and reports don’t reach. Fake investment, cryptocurrency and “earn money by rating products” job scams often work this way."
@@ -627,7 +627,7 @@ ICA.addUnit({
       " ", {t:"I can’t talk, the mic is broken.", flag:true, why:"An excuse to stop you checking by voice, which would reveal the scam."},
       " ", {t:"Love you x", flag:false, why:"Affection is normal and also used by scammers, so on its own it proves nothing."}
     ], why:"The check: call the child on their **old, known** number, or ask a question only they could answer."},
-    {id:"t1u3-l4-x6", type:"order", q:"Kenji realises he typed his email password into a fake sign-in page five minutes ago. Put his next steps in the best order.", items:[
+    {id:"t1u3-l4-x6", type:"order", q:"Kenji realizes he typed his email password into a fake sign-in page five minutes ago. Put his next steps in the best order.", items:[
       {t:"Go to his email provider’s real site (typing the address himself) and change the password.", why:"First, make the stolen password useless, as fast as possible."},
       {t:"Turn on two-step verification, and sign out of all other sessions.", why:"This locks out anyone who may already have signed in with the old password."},
       {t:"Check for unfamiliar forwarding rules, filters and recovery details, and remove them.", why:"Attackers often add hidden forwarding or change recovery details to keep access."},
@@ -650,10 +650,10 @@ ICA.addUnit({
     ]},
       {id:"t1u3-l4-x9", type:"explain", q:"Leila gets a text: “Your bank account will be suspended in 24 hours. Verify now:” followed by a link. Explain which pressure tricks it uses and how she should check it safely.", hint:"Name the tricks, then think about the pause-and-check routine.", model:"The text leans on authority (it claims to be her bank) and urgency (24 hours, plus a threat of suspension). That feeling of “I must act now” is itself the warning sign. Leila should pause and not use anything in the message: not the link, number or reply. Instead she should check through a route she already trusts, such as opening the bank’s app or calling the number on her card. If there really is a problem, it will still be there in five minutes.", points:["Names authority or urgency as a trick being used", "Says the pressure to act fast is itself a warning sign", "Says not to use the message’s link, number or reply", "Says to check through a trusted route such as the bank’s app or the number on the card"]}
    ],
-   apply:{intro:"Practise inspecting links safely and set yourself up to report scams. Use messages you already have; don’t click links in suspicious ones.", tasks:[
+   apply:{intro:"Practice inspecting links safely and set yourself up to report scams. Use messages you already have; don’t click links in suspicious ones.", tasks:[
      {t:"Preview where a link really goes", how:{
-       win:["Open an email from an organisation you use (a newsletter is fine).","Rest the mouse pointer on a link **without clicking**. The real address appears at the bottom-left of the browser or mail window.","Find the host name and its real domain using the right-to-left method."],
-       mac:["Open an email from an organisation you use.","Rest the pointer on a link without clicking. In Mail or your browser, the address appears in a small pop-up or at the bottom of the window. (In Safari, turn on **View → Show Status Bar** if you don’t see it.)","Find the real domain."],
+       win:["Open an email from an organization you use (a newsletter is fine).","Rest the mouse pointer on a link **without clicking**. The real address appears at the bottom-left of the browser or mail window.","Find the host name and its real domain using the right-to-left method."],
+       mac:["Open an email from an organization you use.","Rest the pointer on a link without clicking. In Mail or your browser, the address appears in a small pop-up or at the bottom of the window. (In Safari, turn on **View → Show Status Bar** if you don’t see it.)","Find the real domain."],
        chromeos:["Open an email in your browser.","Rest the pointer on a link without clicking; the address appears at the bottom-left of Chrome.","Find the real domain."],
        phone:["iPhone: in Mail or Messages, **touch and hold** a link. A preview shows the address. Tap outside it to cancel.","Android: **touch and hold** a link in Gmail, Messages or Chrome; a menu shows the address. Wording varies by app and phone maker.","For a QR code: point the camera at it but read the address that appears **before** tapping to open it."]
      }},
@@ -727,7 +727,7 @@ ICA.addUnit({
         "**Fake hotspots.** Anyone can name a network “Airport Free WiFi”. A fake one can show a sign-in page asking for personal or card details. Ask staff for the real network name; be suspicious of Wi-Fi sign-in pages that want more than an email or room number.",
         "**Sites and apps without HTTPS.** Rare now, but anything sent without encryption can be read on the network. Browsers mark these as “Not secure”.",
         "**Sharing settings.** On a laptop, make sure file sharing isn’t open to everyone. On Windows, set the network type to **Public network** (the recommended default).",
-        "**Phishing still works anywhere.** HTTPS protects the connection, not your judgement. A scam site has a padlock too."
+        "**Phishing still works anywhere.** HTTPS protects the connection, not your judgment. A scam site has a padlock too."
       ]},
       {h:"What a VPN does and doesn’t do"},
       "A [[vpn|VPN (virtual private network)]] creates an encrypted tunnel from your device to the VPN company’s servers, and your traffic goes out to the internet from there.",
@@ -758,16 +758,16 @@ ICA.addUnit({
       "Turn on your device’s **find my device** feature too (Find My on Apple devices, Find Hub on Android, Find my device on Windows). It can show a lost device on a map, lock it, or erase it remotely."
     ]},
     {h:"Your first-hour plan if an account is hacked", body:[
-      "Signs of a hacked account include being locked out, security settings you didn’t change, messages or posts you didn’t send, sign-ins from odd places or times, and payments you don’t recognise. If you see them, work through this list in order. It follows the UK NCSC’s guidance on recovering a hacked account.",
+      "Signs of a hacked account include being locked out, security settings you didn’t change, messages or posts you didn’t send, sign-ins from odd places or times, and payments you don’t recognize. If you see them, work through this list in order. It follows the UK NCSC’s guidance on recovering a hacked account.",
       {ol:[
         "**Recover access.** Use the provider’s official account-recovery page (type its address yourself). Recovery codes help here.",
-        "**Check your email settings.** Remove forwarding rules, filters, and recovery phone numbers or addresses you don’t recognise. Attackers add these to keep access.",
+        "**Check your email settings.** Remove forwarding rules, filters, and recovery phone numbers or addresses you don’t recognize. Attackers add these to keep access.",
         "**Change the password** to a new unique one, and change it on any other account that used the same password.",
         "**Sign out all other devices and sessions** in the account’s security settings.",
         "**Turn on two-step verification**, or add a passkey.",
         "**Update your devices**, and run a scan with your built-in security software if you think malware was involved.",
         "**Tell your contacts** that messages sent from your account recently may not be from you.",
-        "**Check your bank and shopping accounts** for payments you don’t recognise; contact your bank through official channels.",
+        "**Check your bank and shopping accounts** for payments you don’t recognize; contact your bank through official channels.",
         "**Report it** if you lost money: to your bank, and to your country’s fraud or cybercrime reporting service."
       ]},
       {tip:"Write this plan down now, with your bank’s official phone number and where your recovery codes are kept. In a stressful moment, a list on paper is easier than remembering."},
@@ -783,7 +783,7 @@ ICA.addUnit({
     ]},
     {id:"t1u3-l5-x2", type:"sort", q:"Sort each statement about VPNs.", buckets:["A VPN does this","A VPN doesn’t do this"], items:[
       {t:"Hides which sites you visit from the local Wi-Fi network", b:0, why:"The local network sees only an encrypted connection to the VPN company."},
-      {t:"Stops you from typing your password into a phishing site", b:1, why:"A VPN encrypts the route, not your judgement. A fake site works just as well through a VPN."},
+      {t:"Stops you from typing your password into a phishing site", b:1, why:"A VPN encrypts the route, not your judgment. A fake site works just as well through a VPN."},
       {t:"Makes you completely anonymous online", b:1, why:"Sites you sign in to still know who you are, and the VPN company can see your traffic’s destinations."},
       {t:"Changes the internet address (IP address) that websites see", b:0, why:"Websites see the VPN server’s address instead of yours."},
       {t:"Protects you from malware in a file you download", b:1, why:"A harmful file arrives just the same through the tunnel. Your built-in protection and care about sources are what help."},
@@ -802,13 +802,13 @@ ICA.addUnit({
       {t:"Allow location but deny contacts.", why:"A flashlight needs neither. Location reveals where he lives and goes."},
       {t:"Allow both, but only while he is actually using the app.", why:"“While using” is a good habit for permissions an app genuinely needs. These ones it doesn’t need at all."}
     ]},
-    {id:"t1u3-l5-x5", type:"order", q:"Lucía realises her email account has been hacked. Put the first-hour steps in the order the UK NCSC’s recovery guidance gives.", items:[
+    {id:"t1u3-l5-x5", type:"order", q:"Lucía realizes her email account has been hacked. Put the first-hour steps in the order the UK NCSC’s recovery guidance gives.", items:[
       {t:"Use the provider’s official recovery process to get back into the account", why:"Everything else depends on having control of the account."},
       {t:"Check for and remove unfamiliar forwarding rules and recovery details", why:"Attackers set these to intercept password resets. Clear them before changing the password, or the new reset could be forwarded too."},
       {t:"Change the password, and any other account that used the same one", why:"This makes the stolen password useless everywhere."},
       {t:"Sign out all other devices and sessions", why:"Anyone still signed in is removed and would need the new password."},
       {t:"Turn on two-step verification", why:"This stops the attacker coming straight back with a future stolen password."},
-      {t:"Tell her contacts and check her bank and shopping accounts", why:"Finally, limit the knock-on harm: warn people who may get scam messages from her account, and look for unauthorised payments."}
+      {t:"Tell her contacts and check her bank and shopping accounts", why:"Finally, limit the knock-on harm: warn people who may get scam messages from her account, and look for unauthorized payments."}
     ]},
     {id:"t1u3-l5-x6", type:"mcq", q:"While reading a news site, Dmitri’s browser fills with a flashing page: “WARNING! Your computer is infected. Call support now on this number.” What’s the best action?", options:[
       {t:"Close the tab or browser and don’t call the number.", ok:true, why:"This is scareware, a tech-support scam. Real protection warns through its own app or system notifications, not a web page with a phone number. He can run a scan with his built-in security app if he’s worried."},
@@ -820,7 +820,7 @@ ICA.addUnit({
       {t:"Settings → Windows Update shows updates ready to install", b:0, why:"Updates found by the system’s own settings come from the real source."},
       {t:"A web page says your browser is out of date and offers `update.exe` to download", b:1, why:"Browsers update themselves through their own settings. Download prompts on web pages are a common malware trick."},
       {t:"Your phone’s official app store lists updates for your installed apps", b:0, why:"App updates from the official store are the normal, safe route."},
-      {t:"An email with an attached “security patch” from IT support you don’t recognise", b:1, why:"Patches aren’t sent as email attachments. Check with your organisation’s real IT team another way."},
+      {t:"An email with an attached “security patch” from IT support you don’t recognize", b:1, why:"Patches aren’t sent as email attachments. Check with your organization’s real IT team another way."},
       {t:"A text saying “Update your banking app now” with a link", b:1, why:"Update apps from the official store, not through links in texts."},
       {t:"System Settings → General → Software Update on a Mac shows a macOS update", b:0, why:"That’s the Mac’s own built-in update tool."}
     ]},
@@ -870,7 +870,7 @@ ICA.addUnit({
     {id:"t1u3-cp02", lesson:"t1u3-l3", level:1, q:"Lin signs in to her bank with a password, then types a code from an authenticator app on her phone. Which two kinds of factor is she using?", options:[
       {t:"Something she knows and something she is", why:"Nothing here uses her face or fingerprint. The code comes from the phone she carries."},
       {t:"Something she knows and something she has", ok:true, why:"The password is something she knows. The authenticator app on her phone is something she has."},
-      {t:"Two things she knows: a password and a code", why:"She doesn’t memorise the code. It is produced by the app on the phone she has with her."},
+      {t:"Two things she knows: a password and a code", why:"She doesn’t memorize the code. It is produced by the app on the phone she has with her."},
       {t:"Two things she has", why:"The password is a secret in her head, so it counts as something she knows."}
     ]},
     {id:"t1u3-cp03", lesson:"t1u3-l5", level:1, q:"Ifeoma’s laptop is stolen from her car. Which setting means the thief can’t read her files, even by taking out the drive?", options:[
@@ -880,21 +880,21 @@ ICA.addUnit({
       {t:"Automatic updates", why:"Updates fix security holes in software. They don’t scramble stored files."}
     ]},
     {id:"t1u3-cp04", lesson:"t1u3-l2", level:2, q:"A generator gives Gaurav the passphrase `violin tundra pepper socket`. He swaps “socket” for “cricket”, because he loves cricket. What is the problem?", options:[
-      {t:"No problem; any four words make an equally strong passphrase, whatever they are", why:"The strength maths only holds when the words are picked by chance. Chosen words are easier to predict."},
+      {t:"No problem; any four words make an equally strong passphrase, whatever they are", why:"The strength math only holds when the words are picked by chance. Chosen words are easier to predict."},
       {t:"The passphrase is now too short", why:"It still has four words. The issue is that one word was chosen for meaning, not at random."},
       {t:"Passphrases must include a symbol to count as strong", why:"Current guidance says length and randomness do the real work. Symbols are optional."},
-      {t:"A word chosen for its meaning is less random, so it is easier to guess", ok:true, why:"Words must be kept as the generator chose them. Swapping in a favourite word adds something an attacker might predict."}
+      {t:"A word chosen for its meaning is less random, so it is easier to guess", ok:true, why:"Words must be kept as the generator chose them. Swapping in a favorite word adds something an attacker might predict."}
     ]},
     {id:"t1u3-cp05", lesson:"t1u3-l2", level:2, q:"Nour taps a link in an email to sign in to her streaming account. Her password manager usually fills in the password, but this time it offers nothing. What is the most sensible conclusion?", options:[
       {t:"The manager is broken, so she should type the password from memory", why:"Typing it in would hand the password to the site if it is fake. The silence is the warning to stop and check."},
       {t:"It may be a look-alike site, so she should open the real app instead", ok:true, why:"A password manager fills only on the site the password was saved for. When it stays quiet, check the address and use a route you trust."},
       {t:"She should copy the password from her vault and paste it in", why:"Copying it by hand gets around the very check that just warned her."},
-      {t:"She should turn off the password manager, because it blocks some sites", why:"The manager wasn’t blocking anything. It didn’t recognise the address, which is useful information."}
+      {t:"She should turn off the password manager, because it blocks some sites", why:"The manager wasn’t blocking anything. It didn’t recognize the address, which is useful information."}
     ]},
-    {id:"t1u3-cp06", lesson:"t1u3-l4", level:2, q:"Joaquín scans a QR sticker on a car-park pay machine. His phone shows the address `parkpay-citycentre.help` before opening it. He doesn’t recognise it. What should he do?", options:[
+    {id:"t1u3-cp06", lesson:"t1u3-l4", level:2, q:"Joaquín scans a QR sticker on a car-park pay machine. His phone shows the address `parkpay-citycentre.help` before opening it. He doesn’t recognize it. What should he do?", options:[
       {t:"Open it, because QR codes on official pay machines are always safe", why:"Fake stickers can be placed over real codes. A QR code is just a link you can’t read."},
       {t:"Open it but pay only a small amount to test it", why:"Any card details typed into a fake page are at risk, whatever the amount."},
-      {t:"Don’t open it; pay at the machine itself or in the official app", ok:true, why:"An address he doesn’t recognise is a warning sign. Use a route he already trusts instead of the sticker."},
+      {t:"Don’t open it; pay at the machine itself or in the official app", ok:true, why:"An address he doesn’t recognize is a warning sign. Use a route he already trusts instead of the sticker."},
       {t:"Open it, and pay only if the page shows a padlock", why:"A padlock means the connection is encrypted, not that the site is honest. Scam sites use HTTPS too."}
     ]},
     {id:"t1u3-cp07", lesson:"t1u3-l5", level:2, q:"Elena’s old tablet still works well, but the maker has stopped sending it security updates. She uses it for recipes and for online banking. What is the best advice?", options:[
@@ -915,7 +915,7 @@ ICA.addUnit({
       {t:"Such rules push people to tiny, guessable tweaks, so services shouldn’t force them", ok:true, why:"NIST guidance tells services not to force scheduled changes or character mixtures. People respond with tiny, guessable edits like this one."},
       {t:"It doesn’t matter, because attackers never guess patterns like this", why:"Cracking programs try common tweaks such as adding or changing a final number. `Kettle2!` is easy to predict."}
     ]},
-    {id:"t1u3-cp10", lesson:"t1u3-l5", level:3, q:"In a hotel lobby, Femi joins a network called “Hotel_Guest_Free_Fast”. A page asks for his card number “to confirm you are a guest”. He has a VPN app. What is the best judgement?", options:[
+    {id:"t1u3-cp10", lesson:"t1u3-l5", level:3, q:"In a hotel lobby, Femi joins a network called “Hotel_Guest_Free_Fast”. A page asks for his card number “to confirm you are a guest”. He has a VPN app. What is the best judgment?", options:[
       {t:"It’s safe if he turns on the VPN before typing his card number", why:"A VPN encrypts traffic but can’t stop a fake page collecting what he types. A VPN doesn’t stop phishing."},
       {t:"It may be a fake hotspot; he should ask reception for the real network name", ok:true, why:"Anyone can give a network a hotel’s name. A Wi-Fi sign-in page that wants card details is a warning sign, and a VPN doesn’t change that. Mobile data is another safe choice."},
       {t:"Public Wi-Fi is never safe, so he should never use any hotel network again", why:"That advice is out of date. With HTTPS, public Wi-Fi is usually fine. The problem here is a suspicious sign-in page."},
@@ -947,20 +947,20 @@ ICA.addUnit({
      builder:[
       "Real incidents are usually chains of small weaknesses. A typical chain: a website you used years ago is breached; your email and password from it are traded; a program tries that pair on popular services; it works on your email because you reused the password and had no second step; the attacker then resets other accounts and messages your contacts.",
       {table:[
-        ["Threat","How it usually reaches you","Main defence"],
+        ["Threat","How it usually reaches you","Main defense"],
         ["Phishing and scams","Email, text, calls, chat apps, QR codes","Pause and check through a route you trust"],
         ["Malware","Fake downloads, attachments, cracked software","Official app sources, updates, built-in protection"],
         ["Ransomware","Malware, often via phishing or unpatched systems","Updates, backups, care with attachments"],
         ["Data breaches","A company you use is hacked","Unique passwords, two-step verification"],
         ["Credential stuffing","Leaked passwords tried on other sites","Unique passwords, two-step verification"]
       ]},
-      "CISA’s Secure Our World campaign boils the response down to four steps: strong passwords and a password manager, multifactor authentication, recognising and reporting phishing, and updating software. The UK NCSC’s Top tips add backups and three-random-word passwords. Both lists are short on purpose: these steps close the doors most attacks try.",
+      "CISA’s Secure Our World campaign boils the response down to four steps: strong passwords and a password manager, multifactor authentication, recognizing and reporting phishing, and updating software. The UK NCSC’s Top tips add backups and three-random-word passwords. Both lists are short on purpose: these steps close the doors most attacks try.",
       "A quick way to judge any new warning you hear about: ask **what does the attacker need from me?** Usually it’s one of three things: that you click or open something, that you hand over a secret (password, code, card number), or that you skip an update. Each of the core habits takes one of those away."
      ],
      pro:[
-      "Security professionals talk about an **attack surface** (all the ways in) and **threat actors** (who attacks, with what motive and skill). For individuals, the dominant actors are financially motivated criminals running high-volume, low-cost operations. Their economics explain their methods: they favour attacks that scale, like mass phishing, credential stuffing against many services, and exploiting known, already-patched vulnerabilities in devices that haven’t updated.",
+      "Security professionals talk about an **attack surface** (all the ways in) and **threat actors** (who attacks, with what motive and skill). For individuals, the dominant actors are financially motivated criminals running high-volume, low-cost operations. Their economics explain their methods: they favor attacks that scale, like mass phishing, credential stuffing against many services, and exploiting known, already-patched vulnerabilities in devices that haven’t updated.",
       "Targeted attacks do happen to ordinary people, usually because of their role (someone who pays invoices at work, an administrator of a community group’s accounts) or their circumstances (a public profile, a domestic abuse situation, a high-value crypto wallet). These raise the stakes but use the same building blocks: social engineering, stolen credentials and malware.",
-      "A useful habit is to think in **controls** that break the chain at several points rather than relying on one. Unique passwords limit the damage of a breach; phishing-resistant sign-in (passkeys, security keys) defeats credential theft; updates remove known vulnerabilities; backups make ransomware survivable; and a verification habit (calling back on a known number) defeats most social engineering. This layered idea is often called **defence in depth**.",
+      "A useful habit is to think in **controls** that break the chain at several points rather than relying on one. Unique passwords limit the damage of a breach; phishing-resistant sign-in (passkeys, security keys) defeats credential theft; updates remove known vulnerabilities; backups make ransomware survivable; and a verification habit (calling back on a known number) defeats most social engineering. This layered idea is often called **defense in depth**.",
       {tip:"When you read about a new scam or attack, ask which link in the chain it targets. Usually one of the habits you already have still breaks it."}
      ]
     },
@@ -979,17 +979,17 @@ ICA.addUnit({
         "**Availability**: you can get to it when you need it. Like having the key to your own filing cabinet."
       ]},
       "Every attack harms at least one of these. Someone reading your messages breaks confidentiality. Someone changing the bank details on an invoice breaks integrity. [[ransomware|Ransomware]] locking your photos breaks availability.",
-      "You can use the three words to think about any worry: “Could someone see this? Could someone change it? Could I lose it?” Each answer points to a different defence."
+      "You can use the three words to think about any worry: “Could someone see this? Could someone change it? Could I lose it?” Each answer points to a different defense."
      ],
      builder:[
-      "The triad helps you choose the right defence, because each corner has its own tools.",
+      "The triad helps you choose the right defense, because each corner has its own tools.",
       {table:[
-        ["Goal","Threatened by","Everyday defences"],
+        ["Goal","Threatened by","Everyday defenses"],
         ["Confidentiality","Breaches, stolen passwords, lost devices, snooping","Unique passwords, two-step verification, encryption, screen locks"],
         ["Integrity","Tampering, fake invoices, malware, mistakes","Verifying changes by phone on a known number, version history, updates"],
         ["Availability","Ransomware, theft, broken devices, locked-out accounts","Backups, recovery codes, updates"]
       ]},
-      "Some defences pull in different directions. Strong sign-in protects confidentiality, but if you lose your only security key and have no recovery codes, it hurts availability: you lock yourself out. Encryption protects confidentiality, but losing the recovery key makes your own data unavailable. Good security balances all three: strong protection **plus** a recovery plan.",
+      "Some defenses pull in different directions. Strong sign-in protects confidentiality, but if you lose your only security key and have no recovery codes, it hurts availability: you lock yourself out. Encryption protects confidentiality, but losing the recovery key makes your own data unavailable. Good security balances all three: strong protection **plus** a recovery plan.",
       "Modern ransomware often hits two corners at once: it locks files (availability) and threatens to publish copies (confidentiality). That’s why backups alone don’t solve it, and why preventing infection matters too.",
       "Worked example: Tomás keeps his community group’s membership list in a shared spreadsheet. **Confidentiality**: share it only with named people, not “anyone with the link”. **Integrity**: turn on version history so changes can be seen and undone. **Availability**: keep a backup outside the shared folder. One file, three different protections.",
       "Ask the three questions whenever you set something up, not only after something goes wrong."
@@ -1026,12 +1026,12 @@ ICA.addUnit({
       ]},
       "Reporting helps everyone. Use **Report phishing** in your email app. In the UK, forward suspicious emails to `report@phishing.gov.uk` and texts to 7726. In the US, texts can also go to 7726, and the FTC suggests forwarding phishing emails to `reportphishing@apwg.org` and reporting fraud at ReportFraud.ftc.gov. Elsewhere, look up your national reporting service.",
       {warn:"A padlock or `https://` doesn’t make a site trustworthy; it only means the connection is encrypted. Phishing sites use HTTPS too."},
-      "Spear phishing aimed at work often has no link at all: a short, friendly message from a “manager” asking if you’re free for a quick task, followed by a request for gift cards or a payment. The fix is a rule, not a judgement call: payment requests and bank-detail changes are always confirmed by a call to a known number."
+      "Spear phishing aimed at work often has no link at all: a short, friendly message from a “manager” asking if you’re free for a quick task, followed by a request for gift cards or a payment. The fix is a rule, not a judgment call: payment requests and bank-detail changes are always confirmed by a call to a known number."
      ],
      pro:[
       "Modern phishing increasingly targets the second step of sign-in. **Adversary-in-the-middle** phishing kits sit between you and the real site: you type your password and one-time code into the fake page, which relays them instantly to the real service and captures the resulting session. This is why codes (SMS or authenticator app) are called phishable, and why CISA promotes phishing-resistant methods such as FIDO passkeys and security keys, which bind sign-in to the genuine domain.",
       "Other current patterns: **callback phishing** (an email with no link, only a phone number to call about a fake invoice); **QR codes** in emails, which move the link to a phone that may lack the work computer’s filtering; **HTML attachments** that render fake sign-in pages locally; and **business email compromise**, where a real but hijacked supplier or manager account asks for a change of bank details.",
-      "Organisations reduce phishing with email authentication (SPF, DKIM and DMARC let receiving servers check whether a message really came from the domain it claims), link scanning, and training. But no filter is perfect, so the durable defences are process-based: verify payment changes out of band, never share codes, and use sign-in methods that can’t be phished.",
+      "Organisations reduce phishing with email authentication (SPF, DKIM and DMARC let receiving servers check whether a message really came from the domain it claims), link scanning, and training. But no filter is perfect, so the durable defenses are process-based: verify payment changes out of band, never share codes, and use sign-in methods that can’t be phished.",
       {tip:"A password manager that refuses to autofill is a strong hint you’re not on the site you think you are."}
      ]
     },
@@ -1050,7 +1050,7 @@ ICA.addUnit({
         "Anything to the left (`login.`) is a [[subdomain]], chosen by the domain’s owner. Anything after the first `/` is just a page name."
       ]},
       "So `northwindbank.com.account-check.net` belongs to `account-check.net`, not the bank. (All names here are made up.)",
-      "You don’t need to understand every part. Learning to spot the real domain is enough to catch most fake links, and it takes only a few seconds once you’ve practised."
+      "You don’t need to understand every part. Learning to spot the real domain is enough to catch most fake links, and it takes only a few seconds once you’ve practiced."
      ],
      builder:[
       {table:[
@@ -1070,7 +1070,7 @@ ICA.addUnit({
         "**Link text vs target**: the visible words of a link can differ from where it goes. Hover or press and hold to see the real target."
       ]},
       "How to see a link’s real address before opening it: on a computer, rest the pointer on the link and read the address that appears at the bottom of the window; on a phone, press and hold the link until a preview or menu shows the address. For QR codes, most phone cameras show the address before opening it.",
-      "If an address is hard to judge, don’t try to be clever. Close the message, open the organisation’s app or a bookmark, or type the address you already know. You never have to decide whether a link is safe if you don’t use it."
+      "If an address is hard to judge, don’t try to be clever. Close the message, open the organization’s app or a bookmark, or type the address you already know. You never have to decide whether a link is safe if you don’t use it."
      ],
      pro:[
       "Formally, a URL has a scheme, an authority (host and optional port, and historically optional user information), a path, an optional query after `?`, and an optional fragment after `#`. The fragment is never sent to the server. The host is read right to left in the Domain Name System: the top-level domain, then the registered name, then any number of subdomains.",
@@ -1090,7 +1090,7 @@ ICA.addUnit({
       "[[social-engineering|Social engineering]] means manipulating people instead of breaking technology. It’s often easier to persuade someone to hand over a code than to break the code.",
       "Common forms: a caller pretending to be your bank’s fraud team; a text from “your child” on a new number asking for money; a fake job that asks for a fee; an online romance that turns to money problems; a pop-up claiming your computer is infected with a number to call.",
       "They all push the same buttons: trust in authority, urgency, fear, kindness or hope. And they usually ask you to do something you wouldn’t normally do: share a code, pay in an unusual way, install an app, or keep it secret.",
-      {key:"Any urgent request for money, codes or access gets checked through a route you already trust. Real people and organisations can wait."}
+      {key:"Any urgent request for money, codes or access gets checked through a route you already trust. Real people and organizations can wait."}
      ],
      builder:[
       {table:[
@@ -1102,15 +1102,15 @@ ICA.addUnit({
         ["Invoice change","A supplier’s “new bank details”","Confirm by phone on a number you already have."],
         ["Investment or job","Easy profits, tasks for pay, upfront fees","Moving you to a private chat app and asking for crypto or fees is the tell."]
       ]},
-      "Payment methods are a strong signal. Requests for gift cards, cryptocurrency, wire transfers or payment-app transfers to strangers are favoured by scammers because the money is hard to trace or recover.",
+      "Payment methods are a strong signal. Requests for gift cards, cryptocurrency, wire transfers or payment-app transfers to strangers are favored by scammers because the money is hard to trace or recover.",
       {warn:"After a scam, beware of “recovery” services that contact you offering to get your money back for a fee. They’re frequently run by the same criminals."},
       "Notice that every check in the table uses a channel the scammer didn’t choose: a number you already had, an official app, or a person you can reach directly. That’s the whole technique, and it works against scams that haven’t been invented yet."
      ],
      pro:[
-      "Social engineering exploits well-studied features of human decision-making: deference to authority, reciprocity, commitment (small first steps lead to larger ones), social proof, liking, and scarcity. Under time pressure people fall back on fast, intuitive judgements, which is why scams manufacture urgency.",
-      "**Pretexting** builds a believable story first, often using details from data breaches or social media: your name, your bank, a recent purchase. **Authorised push payment** fraud, where victims are persuaded to send money themselves, is especially damaging because the payment was technically authorised; rules on refunds differ by country and bank.",
-      "AI has lowered the cost of convincing pretexts: fluent messages in any language, cloned voices from short clips, and synthetic video. The US FTC has warned specifically about voice-cloning in family emergency scams. Defences don’t depend on spotting the fake; they depend on **out-of-band verification** through a channel the attacker doesn’t control, and on pre-agreed processes (call-backs for payment changes, family code words).",
-      {tip:"In organisations, the best defence is a rule that makes refusing easy: “We never change bank details by email” or “IT will never ask for your code.” People find it far easier to follow a rule than to judge each case under pressure."},
+      "Social engineering exploits well-studied features of human decision-making: deference to authority, reciprocity, commitment (small first steps lead to larger ones), social proof, liking, and scarcity. Under time pressure people fall back on fast, intuitive judgments, which is why scams manufacture urgency.",
+      "**Pretexting** builds a believable story first, often using details from data breaches or social media: your name, your bank, a recent purchase. **Authorised push payment** fraud, where victims are persuaded to send money themselves, is especially damaging because the payment was technically authorized; rules on refunds differ by country and bank.",
+      "AI has lowered the cost of convincing pretexts: fluent messages in any language, cloned voices from short clips, and synthetic video. The US FTC has warned specifically about voice-cloning in family emergency scams. Defenses don’t depend on spotting the fake; they depend on **out-of-band verification** through a channel the attacker doesn’t control, and on pre-agreed processes (call-backs for payment changes, family code words).",
+      {tip:"In organizations, the best defense is a rule that makes refusing easy: “We never change bank details by email” or “IT will never ask for your code.” People find it far easier to follow a rule than to judge each case under pressure."},
       "Reporting matters too: it helps platforms and authorities take down scam numbers, accounts and sites quickly."
      ]
     },
@@ -1142,7 +1142,7 @@ ICA.addUnit({
       "Safe-sources habit: install apps from your device’s official store (Microsoft Store, Mac App Store, Google Play, Apple App Store) or directly from the developer’s own website. Be wary of download sites that bundle extra “offers”, browser extensions you didn’t go looking for, and any app a stranger asks you to install so they can “help” you. Also keep your built-in protection switched on; there’s rarely a good reason to turn it off."
      ],
      pro:[
-      "Detection uses several layers. **Signatures** match known malware. **Heuristics and behaviour monitoring** flag suspicious actions such as mass file encryption. **Reputation** systems (like Microsoft SmartScreen and Apple notarization) judge files and apps by who signed them and how widely they’re seen. On macOS, Gatekeeper checks code signing and notarization before first launch, and XProtect uses signatures that Apple updates automatically, with a remediation engine to remove known infections.",
+      "Detection uses several layers. **Signatures** match known malware. **Heuristics and behavior monitoring** flag suspicious actions such as mass file encryption. **Reputation** systems (like Microsoft SmartScreen and Apple notarization) judge files and apps by who signed them and how widely they’re seen. On macOS, Gatekeeper checks code signing and notarization before first launch, and XProtect uses signatures that Apple updates automatically, with a remediation engine to remove known infections.",
       "Mobile systems rely heavily on **sandboxing** and store review: each app runs in its own space and must request permissions. Most mobile malware therefore arrives through sideloaded apps, abused permissions (such as accessibility services on Android) or social engineering. Google Play Protect scans apps from Play and from other sources, and may block installation of unverified apps that request sensitive permissions often abused in financial scams.",
       "Infostealers are a major current problem: they copy browser session cookies, letting attackers skip passwords and two-step verification until the session expires. After an infection, sign out of all sessions and change passwords, not just remove the malware.",
       {tip:"Running more than one real-time antivirus at once usually causes conflicts. On a home Windows PC, Microsoft Defender Antivirus switches itself off automatically when another antivirus product is registered."},
@@ -1154,13 +1154,13 @@ ICA.addUnit({
     sources:[{t:"Apple Platform Security: Protecting against malware in macOS", url:"https://support.apple.com/guide/security/protecting-against-malware-sec469d47bd8/web"},{t:"Google Play Help: Use Google Play Protect", url:"https://support.google.com/googleplay/answer/2812853?hl=en"},{t:"Microsoft Support: Help protect my device with Windows Security", url:"https://support.microsoft.com/en-us/windows/help-protect-my-device-with-windows-security-1a5b8102-c93d-0573-8fd3-b2d33a1e5386"}], checked:"2026-10"},
 
    {id:"ransomware", title:"Ransomware", aka:["file-locking malware","extortion"], tags:["security","devices","backup"],
-    summary:"Malware that encrypts your files and demands payment, and why backups and updates are the real defence.",
+    summary:"Malware that encrypts your files and demands payment, and why backups and updates are the real defense.",
     levels:{
      starter:[
       "[[ransomware|Ransomware]] is malware that scrambles your files so you can’t open them, then shows a note demanding payment, usually in cryptocurrency, to unlock them.",
       "Think of someone changing all the locks in your house and selling you the keys. Your photos, documents and work are still there, but useless.",
       "It mostly arrives the same way as other malware: phishing emails, fake downloads, and security holes in software that wasn’t updated.",
-      "The best defence is a recent backup kept **separate** from your device, so you can restore your files without paying. Add updates and care with attachments, and ransomware becomes a bad day rather than a disaster.",
+      "The best defense is a recent backup kept **separate** from your device, so you can restore your files without paying. Add updates and care with attachments, and ransomware becomes a bad day rather than a disaster.",
       {key:"Backups turn ransomware from a crisis into an inconvenience. Keep at least one copy disconnected or protected from your everyday device."}
      ],
      builder:[
@@ -1177,9 +1177,9 @@ ICA.addUnit({
      pro:[
       "Modern ransomware is largely run as **ransomware-as-a-service**: developers rent their tools to affiliates who break in and share the proceeds. Initial access often comes from phishing, stolen remote-access credentials, or unpatched internet-facing systems. Attackers commonly spend time inside a network before encrypting, to steal data and find and delete backups.",
       "For backups to survive, at least one copy must be **out of reach** of the infected account: physically disconnected, immutable (cannot be changed for a set period), or protected by separate credentials. File-sync services are not backups by themselves, though their version history can help recover from encryption if it reaches far enough back.",
-      "CISA’s #StopRansomware Guide gives a response checklist for organisations: isolate affected systems, preserve evidence, identify the strain, report to authorities, and restore from known-good backups. Sanctions rules in some countries can make paying certain groups illegal. Free decryptors exist for some older strains through law-enforcement and industry projects.",
+      "CISA’s #StopRansomware Guide gives a response checklist for organizations: isolate affected systems, preserve evidence, identify the strain, report to authorities, and restore from known-good backups. Sanctions rules in some countries can make paying certain groups illegal. Free decryptors exist for some older strains through law-enforcement and industry projects.",
       {tip:"Test a restore occasionally. A backup you’ve never restored from is a hope, not a plan (see {{restore-test}})."},
-      "Signs that encryption is under way include files suddenly getting new extensions, ransom notes appearing in folders, and heavy disk activity. Pulling the network connection (and, if needed, the power) limits how far it spreads, but note that powering off can destroy evidence investigators might want; organisations should follow their incident plan."
+      "Signs that encryption is under way include files suddenly getting new extensions, ransom notes appearing in folders, and heavy disk activity. Pulling the network connection (and, if needed, the power) limits how far it spreads, but note that powering off can destroy evidence investigators might want; organizations should follow their incident plan."
      ]
     },
     related:["malware","cia-triad","software-updates","incident-response"],
@@ -1189,7 +1189,7 @@ ICA.addUnit({
     summary:"What happens when a company you use is hacked, why reused passwords turn it into your problem, and what to do.",
     levels:{
      starter:[
-      "A [[data-breach|data breach]] happens when information held by an organisation is stolen or accessed without permission: emails, passwords, addresses, sometimes card numbers or ID documents.",
+      "A [[data-breach|data breach]] happens when information held by an organization is stolen or accessed without permission: emails, passwords, addresses, sometimes card numbers or ID documents.",
       "You can’t prevent other companies being breached. What you control is the damage. The biggest danger is [[credential-stuffing|credential stuffing]]: attackers take leaked email-and-password pairs and try them on other sites. If you reused that password, those accounts open too.",
       "Free services such as Have I Been Pwned (haveibeenpwned.com), and many password managers, can tell you if your email address appears in known breaches.",
       {key:"A unique password for every account means one company’s breach stays one company’s problem."},
@@ -1198,7 +1198,7 @@ ICA.addUnit({
      builder:[
       "The UK NCSC’s advice after a breach:",
       {list:[
-        "Check with the organisation through its official website, not links in messages.",
+        "Check with the organization through its official website, not links in messages.",
         "Change the password for that service, and anywhere you used the same one. A passkey, where available, is even better.",
         "Watch for phishing that uses details from the breach. It may arrive long after the news.",
         "Look for signs of misuse: being locked out, changed settings, sign-ins from odd places, unfamiliar messages.",
@@ -1213,7 +1213,7 @@ ICA.addUnit({
       "Responsible services store passwords as salted, slow **hashes**, not as text. A hash is a one-way fingerprint: the site can check a password without storing it. After a breach, attackers run offline guessing against the hashes at high speed with no lockouts, so short or common passwords fall quickly while long random ones survive. Some breaches expose plain-text or weakly hashed passwords, in which case any password is exposed regardless of strength.",
       "Credential stuffing is automated with lists of leaked pairs (“combo lists”) and tools that rotate network addresses to evade rate limits. Services defend with breached-password checks (NIST SP 800-63B-4 requires verifiers to compare new passwords against a blocklist that includes compromised values), rate limiting, bot detection and MFA.",
       "Have I Been Pwned’s companion Pwned Passwords service lets password managers check a password against breach corpora using a **k-anonymity** method: only the first few characters of the password’s hash are sent, and matching is completed locally, so the service never learns the password.",
-      {tip:"Breach notices are a favourite phishing theme. A real notice won’t need you to click a link to “secure your account”; go to the site yourself."},
+      {tip:"Breach notices are a favorite phishing theme. A real notice won’t need you to click a link to “secure your account”; go to the site yourself."},
       "Breach data circulates for years and gets merged into large compilations, which is why an old breach can still matter today."
      ]
     },
@@ -1318,7 +1318,7 @@ ICA.addUnit({
       "Keep the second step on the devices you control: avoid using a shared family phone number for your codes where you can."
      ],
      pro:[
-      "CISA’s fact sheet on phishing-resistant MFA identifies **FIDO/WebAuthn** as the only widely available phishing-resistant method for most organisations, alongside PKI-based smart cards. FIDO authenticators sign a challenge that includes the website’s origin, so a credential created for one domain cannot be used for another. One-time codes and simple push approvals are “phishing-vulnerable”: adversary-in-the-middle kits relay them in real time. CISA rates app-based codes and push with number matching above SMS and voice, which are exposed to SIM swap and telephone-network attacks.",
+      "CISA’s fact sheet on phishing-resistant MFA identifies **FIDO/WebAuthn** as the only widely available phishing-resistant method for most organizations, alongside PKI-based smart cards. FIDO authenticators sign a challenge that includes the website’s origin, so a credential created for one domain cannot be used for another. One-time codes and simple push approvals are “phishing-vulnerable”: adversary-in-the-middle kits relay them in real time. CISA rates app-based codes and push with number matching above SMS and voice, which are exposed to SIM swap and telephone-network attacks.",
       "**Number matching** defeats push bombing because approving requires information shown only on the real sign-in screen. Services also use risk signals (new device, new location) to decide when to ask for a second step at all.",
       "NIST SP 800-63B-4 treats SMS and voice delivery as a restricted option with extra requirements, and requires phishing-resistant options at its higher assurance level. Account recovery is often the weakest link: if a support desk can be talked into resetting MFA, or if recovery falls back to SMS, an attacker will aim there.",
       {tip:"Check each important account’s recovery options as carefully as its sign-in options. Remove old phone numbers and add a second strong method."},
@@ -1391,7 +1391,7 @@ ICA.addUnit({
       "If a device says it can no longer update, it has probably reached end of support; plan to replace it for sensitive tasks."
      ],
      pro:[
-      "Vulnerabilities are catalogued publicly with **CVE** identifiers, and vendors release fixes on regular cycles (for example Microsoft’s monthly security updates) plus urgent out-of-band patches. CISA maintains a **Known Exploited Vulnerabilities** catalogue of flaws seen used in real attacks, which organisations use to prioritise.",
+      "Vulnerabilities are cataloged publicly with **CVE** identifiers, and vendors release fixes on regular cycles (for example Microsoft’s monthly security updates) plus urgent out-of-band patches. CISA maintains a **Known Exploited Vulnerabilities** catalog of flaws seen used in real attacks, which organizations use to prioritize.",
       "A **zero-day** is a flaw exploited before a fix exists. Zero-days are valuable and are mostly used against high-value targets; the far larger risk for most people is **n-day** exploitation of known, already-patched flaws on devices that haven’t updated. The gap between a patch’s release and attackers reverse-engineering it can be short.",
       "Some platforms update security components separately from full system updates: macOS delivers XProtect data automatically (checked daily by default, according to Apple), Android has Google Play system updates, and ChromeOS updates in the background with an A/B partition scheme so a failed update can roll back.",
       {tip:"If an update keeps failing, check free storage space and power first; many updates need several gigabytes free and a charger connected."},
@@ -1410,7 +1410,7 @@ ICA.addUnit({
       "[[https|HTTPS]] (the padlock in your browser) means your connection to a website is [[encryption|encrypted]]: scrambled so only your device and the website can read it. Most sites and apps use it today.",
       "So on [[public-wifi|public Wi-Fi]] in a café or airport, the network owner can generally see which sites you connect to, but not your passwords, messages or the pages you read. The US FTC says using public Wi-Fi is usually safe for this reason.",
       "Remaining risks: fake hotspots with convincing names, sign-in pages asking for more than they should, the rare site without HTTPS, and, as always, phishing.",
-      {key:"The padlock protects the connection, not your judgement. Scam sites have padlocks too."},
+      {key:"The padlock protects the connection, not your judgment. Scam sites have padlocks too."},
       "A good habit is to check the network name with staff before joining, and to avoid entering card details on a Wi-Fi sign-in page."
      ],
      builder:[
@@ -1460,12 +1460,12 @@ ICA.addUnit({
       "Android also lets you set an app to lose permissions if it isn’t used for a while (“Pause app activity if unused” on recent versions), and both Android and iPhone show an indicator when the camera or microphone is in use.",
       "Be especially careful with powerful permissions: **accessibility** access on Android (lets an app read and control the screen), **device administrator** rights, permission to install other apps, and screen recording. Scams often ask for these to take over a phone.",
       "Google Play Protect may also send privacy alerts about apps that gain access to personal data.",
-      "A quick review routine: open the permission list, look at **Location**, **Camera**, **Microphone**, **Contacts** and **Photos**, and remove access from anything you don’t recognise or no longer use. Then delete apps you haven’t opened in months; an uninstalled app can’t collect anything.",
+      "A quick review routine: open the permission list, look at **Location**, **Camera**, **Microphone**, **Contacts** and **Photos**, and remove access from anything you don’t recognize or no longer use. Then delete apps you haven’t opened in months; an uninstalled app can’t collect anything.",
       "Children’s and older relatives’ devices benefit from the same review, done together."
      ],
      pro:[
       "Mobile operating systems enforce permissions through **sandboxing**: each app runs in isolation and can reach protected resources only through system APIs that check its granted permissions. Runtime prompts, one-time grants, approximate location, limited photo access and auto-reset of unused permissions all exist to keep access minimal: the **principle of least privilege**.",
-      "Permissions don’t cover everything. Apps can still collect what you type into them, and software development kits embedded in apps may share data with third parties. Platform privacy labels and data-safety sections in app stores summarise developer-declared practices, but they are self-reported.",
+      "Permissions don’t cover everything. Apps can still collect what you type into them, and software development kits embedded in apps may share data with third parties. Platform privacy labels and data-safety sections in app stores summarize developer-declared practices, but they are self-reported.",
       "Abuse cases worth knowing: stalkerware that uses accessibility and notification access to spy on a partner; banking-trojan apps on Android that request accessibility to read codes and overlay fake screens; and fake “security” or “cleaner” apps that demand broad access. Google Play Protect may block installation of unverified apps requesting sensitive permissions often abused in financial fraud.",
       {tip:"If someone else has had your unlocked phone, check device administrator apps, accessibility services and unknown apps, and consider your platform’s safety check tools."},
       "On desktops, macOS requires explicit consent for screen recording, camera, microphone and access to protected folders, and Windows 11 lists apps that recently used location, camera and microphone in its privacy settings, which makes unexpected access easier to spot."
@@ -1517,7 +1517,7 @@ ICA.addUnit({
       "Anyone can be caught. Acting fast matters far more than how it happened, so skip the embarrassment and start.",
       {ol:[
         "**Get back in** using the service’s official recovery page.",
-        "**Remove** forwarding rules and recovery details you don’t recognise.",
+        "**Remove** forwarding rules and recovery details you don’t recognize.",
         "**Change the password**, and any others that used it.",
         "**Sign out** all other devices.",
         "**Turn on** two-step verification.",
@@ -1539,7 +1539,7 @@ ICA.addUnit({
         ["Can’t recover the account","Create a new one and tell contacts, banks and services the new details"]
       ]},
       "Reporting: UK, forward emails to `report@phishing.gov.uk` and texts to 7726. US, report at ReportFraud.ftc.gov and use IdentityTheft.gov if personal details were stolen. Elsewhere, use your national service.",
-      "Signs an account has been hacked, according to the NCSC, include being unable to sign in, changed security settings, messages or notifications you don’t recognise, sign-ins from strange places or times, and unauthorised payments. Checking your account’s recent activity page is the fastest way to confirm."
+      "Signs an account has been hacked, according to the NCSC, include being unable to sign in, changed security settings, messages or notifications you don’t recognize, sign-ins from strange places or times, and unauthorized payments. Checking your account’s recent activity page is the fastest way to confirm."
      ],
      pro:[
       "Responders think in phases: **contain** (stop the bleeding: change credentials, revoke sessions, disconnect infected devices), **eradicate** (remove persistence such as mail rules, OAuth app grants, added recovery methods, malware), **recover** (restore access and data) and **learn** (fix the weakness that allowed it).",
@@ -1569,7 +1569,7 @@ ICA.addUnit({
    {id:"virus", term:"Virus", def:"Malware that spreads by copying itself into other files or programs. People often say “virus” for all malware.", codex:"malware"},
    {id:"ransomware", term:"Ransomware", def:"Malware that encrypts your files so you can’t open them and demands payment to unlock them.", codex:"ransomware"},
    {id:"antivirus", term:"Antivirus", def:"Software that detects and removes malware. Windows, macOS and Android include it built in (Microsoft Defender Antivirus, XProtect, Google Play Protect).", codex:"malware"},
-   {id:"data-breach", term:"Data breach", def:"When information held by an organisation, such as emails and passwords, is stolen or accessed without permission.", codex:"data-breach"},
+   {id:"data-breach", term:"Data breach", def:"When information held by an organization, such as emails and passwords, is stolen or accessed without permission.", codex:"data-breach"},
    {id:"credential-stuffing", term:"Credential stuffing", def:"Trying usernames and passwords leaked from one site on many other sites. It only works where a password was reused.", codex:"data-breach"},
    {id:"password", term:"Password", def:"A secret you share with a service to prove who you are. A strong one is long, unpredictable and used in only one place.", codex:"passwords"},
    {id:"passphrase", term:"Passphrase", def:"A password made of several randomly chosen words, such as `kettle orbit maple lantern`. Long, strong and easier to remember.", codex:"passwords"},
@@ -1602,7 +1602,7 @@ ICA.addUnit({
      {t:"Trying usernames and passwords leaked from one site on many other sites", ok:true, why:"Attackers take leaked pairs and test them elsewhere. It works wherever a password was reused."},
      {t:"Guessing a password by trying every possible combination of characters", why:"That’s brute-force guessing. Credential stuffing uses real, already-leaked passwords."},
      {t:"Filling a website’s sign-in form with fake accounts", why:"That describes spam sign-ups, not credential stuffing."},
-     {t:"Storing too many passwords in one password manager", why:"Using a password manager is a defence against credential stuffing, not a form of it."}
+     {t:"Storing too many passwords in one password manager", why:"Using a password manager is a defense against credential stuffing, not a form of it."}
    ]},
    {id:"t1u3-q02", lesson:"t1u3-l1", level:2, q:"Why is your main email account especially valuable to an attacker?", options:[
      {t:"Reset links for your other accounts are sent to it", ok:true, why:"Password-reset links for most of your other accounts go to your email, so control of it lets an attacker use “Forgot password?” to take over many of them."},
@@ -1616,7 +1616,7 @@ ICA.addUnit({
      {t:"You can use the information when you need it", why:"That’s availability."},
      {t:"The people who handle the information are honest", why:"Honesty is a good quality, but in the CIA triad integrity refers to the information itself being correct."}
    ]},
-   {id:"t1u3-q04", lesson:"t1u3-l1", level:3, q:"Fatima’s small business receives an email from a regular supplier saying their bank details have changed, with new details for the next payment. Which CIA corner is at risk, and what’s the right defence?", options:[
+   {id:"t1u3-q04", lesson:"t1u3-l1", level:3, q:"Fatima’s small business receives an email from a regular supplier saying their bank details have changed, with new details for the next payment. Which CIA corner is at risk, and what’s the right defense?", options:[
      {t:"Integrity: phone the supplier on a number she already has", ok:true, why:"The danger is acting on altered information. A call to a number she already has checks the change through a route the attacker doesn’t control."},
      {t:"Availability: make a backup of the email", why:"A backup keeps a copy, but it doesn’t check whether the new details are genuine."},
      {t:"Confidentiality: encrypt the email", why:"Encryption hides content from others; it can’t tell her whether the request is genuine."},
@@ -1660,7 +1660,7 @@ ICA.addUnit({
      {t:"There’s no minimum, as long as it has a symbol", why:"The guidance sets a length minimum and says services must not impose composition rules like requiring symbols."}
    ]},
    {id:"t1u3-q11", lesson:"t1u3-l2", level:2, q:"Which password is strongest?", options:[
-     {t:"`lantern pebble violin harbour` (four random words)", ok:true, why:"Long and randomly chosen: hard to guess and easy to remember."},
+     {t:"`lantern pebble violin harbor` (four random words)", ok:true, why:"Long and randomly chosen: hard to guess and easy to remember."},
      {t:"`Football2024!`", why:"A common word, a year and a symbol: a pattern on every guess list."},
      {t:"`Qz9!`", why:"Random but far too short."},
      {t:"`Pa$$w0rd`", why:"Symbol swaps on the word “password” are among the first things attackers try."}
@@ -1701,7 +1701,7 @@ ICA.addUnit({
      {t:"No password, since it’s already encrypted", why:"The encryption key comes from her primary passphrase. Without a strong one the vault is weak."},
      {t:"A 4-digit PIN", why:"Far too short to protect a vault holding every password."}
    ]},
-   {id:"t1u3-q18", lesson:"t1u3-l2", level:2, q:"A learning app has a practice box labelled “Test your password strength here.” What should you type?", options:[
+   {id:"t1u3-q18", lesson:"t1u3-l2", level:2, q:"A learning app has a practice box labeled “Test your password strength here.” What should you type?", options:[
      {t:"A made-up example password, never a real one", ok:true, why:"Never type real passwords into practice tools or sites you don’t fully trust."},
      {t:"Your real email password, to see how strong it is", why:"You can’t know where that box sends what you type. Use made-up examples."},
      {t:"Your real password with one letter changed", why:"A near-copy reveals most of your password."},

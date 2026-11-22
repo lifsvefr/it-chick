@@ -11,12 +11,12 @@ ICA.addUnit({
     "Write a short, accurate 要約 in である style that keeps the author’s claim and reasons and leaves out your own opinion"
   ],
   read:[
-    {book:"omu", where:"Section 2 “アカデミック･ライティングとは” and Section 4.3.1 “序論→本論→結論の構成”", note:"A short guide from a Japanese university’s learning support centre, in Japanese. It is written for students writing reports, but it shows what Japanese teachers expect an academic text to do, which makes the texts you read easier to follow."}
+    {book:"omu", where:"Section 2 “アカデミック･ライティングとは” and Section 4.3.1 “序論→本論→結論の構成”", note:"A short guide from a Japanese university’s learning support center, in Japanese. It is written for students writing reports, but it shows what Japanese teachers expect an academic text to do, which makes the texts you read easier to follow."}
   ],
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u6-l1", title:"Kinds of academic text, and where to find them", minutes:50,
-   hook:{q:"A first-year student wants a short, readable introduction to a new topic, written by an expert for general readers. Which kind of Japanese book is a common first step?", options:["[新書]{しんしょ}","[白書]{はくしょ}","[紀要]{きよう}","[博士論文]{はくしろんぶん}"], answer:0, reveal:"**新書 (shinsho).** 新書 are small paperback books published in series, usually written by specialists for general readers, so they are a common first step into a new topic. 白書 are government reports full of statistics, 紀要 are university bulletins with specialised papers, and a doctoral thesis (博士論文) is the most specialised of all. This lesson maps the kinds of text you will meet and the free databases where Japanese research lives."},
+   hook:{q:"A first-year student wants a short, readable introduction to a new topic, written by an expert for general readers. Which kind of Japanese book is a common first step?", options:["[新書]{しんしょ}","[白書]{はくしょ}","[紀要]{きよう}","[博士論文]{はくしろんぶん}"], answer:0, reveal:"**新書 (shinsho).** 新書 are small paperback books published in series, usually written by specialists for general readers, so they are a common first step into a new topic. 白書 are government reports full of statistics, 紀要 are university bulletins with specialized papers, and a doctoral thesis (博士論文) is the most specialized of all. This lesson maps the kinds of text you will meet and the free databases where Japanese research lives."},
    goals:[
      "Describe 論文, レポート, 新書, 白書, 学術雑誌 and 紀要, and say what each is good for",
      "Explain 査読 (peer review) and why it matters for how much weight a text can carry",
@@ -31,7 +31,7 @@ ICA.addUnit({
       {key:"You do not need to understand every word. You need to know what kind of text it is, where its main point is, and which words actually block your understanding."}
     ]},
     {h:"A map of the texts you will meet", body:[
-      "Japanese academic life uses a handful of text types again and again. Learn their names: you will see them in reading lists, library catalogues and database results.",
+      "Japanese academic life uses a handful of text types again and again. Learn their names: you will see them in reading lists, library catalogs and database results.",
       {table:[
         ["Name","What it is","Good for"],
         ["[論文]{ろんぶん} (*ronbun*)","A research paper: in a journal, a bulletin or a book, or a thesis (卒業論文, 修士論文, [博士論文]{はくしろんぶん})","Original findings and arguments; what you cite most"],
@@ -41,7 +41,7 @@ ICA.addUnit({
         ["[学術雑誌]{がくじゅつざっし}","An academic journal, often published by an academic society ([学会]{がっかい}), so also called a 学会誌","Peer-reviewed research papers"],
         ["[紀要]{きよう}","A bulletin published by a university, faculty or research institute","Papers by that institution’s researchers; quality and review vary"]
       ]},
-      "Two of these need a little more explanation. **[[hakusho|白書]]** (white papers) are published by government ministries and agencies. For example, the Ministry of Health, Labour and Welfare publishes the 厚生労働白書, and the Ministry of Internal Affairs and Communications publishes the 情報通信白書. They are excellent for official statistics, but remember they present the government’s own view of its policies.",
+      "Two of these need a little more explanation. **[[hakusho|白書]]** (white papers) are published by government ministries and agencies. For example, the Ministry of Health, Labor and Welfare publishes the 厚生労働白書, and the Ministry of Internal Affairs and Communications publishes the 情報通信白書. They are excellent for official statistics, but remember they present the government’s own view of its policies.",
       "**[[kiyou|紀要]]** are a very Japanese kind of publication. Many universities and departments publish a bulletin of papers by their own staff and graduate students. Some 紀要 papers are excellent; others are early drafts of ideas. Many are free to read online through university repositories (see below).",
       {tip:"[[shinsho|新書]] series are published by several large publishers. They are cheap, short and written to be read, which makes them good practice for academic Japanese as well as good introductions. A teacher may still ask you to cite 論文 rather than 新書 in a report, so ask."}
     ]},
@@ -56,11 +56,11 @@ ICA.addUnit({
         ["白書","Official report, prepared by the government","Official data; note whose view it is"],
         ["Student レポート or 卒業論文","Marked by teachers, not peer-reviewed","Examples of how to write, rarely as evidence"]
       ]},
-      "Reports from governments and institutions, and many bulletins, belong to what researchers call {{grey-literature|grey literature}}: material published outside the usual commercial and journal channels. It is often very useful, especially for data, but it needs a careful reader.",
-      {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e1u6a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">From overview to specialised research</text><rect class="d-sage" x="20" y="32" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="54" text-anchor="middle">新書 (shinsho)</text><text class="s" x="170" y="74" text-anchor="middle">For general readers · no peer review</text><path class="d-ink" d="M170,88 L170,106" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-gold" x="20" y="108" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="130" text-anchor="middle">白書 (hakusho)</text><text class="s" x="170" y="150" text-anchor="middle">Official data and policy · no peer review</text><path class="d-ink" d="M170,164 L170,182" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-soft" x="20" y="184" width="300" height="56" rx="6" stroke-width="2" stroke-dasharray="5 4"/><text x="170" y="206" text-anchor="middle">紀要 (kiyō)</text><text class="s" x="170" y="226" text-anchor="middle">University bulletins · review varies</text><path class="d-ink" d="M170,240 L170,258" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-lup" x="20" y="260" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="282" text-anchor="middle">学術雑誌の論文</text><text class="s" x="170" y="302" text-anchor="middle">Journal papers · usually peer-reviewed</text><text class="s" x="170" y="340" text-anchor="middle">Read down the ladder as your topic narrows</text></svg>', alt:"A ladder of four boxes from top to bottom: 新書 (for general readers, no peer review), 白書 (official data and policy, no peer review), 紀要 (university bulletins, review varies, drawn with a dashed border) and journal papers (usually peer-reviewed). Arrows point down the ladder, with the note: read down the ladder as your topic narrows.", cap:"A common reading path: start broad with a 新書, use 白書 for official data, then move to bulletin and journal papers as your question becomes more specific."}
+      "Reports from governments and institutions, and many bulletins, belong to what researchers call {{grey-literature|gray literature}}: material published outside the usual commercial and journal channels. It is often very useful, especially for data, but it needs a careful reader.",
+      {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e1u6a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">From overview to specialized research</text><rect class="d-sage" x="20" y="32" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="54" text-anchor="middle">新書 (shinsho)</text><text class="s" x="170" y="74" text-anchor="middle">For general readers · no peer review</text><path class="d-ink" d="M170,88 L170,106" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-gold" x="20" y="108" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="130" text-anchor="middle">白書 (hakusho)</text><text class="s" x="170" y="150" text-anchor="middle">Official data and policy · no peer review</text><path class="d-ink" d="M170,164 L170,182" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-soft" x="20" y="184" width="300" height="56" rx="6" stroke-width="2" stroke-dasharray="5 4"/><text x="170" y="206" text-anchor="middle">紀要 (kiyō)</text><text class="s" x="170" y="226" text-anchor="middle">University bulletins · review varies</text><path class="d-ink" d="M170,240 L170,258" stroke-width="2" marker-end="url(#e1u6a1)"/><rect class="d-lup" x="20" y="260" width="300" height="56" rx="6" stroke-width="2"/><text x="170" y="282" text-anchor="middle">学術雑誌の論文</text><text class="s" x="170" y="302" text-anchor="middle">Journal papers · usually peer-reviewed</text><text class="s" x="170" y="340" text-anchor="middle">Read down the ladder as your topic narrows</text></svg>', alt:"A ladder of four boxes from top to bottom: 新書 (for general readers, no peer review), 白書 (official data and policy, no peer review), 紀要 (university bulletins, review varies, drawn with a dashed border) and journal papers (usually peer-reviewed). Arrows point down the ladder, with the note: read down the ladder as your topic narrows.", cap:"A common reading path: start broad with a 新書, use 白書 for official data, then move to bulletin and journal papers as your question becomes more specific."}
     ]},
     {h:"Where Japanese research lives", body:[
-      "You find Japanese research the same way as research in any language: through databases and library catalogues (see {{academic-databases}} and {{search-strategy}} in Research Skills). Four free Japanese services do most of the work:",
+      "You find Japanese research the same way as research in any language: through databases and library catalogs (see {{academic-databases}} and {{search-strategy}} in Research Skills). Four free Japanese services do most of the work:",
       {table:[
         ["Service","Run by","What it finds"],
         ["CiNii Research","National Institute of Informatics (NII)","Papers, books, theses, research data and funded research projects from across Japan, in one search, plus which university libraries hold a book. Free; no account needed to search."],
@@ -69,7 +69,7 @@ ICA.addUnit({
         ["NDL Search (国立国会図書館サーチ)","National Diet Library (NDL)","Books, journals and digital material at the NDL and many other Japanese libraries."]
       ]},
       "[[cinii|CiNii Research]] is the best first stop for most topics. It absorbed the older article search service, CiNii Articles, in April 2022, and it links each record to the full text where one exists, often on J-STAGE or a university repository. It also shows which Japanese university libraries hold a book: the older CiNii Books service was merged into it in 2026, and CiNii Books itself is due to close around March 2027.",
-      "[[ndl-search|NDL Search]] was renewed in January 2024, when it was combined with the library’s own catalogue, NDL Online. It is especially useful for books and older material. Many old books and journals have been digitised in the NDL Digital Collections (国立国会図書館デジタルコレクション). Some items there can be read by anyone online; some can be read through the NDL’s transmission service, either online by fully registered NDL users living in Japan or at a participating library; some can only be read inside the NDL itself. The search results tell you which.",
+      "[[ndl-search|NDL Search]] was renewed in January 2024, when it was combined with the library’s own catalog, NDL Online. It is especially useful for books and older material. Many old books and journals have been digitized in the NDL Digital Collections (国立国会図書館デジタルコレクション). Some items there can be read by anyone online; some can be read through the NDL’s transmission service, either online by fully registered NDL users living in Japan or at a participating library; some can only be read inside the NDL itself. The search results tell you which.",
       {warn:"Services and their rules change. Before relying on one, check its own help or “about” pages, and ask your university library: it may give you access to paid Japanese databases as well."}
     ]},
     {h:"Searching in Japanese", body:[
@@ -87,7 +87,7 @@ ICA.addUnit({
       "With a list of results, don’t start reading the first paper from page one. A good order:",
       {ol:[
         "A 新書 or a textbook chapter, for the big picture and the key terms.",
-        "A review article ([総説]{そうせつ} or レビュー論文), if one exists: it summarises a whole area of research.",
+        "A review article ([総説]{そうせつ} or レビュー論文), if one exists: it summarizes a whole area of research.",
         "The [要旨]{ようし} (abstract) of each paper that looks relevant. Most papers can be judged from their abstract and conclusion (lesson 2).",
         "The full text of the few papers that matter most."
       ]},
@@ -105,7 +105,7 @@ ICA.addUnit({
     ]},
     {id:"e1u6-l1-x2", type:"mcq", q:"Aoi, a master’s student in regional disaster and community studies, is writing a report on Japan’s policies for older workers. She needs official national statistics and the government’s own account of its policy. Which kind of text should she look for first?", options:[
       {t:"A 白書 from the relevant ministry", ok:true, why:"白書 are government reports on a policy area with official data. They are the right place for statistics and the government’s view, which Aoi should present as the government’s view."},
-      {t:"A 新書 on ageing in Japan", why:"A 新書 is a good overview, but it is one author’s account. For official statistics she should go to the source, often a 白書."},
+      {t:"A 新書 on aging in Japan", why:"A 新書 is a good overview, but it is one author’s account. For official statistics she should go to the source, often a 白書."},
       {t:"A 紀要 paper by a graduate student", why:"A bulletin paper may discuss the policy, but it is not where official national statistics are published."},
       {t:"A model レポート from last year", why:"A student report is not a source of official data and is rarely cited as evidence."}
     ]},
@@ -121,7 +121,7 @@ ICA.addUnit({
       ["CiNii Research","One search across Japanese papers, books, theses and research projects","CiNii Research, from NII, brings many kinds of research record together and links to full text where it exists."],
       ["J-STAGE","Reading journals published by Japanese academic societies","J-STAGE, run by JST, is the platform many Japanese societies use to publish their journals online."],
       ["IRDB","Finding material in Japanese university repositories, such as 紀要 papers","IRDB searches institutional repositories, where many bulletins and theses are free to read."],
-      ["NDL Search","Finding books and digitised material at the National Diet Library and other libraries","NDL Search covers the NDL’s holdings and many other Japanese libraries."]
+      ["NDL Search","Finding books and digitized material at the National Diet Library and other libraries","NDL Search covers the NDL’s holdings and many other Japanese libraries."]
     ]},
     {id:"e1u6-l1-x5", type:"mcq", q:"Kenji searched CiNii Research for 留学生 就職活動 and found only a few results. What is the most useful next step?", options:[
       {t:"Try related and wider words, such as 外国人留学生, 就職, 就労 or キャリア支援", ok:true, why:"Japanese writers use different words for the same idea. Trying synonyms and wider terms is the usual way to find more."},
@@ -129,8 +129,8 @@ ICA.addUnit({
       {t:"Add more words, such as 留学生 就職活動 日本 大学 問題", why:"Each extra word joined by a space must also appear, so adding words usually finds fewer results, not more."},
       {t:"Search in English only", why:"English can find papers with English titles and abstracts, but many Japanese papers are only findable with Japanese words."}
     ]},
-    {id:"e1u6-l1-x6", type:"mcq", q:"In NDL Search, a digitised book is marked 「送信サービスで閲覧可能」. What does this mean?", options:[
-      {t:"It can be read through the NDL’s transmission service: online after logging in as a registered user, or at a participating library", ok:true, why:"The NDL’s transmission services (送信サービス) send digitised material to fully registered users (currently only those living in Japan) and to participating libraries. Items anyone can read are marked as readable without login (ログインなしで閲覧可能)."},
+    {id:"e1u6-l1-x6", type:"mcq", q:"In NDL Search, a digitized book is marked 「送信サービスで閲覧可能」. What does this mean?", options:[
+      {t:"It can be read through the NDL’s transmission service: online after logging in as a registered user, or at a participating library", ok:true, why:"The NDL’s transmission services (送信サービス) send digitized material to fully registered users (currently only those living in Japan) and to participating libraries. Items anyone can read are marked as readable without login (ログインなしで閲覧可能)."},
       {t:"Anyone can read it online without logging in", why:"Items anyone can read are marked ログインなしで閲覧可能 (readable without login). 送信サービス items need a login or a participating library."},
       {t:"It can only be read inside the National Diet Library", why:"Items limited to the NDL buildings are marked 国立国会図書館内限定."},
       {t:"It must be bought from a bookshop", why:"The marking is about the NDL’s digital services, not about buying the book."}
@@ -140,7 +140,7 @@ ICA.addUnit({
     {t:"Map one topic in CiNii Research", how:["Choose a topic from your studies or one that interests you.","Write three to five Japanese search words, with synonyms and spelling variants.","Search CiNii Research with two or three combinations.","For five results, note the kind of text (journal paper, 紀要 paper, book, thesis) and whether full text is linked."], write:"Topic… Search words and variants… Five results: title (kind of text, full text yes/no)…"},
     {t:"Open one free article on J-STAGE", how:["Search J-STAGE for your topic, or open a J-STAGE link from CiNii Research.","Choose an article you can read for free.","Read only the title, the 要旨 (abstract) and the keywords. Look up at most five words.","Note whether the journal says it uses 査読."], write:"Article title… Journal… What the 要旨 says in one English sentence… Words I looked up… 査読?"},
     {t:"Find a first book", how:["Search NDL Search or CiNii Research for a 新書 on your topic (adding 新書 to the search can help).","Note the title, author, publisher series and year.","If your library has it, borrow it; otherwise note where it is held."], write:"Title, author, series, year… Where I can read it…"}
-   ], proof:"A short list of Japanese search words for one topic, five sorted search results, one J-STAGE abstract summarised in a sentence, and one 新書 to read first."},
+   ], proof:"A short list of Japanese search words for one topic, five sorted search results, one J-STAGE abstract summarized in a sentence, and one 新書 to read first."},
    read:[
      {book:"omu", where:"Section 4.2 “疑い深く調べる” (including 4.2.1 “図書館の書物の利用”)", note:"Background reading in Japanese on searching carefully and using library books before you write."}
    ]
@@ -150,7 +150,7 @@ ICA.addUnit({
    hook:{q:"In a Japanese research paper, which section is where the author explains what the findings mean, compares them with earlier studies and admits their limits?", options:["[結果]{けっか}","[考察]{こうさつ}","[要旨]{ようし}","[参考文献]{さんこうぶんけん}"], answer:1, reveal:"**考察 (kōsatsu), the discussion.** 結果 (results) reports what was found; 考察 says what it means. Learners often mix them up, because both talk about the findings. The difference is between reporting and interpreting, and it matters: the writer’s main claims are usually in 考察 and the conclusion, not in 結果. This lesson walks through every part of a typical 論文 and shows a faster order for reading one."},
    goals:[
      "Name the usual parts of a Japanese research paper and say what each contains",
-     "Relate the Japanese structure to IMRaD, and recognise the chapter-based shape common in the humanities",
+     "Relate the Japanese structure to IMRaD, and recognize the chapter-based shape common in the humanities",
      "Recognise the stock phrases that mark each section, including 本稿, 本研究 and 筆者",
      "Read a paper in an efficient order, starting from the 要旨"
    ],
@@ -170,8 +170,8 @@ ICA.addUnit({
         ["おわりに or 結論","[結論]{けつろん} (*ketsuron*)","The main conclusions and future tasks (今後の課題)"],
         ["注 and 参考文献 (or 引用文献)","[参考文献]{さんこうぶんけん}","Notes, and the list of works cited"]
       ]},
-      "A paper can use either the plain headings (はじめに, おわりに) or the more formal ones ([[josetsu|序論]], [[ketsuron|結論]]); they do the same job. Two parts deserve special attention: the [[youshi|要旨]], which summarises everything, and the [[kousatsu|考察]], where the author says what the findings mean. [[senkou-kenkyuu|先行研究]] tells you whose work this paper builds on. Sections are usually numbered: 1., 2., 2.1, 2.2 and so on, and some papers number はじめに as section 1.",
-      "Theses (卒業論文, 修士論文, 博士論文) add a contents page (目次) and often acknowledgements ([謝辞]{しゃじ}), and divide the body into chapters (第1章, 第2章…)."
+      "A paper can use either the plain headings (はじめに, おわりに) or the more formal ones ([[josetsu|序論]], [[ketsuron|結論]]); they do the same job. Two parts deserve special attention: the [[youshi|要旨]], which summarizes everything, and the [[kousatsu|考察]], where the author says what the findings mean. [[senkou-kenkyuu|先行研究]] tells you whose work this paper builds on. Sections are usually numbered: 1., 2., 2.1, 2.2 and so on, and some papers number はじめに as section 1.",
+      "Theses (卒業論文, 修士論文, 博士論文) add a contents page (目次) and often acknowledgments ([謝辞]{しゃじ}), and divide the body into chapters (第1章, 第2章…)."
     ]},
     {h:"IMRaD in Japanese", body:[
       "If you have read research in English, you may know the [[imrad]] pattern: Introduction, Methods, Results and Discussion (see {{paper-structure}}). The Japanese empirical paper follows the same logic: 序論 (I), 方法 (M), 結果 (R) and 考察 (D), often followed by a short conclusion.",
@@ -289,14 +289,14 @@ ICA.addUnit({
     {t:"Label a paper’s parts", how:["Open the paper and list its headings in order.","Next to each heading, write which part it is (要旨, はじめに, 先行研究, 方法, 結果, 考察, おわりに, 参考文献) or “other”.","Note any part that is missing or combined with another."], write:"Heading → part (×6–10)… Missing or combined parts…"},
     {t:"Find the four sentences that matter most", how:["In the 要旨, mark the purpose, method, result and conclusion sentences.","At the end of はじめに, copy the purpose sentence (look for 目的).","In おわりに, copy the sentence that states the main conclusion.","Translate the purpose and conclusion into English in your own words."], write:"Purpose sentence… My English… Conclusion sentence… My English…"},
     {t:"Start a stock-phrase list", how:["Collect ten phrases from the paper that signal a section, such as 本研究の目的は or 今後の課題.","Write each with its reading, meaning and section."], write:"Phrase (reading) — meaning — section (×10)…"}
-   ], proof:"One paper’s headings labelled by part, its purpose and conclusion sentences with your own English versions, and a list of ten section phrases."},
+   ], proof:"One paper’s headings labeled by part, its purpose and conclusion sentences with your own English versions, and a list of ten section phrases."},
    read:[
      {book:"omu", where:"Section 4.3.1 “序論→本論→結論の構成”", note:"Background reading in Japanese: the guide explains the introduction–body–conclusion shape that student reports and many papers follow."}
    ]
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e1u6-l3", title:"Signposts, claims and evidence", minutes:55,
-   hook:{q:"A paragraph in a Japanese paper begins: 「[確]{たし}かに、～。しかし、～。」 Where is the writer’s own view most likely to be?", options:["In the sentence after 確かに","In the sentence after しかし","Equally in both sentences","In neither: this pattern only summarises other people’s views"], answer:1, reveal:"**After しかし.** 確かに (also written たしかに, “certainly, it’s true that…”) admits a point the writer accepts but doesn’t rest on; しかし (“however”) turns to what the writer really wants to say. This concede-then-turn pattern is one of the most common in Japanese argument. Connectives like these are signposts: they tell you what the next sentence will do before you read it. This lesson sorts them by function and uses them to find a writer’s claim and evidence."},
+   hook:{q:"A paragraph in a Japanese paper begins: 「[確]{たし}かに、～。しかし、～。」 Where is the writer’s own view most likely to be?", options:["In the sentence after 確かに","In the sentence after しかし","Equally in both sentences","In neither: this pattern only summarizes other people’s views"], answer:1, reveal:"**After しかし.** 確かに (also written たしかに, “certainly, it’s true that…”) admits a point the writer accepts but doesn’t rest on; しかし (“however”) turns to what the writer really wants to say. This concede-then-turn pattern is one of the most common in Japanese argument. Connectives like these are signposts: they tell you what the next sentence will do before you read it. This lesson sorts them by function and uses them to find a writer’s claim and evidence."},
    goals:[
      "Sort common 接続詞 by function: adding, contrast, cause and result, restating, example, comparison, change of topic",
      "Tell apart pairs learners often confuse, such as しかし and 一方, or そのため and ところが",
@@ -331,14 +331,14 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e1u6a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">Where each signpost sends you</text><rect class="d-panel" x="20" y="32" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="54" text-anchor="middle">A</text><path class="d-ink" d="M110,49 L220,49" stroke-width="2" marker-end="url(#e1u6a2)"/><text x="265" y="47" text-anchor="middle">また・さらに</text><text class="s" x="265" y="63" text-anchor="middle">more of A</text><rect class="d-panel" x="20" y="82" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="104" text-anchor="middle">A</text><path class="d-ink" d="M110,92 C160,80 160,120 120,108" stroke-width="2" marker-end="url(#e1u6a2)"/><text x="265" y="97" text-anchor="middle">しかし・ところが</text><text class="s" x="265" y="113" text-anchor="middle">against A</text><rect class="d-panel" x="20" y="132" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="154" text-anchor="middle">A</text><path class="d-ink" d="M110,149 L220,149" stroke-width="3" marker-end="url(#e1u6a2)"/><text x="265" y="147" text-anchor="middle">したがって</text><text class="s" x="265" y="163" text-anchor="middle">result of A</text><rect class="d-panel" x="20" y="182" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="204" text-anchor="middle">A</text><path class="d-ink" d="M110,199 L220,199" stroke-width="2" stroke-dasharray="4 4" marker-end="url(#e1u6a2)"/><text x="265" y="197" text-anchor="middle">つまり</text><text class="s" x="265" y="213" text-anchor="middle">A again, clearer</text><rect class="d-panel" x="20" y="232" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="254" text-anchor="middle">A</text><path class="d-ink" d="M65,266 L65,286 L220,286" stroke-width="2" marker-end="url(#e1u6a2)"/><text x="265" y="268" text-anchor="middle">たとえば</text><text class="s" x="265" y="284" text-anchor="middle">a case of A</text><rect class="d-panel" x="20" y="302" width="90" height="34" rx="4" stroke-width="2"/><text x="65" y="324" text-anchor="middle">A</text><rect class="d-panel" x="220" y="302" width="90" height="34" rx="4" stroke-width="2"/><text x="265" y="324" text-anchor="middle">B</text><text x="165" y="314" text-anchor="middle">一方</text><text class="s" x="165" y="330" text-anchor="middle">A beside B</text></svg>', alt:"Six small diagrams. また・さらに: an arrow continues straight on from A (more of A). しかし・ところが: an arrow curls back against A. したがって: a thick arrow from A (the result of A). つまり: a dashed arrow (A again, clearer). たとえば: an arrow drops down from A (a case of A). 一方: box A beside box B (A compared with B).", cap:"Each connective tells you the direction of the next sentence before you read it."}
     ]},
     {h:"Pairs that learners mix up", body:[
-      "**しかし or 一方?** しかし goes against an expectation or claim. 一方 sets two things side by side for comparison, without one cancelling the other.",
+      "**しかし or 一方?** しかし goes against an expectation or claim. 一方 sets two things side by side for comparison, without one canceling the other.",
       {table:[
         ["Connective","Example","What it does"],
         ["一方","都市部では人口が増加している。一方、農村部では減少が続いている。","Compares two areas side by side"],
         ["しかし","支援制度は整えられた。しかし、利用者は増えていない。","Turns against the expectation that support would bring users"]
       ]},
       "**ところが.** ところが introduces a fact that turned out against expectation: 「予算は増えた。ところが、利用者は減少した。」 Because it reports what happened, it isn’t used to introduce the writer’s own intention or request. ✗「先行研究の多くは都市部を対象としてきた。ところが、本稿では農村部を対象としたい。」 Here しかし is the natural choice.",
-      "**そのため or したがって?** Both lead to a result and often overlap. そのため (“for that reason”) leans towards a factual cause and effect; したがって (“therefore”) leans towards a logical conclusion, and often introduces the writer’s claim.",
+      "**そのため or したがって?** Both lead to a result and often overlap. そのため (“for that reason”) leans toward a factual cause and effect; したがって (“therefore”) leans toward a logical conclusion, and often introduces the writer’s claim.",
       "**つまり or すなわち?** Both restate. すなわち is more formal and common in definitions: 「第二言語、すなわち母語の後に習得する言語」. つまり is common in papers too, especially to sum up a point in simpler words.",
       "**では in papers.** As a change of topic, では usually opens the next question: 「では、なぜ利用者は増えないのだろうか。」 This is the writer telling you a new step in the argument is starting. さて and ところで are rarer in papers, because a paper doesn’t usually change topic suddenly.",
       {warn:"A connective tells you what the writer intends the link to be. Careful reading also checks whether the link is justified: a したがって does not by itself make a conclusion follow."}
@@ -404,7 +404,7 @@ ICA.addUnit({
     {id:"e1u6-l3-x4", type:"mcq", q:"In which sentence is ところが used naturally?", options:[
       {t:"予算は増えた。ところが、利用者は減少した。", ok:true, why:"ところが introduces a fact that went against expectation: more money, yet fewer users. This is its typical use."},
       {t:"先行研究の多くは都市部を対象としてきた。ところが、本稿では農村部を対象としたい。", why:"ところが reports a fact that turned out against expectation; it isn’t used to introduce the writer’s own intention (対象としたい). しかし would be natural."},
-      {t:"大雨が降った。ところが、試合は中止になった。", why:"Cancelling a match after heavy rain is the expected result, so there is nothing surprising to mark. そのため fits."},
+      {t:"大雨が降った。ところが、試合は中止になった。", why:"Canceling a match after heavy rain is the expected result, so there is nothing surprising to mark. そのため fits."},
       {t:"調査の方法を説明した。ところが、次に結果を述べる。", why:"Moving on to the next section is not a surprise. 次に or では would be natural."}
     ]},
     {id:"e1u6-l3-x5", type:"spot", q:"An invented paragraph. Tap every sentence that gives **根拠** (a reason or evidence) for the writer’s claim.", ask:"gives 根拠", parts:[
@@ -461,7 +461,7 @@ ICA.addUnit({
       "A small set of prefixes and suffixes ([[kango-affix|kanji affixes]]) appears again and again. Learn them and many new words explain themselves:",
       {table:[
         ["Piece","Meaning","Examples"],
-        ["〜[化]{か}","becoming, making into (-isation)","[都市化]{としか} urbanisation, [高齢化]{こうれいか} population ageing, [可視化]{かしか} visualisation"],
+        ["〜[化]{か}","becoming, making into (-isation)","[都市化]{としか} urbanization, [高齢化]{こうれいか} population aging, [可視化]{かしか} visualization"],
         ["〜[性]{せい}","quality, nature (-ity, -ness)","[可能性]{かのうせい} possibility, [重要性]{じゅうようせい} importance, [信頼性]{しんらいせい} reliability"],
         ["〜[的]{てき}","-ic, -al: relating to","[経済的]{けいざいてき} economic, [社会的]{しゃかいてき} social, [具体的]{ぐたいてき} concrete"],
         ["〜[率]{りつ}","rate, ratio","[失業率]{しつぎょうりつ} unemployment rate, [進学率]{しんがくりつ} rate of going on to higher education, [回答率]{かいとうりつ} response rate"],
@@ -471,7 +471,7 @@ ICA.addUnit({
         ["[再]{さい}〜","again, re-","[再検討]{さいけんとう} re-examination, [再評価]{さいひょうか} reassessment, [再分析]{さいぶんせき} reanalysis"]
       ]},
       "A few more are worth knowing: [不]{ふ}〜 (not: [不十分]{ふじゅうぶん} insufficient, [不安定]{ふあんてい} unstable), [無]{む}〜 (without: [無関係]{むかんけい} unrelated, [無作為]{むさくい} random, as in random sampling), 〜[論]{ろん} (theory of…), and 〜[観]{かん} (view of…, as in [価値観]{かちかん} values).",
-      "The pieces also tell you how a word behaves in a sentence. 〜的 words work like な-adjectives: 経済的な影響 (an economic effect), 経済的に (economically). 〜性, 〜率 and 〜者 make nouns. Many 〜化 words can take する or 〜が進む: 高齢化が進む (ageing advances)."
+      "The pieces also tell you how a word behaves in a sentence. 〜的 words work like な-adjectives: 経済的な影響 (an economic effect), 経済的に (economically). 〜性, 〜率 and 〜者 make nouns. Many 〜化 words can take する or 〜が進む: 高齢化が進む (aging advances)."
     ]},
     {h:"The limits of guessing", body:[
       "Guessing from parts is a strong strategy for **understanding**, but a risky one for **writing**, for two reasons.",
@@ -503,7 +503,7 @@ ICA.addUnit({
         ["に関する","about, concerning","敬語使用に関する研究 (a study on keigo use)"],
         ["における","in, at (a place, time or field)","日本語学習者における… (among learners of Japanese)"],
         ["による","by, through, caused by","SNSによる情報発信 (sending information via social media)"],
-        ["に対する","towards, regarding","留学生に対する支援 (support for international students)"],
+        ["に対する","toward, regarding","留学生に対する支援 (support for international students)"],
         ["としての","as","第二言語としての日本語 (Japanese as a second language)"],
         ["をめぐる","surrounding, over (a debate)","移民政策をめぐる議論 (debate over immigration policy)"]
       ]},
@@ -515,7 +515,7 @@ ICA.addUnit({
         "**Online dictionaries.** [[jisho-tool|Jisho.org]] is a free Japanese–English dictionary; you can look up a kanji you can’t type by drawing it or by choosing its parts (radicals). Weblio is free with advertising and offers Japanese–Japanese (国語辞典) and Japanese–English dictionaries: a Japanese–Japanese definition is good practice once you are ready.",
         "**Pop-up dictionaries for the browser.** Extensions such as 10ten Japanese Reader (formerly Rikaichamp) and Yomitan (the successor to Yomichan) show the reading and meaning of a word when you point at it. Both are free and open source. 10ten is available for several browsers, including Firefox, Chrome, Edge and Safari; Yomitan works in Chrome, Firefox and Edge, and you add dictionaries to it after installing.",
         "**[[furigana|Furigana]] in Word.** Microsoft Word’s Phonetic Guide (ルビ in Japanese versions) adds readings above kanji: select the text, then **Home → Font group → Phonetic Guide** (menus can differ between versions). It needs Japanese language features turned on. For Japanese it usually fills in suggested readings, which you can edit.",
-        "**Machine translation.** Useful for checking your understanding of a hard sentence, but it often loses hedges (と考えられる may come out as a flat statement), guesses missing subjects, and mistranslates technical terms. Use it as a second opinion, never instead of reading ({{ai-language-tools}}). Japanese Foundations Unit 12, Lesson 5 practises checking it step by step ({{machine-translation-japanese}})."
+        "**Machine translation.** Useful for checking your understanding of a hard sentence, but it often loses hedges (と考えられる may come out as a flat statement), guesses missing subjects, and mistranslates technical terms. Use it as a second opinion, never instead of reading ({{ai-language-tools}}). Japanese Foundations Unit 12, Lesson 5 practices checking it step by step ({{machine-translation-japanese}})."
       ]},
       {warn:"Automatic readings can be wrong, especially for names of people and places and for technical terms. A pop-up or Word may give a common reading where the field uses another. Check important readings in a dictionary or in the paper itself: many papers give the author’s name in romaji or kana."},
       {h:"A routine for a dense page"},
@@ -530,7 +530,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u6-l4-x1", type:"match", q:"Match each piece to its meaning.", pairs:[
-      ["〜化 (都市化, 高齢化)","becoming, making into","化 turns a word into a process: 都市化 is “becoming urban”, urbanisation."],
+      ["〜化 (都市化, 高齢化)","becoming, making into","化 turns a word into a process: 都市化 is “becoming urban”, urbanization."],
       ["〜性 (可能性, 重要性)","quality, nature","性 makes an abstract noun of quality: possibility, importance."],
       ["〜率 (失業率, 回答率)","rate, ratio","率 (りつ) means rate: the unemployment rate, the response rate."],
       ["〜者 (研究者, 回答者)","person who…","者 (しゃ) marks a person: a researcher, a respondent."],
@@ -541,7 +541,7 @@ ICA.addUnit({
       {t:"Questions the respondents left unanswered", ok:true, why:"未 (not yet) + 回答 (answer): items that were not answered. 除外した means they were left out of the analysis."},
       {t:"Questions with wrong answers", why:"未 means “not yet”, not “wrong”. Wrong answers would be something like 誤答."},
       {t:"Respondents who refused to take part in the survey", why:"項目 means items or questions, not people. People who answered are 回答者."},
-      {t:"Answers that have not been analysed yet", why:"The sentence says the items were *excluded from* the analysis (分析から除外), not that analysis is still to come."}
+      {t:"Answers that have not been analyzed yet", why:"The sentence says the items were *excluded from* the analysis (分析から除外), not that analysis is still to come."}
     ]},
     {id:"e1u6-l4-x3", type:"mcq", q:"How is 回答率 (response rate) read?", options:[
       {t:"かいとうりつ", ok:true, why:"率 meaning “rate” is read りつ: 回答率, 失業率, 進学率."},
@@ -551,7 +551,7 @@ ICA.addUnit({
     ]},
     {id:"e1u6-l4-x4", type:"sort", q:"Which of these words can become a verb by adding **する** directly?", buckets:["Can take する","Cannot take する"], items:[
       {t:"調査", b:0, why:"調査する (investigate) is a 漢語 + する verb."},
-      {t:"分析", b:0, why:"分析する (analyse) is a 漢語 + する verb."},
+      {t:"分析", b:0, why:"分析する (analyze) is a 漢語 + する verb."},
       {t:"比較", b:0, why:"比較する (compare) is a 漢語 + する verb."},
       {t:"減少", b:0, why:"減少する (decrease) is a 漢語 + する verb."},
       {t:"可能性", b:1, why:"〜性 words are nouns of quality. You say 可能性がある, not ✗可能性する."},
@@ -653,7 +653,7 @@ ICA.addUnit({
         ["[論]{ろん}じている","discusses, argues at length"],
         ["[結論]{けつろん}づけている","concludes"]
       ]},
-      "The ～ている form is normal for reporting what a text says, because the text goes on saying it. In a report that summarises a named source, name the author and year once at the start: 「田中（2021）は、～と述べている。」 After that, また and さらに are often enough; you don’t need the author’s name in every sentence. In a 要約 exercise, 筆者 means the author of the text you are summarising. In a longer report, where 筆者 can also mean you, the report’s writer (lesson 2), use the author’s name (田中は…) instead to avoid confusion. Likewise, don’t call the source 本稿: in your own writing 本稿 means your own report."
+      "The ～ている form is normal for reporting what a text says, because the text goes on saying it. In a report that summarizes a named source, name the author and year once at the start: 「田中（2021）は、～と述べている。」 After that, また and さらに are often enough; you don’t need the author’s name in every sentence. In a 要約 exercise, 筆者 means the author of the text you are summarizing. In a longer report, where 筆者 can also mean you, the report’s writer (lesson 2), use the author’s name (田中は…) instead to avoid confusion. Likewise, don’t call the source 本稿: in your own writing 本稿 means your own report."
     ]},
     {h:"A worked example", body:[
       "Here is an invented source text of about 250 characters:",
@@ -682,12 +682,12 @@ ICA.addUnit({
         "Is it within the **字数** (character count)?"
       ]},
       "Japanese length limits are counted in characters (字). Punctuation marks such as 、 and 。 and brackets such as 「」 usually count as one character each. Word processors count characters for you; check which count your teacher means. Many teachers expect you to use most of the limit, so a 400字以内 summary of 150 characters may lose marks. If you are not sure, ask.",
-      {warn:"AI summarising tools can drop hedges, add claims the text doesn’t make, and miss the main point of a long argument. Follow your course’s rules on AI, check any tool’s output against the original, and never hand in a machine-made summary as your own ({{japanese-plagiarism-ai}})."},
+      {warn:"AI summarizing tools can drop hedges, add claims the text doesn’t make, and miss the main point of a long argument. Follow your course’s rules on AI, check any tool’s output against the original, and never hand in a machine-made summary as your own ({{japanese-plagiarism-ai}})."},
       {key:"A good 要約 is the author’s argument, shorter, in your own words and in である style, with the author’s hedges intact and your opinion left out."}
     ]}
    ],
    try:[
-    {id:"e1u6-l5-x1", type:"sort", q:"You are summarising a paper. Sort each element: **usually keep** or **usually cut**?", buckets:["Usually keep","Usually cut"], items:[
+    {id:"e1u6-l5-x1", type:"sort", q:"You are summarizing a paper. Sort each element: **usually keep** or **usually cut**?", buckets:["Usually keep","Usually cut"], items:[
       {t:"The author’s main claim", b:0, why:"The 主張 is the heart of any summary."},
       {t:"The main reasons given for the claim", b:0, why:"The 根拠 show why the author believes the claim. Keep the main ones."},
       {t:"The author’s conclusion", b:0, why:"The conclusion (often after したがって or 以上から) belongs in the summary."},
@@ -699,7 +699,7 @@ ICA.addUnit({
     {id:"e1u6-l5-x2", type:"mcq", q:"The source says: 「この結果から、睡眠時間の短さが成績の低下につながっている可能性が考えられる。」 Which summary sentence is the most accurate?", options:[
       {t:"筆者は、睡眠時間の短さが成績の低下につながっている可能性を指摘している。", ok:true, why:"It keeps the hedge (可能性) and reports it with a suitable verb (指摘している), in である style."},
       {t:"筆者は、睡眠不足が成績低下の原因であることを証明した。", why:"The source only suggests a possibility. “Proved that sleep loss is the cause” is far stronger than what the author said."},
-      {t:"睡眠時間が短いと成績が下がるので、学生はもっと寝るべきだと思う。", why:"It drops the hedge, adds advice the author didn’t give, and expresses the summariser’s own opinion (と思う)."},
+      {t:"睡眠時間が短いと成績が下がるので、学生はもっと寝るべきだと思う。", why:"It drops the hedge, adds advice the author didn’t give, and expresses the summarizer’s own opinion (と思う)."},
       {t:"この結果から、睡眠時間の短さが成績の低下につながっている可能性が考えられます。", why:"It copies the sentence and switches to です・ます style. It shows no understanding and breaks the summary’s style."}
     ]},
     {id:"e1u6-l5-x3", type:"spot", q:"A student’s 要約 of the library text in this lesson. Tap every part that is a **problem** in a である-style summary.", ask:"is a problem", parts:[
@@ -781,7 +781,7 @@ ICA.addUnit({
      {t:"たとえば", why:"たとえば introduces an example, and the second sentence is not an example of the first."},
      {t:"なお", ok:true, why:"なお adds a side note or detail (“note that…”), which is exactly what the second sentence does."},
      {t:"つまり", why:"つまり restates the same idea, but the second sentence gives new information."}]},
-   {id:"e1u6-cp07", lesson:"e1u6-l3", level:2, q:"Hana is summarising this paragraph: 「A市では、駅前の[駐輪場]{ちゅうりんじょう}が毎朝[満車]{まんしゃ}になる。たとえば、平日の8時には空きがほとんどない。市の調査によると、利用者の約6割が通学の高校生である。したがって、市は高校と協力して駐輪場を増やす必要がある。」 Which sentence would she usually cut?", options:[
+   {id:"e1u6-cp07", lesson:"e1u6-l3", level:2, q:"Hana is summarizing this paragraph: 「A市では、駅前の[駐輪場]{ちゅうりんじょう}が毎朝[満車]{まんしゃ}になる。たとえば、平日の8時には空きがほとんどない。市の調査によると、利用者の約6割が通学の高校生である。したがって、市は高校と協力して駐輪場を増やす必要がある。」 Which sentence would she usually cut?", options:[
      {t:"「A市では、駅前の駐輪場が毎朝満車になる。」", why:"This is the problem the paragraph answers, which a summary usually keeps."},
      {t:"「たとえば、平日の8時には空きがほとんどない。」", ok:true, why:"After たとえば comes an example that illustrates the point. A summary usually cuts examples and keeps the 根拠."},
      {t:"「市の調査によると、利用者の約6割が通学の高校生である。」", why:"This is 根拠 from data (調査によると), the evidence for working with high schools. Keep it."},
@@ -801,7 +801,7 @@ ICA.addUnit({
      {t:"無作為 means “random”; she should check key method words like this", ok:true, why:"無作為 is the “random” of random sampling. Guess to keep reading, but confirm the words that matter, such as those describing the method."},
      {t:"無作為 means “carefully selected”, the opposite of random", why:"It means random: chosen without the researcher picking particular people."},
      {t:"She can skip it, because words in the 方法 section never affect the meaning", why:"How participants were chosen matters when you judge a study. Words that matter should be checked."}]},
-   {id:"e1u6-cp11", lesson:"e1u6-l5", level:2, q:"Tomás is writing a long report. In one section he summarises a paper by 田中 (2021); elsewhere he writes about his own research. How should he refer to Tanaka and Tanaka’s paper?", options:[
+   {id:"e1u6-cp11", lesson:"e1u6-l5", level:2, q:"Tomás is writing a long report. In one section he summarizes a paper by 田中 (2021); elsewhere he writes about his own research. How should he refer to Tanaka and Tanaka’s paper?", options:[
      {t:"As 筆者 and 本稿, as in a 要約 exercise", why:"In a longer report, 筆者 can mean Tomás himself and 本稿 means his own report, so these would confuse readers."},
      {t:"By name: 「田中（2021）は、～と述べている」, then 田中は…", ok:true, why:"Naming the author avoids confusion, because in his own writing 筆者 and 本稿 refer to him and his report."},
      {t:"As 私 and 本研究", why:"Japanese papers rarely use 私, and 本研究 would mean Tomás’s own study, not Tanaka’s."},
@@ -846,7 +846,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Peer review is a signal, not a verdict.** A peer-reviewed paper can be weak, and a well-argued 紀要 paper can be valuable. Judge the method and evidence ({{critical-appraisal}}), and note what kind of checking the text has had when you decide how much to rest on it.",
-      "**Grey literature.** 白書, institutional reports and many 紀要 are {{grey-literature|grey literature}}. They are often the best source for local data and practice, and in some fields (education, social welfare, regional studies) much Japanese research appears first in 紀要. Many fields also publish in English; check whether key Japanese studies have English versions or English abstracts.",
+      "**Gray literature.** 白書, institutional reports and many 紀要 are {{grey-literature|gray literature}}. They are often the best source for local data and practice, and in some fields (education, social welfare, regional studies) much Japanese research appears first in 紀要. Many fields also publish in English; check whether key Japanese studies have English versions or English abstracts.",
       "**Theses.** 卒業論文 are rarely published. 修士論文 may be held only by the university; 博士論文 are now commonly made available online through university repositories, so search IRDB and CiNii Research for them.",
       "**新書 as sources.** Teachers differ on whether 新書 may be cited in reports. A common approach is to use them for orientation and follow their references back to the original studies. When you do cite one, treat it as one author’s interpretation.",
       "**Genre differences.** Humanities papers are built around an argument with many notes (注), while empirical papers follow 序論・方法・結果・考察. Reading strategy should follow the genre: in an argument-based paper, the claims are spread through the sections, not concentrated in 考察."
@@ -895,8 +895,8 @@ ICA.addUnit({
      ],
      pro:[
       "**Variation.** Headings vary by field and journal: 序論 or はじめに, 結論 or おわりに, 研究方法 or 調査の概要, 結果と考察 combined. Some papers put 先行研究 inside はじめに; others give it a full section. Numbering (1., 1.1, 1.2) is the norm, and some papers number はじめに as 1.",
-      "**Humanities.** Papers in literature, history, philosophy and law are usually organised around an argument: はじめに, then numbered sections with content titles, おわりに, and extensive notes (注), often footnotes or endnotes holding sources and side arguments. There is no 方法 or 結果; the purpose is still stated in はじめに.",
-      "**Theses.** 卒業論文, 修士論文 and 博士論文 add a title page, 目次 (contents), chapters (第1章…), 謝辞 (acknowledgements) and often appendices (付録).",
+      "**Humanities.** Papers in literature, history, philosophy and law are usually organized around an argument: はじめに, then numbered sections with content titles, おわりに, and extensive notes (注), often footnotes or endnotes holding sources and side arguments. There is no 方法 or 結果; the purpose is still stated in はじめに.",
+      "**Theses.** 卒業論文, 修士論文 and 博士論文 add a title page, 目次 (contents), chapters (第1章…), 謝辞 (acknowledgments) and often appendices (付録).",
       "**Abstracts.** 要旨 may be called 抄録, 概要 or アブストラクト. Many Japanese journals also print an English abstract, which can help you check your understanding, though it is sometimes shorter or less precise than the Japanese one.",
       "**Using the references.** 参考文献 lists are usually in author–year form, often with Japanese works first in 50音順 and other-language works after, though practice varies ({{japanese-references}}). Follow them to find related work ({{citation-chasing}})."
      ]
@@ -941,7 +941,7 @@ ICA.addUnit({
       {list:[
         "**しかし vs 一方**: しかし goes against an expectation; 一方 compares two things side by side.",
         "**ところが**: a fact that turned out against expectation; not used before the writer’s own intention or request.",
-        "**そのため vs したがって**: both lead to a result; したがって leans towards a logical conclusion and often introduces the claim.",
+        "**そのため vs したがって**: both lead to a result; したがって leans toward a logical conclusion and often introduces the claim.",
         "**つまり vs すなわち**: すなわち is more formal, common in definitions."
       ]},
       {h:"Claims and evidence"},
@@ -951,7 +951,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Names vary.** Japanese grammars and textbooks group connectives differently: 順接 may include both cause–result and simple sequence; restating may be called 同列 or 換言; some lists separate 並列 (および, ならびに) and 選択 (または, あるいは, もしくは). The function matters more than the label.",
-      "**Paragraph patterns.** Japanese school teaching distinguishes 頭括型 (main point first), 尾括型 (main point last) and 双括型 (both). Academic writing guides usually recommend putting the main point first, but 新書, essays and some humanities writing build towards it, so check the last sentence as well as the first.",
+      "**Paragraph patterns.** Japanese school teaching distinguishes 頭括型 (main point first), 尾括型 (main point last) and 双括型 (both). Academic writing guides usually recommend putting the main point first, but 新書, essays and some humanities writing build toward it, so check the last sentence as well as the first.",
       "**Concession structures.** 確かに～。しかし、～。 and ～ものの、～ / ～とはいえ、～ grant a point before limiting it. The material after the turn usually carries the writer’s position.",
       "**Implicit links.** Not every link is marked. Japanese writing often leaves the connective out when the relation is clear, and sentence-final forms (～のである, ～からである, ～ためである) can do the work instead: ～のである often presents an explanation or the writer’s conclusion, and ～からである gives a reason.",
       "**Critical reading.** A connective states the link the writer intends. Check it: does the evidence before したがって really support what follows? Does 一方 hide a contrast that needs explaining?"
@@ -963,12 +963,12 @@ ICA.addUnit({
     checked:"2026-11"
    },
    {id:"reading-kanji-compounds", title:"Reading kanji compounds and long noun phrases", aka:["漢語","kanji compounds","〜化","〜性","〜的","〜率","非","未","再","漢語サ変動詞","複合助詞"], tags:["academic Japanese","reading","vocabulary"],
-    summary:"Guessing the meaning of unfamiliar 漢語 from common prefixes and suffixes, recognising 漢語 + する verbs, and reading long noun phrases from the head noun.",
+    summary:"Guessing the meaning of unfamiliar 漢語 from common prefixes and suffixes, recognizing 漢語 + する verbs, and reading long noun phrases from the head noun.",
     levels:{
      starter:[
       "Academic Japanese is full of [[kanji-compound|kanji compounds]] ([[kango|漢語]]). Many are built from a small set of repeating pieces, like Lego bricks:",
       {list:[
-        "〜化: becoming (都市化 urbanisation)",
+        "〜化: becoming (都市化 urbanization)",
         "〜性: quality (可能性 possibility)",
         "〜的: -ic, -al (経済的 economic)",
         "〜率: rate (失業率 unemployment rate)",
@@ -991,7 +991,7 @@ ICA.addUnit({
         ["に関する","about, concerning"],
         ["における","in, at, among"],
         ["による","by, through, caused by"],
-        ["に対する","towards, regarding"],
+        ["に対する","toward, regarding"],
         ["としての","as"],
         ["をめぐる","surrounding, over"]
       ]},
@@ -1036,7 +1036,7 @@ ICA.addUnit({
       "Browser extensions are mostly a computer feature. On a phone, Jisho.org in the browser or a trusted dictionary app works everywhere: copy a word and paste it in."
      ],
      pro:[
-      "**Where the data comes from.** Many free Japanese–English tools draw on the JMdict/EDICT and KANJIDIC projects. That means they share strengths (broad, regularly updated coverage) and gaps (specialised academic terms, newer coinages). For technical vocabulary, check a subject glossary or how the term is used in papers in your field.",
+      "**Where the data comes from.** Many free Japanese–English tools draw on the JMdict/EDICT and KANJIDIC projects. That means they share strengths (broad, regularly updated coverage) and gaps (specialized academic terms, newer coinages). For technical vocabulary, check a subject glossary or how the term is used in papers in your field.",
       "**Japanese–Japanese dictionaries.** Moving to 国語辞典 definitions builds vocabulary faster, because definitions themselves use academic words, and they show usage notes that bilingual dictionaries skip.",
       "**Readings and names.** Automatic readings are guesses from dictionaries. Personal and place names are the most error-prone; papers often give authors’ names in romaji or kana as well.",
       "**Corpora.** To check whether a combination is natural (e.g. which verb goes with 調査), corpus tools help more than dictionaries; see {{dictionaries-corpora}} for the idea.",
@@ -1051,7 +1051,7 @@ ICA.addUnit({
     summary:"The four main free services for finding Japanese research, what each covers and what is free, plus search tips for Japanese keywords.",
     levels:{
      starter:[
-      "Japanese research is found through a few free services, the way English research is found through databases and library catalogues ({{academic-databases}}):",
+      "Japanese research is found through a few free services, the way English research is found through databases and library catalogs ({{academic-databases}}):",
       {list:[
         "**[[cinii|CiNii Research]]**: one search across Japanese papers, books, theses and research projects. The best first stop.",
         "**[[j-stage|J-STAGE]]**: where many Japanese academic societies publish their journals online; most articles are free.",
@@ -1072,13 +1072,13 @@ ICA.addUnit({
         ["NDL Search","NDL","Renewed January 2024, combined with NDL Online. Searches NDL and many other libraries."]
       ]},
       {h:"NDL Digital Collections"},
-      "Digitised items are labelled by access: readable online without login; readable through the NDL’s transmission service, online after logging in as a fully registered user living in Japan, or at a participating library; or readable only inside the NDL’s own buildings.",
+      "Digitised items are labeled by access: readable online without login; readable through the NDL’s transmission service, online after logging in as a fully registered user living in Japan, or at a participating library; or readable only inside the NDL’s own buildings.",
       {h:"Search tips"},
       "A space between words usually means AND. Try English too: many papers have English titles and abstracts. Use the 要旨 and キーワード of a good paper to find better search words, and follow its 参考文献 ({{citation-chasing}}). See {{search-strategy}} for planning searches in any language."
      ],
      pro:[
       "**Linked records.** CiNii Research brings together records from many sources (including J-STAGE, institutional repositories and NDL data) and links them to citation information and research project records, so one search can lead from a paper to its author’s funded projects and related outputs.",
-      "**Access is not always free.** Search is free everywhere, but full text depends on the publisher: some J-STAGE journals restrict recent issues to members or subscribers, and links from CiNii may go to paid platforms. Your university library may subscribe to Japanese commercial databases (for example newspaper archives and specialised article databases); ask it.",
+      "**Access is not always free.** Search is free everywhere, but full text depends on the publisher: some J-STAGE journals restrict recent issues to members or subscribers, and links from CiNii may go to paid platforms. Your university library may subscribe to Japanese commercial databases (for example newspaper archives and specialized article databases); ask it.",
       "**Registration rules.** The NDL’s personal transmission service (個人向けデジタル化資料送信サービス) is open to fully registered users (本登録) who live in Japan; at the time of writing the NDL has no plans to extend it to people living abroad. Rules change; check the NDL’s own help pages before you plan around a service.",
       "**Coverage gaps.** No single service covers everything. Older material, small society journals and some 紀要 may appear only in NDL Search or the NDL Digital Collections; and any index can take time to pick up new papers. Search more than one service for a thorough review, and record where and how you searched ({{search-strategy}}).",
       "**Google Scholar** also indexes many Japanese papers ({{google-scholar}}), and is useful for checking who cites a paper."
@@ -1148,7 +1148,7 @@ ICA.addUnit({
    {id:"konkyo", term:"Konkyo (根拠)", def:"The reasons and evidence a writer gives for a claim, often marked by なぜなら～からである, 実際 or data and citations.", codex:"japanese-signposts"},
    {id:"kango-affix", term:"Kanji prefixes and suffixes", def:"Kanji that attach to many words with a stable meaning, such as 〜化 (becoming), 〜性 (quality), 〜的 (-ic, -al), 〜率 (rate), 〜者 (person), 非〜 (non-), 未〜 (not yet) and 再〜 (again).", codex:"reading-kanji-compounds"},
    {id:"sahen-doushi", term:"Kango + suru verb (漢語サ変動詞)", def:"A Sino-Japanese noun that becomes a verb with する, such as 調査する or 分析する. Papers use both the noun and the verb forms.", codex:"reading-kanji-compounds"},
-   {id:"fukugou-joshi", term:"Compound particle (複合助詞)", def:"A particle made of several words that works like an English preposition, such as に関する (about), における (in, among) and に対する (towards).", codex:"reading-kanji-compounds"},
+   {id:"fukugou-joshi", term:"Compound particle (複合助詞)", def:"A particle made of several words that works like an English preposition, such as に関する (about), における (in, among) and に対する (toward).", codex:"reading-kanji-compounds"},
    {id:"jisho-tool", term:"Jisho.org", def:"A free online Japanese–English dictionary. You can search by typing, by drawing a kanji or by choosing its parts.", codex:"japanese-reading-tools"},
    {id:"youyaku", term:"Yōyaku (要約)", def:"A summary: the main points of a text restated more briefly in your own words, without your own opinion.", codex:"summarising-in-japanese"},
    {id:"cinii", term:"CiNii Research", def:"A free search service from Japan’s National Institute of Informatics (NII) covering Japanese papers, books, theses, research data and projects. It also shows which university libraries hold a book, a job it took over from CiNii Books in 2026.", codex:"finding-japanese-research"},
@@ -1166,7 +1166,7 @@ ICA.addUnit({
    ]},
    {id:"e1u6-q02", lesson:"e1u6-l1", level:2, q:"Sione is starting a report on a topic he knows nothing about. He wants a readable overview, written by an expert, before tackling papers. What should he look for?", options:[
      {t:"A 新書 on the topic", ok:true, why:"新書 are short books by specialists for general readers: a common and recommended first step."},
-     {t:"A 博士論文 on the topic", why:"A doctoral thesis is the most specialised kind of text, hard going as a first read."},
+     {t:"A 博士論文 on the topic", why:"A doctoral thesis is the most specialized kind of text, hard going as a first read."},
      {t:"The 参考文献 list of a journal paper", why:"A reference list helps find more sources, but gives no overview."},
      {t:"A 白書, whatever the topic", why:"白書 are about government policy areas. They are useful for data, not a general overview of any topic."}
    ]},
@@ -1190,7 +1190,7 @@ ICA.addUnit({
    ]},
    {id:"e1u6-q06", lesson:"e1u6-l1", level:1, q:"What is J-STAGE?", options:[
      {t:"A platform where many Japanese academic societies publish journals", ok:true, why:"J-STAGE is run by the Japan Science and Technology Agency and hosts society journals online. Most articles are free to read."},
-     {t:"The National Diet Library’s catalogue", why:"That is NDL Search."},
+     {t:"The National Diet Library’s catalog", why:"That is NDL Search."},
      {t:"A free pop-up dictionary for reading Japanese web pages in a browser", why:"Pop-up dictionaries are tools such as 10ten Japanese Reader or Yomitan."},
      {t:"A list of approved textbooks", why:"J-STAGE publishes journals, not textbook lists."}
    ]},
@@ -1217,7 +1217,7 @@ ICA.addUnit({
      {t:"考察", ok:true, why:"考察 (discussion) says what the findings mean."},
      {t:"結果", why:"結果 reports the findings without interpreting them."},
      {t:"方法", why:"方法 explains how the study was done."},
-     {t:"要旨", why:"要旨 summarises the whole paper briefly."}
+     {t:"要旨", why:"要旨 summarizes the whole paper briefly."}
    ]},
    {id:"e1u6-q11", lesson:"e1u6-l2", level:2, q:"In which section would you most expect 「大学院生15名を対象に、半構造化インタビューを実施した。」?", options:[
      {t:"方法", ok:true, why:"It says who was studied (対象) and how (an interview), which is the method."},
@@ -1238,8 +1238,8 @@ ICA.addUnit({
      {t:"The 注 (notes)", why:"Notes hold sources and side points, not the main point."}
    ]},
    {id:"e1u6-q14", lesson:"e1u6-l2", level:3, q:"Amara is reading a history paper with はじめに, four numbered sections with content titles, おわりに and many notes, but no 方法 or 結果. What is the best conclusion?", options:[
-     {t:"This is normal for argument-based humanities papers", ok:true, why:"Many humanities papers are organised around an argument, not an experiment, so they have no 方法 or 結果 headings. She should find the purpose in はじめに and the conclusion in おわりに."},
-     {t:"The paper is badly organised and shouldn’t be cited at all", why:"Its shape is standard for its field. Judge it by its argument and sources."},
+     {t:"This is normal for argument-based humanities papers", ok:true, why:"Many humanities papers are organized around an argument, not an experiment, so they have no 方法 or 結果 headings. She should find the purpose in はじめに and the conclusion in おわりに."},
+     {t:"The paper is badly organized and shouldn’t be cited at all", why:"Its shape is standard for its field. Judge it by its argument and sources."},
      {t:"The 方法 and 結果 must be hidden in the notes", why:"Notes hold sources and side discussions; the paper simply follows a different structure."},
      {t:"It must be a 新書, not a paper", why:"新書 are books. A paper with numbered sections and notes is still a 論文."}
    ]},
@@ -1253,7 +1253,7 @@ ICA.addUnit({
      {t:"Leaving the point as a task for future research", ok:true, why:"今後の課題 means future tasks: a typical closing in おわりに."},
      {t:"Admitting the study failed", why:"Naming a future task is normal and doesn’t mean the study failed."},
      {t:"Setting homework for readers", why:"課題 can mean homework in class, but here it means a research task."},
-     {t:"Summarising the results", why:"The results are summarised earlier; this sentence looks ahead."}
+     {t:"Summarising the results", why:"The results are summarized earlier; this sentence looks ahead."}
    ]},
    {id:"e1u6-q17", lesson:"e1u6-l2", level:3, q:"Fatima’s notes say “結果 = 結論”. Which correction is accurate?", options:[
      {t:"結果 reports what one study found; 結論 states what the author concludes from the whole paper", ok:true, why:"The results are data; the conclusion is the author’s overall answer, built on results and discussion."},
@@ -1324,16 +1324,16 @@ ICA.addUnit({
    ]},
    /* ---------- Lesson 4 ---------- */
    {id:"e1u6-q28", lesson:"e1u6-l4", level:1, q:"What does the suffix 〜化 usually mean, as in 都市化 and 高齢化?", options:[
-     {t:"Becoming or making into", ok:true, why:"都市化 is urbanisation (becoming urban); 高齢化 is population ageing."},
+     {t:"Becoming or making into", ok:true, why:"都市化 is urbanization (becoming urban); 高齢化 is population aging."},
      {t:"A person who does something", why:"That is 〜者, as in 研究者."},
      {t:"A rate or ratio", why:"That is 〜率, as in 失業率."},
      {t:"Not yet", why:"That is the prefix 未〜, as in 未解決."}
    ]},
-   {id:"e1u6-q29", lesson:"e1u6-l4", level:2, q:"Using the parts, what does 非営利団体 most likely mean? (営利 = making profit, 団体 = organisation)", options:[
-     {t:"A non-profit organisation", ok:true, why:"非 (non-) + 営利 (profit-making) + 団体 (organisation)."},
-     {t:"An organisation that has not yet made a profit", why:"“Not yet” would be 未. 非 means “non-”."},
-     {t:"An organisation that makes profit again", why:"“Again” would be 再."},
-     {t:"A very profitable organisation", why:"非 is a negative prefix, not an intensifier."}
+   {id:"e1u6-q29", lesson:"e1u6-l4", level:2, q:"Using the parts, what does 非営利団体 most likely mean? (営利 = making profit, 団体 = organization)", options:[
+     {t:"A non-profit organization", ok:true, why:"非 (non-) + 営利 (profit-making) + 団体 (organization)."},
+     {t:"An organization that has not yet made a profit", why:"“Not yet” would be 未. 非 means “non-”."},
+     {t:"An organization that makes profit again", why:"“Again” would be 再."},
+     {t:"A very profitable organization", why:"非 is a negative prefix, not an intensifier."}
    ]},
    {id:"e1u6-q30", lesson:"e1u6-l4", level:2, q:"A paper says 「この理論は再検討する必要がある」. What does 再検討 mean?", options:[
      {t:"Re-examination: considering again", ok:true, why:"再 (again) + 検討 (examination, consideration)."},
@@ -1348,7 +1348,7 @@ ICA.addUnit({
      {t:"Wherever there is a kanji compound", why:"Many compounds are in the description; the head is the final one."}
    ]},
    {id:"e1u6-q32", lesson:"e1u6-l4", level:2, q:"What does 「留学生に対する支援」 mean?", options:[
-     {t:"Support for international students", ok:true, why:"に対する means “towards, for”, and the head noun is 支援 (support)."},
+     {t:"Support for international students", ok:true, why:"に対する means “toward, for”, and the head noun is 支援 (support)."},
      {t:"Support from international students", why:"“From” would be 留学生による or 留学生からの."},
      {t:"International students opposed to support", why:"Here に対する marks the target of support, not opposition, and the head noun is 支援."},
      {t:"Research on international students", why:"支援 means support, not research."}
@@ -1409,7 +1409,7 @@ ICA.addUnit({
      {t:"quotes", why:"“Quotes” is 引用している."}
    ]},
    {id:"e1u6-q42", lesson:"e1u6-l5", level:3, q:"An exam task says 「本文を要約したうえで、あなたの意見を述べよ。」 How should Oluwaseun structure his answer?", options:[
-     {t:"A summary first, then a separate paragraph with his opinion", ok:true, why:"したうえで means “after doing”: summarise first, then give your view, clearly separated."},
+     {t:"A summary first, then a separate paragraph with his opinion", ok:true, why:"したうえで means “after doing”: summarize first, then give your view, clearly separated."},
      {t:"Mix his opinion into each summary sentence", why:"Mixing them makes it impossible to tell the author’s view from his."},
      {t:"Only give his opinion; the summary is optional", why:"The task asks for both."},
      {t:"Copy the main sentences of the text, then add one opinion sentence", why:"A summary must be in his own words; copied sentences don’t show understanding."}
@@ -1426,7 +1426,7 @@ ICA.addUnit({
      {t:"Replace every kanji word with a synonym", why:"Swapping words one by one keeps the original’s sentences, and key terms should usually stay."},
      {t:"Translate the text into English and then back into Japanese", why:"Back-translation often produces odd Japanese and is not your own writing."}
    ]},
-   {id:"e1u6-q45", lesson:"e1u6-l5", level:3, q:"Ana is short of time and considers using an AI tool to summarise a Japanese article for her assignment. What is the best approach?", options:[
+   {id:"e1u6-q45", lesson:"e1u6-l5", level:3, q:"Ana is short of time and considers using an AI tool to summarize a Japanese article for her assignment. What is the best approach?", options:[
      {t:"Follow her course’s rules and hand in only a summary she wrote", ok:true, why:"AI summaries can drop hedges and invent claims, so she must check any output against the original. Submitting an AI summary as her own breaks academic integrity rules."},
      {t:"Submit the AI summary, since the content is the article’s anyway", why:"The wording would be the tool’s, not hers. Presenting it as her own is dishonest."},
      {t:"Use the AI summary without checking, because AI is reliable for Japanese", why:"AI tools make errors with hedges and long arguments, in any language."},

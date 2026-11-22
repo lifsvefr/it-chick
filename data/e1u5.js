@@ -3,7 +3,7 @@ ICA.addUnit({
   id:"e1u5", track:"e1", n:5, title:"Styles and words of academic Japanese", icon:"📝",
   blurb:"What academic Japanese is and how this half of the elective works; the two sentence styles, です・ます and である, and when each is used; written words versus spoken words; 漢語 and 和語; and the sentence endings, pointing words and connectors that show how sure a writer is and hold a text together.",
   goals:[
-    "Explain what academic Japanese (アカデミック・ジャパニーズ) covers and how Units 5–8 of this elective are organised",
+    "Explain what academic Japanese (アカデミック・ジャパニーズ) covers and how Units 5–8 of this elective are organized",
     "Choose between です・ます体 and である体 for a task, convert sentences between them correctly, and keep one style throughout a text",
     "Recognise common 話し言葉 in your writing and replace it with suitable 書き言葉, including shortened forms, ら抜き言葉, 「とか」 and sentence-initial 「なので」",
     "Use 漢語 where they make writing precise and compact, while keeping the formal 和語 that academic Japanese relies on",
@@ -22,7 +22,7 @@ ICA.addUnit({
      "Explain what academic Japanese is and how it differs from the Japanese of everyday conversation",
      "Name the three layers that change in academic Japanese: sentence style, choice of words and sentence endings",
      "Recognise 和語, 漢語 and 外来語 in a sentence",
-     "Explain how Units 5–8 are organised and how furigana is used in them"
+     "Explain how Units 5–8 are organized and how furigana is used in them"
    ],
    learn:[
     {h:"A kind of Japanese for study", body:[
@@ -51,7 +51,7 @@ ICA.addUnit({
     ]},
     {h:"How this half of the elective works", body:[
       "Units 1–4 of this elective taught academic English. Units 5–8 teach academic Japanese, in the same way: lessons in plain English, with the Japanese in the examples, tables and exercises.",
-      {table:[["Unit","Focus"],["5 Styles and words (this unit)","です・ます and である, written and spoken words, 漢語 and 和語, sentence endings, pointing words and connectors"],["6 Reading academic Japanese","Kinds of text, the structure of a 論文, connectors as signposts, kanji-heavy text, summarising, finding Japanese research"],["7 Writing reports and theses","Report types, structure, paragraphs, quoting and references, 原稿用紙, punctuation, honest use of tools"],["8 Presentations, seminars and keigo","発表 and questions, ゼミ discussion, 敬語, emailing and visiting a professor"]]},
+      {table:[["Unit","Focus"],["5 Styles and words (this unit)","です・ます and である, written and spoken words, 漢語 and 和語, sentence endings, pointing words and connectors"],["6 Reading academic Japanese","Kinds of text, the structure of a 論文, connectors as signposts, kanji-heavy text, summarizing, finding Japanese research"],["7 Writing reports and theses","Report types, structure, paragraphs, quoting and references, 原稿用紙, punctuation, honest use of tools"],["8 Presentations, seminars and keigo","発表 and questions, ゼミ discussion, 敬語, emailing and visiting a professor"]]},
       "The units assume you already know everyday Japanese: hiragana, katakana, a few hundred kanji and polite です・ます speech (roughly JLPT N3–N2). The Japanese Foundations elective takes you to about N3; if these units feel dense, it helps to keep reviewing N3 grammar and the Kanji Lab alongside them. If some words are new, that is expected. Each key term has a glossary pop-up, and the Codex has a longer reference entry for each topic.",
       "If you studied the English units, many ideas carry over: [[academic-register|register]], [[hedging]] (showing how sure you are) and [[nominalisation]] (packing actions into nouns) all have Japanese versions. If you are starting here, that is fine too: every idea is taught again from the start."
     ]},
@@ -64,7 +64,7 @@ ICA.addUnit({
     ]},
     {h:"Reading kanji: furigana and yomigana", body:[
       "[[furigana|Furigana]] (振り仮名) are small kana printed next to kanji to show how to read them. In horizontal text they sit above the kanji, like this: [考察]{こうさつ}. [[yomigana|Yomigana]] (読み仮名) is the general word for a reading written in kana, wherever it appears, for example in brackets after a word or in a name field on a form: 氏名（よみがな）.",
-      "In these units, furigana appear over kanji words above roughly N3 level the first time they appear in a lesson, and over every kanji in the warm-up questions. After that, the furigana disappear, so you practise reading the word on its own. If you forget a reading, the glossary and the Codex have it.",
+      "In these units, furigana appear over kanji words above roughly N3 level the first time they appear in a lesson, and over every kanji in the warm-up questions. After that, the furigana disappear, so you practice reading the word on its own. If you forget a reading, the glossary and the Codex have it.",
       "Real academic texts for adults rarely have furigana. Textbooks, 論文 and reports assume the reader knows the kanji. Unit 6 shows free tools that add readings or look words up as you read ({{japanese-reading-tools}}).",
       {tip:"Learn new academic words as **whole compounds with their readings**: 考察 (こうさつ), not 考 + 察 separately. Many academic kanji have several readings, and the compound tells you which one is used."},
       {warn:"In your own reports, don’t add furigana unless your teacher asks for them. If a rare name or technical word needs a reading, ask your teacher how they want it shown."}
@@ -148,7 +148,7 @@ ICA.addUnit({
        "Come back at the end of Unit 8 and mark them again."
      ], write:"✔ / ~ / ✘ for each… The two I want to improve most…"}
     ],
-    proof:"A university writing guide with three of its rules explained, two sentences analysed for style, words and endings, and your self-check with two goals."
+    proof:"A university writing guide with three of its rules explained, two sentences analyzed for style, words and endings, and your self-check with two goals."
    },
    read:[
     {book:"omu", where:"Section 2 “アカデミック・ライティングとは” (2.1 “論理的にわかりやすい客観的な文章をめざす” and 2.2 “作文・感想文とは異なる”, p. 4)", note:"Why a report is different from a school essay, in the words of a Japanese university guide."}
@@ -192,7 +192,7 @@ ICA.addUnit({
       "A few more endings change in regular ways:",
       {table:[["Meaning","です・ます体","である体"],["Probably (guess)","[影響]{えいきょう}があるでしょう","影響があるであろう (影響があるだろう)"],["Probably, with a noun","原因でしょう","原因であろう (原因だろう)"],["Explanation","～のです / ～んです","～のである"],["Question","～でしょうか","～だろうか / ～であろうか"],["Wish, plan","～たいと思います","～たい, or simply ～する (～たいと思う is plain but sounds personal; Lesson 5)"]]},
       "**であろう** is the written form of だろう. It is common in academic writing and sounds more formal than だろう. Both are correct; Lesson 5 explains when a guess is the right ending.",
-      "**のである** explains or emphasises: it presents a sentence as the explanation of what came before. It is useful at key moments, but don’t put it on every sentence: a page full of のである sounds heavy and over-insistent.",
+      "**のである** explains or emphasizes: it presents a sentence as the explanation of what came before. It is useful at key moments, but don’t put it on every sentence: a page full of のである sounds heavy and over-insistent.",
       "**Questions** in a report are usually questions the writer then answers: 「では、なぜこのような[差]{さ}が[生]{しょう}じたのだろうか。」 (“Why, then, did this difference arise?”). Many academic texts end them with 。 rather than ？.",
       "Forms that speak directly to the reader, such as ～ましょう (“let’s…”) and ～てください (“please…”), don’t belong in a である report. Rewrite them: 「～について考えてみましょう」 becomes 「以下では、～について[検討]{けんとう}する」 (“Below, I examine…”)."
     ]},
@@ -307,7 +307,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Two vocabularies", body:[
-      {lead:"Japanese has many pairs of words that mean nearly the same thing, but one belongs to speech and the other to writing. Choosing the written one is the second big step towards academic Japanese."},
+      {lead:"Japanese has many pairs of words that mean nearly the same thing, but one belongs to speech and the other to writing. Choosing the written one is the second big step toward academic Japanese."},
       "[[kakikotoba|書き言葉]] (*kakikotoba*) means written language: the words and forms typical of formal writing. [[hanashikotoba|話し言葉]] (*hanashikotoba*) means spoken language: the words and forms typical of conversation. Neither is better in general. Each fits its situation, just as you wouldn’t write a lab report in text-message style or chat with friends in report style.",
       "Here is the surprise for many learners: **this choice is separate from politeness.** You can be polite and still use spoken words, as in 「でも、すごく大事なんです」. A report needs the plain style (Lesson 2) **and** written words (this lesson).",
       {fig:'<svg viewBox="0 0 340 332"><text x="170" y="18" text-anchor="middle">Two separate choices</text><rect class="d-rose" x="8" y="30" width="324" height="66" rx="8" stroke-width="2"/><text class="s" x="20" y="50">話し言葉 + です・ます: chatting politely</text><text x="20" y="80">でも、すごく大事なんです。</text><rect class="d-rose" x="8" y="104" width="324" height="66" rx="8" stroke-width="2"/><text class="s" x="20" y="124">話し言葉 + plain: talking to a friend</text><text x="20" y="154">でも、すごく大事なんだ。</text><rect class="d-lup" x="8" y="178" width="324" height="66" rx="8" stroke-width="2"/><text class="s" x="20" y="198">書き言葉 + です・ます: presentation, email</text><text x="20" y="228">しかし、非常に重要です。</text><rect class="d-sage" x="8" y="252" width="324" height="70" rx="8" stroke-width="3"/><text class="s" x="20" y="272">書き言葉 + である: report, thesis ✓</text><text x="20" y="302">しかし、非常に重要である。</text></svg>', alt:"Four versions of the same sentence. Spoken words with です・ます: でも、すごく大事なんです. Spoken words, plain: でも、すごく大事なんだ. Written words with です・ます: しかし、非常に重要です, for presentations and emails. Written words with である: しかし、非常に重要である, for reports and theses.", cap:"Style (polite or plain) and register (spoken or written) are two separate choices. A report needs both: plain style and written words."},
@@ -317,7 +317,7 @@ ICA.addUnit({
       "These swaps come up again and again in teachers’ comments on reports. Learn the right-hand column as your default for formal writing.",
       {table:[["話し言葉","書き言葉","Example in writing"],["でも","しかし","しかし、[問題]{もんだい}も[残]{のこ}る。"],["だから","したがって / そのため","そのため、[再調査]{さいちょうさ}を行った。"],["～けど / ～けれど","～が","[効果]{こうか}はあるが、[費用]{ひよう}が高い。"],["すごく / とても","[非常]{ひじょう}に / [極]{きわ}めて","非常に重要である。"],["ちょっと","やや / 少し","やや[低]{ひく}い[傾向]{けいこう}がある。"],["いっぱい","多く / [多数]{たすう}の","多くの[学生]{がくせい}が[回答]{かいとう}した。"],["やっぱり","やはり","やはり[差]{さ}は見られなかった。"],["全然～ない","まったく～ない","まったく[影響]{えいきょう}がない。"],["たぶん","おそらく","おそらく[誤差]{ごさ}であろう。"],["どうして / なんで","なぜ","なぜ差が[生]{しょう}じたのか。"],["一番","[最]{もっと}も","最も多い[回答]{かいとう}"],["だんだん","[次第]{しだい}に / [徐々]{じょじょ}に","次第に[増加]{ぞうか}した。"],["～みたいだ","～ようだ","[効果]{こうか}があるようだ。"],["～って","～という / ～とは","「[孤立]{こりつ}」という[概念]{がいねん}"],["あと","また","また、[年齢]{ねんれい}による差もある。"]]},
       "A note on とても: it is not slang, and you will see it in some careful writing. But in reports, 非常に or a precise description (“twice as high”, 2倍) is usually better. The best academic writing often replaces intensifiers with numbers or facts.",
-      {tip:"Keep a two-column list of your own: every time a teacher corrects a spoken word in your writing, add the pair. Most people have a short list of favourite spoken words that slip in."}
+      {tip:"Keep a two-column list of your own: every time a teacher corrects a spoken word in your writing, add the pair. Most people have a short list of favorite spoken words that slip in."}
     ]},
     {h:"Spoken contractions", body:[
       "Speech shortens many forms. In writing, use the full forms. Japanese calls these shortened forms [[shukuyakukei|縮約形]] ([縮約形]{しゅくやくけい}, *shukuyakukei*).",
@@ -405,7 +405,7 @@ ICA.addUnit({
       {t:"だから", why:"だから is also spoken. In writing, use そのため or したがって."},
       {t:"ので", why:"ので is a conjunction particle that joins clauses inside a sentence; it can’t start a sentence."}
     ]},
-    {id:"e1u5-l3-x6", type:"mcq", q:"Which version of “I collected the data and analysed it” is the most typical of a report?", options:[
+    {id:"e1u5-l3-x6", type:"mcq", q:"Which version of “I collected the data and analyzed it” is the most typical of a report?", options:[
       {t:"データを収集し、分析した。", ok:true, why:"Right. The 連用中止 form 収集し、 joins the two actions in a typically written way, in the plain style."},
       {t:"データを収集して、分析しました。", why:"The て-form is acceptable, but ～ました is polite; a report uses the plain style."},
       {t:"データ集めて分析した。", why:"The particle を has been dropped, which is typical of speech."},
@@ -470,7 +470,7 @@ ICA.addUnit({
    learn:[
     {h:"Three sources, one language", body:[
       {lead:"Lesson 1 introduced the three main kinds of Japanese words. Academic writing uses all three, but in different proportions from conversation, and that difference is a large part of what makes a text sound academic."},
-      {table:[["Kind","How to recognise it (usually)","Examples"],["和語 (*wago*)","Native words; kun readings, or written in hiragana; many verbs end in kana (okurigana)","[調]{しら}べる、[考]{かんが}える、[述]{の}べる、ため、こと"],["漢語 (*kango*)","Chinese-origin words; two or more kanji read with on readings","[調査]{ちょうさ}、[考察]{こうさつ}、[増加]{ぞうか}、[影響]{えいきょう}"],["外来語 (*gairaigo*)","Loanwords, mostly from European languages; written in katakana","データ、サンプル、インタビュー"],["[[konshugo|混種語]] (*konshugo*)","Mixed words that combine two kinds","データ[分析]{ぶんせき} (外来語 + 漢語)、アルバイト[先]{さき} (外来語 + 和語)"]]},
+      {table:[["Kind","How to recognize it (usually)","Examples"],["和語 (*wago*)","Native words; kun readings, or written in hiragana; many verbs end in kana (okurigana)","[調]{しら}べる、[考]{かんが}える、[述]{の}べる、ため、こと"],["漢語 (*kango*)","Chinese-origin words; two or more kanji read with on readings","[調査]{ちょうさ}、[考察]{こうさつ}、[増加]{ぞうか}、[影響]{えいきょう}"],["外来語 (*gairaigo*)","Loanwords, mostly from European languages; written in katakana","データ、サンプル、インタビュー"],["[[konshugo|混種語]] (*konshugo*)","Mixed words that combine two kinds","データ[分析]{ぶんせき} (外来語 + 漢語)、アルバイト[先]{さき} (外来語 + 和語)"]]},
       "These are tendencies, not strict rules. Some 和語 are written with kanji (考える), and a few 漢語 are usually written in kana. But the pattern “two kanji, on readings” will help you spot most 漢語.",
       "A [[kanji-compound|kanji compound]] (熟語, *jukugo*) is a word made of two or more kanji. Most 漢語 are kanji compounds, and academic Japanese is full of them: 研究, 方法, 結果, 考察, 分析, 傾向, 要因."
     ]},
@@ -489,7 +489,7 @@ ICA.addUnit({
     ]},
     {h:"Not a one-to-one swap", body:[
       "A 漢語 usually has a narrower, more technical meaning than the 和語 it replaces. So you can’t swap them blindly.",
-      {list:["**考察する** means to analyse and discuss something carefully, usually results or a problem. 「原因を考察する」 is natural; ✗「週末の[予定]{よてい}を考察する」 is not (use 考える).","**調査する** means to investigate systematically. 「[住民]{じゅうみん}の意識を調査する」 is natural; ✗「[辞書]{じしょ}で[単語]{たんご}の[意味]{いみ}を調査する」 is not (use 調べる).","**～と考える** stays as a 和語 when you state your own view: 「本稿では、～と考える」. 考察する is for the process of analysis, not for “I think that”."]},
+      {list:["**考察する** means to analyze and discuss something carefully, usually results or a problem. 「原因を考察する」 is natural; ✗「週末の[予定]{よてい}を考察する」 is not (use 考える).","**調査する** means to investigate systematically. 「[住民]{じゅうみん}の意識を調査する」 is natural; ✗「[辞書]{じしょ}で[単語]{たんご}の[意味]{いみ}を調査する」 is not (use 調べる).","**～と考える** stays as a 和語 when you state your own view: 「本稿では、～と考える」. 考察する is for the process of analysis, not for “I think that”."]},
       "Watch the grammar too. 増加する, 減少する and 変化する are mostly used like 増える, 減る and 変わる: something increases on its own (人口**が**増加する). To say that someone increases something, 増やす or ～を増加させる (“cause to increase”) is the safest choice: 「[大学]{だいがく}は[奨学金]{しょうがくきん}の[枠]{わく}を増やした」.",
       {key:"A 漢語 is often more precise and compact, but check its exact meaning and its particles before you swap it in."}
     ]},
@@ -532,7 +532,7 @@ ICA.addUnit({
       ["減る","減少する","減少 (げんしょう): 学生数が減少する."]
     ]},
     {id:"e1u5-l4-x2", type:"mcq", q:"Which sentence uses its 漢語 naturally?", options:[
-      {t:"この結果が[生]{しょう}じた原因を考察する。", ok:true, why:"Right. 考察する is for careful analysis of results or problems, and a cause is exactly what you analyse."},
+      {t:"この結果が[生]{しょう}じた原因を考察する。", ok:true, why:"Right. 考察する is for careful analysis of results or problems, and a cause is exactly what you analyze."},
       {t:"辞書で単語の意味を調査した。", why:"調査 is systematic investigation, such as a survey. Looking a word up is 調べる."},
       {t:"週末の予定を考察した。", why:"Planning your weekend isn’t academic analysis. Use 考える."},
       {t:"表1は回答者の年齢を[表示]{ひょうじ}している。", why:"表示 means displaying, for example on a screen or label. A table 示す (shows) data: 表1は…を示している."}
@@ -593,7 +593,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e1u5-l5", title:"Sentence endings, hedging, pointing words and connectors", minutes:55,
-   hook:{q:"A student ends a report with 「この[政策]{せいさく}は[失敗]{しっぱい}だったと[思]{おも}う。」 (“I think this policy was a failure.”). What would a teacher most likely suggest?", options:["Make it stronger: 「[本当]{ほんとう}に[失敗]{しっぱい}だったと[強]{つよ}く[思]{おも}う。」","Show the reasons, and end with something like 「～と[考]{かんが}えられる」","Make it polite: 「[失敗]{しっぱい}だったと[思]{おも}います。」","Remove every opinion from the report"], answer:1, reveal:"**Show the reasons and use a more careful ending.** ～と思う sounds like a personal feeling, so the reader asks “why?”. Reports are expected to argue from evidence, and endings such as ～と考えられる present a judgement that follows from reasons. Opinions are allowed; they just need support. This lesson shows how sentence endings signal how sure you are, and how pointing words and connectors hold a text together."},
+   hook:{q:"A student ends a report with 「この[政策]{せいさく}は[失敗]{しっぱい}だったと[思]{おも}う。」 (“I think this policy was a failure.”). What would a teacher most likely suggest?", options:["Make it stronger: 「[本当]{ほんとう}に[失敗]{しっぱい}だったと[強]{つよ}く[思]{おも}う。」","Show the reasons, and end with something like 「～と[考]{かんが}えられる」","Make it polite: 「[失敗]{しっぱい}だったと[思]{おも}います。」","Remove every opinion from the report"], answer:1, reveal:"**Show the reasons and use a more careful ending.** ～と思う sounds like a personal feeling, so the reader asks “why?”. Reports are expected to argue from evidence, and endings such as ～と考えられる present a judgment that follows from reasons. Opinions are allowed; they just need support. This lesson shows how sentence endings signal how sure you are, and how pointing words and connectors hold a text together."},
    goals:[
      "Explain how sentence endings (文末表現) show how certain a writer is",
      "Distinguish 断定 (stating as fact) from 推量 and other softer endings, and match the ending to the evidence",
@@ -608,10 +608,10 @@ ICA.addUnit({
       "These sentence-final expressions are called [[bunmatsu-hyougen|文末表現]] ([文末表現]{ぶんまつひょうげん}, *bunmatsu hyōgen*). Choosing them well is how academic Japanese does [[hedging]]: showing exactly how strongly you claim something. In English, the same job is done by words such as *may*, *suggest* and *it is likely that*, spread through the sentence ([[stance]]). In Japanese, it is concentrated at the end."
     ]},
     {h:"断定 and softer endings", body:[
-      "Japanese grammar distinguishes [[dantei|断定]] ([断定]{だんてい}, *dantei*), stating something as a fact, from [[suiryou|推量]] ([推量]{すいりょう}, *suiryō*), presenting it as a guess or a likelihood. Academic writing also uses endings in between, which present a judgement that follows from evidence.",
-      {table:[["Ending","Meaning","Typical use"],["～である / ～している","It is / it does","Established facts; what your own data show"],["～ことが明らかになった","It became clear that","Reporting a clear result"],["～といえる","It can be said that","A conclusion you have argued for"],["～と考えられる","It is thought / one can reason that","An interpretation with reasons"],["～と[思]{おも}われる","It seems that","A softer, more impressionistic judgement"],["～であろう / ～だろう","Probably","A guess (推量)"],["～と[推測]{すいそく}される","It is inferred that","A guess from indirect evidence"],["～可能性がある","There is a possibility that","A possibility worth noting"],["～ようである","It appears that","An impression from what is observed"]]},
+      "Japanese grammar distinguishes [[dantei|断定]] ([断定]{だんてい}, *dantei*), stating something as a fact, from [[suiryou|推量]] ([推量]{すいりょう}, *suiryō*), presenting it as a guess or a likelihood. Academic writing also uses endings in between, which present a judgment that follows from evidence.",
+      {table:[["Ending","Meaning","Typical use"],["～である / ～している","It is / it does","Established facts; what your own data show"],["～ことが明らかになった","It became clear that","Reporting a clear result"],["～といえる","It can be said that","A conclusion you have argued for"],["～と考えられる","It is thought / one can reason that","An interpretation with reasons"],["～と[思]{おも}われる","It seems that","A softer, more impressionistic judgment"],["～であろう / ～だろう","Probably","A guess (推量)"],["～と[推測]{すいそく}される","It is inferred that","A guess from indirect evidence"],["～可能性がある","There is a possibility that","A possibility worth noting"],["～ようである","It appears that","An impression from what is observed"]]},
       "The られる in ～と考えられる and ～と思われる makes the thinking impersonal: not “I think” but “it can be thought”. That is part of why these endings suit reports.",
-      {fig:'<svg viewBox="0 0 340 404"><text x="170" y="18" text-anchor="middle">How sure? A rough scale</text><path class="d-ink" d="M22 44 V384" stroke-width="2" fill="none"/><text class="s" x="22" y="38" text-anchor="middle">sure</text><text class="s" x="22" y="398" text-anchor="middle">less sure</text><rect class="d-rose" x="40" y="44" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="66">～である / 明らかになった</text><text class="s" x="52" y="88">stated as fact: your data, known facts</text><rect class="d-gold" x="40" y="112" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="134">～といえる</text><text class="s" x="52" y="156">a conclusion you have argued</text><rect class="d-lup" x="40" y="180" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="202">～と考えられる</text><text class="s" x="52" y="224">an interpretation with reasons</text><rect class="d-soft" x="40" y="248" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="270">～と思われる / ～であろう</text><text class="s" x="52" y="292">a softer judgement, a guess</text><rect class="d-sage" x="40" y="316" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="338">～可能性がある</text><text class="s" x="52" y="360">a possibility</text></svg>', alt:"A vertical scale from sure at the top to less sure at the bottom: ～である and 明らかになった for facts and data; ～といえる for an argued conclusion; ～と考えられる for an interpretation with reasons; ～と思われる and ～であろう for a softer judgement or guess; ～可能性がある for a possibility.", cap:"A rough guide, not a strict ranking. Writers and fields use these endings in slightly different ways; read 論文 in your field to see their habits."},
+      {fig:'<svg viewBox="0 0 340 404"><text x="170" y="18" text-anchor="middle">How sure? A rough scale</text><path class="d-ink" d="M22 44 V384" stroke-width="2" fill="none"/><text class="s" x="22" y="38" text-anchor="middle">sure</text><text class="s" x="22" y="398" text-anchor="middle">less sure</text><rect class="d-rose" x="40" y="44" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="66">～である / 明らかになった</text><text class="s" x="52" y="88">stated as fact: your data, known facts</text><rect class="d-gold" x="40" y="112" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="134">～といえる</text><text class="s" x="52" y="156">a conclusion you have argued</text><rect class="d-lup" x="40" y="180" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="202">～と考えられる</text><text class="s" x="52" y="224">an interpretation with reasons</text><rect class="d-soft" x="40" y="248" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="270">～と思われる / ～であろう</text><text class="s" x="52" y="292">a softer judgment, a guess</text><rect class="d-sage" x="40" y="316" width="292" height="58" rx="8" stroke-width="2"/><text x="52" y="338">～可能性がある</text><text class="s" x="52" y="360">a possibility</text></svg>', alt:"A vertical scale from sure at the top to less sure at the bottom: ～である and 明らかになった for facts and data; ～といえる for an argued conclusion; ～と考えられる for an interpretation with reasons; ～と思われる and ～であろう for a softer judgment or guess; ～可能性がある for a possibility.", cap:"A rough guide, not a strict ranking. Writers and fields use these endings in slightly different ways; read 論文 in your field to see their habits."},
       {key:"Match the ending to the evidence: state your data as fact, give interpretations with ～と考えられる or ～といえる, and mark guesses and possibilities clearly."}
     ]},
     {h:"Matching the ending to the evidence", body:[
@@ -623,9 +623,9 @@ ICA.addUnit({
       "Watch for boosters as well: 必ず (always, certainly), [絶対]{ぜったい}に (absolutely), [間違]{まちが}いなく (without doubt), [誰]{だれ}もが (everyone). Use them only when your evidence truly supports them, which in research is rare."
     ]},
     {h:"～と思う, ～と考える and ～かもしれない", body:[
-      "～と思う is natural in conversation and in personal essays. In a report, most guides advise against it, because it presents a claim as a personal feeling rather than a judgement based on evidence. 「私は～と思う」 is weaker still.",
+      "～と思う is natural in conversation and in personal essays. In a report, most guides advise against it, because it presents a claim as a personal feeling rather than a judgment based on evidence. 「私は～と思う」 is weaker still.",
       {table:[["Instead of","Use","When"],["～と思う","～と考える","You state your own position, after giving reasons: 「本稿では、～と考える。」"],["～と思う","～と考えられる","You present an interpretation in an impersonal way"],["～かもしれない","～可能性がある","You mark a possibility; many guides find かもしれない conversational in a report"]]},
-      {ex:"✗ この政策は失敗だったと思う。\n✓ 以上の[結果]{けっか}から、この政策は[当初]{とうしょ}の[目的]{もくてき}を[十分]{じゅうぶん}に[達成]{たっせい}できなかったと考えられる。", label:"From feeling to reasoned judgement"},
+      {ex:"✗ この政策は失敗だったと思う。\n✓ 以上の[結果]{けっか}から、この政策は[当初]{とうしょ}の[目的]{もくてき}を[十分]{じゅうぶん}に[達成]{たっせい}できなかったと考えられる。", label:"From feeling to reasoned judgment"},
       "The better version does three things: it points to the evidence (以上の結果から), it says precisely what “failure” means (didn’t fully achieve its original aims), and it uses a careful ending.",
       "A few more notes. ～と考える (without られる) is how a writer states their own argued view, and it is common in conclusions. ～と考えられる on every sentence can make it unclear whose view it is, so vary your endings. Questions such as 「～のではないだろうか」 present a soft claim. You will see them in published papers, especially in the humanities and social sciences, but some teachers find them evasive as a closing claim, so many guides advise using them sparingly.",
       {tip:"Some assignments ask for your opinion or reflections (感想, 意見). Even then, many teachers expect reasons for each opinion. If a reflective section may use ～と思う, the assignment usually says so."}
@@ -645,19 +645,19 @@ ICA.addUnit({
       {terms:["bunmatsu-hyougen","dantei","suiryou","shiji-shi","setsuzokushi"]}
     ]},
     {h:"Common misconceptions", body:[
-      {table:[["Misconception","Closer to the truth"],["Reports must never contain opinions.","They contain claims and judgements, supported by reasons and evidence and given careful endings."],["The more hedges, the more academic.","Over-hedging hides your claim. Use one clear ending that matches your evidence."],["～と考えられる is always better than ～である.","Your own data and established facts are stated as fact. Hedges are for interpretations and guesses."],["あの can point back to an earlier sentence.","In academic writing, use この or その to point back."],["Every sentence needs a connector.","Use connectors where the link needs signalling; too many feel mechanical."]]},
+      {table:[["Misconception","Closer to the truth"],["Reports must never contain opinions.","They contain claims and judgments, supported by reasons and evidence and given careful endings."],["The more hedges, the more academic.","Over-hedging hides your claim. Use one clear ending that matches your evidence."],["～と考えられる is always better than ～である.","Your own data and established facts are stated as fact. Hedges are for interpretations and guesses."],["あの can point back to an earlier sentence.","In academic writing, use この or その to point back."],["Every sentence needs a connector.","Use connectors where the link needs signaling; too many feel mechanical."]]},
       "The Codex entries {{sentence-endings-japanese}} and {{hedging-japanese}} gather these endings for quick reference."
     ]}
    ],
    try:[
-    {id:"e1u5-l5-x1", type:"sort", q:"Sort these endings: which state something as fact, and which soften it?", buckets:["断定 (stated as fact)","Softened (judgement, guess or possibility)"], items:[
+    {id:"e1u5-l5-x1", type:"sort", q:"Sort these endings: which state something as fact, and which soften it?", buckets:["断定 (stated as fact)","Softened (judgment, guess or possibility)"], items:[
       {t:"～である", b:0, why:"The plain assertive ending: stated as fact."},
       {t:"～ことが明らかになった", b:0, why:"Reports a result as clearly established."},
       {t:"～を示している", b:0, why:"States what the data or a table shows, as fact."},
       {t:"～であろう", b:1, why:"The written form of だろう: a guess (推量)."},
       {t:"～と推測される", b:1, why:"“It is inferred”: a guess from indirect evidence."},
       {t:"～可能性がある", b:1, why:"Marks a possibility, not a fact."},
-      {t:"～と思われる", b:1, why:"“It seems”: a soft, impersonal judgement."},
+      {t:"～と思われる", b:1, why:"“It seems”: a soft, impersonal judgment."},
       {t:"～ようである", b:1, why:"“It appears”: an impression from what is observed."}
     ]},
     {id:"e1u5-l5-x2", type:"mcq", q:"Sione’s survey found that students who work late-night part-time jobs tend to have lower grades. He did not study why. Which ending suits his report best? 「深夜のアルバイトが成績に影響を与えている______。」", options:[
@@ -720,7 +720,7 @@ ICA.addUnit({
        "Open a Japanese article abstract or the 考察 (discussion) section of a 論文 in your field.",
        "Copy the last few words of ten sentences.",
        "Mark each one: fact (断定), interpretation, guess or possibility. Which endings does this writer use most? Where are the facts, and where are the hedges?"
-     ], write:"Ending – type – what the sentence claims… The writer’s favourite endings…"},
+     ], write:"Ending – type – what the sentence claims… The writer’s favorite endings…"},
      {t:"Fix your own ～と思う", how:[
        "Search your own Japanese writing for と思う and と思います.",
        "For three of them, write down the evidence or reason behind the claim, then rewrite the sentence with an ending that matches that evidence.",
@@ -793,7 +793,7 @@ ICA.addUnit({
      {t:"と考えます", why:"The meaning fits, but ～ます is polite. In a である report, it mixes the two styles."},
      {t:"かもしれない", why:"かもしれない marks a mere possibility and sounds conversational. After two pages of reasons, she can state her view."}]},
    {id:"e1u5-cp11", lesson:"e1u5-l5", level:3, q:"Hana interviewed five students at one university. All five said they use AI tools for their assignments. Which sentence reports this result best?", options:[
-     {t:"現在、誰もが課題にAIツールを使用している。", why:"誰もが over-generalises from five students at one university to everyone."},
+     {t:"現在、誰もが課題にAIツールを使用している。", why:"誰もが over-generalizes from five students at one university to everyone."},
      {t:"大学生は必ず課題にAIツールを使用するのである。", why:"必ず is a booster that five interviews can’t support, and のである adds emphasis to the over-claim."},
      {t:"インタビューを行った5名全員が、課題にAIツールを使用していると答えたと考えられる。", why:"What they answered is her own data, so it is stated as fact. Hedging a result she recorded makes readers doubt it."},
      {t:"インタビューを行った5名全員が、課題にAIツールを使用していると答えた。", ok:true, why:"It states her own data as fact and stays within it: five students, and what they said."}]},
@@ -818,7 +818,7 @@ ICA.addUnit({
       "A useful map of what changes between everyday and academic Japanese:",
       {table:[["Layer","Everyday","Academic"],["Sentence style (文体)","です・ます or casual speech","である style for reports and theses"],["Register (書き言葉 vs 話し言葉)","でも、すごく、～てる","しかし、非常に、～ている"],["Word origin","Many everyday 和語","More 漢語, plus formal 和語"],["Sentence endings (文末表現)","～と思う","～と考えられる, ～といえる, ～可能性がある"],["Text links","あと, だから, なので","また, そのため, したがって; この, その, こうした"]]},
       "The sentence style depends on whether the text speaks to a particular person. Reports, theses and summaries speak to no one in particular and use the plain である style. Emails to teachers, presentations and conversations speak to someone and use です・ます, often with keigo ({{keigo-system}}).",
-      "Japanese school writing (作文, 感想文) is usually personal and often in です・ます. A university guide from Osaka Metropolitan University contrasts this with reports, which use the 「だ・である」 style, follow set rules and leave out personal feelings in favour of evidence.",
+      "Japanese school writing (作文, 感想文) is usually personal and often in です・ます. A university guide from Osaka Metropolitan University contrasts this with reports, which use the 「だ・である」 style, follow set rules and leave out personal feelings in favor of evidence.",
       "Furigana (small kana over kanji) are common in learner materials but rare in academic texts for adults. Learning academic words as whole compounds with their readings, and using a dictionary tool while reading, is how most people build the vocabulary ({{japanese-reading-tools}})."
      ],
      pro:[
@@ -856,7 +856,7 @@ ICA.addUnit({
       "Terminology varies. Style guides and school grammar say 敬体 and 常体; Japanese-language teaching says 丁寧体 (or です・ます体) and 普通体. Within the plain style, writers distinguish だ体 and である体. Both are 常体, so using だ in a である report is not the です・ます/である mixing error, but many guides recommend である for noun and な-adjective endings in academic writing because it sounds more formal and even.",
       "公用文作成の考え方 (2022), section Ⅲ-1 文体の選択, gives the official version of the rule: laws, public notices (告示) and directives (訓令) use 常体（である体）; notifications, requests, inquiries and replies addressed to a particular reader use 敬体（です・ます体）; and within one sentence or document, use one or the other.",
       "Some details professionals watch:",
-      {list:["**のである** explains or emphasises. Overused, it sounds heavy and insistent; save it for key points.","**であろう** is the written form of だろう and suits academic hedging; it attaches to verbs and adjectives too (増加するであろう, 高いであろう).","**Forms that address the reader** (～ましょう, ～てください) don’t fit a である report; rewrite them (以下では～について検討する).","**Polite past negatives**: ～ませんでした → ～なかった; ～ではありませんでした → ではなかった. ～なかったです is a casual polite form and not a report ending."]},
+      {list:["**のである** explains or emphasizes. Overused, it sounds heavy and insistent; save it for key points.","**であろう** is the written form of だろう and suits academic hedging; it attaches to verbs and adjectives too (増加するであろう, 高いであろう).","**Forms that address the reader** (～ましょう, ～てください) don’t fit a である report; rewrite them (以下では～について検討する).","**Polite past negatives**: ～ませんでした → ～なかった; ～ではありませんでした → ではなかった. ～なかったです is a casual polite form and not a report ending."]},
       "A quick proofreading method is to read only the sentence endings, top to bottom. Style switches stand out immediately."
      ]
     },
@@ -902,13 +902,13 @@ ICA.addUnit({
       "Japanese words come from three main sources. **和語** are native Japanese words (調べる, 増える, 述べる). **漢語** are words of Chinese origin, usually two kanji read with on readings (調査, 増加, 分析). **外来語** are loanwords, mostly in katakana (データ, アンケート).",
       "Academic Japanese uses many 漢語, because they are compact, precise and formal: 人口が増える becomes 人口が増加する, which turns easily into the noun 人口の増加.",
       "But 和語 are not wrong. 述べる (state), 示す (show), 用いる (use) and 明らかにする (make clear) are formal 和語 found in almost every academic text.",
-      "Swapping needs care, because a 漢語 usually has a narrower meaning. 考察する means analysing a result or a problem, so 原因を考察する is natural but you would never 考察 your weekend plans. Learn each 漢語 with an example phrase and its particle.",
+      "Swapping needs care, because a 漢語 usually has a narrower meaning. 考察する means analyzing a result or a problem, so 原因を考察する is natural but you would never 考察 your weekend plans. Learn each 漢語 with an example phrase and its particle.",
       "Too many 漢語 in a row are hard to read. The goal is precise, readable Japanese, not the largest possible number of kanji.",
       {key:"Use 漢語 where they add precision; keep the formal 和語 academic writing relies on."}
      ],
      builder:[
       {table:[["和語","漢語 (+する)","Example"],["調べる","調査する","実態を調査する"],["増える / 減る","増加する / 減少する","利用者が増加している"],["考える","考察する","原因を考察する"],["比べる","比較する","二つの地域を比較する"],["集める","収集する","データを収集する"],["変わる","変化する","意識が変化した"],["使う","使用する / 利用する","質問紙を使用する"],["答える","回答する","アンケートに回答する"]]},
-      "The swaps are not one-to-one. 考察する is analytical discussion (原因を考察する), not everyday thinking (✗週末の予定を考察する). 調査する is systematic investigation, not looking up a word. 調べる alone can correspond to 調査, 検索 (search), 確認 (check), 検討 (examine) or 分析 (analyse).",
+      "The swaps are not one-to-one. 考察する is analytical discussion (原因を考察する), not everyday thinking (✗週末の予定を考察する). 調査する is systematic investigation, not looking up a word. 調べる alone can correspond to 調査, 検索 (search), 確認 (check), 検討 (examine) or 分析 (analyze).",
       "Learn the particles: 人口が増加する, データを収集する, アンケートに回答する. 増加する, 減少する and 変化する are mostly used intransitively; to increase something, 増やす or ～を増加させる is safest.",
       "Too many 漢語 in a row make text hard to read (✗留学生日本語学習意欲低下要因). Break chains with a verb: 留学生の日本語学習意欲が低下する要因.",
       "Formal 和語 to keep: 述べる (state), 示す (show), 明らかにする (reveal), 用いる (use), 異なる (differ), 基づく (be based on), 捉える (view as), 扱う (deal with), 及ぼす (exert). Loanwords (データ, サンプル, インタビュー) follow your field’s usage; define unfamiliar ones on first use."
@@ -932,11 +932,11 @@ ICA.addUnit({
       "Compare: 睡眠不足が成績に影響している (a fact), 影響していると考えられる (a reasoned interpretation), 影響している可能性がある (a possibility). Same start, three different claims.",
       "In reports, the ending ～と思う (“I think”) is usually avoided, because it sounds like a personal feeling. Give your reasons and use ～と考える (your argued view) or ～と考えられる (an interpretation).",
       "The ending also shows the style: ～である and plain verbs for reports, ～です and ～ます for emails and presentations.",
-      "When you read, look at the end of each sentence first. It tells you whether the writer is reporting a fact, interpreting it or only guessing, which is exactly what you need to know when you summarise or cite the text.",
+      "When you read, look at the end of each sentence first. It tells you whether the writer is reporting a fact, interpreting it or only guessing, which is exactly what you need to know when you summarize or cite the text.",
       {key:"Read the end of every sentence: it tells you the style and how sure the writer is."}
      ],
      builder:[
-      {table:[["Ending","Use"],["～である / plain verb","Facts, your own data"],["～ことが明らかになった","A clear result"],["～といえる","A conclusion you have argued"],["～と考えられる","An interpretation with reasons"],["～と思われる","A softer judgement"],["～であろう / ～と推測される","A guess"],["～可能性がある","A possibility"],["～のである","Explanation or emphasis (use sparingly)"],["～だろうか / ～のではないだろうか","A question to answer, or a soft claim"]]},
+      {table:[["Ending","Use"],["～である / plain verb","Facts, your own data"],["～ことが明らかになった","A clear result"],["～といえる","A conclusion you have argued"],["～と考えられる","An interpretation with reasons"],["～と思われる","A softer judgment"],["～であろう / ～と推測される","A guess"],["～可能性がある","A possibility"],["～のである","Explanation or emphasis (use sparingly)"],["～だろうか / ～のではないだろうか","A question to answer, or a soft claim"]]},
       "Replacing personal endings: ～と思う → ～と考える (own position) or ～と考えられる; ～かもしれない → ～可能性がある; ～と思います → never in a である report.",
       "Vary your endings. A paragraph where every sentence ends in ～と考えられる hides which claims are facts and whose view each is. State facts as facts; reserve hedged endings for interpretations.",
       "のである deserves a note: it presents a sentence as an explanation or a key conclusion (「つまり、問題は時間ではなく方法にあるのである。」). Used once at a turning point it is effective; used on every sentence it sounds heavy.",
@@ -944,7 +944,7 @@ ICA.addUnit({
      ],
      pro:[
       "The られる in ～と考えられる and ～と思われる is often described as 自発 (spontaneous): the thought “arises naturally” rather than being the writer’s personal act. That impersonal tone is why these endings are so common in academic Japanese, and also why overusing them can blur responsibility for a claim. Many writers use ～と考える or 本稿では～と主張する for their central claim, and ～と考えられる for interpretations along the way.",
-      "Reporting other people’s claims uses different endings, with verbs that show your stance towards the source: ～と述べている, ～と指摘している, ～と主張している. These are covered in Unit 7 ({{quoting-in-japanese}}).",
+      "Reporting other people’s claims uses different endings, with verbs that show your stance toward the source: ～と述べている, ～と指摘している, ～と主張している. These are covered in Unit 7 ({{quoting-in-japanese}}).",
       "Rhetorical questions such as 「では、なぜこのような差が生じたのだろうか。」 introduce the next step of an argument and are normally answered right away. 「～のではないだろうか」 as a closing claim is common in some humanities and social science writing, but some teachers find it evasive; use it sparingly.",
       "Fields vary in how strongly they claim. Experimental papers often state results flatly and hedge the discussion; humanities writing may hedge more throughout. Reading recent 論文 in your field is the best guide."
      ]
@@ -958,7 +958,7 @@ ICA.addUnit({
      starter:[
       "**Hedging** means showing exactly how strongly you claim something. In Japanese it happens mostly at the end of the sentence.",
       "**断定** (*dantei*) states something as fact: ～である, ～している. Use it for established facts and for what your own data show: 回答者の約7割が…と答えた.",
-      "**推量** (*suiryō*) presents a guess: ～であろう, ～と推測される. Between them sit judgements based on reasons: ～といえる, ～と考えられる. And ～可能性がある marks a possibility.",
+      "**推量** (*suiryō*) presents a guess: ～であろう, ～と推測される. Between them sit judgments based on reasons: ～といえる, ～と考えられる. And ～可能性がある marks a possibility.",
       "Match the ending to the evidence. Data → fact. Interpretation → ～と考えられる or ～といえる. Untested cause → ～可能性がある.",
       "Hedging is not weakness. Careful endings show that you know the limits of your evidence, which is what readers trust. The aim is the right strength for each claim: not too strong, and not so soft that the reader can’t tell what you claim.",
       "In reports, the personal ending ～と思う is usually replaced: by ～と考える for your own argued view, or ～と考えられる for an interpretation.",
@@ -973,7 +973,7 @@ ICA.addUnit({
       "A practical routine: for each claim in your draft, ask “what exactly is my evidence?” If it is your own data, state it plainly. If it is your reasoning from the data, use ～といえる or ～と考えられる. If it is a possible explanation you didn’t test, use ～可能性がある, and consider saying how it could be tested."
      ],
      pro:[
-      "The categories overlap. ～と考えられる is not 推量 in the strict grammatical sense; it presents a judgement as one that can reasonably be made. ～と思われる is softer and more impressionistic. ～といえる asserts a conclusion drawn from what has been shown. ～ようだ / ～ようである infers from observation; ～らしい (hearsay or inference) is rarer in academic prose. Any ranking of these endings is approximate, and writers and fields use them differently.",
+      "The categories overlap. ～と考えられる is not 推量 in the strict grammatical sense; it presents a judgment as one that can reasonably be made. ～と思われる is softer and more impressionistic. ～といえる asserts a conclusion drawn from what has been shown. ～ようだ / ～ようである infers from observation; ～らしい (hearsay or inference) is rarer in academic prose. Any ranking of these endings is approximate, and writers and fields use them differently.",
       "Hedging also happens before the ending: 必ずしも～とは限らない (not necessarily), 一概に～とはいえない (cannot be said across the board), ～の一因 (one cause of), 一部の (some), 傾向がある (there is a tendency).",
       "Limitations sections use hedging constructively: 本調査の対象は一つの大学に限られている。そのため、結果を一般化するには慎重である必要がある。 Stating limits plainly (断定) and drawing cautious conclusions from them is a sign of strong academic writing, not weakness.",
       "In English-language research, a similar balance is described as matching the strength of a claim to the evidence ([[hedging]], [[booster]]). Translating between the two languages, expect differences: a Japanese ～と考えられる may correspond to English “this suggests” or simply a well-supported plain statement, depending on context."
@@ -1073,7 +1073,7 @@ ICA.addUnit({
      {t:"影響があるであろう", ok:true, why:"であろう (or だろう) is the plain guess; であろう sounds more written."},
      {t:"影響があるでしょうである", why:"でしょう is polite; you replace it rather than adding である."},
      {t:"影響があるです", why:"That is not correct Japanese in any style."},
-     {t:"影響があるのである", why:"のである explains or emphasises; it doesn’t express a guess."}]},
+     {t:"影響があるのである", why:"のである explains or emphasizes; it doesn’t express a guess."}]},
    {id:"e1u5-q14", lesson:"e1u5-l2", level:3, q:"Amara’s report says 「調査は〇〇大学で行った。回答者は100名でした。結果は次のとおりである。」 What is the problem?", options:[
      {t:"The second sentence is in です・ます style, so the styles are mixed.", ok:true, why:"でした is polite. It should be 100名であった (or だった) to match the rest."},
      {t:"The first sentence should be 行いました.", why:"That would make the mixing worse. Reports use the plain style: 行った is right."},
@@ -1152,7 +1152,7 @@ ICA.addUnit({
      {t:"収集する", why:"収集 means collect (データを収集する)."},
      {t:"比較する", why:"比較 means compare."}]},
    {id:"e1u5-q29", lesson:"e1u5-l4", level:2, q:"Which sentence uses its 漢語 naturally?", options:[
-     {t:"この結果が生じた原因を考察する。", ok:true, why:"考察する is for careful analysis, and a cause is something you analyse."},
+     {t:"この結果が生じた原因を考察する。", ok:true, why:"考察する is for careful analysis, and a cause is something you analyze."},
      {t:"週末の予定を考察する。", why:"Everyday planning isn’t 考察. Use 考える."},
      {t:"辞書で単語の意味を調査した。", why:"Looking up a word is 調べる, not systematic 調査."},
      {t:"表1は回答者の年齢を表示している。", why:"表示 is displaying (on a screen or label). A table 示す data."}]},
@@ -1205,13 +1205,13 @@ ICA.addUnit({
    {id:"e1u5-q39", lesson:"e1u5-l5", level:1, q:"Which ending presents a statement as fact (断定)?", options:[
      {t:"～である", ok:true, why:"The plain assertive ending."},
      {t:"～であろう", why:"A guess (推量)."},
-     {t:"～と思われる", why:"A soft judgement."},
+     {t:"～と思われる", why:"A soft judgment."},
      {t:"～可能性がある", why:"A possibility."}]},
    {id:"e1u5-q40", lesson:"e1u5-l5", level:2, q:"Many report guides suggest replacing ～かもしれない. Which ending do they usually suggest?", options:[
      {t:"～可能性がある", ok:true, why:"It marks a possibility in a more written way."},
      {t:"～に違いない", why:"That means “must be”, far stronger than かもしれない."},
      {t:"～と思います", why:"Polite and personal; neither fits a である report."},
-     {t:"～のである", why:"のである explains or emphasises; it removes the uncertainty."}]},
+     {t:"～のである", why:"のである explains or emphasizes; it removes the uncertainty."}]},
    {id:"e1u5-q41", lesson:"e1u5-l5", level:3, q:"Oluwaseun reports his own survey result as 「回答者の約7割が、朝食をとらない日があると答えたと考えられる。」 What is the problem?", options:[
      {t:"His own data should be stated as fact, not hedged.", ok:true, why:"と考えられる makes a measured result sound like a guess. Hedges belong on interpretations, not on what the survey directly recorded."},
      {t:"Nothing: every sentence in a report should end in と考えられる.", why:"Using it everywhere hides which statements are facts."},

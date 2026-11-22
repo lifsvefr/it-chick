@@ -3,7 +3,7 @@
    feedback must contain (tools/check_python_lab.py); files: files in the program's folder for Run (tests set their own);
    runInputs: answers pre-filled for Run when the program uses input(); tests: see shared/pyworker.js (_check). */
 window.PLAB_GROUPS = [
-  {id:"basics", title:"First steps", blurb:"print, variables, maths, input, decisions and text."},
+  {id:"basics", title:"First steps", blurb:"print, variables, math, input, decisions and text."},
   {id:"loops", title:"Lists, loops and functions", blurb:"Work through many things at once, and package steps you’ll reuse."},
   {id:"algo", title:"Algorithms", blurb:"Search, sort, time and recurse: the ideas of Making with Code Unit 9."},
   {id:"files", title:"Files and small automations", blurb:"Save and read files, total a CSV, and plan a batch rename safely."},
@@ -44,8 +44,8 @@ window.PLAB = [
         {t:"plants holds the number 12", var:"plants", expect:12, msg:"plants should be the number 12, with no quotes around it."},
         {t:"Prints the sentence", out:"Mei is growing 12 plants.", msg:"The printed sentence isn’t right yet. If you see {name} in the output, put the letter f just before the opening quote."},
         {t:"Uses the variables inside an f-string", src:"[fF]([\"']).*\\{\\s*name\\s*(![rsa])?(:[^}]*)?\\}.*\\{\\s*plants\\s*(![rsa])?(:[^}]*)?\\}.*\\1", msg:"Put {name} and {plants} inside the f-string, so the sentence is built from the variables instead of typed out."}],
- hints:["A variable is made with =, like colour = \"green\". Numbers have no quotes: count = 3.", "An f-string starts with f before the quote: f\"{name} is …\". Whatever is in { } is replaced by its value."],
- explain:"`=` stores a value under a name. `\"12\"` (in quotes) is text, while `12` is a number you can do maths with. In an **f-string**, `{plants}` is replaced by the variable’s current value, so one line of code works for any name and any number."},
+ hints:["A variable is made with =, like color = \"green\". Numbers have no quotes: count = 3.", "An f-string starts with f before the quote: f\"{name} is …\". Whatever is in { } is replaced by its value."],
+ explain:"`=` stores a value under a name. `\"12\"` (in quotes) is text, while `12` is a number you can do math with. In an **f-string**, `{plants}` is replaced by the variable’s current value, so one line of code works for any name and any number."},
 
 {id:"pl-math", group:"basics", title:"Split the bill", lesson:"t2u8-l2",
  task:"Three friends share a bill of 47.80. Using `total` and `people`, make a variable `each` holding each person’s share **rounded to 2 decimal places**, then print:\n\n`Each person pays 15.93`\n\nCalculate it from the variables (don’t type the answer in).",
@@ -79,7 +79,7 @@ window.PLAB = [
         {code:"name = input(\"What's your name? \")\nage = float(input(\"How old are you? \"))\nprint(f\"Hi {name}! Next year you will be {age + 1}.\")", expect:".0"}],
  tests:[{t:"Works for Amara, 29", inputs:["Amara", "29"], out:"Hi Amara! Next year you will be 30."},
         {t:"Works for Jun, 8", inputs:["Jun", "8"], out:"Hi Jun! Next year you will be 9.", msg:"It needs to work for any name and age, not just Amara."}],
- hints:["input() gives back whatever was typed, always as text, even if it’s a number.", "To do maths with the age, convert it: int(input(\"How old are you? \")). Then age + 1 works."],
+ hints:["input() gives back whatever was typed, always as text, even if it’s a number.", "To do math with the age, convert it: int(input(\"How old are you? \")). Then age + 1 works."],
  explain:"`input()` waits for the person to type, then gives back what they typed as **text**. `\"29\" + 1` makes no sense to Python, so `int()` turns the text into a whole number first. When you press ▶ Run, the questions and answers appear in the output as they would on screen; Check only looks at what your program prints."},
 
 {id:"pl-if", group:"basics", title:"What should I wear?", lesson:"t2u8-l3",
@@ -104,7 +104,7 @@ window.PLAB = [
  explain:"`if` / `elif` / `else` picks **one** branch: the first condition that’s true. Because the coat case is checked first, the `elif` only sees temperatures of 10 or more, so `temp < 25` is enough. Testing the exact edges (10 and 25) is how you catch “off by one” mistakes with `<` and `<=`."},
 
 {id:"pl-strings", group:"basics", title:"Tidy a name", lesson:"t2u8-l3",
- task:"People type names messily. Ask for a full name (first and last, with one space between), then print two lines:\n\n1. the name with extra spaces at the ends removed and each word capitalised: `Mei Tanaka`\n2. a username in lowercase with a dot instead of the space: `Username: mei.tanaka`\n\nFor `  mei TANAKA ` that’s exactly the two lines above.",
+ task:"People type names messily. Ask for a full name (first and last, with one space between), then print two lines:\n\n1. the name with extra spaces at the ends removed and each word capitalized: `Mei Tanaka`\n2. a username in lowercase with a dot instead of the space: `Username: mei.tanaka`\n\nFor `  mei TANAKA ` that’s exactly the two lines above.",
  start:"full = input(\"Full name? \")\n",
  runInputs:["  mei TANAKA "],
  solution:"full = input(\"Full name? \")\nclean = full.strip()\nprint(clean.title())\nprint(\"Username: \" + clean.lower().replace(\" \", \".\"))",
@@ -116,7 +116,7 @@ window.PLAB = [
  tests:[{t:"Tidies “  mei TANAKA ”", inputs:["  mei TANAKA "], out:"Mei Tanaka\nUsername: mei.tanaka"},
         {t:"Tidies “ana lima”", inputs:["ana lima"], out:"Ana Lima\nUsername: ana.lima"},
         {t:"Tidies “KOFI MENSAH  ”", inputs:["KOFI MENSAH  "], out:"Kofi Mensah\nUsername: kofi.mensah"}],
- hints:["String methods make a new string: .strip() removes spaces at both ends, .title() capitalises each word, .lower() makes everything lowercase.", ".replace(\" \", \".\") swaps every space for a dot. You can chain methods: text.strip().lower()."],
+ hints:["String methods make a new string: .strip() removes spaces at both ends, .title() capitalizes each word, .lower() makes everything lowercase.", ".replace(\" \", \".\") swaps every space for a dot. You can chain methods: text.strip().lower()."],
  explain:"Strings never change in place: `full.strip()` gives back a **new** string, so save it (`clean = full.strip()`) or use it straight away. Chaining, like `clean.lower().replace(\" \", \".\")`, runs left to right."},
 
 /* ---------------- Lists, loops, functions ---------------- */
@@ -182,7 +182,7 @@ window.PLAB = [
         {t:"Goal 30 takes exactly 2 weeks", inputs:["30"], out:"Week 1: 15\nWeek 2: 30\nGoal reached in 2 weeks.", msg:"With a goal of 30, the loop should stop as soon as the total reaches 30."},
         {t:"Uses a while loop", src:"^\\s*while\\b", msg:"Use a while loop: it repeats as long as its condition is true."}],
  hints:["while saved < goal: keeps going as long as you haven’t reached the goal.", "Inside the loop, change something the condition depends on (add 15 to saved), or it never ends."],
- explain:"A `while` loop repeats **as long as** its condition is true, so use it when you don’t know in advance how many rounds you’ll need. The loop body must move towards the end (here, `saved += 15`); if nothing changes, the condition stays true forever. The lab stops programs that run too long, but on your own computer you’d press Ctrl+C."},
+ explain:"A `while` loop repeats **as long as** its condition is true, so use it when you don’t know in advance how many rounds you’ll need. The loop body must move toward the end (here, `saved += 15`); if nothing changes, the condition stays true forever. The lab stops programs that run too long, but on your own computer you’d press Ctrl+C."},
 
 {id:"pl-function", group:"loops", title:"Write a function", lesson:"t2u8-l5",
  task:"Write a function `tip(bill, percent)` that **returns** the tip amount, rounded to 2 decimal places. For example, `tip(40, 15)` returns `6.0` and `tip(19.99, 15)` returns `3.0`.\n\nIt should `return` the number, not print it, so other code can use the result.",
@@ -238,7 +238,7 @@ window.PLAB = [
         {t:"Returns the first match when there are two", call:"find", args:[[5, 8, 5, 2], 5], expect:0},
         {t:"Finds the last item", call:"find", args:[[5, 8, 5, 2], 2], expect:3, msg:"Only return None after the loop has checked every item."},
         {t:"Works on an empty list", call:"find", args:[[], "tea"], expect:null},
-        {t:"Writes the search loop itself", srcNot:"\\.index\\s*\\(", msg:"Write the loop yourself instead of using .index(): that’s the linear search this task practises."}],
+        {t:"Writes the search loop itself", srcNot:"\\.index\\s*\\(", msg:"Write the loop yourself instead of using .index(): that’s the linear search this task practices."}],
  hints:["Loop over the positions with for i in range(len(items)) and compare items[i] with target.", "return i as soon as you find it. The return None line goes after the loop, not inside it: one mismatch doesn’t mean the item is missing."],
  explain:"This is a **linear search**: it checks items one by one, so in the worst case (the item is last, or missing) it looks at every item. It works on any list, sorted or not. Python’s own `items.index(target)` and `target in items` do the same thing inside, which is why `in` on a long list can be slow."},
 
@@ -413,19 +413,19 @@ window.PLAB = [
  tests:[{t:"12 and 3 tickets: Total: 36", inputs:["12", "3"], out:"Total: 36"},
         {t:"8 and 5 tickets: Total: 40", inputs:["8", "5"], out:"Total: 40", msg:"For a price of 8 and 5 tickets, it should print Total: 40."}],
  hints:["input() always gives text. \"12\" * \"3\" doesn’t make sense, so convert both with int(…).", "Then \"Total: \" + 36 fails too: you can’t + text and a number. Use str(total), or an f-string."],
- explain:"This is the most common beginner bug: `input()` gives **text**, even when someone types digits. Convert with `int()` (whole numbers) or `float()` (decimals) before maths, and convert back with `str()` (or use an f-string) when building a sentence. Fun fact: `\"12\" * 3` is allowed, and gives `\"121212\"`."},
+ explain:"This is the most common beginner bug: `input()` gives **text**, even when someone types digits. Convert with `int()` (whole numbers) or `float()` (decimals) before math, and convert back with `str()` (or use an f-string) when building a sentence. Fun fact: `\"12\" * 3` is allowed, and gives `\"121212\"`."},
 
 {id:"pl-fix-name", group:"fix", title:"Fix: NameError", lesson:"t2u8-l5",
- task:"Two small typos stop this program. Press ▶ Run, read each error (Python stops at the first one), and fix them so it prints:\n\n`My favourite fruit is mango`\n`Thanks for asking!`",
- start:"favourite = \"mango\"\nprint(\"My favourite fruit is \" + favorite)\nPrint(\"Thanks for asking!\")\n",
- solution:"favourite = \"mango\"\nprint(\"My favourite fruit is \" + favourite)\nprint(\"Thanks for asking!\")",
- also:["favorite = \"mango\"\nprint(\"My favourite fruit is \" + favorite)\nprint(\"Thanks for asking!\")"],
- traps:[{code:"favourite = \"mango\"\nprint(\"My favourite fruit is \" + favorite)\nPrint(\"Thanks for asking!\")\n", expect:"Did you mean “favourite”"},
-        {code:"favourite = \"mango\"\nprint(\"My favourite fruit is \" + favourite)\nPrint(\"Thanks for asking!\")", expect:"“Print” hasn’t been created"},
-        {code:"favourite = \"mango\"\nprint(\"My favourite fruit is \" + \"favorite\")\nprint(\"Thanks for asking!\")", expect:"Expected"},
-        {code:"favourite = \"mango\"\nprint(\"My favourite fruit is mango\")\nprint(\"Thanks for asking!\")", expect:"kiwi"}],
- tests:[{t:"Prints both lines", out:"My favourite fruit is mango\nThanks for asking!"},
-        {t:"Uses the variable", sub:[["^(\\s*favou?rite\\s*=\\s*)([\"'])mango\\2", "\\g<1>\"kiwi\""]], out:"My favourite fruit is kiwi\nThanks for asking!", msg:"Fix the variable’s name rather than typing mango into the sentence: if the variable held kiwi, the sentence should say kiwi.", submsg:"Keep the line favourite = \"mango\": this test changes it to check the sentence uses the variable."}],
+ task:"Two small typos stop this program. Press ▶ Run, read each error (Python stops at the first one), and fix them so it prints:\n\n`My favorite fruit is mango`\n`Thanks for asking!`",
+ start:"favorite = \"mango\"\nprint(\"My favorite fruit is \" + favorite)\nPrint(\"Thanks for asking!\")\n",
+ solution:"favorite = \"mango\"\nprint(\"My favorite fruit is \" + favorite)\nprint(\"Thanks for asking!\")",
+ also:["favorite = \"mango\"\nprint(\"My favorite fruit is \" + favorite)\nprint(\"Thanks for asking!\")"],
+ traps:[{code:"favorite = \"mango\"\nprint(\"My favorite fruit is \" + favorite)\nPrint(\"Thanks for asking!\")\n", expect:"Did you mean “favorite”"},
+        {code:"favorite = \"mango\"\nprint(\"My favorite fruit is \" + favorite)\nPrint(\"Thanks for asking!\")", expect:"“Print” hasn’t been created"},
+        {code:"favorite = \"mango\"\nprint(\"My favorite fruit is \" + \"favorite\")\nprint(\"Thanks for asking!\")", expect:"Expected"},
+        {code:"favorite = \"mango\"\nprint(\"My favorite fruit is mango\")\nprint(\"Thanks for asking!\")", expect:"kiwi"}],
+ tests:[{t:"Prints both lines", out:"My favorite fruit is mango\nThanks for asking!"},
+        {t:"Uses the variable", sub:[["^(\\s*favou?rite\\s*=\\s*)([\"'])mango\\2", "\\g<1>\"kiwi\""]], out:"My favorite fruit is kiwi\nThanks for asking!", msg:"Fix the variable’s name rather than typing mango into the sentence: if the variable held kiwi, the sentence should say kiwi.", submsg:"Keep the line favorite = \"mango\": this test changes it to check the sentence uses the variable."}],
  hints:["A NameError means Python doesn’t know that name. Compare the spelling where the variable is made and where it’s used (letter by letter).", "Python is case-sensitive: print and Print are different names."],
  explain:"`NameError: name '…' is not defined` means a name is used before it exists, usually a typo, a different capital letter, or a missing assignment. Recent versions of Python even suggest the name you probably meant (“Did you mean…?”)."},
 

@@ -1,7 +1,7 @@
 /* Track 3 · Unit 8 · R basics */
 ICA.addUnit({
   id:"t3u7", track:"t3", n:8, title:"R basics", icon:"🧮",
-  blurb:"R is a free language made for working with data. Learn the ways to run it (including right here in the Data Lab), store values in objects and vectors, call functions, build data frames, read a CSV file, pick rows and count, then summarise, compare groups, draw base-R charts and fit a first straight-line model.",
+  blurb:"R is a free language made for working with data. Learn the ways to run it (including right here in the Data Lab), store values in objects and vectors, call functions, build data frames, read a CSV file, pick rows and count, then summarize, compare groups, draw base-R charts and fit a first straight-line model.",
   goals:[
     "Say what R, RStudio, Posit Cloud and webR are, and run R code in the Data Lab, on a computer, or in a browser",
     "Calculate, store values in objects with `<-`, build vectors with `c()`, call functions with named arguments, and read R’s most common error messages",
@@ -18,7 +18,7 @@ ICA.addUnit({
   {id:"t3u7-l1", title:"Meet R, and where to run it", minutes:50,
    hook:{q:"You type `2 + 3` into R and press Enter. What does R show?", options:["5","[1] 5","2 + 3 = 5","Nothing until you save the file"], answer:1, reveal:"R shows `[1] 5`. The answer is 5; the `[1]` in front is R saying “this line starts with item number 1”. R treats almost every result as a sequence of values (even a single number), and those bracketed numbers help you find your place when an answer runs over several lines. This lesson starts there: what R is, and the different places you can type R code, including this app’s Data Lab."},
    goals:[
-     "Say what R is, what “base R” and packages are, and why people analyse data with code",
+     "Say what R is, what “base R” and packages are, and why people analyze data with code",
      "Tell apart R itself, RStudio, Posit Cloud and webR, and say where your code runs with each",
      "Find your way around RStudio’s four panes, and know what the `>` and `+` prompts mean",
      "Run R code in the Data Lab and use its ▶ Run, Check, Hint, Show an answer and Start again buttons"
@@ -90,7 +90,7 @@ ICA.addUnit({
         "Give the project a name: open its **Settings** (the gear icon at the top of the project) and edit the name under **Info**."
       ]},
       "**The free plan has limits.** Posit Cloud counts **compute hours**. Its documentation gives the formula: (GB of memory + number of processors) ÷ 2 × hours. A new project gets 1 GB of memory and 1 processor by default, so one hour with a project open uses about one compute hour. A project you leave idle is suspended after 15 minutes, and those idle minutes still count. The free plan includes a limited number of compute hours each month, plus other limits; the exact numbers are on **posit.cloud/plans**, and they have changed over the years, so check there.",
-      {warn:"With Posit Cloud, your files are stored on Posit’s servers. That’s fine for practice data and open data. Don’t upload personal or confidential data (health records, people’s names and addresses) unless your organisation has agreed it can go there. Track 4, Unit 9 covers {{anonymisation|anonymising data}}."},
+      {warn:"With Posit Cloud, your files are stored on Posit’s servers. That’s fine for practice data and open data. Don’t upload personal or confidential data (health records, people’s names and addresses) unless your organization has agreed it can go there. Track 4, Unit 9 covers {{anonymisation|anonymizing data}}."},
       "Posit Cloud opens in a phone’s browser, but RStudio was designed for bigger screens and a keyboard. On a phone it is cramped; on a tablet with a keyboard it works much better."
     ]},
     {h:"The Data Lab: R in this app", body:[
@@ -213,7 +213,7 @@ ICA.addUnit({
       "**Naming rules.** Names start with a letter and can contain letters, numbers, `_` and `.`. No spaces. Capitals count: `total`, `Total` and `TOTAL` are three different names. R for Data Science recommends **snake_case**, lower-case words joined by `_`, like `price_per_kg`. Pick names that say what’s inside: `avg_score` beats `x2`.",
       "**Overwriting is silent.** Assigning to an existing name replaces the old value without a warning. `ls()` lists the objects you have; `rm(total)` removes one.",
       {tip:"You’ll also see `=` used for assignment (`price = 12.5`). It works at the start of a line, but most R guides use `<-` and keep `=` for naming a function’s arguments, which you’ll meet below. This unit does the same."},
-      {lab:"dl-r-calc", t:"Practise: store a price and a quantity, and calculate a total"}
+      {lab:"dl-r-calc", t:"Practice: store a price and a quantity, and calculate a total"}
     ]},
     {h:"Numbers, text and TRUE/FALSE", body:[
       "Every value has a **type**. Three matter most at the start:",
@@ -223,7 +223,7 @@ ICA.addUnit({
         ["`\"character\"`","`\"Rain\"`, `\"12.5\"`","Text: names, categories, codes"],
         ["`\"logical\"`","`TRUE`, `FALSE`","Answers to yes/no questions"]
       ]},
-      "Text always goes in quotes, double `\"…\"` or single `'…'`. The quotes matter: `12.5` is a number, but `\"12.5\"` is text that happens to contain digits, and you can’t do maths with text.",
+      "Text always goes in quotes, double `\"…\"` or single `'…'`. The quotes matter: `12.5` is a number, but `\"12.5\"` is text that happens to contain digits, and you can’t do math with text.",
       {code:['class(12.5)','class("12.5")','class(TRUE)','"12.5" * 4'].join("\n"), lang:"r"},
       {ex:"[1] \"numeric\"\n[1] \"character\"\n[1] \"logical\"\nError: non-numeric argument to binary operator", label:"R prints", mono:true},
       "A **binary operator** is just a symbol with a value on each side, like `*`. The message means “one side isn’t a number”. To turn text digits into a number, use `as.numeric(\"12.5\")`.",
@@ -234,7 +234,7 @@ ICA.addUnit({
       "A **[[r-vector|vector]]** is an ordered set of values of the same type, and it’s R’s basic building block. Make one with `c()`, for **c**ombine. Here are Mei’s step counts for one week:",
       {code:['steps <- c(4200, 8100, 6550, 12030, 3900, 7400, 9800)','length(steps)','steps / 1000','mean(steps)'].join("\n"), lang:"r"},
       {ex:"[1] 7\n[1]  4.20  8.10  6.55 12.03  3.90  7.40  9.80\n[1] 7425.714", label:"R prints", mono:true},
-      "`steps / 1000` divides **every** value: arithmetic and comparisons are **vectorised**, done element by element. Most functions take a whole vector too: `mean(steps)` needs no loop and no range like `A2:A8`.",
+      "`steps / 1000` divides **every** value: arithmetic and comparisons are **vectorized**, done element by element. Most functions take a whole vector too: `mean(steps)` needs no loop and no range like `A2:A8`.",
       {h:"Picking values with square brackets"},
       "Positions in R start at **1**. Put positions, or a TRUE/FALSE question, inside `[ ]`:",
       {code:['steps[1]','steps[c(1, 7)]','steps[-1]','steps > 7000','steps[steps > 7000]','sum(steps > 7000)'].join("\n"), lang:"r"},
@@ -263,7 +263,7 @@ ICA.addUnit({
       {ex:"[1] NA\n[1] 19.66667", label:"R prints", mono:true},
       {h:"Functions inside functions, and the pipe"},
       "You can put one call inside another; R works from the inside out. `round(mean(steps))` first takes the mean, then rounds it to 7426. Since R 4.1 there’s also the **[[pipe-operator|pipe]]** `|>`, which passes a value along from left to right. `steps |> mean() |> round()` reads “take steps, then mean, then round” and gives the same 7426. Unit 9 uses the pipe a lot ({{pipes-r}}).",
-      {lab:"dl-r-vector", t:"Practise: the mean, median and length of a vector"}
+      {lab:"dl-r-vector", t:"Practice: the mean, median and length of a vector"}
     ]},
     {h:"Reading R’s error messages", body:[
       "Everyone who writes R sees error messages every day. They look stern, but most mean one of four things, and R usually says which line it was reading.",
@@ -271,7 +271,7 @@ ICA.addUnit({
         ["R says","What it usually means","Fix"],
         ["`object 'Total' not found`","A name is misspelt, has the wrong capitals, or was never created","Check spelling and case; run the line that creates it"],
         ["`could not find function \"Mean\"`","A function name is misspelt (or its package isn’t loaded)","`mean`, not `Mean`"],
-        ["`non-numeric argument to binary operator`","Maths on text, often a number in quotes","Remove the quotes, or use `as.numeric()`"],
+        ["`non-numeric argument to binary operator`","Math on text, often a number in quotes","Remove the quotes, or use `as.numeric()`"],
         ["`unexpected symbol` / `unexpected ','`","Something is missing between two pieces, or a comma is out of place","Look just before the spot R names"]
       ]},
       "`price <- 12,5` gives `unexpected ','`, because R reads the comma as a separator, not a decimal mark. `price <- 12.5 qty <- 4` on one line gives `unexpected symbol`: R expected the line to end after `12.5`. Put each command on its own line (or separate them with `;`).",
@@ -279,12 +279,12 @@ ICA.addUnit({
       "**Errors and warnings are different.** An **error** stops R. A **warning** lets the code finish but tells you something looks wrong. `as.numeric(c(\"3\", \"four\"))` gives `3` and `NA` with the warning `NAs introduced by coercion`: R couldn’t turn “four” into a number. Read warnings; they often point at messy data.",
       {key:"Read the message, look at the line it names, and check spelling, capitals, quotes, commas and brackets, in that order."},
       "The fix-the-errors challenge below reads a data file and picks rows with a line you’ll meet properly in Lesson 4. You only need to read the two error messages and fix the code they point to; come back to it after Lesson 4 if you prefer.",
-      {lab:"dl-r-fix", t:"Practise: read two error messages and fix the code"}
+      {lab:"dl-r-fix", t:"Practice: read two error messages and fix the code"}
     ]}
    ],
    try:[
     {id:"t3u7-l2-x1", type:"number", q:"What does R give for `2 + 3 * 4 ^ 2`?", answer:50, tol:0, unit:"", why:"Powers first: 4 ^ 2 = 16. Then multiplication: 3 × 16 = 48. Then addition: 2 + 48 = 50.", wrongs:[
-      {v:400, tol:0, why:"That works left to right ((2 + 3) × 4 = 20, then 20² = 400). R, like maths, does powers, then multiplication, then addition."},
+      {v:400, tol:0, why:"That works left to right ((2 + 3) × 4 = 20, then 20² = 400). R, like math, does powers, then multiplication, then addition."},
       {v:196, tol:0, why:"That does the multiplication before the power ((2 + 3 × 4)² = 14²). Powers come first."},
       {v:146, tol:0, why:"That squares 3 × 4 = 12 to get 144 and adds 2. The power applies only to the 4 next to it."}
     ], hint2:"Do `4 ^ 2` first."},
@@ -368,7 +368,7 @@ ICA.addUnit({
       {lead:"A data frame is R’s table: the shape most data comes in."},
       "Picture a tidy spreadsheet (Track 1, Unit 9, and Track 3, Unit 2): one **[[observation-row|row per observation]]** (a person, a sale, a walk) and one **[[variable-column|column per variable]]** (age, price, minutes). A **[[data-frame|data frame]]** is exactly that, built from the vectors you met in Lesson 2.",
       "Each column **is a vector**, so each column has one type: a numeric column, a text column, a TRUE/FALSE column. Different columns can have different types. And every column has the **same length**, which is the number of rows.",
-      {fig:'<svg viewBox="0 0 340 330"><text x="10" y="20">A data frame is column vectors, side by side</text><text class="mono" x="52" y="50" text-anchor="middle">item</text><text class="mono" x="132" y="50" text-anchor="middle">price</text><text class="mono" x="206" y="50" text-anchor="middle">sold</text><text class="mono" x="282" y="50" text-anchor="middle">vegan</text><rect class="d-lup" x="14" y="60" width="76" height="160" rx="6" stroke-width="2"/><rect class="d-gold" x="98" y="60" width="68" height="160" rx="6" stroke-width="2"/><rect class="d-gold" x="174" y="60" width="64" height="160" rx="6" stroke-width="2"/><rect class="d-sage" x="246" y="60" width="72" height="160" rx="6" stroke-width="2"/><rect class="d-rose" x="10" y="130" width="320" height="22" rx="4" stroke-width="1.5"/><g class="mono"><text x="52" y="84" text-anchor="middle">Bread</text><text x="52" y="114" text-anchor="middle">Scone</text><text x="52" y="144" text-anchor="middle">Muffin</text><text x="52" y="174" text-anchor="middle">Roll</text><text x="52" y="204" text-anchor="middle">Bun</text><text x="132" y="84" text-anchor="middle">3.2</text><text x="132" y="114" text-anchor="middle">1.8</text><text x="132" y="144" text-anchor="middle">2.5</text><text x="132" y="174" text-anchor="middle">0.9</text><text x="132" y="204" text-anchor="middle">1.5</text><text x="206" y="84" text-anchor="middle">40</text><text x="206" y="114" text-anchor="middle">25</text><text x="206" y="144" text-anchor="middle">32</text><text x="206" y="174" text-anchor="middle">60</text><text x="206" y="204" text-anchor="middle">18</text><text x="282" y="84" text-anchor="middle">TRUE</text><text x="282" y="114" text-anchor="middle">FALSE</text><text x="282" y="144" text-anchor="middle">FALSE</text><text x="282" y="174" text-anchor="middle">TRUE</text><text x="282" y="204" text-anchor="middle">TRUE</text></g><text class="s" x="52" y="240" text-anchor="middle">text</text><text class="s" x="132" y="240" text-anchor="middle">numeric</text><text class="s" x="206" y="240" text-anchor="middle">numeric</text><text class="s" x="282" y="240" text-anchor="middle">logical</text><text class="s" x="10" y="272">Rose row = one observation (row 3, the muffin).</text><text class="s" x="10" y="290">One column = one vector with one type.</text><text class="s" x="10" y="308">Every column has 5 values, so there are 5 rows;</text><text class="s" x="10" y="326">length() counts the 4 columns, nrow() the 5 rows.</text></svg>', alt:"Four coloured columns side by side: item (text) Bread, Scone, Muffin, Roll, Bun; price (numeric) 3.2, 1.8, 2.5, 0.9, 1.5; sold (numeric) 40, 25, 32, 60, 18; vegan (logical) TRUE, FALSE, FALSE, TRUE, TRUE. Row 3, the muffin, is highlighted as one observation. Notes say each column is one vector with one type, every column has 5 values, length counts the 4 columns and nrow the 5 rows.", cap:"Each column is a vector; a row cuts across them."},
+      {fig:'<svg viewBox="0 0 340 330"><text x="10" y="20">A data frame is column vectors, side by side</text><text class="mono" x="52" y="50" text-anchor="middle">item</text><text class="mono" x="132" y="50" text-anchor="middle">price</text><text class="mono" x="206" y="50" text-anchor="middle">sold</text><text class="mono" x="282" y="50" text-anchor="middle">vegan</text><rect class="d-lup" x="14" y="60" width="76" height="160" rx="6" stroke-width="2"/><rect class="d-gold" x="98" y="60" width="68" height="160" rx="6" stroke-width="2"/><rect class="d-gold" x="174" y="60" width="64" height="160" rx="6" stroke-width="2"/><rect class="d-sage" x="246" y="60" width="72" height="160" rx="6" stroke-width="2"/><rect class="d-rose" x="10" y="130" width="320" height="22" rx="4" stroke-width="1.5"/><g class="mono"><text x="52" y="84" text-anchor="middle">Bread</text><text x="52" y="114" text-anchor="middle">Scone</text><text x="52" y="144" text-anchor="middle">Muffin</text><text x="52" y="174" text-anchor="middle">Roll</text><text x="52" y="204" text-anchor="middle">Bun</text><text x="132" y="84" text-anchor="middle">3.2</text><text x="132" y="114" text-anchor="middle">1.8</text><text x="132" y="144" text-anchor="middle">2.5</text><text x="132" y="174" text-anchor="middle">0.9</text><text x="132" y="204" text-anchor="middle">1.5</text><text x="206" y="84" text-anchor="middle">40</text><text x="206" y="114" text-anchor="middle">25</text><text x="206" y="144" text-anchor="middle">32</text><text x="206" y="174" text-anchor="middle">60</text><text x="206" y="204" text-anchor="middle">18</text><text x="282" y="84" text-anchor="middle">TRUE</text><text x="282" y="114" text-anchor="middle">FALSE</text><text x="282" y="144" text-anchor="middle">FALSE</text><text x="282" y="174" text-anchor="middle">TRUE</text><text x="282" y="204" text-anchor="middle">TRUE</text></g><text class="s" x="52" y="240" text-anchor="middle">text</text><text class="s" x="132" y="240" text-anchor="middle">numeric</text><text class="s" x="206" y="240" text-anchor="middle">numeric</text><text class="s" x="282" y="240" text-anchor="middle">logical</text><text class="s" x="10" y="272">Rose row = one observation (row 3, the muffin).</text><text class="s" x="10" y="290">One column = one vector with one type.</text><text class="s" x="10" y="308">Every column has 5 values, so there are 5 rows;</text><text class="s" x="10" y="326">length() counts the 4 columns, nrow() the 5 rows.</text></svg>', alt:"Four colored columns side by side: item (text) Bread, Scone, Muffin, Roll, Bun; price (numeric) 3.2, 1.8, 2.5, 0.9, 1.5; sold (numeric) 40, 25, 32, 60, 18; vegan (logical) TRUE, FALSE, FALSE, TRUE, TRUE. Row 3, the muffin, is highlighted as one observation. Notes say each column is one vector with one type, every column has 5 values, length counts the 4 columns and nrow the 5 rows.", cap:"Each column is a vector; a row cuts across them."},
       {key:"A data frame is a list of equal-length vectors (the columns). Rows are observations, columns are variables."}
     ]},
     {h:"Making a data frame", body:[
@@ -396,7 +396,7 @@ ICA.addUnit({
       ]},
       {code:'summary(bakery[, c("price", "sold")])', lang:"r"},
       {ex:"     price           sold     \n Min.   :0.90   Min.   :18   \n 1st Qu.:1.50   1st Qu.:25   \n Median :1.80   Median :32   \n Mean   :1.98   Mean   :35   \n 3rd Qu.:2.50   3rd Qu.:40   \n Max.   :3.20   Max.   :60   ", label:"R prints", mono:true},
-      "For numeric columns, `summary()` gives the minimum, quartiles, median, mean and maximum (Unit 5’s {{centre-spread|centre and spread}}). Lesson 5 returns to it."
+      "For numeric columns, `summary()` gives the minimum, quartiles, median, mean and maximum (Unit 5’s {{centre-spread|center and spread}}). Lesson 5 returns to it."
     ]},
     {h:"Getting one column", body:[
       "`$` picks a column by name and gives you back a plain vector, so everything from Lesson 2 works on it:",
@@ -405,7 +405,7 @@ ICA.addUnit({
       "The last line uses one column (`vegan`, which is TRUE/FALSE) to pick from another (`item`): the names of the vegan items.",
       "`bakery[[\"price\"]]` does the same as `bakery$price`, and is handy when the column name is stored in an object. Single brackets, `bakery[\"price\"]`, are different: they give back a **data frame** with one column, not a vector.",
       {warn:"A misspelt column after `$` doesn’t cause an error. `bakery$prices` (with an extra s) quietly gives `NULL`, meaning “nothing”, and `mean(bakery$prices)` then gives `NA` with the warning `argument is not numeric or logical: returning NA`. If a result is unexpectedly `NULL` or `NA`, check the column name with `names()`."},
-      {lab:"dl-r-df", t:"Practise: make a data frame and take the mean of a column"}
+      {lab:"dl-r-df", t:"Practice: make a data frame and take the mean of a column"}
     ]},
     {h:"Rows and columns with [rows, columns]", body:[
       "Square brackets with a **comma** pick from both directions at once: `d[rows, columns]`. Leave a side empty to mean “all of them”.",
@@ -473,10 +473,10 @@ ICA.addUnit({
     {id:"t3u7-l3-x6", type:"order", q:"Put these steps in a sensible order for a new data frame `d` you were just sent.", items:[
       {t:"Run `str(d)` to see the rows, columns and types", why:"Always look at the structure first, so you know what you’re dealing with."},
       {t:"Run `head(d)` to see a few complete rows", why:"Real rows show what values actually look like."},
-      {t:"Run `summary(d)` to spot odd minimums, maximums and NAs", why:"Summaries reveal impossible values (a negative age) and missing data before you analyse."},
+      {t:"Run `summary(d)` to spot odd minimums, maximums and NAs", why:"Summaries reveal impossible values (a negative age) and missing data before you analyze."},
       {t:"Calculate what you need, such as `mean(d$minutes)`", why:"Only once you trust the data do you start calculating."}
     ]},
-    {id:"t3u7-l3-x7", type:"explain", q:"Explain why each column of an R data frame has a single type, and what happens if one cell in a column of numbers contains a word such as `n/a`.", model:"A data frame is a set of equal-length vectors, one per column, and a vector can hold only one type. So a price column is numeric and an item column is text. If one cell in a number column contains a word, R makes the whole column the most flexible type, text, because one vector can’t mix them. Then `mean()` or arithmetic on it fails or gives NA. `str()` shows this at once: the column you expected as `num` appears as `chr`.", points:["Says a data frame is a set of equal-length column vectors", "Says a vector holds only one type", "Explains that one word turns the whole column into text", "Mentions spotting it with `str()` (or that maths on it then fails)"]}
+    {id:"t3u7-l3-x7", type:"explain", q:"Explain why each column of an R data frame has a single type, and what happens if one cell in a column of numbers contains a word such as `n/a`.", model:"A data frame is a set of equal-length vectors, one per column, and a vector can hold only one type. So a price column is numeric and an item column is text. If one cell in a number column contains a word, R makes the whole column the most flexible type, text, because one vector can’t mix them. Then `mean()` or arithmetic on it fails or gives NA. `str()` shows this at once: the column you expected as `num` appears as `chr`.", points:["Says a data frame is a set of equal-length column vectors", "Says a vector holds only one type", "Explains that one word turns the whole column into text", "Mentions spotting it with `str()` (or that math on it then fails)"]}
    ],
    apply:{intro:"Use the Data Lab (any R challenge’s editor and ▶ Run), RStudio or Posit Cloud.", tasks:[
     {t:"Build a data frame about something you know", how:[
@@ -505,7 +505,7 @@ ICA.addUnit({
     {h:"Where R looks for files", body:[
       {lead:"To read a file, R needs to find it, and it starts looking in one folder: the working directory."},
       "The **[[working-directory-r|working directory]]** is R’s current folder. A file name on its own, like `\"walks.csv\"`, means “walks.csv in the working directory”. A **relative path** like `\"data/walks.csv\"` means “in the data folder inside the working directory”. `getwd()` (get working directory) shows where that is.",
-      {fig:'<svg viewBox="0 0 340 300"><text x="10" y="20">R looks inside its working directory</text><rect class="d-gold" x="14" y="36" width="190" height="36" rx="8" stroke-width="2"/><text x="26" y="59">📁 walking-club</text><text class="s" x="214" y="52">working directory</text><text class="s" x="214" y="68">(getwd() shows it)</text><path class="d-soft" d="M30,72 L30,236" stroke-width="2"/><path class="d-soft" d="M30,104 L48,104" stroke-width="2"/><rect class="d-lup" x="50" y="88" width="170" height="32" rx="6" stroke-width="2"/><text x="60" y="109">📄 analysis.R</text><path class="d-soft" d="M30,152 L48,152" stroke-width="2"/><rect class="d-panel" x="50" y="136" width="170" height="32" rx="6" stroke-width="1.5"/><text x="60" y="157">📁 data</text><path class="d-soft" d="M66,168 L66,196 L84,196" stroke-width="2"/><rect class="d-sage" x="86" y="180" width="160" height="32" rx="6" stroke-width="2"/><text x="96" y="201">📄 walks.csv</text><path class="d-soft" d="M30,236 L48,236" stroke-width="2"/><rect class="d-panel" x="50" y="220" width="170" height="32" rx="6" stroke-width="1.5"/><text x="60" y="241">📁 figures</text><text class="mono" x="10" y="280">read.csv("data/walks.csv")</text><text class="s" x="10" y="296">a relative path: from the working directory down</text></svg>', alt:"A folder tree. The walking-club folder is the working directory. Inside it: analysis.R, a data folder containing walks.csv, and a figures folder. Below, the code read.csv(\"data/walks.csv\") is labelled as a relative path from the working directory down.", cap:"A project folder, with the data in a subfolder."},
+      {fig:'<svg viewBox="0 0 340 300"><text x="10" y="20">R looks inside its working directory</text><rect class="d-gold" x="14" y="36" width="190" height="36" rx="8" stroke-width="2"/><text x="26" y="59">📁 walking-club</text><text class="s" x="214" y="52">working directory</text><text class="s" x="214" y="68">(getwd() shows it)</text><path class="d-soft" d="M30,72 L30,236" stroke-width="2"/><path class="d-soft" d="M30,104 L48,104" stroke-width="2"/><rect class="d-lup" x="50" y="88" width="170" height="32" rx="6" stroke-width="2"/><text x="60" y="109">📄 analysis.R</text><path class="d-soft" d="M30,152 L48,152" stroke-width="2"/><rect class="d-panel" x="50" y="136" width="170" height="32" rx="6" stroke-width="1.5"/><text x="60" y="157">📁 data</text><path class="d-soft" d="M66,168 L66,196 L84,196" stroke-width="2"/><rect class="d-sage" x="86" y="180" width="160" height="32" rx="6" stroke-width="2"/><text x="96" y="201">📄 walks.csv</text><path class="d-soft" d="M30,236 L48,236" stroke-width="2"/><rect class="d-panel" x="50" y="220" width="170" height="32" rx="6" stroke-width="1.5"/><text x="60" y="241">📁 figures</text><text class="mono" x="10" y="280">read.csv("data/walks.csv")</text><text class="s" x="10" y="296">a relative path: from the working directory down</text></svg>', alt:"A folder tree. The walking-club folder is the working directory. Inside it: analysis.R, a data folder containing walks.csv, and a figures folder. Below, the code read.csv(\"data/walks.csv\") is labeled as a relative path from the working directory down.", cap:"A project folder, with the data in a subfolder."},
       "Where the working directory is depends on how you run R:",
       {list:[
         "**RStudio with a project.** **File → New Project → New Directory** makes a folder and an `.Rproj` file. Opening the project (double-click the `.Rproj` file) sets the working directory to that folder, so `\"data/walks.csv\"` just works, on any computer you copy the folder to. This is what R for Data Science and Data Carpentry recommend.",
@@ -524,7 +524,7 @@ ICA.addUnit({
       {code:['walks <- read.csv(text = "id,route,km,minutes,weather','1,River,4.2,52,Sunny','2,Hill,3.5,61,Cloudy','3,Park,2.0,27,Sunny','4,River,5.1,66,Rain','5,Hill,4.8,83,Sunny','6,Park,2.5,31,Cloudy','7,River,3.8,47,Cloudy','8,Hill,2.9,49,Rain','9,Park,1.8,25,Rain','10,River,6.0,74,Sunny','11,Hill,4.1,70,Cloudy','12,Park,3.0,38,Sunny','13,River,4.5,,Rain")','nrow(walks)'].join("\n"), lang:"r", label:"R (no file needed)", cap:"Prints `[1] 13`. Everything between the quotes is read exactly like the file, line by line."},
       "Not every “CSV” uses commas. In countries that write decimals with a comma, files often use **semicolons** between values: read those with `read.csv2()`, which expects `;` and decimal commas. Tab-separated files ([[tsv|TSV]]) use `read.delim()`. If you see one column with everything squashed into it, the separator is wrong.",
       "If R can’t find the file, it stops with `cannot open the connection` and warns `cannot open file 'Walks.csv': No such file or directory`. Check the spelling and the working directory. On Linux, in Posit Cloud and in the Data Lab, capitals count (`Walks.csv` isn’t `walks.csv`); Windows and macOS usually ignore them, but matching the name exactly keeps your script working everywhere.",
-      {lab:"dl-r-csv", t:"Practise: read survey.csv, count its rows and take a mean"}
+      {lab:"dl-r-csv", t:"Practice: read survey.csv, count its rows and take a mean"}
     ]},
     {h:"Check what arrived", body:[
       "Never trust a file until you’ve looked. After `str()`, run `summary()` and count missing values:",
@@ -555,9 +555,9 @@ ICA.addUnit({
       ]},
       {warn:"**Missing values and [ ].** `walks[walks$minutes > 70, ]` shows the two walks over 70 minutes **plus a row of NAs**, because R can’t say whether walk 13’s missing time was over 70, so the answer for that row is NA. `subset(walks, minutes > 70)` keeps only the rows that are definitely TRUE, and so does `walks[which(walks$minutes > 70), ]`. If you see a row of NAs you didn’t expect, that’s the cause."},
       "Keep the rows you pick in a new object, such as `long <- subset(walks, km >= 4)`, and the original `walks` stays as it was.",
-      {lab:"dl-r-subset", t:"Practise: keep only the people aged 30 or over"},
+      {lab:"dl-r-subset", t:"Practice: keep only the people aged 30 or over"},
       "Now you know `d[condition, ]`, the fix-the-errors challenge from Lesson 2 should read easily: one of its two bugs is a missing comma.",
-      {lab:"dl-r-fix", t:"Practise: read two error messages and fix the code"}
+      {lab:"dl-r-fix", t:"Practice: read two error messages and fix the code"}
     ]},
     {h:"Counting: sum(), mean() and table()", body:[
       "Because TRUE counts as 1, `sum()` of a condition is a **count** and `mean()` is a **proportion**:",
@@ -571,7 +571,7 @@ ICA.addUnit({
       {h:"How NA affects counting"},
       "`sum(walks$minutes > 60)` gives `NA`, because one comparison is unknown. Add `na.rm = TRUE` to count only the known ones (5 here), and say in your report that one walk had no time. `table()` leaves NAs out unless you add `useNA = \"ifany\"`, which is a good habit when you need to know how many are missing.",
       {warn:"Text comparisons are exact. `walks$weather == \"rain\"` finds nothing, because the file says `Rain`. If a count is surprisingly 0, check the spelling and capitals with `table()` first: it shows the exact values present."},
-      {lab:"dl-r-table", t:"Practise: count each answer and find the share of Yes"}
+      {lab:"dl-r-table", t:"Practice: count each answer and find the share of Yes"}
     ]}
    ],
    try:[
@@ -615,9 +615,9 @@ ICA.addUnit({
       {t:"R adds a totals row", why:"Picking rows never adds a summary row."},
       {t:"The comma in `[ , ]` adds an empty row to the result", why:"The comma means “all columns”; it doesn’t add rows."}
     ]},
-    {id:"t3u7-l4-x7", type:"mcq", q:"Priya runs `table(d$colour)` and gets `blue 12  Blue 3  red 9`. What does that tell her?", options:[
-      {t:"The capitals are inconsistent: “blue” and “Blue” differ", ok:true, why:"They are counted separately: table() counts exact values, and capitals count. It’s a quick way to spot spelling variants before analysing; tidy them (for example with `tolower()`) and count again."},
-      {t:"There are 3 different shades of blue recorded in the data", why:"R isn’t judging colours; it’s counting two different spellings."},
+    {id:"t3u7-l4-x7", type:"mcq", q:"Priya runs `table(d$color)` and gets `blue 12  Blue 3  red 9`. What does that tell her?", options:[
+      {t:"The capitals are inconsistent: “blue” and “Blue” differ", ok:true, why:"They are counted separately: table() counts exact values, and capitals count. It’s a quick way to spot spelling variants before analyzing; tidy them (for example with `tolower()`) and count again."},
+      {t:"There are 3 different shades of blue recorded in the data", why:"R isn’t judging colors; it’s counting two different spellings."},
       {t:"table() has made a mistake", why:"table() is exact. The data really contains both spellings."},
       {t:"She should use sum() instead", why:"sum() would count one value at a time and hide the variants that table() just revealed."}
     ]},
@@ -628,7 +628,7 @@ ICA.addUnit({
       win:["In RStudio, choose **File → New Project → New Directory → New Project**, name it `walking-club`, and create it.","Make a file: **File → New File → Text File**, paste the walks.csv text, and save it as `walks.csv` in the project folder.","In the console: `walks <- read.csv(\"walks.csv\")`, then `str(walks)`, `summary(walks)` and `colSums(is.na(walks))`.","Check: 13 observations of 5 variables, and one NA in minutes."],
       mac:["In RStudio, choose **File → New Project → New Directory → New Project**, name it `walking-club`, and create it.","Make a file: **File → New File → Text File**, paste the walks.csv text, and save it as `walks.csv` in the project folder.","In the console: `walks <- read.csv(\"walks.csv\")`, then `str(walks)`, `summary(walks)` and `colSums(is.na(walks))`.","Check: 13 observations of 5 variables, and one NA in minutes."],
       chromeos:["In Posit Cloud (or RStudio, if you installed it), make a new project.","Choose **File → New File → Text File**, paste the walks.csv text, and save it as `walks.csv`. (In Posit Cloud you can also **Upload** a file in the Files pane.)","In the console: `walks <- read.csv(\"walks.csv\")`, then `str(walks)`, `summary(walks)` and `colSums(is.na(walks))`.","Check: 13 observations of 5 variables, and one NA in minutes."],
-      phone:["Open **Labs → Data Lab** and any R challenge (for example **Read a CSV**).","In this lesson, tap **Copy** on the block labelled **R (no file needed)** and paste it into the editor, replacing the starting code. (Or use `survey.csv`, which the challenge already provides: `d <- read.csv(\"survey.csv\")`.)","Add `str(walks)`, `summary(walks)` and `colSums(is.na(walks))` on new lines and press **▶ Run**. (Check will say “not quite”: this is free practice.)","Check: 13 observations of 5 variables, and one NA in minutes."]
+      phone:["Open **Labs → Data Lab** and any R challenge (for example **Read a CSV**).","In this lesson, tap **Copy** on the block labeled **R (no file needed)** and paste it into the editor, replacing the starting code. (Or use `survey.csv`, which the challenge already provides: `d <- read.csv(\"survey.csv\")`.)","Add `str(walks)`, `summary(walks)` and `colSums(is.na(walks))` on new lines and press **▶ Run**. (Check will say “not quite”: this is free practice.)","Check: 13 observations of 5 variables, and one NA in minutes."]
      }, write:"Rows and columns… Each column’s type… Missing values…"},
     {t:"Pick and count", how:[
       "Make `long <- subset(walks, km >= 4)` and count its rows.",
@@ -654,13 +654,13 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Summary statistics in one line each", body:[
-      {lead:"Unit 5 built centre and spread by hand. In R, each is one function."},
+      {lead:"Unit 5 built center and spread by hand. In R, each is one function."},
       {code:['walks <- read.csv("walks.csv")','mean(walks$minutes, na.rm = TRUE)','median(walks$minutes, na.rm = TRUE)','sd(walks$minutes, na.rm = TRUE)','quantile(walks$minutes, na.rm = TRUE)','IQR(walks$minutes, na.rm = TRUE)'].join("\n"), lang:"r"},
       {ex:"[1] 51.91667\n[1] 50.5\n[1] 19.23755\n   0%   25%   50%   75%  100% \n25.00 36.25 50.50 67.00 83.00 \n[1] 30.75", label:"R prints", mono:true},
       "Walk 13 has no time, so each call needs `na.rm = TRUE`. The 12 timed walks took 51.9 minutes on average (median 50.5), with a standard deviation of about 19 minutes; the middle half took between 36.25 and 67 minutes, an interquartile range of 30.75.",
       {table:[
         ["Function","Gives","Note"],
-        ["`mean()`, `median()`","Centre","The median resists extreme values"],
+        ["`mean()`, `median()`","Center","The median resists extreme values"],
         ["`sd()`, `var()`","Standard deviation, variance","Sample versions (divide by n − 1), like a spreadsheet’s STDEV.S"],
         ["`quantile()`","Quartiles (or any percentile)","`quantile(x, 0.9)` for the 90th"],
         ["`IQR()`, `range()`","Spread of the middle half; min and max",""],
@@ -679,12 +679,12 @@ ICA.addUnit({
       {code:['walks$pace <- walks$minutes / walks$km','round(tapply(walks$pace, walks$route, mean, na.rm = TRUE), 1)'].join("\n"), lang:"r"},
       {ex:" Hill  Park River \n 17.2  13.1  12.5 ", label:"R prints", mono:true},
       "Now the story is clearer: hill walks take about 17 minutes per km, the flat routes about 12 to 13. Totals and averages answer different questions; before comparing groups, ask whether they differ in size or exposure (Unit 1’s {{percentages-rates|rates}}). And with only four or five walks per route, these are descriptions of this club’s walks, not firm facts about routes in general (Unit 7 covers {{standard-error-ci|uncertainty}}).",
-      {lab:"dl-r-groups", t:"Practise: the mean score for each group"}
+      {lab:"dl-r-groups", t:"Practice: the mean score for each group"}
     ]},
     {h:"Base R charts", body:[
-      "Base R draws a chart with one function call. Each takes the data, then labelling arguments. In RStudio and Posit Cloud the chart appears in the **Plots** tab (use **Export** to save it); in the Data Lab it appears under the output.",
+      "Base R draws a chart with one function call. Each takes the data, then labeling arguments. In RStudio and Posit Cloud the chart appears in the **Plots** tab (use **Export** to save it); in the Data Lab it appears under the output.",
       {code:'hist(walks$minutes, main = "How long the walks took", xlab = "Minutes")', lang:"r"},
-      {fig:'<svg viewBox="0 0 340 336"><text x="170" y="24" text-anchor="middle">How long the walks took</text><text class="s" x="232" y="44">← main =</text><path class="d-ink" d="M50,250 L320,250" stroke-width="1.5"/><path class="d-ink" d="M50,250 L50,70" stroke-width="1.5"/><rect class="d-lup" x="56" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="92" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="128" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="164" y="210" width="36" height="40" stroke-width="1.5"/><rect class="d-lup" x="200" y="130" width="36" height="120" stroke-width="1.5"/><rect class="d-lup" x="236" y="210" width="36" height="40" stroke-width="1.5"/><rect class="d-lup" x="272" y="210" width="36" height="40" stroke-width="1.5"/><text class="s" x="56" y="268" text-anchor="middle">20</text><text class="s" x="128" y="268" text-anchor="middle">40</text><text class="s" x="200" y="268" text-anchor="middle">60</text><text class="s" x="272" y="268" text-anchor="middle">80</text><text class="s" x="44" y="254" text-anchor="end">0</text><text class="s" x="44" y="174" text-anchor="end">2</text><text class="s" x="44" y="94" text-anchor="end">4</text><text class="s" x="22" y="130" text-anchor="middle">Fre-</text><text class="s" x="22" y="146" text-anchor="middle">quency</text><text x="180" y="292" text-anchor="middle">Minutes</text><text class="s" x="232" y="292">← xlab =</text><text class="s" x="10" y="312">Bins 10 wide (R chose them): 20–30 has</text><text class="s" x="10" y="328">2 walks, 60–70 has 3.</text></svg>', alt:"A histogram titled How long the walks took, labelled as set by main. The x-axis, labelled Minutes as set by xlab, runs from 20 to 90 in bins of 10. Bar heights: 2, 2, 2, 1, 3, 1, 1. The y-axis is Frequency.", cap:"`main` sets the title and `xlab` the x-axis label; R picks the bins unless you set `breaks`."},
+      {fig:'<svg viewBox="0 0 340 336"><text x="170" y="24" text-anchor="middle">How long the walks took</text><text class="s" x="232" y="44">← main =</text><path class="d-ink" d="M50,250 L320,250" stroke-width="1.5"/><path class="d-ink" d="M50,250 L50,70" stroke-width="1.5"/><rect class="d-lup" x="56" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="92" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="128" y="170" width="36" height="80" stroke-width="1.5"/><rect class="d-lup" x="164" y="210" width="36" height="40" stroke-width="1.5"/><rect class="d-lup" x="200" y="130" width="36" height="120" stroke-width="1.5"/><rect class="d-lup" x="236" y="210" width="36" height="40" stroke-width="1.5"/><rect class="d-lup" x="272" y="210" width="36" height="40" stroke-width="1.5"/><text class="s" x="56" y="268" text-anchor="middle">20</text><text class="s" x="128" y="268" text-anchor="middle">40</text><text class="s" x="200" y="268" text-anchor="middle">60</text><text class="s" x="272" y="268" text-anchor="middle">80</text><text class="s" x="44" y="254" text-anchor="end">0</text><text class="s" x="44" y="174" text-anchor="end">2</text><text class="s" x="44" y="94" text-anchor="end">4</text><text class="s" x="22" y="130" text-anchor="middle">Fre-</text><text class="s" x="22" y="146" text-anchor="middle">quency</text><text x="180" y="292" text-anchor="middle">Minutes</text><text class="s" x="232" y="292">← xlab =</text><text class="s" x="10" y="312">Bins 10 wide (R chose them): 20–30 has</text><text class="s" x="10" y="328">2 walks, 60–70 has 3.</text></svg>', alt:"A histogram titled How long the walks took, labeled as set by main. The x-axis, labeled Minutes as set by xlab, runs from 20 to 90 in bins of 10. Bar heights: 2, 2, 2, 1, 3, 1, 1. The y-axis is Frequency.", cap:"`main` sets the title and `xlab` the x-axis label; R picks the bins unless you set `breaks`."},
       "R chose bins 10 minutes wide. Try `breaks = 4` or `breaks = 12` to ask for fewer or more ({{distributions|bin width}} changes how a histogram looks). Without `main` and `xlab`, R labels the chart with the code, “Histogram of walks$minutes”, which nobody else wants to read.",
       {code:['boxplot(pace ~ route, data = walks,','  main = "Pace by route", ylab = "Minutes per km")','plot(walks$km, walks$minutes, main = "Longer walks take longer",','  xlab = "Distance (km)", ylab = "Minutes", pch = 19)','barplot(table(walks$weather), main = "Weather on walks",','  ylab = "Number of walks")'].join("\n"), lang:"r"},
       {table:[
@@ -694,9 +694,9 @@ ICA.addUnit({
         ["[[scatterplot|Scatterplot]]","`plot(x, y)`","Two numeric variables together"],
         ["Bar chart","`barplot(table(x))`","Counts of each category"]
       ]},
-      "Useful arguments: `main` (title), `xlab` and `ylab` (axis labels: include units), `col` (fill colour, such as `col = \"grey\"`), `pch = 19` (solid dots) and `breaks` (histogram bins). In the boxplot, the Hill box sits far above the other two; with only four or five walks per route, though, each box is drawn from very few points, so say so. Unit 4’s {{chart-types}} helps you choose.",
+      "Useful arguments: `main` (title), `xlab` and `ylab` (axis labels: include units), `col` (fill color, such as `col = \"gray\"`), `pch = 19` (solid dots) and `breaks` (histogram bins). In the boxplot, the Hill box sits far above the other two; with only four or five walks per route, though, each box is drawn from very few points, so say so. Unit 4’s {{chart-types}} helps you choose.",
       {tip:"To save a chart as a file from a script, wrap it: `png(\"pace.png\", width = 800, height = 600)`, then the chart code, then `dev.off()`. The image lands in the working directory."},
-      {lab:"dl-r-hist", t:"Practise: a labelled histogram"}
+      {lab:"dl-r-hist", t:"Practice: a labeled histogram"}
     ]},
     {h:"Correlation with cor()", body:[
       "`cor(x, y)` gives [[pearson-r|Pearson’s r]] (Unit 5, {{correlation-coefficient}}). With a missing value, it needs telling which rows to use:",
@@ -708,7 +708,7 @@ ICA.addUnit({
         "**Correlation isn’t causation.** Here the link is obvious, but r alone never shows that one thing causes another."
       ]},
       "`cor()` also offers `method = \"spearman\"`, a rank-based correlation that’s less affected by outliers and works for any steadily rising or falling pattern (0.90 here). Say which one you report.",
-      {lab:"dl-r-cor", t:"Practise: the correlation between hours and score"}
+      {lab:"dl-r-cor", t:"Practice: the correlation between hours and score"}
     ]},
     {h:"A first straight-line model with lm()", body:[
       "A correlation says how tight the pattern is. A **linear model** puts a line through it, so you can say *how much* one variable changes with the other. `lm()` stands for linear model:",
@@ -716,20 +716,20 @@ ICA.addUnit({
       {ex:"\nCall:\nlm(formula = minutes ~ km, data = walks)\n\nCoefficients:\n(Intercept)           km  \n      3.154       13.390  ", label:"R prints", mono:true},
       "Read the formula `minutes ~ km` as “minutes, predicted from km”: the **outcome** goes on the left of `~`, the **predictor** on the right. The fitted line is about minutes = 3.15 + 13.39 × km.",
       {list:[
-        "The **[[slope]]**, 13.39, is the key number: each extra kilometre went with about 13.4 more minutes, on average, in these walks.",
+        "The **[[slope]]**, 13.39, is the key number: each extra kilometer went with about 13.4 more minutes, on average, in these walks.",
         "The **[[intercept]]**, 3.15, is the line’s value at 0 km. Nobody walks 0 km, so here it’s just where the line starts, not something to interpret.",
         "`coef(fit)` gives both numbers; `coef(fit)[2]` the slope alone. `predict(fit, data.frame(km = 5))` gives the line’s value at 5 km, about 70 minutes."
       ]},
       "Add the line to the scatterplot with `abline(fit)` after `plot()`. Then look at which points sit above it: all four Hill walks do. The line ignores the route, so it under-predicts hill walks. The gaps between points and line are the **[[residual|residuals]]**, and patterns in them point to something the model is missing.",
       "`lm()` quietly left out walk 13, which has no time (`nobs(fit)` is 12). `summary(fit)` shows much more: standard errors, p-values and [[r-squared|R²]] (0.79 here). Unit 7 of this track explains those ({{linear-regression}}). For now, the slope and the causation warning are enough: a slope describes a pattern in these data; on its own it doesn’t prove that one thing causes the other.",
-      {lab:"dl-r-lm", t:"Practise: fit lm() and store the slope"}
+      {lab:"dl-r-lm", t:"Practice: fit lm() and store the slope"}
     ]},
     {h:"Putting it together in a script", body:[
       "Here is the whole analysis as one script, the kind of file you would save as `walks.R`. Comments, after `#`, explain *why*, as R for Data Science advises:",
       {code:['# Walking club: how long do walks take, and why?','walks <- read.csv("walks.csv")','str(walks)                 # 13 walks, 5 columns','colSums(is.na(walks))      # walk 13 has no time','','# Pace is fairer than total minutes: routes differ in length','walks$pace <- walks$minutes / walks$km','round(tapply(walks$pace, walks$route, mean, na.rm = TRUE), 1)','','boxplot(pace ~ route, data = walks,','  main = "Pace by route", ylab = "Minutes per km")','','fit <- lm(minutes ~ km, data = walks)','coef(fit)'].join("\n"), lang:"r", label:"walks.R"},
       "Run it from top to bottom. In RStudio, R for Data Science recommends restarting R (**Session → Restart R**) and rerunning the whole script now and then: if it still works from a clean start, your script, not your memory, holds the analysis.",
-      {key:"Read, check, summarise, compare fairly, chart, and only then model. Write each step in a script so anyone can rerun it."},
-      "Unit 9 does the same jobs with the tidyverse: dplyr’s `group_by()` and `summarise()` instead of `tapply()` ({{grouped-summaries}}), and ggplot2 for charts. Knowing base R first means you’ll understand what those tools do for you, and you can still work in the Data Lab, which has base R only."
+      {key:"Read, check, summarize, compare fairly, chart, and only then model. Write each step in a script so anyone can rerun it."},
+      "Unit 9 does the same jobs with the tidyverse: dplyr’s `group_by()` and `summarize()` instead of `tapply()` ({{grouped-summaries}}), and ggplot2 for charts. Knowing base R first means you’ll understand what those tools do for you, and you can still work in the Data Lab, which has base R only."
     ]}
    ],
    try:[
@@ -740,7 +740,7 @@ ICA.addUnit({
       {t:"0", why:"A missing value isn’t treated as zero, and the spread wouldn’t be 0 anyway."}
     ]},
     {id:"t3u7-l5-x2", type:"order", q:"Put the arguments of `tapply()` in the right order to get the mean score for each group of a data frame `d`.", items:[
-      {t:"`d$score`: the values to summarise", why:"tapply() takes the values first."},
+      {t:"`d$score`: the values to summarize", why:"tapply() takes the values first."},
       {t:"`d$group`: what to split them by", why:"Second come the groups."},
       {t:"`mean`: the function to apply to each group", why:"Third, the function, written without brackets: tapply() calls it for you."},
       {t:"`na.rm = TRUE`: passed on to mean()", why:"Any extra arguments come last and are handed to the function."}
@@ -748,12 +748,12 @@ ICA.addUnit({
     {id:"t3u7-l5-x3", type:"mcq", q:"Two cafés: Café A served 900 customers in 30 days, Café B 600 in 15 days. `tapply(d$customers, d$cafe, sum)` gives A 900, B 600. What’s the fairer comparison?", options:[
       {t:"Customers per day: A 30, B 40", ok:true, why:"The cafés were observed for different lengths of time, so totals mislead. Per day, B was busier. Like pace for walks, a rate compares like with like."},
       {t:"Total customers: A is busier", why:"A was open twice as many days; the total mostly reflects that."},
-      {t:"The median of the totals", why:"There are only two totals; summarising them doesn’t fix the unequal time periods."},
+      {t:"The median of the totals", why:"There are only two totals; summarizing them doesn’t fix the unequal time periods."},
       {t:"They can’t be compared", why:"They can, once you divide by the number of days."}
     ]},
     {id:"t3u7-l5-x4", type:"match", q:"Match each question to the base R chart that answers it.", pairs:[
       ["What’s the shape of the waiting times?","`hist(d$wait)`","A histogram shows the distribution of one numeric variable."],
-      ["Do waiting times differ between clinics?","`boxplot(wait ~ clinic, data = d)`","A boxplot per group compares centres and spreads."],
+      ["Do waiting times differ between clinics?","`boxplot(wait ~ clinic, data = d)`","A boxplot per group compares centers and spreads."],
       ["Do longer queues mean longer waits?","`plot(d$queue, d$wait)`","A scatterplot shows how two numeric variables move together."],
       ["How many visits came from each clinic?","`barplot(table(d$clinic))`","A bar chart of counts compares categories."]
     ]},
@@ -766,7 +766,7 @@ ICA.addUnit({
       {t:"xlab = \"Age (years)\"", flag:false, why:"xlab sets the x-axis label, with units: right."},
       {t:")", flag:false, why:"The bracket closes the call: fine."}
     ]},
-    {id:"t3u7-l5-x6", type:"number", q:"A model `lm(price ~ size, data = flats)` has intercept 20 and slope 3, with price in thousands and size in square metres. What price does the line give for a 50 m² flat (in thousands)?", answer:170, tol:0, unit:"thousand", why:"The line is price = 20 + 3 × size. For 50 m²: 20 + 3 × 50 = 20 + 150 = 170 thousand.", wrongs:[
+    {id:"t3u7-l5-x6", type:"number", q:"A model `lm(price ~ size, data = flats)` has intercept 20 and slope 3, with price in thousands and size in square meters. What price does the line give for a 50 m² flat (in thousands)?", answer:170, tol:0, unit:"thousand", why:"The line is price = 20 + 3 × size. For 50 m²: 20 + 3 × 50 = 20 + 150 = 170 thousand.", wrongs:[
       {v:150, tol:0, why:"That’s just slope × size. Add the intercept, 20."},
       {v:1150, tol:0, why:"That multiplies both numbers by 50 ((20 + 3) × 50). Only the slope multiplies the size; the intercept is added once."},
       {v:73, tol:0, why:"That adds the three numbers (20 + 3 + 50). The slope multiplies the size."}
@@ -777,7 +777,7 @@ ICA.addUnit({
       {t:"5.6% of the variation in score is explained by hours", why:"That’s a misreading. The share of variation explained is R², shown by summary(fit), and it’s a different number."},
       {t:"The correlation between hours and score is 5.6", why:"A correlation is always between −1 and 1. The slope is in score points per hour."}
     ]},
-    {id:"t3u7-l5-x8", type:"explain", q:"In the walking-club data, Park walks have the lowest mean time (about 30 minutes). Explain why that doesn’t show Park is the quickest route to walk, and what fairer comparison R can make.", model:"Park walks are also the shortest, averaging about 2.3 km against about 3.8 km for Hill and 4.7 km for River, so they take less time partly because there’s less distance. Total minutes mix up length and speed. Dividing minutes by kilometres gives pace, minutes per km, which compares like with like: `walks$pace <- walks$minutes / walks$km`, then `tapply()` by route. By pace, River (12.5) and Park (13.1) are similar and Hill is slowest (17.2). With four or five walks per route, these describe this club only.", points:["Says Park walks are shorter, so total time isn’t a fair comparison", "Proposes pace (minutes per km)", "Shows how to compute it in R, by route", "Notes the small numbers of walks, so results describe this club only"]}
+    {id:"t3u7-l5-x8", type:"explain", q:"In the walking-club data, Park walks have the lowest mean time (about 30 minutes). Explain why that doesn’t show Park is the quickest route to walk, and what fairer comparison R can make.", model:"Park walks are also the shortest, averaging about 2.3 km against about 3.8 km for Hill and 4.7 km for River, so they take less time partly because there’s less distance. Total minutes mix up length and speed. Dividing minutes by kilometers gives pace, minutes per km, which compares like with like: `walks$pace <- walks$minutes / walks$km`, then `tapply()` by route. By pace, River (12.5) and Park (13.1) are similar and Hill is slowest (17.2). With four or five walks per route, these describe this club only.", points:["Says Park walks are shorter, so total time isn’t a fair comparison", "Proposes pace (minutes per km)", "Shows how to compute it in R, by route", "Notes the small numbers of walks, so results describe this club only"]}
    ],
    apply:{intro:"Use walks.csv (from Lesson 4) in the Data Lab, RStudio or Posit Cloud, or the Data Lab’s `survey.csv`.", tasks:[
     {t:"Summarise and compare", how:[
@@ -785,11 +785,11 @@ ICA.addUnit({
       "Calculate the mean and median of one numeric column, with `na.rm = TRUE` where needed.",
       "Compare a numeric column across groups with `tapply()` and with `aggregate()`.",
       "Ask whether the groups differ in size or exposure, and if so make a fairer column (a rate such as pace) and compare that."
-    ], write:"Overall centre and spread… Group means… A fairer comparison, and what changed…"},
+    ], write:"Overall center and spread… Group means… A fairer comparison, and what changed…"},
     {t:"Chart it", how:[
       "Draw a histogram of one numeric column with a title (`main`) and an axis label with units (`xlab`).",
       "Draw a boxplot of that column by group.",
-      "Draw a scatterplot of two numeric columns with `plot(x, y)`, with both axes labelled.",
+      "Draw a scatterplot of two numeric columns with `plot(x, y)`, with both axes labeled.",
       "On a computer, export one chart (RStudio: **Plots → Export → Save as Image**). In the Data Lab, the charts appear under the output; take a screenshot if you want to keep one."
     ], write:"What the histogram’s shape shows… What the boxplot shows… What the scatterplot shows…"},
     {t:"Correlate and fit a line", how:[
@@ -799,7 +799,7 @@ ICA.addUnit({
       "Write one sentence about the slope that a careful reader would accept, with no claim of cause."
     ], write:"r = … The slope means… Points far from the line… My careful sentence…"},
     {t:"Do the Data Lab challenges", how:["In **Labs → Data Lab**, do **Compare groups**, **A histogram**, **Correlation** and **A straight-line model**."]}
-   ], proof:"A short script (or notes) with summaries, a fair group comparison, three labelled charts, r and a slope with a careful one-sentence interpretation, and four R challenges solved."},
+   ], proof:"A short script (or notes) with summaries, a fair group comparison, three labeled charts, r and a slope with a careful one-sentence interpretation, and four R challenges solved."},
    read:[
      {book:"r4ds", where:"Chapter 27, “A field guide to base R”, sections “Apply family” and “Plots”; Chapter 6, “Workflow: scripts and projects”, section “Scripts”", note:"Short, and it shows how base R and the tidyverse relate."},
      {book:"ostat", where:"Chapter 12, Section 12.3 “The Regression Equation”", note:"The slope and intercept of a straight line, calculated by hand, to set beside `lm()`."}
@@ -808,7 +808,7 @@ ICA.addUnit({
   ],
   checkpoint:["t3u7-q02","t3u7-q06","t3u7-q11","t3u7-q14","t3u7-q17","t3u7-q22","t3u7-q25","t3u7-q30","t3u7-q34","t3u7-q37","t3u7-q41","t3u7-q45"],
   cpBank:[
-   {id:"t3u7-cp01", lesson:"t3u7-l1", level:1, q:"Ali wants to practise base R on his phone during a long bus ride. He can’t install anything, and he wants nothing he types to leave the device. Which option fits?", options:[
+   {id:"t3u7-cp01", lesson:"t3u7-l1", level:1, q:"Ali wants to practice base R on his phone during a long bus ride. He can’t install anything, and he wants nothing he types to leave the device. Which option fits?", options:[
      {t:"RStudio Desktop, installed on the phone", why:"RStudio Desktop must be installed on a computer, after R itself. It doesn’t run on a phone."},
      {t:"Posit Cloud in the phone’s browser", why:"Posit Cloud needs no install, but the code and files live on Posit’s servers, so they do leave the device."},
      {t:"The Data Lab, which runs R with webR", ok:true, why:"webR runs R on the device itself, inside the page. It needs no install, and nothing typed is sent to a server."},
@@ -925,7 +925,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Clean slate.** R for Data Science recommends telling RStudio not to save and restore your workspace (**Tools → Global Options → General**: untick restoring `.RData`, and set saving to Never), then regularly restarting R (**Session → Restart R**) and rerunning your script. If it works from scratch, the script holds the truth, not your memory. The book notes that on RStudio Server closing the browser tab doesn’t end the R session, which makes restarting more important; Posit Cloud also runs RStudio on a server, so the same habit helps there.",
-      "**Where data goes.** Desktop R keeps data on your machine. Posit Cloud stores files on Posit’s servers (each project has up to 20 GB, and a single upload can be up to 500 MB, per its documentation): check your organisation’s rules before uploading personal or confidential data. webR runs in your browser, so the Data Lab’s data never leaves your device.",
+      "**Where data goes.** Desktop R keeps data on your machine. Posit Cloud stores files on Posit’s servers (each project has up to 20 GB, and a single upload can be up to 500 MB, per its documentation): check your organization’s rules before uploading personal or confidential data. webR runs in your browser, so the Data Lab’s data never leaves your device.",
       "**webR’s limits.** webR is R compiled to WebAssembly with Emscripten, maintained by the r-wasm project. It can load many packages built for it, but not every CRAN package (some need system libraries that don’t exist in a browser), and it is slower than desktop R for heavy work. The Data Lab deliberately offers base R only. The webR project’s own online console is at webr.sh.",
       "**Other front ends.** R also has a plain console (RGui on Windows, R.app on macOS, `R` in a terminal), runs scripts without a window via `Rscript analysis.R`, and works in other editors such as VS Code (with an R extension), Positron (Posit’s newer editor for data science) and Jupyter notebooks. RStudio remains the most common choice in teaching materials, including both of this unit’s main sources.",
       "**ChromeOS.** In the Linux development environment, `sudo apt install r-base` installs Debian’s R, often older than CRAN’s latest; CRAN also publishes newer Debian builds. RStudio Desktop’s Linux `.deb` installer is built for x86_64 (Intel/AMD) processors and targets particular Ubuntu and Debian releases, so it won’t install on ARM Chromebooks and may not on an older Debian; check the download page against your Chromebook."
@@ -935,8 +935,8 @@ ICA.addUnit({
     sources:[{t:"Posit Cloud documentation: Compute Hours and the Background Execution Limit", url:"https://docs.posit.co/cloud/guide/articles/compute-hours.html"},{t:"Posit Cloud documentation: Projects", url:"https://docs.posit.co/cloud/guide/projects.html"},{t:"webR: R in the browser (r-wasm project, GitHub)", url:"https://github.com/r-wasm/webr"}],
     checked:"2026-11"},
 
-   {id:"r-objects-vectors", title:"Objects, vectors and types in R", aka:["object","variable","assignment","<-","vector","c()","indexing","subsetting a vector","numeric","character","logical","integer","NA","NULL","vectorised","recycling","coercion"], tags:["coding","data"],
-    summary:"Storing values with `<-`, naming objects, R’s basic types, building and indexing vectors, vectorised arithmetic, coercion, and the special values NA and NULL.",
+   {id:"r-objects-vectors", title:"Objects, vectors and types in R", aka:["object","variable","assignment","<-","vector","c()","indexing","subsetting a vector","numeric","character","logical","integer","NA","NULL","vectorized","recycling","coercion"], tags:["coding","data"],
+    summary:"Storing values with `<-`, naming objects, R’s basic types, building and indexing vectors, vectorized arithmetic, coercion, and the special values NA and NULL.",
     levels:{
      starter:[
       "An **[[r-object|object]]** is a value with a name. `price <- 12.5` stores 12.5 under the name `price` (read it as “price gets 12.5”). Type `price` to see it.",
@@ -959,7 +959,7 @@ ICA.addUnit({
       "**Numeric means double.** `typeof(5)` is `\"double\"`: R stores most numbers as 64-bit floating point, like spreadsheets do, so `0.1 + 0.2 == 0.3` is FALSE. Compare decimals with `isTRUE(all.equal(a, b))` or round first. Integers (`5L`) are exact but rarely needed in analysis.",
       "**Rounding.** `round()` follows the IEC 60559 standard’s “round half to even” for exactly representable halves, so `round(2.5)` is 2 and `round(0.5)` is 0. And many decimals aren’t stored exactly: 0.15 is really a little less than 0.15, so `round(0.15, 1)` gives 0.1 (R’s help page for `round` gives this example). Don’t round until you present results.",
       "**Recycling.** When two vectors differ in length, R repeats the shorter one: `c(1, 2, 3, 4) + c(10, 20)` gives 11 22 13 24. If the longer length isn’t a multiple, you get the warning `longer object length is not a multiple of shorter object length`. Recycling a single value (`x * 2`) is the everyday case; anything else is usually a mistake.",
-      "**NA, NULL, NaN and Inf.** `NA` is a missing value of some type (it has a place in the vector). `NULL` is “no object at all”: `length(NULL)` is 0, and a misspelt column after `$` gives NULL. `NaN` (“not a number”) comes from undefined maths like `0 / 0`; `Inf` from `1 / 0`. `is.na()` is TRUE for both NA and NaN.",
+      "**NA, NULL, NaN and Inf.** `NA` is a missing value of some type (it has a place in the vector). `NULL` is “no object at all”: `length(NULL)` is 0, and a misspelt column after `$` gives NULL. `NaN` (“not a number”) comes from undefined math like `0 / 0`; `Inf` from `1 / 0`. `is.na()` is TRUE for both NA and NaN.",
       "**Assignment forms.** `<-` is standard; `=` also assigns at the top level; `->` assigns rightwards. Inside a function call, `=` names an argument (`round(x, digits = 2)`), which is why style guides keep `=` for arguments and `<-` for assignment.",
       "**Lists.** A vector has one type; a **list**, made with `list()`, can hold anything, including other lists. Data frames are lists of equal-length vectors, and model results from `lm()` are lists too, which is why `fit$coefficients` works."
      ]},
@@ -998,7 +998,7 @@ ICA.addUnit({
       "**Simplification.** `d[, \"price\"]` drops to a vector because `[` has `drop = TRUE` by default when one column is selected; `d[, \"price\", drop = FALSE]` keeps a data frame. Selecting rows keeps a data frame too, except from a data frame with only one column, which also drops to a vector unless you add `drop = FALSE`. Tibbles (tidyverse) never drop, which is one of their deliberate differences.",
       "**Partial matching.** `$` on a data frame partially matches names: `d$pri` can quietly return the `price` column (R only warns if you set `options(warnPartialMatchDollar = TRUE)`). `d[[\"pri\"]]` doesn’t match partially. Write full names. Tibbles don’t partially match either.",
       "**Row names.** Base data frames carry row names (by default 1, 2, 3…). After subsetting or sorting they keep the originals, which helps trace rows; `rownames(d) <- NULL` resets them. Tibbles drop row names, and `write.csv()` writes them as an extra first column unless you add `row.names = FALSE`.",
-      "**Tibbles.** The tidyverse’s `tibble` is a data frame with stricter, friendlier behaviour: it prints only what fits with column types shown, never converts strings, and doesn’t partially match. Most base functions accept tibbles; occasionally old code relying on `drop` behaves differently. Data Carpentry’s R lesson reads data with readr and so works with tibbles throughout.",
+      "**Tibbles.** The tidyverse’s `tibble` is a data frame with stricter, friendlier behavior: it prints only what fits with column types shown, never converts strings, and doesn’t partially match. Most base functions accept tibbles; occasionally old code relying on `drop` behaves differently. Data Carpentry’s R lesson reads data with readr and so works with tibbles throughout.",
       "**Factor pitfalls.** `as.numeric()` on a factor returns the level codes (1, 2, 3…), not the numbers in the labels: use `as.numeric(as.character(f))`. Levels not present still show up in `table()` with count 0, which is useful for survey answers nobody chose; `droplevels()` removes them."
      ]},
     related:["r-objects-vectors","reading-csv-r","summary-stats-r","tidy-data-principles","tidyverse"],
@@ -1026,7 +1026,7 @@ ICA.addUnit({
         ["`read.csv(text = \"…\")`","Data typed or pasted straight into the code"]
       ]},
       "**Useful arguments.** `na.strings = c(\"\", \"NA\", \"n/a\", \"-99\")` lists the codes that mean missing. `header = FALSE` if there’s no header row. `skip = 2` skips lines at the top (titles, notes). `fileEncoding = \"UTF-8\"` (or `\"UTF-8-BOM\"`, for a file with a byte-order mark) helps with accented letters.",
-      "**Signs of trouble.** A numeric column read as `chr` contains some text (units, notes, decimal commas). One giant column means the wrong separator. An odd first column name such as `X...id` or `ï..id` points to a byte-order mark ([[byte-order-mark|BOM]], Unit 2) that R didn’t recognise; add `fileEncoding = \"UTF-8-BOM\"`. (R in a UTF-8 setting, as on macOS, Linux and Windows since R 4.2, skips a BOM by itself.) `cannot open the connection` with the warning `No such file or directory` means a wrong name or working directory.",
+      "**Signs of trouble.** A numeric column read as `chr` contains some text (units, notes, decimal commas). One giant column means the wrong separator. An odd first column name such as `X...id` or `ï..id` points to a byte-order mark ([[byte-order-mark|BOM]], Unit 2) that R didn’t recognize; add `fileEncoding = \"UTF-8-BOM\"`. (R in a UTF-8 setting, as on macOS, Linux and Windows since R 4.2, skips a BOM by itself.) `cannot open the connection` with the warning `No such file or directory` means a wrong name or working directory.",
       "**A checking routine.** After every read: `str()` (are the types right?), `nrow()` (all rows there?), `summary()` (impossible values, NA counts) and `head()` (do the values look like the file?). Two minutes here saves hours later.",
       "**Writing out.** `write.csv(results, \"results.csv\", row.names = FALSE)` saves a data frame. Without `row.names = FALSE`, R adds the row numbers as an extra unnamed first column. Write results to a separate file (or an output folder), never over the raw data."
      ],
@@ -1057,7 +1057,7 @@ ICA.addUnit({
      builder:[
       {table:[
         ["Task","Base R"],
-        ["Centre","`mean(x)`, `median(x)`"],
+        ["Center","`mean(x)`, `median(x)`"],
         ["Spread","`sd(x)`, `var(x)`, `IQR(x)`, `range(x)`"],
         ["Percentiles","`quantile(x, c(0.1, 0.9))`"],
         ["Counts / shares","`table(x)`, `prop.table(table(x))`"],
@@ -1075,7 +1075,7 @@ ICA.addUnit({
       "**summary(fit)** adds standard errors, t values, p-values, the residual standard error and R². Unit 7 of this track explains them ({{linear-regression}}). Check residuals before trusting any of it: `plot(fit)` draws four diagnostic plots; patterns in residuals (curves, groups above or below the line) mean the straight line is missing something, like the hill route in this unit’s example.",
       "**More than one predictor.** `lm(minutes ~ km + route, data = walks)` fits separate intercepts for each route (R turns the text column into indicator variables, with the first level as the baseline). Interpreting such models needs care, and is beyond this unit.",
       "**Formula notation.** `y ~ x` appears across R: `lm()`, `aggregate()`, `boxplot()`, `t.test(y ~ g, data = d)`. The left side is the outcome, the right the predictors or groups; `.` means “all other columns”.",
-      "**Several summaries per group.** `aggregate(cbind(minutes, km) ~ route, data = walks, FUN = mean)` summarises several columns at once. `split(d$y, d$g)` returns a list of pieces for anything more complex, and `sapply(split(d$y, d$g), median)` applies a function to each. In the tidyverse, `group_by()` and `summarise()` do this job ({{grouped-summaries}}).",
+      "**Several summaries per group.** `aggregate(cbind(minutes, km) ~ route, data = walks, FUN = mean)` summarizes several columns at once. `split(d$y, d$g)` returns a list of pieces for anything more complex, and `sapply(split(d$y, d$g), median)` applies a function to each. In the tidyverse, `group_by()` and `summarize()` do this job ({{grouped-summaries}}).",
       "**Weighted and robust choices.** `weighted.mean(x, w)` for weighted averages (Unit 1’s {{averages-misleading}}); `mean(x, trim = 0.1)` for a trimmed mean; `mad()` for a robust spread. Choose the measure for the question, then say which you used.",
       "**Correlation caveats.** Pearson’s r measures straight-line association only and is sensitive to outliers; Spearman’s works on ranks. `cor.test(x, y)` adds a confidence interval and p-value. Neither tells you about cause, and a small sample gives an unstable r."
      ]},
@@ -1085,7 +1085,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"base-plots-r", title:"Base R charts", aka:["hist()","boxplot()","plot()","barplot()","abline()","base graphics","main","xlab","ylab","png()","dev.off()","saving a chart in R"], tags:["charts","data","coding"],
-    summary:"Drawing histograms, boxplots, scatterplots and bar charts with base R, labelling them properly, and saving them as image files.",
+    summary:"Drawing histograms, boxplots, scatterplots and bar charts with base R, labeling them properly, and saving them as image files.",
     levels:{
      starter:[
       "Base R draws a chart with one line:",
@@ -1104,7 +1104,7 @@ ICA.addUnit({
       {table:[
         ["Argument","Does"],
         ["`main`, `xlab`, `ylab`","Title and axis labels"],
-        ["`col`, `border`","Fill and outline colours, e.g. `col = \"grey\"`"],
+        ["`col`, `border`","Fill and outline colors, e.g. `col = \"gray\"`"],
         ["`breaks`","Histogram bins: a number (a suggestion) or exact cut points"],
         ["`pch`, `cex`","Point symbol (19 = solid dot) and size in plot()"],
         ["`xlim`, `ylim`","Axis ranges, e.g. `ylim = c(0, 100)`"],
@@ -1115,13 +1115,13 @@ ICA.addUnit({
       {code:['png("pace.png", width = 800, height = 600)','boxplot(pace ~ route, data = walks,','  main = "Pace by route", ylab = "Minutes per km")','dev.off()'].join("\n"), lang:"r"},
       "`pdf()` and `svg()` work the same way and give sharp vector images for reports. The file lands in the working directory.",
       "**Formula style.** `boxplot()` and `plot()` also accept a formula and a data frame, which saves typing `$`: `plot(minutes ~ km, data = walks)` draws the same scatterplot as `plot(walks$km, walks$minutes)` (outcome on the left, as in `lm()`).",
-      "**Choosing.** A histogram for one distribution’s shape; boxplots to compare groups (say how many values each box summarises); a scatterplot for two numeric variables; bars for counts. Unit 4’s {{chart-types}} has the full guide."
+      "**Choosing.** A histogram for one distribution’s shape; boxplots to compare groups (say how many values each box summarizes); a scatterplot for two numeric variables; bars for counts. Unit 4’s {{chart-types}} has the full guide."
      ],
      pro:[
       "**Several charts at once.** `par(mfrow = c(1, 2))` puts the next two charts side by side; `par(mfrow = c(1, 1))` returns to one. `par()` controls margins (`mar`), text size and more; it lasts until changed or the device closes.",
       "**Histogram bins.** `breaks = 10` is only a suggestion (R picks “pretty” cut points near it); give exact cut points with `breaks = seq(20, 90, by = 10)`. R’s bins include the right end by default (`right = TRUE`: 20 < x ≤ 30). `hist(x, plot = FALSE)` returns the breaks and counts without drawing, handy for checking.",
       "**Small groups in boxplots.** With fewer than about ten values, a boxplot hides how few points there are. Add them: `stripchart(pace ~ route, data = walks, vertical = TRUE, add = TRUE, pch = 19)`, or use `stripchart()` alone. Show the data where you can.",
-      "**Colour and accessibility.** `palette.colors()` (R 4.0 and later) gives the Okabe–Ito palette, designed to be distinguishable with common colour-vision deficiencies; `hcl.colors(5, \"viridis\")` gives a sequential palette. Don’t rely on colour alone, and give every published chart alt text and a short data table or summary (Unit 4, {{colour-in-charts}}).",
+      "**Color and accessibility.** `palette.colors()` (R 4.0 and later) gives the Okabe–Ito palette, designed to be distinguishable with common color-vision deficiencies; `hcl.colors(5, \"viridis\")` gives a sequential palette. Don’t rely on color alone, and give every published chart alt text and a short data table or summary (Unit 4, {{colour-in-charts}}).",
       "**Base graphics vs ggplot2.** R for Data Science notes many people use ggplot2 for its defaults, automatic legends and layered grammar, while base plots stay useful because they’re so concise for quick looks. Base graphics draw immediately and can’t be changed afterwards except by redrawing; ggplot2 builds a plot object you can modify and save ({{ggplot2-basics}}, Unit 9)."
      ]},
     related:["chart-types","distributions","boxplots","correlation-coefficient","summary-stats-r","ggplot2-basics"],
@@ -1138,7 +1138,7 @@ ICA.addUnit({
         ["Message","Usually means"],
         ["`object 'x' not found`","A misspelt name, wrong capitals, or a line not run yet"],
         ["`could not find function \"f\"`","A misspelt function, or a package not loaded"],
-        ["`non-numeric argument to binary operator`","Maths on text"],
+        ["`non-numeric argument to binary operator`","Math on text"],
         ["`unexpected symbol` / `','` / `')'`","A missing operator or comma, or a stray one"],
         ["`unexpected end of input`","An unclosed bracket or quote"]
       ]},
@@ -1217,9 +1217,9 @@ ICA.addUnit({
      {t:"Shows what your code prints", why:"That’s what ▶ Run does (Check shows output too, but its job is testing)."},
      {t:"Shows one correct answer", why:"That’s Show an answer."},
      {t:"Puts the starting code back", why:"That’s Start again."}]},
-   {id:"t3u7-q06", lesson:"t3u7-l1", level:3, q:"Lucía works with patient records at a clinic and wants to practise R on them. Which choice keeps the data on her own computer?", options:[
-     {t:"R and RStudio Desktop on her work computer, if allowed", ok:true, why:"With desktop R the data stays on the machine. Clinic data is sensitive, so she should also follow her organisation’s rules."},
-     {t:"Uploading the records to Posit Cloud", why:"Posit Cloud stores files on Posit’s servers, so the data leaves her computer; only do that if her organisation has agreed."},
+   {id:"t3u7-q06", lesson:"t3u7-l1", level:3, q:"Lucía works with patient records at a clinic and wants to practice R on them. Which choice keeps the data on her own computer?", options:[
+     {t:"R and RStudio Desktop on her work computer, if allowed", ok:true, why:"With desktop R the data stays on the machine. Clinic data is sensitive, so she should also follow her organization’s rules."},
+     {t:"Uploading the records to Posit Cloud", why:"Posit Cloud stores files on Posit’s servers, so the data leaves her computer; only do that if her organization has agreed."},
      {t:"Emailing the file to herself to use on her phone instead", why:"Email sends the data through other servers; it doesn’t keep it on her computer."},
      {t:"Any option: R data is always encrypted", why:"R doesn’t encrypt your data; where it’s stored depends on how you run R."}]},
    {id:"t3u7-q07", lesson:"t3u7-l1", level:1, q:"What is CRAN?", options:[
@@ -1385,7 +1385,7 @@ ICA.addUnit({
      {t:"The chart’s title", ok:true, why:"main is the title; xlab and ylab label the axes."},
      {t:"The x-axis label", why:"That’s xlab."},
      {t:"The number of bars", why:"That’s breaks."},
-     {t:"The colour of the bars", why:"Colour is set with the col argument."}]},
+     {t:"The color of the bars", why:"Color is set with the col argument."}]},
    {id:"t3u7-q39", lesson:"t3u7-l5", level:2, q:"Which base R chart best compares the spread of test scores across three classes?", options:[
      {t:"`boxplot(score ~ class, data = d)`", ok:true, why:"One box per class shows each group’s median, quartiles and range side by side."},
      {t:"`hist(d$score)`", why:"One histogram mixes all classes together."},

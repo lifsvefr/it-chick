@@ -121,7 +121,7 @@ ICA.addUnit({
       "At the Kanji Lab’s default of 10 new cards a day, the N3 kanji deck takes 37 days to introduce every card. The reviews continue after that, and they get shorter as the cards settle. Forgetting is normal and expected: a card you miss simply comes back sooner.",
       {
        "lab": "kl-n3",
-       "t": "Practise: start the N3 kanji deck (10 new kanji a day)"
+       "t": "Practice: start the N3 kanji deck (10 new kanji a day)"
       }
      ]
     },
@@ -531,7 +531,7 @@ ICA.addUnit({
          "老",
          "old man, old age",
          "On ロウ · Kun お(いる), ふ(ける)",
-         "[老]{ろう}[人]{じん} old person; senior citizen · [老]{お}い old age; ageing"
+         "[老]{ろう}[人]{じん} old person; senior citizen · [老]{お}い old age; aging"
         ],
         [
          "若",
@@ -876,7 +876,7 @@ ICA.addUnit({
       },
       {
        "lab": "kl-n3",
-       "t": "Practise: today’s N3 kanji review"
+       "t": "Practice: today’s N3 kanji review"
       }
      ]
     }
@@ -1076,7 +1076,7 @@ ICA.addUnit({
       },
       {
        "t": "[奥]{おく}さん",
-       "why": "[奥]{おく}さん is the polite word for someone else’s wife. Using it for your own wife sounds like you are honouring your own side."
+       "why": "[奥]{おく}さん is the polite word for someone else’s wife. Using it for your own wife sounds like you are honoring your own side."
       },
       {
        "t": "[夫]{おっと}",
@@ -1230,13 +1230,13 @@ ICA.addUnit({
          "働",
          "work",
          "On ドウ · Kun はたら(く)",
-         "[労]{ろう}[働]{どう} labor; labour · [働]{はたら}く to work; to labor"
+         "[労]{ろう}[働]{どう} labor; labor · [働]{はたら}く to work; to labor"
         ],
         [
          "労",
          "labor, toil",
          "On ロウ · Kun いたわ(る)",
-         "[労]{ろう}[働]{どう} labor; labour · [苦]{く}[労]{ろう} trouble; hardship"
+         "[労]{ろう}[働]{どう} labor; labor · [苦]{く}[労]{ろう} trouble; hardship"
         ],
         [
          "努",
@@ -1332,7 +1332,7 @@ ICA.addUnit({
          "組",
          "construct, association",
          "On ソ · Kun くみ, く(む)",
-         "[番]{ばん}[組]{ぐみ} program; programme · [組]{く}む to put together; to construct"
+         "[番]{ばん}[組]{ぐみ} program; program · [組]{く}む to put together; to construct"
         ],
         [
          "関",
@@ -1344,7 +1344,7 @@ ICA.addUnit({
          "機",
          "mechanism, machine",
          "On キ",
-         "[飛]{ひ}[行]{こう}[機]{き} airplane; aeroplane · [機]{き}[会]{かい} chance; opportunity"
+         "[飛]{ひ}[行]{こう}[機]{き} airplane; airplane · [機]{き}[会]{かい} chance; opportunity"
         ],
         [
          "構",
@@ -1630,13 +1630,13 @@ ICA.addUnit({
          "犯",
          "crime, sin",
          "On ハン · Kun おか(す)",
-         "[犯]{はん}[罪]{ざい} crime; offence · [犯]{はん}[人]{にん} offender; criminal"
+         "[犯]{はん}[罪]{ざい} crime; offense · [犯]{はん}[人]{にん} offender; criminal"
         ],
         [
          "罪",
          "guilt, sin",
          "On ザイ · Kun つみ",
-         "[犯]{はん}[罪]{ざい} crime; offence · [罪]{つみ} crime; sin"
+         "[犯]{はん}[罪]{ざい} crime; offense · [罪]{つみ} crime; sin"
         ],
         [
          "害",
@@ -1688,7 +1688,7 @@ ICA.addUnit({
         ],
         [
          "[市]{し}[民]{みん}の７[割]{わり}が[賛]{さん}[成]{せい}",
-         "70% of residents are in favour. 〜[割]{わり} is tenths: ７[割]{わり} is 70%."
+         "70% of residents are in favor. 〜[割]{わり} is tenths: ７[割]{わり} is 70%."
         ]
        ]
       },
@@ -1742,7 +1742,7 @@ ICA.addUnit({
          "号",
          "number, item",
          "On ゴウ",
-         "[番]{ばん}[号]{ごう} number; series of digits · [信]{しん}[号]{ごう} signal; signalling"
+         "[番]{ばん}[号]{ごう} number; series of digits · [信]{しん}[号]{ごう} signal; signaling"
         ],
         [
          "談",
@@ -1924,7 +1924,7 @@ ICA.addUnit({
       "Notice the work set phrases: お[疲]{つか}れさまです opens most emails between colleagues, and よろしくお[願]{ねが}いします closes them. [皆]{みな}さん is the greeting line, and [件]{けん}名 (subject) is the subject line.",
       {
        "lab": "kl-n3-vocab",
-       "t": "Practise: the N3 words deck, with many of this lesson’s kango"
+       "t": "Practice: the N3 words deck, with many of this lesson’s kango"
       }
      ]
     }
@@ -2194,7 +2194,7 @@ ICA.addUnit({
       "how": [
        "Open a Japanese news site for learners or a newspaper website, or use the headlines on a news app.",
        "Choose five headlines. For each one, find the noun at the end, then the を or が before it.",
-       "Write what each one says in one English sentence, and list the N3 kanji you recognised."
+       "Write what each one says in one English sentence, and list the N3 kanji you recognized."
       ],
       "write": "1… 2… 3… 4… 5…"
      },
@@ -2485,7 +2485,7 @@ ICA.addUnit({
          "飛",
          "fly, skip (pages)",
          "On ヒ · Kun と(ぶ), と(ばす)",
-         "[飛]{ひ}[行]{こう}[機]{き} airplane; aeroplane · [飛]{と}ぶ to fly; to soar"
+         "[飛]{ひ}[行]{こう}[機]{き} airplane; airplane · [飛]{と}ぶ to fly; to soar"
         ],
         [
          "遊",
@@ -2967,7 +2967,7 @@ ICA.addUnit({
       },
       {
        "lab": "kl-n3",
-       "t": "Practise: today’s N3 kanji review"
+       "t": "Practice: today’s N3 kanji review"
       }
      ]
     }
@@ -3300,7 +3300,7 @@ ICA.addUnit({
          "覚",
          "memorize, remember",
          "On カク · Kun おぼ(える), さ(ます), さ(める)",
-         "[感]{かん}[覚]{かく} sense; sensation · [覚]{おぼ}える to memorize; to memorise"
+         "[感]{かん}[覚]{かく} sense; sensation · [覚]{おぼ}える to memorize; to memorize"
         ],
         [
          "忘",
@@ -3330,19 +3330,19 @@ ICA.addUnit({
          "認",
          "acknowledge, recognize",
          "On ニン · Kun みと(める)",
-         "[確]{かく}[認]{にん} confirmation; verification · [認]{みと}める to recognize; to recognise"
+         "[確]{かく}[認]{にん} confirmation; verification · [認]{みと}める to recognize; to recognize"
         ],
         [
          "判",
-         "judgement, signature",
+         "judgment, signature",
          "On ハン, バン · Kun わか(る)",
-         "[判]{はん}[断]{だん} judgment; judgement · [裁]{さい}[判]{ばん} trial; judgement"
+         "[判]{はん}[断]{だん} judgment; judgment · [裁]{さい}[判]{ばん} trial; judgment"
         ],
         [
          "断",
          "severance, refuse",
          "On ダン · Kun ことわ(る), た(つ)",
-         "[判]{はん}[断]{だん} judgment; judgement · [断]{ことわ}る to refuse; to reject"
+         "[判]{はん}[断]{だん} judgment; judgment · [断]{ことわ}る to refuse; to reject"
         ],
         [
          "確",
@@ -3443,8 +3443,8 @@ ICA.addUnit({
       },
       "Four kanji come in front of a word to make its opposite. They are the most useful [[word-formation-kanji|word-building kanji]] at N3, and each has its own meaning:",
       {
-       "fig": "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"18\" text-anchor=\"middle\">Four ways to say “not”</text><rect class=\"d-lup\" x=\"8\" y=\"30\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"174\" y=\"30\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"8\" y=\"160\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-rose\" x=\"174\" y=\"160\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><text transform=\"translate(40 80) scale(2.2)\" text-anchor=\"middle\">不</text><text x=\"70\" y=\"62\">フ, ブ</text><text class=\"s\" x=\"70\" y=\"80\">not, un-</text><text x=\"20\" y=\"112\">不便 · 不安</text><text class=\"s\" x=\"20\" y=\"136\">the most common</text><text transform=\"translate(206 80) scale(2.2)\" text-anchor=\"middle\">無</text><text x=\"236\" y=\"62\">ム, ブ</text><text class=\"s\" x=\"236\" y=\"80\">without, no</text><text x=\"186\" y=\"112\">無料 · 無理</text><text class=\"s\" x=\"186\" y=\"136\">there is none</text><text transform=\"translate(40 210) scale(2.2)\" text-anchor=\"middle\">未</text><text x=\"70\" y=\"192\">ミ</text><text class=\"s\" x=\"70\" y=\"210\">not yet</text><text x=\"20\" y=\"242\">未来 · 未定</text><text class=\"s\" x=\"20\" y=\"266\">but maybe later</text><text transform=\"translate(206 210) scale(2.2)\" text-anchor=\"middle\">非</text><text x=\"236\" y=\"192\">ヒ</text><text class=\"s\" x=\"236\" y=\"210\">non-, not as it</text><text class=\"s\" x=\"236\" y=\"226\">should be</text><text x=\"186\" y=\"248\">非常識</text><text class=\"s\" x=\"186\" y=\"268\">a judgement</text></svg>",
-       "alt": "Four boxes. 不, read フ or ブ: not, un-; 不便, 不安; the most common. 無, read ム or ブ: without, no; 無料, 無理; there is none. 未, read ミ: not yet; 未来, 未定; but maybe later. 非, read ヒ: non-, not as it should be; 非常識; a judgement.",
+       "fig": "<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"18\" text-anchor=\"middle\">Four ways to say “not”</text><rect class=\"d-lup\" x=\"8\" y=\"30\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"174\" y=\"30\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"8\" y=\"160\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><rect class=\"d-rose\" x=\"174\" y=\"160\" width=\"158\" height=\"120\" rx=\"8\" stroke-width=\"1.5\"/><text transform=\"translate(40 80) scale(2.2)\" text-anchor=\"middle\">不</text><text x=\"70\" y=\"62\">フ, ブ</text><text class=\"s\" x=\"70\" y=\"80\">not, un-</text><text x=\"20\" y=\"112\">不便 · 不安</text><text class=\"s\" x=\"20\" y=\"136\">the most common</text><text transform=\"translate(206 80) scale(2.2)\" text-anchor=\"middle\">無</text><text x=\"236\" y=\"62\">ム, ブ</text><text class=\"s\" x=\"236\" y=\"80\">without, no</text><text x=\"186\" y=\"112\">無料 · 無理</text><text class=\"s\" x=\"186\" y=\"136\">there is none</text><text transform=\"translate(40 210) scale(2.2)\" text-anchor=\"middle\">未</text><text x=\"70\" y=\"192\">ミ</text><text class=\"s\" x=\"70\" y=\"210\">not yet</text><text x=\"20\" y=\"242\">未来 · 未定</text><text class=\"s\" x=\"20\" y=\"266\">but maybe later</text><text transform=\"translate(206 210) scale(2.2)\" text-anchor=\"middle\">非</text><text x=\"236\" y=\"192\">ヒ</text><text class=\"s\" x=\"236\" y=\"210\">non-, not as it</text><text class=\"s\" x=\"236\" y=\"226\">should be</text><text x=\"186\" y=\"248\">非常識</text><text class=\"s\" x=\"186\" y=\"268\">a judgment</text></svg>",
+       "alt": "Four boxes. 不, read フ or ブ: not, un-; 不便, 不安; the most common. 無, read ム or ブ: without, no; 無料, 無理; there is none. 未, read ミ: not yet; 未来, 未定; but maybe later. 非, read ヒ: non-, not as it should be; 非常識; a judgment.",
        "cap": "Each word takes one prefix by habit: you can say 不[便]{べん} but not 無便. Learn the whole word."
       },
       {
@@ -3481,7 +3481,7 @@ ICA.addUnit({
         "**不** is the general “not”, and the most common: 不[便]{べん} is “not convenient”.",
         "**無** says something is missing: [無]{む}料 is “no fee”, [無]{む}[責]{せき}[任]{にん} “no sense of responsibility”. In [無]{ぶ}事 (safely, without trouble) it is read ブ.",
         "**未** says it hasn’t happened yet but may: [未]{み}[定]{てい} (not decided yet) promises a decision later.",
-        "**非** often carries a judgement or a category: [非]{ひ}[常]{じょう}[識]{しき} is behaviour that goes against common sense, and [非]{ひ}公[式]{しき} is unofficial. [非]{ひ}[常]{じょう} (emergency) is literally “not usual”, and [非]{ひ}[常]{じょう}に (very, extremely) comes from it."
+        "**非** often carries a judgment or a category: [非]{ひ}[常]{じょう}[識]{しき} is behavior that goes against common sense, and [非]{ひ}公[式]{しき} is unofficial. [非]{ひ}[常]{じょう} (emergency) is literally “not usual”, and [非]{ひ}[常]{じょう}に (very, extremely) comes from it."
        ]
       },
       {
@@ -3931,7 +3931,7 @@ ICA.addUnit({
         [
          "[十]{じゅう}[人]{にん}[十]{と}[色]{いろ}",
          "じゅうにんといろ",
-         "ten people, ten colours: everyone is different"
+         "ten people, ten colors: everyone is different"
         ],
         [
          "半[信]{しん}半[疑]{ぎ}",
@@ -3984,7 +3984,7 @@ ICA.addUnit({
       },
       {
        "lab": "kl-n3-vocab",
-       "t": "Practise: today’s N3 words review"
+       "t": "Practice: today’s N3 words review"
       }
      ]
     }
@@ -4256,7 +4256,7 @@ ICA.addUnit({
       "write": "1… 2… 3… 4… 5…"
      },
      {
-      "t": "Your favourite [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご}",
+      "t": "Your favorite [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご}",
       "how": [
        "Choose one idiom from the table that fits your own life.",
        "Write two or three sentences about a time it was true for you.",
@@ -4265,7 +4265,7 @@ ICA.addUnit({
       "write": "私の[好]{す}きな[四]{よ}[字]{じ}[熟]{じゅく}[語]{ご}は…"
      }
     ],
-    "proof": "A four-column prefix notebook, five 〜的 sentence pairs, and a short text with your favourite [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご}."
+    "proof": "A four-column prefix notebook, five 〜的 sentence pairs, and a short text with your favorite [四]{よ}[字]{じ}[熟]{じゅく}[語]{ご}."
    },
    "read": [
     {
@@ -4441,7 +4441,7 @@ ICA.addUnit({
          "暗",
          "darkness",
          "On アン · Kun くら(い)",
-         "[暗]{あん}[記]{き} memorization; memorisation · [暗]{くら}い dark; gloomy"
+         "[暗]{あん}[記]{き} memorization; memorization · [暗]{くら}い dark; gloomy"
         ],
         [
          "遠",
@@ -4589,7 +4589,7 @@ ICA.addUnit({
          "港",
          "harbor",
          "On コウ · Kun みなと",
-         "[空]{くう}[港]{こう} airport · [港]{みなと} harbour; harbor"
+         "[空]{くう}[港]{こう} airport · [港]{みなと} harbor; harbor"
         ],
         [
          "路",
@@ -5053,11 +5053,11 @@ ICA.addUnit({
       "Missed a few days? Don’t restart. Do your reviews first, keep the new cards at 5 a day for a week, and the backlog clears. Forgetting and relearning is part of how memory works; every review that brings a kanji back makes it last longer.",
       {
        "lab": "kl-n3",
-       "t": "Practise: today’s N3 kanji review"
+       "t": "Practice: today’s N3 kanji review"
       },
       {
        "lab": "kl-n3-vocab",
-       "t": "Practise: add the N3 words deck"
+       "t": "Practice: add the N3 words deck"
       }
      ]
     }
@@ -5410,7 +5410,7 @@ ICA.addUnit({
     {id:"e3u11-cp10", lesson:"e3u11-l4", level:2, q:"Kaito helps a friend choose a flat. One is near the station but noisy; the other is quiet but far from the shops. Which idiom fits? 「どっちも（　）だね。」", options:[
       {t:"[一長一短]{いっちょういったん}", ok:true, why:"One strong point, one weak point: each flat has a good side and a bad side."},
       {t:"[一石二鳥]{いっせきにちょう}", why:"One stone, two birds: one action gives two good results. Here each flat has one good and one bad point."},
-      {t:"[十人十色]{じゅうにんといろ}", why:"Ten people, ten colours: everyone is different. It is about people, not about choosing between things."},
+      {t:"[十人十色]{じゅうにんといろ}", why:"Ten people, ten colors: everyone is different. It is about people, not about choosing between things."},
       {t:"[自業自得]{じごうじとく}", why:"You reap what you sow: a bad result that is your own fault. Nobody has done anything wrong here."}]},
     {id:"e3u11-cp11", lesson:"e3u11-l5", level:1, q:"Cheska hears that her friend’s plane has landed safely. She says 「ああ、ほっとした。」 How does she feel?", options:[
       {t:"Nervous, with her heart pounding", why:"A pounding heart is ドキドキ. ほっと is the feeling after a worry ends."},
@@ -5442,7 +5442,7 @@ ICA.addUnit({
    "levels": {
     "starter": [
      "Common JLPT N3 lists add about 370 kanji to the 80 of N5 and the 167 of N4. The list used in this course and its Kanji Lab has exactly 370, so at N3 you know 617 kanji in all. With them you can read everyday texts on familiar topics and get the gist of news headlines, which is how the JLPT describes N3 reading.",
-     "They are still everyday kanji: most are taught in Japanese primary school, and many write words you can already say, such as [忙]{いそが}しい (busy), [約]{やく}[束]{そく} (promise) and [番]{ばん}[組]{ぐみ} (TV programme). Compared with N4, many more are about work, money, society and the news.",
+     "They are still everyday kanji: most are taught in Japanese primary school, and many write words you can already say, such as [忙]{いそが}しい (busy), [約]{やく}[束]{そく} (promise) and [番]{ばん}[組]{ぐみ} (TV program). Compared with N4, many more are about work, money, society and the news.",
      "Learn them through words, in meaning groups, with their parts, and a little every day in the Kanji Lab ({{n3-kanji-strategies}}). The JLPT itself has published no kanji list since 2010, so other N3 lists differ by a few kanji ({{jlpt-overview}}).",
      {
       "key": "370 new kanji, 617 in all: learn them in groups, through words, ten a day."
@@ -5502,7 +5502,7 @@ ICA.addUnit({
        ],
        [
         "Knowing, judging and observing (L4)",
-        "覚 memorize · 忘 forget · 慣 accustomed · 識 know · 解 solve · 認 acknowledge · 判 judgement · 断 severance · 確 assurance · 調 investigate · 例 example · 誤 mistake · 観 outlook · 科 department"
+        "覚 memorize · 忘 forget · 慣 accustomed · 識 know · 解 solve · 認 acknowledge · 判 judgment · 断 severance · 確 assurance · 調 investigate · 例 example · 誤 mistake · 観 outlook · 科 department"
        ],
        [
         "Word builders (L4)",
@@ -5568,7 +5568,7 @@ ICA.addUnit({
      "url": "https://www.jlpt.jp/e/faq/index.html"
     },
     {
-     "t": "EDRDG licence statement (KANJIDIC2 and JMdict, CC BY-SA 4.0)",
+     "t": "EDRDG license statement (KANJIDIC2 and JMdict, CC BY-SA 4.0)",
      "url": "https://www.edrdg.org/edrdg/licence.html"
     }
    ],
@@ -5694,7 +5694,7 @@ ICA.addUnit({
       ]
      },
      "Meaning-part families are just as useful. At N3, 亻 (person) has 21 kanji, 辶 (moving) 19, 氵 (water) and 忄/心 (heart) 15 each, 宀 (roof) 15 and 扌 (hand) 12. A part page in your notebook (the part, its name, its hint and its kanji with one word each) is a good way to review a whole family at once.",
-     "**How to build a family page:** write the shared part at the top; add each kanji with its on reading and one word; mark the exceptions in another colour. Add new members as you meet them at N2."
+     "**How to build a family page:** write the shared part at the top; add each kanji with its on reading and one word; mark the exceptions in another color. Add new members as you meet them at N2."
     ],
     "pro": [
      "**Phono-semantic compounds.** Kanji made of a meaning part and a sound part are called [形]{けい}[声]{せい}[文]{も}[字]{じ}, phono-semantic compounds. They are by far the largest group of Chinese characters, far more than pictographs such as 山 or 木. The sound part came from the Chinese reading of the time, so it predicts the Japanese on reading, which was borrowed from Chinese, and not the kun reading, which is native Japanese.",
@@ -5715,7 +5715,7 @@ ICA.addUnit({
      "url": "https://en.wikipedia.org/wiki/Chinese_character_classification"
     },
     {
-     "t": "EDRDG licence statement (KANJIDIC2, CC BY-SA 4.0)",
+     "t": "EDRDG license statement (KANJIDIC2, CC BY-SA 4.0)",
      "url": "https://www.edrdg.org/edrdg/licence.html"
     }
    ],
@@ -5901,7 +5901,7 @@ ICA.addUnit({
     ],
     "pro": [
      "**Which prefix?** The four negative prefixes are not interchangeable, and each word has its own by convention. Some bases take two prefixes with different meanings: [未]{み}[定]{てい} (not decided yet) and 不[定]{てい}[期]{き} (irregular, not on a fixed schedule). A few words with 不 are read ブ (不気味, eerie), and 無 is ブ in [無]{ぶ}事.",
-     "**Suffixes have limits.** 〜的 attaches mainly to kango nouns, and only some combinations are established words; an invented 〜的 word can sound odd or comic, and the casual [私]{わたし}[的]{てき}には (as for me) is slang. 〜[化]{か} words are common in the news for social trends: 少子[化]{か} (falling birth rate), 高[齢]{れい}[化]{か} (ageing population).",
+     "**Suffixes have limits.** 〜的 attaches mainly to kango nouns, and only some combinations are established words; an invented 〜的 word can sound odd or comic, and the casual [私]{わたし}[的]{てき}には (as for me) is slang. 〜[化]{か} words are common in the news for social trends: 少子[化]{か} (falling birth rate), 高[齢]{れい}[化]{か} (aging population).",
      "**Reading new kango.** For a new two-kanji word, try the most common on reading of each kanji, then check: on readings change at the join (sound changes such as [失]{しっ}[敗]{ぱい}, 一[杯]{ぱい}), and some words use a less common reading ([無]{ぶ}事, [留]{る}[守]{す}).",
      "**Register.** Kango are the backbone of written Japanese. Overusing them in conversation sounds stiff; using wago in a formal report sounds too casual. At N3, read the kango and speak with the wago; the Academic Japanese track ({{kango-and-wago}}) teaches when to write which."
     ]
@@ -6055,7 +6055,7 @@ ICA.addUnit({
     ],
     "builder": [
      "**A week with the Kanji Lab.** Each day: reviews first (they are what keep old kanji), then 10 new cards. Once a week, read a short real text and collect five new words with N3 kanji. At 10 a day, the 370 N3 kanji take 37 days to introduce; the reviews keep going and get shorter as cards settle.",
-     "**Write a little, too.** You do not need to write every kanji from memory at N3 (the JLPT asks you to recognise the right kanji, not to write it by hand), but writing a new kanji a few times, in the right stroke order, helps you see its parts.",
+     "**Write a little, too.** You do not need to write every kanji from memory at N3 (the JLPT asks you to recognize the right kanji, not to write it by hand), but writing a new kanji a few times, in the right stroke order, helps you see its parts.",
      "**Memory stories** work best when they use the real parts and a vivid image: 困 is a tree (木) stuck in a box; 忘 is a heart (心) that is lost (亡): forget; 鳴 is a bird (鳥) with a mouth (口): to cry. They are memory aids, not the history of the kanji, so keep them short and drop them once the kanji is familiar.",
      "**When you forget:** that is normal. A card you miss comes back sooner, and each time you relearn it, it lasts longer. If you miss several days, do the reviews first and cut new cards to 5 a day until you have caught up."
     ],
@@ -6494,7 +6494,7 @@ ICA.addUnit({
      "why": "Rules are [規]{き}[則]{そく}, pay is [給]{きゅう}料. None of these are in the word."
     },
     {
-     "t": "Broadcasting, news and programmes",
+     "t": "Broadcasting, news and programs",
      "why": "Those are [放]{ほう}送, ニュース and [番]{ばん}[組]{ぐみ}. 報 here is [報]{ほう}[告]{こく}, reporting."
     }
    ]
@@ -6544,7 +6544,7 @@ ICA.addUnit({
      "why": "Friday at 2 p.m. is the new meeting time. He must tell her by Wednesday."
     },
     {
-     "t": "Nothing: the meeting was cancelled.",
+     "t": "Nothing: the meeting was canceled.",
      "why": "[変]{へん}[更]{こう} is a change, not a cancellation (中止)."
     }
    ]
@@ -6644,8 +6644,8 @@ ICA.addUnit({
      "why": "Sending is 送る; this sentence has [遅]{おく}れる, be late, and the subject is the train."
     },
     {
-     "t": "The meeting was cancelled because of the rain.",
-     "why": "Nothing was cancelled. The rain delayed the train."
+     "t": "The meeting was canceled because of the rain.",
+     "why": "Nothing was canceled. The rain delayed the train."
     }
    ]
   },
@@ -6845,7 +6845,7 @@ ICA.addUnit({
     },
     {
      "t": "[非]{ひ}[常]{じょう}[識]{しき}",
-     "why": "[非]{ひ}[常]{じょう}[識]{しき} is lacking common sense, a judgement of behaviour."
+     "why": "[非]{ひ}[常]{じょう}[識]{しき} is lacking common sense, a judgment of behavior."
     }
    ]
   },
@@ -6933,7 +6933,7 @@ ICA.addUnit({
     {
      "t": "[十]{じゅう}[人]{にん}[十]{と}[色]{いろ}",
      "ok": true,
-     "why": "Right. Ten people, ten colours: everyone is different, even in one family."
+     "why": "Right. Ten people, ten colors: everyone is different, even in one family."
     },
     {
      "t": "一[石]{せき}二鳥",

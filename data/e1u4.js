@@ -3,7 +3,7 @@ ICA.addUnit({
   id:"e1u4", track:"e1", n:4, title:"Listening and speaking for study", icon:"🎤",
   blurb:"Follow lectures by hearing their signposts and taking fast notes; take part in seminars with the right phrases at the right strength; present and answer questions in English; work on the parts of pronunciation that matter for being understood; and use office hours, World Englishes and free listening resources. The unit ends with a send-off to Academic Japanese.",
   goals:[
-    "Follow a lecture by recognising its signposts, predicting what comes next and taking fast notes with abbreviations and symbols",
+    "Follow a lecture by recognizing its signposts, predicting what comes next and taking fast notes with abbreviations and symbols",
     "Join seminar discussions: take turns, agree, disagree and build on points politely, soften where it helps and ask for clarification",
     "Use the language of each stage of an academic presentation, describe charts accurately and handle questions calmly",
     "Improve intelligibility, not “native-likeness”, by working on word stress, sentence stress, chunking, pausing and intonation",
@@ -17,9 +17,9 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u4-l1", title:"Understanding lectures", minutes:50,
-   hook:{q:"In a lecture you hear: “Anyway, going back to what I said about water prices…” What is most likely to happen next?", options:["A completely new topic starts","The lecturer returns to an earlier point after a side comment","The lecture is about to end","The lecturer is about to tell a joke"], answer:1, reveal:"**A return to an earlier point.** “Anyway” and “going back to” are signposts: they usually close a side comment (an aside) and bring the talk back to the main line. Lecturers use dozens of these signals, and recognising them is the most useful lecture skill there is. This lesson covers signposts, how speakers show what matters, predicting, fast note-taking with symbols, and what to do when you miss something."},
+   hook:{q:"In a lecture you hear: “Anyway, going back to what I said about water prices…” What is most likely to happen next?", options:["A completely new topic starts","The lecturer returns to an earlier point after a side comment","The lecture is about to end","The lecturer is about to tell a joke"], answer:1, reveal:"**A return to an earlier point.** “Anyway” and “going back to” are signposts: they usually close a side comment (an aside) and bring the talk back to the main line. Lecturers use dozens of these signals, and recognizing them is the most useful lecture skill there is. This lesson covers signposts, how speakers show what matters, predicting, fast note-taking with symbols, and what to do when you miss something."},
    goals:[
-     "Recognise signposts that preview, sequence, add, contrast, emphasise, digress, return and sum up",
+     "Recognise signposts that preview, sequence, add, contrast, emphasize, digress, return and sum up",
      "Notice how speakers show importance with voice, repetition and questions",
      "Prepare for a lecture so you can predict its content and key words",
      "Take fast notes with abbreviations and symbols, and use recordings and captions wisely"
@@ -131,19 +131,19 @@ ICA.addUnit({
     ]},
     {id:"e1u4-l1-x2", type:"mcq", listen:"e1u4-l1-a3", q:"After a short pause, Prof. Ōnishi says: “Right. So, now let’s turn to the second cause.” What does “Right. So, now” mainly do here?", options:[
       {t:"It marks the start of a new section of the lecture", ok:true, why:"“Right”, “so” and “now” are discourse markers. At the start of a sentence, after a pause, they usually close one part and open the next, and “let’s turn to” confirms it."},
-      {t:"It means the lecturer agrees with a student", why:"“Right” can mean “correct” in other contexts, but here nobody has said anything to agree with. At the start of a turn, after a pause, it organises the talk."},
+      {t:"It means the lecturer agrees with a student", why:"“Right” can mean “correct” in other contexts, but here nobody has said anything to agree with. At the start of a turn, after a pause, it organizes the talk."},
       {t:"It is meaningless filler that listeners can safely ignore", why:"These little words do a job: they tell listeners a boundary is coming. Treating them as filler means missing the structure."},
       {t:"It shows the lecture is ending", why:"“The second cause” shows there is more to come. Endings sound like “To sum up…” or “That’s all for today.”"}
     ]},
     {id:"e1u4-l1-x3", type:"sort", q:"Sort what you hear: does it usually signal **a main point to note** or **a side comment you can note briefly or skip**?", buckets:["Main point to note","Side comment"], items:[
       {t:"“If you remember one thing from today, remember this.”", b:0, why:"An explicit emphasis signal: the lecturer is telling you this matters most."},
-      {t:"“By the way, I once got lost in that city myself.”", b:1, why:"“By the way” plus a personal story: an aside that adds colour, not content."},
+      {t:"“By the way, I once got lost in that city myself.”", b:1, why:"“By the way” plus a personal story: an aside that adds color, not content."},
       {t:"“So why does this matter? Well…”", b:0, why:"A question the speaker then answers usually introduces a main point."},
       {t:"“I won’t go into detail here, but…”", b:1, why:"The speaker is telling you this part is outside the main line of the lecture."},
       {t:"“You’ll need this for the assignment.”", b:0, why:"About as direct as emphasis gets."},
       {t:"“Incidentally, the building we’re in was designed by…”", b:1, why:"“Incidentally” marks something off the main topic."}
     ]},
-    {id:"e1u4-l1-x4", type:"spot", listen:"e1u4-l1-a4", q:"Here is part of a lecture transcript. Tap every phrase that is a **signpost** (it organises the talk rather than giving content).", ask:"is a signpost", parts:[
+    {id:"e1u4-l1-x4", type:"spot", listen:"e1u4-l1-a4", q:"Here is part of a lecture transcript. Tap every phrase that is a **signpost** (it organizes the talk rather than giving content).", ask:"is a signpost", parts:[
       {t:"Today I’ll look at", flag:true, why:"A preview signpost: it announces what the lecture will cover."},
       " ",
       {t:"two ways cities manage water", flag:false, why:"This is the content: the topic itself."},
@@ -178,7 +178,7 @@ ICA.addUnit({
       {t:"clinics ↓ ∵ staff", why:"Too short: “rural”, the size of the fall and the dates are gone, and “staff” alone could mean anything."},
       {t:"the number of clinics actually fell by about a third", why:"Long and still incomplete: it copies words like “the number of” and “actually” but loses where, when and why."}
     ]},
-    {id:"e1u4-l1-x8", type:"explain", listen:"e1u4-l1-a8", q:"Dr Amoako, a guest lecturer from Ghana who teaches information science, says: “By the way, I once saw this in Lagos… Anyway, going back to the second cause, the key point here is drainage.” Explain what each signpost tells you, and how you would show it in your notes.", size:"3–4 sentences", hint:"Which part is an aside, where does the main line start again, and what is emphasised?", model:"“By the way” signals an aside: a side comment that is less central, so I’d note it briefly as “(aside)” or skip it. “Anyway, going back to” tells me the lecturer is returning to the main line, here the second cause, so I’d continue under point 2 in my notes. “The key point here is” signals emphasis, so “drainage” is something I must write down and mark with a star or NB. Signposts carry little content, but they tell me where to file what comes next.", points:["Identifies “By the way” as an aside that is less central", "Identifies “Anyway, going back to” as a return to the main line", "Identifies “the key point here is” as emphasis", "Describes how each would appear in notes (aside label, numbering, star or NB)"]}
+    {id:"e1u4-l1-x8", type:"explain", listen:"e1u4-l1-a8", q:"Dr Amoako, a guest lecturer from Ghana who teaches information science, says: “By the way, I once saw this in Lagos… Anyway, going back to the second cause, the key point here is drainage.” Explain what each signpost tells you, and how you would show it in your notes.", size:"3–4 sentences", hint:"Which part is an aside, where does the main line start again, and what is emphasized?", model:"“By the way” signals an aside: a side comment that is less central, so I’d note it briefly as “(aside)” or skip it. “Anyway, going back to” tells me the lecturer is returning to the main line, here the second cause, so I’d continue under point 2 in my notes. “The key point here is” signals emphasis, so “drainage” is something I must write down and mark with a star or NB. Signposts carry little content, but they tell me where to file what comes next.", points:["Identifies “By the way” as an aside that is less central", "Identifies “Anyway, going back to” as a return to the main line", "Identifies “the key point here is” as emphasis", "Describes how each would appear in notes (aside label, numbering, star or NB)"]}
    ],
    apply:{intro:"You need a free lecture with a transcript (Open Yale Courses and TED both have them: see lesson 5), or a recorded lecture from your own course, plus paper or a notes app.", tasks:[
     {t:"Take notes on 15 minutes of a real lecture", how:["Choose a lecture with a transcript. Read its title and write 5–8 words you expect to hear.","Listen to 15 minutes once, without pausing, taking notes with symbols and short forms.","Now read the transcript for the same 15 minutes. Mark what you caught and what you missed.","Write down which signposts helped you most."], write:"Lecture and topic… Words I predicted… What I caught well… What I missed and why… Signposts that helped…"},
@@ -191,7 +191,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e1u4-l2", title:"Seminars and discussions", minutes:50,
-   hook:{q:"Researchers timed how quickly people answered yes/no questions in conversations in ten very different languages. What did they find?", options:["Each language had completely different rules for taking turns","Speakers of every language tried to avoid both overlap and long silence; the average gap differed only by a fraction of a second","English speakers answered fastest","In some languages, people usually waited several seconds before answering"], answer:1, reveal:"**Similar everywhere, with small differences.** Tanya Stivers and colleagues (2009) found that speakers in all ten languages tried to minimise both overlap and silence. Average gaps differed between languages by only about a quarter of a second either side of the overall average: Japanese speakers had among the shortest gaps, Danish speakers among the longest. Small differences can still feel big in a fast seminar. This lesson covers taking turns, agreeing and disagreeing, softening, asking for clarification and why silence doesn’t always mean someone is disengaged."},
+   hook:{q:"Researchers timed how quickly people answered yes/no questions in conversations in ten very different languages. What did they find?", options:["Each language had completely different rules for taking turns","Speakers of every language tried to avoid both overlap and long silence; the average gap differed only by a fraction of a second","English speakers answered fastest","In some languages, people usually waited several seconds before answering"], answer:1, reveal:"**Similar everywhere, with small differences.** Tanya Stivers and colleagues (2009) found that speakers in all ten languages tried to minimize both overlap and silence. Average gaps differed between languages by only about a quarter of a second either side of the overall average: Japanese speakers had among the shortest gaps, Danish speakers among the longest. Small differences can still feel big in a fast seminar. This lesson covers taking turns, agreeing and disagreeing, softening, asking for clarification and why silence doesn’t always mean someone is disengaged."},
    goals:[
      "Join, hold and hand on turns in a discussion politely",
      "Agree, disagree and build on others’ points at the right strength",
@@ -202,7 +202,7 @@ ICA.addUnit({
    learn:[
     {h:"What happens in a seminar", body:[
       {lead:"A seminar is a small-group class where students talk through ideas, usually based on a reading or a lecture. Depending on the university it may be called a tutorial, a discussion section or a class."},
-      "The tutor might ask open questions, set a task for small groups, or ask one student to start with a short summary of the reading. In many universities participation is expected, and sometimes it counts towards your grade: your course handbook will say.",
+      "The tutor might ask open questions, set a task for small groups, or ask one student to start with a short summary of the reading. In many universities participation is expected, and sometimes it counts toward your grade: your course handbook will say.",
       "Good participation doesn’t mean talking the most. It means **adding something**: a point from the reading, an example, a question, a link between two people’s ideas. One thoughtful contribution is worth more than five quick ones.",
       {tip:"Before each seminar, note two or three points you could make and one question you could ask. Write the **first sentence** of each, so you don’t have to build it while everyone waits."}
     ]},
@@ -334,7 +334,7 @@ ICA.addUnit({
       {t:"His English is too weak for the course.", why:"There is no evidence for this, and many fluent speakers are quiet in discussions for other reasons."},
       {t:"Students from his country are always quiet.", why:"This is a stereotype. People within any country vary enormously."}
     ]},
-    {id:"e1u4-l2-x8", type:"explain", q:"In a seminar, a classmate says: “Online classes are always better than face-to-face ones.” Write what you would say to disagree, and explain the choices you made.", size:"3–4 sentences", prompt:"I would say: “…” I chose this because…", hint:"Disagree with the idea, not the person; soften it a little, and give a reason.", model:"I’d say: “I see what you mean about flexibility, but I’m not sure I agree that they’re always better, because the reading found that first-year students in online classes dropped out more often.” I recognised the other view first so it doesn’t sound like an attack. “I’m not sure I agree” softens the disagreement without hiding it, and I used only one softener so my point stays clear. Most importantly, I gave a reason, so others can respond to the evidence and the discussion moves forward.", points:["Writes a disagreement aimed at the idea, not the person", "Uses suitable softening (e.g. “I’m not sure I agree”, recognising the other view)", "Gives a reason or evidence", "Explains why each choice helps the discussion"]}
+    {id:"e1u4-l2-x8", type:"explain", q:"In a seminar, a classmate says: “Online classes are always better than face-to-face ones.” Write what you would say to disagree, and explain the choices you made.", size:"3–4 sentences", prompt:"I would say: “…” I chose this because…", hint:"Disagree with the idea, not the person; soften it a little, and give a reason.", model:"I’d say: “I see what you mean about flexibility, but I’m not sure I agree that they’re always better, because the reading found that first-year students in online classes dropped out more often.” I recognized the other view first so it doesn’t sound like an attack. “I’m not sure I agree” softens the disagreement without hiding it, and I used only one softener so my point stays clear. Most importantly, I gave a reason, so others can respond to the evidence and the discussion moves forward.", points:["Writes a disagreement aimed at the idea, not the person", "Uses suitable softening (e.g. “I’m not sure I agree”, recognizing the other view)", "Gives a reason or evidence", "Explains why each choice helps the discussion"]}
    ],
    apply:{intro:"Use these tasks before and after real seminars, or with a friend or study group.", tasks:[
     {t:"Build your own discussion phrase bank", how:["For each function (get in, agree, partly agree, disagree, build on, ask for clarification, check), choose two phrases from this lesson that feel natural to you.","Change them so they sound like you.","Say each one aloud three times, so it’s ready when you need it."], write:"Function → my two phrases…"},
@@ -360,7 +360,7 @@ ICA.addUnit({
       "Research Skills covers planning a research talk, slides and posters in {{research-presentations}}, and Digital Foundations covers presenting in general in {{presenting-skills}}. This lesson focuses on the **language**.",
       {table:[
         ["Written style","Spoken style"],
-        ["“Notwithstanding the limited sample, the findings indicate a substantial reduction in absences following the intervention.”","“Our sample was small. But after the programme started, absences fell a lot: by about a third.”"],
+        ["“Notwithstanding the limited sample, the findings indicate a substantial reduction in absences following the intervention.”","“Our sample was small. But after the program started, absences fell a lot: by about a third.”"],
         ["“This phenomenon…” (five sentences after the term was used)","Repeat the term: “This heat effect…”"],
         ["“approximately 31.7%”","Say “almost a third”, and put 31.7% on the slide"]
       ]},
@@ -404,12 +404,12 @@ ICA.addUnit({
         "**percent or percentage points?** If a rate goes from 20% to 30%, it has risen by **10 percentage points**, which is a **50% increase** (10 is half of 20). Say which one you mean.",
         "**“the data show” or “the data shows”?** Both are used in academic English today. Many fields and style guides prefer the plural; choose one and stay consistent."
       ]},
-      {listen:"e1u4-l3-a1", ex:"Yến, a master’s student in information engineering, presents her data:\n“This graph shows the share of students who cycle to campus, from 2019 to 2024. It rose steadily, from 12% to 18%, and then levelled off. That’s an increase of six percentage points.”", label:"Worked example (invented data)"}
+      {listen:"e1u4-l3-a1", ex:"Yến, a master’s student in information engineering, presents her data:\n“This graph shows the share of students who cycle to campus, from 2019 to 2024. It rose steadily, from 12% to 18%, and then leveled off. That’s an increase of six percentage points.”", label:"Worked example (invented data)"}
     ]},
     {h:"Notes, rehearsal and your voice", body:[
       {list:[
         "**Speak from notes, not a script, if you can**: key words and phrases for each slide in your [[speaker-notes]], so you can look up and talk. If a script gives you confidence, which is common when presenting in another language, write it in spoken style, mark pauses (/) and stressed words (CAPITALS), and rehearse until you only glance at it.",
-        "**Check the pronunciation of key terms and names** in a learner dictionary with audio, and practise them inside phrases, not alone. Lesson 4 shows how to mark stress.",
+        "**Check the pronunciation of key terms and names** in a learner dictionary with audio, and practice them inside phrases, not alone. Lesson 4 shows how to mark stress.",
         "**Rehearse aloud with a timer**, at least twice. Recording yourself privately and listening back shows where you rush or where a key word is unclear.",
         "**Slow down at important points and pause after them.** A pause feels much longer to you than to the audience, and it gives them time to think.",
         "**Make numbers unmistakable.** “Fifteen” and “fifty” can sound alike, especially in a large room. Stress the end of fif**TEEN** clearly (FIFty stresses the start), put the number on the slide, or add a check: “fifteen, one-five”."
@@ -498,7 +498,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e1u4-l4", title:"Pronunciation for intelligibility", minutes:60,
-   hook:{q:"In a well-known study, listeners wrote down exactly what second-language speakers of English said, and also rated how strong each speaker’s accent sounded. What did the researchers find?", options:["The stronger the accent, the less listeners understood, without exception","Some speakers with strong accents were still understood completely","Only speakers with no accent were understood","Accent strength and understanding turned out to be the same thing"], answer:1, reveal:"**Strongly accented speech could still be fully understood.** Murray Munro and Tracey Derwing (1995) found that accent, intelligibility and how easy speech was to follow were related but partly independent. Accent is not the problem to fix; being understood is the goal. This lesson shows which features matter most for that, how word stress, sentence stress, chunking and intonation work, and how to practise."},
+   hook:{q:"In a well-known study, listeners wrote down exactly what second-language speakers of English said, and also rated how strong each speaker’s accent sounded. What did the researchers find?", options:["The stronger the accent, the less listeners understood, without exception","Some speakers with strong accents were still understood completely","Only speakers with no accent were understood","Accent strength and understanding turned out to be the same thing"], answer:1, reveal:"**Strongly accented speech could still be fully understood.** Murray Munro and Tracey Derwing (1995) found that accent, intelligibility and how easy speech was to follow were related but partly independent. Accent is not the problem to fix; being understood is the goal. This lesson shows which features matter most for that, how word stress, sentence stress, chunking and intonation work, and how to practice."},
    goals:[
      "Explain the difference between accent, intelligibility and comprehensibility",
      "Describe Jenkins’s Lingua Franca Core and the debate about it, including word stress",
@@ -516,24 +516,24 @@ ICA.addUnit({
         ["[[comprehensibility|Comprehensibility]]","How easy or hard does the listener find it to understand?"]
       ]},
       "Their 1995 study, and many since, found these are related but partly independent: speech can be strongly accented and still completely intelligible. Your accent is part of who you are and where you come from; there is nothing wrong with keeping it. The things worth working on are the ones that cause misunderstanding or make listening hard work.",
-      "The pronunciation researcher John Levis (2005) described two possible goals: the **nativeness principle** (try to sound like a native speaker) and the **intelligibility principle** (try to be understood). Many pronunciation researchers and teachers now favour the second, as more realistic and more useful.",
+      "The pronunciation researcher John Levis (2005) described two possible goals: the **nativeness principle** (try to sound like a native speaker) and the **intelligibility principle** (try to be understood). Many pronunciation researchers and teachers now favor the second, as more realistic and more useful.",
       {tip:"Understanding is a two-way job. Listeners get better at accents they hear often, so a group that talks regularly understands each other more easily over time. First-language speakers share the responsibility too."}
     ]},
     {h:"What matters most for international listeners", body:[
       "Jennifer Jenkins (2000) studied where communication broke down between speakers of English from different first languages. She proposed a [[lingua-franca-core|Lingua Franca Core]]: the pronunciation features that seemed most important for intelligibility when English is used as a [[lingua-franca|lingua franca]].",
       {table:[
-        ["Core: prioritise","Non-core in Jenkins’s proposal"],
+        ["Core: prioritize","Non-core in Jenkins’s proposal"],
         ["Most consonant sounds","The “th” sounds in “thin” and “this”"],
         ["Consonant clusters at the start and in the middle of words (the “pr” in “product”)","Exact vowel quality, as long as you are consistent"],
         ["The difference between long and short vowels (“sheep” and “ship”)","Weak forms, such as “to” said as /tə/"],
         ["Main stress in a phrase, especially for contrast","Word stress, pitch patterns and rhythm"]
       ]},
       "The core is a guide, not a rulebook. It came from a particular set of data, Jenkins presented it as something to test further, and parts of it are debated. For example, Jenkins put word stress outside the core, but John Field (2005) found that misplaced word stress can seriously reduce intelligibility, especially when the stress moves to a later syllable than expected.",
-      "So a sensible plan is to prioritise the core features **and** to learn the stress of the key words in your field.",
+      "So a sensible plan is to prioritize the core features **and** to learn the stress of the key words in your field.",
       {warn:"You don’t have to master “th” before you speak in public. Many established varieties of English use other sounds for it: for example, many speakers in Ireland, the Caribbean, India and Nigeria use sounds close to t and d, and many in London use f and v. Listeners understand them."}
     ]},
     {h:"Word stress", body:[
-      "In a word with more than one syllable, one syllable is usually stronger than the others: longer, louder, often with a change in pitch, and with a clearer vowel. That is [[word-stress|word stress]]. In “baNAna” the middle syllable stands out. Listeners use stress to recognise words quickly, so unexpected stress can make a word sound like a different word, or like no word at all.",
+      "In a word with more than one syllable, one syllable is usually stronger than the others: longer, louder, often with a change in pitch, and with a clearer vowel. That is [[word-stress|word stress]]. In “baNAna” the middle syllable stands out. Listeners use stress to recognize words quickly, so unexpected stress can make a word sound like a different word, or like no word at all.",
       {fig:'<svg viewBox="0 0 340 300"><text x="170" y="18" text-anchor="middle">One word family, three stress patterns</text><text class="s" x="170" y="38" text-anchor="middle">big circle = stressed syllable</text><text x="14" y="78">PHOtograph</text><circle class="d-rose" cx="190" cy="73" r="15" stroke-width="2"/><circle class="d-soft" cx="230" cy="73" r="7" stroke-width="2"/><circle class="d-soft" cx="260" cy="73" r="7" stroke-width="2"/><text x="14" y="138">phoTOgrapher</text><circle class="d-soft" cx="180" cy="133" r="7" stroke-width="2"/><circle class="d-rose" cx="215" cy="133" r="15" stroke-width="2"/><circle class="d-soft" cx="250" cy="133" r="7" stroke-width="2"/><circle class="d-soft" cx="280" cy="133" r="7" stroke-width="2"/><text x="14" y="198">photoGRAPHic</text><circle class="d-soft" cx="180" cy="193" r="7" stroke-width="2"/><circle class="d-soft" cx="210" cy="193" r="7" stroke-width="2"/><circle class="d-rose" cx="245" cy="193" r="15" stroke-width="2"/><circle class="d-soft" cx="280" cy="193" r="7" stroke-width="2"/><text class="s" x="170" y="246" text-anchor="middle">Adding an ending can move the stress.</text><text class="s" x="170" y="264" text-anchor="middle">Learn the stress with the word,</text><text class="s" x="170" y="282" text-anchor="middle">as you learn its spelling.</text></svg>', alt:"Three words with a circle for each syllable, large for the stressed one. PHOtograph: large, small, small. phoTOgrapher: small, large, small, small. photoGRAPHic: small, small, large, small. Caption: adding an ending can move the stress; learn the stress with the word, as you learn its spelling.", cap:"Stress patterns as shown in learner dictionaries of UK and US English."},
       "In many varieties, unstressed vowels weaken to a short, relaxed sound called schwa (/ə/, the first sound in “about”). Some varieties, including the English of many speakers in Nigeria, India and Singapore, reduce vowels less and give syllables more even length. That is a difference between varieties, not an error.",
       {h:"Patterns that help"},
@@ -572,12 +572,12 @@ ICA.addUnit({
       ]},
       {key:"Pitch tells listeners what is finished and what is still coming. Use a clear fall to finish your important points."}
     ]},
-    {h:"How to practise", body:[
+    {h:"How to practice", body:[
       {list:[
         "**Use a learner dictionary with audio**, such as the Cambridge Dictionary or Oxford Learner’s Dictionaries, for the key words in your field. Note the stress mark and listen to the UK or US recording, whichever you hear more.",
         "**Record yourself privately** reading a paragraph. Mark it up first (pauses, main stresses), then listen back for chunks, stress and pace, not for accent.",
         "**Shadow**: play a short clip with a transcript, and speak along just behind the speaker, copying their rhythm, stress and pauses. The aim is rhythm, not their accent.",
-        "**Practise long and short vowels** in pairs where length changes the word: ship/sheep, full/fool, live/leave.",
+        "**Practice long and short vowels** in pairs where length changes the word: ship/sheep, full/fool, live/leave.",
         "**Ask for feedback on clarity**: “Was anything hard to follow?” A listener with a different first language from yours is especially useful."
       ]},
       {warn:"Be cautious of courses that promise to “remove” or “eliminate” your accent. The goal research supports is being easy to understand, not sounding like someone else."}
@@ -593,8 +593,8 @@ ICA.addUnit({
     {id:"e1u4-l4-x2", type:"sort", q:"In Jenkins’s (2000) Lingua Franca Core proposal, is each feature **core** or **non-core**?", buckets:["Core","Non-core"], items:[
       {t:"Long vs short vowels, as in “sheep” and “ship”", b:0, why:"Vowel length is core: losing it can turn one word into another."},
       {t:"The “th” sounds in “thin” and “this”", b:1, why:"Jenkins found substitutes for “th” rarely caused misunderstanding, so it is non-core."},
-      {t:"All the consonants at the start of “product”", b:0, why:"Keeping word-initial clusters intact is core; dropping a sound there can make a word unrecognisable."},
-      {t:"Weak forms, such as “to” said as /tə/", b:1, why:"Weak forms are non-core for speaking, though recognising them helps listening."},
+      {t:"All the consonants at the start of “product”", b:0, why:"Keeping word-initial clusters intact is core; dropping a sound there can make a word unrecognizable."},
+      {t:"Weak forms, such as “to” said as /tə/", b:1, why:"Weak forms are non-core for speaking, though recognizing them helps listening."},
       {t:"Main stress for contrast (“No, on TUESday”)", b:0, why:"Main (nuclear) stress is core, because misplacing it can mislead."},
       {t:"The exact quality of vowels, if consistent", b:1, why:"Jenkins allowed varied vowel qualities if consistent; one vowel, as in “nurse”, was the exception."}
     ]},
@@ -697,7 +697,7 @@ ICA.addUnit({
       "Write down what you agreed and what to do next while it is fresh. If the lecturer promised to send something, a short thank-you email can remind them politely.",
       {h:"How to address a lecturer"},
       "Forms of address vary by country, institution, field and person. “Professor Kaur”, “Dr Kaur” and “Amrita” can all be normal somewhere, and in some systems “Professor” is a specific senior rank, not a general word for a lecturer. **Follow the lecturer’s lead**: how they introduce themselves, how they sign emails, what the course page uses. If you are unsure, use their title and surname, and let them tell you otherwise.",
-      {listen:"e1u4-l5-a1", ex:"Cheska: “Hello, Professor Ōnishi. I’m Cheska, from the Tuesday seminar. Is now a good time?”\nProf. Ōnishi: “Yes, come in. What can I help with?”\nCheska: “I wanted to check the essay question. Does ‘evaluate’ mean I need to give my own judgement?”\nProf. Ōnishi: “Yes. Weigh the evidence and then say which view is stronger, and why.”\nCheska: “So, if I understand correctly, I should end each section with a judgement?”\nProf. Ōnishi: “Exactly.”\nCheska: “Thank you, that’s really helpful.”", label:"Office hours: Cheska, a master’s student from the Philippines, visits Prof. Ōnishi"}
+      {listen:"e1u4-l5-a1", ex:"Cheska: “Hello, Professor Ōnishi. I’m Cheska, from the Tuesday seminar. Is now a good time?”\nProf. Ōnishi: “Yes, come in. What can I help with?”\nCheska: “I wanted to check the essay question. Does ‘evaluate’ mean I need to give my own judgment?”\nProf. Ōnishi: “Yes. Weigh the evidence and then say which view is stronger, and why.”\nCheska: “So, if I understand correctly, I should end each section with a judgment?”\nProf. Ōnishi: “Exactly.”\nCheska: “Thank you, that’s really helpful.”", label:"Office hours: Cheska, a master’s student from the Philippines, visits Prof. Ōnishi"}
     ]},
     {h:"English as a lingua franca", body:[
       "[[english-as-a-lingua-franca|English as a lingua franca]] (ELF) means English used for communication between people who don’t share a first language. The linguist Barbara Seidlhofer (2011) defined it broadly as any use of English among speakers of different first languages for whom English is the chosen means of communication, and often the only option.",
@@ -722,11 +722,11 @@ ICA.addUnit({
         ["Outer","an official or widely used additional language, often from colonial history, with its own norms (“norm-developing”)","India, Kenya, Nigeria, the Philippines, Singapore"],
         ["Expanding","learned mainly as a foreign language for international use, traditionally following outside norms (“norm-dependent”)","China, Egypt, Indonesia, Japan, South Korea"]
       ]},
-      "The model mattered because it treated outer-circle Englishes as legitimate varieties with their own norms, not as mistakes. It has also been widely criticised:",
+      "The model mattered because it treated outer-circle Englishes as legitimate varieties with their own norms, not as mistakes. It has also been widely criticized:",
       {list:[
         "**It sorts countries, not people.** A child in Singapore may grow up with English as a first language; a researcher in Japan may use English every day at an expert level.",
         "**The borders blur.** Many countries are multilingual, and the status of English changes over time.",
-        "**It puts the inner circle at the centre**, which can suggest those varieties are the default.",
+        "**It puts the inner circle at the center**, which can suggest those varieties are the default.",
         "**It doesn’t capture ELF well**, where speakers from all circles meet and adjust to each other."
       ]},
       {key:"There is no single correct English. In academic work, aim to be clear, consistent and appropriate to your setting. US or UK spelling are both fine if you use one consistently and follow any style your course or journal sets."}
@@ -735,7 +735,7 @@ ICA.addUnit({
       "The idea of the “native speaker” as the model for learners is widely questioned. Native speakers vary enormously; many people grow up with two or more languages and don’t fit either label; and expert users of English as an additional language include many of the world’s leading researchers.",
       "A realistic and respectful goal for study is to be an **effective, intelligible and confident user of academic English**: someone who follows lectures, takes part in discussions, presents clearly and knows how to adjust to different listeners. Everything in this unit serves that goal."
     ]},
-    {h:"Free places to keep practising", body:[
+    {h:"Free places to keep practicing", body:[
       "Listening improves with lots of listening, especially material that interests you and comes with a transcript you can check. These were free to use when checked in November 2026; sites change, so check what is free before you rely on any of them.",
       {table:[
         ["Resource","What it offers","Good for"],
@@ -812,7 +812,7 @@ ICA.addUnit({
     {t:"Plan an office-hours visit", how:["Choose a course you are taking, or imagine one.","Find out when and how its office hours work.","Write your opening sentence, two or three specific questions and a closing sentence.","If you go, note afterwards what you learned and what to do next."], write:"Course and office-hours details… My opening… My questions… My closing… What happened…"},
     {t:"Listen across Englishes", how:["Find two talks or lectures by speakers from different parts of the world (TED makes this easy).","Listen to five minutes of each with the transcript.","Note what made each speaker easy to follow: structure, pace, pauses, stress, signposts."], write:"Speaker 1 and what helped… Speaker 2 and what helped… One habit I want to copy…"},
     {t:"Build a four-week listening plan", how:["Pick two resources from this lesson that suit your field.","Plan three short sessions a week (15–30 minutes), each with a task: notes, shadowing or a signpost hunt.","Put the sessions in your calendar, and tick them off."], write:"Resources… My weekly plan… Week 1–4 ticks and notes…"},
-    {t:"Look back and look ahead", how:["List the three most useful things you learned in Academic English.","Write one thing you’ll keep practising.","If you plan to study in Japanese, write one question you hope Academic Japanese will answer."], write:"Three useful things… What I’ll keep practising… My question for Academic Japanese…"}
+    {t:"Look back and look ahead", how:["List the three most useful things you learned in Academic English.","Write one thing you’ll keep practicing.","If you plan to study in Japanese, write one question you hope Academic Japanese will answer."], write:"Three useful things… What I’ll keep practicing… My question for Academic Japanese…"}
    ], proof:"A prepared office-hours plan, notes comparing two speakers from different parts of the world, a four-week listening plan, and a short reflection on your Academic English learning."},
    read:[
      {book:"uefap", where:"“Listening” and “Speaking” sections", note:"For the practice plan: pick the parts that match what you want to improve."}
@@ -822,9 +822,9 @@ ICA.addUnit({
   checkpoint:["e1u4-q02","e1u4-q05","e1u4-q11","e1u4-q14","e1u4-q19","e1u4-q23","e1u4-q26","e1u4-q30","e1u4-q33","e1u4-q37","e1u4-q41","e1u4-q44"],
   cpBank:[
    {id:"e1u4-cp01", lesson:"e1u4-l1", level:1, q:"A lecturer says: “Take the case of Lagos, where the population doubled in twenty years.” What is this signpost telling you?", options:[
-     {t:"A definition is coming: write it down word for word, in full", why:"Definitions are signalled by “By X, I mean…” or “X refers to…”. “Take the case of…” introduces something else."},
+     {t:"A definition is coming: write it down word for word, in full", why:"Definitions are signaled by “By X, I mean…” or “X refers to…”. “Take the case of…” introduces something else."},
      {t:"An example is coming: note it briefly beside its point", ok:true, why:"“Take the case of…” signals an example, like “For example…”. Note it in a few words beside the point it supports."},
-     {t:"An aside is coming: you can skip it completely", why:"Asides are signalled by “By the way…” or “Incidentally…”. An example supports the main line, so it is worth a short note."},
+     {t:"An aside is coming: you can skip it completely", why:"Asides are signaled by “By the way…” or “Incidentally…”. An example supports the main line, so it is worth a short note."},
      {t:"The lecture is ending: wait for the summary", why:"Endings sound like “To sum up…” or “Next week we’ll look at…”. This phrase introduces a case."}]},
    {id:"e1u4-cp02", lesson:"e1u4-l1", level:2, q:"A lecturer says: “Because fees went up, the number of part-time students fell by about a fifth.” Which note is most useful?", options:[
      {t:"Because fees went up, the number of part-time students fell by about a fifth.", why:"Copying every word leaves no attention for understanding. Lecture notes compress: key words and symbols."},
@@ -834,8 +834,8 @@ ICA.addUnit({
    {id:"e1u4-cp03", lesson:"e1u4-l1", level:2, q:"Before an economics lecture, Marco lists key terms he already knows in writing, such as *economy* and *economic*. Why should he also check how they sound?", options:[
      {t:"Because spoken and written English use different words for the same ideas", why:"The words are the same. The problem is that a word known on paper can sound unfamiliar when you hear it."},
      {t:"Because a word known on paper can sound unfamiliar, and stress can move within a family (eCONomy, ecoNOMic)", ok:true, why:"Knowing the sound helps you match what you hear to words you expect. Word families often move the stress."},
-     {t:"Because lecturers expect students to use British pronunciation in class", why:"Lecturers speak with many different accents and don’t expect one from students. Checking UK or US audio helps you recognise words, not copy an accent."},
-     {t:"Because he must copy the lecturer’s accent in his own talks", why:"The goal is to recognise words when you hear them, not to copy anyone’s accent."}]},
+     {t:"Because lecturers expect students to use British pronunciation in class", why:"Lecturers speak with many different accents and don’t expect one from students. Checking UK or US audio helps you recognize words, not copy an accent."},
+     {t:"Because he must copy the lecturer’s accent in his own talks", why:"The goal is to recognize words when you hear them, not to copy anyone’s accent."}]},
    {id:"e1u4-cp04", lesson:"e1u4-l2", level:2, q:"In a seminar, a classmate says “the policy ignores externalities”. Nour heard the sentence clearly but doesn’t know the word. What is the best thing to say?", options:[
      {t:"“Sorry, I didn’t catch the last part.”", why:"That asks the speaker to repeat, but Nour heard every word. Her problem is the meaning of one word."},
      {t:"“So are you saying that the policy is too expensive?”", why:"Checking is useful once you understand, but this guesses a meaning that may be wrong."},
@@ -873,7 +873,7 @@ ICA.addUnit({
      {t:"Long and short vowels (ship/sheep), main stress for contrast, and the stress of her key field terms", ok:true, why:"Vowel length and main stress are core. Field (2005) showed misplaced word stress can hurt intelligibility, so key terms deserve checking too."}]},
    {id:"e1u4-cp11", lesson:"e1u4-l5", level:3, q:"Jae-won grew up in Singapore with English as his first language at home. Which criticism of Kachru’s three circles does his case illustrate best?", options:[
      {t:"The model sorts countries, not people", ok:true, why:"Singapore is usually placed in the outer circle, yet Jae-won is a first-language speaker. A country label doesn’t describe each person."},
-     {t:"The model puts the inner circle at the centre", why:"That is a real criticism, but his case is about a person not fitting his country’s circle."},
+     {t:"The model puts the inner circle at the center", why:"That is a real criticism, but his case is about a person not fitting his country’s circle."},
      {t:"The model can’t describe written English", why:"This is not one of the criticisms in the unit. The model is about the spread and status of English."},
      {t:"The model wrongly calls Singapore English a mistake", why:"The opposite: the model treated outer-circle Englishes as legitimate varieties with their own norms."}]},
    {id:"e1u4-cp12", lesson:"e1u4-l5", level:1, q:"At office hours, Dr Mensah promises to send Akosua a short reading list. What should Akosua do next?", options:[
@@ -912,7 +912,7 @@ ICA.addUnit({
       {tip:"When you lose the thread, don’t stop: write “?” or the recording time, skip a line, and listen for the next signpost to find your place again."}
      ],
      pro:[
-      "**Spoken vs written academic English.** Lectures contain more repetition, restarts, asides and discourse markers than written texts. Much of this is not noise: it does the organising work that headings and paragraphs do on the page. Listeners who treat “so”, “right” and “now” as filler miss boundary signals.",
+      "**Spoken vs written academic English.** Lectures contain more repetition, restarts, asides and discourse markers than written texts. Much of this is not noise: it does the organizing work that headings and paragraphs do on the page. Listeners who treat “so”, “right” and “now” as filler miss boundary signals.",
       "**Variation between lecturers.** Some lecturers signpost heavily; others rely on slides, or use signposts loosely (“to sum up” followed by new material). Treat signposts as strong cues, not guarantees, and combine them with pauses, pitch, slide changes and the module outline.",
       "**Accent familiarity.** Every speaker has an accent. Understanding a new accent improves with exposure, so the first lectures with a new lecturer are usually the hardest. Repeated listening to the same speaker, with a transcript, speeds adaptation.",
       "**Recordings and captions.** Recordings work best for targeted review: note timestamps of confusing moments rather than re-listening to whole lectures. Automatic captions are useful but error-prone with names, technical terms, numbers and less-represented accents; check key words against slides and readings. Institutions have rules on personal recordings: check them and ask permission where required.",
@@ -1004,7 +1004,7 @@ ICA.addUnit({
       "See {{research-presentations}} for planning research talks and slides, and {{presenting-skills}} for general delivery."
      ],
      pro:[
-      "**Spoken register.** Academic talks are more formal than conversation but less dense than writing. Long pre-verb noun phrases, embedded clauses and [[nominalisation|nominalisations]] that work on the page overload listeners’ memory. Rewriting for the ear (subject and verb early, one proposition per sentence, repeated key terms) is a register shift, not a simplification of ideas.",
+      "**Spoken register.** Academic talks are more formal than conversation but less dense than writing. Long pre-verb noun phrases, embedded clauses and [[nominalisation|nominalizations]] that work on the page overload listeners’ memory. Rewriting for the ear (subject and verb early, one proposition per sentence, repeated key terms) is a register shift, not a simplification of ideas.",
       "**Rise vs raise.** “Rise” (rose, risen) is intransitive; “raise” (raised) is transitive. Learners and first-language speakers alike confuse them in data descriptions; “rised” is non-standard.",
       "**Percent vs percentage points.** A rate moving from 20% to 30% is a 10-percentage-point rise and a 50% relative increase. Ambiguous phrasing (“rose by 10%”) is common in media and talks; state which you mean.",
       "**“Data” agreement.** Both “the data show” and “the data shows” occur in academic English; many style guides and fields prefer the plural. Consistency matters more than the choice.",
@@ -1026,12 +1026,12 @@ ICA.addUnit({
       "Think of pronunciation like handwriting. Everyone’s looks different, and that’s fine, as long as others can read it. In speech, the aim is [[intelligibility]]: being understood, not sounding like someone from a particular country.",
       "Research by Munro and Derwing (1995) showed that speech can have a strong [[accent]] and still be understood completely.",
       "The things that help listeners most include: clear consonants, the difference between long and short vowels (sheep and ship), stressing the right syllable in key words (phoTOgraphy), stressing the most important word in each phrase, and pausing between groups of words.",
-      "Some things matter less than people think. Many established varieties of English say “th” with sounds close to t and d, or f and v, and listeners understand them. Recording yourself privately and checking key words in a learner dictionary are simple ways to practise.",
+      "Some things matter less than people think. Many established varieties of English say “th” with sounds close to t and d, or f and v, and listeners understand them. Recording yourself privately and checking key words in a learner dictionary are simple ways to practice.",
       {key:"Keep your accent. Work on what makes you easier to understand."}
      ],
      builder:[
       {h:"Three ideas to keep apart"},
-      "**Accentedness**: how different speech sounds from the listener’s variety. **Intelligibility**: how much the listener actually understands. **Comprehensibility**: how easy the listener finds it. They are related but partly independent (Munro & Derwing, 1995). Levis (2005) contrasted the “nativeness principle” with the “intelligibility principle”; many researchers now favour the second.",
+      "**Accentedness**: how different speech sounds from the listener’s variety. **Intelligibility**: how much the listener actually understands. **Comprehensibility**: how easy the listener finds it. They are related but partly independent (Munro & Derwing, 1995). Levis (2005) contrasted the “nativeness principle” with the “intelligibility principle”; many researchers now favor the second.",
       {h:"Priorities"},
       "Jenkins’s (2000) [[lingua-franca-core|Lingua Franca Core]] lists features that mattered most when speakers of different first languages used English together: most consonants (but not the “th” sounds), initial consonant clusters, vowel length, and main (nuclear) stress. Non-core: “th”, exact vowel quality, weak forms, word stress, pitch patterns and rhythm.",
       {h:"Stress, chunks and pitch"},
@@ -1047,10 +1047,10 @@ ICA.addUnit({
      pro:[
       "**The 1995 study.** Munro and Derwing (*Language Learning* 45(1), 73–97) had listeners transcribe speech by second-language speakers (intelligibility) and rate comprehensibility and accentedness. The dimensions correlated only partly, and some heavily accented speech was fully intelligible. Later replications report similar partial independence.",
       "**The Lingua Franca Core and its critics.** Jenkins’s *The Phonology of English as an International Language* (Oxford University Press, 2000) proposed the core from analysis of breakdowns in interactions between speakers of different first languages, as a hypothesis for further testing. Critics have challenged particular inclusions and exclusions, including the treatment of “th”, rhotic /r/, the NURSE vowel, word stress and pitch. Field (2005, *TESOL Quarterly* 39(3)) found that misplaced lexical stress, especially stress shifted rightward, can seriously reduce intelligibility, which argues for teaching word stress in key vocabulary.",
-      "**Variety differences.** Vowel reduction to schwa in unstressed syllables is typical of many inner-circle varieties; varieties such as many forms of Nigerian, Indian and Singapore English reduce less and have more even syllable timing. “Th” is realised as stops in many Irish, Caribbean, Indian and Nigerian varieties and as f/v in parts of London. These are systematic features of varieties, not errors.",
+      "**Variety differences.** Vowel reduction to schwa in unstressed syllables is typical of many inner-circle varieties; varieties such as many forms of Nigerian, Indian and Singapore English reduce less and have more even syllable timing. “Th” is realized as stops in many Irish, Caribbean, Indian and Nigerian varieties and as f/v in parts of London. These are systematic features of varieties, not errors.",
       "**Stress variants.** Dictionaries list more than one pattern for some words (research: REsearch and reSEARCH, in both UK and US English). Where two are listed, both are acceptable.",
-      "**Intonation.** Patterns vary widely: yes/no questions often rise but frequently fall; statement-final rises are common in some Australian, New Zealand and North American speech without signalling a question. Teach functions (finished vs not finished, highlighting new information) rather than fixed rules.",
-      "**Receptive vs productive goals.** Weak forms and connected-speech features are non-core for production in ELF, but recognising them is important for listening to fast speech. Be cautious of “accent elimination” offers: the research supports intelligibility and comprehensibility as goals."
+      "**Intonation.** Patterns vary widely: yes/no questions often rise but frequently fall; statement-final rises are common in some Australian, New Zealand and North American speech without signaling a question. Teach functions (finished vs not finished, highlighting new information) rather than fixed rules.",
+      "**Receptive vs productive goals.** Weak forms and connected-speech features are non-core for production in ELF, but recognizing them is important for listening to fast speech. Be cautious of “accent elimination” offers: the research supports intelligibility and comprehensibility as goals."
      ]
     },
     related:["englishes","academic-presentations","lecture-listening"],
@@ -1124,7 +1124,7 @@ ICA.addUnit({
         ["Outer","Official or widely used additional language, often from colonial history; “norm-developing”","India, Kenya, Nigeria, the Philippines, Singapore"],
         ["Expanding","Foreign language for international use; “norm-dependent”","China, Egypt, Indonesia, Japan, South Korea"]
       ]},
-      "Kachru’s model gave outer-circle Englishes the status of legitimate varieties with their own norms. Critics note it classifies countries rather than speakers, blurs in multilingual societies, places the inner circle at the centre, and fits ELF poorly. It is still useful as a rough map of how English spread, as long as you remember that individual speakers don’t fit neatly into circles.",
+      "Kachru’s model gave outer-circle Englishes the status of legitimate varieties with their own norms. Critics note it classifies countries rather than speakers, blurs in multilingual societies, places the inner circle at the center, and fits ELF poorly. It is still useful as a rough map of how English spread, as long as you remember that individual speakers don’t fit neatly into circles.",
       {h:"ELF"},
       "Seidlhofer (2011) defined ELF broadly as English used among speakers of different first languages for whom it is the chosen, and often the only, means of communication. ELF research focuses on how speakers achieve understanding, such as through accommodation, rather than on how closely they match native-speaker norms.",
       {h:"Accommodation in practice"},
@@ -1139,7 +1139,7 @@ ICA.addUnit({
      pro:[
       "**Source.** Kachru, B. B. (1985). “Standards, codification and sociolinguistic realism: the English language in the outer circle.” In R. Quirk & H. G. Widdowson (eds), *English in the World*, Cambridge University Press. The circles became the best-known model of World Englishes.",
       "**Critiques.** The model is based on national history and status rather than individual use; many speakers in outer-circle countries acquire English as a first or co-first language; boundaries shift (some expanding-circle settings now use English widely in higher education); it implies inner-circle norms are central; and it does not describe interaction across circles, which is the domain of ELF. Later models (for example Schneider’s dynamic model of postcolonial Englishes) address how varieties develop over time.",
-      "**ELF research.** Seidlhofer’s *Understanding English as a Lingua Franca* (Oxford University Press, 2011) and Jenkins’s work characterise ELF by accommodation, negotiation of meaning and pragmatic strategies. Jenkins argued that native-speaker accents are not necessarily the most intelligible in international settings, and proposed the Lingua Franca Core for pronunciation (see {{pronunciation-intelligibility}}).",
+      "**ELF research.** Seidlhofer’s *Understanding English as a Lingua Franca* (Oxford University Press, 2011) and Jenkins’s work characterize ELF by accommodation, negotiation of meaning and pragmatic strategies. Jenkins argued that native-speaker accents are not necessarily the most intelligible in international settings, and proposed the Lingua Franca Core for pronunciation (see {{pronunciation-intelligibility}}).",
       "**The native-speaker model.** Its use as a learning target is questioned on several grounds: variation among native speakers, the many bilingual speakers who fit neither label, the expert status of many users of English as an additional language, and the unfairness of judging competence by origin. In academic settings, the useful standard is effectiveness: clear, accurate, appropriate English and the ability to adapt to listeners.",
       "**Spelling and standards.** In academic writing, US and UK spelling are both accepted if consistent, unless a course or publisher specifies one; some regions follow other established norms (for example Canadian or Australian conventions)."
      ]
@@ -1152,7 +1152,7 @@ ICA.addUnit({
   ],
   terms:[
    {id:"lecture-signpost", term:"Lecture signpost", def:"A phrase a speaker uses to show the structure of a talk, such as “Today I’ll look at…”, “Moving on to…” or “To sum up…”. The spoken form of signposting.", codex:"lecture-listening"},
-   {id:"discourse-marker", term:"Discourse marker", def:"A short word or phrase such as “so”, “right”, “now”, “well” or “anyway” that organises talk, for example by marking a new section, rather than adding content.", codex:"lecture-listening"},
+   {id:"discourse-marker", term:"Discourse marker", def:"A short word or phrase such as “so”, “right”, “now”, “well” or “anyway” that organizes talk, for example by marking a new section, rather than adding content.", codex:"lecture-listening"},
    {id:"turn-taking", term:"Turn-taking", def:"How people share a conversation: who speaks, when, and how they get in, keep their turn and hand over to someone else.", codex:"seminar-discussion"},
    {id:"backchannel", term:"Backchannel", def:"A small signal from a listener, such as “mm-hm”, “yeah” or a nod, that shows they are following without taking the turn.", codex:"seminar-discussion"},
    {id:"softening", term:"Softening", def:"Making a statement, question or request less forceful so it sounds polite or appropriately cautious, for example with “might”, “I wonder if…” or “a bit”.", codex:"seminar-discussion"},
@@ -1175,14 +1175,14 @@ ICA.addUnit({
   bank:[
    /* ---------- Lesson 1 ---------- */
    {id:"e1u4-q01", lesson:"e1u4-l1", level:1, q:"What is a lecture signpost?", options:[
-     {t:"A phrase that shows the structure of the talk", ok:true, why:"Signposts such as “Moving on to…” organise the talk and tell listeners where they are."},
-     {t:"A key technical term the lecturer defines", why:"Technical terms are content. Signposts organise content."},
+     {t:"A phrase that shows the structure of the talk", ok:true, why:"Signposts such as “Moving on to…” organize the talk and tell listeners where they are."},
+     {t:"A key technical term the lecturer defines", why:"Technical terms are content. Signposts organize content."},
      {t:"A slide with the lecture title", why:"Slides can help, but a signpost is something the speaker says."},
      {t:"A reading the lecturer recommends before the talk", why:"Readings are sources, not structure signals."}
    ]},
    {id:"e1u4-q02", lesson:"e1u4-l1", level:2, q:"A lecturer says: “By the way, I spent a year working in that hospital.” How should you usually treat this?", options:[
      {t:"As an aside: note it briefly or skip it", ok:true, why:"“By the way” plus a personal story usually marks a side comment, not a main point. Wait for the return to the main point."},
-     {t:"As the lecture’s main point, to note in full", why:"Main points are signalled by emphasis such as “The key point is…”. “By the way” signals the opposite."},
+     {t:"As the lecture’s main point, to note in full", why:"Main points are signaled by emphasis such as “The key point is…”. “By the way” signals the opposite."},
      {t:"As a definition to copy exactly", why:"Nothing is being defined here."},
      {t:"As a sign the lecture is ending", why:"Endings sound like “To sum up…” or “That’s all for today.”"}
    ]},
@@ -1193,7 +1193,7 @@ ICA.addUnit({
      {t:"leads to", why:"“Leads to” is usually an arrow, →."}
    ]},
    {id:"e1u4-q04", lesson:"e1u4-l1", level:2, q:"Which is the best way to prepare for a lecture on a topic that’s new to you?", options:[
-     {t:"Skim the reading, list key terms and check their pronunciation", ok:true, why:"Skimming the reading and slides, and knowing the key words and their sounds in advance, makes them much easier to recognise when you hear them."},
+     {t:"Skim the reading, list key terms and check their pronunciation", ok:true, why:"Skimming the reading and slides, and knowing the key words and their sounds in advance, makes them much easier to recognize when you hear them."},
      {t:"Nothing: preparing spoils the surprise", why:"Prediction makes listening easier; unexpected vocabulary is what makes lectures hard."},
      {t:"Learn the whole reading by heart", why:"Too much effort for little gain. Skimming and a key-term list are enough."},
      {t:"Plan to record the lecture and listen to all of it twice later", why:"Re-listening to everything takes a lot of time; preparing before is far more efficient."}
@@ -1217,9 +1217,9 @@ ICA.addUnit({
      {t:"Turn off captions for the rest of the course", why:"Captions help many listeners. Checking key words is better than giving up a useful tool."}
    ]},
    {id:"e1u4-q08", lesson:"e1u4-l1", level:1, q:"Why do “so”, “right” and “now” at the start of a sentence matter to a lecture listener?", options:[
-     {t:"They often mark the start of a new section", ok:true, why:"As discourse markers, they organise the talk."},
-     {t:"They always mean the lecturer agrees with something", why:"“Right” can mean “correct”, but at the start of a sentence after a pause it usually organises talk."},
-     {t:"They are filler with no function", why:"They do a job: signalling boundaries."},
+     {t:"They often mark the start of a new section", ok:true, why:"As discourse markers, they organize the talk."},
+     {t:"They always mean the lecturer agrees with something", why:"“Right” can mean “correct”, but at the start of a sentence after a pause it usually organizes talk."},
+     {t:"They are filler with no function", why:"They do a job: signaling boundaries."},
      {t:"They show the lecture is informal and not important", why:"Lecturers use them in all kinds of lectures."}
    ]},
    {id:"e1u4-q09", lesson:"e1u4-l1", level:3, q:"Tomás finds his new lecturer’s accent hard to follow in week 1. What is the most realistic advice?", options:[
@@ -1317,7 +1317,7 @@ ICA.addUnit({
    {id:"e1u4-q24", lesson:"e1u4-l3", level:1, q:"Which phrase is a polite way to buy a moment to think during questions?", options:[
      {t:"“That’s an interesting point. Let me think about that for a moment.”", ok:true, why:"An honest, normal time-buyer used by speakers of every language."},
      {t:"“Next question.”", why:"This skips the question rather than answering it."},
-     {t:"“Sorry for my English.”", why:"This apologises instead of buying time, and draws attention away from ideas."},
+     {t:"“Sorry for my English.”", why:"This apologizes instead of buying time, and draws attention away from ideas."},
      {t:"“Obviously, the answer is…”", why:"This rushes into an answer without thinking time."}
    ]},
    {id:"e1u4-q25", lesson:"e1u4-l3", level:2, q:"Which spoken sentence is easiest to follow by ear?", options:[

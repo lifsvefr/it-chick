@@ -1,12 +1,12 @@
 /* Track 2 · Unit 3 · Styling with CSS */
 ICA.addUnit({
   id:"t2u3", track:"t2", n:3, title:"Styling with CSS", icon:"🎨",
-  blurb:"How CSS turns plain HTML into a designed page: rules and selectors, why one style wins over another, colour and type that everyone can read, the box every element sits in, and layouts with flexbox and grid that fit a phone and a wide screen alike.",
+  blurb:"How CSS turns plain HTML into a designed page: rules and selectors, why one style wins over another, color and type that everyone can read, the box every element sits in, and layouts with flexbox and grid that fit a phone and a wide screen alike.",
   goals:[
     "Write CSS rules with type, class, id, descendant and grouped selectors, and link a stylesheet the recommended way",
     "Work out which rule wins a conflict using source order, specificity and inheritance, and check it in DevTools",
-    "Choose colours that meet WCAG contrast minimums, set up a font stack, and size text in rem so it respects the reader’s settings",
-    "Predict an element’s size from its content, padding, border and margin, and centre a block on the page",
+    "Choose colors that meet WCAG contrast minimums, set up a font stack, and size text in rem so it respects the reader’s settings",
+    "Predict an element’s size from its content, padding, border and margin, and center a block on the page",
     "Lay out rows with flexbox and grids with grid, and make a page responsive with the viewport tag, relative units and mobile-first media queries"
   ],
   read:[
@@ -28,8 +28,8 @@ ICA.addUnit({
     {h:"What CSS is for", body:[
       {lead:"HTML says what each part of a page is. CSS says how it should look."},
       "In Unit 2 you wrote HTML: headings, paragraphs, lists, links. Even without any styling, the page has a look: headings are big and bold, links are blue and underlined, and everything runs down the left side in one font. That look comes from the browser’s own built-in stylesheet, which every browser applies to every page.",
-      "**CSS** (Cascading Style Sheets) is the language you use to change that look: colours, fonts, spacing, borders, and where boxes sit on the screen. Think of a recipe card. The HTML is the recipe itself: the title, the ingredient list, the steps. The CSS is the house style for the café’s menus: which font, which colours, how much space around each part. You can change the house style without rewriting a single recipe.",
-      "That separation is the point. One stylesheet can style a hundred pages, so a community garden group can change its whole site’s colours by editing one file. And the HTML stays clean and meaningful, which helps screen readers, search engines and anyone who has to edit it later.",
+      "**CSS** (Cascading Style Sheets) is the language you use to change that look: colors, fonts, spacing, borders, and where boxes sit on the screen. Think of a recipe card. The HTML is the recipe itself: the title, the ingredient list, the steps. The CSS is the house style for the café’s menus: which font, which colors, how much space around each part. You can change the house style without rewriting a single recipe.",
+      "That separation is the point. One stylesheet can style a hundred pages, so a community garden group can change its whole site’s colors by editing one file. And the HTML stays clean and meaningful, which helps screen readers, search engines and anyone who has to edit it later.",
       {key:"HTML for meaning and structure; CSS for presentation. Keep them in separate files whenever you can."}
     ]},
     {h:"The anatomy of a rule", body:[
@@ -65,7 +65,7 @@ ICA.addUnit({
         "**The space matters.** `.menu li` (with a space) means “an `li` inside `.menu`”. `li.special` (no space) means “an `li` that itself has the class `special`”. `h1, h2` (a comma) means “`h1` and also `h2`”.",
         "**Class names are case-sensitive.** `.price` doesn’t match `class=\"Price\"`. Pick a style, such as lowercase words joined with hyphens (`menu-price`), and stick to it."
       ]},
-      {lab:"wl-class", t:"Practise: give an element a class and style it"}
+      {lab:"wl-class", t:"Practice: give an element a class and style it"}
     ]},
     {h:"Where CSS goes", body:[
       "There are three places to put CSS. All three work; one is the professional default.",
@@ -89,17 +89,17 @@ ICA.addUnit({
     ]},
     {h:"Comments: notes for people", body:[
       "A comment is text the browser ignores. In CSS it starts with `/*` and ends with `*/`, and it can span several lines:",
-      {code:"/* Brand colours: change them here */\nh1 {\n  color: teal; /* matches the logo */\n}", lang:"css"},
+      {code:"/* Brand colors: change them here */\nh1 {\n  color: teal; /* matches the logo */\n}", lang:"css"},
       "Use comments to label sections of a long stylesheet, to explain a choice that isn’t obvious, or to switch a declaration off while you test something.",
       {warn:"`//` is **not** a comment in CSS (it is in JavaScript). The browser treats it as broken CSS, and it swallows whatever comes next: inside a rule it eats the following declaration, and before a rule it breaks that whole rule. Only `/* … */` is safe."}
     ]},
     {h:"When there’s a typo", body:[
       "CSS is forgiving: when the browser meets something it doesn’t understand, it skips it and carries on. There’s no error message on the page. The style just doesn’t appear, which can be puzzling until you know the rules for what gets skipped.",
-      {code:".notice {\n  colr: navy;\n  background-color: lightyellow;\n  padding: 1rem;\n}", lang:"css", cap:"`colr` isn’t a property, so only that line is skipped. The notice still gets its yellow background and padding; its text keeps the default colour."},
+      {code:".notice {\n  colr: navy;\n  background-color: lightyellow;\n  padding: 1rem;\n}", lang:"css", cap:"`colr` isn’t a property, so only that line is skipped. The notice still gets its yellow background and padding; its text keeps the default color."},
       {table:[
         ["Mistake","What the browser skips"],
-        ["Misspelled property (`colr`, `colour`)","That one declaration"],
-        ["Invalid value (`text-align: centre`, `18 px` with a space)","That one declaration"],
+        ["Misspelled property (`colr`, `color`)","That one declaration"],
+        ["Invalid value (`text-align: center`, `18 px` with a space)","That one declaration"],
         ["Missing semicolon","That declaration **and the next one**, which run together into one invalid value"],
         ["`//` used as a comment","The declaration or rule that follows it"],
         ["One invalid selector in a group (`h1, p:hovr`)","The **whole rule**, for every selector in the group"]
@@ -109,7 +109,7 @@ ICA.addUnit({
       "If a closing brace `}` is missing, the browser reads the rules that follow as if they were still inside the unfinished block, so they stop working the way you meant. Missing braces are worth checking first when several rules in a row fail at once.",
       {ex:"1. Is the stylesheet linked, with the right path?\n2. Does the selector match? (dot for class,\n   hash for id, same spelling and case)\n3. Are the property and value spelled right?\n4. Is there a semicolon after each declaration\n   and a } after each rule?", label:"Worked example: a style isn’t showing up", mono:true},
       "Lesson 2 adds the next question (“is another rule winning?”) and shows how your browser’s developer tools point straight at skipped declarations.",
-      {lab:"wl-fix-css", t:"Practise: find and fix the typos and missing semicolons"}
+      {lab:"wl-fix-css", t:"Practice: find and fix the typos and missing semicolons"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -145,7 +145,7 @@ ICA.addUnit({
       {t:"`nav.a`", why:"With no space, this means a `nav` element that has the class `a`. It doesn’t select any links."},
       {t:"`a nav`", why:"This is reversed: it means a `nav` inside a link, which isn’t what she has."}
     ]},
-    {id:"t2u3-l1-x4", type:"mcq", q:"Oluwaseun’s community garden site has 12 pages. He wants all the headings in the same dark green, and next year he’ll probably change the colour again. Where should the CSS go?", options:[
+    {id:"t2u3-l1-x4", type:"mcq", q:"Oluwaseun’s community garden site has 12 pages. He wants all the headings in the same dark green, and next year he’ll probably change the color again. Where should the CSS go?", options:[
       {t:"In one `styles.css` file linked from every page with `<link rel=\"stylesheet\">`", ok:true, why:"One rule in one file reaches all 12 pages, so next year’s change is a single edit. The browser also caches the file between pages."},
       {t:"In a `<style>` element at the top of each page", why:"It works, but there would be 12 copies to keep identical, and next year he’d have to edit all 12."},
       {t:"In a `style` attribute on every heading", why:"That’s one copy per heading, possibly dozens, mixed into the HTML. It’s the hardest of the three to change."},
@@ -159,9 +159,9 @@ ICA.addUnit({
       "\n  ",
       {t:"margin: 0 auto;", flag:false, why:"Valid: top and bottom margins of 0, left and right `auto`. The space here separates two values, which is correct."},
       "\n  ",
-      {t:"text-align: centre;", flag:true, why:"The keyword is `center`. `centre` is an invalid value, so the declaration is skipped."},
+      {t:"text-align: center;", flag:true, why:"The keyword is `center`. `center` is an invalid value, so the declaration is skipped."},
       "\n  ",
-      {t:"background-color: lightyellow;", flag:false, why:"A valid property and a valid named colour."},
+      {t:"background-color: lightyellow;", flag:false, why:"A valid property and a valid named color."},
       "\n  ",
       {t:"padding: 1rem", flag:false, why:"Valid. The semicolon after the last declaration is optional, because the closing brace ends it."},
       "\n}"
@@ -177,12 +177,12 @@ ICA.addUnit({
       {t:"`// header styles`", b:1, why:"That’s JavaScript’s line comment. In CSS it’s broken syntax that swallows the next declaration or rule."},
       {t:"A comment that opens with `/*` on one line and closes with `*/` two lines later", b:0, why:"CSS comments can span several lines, as long as they end with `*/`."},
       {t:"`<!-- header styles -->`", b:1, why:"That’s an HTML comment. It works in HTML files, not inside a stylesheet."},
-      {t:"`/* logo colour */` at the end of a line, after `color: teal;`", b:0, why:"A comment can sit at the end of a line, after the declaration it explains."}
+      {t:"`/* logo color */` at the end of a line, after `color: teal;`", b:0, why:"A comment can sit at the end of a line, after the declaration it explains."}
     ]},
-      {id:"t2u3-l1-x8", type:"explain", q:"A club’s website has 30 pages. Explain why keeping its CSS in one linked `.css` file is better than putting `style` attributes on the elements of each page.", hint:"What happens when the club wants to change its main colour?", model:"A linked stylesheet keeps presentation separate from the HTML, so one file can style every page. To change the club’s colours, you edit one rule in one file and all 30 pages update. Inline `style` attributes affect one element each and are mixed into the HTML, so the same change means hunting through every page, and they are hard to override from a stylesheet. A linked file also loads faster on later pages, because the browser reuses its cached copy.", points:["Says one linked file can style every page", "Says a site-wide change means editing one file", "Says inline styles affect one element and must be changed page by page", "Mentions inline styles being hard to override or the cache benefit"]}
+      {id:"t2u3-l1-x8", type:"explain", q:"A club’s website has 30 pages. Explain why keeping its CSS in one linked `.css` file is better than putting `style` attributes on the elements of each page.", hint:"What happens when the club wants to change its main color?", model:"A linked stylesheet keeps presentation separate from the HTML, so one file can style every page. To change the club’s colors, you edit one rule in one file and all 30 pages update. Inline `style` attributes affect one element each and are mixed into the HTML, so the same change means hunting through every page, and they are hard to override from a stylesheet. A linked file also loads faster on later pages, because the browser reuses its cached copy.", points:["Says one linked file can style every page", "Says a site-wide change means editing one file", "Says inline styles affect one element and must be changed page by page", "Mentions inline styles being hard to override or the cache benefit"]}
    ],
-   apply:{intro:"You can do every task here on a phone, in the Web Lab. The computer steps are an optional extra that shows how real sites are organised.", tasks:[
-     {t:"Style a page with three kinds of selector", how:["Open the Web Lab class challenge linked in this lesson, or any blank Web Lab page.","In the HTML, write an `<h1>`, two paragraphs, and give one paragraph `class=\"intro\"`.","In the CSS, add a type rule for `p`, a class rule for `.intro`, and a rule for `h1`. Change a colour or a font size in each.","Change `.intro` to `.Intro` in the CSS and watch the style disappear. Change it back."], write:"Which selector did you use for each change, and what happened when you changed the case?"},
+   apply:{intro:"You can do every task here on a phone, in the Web Lab. The computer steps are an optional extra that shows how real sites are organized.", tasks:[
+     {t:"Style a page with three kinds of selector", how:["Open the Web Lab class challenge linked in this lesson, or any blank Web Lab page.","In the HTML, write an `<h1>`, two paragraphs, and give one paragraph `class=\"intro\"`.","In the CSS, add a type rule for `p`, a class rule for `.intro`, and a rule for `h1`. Change a color or a font size in each.","Change `.intro` to `.Intro` in the CSS and watch the style disappear. Change it back."], write:"Which selector did you use for each change, and what happened when you changed the case?"},
      {t:"Make a page with a linked stylesheet (optional, on a computer)", how:{
        win:["Make a folder called `cafe`. In your code editor (from Unit 1), create `index.html` inside it with a basic page, and add `<link rel=\"stylesheet\" href=\"styles.css\">` inside `<head>`.","Create `styles.css` in the same folder with one rule, such as `h1 { color: teal; }`. If you use Notepad, choose **Save as type: All files** so it doesn’t become `styles.css.txt`.","Double-click `index.html` to open it in your browser. Edit the CSS, save, then press [[kbd:F5]] in the browser to reload."],
        mac:["Make a folder called `cafe`. In your code editor (from Unit 1), create `index.html` with a basic page, and add `<link rel=\"stylesheet\" href=\"styles.css\">` inside `<head>`.","Create `styles.css` in the same folder with one rule, such as `h1 { color: teal; }`. If you use TextEdit, first choose **Format → Make Plain Text**, otherwise it saves formatted text that browsers can’t read as CSS.","Double-click `index.html` to open it in your browser. Edit the CSS, save, then press [[kbd:Cmd]] + [[kbd:R]] in the browser to reload."],
@@ -205,13 +205,13 @@ ICA.addUnit({
      "Explain what `!important` does and why it causes more problems than it solves",
      "Use the browser’s developer tools to see which declaration won and which were crossed out"
    ],
-   hook:{q:"A page has `<p class=\"note\">Bring gloves</p>`. The stylesheet says `.note { color: green; }` first, and then, further down, `p { color: purple; }`. What colour is the text?", options:["Green","Purple","A mix of the two","The browser’s default black, because the rules conflict"], answer:0, reveal:"Green. You might expect the later rule to win, and order does matter, but only between equally specific selectors. A class selector is more specific than a type selector, so `.note` wins wherever it appears. This lesson shows exactly how the browser decides."},
+   hook:{q:"A page has `<p class=\"note\">Bring gloves</p>`. The stylesheet says `.note { color: green; }` first, and then, further down, `p { color: purple; }`. What color is the text?", options:["Green","Purple","A mix of the two","The browser’s default black, because the rules conflict"], answer:0, reveal:"Green. You might expect the later rule to win, and order does matter, but only between equally specific selectors. A class selector is more specific than a type selector, so `.note` wins wherever it appears. This lesson shows exactly how the browser decides."},
    learn:[
     {h:"Conflicts are normal", body:[
       {lead:"On a real page, several rules often want to style the same element. The browser needs one answer for every property."},
-      "Say your stylesheet makes all paragraphs grey, but one paragraph also has the class `note`, which makes text dark red. Both rules match that paragraph. Which colour does it get?",
+      "Say your stylesheet makes all paragraphs gray, but one paragraph also has the class `note`, which makes text dark red. Both rules match that paragraph. Which color does it get?",
       "The process that settles this is called the [[cascade]], and it’s the “cascading” in Cascading Style Sheets. It works **one property at a time**, not rule against rule:",
-      {code:"p {\n  color: dimgray;\n  font-size: 1.125rem;\n}\n\n.note {\n  color: darkred;\n}", lang:"css", cap:"For `<p class=\"note\">`, the colour comes from `.note` (dark red), and the font size still comes from `p` (18 px), because nothing else sets it."},
+      {code:"p {\n  color: dimgray;\n  font-size: 1.125rem;\n}\n\n.note {\n  color: darkred;\n}", lang:"css", cap:"For `<p class=\"note\">`, the color comes from `.note` (dark red), and the font size still comes from `p` (18 px), because nothing else sets it."},
       "So a “losing” rule doesn’t vanish. Only its conflicting declarations lose; everything else it sets still applies. Keep that in mind when you read the rest of this lesson.",
       "The browser asks its questions in this order, strongest first:",
       {ol:[
@@ -254,17 +254,17 @@ ICA.addUnit({
       {tip:"Because ids are so strong, a rule written with an id is hard to override later without another id. That’s a big reason to style with classes and keep selectors short: low, similar specificity keeps your options open."}
     ]},
     {h:"Inline styles and !important", body:[
-      "An inline `style` attribute isn’t a selector at all, and it beats any selector in a stylesheet. That’s the main reason Lesson 1 steered you away from inline styles: once a colour is set inline, no class or id rule can change it.",
+      "An inline `style` attribute isn’t a selector at all, and it beats any selector in a stylesheet. That’s the main reason Lesson 1 steered you away from inline styles: once a color is set inline, no class or id rule can change it.",
       "Adding `!important` after a value lifts that one declaration above all normal declarations, including inline styles:",
-      {code:".price {\n  color: firebrick !important;\n}", lang:"css", cap:"Every `.price` is now firebrick red, even ones with an inline colour or a more specific rule."},
+      {code:".price {\n  color: firebrick !important;\n}", lang:"css", cap:"Every `.price` is now firebrick red, even ones with an inline color or a more specific rule."},
       "It’s tempting when a style “won’t work”, but it’s a trap. Within your stylesheets, the only way to beat an `!important` declaration is another `!important` one that is more specific, or equally specific and later, so each use invites the next, and soon nobody can tell why anything looks the way it does. MDN’s advice is to never use it unless you absolutely have to.",
       "The better fix is usually to find out why your rule is losing (the tools below show you) and then either move it later or make its selector a little more specific:",
       {code:"/* instead of !important */\n.menu .price {\n  color: firebrick;\n}", lang:"css", cap:"0-2-0 beats a plain `.price` (0-1-0) without breaking the cascade."},
-      {tip:"There are fair uses of `!important`, such as a small set of helper classes in a large design system, or overriding styles you can’t edit in a content-management system. They’re exceptions you’ll recognise later."}
+      {tip:"There are fair uses of `!important`, such as a small set of helper classes in a large design system, or overriding styles you can’t edit in a content-management system. They’re exceptions you’ll recognize later."}
     ]},
     {h:"Inheritance: what passes down", body:[
-      "Some properties are passed from a parent element to everything inside it. This is [[inheritance]]. Set a colour and a font on `<body>`, and every heading, paragraph and list item inherits them unless something else sets its own:",
-      {code:"body {\n  color: #333333;\n  font-family: Verdana, sans-serif;\n  border: 2px solid gray;\n}", lang:"css", cap:"Paragraphs inside the body get the colour and the font. They don’t each get a border: borders aren’t inherited."},
+      "Some properties are passed from a parent element to everything inside it. This is [[inheritance]]. Set a color and a font on `<body>`, and every heading, paragraph and list item inherits them unless something else sets its own:",
+      {code:"body {\n  color: #333333;\n  font-family: Verdana, sans-serif;\n  border: 2px solid gray;\n}", lang:"css", cap:"Paragraphs inside the body get the color and the font. They don’t each get a border: borders aren’t inherited."},
       {table:[
         ["Usually inherited (text)","Not inherited (boxes)"],
         ["`color`","`margin`, `padding`"],
@@ -274,11 +274,11 @@ ICA.addUnit({
       ]},
       "A rough guide: properties about **text** inherit; properties about **boxes** don’t. Every property’s MDN page says which it is.",
       "Now the rule that explains a lot of confusion: **an inherited value is weaker than any rule that targets the element directly**, however specific the parent’s rule was.",
-      {code:"#main {\n  color: navy;\n}\n\np {\n  color: dimgray;\n}", lang:"css", cap:"Paragraphs inside `<div id=\"main\">` are dim grey. The `p` rule targets them directly; `#main`’s navy only reaches them by inheritance."},
+      {code:"#main {\n  color: navy;\n}\n\np {\n  color: dimgray;\n}", lang:"css", cap:"Paragraphs inside `<div id=\"main\">` are dim gray. The `p` rule targets them directly; `#main`’s navy only reaches them by inheritance."},
       "Specificity only compares rules that match the **same** element. The `#main` rule matches the div, not the paragraph, so its 1-0-0 doesn’t enter the contest for the paragraph at all.",
-      "That’s also why links stay blue when you change the body’s colour: the browser’s own stylesheet has a rule aimed straight at `a` elements, which beats inheritance. To make links follow their surroundings, ask for inheritance on purpose:",
+      "That’s also why links stay blue when you change the body’s color: the browser’s own stylesheet has a rule aimed straight at `a` elements, which beats inheritance. To make links follow their surroundings, ask for inheritance on purpose:",
       {code:"a {\n  color: inherit;\n}", lang:"css", cap:"`inherit` works with any property: it means “use my parent’s value”."},
-      {warn:"If you make links the same colour as the text around them, keep the underline (or another visible cue that isn’t colour alone), so people can still tell what’s a link."}
+      {warn:"If you make links the same color as the text around them, keep the underline (or another visible cue that isn’t color alone), so people can still tell what’s a link."}
     ]},
     {h:"See the winner: developer tools", body:[
       "You don’t have to work out the cascade in your head. Every desktop browser has built-in developer tools that show, for any element, which rules match it and which declarations won.",
@@ -316,7 +316,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t2u3-l2-x1", type:"mcq", q:"Amara’s stylesheet contains `.button { background-color: steelblue; }` near the top and `.button { background-color: seagreen; }` near the bottom. What colour are her buttons?", options:[
+    {id:"t2u3-l2-x1", type:"mcq", q:"Amara’s stylesheet contains `.button { background-color: steelblue; }` near the top and `.button { background-color: seagreen; }` near the bottom. What color are her buttons?", options:[
       {t:"Sea green", ok:true, why:"Both selectors are `.button`, so they’re equally specific (0-1-0). On a tie, the later declaration wins."},
       {t:"Steel blue", why:"The first rule would only win if it were more specific or marked `!important`. With identical selectors, order decides, and seagreen comes later."},
       {t:"Neither; the conflict cancels both", why:"Conflicts never cancel. The cascade always picks exactly one winning value."},
@@ -336,21 +336,21 @@ ICA.addUnit({
       {t:"0-2-3", why:"Count the type selectors again: `nav`, `ul`, `li` and `a` are four."},
       {t:"1-2-4", why:"There’s no `#` in the selector, so the ID column is 0. A class named `active` isn’t an id."}
     ]},
-    {id:"t2u3-l2-x4", type:"mcq", q:"Lucía’s page has `<div id=\"main\"><p>Opening hours</p></div>`. Her CSS is `#main { color: navy; }` and, further up, `p { color: dimgray; }`. What colour is the paragraph?", options:[
-      {t:"Dim grey", ok:true, why:"The `p` rule targets the paragraph directly. Navy would only reach the paragraph by inheritance from the div, and an inherited value always loses to a direct rule, regardless of the parent rule’s specificity."},
+    {id:"t2u3-l2-x4", type:"mcq", q:"Lucía’s page has `<div id=\"main\"><p>Opening hours</p></div>`. Her CSS is `#main { color: navy; }` and, further up, `p { color: dimgray; }`. What color is the paragraph?", options:[
+      {t:"Dim gray", ok:true, why:"The `p` rule targets the paragraph directly. Navy would only reach the paragraph by inheritance from the div, and an inherited value always loses to a direct rule, regardless of the parent rule’s specificity."},
       {t:"Navy, because `#main` is more specific", why:"Specificity only compares rules that match the same element. `#main` matches the div, not the paragraph, so it isn’t in that contest."},
       {t:"Navy, because `#main` comes later", why:"Order only breaks ties between rules that match the same element. Here only the `p` rule matches the paragraph."},
       {t:"Black, because the rules conflict", why:"The rules don’t conflict on the paragraph: only one of them targets it."}
     ]},
     {id:"t2u3-l2-x5", type:"sort", q:"Hana sets each of these properties on a `<section>`. Which ones do the paragraphs inside the section inherit?", buckets:["Inherited by the paragraphs","Not inherited"], items:[
-      {t:"`color: darkslategray`", b:0, why:"Text colour is inherited, which is why setting it on `body` colours the whole page."},
+      {t:"`color: darkslategray`", b:0, why:"Text color is inherited, which is why setting it on `body` colors the whole page."},
       {t:"`font-family: Georgia, serif`", b:0, why:"Font properties inherit, so one declaration on a container sets the font for everything inside."},
       {t:"`line-height: 1.6`", b:0, why:"Line height is a text property and inherits."},
       {t:"`padding: 2rem`", b:1, why:"Padding belongs to the section’s own box. If it were inherited, every nested element would get its own padding too."},
       {t:"`border: 1px solid gray`", b:1, why:"Borders aren’t inherited; otherwise every paragraph would get its own border."},
       {t:"`background-color: ivory`", b:1, why:"Not inherited, even though the paragraphs **look** ivory. Their own background is transparent, so the section’s background shows through them."}
     ]},
-    {id:"t2u3-l2-x6", type:"mcq", q:"Dmitri’s `.price` colour wasn’t showing, so a teammate added `!important`, and it worked. Now Dmitri wants sale prices (`.price.sale`) in a different colour, and his new rule does nothing. What’s the best way forward?", options:[
+    {id:"t2u3-l2-x6", type:"mcq", q:"Dmitri’s `.price` color wasn’t showing, so a teammate added `!important`, and it worked. Now Dmitri wants sale prices (`.price.sale`) in a different color, and his new rule does nothing. What’s the best way forward?", options:[
       {t:"Remove `!important`, find the rule that was beating `.price` in DevTools, and fix it by order or a slightly more specific selector", ok:true, why:"That fixes the real cause and keeps the cascade predictable, so his `.price.sale` rule (0-2-0) can work normally."},
       {t:"Add `!important` to the sale rule as well", why:"It would work this time, but each `!important` forces the next one. The stylesheet becomes a contest nobody can follow."},
       {t:"Use an inline style on every sale price", why:"Even inline styles lose to `!important`, so this wouldn’t work, and it would scatter styling through the HTML."},
@@ -363,14 +363,14 @@ ICA.addUnit({
       ["Your rule isn’t listed at all","Its selector doesn’t match, or the file isn’t loading","The pane lists every rule that matches the element. A missing rule points to the selector or the link."],
       ["The Computed tab","The final value the browser actually uses","It shows the result of the whole cascade for each property, and which rule it came from."]
     ]},
-      {id:"t2u3-l2-x8", type:"explain", q:"A stylesheet has `#main p { color: grey; }` near the top and `.note { color: darkred; }` further down. A paragraph with `class=\"note\"` inside `#main` stays grey. Explain why, and how to fix it without `!important`.", hint:"Count each selector in three columns: ID, class, type. When does order matter?", model:"When rules conflict, the cascade compares specificity before order. Counting ID-class-type, `#main p` is 1-0-1 and `.note` is 0-1-0. The ID column is compared first, and one id beats any number of classes, so the grey rule wins even though `.note` comes later; order only decides between equally specific selectors. Rather than adding `!important`, which hides the cause and makes later changes harder, make the selector specific enough, such as `#main .note`, or better, style with classes instead of ids. Developer tools show the losing declaration crossed out.", points:["Counts the specificity of both selectors (1-0-1 and 0-1-0)", "Says the ID column is compared first, so the id rule wins", "Says order only matters when specificity ties", "Gives a fix that adjusts the selector rather than using `!important`"]}
+      {id:"t2u3-l2-x8", type:"explain", q:"A stylesheet has `#main p { color: gray; }` near the top and `.note { color: darkred; }` further down. A paragraph with `class=\"note\"` inside `#main` stays gray. Explain why, and how to fix it without `!important`.", hint:"Count each selector in three columns: ID, class, type. When does order matter?", model:"When rules conflict, the cascade compares specificity before order. Counting ID-class-type, `#main p` is 1-0-1 and `.note` is 0-1-0. The ID column is compared first, and one id beats any number of classes, so the gray rule wins even though `.note` comes later; order only decides between equally specific selectors. Rather than adding `!important`, which hides the cause and makes later changes harder, make the selector specific enough, such as `#main .note`, or better, style with classes instead of ids. Developer tools show the losing declaration crossed out.", points:["Counts the specificity of both selectors (1-0-1 and 0-1-0)", "Says the ID column is compared first, so the id rule wins", "Says order only matters when specificity ties", "Gives a fix that adjusts the selector rather than using `!important`"]}
    ],
    apply:{intro:"Make the cascade visible. The first task works on any device in the Web Lab; the second needs a desktop browser.", tasks:[
-     {t:"Predict, then test", how:["In a Web Lab page, write `<p class=\"note\" id=\"first\">Bring gloves</p>`.","Add `p { color: purple; }` and `.note { color: green; }`. Predict the colour, then run it.","Swap the order of the two rules. Did the colour change? Why not?","Add `#first { color: navy; }` at the very top of the CSS. Predict, then run.","Finally, add `style=\"color: orange\"` to the paragraph. Predict, then run."], write:"Write each prediction and result. Which ones surprised you?"},
+     {t:"Predict, then test", how:["In a Web Lab page, write `<p class=\"note\" id=\"first\">Bring gloves</p>`.","Add `p { color: purple; }` and `.note { color: green; }`. Predict the color, then run it.","Swap the order of the two rules. Did the color change? Why not?","Add `#first { color: navy; }` at the very top of the CSS. Predict, then run.","Finally, add `style=\"color: orange\"` to the paragraph. Predict, then run."], write:"Write each prediction and result. Which ones surprised you?"},
      {t:"Inspect a real page with developer tools", how:{
-       win:["Open any website in Chrome, Edge or Firefox. Right-click a heading and choose **Inspect** (or press [[kbd:F12]]).","In the **Styles** pane (Firefox: **Rules**), find a declaration with a line through it. Which rule beat it?","Tick a declaration’s checkbox off, then on again, and watch the page.","Click a colour value, type a new one such as `crimson`, and press [[kbd:Enter]].","Open the **Computed** tab, type `color` in its filter box and expand the result to see which rule set it. Reload the page to undo your changes."],
-       mac:["Chrome, Edge or Firefox: right-click a heading and choose **Inspect** (or press [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:I]]). Safari: first choose **Safari → Settings → Advanced** and turn on **Show features for web developers**, then right-click and choose **Inspect Element**.","In the **Styles** pane (Firefox: **Rules**), find a declaration with a line through it. Which rule beat it?","Tick a declaration off and on, then click a colour value and type `crimson`.","Open the **Computed** tab and find `color`. Reload the page to undo your changes."],
-       chromeos:["Open any website in Chrome. Right-click (two-finger tap) a heading and choose **Inspect**, or press [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:I]].","In the **Styles** pane, find a declaration with a line through it. Which rule beat it?","Tick a declaration off and on, then click a colour value and type `crimson`.","Open the **Computed** tab, filter for `color` and expand it. Reload the page to undo."],
+       win:["Open any website in Chrome, Edge or Firefox. Right-click a heading and choose **Inspect** (or press [[kbd:F12]]).","In the **Styles** pane (Firefox: **Rules**), find a declaration with a line through it. Which rule beat it?","Tick a declaration’s checkbox off, then on again, and watch the page.","Click a color value, type a new one such as `crimson`, and press [[kbd:Enter]].","Open the **Computed** tab, type `color` in its filter box and expand the result to see which rule set it. Reload the page to undo your changes."],
+       mac:["Chrome, Edge or Firefox: right-click a heading and choose **Inspect** (or press [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:I]]). Safari: first choose **Safari → Settings → Advanced** and turn on **Show features for web developers**, then right-click and choose **Inspect Element**.","In the **Styles** pane (Firefox: **Rules**), find a declaration with a line through it. Which rule beat it?","Tick a declaration off and on, then click a color value and type `crimson`.","Open the **Computed** tab and find `color`. Reload the page to undo your changes."],
+       chromeos:["Open any website in Chrome. Right-click (two-finger tap) a heading and choose **Inspect**, or press [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:I]].","In the **Styles** pane, find a declaration with a line through it. Which rule beat it?","Tick a declaration off and on, then click a color value and type `crimson`.","Open the **Computed** tab, filter for `color` and expand it. Reload the page to undo."],
        phone:["Phone browsers have no built-in developer tools. Do the first task in the Web Lab, and change one rule at a time to see the cascade at work.","Optional, with a computer: Chrome on Android can be inspected from desktop Chrome over USB (visit `chrome://inspect` on the computer), and an iPhone’s Safari from Safari on a Mac after turning on **Web Inspector** in the iPhone’s Safari settings (under **Advanced**)."]
      }},
      {t:"Work out three specificities", how:["In the Styles pane of a site you inspected, or in any stylesheet in this unit, pick three selectors.","Write each one’s specificity as ID-CLASS-TYPE.","Predict which of the three would win if they all set the same property on the same element."], write:"Your three selectors, their scores and your prediction."}
@@ -381,19 +381,19 @@ ICA.addUnit({
    ]
   },
   /* ===================== LESSON 3 ===================== */
-  {id:"t2u3-l3", title:"Colour, type and units", minutes:60,
+  {id:"t2u3-l3", title:"Color, type and units", minutes:60,
    goals:[
-     "Write the same colour as a name, a hex code, `rgb()` and `hsl()`, and reuse colours with custom properties",
-     "Check text and background colours against the WCAG 2.2 contrast minimums (4.5:1, and 3:1 for large text and interface parts)",
+     "Write the same color as a name, a hex code, `rgb()` and `hsl()`, and reuse colors with custom properties",
+     "Check text and background colors against the WCAG 2.2 contrast minimums (4.5:1, and 3:1 for large text and interface parts)",
      "Write a font stack that ends in a generic family, and weigh up web fonts, including their privacy cost",
      "Choose between `px`, `rem`, `em` and `%` for sizes, and predict the size `em` produces when it compounds",
      "Set a comfortable line height and line length for reading"
    ],
-   hook:{q:"Light grey text, `#999999`, on a white background is a popular “subtle” look. Does it meet the WCAG minimum contrast for ordinary body text?", options:["Yes, easily","Yes, just barely","No: it’s about 2.85:1, well under the 4.5:1 minimum","Contrast rules only cover images, not text"], answer:2, reveal:"No. `#999999` on white has a contrast ratio of about 2.85:1, and WCAG asks for at least 4.5:1 for normal-size text. It may look fine to you on a bright screen, but for many people (low vision, older eyes, sunlight on a phone) it’s hard to read. This lesson shows how to pick colours that work for everyone, and how to size text so readers stay in control."},
+   hook:{q:"Light gray text, `#999999`, on a white background is a popular “subtle” look. Does it meet the WCAG minimum contrast for ordinary body text?", options:["Yes, easily","Yes, just barely","No: it’s about 2.85:1, well under the 4.5:1 minimum","Contrast rules only cover images, not text"], answer:2, reveal:"No. `#999999` on white has a contrast ratio of about 2.85:1, and WCAG asks for at least 4.5:1 for normal-size text. It may look fine to you on a bright screen, but for many people (low vision, older eyes, sunlight on a phone) it’s hard to read. This lesson shows how to pick colors that work for everyone, and how to size text so readers stay in control."},
    learn:[
-    {h:"Four ways to write a colour", body:[
-      {lead:"CSS has several notations for colour. They’re different ways of writing the same thing, like “twelve”, “12” and “XII”."},
-      "Two properties do most colour work: `color` sets the text colour and `background-color` sets the background. Borders and outlines take colours too. Here is one colour, a purple called `rebeccapurple`, written four ways:",
+    {h:"Four ways to write a color", body:[
+      {lead:"CSS has several notations for color. They’re different ways of writing the same thing, like “twelve”, “12” and “XII”."},
+      "Two properties do most color work: `color` sets the text color and `background-color` sets the background. Borders and outlines take colors too. Here is one color, a purple called `rebeccapurple`, written four ways:",
       {table:[
         ["Notation","Example","How it works"],
         ["Named","`rebeccapurple`","One of more than 140 keywords, from `black` to `papayawhip`"],
@@ -404,22 +404,22 @@ ICA.addUnit({
       {code:"h1 {\n  color: #663399;\n}\n\n.notice {\n  background-color:\n    rgb(102 51 153 / 0.15);\n}", lang:"css", weblab:"wl-color", cap:"The heading is purple; the notice gets a very pale purple tint, because a fourth value after the slash sets opacity (0 is invisible, 1 is solid)."},
       "**Hex codes** are the notation you’ll meet most. After the `#` come three pairs: red, green, blue. Each pair is a number from `00` to `ff` in [[hex-color|hexadecimal]], base 16, where the digits run 0–9 then a–f. So `ff` is 255 (full), `00` is 0 (none) and `66` is 102. `#ffffff` is white, `#000000` black, `#ff0000` pure red. When each pair is a repeated digit, there’s a three-digit shorthand: `#639` means `#663399`. Upper or lower case both work.",
       "**`rgb()`** gives the same three numbers in everyday decimal. You’ll also see an older style with commas, `rgb(102, 51, 153)`, which still works everywhere.",
-      {lab:"wl-color", t:"Practise: set text and background colours"}
+      {lab:"wl-color", t:"Practice: set text and background colors"}
     ]},
-    {h:"HSL, and naming your colours once", body:[
-      "`hsl()` describes colour the way people tend to think about it:",
+    {h:"HSL, and naming your colors once", body:[
+      "`hsl()` describes color the way people tend to think about it:",
       {list:[
-        "**Hue**: an angle around the colour wheel, 0 to 360. 0 is red, 120 green, 240 blue, and 270 is the purple above.",
-        "**Saturation**: 0% is grey, 100% is the most vivid version of the hue.",
-        "**Lightness**: 0% is black, 100% white, 50% the pure colour."
+        "**Hue**: an angle around the color wheel, 0 to 360. 0 is red, 120 green, 240 blue, and 270 is the purple above.",
+        "**Saturation**: 0% is gray, 100% is the most vivid version of the hue.",
+        "**Lightness**: 0% is black, 100% white, 50% the pure color."
       ]},
-      "That makes HSL handy for a set of related colours: keep the hue and saturation, change only the lightness. `hsl(270 50% 40%)` is the purple; `hsl(270 50% 90%)` is a pale lilac background to go with it; `hsl(270 50% 25%)` a deep shade for hover states.",
-      "Once you have a palette, store each colour once in a [[custom-property|custom property]] (often called a CSS variable) and use it everywhere:",
+      "That makes HSL handy for a set of related colors: keep the hue and saturation, change only the lightness. `hsl(270 50% 40%)` is the purple; `hsl(270 50% 90%)` is a pale lilac background to go with it; `hsl(270 50% 25%)` a deep shade for hover states.",
+      "Once you have a palette, store each color once in a [[custom-property|custom property]] (often called a CSS variable) and use it everywhere:",
       {code:":root {\n  --brand: #663399;\n  --tint: hsl(270 50% 90%);\n}\n\nh1 {\n  color: var(--brand);\n}\n\n.notice {\n  background-color: var(--tint);\n}", lang:"css", cap:"`:root` selects the `<html>` element, so every element can use these. Names start with two hyphens; `var()` reads them."},
       "Change `--brand` in one place and every heading, button and border that uses it changes too. Custom properties are inherited like text properties, and they work in all current browsers."
     ]},
     {h:"Contrast: can everyone read it?", body:[
-      "**Contrast** is the difference in brightness between text and its background, measured as a ratio from 1:1 (identical colours, invisible) to 21:1 (black on white). The Web Content Accessibility Guidelines, WCAG 2.2, set minimums at level AA, the level most laws and organisations ask for:",
+      "**Contrast** is the difference in brightness between text and its background, measured as a ratio from 1:1 (identical colors, invisible) to 21:1 (black on white). The Web Content Accessibility Guidelines, WCAG 2.2, set minimums at level AA, the level most laws and organizations ask for:",
       {table:[
         ["What","Minimum ratio","WCAG 2.2"],
         ["Normal text","4.5:1","1.4.3 Contrast (Minimum)"],
@@ -428,16 +428,16 @@ ICA.addUnit({
       ]},
       "Real examples, all on a white background:",
       {table:[
-        ["Text colour","Ratio","Normal text?"],
+        ["Text color","Ratio","Normal text?"],
         ["`#000000` black","21:1","Passes"],
-        ["`#595959` dark grey","7.0:1","Passes"],
-        ["`#767676` mid grey","4.54:1","Passes, just"],
-        ["`#777777` mid grey","4.48:1","Fails (passes for large text)"],
+        ["`#595959` dark gray","7.0:1","Passes"],
+        ["`#767676` mid gray","4.54:1","Passes, just"],
+        ["`#777777` mid gray","4.48:1","Fails (passes for large text)"],
         ["`#1e90ff` `dodgerblue`","3.24:1","Fails (passes for large text)"],
-        ["`#999999` light grey","2.85:1","Fails, even for large text"]
+        ["`#999999` light gray","2.85:1","Fails, even for large text"]
       ]},
-      "The thresholds are exact: WCAG says not to round, so 4.48:1 fails. Your eyes are a poor judge, because the screen, the room and your own vision all differ from your readers’. Use a checker: the WebAIM Contrast Checker website, or the colour picker in Chrome’s and Edge’s developer tools, which shows a contrast ratio for text colours.",
-      {warn:"Placeholder text in form fields and text that appears on hover must meet the same minimums. And never use colour alone to carry meaning (“required fields are in red”): add a word, a symbol or an underline as well, for people who can’t tell the colours apart."}
+      "The thresholds are exact: WCAG says not to round, so 4.48:1 fails. Your eyes are a poor judge, because the screen, the room and your own vision all differ from your readers’. Use a checker: the WebAIM Contrast Checker website, or the color picker in Chrome’s and Edge’s developer tools, which shows a contrast ratio for text colors.",
+      {warn:"Placeholder text in form fields and text that appears on hover must meet the same minimums. And never use color alone to carry meaning (“required fields are in red”): add a word, a symbol or an underline as well, for people who can’t tell the colors apart."}
     ]},
     {h:"Fonts and font stacks", body:[
       "`font-family` takes a list of fonts, called a [[font-stack|font stack]]. The browser uses the first one it has, so the list goes from the font you’d like best to a safe fallback:",
@@ -447,7 +447,7 @@ ICA.addUnit({
       {h:"Web fonts"},
       "To use a font your readers may not have, the browser can download it: a [[web-font|web font]]. You either host the font file with your site and describe it with an `@font-face` rule, or link to a font service such as Google Fonts or Adobe Fonts, which gives you a `<link>` to paste into your `<head>`.",
       {code:'@font-face {\n  font-family: "Garden Sans";\n  src: url("fonts/garden-sans.woff2")\n    format("woff2");\n  font-display: swap;\n}\n\nbody {\n  font-family: "Garden Sans",\n    Verdana, sans-serif;\n}', lang:"css", cap:"Self-hosting: the font file sits in your site’s `fonts` folder. WOFF2 is the compressed format every current browser supports. `font-display: swap` shows text in a fallback font until the download finishes, instead of hiding it."},
-      "Web fonts have costs. Each style (regular, bold, italic) is another download, so use as few as you can. Fonts are licensed: check that yours allows web use. And there’s **privacy**: when a page loads fonts from a third-party service, every visitor’s browser contacts that service, which learns their IP address and which site they’re on. In one case in January 2022, a regional court in Munich, Germany, ruled that a website had broken EU data-protection law (the GDPR) by loading Google Fonts this way without the visitor’s consent. That’s a single court’s decision, not a rule that applies everywhere, but it’s one reason many sites now host fonts themselves. Hosting the font files yourself avoids sending visitors’ addresses to the font service; fonts from Google Fonts are released under open licences that allow it."
+      "Web fonts have costs. Each style (regular, bold, italic) is another download, so use as few as you can. Fonts are licensed: check that yours allows web use. And there’s **privacy**: when a page loads fonts from a third-party service, every visitor’s browser contacts that service, which learns their IP address and which site they’re on. In one case in January 2022, a regional court in Munich, Germany, ruled that a website had broken EU data-protection law (the GDPR) by loading Google Fonts this way without the visitor’s consent. That’s a single court’s decision, not a rule that applies everywhere, but it’s one reason many sites now host fonts themselves. Hosting the font files yourself avoids sending visitors’ addresses to the font service; fonts from Google Fonts are released under open licenses that allow it."
     ]},
     {h:"Sizes and units", body:[
       "CSS lengths always have a unit, written straight after the number: `16px`, `1.5rem`. (Zero is the one length that can go without.) These four cover most needs:",
@@ -469,7 +469,7 @@ ICA.addUnit({
       "**Line height** is the distance from one line of text to the next. Browsers default to about 1.2 times the font size, which feels cramped for paragraphs. Around 1.5 is far easier to follow, and WCAG success criterion 1.4.8 (level AAA) asks for at least that within paragraphs. Write it **without a unit**: `line-height: 1.5` means 1.5 times each element’s own font size, so headings and small print all get a fitting gap.",
       "**Line length** is how many characters fit on one line. On a wide monitor, a paragraph can stretch to 150 characters or more, and the eye loses its place jumping back to the start of the next line. WCAG 1.4.8 suggests lines no wider than 80 characters. A `max-width` measured in `ch` keeps lines readable on big screens, and on a phone the text simply uses the narrower width:",
       {code:":root {\n  --ink: #1f2933;\n  --paper: #fffaf0;\n  --accent: #663399;\n}\n\nbody {\n  color: var(--ink);\n  background-color: var(--paper);\n  font-family: Verdana, sans-serif;\n  line-height: 1.5;\n}\n\nmain {\n  max-width: 60ch;\n}\n\nh1 {\n  color: var(--accent);\n  font-size: 2rem;\n  line-height: 1.2;\n}", lang:"css", weblab:"wl-font", cap:"A calm starting point for a club or café page. Text is 14.2:1 against the background; the purple headings 8.1:1. Most letters are narrower than a 0, so a `60ch` column holds a few more than 60 characters per line."},
-      {lab:"wl-font", t:"Practise: set a font stack and a readable size"}
+      {lab:"wl-font", t:"Practice: set a font stack and a readable size"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -482,24 +482,24 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t2u3-l3-x1", type:"number", q:"In the hex colour `#1e90ff`, what is the **green** value as an ordinary decimal number (0–255)?", answer:144, tol:0, unit:"", why:"The pairs are red `1e`, green `90`, blue `ff`. In hexadecimal, `90` is 9 sixteens plus 0: 9 × 16 = **144**.", wrongs:[
+    {id:"t2u3-l3-x1", type:"number", q:"In the hex color `#1e90ff`, what is the **green** value as an ordinary decimal number (0–255)?", answer:144, tol:0, unit:"", why:"The pairs are red `1e`, green `90`, blue `ff`. In hexadecimal, `90` is 9 sixteens plus 0: 9 × 16 = **144**.", wrongs:[
       {v:90, tol:0, why:"That reads `90` as a decimal number. Hex pairs are base 16: `90` means 9 × 16 + 0 = 144."},
       {v:30, tol:0, why:"30 is the decimal value of `1e`, which is the **red** pair (1 × 16 + 14). Green is the middle pair, `90`."},
       {v:255, tol:0, why:"255 is `ff`, the **blue** pair, the last two digits. Green is the middle pair."}
     ], hint2:"Split it into three pairs: red, green, blue. Then the first digit of the pair counts sixteens."},
-    {id:"t2u3-l3-x2", type:"mcq", q:"Fatima sees the colour `#3a7` in a stylesheet. Which six-digit hex code means exactly the same colour?", options:[
+    {id:"t2u3-l3-x2", type:"mcq", q:"Fatima sees the color `#3a7` in a stylesheet. Which six-digit hex code means exactly the same color?", options:[
       {t:"`#33aa77`", ok:true, why:"Three-digit hex doubles each digit: 3 → 33, a → aa, 7 → 77."},
       {t:"`#3a7000`", why:"Short hex isn’t padded with zeros at the end. Each of the three digits is doubled in place."},
       {t:"`#03a007`", why:"Short hex isn’t padded with zeros in front of each digit either. `3` becomes `33`."},
       {t:"`#3a73a7`", why:"The whole code isn’t repeated; each digit is doubled: `33`, `aa`, `77`."}
     ]},
-    {id:"t2u3-l3-x3", type:"mcq", q:"Ana’s buttons are `hsl(270 50% 40%)`. She wants a pale background of the **same** hue that’s much lighter. Which colour should she use?", options:[
+    {id:"t2u3-l3-x3", type:"mcq", q:"Ana’s buttons are `hsl(270 50% 40%)`. She wants a pale background of the **same** hue that’s much lighter. Which color should she use?", options:[
       {t:"`hsl(270 50% 90%)`", ok:true, why:"Same hue (270) and saturation; only the lightness rises from 40% to 90%, giving a pale lilac."},
       {t:"`hsl(270 90% 40%)`", why:"This raises the **saturation**, making the purple more vivid, not lighter. Lightness is the third value."},
-      {t:"`hsl(300 50% 40%)`", why:"Changing the first value moves round the colour wheel, so this is a different hue (towards magenta), not a lighter purple."},
+      {t:"`hsl(300 50% 40%)`", why:"Changing the first value moves round the color wheel, so this is a different hue (toward magenta), not a lighter purple."},
       {t:"`hsl(270 50% 20%)`", why:"Lower lightness makes it **darker**. 0% is black; 100% is white."}
     ]},
-    {id:"t2u3-l3-x4", type:"sort", q:"Sort these colour pairs by whether they meet WCAG 2.2 level AA.", buckets:["Meets AA","Fails AA"], items:[
+    {id:"t2u3-l3-x4", type:"sort", q:"Sort these color pairs by whether they meet WCAG 2.2 level AA.", buckets:["Meets AA","Fails AA"], items:[
       {t:"Ratio 4.6:1, paragraph text at 16 px", b:0, why:"Normal text needs at least 4.5:1, and 4.6 is above it."},
       {t:"Ratio 4.48:1, paragraph text at 16 px", b:1, why:"The threshold is exact: WCAG says not to round, so 4.48:1 is below 4.5:1 and fails."},
       {t:"Ratio 3.2:1, heading text at 32 px", b:0, why:"32 px is large text (18 pt is about 24 px), which needs only 3:1."},
@@ -530,8 +530,8 @@ ICA.addUnit({
     ]},
       {id:"t2u3-l3-x9", type:"explain", q:"Explain why `rem` is usually a better unit than `px` for font sizes.", size:"2–3 sentences", hint:"Many people change the default text size in their browser settings. What happens to each unit?", model:"Browsers let people choose a larger default text size in their settings, and many do, often because they need bigger text to read comfortably. A size in `rem` is relative to the root font size, so a heading at `1.25rem` grows with that choice, while one set to `20px` ignores it (page zoom enlarges both). With the usual 16 px default, `1rem` is 16 px, so `rem` sizes look the same as pixels for most people while still respecting those who need bigger text.", points:["Says people can set a larger default text size", "Says `rem` is relative to the root (default) size, so it grows with that setting", "Says `px` text ignores the setting", "Notes that 1rem is normally 16 px"]}
    ],
-   apply:{intro:"Choose colours and type for a small page, such as a sports club or a café, and check them properly. Everything works in the Web Lab on a phone.", tasks:[
-     {t:"Pick a palette that passes contrast", how:["Choose a text colour, a background colour and an accent colour for headings.","Check each text/background pair in a contrast checker, such as the WebAIM Contrast Checker website (it works on phones), or, on a computer, the colour picker in Chrome’s or Edge’s developer tools.","Adjust until body text reaches at least 4.5:1, and headings at least 3:1 (4.5:1 if they’re smaller than about 24 px, or smaller than about 18.7 px when bold).","Write the colours as custom properties in `:root`, and use `var()` in your rules."], write:"Your three colours and their contrast ratios."},
+   apply:{intro:"Choose colors and type for a small page, such as a sports club or a café, and check them properly. Everything works in the Web Lab on a phone.", tasks:[
+     {t:"Pick a palette that passes contrast", how:["Choose a text color, a background color and an accent color for headings.","Check each text/background pair in a contrast checker, such as the WebAIM Contrast Checker website (it works on phones), or, on a computer, the color picker in Chrome’s or Edge’s developer tools.","Adjust until body text reaches at least 4.5:1, and headings at least 3:1 (4.5:1 if they’re smaller than about 24 px, or smaller than about 18.7 px when bold).","Write the colors as custom properties in `:root`, and use `var()` in your rules."], write:"Your three colors and their contrast ratios."},
      {t:"See why rem respects the reader", how:{
        win:["In the Web Lab, write two paragraphs. Give one `font-size: 20px` and the other `font-size: 1.25rem`. They look the same size.","Now open Chrome’s **Settings → Appearance → Font size** and choose **Very large**. (Edge: **Settings → Appearance → Fonts**; Firefox: **Settings**, then the **Fonts** section, under **General** or, in newer versions, **Accessibility**.) Run the Web Lab page again: the rem paragraph grows, the px one doesn’t.","Set the font size back to **Medium** (the recommended default)."],
        mac:["In the Web Lab, write two paragraphs. Give one `font-size: 20px` and the other `font-size: 1.25rem`.","In Chrome choose **Settings → Appearance → Font size → Very large** (Firefox: **Settings**, then the **Fonts** section, under **General** or, in newer versions, **Accessibility**). Run the page again: only the rem paragraph grows.","Set it back to **Medium** afterwards."],
@@ -539,7 +539,7 @@ ICA.addUnit({
        phone:["In the Web Lab, write two paragraphs. Give one `font-size: 20px` and the other `font-size: 1.25rem`.","Mobile browsers handle text-size settings differently, so simulate a reader’s choice instead: add `html { font-size: 125%; }` to the CSS. The rem paragraph grows to 25 px; the px one stays at 20 px."]
      }, write:"What changed, and what didn’t?"},
      {t:"Set comfortable type", how:["Give `body` a font stack ending in a generic family and `line-height: 1.5`.","Give your main content a `max-width` in `ch`.","Size headings in `rem`, and add a nested list with `font-size` in `em` to see it compound. Then switch it to `rem`."]}
-   ], proof:"A small page whose colours are stored as custom properties and pass the contrast minimums (with the ratios noted), a font stack ending in a generic family, line height around 1.5, a line length limit in `ch`, and your notes on how `px` and `rem` text behaved."},
+   ], proof:"A small page whose colors are stored as custom properties and pass the contrast minimums (with the ratios noted), a font stack ending in a generic family, line height around 1.5, a line length limit in `ch`, and your notes on how `px` and `rem` text behaved."},
    read:[
      {book:"mdn", where:"CSS styling basics → “CSS values and units” (lengths, percentages, colours)"},
      {book:"mdn", where:"CSS text styling → “Fundamental text and font styling” and “Web fonts”", note:"“Web fonts” doesn’t cover privacy; this lesson’s note on third-party font services fills that gap."}
@@ -552,7 +552,7 @@ ICA.addUnit({
      "Calculate how wide a box appears, with and without `box-sizing: border-box`",
      "Tell block, inline and inline-block boxes apart, and change them with `display`",
      "Predict the gap between two blocks when their margins collapse",
-     "Centre a block on the page with a maximum width and automatic margins"
+     "Center a block on the page with a maximum width and automatic margins"
    ],
    hook:{q:"A box has `width: 200px; padding: 20px; border: 5px solid;` and no other styles. How wide is it on screen, from the outside of one border to the outside of the other?", options:["200 px","225 px","245 px","250 px"], answer:3, reveal:"250 px. By default, `width` sets only the content area. Padding (20 px on each side) and border (5 px on each side) are added outside it: 200 + 40 + 10 = 250. It surprises nearly everyone, and it’s behind a lot of “why is my layout too wide?” moments. This lesson shows the model, and the one-line setting most developers use to make it simpler."},
    learn:[
@@ -561,11 +561,11 @@ ICA.addUnit({
       "The [[box-model|box model]] describes four layers, from the inside out. Think of a framed picture on a wall:",
       {list:[
         "**Content**: the picture itself. The text or image, sized by `width` and `height` (or by what’s inside it).",
-        "**[[padding|Padding]]**: the mount around the picture. Space **inside** the border. The box’s background colour fills it.",
-        "**[[border-css|Border]]**: the frame. A line around the padding, with a width, a style and a colour.",
+        "**[[padding|Padding]]**: the mount around the picture. Space **inside** the border. The box’s background color fills it.",
+        "**[[border-css|Border]]**: the frame. A line around the padding, with a width, a style and a color.",
         "**[[margin-css|Margin]]**: the gap between this frame and the next one on the wall. Space **outside** the border. It’s always transparent."
       ]},
-      {fig:'<svg viewBox="0 0 340 270"><rect class="d-soft" x="10" y="10" width="320" height="226" rx="4" stroke-width="1.5" stroke-dasharray="6 4"/><text class="s" x="20" y="31">margin: outside, transparent</text><rect class="d-lup" x="44" y="44" width="252" height="158" stroke-width="0"/><rect class="d-ink" x="44" y="44" width="252" height="158" stroke-width="7"/><text x="58" y="70">padding</text><text class="s" x="58" y="86">inside the border</text><rect class="d-sage" x="96" y="98" width="148" height="70" rx="2" stroke-width="2"/><text x="170" y="128" text-anchor="middle">content</text><text class="s" x="170" y="146" text-anchor="middle">width × height</text><text class="s" x="20" y="226">border: the frame line</text><path class="d-ink" d="M148,218 L182,207" stroke-width="1.5"/><text class="s" x="10" y="258">Background colour fills content + padding.</text></svg>', alt:"A box drawn as nested layers. The innermost sage rectangle is the content, sized by width and height. Around it is a lupine-tinted padding area inside a thick dark border line. Outside the border, a dashed outline marks the transparent margin. A note says the background colour fills the content and padding.", cap:"The four layers of the box model, from the content outwards."},
+      {fig:'<svg viewBox="0 0 340 270"><rect class="d-soft" x="10" y="10" width="320" height="226" rx="4" stroke-width="1.5" stroke-dasharray="6 4"/><text class="s" x="20" y="31">margin: outside, transparent</text><rect class="d-lup" x="44" y="44" width="252" height="158" stroke-width="0"/><rect class="d-ink" x="44" y="44" width="252" height="158" stroke-width="7"/><text x="58" y="70">padding</text><text class="s" x="58" y="86">inside the border</text><rect class="d-sage" x="96" y="98" width="148" height="70" rx="2" stroke-width="2"/><text x="170" y="128" text-anchor="middle">content</text><text class="s" x="170" y="146" text-anchor="middle">width × height</text><text class="s" x="20" y="226">border: the frame line</text><path class="d-ink" d="M148,218 L182,207" stroke-width="1.5"/><text class="s" x="10" y="258">Background color fills content + padding.</text></svg>', alt:"A box drawn as nested layers. The innermost sage rectangle is the content, sized by width and height. Around it is a lupine-tinted padding area inside a thick dark border line. Outside the border, a dashed outline marks the transparent margin. A note says the background color fills the content and padding.", cap:"The four layers of the box model, from the content outwards."},
       "Every element has all four layers, even if some are zero. Many elements start with margins from the browser’s built-in styles: paragraphs and headings have top and bottom margins, and `body` has an 8 px margin all round, which is why your content never quite touches the edge of the window."
     ]},
     {h:"Setting padding, borders and margins", body:[
@@ -578,10 +578,10 @@ ICA.addUnit({
         ["`padding: 10px 20px 30px 40px`","10","20","30 / 40"]
       ]},
       "With four values, they go clockwise from the top: top, right, bottom, left. With two, the first is top and bottom, the second left and right. With three, the missing left copies the right. `margin` works the same way.",
-      "A border needs a **style**, or there is nothing to see. The shorthand takes a width, a style and a colour, in any order:",
+      "A border needs a **style**, or there is nothing to see. The shorthand takes a width, a style and a color, in any order:",
       {code:".card {\n  width: 200px;\n  padding: 20px;\n  border: 5px solid teal;\n  margin: 16px;\n}", lang:"css", weblab:"wl-box", cap:"Content 200 px wide, 20 px of padding inside a 5 px teal frame, and 16 px of space around the outside."},
       "Common styles are `solid`, `dashed`, `dotted` and `double`. The default style is `none`, so `border: 5px teal` (no style) draws nothing at all. `border-radius` rounds the corners; it works even without a border, on the background.",
-      {lab:"wl-box", t:"Practise: give a box padding, a border and a margin"}
+      {lab:"wl-box", t:"Practice: give a box padding, a border and a margin"}
     ]},
     {h:"How wide is the box?", body:[
       "Here is the surprise from the warm-up. By default, `width` and `height` set the size of the **content** only. Padding and border are added on the outside:",
@@ -602,7 +602,7 @@ ICA.addUnit({
         ["Top and bottom margin","Pushes other boxes away","Ignored; top and bottom padding overlaps nearby lines"]
       ]},
       "`display: inline-block` is the middle ground: the box sits in a line of text like an inline element, but respects width, height, padding and margin like a block. It’s handy for buttons and tags. For example, to make menu links into comfortable tap targets:",
-      {code:".menu a {\n  display: inline-block;\n  padding: 8px 12px;\n}", lang:"css", cap:"The links stay side by side, and their padding now pushes neighbouring lines away instead of overlapping them."},
+      {code:".menu a {\n  display: inline-block;\n  padding: 8px 12px;\n}", lang:"css", cap:"The links stay side by side, and their padding now pushes neighboring lines away instead of overlapping them."},
       {tip:"`display` changes only how an element is drawn, not what it means. A link styled as a block is still a link to screen readers and keyboards. Choose HTML elements for their meaning (Unit 2), then use CSS for the look."},
       "Setting `display: none` removes an element from the page entirely, as if it weren’t there. Lesson 5 adds two more values, `flex` and `grid`, which lay out an element’s children."
     ]},
@@ -617,30 +617,30 @@ ICA.addUnit({
       ]}
     ]},
     {h:"Centring a block", body:[
-      "A block fills its container’s width, so there’s nothing to centre until you limit its width. Then set the left and right margins to `auto`, and the browser shares the leftover space equally between them:",
-      {code:".page {\n  max-width: 40rem;\n  margin: 0 auto;\n}", lang:"css", weblab:"wl-center", cap:"On a wide screen, the content is a centred 40rem column. On a phone narrower than 40rem, it simply fills the width, with nothing to scroll sideways."},
+      "A block fills its container’s width, so there’s nothing to center until you limit its width. Then set the left and right margins to `auto`, and the browser shares the leftover space equally between them:",
+      {code:".page {\n  max-width: 40rem;\n  margin: 0 auto;\n}", lang:"css", weblab:"wl-center", cap:"On a wide screen, the content is a centered 40rem column. On a phone narrower than 40rem, it simply fills the width, with nothing to scroll sideways."},
       "`max-width` is better than `width` here: `width: 40rem` would force a column wider than a phone’s screen. You’ll also see `margin-inline: auto`, which sets just the left and right margins (more precisely, the start and end of a line, which also suits right-to-left languages).",
       {table:[
-        ["To centre…","Use"],
+        ["To center…","Use"],
         ["Text and inline content inside a box","`text-align: center` on the box"],
         ["A block, horizontally","A `max-width` (or `width`) plus `margin: 0 auto`"],
         ["Anything, in both directions","Flexbox or grid on the parent (Lesson 5)"]
       ]},
-      {lab:"wl-center", t:"Practise: centre a box on the page"}
+      {lab:"wl-center", t:"Practice: center a box on the page"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
         "**“`width` is the width you see.”** Only with `border-box`. By default, padding and border are added to it.",
         "**“Margin is part of the box’s size.”** Margin is space outside the border. It affects layout but not the box’s own width or background.",
         "**“Two margins of 24 px and 16 px make a 40 px gap.”** Vertical margins between blocks collapse to the larger, 24 px.",
-        "**“`text-align: center` centres the box.”** It centres the content inside the box. To centre the box itself, use automatic margins or the parent’s layout.",
+        "**“`text-align: center` centers the box.”** It centers the content inside the box. To center the box itself, use automatic margins or the parent’s layout.",
         "**“`border: 2px red` should work.”** Without a style such as `solid`, the border style is `none` and nothing is drawn."
       ]}
     ]}
    ],
    try:[
     {id:"t2u3-l4-x1", type:"order", q:"Put the four layers of the box model in order, from the **innermost** to the **outermost**.", items:[
-      {t:"Content", why:"The text or image itself, at the centre."},
+      {t:"Content", why:"The text or image itself, at the center."},
       {t:"Padding", why:"Space inside the border, around the content. The background shows through it."},
       {t:"Border", why:"The frame line around the padding."},
       {t:"Margin", why:"Transparent space outside the border, separating this box from others."}
@@ -668,7 +668,7 @@ ICA.addUnit({
     ]},
     {id:"t2u3-l4-x5", type:"mcq", q:"Lucía writes `.notice { border: 3px teal; }` but no border appears. Why?", options:[
       {t:"There’s no border style, and the default style is `none`", ok:true, why:"A border needs a style such as `solid` to be drawn. `border: 3px solid teal` works."},
-      {t:"`teal` isn’t a valid CSS colour", why:"`teal` is one of the named colours. The problem is the missing style."},
+      {t:"`teal` isn’t a valid CSS color", why:"`teal` is one of the named colors. The problem is the missing style."},
       {t:"Borders need `border-width`, `border-style` and `border-color` written separately", why:"The `border` shorthand is fine; it just needs a style among its values."},
       {t:"3 px is too thin to see", why:"A 3 px solid border is clearly visible. With no style, though, its width is treated as 0."}
     ]},
@@ -679,7 +679,7 @@ ICA.addUnit({
     ]},
     {id:"t2u3-l4-x7", type:"mcq", q:"Hana wants her `.card` to sit in the middle of the page, horizontally, as a box about 20rem wide. Which CSS does that?", options:[
       {t:"`.card { max-width: 20rem; margin: 0 auto; }`", ok:true, why:"Limiting the width leaves spare space, and `auto` left and right margins share it equally, centring the box."},
-      {t:"`.card { text-align: center; }`", why:"That centres the text **inside** the card. The card itself still fills the full width."},
+      {t:"`.card { text-align: center; }`", why:"That centers the text **inside** the card. The card itself still fills the full width."},
       {t:"`.card { margin: 0 auto; }`", why:"Without a width limit, a block already fills its container, so there’s no spare space for the auto margins to share."},
       {t:"`.card { max-width: 20rem; padding: 0 auto; }`", why:"Padding can’t be `auto`, so that declaration is invalid and skipped. Only margins share out spare space."}
     ]},
@@ -692,15 +692,15 @@ ICA.addUnit({
       {id:"t2u3-l4-x9", type:"explain", q:"A box has `width: 300px; padding: 16px; border: 2px solid`. Explain how wide it appears by default, and what `box-sizing: border-box` changes.", hint:"By default, which layer does `width` set?", model:"By default (`box-sizing: content-box`), `width` sets only the content. Padding and border are added outside it, so the visible width is 300 + 16 + 16 + 2 + 2 = 336 px. Margin isn’t part of that width; it is space outside the border. With `box-sizing: border-box`, `width` includes the padding and the border, so the box is exactly 300 px wide and the content shrinks to 264 px to make room. That makes sizes much easier to plan, which is why many developers set it for every element.", points:["Says by default `width` sets the content only", "Adds padding and border on both sides to get 336 px", "Says with border-box the whole box is 300 px", "Says the content shrinks (to 264 px) to make room"]}
    ],
    apply:{intro:"Build and measure boxes until the sums feel natural. The first and third tasks work on any device in the Web Lab.", tasks:[
-     {t:"Build a card and predict its size", how:["In the Web Lab, write a `<div class=\"card\">` with a short paragraph inside.","Give `.card` a width, padding, a border and a margin. Before running, write down how wide you expect it to be on screen.","Add a background colour so you can see where the padding ends. Then add `box-sizing: border-box` and predict again."], write:"Your two predictions and what you saw."},
+     {t:"Build a card and predict its size", how:["In the Web Lab, write a `<div class=\"card\">` with a short paragraph inside.","Give `.card` a width, padding, a border and a margin. Before running, write down how wide you expect it to be on screen.","Add a background color so you can see where the padding ends. Then add `box-sizing: border-box` and predict again."], write:"Your two predictions and what you saw."},
      {t:"See the box model in developer tools (optional, on a computer)", how:{
-       win:["On any page, right-click a paragraph and choose **Inspect**.","In Chrome or Edge, open the **Computed** tab: a diagram at the top shows the element’s margin, border, padding and content sizes. Firefox shows the same diagram in its **Layout** tab.","Hover over elements in the HTML panel: the page highlights content, padding and margin in different colours. Find a heading and a paragraph and look at how their margins meet."],
-       mac:["On any page, right-click a paragraph and choose **Inspect** (Safari: **Inspect Element**).","Chrome and Edge show a box-model diagram in the **Computed** tab; Firefox in its **Layout** tab; Safari in its **Computed** or **Layout** section.","Hover over elements in the HTML panel and watch the coloured highlights for padding and margin."],
-       chromeos:["On any page, right-click (two-finger tap) a paragraph and choose **Inspect**.","Open the **Computed** tab and look at the box-model diagram at the top.","Hover over elements in the HTML panel and watch the coloured highlights for padding and margin."],
+       win:["On any page, right-click a paragraph and choose **Inspect**.","In Chrome or Edge, open the **Computed** tab: a diagram at the top shows the element’s margin, border, padding and content sizes. Firefox shows the same diagram in its **Layout** tab.","Hover over elements in the HTML panel: the page highlights content, padding and margin in different colors. Find a heading and a paragraph and look at how their margins meet."],
+       mac:["On any page, right-click a paragraph and choose **Inspect** (Safari: **Inspect Element**).","Chrome and Edge show a box-model diagram in the **Computed** tab; Firefox in its **Layout** tab; Safari in its **Computed** or **Layout** section.","Hover over elements in the HTML panel and watch the colored highlights for padding and margin."],
+       chromeos:["On any page, right-click (two-finger tap) a paragraph and choose **Inspect**.","Open the **Computed** tab and look at the box-model diagram at the top.","Hover over elements in the HTML panel and watch the colored highlights for padding and margin."],
        phone:["Without developer tools, give elements temporary backgrounds and borders in the Web Lab (for example `* { outline: 1px solid red; }`) to see where each box ends. Outlines don’t take up space, so they don’t change the layout."]
      }},
-     {t:"Centre a reading column", how:["In the Web Lab, wrap a few paragraphs in `<main class=\"page\">`.","Give `.page` a `max-width` in `rem` and `margin: 0 auto`, plus some padding.","Make the preview wider and narrower (turn your phone sideways, or resize the window) and check the column stays centred and never needs sideways scrolling."]}
-   ], proof:"A card whose on-screen width you predicted correctly under both box-sizing models, and a centred column that fits a phone screen without sideways scrolling."},
+     {t:"Center a reading column", how:["In the Web Lab, wrap a few paragraphs in `<main class=\"page\">`.","Give `.page` a `max-width` in `rem` and `margin: 0 auto`, plus some padding.","Make the preview wider and narrower (turn your phone sideways, or resize the window) and check the column stays centered and never needs sideways scrolling."]}
+   ], proof:"A card whose on-screen width you predicted correctly under both box-sizing models, and a centered column that fits a phone screen without sideways scrolling."},
    read:[
      {book:"mdn", where:"CSS styling basics → “The box model”", note:"Covers block and inline boxes, the two box models, margin collapsing and inline-block, with live examples."},
      {book:"mdn", where:"CSS styling basics → “Sizing items in CSS” (min- and max- sizes, percentages, viewport units)"}
@@ -729,11 +729,11 @@ ICA.addUnit({
     {h:"Flexbox: a row of items", body:[
       "Here’s a café’s navigation, three links in a `<nav>`:",
       {code:'<nav class="links">\n  <a href="#menu">Menu</a>\n  <a href="#hours">Hours</a>\n  <a href="#find">Find us</a>\n</nav>', lang:"html", label:"HTML"},
-      {code:".links {\n  display: flex;\n  gap: 1rem;\n}", lang:"css", weblab:"wl-flex-row", cap:"The links sit in a row, with exactly 1rem between neighbours and no extra space at the ends."},
+      {code:".links {\n  display: flex;\n  gap: 1rem;\n}", lang:"css", weblab:"wl-flex-row", cap:"The links sit in a row, with exactly 1rem between neighbors and no extra space at the ends."},
       "`display: flex` makes `.links` a **flex container** and each child a **flex item**. Items line up along the **main axis**, which is a row by default (`flex-direction: row`). The other direction, across the row, is the **cross axis**.",
       "`gap` sets the space **between** items, which is cleaner than putting margins on each item: there’s no extra space before the first item or after the last.",
       {fig:'<svg viewBox="0 0 340 250"><defs><marker id="t2u3ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="40" y="30" width="290" height="116" rx="6" stroke-width="2"/><text class="s" x="48" y="24">.links { display: flex; }</text><rect class="d-lup" x="47" y="58" width="76" height="76" rx="6" stroke-width="2"/><text x="85" y="101" text-anchor="middle">item 1</text><rect class="d-lup" x="147" y="58" width="76" height="76" rx="6" stroke-width="2"/><text x="185" y="101" text-anchor="middle">item 2</text><rect class="d-lup" x="247" y="58" width="76" height="76" rx="6" stroke-width="2"/><text x="285" y="101" text-anchor="middle">item 3</text><path class="d-rose" d="M123,46 L147,46 M123,40 L123,52 M147,40 L147,52" stroke-width="2"/><text class="s" x="155" y="50">gap</text><path class="d-ink" d="M40,166 L328,166" stroke-width="2" marker-end="url(#t2u3ar2)"/><path class="d-ink" d="M20,30 L20,144" stroke-width="2" marker-end="url(#t2u3ar2)"/><text x="10" y="194">→ main axis (the row):</text><text class="s" x="26" y="210">justify-content spreads items along it</text><text x="10" y="232">↓ cross axis: align-items</text><text class="s" x="26" y="248">lines items up across the row</text></svg>', alt:"A flex container drawn as a wide panel holding three equal items side by side, with a small bracket marking the gap between items 1 and 2. A horizontal arrow under the container is the main axis, controlled by justify-content. A vertical arrow beside it is the cross axis, controlled by align-items.", cap:"A flex container and its two axes. `justify-content` works along the row; `align-items` works across it."},
-      {lab:"wl-flex-row", t:"Practise: put items in a row with flexbox"}
+      {lab:"wl-flex-row", t:"Practice: put items in a row with flexbox"}
     ]},
     {h:"Spacing and alignment in flexbox", body:[
       "Two properties on the container control where items sit:",
@@ -742,12 +742,12 @@ ICA.addUnit({
         ["`justify-content`","The main axis (the row)","`flex-start` (how the default behaves), `center`, `flex-end`, `space-between`, `space-evenly`"],
         ["`align-items`","The cross axis","`stretch` (default: items as tall as the row), `center`, `flex-start`, `flex-end`"]
       ]},
-      "A header with a site name on the left and links on the right, centred vertically against each other:",
+      "A header with a site name on the left and links on the right, centered vertically against each other:",
       {code:".header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n}", lang:"css", cap:"`space-between` pushes the first item to the start and the last to the end, sharing the leftover space between them. `align-items: center` lines up their middles."},
       "When there isn’t enough room, flex items squeeze onto one line by default. For a set of tags or buttons, let them wrap onto new lines instead:",
       {code:".tags {\n  display: flex;\n  flex-wrap: wrap;\n  gap: 0.5rem;\n}", lang:"css", cap:"On a phone the tags flow onto two or three lines, with 0.5rem between them in both directions."},
       "To make items share the space equally, give each one `flex: 1`. Three `.column` items with `flex: 1` in a flex container each take a third of the width (minus the gaps). And `flex-direction: column` turns the main axis downwards, which is handy for stacking things inside a card.",
-      {tip:"Easy way to remember: `justify-content` follows the direction items flow (the main axis); `align-items` works across it. In a row, `align-items: center` is how you centre vertically."}
+      {tip:"Easy way to remember: `justify-content` follows the direction items flow (the main axis); `align-items` works across it. In a row, `align-items: center` is how you center vertically."}
     ]},
     {h:"Grid: rows and columns", body:[
       "Grid is for layouts where columns matter. You describe the columns on the container, and the children fill the cells in order, starting a new row when one is full:",
@@ -767,7 +767,7 @@ ICA.addUnit({
         ["Grid","You care about rows and columns lining up: galleries, card grids, page layout"]
       ]},
       "They combine well: a grid of cards, where each card uses flexbox inside.",
-      {lab:"wl-grid", t:"Practise: lay out a grid with fr columns"}
+      {lab:"wl-grid", t:"Practice: lay out a grid with fr columns"}
     ]},
     {h:"Responsive design: one page, every screen", body:[
       "[[responsive|Responsive design]] means one page that adapts to any screen, from a small phone to a wide monitor, instead of a separate mobile site. It rests on a few habits.",
@@ -781,18 +781,18 @@ ICA.addUnit({
     {h:"Mobile-first media queries", body:[
       "The usual approach is **mobile-first**: write the simple, single-column layout for narrow screens as your base CSS, then add media queries that adjust things when there’s more room. Here a community garden page shows its plots in one column on phones and three on wider screens:",
       {code:"/* Base: every screen */\n.plots {\n  display: grid;\n  gap: 1rem;\n}\n\n/* 40rem (640 px) and up */\n@media (min-width: 40rem) {\n  .plots {\n    grid-template-columns:\n      repeat(3, 1fr);\n  }\n}", lang:"css", weblab:"wl-responsive", cap:"At 360 px the plots stack; from 640 px they sit in three columns. The rules inside the braces only apply while the condition is true."},
-      {fig:'<svg viewBox="0 0 340 260"><defs><marker id="t2u3ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="16" width="90" height="196" rx="10" stroke-width="2"/><rect class="d-sage" x="20" y="30" width="70" height="50" rx="4" stroke-width="1.5"/><rect class="d-sage" x="20" y="90" width="70" height="50" rx="4" stroke-width="1.5"/><rect class="d-sage" x="20" y="150" width="70" height="50" rx="4" stroke-width="1.5"/><text x="10" y="234">base CSS:</text><text class="s" x="10" y="250">one column</text><path class="d-ink" d="M108,114 L136,114" stroke-width="2" marker-end="url(#t2u3ar3)"/><rect class="d-panel" x="144" y="16" width="186" height="120" rx="8" stroke-width="2"/><rect class="d-lup" x="154" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><rect class="d-lup" x="212" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><rect class="d-lup" x="270" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><text x="144" y="160">@media (min-width: 40rem)</text><text class="s" x="144" y="178">adds three columns when the</text><text class="s" x="144" y="194">screen is 640 px or wider</text></svg>', alt:"On the left, a tall narrow phone screen with three boxes stacked in one column, labelled base CSS, one column. An arrow points right to a wide screen with the same three boxes side by side in three columns, labelled at-media min-width 40rem, which adds three columns when the screen is 640 px or wider.", cap:"Mobile-first: the base CSS is the phone layout; the media query adds columns when there’s room."},
+      {fig:'<svg viewBox="0 0 340 260"><defs><marker id="t2u3ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="16" width="90" height="196" rx="10" stroke-width="2"/><rect class="d-sage" x="20" y="30" width="70" height="50" rx="4" stroke-width="1.5"/><rect class="d-sage" x="20" y="90" width="70" height="50" rx="4" stroke-width="1.5"/><rect class="d-sage" x="20" y="150" width="70" height="50" rx="4" stroke-width="1.5"/><text x="10" y="234">base CSS:</text><text class="s" x="10" y="250">one column</text><path class="d-ink" d="M108,114 L136,114" stroke-width="2" marker-end="url(#t2u3ar3)"/><rect class="d-panel" x="144" y="16" width="186" height="120" rx="8" stroke-width="2"/><rect class="d-lup" x="154" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><rect class="d-lup" x="212" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><rect class="d-lup" x="270" y="30" width="50" height="92" rx="4" stroke-width="1.5"/><text x="144" y="160">@media (min-width: 40rem)</text><text class="s" x="144" y="178">adds three columns when the</text><text class="s" x="144" y="194">screen is 640 px or wider</text></svg>', alt:"On the left, a tall narrow phone screen with three boxes stacked in one column, labeled base CSS, one column. An arrow points right to a wide screen with the same three boxes side by side in three columns, labeled at-media min-width 40rem, which adds three columns when the screen is 640 px or wider.", cap:"Mobile-first: the base CSS is the phone layout; the media query adds columns when there’s room."},
       "How to read `@media (min-width: 40rem)`: “when the viewport is at least 40rem wide”. In media queries, `rem` means the browser’s default font size (normally 16 px), so 40rem is 640 px, including exactly 640. Current browsers also accept the newer range form, `@media (width >= 40rem)`, which means the same thing.",
       "Why mobile-first? The base CSS stays simple, phones (which are often slower) don’t have to apply wide-screen rules only to undo them, and you’re pushed to decide what really matters on a small screen.",
       "Choose **breakpoints** (the widths where your layout changes) by looking at your content: make the window wider until the design starts to look stretched or empty, and add a query there. Don’t chase the sizes of particular phone models; there are far too many.",
       "You’ll also meet the opposite, `max-width`, which means “at most”. `@media (max-width: 600px)` applies at 600 px and narrower, including exactly 600. That’s the desktop-first way round, and it’s what the Web Lab challenge below asks for: two columns that stack on screens 600 px wide or narrower. (The mobile-first version starts stacked and uses `@media (min-width: 601px)` to go side by side.)",
-      {lab:"wl-responsive", t:"Practise: stack two columns on screens 600 px or narrower"},
+      {lab:"wl-responsive", t:"Practice: stack two columns on screens 600 px or narrower"},
       {tip:"Test by changing the width. On a computer, drag the browser window narrower, or use the device toolbar in developer tools ([[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:M]] in Chrome and Edge with the tools open; [[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:M]] on a Mac). Firefox calls it Responsive Design Mode: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:M]], or [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:M]] on a Mac. On a phone, turn it sideways. Look for anything that makes the page scroll sideways."}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
         "**“`display: flex` goes on the items.”** It goes on the parent. The children become flex items automatically.",
-        "**“`justify-content` centres vertically.”** In a row, it works horizontally (the main axis). `align-items` works across.",
+        "**“`justify-content` centers vertically.”** In a row, it works horizontally (the main axis). `align-items` works across.",
         "**“Responsive means a separate mobile site.”** It means one page whose layout adapts to the space it has.",
         "**“I need a media query for every phone model.”** Flexible layouts adapt on their own; add breakpoints only where your content needs them.",
         "**“Without the viewport tag, my media queries will still work on phones.”** The phone pretends to be about 980 px wide, so your narrow-screen rules never apply."
@@ -812,10 +812,10 @@ ICA.addUnit({
       ["flex-end","The items bunched at the end of the row","The spare space goes before the first item."],
       ["space-between","First item at the start, last at the end, equal gaps between the items","The spare space is shared out equally between the items, with none at the two ends."]
     ]},
-    {id:"t2u3-l5-x3", type:"mcq", q:"Amara’s header is a flex row containing a small logo and a taller block of links. She wants their **vertical** centres lined up. Which declaration on the header does that?", options:[
+    {id:"t2u3-l5-x3", type:"mcq", q:"Amara’s header is a flex row containing a small logo and a taller block of links. She wants their **vertical** centers lined up. Which declaration on the header does that?", options:[
       {t:"`align-items: center`", ok:true, why:"In a row, the cross axis runs vertically, and `align-items` positions items along the cross axis."},
       {t:"`justify-content: center`", why:"In a row, `justify-content` works horizontally, along the main axis. It would move both items to the middle of the row instead."},
-      {t:"`text-align: center`", why:"That centres lines of text inside each box. It doesn’t align flex items with each other."},
+      {t:"`text-align: center`", why:"That centers lines of text inside each box. It doesn’t align flex items with each other."},
       {t:"`vertical-align: middle`", why:"`vertical-align` applies to inline boxes and table cells, not to flex items."}
     ]},
     {id:"t2u3-l5-x4", type:"number", q:"A grid container is exactly 620 px wide (no padding or border) with `grid-template-columns: 1fr 2fr;` and `gap: 20px;`. How wide is the **second** column?", answer:400, tol:0.5, unit:"px", why:"First take the gap out: 620 − 20 = 600 px of free space. There are 3 fractions (1 + 2), so 1fr = 200 px and the second column, 2fr, is **400 px**.", wrongs:[
@@ -869,14 +869,14 @@ ICA.addUnit({
   ],
   checkpoint:["t2u3-q02","t2u3-q05","t2u3-q07","t2u3-q11","t2u3-q14","t2u3-q17","t2u3-q20","t2u3-q24","t2u3-q30","t2u3-q34","t2u3-q39","t2u3-q43"],
   cpBank:[
-    {id:"t2u3-cp01", lesson:"t2u3-l1", level:2, q:"Sam wants to colour the `h2` and `h3` headings inside his `.sidebar`, and no other headings. Which selector does exactly that?", options:[{t:"`.sidebar h2, h3`", why:"After a comma, a new selector starts from scratch. This styles the `h2`s inside `.sidebar` and also every `h3` on the whole page."}, {t:"`h2.sidebar, h3.sidebar`", why:"With no space, `h2.sidebar` means an `h2` that itself has the class `sidebar`. Headings inside the sidebar don’t match."}, {t:"`.sidebar h2, .sidebar h3`", ok:true, why:"Each part of a comma list stands alone, so each needs its own `.sidebar` and a space, meaning “inside”."}, {t:"`.sidebar, h2, h3`", why:"Commas only: this styles the sidebar itself, and every `h2` and `h3` on the page, wherever they are."}]},
-    {id:"t2u3-cp02", lesson:"t2u3-l1", level:2, q:"Tomás’s CSS has `.price { color: teal; }`, and his HTML says `<span class=\"Price\">`. In DevTools, his rule isn’t listed at all for that span. What’s the most likely cause?", options:[{t:"The capital P: class names are case-sensitive", ok:true, why:"If a rule isn’t listed, its selector doesn’t match (or the file isn’t loading). Here the capital P is the difference."}, {t:"Another, more specific rule is winning over it", why:"A losing rule is still listed in the Styles pane, with a line through it. Not being listed means it doesn’t match."}, {t:"The value `teal` isn’t a valid CSS colour", why:"`teal` is a named colour. And an invalid declaration would still be listed, with a warning icon."}, {t:"It needs `!important` before it will show", why:"`!important` only helps a rule that matches. This selector never matches the span."}]},
-    {id:"t2u3-cp03", lesson:"t2u3-l2", level:1, q:"Kim’s page links `theme.css` first and `base.css` second. Both contain an `h1` rule with a different colour. Which colour do the headings get?", options:[{t:"The one in `theme.css`, because it is linked first", why:"Coming first doesn’t win. When specificity ties, the later rule wins."}, {t:"The one in `base.css`, because it comes later", ok:true, why:"The selectors are equally specific, so the later declaration wins, and that includes the order of linked files."}, {t:"A mix of the two colours", why:"The cascade picks one value for each property. Colours are never blended."}, {t:"Whichever file is shorter", why:"File length has nothing to do with it. Here only the order decides."}]},
+    {id:"t2u3-cp01", lesson:"t2u3-l1", level:2, q:"Sam wants to color the `h2` and `h3` headings inside his `.sidebar`, and no other headings. Which selector does exactly that?", options:[{t:"`.sidebar h2, h3`", why:"After a comma, a new selector starts from scratch. This styles the `h2`s inside `.sidebar` and also every `h3` on the whole page."}, {t:"`h2.sidebar, h3.sidebar`", why:"With no space, `h2.sidebar` means an `h2` that itself has the class `sidebar`. Headings inside the sidebar don’t match."}, {t:"`.sidebar h2, .sidebar h3`", ok:true, why:"Each part of a comma list stands alone, so each needs its own `.sidebar` and a space, meaning “inside”."}, {t:"`.sidebar, h2, h3`", why:"Commas only: this styles the sidebar itself, and every `h2` and `h3` on the page, wherever they are."}]},
+    {id:"t2u3-cp02", lesson:"t2u3-l1", level:2, q:"Tomás’s CSS has `.price { color: teal; }`, and his HTML says `<span class=\"Price\">`. In DevTools, his rule isn’t listed at all for that span. What’s the most likely cause?", options:[{t:"The capital P: class names are case-sensitive", ok:true, why:"If a rule isn’t listed, its selector doesn’t match (or the file isn’t loading). Here the capital P is the difference."}, {t:"Another, more specific rule is winning over it", why:"A losing rule is still listed in the Styles pane, with a line through it. Not being listed means it doesn’t match."}, {t:"The value `teal` isn’t a valid CSS color", why:"`teal` is a named color. And an invalid declaration would still be listed, with a warning icon."}, {t:"It needs `!important` before it will show", why:"`!important` only helps a rule that matches. This selector never matches the span."}]},
+    {id:"t2u3-cp03", lesson:"t2u3-l2", level:1, q:"Kim’s page links `theme.css` first and `base.css` second. Both contain an `h1` rule with a different color. Which color do the headings get?", options:[{t:"The one in `theme.css`, because it is linked first", why:"Coming first doesn’t win. When specificity ties, the later rule wins."}, {t:"The one in `base.css`, because it comes later", ok:true, why:"The selectors are equally specific, so the later declaration wins, and that includes the order of linked files."}, {t:"A mix of the two colors", why:"The cascade picks one value for each property. Colors are never blended."}, {t:"Whichever file is shorter", why:"File length has nothing to do with it. Here only the order decides."}]},
     {id:"t2u3-cp04", lesson:"t2u3-l2", level:2, q:"Early in Ana’s CSS: `.card { background-color: white; padding: 1rem; }`. Later: `.card { background-color: ivory; }`. What does a card get?", options:[{t:"An ivory background and no padding", why:"A losing rule doesn’t vanish. Only its conflicting declaration loses, so the padding stays."}, {t:"A white background and 1rem of padding", why:"The selectors are equally specific, so the later declaration, ivory, wins."}, {t:"No background at all, because the rules conflict", why:"Conflicts are normal. The browser always settles them and picks one value."}, {t:"An ivory background and 1rem of padding", ok:true, why:"The cascade works one property at a time. The later rule wins the background; the padding has no rival, so it still applies."}]},
-    {id:"t2u3-cp05", lesson:"t2u3-l2", level:3, q:"Near the top of Leo’s CSS is `a:hover { color: crimson; }`. Further down is `nav a { color: navy; }`. A visitor points at a link in the nav. What colour is it?", options:[{t:"Navy, because `nav a` comes later", why:"Order only decides between equally specific selectors, and 0-1-1 beats 0-0-2."}, {t:"Navy, because two type selectors outweigh one pseudo-class", why:"Columns are compared from the left. One in the class column beats any number of type selectors."}, {t:"Crimson: `a:hover` (0-1-1) beats `nav a` (0-0-2)", ok:true, why:"A pseudo-class counts in the class column. Specificity is compared before order, so the earlier rule wins."}, {t:"Crimson, but only if he adds `!important`", why:"No `!important` is needed: `a:hover` already wins on specificity."}]},
-    {id:"t2u3-cp06", lesson:"t2u3-l3", level:1, q:"Lin’s club site uses the same teal in 30 rules, and the committee may change it next year. What’s the best way to write it?", options:[{t:"Write `teal` in all 30 rules and use find-and-replace later", why:"That works, but it’s easy to miss one. A custom property needs only one edit."}, {t:"Store it once as `--club: teal;` and use `var(--club)`", ok:true, why:"Declare the custom property once, in a `:root` rule, and write `color: var(--club);` in each rule. Change it there and every rule that uses it changes too."}, {t:"Put an inline `style` on each element instead", why:"Inline styles scatter the colour through the HTML, which makes it harder to change, not easier."}, {t:"Add `!important` so nothing can override the colour", why:"`!important` makes styles harder to change later. It doesn’t store the colour in one place."}]},
+    {id:"t2u3-cp05", lesson:"t2u3-l2", level:3, q:"Near the top of Leo’s CSS is `a:hover { color: crimson; }`. Further down is `nav a { color: navy; }`. A visitor points at a link in the nav. What color is it?", options:[{t:"Navy, because `nav a` comes later", why:"Order only decides between equally specific selectors, and 0-1-1 beats 0-0-2."}, {t:"Navy, because two type selectors outweigh one pseudo-class", why:"Columns are compared from the left. One in the class column beats any number of type selectors."}, {t:"Crimson: `a:hover` (0-1-1) beats `nav a` (0-0-2)", ok:true, why:"A pseudo-class counts in the class column. Specificity is compared before order, so the earlier rule wins."}, {t:"Crimson, but only if he adds `!important`", why:"No `!important` is needed: `a:hover` already wins on specificity."}]},
+    {id:"t2u3-cp06", lesson:"t2u3-l3", level:1, q:"Lin’s club site uses the same teal in 30 rules, and the committee may change it next year. What’s the best way to write it?", options:[{t:"Write `teal` in all 30 rules and use find-and-replace later", why:"That works, but it’s easy to miss one. A custom property needs only one edit."}, {t:"Store it once as `--club: teal;` and use `var(--club)`", ok:true, why:"Declare the custom property once, in a `:root` rule, and write `color: var(--club);` in each rule. Change it there and every rule that uses it changes too."}, {t:"Put an inline `style` on each element instead", why:"Inline styles scatter the color through the HTML, which makes it harder to change, not easier."}, {t:"Add `!important` so nothing can override the color", why:"`!important` makes styles harder to change later. It doesn’t store the color in one place."}]},
     {id:"t2u3-cp07", lesson:"t2u3-l3", level:2, q:"Kemal writes only `font-family: \"Garden Sans\";` and loads that font from a font service. Some visitors’ browsers block the download. What do they see?", options:[{t:"No text at all, ever, because the font never arrives", why:"Browsers don’t hide text for good when a font fails. They show a font they have; the question is which one."}, {t:"Verdana, because browsers pick the most similar font they have", why:"Browsers don’t look for a similar font. They try only the fonts listed, then use their default."}, {t:"Garden Sans, because the font is built into the page", why:"A web font is a separate download. If it’s blocked, the visitor doesn’t have it."}, {t:"Text in the browser’s default font, which may be a serif", ok:true, why:"With no fallbacks and no generic family, the browser uses its own default. End every stack with a generic family such as `sans-serif`."}]},
-    {id:"t2u3-cp08", lesson:"t2u3-l4", level:2, q:"Nina’s `.card` has `max-width: 20rem`. She adds `text-align: center` to the card, hoping to put it in the middle of the page. What happens?", options:[{t:"The card moves to the middle of the page", why:"A common mix-up: `text-align` works on the content, not on the box’s position."}, {t:"Nothing, because `text-align` needs a width in px", why:"`text-align` works with any width. It centres the content, not the card."}, {t:"The text centres; the card stays on the left", ok:true, why:"`text-align` centres the content inside a box. To centre the box itself, give it `margin: 0 auto`."}, {t:"The card stretches to fill the page", why:"`text-align` doesn’t change the width. The card keeps its `max-width`."}]},
+    {id:"t2u3-cp08", lesson:"t2u3-l4", level:2, q:"Nina’s `.card` has `max-width: 20rem`. She adds `text-align: center` to the card, hoping to put it in the middle of the page. What happens?", options:[{t:"The card moves to the middle of the page", why:"A common mix-up: `text-align` works on the content, not on the box’s position."}, {t:"Nothing, because `text-align` needs a width in px", why:"`text-align` works with any width. It centers the content, not the card."}, {t:"The text centers; the card stays on the left", ok:true, why:"`text-align` centers the content inside a box. To center the box itself, give it `margin: 0 auto`."}, {t:"The card stretches to fill the page", why:"`text-align` doesn’t change the width. The card keeps its `max-width`."}]},
     {id:"t2u3-cp09", lesson:"t2u3-l4", level:3, q:"A button has `font-size: 1.5rem` and `padding: 0.5em 1em`. The reader uses the usual 16 px default. How much padding does the button get on its **left** side?", options:[{t:"16 px", why:"That treats `em` like `rem`. Here `em` follows the button’s own 24 px text."}, {t:"24 px", ok:true, why:"For properties other than `font-size`, `em` means the element’s own font size: 1.5 × 16 = 24 px. The left and right padding is `1em`, so 24 px."}, {t:"12 px", why:"12 px is the top and bottom padding (`0.5em`). With two values, the second one sets left and right."}, {t:"8 px", why:"That is 0.5 × 16, which mixes up both the side and the unit. The left side gets `1em` of 24 px."}]},
     {id:"t2u3-cp10", lesson:"t2u3-l5", level:3, q:"Two cards sit one above the other in a one-column grid with no `gap`. Each card has `margin: 20px`. How much space is there between them?", options:[{t:"20 px, because vertical margins collapse to the larger one", why:"That’s true for blocks in normal flow, but it doesn’t happen between flex or grid items."}, {t:"0 px, because grid ignores margins", why:"Grid items keep their margins. `gap` is the usual way to space them, but margins still apply."}, {t:"60 px, because the grid adds a gap of its own", why:"With no `gap` set, the grid adds no space. Only the two margins count."}, {t:"40 px, because margins don’t collapse between grid items", ok:true, why:"Margin collapsing happens only between blocks in normal flow. In a grid, the bottom margin and the top margin both count."}]},
     {id:"t2u3-cp11", lesson:"t2u3-l5", level:1, q:"Ayo’s 15 tag links sit in a flex row. On phones they squeeze onto one cramped line. Which declaration on the container lets them flow onto new lines?", options:[{t:"`flex-wrap: wrap;`", ok:true, why:"Flex items squeeze onto one line by default. `flex-wrap: wrap` lets them move onto new lines, and `gap` still spaces them."}, {t:"`justify-content: space-between;`", why:"That shares out space along the row, but the items still stay on one line."}, {t:"`align-items: center;`", why:"That lines items up across the row. It doesn’t start new lines."}, {t:"`display: inline;`", why:"That stops the container being a flex container at all. Wrapping is done with `flex-wrap`."}]},
@@ -887,7 +887,7 @@ ICA.addUnit({
     summary:"A CSS rule is a selector plus a block of property: value declarations; rules live best in a linked .css file.",
     levels:{
      starter:[
-      "CSS (Cascading Style Sheets) is the language that controls how a web page looks: colours, fonts, spacing and layout. HTML says what things **are**; CSS says how they **look**.",
+      "CSS (Cascading Style Sheets) is the language that controls how a web page looks: colors, fonts, spacing and layout. HTML says what things **are**; CSS says how they **look**.",
       "A stylesheet is a list of rules. Each rule names some elements and says how to style them:",
       {code:"h1 {\n  color: teal;\n  font-size: 2.5rem;\n}", lang:"css"},
       {list:["`h1` is the **selector**: which elements to style.","Inside the braces are **declarations**, each a **property** (`color`), a colon, a **value** (`teal`) and a semicolon."]},
@@ -960,7 +960,7 @@ ICA.addUnit({
      builder:[
       "**Counting specificity.** Count three columns, written ID-CLASS-TYPE: ids; classes, attribute selectors and pseudo-classes; type selectors and pseudo-elements. `*` and combinators count nothing. Compare columns from the left, like a medal table: `#nav a` (1-0-1) beats `.menu .item a` (0-2-1), because one id outranks any number of classes.",
       {table:[["Selector","Score"],["`li`","0-0-1"],["`ul li`","0-0-2"],["`.item`","0-1-0"],["`li.item:hover`","0-2-1"],["`#nav .item`","1-1-0"]]},
-      "**Inheritance is weakest.** Specificity only compares rules matching the same element. `#main { color: navy }` reaches a paragraph inside only by inheritance, so `p { color: dimgray }` wins on the paragraph. That’s also why links ignore the body’s colour: the browser’s own stylesheet targets `a` directly. Use `color: inherit` to opt in.",
+      "**Inheritance is weakest.** Specificity only compares rules matching the same element. `#main { color: navy }` reaches a paragraph inside only by inheritance, so `p { color: dimgray }` wins on the paragraph. That’s also why links ignore the body’s color: the browser’s own stylesheet targets `a` directly. Use `color: inherit` to opt in.",
       "**`!important`** raises one declaration above all normal ones. In a stylesheet, only a more specific `!important`, or an equally specific later one, can beat it, so it tends to spread. Fix the cause instead: reorder rules or raise specificity slightly.",
       "**Keywords.** Every property accepts `inherit` (use the parent’s value), `initial` (the property’s default from the specification), `unset` (inherit if the property normally inherits, otherwise initial) and `revert` (back to the browser’s own style).",
       "**Only conflicting declarations lose.** If the losing rule also sets a property nobody else sets, that declaration still applies."
@@ -977,28 +977,28 @@ ICA.addUnit({
     read:[{book:"mdn", where:"CSS styling basics → “Handling conflicts”, and the additional tutorial “Cascade layers”"}],
     sources:[{t:"MDN: Handling conflicts", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts"}], checked:"2026-11"},
 
-   {id:"css-colors", title:"Colours in CSS and contrast", aka:["color","hex colour","rgb","hsl","named colours","alpha","opacity","contrast ratio","WCAG contrast","custom properties","CSS variables"], tags:["css","colour","accessibility"],
-    summary:"Write colours as names, hex, rgb() or hsl(); store them in custom properties; and keep text at 4.5:1 contrast (3:1 for large text and interface parts).",
+   {id:"css-colors", title:"Colors in CSS and contrast", aka:["color","hex color","rgb","hsl","named colors","alpha","opacity","contrast ratio","WCAG contrast","custom properties","CSS variables"], tags:["css","colour","accessibility"],
+    summary:"Write colors as names, hex, rgb() or hsl(); store them in custom properties; and keep text at 4.5:1 contrast (3:1 for large text and interface parts).",
     levels:{
      starter:[
-      "`color` sets text colour; `background-color` sets the background. The same purple can be written four ways: `rebeccapurple`, `#663399`, `rgb(102 51 153)` or `hsl(270 50% 40%)`.",
+      "`color` sets text color; `background-color` sets the background. The same purple can be written four ways: `rebeccapurple`, `#663399`, `rgb(102 51 153)` or `hsl(270 50% 40%)`.",
       "Hex codes are the most common: `#` then two digits each for red, green and blue, from `00` (none) to `ff` (full). `#ffffff` is white and `#000000` black.",
-      "Whatever colours you choose, text must stand out clearly from its background. The international accessibility guidelines (WCAG 2.2, level AA) ask for a **contrast ratio** of at least **4.5:1** for normal text and **3:1** for large text. Light grey `#999999` on white is only about 2.85:1, so it fails.",
-      {tip:"Check colour pairs with a contrast checker rather than by eye."},
-      "Store your main colours once as custom properties, such as `--brand: #663399;`, so a change is made in one place."
+      "Whatever colors you choose, text must stand out clearly from its background. The international accessibility guidelines (WCAG 2.2, level AA) ask for a **contrast ratio** of at least **4.5:1** for normal text and **3:1** for large text. Light gray `#999999` on white is only about 2.85:1, so it fails.",
+      {tip:"Check color pairs with a contrast checker rather than by eye."},
+      "Store your main colors once as custom properties, such as `--brand: #663399;`, so a change is made in one place."
      ],
      builder:[
       {table:[["Notation","Notes"],["Named","More than 140 keywords; easy to read, limited choice"],["Hex","`#rrggbb`; `#rgb` shorthand doubles each digit; 8 digits add opacity"],["`rgb()`","0–255 per channel; `/ 0.5` adds opacity; old comma form still works"],["`hsl()`","Hue angle, saturation %, lightness %; easy to make lighter and darker shades"]]},
       "**Custom properties** hold a value once and reuse it: declare `--brand: #663399;` in a `:root` rule and use `color: var(--brand);`. They inherit, can be changed inside any selector (a `.dark` section can redefine them), and take a fallback: `var(--brand, purple)`.",
       "**Contrast minimums (WCAG 2.2, AA):**",
-      {list:["1.4.3: text 4.5:1; large text 3:1 (at least 18 pt, about 24 px, or 14 pt bold, about 18.7 px). Logos and purely decorative text are exempt; placeholder text isn’t.","1.4.11: visual parts needed to identify controls and their states (an input’s border, a checkbox outline, an icon button), and graphics needed to understand content, 3:1 against adjacent colours.","1.4.1 (level A): colour must not be the only way information is shown."]},
-      "Thresholds aren’t rounded: `#777777` on white is 4.48:1 and fails; `#767676` is 4.54:1 and passes. Check with the WebAIM Contrast Checker or the colour picker in Chrome or Edge developer tools.",
-      "Choose a palette with contrast in mind from the start; adjusting colours after a design is finished is much harder."
+      {list:["1.4.3: text 4.5:1; large text 3:1 (at least 18 pt, about 24 px, or 14 pt bold, about 18.7 px). Logos and purely decorative text are exempt; placeholder text isn’t.","1.4.11: visual parts needed to identify controls and their states (an input’s border, a checkbox outline, an icon button), and graphics needed to understand content, 3:1 against adjacent colors.","1.4.1 (level A): color must not be the only way information is shown."]},
+      "Thresholds aren’t rounded: `#777777` on white is 4.48:1 and fails; `#767676` is 4.54:1 and passes. Check with the WebAIM Contrast Checker or the color picker in Chrome or Edge developer tools.",
+      "Choose a palette with contrast in mind from the start; adjusting colors after a design is finished is much harder."
      ],
      pro:[
-      "**How the ratio is calculated.** Each colour’s relative luminance L is computed from linearised sRGB channels (L = 0.2126 R + 0.7152 G + 0.0722 B). The ratio is (L1 + 0.05) / (L2 + 0.05), with the lighter colour on top, giving 1 to 21. Green dominates luminance, which is why yellow on white fails badly while blue on white often passes.",
-      "**Opacity.** `rgb(… / 0.5)` makes only that colour translucent; the `opacity` property fades the whole element including its text and children. Contrast for translucent colours must be measured on the colour actually shown, after blending with what’s behind.",
-      "**Modern colour.** CSS Color Level 4 adds `oklch()` and `oklab()` (perceptually even lightness, so palettes made by changing lightness look evenly spaced), `color()` for wide-gamut spaces such as Display P3, and `color-mix()`. Current browsers support them; keep an sRGB fallback earlier in the rule if you need older ones.",
+      "**How the ratio is calculated.** Each color’s relative luminance L is computed from linearized sRGB channels (L = 0.2126 R + 0.7152 G + 0.0722 B). The ratio is (L1 + 0.05) / (L2 + 0.05), with the lighter color on top, giving 1 to 21. Green dominates luminance, which is why yellow on white fails badly while blue on white often passes.",
+      "**Opacity.** `rgb(… / 0.5)` makes only that color translucent; the `opacity` property fades the whole element including its text and children. Contrast for translucent colors must be measured on the color actually shown, after blending with what’s behind.",
+      "**Modern color.** CSS Color Level 4 adds `oklch()` and `oklab()` (perceptually even lightness, so palettes made by changing lightness look evenly spaced), `color()` for wide-gamut spaces such as Display P3, and `color-mix()`. Current browsers support them; keep an sRGB fallback earlier in the rule if you need older ones.",
       "**Dark mode.** `@media (prefers-color-scheme: dark)` lets you redefine your custom properties for readers who chose a dark theme, and `color-scheme: light dark` tells the browser to adapt form controls and scrollbars. Check contrast in both themes.",
       "**Beyond WCAG 2.** The draft WCAG 3 work has explored a different contrast method (APCA) that accounts for font size and weight. It isn’t a standard; WCAG 2.2’s ratios remain what laws and audits use."
      ]
@@ -1026,7 +1026,7 @@ ICA.addUnit({
       "**px is not a screen dot.** A CSS pixel is defined so that things look about the same size on different screens. A high-resolution phone may use two or three physical dots for each CSS pixel, which is why `1px` borders still look thin and crisp there."
      ],
      pro:[
-      "**Reader settings.** Browser text-size settings change the initial font size that `rem` (and `em` at the root) are based on. Avoid `html { font-size: 10px }`; if you want convenient maths, a percentage such as `62.5%` at least keeps scaling, but it makes every unset size small, so most teams simply work in rem with the 16 px default.",
+      "**Reader settings.** Browser text-size settings change the initial font size that `rem` (and `em` at the root) are based on. Avoid `html { font-size: 10px }`; if you want convenient math, a percentage such as `62.5%` at least keeps scaling, but it makes every unset size small, so most teams simply work in rem with the 16 px default.",
       "**Media queries** resolve `em` and `rem` against the browser’s **initial** font size, not your `html` rule. A breakpoint of `40rem` is 640 px at the default setting and moves wider when the reader enlarges text, which keeps line lengths comfortable.",
       "**Viewport units.** On phones, `100vh` can be taller than the visible area when browser toolbars show. Newer units fix this: `svh` (small viewport, toolbars shown), `lvh` (large) and `dvh` (dynamic). Never size text in `vw` alone: it can’t be enlarged by text-size settings; combine it, as in `calc(1rem + 1vw)` or `clamp(1.25rem, 1rem + 2vw, 2.5rem)`.",
       "**Other units.** `lh` and `rlh` (line heights), `cap` and `ex` (font metrics), and container query units `cqw`/`cqi` (a share of a container’s size) are all available in current browsers. Absolute physical units (`cm`, `in`, `pt`) are mainly for print stylesheets.",
@@ -1049,7 +1049,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Generic families:** `serif`, `sans-serif`, `monospace`, `cursive`, `fantasy`, plus `system-ui` (the device’s interface font). Never quote them. Quote family names that contain spaces.",
-      "**Web fonts.** Either self-host with `@font-face` (a WOFF2 file in your site, described by `font-family`, `src` and usually `font-display: swap`), or link a font service. Every weight and style is another file, so load only what you use, and check the licence allows web use.",
+      "**Web fonts.** Either self-host with `@font-face` (a WOFF2 file in your site, described by `font-family`, `src` and usually `font-display: swap`), or link a font service. Every weight and style is another file, so load only what you use, and check the license allows web use.",
       "**Privacy.** Fonts loaded from a third-party server reveal each visitor’s IP address to that server. On 20 January 2022 the Munich Regional Court (Landgericht München I) ruled that a site breached the GDPR by passing visitors’ IP addresses to Google through embedded Google Fonts without consent, granted an injunction and awarded the visitor who sued €100 in damages. It is one regional court’s decision in one case, not a general rule (and not legal advice), but it is widely cited. Self-hosting the same files (Google Fonts are openly licensed) avoids the transfer.",
       "**Line height** should be unitless (`1.5`), so each element multiplies its own font size. Headings look better tighter (about 1.1–1.3).",
       "**Other text properties:** `font-weight` (100–900; `bold` is 700), `font-style: italic`, `text-align`, `letter-spacing`, `text-transform`, `text-decoration`. Avoid `text-align: justify` for body text: uneven word gaps hurt readability, and WCAG 1.4.8 lists unjustified text as an aid.",
@@ -1057,7 +1057,7 @@ ICA.addUnit({
      ],
      pro:[
       "**WCAG text guidance.** 1.4.4 Resize Text (AA): text can be enlarged to 200% without loss of content. 1.4.12 Text Spacing (AA): nothing breaks when readers override line height to 1.5, paragraph spacing to 2× the font size, letter spacing to 0.12 em and word spacing to 0.16 em, so avoid fixed heights on text boxes. 1.4.8 Visual Presentation (AAA): lines no wider than 80 characters (40 for Chinese, Japanese and Korean), no justification, line spacing at least 1.5.",
-      "**Loading behaviour.** `font-display: swap` shows fallback text immediately and swaps when the font arrives; `optional` uses the web font only if it loads almost instantly, avoiding layout shifts. `size-adjust`, `ascent-override` and related descriptors in a fallback `@font-face` can make the fallback take the same space as the web font, reducing jumps. Preload the most important file with `<link rel=\"preload\" as=\"font\" type=\"font/woff2\" crossorigin>`.",
+      "**Loading behavior.** `font-display: swap` shows fallback text immediately and swaps when the font arrives; `optional` uses the web font only if it loads almost instantly, avoiding layout shifts. `size-adjust`, `ascent-override` and related descriptors in a fallback `@font-face` can make the fallback take the same space as the web font, reducing jumps. Preload the most important file with `<link rel=\"preload\" as=\"font\" type=\"font/woff2\" crossorigin>`.",
       "**Variable fonts** pack many weights (and sometimes widths or slants) into one file, controlled by `font-weight: 350` or `font-variation-settings`. One variable file can replace several static ones.",
       "**Subsetting** removes characters you don’t need, but be careful with multilingual sites: a Latin-only subset leaves names such as Łukasz or Nguyễn in a fallback font. `unicode-range` in `@font-face` lets the browser download a subset only when a page uses those characters.",
       "**System font stacks** (`font-family: system-ui, sans-serif`) cost nothing to load and look native, though the font differs between devices."
@@ -1075,8 +1075,8 @@ ICA.addUnit({
       {code:".card {\n  padding: 1rem;\n  border: 2px solid gray;\n  margin-bottom: 1.5rem;\n}", lang:"css"},
       "By default, `width` sets only the content, so padding and border make the box wider than you asked. Most sites add `box-sizing: border-box` to every element, so `width` means the whole visible box.",
       {key:"Padding is inside the border; margin is outside."},
-      "Think of a framed picture: the picture is the content, the mount around it is the padding, the frame is the border, and the gap to the next frame on the wall is the margin. The background colour fills the content and padding, but never the margin, which is always transparent.",
-      {tip:"To centre a block on the page, give it a `max-width` and `margin: 0 auto`."}
+      "Think of a framed picture: the picture is the content, the mount around it is the padding, the frame is the border, and the gap to the next frame on the wall is the margin. The background color fills the content and padding, but never the margin, which is always transparent.",
+      {tip:"To center a block on the page, give it a `max-width` and `margin: 0 auto`."}
      ],
      builder:[
       "**Widths.** Default (`content-box`): visible width = width + left and right padding + left and right border. With `border-box`: visible width = width, and the content shrinks to fit. Margin is never part of the visible width.",
@@ -1086,7 +1086,7 @@ ICA.addUnit({
       "**Margin collapsing.** Adjacent vertical margins between blocks in normal flow combine into the larger one (24 px and 16 px give 24 px). Not horizontal margins, and not between flex or grid items.",
       "**Centring a block:** give it a `max-width` and `margin: 0 auto` (or `margin-inline: auto`).",
       "**Width: 100% and phones.** An element with `width: 100%` plus padding is wider than its container under the default model, a common cause of sideways scrolling on phones. `border-box` fixes it.",
-      "**Centring.** `text-align: center` centres inline content inside a box; it doesn’t move the box. Automatic margins centre a block that has a width limit; flexbox or grid on the parent centre in both directions."
+      "**Centring.** `text-align: center` centers inline content inside a box; it doesn’t move the box. Automatic margins center a block that has a width limit; flexbox or grid on the parent center in both directions."
      ],
      pro:[
       "**The reset.** MDN shows `html { box-sizing: border-box; } *, *::before, *::after { box-sizing: inherit; }`, which lets a component opt back into `content-box` for its whole subtree; the simpler `*, *::before, *::after { box-sizing: border-box; }` is just as common.",
@@ -1106,7 +1106,7 @@ ICA.addUnit({
      starter:[
       "Flexbox lines things up in a row (or a column). Put `display: flex` on the **parent**, and its children sit side by side:",
       {code:".links {\n  display: flex;\n  gap: 1rem;\n}", lang:"css"},
-      "`gap` puts space between the items. `justify-content` spreads them along the row (`center`, `space-between`…) and `align-items` lines them up across it (`center` centres them vertically in a row).",
+      "`gap` puts space between the items. `justify-content` spreads them along the row (`center`, `space-between`…) and `align-items` lines them up across it (`center` centers them vertically in a row).",
       {tip:"Flexbox is ideal for navigation bars, rows of buttons and tags, and arranging the inside of a card."},
       "Only the **direct children** of the flex container become flex items. Their own contents carry on as normal, unless you make them flex containers too.",
       "By default the items stay on one line and squeeze to fit. Add `flex-wrap: wrap` and they move onto new lines when there isn’t room, which is usually what you want on a phone.",
@@ -1146,7 +1146,7 @@ ICA.addUnit({
       {key:"Columns on the parent; `fr` shares out the free space; `gap` spaces the cells."}
      ],
      builder:[
-      "**fr maths.** Gaps and fixed-size tracks are taken out first; the rest is divided by the total number of fractions. 620 px with a 20 px gap and `1fr 2fr` gives 200 px and 400 px.",
+      "**fr math.** Gaps and fixed-size tracks are taken out first; the rest is divided by the total number of fractions. 620 px with a 20 px gap and `1fr 2fr` gives 200 px and 400 px.",
       "**Mixing units.** `grid-template-columns: 15rem 1fr` gives a fixed sidebar and a flexible main column.",
       "**Auto-responsive columns.** `repeat(auto-fit, minmax(12rem, 1fr))` creates as many columns of at least 12rem as fit, and shares out the leftover space. No media query needed. `auto-fill` is similar but keeps empty column slots when there are few items.",
       "**Placing items.** `grid-column: 1 / -1` makes an item span from the first line to the last (full width). `grid-column: span 2` spans two columns. `grid-template-areas` lets you name regions (`\"header header\" \"nav main\"`) and place items with `grid-area`.",
@@ -1274,7 +1274,7 @@ ICA.addUnit({
    {id:"cascade", term:"Cascade", def:"The process a browser uses to choose one value for each property when several rules apply: importance, inline styles, specificity, then order.", codex:"cascade-specificity"},
    {id:"specificity", term:"Specificity", def:"How precisely a selector targets an element, counted as ids, then classes, then types. The more specific selector wins a conflict.", codex:"cascade-specificity"},
    {id:"inheritance", term:"Inheritance (CSS)", def:"Some properties, mostly text ones like color and font-family, pass from a parent element to the elements inside it unless they’re set directly.", codex:"cascade-specificity"},
-   {id:"hex-color", term:"Hex colour", def:"A colour written as # and hexadecimal digits for red, green and blue, from 00 to ff each, such as #663399. #639 is shorthand for the same colour.", codex:"css-colors"},
+   {id:"hex-color", term:"Hex color", def:"A color written as # and hexadecimal digits for red, green and blue, from 00 to ff each, such as #663399. #639 is shorthand for the same color.", codex:"css-colors"},
    {id:"custom-property", term:"Custom property", def:"A value you name and reuse in CSS, often called a CSS variable: declared as --brand: #663399; and used as var(--brand).", codex:"css-colors"},
    {id:"font-stack", term:"Font stack", def:"The list of fonts in a font-family declaration. The browser uses the first one available, so the list ends with a generic family as a fallback.", codex:"css-typography"},
    {id:"generic-font-family", term:"Generic font family", def:"A keyword such as serif, sans-serif or monospace that means “any font of this kind”, used unquoted at the end of a font stack.", codex:"css-typography"},
@@ -1283,7 +1283,7 @@ ICA.addUnit({
    {id:"em-unit", term:"em (unit)", def:"A CSS unit relative to font size: for font-size, the parent’s size; for other properties, the element’s own. Nested em sizes multiply.", codex:"css-units"},
    {id:"box-model", term:"Box model", def:"The idea that every element is a rectangle made of content, padding, border and margin, from the inside out.", codex:"box-model"},
    {id:"padding", term:"Padding", def:"Space inside an element’s border, between the border and the content. The element’s background shows through it.", codex:"box-model"},
-   {id:"border-css", term:"Border (CSS)", def:"The line around an element’s padding, set with a width, a style such as solid, and a colour. Without a style, no border is drawn.", codex:"box-model"},
+   {id:"border-css", term:"Border (CSS)", def:"The line around an element’s padding, set with a width, a style such as solid, and a color. Without a style, no border is drawn.", codex:"box-model"},
    {id:"margin-css", term:"Margin (CSS)", def:"Transparent space outside an element’s border that separates it from other boxes. Vertical margins between blocks can collapse into one.", codex:"box-model"},
    {id:"box-sizing", term:"box-sizing", def:"The property that decides what width means: content-box (the default, content only) or border-box (content plus padding and border).", codex:"box-model"},
    {id:"flexbox", term:"Flexbox", def:"A CSS layout mode, switched on with display: flex on a parent, that lines its children up in a row or a column.", codex:"flexbox"},
@@ -1310,10 +1310,10 @@ ICA.addUnit({
      {t:"A `<script>` that sets the styles", why:"JavaScript can set styles, but it’s the wrong tool for a site’s basic look and fails if scripts don’t run."}
    ]},
    {id:"t2u3-q03", lesson:"t2u3-l1", level:1, q:"Which of these is a valid CSS comment?", options:[
-     {t:"`/* main colours */`", ok:true, why:"CSS comments open with `/*` and close with `*/`."},
-     {t:"`// main colours`", why:"That’s a JavaScript comment. In CSS it’s invalid and swallows what follows it."},
-     {t:"`<!-- main colours -->`", why:"That’s an HTML comment; it doesn’t work inside a stylesheet."},
-     {t:"`# main colours`", why:"`#` starts an id selector in CSS, not a comment."}
+     {t:"`/* main colors */`", ok:true, why:"CSS comments open with `/*` and close with `*/`."},
+     {t:"`// main colors`", why:"That’s a JavaScript comment. In CSS it’s invalid and swallows what follows it."},
+     {t:"`<!-- main colors -->`", why:"That’s an HTML comment; it doesn’t work inside a stylesheet."},
+     {t:"`# main colors`", why:"`#` starts an id selector in CSS, not a comment."}
    ]},
    {id:"t2u3-q04", lesson:"t2u3-l1", level:2, q:"Which selector matches `<p class=\"note warning\">` but **not** a plain `<p>`?", options:[
      {t:"`.warning`", ok:true, why:"The element’s class list includes `warning`, and a plain `<p>` has no classes."},
@@ -1327,7 +1327,7 @@ ICA.addUnit({
      {t:"Only `li` elements that have the class `menu` themselves", why:"That would be `li.menu`, with no space."},
      {t:"The first `li` inside `.menu` only", why:"Descendant selectors match all matching elements inside, not just the first."}
    ]},
-   {id:"t2u3-q06", lesson:"t2u3-l1", level:3, q:"Ana’s rule is `.banner { colour: white; background-color: teal; padding: 1rem; }`. What will she see?", options:[
+   {id:"t2u3-q06", lesson:"t2u3-l1", level:3, q:"Ana’s rule is `.banner { color: white; background-color: teal; padding: 1rem; }`. What will she see?", options:[
      {t:"A teal banner with padding, but text in the default colour", ok:true, why:"`colour` isn’t a CSS property (CSS uses `color`), so only that declaration is skipped. The other two apply."},
      {t:"Nothing styled at all, because the rule has an error", why:"An unknown property only loses its own declaration. The rest of the rule still works."},
      {t:"White text on teal with padding; browsers accept both spellings", why:"Browsers only accept the American spelling `color`."},
@@ -1352,10 +1352,10 @@ ICA.addUnit({
      {t:"Ids can only be used in JavaScript", why:"Ids are used by CSS, JavaScript and links (`href=\"#top\"`) alike."}
    ]},
    /* ---- Lesson 2 ---- */
-   {id:"t2u3-q10", lesson:"t2u3-l2", level:1, q:"Two rules with exactly the same selector set different colours for the same element. Which one wins?", options:[
+   {id:"t2u3-q10", lesson:"t2u3-l2", level:1, q:"Two rules with exactly the same selector set different colors for the same element. Which one wins?", options:[
      {t:"The one that comes later in the CSS", ok:true, why:"Equal specificity means order decides, and the later declaration wins."},
      {t:"The one that comes first", why:"Earlier rules are overridden by later ones of the same specificity."},
-     {t:"The darker colour", why:"The cascade never looks at what the values are, only at importance, specificity and order."},
+     {t:"The darker color", why:"The cascade never looks at what the values are, only at importance, specificity and order."},
      {t:"Neither; the element uses the browser’s default", why:"The cascade always picks a winner when rules match."}
    ]},
    {id:"t2u3-q11", lesson:"t2u3-l2", level:1, q:"What is the specificity of `.card .title`, as ID-CLASS-TYPE?", options:[
@@ -1377,16 +1377,16 @@ ICA.addUnit({
      {t:"`margin`", why:"Margins aren’t inherited."}
    ]},
    {id:"t2u3-q14", lesson:"t2u3-l2", level:3, q:"Lucía sets `body { color: #333333; }`, but her links stay blue. Why?", options:[
-     {t:"The browser’s own stylesheet targets links directly", ok:true, why:"A rule that targets links directly beats inheritance. Inherited values lose to any rule that targets the element itself, including the browser’s own `a` rule. `a { color: inherit; }` makes links follow the text colour."},
-     {t:"Links can’t be recoloured with CSS", why:"They can: any rule targeting `a` can set its colour."},
+     {t:"The browser’s own stylesheet targets links directly", ok:true, why:"A rule that targets links directly beats inheritance. Inherited values lose to any rule that targets the element itself, including the browser’s own `a` rule. `a { color: inherit; }` makes links follow the text color."},
+     {t:"Links can’t be recoloured with CSS", why:"They can: any rule targeting `a` can set its color."},
      {t:"Her `body` rule has too low a specificity; it needs an id", why:"Specificity doesn’t help here: the body rule matches the body, not the links, so it never competes with the link rule."},
-     {t:"`color` isn’t an inherited property", why:"`color` is inherited, which is why her paragraphs turned dark grey. Links are different because something targets them directly."}
+     {t:"`color` isn’t an inherited property", why:"`color` is inherited, which is why her paragraphs turned dark gray. Links are different because something targets them directly."}
    ]},
    {id:"t2u3-q15", lesson:"t2u3-l2", level:3, q:"Priya’s `.alert { color: darkred; }` doesn’t work on `<p class=\"alert\" style=\"color: gray\">`. What’s happening?", options:[
      {t:"The inline style beats the stylesheet rule", ok:true, why:"Inline styles outrank all normal stylesheet rules, whatever their selector’s specificity. Removing the inline style is the clean fix."},
-     {t:"Class selectors can’t set colours", why:"They can. The inline style is simply stronger."},
+     {t:"Class selectors can’t set colors", why:"They can. The inline style is simply stronger."},
      {t:"The `.alert` rule needs to come before the HTML", why:"Where the stylesheet sits doesn’t matter here; inline styles beat stylesheet rules wherever they are."},
-     {t:"`darkred` isn’t a valid colour", why:"`darkred` is a named colour. The problem is the inline style."}
+     {t:"`darkred` isn’t a valid color", why:"`darkred` is a named color. The problem is the inline style."}
    ]},
    {id:"t2u3-q16", lesson:"t2u3-l2", level:2, q:"In the browser’s developer tools, a declaration in the Styles pane has a line through it but no warning icon. What does that mean?", options:[
      {t:"Another declaration overrode it in the cascade", ok:true, why:"Struck-through declarations lost; look higher in the pane for the winning one."},
@@ -1400,18 +1400,18 @@ ICA.addUnit({
      {t:"Use an inline style instead; it’s stronger than `!important`", why:"An `!important` declaration in a stylesheet beats a normal inline style, and inline styles create their own maintenance problems."},
      {t:"Give the element an id and style that", why:"An id raises specificity, but piling on ids makes future overrides harder too. Understand the conflict first."}
    ]},
-   {id:"t2u3-q18", lesson:"t2u3-l2", level:3, q:"Oluwaseun’s CSS has `#content { color: navy; }` and `p { color: black; }`. What colour is a paragraph inside `<main id=\"content\">`?", options:[
+   {id:"t2u3-q18", lesson:"t2u3-l2", level:3, q:"Oluwaseun’s CSS has `#content { color: navy; }` and `p { color: black; }`. What color is a paragraph inside `<main id=\"content\">`?", options:[
      {t:"Black", ok:true, why:"The `p` rule targets the paragraph directly. Navy only reaches it by inheritance, which always loses to a direct rule."},
      {t:"Navy, because 1-0-0 beats 0-0-1", why:"Specificity compares rules that match the same element. `#content` matches the main element, not the paragraph."},
      {t:"Navy, because it’s the parent", why:"Being the parent only matters when nothing targets the paragraph directly."},
      {t:"It depends on which rule is first", why:"Order isn’t needed: only one rule matches the paragraph."}
    ]},
    /* ---- Lesson 3 ---- */
-   {id:"t2u3-q19", lesson:"t2u3-l3", level:1, q:"What colour is `#000000`?", options:[
+   {id:"t2u3-q19", lesson:"t2u3-l3", level:1, q:"What color is `#000000`?", options:[
      {t:"Black", ok:true, why:"All three channels (red, green, blue) are at zero: no light."},
      {t:"White", why:"White is `#ffffff`, every channel at full."},
      {t:"Transparent", why:"Six-digit hex codes are fully opaque. Only an eight-digit code (two extra digits for opacity) or a keyword like `transparent` can be see-through."},
-     {t:"Mid grey", why:"A mid grey has equal middle values, such as `#808080`."}
+     {t:"Mid gray", why:"A mid gray has equal middle values, such as `#808080`."}
    ]},
    {id:"t2u3-q20", lesson:"t2u3-l3", level:1, q:"Under WCAG 2.2 level AA, what is the minimum contrast ratio for normal-size body text?", options:[
      {t:"4.5:1", ok:true, why:"Success criterion 1.4.3 sets 4.5:1 for normal text."},
@@ -1437,10 +1437,10 @@ ICA.addUnit({
      {t:"`rem` text is sharper on high-resolution screens", why:"Both are drawn equally sharply. The difference is how they respond to settings."},
      {t:"Zoom doesn’t work on `px` text", why:"Page zoom enlarges `px` text too. The difference is the default text-size setting."}
    ]},
-   {id:"t2u3-q24", lesson:"t2u3-l3", level:3, q:"Fatima’s design uses mid-grey text `#777777` on white for body copy. A checker says 4.48:1. Her colleague says “that rounds to 4.5, it passes”. Who’s right?", options:[
-     {t:"The checker: thresholds aren’t rounded, so 4.48:1 fails", ok:true, why:"The WAI guidance says the ratios are exact thresholds. A slightly darker grey, such as `#767676` (4.54:1), solves it with no visible change in style."},
+   {id:"t2u3-q24", lesson:"t2u3-l3", level:3, q:"Fatima’s design uses mid-gray text `#777777` on white for body copy. A checker says 4.48:1. Her colleague says “that rounds to 4.5, it passes”. Who’s right?", options:[
+     {t:"The checker: thresholds aren’t rounded, so 4.48:1 fails", ok:true, why:"The WAI guidance says the ratios are exact thresholds. A slightly darker gray, such as `#767676` (4.54:1), solves it with no visible change in style."},
      {t:"The colleague: ratios are rounded to one decimal place", why:"WCAG explicitly says not to round; 4.499:1 fails."},
-     {t:"It passes because grey is a neutral colour", why:"Contrast depends only on brightness difference, not on which colour is used."},
+     {t:"It passes because gray is a neutral color", why:"Contrast depends only on brightness difference, not on which color is used."},
      {t:"It doesn’t matter; contrast rules only apply to headings", why:"1.4.3 covers all text, and body text most of all."}
    ]},
    {id:"t2u3-q25", lesson:"t2u3-l3", level:2, q:"A `<section>` has `font-size: 20px`. A paragraph inside it has `font-size: 1.5em`. How big is the paragraph’s text?", options:[
@@ -1502,12 +1502,12 @@ ICA.addUnit({
      {t:"Add `box-sizing: border-box`", ok:true, why:"Then the padding fits inside the 100%. With the default model, the box is 100% plus 24 px of padding (and any border), which is wider than its container."},
      {t:"Change `width: 100%` to `width: 110%`", why:"That makes it even wider."},
      {t:"Remove the `<meta name=\"viewport\">` tag", why:"That would make the whole page tiny on phones, hiding the problem rather than fixing it."},
-     {t:"Add `margin: 0 auto`", why:"Automatic margins centre a box that’s narrower than its container. This one is too wide."}
+     {t:"Add `margin: 0 auto`", why:"Automatic margins center a box that’s narrower than its container. This one is too wide."}
    ]},
-   {id:"t2u3-q35", lesson:"t2u3-l4", level:3, q:"Amara’s article column is `.page { width: 45rem; margin: 0 auto; }`. It’s centred on her laptop but too wide for phones. What should she change?", options:[
-     {t:"`width: 45rem` to `max-width: 45rem`", ok:true, why:"`max-width` caps the column on wide screens but lets it shrink to fit a phone; the auto margins still centre it."},
+   {id:"t2u3-q35", lesson:"t2u3-l4", level:3, q:"Amara’s article column is `.page { width: 45rem; margin: 0 auto; }`. It’s centered on her laptop but too wide for phones. What should she change?", options:[
+     {t:"`width: 45rem` to `max-width: 45rem`", ok:true, why:"`max-width` caps the column on wide screens but lets it shrink to fit a phone; the auto margins still center it."},
      {t:"`margin: 0 auto` to `margin: 0`", why:"That stops the centring on wide screens and doesn’t make the column any narrower on phones."},
-     {t:"Add `text-align: center`", why:"That centres the text inside the column, not the column’s width."},
+     {t:"Add `text-align: center`", why:"That centers the text inside the column, not the column’s width."},
      {t:"Change `45rem` to `720px`", why:"720 px is still wider than a phone; it just ignores the reader’s text size as well."}
    ]},
    {id:"t2u3-q36", lesson:"t2u3-l4", level:1, q:"In `margin: 5px 10px 15px 20px;`, which side gets 20px?", options:[

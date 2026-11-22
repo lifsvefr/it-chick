@@ -25,7 +25,7 @@ ICA.addUnit({
       "Think of a file as a sealed envelope in a filing cabinet. Inside the envelope is the content. On the outside is a label with its name, and a few notes stamped on by the post office: when it was made, when it was last changed, how heavy it is. You can read the outside without opening the envelope.",
       "The precise version: a [[file]] is a named collection of data kept on [[storage]] (an [[ssd]], hard drive, memory card or USB stick). It has three parts:",
       {list:[
-        "**The data** — the content itself, stored as bytes (the ones and zeros explained in {{bits-bytes}}). A 3 MB photo is about 3 million bytes of colour information.",
+        "**The data** — the content itself, stored as bytes (the ones and zeros explained in {{bits-bytes}}). A 3 MB photo is about 3 million bytes of color information.",
         "**The name** — what people see in a folder, such as `garden-club-minutes.docx`. The last part after the final dot is the **extension**.",
         "**The [[metadata]]** — data *about* the data: size, date created, date modified, who owns it, and often more. A phone photo usually also records the camera model and sometimes the location where it was taken."
       ]},
@@ -65,7 +65,7 @@ ICA.addUnit({
       ]},
       "Notice the right-hand column: **a format is not owned by one app**. A `.docx` can be opened by several programs. That matters when someone says “I don’t have Word” — they may not need it.",
       {tip:"Older Microsoft formats end without the x: `.doc`, `.xls`, `.ppt`. The newer x-formats arrived in 2007. Both still open in modern apps."},
-      "Two that confuse people: `.csv` and `.txt` contain **only text**. A CSV opened in a spreadsheet looks like a spreadsheet, but colours, formulas and multiple sheets are not saved in it. If you build a budget with formulas and save it as `.csv`, the formulas are lost. Save as `.xlsx` (or `.ods`) to keep them."
+      "Two that confuse people: `.csv` and `.txt` contain **only text**. A CSV opened in a spreadsheet looks like a spreadsheet, but colors, formulas and multiple sheets are not saved in it. If you build a budget with formulas and save it as `.csv`, the formulas are lost. Save as `.xlsx` (or `.ods`) to keep them."
     ]},
     {h:"Open and proprietary formats", body:[
       "Formats differ in who controls the rules.",
@@ -117,7 +117,7 @@ ICA.addUnit({
    try:[
     {id:"t1u2-l1-x1", type:"match", q:"Match each extension to what the file is.", pairs:[
       [".xlsx","A spreadsheet that can keep formulas","The x-formats are Microsoft’s current Office formats; .xlsx is the spreadsheet one, and it stores formulas, not just numbers."],
-      [".csv","A table stored as plain text","CSV means comma-separated values: rows of text with commas between columns. No formulas or colours are saved."],
+      [".csv","A table stored as plain text","CSV means comma-separated values: rows of text with commas between columns. No formulas or colors are saved."],
       [".pdf","A fixed-layout document that looks the same everywhere","PDF keeps fonts and layout fixed, which is why it’s used for finished documents."],
       [".heic","An iPhone photo in a space-saving format","HEIC is Apple’s default photo format (HEIF). It saves space but some older software can’t open it."],
       [".png","An image that keeps every pixel exactly","PNG is lossless: good for screenshots and logos where sharp edges matter."]
@@ -147,7 +147,7 @@ ICA.addUnit({
       {t:"The date and time it was taken", ok:true, why:"Stored alongside the picture data; you can see it in the file’s info without opening the image."},
       {t:"The location where it was taken, if the camera recorded it", ok:true, why:"GPS location is a common piece of photo metadata, and a privacy concern worth knowing about."},
       {t:"The file size", ok:true, why:"Size is metadata the file system keeps about every file."},
-      {t:"The colours of the pixels in the sunset", why:"That is the data — the content of the picture itself."}
+      {t:"The colors of the pixels in the sunset", why:"That is the data — the content of the picture itself."}
     ]},
     {id:"t1u2-l1-x6", type:"mcq", q:"Kenji zips a folder of 200 holiday JPEG photos (900 MB) to email it. The zip is still about 890 MB. Why?", options:[
       {t:"JPEG photos are already compressed", ok:true, why:"Correct. JPEG has already removed redundancy, so zip finds little left to squeeze. Zip works best on text and documents. For big photo sets, a cloud sharing link is better than email."},
@@ -156,7 +156,7 @@ ICA.addUnit({
       {t:"Zipping removed photos, so it can’t be smaller", why:"Zip is lossless and keeps every file. The size barely changed because the photos were already compressed."}
     ]},
     {id:"t1u2-l1-x7", type:"mcq", q:"Priya saves her club’s membership spreadsheet, full of formulas, as `members.csv` and closes it. What happens to the formulas?", options:[
-      {t:"They are lost; CSV stores only the values as plain text", ok:true, why:"Right. CSV has no place for formulas, colours or extra sheets. Keep a .xlsx or .ods master copy and export CSV only when someone needs the raw data."},
+      {t:"They are lost; CSV stores only the values as plain text", ok:true, why:"Right. CSV has no place for formulas, colors or extra sheets. Keep a .xlsx or .ods master copy and export CSV only when someone needs the raw data."},
       {t:"They are kept, because CSV is a spreadsheet format", why:"CSV opens in spreadsheet apps but is plain text. Most apps warn you that some features will be lost."},
       {t:"They are converted into a PDF inside the CSV", why:"A CSV is just text with commas. It can’t contain a PDF or anything else."},
       {t:"They are kept only if the file is zipped", why:"Zipping wraps a file without changing what’s in it. Lost formulas stay lost."}
@@ -180,11 +180,11 @@ ICA.addUnit({
   },
   /* ───────────────────────── LESSON 2 ───────────────────────── */
   {id:"t1u2-l2", title:"Folders and paths", minutes:50,
-   hook:{q:"Dragging a file with the mouse sometimes moves it and sometimes copies it. How can you tell which will happen before you let go?", options:["You can’t: you find out afterwards","From the small label next to the pointer as you drag","From the file’s size","From the colour of the file’s icon"], answer:1, reveal:"**From the small label next to the pointer.** While you drag, it says something like “Move to Documents” or “Copy to …” (on a Mac, a green plus sign means copy). Which one you get depends on where you drop the file, and this lesson explains that rule, along with the folder tree, paths and the habits that stop files going missing."},
+   hook:{q:"Dragging a file with the mouse sometimes moves it and sometimes copies it. How can you tell which will happen before you let go?", options:["You can’t: you find out afterwards","From the small label next to the pointer as you drag","From the file’s size","From the color of the file’s icon"], answer:1, reveal:"**From the small label next to the pointer.** While you drag, it says something like “Move to Documents” or “Copy to …” (on a Mac, a green plus sign means copy). Which one you get depends on where you drop the file, and this lesson explains that rule, along with the folder tree, paths and the habits that stop files going missing."},
    goals:["Picture your storage as a folder tree and find your home folder","Read and copy a path on Windows, macOS and ChromeOS","Move or copy on purpose, including between drives","Find lost files with search and recover them from the Recycle Bin or Trash"],
    learn:[
     {h:"The folder tree", body:[
-      {lead:"If files are envelopes, a [[folder]] is a drawer or a labelled box you put envelopes in. Boxes can sit inside other boxes."},
+      {lead:"If files are envelopes, a [[folder]] is a drawer or a labeled box you put envelopes in. Boxes can sit inside other boxes."},
       "Your computer starts with one top-level container for each drive. On Windows that is `C:` (and `D:`, `E:` and so on for other drives). On macOS, Linux and ChromeOS there is a single top called the **root**, written `/`. Everything else branches out from there, like an upside-down tree: a few big branches near the top, then smaller and smaller ones, with files as the leaves.",
       "Computer scientists call folders **directories**; the words mean the same thing. A folder inside another is a **subfolder**, and the folder that contains it is its **parent**.",
       {fig:'<svg viewBox="0 0 340 380"><defs><marker id="t1u2-l2-mk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="3.5" markerHeight="3.5" orient="auto"><path class="d-inkf" d="M0,0 L8,4 L0,8 z"/></marker></defs><path class="d-ink" d="M24.6,98 V326 H45.3 M24.6,60 H45.3" stroke-width="2" fill="none"/><path class="d-ink" d="M24.6,36 V98 H43.4" stroke-width="3" fill="none" marker-end="url(#t1u2-l2-mk)"/><path class="d-ink" d="M62.3,112 V136 H81.2" stroke-width="3" fill="none" marker-end="url(#t1u2-l2-mk)"/><path class="d-ink" d="M100.1,212 V288 H120.9 M100.1,174 H120.9" stroke-width="2" fill="none"/><path class="d-ink" d="M100.1,150 V212 H119" stroke-width="3" fill="none" marker-end="url(#t1u2-l2-mk)"/><path class="d-ink" d="M137.9,226 V250 H156.8" stroke-width="3" fill="none" marker-end="url(#t1u2-l2-mk)"/><rect class="d-soft" x="9.4" y="8" width="56.7" height="28" rx="8" stroke-width="2"/><text x="37.8" y="27" text-anchor="middle">C:\\</text><rect class="d-soft" x="47.2" y="46" width="117.1" height="28" rx="8" stroke-width="2"/><text x="105.8" y="65" text-anchor="middle">Program Files</text><rect class="d-gold" x="47.2" y="84" width="75.6" height="28" rx="8" stroke-width="3"/><text x="85" y="103" text-anchor="middle">Users</text><rect class="d-gold" x="85" y="122" width="79.3" height="28" rx="8" stroke-width="3"/><text x="124.7" y="141" text-anchor="middle">Amara</text><rect class="d-soft" x="122.8" y="160" width="94.4" height="28" rx="8" stroke-width="2"/><text x="170" y="179" text-anchor="middle">Desktop</text><rect class="d-gold" x="122.8" y="198" width="103.9" height="28" rx="8" stroke-width="3"/><text x="174.7" y="217" text-anchor="middle">Documents</text><rect class="d-lup" x="160.6" y="236" width="122.8" height="28" rx="8" stroke-width="3"/><text x="221.9" y="255" text-anchor="middle">minutes.docx</text><rect class="d-soft" x="122.8" y="274" width="103.9" height="28" rx="8" stroke-width="2"/><text x="174.7" y="293" text-anchor="middle">Downloads</text><rect class="d-soft" x="47.2" y="312" width="90.7" height="28" rx="8" stroke-width="2"/><text x="92.6" y="331" text-anchor="middle">Windows</text><text class="s" x="170" y="366" text-anchor="middle">Path: C:\\Users\\Amara\\Documents\\minutes.docx</text></svg>', alt:"A folder tree drawn like a file explorer, each level indented under the one above. C: contains Program Files, Users and Windows. Users contains Amara, which contains Desktop, Documents and Downloads. A highlighted route runs C:, Users, Amara, Documents, to the file minutes.docx.", cap:"A path is the route from the top of the tree to one file. The highlighted route is the path written underneath."}
@@ -198,7 +198,7 @@ ICA.addUnit({
         ["Downloads","Where browsers and email save files by default","Everything lands here and is rarely sorted"],
         ["Pictures / Movies or Videos / Music","Media; photo apps often keep their libraries here","Big; check these are included in your backups"]
       ]},
-      "On **Windows 11**, File Explorer’s **Home** view shows recent and favourite files, and the standard folders are pinned under **Quick access**. On **macOS**, Finder’s sidebar lists Desktop, Documents and Downloads, and your home folder has a house icon. On **ChromeOS**, the Files app shows **My files** (with **Downloads** inside it) for files kept on the Chromebook, and **Google Drive** for files kept online.",
+      "On **Windows 11**, File Explorer’s **Home** view shows recent and favorite files, and the standard folders are pinned under **Quick access**. On **macOS**, Finder’s sidebar lists Desktop, Documents and Downloads, and your home folder has a house icon. On **ChromeOS**, the Files app shows **My files** (with **Downloads** inside it) for files kept on the Chromebook, and **Google Drive** for files kept online.",
       {tip:"On Windows, if OneDrive “backup” is turned on, your Desktop, Documents and Pictures may physically live in a OneDrive folder. Lesson 4 explains what that means."}
     ]},
     {h:"Reading and writing a path", body:[
@@ -389,7 +389,7 @@ ICA.addUnit({
         ["Very long names","Paths have length limits on some systems; long names get cut off on screen","Keep names short but meaningful, around 25–40 characters"]
       ]},
       "A common convention: use **underscores to separate the parts** of a name (date, project, description, version) and **hyphens to join words within a part**: `2026-03-04_food-bank_volunteer-rota_v02.xlsx`. Some people prefer CamelCase (`VolunteerRota`). What matters most is consistency.",
-      {fig:'<svg viewBox="0 0 340 228"><text x="170" y="22" text-anchor="middle">Anatomy of a well-made file name</text><rect class="d-gold" x="36.8" y="38" width="103.9" height="40" rx="8" stroke-width="2"/><text x="88.8" y="63" text-anchor="middle">2026-03-04</text><text x="147.3" y="63" text-anchor="middle">_</text><rect class="d-lup" x="153.9" y="38" width="94.4" height="40" rx="8" stroke-width="2"/><text x="201.2" y="63" text-anchor="middle">food-bank</text><text x="255" y="63" text-anchor="middle">_</text><text class="s" x="88.8" y="96" text-anchor="middle">when (ISO 8601)</text><text class="s" x="201.2" y="96" text-anchor="middle">project</text><rect class="d-sage" x="36.8" y="110" width="132.2" height="40" rx="8" stroke-width="2"/><text x="102.9" y="135" text-anchor="middle">volunteer-rota</text><text x="175.7" y="135" text-anchor="middle">_</text><rect class="d-rose" x="182.3" y="110" width="51" height="40" rx="8" stroke-width="2"/><text x="207.8" y="135" text-anchor="middle">v02</text><rect class="d-soft" x="237.1" y="110" width="66.1" height="40" rx="8" stroke-width="2"/><text x="270.1" y="135" text-anchor="middle">.xlsx</text><text class="s" x="102.9" y="168" text-anchor="middle">what it is</text><text class="s" x="207.8" y="168" text-anchor="middle">version</text><text class="s" x="270.1" y="168" text-anchor="middle">format</text><text class="s" x="170" y="196" text-anchor="middle">underscores between parts</text><text class="s" x="170" y="214" text-anchor="middle">hyphens inside a part · no spaces</text></svg>', alt:"The name 2026-03-04_food-bank_volunteer-rota_v02.xlsx split over two rows into five labelled boxes: the date in ISO 8601 format, the project, a description, the version number with a leading zero, and the extension showing the format.", cap:"Each part answers a question. Underscores separate the parts; hyphens join words inside a part."}
+      {fig:'<svg viewBox="0 0 340 228"><text x="170" y="22" text-anchor="middle">Anatomy of a well-made file name</text><rect class="d-gold" x="36.8" y="38" width="103.9" height="40" rx="8" stroke-width="2"/><text x="88.8" y="63" text-anchor="middle">2026-03-04</text><text x="147.3" y="63" text-anchor="middle">_</text><rect class="d-lup" x="153.9" y="38" width="94.4" height="40" rx="8" stroke-width="2"/><text x="201.2" y="63" text-anchor="middle">food-bank</text><text x="255" y="63" text-anchor="middle">_</text><text class="s" x="88.8" y="96" text-anchor="middle">when (ISO 8601)</text><text class="s" x="201.2" y="96" text-anchor="middle">project</text><rect class="d-sage" x="36.8" y="110" width="132.2" height="40" rx="8" stroke-width="2"/><text x="102.9" y="135" text-anchor="middle">volunteer-rota</text><text x="175.7" y="135" text-anchor="middle">_</text><rect class="d-rose" x="182.3" y="110" width="51" height="40" rx="8" stroke-width="2"/><text x="207.8" y="135" text-anchor="middle">v02</text><rect class="d-soft" x="237.1" y="110" width="66.1" height="40" rx="8" stroke-width="2"/><text x="270.1" y="135" text-anchor="middle">.xlsx</text><text class="s" x="102.9" y="168" text-anchor="middle">what it is</text><text class="s" x="207.8" y="168" text-anchor="middle">version</text><text class="s" x="270.1" y="168" text-anchor="middle">format</text><text class="s" x="170" y="196" text-anchor="middle">underscores between parts</text><text class="s" x="170" y="214" text-anchor="middle">hyphens inside a part · no spaces</text></svg>', alt:"The name 2026-03-04_food-bank_volunteer-rota_v02.xlsx split over two rows into five labeled boxes: the date in ISO 8601 format, the project, a description, the version number with a leading zero, and the extension showing the format.", cap:"Each part answers a question. Underscores separate the parts; hyphens join words inside a part."}
     ]},
     {h:"A simple folder structure", body:[
       "Names do most of the work, but folders give everything a home. A good structure is **shallow** (three or four levels at most), **predictable** (the same pattern for every project or year) and **boring**. Here is a pattern used widely in research projects, which works just as well for a community event or a client job:",
@@ -479,7 +479,7 @@ ICA.addUnit({
       phone:["iPhone: in **Files**, touch and hold the file → **Rename**.","Android: in **Files by Google** (or **My Files**), tap the three dots on the file → **Rename**."]}},
     {t:"Set up one project or household folder structure", how:["Choose one real area: a project, a year of household papers, a club, or a client.","Create a top folder and three to five numbered subfolders (for example `01_admin`, `02_working`, `03_final`).","Add a `00_README.txt` with two or three sentences on what goes where.","Move the files that belong there into it."]},
     {t:"Try a tag (optional)", how:{
-      mac:["In **Finder**, Control-click a file → choose a coloured tag, or **Tags…** to type one.","Click the tag in the Finder sidebar to see everything with it."],
+      mac:["In **Finder**, Control-click a file → choose a colored tag, or **Tags…** to type one.","Click the tag in the Finder sidebar to see everything with it."],
       win:["Windows lets you add **Tags** to some file types (such as photos and Office files): right-click → **Properties** → **Details** → **Tags**.","Search for `tags:yourword` in File Explorer to find them."],
       chromeos:["ChromeOS Files doesn’t have tags. Use albums in Google Photos, or labels in other apps, instead."],
       phone:["Use albums in your photo app (Photos on iPhone, Google Photos or your maker’s gallery on Android) to group pictures without copying them."]}}
@@ -493,7 +493,7 @@ ICA.addUnit({
    learn:[
     {h:"What “the cloud” physically is", body:[
       {lead:"“The cloud” sounds weightless. It isn’t. It is buildings full of computers."},
-      "When you save a file to [[cloud-storage]] such as Google Drive, iCloud Drive, OneDrive or Dropbox, it travels over the internet to a company’s **data centres**: large warehouses of servers with their own power supplies, cooling and security guards. The provider usually keeps several copies across different machines, and often different buildings, so one broken disk doesn’t lose your file.",
+      "When you save a file to [[cloud-storage]] such as Google Drive, iCloud Drive, OneDrive or Dropbox, it travels over the internet to a company’s **data centers**: large warehouses of servers with their own power supplies, cooling and security guards. The provider usually keeps several copies across different machines, and often different buildings, so one broken disk doesn’t lose your file.",
       "A fair short definition: the [[cloud]] is **someone else’s computers, which you rent or borrow through the internet**. That brings real benefits and real trade-offs:",
       {table:[
         ["Benefit","Trade-off"],
@@ -506,7 +506,7 @@ ICA.addUnit({
     ]},
     {h:"How sync works", body:[
       "Most people use cloud storage through **[[sync]]**: an app on each device keeps a local folder and the cloud copy identical. Change a file on your laptop and the app uploads the change; your phone and other computers then download it. It’s like a team of assistants who watch every copy and update the others whenever one changes.",
-      {fig:'<svg viewBox="0 0 340 322"><defs><marker id="t1u2-l4-mk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path class="d-inkf" d="M0,0 L8,4 L0,8 z"/></marker></defs><rect class="d-lup" x="89.7" y="10" width="160.6" height="70" rx="30" stroke-width="2"/><text x="170" y="40" text-anchor="middle">Cloud copy</text><text class="s" x="170" y="60" text-anchor="middle">provider’s data centre</text><rect class="d-sage" x="9.4" y="170" width="132.2" height="60" rx="8" stroke-width="2"/><text x="75.6" y="196" text-anchor="middle">Laptop</text><text class="s" x="75.6" y="215" text-anchor="middle">local copy</text><rect class="d-sage" x="198.3" y="170" width="132.2" height="60" rx="8" stroke-width="2"/><text x="264.4" y="196" text-anchor="middle">Phone</text><text class="s" x="264.4" y="215" text-anchor="middle">local copy</text><path class="d-ink" d="M85,167 L120.9,86" stroke-width="2" fill="none" marker-end="url(#t1u2-l4-mk)"/><text class="s" x="90.7" y="122" text-anchor="end">1 upload</text><text class="s" x="90.7" y="138" text-anchor="end">change</text><path class="d-ink" d="M219.1,84 L255,165" stroke-width="2" fill="none" marker-end="url(#t1u2-l4-mk)"/><text class="s" x="249.3" y="122">2 download</text><text class="s" x="249.3" y="138">change</text><rect class="d-rose" x="28.3" y="246" width="283.3" height="66" rx="8" stroke-width="2"/><text x="170" y="270" text-anchor="middle">Edits, renames and deletions</text><text class="s" x="170" y="292" text-anchor="middle">all travel the same way</text></svg>', alt:"A laptop and a phone each hold a local copy. A change on the laptop is uploaded to the cloud copy (step 1), then downloaded to the phone (step 2). A note says edits, renames and deletions all travel the same way.", cap:"Sync copies every change — including mistakes and deletions — to every device."},
+      {fig:'<svg viewBox="0 0 340 322"><defs><marker id="t1u2-l4-mk" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="8" markerHeight="8" orient="auto"><path class="d-inkf" d="M0,0 L8,4 L0,8 z"/></marker></defs><rect class="d-lup" x="89.7" y="10" width="160.6" height="70" rx="30" stroke-width="2"/><text x="170" y="40" text-anchor="middle">Cloud copy</text><text class="s" x="170" y="60" text-anchor="middle">provider’s data center</text><rect class="d-sage" x="9.4" y="170" width="132.2" height="60" rx="8" stroke-width="2"/><text x="75.6" y="196" text-anchor="middle">Laptop</text><text class="s" x="75.6" y="215" text-anchor="middle">local copy</text><rect class="d-sage" x="198.3" y="170" width="132.2" height="60" rx="8" stroke-width="2"/><text x="264.4" y="196" text-anchor="middle">Phone</text><text class="s" x="264.4" y="215" text-anchor="middle">local copy</text><path class="d-ink" d="M85,167 L120.9,86" stroke-width="2" fill="none" marker-end="url(#t1u2-l4-mk)"/><text class="s" x="90.7" y="122" text-anchor="end">1 upload</text><text class="s" x="90.7" y="138" text-anchor="end">change</text><path class="d-ink" d="M219.1,84 L255,165" stroke-width="2" fill="none" marker-end="url(#t1u2-l4-mk)"/><text class="s" x="249.3" y="122">2 download</text><text class="s" x="249.3" y="138">change</text><rect class="d-rose" x="28.3" y="246" width="283.3" height="66" rx="8" stroke-width="2"/><text x="170" y="270" text-anchor="middle">Edits, renames and deletions</text><text class="s" x="170" y="292" text-anchor="middle">all travel the same way</text></svg>', alt:"A laptop and a phone each hold a local copy. A change on the laptop is uploaded to the cloud copy (step 1), then downloaded to the phone (step 2). A note says edits, renames and deletions all travel the same way.", cap:"Sync copies every change — including mistakes and deletions — to every device."},
       "Three consequences follow from this design:",
       {list:[
         "**Changes appear everywhere** — which is the point.",
@@ -572,7 +572,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t1u2-l4-x1", type:"mcq", q:"Which description of cloud storage is most accurate?", options:[
-      {t:"Files kept on a company’s servers, reached over the internet", ok:true, why:"The cloud is physical: buildings of computers in data centres, run by a provider."},
+      {t:"Files kept on a company’s servers, reached over the internet", ok:true, why:"The cloud is physical: buildings of computers in data centers, run by a provider."},
       {t:"Files stored in the air between your devices, carried by Wi-Fi", why:"Wi-Fi only carries data to the internet; the files have to live on some computer’s storage."},
       {t:"A part of your own hard drive set aside for sharing", why:"A sync app keeps a local copy on your drive, but the cloud copy itself is on the provider’s servers."},
       {t:"A backup that can never be lost", why:"Providers protect against hardware failure, but you can still lose files by deleting them, through sync mistakes, or by losing account access."}
@@ -612,7 +612,7 @@ ICA.addUnit({
     {id:"t1u2-l4-x7", type:"mcq", q:"Hana edits `shopping-list.docx` on her laptop on a train with no signal, while her flatmate edits the same file at home. When the laptop reconnects, Hana sees two files, one with her laptop’s name added. What happened and what should she do?", options:[
       {t:"A sync conflict; she should merge the two, then delete the extra", ok:true, why:"The app kept both versions rather than silently throwing one away. Comparing and merging by hand is the fix; editing online together avoids it."},
       {t:"A virus copied the file; she should delete both", why:"Duplicates with a device name added are the normal sign of a sync conflict, not malware. Deleting both would lose both people’s work."},
-      {t:"The cloud is broken; she should stop using sync", why:"This is the expected, safe behaviour when two edits happen apart."},
+      {t:"The cloud is broken; she should stop using sync", why:"This is the expected, safe behavior when two edits happen apart."},
       {t:"Her version automatically replaced her flatmate’s; she can ignore the extra file", why:"Nothing was merged. Each file holds only one person’s changes, so ignoring the extra one loses work."}
     ]},
       {id:"t1u2-l4-x8", type:"explain", q:"Wei deletes a large video from his synced cloud folder on his phone to free up space. The next day it has vanished from his laptop too. Explain why, and what he could have done instead.", hint:"What is sync’s whole job? Does it know the difference between an edit and a deletion?", model:"A sync app keeps a local folder on each device identical to the copy in the cloud. When Wei deleted the video on his phone, the app treated that as a change like any other: it removed the cloud copy, and his laptop then removed its copy too. Deletions travel everywhere, just as edits do. To save space on one device only, he could have made the file online-only (for example, “Free up space”) instead of deleting it.", points:["Says sync keeps every device’s copy identical to the cloud copy", "Says deletions sync just like edits", "Suggests making the file online-only instead of deleting it"]}
@@ -955,7 +955,7 @@ ICA.addUnit({
      pro:[
       "For long-term keeping, archives assess formats on **disclosure** (is the spec public?), **adoption**, **transparency** (can it be read with basic tools?), **self-documentation**, **external dependencies** (fonts, codecs) and **patents**. The Library of Congress’s Sustainability of Digital Formats site documents these factors format by format.",
       "Preservation-oriented variants exist: **PDF/A** (ISO 19005) forbids features that depend on the outside world, such as external fonts and some active content, so a document renders the same decades later. Research repositories often prefer CSV with a data dictionary over XLSX, and TIFF or PNG over proprietary camera formats, for the same reason.",
-      "Lossy vs lossless matters in workflows: JPEG re-encoding accumulates artefacts, so edit from a lossless master and export JPEG at the end. HEIF is a container standard (ISO/IEC 23008-12); Apple’s HEIC uses HEVC-coded images, whose patent licensing is one reason support is patchy outside Apple.",
+      "Lossy vs lossless matters in workflows: JPEG re-encoding accumulates artifacts, so edit from a lossless master and export JPEG at the end. HEIF is a container standard (ISO/IEC 23008-12); Apple’s HEIC uses HEVC-coded images, whose patent licensing is one reason support is patchy outside Apple.",
       "CSV has no single strict standard (RFC 4180 describes common practice); delimiters, quoting, text encoding (use UTF-8) and decimal separators vary by locale. Document them in a README when sharing data.",
       "When choosing formats for a team or project, write the choice down: master copies in an editable, well-supported format; exchange copies in PDF or CSV; archive copies in preservation formats such as PDF/A. This avoids a slow drift into dozens of formats that only one person’s software can open."
      ]},
@@ -998,7 +998,7 @@ ICA.addUnit({
    {id:"folders-paths", title:"Folders and paths", aka:["directories","file path","home folder"], tags:["files","navigation"], summary:"Folders form a tree; a path is the route from the top of the tree to one file.",
     levels:{
      starter:[
-      "A [[folder]] (also called a directory) is a container for files and other folders, like a drawer holding labelled boxes. Folders inside folders form a tree, from one top level down to every file.",
+      "A [[folder]] (also called a directory) is a container for files and other folders, like a drawer holding labeled boxes. Folders inside folders form a tree, from one top level down to every file.",
       "Each person who signs in has a [[home-folder]] holding their Desktop, Documents, Downloads and Pictures.",
       "A [[path]] is a file’s full address: every folder from the top down to the file. On Windows it looks like `C:\\Users\\Amara\\Documents\\minutes.docx`; on a Mac, `/Users/amara/Documents/minutes.docx`.",
       {tip:"Use Downloads as a doormat, not a filing cabinet: move files on to where they belong."},
@@ -1106,7 +1106,7 @@ ICA.addUnit({
    {id:"cloud-storage", title:"Cloud storage", aka:["the cloud","online storage","Google Drive, OneDrive, iCloud Drive, Dropbox"], tags:["cloud","storage"], summary:"Keeping files on a provider’s servers, reached through the internet, with sync, sharing and limits.",
     levels:{
      starter:[
-      "[[cloud-storage]] means keeping your files on a company’s computers in data centres, reached over the internet. Examples include Google Drive, iCloud Drive, OneDrive and Dropbox.",
+      "[[cloud-storage]] means keeping your files on a company’s computers in data centers, reached over the internet. Examples include Google Drive, iCloud Drive, OneDrive and Dropbox.",
       "The [[cloud]] is not in the sky: it is buildings full of servers. The benefit is that your files survive a lost laptop and can be opened from any device. The trade-offs: you need internet for files not stored on your device, you depend on your account, and free space is limited.",
       {tip:"Protect the account that holds your cloud files with a strong password and two-step sign-in. Losing the account can mean losing the files."},
       "Cloud storage is most useful for three things: reaching files from any device, sharing with other people, and keeping a copy away from your home or office. It’s less good when you have poor internet, when the files are very sensitive and you don’t trust the provider, or when it’s your only copy.",
@@ -1179,7 +1179,7 @@ ICA.addUnit({
         ["Phones","Cloud-with-arrow icon in Files (iPhone)","**Make available offline** in the Google Drive app"]
       ]},
       "Microsoft’s documentation states plainly that deleting an online-only file from your device deletes it from OneDrive on all devices and online. Google notes that streamed files still count toward your Google storage, while mirrored files use local disk space too.",
-      "Before travelling, mark the folders you need as always available, let them download fully (watch the icons), and then check one opens with Wi-Fi turned off. On a Chromebook, also make sure offline access is switched on in Google Drive’s web settings first, or the **Available offline** switch may not appear.",
+      "Before traveling, mark the folders you need as always available, let them download fully (watch the icons), and then check one opens with Wi-Fi turned off. On a Chromebook, also make sure offline access is switched on in Google Drive’s web settings first, or the **Available offline** switch may not appear.",
       "Phones behave the same way: the iPhone Files app shows a cloud icon on items in iCloud Drive that aren’t downloaded yet, and the Google Drive app keeps files online unless you mark them for offline use."
      ],
      pro:[
@@ -1365,7 +1365,7 @@ ICA.addUnit({
    {id:"finder", term:"Finder", def:"The Mac app for browsing, opening, moving and organizing files and folders.", codex:"folders-paths"},
    {id:"zip", term:"Zip file", def:"One file that bundles many files and folders, usually compressed. Unzipping (extracting) gives back the originals exactly.", codex:"compression-zip"},
    {id:"compression", term:"Compression", def:"Storing data in fewer bytes. Lossless compression (zip) rebuilds every byte; lossy compression (JPEG, MP4) throws some detail away.", codex:"compression-zip"},
-   {id:"cloud", term:"The cloud", def:"Computers in a provider’s data centres that you use over the internet, instead of your own device.", codex:"cloud-storage"},
+   {id:"cloud", term:"The cloud", def:"Computers in a provider’s data centers that you use over the internet, instead of your own device.", codex:"cloud-storage"},
    {id:"cloud-storage", term:"Cloud storage", def:"Keeping files on a provider’s servers, reached over the internet, such as Google Drive, iCloud Drive, OneDrive or Dropbox.", codex:"cloud-storage"},
    {id:"sync", term:"Sync", def:"Short for synchronize: keeping copies on several devices identical, so a change (or deletion) on one appears on all.", codex:"sync"},
    {id:"sharing-link", term:"Sharing link", def:"A web link that opens a cloud file or folder. Depending on its setting, it works only for named people or for anyone who has it.", codex:"sharing-permissions"},
@@ -1395,7 +1395,7 @@ ICA.addUnit({
      {t:"Data, a name and metadata", ok:true, why:"The content (data), what it’s called (name, including the extension), and information about it (metadata)."},
      {t:"A folder, a path and an app", why:"Those describe where a file lives and what opens it, not the file itself."},
      {t:"Text, pictures and sound", why:"Those are kinds of content. Any file, whatever its content, has data, a name and metadata."},
-     {t:"An icon, a size and a colour", why:"The icon is chosen by the system from the extension; size is one piece of metadata; files don’t have colours."}]},
+     {t:"An icon, a size and a color", why:"The icon is chosen by the system from the extension; size is one piece of metadata; files don’t have colors."}]},
    {id:"t1u2-q02", lesson:"t1u2-l1", level:2, q:"In the file name `2026.03.trip.photos.zip`, what is the extension?", options:[
      {t:".zip", ok:true, why:"The extension is only the part after the last dot. This is a zip archive."},
      {t:".2026", why:"Dots earlier in the name are just part of the name."},
@@ -1494,8 +1494,8 @@ ICA.addUnit({
      {t:"To make files smaller", why:"File names don’t affect file size."},
      {t:"Because Windows doesn’t allow single-digit numbers in names", why:"Windows allows any digits in names."}]},
    {id:"t1u2-q21", lesson:"t1u2-l3", level:1, q:"Which file name follows the naming guidance best?", options:[
-     {t:"`2026-02-11_choir_concert-programme_v03.pdf`", ok:true, why:"ISO date, project, content, padded version, no spaces or special characters."},
-     {t:"Choir programme FINAL!!.pdf", why:"Spaces, exclamation marks, no date, and “final”."},
+     {t:"`2026-02-11_choir_concert-program_v03.pdf`", ok:true, why:"ISO date, project, content, padded version, no spaces or special characters."},
+     {t:"Choir program FINAL!!.pdf", why:"Spaces, exclamation marks, no date, and “final”."},
      {t:"cp3.pdf", why:"Machine-friendly but meaningless to people."},
      {t:"11/02/2026 choir.pdf", why:"Slashes aren’t allowed in names and the date format is ambiguous."}]},
    {id:"t1u2-q22", lesson:"t1u2-l3", level:3, q:"Fatima’s folder has `notes final.docx`, `notes final2.docx` and `notes FINAL use this.docx`. What change would stop this happening again?", options:[
@@ -1530,10 +1530,10 @@ ICA.addUnit({
      {t:"Keep the names and add the word FINAL", why:"“Final” adds no information and invites confusion."}]},
    /* Lesson 4 */
    {id:"t1u2-q28", lesson:"t1u2-l4", level:1, q:"Physically, where are files in “the cloud” stored?", options:[
-     {t:"On servers in a provider’s data centres", ok:true, why:"Cloud storage is other people’s computers, reached through the internet."},
+     {t:"On servers in a provider’s data centers", ok:true, why:"Cloud storage is other people’s computers, reached through the internet."},
      {t:"In your Wi-Fi router", why:"The router passes data along; it doesn’t store your cloud files."},
-     {t:"In satellites", why:"Cloud data centres are buildings on the ground."},
-     {t:"Nowhere; they exist only while you are online", why:"They’re stored on disks in data centres, whether or not you’re online."}]},
+     {t:"In satellites", why:"Cloud data centers are buildings on the ground."},
+     {t:"Nowhere; they exist only while you are online", why:"They’re stored on disks in data centers, whether or not you’re online."}]},
    {id:"t1u2-q29", lesson:"t1u2-l4", level:2, q:"Kenji deletes a photo from his synced cloud folder on his phone. What happens on his laptop?", options:[
      {t:"The photo is deleted there too, once sync runs", ok:true, why:"Sync copies deletions as faithfully as edits. It may still be in the cloud bin for a while."},
      {t:"Nothing; the laptop keeps its copy", why:"That’s how a backup behaves. Sync makes the copies identical."},

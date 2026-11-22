@@ -2,12 +2,12 @@
 ICA.addUnit({
   id:"t3u4", track:"t3", n:4, title:"Charts that tell the truth", icon:"📈",
   apps:{ms:"Excel", google:"Google Sheets", libre:"LibreOffice Calc", apple:"Numbers"},
-  blurb:"How to choose a chart for the question, set axes and scales honestly (log scales included), use colour that everyone can read, spot and fix misleading charts, show uncertainty, and add titles, notes and alt text so a chart can be understood on its own.",
+  blurb:"How to choose a chart for the question, set axes and scales honestly (log scales included), use color that everyone can read, spot and fix misleading charts, show uncertainty, and add titles, notes and alt text so a chart can be understood on its own.",
   goals:[
-    "Choose a chart for the question, knowing why position and length are read more accurately than angle, area or colour",
+    "Choose a chart for the question, knowing why position and length are read more accurately than angle, area or color",
     "Decide when an axis must start at zero, read and make log-scale charts, and avoid dual-axis traps",
-    "Use colour for a clear purpose, with palettes and contrast that work for people with colour-vision deficiency",
-    "Spot and fix misleading chart choices, and show uncertainty with clearly labelled error bars, ranges and frequency pictures",
+    "Use color for a clear purpose, with palettes and contrast that work for people with color-vision deficiency",
+    "Spot and fix misleading chart choices, and show uncertainty with clearly labeled error bars, ranges and frequency pictures",
     "Write statement titles, annotations, source notes and alt text, and choose a free tool that fits the job"
   ],
   read:[
@@ -25,7 +25,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"A chart is a set of encodings", body:[
-      {lead:"Every chart turns numbers into something you can see: a position, a length, an angle, an area or a colour. Choosing a chart means choosing which of those to use."},
+      {lead:"Every chart turns numbers into something you can see: a position, a length, an angle, an area or a color. Choosing a chart means choosing which of those to use."},
       "Track 1’s spreadsheet unit gave a quick table for matching questions to charts ({{choosing-charts}}). This lesson explains why those matches work, so you can still choose well when the table runs out.",
       "This unit follows Claus Wilke’s free textbook, Fundamentals of Data Visualization. Wilke describes every chart as a set of **aesthetic mappings**: each variable in the data is mapped onto a visual feature. In a bar chart, the category is mapped to position along one axis and the amount to the bar’s length. In a scatterplot, two amounts are mapped to the horizontal and vertical positions of each dot.",
       "Variables come in kinds, and the kind limits which features make sense:",
@@ -35,7 +35,7 @@ ICA.addUnit({
         "**Ordered categories**: groups with a natural order, such as small/medium/large, age bands or months."
       ]},
       "A shade going from light to dark suggests order, so it suits quantities and ordered categories. A set of clearly different hues suggests “different, but no order”, so it suits unordered groups.",
-      {fig:'<svg viewBox="0 0 340 408"><text x="170" y="18" text-anchor="middle">The same two values, 4 and 5, encoded</text><text x="170" y="34" text-anchor="middle">five ways. Which pairs are easy to compare?</text><text x="10" y="58">1. Position on a shared scale</text><path class="d-ink" d="M40,82 L300,82" stroke-width="1.5"/><path class="d-ink" d="M40,82 L40,87" stroke-width="1"/><text class="s" x="40" y="100" text-anchor="middle">0</text><path class="d-ink" d="M83.3,82 L83.3,87" stroke-width="1"/><text class="s" x="83.3" y="100" text-anchor="middle">1</text><path class="d-ink" d="M126.7,82 L126.7,87" stroke-width="1"/><text class="s" x="126.7" y="100" text-anchor="middle">2</text><path class="d-ink" d="M170,82 L170,87" stroke-width="1"/><text class="s" x="170" y="100" text-anchor="middle">3</text><path class="d-ink" d="M213.3,82 L213.3,87" stroke-width="1"/><text class="s" x="213.3" y="100" text-anchor="middle">4</text><path class="d-ink" d="M256.7,82 L256.7,87" stroke-width="1"/><text class="s" x="256.7" y="100" text-anchor="middle">5</text><path class="d-ink" d="M300,82 L300,87" stroke-width="1"/><text class="s" x="300" y="100" text-anchor="middle">6</text><circle class="d-rose" cx="213.3" cy="72" r="7" stroke-width="2"/><circle class="d-lup" cx="256.7" cy="72" r="7" stroke-width="2"/><text x="10" y="128">2. Length (bars from zero)</text><rect class="d-rose" x="40" y="138" width="173.3" height="14" stroke-width="1.5"/><rect class="d-lup" x="40" y="158" width="216.7" height="14" stroke-width="1.5"/><text x="10" y="196">3. Angle (one pie)</text><path class="d-rose" d="M90,244 L90,206 A38,38 0 0 1 103,279.7 Z" stroke-width="2"/><path class="d-lup" d="M90,244 L103,279.7 A38,38 0 1 1 90,206 Z" stroke-width="2"/><text x="190" y="196">4. Area</text><rect class="d-rose" x="180" y="215.4" width="62.6" height="62.6" stroke-width="1.5"/><rect class="d-lup" x="252.6" y="208" width="70" height="70" stroke-width="1.5"/><text x="10" y="306">5. Shade (lightness)</text><path class="d-inkf" d="M40,316 h120 v26 h-120 Z" fill-opacity="0.4"/><path class="d-inkf" d="M180,316 h120 v26 h-120 Z" fill-opacity="0.5"/><text class="s" x="170" y="368" text-anchor="middle">Positions and lengths are judged most</text><text class="s" x="170" y="383" text-anchor="middle">accurately; areas and shades least.</text><text class="s" x="170" y="398" text-anchor="middle">Rows 1–4: rose = 4, purple = 5. Row 5: left = 4.</text></svg>', alt:"The values 4 and 5 shown five ways. 1: two dots on a shared axis from 0 to 6, at 4 and 5. 2: two bars from zero, 4 and 5 units long. 3: a pie split into slices of 160 and 200 degrees. 4: two squares whose areas are in the ratio 4 to 5. 5: two grey boxes at 40% and 50% strength, the left one standing for 4. In rows 1 to 4, rose stands for 4 and purple for 5. The note says positions and lengths are judged most accurately, areas and shades least.", cap:"The same comparison, 4 against 5, is easy to see in rows 1 and 2 and hard in rows 4 and 5."},
+      {fig:'<svg viewBox="0 0 340 408"><text x="170" y="18" text-anchor="middle">The same two values, 4 and 5, encoded</text><text x="170" y="34" text-anchor="middle">five ways. Which pairs are easy to compare?</text><text x="10" y="58">1. Position on a shared scale</text><path class="d-ink" d="M40,82 L300,82" stroke-width="1.5"/><path class="d-ink" d="M40,82 L40,87" stroke-width="1"/><text class="s" x="40" y="100" text-anchor="middle">0</text><path class="d-ink" d="M83.3,82 L83.3,87" stroke-width="1"/><text class="s" x="83.3" y="100" text-anchor="middle">1</text><path class="d-ink" d="M126.7,82 L126.7,87" stroke-width="1"/><text class="s" x="126.7" y="100" text-anchor="middle">2</text><path class="d-ink" d="M170,82 L170,87" stroke-width="1"/><text class="s" x="170" y="100" text-anchor="middle">3</text><path class="d-ink" d="M213.3,82 L213.3,87" stroke-width="1"/><text class="s" x="213.3" y="100" text-anchor="middle">4</text><path class="d-ink" d="M256.7,82 L256.7,87" stroke-width="1"/><text class="s" x="256.7" y="100" text-anchor="middle">5</text><path class="d-ink" d="M300,82 L300,87" stroke-width="1"/><text class="s" x="300" y="100" text-anchor="middle">6</text><circle class="d-rose" cx="213.3" cy="72" r="7" stroke-width="2"/><circle class="d-lup" cx="256.7" cy="72" r="7" stroke-width="2"/><text x="10" y="128">2. Length (bars from zero)</text><rect class="d-rose" x="40" y="138" width="173.3" height="14" stroke-width="1.5"/><rect class="d-lup" x="40" y="158" width="216.7" height="14" stroke-width="1.5"/><text x="10" y="196">3. Angle (one pie)</text><path class="d-rose" d="M90,244 L90,206 A38,38 0 0 1 103,279.7 Z" stroke-width="2"/><path class="d-lup" d="M90,244 L103,279.7 A38,38 0 1 1 90,206 Z" stroke-width="2"/><text x="190" y="196">4. Area</text><rect class="d-rose" x="180" y="215.4" width="62.6" height="62.6" stroke-width="1.5"/><rect class="d-lup" x="252.6" y="208" width="70" height="70" stroke-width="1.5"/><text x="10" y="306">5. Shade (lightness)</text><path class="d-inkf" d="M40,316 h120 v26 h-120 Z" fill-opacity="0.4"/><path class="d-inkf" d="M180,316 h120 v26 h-120 Z" fill-opacity="0.5"/><text class="s" x="170" y="368" text-anchor="middle">Positions and lengths are judged most</text><text class="s" x="170" y="383" text-anchor="middle">accurately; areas and shades least.</text><text class="s" x="170" y="398" text-anchor="middle">Rows 1–4: rose = 4, purple = 5. Row 5: left = 4.</text></svg>', alt:"The values 4 and 5 shown five ways. 1: two dots on a shared axis from 0 to 6, at 4 and 5. 2: two bars from zero, 4 and 5 units long. 3: a pie split into slices of 160 and 200 degrees. 4: two squares whose areas are in the ratio 4 to 5. 5: two gray boxes at 40% and 50% strength, the left one standing for 4. In rows 1 to 4, rose stands for 4 and purple for 5. The note says positions and lengths are judged most accurately, areas and shades least.", cap:"The same comparison, 4 against 5, is easy to see in rows 1 and 2 and hard in rows 4 and 5."},
       "Our eyes don’t read every feature equally well. In Cleveland and McGill’s ranking (built from their experiments and earlier perception research), positions along a shared scale were judged most accurately, followed by lengths and angles; areas and shading came last. Wilke makes the same point: human perception judges distances better than areas.",
       {key:"Put the comparison that matters most on a shared position scale: bar ends, or dots along one axis."}
     ]},
@@ -44,11 +44,11 @@ ICA.addUnit({
       {list:[
         "**Sort unordered categories by value.** Alphabetical order makes a jagged skyline; sorted bars show the ranking instantly.",
         "**Keep natural orders.** Months, age bands and survey scales (disagree → agree) already have an order. Sorting them by value would scramble it.",
-        "**Turn bars sideways for long labels.** Horizontal bars let names like “Community health centre” sit on one line instead of tilting."
+        "**Turn bars sideways for long labels.** Horizontal bars let names like “Community health center” sit on one line instead of tilting."
       ]},
       "With two groupings at once, such as sales by product and by year, use **grouped bars** (side by side) to compare within each group, or **stacked bars** when the totals matter. In a stack only the bottom segment sits on the shared baseline; the others float at different heights, so they’re hard to compare. That’s the position-versus-length idea again.",
       "Bars must start at zero (Lesson 2 explains why). When every value is large and the values are close together, bars all look the same. Wilke’s example is life expectancy in the Americas, between 60 and 81 years. A [[dot-plot|dot plot]] places one dot per category on a shared axis, and that axis can start near the data.",
-      "For a big grid of values, such as internet use in 20 countries over 23 years, a **heatmap** colours each cell. You lose precise values, but broad patterns jump out."
+      "For a big grid of values, such as internet use in 20 countries over 23 years, a **heatmap** colors each cell. You lose precise values, but broad patterns jump out."
     ]},
     {h:"Distributions: histograms and their bins", body:[
       "A [[histogram-chart|histogram]] answers “how are the values spread out?”: where most of them sit, whether there are two humps, how long the tail is. It splits the number line into equal **bins** and draws a bar showing how many values fall in each. The bars touch, because the bins sit side by side on a continuous scale.",
@@ -70,15 +70,15 @@ ICA.addUnit({
       ]},
       "His example is a parliament where two smaller parties together held a narrow majority. The pie shows “these two slices make more than half” at a glance; bars hide it.",
       {fig:'<svg viewBox="0 0 340 448"><text x="170" y="20" text-anchor="middle">A 30-seat council as a pie</text><path class="d-rose" d="M170,120 L170,38 A82,82 0 0 1 187,200.2 Z" stroke-width="2"/><text x="217.3" y="113" text-anchor="middle">A</text><text class="s" x="217.3" y="128" text-anchor="middle">14</text><path class="d-lup" d="M170,120 L187,200.2 A82,82 0 0 1 109.1,65.1 Z" stroke-width="2"/><text x="128.8" y="141.8" text-anchor="middle">B</text><text class="s" x="128.8" y="156.8" text-anchor="middle">12</text><path class="d-gold" d="M170,120 L109.1,65.1 A82,82 0 0 1 170,38 Z" stroke-width="2"/><text x="149.3" y="71.6" text-anchor="middle">C</text><text class="s" x="149.3" y="86.6" text-anchor="middle">4</text><path class="d-ink" d="M170,30 L170,212" stroke-width="1.5" stroke-dasharray="5 4"/><text class="s" x="170" y="228" text-anchor="middle">Dashed line = half (15 seats). B + C = 16:</text><text class="s" x="170" y="243" text-anchor="middle">together they pass it; A (14) does not.</text><text x="170" y="276" text-anchor="middle">The same seats as sorted bars</text><text x="72" y="307" text-anchor="end">Party A</text><rect class="d-rose" x="80" y="292" width="224" height="20" stroke-width="1.5"/><text x="298" y="307" text-anchor="end">14</text><text x="72" y="337" text-anchor="end">Party B</text><rect class="d-lup" x="80" y="322" width="192" height="20" stroke-width="1.5"/><text x="266" y="337" text-anchor="end">12</text><text x="72" y="367" text-anchor="end">Party C</text><rect class="d-gold" x="80" y="352" width="64" height="20" stroke-width="1.5"/><text x="150" y="367">4</text><path class="d-ink" d="M80,288 L80,384" stroke-width="1.5"/><path class="d-ink" d="M320,286 L320,384" stroke-width="1.5" stroke-dasharray="5 4"/><text class="s" x="320" y="400" text-anchor="middle">15</text><text class="s" x="80" y="400" text-anchor="middle">0</text><text class="s" x="170" y="422" text-anchor="middle">Bars make A vs B easy to compare.</text><text class="s" x="170" y="437" text-anchor="middle">The pie makes “more than half” easy.</text></svg>', alt:"A pie chart of a 30-seat council: Party A 14 seats, Party B 12, Party C 4. A dashed line marks half the pie; B and C together pass it, A alone does not. Below, the same seats as sorted horizontal bars of 14, 12 and 4, with a dashed line at 15.", cap:"Each chart answers a different question well."},
-      "Guidance for official statistics is stricter. The UK Government Analysis Function recommends pies only when there are five categories or fewer (elsewhere on the same page it suggests value labels only for pies of four categories or fewer). It notes that pies are hard to read when magnified, and advises labelling the slices themselves instead of using a key.",
+      "Guidance for official statistics is stricter. The UK Government Analysis Function recommends pies only when there are five categories or fewer (elsewhere on the same page it suggests value labels only for pies of four categories or fewer). It notes that pies are hard to read when magnified, and advises labeling the slices themselves instead of using a key.",
       {warn:"Never use 3D pies. Tilting the pie makes the slices nearest you look bigger than they are (Wilke, Chapter 26). And a pie only works when the parts really add up to one whole: “tick all that apply” survey answers don’t."},
-      {lab:"fl-share", t:"Practise: work out each part’s share of a whole, the numbers behind a pie"}
+      {lab:"fl-share", t:"Practice: work out each part’s share of a whole, the numbers behind a pie"}
     ]},
     {h:"Relationships and change: scatterplots, lines, small multiples", body:[
       "A [[scatterplot]] shows two quantitative variables, one dot per record: tree height against trunk width, hours studied against score. Look for direction, clusters and dots far from the rest ([[outlier|outliers]]). When dots pile on top of each other, Wilke suggests partial transparency or a little random jitter so the crowded areas show. Unit 5 measures the strength of such patterns with [[pearson-r|Pearson’s r]].",
       "A [[line-chart|line chart]] puts time (or another ordered quantity) along the bottom. Joining points with a line says “values in between exist and change smoothly”, so only join points whose order means something. A line through unordered categories, such as towns in alphabetical order, invents a trend.",
       "When you have many groups, one tangled chart with eight lines is hard to read. [[small-multiples|Small multiples]] repeat the same small chart once per group, in a grid. Wilke’s two rules: give every panel the same axes, and arrange the panels in a meaningful order (by size, by time, by region).",
-      {tip:"More than about five lines? Try small multiples, or colour one line and make the rest grey (Lesson 3)."}
+      {tip:"More than about five lines? Try small multiples, or color one line and make the rest gray (Lesson 3)."}
     ]},
     {h:"A question-first workflow", body:[
       {ol:[
@@ -87,7 +87,7 @@ ICA.addUnit({
         "Name the family: amounts, distribution, proportions, relationship, or change over time.",
         "Sketch two candidate charts, even on paper.",
         "Make both, then ask: what would a busy reader conclude in five seconds?",
-        "Keep the one that answers the question, then fix its axes, colour and labels (Lessons 2–5)."
+        "Keep the one that answers the question, then fix its axes, color and labels (Lessons 2–5)."
       ]},
       {ex:"Sione runs a community kitchen. Question: “Did the number of meals served change after we moved to the new hall in June?”\n\nVariables: month (ordered, time), meals served (quantitative), before/after the move (two periods).\nFamily: change over time.\nCandidates: (a) a line chart of meals per month with a marked line at June; (b) two bars, the average before and after.\nVerdict: the line chart shows the jump and also the usual summer dip, so readers can see whether the change is bigger than normal. The two bars hide both.", label:"Worked example: choosing between two candidates"},
       "Spreadsheet apps offer “recommended” charts. Treat them as a starting point: the app sees the shape of your table, not your question.",
@@ -137,12 +137,12 @@ ICA.addUnit({
       {t:"Switch to a pie chart of the score bands", why:"A pie hides the order of the bands, which is the whole point of a distribution."},
       {t:"Nothing: the app’s default bin width is calculated, so it’s correct", why:"Defaults come from a general rule of thumb, not from knowing your data. They can hide features."}
     ]},
-    {id:"t3u4-l1-x6", type:"spot", q:"Lucía drafted this plan for the charts in her neighbourhood report. Tap each choice that will make a chart harder to read honestly.", ask:"makes it harder to read", parts:[
-      "Chart 1: ", {t:"a bar chart of library loans in 9 neighbourhoods", flag:false, why:"Amounts for categories: a bar chart is a sound choice."},
-      ", with ", {t:"the bars in alphabetical order", flag:true, why:"Neighbourhoods have no natural order, so sort by value; alphabetical order hides the ranking."},
+    {id:"t3u4-l1-x6", type:"spot", q:"Lucía drafted this plan for the charts in her neighborhood report. Tap each choice that will make a chart harder to read honestly.", ask:"makes it harder to read", parts:[
+      "Chart 1: ", {t:"a bar chart of library loans in 9 neighborhoods", flag:false, why:"Amounts for categories: a bar chart is a sound choice."},
+      ", with ", {t:"the bars in alphabetical order", flag:true, why:"Neighborhoods have no natural order, so sort by value; alphabetical order hides the ranking."},
       ", ", {t:"the value axis starting at 0", flag:false, why:"Correct: bars must start at zero."},
       " and ", {t:"a 3D effect with perspective", flag:true, why:"3D makes bars look shorter or longer than they are. Keep it flat."},
-      ". Chart 2: ", {t:"a line joining the neighbourhoods from left to right", flag:true, why:"Neighbourhoods aren’t ordered, so a line invents a trend between them."},
+      ". Chart 2: ", {t:"a line joining the neighborhoods from left to right", flag:true, why:"Neighborhoods aren’t ordered, so a line invents a trend between them."},
       ". Chart 3: ", {t:"a histogram of loan lengths with 7-day bins, also checked with 3-day bins", flag:false, why:"Good practice: trying more than one bin width."},
       "."
     ]},
@@ -152,7 +152,7 @@ ICA.addUnit({
       {t:"Name the chart family (amounts, distribution, proportions, relationship, change)", why:"The family narrows the choice to a few chart types."},
       {t:"Sketch and make two candidates", why:"Comparing two real options beats trusting the first idea or the app’s suggestion."},
       {t:"Ask what a busy reader would conclude in five seconds, and keep the better one", why:"The test of a chart is whether it answers the question quickly and honestly."},
-      {t:"Fix the axes, colour and labels", why:"Polish comes last, once the chart type is right."}
+      {t:"Fix the axes, color and labels", why:"Polish comes last, once the chart type is right."}
     ]},
     {id:"t3u4-l1-x8", type:"explain", q:"A friend shows the sales of six products as a pie chart and asks whether product C or D sold more; the two are close. Explain why a sorted bar chart would answer the question better.", hint:"Which visual features do people judge most accurately?", model:"A chart turns numbers into visual features, and people judge positions along a shared scale most accurately, then lengths, while angles and areas are harder. In the pie, C and D are nearly equal angles and areas, so the difference is hard to see. In a bar chart every bar starts from the same baseline, so you compare where the ends fall on one scale, and sorting the bars shows the ranking at a glance. Pies suit a few parts of one whole, not close comparisons.", points:["Says positions and lengths are read more accurately than angles or areas", "Explains that the close slices are hard to compare in the pie", "Says bars share a baseline and scale", "Mentions that sorting shows the ranking"]}
    ],
@@ -176,7 +176,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t3u4-l2", title:"Axes, baselines and scales", minutes:60,
-   hook:{q:"A chart’s vertical axis is labelled 10, 100, 1,000, 10,000, with equal gaps between the labels. A line rises straight up across it. What are the numbers doing?", options:["Going up by the same amount each step","Being multiplied by the same factor each step","Rising and then levelling off","Nothing: an axis with uneven numbers must be a mistake"], answer:1, reveal:"**They’re being multiplied by the same factor each step.** That axis is a log scale: each equal step multiplies by 10. On it, steady percentage growth looks like a straight line. This lesson covers when log scales help, and the older question behind every axis: when does it have to start at zero?"},
+   hook:{q:"A chart’s vertical axis is labeled 10, 100, 1,000, 10,000, with equal gaps between the labels. A line rises straight up across it. What are the numbers doing?", options:["Going up by the same amount each step","Being multiplied by the same factor each step","Rising and then leveling off","Nothing: an axis with uneven numbers must be a mistake"], answer:1, reveal:"**They’re being multiplied by the same factor each step.** That axis is a log scale: each equal step multiplies by 10. On it, steady percentage growth looks like a straight line. This lesson covers when log scales help, and the older question behind every axis: when does it have to start at zero?"},
    goals:[
      "State the principle of proportional ink and use it to decide when an axis must start at zero",
      "Choose a sensible range for line charts and dot plots, and say when zero still matters",
@@ -216,7 +216,7 @@ ICA.addUnit({
       ]},
       "Wilke’s share-price example shows the danger. A price that fell by about $15 looked like a collapse, because the axis started at $110 and the area under the line was shaded. The shading turned the line into an area that broke proportional ink. Drop the fill, use a wider range, or chart the fall from the high point as its own quantity.",
       "The UK Government Analysis Function’s chart guidance agrees: don’t break the axis on bar charts, but breaking a line chart’s y-axis is acceptable when necessary.",
-      {tip:"Whatever range you choose, say it: “Note: the axis starts at 36 °C.” Honest zooming is labelled zooming."}
+      {tip:"Whatever range you choose, say it: “Note: the axis starts at 36 °C.” Honest zooming is labeled zooming."}
     ]},
     {h:"Log scales: equal steps mean multiplying", body:[
       "On an ordinary **linear** axis, each step adds the same amount: 0, 1,000, 2,000, 3,000. On a [[log-scale|logarithmic (log) scale]], each step multiplies by the same factor: 1, 10, 100, 1,000, or 50, 100, 200, 400.",
@@ -245,15 +245,15 @@ ICA.addUnit({
       "The UK Government Analysis Function does not recommend dual-axis charts because they are easily misinterpreted, and suggests giving each dataset its own y-axis. Better options:",
       {list:[
         "**Index both series to 100** at a shared start: an [[index-number|index]] = value ÷ starting value × 100. Both now show change relative to the start, on one honest axis.",
-        "**Two charts, one above the other**, with the time axes lined up and each y-axis clearly labelled.",
+        "**Two charts, one above the other**, with the time axes lined up and each y-axis clearly labeled.",
         "**One against the other**: a scatterplot (or one that joins the points in time order) when the question is how the two relate."
       ]},
       {ex:"Visits: 3,000 ÷ 1,000 × 100 = 300, so up 200%.\nLoaves: 440 ÷ 400 × 100 = 110, so up 10%.\n\nIn a spreadsheet, with the weekly values in B2:B9: `=B2/B$2*100` in C2, filled down. The `$` keeps every row dividing by week 1.", label:"Worked example: indexing to 100"},
-      {lab:"fl-abs", t:"Practise: a formula that divides every row by one fixed cell, as an index does"}
+      {lab:"fl-abs", t:"Practice: a formula that divides every row by one fixed cell, as an index does"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
-        "**“Every axis must start at zero.”** Only when length or area shows the value: bars and filled areas. Lines and dots may start near the data, clearly labelled.",
+        "**“Every axis must start at zero.”** Only when length or area shows the value: bars and filled areas. Lines and dots may start near the data, clearly labeled.",
         "**“Starting a line chart above zero is cheating.”** It’s often the honest choice. The dishonest moves are hiding the range or hand-picking it to create drama.",
         "**“A log scale exaggerates.”** It answers a different question (ratios instead of differences). Label it and explain it.",
         "**“Two y axes let me compare two things fairly.”** Where the lines sit and cross is set by the axis ranges you choose.",
@@ -273,7 +273,7 @@ ICA.addUnit({
       {t:"Area chart of a savings balance over time", b:0, why:"The filled area claims to be the value, so it must start at zero."},
       {t:"Stacked bars of each department’s share of a budget", b:0, why:"Each segment’s length is its share; a non-zero start would distort them."},
       {t:"Line chart of a child’s height from age 2 to 10", b:1, why:"A line shows value by position. Zero height is far from the data and not meaningful here."},
-      {t:"Dot plot of exam averages between 62 and 78", b:1, why:"Dots encode position only, so the axis can start near 60, labelled."},
+      {t:"Dot plot of exam averages between 62 and 78", b:1, why:"Dots encode position only, so the axis can start near 60, labeled."},
       {t:"Scatterplot of rainfall against crop yield", b:1, why:"Both axes are positions; choose ranges that show the data, and label them."}
     ]},
     {id:"t3u4-l2-x3", type:"number", q:"On a log axis, the gridlines 10, 100, 1,000 and 10,000 are equally spaced, 3 cm apart. How far above 100 is 10,000?", answer:6, tol:0, unit:"cm", why:"From 100 to 10,000 is 100 × 10 × 10: two steps of ×10. Each step is 3 cm, so 2 × 3 = **6 cm**.", wrongs:[
@@ -290,22 +290,22 @@ ICA.addUnit({
       {t:"The crossing point depends on the axis ranges he chose", ok:true, why:"With other ranges the lines would cross elsewhere or not at all. Visits and euros have different units, so “overtook” has no meaning. Index both to 100 or use two aligned charts."},
       {t:"Nothing, as long as both of the axes start at zero", why:"Even with both axes from zero, the right axis’s maximum is a free choice that moves the line up or down."},
       {t:"He should have used a pie chart", why:"A pie shows parts of a whole, not two series over time."},
-      {t:"Lines can only cross like this when a log scale is used", why:"Lines can cross on any scale. The problem is that this crossing is an artefact of the axis settings."}
+      {t:"Lines can only cross like this when a log scale is used", why:"Lines can cross on any scale. The problem is that this crossing is an artifact of the axis settings."}
     ]},
     {id:"t3u4-l2-x6", type:"match", q:"Match each chart problem with its fix.", pairs:[
-      ["Bars of on-time rates between 81% and 93% all look the same","A dot plot with a labelled axis from 80","Dots encode position only, so the axis can start near the data."],
-      ["Populations from 500 to 9 million squash every small town flat","A log scale, labelled as such","Values spanning orders of magnitude suit a log axis."],
+      ["Bars of on-time rates between 81% and 93% all look the same","A dot plot with a labeled axis from 80","Dots encode position only, so the axis can start near the data."],
+      ["Populations from 500 to 9 million squash every small town flat","A log scale, labeled as such","Values spanning orders of magnitude suit a log axis."],
       ["Two series in different units on left and right axes","Index both to 100, or use two aligned charts","Removes the arbitrary alignment of two axes."],
       ["Six panels each with their own automatic y-axis","Give all panels the same axis range","Shared axes make panels comparable."],
       ["A share-price line with the area below shaded from 110","Remove the fill, or show the change from the high point","Shading claims the area is the value; without a zero baseline it isn’t."]
     ]},
-    {id:"t3u4-l2-x7", type:"mcq", q:"Hana counts complaints per month at her community centre: some months have 0. She wants a log scale because a few months had over 200. What should she know first?", options:[
+    {id:"t3u4-l2-x7", type:"mcq", q:"Hana counts complaints per month at her community center: some months have 0. She wants a log scale because a few months had over 200. What should she know first?", options:[
       {t:"Zero can’t be placed on a log scale", ok:true, why:"Those months would disappear or cause an error: zero lies infinitely far down a log axis. She could keep a linear axis, try a square-root scale (which allows 0), or show zero months separately and say so."},
       {t:"Log scales only work for money", why:"They work for any positive quantity, especially when values span orders of magnitude."},
       {t:"She must start the log axis at zero", why:"A log axis can’t include zero at all; it typically starts at a positive value like 1."},
       {t:"Nothing: apps convert zeros automatically", why:"Excel’s help says a log scale can’t be used for zero or negative values. Apps may drop such points or warn you."}
     ]},
-    {id:"t3u4-l2-x8", type:"explain", q:"Explain why a bar chart’s value axis must start at zero, but a line chart of a patient’s temperature over a day can start at 36 °C.", model:"Under the principle of proportional ink, shaded areas must be proportional to the values they show. A bar shows its value by its length, so if the axis starts above zero, the lengths show only the part above the cut-off and differences look exaggerated. A line shows values by position and change by slope; no length or area claims to be the value. Since 0 °C means nothing for a human body, an axis from about 36 to 39 °C makes a fever visible. The axis start should still be labelled.", points:["States the principle of proportional ink", "Explains that a bar’s length is read as its value", "Explains that a line shows values by position and slope, not length", "Says zero is meaningless for body temperature, so zooming in is honest if labelled"]}
+    {id:"t3u4-l2-x8", type:"explain", q:"Explain why a bar chart’s value axis must start at zero, but a line chart of a patient’s temperature over a day can start at 36 °C.", model:"Under the principle of proportional ink, shaded areas must be proportional to the values they show. A bar shows its value by its length, so if the axis starts above zero, the lengths show only the part above the cut-off and differences look exaggerated. A line shows values by position and change by slope; no length or area claims to be the value. Since 0 °C means nothing for a human body, an axis from about 36 to 39 °C makes a fever visible. The axis start should still be labeled.", points:["States the principle of proportional ink", "Explains that a bar’s length is read as its value", "Explains that a line shows values by position and slope, not length", "Says zero is meaningless for body temperature, so zooming in is honest if labeled"]}
    ],
    apply:{intro:"Use the bus-route numbers from this lesson (Route A–F: 93, 91, 88, 86, 84, 81) or data of your own.", tasks:[
      {t:"Set the axis start yourself, then put it back to zero", app:{
@@ -323,7 +323,7 @@ ICA.addUnit({
      {t:"Index two series to 100", app:{
        all:["Type weeks 1–8 in A2:A9, loaves (400, 405, 412, 418, 424, 430, 436, 440) in B2:B9 and visits (1000, 1250, 1500, 1800, 2100, 2400, 2700, 3000) in C2:C9, with headings in row 1.","In D2 type `=B2/B$2*100` and in E2 `=C2/C$2*100`, then fill both down to row 9.","Check D9 shows 110 and E9 shows 300.","Make one line chart of A1:A9 with D1:E9 (headings `Loaves index` and `Visits index`), with one y-axis. Compare it with a dual-axis version if your app makes one."]
      }}
-   ], proof:"A bar chart you deliberately truncated and then fixed, a log-scale line chart with its scale labelled, and an indexed chart showing visits at 300 and loaves at 110."},
+   ], proof:"A bar chart you deliberately truncated and then fixed, a log-scale line chart with its scale labeled, and an indexed chart showing visits at 300 and loaves at 110."},
    read:[
      {book:"wilke", where:"Chapter 17, “The principle of proportional ink” (Sections 17.1 “Visualizations along linear axes” and 17.2 “Visualizations along logarithmic axes”)"},
      {book:"wilke", where:"Chapter 3, “Coordinate systems and axes”, Section 3.2 “Nonlinear axes”", note:"Log and square-root scales, with the 1, 3.16, 10, 31.6, 100 example."},
@@ -331,49 +331,49 @@ ICA.addUnit({
    ]
   },
   /* ===================== LESSON 3 ===================== */
-  {id:"t3u4-l3", title:"Colour that everyone can read", minutes:55,
-   hook:{q:"Roughly how common is colour-vision deficiency (often called colour blindness)?", options:["About 1 person in 10,000","About 8% of men and 0.5% of women","Almost unknown outside a few families","About half of all adults"], answer:1, reveal:"**About 8% of men and 0.5% of women**, the figures both Wilke’s textbook and the UK Government Analysis Function give. They come mainly from studies of people with Northern European ancestry; almost all other populations studied have lower rates. In a room of 50 men and 50 women at those rates, you’d expect about four people with colour-vision deficiency. Most of them see colours, but confuse certain pairs, often red and green. This lesson shows how to choose colours that work for them, and for everyone reading in greyscale or on a dim phone screen."},
+  {id:"t3u4-l3", title:"Color that everyone can read", minutes:55,
+   hook:{q:"Roughly how common is color-vision deficiency (often called color blindness)?", options:["About 1 person in 10,000","About 8% of men and 0.5% of women","Almost unknown outside a few families","About half of all adults"], answer:1, reveal:"**About 8% of men and 0.5% of women**, the figures both Wilke’s textbook and the UK Government Analysis Function give. They come mainly from studies of people with Northern European ancestry; almost all other populations studied have lower rates. In a room of 50 men and 50 women at those rates, you’d expect about four people with color-vision deficiency. Most of them see colors, but confuse certain pairs, often red and green. This lesson shows how to choose colors that work for them, and for everyone reading in greyscale or on a dim phone screen."},
    goals:[
-     "Match a palette type (qualitative, sequential, diverging, highlight) to what the colour has to show",
-     "Avoid the common colour pitfalls: too many colours, rainbow scales and loud fills",
-     "Design for colour-vision deficiency with safe palettes, redundant coding and simulator checks",
-     "Check chart colours against WCAG contrast ratios"
+     "Match a palette type (qualitative, sequential, diverging, highlight) to what the color has to show",
+     "Avoid the common color pitfalls: too many colors, rainbow scales and loud fills",
+     "Design for color-vision deficiency with safe palettes, redundant coding and simulator checks",
+     "Check chart colors against WCAG contrast ratios"
    ],
    learn:[
-    {h:"Colour has three jobs", body:[
-      {lead:"Before you pick colours, decide what the colour is for. Wilke names three jobs, and each needs a different kind of [[colour-palette|palette]]."},
+    {h:"Color has three jobs", body:[
+      {lead:"Before you pick colors, decide what the color is for. Wilke names three jobs, and each needs a different kind of [[colour-palette|palette]]."},
       {list:[
         "**To distinguish** groups that have no order (countries, species, teams): a [[qualitative-palette|qualitative palette]] of clearly different hues, none of which stands out or suggests an order.",
         "**To represent values** (income, temperature, density): a [[sequential-palette|sequential palette]] from light to dark, or a [[diverging-palette|diverging palette]] when values run in two directions from a meaningful midpoint.",
-        "**To highlight**: one strong accent colour against muted greys."
+        "**To highlight**: one strong accent color against muted grays."
       ]},
-      {fig:'<svg viewBox="0 0 340 348"><text x="10" y="22">Qualitative: groups with no order</text><path class="d-rose" d="M40,48 h54" stroke-width="22"/><path class="d-lup" d="M106,48 h54" stroke-width="22"/><path class="d-gold" d="M172,48 h54" stroke-width="22"/><path class="d-sage" d="M238,48 h54" stroke-width="22"/><text class="s" x="67" y="78" text-anchor="middle">North</text><text class="s" x="133" y="78" text-anchor="middle">South</text><text class="s" x="199" y="78" text-anchor="middle">East</text><text class="s" x="265" y="78" text-anchor="middle">West</text><text x="10" y="108">Sequential: low to high, faint to strong</text><path class="d-lup" d="M40,134 h40" stroke-width="22" stroke-opacity="0.15"/><path class="d-lup" d="M85,134 h40" stroke-width="22" stroke-opacity="0.32"/><path class="d-lup" d="M130,134 h40" stroke-width="22" stroke-opacity="0.5"/><path class="d-lup" d="M175,134 h40" stroke-width="22" stroke-opacity="0.7"/><path class="d-lup" d="M220,134 h40" stroke-width="22" stroke-opacity="0.88"/><path class="d-lup" d="M265,134 h40" stroke-width="22" stroke-opacity="1.0"/><text class="s" x="40" y="164">fewest</text><text class="s" x="310" y="164" text-anchor="end">most</text><text x="10" y="194">Diverging: two directions from a midpoint</text><path class="d-rose" d="M30,220 h37" stroke-width="22" stroke-opacity="1.0"/><path class="d-rose" d="M71,220 h37" stroke-width="22" stroke-opacity="0.6"/><path class="d-rose" d="M112,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-soft" d="M153,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-lup" d="M194,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-lup" d="M235,220 h37" stroke-width="22" stroke-opacity="0.6"/><path class="d-lup" d="M276,220 h37" stroke-width="22" stroke-opacity="1.0"/><text class="s" x="30" y="250">well below</text><text class="s" x="170" y="250" text-anchor="middle">midpoint</text><text class="s" x="318" y="250" text-anchor="end">well above</text><text x="10" y="280">Highlight: grey for context, one accent</text><path class="d-soft" d="M40,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M85,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M130,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-rose" d="M175,306 h40" stroke-width="22"/><path class="d-soft" d="M220,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M265,306 h40" stroke-width="22" stroke-opacity="0.35"/><text class="s" x="197" y="336" text-anchor="middle">the one that matters</text></svg>', alt:"Four rows of colour swatches. Qualitative: four different hues labelled North, South, East and West. Sequential: six steps of one purple from faint to strong, labelled fewest to most. Diverging: strong rose fading to a faint neutral midpoint, then faint to strong purple, labelled well below, midpoint, well above. Highlight: five grey swatches and one rose one, labelled the one that matters.", cap:"Four palette types for four jobs."},
-      "Highlighting is the most underused job. If your story is about one line among twenty, colour that line and make the rest grey. Wilke’s tip: the background colours must be genuinely dull, or they compete with the accent."
+      {fig:'<svg viewBox="0 0 340 348"><text x="10" y="22">Qualitative: groups with no order</text><path class="d-rose" d="M40,48 h54" stroke-width="22"/><path class="d-lup" d="M106,48 h54" stroke-width="22"/><path class="d-gold" d="M172,48 h54" stroke-width="22"/><path class="d-sage" d="M238,48 h54" stroke-width="22"/><text class="s" x="67" y="78" text-anchor="middle">North</text><text class="s" x="133" y="78" text-anchor="middle">South</text><text class="s" x="199" y="78" text-anchor="middle">East</text><text class="s" x="265" y="78" text-anchor="middle">West</text><text x="10" y="108">Sequential: low to high, faint to strong</text><path class="d-lup" d="M40,134 h40" stroke-width="22" stroke-opacity="0.15"/><path class="d-lup" d="M85,134 h40" stroke-width="22" stroke-opacity="0.32"/><path class="d-lup" d="M130,134 h40" stroke-width="22" stroke-opacity="0.5"/><path class="d-lup" d="M175,134 h40" stroke-width="22" stroke-opacity="0.7"/><path class="d-lup" d="M220,134 h40" stroke-width="22" stroke-opacity="0.88"/><path class="d-lup" d="M265,134 h40" stroke-width="22" stroke-opacity="1.0"/><text class="s" x="40" y="164">fewest</text><text class="s" x="310" y="164" text-anchor="end">most</text><text x="10" y="194">Diverging: two directions from a midpoint</text><path class="d-rose" d="M30,220 h37" stroke-width="22" stroke-opacity="1.0"/><path class="d-rose" d="M71,220 h37" stroke-width="22" stroke-opacity="0.6"/><path class="d-rose" d="M112,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-soft" d="M153,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-lup" d="M194,220 h37" stroke-width="22" stroke-opacity="0.25"/><path class="d-lup" d="M235,220 h37" stroke-width="22" stroke-opacity="0.6"/><path class="d-lup" d="M276,220 h37" stroke-width="22" stroke-opacity="1.0"/><text class="s" x="30" y="250">well below</text><text class="s" x="170" y="250" text-anchor="middle">midpoint</text><text class="s" x="318" y="250" text-anchor="end">well above</text><text x="10" y="280">Highlight: gray for context, one accent</text><path class="d-soft" d="M40,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M85,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M130,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-rose" d="M175,306 h40" stroke-width="22"/><path class="d-soft" d="M220,306 h40" stroke-width="22" stroke-opacity="0.35"/><path class="d-soft" d="M265,306 h40" stroke-width="22" stroke-opacity="0.35"/><text class="s" x="197" y="336" text-anchor="middle">the one that matters</text></svg>', alt:"Four rows of color swatches. Qualitative: four different hues labeled North, South, East and West. Sequential: six steps of one purple from faint to strong, labeled fewest to most. Diverging: strong rose fading to a faint neutral midpoint, then faint to strong purple, labeled well below, midpoint, well above. Highlight: five gray swatches and one rose one, labeled the one that matters.", cap:"Four palette types for four jobs."},
+      "Highlighting is the most underused job. If your story is about one line among twenty, color that line and make the rest gray. Wilke’s tip: the background colors must be genuinely dull, or they compete with the accent."
     ]},
     {h:"Sequential and diverging scales", body:[
       "A sequential scale has to show two things: which values are bigger, and roughly how far apart they are. So its lightness should change steadily from one end to the other. On a white page, low values are usually light and high values dark; on a dark background the convention often flips, as the figure above does in dark mode. Single-hue scales (light to dark blue) work, and so do multi-hue scales that follow a natural progression, such as dark purple through green to light yellow.",
-      "That last example describes **viridis**, a widely used scale designed to be perceptually even, readable for people with common colour-vision deficiencies, and still in order when printed in greyscale. A five-step version (as the Python library matplotlib gives it; R’s version differs by a digit or two) is `#440154`, `#3B528B`, `#21918C`, `#5EC962`, `#FDE725` ([[hex-color|hex codes]]).",
+      "That last example describes **viridis**, a widely used scale designed to be perceptually even, readable for people with common color-vision deficiencies, and still in order when printed in greyscale. A five-step version (as the Python library matplotlib gives it; R’s version differs by a digit or two) is `#440154`, `#3B528B`, `#21918C`, `#5EC962`, `#FDE725` ([[hex-color|hex codes]]).",
       "A diverging scale is two sequential scales joined at a light midpoint. Use one only when the midpoint means something: zero change, 50% (a majority), a target or a national average. Both sides should darken at the same rate, or one direction will look more extreme than the other.",
-      {ex:"Fatima maps the change in bus passengers since last year, by district: from −12% to +18%.\n\nDiverging scale, centred on 0%, darkening equally each way, so that −12% and +12% look equally strong.\n\nIf she mapped passengers per 1,000 residents instead, a sequential scale fits: there’s no meaningful middle, just fewer to more.", label:"Worked example: sequential or diverging?"},
-      "Maps that colour regions by value are called **choropleth** maps. They should usually show rates, such as passengers [[per-capita|per person]], rather than totals; Lesson 4 explains why."
+      {ex:"Fatima maps the change in bus passengers since last year, by district: from −12% to +18%.\n\nDiverging scale, centered on 0%, darkening equally each way, so that −12% and +12% look equally strong.\n\nIf she mapped passengers per 1,000 residents instead, a sequential scale fits: there’s no meaningful middle, just fewer to more.", label:"Worked example: sequential or diverging?"},
+      "Maps that color regions by value are called **choropleth** maps. They should usually show rates, such as passengers [[per-capita|per person]], rather than totals; Lesson 4 explains why."
     ]},
-    {h:"Three colour pitfalls", body:[
+    {h:"Three color pitfalls", body:[
       {list:[
-        "**Too many colours.** Wilke’s rule of thumb: qualitative colours work best for about three to five categories; at eight to ten or more, matching colours to a legend becomes a chore, so label the data directly instead. The UK Government Analysis Function goes further and recommends at most four categories in a basic chart.",
+        "**Too many colors.** Wilke’s rule of thumb: qualitative colors work best for about three to five categories; at eight to ten or more, matching colors to a legend becomes a chore, so label the data directly instead. The UK Government Analysis Function goes further and recommends at most four categories in a basic chart.",
         "**Rainbow scales.** A rainbow runs through every hue, so its lightness goes up and down: medium, light, very dark, then medium again. Readers see sharp boundaries where the data change smoothly, and miss real changes elsewhere. Its two ends are both reddish, too. Use a scale whose lightness changes steadily.",
-        "**Loud, saturated fills.** Large areas of intense colour are tiring to look at and pull the eye away from the data. Save strong colours for small marks and highlights."
+        "**Loud, saturated fills.** Large areas of intense color are tiring to look at and pull the eye away from the data. Save strong colors for small marks and highlights."
       ]},
-      {tip:"A quick test for any sequential scale: view it in greyscale. If the greys don’t run steadily from light to dark, the scale will mislead."}
+      {tip:"A quick test for any sequential scale: view it in greyscale. If the grays don’t run steadily from light to dark, the scale will mislead."}
     ]},
-    {h:"Designing for colour-vision deficiency", body:[
-      "People with colour-vision deficiency still see colours; they confuse particular pairs. The most common types (deuteranomaly and protanomaly) make reds and greens hard to tell apart. A rarer type (tritanomaly) affects blues, so blue–green pairs can look alike. Wilke’s advice by palette type:",
+    {h:"Designing for color-vision deficiency", body:[
+      "People with color-vision deficiency still see colors; they confuse particular pairs. The most common types (deuteranomaly and protanomaly) make reds and greens hard to tell apart. A rarer type (tritanomaly) affects blues, so blue–green pairs can look alike. Wilke’s advice by palette type:",
       {list:[
         "**Sequential** scales that run from dark to light usually stay readable.",
         "**Diverging** red–green scales fail for the most common types. Use pairs such as blue–orange, or the pink-to-green ColorBrewer scale PiYG, which Wilke shows staying distinguishable.",
-        "**Qualitative** palettes are hardest. Wilke uses the Okabe–Ito palette, designed to stay [[colourblind-safe|colour-blind safe]]:"
+        "**Qualitative** palettes are hardest. Wilke uses the Okabe–Ito palette, designed to stay [[colourblind-safe|color-blind safe]]:"
       ]},
       {table:[
-        ["Okabe–Ito colour","Hex code","Contrast on white"],
+        ["Okabe–Ito color","Hex code","Contrast on white"],
         ["Orange","`#E69F00`","2.25:1"],
         ["Sky blue","`#56B4E9`","2.31:1"],
         ["Bluish green","`#009E73`","3.42:1"],
@@ -383,106 +383,106 @@ ICA.addUnit({
         ["Reddish purple","`#CC79A7`","3.06:1"],
         ["Black","`#000000`","21:1"]
       ]},
-      {warn:"A safe palette isn’t a guarantee. Wilke stresses that small dots and thin lines are much harder to tell apart than big areas, and recommends testing every figure in a colour-vision simulator."},
-      "Simulators are free. Chrome’s developer tools have a **Rendering** tab with **Emulate vision deficiencies** (protanopia, deuteranopia, tritanopia, achromatopsia and more), which works on any web page. Datawrapper runs an automatic colour-blind check on its palettes. A low-tech test works everywhere: switch your screen to greyscale or print in black and white. If the chart still works, colour isn’t carrying it alone."
+      {warn:"A safe palette isn’t a guarantee. Wilke stresses that small dots and thin lines are much harder to tell apart than big areas, and recommends testing every figure in a color-vision simulator."},
+      "Simulators are free. Chrome’s developer tools have a **Rendering** tab with **Emulate vision deficiencies** (protanopia, deuteranopia, tritanopia, achromatopsia and more), which works on any web page. Datawrapper runs an automatic color-blind check on its palettes. A low-tech test works everywhere: switch your screen to greyscale or print in black and white. If the chart still works, color isn’t carrying it alone."
     ]},
     {h:"Contrast: can the marks be seen at all?", body:[
-      "Colour-blind safety is about telling colours apart from each other. **Contrast** is about telling marks apart from the background ([[contrast]]). WCAG 2.2, the web accessibility standard, sets the numbers:",
+      "Color-blind safety is about telling colors apart from each other. **Contrast** is about telling marks apart from the background ([[contrast]]). WCAG 2.2, the web accessibility standard, sets the numbers:",
       {list:[
         "**Text**, including axis labels and annotations: at least 4.5:1, or 3:1 for large text (success criterion 1.4.3).",
-        "**Graphical objects needed to understand the content**, such as lines, bars and pie slices: at least 3:1 against adjacent colours (1.4.11).",
-        "**Use of colour**: colour must not be the only visual way information is shown (1.4.1)."
+        "**Graphical objects needed to understand the content**, such as lines, bars and pie slices: at least 3:1 against adjacent colors (1.4.11).",
+        "**Use of color**: color must not be the only visual way information is shown (1.4.1)."
       ]},
-      "Look back at the contrast column above. On white, Okabe–Ito yellow (1.32:1), orange (2.25:1) and sky blue (2.31:1) fall below 3:1. On a near-black background (`#121212`) the picture flips: yellow reaches about 14:1, but blue drops to about 3.6:1 and black disappears. Colour-blind safe and high contrast are two different tests, and a chart needs to pass both.",
-      "W3C’s explanation of criterion 1.4.11 gives practical fixes. Lines in a line chart need 3:1 against the background but not against each other. Neighbouring pie slices need 3:1 against each other, or a contrasting border, or visible labels and values that carry the same information. Thin lines look fainter than their colour suggests, so avoid very thin ones. A heat map whose colour gradient is the measurement counts as “essential” and is exempt, though a data table still helps.",
-      {tip:"Wilke’s trick: use two shades of each colour, a light one for filled areas and a darker one for lines, outlines and text. Check any pair of hex codes with a free contrast checker such as WebAIM’s."}
+      "Look back at the contrast column above. On white, Okabe–Ito yellow (1.32:1), orange (2.25:1) and sky blue (2.31:1) fall below 3:1. On a near-black background (`#121212`) the picture flips: yellow reaches about 14:1, but blue drops to about 3.6:1 and black disappears. Color-blind safe and high contrast are two different tests, and a chart needs to pass both.",
+      "W3C’s explanation of criterion 1.4.11 gives practical fixes. Lines in a line chart need 3:1 against the background but not against each other. Neighboring pie slices need 3:1 against each other, or a contrasting border, or visible labels and values that carry the same information. Thin lines look fainter than their color suggests, so avoid very thin ones. A heat map whose color gradient is the measurement counts as “essential” and is exempt, though a data table still helps.",
+      {tip:"Wilke’s trick: use two shades of each color, a light one for filled areas and a darker one for lines, outlines and text. Check any pair of hex codes with a free contrast checker such as WebAIM’s."}
     ]},
     {h:"Redundant coding and direct labels", body:[
-      "The surest fix is to stop colour carrying the meaning alone. Wilke calls this **redundant coding**: show the same information in two ways.",
-      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="18" text-anchor="middle">Weekend visitors (thousands, invented)</text><path class="d-soft" d="M40,230 L250,230" stroke-width="1"/><text class="s" x="34" y="234" text-anchor="end">0</text><path class="d-soft" d="M40,182.5 L250,182.5" stroke-width="1"/><text class="s" x="34" y="186.5" text-anchor="end">2</text><path class="d-soft" d="M40,135 L250,135" stroke-width="1"/><text class="s" x="34" y="139" text-anchor="end">4</text><path class="d-soft" d="M40,87.5 L250,87.5" stroke-width="1"/><text class="s" x="34" y="91.5" text-anchor="end">6</text><path class="d-soft" d="M40,40 L250,40" stroke-width="1"/><text class="s" x="34" y="44" text-anchor="end">8</text><path class="d-rose" d="M40,106.5 L82,97 L124,85.1 L166,68.5 L208,54.2 L250,42.4" fill-opacity="0" stroke-width="2.5"/><circle class="d-rose" cx="40" cy="106.5" r="5" stroke-width="2"/><circle class="d-rose" cx="82" cy="97" r="5" stroke-width="2"/><circle class="d-rose" cx="124" cy="85.1" r="5" stroke-width="2"/><circle class="d-rose" cx="166" cy="68.5" r="5" stroke-width="2"/><circle class="d-rose" cx="208" cy="54.2" r="5" stroke-width="2"/><circle class="d-rose" cx="250" cy="42.4" r="5" stroke-width="2"/><text x="260" y="46.4">Riverside</text><path class="d-lup" d="M40,132.6 L82,127.9 L124,130.2 L166,120.8 L208,116 L250,108.9" fill-opacity="0" stroke-width="2.5" stroke-dasharray="7 4"/><rect class="d-lup" x="35.5" y="128.1" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="77.5" y="123.4" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="119.5" y="125.8" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="161.5" y="116.3" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="203.5" y="111.5" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="245.5" y="104.4" width="9" height="9" stroke-width="2"/><text x="260" y="112.9">Hilltop</text><path class="d-gold" d="M40,158.8 L82,163.5 L124,161.1 L166,168.2 L208,173 L250,177.8" fill-opacity="0" stroke-width="2.5" stroke-dasharray="2 4"/><path class="d-gold" d="M40,152.8 L45.5,162.8 L34.5,162.8 Z" stroke-width="2"/><path class="d-gold" d="M82,157.5 L87.5,167.5 L76.5,167.5 Z" stroke-width="2"/><path class="d-gold" d="M124,155.1 L129.5,165.1 L118.5,165.1 Z" stroke-width="2"/><path class="d-gold" d="M166,162.2 L171.5,172.2 L160.5,172.2 Z" stroke-width="2"/><path class="d-gold" d="M208,167 L213.5,177 L202.5,177 Z" stroke-width="2"/><path class="d-gold" d="M250,171.8 L255.5,181.8 L244.5,181.8 Z" stroke-width="2"/><text x="260" y="181.8">Old Mill</text><path class="d-ink" d="M40,36 L40,230 L250,230" fill="none" stroke-width="1.5"/><text class="s" x="40" y="246" text-anchor="middle">Mar</text><text class="s" x="82" y="246" text-anchor="middle">Apr</text><text class="s" x="124" y="246" text-anchor="middle">May</text><text class="s" x="166" y="246" text-anchor="middle">Jun</text><text class="s" x="208" y="246" text-anchor="middle">Jul</text><text class="s" x="250" y="246" text-anchor="middle">Aug</text><text class="s" x="170" y="270" text-anchor="middle">Names sit at the line ends, and each line</text><text class="s" x="170" y="285" text-anchor="middle">has its own marker and dash pattern, so</text><text class="s" x="170" y="300" text-anchor="middle">nobody needs to match colours to a legend.</text></svg>', alt:"Line chart of invented weekend visitors, in thousands, at three parks from March to August. Riverside rises from 5.2 to 7.9, Hilltop from 4.1 to 5.1, and Old Mill falls from 3.0 to 2.2. Each line has its own marker shape (circle, square, triangle) and dash style, and its name is written at its right-hand end instead of in a legend.", cap:"Readable in colour, in greyscale and for colour-blind readers."},
+      "The surest fix is to stop color carrying the meaning alone. Wilke calls this **redundant coding**: show the same information in two ways.",
+      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="18" text-anchor="middle">Weekend visitors (thousands, invented)</text><path class="d-soft" d="M40,230 L250,230" stroke-width="1"/><text class="s" x="34" y="234" text-anchor="end">0</text><path class="d-soft" d="M40,182.5 L250,182.5" stroke-width="1"/><text class="s" x="34" y="186.5" text-anchor="end">2</text><path class="d-soft" d="M40,135 L250,135" stroke-width="1"/><text class="s" x="34" y="139" text-anchor="end">4</text><path class="d-soft" d="M40,87.5 L250,87.5" stroke-width="1"/><text class="s" x="34" y="91.5" text-anchor="end">6</text><path class="d-soft" d="M40,40 L250,40" stroke-width="1"/><text class="s" x="34" y="44" text-anchor="end">8</text><path class="d-rose" d="M40,106.5 L82,97 L124,85.1 L166,68.5 L208,54.2 L250,42.4" fill-opacity="0" stroke-width="2.5"/><circle class="d-rose" cx="40" cy="106.5" r="5" stroke-width="2"/><circle class="d-rose" cx="82" cy="97" r="5" stroke-width="2"/><circle class="d-rose" cx="124" cy="85.1" r="5" stroke-width="2"/><circle class="d-rose" cx="166" cy="68.5" r="5" stroke-width="2"/><circle class="d-rose" cx="208" cy="54.2" r="5" stroke-width="2"/><circle class="d-rose" cx="250" cy="42.4" r="5" stroke-width="2"/><text x="260" y="46.4">Riverside</text><path class="d-lup" d="M40,132.6 L82,127.9 L124,130.2 L166,120.8 L208,116 L250,108.9" fill-opacity="0" stroke-width="2.5" stroke-dasharray="7 4"/><rect class="d-lup" x="35.5" y="128.1" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="77.5" y="123.4" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="119.5" y="125.8" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="161.5" y="116.3" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="203.5" y="111.5" width="9" height="9" stroke-width="2"/><rect class="d-lup" x="245.5" y="104.4" width="9" height="9" stroke-width="2"/><text x="260" y="112.9">Hilltop</text><path class="d-gold" d="M40,158.8 L82,163.5 L124,161.1 L166,168.2 L208,173 L250,177.8" fill-opacity="0" stroke-width="2.5" stroke-dasharray="2 4"/><path class="d-gold" d="M40,152.8 L45.5,162.8 L34.5,162.8 Z" stroke-width="2"/><path class="d-gold" d="M82,157.5 L87.5,167.5 L76.5,167.5 Z" stroke-width="2"/><path class="d-gold" d="M124,155.1 L129.5,165.1 L118.5,165.1 Z" stroke-width="2"/><path class="d-gold" d="M166,162.2 L171.5,172.2 L160.5,172.2 Z" stroke-width="2"/><path class="d-gold" d="M208,167 L213.5,177 L202.5,177 Z" stroke-width="2"/><path class="d-gold" d="M250,171.8 L255.5,181.8 L244.5,181.8 Z" stroke-width="2"/><text x="260" y="181.8">Old Mill</text><path class="d-ink" d="M40,36 L40,230 L250,230" fill="none" stroke-width="1.5"/><text class="s" x="40" y="246" text-anchor="middle">Mar</text><text class="s" x="82" y="246" text-anchor="middle">Apr</text><text class="s" x="124" y="246" text-anchor="middle">May</text><text class="s" x="166" y="246" text-anchor="middle">Jun</text><text class="s" x="208" y="246" text-anchor="middle">Jul</text><text class="s" x="250" y="246" text-anchor="middle">Aug</text><text class="s" x="170" y="270" text-anchor="middle">Names sit at the line ends, and each line</text><text class="s" x="170" y="285" text-anchor="middle">has its own marker and dash pattern, so</text><text class="s" x="170" y="300" text-anchor="middle">nobody needs to match colors to a legend.</text></svg>', alt:"Line chart of invented weekend visitors, in thousands, at three parks from March to August. Riverside rises from 5.2 to 7.9, Hilltop from 4.1 to 5.1, and Old Mill falls from 3.0 to 2.2. Each line has its own marker shape (circle, square, triangle) and dash style, and its name is written at its right-hand end instead of in a legend.", cap:"Readable in color, in greyscale and for color-blind readers."},
       {list:[
         "**Shapes and line styles**: circles, squares and triangles for points; solid, dashed and dotted lines, used sparingly because dashes add visual noise.",
-        "**[[direct-label|Direct labels]]**: names at the ends of lines and values on bars, so nobody has to match colours to a legend. Wilke: whenever possible, design figures that don’t need a legend.",
+        "**[[direct-label|Direct labels]]**: names at the ends of lines and values on bars, so nobody has to match colors to a legend. Wilke: whenever possible, design figures that don’t need a legend.",
         "**Legend order that matches the data.** If the lines run top to bottom as Riverside, Hilltop, Old Mill, list them in that order. Software usually sorts legends alphabetically."
       ]},
-      "Colour meanings vary by culture and context, too. Red often signals danger or loss, but on mainland China’s stock markets red marks prices going up. Say what each colour means in a label or legend instead of relying on convention.",
-      {key:"Design so the chart works in greyscale. Then colour is a bonus, not a requirement."}
+      "Color meanings vary by culture and context, too. Red often signals danger or loss, but on mainland China’s stock markets red marks prices going up. Say what each color means in a label or legend instead of relying on convention.",
+      {key:"Design so the chart works in greyscale. Then color is a bonus, not a requirement."}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
-        "**“A colour-blind-safe palette makes my chart accessible.”** It helps with one test. You still need enough contrast, labels and a text alternative.",
-        "**“More colours show more information.”** Past about five categories, colours slow readers down. Label directly or group categories.",
+        "**“A color-blind-safe palette makes my chart accessible.”** It helps with one test. You still need enough contrast, labels and a text alternative.",
+        "**“More colors show more information.”** Past about five categories, colors slow readers down. Label directly or group categories.",
         "**“Rainbow scales show more detail.”** They show false detail: jumps in lightness that aren’t in the data.",
-        "**“Red against green is the clearest contrast.”** For people with the most common colour-vision deficiencies, it’s one of the worst.",
-        "**“Colour-blind people see in black and white.”** Most see colours but confuse some pairs. Complete absence of colour vision is rare."
+        "**“Red against green is the clearest contrast.”** For people with the most common color-vision deficiencies, it’s one of the worst.",
+        "**“Color-blind people see in black and white.”** Most see colors but confuse some pairs. Complete absence of color vision is rare."
       ]}
     ]}
    ],
    try:[
     {id:"t3u4-l3-x1", type:"sort", q:"Which kind of palette fits each dataset?", buckets:["Qualitative","Sequential","Diverging"], items:[
       {t:"Six bus companies’ punctuality on one chart", b:0, why:"Companies are unordered groups: distinct hues, none standing out."},
-      {t:"Average rent per square metre in each district", b:1, why:"One quantity from low to high, with no meaningful middle: light to dark."},
+      {t:"Average rent per square meter in each district", b:1, why:"One quantity from low to high, with no meaningful middle: light to dark."},
       {t:"Change in rent since last year, from −8% to +15%", b:2, why:"Values run in two directions from a meaningful midpoint, 0%."},
-      {t:"Percentage voting yes in each area, where 50% decides the result", b:2, why:"50% is a meaningful midpoint (majority yes or no), so a diverging scale centred on 50% fits."},
-      {t:"Number of street trees per kilometre of road", b:1, why:"Fewer to more, no midpoint: sequential."},
+      {t:"Percentage voting yes in each area, where 50% decides the result", b:2, why:"50% is a meaningful midpoint (majority yes or no), so a diverging scale centered on 50% fits."},
+      {t:"Number of street trees per kilometer of road", b:1, why:"Fewer to more, no midpoint: sequential."},
       {t:"Three bird species in a scatterplot", b:0, why:"Species are unordered categories."}
     ]},
-    {id:"t3u4-l3-x2", type:"mcq", q:"Amara uses the Okabe–Ito palette for a line chart on a white background. One series is drawn as a thin yellow `#F0E442` line. A colleague says it’s hard to see. Why, if the palette is colour-blind safe?", options:[
-      {t:"Telling colours apart is a different test from contrast", ok:true, why:"Two separate tests: the yellow’s contrast with white is only about 1.3:1, far below the 3:1 WCAG asks for graphics. Use a darker colour for thin lines on white, or thicken the line and add a darker outline or direct label."},
-      {t:"The Okabe–Ito palette isn’t really colour-blind safe after all", why:"It was designed for exactly that and stays distinguishable for common types. The problem is contrast with the background."},
-      {t:"Yellow lines are banned by WCAG", why:"No colour is banned. WCAG sets contrast ratios, and this yellow on white doesn’t meet 3:1."},
-      {t:"Thin lines always pass contrast checks", why:"The opposite: thin lines look fainter than their colour suggests, so they need more contrast, not less."}
+    {id:"t3u4-l3-x2", type:"mcq", q:"Amara uses the Okabe–Ito palette for a line chart on a white background. One series is drawn as a thin yellow `#F0E442` line. A colleague says it’s hard to see. Why, if the palette is color-blind safe?", options:[
+      {t:"Telling colors apart is a different test from contrast", ok:true, why:"Two separate tests: the yellow’s contrast with white is only about 1.3:1, far below the 3:1 WCAG asks for graphics. Use a darker color for thin lines on white, or thicken the line and add a darker outline or direct label."},
+      {t:"The Okabe–Ito palette isn’t really color-blind safe after all", why:"It was designed for exactly that and stays distinguishable for common types. The problem is contrast with the background."},
+      {t:"Yellow lines are banned by WCAG", why:"No color is banned. WCAG sets contrast ratios, and this yellow on white doesn’t meet 3:1."},
+      {t:"Thin lines always pass contrast checks", why:"The opposite: thin lines look fainter than their color suggests, so they need more contrast, not less."}
     ]},
-    {id:"t3u4-l3-x3", type:"number", q:"Using the figures of about 8% of men and 0.5% of women, roughly how many people in a group of 1,000 men and 1,000 women would have some colour-vision deficiency?", answer:85, tol:1, unit:"people", why:"Men: 8% of 1,000 = 80. Women: 0.5% of 1,000 = 5. Total **85** people, about 4% of the 2,000.", wrongs:[
+    {id:"t3u4-l3-x3", type:"number", q:"Using the figures of about 8% of men and 0.5% of women, roughly how many people in a group of 1,000 men and 1,000 women would have some color-vision deficiency?", answer:85, tol:1, unit:"people", why:"Men: 8% of 1,000 = 80. Women: 0.5% of 1,000 = 5. Total **85** people, about 4% of the 2,000.", wrongs:[
       {v:80, tol:0, why:"That’s only the men. Add 0.5% of the 1,000 women: 5 more."},
       {v:170, tol:1, why:"That applies 8.5% to all 2,000 people. The two percentages apply to different groups of 1,000."},
       {v:160, tol:0, why:"That applies the men’s 8% to everyone. Women’s rate is much lower, 0.5%."}
     ]},
     {id:"t3u4-l3-x4", type:"mcq", q:"Tomás’s map of change in library visits uses red for falls, green for rises and white for no change. What’s the best improvement?", options:[
-      {t:"Use a colour-blind-friendly diverging pair, such as orange to blue", ok:true, why:"Red–green is indistinguishable for the most common colour-vision deficiencies. Keep the light midpoint at 0% and check it in a simulator. A safer pair with balanced darkening keeps the diverging meaning."},
-      {t:"Use a rainbow scale so that every value gets its own distinct colour", why:"Rainbow scales have uneven lightness and no clear midpoint, and they still contain red and green."},
+      {t:"Use a color-blind-friendly diverging pair, such as orange to blue", ok:true, why:"Red–green is indistinguishable for the most common color-vision deficiencies. Keep the light midpoint at 0% and check it in a simulator. A safer pair with balanced darkening keeps the diverging meaning."},
+      {t:"Use a rainbow scale so that every value gets its own distinct color", why:"Rainbow scales have uneven lightness and no clear midpoint, and they still contain red and green."},
       {t:"Make the reds and greens brighter", why:"Brightness doesn’t solve red–green confusion; the hues still look alike to many readers."},
       {t:"Switch to a sequential scale from light to dark green", why:"That loses the two directions. Falls and rises would look like low and high on one scale."}
     ]},
-    {id:"t3u4-l3-x5", type:"spot", q:"Ana’s chart brief for a report. Tap each colour choice that will cause problems.", ask:"will cause problems", parts:[
-      "Line chart of ", {t:"12 regions, each in its own colour, with a legend", flag:true, why:"Far beyond the 3–5 categories colour handles well. Highlight the regions that matter, grey the rest, and label directly."},
+    {id:"t3u4-l3-x5", type:"spot", q:"Ana’s chart brief for a report. Tap each color choice that will cause problems.", ask:"will cause problems", parts:[
+      "Line chart of ", {t:"12 regions, each in its own color, with a legend", flag:true, why:"Far beyond the 3–5 categories color handles well. Highlight the regions that matter, gray the rest, and label directly."},
       "; ", {t:"the legend in alphabetical order", flag:true, why:"Match the legend to the order of the lines, or better, label the lines directly."},
-      ". Bar chart of rainfall: ", {t:"every region in light grey except the two discussed", flag:false, why:"Good: a highlight palette that focuses attention."},
+      ". Bar chart of rainfall: ", {t:"every region in light gray except the two discussed", flag:false, why:"Good: a highlight palette that focuses attention."},
       ". Map of average temperature: ", {t:"a rainbow scale", flag:true, why:"Uneven lightness creates false boundaries. Use a perceptually even sequential scale such as viridis."},
       ". Annotations: ", {t:"pale yellow text on white", flag:true, why:"Text needs at least 4.5:1 contrast; pale yellow on white is far below."},
-      "; ", {t:"dark grey text, `#595959` on white (7:1)", flag:false, why:"Comfortably above the 4.5:1 text minimum."},
+      "; ", {t:"dark gray text, `#595959` on white (7:1)", flag:false, why:"Comfortably above the 4.5:1 text minimum."},
       "."
     ]},
-    {id:"t3u4-l3-x6", type:"match", q:"Match each colour problem with the best fix.", pairs:[
+    {id:"t3u4-l3-x6", type:"match", q:"Match each color problem with the best fix.", pairs:[
       ["Readers keep looking back and forth between lines and legend","Label each line at its end","Direct labels remove the matching task."],
-      ["The chart is unreadable when printed in black and white","Add marker shapes or line styles","Redundant coding carries the meaning without colour."],
-      ["Light orange bars barely show on white","Add a darker outline, or use a darker shade","Bars need 3:1 against adjacent colours; an outline provides it."],
-      ["Two neighbouring pie slices look alike","Add contrasting borders and label each slice","W3C’s suggested fixes for adjacent slices: borders, or labels and values."],
-      ["A map of change since last year uses one colour from light to dark","Use a diverging scale centred on 0%","Changes run in two directions from a meaningful midpoint."]
+      ["The chart is unreadable when printed in black and white","Add marker shapes or line styles","Redundant coding carries the meaning without color."],
+      ["Light orange bars barely show on white","Add a darker outline, or use a darker shade","Bars need 3:1 against adjacent colors; an outline provides it."],
+      ["Two neighboring pie slices look alike","Add contrasting borders and label each slice","W3C’s suggested fixes for adjacent slices: borders, or labels and values."],
+      ["A map of change since last year uses one color from light to dark","Use a diverging scale centered on 0%","Changes run in two directions from a meaningful midpoint."]
     ]},
-    {id:"t3u4-l3-x7", type:"mcq", q:"Priya’s bar chart of 20 towns colours each bar by which of five regions it’s in. In Chrome’s Emulate vision deficiencies setting, with deuteranopia selected, two of the five region colours look the same. What should she do?", options:[
-      {t:"Change one of the two colours (an Okabe–Ito pair often works) and also label the regions directly, then check again", ok:true, why:"Fix the clash and add a second channel, so the chart works even if a colour pair is confused."},
-      {t:"Ignore it: deuteranopia is too rare to matter", why:"Red–green types are the most common colour-vision deficiencies, affecting several percent of readers."},
-      {t:"Make all 20 bars the same colour", why:"That removes the clash but also removes the regions, which are what the colours were there to show."},
-      {t:"Add a note asking colour-blind readers to use a simulator", why:"The designer should fix the chart; readers shouldn’t need special tools."}
+    {id:"t3u4-l3-x7", type:"mcq", q:"Priya’s bar chart of 20 towns colors each bar by which of five regions it’s in. In Chrome’s Emulate vision deficiencies setting, with deuteranopia selected, two of the five region colors look the same. What should she do?", options:[
+      {t:"Change one of the two colors (an Okabe–Ito pair often works) and also label the regions directly, then check again", ok:true, why:"Fix the clash and add a second channel, so the chart works even if a color pair is confused."},
+      {t:"Ignore it: deuteranopia is too rare to matter", why:"Red–green types are the most common color-vision deficiencies, affecting several percent of readers."},
+      {t:"Make all 20 bars the same color", why:"That removes the clash but also removes the regions, which are what the colors were there to show."},
+      {t:"Add a note asking color-blind readers to use a simulator", why:"The designer should fix the chart; readers shouldn’t need special tools."}
     ]},
-    {id:"t3u4-l3-x8", type:"explain", q:"A line chart uses a red line and a green line for two regions, with a legend in the corner. Explain why it may fail some readers, and how you would fix it.", model:"The most common colour-vision deficiencies make reds and greens hard to tell apart, so some readers can’t match each line to the legend. Colour is also the only clue, which accessibility guidance says it mustn’t be. I’d label each line directly at its end, add a second cue such as different marker shapes or line styles, and switch to a colour-blind-safe pair such as blue and orange with enough contrast against the background. Then I’d check the chart in greyscale or a colour-vision simulator.", points:["Says red–green is hard to tell apart for the most common colour-vision deficiencies", "Says colour shouldn’t be the only way information is shown", "Suggests direct labels or redundant coding (shapes, line styles)", "Suggests a safer palette and testing in greyscale or a simulator"]}
+    {id:"t3u4-l3-x8", type:"explain", q:"A line chart uses a red line and a green line for two regions, with a legend in the corner. Explain why it may fail some readers, and how you would fix it.", model:"The most common color-vision deficiencies make reds and greens hard to tell apart, so some readers can’t match each line to the legend. Color is also the only clue, which accessibility guidance says it mustn’t be. I’d label each line directly at its end, add a second cue such as different marker shapes or line styles, and switch to a color-blind-safe pair such as blue and orange with enough contrast against the background. Then I’d check the chart in greyscale or a color-vision simulator.", points:["Says red–green is hard to tell apart for the most common color-vision deficiencies", "Says color shouldn’t be the only way information is shown", "Suggests direct labels or redundant coding (shapes, line styles)", "Suggests a safer palette and testing in greyscale or a simulator"]}
    ],
    apply:{intro:"Recolour a chart, then test it. Use any chart from Lessons 1–2, or the three-park data: Riverside 5.2, 5.6, 6.1, 6.8, 7.4, 7.9; Hilltop 4.1, 4.3, 4.2, 4.6, 4.8, 5.1; Old Mill 3.0, 2.8, 2.9, 2.6, 2.4, 2.2 (March to August).", tasks:[
      {t:"Recolour a chart with Okabe–Ito hex codes", app:{
-       ms:["Click one line or set of bars so the whole series is selected, right-click it and choose **Format Data Series**.","Under **Fill & Line**, open the **Color** menu for the line (or fill) and choose **More Colors**.","On the **Custom** tab, type a hex code such as `0072B2` in the **Hex** box and click **OK**. Repeat with `D55E00` and `009E73` for the other series.","Delete the legend and add a text box or data label with each series’ name next to it. (Steps are for desktop Excel; Excel for the web offers fewer colour options.)"],
-       google:["Double-click the chart and open **Customize → Series**.","Choose a series from the drop-down list, open **Line color** (or **Fill color**) and click **Custom**.","Type a hex code such as `#0072B2` and click **OK**. Repeat with `#D55E00` and `#009E73` for the others.","Under **Legend**, set the position to **None** if every series can be labelled directly (for example with **Data labels** on the last point)."],
+       ms:["Click one line or set of bars so the whole series is selected, right-click it and choose **Format Data Series**.","Under **Fill & Line**, open the **Color** menu for the line (or fill) and choose **More Colors**.","On the **Custom** tab, type a hex code such as `0072B2` in the **Hex** box and click **OK**. Repeat with `D55E00` and `009E73` for the other series.","Delete the legend and add a text box or data label with each series’ name next to it. (Steps are for desktop Excel; Excel for the web offers fewer color options.)"],
+       google:["Double-click the chart and open **Customize → Series**.","Choose a series from the drop-down list, open **Line color** (or **Fill color**) and click **Custom**.","Type a hex code such as `#0072B2` and click **OK**. Repeat with `#D55E00` and `#009E73` for the others.","Under **Legend**, set the position to **None** if every series can be labeled directly (for example with **Data labels** on the last point)."],
        libre:["Double-click the chart to edit it, then double-click one series to open **Data Series**.","On the **Line** tab (or **Area** tab for bars), choose **Color**, then **Custom Color…**, and type a hex code such as `0072B2` in the **Hex** field.","Repeat with `D55E00` and `009E73` for the other series.","Remove the legend (**Insert → Legend**, untick **Display legend**) and label the series with text instead."],
-       apple:["Click one bar or line to select that series, then open the **Format** sidebar and click **Style**.","Click the colour well next to the fill or stroke, then open the colour window and choose the **Color Sliders** pane with **RGB Sliders**.","Type `0072B2` in the **Hex Color #** box. Repeat with `D55E00` and `009E73`.","Turn off the legend in the **Chart** tab and label each series with a text box instead."]
+       apple:["Click one bar or line to select that series, then open the **Format** sidebar and click **Style**.","Click the color well next to the fill or stroke, then open the color window and choose the **Color Sliders** pane with **RGB Sliders**.","Type `0072B2` in the **Hex Color #** box. Repeat with `D55E00` and `009E73`.","Turn off the legend in the **Chart** tab and label each series with a text box instead."]
      }},
-     {t:"Test the chart for colour-vision deficiency and greyscale", how:{
+     {t:"Test the chart for color-vision deficiency and greyscale", how:{
        win:["Put your chart on a web page or open it as an image in Chrome (drag the image file into a Chrome tab).","Press [[kbd:F12]] to open developer tools, then [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:P]], type `rendering` and choose **Show Rendering**.","In **Emulate vision deficiencies**, try **Protanopia**, **Deuteranopia**, **Tritanopia** and **Achromatopsia**.","Greyscale for the whole screen: **Settings → Accessibility → Color filters**, turn on **Color filters** and pick **Grayscale**."],
        mac:["Open the chart image in Chrome (drag it into a tab).","Press [[kbd:Cmd]] + [[kbd:Option]] + [[kbd:I]] to open developer tools, then [[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:P]], type `rendering` and choose **Show Rendering**.","In **Emulate vision deficiencies**, try each option.","Greyscale for the whole screen: **System Settings → Accessibility → Display → Color filters**, choose **Grayscale**."],
        chromeos:["Open the chart image in Chrome.","Press [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:I]] for developer tools, then [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:P]], type `rendering` and choose **Show Rendering**.","In **Emulate vision deficiencies**, try each option.","Greyscale for the whole screen: **Settings → Accessibility → Display and magnification**, turn on **Color correction** and choose the greyscale option (names can vary between ChromeOS versions)."],
-       phone:["Phones don’t have Chrome’s developer tools, but greyscale works.","iPhone: **Settings → Accessibility → Display & Text Size → Color Filters**, turn on **Color Filters** and choose **Grayscale**.","Android: on many phones, **Settings → Accessibility → Colour and motion → Colour correction → Greyscale** (names and places vary by maker).","Look at your chart, then turn the filter off again."]
+       phone:["Phones don’t have Chrome’s developer tools, but greyscale works.","iPhone: **Settings → Accessibility → Display & Text Size → Color Filters**, turn on **Color Filters** and choose **Grayscale**.","Android: on many phones, **Settings → Accessibility → Color and motion → Color correction → Greyscale** (names and places vary by maker).","Look at your chart, then turn the filter off again."]
      }, write:"Which series became hard to tell apart, and what did you change?"},
-     {t:"Check the contrast of your chart colours", how:["Open a free contrast checker such as [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).","Enter each line or bar colour as the foreground and your background colour (white is `#FFFFFF`).","Graphics need at least 3:1; text at least 4.5:1. Note which colours fail.","For each failing colour, choose a darker shade or add a dark outline, and check again."]}
-   ], proof:"A chart recoloured with chosen hex codes and direct labels, a note on what the simulator or greyscale test showed, and a list of contrast ratios for your colours."},
+     {t:"Check the contrast of your chart colors", how:["Open a free contrast checker such as [WebAIM’s Contrast Checker](https://webaim.org/resources/contrastchecker/).","Enter each line or bar color as the foreground and your background color (white is `#FFFFFF`).","Graphics need at least 3:1; text at least 4.5:1. Note which colors fail.","For each failing color, choose a darker shade or add a dark outline, and check again."]}
+   ], proof:"A chart recoloured with chosen hex codes and direct labels, a note on what the simulator or greyscale test showed, and a list of contrast ratios for your colors."},
    read:[
      {book:"wilke", where:"Chapter 4, “Color scales” (Sections 4.1–4.3: colour to distinguish, to represent data values, to highlight)"},
      {book:"wilke", where:"Chapter 19, “Common pitfalls of color use”, especially Section 19.3 “Not designing for color-vision deficiency”", note:"Includes the Okabe–Ito palette table with hex codes."},
@@ -491,7 +491,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t3u4-l4", title:"Misleading charts and honest uncertainty", minutes:60,
-   hook:{q:"A designer shows a value that doubled by doubling the width of a circle. How many times bigger is the new circle’s area?", options:["Twice as big","About 1.4 times as big","Four times as big","Exactly the same, if the numbers are labelled"], answer:2, reveal:"**Four times as big.** Area grows with the square of the width: 2 × 2 = 4. We read circles by their area (though not very precisely), so the doubling is drawn as four times the ink. The honest circle is only about 1.41 times wider. This lesson collects tricks like this one, and then turns to a quieter way charts mislead: by hiding how uncertain their numbers are."},
+   hook:{q:"A designer shows a value that doubled by doubling the width of a circle. How many times bigger is the new circle’s area?", options:["Twice as big","About 1.4 times as big","Four times as big","Exactly the same, if the numbers are labeled"], answer:2, reveal:"**Four times as big.** Area grows with the square of the width: 2 × 2 = 4. We read circles by their area (though not very precisely), so the doubling is drawn as four times the ink. The honest circle is only about 1.41 times wider. This lesson collects tricks like this one, and then turns to a quieter way charts mislead: by hiding how uncertain their numbers are."},
    goals:[
      "Spot area, 3D, time-window, cumulative, totals-versus-rates and scale tricks, and fix each one",
      "Explain why leaving out uncertainty can mislead",
@@ -516,9 +516,9 @@ ICA.addUnit({
       ]},
       "Unit 1 of this track covers the number side ([[per-capita|per-person rates]], [[cherry-picking]]). This lesson takes the chart-specific tricks, then uncertainty."
     ]},
-    {h:"Areas and 3D: when our eyes do the maths wrong", body:[
+    {h:"Areas and 3D: when our eyes do the math wrong", body:[
       "Circles, squares and icons are read by their area, and area grows with the square of the width. Double a circle’s radius and its area is four times bigger, so a value that doubled is drawn twice as big as it should be.",
-      {fig:'<svg viewBox="0 0 340 254"><text x="170" y="18" text-anchor="middle">Showing 10 and 20 with circles</text><circle class="d-sage" cx="52" cy="120" r="30" stroke-width="2"/><circle class="d-sage" cx="160" cy="120" r="42.4" stroke-width="2"/><circle class="d-rose" cx="270" cy="120" r="60" stroke-width="2"/><text x="52" y="124" text-anchor="middle">10</text><text x="160" y="124" text-anchor="middle">20</text><text x="270" y="124" text-anchor="middle">20?</text><text class="s" x="52" y="210" text-anchor="middle">r = 30</text><text class="s" x="160" y="210" text-anchor="middle">r = 42 (×1.41)</text><text class="s" x="270" y="210" text-anchor="middle">r = 60 (×2)</text><text class="s" x="160" y="228" text-anchor="middle">Area ×2: honest</text><text class="s" x="270" y="228" text-anchor="middle">Area ×4: drawn</text><text class="s" x="270" y="243" text-anchor="middle">four times as big</text></svg>', alt:"Three circles. A green circle of radius 30 labelled 10. A green circle of radius 42, 1.41 times wider, labelled 20 and marked area times 2, honest. A rose circle of radius 60, twice as wide, labelled 20 with a question mark and marked area times 4, drawn four times as big.", cap:"To double the area, multiply the radius by √2 ≈ 1.41, not by 2."},
+      {fig:'<svg viewBox="0 0 340 254"><text x="170" y="18" text-anchor="middle">Showing 10 and 20 with circles</text><circle class="d-sage" cx="52" cy="120" r="30" stroke-width="2"/><circle class="d-sage" cx="160" cy="120" r="42.4" stroke-width="2"/><circle class="d-rose" cx="270" cy="120" r="60" stroke-width="2"/><text x="52" y="124" text-anchor="middle">10</text><text x="160" y="124" text-anchor="middle">20</text><text x="270" y="124" text-anchor="middle">20?</text><text class="s" x="52" y="210" text-anchor="middle">r = 30</text><text class="s" x="160" y="210" text-anchor="middle">r = 42 (×1.41)</text><text class="s" x="270" y="210" text-anchor="middle">r = 60 (×2)</text><text class="s" x="160" y="228" text-anchor="middle">Area ×2: honest</text><text class="s" x="270" y="228" text-anchor="middle">Area ×4: drawn</text><text class="s" x="270" y="243" text-anchor="middle">four times as big</text></svg>', alt:"Three circles. A green circle of radius 30 labeled 10. A green circle of radius 42, 1.41 times wider, labeled 20 and marked area times 2, honest. A rose circle of radius 60, twice as wide, labeled 20 with a question mark and marked area times 4, drawn four times as big.", cap:"To double the area, multiply the radius by √2 ≈ 1.41, not by 2."},
       {ex:"To show 10 and 20 honestly, the area must double, so the radius grows by √2 ≈ 1.41: from 30 to 42.4 units.\nTo show a value three times bigger, multiply the radius by √3 ≈ 1.73.\nIn general: new radius = old radius × √(new value ÷ old value).", label:"Worked example: sizing circles"},
       "Many chart tools scale bubbles by area automatically, but some offer a radius option, and a picture resized by hand is easy to get wrong. Even honest areas are harder to compare than lengths (Lesson 1), so for precise comparisons use bars or dots; keep bubbles for adding a third variable to a scatterplot.",
       "3D is worse. Wilke tilts a pie of 25% and 75% in 3D: the slice nearer the viewer looks bigger than it is. In a 3D bar chart of Titanic passengers, the bars stand away from the gridlines at the back and look shorter than they are: 322 first-class passengers looked like fewer than 300. His conclusion: avoid decorative 3D entirely. 3D can make sense for genuinely three-dimensional data that viewers can rotate (interactively or as an animation), or for showing real 3D objects such as the relief of a mountainous island."
@@ -527,8 +527,8 @@ ICA.addUnit({
       {list:[
         "**Time windows.** Start a chart in a crisis year and any recovery looks dramatic; end it at a peak and a fall disappears. Ask why it starts and ends where it does, and whether a longer series exists. Honest charts show the full available range, or say why not.",
         "**Cumulative charts.** A running total of positive numbers can only rise, so it always looks like growth, even when each month’s figure is shrinking. Show the monthly values, or both.",
-        "**Totals on maps.** A map of total burglaries mostly shows where people live. Colour by a rate, such as burglaries per 1,000 homes, and say so.",
-        "**Bins and colour classes.** Histograms (Lesson 1) and choropleth maps group values; moving the breaks can create or hide patterns. Try a few, and report what you used.",
+        "**Totals on maps.** A map of total burglaries mostly shows where people live. Color by a rate, such as burglaries per 1,000 homes, and say so.",
+        "**Bins and color classes.** Histograms (Lesson 1) and choropleth maps group values; moving the breaks can create or hide patterns. Try a few, and report what you used.",
         "**Smoothing.** A smoothed trend line is a summary, not the data. Wilke warns that the same data can be smoothed in many different ways, so show the points too."
       ]},
       {ex:"New choir members per month: 40, 30, 20, 10.\nRunning total: 40, 70, 90, 100.\n\nThe cumulative line still climbs every month, while sign-ups have fallen by three quarters (from 40 to 10).", label:"Worked example: a running total hides a slowdown"},
@@ -545,12 +545,12 @@ ICA.addUnit({
       {ex:"25 people’s sleep: mean 7.0 hours, sample standard deviation (SD) 1.0 hour.\n\nMean ± 1 SD: 6.0 to 8.0 hours. This describes people: most individuals sleep somewhere in this range.\nStandard error (SE) = SD ÷ √n = 1.0 ÷ √25 = 1.0 ÷ 5 = 0.2. Mean ± 1 SE: 6.8 to 7.2.\n95% confidence interval ≈ mean ± 2 SE: about 6.6 to 7.4. (More precisely ± 2.06 SE for a sample of 25, using the t distribution.)\n\nSame data: the SD bar is five times as long as the SE bar.", label:"Worked example: three bars from one sample"},
       "Wilke’s rule: whenever you use error bars, say what they represent and at what confidence level, in the legend or caption. “Error bars show 95% confidence intervals” takes one line.",
       "SD bars ([[standard-deviation]]) describe how spread out the individuals are. SE bars and confidence intervals describe how precisely the mean is known. Bigger samples shrink the SE and the interval, because of the √n, but not the SD.",
-      {warn:"Spreadsheet error-bar options can surprise you. In Excel and LibreOffice Calc, the built-in standard deviation and standard error options are calculated from the plotted values themselves (Excel’s help gives the formulas, which use the values of the series in the chart), not from the raw data behind each bar, so every bar gets the same amount. LibreOffice’s help adds that its standard-deviation bars are centred on the series mean, not on each value. For real uncertainty, calculate each margin yourself and use a custom value or cell range."}
+      {warn:"Spreadsheet error-bar options can surprise you. In Excel and LibreOffice Calc, the built-in standard deviation and standard error options are calculated from the plotted values themselves (Excel’s help gives the formulas, which use the values of the series in the chart), not from the raw data behind each bar, so every bar gets the same amount. LibreOffice’s help adds that its standard-deviation bars are centered on the series mean, not on each value. For real uncertainty, calculate each margin yourself and use a custom value or cell range."}
     ]},
     {h:"Overlap, bands and pictures of chance", body:[
       "A common rule of thumb says “if the error bars overlap, the difference isn’t real”. Wilke calls such rules unreliable and says to avoid them. The right check is an interval for the difference itself.",
       {ex:"Group A: mean 10, SE 1. Group B: mean 13, SE 1 (two independent groups).\n95% intervals (± 1.96 SE): A from 8.0 to 12.0, B from 11.0 to 15.0. They overlap, from 11.0 to 12.0.\n\nThe difference, 3, has its own SE: √(1² + 1²) ≈ 1.41. Its 95% interval is 3 ± 1.96 × 1.41, about 0.2 to 5.8, which doesn’t include 0.\n\nOverlapping intervals, yet a clear difference.", label:"Worked example: overlap isn’t the test"},
-      "For trend lines, a [[confidence-band|confidence band]] shades the range of lines compatible with the data. It’s wider towards the ends, because the slope is less certain there.",
+      "For trend lines, a [[confidence-band|confidence band]] shades the range of lines compatible with the data. It’s wider toward the ends, because the slope is less certain there.",
       "Experts read error bars quickly, but many readers take them as hard limits (“the true value can’t be outside”). Wilke calls this a deterministic construal error. For general audiences, try:",
       {list:[
         "**[[frequency-framing|Frequency framing]]**: show a chance as counts, such as 13 filled squares out of 100 for a 13% chance.",
@@ -603,7 +603,7 @@ ICA.addUnit({
       {t:"He should remove the error bars so the difference is clearer", why:"Hiding uncertainty makes the chart less honest, not clearer."}
     ]},
     {id:"t3u4-l4-x6", type:"match", q:"Match each situation with the most suitable way to show uncertainty.", pairs:[
-      ["A scientific paper comparing six group means","Error bars labelled “95% confidence intervals”","Experts read them quickly; the label says what they are."],
+      ["A scientific paper comparing six group means","Error bars labeled “95% confidence intervals”","Experts read them quickly; the label says what they are."],
       ["A public leaflet saying how likely a side effect is","100 icons with the affected number shaded","Frequency framing makes a probability concrete."],
       ["A trend line through 40 points","A shaded confidence band around the line","Shows the range of compatible lines, wider at the ends."],
       ["A news story on a poll lead of 3 points","The range in words: “between 0 and 6 points”","Plain words stop readers treating an estimate as exact."],
@@ -653,7 +653,7 @@ ICA.addUnit({
     ]},
     {h:"Annotation: point at what matters", body:[
       "An [[annotation-chart|annotation]] is text or a mark added to a chart to explain it: a label on a key value, a shaded period, a reference line for a target or an average, a short note beside an unusual point.",
-      {fig:'<svg viewBox="0 0 340 318"><text x="10" y="20">Visits bounced back after the summer</text><text x="10" y="37">closure and ended the year at a high</text><text class="s" x="10" y="56">Library visits per month, thousands, 2025</text><path class="d-soft" d="M36,250 L290,250" stroke-width="1"/><text class="s" x="30" y="254" text-anchor="end">0</text><path class="d-soft" d="M36,207.5 L290,207.5" stroke-width="1"/><text class="s" x="30" y="211.5" text-anchor="end">2</text><path class="d-soft" d="M36,165 L290,165" stroke-width="1"/><text class="s" x="30" y="169" text-anchor="end">4</text><path class="d-soft" d="M36,122.5 L290,122.5" stroke-width="1"/><text class="s" x="30" y="126.5" text-anchor="end">6</text><path class="d-soft" d="M36,80 L290,80" stroke-width="1"/><text class="s" x="30" y="84" text-anchor="end">8</text><rect class="d-gold" x="145.5" y="74" width="35.1" height="176" stroke-width="0" fill-opacity="0.8"/><text class="s" x="163" y="88" text-anchor="middle">Closed</text><text class="s" x="163" y="102" text-anchor="middle">for</text><text class="s" x="163" y="116" text-anchor="middle">repairs</text><path class="d-lup" d="M36,160.8 L59.1,156.5 L82.2,152.2 L105.3,154.4 L128.4,148 L151.5,188.4 L174.5,216 L197.6,145.9 L220.7,135.2 L243.8,131 L266.9,126.8 L290,120.4" fill-opacity="0" stroke-width="2.5"/><circle class="d-lup" cx="290" cy="120.4" r="5" stroke-width="2.5"/><text x="299" y="124.4">6.1</text><path class="d-ink" d="M36,250 L296,250" stroke-width="1.5"/><text class="s" x="36" y="266" text-anchor="middle">J</text><text class="s" x="59.1" y="266" text-anchor="middle">F</text><text class="s" x="82.2" y="266" text-anchor="middle">M</text><text class="s" x="105.3" y="266" text-anchor="middle">A</text><text class="s" x="128.4" y="266" text-anchor="middle">M</text><text class="s" x="151.5" y="266" text-anchor="middle">J</text><text class="s" x="174.5" y="266" text-anchor="middle">J</text><text class="s" x="197.6" y="266" text-anchor="middle">A</text><text class="s" x="220.7" y="266" text-anchor="middle">S</text><text class="s" x="243.8" y="266" text-anchor="middle">O</text><text class="s" x="266.9" y="266" text-anchor="middle">N</text><text class="s" x="290" y="266" text-anchor="middle">D</text><text class="s" x="10" y="292">Source: invented data for this lesson.</text><text class="s" x="10" y="307">The library was shut from 9 June to 20 July.</text></svg>', alt:"Annotated line chart. Title: Visits bounced back after the summer closure and ended the year at a high. Subtitle: Library visits per month, thousands, 2025. Invented values from January to December: 4.2, 4.4, 4.6, 4.5, 4.8, 2.9, 1.6, 4.9, 5.4, 5.6, 5.8 and 6.1. June and July are shaded and labelled Closed for repairs. The December point is labelled 6.1. A note gives the source and the closure dates, 9 June to 20 July.", cap:"A statement title, a subtitle, one shaded annotation, one labelled point and a source note."},
+      {fig:'<svg viewBox="0 0 340 318"><text x="10" y="20">Visits bounced back after the summer</text><text x="10" y="37">closure and ended the year at a high</text><text class="s" x="10" y="56">Library visits per month, thousands, 2025</text><path class="d-soft" d="M36,250 L290,250" stroke-width="1"/><text class="s" x="30" y="254" text-anchor="end">0</text><path class="d-soft" d="M36,207.5 L290,207.5" stroke-width="1"/><text class="s" x="30" y="211.5" text-anchor="end">2</text><path class="d-soft" d="M36,165 L290,165" stroke-width="1"/><text class="s" x="30" y="169" text-anchor="end">4</text><path class="d-soft" d="M36,122.5 L290,122.5" stroke-width="1"/><text class="s" x="30" y="126.5" text-anchor="end">6</text><path class="d-soft" d="M36,80 L290,80" stroke-width="1"/><text class="s" x="30" y="84" text-anchor="end">8</text><rect class="d-gold" x="145.5" y="74" width="35.1" height="176" stroke-width="0" fill-opacity="0.8"/><text class="s" x="163" y="88" text-anchor="middle">Closed</text><text class="s" x="163" y="102" text-anchor="middle">for</text><text class="s" x="163" y="116" text-anchor="middle">repairs</text><path class="d-lup" d="M36,160.8 L59.1,156.5 L82.2,152.2 L105.3,154.4 L128.4,148 L151.5,188.4 L174.5,216 L197.6,145.9 L220.7,135.2 L243.8,131 L266.9,126.8 L290,120.4" fill-opacity="0" stroke-width="2.5"/><circle class="d-lup" cx="290" cy="120.4" r="5" stroke-width="2.5"/><text x="299" y="124.4">6.1</text><path class="d-ink" d="M36,250 L296,250" stroke-width="1.5"/><text class="s" x="36" y="266" text-anchor="middle">J</text><text class="s" x="59.1" y="266" text-anchor="middle">F</text><text class="s" x="82.2" y="266" text-anchor="middle">M</text><text class="s" x="105.3" y="266" text-anchor="middle">A</text><text class="s" x="128.4" y="266" text-anchor="middle">M</text><text class="s" x="151.5" y="266" text-anchor="middle">J</text><text class="s" x="174.5" y="266" text-anchor="middle">J</text><text class="s" x="197.6" y="266" text-anchor="middle">A</text><text class="s" x="220.7" y="266" text-anchor="middle">S</text><text class="s" x="243.8" y="266" text-anchor="middle">O</text><text class="s" x="266.9" y="266" text-anchor="middle">N</text><text class="s" x="290" y="266" text-anchor="middle">D</text><text class="s" x="10" y="292">Source: invented data for this lesson.</text><text class="s" x="10" y="307">The library was shut from 9 June to 20 July.</text></svg>', alt:"Annotated line chart. Title: Visits bounced back after the summer closure and ended the year at a high. Subtitle: Library visits per month, thousands, 2025. Invented values from January to December: 4.2, 4.4, 4.6, 4.5, 4.8, 2.9, 1.6, 4.9, 5.4, 5.6, 5.8 and 6.1. June and July are shaded and labeled Closed for repairs. The December point is labeled 6.1. A note gives the source and the closure dates, 9 June to 20 July.", cap:"A statement title, a subtitle, one shaded annotation, one labeled point and a source note."},
       {list:[
         "**Annotate one to three things**, not everything. Every extra note competes with the others.",
         "**Put the note next to what it explains**, with a short line if needed, so the eye doesn’t travel.",
@@ -663,7 +663,7 @@ ICA.addUnit({
       "Wilke’s storytelling chapter adds two ideas. Make a figure for the busiest reader you have, one that shows its point immediately (his section is called “Make a figure for the generals”, after the busy army generals who read his project reports). And when a figure is complex, build up to it: show a simple version first, then add layers."
     ]},
     {h:"Labels, legends, notes and tables", body:[
-      {fig:'<svg viewBox="0 0 340 368"><rect class="d-lup" x="10" y="14" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="32">Statement title</text><text class="s" x="22" y="48">says the point</text><rect class="d-lup" x="10" y="64" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="82">Subtitle</text><text class="s" x="22" y="98">what, where, when, units</text><rect class="d-sage" x="10" y="114" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="132">Chart</text><text class="s" x="22" y="148">axes labelled, bars from 0</text><rect class="d-sage" x="10" y="164" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="182">Labels on the data</text><text class="s" x="22" y="198">instead of a legend</text><rect class="d-gold" x="10" y="214" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="232">Annotation</text><text class="s" x="22" y="248">the one thing to notice</text><rect class="d-rose" x="10" y="264" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="282">Source note</text><text class="s" x="22" y="298">who collected it, and when</text><rect class="d-rose" x="10" y="314" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="332">Alt text + data table</text><text class="s" x="22" y="348">for people who can’t see it</text></svg>', alt:"A checklist of seven parts of an accessible chart, top to bottom: statement title (says the point); subtitle (what, where, when, units); the chart (axes labelled, bars from 0); labels on the data (instead of a legend); annotation (the one thing to notice); source note (who collected it, and when); alt text and data table (for people who can’t see it).", cap:"The parts of a chart that can stand on its own."},
+      {fig:'<svg viewBox="0 0 340 368"><rect class="d-lup" x="10" y="14" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="32">Statement title</text><text class="s" x="22" y="48">says the point</text><rect class="d-lup" x="10" y="64" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="82">Subtitle</text><text class="s" x="22" y="98">what, where, when, units</text><rect class="d-sage" x="10" y="114" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="132">Chart</text><text class="s" x="22" y="148">axes labeled, bars from 0</text><rect class="d-sage" x="10" y="164" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="182">Labels on the data</text><text class="s" x="22" y="198">instead of a legend</text><rect class="d-gold" x="10" y="214" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="232">Annotation</text><text class="s" x="22" y="248">the one thing to notice</text><rect class="d-rose" x="10" y="264" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="282">Source note</text><text class="s" x="22" y="298">who collected it, and when</text><rect class="d-rose" x="10" y="314" width="320" height="42" rx="8" stroke-width="1.5"/><text x="22" y="332">Alt text + data table</text><text class="s" x="22" y="348">for people who can’t see it</text></svg>', alt:"A checklist of seven parts of an accessible chart, top to bottom: statement title (says the point); subtitle (what, where, when, units); the chart (axes labeled, bars from 0); labels on the data (instead of a legend); annotation (the one thing to notice); source note (who collected it, and when); alt text and data table (for people who can’t see it).", cap:"The parts of a chart that can stand on its own."},
       {list:[
         "**Axis titles with units**: “Body mass (g)”, “Visits (thousands)”. Wilke notes some axes explain themselves (country names, years) and don’t need a title; with numbers, give the units.",
         "**Number formats**: thousands separators, the same number of decimal places throughout, a % sign where needed.",
@@ -680,7 +680,7 @@ ICA.addUnit({
         "**The detail somewhere else**: a data table next to the chart, a downloadable file, or a longer description in the text. The UK guidance says a text alternative can be a written description or a table in an accessible format, and that if you expect sighted readers to read values from the chart, you should give a table.",
         "**Never put the only copy of the title or key numbers inside the image.** Text in an image can’t be resized, searched or read aloud.",
         "**Readable text**: Wilke’s top lesson is that axis labels are usually too small, because nearly all software has poor defaults. Look at your chart at the size readers will see it, on a phone too.",
-        "**Colour and contrast**: Lesson 3’s rules, including never using colour as the only clue."
+        "**Color and contrast**: Lesson 3’s rules, including never using color as the only clue."
       ]},
       {ex:"Line chart of library visits per month in 2025, in thousands. Visits rose from 4.2 in January to 4.8 in May, fell to 2.9 in June and 1.6 in July while the library was closed for repairs, then recovered to 4.9 in August and climbed to a year high of 6.1 in December.", label:"Worked example: alt text for the annotated chart"},
       {tip:"For interactive charts, check they work with a keyboard. Datawrapper, for example, says its published charts, maps and tables can be navigated with [[kbd:Tab]], [[kbd:Shift]] + [[kbd:Tab]] and [[kbd:Enter]]."}
@@ -692,7 +692,7 @@ ICA.addUnit({
         ["Axis start and end","The value axis’s format options: minimum and maximum"],
         ["Log scale","The same axis options: a logarithmic or log-scale box"],
         ["Error bars","Chart elements or series options; use custom values"],
-        ["Colours","Each series’ fill or line colour; type a hex code"],
+        ["Colors","Each series’ fill or line color; type a hex code"],
         ["Titles and axis titles","Chart elements, or the chart editor’s titles section"],
         ["Alt text","The chart’s right-click or ⋮ menu"]
       ]},
@@ -703,7 +703,7 @@ ICA.addUnit({
       "Several free, browser-based tools make clean charts with less effort. Plans change often, so check the current terms before relying on one. This summary was checked in November 2026.",
       {table:[
         ["Tool","Free option","Watch out for"],
-        ["Datawrapper","Free plan: charts, maps and tables without limits; alt-text field, automatic colour-blind check, optional “Get the data” link","Free charts show “Created with Datawrapper”; PNG is the only export on the free plan"],
+        ["Datawrapper","Free plan: charts, maps and tables without limits; alt-text field, automatic color-blind check, optional “Get the data” link","Free charts show “Created with Datawrapper”; PNG is the only export on the free plan"],
         ["Flourish","Free plan: unlimited projects and the full template library; strong on interactive and animated charts","Anything you publish on the free plan is public, with Flourish attribution"],
         ["RAWGraphs","Free and open source; runs in your browser and doesn’t send your data to a server; vector (SVG) output","Fewer reading aids built in; finishing touches may need a drawing app"],
         ["R (ggplot2) or Python","Free, and reproducible: the chart is rebuilt from code","Takes learning; Units 8–9 teach R"]
@@ -714,10 +714,10 @@ ICA.addUnit({
     {h:"A final checklist", body:[
       {ol:[
         "**Question → chart**: the type fits the question (Lesson 1).",
-        "**Axes**: bars and areas from zero; other ranges labelled; log scales named; no dual axes (Lesson 2).",
-        "**Colour**: a clear job, few categories, colour-blind safe, enough contrast, not the only clue (Lesson 3).",
+        "**Axes**: bars and areas from zero; other ranges labeled; log scales named; no dual axes (Lesson 2).",
+        "**Color**: a clear job, few categories, color-blind safe, enough contrast, not the only clue (Lesson 3).",
         "**No tricks**: areas, 3D, time window, totals versus rates, shared scales (Lesson 4).",
-        "**Uncertainty** shown where it exists, and labelled (Lesson 4).",
+        "**Uncertainty** shown where it exists, and labeled (Lesson 4).",
         "**Words**: statement title, subtitle with what, where and when, one to three annotations, units, source (this lesson).",
         "**Access**: alt text, a data table, readable text at phone size (this lesson)."
       ]},
@@ -747,20 +747,20 @@ ICA.addUnit({
     {id:"t3u4-l5-x3", type:"spot", q:"Lucía wrote this alt text for a bar chart of 2025 book loans at five branches. Tap each part that should be changed.", ask:"should be changed", parts:[
       {t:"Image of a chart.", flag:true, why:"Screen readers already announce an image. Start with what kind of chart and what it shows."},
       " ", {t:"Bar chart of book loans at five library branches in 2025.", flag:false, why:"Good: chart type, subject and period."},
-      " ", {t:"Central lent the most, 12,400, about twice as many as the next branch, Harbour (6,100).", flag:false, why:"Good: the main message with key numbers."},
-      " ", {t:"The bars are purple and the background is cream.", flag:true, why:"Colours don’t help a reader understand the data unless they carry meaning."},
+      " ", {t:"Central lent the most, 12,400, about twice as many as the next branch, Harbor (6,100).", flag:false, why:"Good: the main message with key numbers."},
+      " ", {t:"The bars are purple and the background is cream.", flag:true, why:"Colors don’t help a reader understand the data unless they carry meaning."},
       " ", {t:"See the chart for the other numbers.", flag:true, why:"The reader can’t see the chart. Point to a data table instead: “Full figures are in the table below.”"}
     ]},
     {id:"t3u4-l5-x4", type:"order", q:"Put these steps for making an accessible chart for a report in a sensible order.", items:[
       {t:"Write the question and choose the chart type", why:"The chart has to answer the right question first."},
-      {t:"Make the chart, with axes and colours set honestly", why:"Baselines, scales and colour come next."},
+      {t:"Make the chart, with axes and colors set honestly", why:"Baselines, scales and color come next."},
       {t:"Add the statement title, subtitle, direct labels, annotations and source note", why:"Once the chart is right, the words say the point and guide the eye to it. Put the titles in the document text, where screen readers and search can use them."},
       {t:"Check it at phone size, in greyscale and with a contrast checker, and fix what fails", why:"Test what readers will actually see while you can still change the chart."},
       {t:"Once the chart is final, write the alt text and add the data table", why:"Written last, so they describe exactly what the finished chart shows and says."}
     ]},
     {id:"t3u4-l5-x5", type:"match", q:"Match each situation with the tool that fits best.", pairs:[
       ["A staff survey with names and comments that must stay private","A spreadsheet on your own device","The data never leave your computer."],
-      ["A quick, clean chart for a public web page, with a colour-blind check","Datawrapper (free plan)","Free charts are published with an attribution; it checks palettes for colour-blind readers."],
+      ["A quick, clean chart for a public web page, with a color-blind check","Datawrapper (free plan)","Free charts are published with an attribution; it checks palettes for color-blind readers."],
       ["An animated chart for a public presentation","Flourish (free plan)","Strong on interactive and animated templates; free projects are public when published."],
       ["An unusual chart type, exported as SVG for a designer","RAWGraphs","Runs in the browser, keeps data local and exports vector graphics."],
       ["Forty charts that must be rebuilt every month when new data arrive","R with ggplot2, or Python","Code rebuilds every chart reproducibly."]
@@ -773,7 +773,7 @@ ICA.addUnit({
     ]},
     {id:"t3u4-l5-x7", type:"mcq", q:"Dmitri is putting a small table of exact values under his chart. Which layout follows Wilke’s table rules?", options:[
       {t:"No vertical lines, numbers right-aligned, caption above", ok:true, why:"Numbers also share the same decimal places, and text is left-aligned. These are Wilke’s rules: fewer lines, aligned numbers, and table captions above (figure captions go below)."},
-      {t:"A grid of lines around every cell, with everything centred", why:"Lines between every cell add clutter, and centred numbers are hard to compare digit by digit."},
+      {t:"A grid of lines around every cell, with everything centered", why:"Lines between every cell add clutter, and centered numbers are hard to compare digit by digit."},
       {t:"Numbers left-aligned so they line up with the text", why:"Right-aligned numbers with equal decimals let place values line up."},
       {t:"Caption below the table, as for figures", why:"Tables are read top to bottom like text, so their captions go above."}
     ]},
@@ -791,8 +791,8 @@ ICA.addUnit({
        google:["Write the alt text first: chart type, what it shows, the main message, key numbers.","Click the chart, open its ⋮ menu (top right of the chart) and choose **Alt text**.","Type the description and click **OK**."],
        libre:["Write the alt text first: chart type, what it shows, the main message, key numbers.","Click the chart once so it’s selected but not in edit mode, then choose **Format → Alt Text**. (In older versions this is called **Description**, on the right-click menu.)","Type a short version in **Text** and the fuller description in **Alt Text** (older versions call these **Title** and **Description**), then click **OK**."]
      }, appNote:"We couldn’t confirm a chart-description field in Numbers for this unit. Put the alt text in the document next to the chart, or add it in the app you export the chart into (for example a Pages or Keynote image description).", write:"Your alt text"},
-     {t:"Try a free chart tool (optional)", how:["Open Datawrapper, Flourish or RAWGraphs in a browser on a computer (they work best on larger screens; on a phone, read along instead).","Paste a small table of non-sensitive data, choose a chart type and add a statement title, subtitle, source note and alt text where the tool offers fields for them.","Look for the tool’s colour-blind or accessibility checks, and its export or publish options. Before publishing, check what the free plan makes public.","Compare the result with your spreadsheet chart: what was easier, and what was missing?"], write:"Which tool would you use next time, and why?"}
-   ], proof:"One chart with a statement title, a subtitle, labelled axes, a source note and attached alt text, and (optionally) the same chart made in a free online tool."},
+     {t:"Try a free chart tool (optional)", how:["Open Datawrapper, Flourish or RAWGraphs in a browser on a computer (they work best on larger screens; on a phone, read along instead).","Paste a small table of non-sensitive data, choose a chart type and add a statement title, subtitle, source note and alt text where the tool offers fields for them.","Look for the tool’s color-blind or accessibility checks, and its export or publish options. Before publishing, check what the free plan makes public.","Compare the result with your spreadsheet chart: what was easier, and what was missing?"], write:"Which tool would you use next time, and why?"}
+   ], proof:"One chart with a statement title, a subtitle, labeled axes, a source note and attached alt text, and (optionally) the same chart made in a free online tool."},
    read:[
      {book:"wilke", where:"Chapter 22, “Titles, captions, and tables”, and Chapter 24, “Use larger axis labels”"},
      {book:"wilke", where:"Chapter 29, “Telling a story and making a point” (Sections 29.2 “Make a figure for the generals” and 29.3 “Build up towards complex figures”)"},
@@ -816,7 +816,7 @@ ICA.addUnit({
      {t:"Start the bars at 80%: it shows the differences clearly", why:"Bar length would then show “distance above 80”, so a school at 88% would look twice as good as one at 84%."},
      {t:"Keep bars from zero; small differences don’t matter", why:"Sometimes the differences are the story. A different chart can show them honestly."},
      {t:"Use a 3D bar chart so the differences stand out", why:"3D distorts lengths and doesn’t fix the baseline problem. Flat charts are read more accurately."},
-     {t:"Use a sorted dot plot on an axis labelled from 80%", ok:true, why:"Dots show values by position only, so the axis can start near the data, as long as the start is clearly labelled."}]},
+     {t:"Use a sorted dot plot on an axis labeled from 80%", ok:true, why:"Dots show values by position only, so the axis can start near the data, as long as the start is clearly labeled."}]},
    {id:"t3u4-cp04", lesson:"t3u4-l2", level:2, q:"On a log axis, the gridlines 1, 10, 100 and 1,000 are equally spaced, 2 cm apart. How far above the point for 50 is the point for 5,000?", options:[
      {t:"2 cm", why:"One step is ×10. From 50 to 5,000 is ×100, which is two steps."},
      {t:"4 cm", ok:true, why:"5,000 ÷ 50 = 100 = 10 × 10, so two steps of ×10: 2 × 2 cm = 4 cm. The same ratio is the same distance anywhere."},
@@ -827,20 +827,20 @@ ICA.addUnit({
      {t:"Keep the dual axis: the May crossing shows donations overtook members", why:"Members and money can’t overtake each other. The crossing point is set by the two axis ranges the designer chose."},
      {t:"Both indexed to 100: members end at 300, donations at 12,000", why:"Those are the raw values. An index divides by the starting value and multiplies by 100."},
      {t:"Both on one axis from 0 to 12,000, unindexed", why:"Members (250 to 300) would be a flat line at the bottom. Different units need indexing or separate panels."}]},
-   {id:"t3u4-cp06", lesson:"t3u4-l3", level:2, q:"Tariq is mapping reported bike thefts by neighbourhood. Neighbourhoods differ a lot in population. What should he map, and with which kind of palette?", options:[
+   {id:"t3u4-cp06", lesson:"t3u4-l3", level:2, q:"Tariq is mapping reported bike thefts by neighborhood. Neighborhoods differ a lot in population. What should he map, and with which kind of palette?", options:[
      {t:"Total thefts, with a rainbow palette to show detail", why:"Totals mostly show where people live, and a rainbow’s uneven lightness creates false boundaries."},
-     {t:"Thefts per 1,000 residents, with a diverging palette centred on zero", why:"The rate is right, but a diverging scale needs a meaningful midpoint. Theft rates run from fewer to more, and none is below zero."},
-     {t:"Thefts per 1,000 residents, with a sequential palette", ok:true, why:"A rate makes neighbourhoods comparable, and a light-to-dark scale shows fewer to more."},
+     {t:"Thefts per 1,000 residents, with a diverging palette centered on zero", why:"The rate is right, but a diverging scale needs a meaningful midpoint. Theft rates run from fewer to more, and none is below zero."},
+     {t:"Thefts per 1,000 residents, with a sequential palette", ok:true, why:"A rate makes neighborhoods comparable, and a light-to-dark scale shows fewer to more."},
      {t:"Total thefts, with a qualitative palette of different hues", why:"Totals mislead on maps, and different hues suggest unordered groups, not amounts."}]},
    {id:"t3u4-cp07", lesson:"t3u4-l3", level:3, q:"On a near-black background, Okabe–Ito blue has a contrast of about 3.6:1. Pablo uses it for chart lines and for the small axis labels. Which statement is correct under WCAG 2.2?", options:[
-     {t:"Both pass, because Okabe–Ito is a colour-blind-safe palette", why:"Colour-blind safety and contrast are different tests. Contrast depends on the background, and text has a higher bar."},
+     {t:"Both pass, because Okabe–Ito is a color-blind-safe palette", why:"Color-blind safety and contrast are different tests. Contrast depends on the background, and text has a higher bar."},
      {t:"The lines pass (3:1 needed), but the small labels fail (4.5:1 needed)", ok:true, why:"Graphical objects need at least 3:1; normal-size text needs 4.5:1. 3.6:1 is enough for lines only."},
      {t:"Both fail, because everything on a chart needs 4.5:1", why:"The 4.5:1 level is for text. Lines, bars and slices need at least 3:1."},
      {t:"The labels pass but the lines fail, because lines are thinner", why:"It’s the other way round: text needs the higher ratio (4.5:1), lines need 3:1."}]},
    {id:"t3u4-cp08", lesson:"t3u4-l5", level:2, q:"Raúl’s report includes a chart image whose title and key numbers appear only inside the picture. What change helps screen-reader users most?", options:[
      {t:"Make the text inside the image bigger, bolder and higher in contrast", why:"Bigger text still can’t be read aloud, searched or resized. It needs to be real text outside the image."},
      {t:"Put the title in page text, plus short alt text and a data table", ok:true, why:"Text in the page can be read aloud and searched. Alt text gives the message; a table gives the detail."},
-     {t:"Add more colours so the lines are easier to tell apart", why:"Colour doesn’t help someone who can’t see the image. They need a text alternative."},
+     {t:"Add more colors so the lines are easier to tell apart", why:"Color doesn’t help someone who can’t see the image. They need a text alternative."},
      {t:"Write alt text that lists every single value in the chart", why:"Alt text should give the type, what it shows and the main message. Full detail belongs in a table."}]},
    {id:"t3u4-cp09", lesson:"t3u4-l4", level:2, q:"An infographic shows a club with 4,000 members as a circle of radius 10 mm. What radius shows a club with 9,000 members honestly, and is this the best encoding?", options:[
      {t:"22.5 mm; circles are as easy to compare as bars", why:"Multiplying the radius by 2.25 multiplies the area by about 5. And areas are judged less accurately than lengths."},
@@ -865,16 +865,16 @@ ICA.addUnit({
   ],
   codex:[
    {id:"chart-types", title:"Choosing a chart type", aka:["chart directory","bar chart","dot plot","histogram","pie chart","stacked bars","scatterplot","line chart","small multiples","heatmap"], tags:["charts","data","visualization"],
-    summary:"Match the chart to the question (amounts, distribution, proportions, relationship, change over time), favouring positions and lengths, which people judge most accurately.",
+    summary:"Match the chart to the question (amounts, distribution, proportions, relationship, change over time), favoring positions and lengths, which people judge most accurately.",
     levels:{
      starter:[
-      "A chart turns numbers into things you can see: positions, lengths, angles, areas, colours. People judge **positions and lengths** most accurately, and **areas and shades** least, so the comparison that matters most should usually be shown by bar ends or dots along one axis.",
+      "A chart turns numbers into things you can see: positions, lengths, angles, areas, colors. People judge **positions and lengths** most accurately, and **areas and shades** least, so the comparison that matters most should usually be shown by bar ends or dots along one axis.",
       "Start with the question, then pick the family:",
       {list:["**How much in each category?** Bars, sorted by value (or a dot plot when values are close together and far from zero).","**How are values spread?** A histogram; try several bin widths.","**Parts of one whole?** A pie for a few parts or a simple fraction; bars to compare the parts.","**Do two measures go together?** A scatterplot.","**How did it change over time?** A line chart; small multiples for many groups."]},
       "Track 1’s quick version of this table is in {{choosing-charts}}."
      ],
      builder:[
-      "Wilke’s textbook describes every chart as **aesthetic mappings**: each variable is mapped to a visual feature (position, length, colour, shape). The kind of variable matters. Quantitative values suit positions and lengths; unordered categories suit distinct hues; ordered categories suit light-to-dark shades.",
+      "Wilke’s textbook describes every chart as **aesthetic mappings**: each variable is mapped to a visual feature (position, length, color, shape). The kind of variable matters. Quantitative values suit positions and lengths; unordered categories suit distinct hues; ordered categories suit light-to-dark shades.",
       "Habits for amounts: sort unordered categories by value; keep natural orders (months, age bands); use horizontal bars for long labels; prefer grouped bars to compare within groups, stacked bars when totals matter (only the bottom segment sits on the baseline). For many values, a heatmap shows broad patterns.",
       "For distributions, the bin width changes the picture: too narrow is spiky, too wide hides features. Always try several.",
       "For proportions, Wilke’s comparison: pies show parts of one whole and simple fractions well, and look fine for very small datasets; side-by-side bars are best for comparing parts or many parts; stacked bars suit many wholes or time series. UK government guidance limits pies to five categories or fewer (and value labels to pies of four or fewer).",
@@ -882,9 +882,9 @@ ICA.addUnit({
       "For change, only join points with a line when the horizontal axis is ordered (time, dose, age). With many groups, use [[small-multiples|small multiples]] with shared axes, arranged in a meaningful order."
      ],
      pro:[
-      "The perception ranking comes from Cleveland and McGill’s 1984 paper in the Journal of the American Statistical Association, which combined their experiments with earlier perception research: position along a common scale was judged best, then position on non-aligned scales, then length, direction and angle, then area, then volume and curvature, then shading and colour saturation. Later studies, such as Heer and Bostock’s 2010 online replication, have broadly confirmed the order, though the gaps depend on the task and differ between people.",
+      "The perception ranking comes from Cleveland and McGill’s 1984 paper in the Journal of the American Statistical Association, which combined their experiments with earlier perception research: position along a common scale was judged best, then position on non-aligned scales, then length, direction and angle, then area, then volume and curvature, then shading and color saturation. Later studies, such as Heer and Bostock’s 2010 online replication, have broadly confirmed the order, though the gaps depend on the task and differ between people.",
       "Two practical consequences. First, stacked bars and stacked areas compare well only for the bottom layer; if a middle layer matters, move it to the bottom or split into panels. Second, encodings by area (bubbles, treemaps, pies) are fine for “roughly how big” but poor for ranking near-equal values.",
-      "Wilke’s Chapter 5 (“Directory of visualizations”) is a one-page visual menu by data type: amounts, distributions, proportions, x–y relationships, geospatial data and uncertainty. His storytelling chapter adds design rules for sequences of figures: build up towards complex figures, and use a different type of visualization for each distinct analysis, so readers don’t confuse one chart with another.",
+      "Wilke’s Chapter 5 (“Directory of visualizations”) is a one-page visual menu by data type: amounts, distributions, proportions, x–y relationships, geospatial data and uncertainty. His storytelling chapter adds design rules for sequences of figures: build up toward complex figures, and use a different type of visualization for each distinct analysis, so readers don’t confuse one chart with another.",
       "Overlapping points in scatterplots need care: Wilke’s Chapter 18 suggests partial transparency, jittering, 2D histograms or contour lines when hundreds of points pile up.",
       "Defaults are not neutral: spreadsheet “recommended charts” are based on the table’s shape, histogram bin rules are generic, and legends are usually sorted alphabetically. A professional workflow writes the question first, tries two candidates, and checks each against “what would a busy reader conclude in five seconds?”"
      ]
@@ -894,14 +894,14 @@ ICA.addUnit({
     sources:[
      {t:"Wilke, Fundamentals of Data Visualization: 5 Directory of visualizations", url:"https://clauswilke.com/dataviz/directory-of-visualizations.html"},
      {t:"Wilke, Fundamentals of Data Visualization: 10 Visualizing proportions", url:"https://clauswilke.com/dataviz/visualizing-proportions.html"},
-     {t:"Government Analysis Function: Data visualisation: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
+     {t:"Government Analysis Function: Data visualization: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
     ], checked:"2026-11"},
    {id:"axes-baselines", title:"Axes and baselines", aka:["proportional ink","zero baseline","truncated axis","does a line chart need zero","dual axes","index to 100"], tags:["charts","axes","honesty"],
-    summary:"Bars and filled areas start at zero (proportional ink); lines and dots may start near the data if clearly labelled; avoid dual axes by indexing or splitting.",
+    summary:"Bars and filled areas start at zero (proportional ink); lines and dots may start near the data if clearly labeled; avoid dual axes by indexing or splitting.",
     levels:{
      starter:[
       "A bar shows its value by its **length**, so bars must start at zero. If they start higher, a small difference looks huge (Track 1: [[truncated-axis|truncated axis]]).",
-      "Lines and dots are different: they show values by **position**, so their axis may start near the data, as long as the axis is clearly labelled. A body temperature chart from 36 °C shows a fever that a chart from 0 °C would flatten.",
+      "Lines and dots are different: they show values by **position**, so their axis may start near the data, as long as the axis is clearly labeled. A body temperature chart from 36 °C shows a fever that a chart from 0 °C would flatten.",
       {key:"Length or area? Start at zero. Position only? Choose a range that fits the question, and say what it is."},
       "Charts meant to be compared side by side should use the same axis range; otherwise a small change can look as big as a large one.",
       "Two y axes on one chart (one left, one right) let the designer make any two lines look connected. Index both to 100 instead, or draw two charts."
@@ -926,7 +926,7 @@ ICA.addUnit({
     read:[{book:"wilke", where:"Chapter 17, “The principle of proportional ink”"}],
     sources:[
      {t:"Wilke, Fundamentals of Data Visualization: 17 The principle of proportional ink", url:"https://clauswilke.com/dataviz/proportional-ink.html"},
-     {t:"Government Analysis Function: Data visualisation: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
+     {t:"Government Analysis Function: Data visualization: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
     ], checked:"2026-11"},
    {id:"log-scales", title:"Log scales", aka:["logarithmic scale","log axis","orders of magnitude","exponential growth chart"], tags:["charts","axes","numbers"],
     summary:"On a log scale each equal step multiplies by the same factor, so ratios and steady growth rates are easy to read; it can’t show zero or negative values.",
@@ -949,7 +949,7 @@ ICA.addUnit({
       "Bars on a log axis represent ratios and should start at 1, growing up for values above 1 and down below 1. For amounts, dots are better.",
       "Communication risk: readers unused to log scales can misjudge growth badly, especially comparing absolute differences (the gap between 1,000 and 2,000 looks the same as between 10,000 and 20,000). Countermeasures: label “log scale” in the subtitle; mark one doubling or ×10 step; consider showing a linear version alongside; or chart the growth rate itself.",
       "Choosing a base: base 10 (1, 10, 100) is easiest for orders of magnitude; base 2 (×2 gridlines) makes doubling times readable. The data and the line are identical either way; only the gridlines and labels change.",
-      "Gridlines: use round multiples (1, 10, 100) or a fixed factor (×2) and keep them evenly spaced; mixing intermediate ticks such as 2 and 5 within each decade is fine if they are labelled."
+      "Gridlines: use round multiples (1, 10, 100) or a fixed factor (×2) and keep them evenly spaced; mixing intermediate ticks such as 2 and 5 within each decade is fine if they are labeled."
      ]
     },
     related:["axes-baselines","chart-types"],
@@ -958,36 +958,36 @@ ICA.addUnit({
      {t:"Wilke, Fundamentals of Data Visualization: 3 Coordinate systems and axes", url:"https://clauswilke.com/dataviz/coordinate-systems-axes.html"},
      {t:"Microsoft Support: Change the scale of the vertical (value) axis in a chart", url:"https://support.microsoft.com/en-US/Office/change-the-scale-of-the-vertical-value-axis-in-a-chart"}
     ], checked:"2026-11"},
-   {id:"colour-in-charts", title:"Colour in charts", aka:["color in charts","colour palette","colour blindness","colour-vision deficiency","Okabe-Ito","viridis","contrast for charts","redundant coding"], tags:["charts","colour","accessibility"],
-    summary:"Give colour one job (distinguish, represent values, highlight), use few colours, design for colour-vision deficiency, meet WCAG contrast, and never let colour carry meaning alone.",
+   {id:"colour-in-charts", title:"Color in charts", aka:["color in charts","color palette","color blindness","color-vision deficiency","Okabe-Ito","viridis","contrast for charts","redundant coding"], tags:["charts","colour","accessibility"],
+    summary:"Give color one job (distinguish, represent values, highlight), use few colors, design for color-vision deficiency, meet WCAG contrast, and never let color carry meaning alone.",
     levels:{
      starter:[
-      "Colour in a chart should have a job. **Distinguishing** unordered groups needs clearly different hues. **Showing values** needs light-to-dark shades (or two directions from a meaningful midpoint). **Highlighting** needs one strong colour against greys.",
-      "About 8% of men and 0.5% of women of Northern European ancestry have some colour-vision deficiency (rates are lower in most other populations), most often confusing red and green. So avoid red-versus-green, use a [[colourblind-safe|colour-blind-safe]] palette such as Okabe–Ito, and add labels or shapes so colour isn’t the only clue.",
-      "Use few colours: about three to five groups at most. With more, colour one or two groups that matter, make the rest grey, and write names next to the data instead of in a legend.",
-      "Text and thin lines also need enough contrast against the background. Pale yellow or light orange on white is hard to see, even when the palette is colour-blind safe.",
-      {tip:"Test: view your chart in greyscale. If it still works, colour is a bonus rather than a requirement."}
+      "Color in a chart should have a job. **Distinguishing** unordered groups needs clearly different hues. **Showing values** needs light-to-dark shades (or two directions from a meaningful midpoint). **Highlighting** needs one strong color against grays.",
+      "About 8% of men and 0.5% of women of Northern European ancestry have some color-vision deficiency (rates are lower in most other populations), most often confusing red and green. So avoid red-versus-green, use a [[colourblind-safe|color-blind-safe]] palette such as Okabe–Ito, and add labels or shapes so color isn’t the only clue.",
+      "Use few colors: about three to five groups at most. With more, color one or two groups that matter, make the rest gray, and write names next to the data instead of in a legend.",
+      "Text and thin lines also need enough contrast against the background. Pale yellow or light orange on white is hard to see, even when the palette is color-blind safe.",
+      {tip:"Test: view your chart in greyscale. If it still works, color is a bonus rather than a requirement."}
      ],
      builder:[
       "Palette types (Wilke, Chapter 4): [[qualitative-palette|qualitative]] for unordered groups; [[sequential-palette|sequential]] for low-to-high values, with lightness changing steadily; [[diverging-palette|diverging]] for two directions from a meaningful midpoint (0, 50%, a target), balanced on both sides; accent palettes for highlighting.",
-      "Pitfalls (Chapter 19): too many colours (best with three to five categories; at eight to ten or more, label directly; UK guidance recommends at most four in basic charts); rainbow scales, whose lightness rises and falls and creates false boundaries; and large, saturated fills.",
+      "Pitfalls (Chapter 19): too many colors (best with three to five categories; at eight to ten or more, label directly; UK guidance recommends at most four in basic charts); rainbow scales, whose lightness rises and falls and creates false boundaries; and large, saturated fills.",
       "Okabe–Ito hex codes: orange `#E69F00`, sky blue `#56B4E9`, bluish green `#009E73`, yellow `#F0E442`, blue `#0072B2`, vermilion `#D55E00`, reddish purple `#CC79A7`, black `#000000`. Viridis (five steps): `#440154`, `#3B528B`, `#21918C`, `#5EC962`, `#FDE725`.",
-      "Diverging scales need balance: both arms should darken at the same rate, so that −10% and +10% look equally strong, and the light midpoint must sit on the meaningful value. Sequential scales should be checked in greyscale: the greys must run steadily.",
-      "Highlighting works best when the context colours are genuinely muted; Wilke shows that colourful backgrounds compete with the accent and suggests simply removing colour from everything except the highlighted data.",
+      "Diverging scales need balance: both arms should darken at the same rate, so that −10% and +10% look equally strong, and the light midpoint must sit on the meaningful value. Sequential scales should be checked in greyscale: the grays must run steadily.",
+      "Highlighting works best when the context colors are genuinely muted; Wilke shows that colorful backgrounds compete with the accent and suggests simply removing color from everything except the highlighted data.",
       "Redundant coding (Chapter 20): marker shapes, line styles, direct labels, and legend order matching the data order. Test in a simulator: Chrome developer tools’ Rendering tab has **Emulate vision deficiencies**; Datawrapper checks palettes automatically."
      ],
      pro:[
-      "WCAG 2.2: text needs 4.5:1 contrast (3:1 for large text, criterion 1.4.3); graphical objects needed to understand the content need 3:1 against adjacent colours (1.4.11); colour must not be the only visual means of conveying information (1.4.1). W3C’s explanation of 1.4.11: line-chart lines need 3:1 against the background but not against each other; adjacent pie slices need 3:1 against each other, or a contrasting border, or labels and values carrying the same information; heat maps whose gradient is the measurement are exempt as “essential”.",
-      "Colour-blind safe and high contrast are separate tests. Okabe–Ito contrast on white (computed with the WCAG formula): yellow 1.32:1, orange 2.25:1, sky blue 2.31:1, reddish purple 3.06:1, bluish green 3.42:1, vermilion 3.87:1, blue 5.19:1. On `#121212` the order largely flips (yellow about 14:1, blue about 3.6:1). Use light tints for fills and darker shades of the same hue for lines, outlines and text (Wilke’s two-shade approach), or add borders.",
+      "WCAG 2.2: text needs 4.5:1 contrast (3:1 for large text, criterion 1.4.3); graphical objects needed to understand the content need 3:1 against adjacent colors (1.4.11); color must not be the only visual means of conveying information (1.4.1). W3C’s explanation of 1.4.11: line-chart lines need 3:1 against the background but not against each other; adjacent pie slices need 3:1 against each other, or a contrasting border, or labels and values carrying the same information; heat maps whose gradient is the measurement are exempt as “essential”.",
+      "Color-blind safe and high contrast are separate tests. Okabe–Ito contrast on white (computed with the WCAG formula): yellow 1.32:1, orange 2.25:1, sky blue 2.31:1, reddish purple 3.06:1, bluish green 3.42:1, vermilion 3.87:1, blue 5.19:1. On `#121212` the order largely flips (yellow about 14:1, blue about 3.6:1). Use light tints for fills and darker shades of the same hue for lines, outlines and text (Wilke’s two-shade approach), or add borders.",
       "Thin lines and small points need more contrast and more distinct hues than large areas (Wilke cites Stone and colleagues, 2014). The UK Government Analysis Function publishes a tested categorical palette and recommends sequential palettes of a single hue or closely related hues.",
-      "Meaning varies by context: red for losses in many financial displays, but red for rising prices on mainland China’s stock markets. Always label what colours mean."
+      "Meaning varies by context: red for losses in many financial displays, but red for rising prices on mainland China’s stock markets. Always label what colors mean."
      ]
     },
     related:["chart-types","annotation-charts","css-colors","alt-text"],
     read:[{book:"wilke", where:"Chapter 4, “Color scales”; Chapter 19, “Common pitfalls of color use”; Chapter 20, “Redundant coding”"}],
     sources:[
      {t:"Wilke, Fundamentals of Data Visualization: 19 Common pitfalls of color use", url:"https://clauswilke.com/dataviz/color-pitfalls.html"},
-     {t:"Government Analysis Function: Data visualisation: colours", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/"},
+     {t:"Government Analysis Function: Data visualization: colors", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-colours-in-charts/"},
      {t:"W3C: Understanding Success Criterion 1.4.11 Non-text Contrast", url:"https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html"},
      {t:"MedlinePlus Genetics (US National Library of Medicine): Color vision deficiency", url:"https://medlineplus.gov/genetics/condition/color-vision-deficiency/"}
     ], checked:"2026-11"},
@@ -998,7 +998,7 @@ ICA.addUnit({
       "A chart can mislead even when every number is right. Look for:",
       {list:["Bars that don’t start at zero.","Circles or pictures made twice as wide for a value that doubled (their area is four times bigger).","3D effects.","A start or end date chosen to make a point.","A running total, which can only go up.","A map of totals, which mostly shows where people live.","Two y axes.","No sign of uncertainty."]},
       "None of these needs a false number. Each one uses a real number drawn in a way that gives the wrong impression, which is why they are so common and so persuasive.",
-      "A quick defence: before reading a chart’s message, read its labels (title, axes, units, start values, time period, source), then ask what the maker chose and whether another reasonable choice would change the story.",
+      "A quick defense: before reading a chart’s message, read its labels (title, axes, units, start values, time period, source), then ask what the maker chose and whether another reasonable choice would change the story.",
       "Track 1’s {{misleading-numbers}} covers the number side; this entry covers the drawing side."
      ],
      builder:[
@@ -1009,11 +1009,11 @@ ICA.addUnit({
       "Wilke’s 3D examples: a tilted pie makes the front slice look larger; 3D Titanic bars looked like fewer than 300 first-class passengers when there were 322."
      ],
      pro:[
-      "A systematic audit: (1) what does each mark’s size or position claim? (proportional ink); (2) what range, window, bins and baseline were chosen, and what would a different reasonable choice show? (3) totals or rates, and per what? (4) are compared panels on the same scale? (5) is uncertainty shown and labelled? (6) does the title claim more than the data show, especially cause from correlation?",
+      "A systematic audit: (1) what does each mark’s size or position claim? (proportional ink); (2) what range, window, bins and baseline were chosen, and what would a different reasonable choice show? (3) totals or rates, and per what? (4) are compared panels on the same scale? (5) is uncertainty shown and labeled? (6) does the title claim more than the data show, especially cause from correlation?",
       "Area encodings are intrinsically less accurate than lengths even when correctly scaled, so readers underestimate large differences in bubble charts. Some designers compensate perceptually (“apparent magnitude” scaling); Wilke and most guidance prefer exact area scaling plus labels.",
       "Smoothing and binning are analysis choices. Wilke: the same dataset can be smoothed in many different ways, so show the raw points with any trend line. For choropleths, class breaks (equal intervals, quantiles, natural breaks) can change the map’s story; report the method.",
-      "When you find a problem in someone else’s chart, the fix is usually a redraw, not a lecture: the same data with a zero baseline, a rate instead of a total, a shared axis or a labelled interval makes the point more persuasively than criticism.",
-      "Legitimate truncation exists for lines and dots; legitimate dual-labelled axes exist for exact unit conversions. The test is always whether the visual impression matches the quantity the reader is meant to judge."
+      "When you find a problem in someone else’s chart, the fix is usually a redraw, not a lecture: the same data with a zero baseline, a rate instead of a total, a shared axis or a labeled interval makes the point more persuasively than criticism.",
+      "Legitimate truncation exists for lines and dots; legitimate dual-labeled axes exist for exact unit conversions. The test is always whether the visual impression matches the quantity the reader is meant to judge."
      ]
     },
     related:["axes-baselines","showing-uncertainty","misleading-numbers","chart-types"],
@@ -1021,7 +1021,7 @@ ICA.addUnit({
     sources:[
      {t:"Wilke, Fundamentals of Data Visualization: 26 Don’t go 3D", url:"https://clauswilke.com/dataviz/no-3d.html"},
      {t:"Wilke, Fundamentals of Data Visualization: 17 The principle of proportional ink", url:"https://clauswilke.com/dataviz/proportional-ink.html"},
-     {t:"Government Analysis Function: Data visualisation: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
+     {t:"Government Analysis Function: Data visualization: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
     ], checked:"2026-11"},
    {id:"showing-uncertainty", title:"Showing uncertainty in charts", aka:["error bars","confidence intervals in charts","standard error bars","confidence band","frequency framing","margin of error chart"], tags:["charts","statistics","uncertainty"],
     summary:"Show uncertainty where it exists, label exactly what error bars represent, don’t judge differences by overlap, and use frequency pictures or words for general audiences.",
@@ -1037,11 +1037,11 @@ ICA.addUnit({
       "Wilke’s rule: whenever you use error bars, specify what quantity and confidence level they represent. Graded error bars (several levels at once) reduce the “hard limit” reading he calls deterministic construal error.",
       "Don’t judge differences by overlap. Two independent means of 10 and 13, each with SE 1, have overlapping 95% intervals (8.0–12.0 and 11.0–15.0), yet the difference’s interval, 3 ± 1.96 × √2 ≈ 0.2 to 5.8, excludes 0.",
       "Displays for lay audiences, in Wilke’s Chapter 16: frequency framing (waffle grids of outcomes), quantile dotplots (a distribution drawn as a small number of dots), graded error bars, and animated hypothetical outcome plots.",
-      "Labelling in practice: “Error bars show 95% confidence intervals; n = 25 per group.” If you show SD bars, say “± 1 standard deviation (spread of individuals)”. For polls, give the margin of error and the sample size in the note.",
-      "For trend lines, a [[confidence-band|confidence band]] shows compatible lines; it widens towards the ends. For lay readers: [[frequency-framing|frequency framing]], quantile dotplots, ranges in words, or animated hypothetical outcome plots online."
+      "Labeling in practice: “Error bars show 95% confidence intervals; n = 25 per group.” If you show SD bars, say “± 1 standard deviation (spread of individuals)”. For polls, give the margin of error and the sample size in the note.",
+      "For trend lines, a [[confidence-band|confidence band]] shows compatible lines; it widens toward the ends. For lay readers: [[frequency-framing|frequency framing]], quantile dotplots, ranges in words, or animated hypothetical outcome plots online."
      ],
      pro:[
-      "Spreadsheet caveat: in Excel and LibreOffice Calc, the built-in standard-deviation and standard-error error-bar options are computed from the plotted values (Excel’s help shows formulas over the data values of the chart’s series), not from each bar’s underlying data, so each bar gets the same amount; LibreOffice’s help notes its SD bars are centred on the series mean. Compute margins yourself and use Excel’s **Custom → Specify Value** or LibreOffice’s **Cell Range**. Google Sheets offers constant, percentage and standard-deviation types; Numbers offers fixed values, percentages and other calculations.",
+      "Spreadsheet caveat: in Excel and LibreOffice Calc, the built-in standard-deviation and standard-error error-bar options are computed from the plotted values (Excel’s help shows formulas over the data values of the chart’s series), not from each bar’s underlying data, so each bar gets the same amount; LibreOffice’s help notes its SD bars are centered on the series mean. Compute margins yourself and use Excel’s **Custom → Specify Value** or LibreOffice’s **Cell Range**. Google Sheets offers constant, percentage and standard-deviation types; Numbers offers fixed values, percentages and other calculations.",
       "Choosing what to show: SD bars for “how variable are individuals?”; SE or CI bars for “how precisely is the mean known?”; intervals for differences when the question is a comparison (Wilke shows contrasts against a reference group). Always report n.",
       "Wilke also contrasts frequentist confidence intervals with Bayesian credible intervals; the interpretation differs, but in practice both are drawn with the same display types. Unit 7 of this track covers confidence intervals and their interpretation (see also Track 4, Unit 3).",
       "Overlap rules: for two independent groups with equal SEs, 95% intervals that don’t overlap do indicate a difference significant at the 5% level (in fact p is then below about 0.006), but intervals can overlap by a fair amount and the difference still be clear, so overlap is a poor test. Calculate the interval for the difference, as Wilke recommends.",
@@ -1055,7 +1055,7 @@ ICA.addUnit({
      {t:"LibreOffice Help source: X/Y Error Bars", url:"https://github.com/LibreOffice/help/blob/master/source/text/schart/01/04050000.xhp"}
     ], checked:"2026-11"},
    {id:"annotation-charts", title:"Titles, annotation and accessible charts", aka:["statement title","chart subtitle","annotation","source note","chart alt text","data table","axis labels"], tags:["charts","writing","accessibility"],
-    summary:"A chart that stands on its own has a statement title, a what-where-when subtitle, a few annotations, labelled axes with units, a source note, alt text and a data table.",
+    summary:"A chart that stands on its own has a statement title, a what-where-when subtitle, a few annotations, labeled axes with units, a source note, alt text and a data table.",
     levels:{
      starter:[
       "Give every chart a title that **says the point** (“Visits bounced back after the summer closure”) and a subtitle that says **what, where and when** (“Library visits per month, thousands, 2025”).",
@@ -1068,13 +1068,13 @@ ICA.addUnit({
       "Wilke (Chapter 22): every figure needs a title conveying what it’s about and the point it makes; a figure has one title, either in the chart or first in the caption; don’t start with “This figure shows”. Axis and legend titles state the variable and, for numbers, the units; self-explanatory labels (countries, years) may skip a title.",
       "UK Government Analysis Function: give charts two titles (a main statement title and a statistical subtitle covering the data, geography and period); put titles in the page or document body rather than only in the image; provide a text alternative as a description or accessible table; if sighted readers are expected to read values, provide a table.",
       "Alt text model: “Line chart of library visits per month in 2025, in thousands. Visits rose from 4.2 in January to 4.8 in May, fell to 1.6 in July during a closure, and climbed to a year high of 6.1 in December.”",
-      "Source notes should name the organisation, the dataset or report and the date, and link to it where possible. Method notes cover breaks in the series, changed definitions and partial periods.",
+      "Source notes should name the organization, the dataset or report and the date, and link to it where possible. Method notes cover breaks in the series, changed definitions and partial periods.",
       "Annotation habits: one to three notes per chart; label reference lines (“Target: 90%”); shade periods with real dates; keep annotations as accurate and sourced as the data.",
       "App fields: Excel **View Alt Text**, Google Sheets chart menu → **Alt text**, LibreOffice **Format → Alt Text**."
      ],
      pro:[
       "Statement titles must be defensible: no causal verbs for correlational data, hedges where estimates are uncertain, and consistency with the subtitle’s period and geography. In reports with many charts, Wilke recommends varying chart types between distinct analyses and building up complex figures in steps.",
-      "Table rules (Wilke): no vertical lines; no horizontal lines between data rows (a rule under the header or a frame is fine; alternate shading if needed); left-align text, right-align numbers with constant decimals; centre single-character columns; align headers with their data; captions above tables.",
+      "Table rules (Wilke): no vertical lines; no horizontal lines between data rows (a rule under the header or a frame is fine; alternate shading if needed); left-align text, right-align numbers with constant decimals; center single-character columns; align headers with their data; captions above tables.",
       "Text size: Wilke’s Chapter 24 says axis labels are usually too small because nearly all software defaults are poor, and advises checking scaled-down versions. For the web, text in charts must meet WCAG 1.4.3 contrast; text in images can’t reflow or be read aloud, so keep titles and key numbers in the HTML or document.",
       "For readers on phones, check the chart at about 360 pixels wide: long category names may need horizontal bars or shorter labels, and legends often fall off the edge, which is another reason to label directly.",
       "Complex charts benefit from a long description (in the text, or linked), structured like a short paragraph: overview, trend, notable points, then where to find the data. Interactive charts should be keyboard accessible and expose values to screen readers; check the tool’s documentation."
@@ -1084,14 +1084,14 @@ ICA.addUnit({
     read:[{book:"wilke", where:"Chapter 22, “Titles, captions, and tables”, and Chapter 24, “Use larger axis labels”"}],
     sources:[
      {t:"Wilke, Fundamentals of Data Visualization: 22 Titles, captions, and tables", url:"https://clauswilke.com/dataviz/figure-titles-captions.html"},
-     {t:"Government Analysis Function: Data visualisation: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
+     {t:"Government Analysis Function: Data visualization: charts", url:"https://analysisfunction.civilservice.gov.uk/policy-store/data-visualisation-charts/"}
     ], checked:"2026-11"},
    {id:"chart-tools", title:"Tools for making charts", aka:["Datawrapper","Flourish","RAWGraphs","chart software","free chart tools"], tags:["charts","tools","software"],
     summary:"Spreadsheets cover most charts; free online tools such as Datawrapper, Flourish and RAWGraphs add polish, accessibility checks or unusual chart types, each with free-plan limits and privacy trade-offs.",
     levels:{
      starter:[
       "Most charts in this unit can be made in a spreadsheet: Excel, Google Sheets, LibreOffice Calc or Numbers. Free online tools can make cleaner, interactive charts quickly:",
-      {list:["**Datawrapper**: tidy charts, maps and tables, with an alt-text field and a colour-blind check.","**Flourish**: interactive and animated charts.","**RAWGraphs**: unusual chart types; your data stay in your browser."]},
+      {list:["**Datawrapper**: tidy charts, maps and tables, with an alt-text field and a color-blind check.","**Flourish**: interactive and animated charts.","**RAWGraphs**: unusual chart types; your data stay in your browser."]},
       "Free tools are run by companies and projects whose plans change, so treat any summary (including this one) as a snapshot, and check the current terms before you rely on a tool for work.",
       "Which to choose? For a quick chart from data you already have, a spreadsheet. For a polished chart on a public web page, Datawrapper or Flourish. For a chart type spreadsheets lack, or data that must stay private, RAWGraphs. For charts you’ll rebuild often, code (R or Python).",
       {warn:"Free plans change, and some make published charts public. Don’t upload private data without permission."}
@@ -1099,20 +1099,20 @@ ICA.addUnit({
      builder:[
       "Free plans as checked in November 2026 (they change; check before relying on them):",
       {list:[
-        "**Datawrapper Free**: create, publish, embed and export PNGs without limits; free charts carry “Created with Datawrapper”; PDF and SVG export need a paid plan. Accessibility features include alternative text, an automatic colour-blind check, an optional “Get the data” CSV link, and keyboard navigation of published charts.",
+        "**Datawrapper Free**: create, publish, embed and export PNGs without limits; free charts carry “Created with Datawrapper”; PDF and SVG export need a paid plan. Accessibility features include alternative text, an automatic color-blind check, an optional “Get the data” CSV link, and keyboard navigation of published charts.",
         "**Flourish Free**: unlimited projects and the full template library; public publishing and embedding with attribution; unpublished projects stay private.",
         "**RAWGraphs**: free and open source; data are processed only in the browser (“no server-side operations or storages”); output is vector (SVG) for editing in drawing apps."
       ]},
-      "Before you rely on any free plan, check: what becomes public when you publish; whether you can export the chart (and in what format); whether the data can be downloaded by viewers; what attribution is added; and whether charts stay online if you stop using the service. Datawrapper’s pricing page says published charts stay online even if a paid plan is cancelled.",
+      "Before you rely on any free plan, check: what becomes public when you publish; whether you can export the chart (and in what format); whether the data can be downloaded by viewers; what attribution is added; and whether charts stay online if you stop using the service. Datawrapper’s pricing page says published charts stay online even if a paid plan is canceled.",
       "Whichever tool you use, the principles of this unit still apply: the tool won’t choose your baseline, palette or title for you.",
       "Spreadsheet strengths: quick, linked to the data, available offline. Weaknesses: small multiples and direct labels are manual."
      ],
      pro:[
       "Wilke’s Chapter 28 frames tool choice around reproducibility and repeatability (can you regenerate the figure when the data change?), the split between exploration and presentation, and separating content from design (themes or styles applied consistently). Code-based tools (R’s ggplot2, Python’s plotting libraries) score best on reproducibility; Units 8–9 teach R.",
-      "For organisations: check data-protection rules before uploading to a hosted service; prefer local or browser-only processing for personal data; record the tool, version and settings with published charts; and keep the data and code (or the tool’s project file) with the chart.",
+      "For organizations: check data-protection rules before uploading to a hosted service; prefer local or browser-only processing for personal data; record the tool, version and settings with published charts; and keep the data and code (or the tool’s project file) with the chart.",
       "Exports matter for reuse: vector formats (SVG, PDF) stay sharp at any size and can be edited in drawing apps; bitmaps (PNG) are fine for screens. Wilke’s Chapter 27 explains the difference. Check which formats each tool’s free plan allows; Datawrapper’s free plan, for instance, exports PNG only.",
       "Exploration versus presentation: for exploring, speed matters more than polish, so use whatever lets you try many views quickly. For presentation, consistency and accuracy matter: apply one style to every chart in a report, set axes deliberately, and keep a record of how each chart was made so it can be checked or updated.",
-      "Accessibility varies by tool: check whether published charts expose an alternative text, a data table or download, keyboard access and sufficient contrast. A tool’s colour-blind check helps but doesn’t replace the WCAG contrast checks in {{colour-in-charts}}."
+      "Accessibility varies by tool: check whether published charts expose an alternative text, a data table or download, keyboard access and sufficient contrast. A tool’s color-blind check helps but doesn’t replace the WCAG contrast checks in {{colour-in-charts}}."
      ]
     },
     related:["annotation-charts","colour-in-charts","chart-types"],
@@ -1136,16 +1136,16 @@ ICA.addUnit({
    {id:"dual-axis", term:"Dual-axis chart", def:"A chart with two y axes, one on each side, for series in different units. The alignment of the lines is arbitrary, so it often misleads.", codex:"axes-baselines"},
    {id:"index-number", term:"Index (to 100)", def:"A series rescaled so its starting value is 100: value ÷ starting value × 100. An index of 150 means 50% above the start.", codex:"axes-baselines"},
    {id:"log-scale", term:"Log scale", def:"An axis where each equal step multiplies by the same factor (1, 10, 100…). It shows ratios and growth rates; it can’t show zero.", codex:"log-scales"},
-   {id:"colour-palette", term:"Colour palette", def:"The set of colours a chart uses, chosen for a job: telling groups apart, showing values, or highlighting.", codex:"colour-in-charts"},
-   {id:"qualitative-palette", term:"Qualitative palette", def:"Distinct colours of similar strength for groups with no order, such as countries or species.", codex:"colour-in-charts"},
-   {id:"sequential-palette", term:"Sequential palette", def:"Colours running steadily from light to dark (or dark to light) to show values from low to high.", codex:"colour-in-charts"},
+   {id:"colour-palette", term:"Color palette", def:"The set of colors a chart uses, chosen for a job: telling groups apart, showing values, or highlighting.", codex:"colour-in-charts"},
+   {id:"qualitative-palette", term:"Qualitative palette", def:"Distinct colors of similar strength for groups with no order, such as countries or species.", codex:"colour-in-charts"},
+   {id:"sequential-palette", term:"Sequential palette", def:"Colors running steadily from light to dark (or dark to light) to show values from low to high.", codex:"colour-in-charts"},
    {id:"diverging-palette", term:"Diverging palette", def:"Two sequential palettes joined at a light midpoint, for values that run in two directions from a meaningful middle such as 0.", codex:"colour-in-charts"},
-   {id:"colourblind-safe", term:"Colour-blind safe", def:"Chosen so that people with common colour-vision deficiencies can still tell the colours apart, as with the Okabe–Ito palette.", codex:"colour-in-charts"},
+   {id:"colourblind-safe", term:"Color-blind safe", def:"Chosen so that people with common color-vision deficiencies can still tell the colors apart, as with the Okabe–Ito palette.", codex:"colour-in-charts"},
    {id:"direct-label", term:"Direct label", def:"A label placed right next to the data it names, such as a name at the end of a line, instead of in a separate legend.", codex:"colour-in-charts"},
    {id:"error-bar", term:"Error bar", def:"A line through an estimate showing a range, such as a standard deviation, a standard error or a confidence interval. Always say which.", codex:"showing-uncertainty"},
    {id:"confidence-band", term:"Confidence band", def:"A shaded band around a fitted trend line showing the range of lines compatible with the data; usually wider at the ends.", codex:"showing-uncertainty"},
    {id:"frequency-framing", term:"Frequency framing", def:"Showing a probability as counts of outcomes, such as 13 filled squares out of 100 for a 13% chance.", codex:"showing-uncertainty"},
-   {id:"annotation-chart", term:"Annotation (in a chart)", def:"Text or a mark added to a chart to explain it: a labelled value, a shaded period, a reference line or a short note.", codex:"annotation-charts"}
+   {id:"annotation-chart", term:"Annotation (in a chart)", def:"Text or a mark added to a chart to explain it: a labeled value, a shaded period, a reference line or a short note.", codex:"annotation-charts"}
   ],
   bank:[
    /* ---- Lesson 1 ---- */
@@ -1153,13 +1153,13 @@ ICA.addUnit({
      {t:"Positions along a shared scale", ok:true, why:"Cleveland and McGill found position on a common scale was judged best, ahead of length, angle, area and shading."},
      {t:"Areas of circles", why:"Areas were among the least accurately judged features."},
      {t:"Angles of pie slices", why:"Angles were judged less accurately than positions and lengths."},
-     {t:"Shades of one colour", why:"Shading and colour saturation came last in the ranking."}
+     {t:"Shades of one color", why:"Shading and color saturation came last in the ranking."}
    ]},
    {id:"t3u4-q02", lesson:"t3u4-l1", level:2, q:"A bar chart shows donations to 10 charities. Which order makes it easiest to read?", options:[
      {t:"Sorted from largest to smallest donation", ok:true, why:"Charities have no natural order, so sorting by value shows the ranking instantly (Wilke’s advice for unordered categories)."},
      {t:"Alphabetical by charity name", why:"Alphabetical order makes a jagged skyline that hides the ranking."},
      {t:"In the order the data were typed in", why:"Entry order is arbitrary and tells the reader nothing."},
-     {t:"Random, so no charity seems favoured", why:"Sorting by value isn’t favouritism; it’s what makes comparison easy."}
+     {t:"Random, so no charity seems favored", why:"Sorting by value isn’t favoritism; it’s what makes comparison easy."}
    ]},
    {id:"t3u4-q03", lesson:"t3u4-l1", level:2, q:"Months of rainfall are shown as bars. Should the bars be sorted from wettest to driest?", options:[
      {t:"No: months have a natural order, so keep it", ok:true, why:"Keep them January to December. Ordered categories keep their order; sorting by value would scramble the seasonal pattern."},
@@ -1191,7 +1191,7 @@ ICA.addUnit({
      {t:"The y-axis must start at zero for every line chart like this", why:"Line charts don’t need zero; the problem is joining unordered categories."},
      {t:"Lines can only show one town", why:"Lines can show many series; the problem is what the x axis represents."}
    ]},
-   {id:"t3u4-q08", lesson:"t3u4-l1", level:3, q:"Mei has monthly visitor numbers for eight museums. Her single line chart with eight colours is a tangle. What is the best alternative?", options:[
+   {id:"t3u4-q08", lesson:"t3u4-l1", level:3, q:"Mei has monthly visitor numbers for eight museums. Her single line chart with eight colors is a tangle. What is the best alternative?", options:[
      {t:"Small multiples: one small chart per museum, with the same axes", ok:true, why:"Put the panels in a meaningful order. Small multiples untangle many series; shared axes keep them comparable (Wilke, Chapter 21)."},
      {t:"Give each panel its own automatic y-axis so every line fills its box", why:"Different scales make every museum look equally busy and changeable."},
      {t:"A pie chart for each month", why:"Twelve pies of eight slices would be even harder to compare."},
@@ -1201,7 +1201,7 @@ ICA.addUnit({
    {id:"t3u4-q09", lesson:"t3u4-l2", level:1, q:"What does the principle of proportional ink say?", options:[
      {t:"Shaded areas must be in proportion to the values they show", ok:true, why:"That’s Bergstrom and West’s principle as Wilke states it, and the reason bars start at zero."},
      {t:"Every chart should use as little ink as possible", why:"That’s a different idea (minimal decoration), not proportional ink."},
-     {t:"Each colour should cover the same area", why:"The principle is about areas matching values, not equal colour areas."},
+     {t:"Each color should cover the same area", why:"The principle is about areas matching values, not equal color areas."},
      {t:"Axes should be drawn in proportion to the size of the page", why:"It concerns shaded marks, not page layout."}
    ]},
    {id:"t3u4-q10", lesson:"t3u4-l2", level:2, q:"Which chart may honestly use a value axis that starts well above zero?", options:[
@@ -1241,29 +1241,29 @@ ICA.addUnit({
      {t:"The panels should have been in alphabetical order of region", why:"Order matters, but the misleading impression comes from the unequal axes."}
    ]},
    {id:"t3u4-q16", lesson:"t3u4-l2", level:3, q:"Priya’s dot plot of ten countries’ life expectancy uses an axis from 70 to 85 years. A colleague says “axes must start at zero”. Who is right?", options:[
-     {t:"Priya, if the axis is labelled: dots show values by position", ok:true, why:"Dots don’t use length, so zero isn’t required. Proportional ink applies to lengths and areas. Dot plots exist partly so the axis can start near the data."},
+     {t:"Priya, if the axis is labeled: dots show values by position", ok:true, why:"Dots don’t use length, so zero isn’t required. Proportional ink applies to lengths and areas. Dot plots exist partly so the axis can start near the data."},
      {t:"The colleague: every chart axis must include zero, whatever it shows", why:"Only bars and filled areas need zero."},
      {t:"Neither: she should use a pie chart", why:"Life expectancies aren’t parts of a whole."},
      {t:"The colleague, unless she switches to 3D", why:"3D would add distortion, and it isn’t needed."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t3u4-q17", lesson:"t3u4-l3", level:1, q:"What kind of palette suits a map of change in population since the last census, where some areas grew and some shrank?", options:[
-     {t:"A diverging palette centred on 0% change", ok:true, why:"Values run in two directions from a meaningful midpoint."},
+     {t:"A diverging palette centered on 0% change", ok:true, why:"Values run in two directions from a meaningful midpoint."},
      {t:"A qualitative palette of unrelated hues", why:"Qualitative palettes are for unordered groups; they can’t show more or less."},
      {t:"A rainbow palette", why:"Rainbows have uneven lightness and no clear midpoint."},
-     {t:"A single colour for every area", why:"That would hide the data altogether."}
+     {t:"A single color for every area", why:"That would hide the data altogether."}
    ]},
-   {id:"t3u4-q18", lesson:"t3u4-l3", level:1, q:"About what share of people have some form of colour-vision deficiency, according to Wilke and UK government guidance?", options:[
+   {id:"t3u4-q18", lesson:"t3u4-l3", level:1, q:"About what share of people have some form of color-vision deficiency, according to Wilke and UK government guidance?", options:[
      {t:"About 8% of men and 0.5% of women", ok:true, why:"Both sources give these figures, which come mainly from people of Northern European ancestry (most other populations have lower rates); red–green types are the most common."},
      {t:"About 50% of everyone", why:"Far too high."},
      {t:"About 0.01% of people", why:"Far too low; it’s several percent of men."},
-     {t:"Only people over 70", why:"Most colour-vision deficiency is inherited and present from birth."}
+     {t:"Only people over 70", why:"Most color-vision deficiency is inherited and present from birth."}
    ]},
-   {id:"t3u4-q19", lesson:"t3u4-l3", level:2, q:"Why does Wilke recommend against rainbow colour scales for continuous data?", options:[
-     {t:"Their lightness changes unevenly, creating false boundaries", ok:true, why:"This also hides real changes. A good sequential scale changes lightness steadily so differences in colour match differences in value."},
-     {t:"They use too few colours", why:"They use many; the problem is how lightness changes across them."},
+   {id:"t3u4-q19", lesson:"t3u4-l3", level:2, q:"Why does Wilke recommend against rainbow color scales for continuous data?", options:[
+     {t:"Their lightness changes unevenly, creating false boundaries", ok:true, why:"This also hides real changes. A good sequential scale changes lightness steadily so differences in color match differences in value."},
+     {t:"They use too few colors", why:"They use many; the problem is how lightness changes across them."},
      {t:"They can’t be printed", why:"They can be printed; in greyscale they just make no sense."},
-     {t:"Rainbow colours are not allowed by the WCAG accessibility rules", why:"WCAG doesn’t ban colours; it sets contrast and use-of-colour rules."}
+     {t:"Rainbow colors are not allowed by the WCAG accessibility rules", why:"WCAG doesn’t ban colors; it sets contrast and use-of-color rules."}
    ]},
    {id:"t3u4-q20", lesson:"t3u4-l3", level:2, q:"Under WCAG 2.2, what contrast should the lines in a line chart have against the background?", options:[
      {t:"At least 3:1", ok:true, why:"Criterion 1.4.11 asks for 3:1 for graphical objects needed to understand the content; W3C notes lines need it against the background but not against each other."},
@@ -1271,29 +1271,29 @@ ICA.addUnit({
      {t:"At least 21:1", why:"21:1 is the maximum possible (black on white), not a requirement."},
      {t:"No requirement applies to charts", why:"Non-text contrast (1.4.11) covers graphics such as chart lines and bars."}
    ]},
-   {id:"t3u4-q21", lesson:"t3u4-l3", level:3, q:"Oluwaseun’s scatterplot shows three species using colour only. In greyscale the species can’t be told apart. What’s the most effective fix?", options:[
-     {t:"Give each species its own marker shape and a direct label", ok:true, why:"Redundant coding (Wilke, Chapter 20) keeps the meaning without colour."},
-     {t:"Use brighter and more saturated versions of the same colours", why:"Brightness alone may not survive greyscale or colour-vision deficiency."},
-     {t:"Add more colours", why:"More colours make matching harder, not easier."},
+   {id:"t3u4-q21", lesson:"t3u4-l3", level:3, q:"Oluwaseun’s scatterplot shows three species using color only. In greyscale the species can’t be told apart. What’s the most effective fix?", options:[
+     {t:"Give each species its own marker shape and a direct label", ok:true, why:"Redundant coding (Wilke, Chapter 20) keeps the meaning without color."},
+     {t:"Use brighter and more saturated versions of the same colors", why:"Brightness alone may not survive greyscale or color-vision deficiency."},
+     {t:"Add more colors", why:"More colors make matching harder, not easier."},
      {t:"Remove the legend", why:"Without a replacement such as direct labels, readers lose the key entirely."}
    ]},
-   {id:"t3u4-q22", lesson:"t3u4-l3", level:3, q:"Lucía uses Okabe–Ito colours for thin lines on a white background and is told the chart fails contrast checks. Which statement is correct?", options:[
-     {t:"Colour-blind-safe colours can still have low contrast on white", ok:true, why:"Telling colours apart and seeing marks against the background are separate tests. Yellow, orange and sky blue are all below 3:1 on white (1.32:1, 2.25:1 and 2.31:1)."},
-     {t:"Okabe–Ito colours always pass contrast checks", why:"Several fall below 3:1 on white; blue and black pass."},
+   {id:"t3u4-q22", lesson:"t3u4-l3", level:3, q:"Lucía uses Okabe–Ito colors for thin lines on a white background and is told the chart fails contrast checks. Which statement is correct?", options:[
+     {t:"Color-blind-safe colors can still have low contrast on white", ok:true, why:"Telling colors apart and seeing marks against the background are separate tests. Yellow, orange and sky blue are all below 3:1 on white (1.32:1, 2.25:1 and 2.31:1)."},
+     {t:"Okabe–Ito colors always pass contrast checks", why:"Several fall below 3:1 on white; blue and black pass."},
      {t:"Contrast doesn’t apply to lines", why:"WCAG 1.4.11 applies to lines needed to understand the chart."},
      {t:"Thin lines need less contrast than thick ones, so they pass anyway", why:"Thin lines look fainter, so they need at least as much contrast."}
    ]},
    {id:"t3u4-q23", lesson:"t3u4-l3", level:2, q:"Software listed the legend for four lines alphabetically, but the lines run top to bottom in a different order. What does Wilke recommend?", options:[
-     {t:"Reorder the legend to match the lines, or use direct labels", ok:true, why:"Matching the visual order (or removing the legend) cuts the effort of matching colours to names."},
+     {t:"Reorder the legend to match the lines, or use direct labels", ok:true, why:"Matching the visual order (or removing the legend) cuts the effort of matching colors to names."},
      {t:"Keep alphabetical order, because it is the standard for legends", why:"Software uses it by default, but it fights the visual order readers see."},
-     {t:"Add more colours to the legend", why:"More colours don’t solve the matching problem."},
+     {t:"Add more colors to the legend", why:"More colors don’t solve the matching problem."},
      {t:"Move the legend inside the plot area", why:"Position isn’t the issue; order is."}
    ]},
-   {id:"t3u4-q24", lesson:"t3u4-l3", level:3, q:"A pie chart has two neighbouring slices in light blue and light green that are hard to tell apart. Which fix follows W3C’s guidance on non-text contrast?", options:[
+   {id:"t3u4-q24", lesson:"t3u4-l3", level:3, q:"A pie chart has two neighboring slices in light blue and light green that are hard to tell apart. Which fix follows W3C’s guidance on non-text contrast?", options:[
      {t:"Add contrasting borders, or label each slice", ok:true, why:"Labels should give each slice’s name and value. W3C’s examples: borders give the needed contrast, and visible labels and values carry the same information."},
      {t:"Make the pie 3D so the slices separate", why:"3D distorts slice sizes and doesn’t fix the contrast."},
-     {t:"Use a rainbow of seven bright colours instead of two", why:"More colours create more neighbouring pairs to confuse."},
-     {t:"Nothing: pie charts are exempt", why:"Only presentations where the colour itself is essential, such as some heat maps, count as exempt."}
+     {t:"Use a rainbow of seven bright colors instead of two", why:"More colors create more neighboring pairs to confuse."},
+     {t:"Nothing: pie charts are exempt", why:"Only presentations where the color itself is essential, such as some heat maps, count as exempt."}
    ]},
    /* ---- Lesson 4 ---- */
    {id:"t3u4-q25", lesson:"t3u4-l4", level:2, q:"A chart shows one country’s exports as a circle and another’s, twice as big, as a circle with twice the radius. How much bigger is the second circle’s area, the thing readers judge?", options:[
@@ -1305,14 +1305,14 @@ ICA.addUnit({
    {id:"t3u4-q26", lesson:"t3u4-l4", level:1, q:"Why can a cumulative (running total) chart mislead?", options:[
      {t:"It keeps rising even when each period’s figure falls", ok:true, why:"With positive values a running total can only rise, so it looks like growth. New members of 40, 30, 20, 10 give a running total of 40, 70, 90, 100, still rising."},
      {t:"It always starts at zero, which exaggerates the growth", why:"Starting at zero is normal; the problem is what a running total hides."},
-     {t:"It uses too many colours", why:"Colour isn’t the issue."},
+     {t:"It uses too many colors", why:"Color isn’t the issue."},
      {t:"It can’t show time", why:"It does show time; it just hides changes in the rate."}
    ]},
    {id:"t3u4-q27", lesson:"t3u4-l4", level:3, q:"A council map shades districts by the total number of library members. The largest district is darkest and the headline says it has “the most engaged readers”. What’s the flaw?", options:[
      {t:"Totals mostly reflect population; a rate would show engagement", ok:true, why:"Mapping totals mainly shows where people live. Rates, such as members per 1,000 residents, make districts comparable."},
      {t:"Library members can’t be mapped", why:"They can; the issue is totals versus rates."},
      {t:"The map needs a 3D effect", why:"3D would distort further."},
-     {t:"The darkest colour should be red, so the busiest district stands out", why:"The colour choice doesn’t fix the wrong measure."}
+     {t:"The darkest color should be red, so the busiest district stands out", why:"The color choice doesn’t fix the wrong measure."}
    ]},
    {id:"t3u4-q28", lesson:"t3u4-l4", level:2, q:"For 25 people, the standard deviation of sleep is 1.0 hour. What is the standard error of the mean?", options:[
      {t:"0.2 hours", ok:true, why:"SE = SD ÷ √n = 1.0 ÷ √25 = 1.0 ÷ 5 = 0.2."},
@@ -1322,7 +1322,7 @@ ICA.addUnit({
    ]},
    {id:"t3u4-q29", lesson:"t3u4-l4", level:1, q:"According to Wilke, what must you always do when a chart has error bars?", options:[
      {t:"Say what they represent", ok:true, why:"For example, 95% confidence intervals or ± 1 SD. The same data give very different bars depending on what they show."},
-     {t:"Make them the same colour as the bars", why:"Colour is a design choice; the label is the requirement."},
+     {t:"Make them the same color as the bars", why:"Color is a design choice; the label is the requirement."},
      {t:"Add caps to the ends", why:"Caps are a matter of taste, Wilke says."},
      {t:"Draw them only above the bar", why:"Error bars usually extend both ways; what matters is the label."}
    ]},
@@ -1349,10 +1349,10 @@ ICA.addUnit({
      {t:"What the data are, the geography and the time period", ok:true, why:"The main title states the point; the subtitle says what, where and when."},
      {t:"The author’s name and job title", why:"Authorship belongs elsewhere."},
      {t:"A repeat of the main title in different words", why:"The subtitle adds information; it doesn’t repeat the title."},
-     {t:"The colours used for each series and what they stand for", why:"Colours are explained by labels or a legend, not the subtitle."}
+     {t:"The colors used for each series and what they stand for", why:"Colors are explained by labels or a legend, not the subtitle."}
    ]},
    {id:"t3u4-q34", lesson:"t3u4-l5", level:2, q:"Which is the best alt text for a bar chart of five branches’ loans?", options:[
-     {t:"Bar chart of 2025 book loans at five branches. Central lent most (12,400), about twice Harbour (6,100); full figures are in the table below.", ok:true, why:"Chart type, subject, period, main message, key numbers and a pointer to the table."},
+     {t:"Bar chart of 2025 book loans at five branches. Central lent most (12,400), about twice Harbor (6,100); full figures are in the table below.", ok:true, why:"Chart type, subject, period, main message, key numbers and a pointer to the table."},
      {t:"Chart", why:"Says nothing about the content or message."},
      {t:"Image of purple bars on a cream background", why:"Describes the look, not the data."},
      {t:"See chart above", why:"The reader can’t see it; that’s why alt text exists."}
@@ -1366,12 +1366,12 @@ ICA.addUnit({
    {id:"t3u4-q36", lesson:"t3u4-l5", level:2, q:"Why does UK guidance suggest putting chart titles in the page or document text rather than only inside the chart image?", options:[
      {t:"Page text can be read aloud, resized and searched", ok:true, why:"Screen readers can read page text, but not text inside an image. Keeping titles and key numbers as real text makes them accessible."},
      {t:"Images can’t contain text", why:"They can; it just isn’t accessible."},
-     {t:"Titles inside images break the chart’s colours", why:"Colour isn’t the reason."},
+     {t:"Titles inside images break the chart’s colors", why:"Color isn’t the reason."},
      {t:"It makes the image file smaller and faster to load", why:"File size isn’t the reason given."}
    ]},
    {id:"t3u4-q37", lesson:"t3u4-l5", level:1, q:"According to Wilke’s table rules, how should a column of numbers be aligned?", options:[
      {t:"Right-aligned, with the same number of decimal places", ok:true, why:"Place values line up, making numbers easy to compare."},
-     {t:"Centred", why:"Centred numbers don’t line up by place value."},
+     {t:"Centered", why:"Centered numbers don’t line up by place value."},
      {t:"Left-aligned like text", why:"Left alignment is for text columns."},
      {t:"Alternating left and right for variety", why:"Consistency is the point."}
    ]},

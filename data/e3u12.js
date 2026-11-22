@@ -5,7 +5,7 @@ ICA.addUnit({id:"e3u12",
  title:"Reading and listening strategies",
  icon:"🎧",
  blurb:"The last unit of Japanese Foundations: reading longer texts and finding the writer’s point; brochures, work emails and stories; listening for gist and detail; fillers, casual speech and shadowing; using machine translation and AI tutors well; and last, the JLPT N3, easy news, graded readers, a plan after N3, the bridge to Academic Japanese and a send-off.",
- goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practise with real audio by shadowing, and describe fairly what research says about it","Use machine translation and AI chatbots as learning tools: check what they get wrong, protect privacy and keep doing the thinking yourself","Describe the JLPT N3 sections, item types, scoring and pass marks","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
+ goals:["Find the writer’s point in N3 essays and explanations, using text shapes, view endings and connectors","Find information in brochures and work emails, and infer what stories leave unsaid","Listen for gist and for detail, and catch the words that change a plan or reveal a reason","Follow real spoken Japanese with fillers, aizuchi, casual contractions and unfinished sentences","Practice with real audio by shadowing, and describe fairly what research says about it","Use machine translation and AI chatbots as learning tools: check what they get wrong, protect privacy and keep doing the thinking yourself","Describe the JLPT N3 sections, item types, scoring and pass marks","Use free easy news and graded readers for extensive reading","Plan your study after N3, and know how to continue into Academic Japanese"],
  read:[
   {book:"irodori", where:"Pre-Intermediate (A2/B1), Lessons 1–18", note:"The Japan Foundation’s free A2/B1 course, released in 2026, with reading and listening activities and 3 hours 40 minutes of audio. A good companion to this unit and the next step after it."},
   {book:"taekim", where:"Essential Grammar, “Casual Patterns and Slang”", note:"Casual speech as you will hear it: dropped particles, changed word order and common casual endings."}
@@ -213,7 +213,7 @@ ICA.addUnit({id:"e3u12",
     ],
     proof:"One real text with its point and shape marked, a list of its connectors and view endings, and a 200-character opinion of your own with the point at the end."},
    read:[
-    {book:"irodori", where:"Pre-Intermediate (A2/B1): the reading activities in Lessons 1–18", note:"The new free A2/B1 level of the Japan Foundation course. Use its reading activities to practise finding the point and the connectors."}
+    {book:"irodori", where:"Pre-Intermediate (A2/B1): the reading activities in Lessons 1–18", note:"The new free A2/B1 level of the Japan Foundation course. Use its reading activities to practice finding the point and the connectors."}
    ]},
   {id:"e3u12-l2",
    title:"Practical texts and stories: brochures, emails and fiction",
@@ -231,7 +231,7 @@ ICA.addUnit({id:"e3u12",
       {ol:["**Read the question first**, and note each condition: who, when, how much, what.","**Scan for the strictest condition** (often the day or the time), and cross out every option that fails it.","**Check the options that are left** against the other conditions, one at a time.","**Read the notes last but carefully**: lines marked ※, sentences with ただし, and small words like 〜のみ (only) or 〜以上 (or more). They often decide the answer."]},
       {fig:"<svg viewBox=\"0 0 340 352\"><defs><marker id=\"u12a\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"7\" markerHeight=\"7\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0 L10 5 L0 10 z\"/></marker></defs><text x=\"170\" y=\"18\" text-anchor=\"middle\">Filter by conditions</text><rect class=\"d-panel\" x=\"8\" y=\"30\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"52\">Four classes: ① ② ③ ④</text><text class=\"s\" x=\"20\" y=\"72\">Start with every option</text><path class=\"d-ink\" d=\"M170 84 V100\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-lup\" x=\"8\" y=\"104\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"126\">Weekend, after noon?</text><text class=\"s\" x=\"20\" y=\"146\">① is in the morning, ② is on Wednesday: out</text><path class=\"d-ink\" d=\"M170 158 V174\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-lup\" x=\"8\" y=\"178\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"20\" y=\"200\">Read the notes: のみ, ※</text><text class=\"s\" x=\"20\" y=\"220\">④ is only for learners of Japanese: out</text><path class=\"d-ink\" d=\"M170 232 V248\" stroke-width=\"2\" marker-end=\"url(#u12a)\"/><rect class=\"d-sage\" x=\"8\" y=\"252\" width=\"324\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"20\" y=\"274\">③ is left</text><text class=\"s\" x=\"20\" y=\"294\">Check the price: 2,000 yen, under the limit</text><text x=\"170\" y=\"334\" text-anchor=\"middle\" class=\"s\">One condition at a time, notes included</text></svg>", alt:"A flow of four boxes. Start with four classes, one to four. Condition: weekend, after noon? Class one is in the morning and class two is on Wednesday, so both are out. Read the notes, のみ and ※: class four is only for learners of Japanese, so it is out. Class three is left; check the price: 2,000 yen, under the limit.", cap:"How Hiroyuki-san’s question below is solved: cross out, then check what is left."}
      ]},
-    {h:"Read it: a community centre brochure",
+    {h:"Read it: a community center brochure",
      body:[
       "Hiroyuki-san works on weekdays until 7 p.m. and is free on weekends after 12 noon. He wants a class that costs 2,500 yen or less in total. He is Japanese, so he isn’t studying Japanese. Which class can he take?",
       {ex:"みどり[市民]{しみん}センター　春の教室\n\n[申]{もう}し[込]{こ}み：3月1日（月）から。電話か[受付]{うけつけ}で[申]{もう}し[込]{こ}んでください。\n\n① はじめての料理教室\n　土曜日　10:00～12:00　[全]{ぜん}4[回]{かい}　3,000円（[材料費]{ざいりょうひ}）　[定員]{ていいん}16名\n② やさしいヨガ\n　水曜日　19:00～20:00　[全]{ぜん}6[回]{かい}　2,400円　[定員]{ていいん}20名\n③ 写真の[撮]{と}り方[入門]{にゅうもん}\n　日曜日　14:00～16:00　[全]{ぜん}4[回]{かい}　2,000円　[定員]{ていいん}12名\n④ 日本語で話そう\n　土曜日　14:00～15:30　[全]{ぜん}8[回]{かい}　[無料]{むりょう}　[定員]{ていいん}15名\n\n※ 料金は[全]{ぜん}[回]{かい}分です。[初回]{しょかい}に[払]{はら}ってください。\n※ [定員]{ていいん}になり[次第]{しだい}、[締]{し}め切ります。\n※ ①はエプロン、③はカメラかスマートフォンを持ってきてください。\n※ ④は日本語を勉強している方のみ[参加]{さんか}できます。", label:"A brochure (about 300 characters)"},
@@ -252,7 +252,7 @@ ICA.addUnit({id:"e3u12",
         ["〜に[限]{かぎ}り","only, limited to","[今日]{きょう}に[限]{かぎ}り[半額]{はんがく}"],
         ["[要]{よう}[予約]{よやく} / [予約]{よやく}[不要]{ふよう}","booking needed / no booking needed","見学は[要]{よう}[予約]{よやく}"],
         ["〜[可]{か} / 〜[不可]{ふか}","allowed / not allowed","写真[撮影]{さつえい}[不可]{ふか}"],
-        ["雨天中止","cancelled if it rains","雨天中止の[場合]{ばあい}は…"],
+        ["雨天中止","canceled if it rains","雨天中止の[場合]{ばあい}は…"],
         ["[初回]{しょかい}","the first session","[初回]{しょかい}に[払]{はら}う"]
        ]},
       "Some also show up as grammar you know: 〜[次第]{しだい} (as soon as) in [定員]{ていいん}になり[次第]{しだい}, and 〜[場合]{ばあい} (in the case of) in 雨天中止の[場合]{ばあい}. Read them as conditions: “if this happens, then that”."
@@ -347,7 +347,7 @@ ICA.addUnit({id:"e3u12",
       ["[締]{し}め切り","The deadline, or closing","5日[締]{し}め切り: applications close on the 5th."],
       ["[先着順]{せんちゃくじゅん}","First come, first served","[先着順]{せんちゃくじゅん}で[受]{う}け[付]{つ}けます: places go in order of arrival or application."],
       ["[要]{よう}[予約]{よやく}","Booking needed","[要]{よう} (needed) + [予約]{よやく} (booking)."],
-      ["雨天中止","Cancelled if it rains","雨天 (rainy weather) + 中止 (cancellation)."]
+      ["雨天中止","Canceled if it rains","雨天 (rainy weather) + 中止 (cancellation)."]
      ]},
     {id:"e3u12-l2-x5",
      type:"mcq",
@@ -388,7 +388,7 @@ ICA.addUnit({id:"e3u12",
       {t:"It’s my number in the queue", why:"[番]{ばん} can be a number in some words ([番号]{ばんごう}), but 私の[番]{ばん} here is “my turn”."}
      ]}
    ],
-   apply:{intro:"Practise on real practical texts, and on stories at your level.",
+   apply:{intro:"Practice on real practical texts, and on stories at your level.",
     tasks:[
      {t:"Solve a real information question",
       how:["Find a Japanese brochure, timetable, class list or price plan (a website, a leaflet or a photo).","Write a person with three conditions (a day, a time, a budget), like Hiroyuki-san.","Find the right option by crossing out, then check the notes (※, のみ, ただし). Write which word decided it."],
@@ -520,7 +520,7 @@ ICA.addUnit({id:"e3u12",
      q:"Transcript 2: 女の人はどうして[引]{ひ}っ[越]{こ}しますか。",
      options:[
       {t:"Her company is moving far away", ok:true, why:"Right. [実]{じつ}は introduces the real reason: the company moves to the next prefecture, and it would be nearly two hours each way."},
-      {t:"The neighbours are noisy", why:"She mentions the noise, then says でも、それはがまんできた: she could put up with it."},
+      {t:"The neighbors are noisy", why:"She mentions the noise, then says でも、それはがまんできた: she could put up with it."},
       {t:"Her flat is far from the station", why:"The man says it is close to the station and convenient. That is why he is surprised she is moving."},
       {t:"She wants a bigger flat", why:"Size is never mentioned. Answer only from what you hear."}
      ]},
@@ -548,7 +548,7 @@ ICA.addUnit({id:"e3u12",
       " ",
       {t:"足りないものがあれば、旅行先で買えばいいんです。", flag:true, why:"〜ばいいんです is the speaker’s present advice."},
       " ",
-      {t:"[荷物]{にもつ}が[軽]{かる}いと、行きたいところに[気軽]{きがる}に行けますし、新しい発見も多くなります。", flag:true, why:"Present-tense reasons for the speaker’s view: travelling light is freer."}
+      {t:"[荷物]{にもつ}が[軽]{かる}いと、行きたいところに[気軽]{きがる}に行けますし、新しい発見も多くなります。", flag:true, why:"Present-tense reasons for the speaker’s view: traveling light is freer."}
      ]},
     {id:"e3u12-l3-x7",
      type:"mcq",
@@ -569,7 +569,7 @@ ICA.addUnit({id:"e3u12",
       {t:"Choose, and check against the last reason or decision you heard", why:"The real reason or the final decision is usually near the end."}
      ]}
    ],
-   apply:{intro:"Practise with real recordings that come with scripts, so you can check what you heard.",
+   apply:{intro:"Practice with real recordings that come with scripts, so you can check what you heard.",
     tasks:[
      {t:"Gist, then detail, with a real recording",
       how:["Choose one listening activity from the free IRODORI course (Pre-Intermediate if it suits you), or another recording with a script.","Listen once without the script and write the gist in one sentence: who, about what, what they decide.","Listen again and write three details (numbers, times, reasons). Then read the script and check."],
@@ -588,8 +588,8 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-l4",
    title:"Real spoken Japanese: fillers, casual speech and shadowing",
    minutes:55,
-   hook:{q:"You invite a friend to a party. She answers: 「行けないことはないんだけど……。」 What is she telling you?", options:["She can come, but she is hesitating","She definitely can’t come","She is very keen to come","She has already decided to come"], answer:0, reveal:"**She can come, but she is hesitating.** 〜ないことはない is a double negative: “it’s not that I can’t go”, so she could. The けど…… trailing off shows a “but” she leaves unsaid, and often means she would rather not. Real speech is full of fillers, contractions and unfinished sentences like this. This lesson teaches you to hear them, and ends with shadowing, a way to practise with real audio."},
-   goals:["Recognise fillers (えーと, あのう, まあ, なんか…) and aizuchi, and not mistake them for content","Understand casual contractions in fast speech (〜てる, 〜ちゃう, 〜とく, 〜って, わかんない)","Read unfinished sentences and soft refusals (それはちょっと……) in context","Follow a casual conversation between friends for gist and detail","Practise shadowing step by step, and describe fairly what research says about it"],
+   hook:{q:"You invite a friend to a party. She answers: 「行けないことはないんだけど……。」 What is she telling you?", options:["She can come, but she is hesitating","She definitely can’t come","She is very keen to come","She has already decided to come"], answer:0, reveal:"**She can come, but she is hesitating.** 〜ないことはない is a double negative: “it’s not that I can’t go”, so she could. The けど…… trailing off shows a “but” she leaves unsaid, and often means she would rather not. Real speech is full of fillers, contractions and unfinished sentences like this. This lesson teaches you to hear them, and ends with shadowing, a way to practice with real audio."},
+   goals:["Recognise fillers (えーと, あのう, まあ, なんか…) and aizuchi, and not mistake them for content","Understand casual contractions in fast speech (〜てる, 〜ちゃう, 〜とく, 〜って, わかんない)","Read unfinished sentences and soft refusals (それはちょっと……) in context","Follow a casual conversation between friends for gist and detail","Practice shadowing step by step, and describe fairly what research says about it"],
    learn:[
     {h:"Fillers: the sounds of thinking",
      body:[
@@ -636,7 +636,7 @@ ICA.addUnit({id:"e3u12",
         ["〜じゃん","〜じゃない (asking you to agree)","いいじゃん。"],
         ["かも","かもしれない","[再来週]{さらいしゅう}なら[大丈夫]{だいじょうぶ}かも。"]
        ]},
-      "The 〜ん change often happens in fast casual speech when ら or る comes before な, の or だ: わからない becomes わかんない, and 何をしているの becomes 何してるの and then 何してんの. You don’t need to say these yourself, but you need to recognise them.",
+      "The 〜ん change often happens in fast casual speech when ら or る comes before な, の or だ: わからない becomes わかんない, and 何をしているの becomes 何してるの and then 何してんの. You don’t need to say these yourself, but you need to recognize them.",
       "Remember 〜っけ from Unit 10 ([[kke]]): 何時だったっけ？ checks something you have forgotten. It is common in casual speech and in JLPT conversations.",
       {tip:"Many contractions are casual, so use the full forms in writing and in polite speech. Listening to friends’ conversations and polite conversations side by side is the fastest way to learn which is which."}
      ]},
@@ -662,7 +662,7 @@ ICA.addUnit({id:"e3u12",
       {list:["**Gist:** Aoi went to the mountains on her own on Sunday, and the two plan to go together.","**Sunday:** 山が見たくなっちゃって, [一人]{ひとり}で電車[乗]{の}って行ってきた: she suddenly felt like seeing the mountains and went by train alone. に is dropped after 電車.","**When:** でも turns again: next week Kaito has a shift at work (バイト入れちゃった), so [再来週]{さらいしゅう}, the week after next.","**Who checks the trains:** Aoi. [調]{しら}べとく is [調]{しら}べておく: I’ll look them up (in advance).","**Casual forms:** 書いてた, なっちゃって, すっごく (a strong すごく), 行く行く (an eager yes), じゃ (じゃあ), かも."]},
       {tip:"Repeating a verb (行く行く！) is an eager casual yes. Compare it with the hesitant 行けないことはないんだけど…… in the warm-up."}
      ]},
-    {h:"Shadowing: practising with real audio",
+    {h:"Shadowing: practicing with real audio",
      body:[
       "[[shadowing|Shadowing]] (シャドーイング) means listening to a recording and repeating it out loud almost at the same time, a fraction of a second behind, like a shadow. You copy the sounds, rhythm and intonation, not just the words.",
       "Its roots are usually traced to psychology experiments on attention, to speech therapy and to interpreter training. Today it is widely used in language classes, including in Japan for both Japanese and English.",
@@ -672,11 +672,11 @@ ICA.addUnit({id:"e3u12",
       "Studies, many of them with Japanese learners of English, suggest that shadowing can help learners hear words in fast speech and can improve the rhythm, intonation and fluency of their speaking, and learners usually find it useful. The evidence has limits. A 2024 systematic review (a University of Oxford master’s thesis) of 44 studies on shadowing for pronunciation found benefits for how easy learners were to understand and for fluency and intonation, but called the effect on individual sounds inconclusive, and noted that many studies used controlled tasks. A 2025 study in *JALT Journal* found that learners who repeated more got higher listening scores, but it had no control group. So treat shadowing as a useful practice with promising evidence, not a magic method ({{natural-japanese-input}}).",
       {warn:"Shadowing is tiring. If you can’t keep up, slow the audio down (many players have a speed setting), choose an easier text, or go back to reading along. Ten focused minutes are better than an hour of mumbling."}
      ]},
-    {h:"Real audio to practise with",
+    {h:"Real audio to practice with",
      body:[
       "This app has no audio, so use these free sources. Recordings that come with a script are best, because you can check what you heard.",
       {list:["**IRODORI** (the Japan Foundation): free PDF textbooks and MP3 audio at every level. The new Pre-Intermediate (A2/B1) book has 18 lessons and 3 hours 40 minutes of audio, and the scripts of most dialogues are in the book. It suits listening practice and shadowing at this stage. The audio can be downloaded from the site, irodori.jpf.go.jp.","**NHKやさしいことばニュース** (NEWS WEB EASY): short news in easy Japanese, with audio. Lesson 6 explains how to use it and the confirmation screen it shows first.","**The JLPT’s official sample questions** on jlpt.jp: one sample for each test item type, the listening types included, so you can hear what each one sounds like.","**Podcasts and videos for learners**: choose ones with a transcript or Japanese subtitles, at a level where you understand most of it."]},
-      {key:"Hear fillers as signals, contractions as their full forms, and unfinished sentences as meaning. Then practise with real audio, a little every day."}
+      {key:"Hear fillers as signals, contractions as their full forms, and unfinished sentences as meaning. Then practice with real audio, a little every day."}
      ]}
    ],
    try:[
@@ -686,7 +686,7 @@ ICA.addUnit({id:"e3u12",
      pairs:[
       ["えーと","Thinking, searching for an answer","えーと is the classic “let me see”."],
       ["あのう","Polite hesitation, often before a request","あのう、すみません… opens a request or a question politely."],
-      ["まあ","Softening a judgement: “well, more or less”","まあ、悪くはない is a mild, hedged opinion."],
+      ["まあ","Softening a judgment: “well, more or less”","まあ、悪くはない is a mild, hedged opinion."],
       ["なんか","Vague and casual: “kind of”","なんか、急に… makes what follows less definite."],
       ["ほら","Pointing to something both people know","ほら、駅前の新しい店 reminds the listener of a shared memory."]
      ]},
@@ -769,7 +769,7 @@ ICA.addUnit({id:"e3u12",
    apply:{intro:"Listen to real speech, and start a short daily shadowing habit.",
     tasks:[
      {t:"Hunt for fillers and aizuchi",
-      how:["Choose 2–3 minutes of natural conversation with a script or Japanese subtitles (an IRODORI dialogue, a learners’ podcast, an interview).","Count the fillers (えーと, あのう, まあ, なんか…) and the aizuchi (はい, うん, へえ…).","For three of them, write what they signalled in that moment."],
+      how:["Choose 2–3 minutes of natural conversation with a script or Japanese subtitles (an IRODORI dialogue, a learners’ podcast, an interview).","Count the fillers (えーと, あのう, まあ, なんか…) and the aizuchi (はい, うん, へえ…).","For three of them, write what they signaled in that moment."],
       write:"Fillers… aizuchi… three examples and their signals…"},
      {t:"Shadow for one week",
       how:["Choose 30–60 seconds of audio with a script, a little easy for you (for example from IRODORI).","Each day, follow the six steps for about ten minutes.","Record yourself privately on day 1 and day 7, and note one thing that improved and one to fix next."],
@@ -818,7 +818,7 @@ ICA.addUnit({id:"e3u12",
        ]},
       "**Missing subjects and “you”.** Japanese leaves out a subject that is clear from the context ([[subject-omission]]), as in the warm-up. From English into Japanese, tools often keep every “I”, “my” and “you”: 私は… 私の… あなたは… Natural Japanese leaves most of them out, and uses a person’s name instead of あなた.",
       "**Politeness level.** A translation box sees only your sentence. It doesn’t know whether you are writing to a friend, to Fumiko-san or to a company ([[uchi-soto]], {{plain-and-polite-speech}}), so it has to pick one level, and it may pick the wrong one. Coming back into English, the level disappears: 送るよ and お送りします are both “I’ll send it”.",
-      "**Keigo direction.** [拝見]{はいけん}する is humble ([[kenjougo]]): it is for your own looking. ご[覧]{らん}になる is respectful ([[sonkeigo]]): it is for the other person’s looking. English has one word, “see”, so a translation into English loses who is being raised, and a tool or a learner writing Japanese can put the humble verb on the other person, which lowers them. Unit 10 practised these forms ({{keigo-in-practice}}).",
+      "**Keigo direction.** [拝見]{はいけん}する is humble ([[kenjougo]]): it is for your own looking. ご[覧]{らん}になる is respectful ([[sonkeigo]]): it is for the other person’s looking. English has one word, “see”, so a translation into English loses who is being raised, and a tool or a learner writing Japanese can put the humble verb on the other person, which lowers them. Unit 10 practiced these forms ({{keigo-in-practice}}).",
       "**Set phrases.** [結構]{けっこう}です can mean “that’s fine” or “no, thank you”, and いいです can also be a yes or a no. At a shop counter, when the clerk asks 「[袋]{ふくろ}はご[利用]{りよう}ですか」, 「[結構]{けっこう}です」 is a polite no. The situation decides, and a tool working sentence by sentence can choose the wrong meaning.",
       "**Names.** さん and 先生 don’t show gender, and a name in kanji can often be read in several ways, like many kanji words (Unit 8). A tool may guess “Mr.” for a woman, give the wrong reading, or even translate a name that is also an ordinary word. Ask the person, or check how they write their own name in romaji."
      ]},
@@ -840,7 +840,7 @@ ICA.addUnit({id:"e3u12",
         ["Conversation","A role-play, one short line at a time","Note the corrections and check them"],
         ["Corrections","Which sentences have a mistake, and what kind","Fix them yourself first"]
        ]},
-      {ex:"“Explain the difference between 〜ために and 〜ように in simple English, with two short examples of each.”\n\n“Let’s practise at a city office. You are the clerk and I am a resident. Use です・ます, one short line at a time, and wait for my answer. Don’t correct me until I write 終わり. Then list my three most important mistakes.”\n\n“Here is my diary. Don’t rewrite it. Tell me which sentences have a mistake and what kind (particle, verb form, word choice), and let me try again.”", label:"Requests that keep you working"},
+      {ex:"“Explain the difference between 〜ために and 〜ように in simple English, with two short examples of each.”\n\n“Let’s practice at a city office. You are the clerk and I am a resident. Use です・ます, one short line at a time, and wait for my answer. Don’t correct me until I write 終わり. Then list my three most important mistakes.”\n\n“Here is my diary. Don’t rewrite it. Tell me which sentences have a mistake and what kind (particle, verb form, word choice), and let me try again.”", label:"Requests that keep you working"},
       "Asking for “N3 level” helps, but the tool’s idea of N3 is a guess: the JLPT has published no official word or kanji lists since its 2010 revision, so every “N3 list” is an estimate (Unit 8). Check new words in a dictionary.",
       {ex:"Cheska: [週末]{しゅうまつ}、海に行きました。✗ 水がつめたいでした。 Which sentence has a mistake? Give me a hint, not the answer.\nTutor: The second one. Look at the past form of the い-adjective.\nCheska: 水がつめたかったです。\nTutor: Correct. い-adjectives make the past with 〜かった; です only adds politeness.\n\nCheska found the form herself, so she is more likely to remember it. She adds ✗ つめたいでした → ✓ つめたかったです to her error list.", label:"A hint, not an answer"}
      ]},
@@ -850,7 +850,7 @@ ICA.addUnit({id:"e3u12",
       "**Correct is not the same as natural.** A sentence can be grammatical and still sound like a translation, because it keeps English habits:",
       {ex:"Sounds translated: 私は[昨日]{きのう}、私の友だちと私の[部屋]{へや}で映画を見ました。\nNatural: [昨日]{きのう}、友だちと[部屋]{へや}で映画を見ました。\n\nTo a teacher, sounds rude: あなたは[週末]{しゅうまつ}、何をしましたか。\nNatural: 先生は[週末]{しゅうまつ}、何をなさいましたか。", label:"Grammatical, but not natural"},
       "あなた sounds distant, and to a teacher or an older person it can sound rude; Japanese uses the person’s name and title, or no word at all. [彼]{かれ} and [彼女]{かのじょ} are also used much less than “he” and “she”, and in conversation they often mean “boyfriend” and “girlfriend”. Say まりやさん, not [彼女]{かのじょ}.",
-      "**Leaning on it.** In a field experiment with nearly 1,000 high school students in Turkey (Bastani and colleagues, *PNAS*, 2025), students who practised maths with a plain GPT-4 chatbot did better in practice, but about 17% worse in the exam without it than students who never had it. A version that gave hints instead of answers largely removed that harm. The study was about maths, but the idea carries over: if the tool does the thinking, you practise watching, not doing.",
+      "**Leaning on it.** In a field experiment with nearly 1,000 high school students in Turkey (Bastani and colleagues, *PNAS*, 2025), students who practiced math with a plain GPT-4 chatbot did better in practice, but about 17% worse in the exam without it than students who never had it. A version that gave hints instead of answers largely removed that harm. The study was about math, but the idea carries over: if the tool does the thinking, you practice watching, not doing.",
       {warn:"In a voice conversation, a chatbot may understand you even when your pronunciation is off. Being understood is not proof that you said it right. Compare yourself with real recordings, as in shadowing (Lesson 4)."}
      ]},
     {h:"Privacy: what not to paste",
@@ -864,7 +864,7 @@ ICA.addUnit({id:"e3u12",
       "The rule is simple: you first, the tool second, you last.",
       {fig:'<svg viewBox="0 0 340 400"><defs><marker id="u12l6b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">You first, the tool second, you last</text><rect class="d-sage" x="8" y="30" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="52">1. You: try first</text><text class="s" x="20" y="70">Write it, or guess the meaning</text><path class="d-ink" d="M170 82 V94" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-lup" x="8" y="98" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="120">2. Tool: a hint, not the answer</text><text class="s" x="20" y="138">Which line? What kind of mistake?</text><path class="d-ink" d="M170 150 V162" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-sage" x="8" y="166" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="188">3. You: fix it, then compare</text><text class="s" x="20" y="206">Ask why for each difference</text><path class="d-ink" d="M170 218 V230" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-sage" x="8" y="234" width="324" height="50" rx="8" stroke-width="1.5"/><text x="20" y="256">4. You: check it</text><text class="s" x="20" y="274">Dictionary, textbook, real texts</text><path class="d-ink" d="M170 286 V298" stroke-width="2" marker-end="url(#u12l6b)"/><rect class="d-gold" x="8" y="302" width="324" height="50" rx="8" stroke-width="2"/><text x="20" y="324">5. You: keep it and use it</text><text class="s" x="20" y="342">Error list; again from memory tomorrow</text><text x="170" y="380" text-anchor="middle" class="s">The tool appears once, in the middle</text></svg>', alt:"Five steps going down. 1, you: try first, write it or guess the meaning. 2, tool: a hint, not the answer; which line, what kind of mistake. 3, you: fix it, then compare, and ask why for each difference. 4, you: check it in a dictionary, a textbook or real texts. 5, you: keep it and use it, with an error list and writing it again from memory tomorrow. Below: the tool appears once, in the middle.", cap:"Your attempt is what you learn from, so it comes first."},
       {ol:["**Try first.** Write the sentence, or guess what a text means, before you open any tool.","**Ask for a hint, not the answer.** “Which sentence has a particle mistake?” teaches more than “Correct this.”","**Fix it yourself, then compare** your version with the tool’s. For each difference, ask why.","**Check** anything you are still unsure of in a dictionary, in a lesson or in real Japanese texts.","**Keep it and use it.** Add the mistake to an error list, write the sentence again from memory the next day, and use it in a real message."]},
-      "In the JLPT, or a chat with neighbours, there is no tool in your hand. Use tools in ways that leave the Japanese in your head, with the Kanji Lab and real reading at the core (Lesson 6).",
+      "In the JLPT, or a chat with neighbors, there is no tool in your hand. Use tools in ways that leave the Japanese in your head, with the Kanji Lab and real reading at the core (Lesson 6).",
       {key:"Use translation for the gist and chatbots for explanations and practice. Check what matters with a dictionary and a person, never paste what isn’t yours to share, and always try first."}
      ]}
    ],
@@ -913,7 +913,7 @@ ICA.addUnit({id:"e3u12",
       {t:"Write your diary first, then ask which sentences have mistakes", b:0, why:"You produce the Japanese, and the tool only points to where to look."},
       {t:"Ask what kind of mistake it is, then fix it yourself", b:0, why:"A hint leaves the fixing to you, which is the part you learn from."},
       {t:"Ask for an explanation of ために and ように, then check it in Unit 9", b:0, why:"You use the explanation, and you check it against a reliable source."},
-      {t:"Paste an English diary and hand in the Japanese version", b:1, why:"The tool writes the Japanese, so you practise nothing, and many courses forbid it."},
+      {t:"Paste an English diary and hand in the Japanese version", b:1, why:"The tool writes the Japanese, so you practice nothing, and many courses forbid it."},
       {t:"Copy every correction without reading the explanations", b:1, why:"You see the right answer once and never work it out, like the students who used the plain chatbot in the 2025 study."},
       {t:"Let it write your lines in a role-play to save time", b:1, why:"In conversation practice, your lines are the practice."}
      ]},
@@ -980,16 +980,16 @@ ICA.addUnit({id:"e3u12",
         ["Language Knowledge (Grammar)・Reading","70 min","Sentential grammar 1 and 2 · Text grammar · Comprehension (short, mid-size and long passages) · Information retrieval"],
         ["Listening","40 min","Task-based comprehension · Comprehension of key points · Comprehension of general outline · Verbal expressions · Quick response"]
        ]},
-      "Notice that the second section holds both grammar and reading in 70 minutes. Reading takes most of that time, so practise reading at speed, and don’t spend too long on any one grammar item.",
+      "Notice that the second section holds both grammar and reading in 70 minutes. Reading takes most of that time, so practice reading at speed, and don’t spend too long on any one grammar item.",
       {list:["**Scoring.** There are three scoring sections, each scored 0–60: Language Knowledge (Vocabulary/Grammar), Reading and Listening. The total is 0–180.","**Pass marks.** You need at least 95 in total **and** at least 19 in each scoring section. A high total cannot make up for one section below 19.","**Missing a section** means you fail, and the score report then shows no scores at all, even for the sections you took.","**CEFR for reference.** Since the December 2025 test, score reports of people who pass show a CEFR level as reference information. At N3, a total of 95–103 is shown as A2 and 104 or more as B1. It covers reading and listening only, the skills the test measures.","**Dates.** The JLPT is held in July and December, though some places hold only one of them. Apply through the host institution for your city listed on [jlpt.jp](https://www.jlpt.jp/e/), and check its dates and deadlines there."]},
       {fig:"<svg viewBox=\"0 0 340 300\"><text x=\"170\" y=\"18\" text-anchor=\"middle\">N3 pass: 95 in total and 19 in each</text><text x=\"12\" y=\"52\">Vocabulary/Grammar</text><rect class=\"d-panel\" x=\"12\" y=\"60\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"12\" y=\"60\" width=\"225\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"246\" y=\"77\" class=\"s\">45</text><text x=\"12\" y=\"116\">Reading</text><rect class=\"d-panel\" x=\"12\" y=\"124\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-sage\" x=\"12\" y=\"124\" width=\"210\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"231\" y=\"141\" class=\"s\">42</text><text x=\"12\" y=\"180\">Listening</text><rect class=\"d-panel\" x=\"12\" y=\"188\" width=\"300\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><rect class=\"d-rose\" x=\"12\" y=\"188\" width=\"85\" height=\"24\" rx=\"4\" stroke-width=\"1.5\"/><text x=\"106\" y=\"205\" class=\"s\">17</text><path class=\"d-ink\" d=\"M107 44 V220\" stroke-width=\"2\" stroke-dasharray=\"5 4\"/><text x=\"112\" y=\"236\" class=\"s\">19: the minimum</text><text x=\"12\" y=\"266\">Total 104 (over 95), but</text><text x=\"12\" y=\"286\">Listening is under 19: fail</text></svg>", alt:"Three bars out of 60. Vocabulary and grammar 45, Reading 42, Listening 17. A dashed line marks 19, the minimum for each section; the Listening bar stops before it. The total is 104, over 95, but Listening is under 19, so the result is a fail.", cap:"Cheska’s scores from the warm-up. Each bar is out of 60; the dashed line is the minimum of 19."},
       {tip:"On jlpt.jp, “Let’s Try Sample Questions!” has one free sample question for each item type at every level. Try the N3 set once to learn the formats, a few weeks before your test."}
      ]},
     {h:"Preparing without losing the real goal",
      body:[
-      "The JLPT is a useful goal: it gives you a date, a level and a certificate that schools and employers recognise. But it measures only reading and listening, with multiple-choice answers. It does not test speaking or writing.",
-      {list:["**Keep speaking and writing alive.** Write a few sentences a day, and talk with someone, or shadow (Lesson 4), even if the test doesn’t ask for it.","**Practise the formats once, then read real things.** Too many practice tests make you good at practice tests. Real reading and listening build the skills the test measures.","**Use this unit’s strategies on every text**: question first, the point at the end, the turn after しかし, the last decision in a conversation."]},
-      "If you don’t pass the first time, the score report shows exactly which section was weak. That is useful information, not a judgement. Many people take a level more than once."
+      "The JLPT is a useful goal: it gives you a date, a level and a certificate that schools and employers recognize. But it measures only reading and listening, with multiple-choice answers. It does not test speaking or writing.",
+      {list:["**Keep speaking and writing alive.** Write a few sentences a day, and talk with someone, or shadow (Lesson 4), even if the test doesn’t ask for it.","**Practice the formats once, then read real things.** Too many practice tests make you good at practice tests. Real reading and listening build the skills the test measures.","**Use this unit’s strategies on every text**: question first, the point at the end, the turn after しかし, the last decision in a conversation."]},
+      "If you don’t pass the first time, the score report shows exactly which section was weak. That is useful information, not a judgment. Many people take a level more than once."
      ]},
     {h:"Reading the news in easy Japanese",
      body:[
@@ -1018,7 +1018,7 @@ ICA.addUnit({id:"e3u12",
      ]},
     {h:"From learner texts to real Japanese",
      body:[
-      "After graded readers, move towards real Japanese one step at a time ({{natural-japanese-input}}). At each step, choose topics you already care about: what you know in your own language is easier to read in Japanese.",
+      "After graded readers, move toward real Japanese one step at a time ({{natural-japanese-input}}). At each step, choose topics you already care about: what you know in your own language is easier to read in Japanese.",
       {table:[
         ["Step","Examples","Tip"],
         ["1. Graded readers","Free Tadoku books, IRODORI reading","Read a lot, quickly"],
@@ -1044,8 +1044,8 @@ ICA.addUnit({id:"e3u12",
       "If translation apps or AI chatbots are part of your plan, Lesson 5 showed how to use them without letting them do the learning for you ({{ai-tutor-japanese}}).",
       "The Kanji Lab’s decks go up to N3. If you aim for N2, the next JLPT level, expect a few hundred more kanji and many more words from lists that, like all JLPT lists, are estimates. The N2 test has two sections: Language Knowledge (Vocabulary/Grammar)・Reading in 105 minutes and Listening in 50 minutes.",
       {key:"Forgetting is part of learning. Keep reviewing what you have, and the new will build on it."},
-      {lab:"kl-n3", t:"Practise: today’s N3 kanji review"},
-      {lab:"kl-n3-vocab", t:"Practise: today’s N3 words review"}
+      {lab:"kl-n3", t:"Practice: today’s N3 kanji review"},
+      {lab:"kl-n3-vocab", t:"Practice: today’s N3 words review"}
      ]},
     {h:"Next: Academic Japanese",
      body:[
@@ -1053,7 +1053,7 @@ ICA.addUnit({id:"e3u12",
       {table:[
         ["Academic Japanese unit","What it teaches","What you bring from this track"],
         ["5 Styles and words","です・ます and である, written and spoken words, 漢語 and [和語]{わご}, sentence endings and connectors","Plain style (Unit 5), the endings and connectors of Lesson 1"],
-        ["6 Reading academic Japanese","Kinds of text, inside a research paper, signposts, kanji-heavy text, summarising","Finding the point and the turn (Lesson 1), kanji families (Unit 11)"],
+        ["6 Reading academic Japanese","Kinds of text, inside a research paper, signposts, kanji-heavy text, summarizing","Finding the point and the turn (Lesson 1), kanji families (Unit 11)"],
         ["7 Writing reports and theses","Structure, paragraphs, quoting sources, references, punctuation","The [尾括型]{びかつがた} and [双括型]{そうかつがた} shapes, writing 200-character opinions"],
         ["8 Presentations, seminars and keigo","[発表]{はっぴょう}, discussion, the five categories of keigo, emailing professors","Keigo in practice (Unit 10), aizuchi and fillers (Lesson 4)"]
        ]},
@@ -1146,7 +1146,7 @@ ICA.addUnit({id:"e3u12",
      q:"Which Academic Japanese unit teaches the difference between です・ます体 and である体?",
      options:[
       {t:"Unit 5, Styles and words", ok:true, why:"Right. Unit 5 covers the two sentence styles, written and spoken words, 漢語 and [和語]{わご}, and endings and connectors. It is the place to start."},
-      {t:"Unit 6, Reading academic Japanese", why:"Unit 6 is about reading research papers, signposts and summarising. It uses である but doesn’t teach the choice."},
+      {t:"Unit 6, Reading academic Japanese", why:"Unit 6 is about reading research papers, signposts and summarizing. It uses である but doesn’t teach the choice."},
       {t:"Unit 7, Writing reports and theses", why:"Unit 7 is about structure, sources and references. The styles come first, in Unit 5."},
       {t:"Unit 8, Presentations, seminars and keigo", why:"Unit 8 is about speaking: presentations, discussion and keigo."}
      ]}
@@ -1179,10 +1179,10 @@ ICA.addUnit({id:"e3u12",
       {t:"A condition or exception to what was said", ok:true, why:"ただし adds a condition or an exception: “however, only if…”. Notes and explanations put important limits here."},
       {t:"The result of what was just said", why:"A result usually starts with そのため or だから."}]},
     {id:"e3u12-cp02", lesson:"e3u12-l1", level:2, q:"「日曜日にトビーさんが[市民]{しみん}センターで開いた英語の会には、子どもからお年[寄]{よ}りまで、五十人ぐらいが来た。」 What is the main point of this sentence?", options:[
-      {t:"Toby held fifty English events at the centre", why:"五十人 counts people (人), not events. They are the ones who came (来た)."},
+      {t:"Toby held fifty English events at the center", why:"五十人 counts people (人), not events. They are the ones who came (来た)."},
       {t:"About fifty people came to Toby’s English event", ok:true, why:"Find the skeleton: the topic (英語の会には), the subject (五十人ぐらいが) and the main verb at the end (来た)."},
       {t:"Fifty children held an English event for Toby", why:"Toby held the event (トビーさんが開いた). 子どもからお年[寄]{よ}りまで says who came: people of all ages."},
-      {t:"Toby came to the centre with about fifty people", why:"The main verb 来た belongs to 五十人ぐらいが. トビーさんが goes with 開いた, inside the description of the event."}]},
+      {t:"Toby came to the center with about fifty people", why:"The main verb 来た belongs to 五十人ぐらいが. トビーさんが goes with 開いた, inside the description of the event."}]},
     {id:"e3u12-cp03", lesson:"e3u12-l1", level:3, q:"「電車の中で本を読む人が[減]{へ}ったと言われている。たしかに、スマホを見ている人は多い。しかし、スマホで小[説]{せつ}を読んでいる人も少なくない。大切なのは、何で読むかではなく、読む時間があるかどうかではないだろうか。」 What does the writer most want to say?", options:[
       {t:"Fewer people read books on trains than before", why:"〜と言われている reports what people say. The writer brings it up and then questions it."},
       {t:"Many people on trains are looking at their phones", why:"This is the たしかに part: the writer accepts it and then turns with しかし."},
@@ -1224,7 +1224,7 @@ ICA.addUnit({id:"e3u12",
       {t:"Not yet: she followed it, but the budget worries her", ok:true, why:"She showed she was listening, then ただ and an unfinished ちょっと…… point to a problem with the budget."},
       {t:"No answer: she wasn’t listening to Yến", why:"Her aizuchi show that she was following the plan closely."}]},
     {id:"e3u12-cp11", lesson:"e3u12-l5", level:2, q:"Cheska’s friend will take the N3 in December. Her plan: a full practice test every day for six months, and nothing else. What is the best advice from this unit?", options:[
-      {t:"Learn the formats, then read real texts and keep speaking", ok:true, why:"Practise the formats once, then build the real skills, and keep speaking and writing alive, for example by shadowing."},
+      {t:"Learn the formats, then read real texts and keep speaking", ok:true, why:"Practice the formats once, then build the real skills, and keep speaking and writing alive, for example by shadowing."},
       {t:"Good plan: more practice tests always mean a higher score", why:"Too many practice tests make you good at practice tests. Real reading and listening build the skills the test measures."},
       {t:"Skip the listening practice, because the test is mainly reading", why:"Listening is one of the three scoring sections, and each needs at least 19."},
       {t:"Stop all speaking practice until after the test", why:"The JLPT doesn’t test speaking, but the unit says to keep speaking and writing alive anyway."}]},
@@ -1371,7 +1371,7 @@ ICA.addUnit({id:"e3u12",
    checked:"2026-11"},
   {id:"from-n3-onward",
    title:"After N3: a study plan and the bridge to Academic Japanese",
-   aka:["After N3","Studying towards N2","From Japanese Foundations to Academic Japanese"],
+   aka:["After N3","Studying toward N2","From Japanese Foundations to Academic Japanese"],
    tags:["japanese","study","n3","n2","academic"],
    summary:"A daily and weekly plan after N3, what N2 adds, and how this track leads into the Academic Japanese units.",
    levels:{starter:[
@@ -1389,8 +1389,8 @@ ICA.addUnit({id:"e3u12",
        ["Twice a week","Write 200 characters","15 min"],
        ["Once a week","A longer text, read in two passes, with notes","20 min"]
       ]},
-     "**Choosing a direction.** For work, read emails, notices and documents from your field, and practise polite speech (keigo in Unit 10). For travel and daily life, listen to conversations and read signs and news. For study, go on to Academic Japanese. For pleasure, read what you enjoy, with graded readers as a bridge. The daily habits stay the same whichever you choose.",
-     "**Towards N2.** The N2 test has two sections: Language Knowledge (Vocabulary/Grammar)・Reading (105 minutes) and Listening (50 minutes). N2 lists add a few hundred kanji and many more words; like all JLPT lists, they are estimates. The Kanji Lab’s decks stop at N3."
+     "**Choosing a direction.** For work, read emails, notices and documents from your field, and practice polite speech (keigo in Unit 10). For travel and daily life, listen to conversations and read signs and news. For study, go on to Academic Japanese. For pleasure, read what you enjoy, with graded readers as a bridge. The daily habits stay the same whichever you choose.",
+     "**Toward N2.** The N2 test has two sections: Language Knowledge (Vocabulary/Grammar)・Reading (105 minutes) and Listening (50 minutes). N2 lists add a few hundred kanji and many more words; like all JLPT lists, they are estimates. The Kanji Lab’s decks stop at N3."
     ],
     pro:[
      {table:[
@@ -1418,7 +1418,7 @@ ICA.addUnit({id:"e3u12",
      "[[extensive-reading|Extensive reading]] (多読, tadoku) means reading many easy texts quickly, for meaning and pleasure. Choose books where you know almost every word, don’t look up everything, and change books when you are bored.",
      "[[shadowing|Shadowing]] means repeating a recording out loud almost at the same time, a little behind, copying its sounds and rhythm.",
      "Both work best with material a little easier than your level, a few minutes every day.",
-     "After graded readers, climb a ladder towards real Japanese: easy news, then texts with furigana such as manga, then your own interests, then regular news and books. Choose topics you already enjoy: they are easier to read and easier to keep reading.",
+     "After graded readers, climb a ladder toward real Japanese: easy news, then texts with furigana such as manga, then your own interests, then regular news and books. Choose topics you already enjoy: they are easier to read and easier to keep reading.",
      {key:"Read a lot of easy Japanese, and shadow a little real Japanese, every day."}
     ],
     builder:[
@@ -1507,7 +1507,7 @@ ICA.addUnit({id:"e3u12",
      "**Signs of translated-sounding Japanese:** 私は or 私の in every sentence, あなた for someone you know, [彼]{かれ} and [彼女]{かのじょ} for people you would call by name."
     ],
     pro:[
-     "**Over-reliance.** In a field experiment with nearly 1,000 high school maths students in Turkey, Bastani and colleagues (*PNAS*, 2025) found that a GPT-4 chatbot raised scores during practice, but students who had used the plain version scored about 17% lower than a control group once it was taken away. A version designed to give hints rather than answers largely removed that harm. The study was about maths, not language learning, but it shows why the order “try, hint, fix” matters.",
+     "**Over-reliance.** In a field experiment with nearly 1,000 high school math students in Turkey, Bastani and colleagues (*PNAS*, 2025) found that a GPT-4 chatbot raised scores during practice, but students who had used the plain version scored about 17% lower than a control group once it was taken away. A version designed to give hints rather than answers largely removed that harm. The study was about math, not language learning, but it shows why the order “try, hint, fix” matters.",
      "**Privacy.** Japan’s Personal Information Protection Commission warned in June 2023 that personal information entered into generative AI services may be used for machine learning, that answers can contain inaccurate information, and that users should check the provider’s terms and privacy policy. What is kept, reviewed or used for training depends on the service and your settings ({{ai-privacy-disclosure}}).",
      "**Speaking practice.** In voice mode, speech recognition may understand you even when your pronunciation is off. Being understood is useful, but it isn’t feedback: compare yourself with real recordings and shadow them.",
      "**Rules and honesty.** Tests, many courses and job applications assess your own Japanese. Follow each one’s rules on AI, and say how you used it when asked ({{japanese-plagiarism-ai}}, {{ai-chatbot-accuracy}})."
@@ -1636,7 +1636,7 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-q11",
    lesson:"e3u12-l2",
    level:2,
-   q:"Dewi is studying Japanese and wants a free class on a Saturday afternoon. Using the community centre brochure, which one?",
+   q:"Dewi is studying Japanese and wants a free class on a Saturday afternoon. Using the community center brochure, which one?",
    options:[
     {t:"④ 日本語で話そう", ok:true, why:"Right. Saturday 14:00–15:30, [無料]{むりょう}, and she is studying Japanese, so the のみ note allows her."},
     {t:"① はじめての料理教室", why:"① is on Saturday morning and costs 3,000 yen."},
@@ -1658,7 +1658,7 @@ ICA.addUnit({id:"e3u12",
    level:1,
    q:"In a work email, what does 「お[手数]{てすう}ですが」 usually signal?",
    options:[
-    {t:"A request is coming", ok:true, why:"Right. お[手数]{てすう}ですが apologises for the trouble before asking for something: “Sorry to trouble you, but…”"},
+    {t:"A request is coming", ok:true, why:"Right. お[手数]{てすう}ですが apologizes for the trouble before asking for something: “Sorry to trouble you, but…”"},
     {t:"Thanks for something already done", why:"Thanks would be ありがとうございました or お世話になりました."},
     {t:"The end of the email", why:"The usual closing is よろしくお[願]{ねが}いいたします."},
     {t:"An apology for a mistake", why:"A mistake would be [申]{もう}し[訳]{わけ}ありません. お[手数]{てすう}ですが prepares a request."}
@@ -2039,7 +2039,7 @@ ICA.addUnit({id:"e3u12",
    q:"Which request to a chatbot keeps the thinking with the learner?",
    options:[
     {t:"“Tell me which sentences have mistakes, but don’t fix them.”", ok:true, why:"Right. The tool points to the problems, and the learner does the fixing, which is where the learning happens."},
-    {t:"“Rewrite my paragraph in natural, polite Japanese for me.”", why:"The tool does all the writing. The learner sees a good version but practises nothing."},
+    {t:"“Rewrite my paragraph in natural, polite Japanese for me.”", why:"The tool does all the writing. The learner sees a good version but practices nothing."},
     {t:"“Translate my English email into polite business Japanese.”", why:"The tool writes the Japanese. Useful for the gist, but the learner hasn’t produced anything."},
     {t:"“Write five sentences about my weekend for me to learn by heart.”", why:"Learning someone else’s sentences about your weekend skips the step of making your own."}
    ]},
@@ -2076,7 +2076,7 @@ ICA.addUnit({id:"e3u12",
   {id:"e3u12-q55",
    lesson:"e3u12-l6",
    level:3,
-   q:"Rodrigo practises ordering in a restaurant with a chatbot in voice mode. It understands everything he says. What can he conclude?",
+   q:"Rodrigo practices ordering in a restaurant with a chatbot in voice mode. It understands everything he says. What can he conclude?",
    options:[
     {t:"Only that it understood him, not that his pronunciation was right", ok:true, why:"Right. Speech recognition can understand speech with errors in it. Comparing himself with real recordings gives him real feedback."},
     {t:"His pronunciation is now good enough for any Japanese listener", why:"Being understood by a machine is not the same as sounding natural to people."},

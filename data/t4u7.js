@@ -12,7 +12,7 @@ ICA.addUnit({
   ],
   read:[
     {book:"hurst", where:"Chapters 10–13 (data collection: “Introduction to Data Collection Techniques”, “Interviewing”, “Focus Groups”, “Participant Observation”) and Chapters 18–19 (“Data Analysis and Coding”, “Advanced Codes and Coding”)"},
-    {book:"bhatt", where:"Chapter 12, “Interpretive Research”, and Chapter 13, “Qualitative Analysis”", note:"Written in 2012: the software it names (for example ATLAS.ti 5) is long out of date, and thematic analysis as most people now practise it isn’t covered."}
+    {book:"bhatt", where:"Chapter 12, “Interpretive Research”, and Chapter 13, “Qualitative Analysis”", note:"Written in 2012: the software it names (for example ATLAS.ti 5) is long out of date, and thematic analysis as most people now practice it isn’t covered."}
   ],
   lessons:[
 
@@ -23,7 +23,7 @@ ICA.addUnit({
    learn:[
     {h:"Questions that need words, not numbers", body:[
       {lead:"Some questions ask “how many?”. Others ask “what is this like, and how does it work for the people involved?”"},
-      "Qualitative research collects and analyses non-numerical material: what people say in interviews, what a researcher sees and hears in a setting, what documents and images contain. In the sociology primer you met this as [[qualitative-data|qualitative data]], as opposed to [[quantitative-data|quantitative data]]. This unit goes further: how to collect it well, analyse it systematically, and report it so that others can trust it.",
+      "Qualitative research collects and analyses non-numerical material: what people say in interviews, what a researcher sees and hears in a setting, what documents and images contain. In the sociology primer you met this as [[qualitative-data|qualitative data]], as opposed to [[quantitative-data|quantitative data]]. This unit goes further: how to collect it well, analyze it systematically, and report it so that others can trust it.",
       "An analogy: a census tells you how many people live in each street of a city. A walk down one street with someone who has lived there for forty years tells you what the street means to them, how it changed, and why they stayed. Neither is better. They answer different questions.",
       "Qualitative methods suit questions about:",
       {list:[
@@ -36,7 +36,7 @@ ICA.addUnit({
     ]},
     {h:"What it isn’t for", body:[
       "Qualitative research is not a small survey. It can’t tell you what percentage of a population thinks something, and it can’t measure how much one thing changes another. A study of 20 interviews with nurses can show *how* night shifts disrupt family life and *which* mechanisms matter; it can’t tell you that 40% of nurses feel this way.",
-      {table:[["","Qualitative","Quantitative"],["Typical question","How? Why? What is it like?","How many? How much? Does X change Y?"],["Data","Words, observations, images, documents","Numbers from measures and counts"],["Who takes part","Chosen for what they can tell you","Often a random sample, so results generalise"],["Analysis","Interpreting patterns of meaning","Statistics"],["What you can claim","Rich understanding that readers judge for their own setting","Estimates for a population, tests of effects"]]},
+      {table:[["","Qualitative","Quantitative"],["Typical question","How? Why? What is it like?","How many? How much? Does X change Y?"],["Data","Words, observations, images, documents","Numbers from measures and counts"],["Who takes part","Chosen for what they can tell you","Often a random sample, so results generalize"],["Analysis","Interpreting patterns of meaning","Statistics"],["What you can claim","Rich understanding that readers judge for their own setting","Estimates for a population, tests of effects"]]},
       {fig:'<svg viewBox="0 0 340 330"><text x="170" y="20" text-anchor="middle">Breadth or depth?</text><rect class="d-lup" x="10" y="36" width="320" height="104" rx="10" stroke-width="2"/><text x="170" y="58" text-anchor="middle">Quantitative: wide and shallow</text><circle class="d-inkf" cx="30" cy="80" r="4"/><circle class="d-inkf" cx="50" cy="80" r="4"/><circle class="d-inkf" cx="70" cy="80" r="4"/><circle class="d-inkf" cx="90" cy="80" r="4"/><circle class="d-inkf" cx="110" cy="80" r="4"/><circle class="d-inkf" cx="130" cy="80" r="4"/><circle class="d-inkf" cx="150" cy="80" r="4"/><circle class="d-inkf" cx="170" cy="80" r="4"/><circle class="d-inkf" cx="190" cy="80" r="4"/><circle class="d-inkf" cx="210" cy="80" r="4"/><circle class="d-inkf" cx="230" cy="80" r="4"/><circle class="d-inkf" cx="250" cy="80" r="4"/><circle class="d-inkf" cx="270" cy="80" r="4"/><circle class="d-inkf" cx="290" cy="80" r="4"/><circle class="d-inkf" cx="310" cy="80" r="4"/><text class="s" x="170" y="106" text-anchor="middle">many people, a few fixed answers each</text><text class="s" x="170" y="126" text-anchor="middle">“How many?” “How much?”</text><rect class="d-rose" x="105" y="156" width="130" height="164" rx="10" stroke-width="2"/><text x="170" y="178" text-anchor="middle">Qualitative:</text><text x="170" y="196" text-anchor="middle">narrow and deep</text><circle class="d-inkf" cx="140" cy="216" r="4"/><circle class="d-inkf" cx="170" cy="216" r="4"/><circle class="d-inkf" cx="200" cy="216" r="4"/><path class="d-ink" d="M140 224 V292 M170 224 V292 M200 224 V292" stroke-width="2" fill="none"/><text class="s" x="170" y="306" text-anchor="middle">“How?” “Why?”</text></svg>', alt:"Two shapes. A wide, short box holds a long row of fifteen dots: quantitative research, many people with a few fixed answers each, answering how many and how much. Below, a tall, narrow box holds three dots, each with a long line going down: qualitative research, few people explored in depth, answering how and why.", cap:"Quantitative studies go wide; qualitative studies go deep. Many good projects combine both (mixed methods)."},
       "Common misunderstandings:",
       {list:[
@@ -53,7 +53,7 @@ ICA.addUnit({
         "**Focus groups:** a guided discussion with several people, where how they talk to each other is part of the data. (Lesson 2)",
         "**Observation:** watching and often taking part in a setting, recorded in fieldnotes, as in [[participant-observation|participant observation]] and [[ethnography|ethnography]]. (Lesson 3)",
         "**Documents and records:** letters, diaries, meeting minutes, policies, school reports, newspapers, archives. Systematic study of these is one form of [[content-analysis|content analysis]].",
-        "**Visual and creative material:** photographs, drawings, maps people draw of their neighbourhood. In *photo elicitation* participants take or bring photos and talk about them.",
+        "**Visual and creative material:** photographs, drawings, maps people draw of their neighborhood. In *photo elicitation* participants take or bring photos and talk about them.",
         "**Online material:** forum threads, social media posts, reviews. Public doesn’t mean free to use without care, as the ethics section explains.",
         "**Open answers in surveys:** short written replies. Useful, but thin compared with a conversation, because you can’t ask a follow-up question."
       ]},
@@ -71,7 +71,7 @@ ICA.addUnit({
       {key:"In qualitative research, the aim isn’t to remove the researcher from the study. It’s to be open and systematic about how the researcher shaped it."}
     ]},
     {h:"Ethics from the start", body:[
-      "Qualitative research is close to people. Participants share personal stories, sometimes painful ones, and a few vivid details can make someone recognisable even without their name. So ethics shapes every decision, from recruitment to publication. The sociology primer introduced the basics: [[informed-consent|informed consent]], [[confidentiality|confidentiality]], [[anonymity|anonymity]] and [[ethics-committee|ethics review]] (see {{research-ethics}}). Unit 9 covers ethics and data protection in depth.",
+      "Qualitative research is close to people. Participants share personal stories, sometimes painful ones, and a few vivid details can make someone recognizable even without their name. So ethics shapes every decision, from recruitment to publication. The sociology primer introduced the basics: [[informed-consent|informed consent]], [[confidentiality|confidentiality]], [[anonymity|anonymity]] and [[ethics-committee|ethics review]] (see {{research-ethics}}). Unit 9 covers ethics and data protection in depth.",
       "For qualitative work in particular:",
       {list:[
         "Consent is a **process**, not one signature: people can skip questions, pause, or withdraw.",
@@ -80,7 +80,7 @@ ICA.addUnit({
         "Public online posts can still be traced: searching a quoted sentence often finds the author.",
         "Real studies with participants need ethics approval first, usually from a university or hospital committee."
       ]},
-      {warn:"In this unit, practise only with a friend or family member who agrees, who knows they can skip any question or stop at any time, and whom you record only if they say yes. Don’t collect data from strangers or publish anything from practice interviews."}
+      {warn:"In this unit, practice only with a friend or family member who agrees, who knows they can skip any question or stop at any time, and whom you record only if they say yes. Don’t collect data from strangers or publish anything from practice interviews."}
     ]}
    ],
    try:[
@@ -94,9 +94,9 @@ ICA.addUnit({
       {t:"What does a weekly market mean to the older people who visit it?", b:0, why:"Meaning to participants is qualitative territory."}
     ]},
     {id:"t4u7-l1-x2", type:"mcq", q:"Kenji interviews 18 delivery riders in one city about how they deal with app ratings. Which claim can his study support?", options:[
-      {t:"Riders described strategies, such as avoiding certain neighbourhoods, and why.", ok:true, why:"Yes. Qualitative findings describe what participants experienced and how, with their reasons, without turning them into population percentages."},
-      {t:"61% of delivery riders in the whole country avoid certain neighbourhoods at night.", why:"18 purposively chosen riders can’t estimate a national percentage. That needs a representative survey."},
-      {t:"App ratings cause riders to avoid neighbourhoods.", why:"Interviews can show how riders explain their choices, but measuring a causal effect needs a different design."},
+      {t:"Riders described strategies, such as avoiding certain neighborhoods, and why.", ok:true, why:"Yes. Qualitative findings describe what participants experienced and how, with their reasons, without turning them into population percentages."},
+      {t:"61% of delivery riders in the whole country avoid certain neighborhoods at night.", why:"18 purposively chosen riders can’t estimate a national percentage. That needs a representative survey."},
+      {t:"App ratings cause riders to avoid neighborhoods.", why:"Interviews can show how riders explain their choices, but measuring a causal effect needs a different design."},
       {t:"His findings are invalid because 18 is too few people.", why:"For an in-depth interview study, 18 can be plenty. Sample size is judged against the question and the claims made."}
     ]},
     {id:"t4u7-l1-x3", type:"match", q:"Match each kind of qualitative data to an example.", pairs:[
@@ -111,7 +111,7 @@ ICA.addUnit({
       " ",
       {t:"Carers described feeling “on duty all the time” and explained how they arranged short breaks.", flag:false, why:"A good qualitative finding: experiences and processes, in participants’ words."},
       " ",
-      {t:"So 75% of carers nationally feel on duty all the time.", flag:true, why:"A purposive sample of 24 can’t produce a national percentage. Counting how many of these 24 said something is fine; generalising it to everyone isn’t."},
+      {t:"So 75% of carers nationally feel on duty all the time.", flag:true, why:"A purposive sample of 24 can’t produce a national percentage. Counting how many of these 24 said something is fine; generalizing it to everyone isn’t."},
       " ",
       {t:"Because it is qualitative, the study is just opinion and can be ignored.", flag:true, why:"Qualitative research uses systematic methods and has its own quality criteria. Dismissing it because it isn’t numbers misunderstands what it does."},
       " ",
@@ -131,9 +131,9 @@ ICA.addUnit({
     ]},
     {id:"t4u7-l1-x7", type:"explain", q:"A critic says: “Your study only interviewed 18 nurses about night shifts, so the findings are useless.” Explain how you would answer, saying what your study can and can’t claim.", size:"3–4 sentences", hint:"What kind of question is a qualitative study trying to answer?", model:"A qualitative study isn’t trying to estimate how common something is, so a small sample isn’t a flaw in itself. Interviews with 18 nurses chosen on purpose can show in depth how night shifts disrupt family life and which mechanisms matter. What the study can’t claim is a percentage, such as “40% of nurses feel this way”. By describing the participants and setting clearly, it lets readers judge whether the findings fit their own setting.", points:["Says qualitative research aims at depth and understanding, not population estimates", "Says what the study can show (how or why, mechanisms, meanings)", "Says what it can’t claim (percentages or how common)", "Mentions readers judging fit with their own setting, or purposive choice of participants"]}
    ],
-   apply:{intro:"Practise thinking like a qualitative researcher. Nothing here involves collecting data from strangers.", tasks:[
+   apply:{intro:"Practice thinking like a qualitative researcher. Nothing here involves collecting data from strangers.", tasks:[
      {t:"Turn a “how many” question into a “how” question", how:["Pick a topic you care about (for example, public transport, learning a language, caring for a pet, starting a small business).","Write one quantitative question about it (“How many…?”, “What percentage…?”).","Now write two qualitative questions about the same topic (“How do… experience…?”, “How do… decide…?”).","For each qualitative question, note which kind of data you’d collect (interviews, observation, documents…) and who you’d want to hear from, and why."], write:"Topic… Quantitative question… Qualitative question 1, data and participants… Qualitative question 2, data and participants…"},
-     {t:"Read the methods of a published qualitative study", how:["Search Google Scholar, or an open-access index such as DOAJ or PubMed Central (for health topics), for your topic plus “qualitative” or “interviews” or “thematic analysis”.","Choose one free full-text article. A university login gives access to more, but plenty are open access.","Find: the research question, who took part and how they were chosen, how data were collected, how they were analysed, and anything the authors say about their own position.","Note one claim the study can support and one it can’t."], write:"Article (authors, year, title)… Question… Participants and how chosen… Data… Analysis… Researcher position… A claim it supports… A claim it can’t…"},
+     {t:"Read the methods of a published qualitative study", how:["Search Google Scholar, or an open-access index such as DOAJ or PubMed Central (for health topics), for your topic plus “qualitative” or “interviews” or “thematic analysis”.","Choose one free full-text article. A university login gives access to more, but plenty are open access.","Find: the research question, who took part and how they were chosen, how data were collected, how they were analyzed, and anything the authors say about their own position.","Note one claim the study can support and one it can’t."], write:"Article (authors, year, title)… Question… Participants and how chosen… Data… Analysis… Researcher position… A claim it supports… A claim it can’t…"},
      {t:"Write a short positionality note", how:["Choose a topic you might research one day.","Write five sentences: what experience you have of it, what you already believe about it, how participants might see you, what you might notice easily, and what you might miss.","Keep it private. This is practice in reflexivity, not a confession."], write:"My topic… My experience… What I already believe… How participants might see me… What I might miss…"}
    ], proof:"A pair of quantitative and qualitative questions on one topic, notes on a real qualitative article’s methods and limits, and a short positionality note."},
    read:[
@@ -161,7 +161,7 @@ ICA.addUnit({
         "**[[open-question|Open]]:** “Tell me about…”, “How did you…?”, “What was that like?” rather than questions answered with yes or no.",
         "**One at a time:** a [[double-barrelled-question|double-barrelled]] question such as “How did you find the training and the new software?” asks two things. Split it.",
         "**In everyday words:** not your research question read aloud, and not academic jargon. Ask “Can you walk me through a typical night shift?”, not “How does temporal disruption affect your family role?”",
-        "**Neutral:** “Don’t you think the new rules are unfair?” is a [[leading-question|leading question]]: it pushes towards an answer. Ask “What do you make of the new rules?”",
+        "**Neutral:** “Don’t you think the new rules are unfair?” is a [[leading-question|leading question]]: it pushes toward an answer. Ask “What do you make of the new rules?”",
         "**Grounded in experience:** asking for a specific example (“Tell me about the last time…”) gets richer, more accurate answers than asking for general opinions."
       ]},
       "Order matters. Start with easy, factual questions to build comfort; Hurst suggests moving from the present to the past and then to the future. Put sensitive topics later, once trust has grown, and end with an open invitation such as “Is there anything I haven’t asked that you think is important?”",
@@ -215,7 +215,7 @@ ICA.addUnit({
     {id:"t4u7-l2-x1", type:"sort", q:"Which interview format does each plan describe?", buckets:["Structured","Semi-structured","Unstructured"], items:[
       {t:"Every participant hears the same 12 open questions in the same order and wording, with no follow-ups.", b:0, why:"Fixed questions, order and wording: structured."},
       {t:"The researcher has eight topic areas and suggested probes, and follows interesting threads.", b:1, why:"A guide plus flexibility is the definition of semi-structured."},
-      {t:"During fieldwork at a fishing harbour, the researcher chats with crew members as they mend nets.", b:2, why:"Informal conversation with no set questions: unstructured."},
+      {t:"During fieldwork at a fishing harbor, the researcher chats with crew members as they mend nets.", b:2, why:"Informal conversation with no set questions: unstructured."},
       {t:"An oral historian asks one opening question, “Tell me the story of your life,” and lets the narrator lead.", b:2, why:"A single prompt and a participant-led conversation: unstructured (a life-history interview)."},
       {t:"A study compares answers from 200 people, so every question must be asked identically.", b:0, why:"Identical wording for comparison across many people calls for a structured format."},
       {t:"Ten teachers are asked about the same five themes, in whatever order the conversation flows.", b:1, why:"Common themes with flexible order: semi-structured."}
@@ -267,11 +267,11 @@ ICA.addUnit({
       {t:"Individual unstructured interviews only, because groups never work for sensitive topics", why:"Individual interviews suit personal disclosures, but her question is about talk among friends. Groups can work if they discuss general norms rather than personal stories."},
       {t:"Recording conversations in a café without telling anyone", why:"Covert recording breaks consent and is unethical."}
     ]},
-    {id:"t4u7-l2-x8", type:"explain", q:"An interviewer asks: “Don’t you think the new shift rota is unfair?” Explain what’s wrong with this question, and how a probe can get depth without leading.", size:"3–4 sentences", hint:"Compare a leading question with an open one, and think about where a probe’s words come from.", model:"It’s a leading question: it suggests the answer the interviewer expects, so the participant may agree just to be polite, and you learn the interviewer’s view rather than theirs. An open, neutral version would be “What do you make of the new rota?” Depth then comes from probes that follow the participant’s own words, such as “Could you say more about that?”, an echo (“A test?”) or a pause, rather than suggesting reasons like “Is it because the manager is unfriendly?”", points:["Identifies it as a leading question", "Explains why leading is a problem (pushes towards an answer)", "Gives a neutral open alternative", "Says probes should follow the participant’s words, with an example"]}
+    {id:"t4u7-l2-x8", type:"explain", q:"An interviewer asks: “Don’t you think the new shift rota is unfair?” Explain what’s wrong with this question, and how a probe can get depth without leading.", size:"3–4 sentences", hint:"Compare a leading question with an open one, and think about where a probe’s words come from.", model:"It’s a leading question: it suggests the answer the interviewer expects, so the participant may agree just to be polite, and you learn the interviewer’s view rather than theirs. An open, neutral version would be “What do you make of the new rota?” Depth then comes from probes that follow the participant’s own words, such as “Could you say more about that?”, an echo (“A test?”) or a pause, rather than suggesting reasons like “Is it because the manager is unfriendly?”", points:["Identifies it as a leading question", "Explains why leading is a problem (pushes toward an answer)", "Gives a neutral open alternative", "Says probes should follow the participant’s words, with an example"]}
    ],
    apply:{intro:"Build a small interview guide and try it with someone who agrees. These are practice tasks, not a research study.", tasks:[
      {t:"Write an interview guide", how:["Choose a topic most adults could talk about, such as how they learned to cook, how their working life has changed, or how they keep in touch with family far away.","Write five or six main open questions in a sensible order: easy and present first, then past, then thoughts about the future.","Under each main question, add two possible probes (detail, elaboration, clarification or contrast).","Check every question: open? one thing at a time? everyday words? not leading?","Add an opening script (purpose, right to skip or stop, recording only with permission) and a closing question."], write:"Topic… Opening script… Main questions with probes… Closing question… Problems I fixed…"},
-     {t:"Run a 15–20 minute practice interview", how:["Ask a friend or family member if they’re willing to help you practise. Tell them it’s practice, nothing will be published, and they can skip any question or stop at any time.","Ask separately whether you may record it. If not, take notes.","Use your guide, but follow interesting threads. Try at least one silent probe and one echo.","Afterwards, ask them which questions felt easy or awkward.","If you recorded, store the file somewhere private and delete it once you’ve finished the transcription task in Lesson 4."], write:"How I explained consent… Recorded? (only with permission)… One moment a probe worked… One question I’d change… What my practice partner said…"},
+     {t:"Run a 15–20 minute practice interview", how:["Ask a friend or family member if they’re willing to help you practice. Tell them it’s practice, nothing will be published, and they can skip any question or stop at any time.","Ask separately whether you may record it. If not, take notes.","Use your guide, but follow interesting threads. Try at least one silent probe and one echo.","Afterwards, ask them which questions felt easy or awkward.","If you recorded, store the file somewhere private and delete it once you’ve finished the transcription task in Lesson 4."], write:"How I explained consent… Recorded? (only with permission)… One moment a probe worked… One question I’d change… What my practice partner said…"},
      {t:"Plan (don’t run) a focus group", how:["Using the same topic, decide who would be in two or three groups and why (similar or mixed groups?).","Write three discussion prompts that invite people to respond to each other (for example, “What do people your age usually say about…?”).","Write what you’d tell the group about confidentiality and its limits."], write:"Groups and why… Three prompts… What I’d say about confidentiality…"}
    ], proof:"An interview guide with probes, notes from a consented practice interview including what you’d improve, and a short focus group plan."},
    read:[
@@ -283,7 +283,7 @@ ICA.addUnit({
   /* ───────────── Lesson 3 ───────────── */
   {id:"t4u7-l3", title:"Observation, fieldnotes and documents", minutes:50,
    goals:["Describe the range of observer roles and their trade-offs","Take jottings and turn them into full fieldnotes","Separate description from reflection in your notes","Explain thick description","Question documents and online material as data"],
-   hook:{q:"Experienced field researchers often advise setting aside time to write up fieldnotes after each visit. Compared with the time spent observing, how much?", options:["About a tenth as long","About half as long","At least as long, and often twice as long","None: they just keep the scribbles they made on the spot"], answer:2, reveal:"**At least as long, often double.** Hurst’s textbook says to plan at least as much writing time as fieldwork time, and notes that many researchers suggest double. Quick scribbles fade fast; the full notes written afterwards are the real data. This lesson shows how to go from scribbles to notes you can analyse."},
+   hook:{q:"Experienced field researchers often advise setting aside time to write up fieldnotes after each visit. Compared with the time spent observing, how much?", options:["About a tenth as long","About half as long","At least as long, and often twice as long","None: they just keep the scribbles they made on the spot"], answer:2, reveal:"**At least as long, often double.** Hurst’s textbook says to plan at least as much writing time as fieldwork time, and notes that many researchers suggest double. Quick scribbles fade fast; the full notes written afterwards are the real data. This lesson shows how to go from scribbles to notes you can analyze."},
    learn:[
     {h:"Watching with a purpose", body:[
       {lead:"Interviews tell you what people say they do. Observation shows you what they actually do, where and with whom."},
@@ -291,7 +291,7 @@ ICA.addUnit({
       "Researchers can take different roles. A classic scheme (from the sociologist Raymond Gold, 1958) places them on a continuum:",
       {table:[["Role","What it looks like","Trade-off"],["Complete participant","A full member; others may not know about the research","Deep access, but serious ethical problems if covert"],["Participant as observer","Takes part openly, and people know about the research","Rich insight; the researcher may change what happens"],["Observer as participant","Mostly watches, with brief, open contact","Easier notes; a more outside view"],["Complete observer","Watches without interacting, for example in a public space","Little influence on people; little insight into meanings"]]},
       "Hurst describes the same idea as a continuum from full participation to observation. The more you take part, the more you rely on notes written later; the more you just watch, the easier it is to take notes on the spot.",
-      {warn:"Watching people can change what they do, an example of the [[hawthorne-effect|Hawthorne effect]]. Covert observation (people don’t know they’re being studied) is rarely approved by [[ethics-committee|ethics committees]] and needs strong justification. For practice, observe only public behaviour in public places, without photos or recordings of people."}
+      {warn:"Watching people can change what they do, an example of the [[hawthorne-effect|Hawthorne effect]]. Covert observation (people don’t know they’re being studied) is rarely approved by [[ethics-committee|ethics committees]] and needs strong justification. For practice, observe only public behavior in public places, without photos or recordings of people."}
     ]},
     {h:"What to notice", body:[
       "Beginners often write “nothing much happened”. Something always happens; you just haven’t yet trained your eye. Useful things to record:",
@@ -317,9 +317,9 @@ ICA.addUnit({
         "**Descriptive notes:** what happened, as concretely as possible. Who did what, said what, in what order.",
         "**Reflective notes:** your interpretations, hunches, questions, feelings and reactions, and ideas to follow up."
       ]},
-      "The test is whether another observer could have written your description. “She was angry” is an interpretation. “She raised her voice, put the cup down hard and left without paying” is a description that lets a reader judge. Labels like *rude*, *lazy*, *chaotic* or *friendly* belong in the reflective column, with the behaviour that prompted them in the descriptive one.",
+      "The test is whether another observer could have written your description. “She was angry” is an interpretation. “She raised her voice, put the cup down hard and left without paying” is a description that lets a reader judge. Labels like *rude*, *lazy*, *chaotic* or *friendly* belong in the reflective column, with the behavior that prompted them in the descriptive one.",
       "Reflective notes are valuable, not second-class. Feelings tell you about your own position (“I felt like an outsider when they switched language”) and early hunches become [[analytic-memo|analytic memos]]: short notes to yourself that develop ideas about what the data might mean.",
-      {key:"Describe behaviour first; interpret second, and label your interpretation as yours."}
+      {key:"Describe behavior first; interpret second, and label your interpretation as yours."}
     ]},
     {h:"Thick description", body:[
       "[[thick-description|Thick description]] is a term the anthropologist Clifford Geertz made famous in a 1973 essay, borrowing it from the philosopher Gilbert Ryle. Ryle’s example: two boys contract an eyelid. One has a twitch; the other is winking at a friend. A camera records the same movement. Only a description that includes context and meaning (who, to whom, what it signals here) tells them apart.",
@@ -327,7 +327,7 @@ ICA.addUnit({
       "Thick description matters twice. In analysis, it keeps interpretations anchored in evidence. In reporting, it gives readers enough detail to judge whether findings might apply to their own setting, which Lesson 5 calls transferability."
     ]},
     {h:"Documents and other existing data", body:[
-      "Not all qualitative data is generated by the researcher. Documents and other existing materials record what organisations and people did and said, often without any researcher present:",
+      "Not all qualitative data is generated by the researcher. Documents and other existing materials record what organizations and people did and said, often without any researcher present:",
       {list:[
         "Official documents: policies, meeting minutes, reports, court records, school handbooks.",
         "Personal documents: letters, diaries, family photos, recipe books, emails (with permission).",
@@ -350,7 +350,7 @@ ICA.addUnit({
       {t:"Decide on the setting and focus, and check what is ethically appropriate there", why:"Planning and ethics come before going into the field."},
       {t:"Observe, taking quick jottings of key words, times and short quotes", why:"Jottings are taken in the field, briefly."},
       {t:"Write full fieldnotes the same day, turning jottings into scenes", why:"Detail fades quickly, so full notes are written as soon as possible."},
-      {t:"Add reflective notes and keywords, separate from the description", why:"Reflection is added and labelled once the description is down."},
+      {t:"Add reflective notes and keywords, separate from the description", why:"Reflection is added and labeled once the description is down."},
       {t:"Write an analytic memo about patterns across several visits", why:"Memos build interpretation across many sets of notes."}
     ]},
     {id:"t4u7-l3-x3", type:"sort", q:"Is each line from Mei’s notes description or reflection?", buckets:["Description","Reflection"], items:[
@@ -358,15 +358,15 @@ ICA.addUnit({
       {t:"I wonder whether the lights are a polite signal that it’s time to leave.", b:1, why:"A hunch about meaning: reflection."},
       {t:"A boy of about six said, “Again!” and pressed the button on the talking book.", b:0, why:"An exact short quote and an action: description."},
       {t:"I felt awkward sitting alone without a child here.", b:1, why:"The researcher’s feelings: reflection, and useful for reflexivity."},
-      {t:"Two grandparents spoke to each other in a language I didn’t recognise, then one translated for the librarian.", b:0, why:"What happened, without interpreting it: description."},
+      {t:"Two grandparents spoke to each other in a language I didn’t recognize, then one translated for the librarian.", b:0, why:"What happened, without interpreting it: description."},
       {t:"This seems to be a place where newcomers learn the town’s rules.", b:1, why:"An interpretation to test later: reflection or memo material."}
     ]},
-    {id:"t4u7-l3-x4", type:"spot", q:"Dmitri’s fieldnote is meant to be descriptive. Tap each phrase that **mixes in judgement or interpretation** instead of describing.", ask:"judgement or interpretation", parts:[
+    {id:"t4u7-l3-x4", type:"spot", q:"Dmitri’s fieldnote is meant to be descriptive. Tap each phrase that **mixes in judgment or interpretation** instead of describing.", ask:"judgment or interpretation", parts:[
       {t:"At 14:05 a bus stopped and eleven people got off.", flag:false, why:"Countable, observable and timed."},
       " ",
-      {t:"The driver was obviously lazy", flag:true, why:"“Lazy” is a judgement. Describe the behaviour that prompted it (for example, “The driver stayed seated while a passenger lifted a pram down the steps”)."},
+      {t:"The driver was obviously lazy", flag:true, why:"“Lazy” is a judgment. Describe the behavior that prompted it (for example, “The driver stayed seated while a passenger lifted a pram down the steps”)."},
       " ",
-      {t:"and stayed in his seat while a woman lifted a pram down the steps.", flag:false, why:"This is the concrete behaviour, which is what belongs in a description."},
+      {t:"and stayed in his seat while a woman lifted a pram down the steps.", flag:false, why:"This is the concrete behavior, which is what belongs in a description."},
       " ",
       {t:"The passengers were clearly annoyed with the council.", flag:true, why:"An interpretation of feelings and their target. Record what people said or did; put the interpretation in the reflective column."},
       " ",
@@ -374,7 +374,7 @@ ICA.addUnit({
     ]},
     {id:"t4u7-l3-x5", type:"mcq", q:"Which passage is the best example of thick description?", options:[
       {t:"At a wedding, guests pressed money onto the bride’s forehead as she danced; an aunt explained this showed blessing and family support, and guests watched who gave and how much.", ok:true, why:"It combines detailed action with the meaning it has for participants and the social context (giving is public and noticed)."},
-      {t:"The wedding was very colourful and everyone had a great time.", why:"Thin and evaluative: no specific actions, no meanings."},
+      {t:"The wedding was very colorful and everyone had a great time.", why:"Thin and evaluative: no specific actions, no meanings."},
       {t:"There were 214 guests, 6 musicians and 3 courses.", why:"Precise counts, but no meaning or context: detailed but still thin."},
       {t:"A very long account of every dish served, in order.", why:"Long isn’t the same as thick. Without meaning and context, length adds little."}
     ]},
@@ -384,13 +384,13 @@ ICA.addUnit({
       {t:"Join the forum pretending to be a patient to get more stories", why:"Deceiving people to generate data is covert research, which needs strong justification and approval and is rarely allowed."},
       {t:"Ignore online material entirely, because it can never be used in research", why:"Online material is used in research all the time, with appropriate care and approval."}
     ]},
-    {id:"t4u7-l3-x7", type:"explain", q:"In her fieldnotes Grace wrote: “The shopkeeper was rude to the customer.” Explain why this is a weak descriptive note, and rewrite it so it separates description from reflection.", size:"3–4 sentences", hint:"Could another observer have written your description?", model:"“Rude” is an interpretation, not a description: another observer might have seen the same behaviour and called it busy or joking, and a reader can’t judge. A descriptive note records concrete behaviour: “The shopkeeper did not look up, said ‘Next’ before the customer had finished speaking, and pushed the change across the counter.” In a separate reflective column she can write: “Seemed rude to me; is this normal at rush hour, or was it about this customer?”", points:["Says “rude” is an interpretation or label", "Explains another observer or reader couldn’t check it", "Rewrites it as concrete behaviour", "Puts the interpretation in a separate, labelled reflective note"]}
+    {id:"t4u7-l3-x7", type:"explain", q:"In her fieldnotes Grace wrote: “The shopkeeper was rude to the customer.” Explain why this is a weak descriptive note, and rewrite it so it separates description from reflection.", size:"3–4 sentences", hint:"Could another observer have written your description?", model:"“Rude” is an interpretation, not a description: another observer might have seen the same behavior and called it busy or joking, and a reader can’t judge. A descriptive note records concrete behavior: “The shopkeeper did not look up, said ‘Next’ before the customer had finished speaking, and pushed the change across the counter.” In a separate reflective column she can write: “Seemed rude to me; is this normal at rush hour, or was it about this customer?”", points:["Says “rude” is an interpretation or label", "Explains another observer or reader couldn’t check it", "Rewrites it as concrete behavior", "Puts the interpretation in a separate, labeled reflective note"]}
    ],
-   apply:{intro:"Practise observation in a public place and look at a document with a researcher’s eye. Don’t photograph or record people, and don’t follow or single anyone out.", tasks:[
+   apply:{intro:"Practice observation in a public place and look at a document with a researcher’s eye. Don’t photograph or record people, and don’t follow or single anyone out.", tasks:[
      {t:"Twenty minutes of observation", how:["Choose a public place where watching is normal: a park, a bus stop, a market, a library, a café.","For 20 minutes, take jottings only: key words, times, short quotes you overhear in passing, a quick sketch of the layout. Describe people by role or appearance in general terms, never by name.","Within a few hours, write full notes in two columns: description on one side, reflection on the other.","Add three keywords at the top."], write:"Place, date, time… Jottings… Full description… Reflections and questions… Keywords…"},
-     {t:"Rewrite judgements as descriptions", how:["Read through your notes and underline any judgement words (busy, rude, friendly, chaotic, lazy, happy).","For each one, write the specific behaviour that made you think it.","Move the judgement word to your reflective column."], write:"Judgement word → what I actually saw…"},
+     {t:"Rewrite judgments as descriptions", how:["Read through your notes and underline any judgment words (busy, rude, friendly, chaotic, lazy, happy).","For each one, write the specific behavior that made you think it.","Move the judgment word to your reflective column."], write:"Judgment word → what I actually saw…"},
      {t:"Question a document", how:["Choose a public document: a local council newsletter, a school or workplace policy, a product’s terms of service, or an old family letter you have permission to use.","Answer: who made it, for whom, why, what it needed to say, and what is missing.","Write one research question this document could help answer, and one it couldn’t."], write:"Document… Who, for whom, why… What’s missing… A question it helps with… A question it can’t answer…"}
-   ], proof:"Two-column fieldnotes from 20 minutes of public observation, a list of judgements rewritten as descriptions, and notes interrogating one document."},
+   ], proof:"Two-column fieldnotes from 20 minutes of public observation, a list of judgments rewritten as descriptions, and notes interrogating one document."},
    read:[
     {book:"hurst", where:"Chapter 13, “Participant Observation”, and Chapter 16, “Archival and Historical Research”"},
     {book:"bhatt", where:"Chapter 12, “Interpretive Research” (the part on interpretive data collection: interviews, observation and documents)"}
@@ -404,7 +404,7 @@ ICA.addUnit({
    learn:[
     {h:"From sound to text", body:[
       {lead:"Most interview and focus group analysis works from a written record of the conversation."},
-      "A [[transcript|transcript]] is that written record. Making one is not neutral copying: you decide what to include (pauses, laughter, “um”), how to punctuate, and how to show who is speaking. Those choices shape what you can analyse later. Common styles:",
+      "A [[transcript|transcript]] is that written record. Making one is not neutral copying: you decide what to include (pauses, laughter, “um”), how to punctuate, and how to show who is speaking. Those choices shape what you can analyze later. Common styles:",
       {table:[["Style","What it keeps","Suits"],["Verbatim","Every word, including fillers (“um”, “like”), false starts, repetitions, and often pauses and laughter","Analyses where how people speak matters"],["Intelligent (clean) verbatim","The full meaning, with fillers, false starts and stutters removed","Most thematic and content-focused studies"],["Detailed notation (for example the Jefferson system)","Pause lengths, overlaps, emphasis, intonation","Conversation analysis and close study of talk"]]},
       "[[intelligent-verbatim|Intelligent verbatim]] tidies speech but must not rewrite it: keep people’s own words, dialect and grammar, and never “improve” what they meant. Whatever style you choose, write down your conventions so transcripts are consistent.",
       {ex:"I: So how did the first term go?\nP7: Honestly? [laughs] Badly. I tried to do everything at night after the kids were asleep.\nI: Mm.\nP7: I was falling asleep over the readings. [pause] Then my sister said, “Why don’t you do it on the bus?”\n[inaudible 04:12]", label:"Transcript conventions (invented): speaker IDs, [laughs], [pause], [inaudible + time]", mono:true},
@@ -425,7 +425,7 @@ ICA.addUnit({
       {warn:"When in doubt, choose a tool your institution approves or one that runs locally on your own device, and never upload recordings from participants who weren’t told about it."}
     ]},
     {h:"What coding is", body:[
-      "A [[code-qual|code]] is a short label you attach to a piece of data to capture what it is about or what it means. Hurst calls coding the iterative process of assigning meaning to the data you have collected, and the main tool for analysing qualitative data.",
+      "A [[code-qual|code]] is a short label you attach to a piece of data to capture what it is about or what it means. Hurst calls coding the iterative process of assigning meaning to the data you have collected, and the main tool for analyzing qualitative data.",
       "An analogy: a book’s index lets you find every page about a topic. Coding builds an index to your data, but an interpretive one: you decide that this sentence is about “asking for help” and that one is about “hiding things from the boss”, then you can pull together every passage on each and compare them.",
       "Coding is a way into analysis, not the analysis itself. After coding, you still have to compare, question and interpret: what patterns are there, how do codes relate, and what do they mean for the research question?",
       "Codes come from two directions, and most projects mix them:",
@@ -438,13 +438,13 @@ ICA.addUnit({
       "Johnny Saldaña’s *The Coding Manual for Qualitative Researchers* (5th edition, 2025) profiles dozens of coding methods. Three are good starting points; Hurst includes them among five kinds she recommends to beginners (with values and emotion codes):",
       {table:[["Kind","What it captures","Example"],["Descriptive","The topic of a passage, in a word or short phrase, usually a noun","CHILDCARE"],["In vivo","The participant’s own words, in quotation marks","“IT’S MY TIME”"],["Process","Action or change, written with “-ing” words (gerunds)","USING COMMUTE TIME"]]},
       "Descriptive codes are a good first index but can stay at surface level. [[in-vivo-code|In vivo codes]] keep participants’ voices and vivid language. Process codes highlight what people *do* and how things change over time. Many researchers also code emotions and values.",
-      "Saldaña separates **first cycle** coding (the first passes through the data) from **second cycle** coding, where you reorganise first-cycle codes into fewer, broader categories or concepts."
+      "Saldaña separates **first cycle** coding (the first passes through the data) from **second cycle** coding, where you reorganize first-cycle codes into fewer, broader categories or concepts."
     ]},
     {h:"Worked example: coding an excerpt", body:[
       "The excerpt below is **invented** for teaching. Imagine a study asking: *How do adults who work full time fit university study into their lives?*",
       {ex:"P7: The first term I tried to do everything at night after the kids were asleep. I was falling asleep over the readings. Then my sister said, “Why don’t you do it on the bus?” So now I listen to the lectures on my commute. It’s not ideal, but it’s my time. My manager doesn’t really know I’m studying, so I can’t ask to leave early. Some weeks I just feel like I’m stealing time from everyone.", label:"Invented interview excerpt", mono:true},
       {table:[["Segment","Code","Kind"],["“tried to do everything at night after the kids were asleep”","NIGHT-TIME STUDY","Descriptive"],["“falling asleep over the readings”","TIREDNESS","Descriptive"],["“my sister said, ‘Why don’t you…’”","GETTING ADVICE FROM FAMILY","Process"],["“listen to the lectures on my commute”","USING COMMUTE TIME","Process"],["“it’s my time”","“IT’S MY TIME”","In vivo"],["“My manager doesn’t really know”","HIDING STUDY AT WORK","Process"],["“stealing time from everyone”","“STEALING TIME”","In vivo"]]},
-      {fig:'<svg viewBox="0 0 340 470"><defs><marker id="t4u7-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="170" y="18" text-anchor="middle">From data to codes to a category</text><rect class="d-panel" x="10" y="30" width="320" height="104" rx="10" stroke-width="1.5"/><text class="s" x="22" y="52">“…at night after the kids were asleep…</text><text class="s" x="22" y="70">…falling asleep over the readings…</text><text class="s" x="22" y="88">…listen to the lectures on my commute…</text><text class="s" x="22" y="106">…my manager doesn’t really know…</text><text class="s" x="22" y="124">…stealing time from everyone.”</text><path class="d-ink" d="M170 134 V156" stroke-width="2" marker-end="url(#t4u7-l4-a)"/><text class="s" x="250" y="150" text-anchor="middle">first cycle</text><rect class="d-sage" x="4" y="160" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="182" text-anchor="middle">NIGHT-TIME STUDY</text><rect class="d-sage" x="172" y="160" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="182" text-anchor="middle">TIREDNESS</text><rect class="d-gold" x="4" y="202" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="224" text-anchor="middle">USING COMMUTE TIME</text><rect class="d-gold" x="172" y="202" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="224" text-anchor="middle">HIDING STUDY AT WORK</text><rect class="d-rose" x="4" y="244" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="266" text-anchor="middle">“IT’S MY TIME”</text><rect class="d-rose" x="172" y="244" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="266" text-anchor="middle">“STEALING TIME”</text><text class="s" x="170" y="300" text-anchor="middle">descriptive · process · in vivo</text><path class="d-ink" d="M170 308 V330" stroke-width="2" marker-end="url(#t4u7-l4-a)"/><text class="s" x="254" y="324" text-anchor="middle">second cycle</text><rect class="d-lup" x="30" y="334" width="280" height="76" rx="10" stroke-width="2"/><text x="170" y="358" text-anchor="middle">Candidate category:</text><text x="170" y="378" text-anchor="middle">study time as borrowed time</text><text class="s" x="170" y="398" text-anchor="middle">taken from sleep, family and work</text><text class="s" x="170" y="434" text-anchor="middle">Only a candidate: it needs checking</text><text class="s" x="170" y="452" text-anchor="middle">across all the interviews.</text></svg>', alt:"Top: an invented interview excerpt about studying at night, falling asleep over readings, listening to lectures on the commute, a manager who doesn’t know, and stealing time from everyone. First cycle coding produces six code boxes: two descriptive codes, night-time study and tiredness; two process codes, using commute time and hiding study at work; two in vivo codes in quotation marks, it’s my time and stealing time. Second cycle coding groups them into a candidate category: study time as borrowed time, taken from sleep, family and work. A note says it is only a candidate that needs checking across all interviews.", cap:"Codes summarise segments; grouping codes across the whole dataset leads towards categories and themes."},
+      {fig:'<svg viewBox="0 0 340 470"><defs><marker id="t4u7-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="170" y="18" text-anchor="middle">From data to codes to a category</text><rect class="d-panel" x="10" y="30" width="320" height="104" rx="10" stroke-width="1.5"/><text class="s" x="22" y="52">“…at night after the kids were asleep…</text><text class="s" x="22" y="70">…falling asleep over the readings…</text><text class="s" x="22" y="88">…listen to the lectures on my commute…</text><text class="s" x="22" y="106">…my manager doesn’t really know…</text><text class="s" x="22" y="124">…stealing time from everyone.”</text><path class="d-ink" d="M170 134 V156" stroke-width="2" marker-end="url(#t4u7-l4-a)"/><text class="s" x="250" y="150" text-anchor="middle">first cycle</text><rect class="d-sage" x="4" y="160" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="182" text-anchor="middle">NIGHT-TIME STUDY</text><rect class="d-sage" x="172" y="160" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="182" text-anchor="middle">TIREDNESS</text><rect class="d-gold" x="4" y="202" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="224" text-anchor="middle">USING COMMUTE TIME</text><rect class="d-gold" x="172" y="202" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="224" text-anchor="middle">HIDING STUDY AT WORK</text><rect class="d-rose" x="4" y="244" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="86" y="266" text-anchor="middle">“IT’S MY TIME”</text><rect class="d-rose" x="172" y="244" width="164" height="34" rx="6" stroke-width="1.5"/><text class="s" x="254" y="266" text-anchor="middle">“STEALING TIME”</text><text class="s" x="170" y="300" text-anchor="middle">descriptive · process · in vivo</text><path class="d-ink" d="M170 308 V330" stroke-width="2" marker-end="url(#t4u7-l4-a)"/><text class="s" x="254" y="324" text-anchor="middle">second cycle</text><rect class="d-lup" x="30" y="334" width="280" height="76" rx="10" stroke-width="2"/><text x="170" y="358" text-anchor="middle">Candidate category:</text><text x="170" y="378" text-anchor="middle">study time as borrowed time</text><text class="s" x="170" y="398" text-anchor="middle">taken from sleep, family and work</text><text class="s" x="170" y="434" text-anchor="middle">Only a candidate: it needs checking</text><text class="s" x="170" y="452" text-anchor="middle">across all the interviews.</text></svg>', alt:"Top: an invented interview excerpt about studying at night, falling asleep over readings, listening to lectures on the commute, a manager who doesn’t know, and stealing time from everyone. First cycle coding produces six code boxes: two descriptive codes, night-time study and tiredness; two process codes, using commute time and hiding study at work; two in vivo codes in quotation marks, it’s my time and stealing time. Second cycle coding groups them into a candidate category: study time as borrowed time, taken from sleep, family and work. A note says it is only a candidate that needs checking across all interviews.", cap:"Codes summarize segments; grouping codes across the whole dataset leads toward categories and themes."},
       "One excerpt can only suggest ideas. The category “study time as borrowed time” becomes worth keeping only if other participants describe something similar, and you should look just as hard for those who don’t (perhaps people whose employers support their study). Lesson 5 continues from here."
     ]},
     {h:"Codebooks and memos", body:[
@@ -456,7 +456,7 @@ ICA.addUnit({
     {h:"Software for qualitative analysis", body:[
       "You can code with highlighters on paper, comments in a word processor or a spreadsheet of segments and codes. For larger projects, researchers use [[caqdas|CAQDAS]] (computer-assisted qualitative data analysis software). It stores your data, lets you attach codes to segments, retrieves every segment with a code, and holds your memos. It doesn’t do the thinking for you.",
       {table:[["Software","Cost","Notes"],["Taguette","Free, open source","Highlight and tag text documents; desktop app for all major systems, plus an online version"],["QualCoder","Free, open source","Desktop app; codes text, images, audio and video"],["NVivo","Paid","Long-established; made by Lumivero"],["ATLAS.ti","Paid","Long-established; acquired by Lumivero in 2024"],["MAXQDA","Paid","Made by VERBI; strong for mixed methods"],["Dedoose","Paid subscription","Web-based; designed with mixed methods in mind"]]},
-      "Universities often provide licences for paid programs, and most offer free trials. Choose by what your data looks like (text only, or audio and video?), whether you work in a team, what your supervisor or colleagues use, and whether projects can be exported if you change tools later.",
+      "Universities often provide licenses for paid programs, and most offer free trials. Choose by what your data looks like (text only, or audio and video?), whether you work in a team, what your supervisor or colleagues use, and whether projects can be exported if you change tools later.",
       {warn:"Several programs now offer AI features that suggest codes or summaries. Treat suggestions as a starting point you check, not findings. Some of these features send your data to an outside AI service, so check your consent forms and ethics approval first."}
     ]}
    ],
@@ -468,7 +468,7 @@ ICA.addUnit({
       {t:"A corrected version where she fixes grammar and makes answers clearer", why:"Rewriting changes participants’ words and can distort their meaning. Clean verbatim removes fillers but doesn’t rewrite."}
     ]},
     {id:"t4u7-l4-x2", type:"spot", q:"Kenji wrote this plan for transcribing interviews with nurses about workplace stress. Tap each step that is a **privacy or ethics problem**.", ask:"a privacy or ethics problem", parts:[
-      {t:"Recordings are labelled with participant IDs (N01, N02…), not names.", flag:false, why:"Good practice: files don’t reveal who is speaking."},
+      {t:"Recordings are labeled with participant IDs (N01, N02…), not names.", flag:false, why:"Good practice: files don’t reveal who is speaking."},
       " ",
       {t:"I’ll upload them to a free online transcription website I found, because it’s quick.", flag:true, why:"Uploading shares personal data with an unknown company. He needs to check consent, ethics approval, where data is stored and how it is used, or use an approved or local tool."},
       " ",
@@ -515,7 +515,7 @@ ICA.addUnit({
       {t:"Use an AI chatbot to code everything and report what it says", why:"AI suggestions need checking, and uploading transcripts to an outside service may break consent and ethics approval."},
       {t:"No tool can help: qualitative analysis can only be done on paper", why:"Paper works, but software makes retrieving and comparing coded segments much easier."}
     ]},
-    {id:"t4u7-l4-x8", type:"explain", q:"Explain to a classmate what coding is in qualitative analysis, and why coding a set of interviews isn’t the same as having analysed them.", size:"3–4 sentences", hint:"Think of a book’s index, and what you still have to do after building one.", model:"Coding means attaching short labels to pieces of data to capture what they are about or mean, such as USING COMMUTE TIME or the participant’s own words “IT’S MY TIME”. It works like an interpretive index: you can pull together every passage with the same code and compare them. But it’s only a way in. After coding you still have to compare, question and interpret: which patterns there are, how codes relate, and what they mean for the research question.", points:["Defines a code as a short label attached to a piece of data", "Gives an example of a code", "Compares coding to an index that lets you retrieve and compare passages", "Says interpretation and comparison still follow coding"]}
+    {id:"t4u7-l4-x8", type:"explain", q:"Explain to a classmate what coding is in qualitative analysis, and why coding a set of interviews isn’t the same as having analyzed them.", size:"3–4 sentences", hint:"Think of a book’s index, and what you still have to do after building one.", model:"Coding means attaching short labels to pieces of data to capture what they are about or mean, such as USING COMMUTE TIME or the participant’s own words “IT’S MY TIME”. It works like an interpretive index: you can pull together every passage with the same code and compare them. But it’s only a way in. After coding you still have to compare, question and interpret: which patterns there are, how codes relate, and what they mean for the research question.", points:["Defines a code as a short label attached to a piece of data", "Gives an example of a code", "Compares coding to an index that lets you retrieve and compare passages", "Says interpretation and comparison still follow coding"]}
    ],
    apply:{intro:"Turn talk into text and text into codes. If your practice interview wasn’t recorded, use your notes, or the invented excerpt in this lesson.", tasks:[
      {t:"Transcribe three minutes two ways", how:["Take three minutes of your consented practice interview recording (or your detailed notes).","Transcribe it full verbatim: every “um”, repeat and pause.","Then make an intelligent verbatim version.","Replace any names and identifying details with IDs or general descriptions.","If you try an automatic tool, use one that runs on your own device, or think through the privacy questions in this lesson first, and correct its output against the audio."], write:"Verbatim version… Intelligent verbatim version… What changed… How long it took…"},
@@ -545,10 +545,10 @@ ICA.addUnit({
       "[[thematic-analysis-term|Thematic analysis]] (TA) is a widely used method for identifying and interpreting patterns of meaning in qualitative data. Virginia Braun and Victoria Clarke set out six phases in a 2006 paper, “Using thematic analysis in psychology” (*Qualitative Research in Psychology*). They later called their own approach **reflexive thematic analysis** and renamed several phases, most fully in their 2022 book *Thematic Analysis: A Practical Guide*:",
       {table:[["Phase","2006 name","Current name"],["1","Familiarising yourself with your data","Familiarising yourself with the dataset"],["2","Generating initial codes","Coding"],["3","Searching for themes","Generating initial themes"],["4","Reviewing themes","Developing and reviewing themes"],["5","Defining and naming themes","Refining, defining and naming themes"],["6","Producing the report","Writing up"]]},
       "The renaming is not cosmetic. They dropped “initial” from coding because it wrongly suggested a later, separate round of coding, and replaced “searching for themes” because “searching” implies themes are already there to be found.",
-      {fig:'<svg viewBox="0 0 340 400"><defs><marker id="t4u7-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="150" y="18" text-anchor="middle">Reflexive thematic analysis</text><rect class="d-sage" x="20" y="32" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="59" text-anchor="middle">1 Familiarising with the dataset</text><rect class="d-sage" x="20" y="90" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="117" text-anchor="middle">2 Coding</text><rect class="d-lup" x="20" y="148" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="175" text-anchor="middle">3 Generating initial themes</text><rect class="d-lup" x="20" y="206" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="233" text-anchor="middle">4 Developing and reviewing</text><rect class="d-rose" x="20" y="264" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="291" text-anchor="middle">5 Refining, defining, naming</text><rect class="d-gold" x="20" y="322" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="349" text-anchor="middle">6 Writing up</text><path class="d-ink" d="M145 76 V88 M145 134 V146 M145 192 V204 M145 250 V262 M145 308 V320" stroke-width="2" fill="none"/><path class="d-ink" d="M272 228 C320 228 320 112 274 112" stroke-width="2" fill="none" marker-end="url(#t4u7-l5-a)"/><path class="d-ink" d="M272 286 C334 286 334 170 274 170" stroke-width="2" fill="none" marker-end="url(#t4u7-l5-a)"/><text class="s" x="170" y="388" text-anchor="middle">Arrows back: go round again when needed</text></svg>', alt:"Six boxes stacked vertically: 1 familiarising with the dataset, 2 coding, 3 generating initial themes, 4 developing and reviewing, 5 refining, defining and naming, 6 writing up. Curved arrows on the right loop back from phase 4 to phase 2 and from phase 5 to phase 3, showing the process goes back and forth.", cap:"The phases are a sequence you move through, but not in a straight line: reviewing themes often sends you back to recode or rethink."},
+      {fig:'<svg viewBox="0 0 340 400"><defs><marker id="t4u7-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="150" y="18" text-anchor="middle">Reflexive thematic analysis</text><rect class="d-sage" x="20" y="32" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="59" text-anchor="middle">1 Familiarising with the dataset</text><rect class="d-sage" x="20" y="90" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="117" text-anchor="middle">2 Coding</text><rect class="d-lup" x="20" y="148" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="175" text-anchor="middle">3 Generating initial themes</text><rect class="d-lup" x="20" y="206" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="233" text-anchor="middle">4 Developing and reviewing</text><rect class="d-rose" x="20" y="264" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="291" text-anchor="middle">5 Refining, defining, naming</text><rect class="d-gold" x="20" y="322" width="250" height="44" rx="8" stroke-width="2"/><text x="145" y="349" text-anchor="middle">6 Writing up</text><path class="d-ink" d="M145 76 V88 M145 134 V146 M145 192 V204 M145 250 V262 M145 308 V320" stroke-width="2" fill="none"/><path class="d-ink" d="M272 228 C320 228 320 112 274 112" stroke-width="2" fill="none" marker-end="url(#t4u7-l5-a)"/><path class="d-ink" d="M272 286 C334 286 334 170 274 170" stroke-width="2" fill="none" marker-end="url(#t4u7-l5-a)"/><text class="s" x="170" y="388" text-anchor="middle">Arrows back: go round again when needed</text></svg>', alt:"Six boxes stacked vertically: 1 familiarizing with the dataset, 2 coding, 3 generating initial themes, 4 developing and reviewing, 5 refining, defining and naming, 6 writing up. Curved arrows on the right loop back from phase 4 to phase 2 and from phase 5 to phase 3, showing the process goes back and forth.", cap:"The phases are a sequence you move through, but not in a straight line: reviewing themes often sends you back to recode or rethink."},
       {list:[
         "**1 Familiarising:** read and re-read transcripts, listen to recordings, note early ideas.",
-        "**2 Coding:** work through the whole dataset systematically, labelling anything relevant to the question.",
+        "**2 Coding:** work through the whole dataset systematically, labeling anything relevant to the question.",
         "**3 Generating initial themes:** cluster codes into candidate themes with a possible central idea.",
         "**4 Developing and reviewing:** check candidates against the coded extracts and the whole dataset. Do they hold together? Are two really one? Is a theme too thin?",
         "**5 Refining, defining and naming:** write what each theme is about and what it isn’t, and give it a name that conveys its meaning.",
@@ -557,7 +557,7 @@ ICA.addUnit({
     ]},
     {h:"Three kinds of thematic analysis", body:[
       "Braun and Clarke stress that “thematic analysis” covers several approaches with different assumptions. Broadly:",
-      {table:[["Approach","Core idea"],["Reflexive TA","The researcher’s interpretation is a resource. Themes are patterns of shared meaning. No measures of coder agreement; quality comes from depth, reflexivity and transparency"],["Codebook approaches (for example template or framework analysis)","A structured codebook or framework organises the analysis, often in teams or applied research"],["Coding reliability TA","Codes are fixed early, several coders apply them, and agreement between coders is measured"]]},
+      {table:[["Approach","Core idea"],["Reflexive TA","The researcher’s interpretation is a resource. Themes are patterns of shared meaning. No measures of coder agreement; quality comes from depth, reflexivity and transparency"],["Codebook approaches (for example template or framework analysis)","A structured codebook or framework organizes the analysis, often in teams or applied research"],["Coding reliability TA","Codes are fixed early, several coders apply them, and agreement between coders is measured"]]},
       "None is simply right or wrong, but mixing their assumptions causes trouble: claiming reflexive TA and then reporting coder-agreement scores, for example. Say which approach you used and follow it consistently."
     ]},
     {h:"When to stop: saturation and the debate", body:[
@@ -565,7 +565,7 @@ ICA.addUnit({
       "It became popular partly because it seems to answer “how many interviews?”. In a well-known study, Guest, Bunce and Johnson (2006) coded 60 interviews with women in two West African countries and found that almost all their codes had appeared within the first twelve. But their participants were fairly similar and were all asked the same set of questions, and the authors tied their conclusion to studies like that, not to every project.",
       "Critics raise several problems:",
       {list:[
-        "**It assumes meaning is out there to be used up.** Braun and Clarke (2021) argue that in reflexive TA, meaning is generated through interpretation, so there is no fixed point where it runs out. Decisions on sample size are judgements made in context.",
+        "**It assumes meaning is out there to be used up.** Braun and Clarke (2021) argue that in reflexive TA, meaning is generated through interpretation, so there is no fixed point where it runs out. Decisions on sample size are judgments made in context.",
         "**“No new codes” isn’t the same as understanding.** Hennink and colleagues distinguish *code saturation* (hearing all the issues) from *meaning saturation* (understanding them well), which usually takes more data.",
         "**It is often claimed but not shown.** Many papers say “saturation was reached” without saying how it was judged."
       ]},
@@ -587,7 +587,7 @@ ICA.addUnit({
     ]},
     {h:"Writing it up honestly", body:[
       {list:[
-        "Use quotes as evidence, labelled with IDs or pseudonyms (P7, “Amina”), and draw them from across participants, not just the most eloquent one.",
+        "Use quotes as evidence, labeled with IDs or pseudonyms (P7, “Amina”), and draw them from across participants, not just the most eloquent one.",
         "Be careful with quantity words. “Most participants” may be fine; precise percentages from a small purposive sample invite misreading.",
         "Show the analytic story, not just quotes: what each theme means and how it answers the question.",
         "Report your approach (which kind of TA), your sampling and stopping decisions, your position, and the limits of your claims.",
@@ -598,7 +598,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u7-l5-x1", type:"sort", q:"Which of these from a study of older people’s internet use are themes, and which are only topic summaries?", buckets:["Theme (shared meaning)","Topic summary"], items:[
-      {t:"“Being shown, not told”: participants learned best when a trusted person did a task alongside them, and felt patronised by written instructions.", b:0, why:"A central idea that interprets a pattern across participants."},
+      {t:"“Being shown, not told”: participants learned best when a trusted person did a task alongside them, and felt patronized by written instructions.", b:0, why:"A central idea that interprets a pattern across participants."},
       {t:"“Smartphones”: participants talked about the phones they own.", b:1, why:"Just names a subject. It could be written from the interview questions alone."},
       {t:"“Online as a lifeline to family abroad”: video calls gave a sense of still being part of family life despite distance.", b:0, why:"Interprets what being online means to participants."},
       {t:"“Problems”: some had problems with passwords, some with scams, some with eyesight.", b:1, why:"A list of different things under one heading, with no shared meaning."},
@@ -639,7 +639,7 @@ ICA.addUnit({
     ]},
     {id:"t4u7-l5-x6", type:"mcq", q:"Sione sends his themes to participants. One replies, “That’s not how I see it at all.” What is the best response?", options:[
       {t:"Treat it as more data: reflect on it and check the theme against the dataset", ok:true, why:"Think about why the views differ, and report the disagreement if relevant. Member checking feeds reflection. A theme drawing on many people may not match one person’s view and can still be sound, or the reply may reveal a real problem."},
-      {t:"Delete the theme, because any disagreement from a participant proves it is wrong", why:"A member check isn’t a veto. Themes summarise patterns across participants, so one person may not recognise themselves in all of them."},
+      {t:"Delete the theme, because any disagreement from a participant proves it is wrong", why:"A member check isn’t a veto. Themes summarize patterns across participants, so one person may not recognize themselves in all of them."},
       {t:"Ignore the reply, because participants can’t understand analysis", why:"Dismissing participants is disrespectful and wastes useful information."},
       {t:"Remove that participant’s data from the study", why:"Removing data because it challenges your analysis is a serious integrity problem."}
     ]},
@@ -647,7 +647,7 @@ ICA.addUnit({
       {t:"Triangulating methods and data sources, so each can test the others", ok:true, why:"Interviews, observation and documents give different angles; agreement builds confidence and differences prompt deeper analysis."},
       {t:"Member checking, because she involves teachers", why:"Member checking returns data or findings to participants. She is collecting different kinds of data."},
       {t:"Collecting more data so that she can reach a statistically significant result", why:"Qualitative studies don’t use significance tests. The aim is different perspectives, not statistical power."},
-      {t:"Creating bias, because using several methods mixes things up", why:"Combining methods is a recognised strategy for strengthening credibility."}
+      {t:"Creating bias, because using several methods mixes things up", why:"Combining methods is a recognized strategy for strengthening credibility."}
     ]},
     {id:"t4u7-l5-x8", type:"explain", q:"Explain the difference between a topic summary and a theme, using an example from a study of your choice.", size:"3–4 sentences", hint:"Could the label have been written before any analysis, just from the interview questions?", model:"A topic summary only lists what people said about a subject, such as “Views on the new bus service: some liked it, some didn’t”. It could be written from the interview questions before any analysis. A theme is a pattern of shared meaning across the data, held together by a central idea, that makes an interpretive claim answering the research question, for example “Cheaper but lonelier”: riders valued lower fares but missed the regular driver who knew them.", points:["Says a topic summary lists what was said about a subject", "Says a theme has a central idea and makes an interpretive claim", "Gives an example of each", "Notes a topic summary could be written before analysis"]}
    ],
@@ -672,7 +672,7 @@ ICA.addUnit({
      {t:"Public forum posts in which residents discuss the council", why:"Online posts happen anyway, for their own audience. They are existing material, used with care."},
      {t:"Newspaper reports about council decisions", why:"News reports are media documents produced without the researcher. They already exist."}]},
    {id:"t4u7-cp02", lesson:"t4u7-l2", level:1, q:"Haruto’s draft guide asks: “Don’t you think the new canteen is too expensive?” Which rewrite makes it a good interview question?", options:[
-     {t:"“Isn’t the new canteen too expensive?”", why:"This still pushes towards one answer. It’s a leading question in different words."},
+     {t:"“Isn’t the new canteen too expensive?”", why:"This still pushes toward one answer. It’s a leading question in different words."},
      {t:"“How expensive and unhealthy is the new canteen?”", why:"This asks two things at once (double-barrelled), and it assumes the food is unhealthy."},
      {t:"“Do you agree the canteen is overpriced, yes or no?”", why:"A yes/no question gets a one-word answer, and “overpriced” still leads."},
      {t:"“What do you make of the prices at the new canteen?”", ok:true, why:"It is open, neutral and asks one thing, so the participant can answer in their own words."}]},
@@ -695,7 +695,7 @@ ICA.addUnit({
      {t:"Nothing, as long as the participant’s name isn’t on the file", why:"Details like a rare job, a named place and a relative’s name can identify someone even without their name."},
      {t:"Delete the whole passage, because it contains personal details", why:"The content may be important. Remove or change the identifying details, not the data."},
      {t:"Use an ID and change the job, place and brother’s name", ok:true, why:"Transcripts use IDs or pseudonyms, and identifying details such as a rare job title, a named place or a sibling’s name are removed or changed."},
-     {t:"Replace only her brother’s name with a pseudonym", why:"“The only woman harbour pilot in Port Elan” identifies her on its own."}]},
+     {t:"Replace only her brother’s name with a pseudonym", why:"“The only woman harbor pilot in Port Elan” identifies her on its own."}]},
    {id:"t4u7-cp07", lesson:"t4u7-l3", level:2, q:"Jun is studying how a hospital handles complaints. In interviews, staff say every complaint gets an answer within a week. What could the hospital’s complaint logs add?", options:[
      {t:"Nothing: documents are less trustworthy than what people say", why:"Every source has a purpose and gaps. Documents aren’t worse; they’re different, and comparing them is useful."},
      {t:"A separate record, to compare with what staff say", ok:true, why:"Existing documents are nonreactive. Comparing them with interviews is triangulation; a difference would be a prompt to dig deeper."},
@@ -739,7 +739,7 @@ ICA.addUnit({
       "It is used everywhere: nurses studying why patients stop a medicine, teachers studying how pupils experience a new curriculum, designers watching how people really use a product, historians recording oral histories, and community groups listening to residents before planning a service."
      ],
      builder:[
-      "**Typical questions:** meanings (what does a diagnosis mean to someone?), experiences (what is it like to care for a parent?), processes (how do farmers decide what to plant?), context (why does a programme work in one place and not another?).",
+      "**Typical questions:** meanings (what does a diagnosis mean to someone?), experiences (what is it like to care for a parent?), processes (how do farmers decide what to plant?), context (why does a program work in one place and not another?).",
       "**Data:** interviews ({{research-interviews}}), focus groups ({{focus-groups}}), observation recorded in fieldnotes ({{fieldnotes}}), documents, images and online material.",
       "**Sampling:** participants are chosen on purpose for what they can tell you, not at random. Sample sizes are usually small, and judged by fit with the question rather than by statistical power.",
       "**Analysis:** transcripts and notes are coded ({{qualitative-coding}}) and interpreted into categories and themes ({{thematic-analysis}}).",
@@ -750,7 +750,7 @@ ICA.addUnit({
      pro:[
       "Qualitative research is not one method but a family resting on different philosophical positions. Much of it is **interpretivist** or **constructionist**: it treats social reality as made and understood through meaning, so the researcher’s interpretation is part of the knowledge produced. Other qualitative work is more realist, aiming to describe what is “out there” as accurately as possible. These positions shape what counts as good analysis, which is why, for example, coder-agreement statistics fit some approaches and not others.",
       "Named traditions include ethnography, grounded theory, phenomenology, narrative research, case study research, discourse and conversation analysis, and action research. Each has its own literature and procedures; a methods section should name the one used rather than just “qualitative”.",
-      "Generalisation works differently. Instead of statistical generalisation from a sample to a population, qualitative studies offer **transferability** (readers judge fit) or **analytic generalisation** (findings refine a theory that can be tested elsewhere).",
+      "Generalisation works differently. Instead of statistical generalization from a sample to a population, qualitative studies offer **transferability** (readers judge fit) or **analytic generalization** (findings refine a theory that can be tested elsewhere).",
       "Common weaknesses reviewers look for: a question that really needed numbers, vague sampling, analysis described only as “themes emerged”, quotes from one or two participants carrying the argument, and no account of the researcher’s position.",
       "Qualitative and quantitative work often answer different parts of one problem. Interviews can generate the right survey questions; a surprising survey result can be explained by follow-up interviews. Mixed methods designs plan these links in advance and report how the strands were combined."
      ]},
@@ -776,11 +776,11 @@ ICA.addUnit({
       "**Who to interview:** choose participants for what they can tell you (purposive sampling), and think about whose voices you might be missing. **Practice:** your first interviews will feel awkward; piloting with a willing friend or family member, who knows they can skip questions or stop, is the best way to improve. Listen back to your own recordings (with permission) and notice where you interrupted, led or missed a cue to probe."
      ],
      pro:[
-      "Interviews produce accounts shaped by the interaction. Some researchers treat them as reports of experience; others (for example in narrative or discourse approaches) analyse them as performances in which people construct identities for a particular listener. Your analysis should match your view of what interview data are.",
+      "Interviews produce accounts shaped by the interaction. Some researchers treat them as reports of experience; others (for example in narrative or discourse approaches) analyze them as performances in which people construct identities for a particular listener. Your analysis should match your view of what interview data are.",
       "**Interviewer effects:** age, gender, ethnicity, professional role and perceived status shape what people say. Matching interviewers to participants can help in some studies and hinder in others (participants may assume an insider already knows). Reflexive notes and reporting this in methods are standard.",
-      "**Power and vulnerability:** with participants in less powerful positions, emphasise voluntariness, avoid recruiting through people who control them (such as their managers), and plan for distress: pauses, the option to stop, and information about support.",
+      "**Power and vulnerability:** with participants in less powerful positions, emphasize voluntariness, avoid recruiting through people who control them (such as their managers), and plan for distress: pauses, the option to stop, and information about support.",
       "**Language and interpreters:** interpreted interviews add a third voice. Brief interpreters about the study and confidentiality, and consider how translation shapes meaning, especially for in vivo coding.",
-      "**Elite and expert interviews** (officials, professionals) raise different issues: access, time limits and people speaking on the record for an organisation.",
+      "**Elite and expert interviews** (officials, professionals) raise different issues: access, time limits and people speaking on the record for an organization.",
       "Repeat interviews with the same people (longitudinal qualitative research) show how experiences change, but raise questions about ongoing consent and the relationship between researcher and participant.",
       "Whatever the format, the interview is only as good as the preparation behind it and the notes written straight after it."
      ]},
@@ -793,7 +793,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "An [[interview-guide-term|interview guide]] is your plan for an interview. It lists the main questions you want to ask, in a rough order, with ideas for follow-ups. It guides the conversation but doesn’t control it: you can change the order and follow interesting threads.",
-      "Good questions are open (“Tell me about…”), ask one thing at a time, use everyday words and don’t push towards an answer.",
+      "Good questions are open (“Tell me about…”), ask one thing at a time, use everyday words and don’t push toward an answer.",
       "[[probe-question|Probes]] are follow-ups such as “Could you say more about that?” or “When was that?”. They are where most of the depth in an interview comes from.",
       "A good guide fits on one or two pages. Most researchers start with the questions they most need answered, then rewrite them in everyday language and add a few probes under each one."
      ],
@@ -836,13 +836,13 @@ ICA.addUnit({
       "**Prompts that work:** ask about shared experiences (“What do people around here usually say about…?”), use short activities such as ranking cards or reacting to an example, and invite disagreement. **After the session:** write notes straight away about mood, dynamics and anything the recording won’t show, and debrief with the note-taker while memories are fresh."
      ],
      pro:[
-      "Analysing focus groups well means analysing **interaction**, not just pooling individual quotes: who changes their view, which statements go unchallenged, how humour or silence works, and how a group reaches apparent consensus. Treating a focus group as six interviews at once wastes its main strength.",
-      "Group dynamics can also distort: dominant voices, pressure towards [[conformity|conformity]], and minority or extreme views going unsaid. Plan for this with ground rules, prompts that invite difference (“Some people say the opposite; what do you think?”) and, where needed, follow-up individual interviews.",
+      "Analysing focus groups well means analyzing **interaction**, not just pooling individual quotes: who changes their view, which statements go unchallenged, how humor or silence works, and how a group reaches apparent consensus. Treating a focus group as six interviews at once wastes its main strength.",
+      "Group dynamics can also distort: dominant voices, pressure toward [[conformity|conformity]], and minority or extreme views going unsaid. Plan for this with ground rules, prompts that invite difference (“Some people say the opposite; what do you think?”) and, where needed, follow-up individual interviews.",
       "Online focus groups (video or text-based, synchronous or over several days) widen participation but change interaction: turn-taking is stiffer on video; text-based groups produce ready-made transcripts but lose tone.",
       "Focus groups are widely used in applied research (health services, product design, policy consultation), where timelines are short. Be clear whether you are doing academic qualitative analysis or a quicker market-research style summary.",
       "Quoting focus groups needs care: label quotes by group and participant number, and show the exchange around a quote when the interaction is what matters.",
       "In some cultures and settings, mixing ages, genders or ranks in one group will silence some people; local advice helps you plan.",
-      "Reporting should say how many groups were run, how they were composed, who moderated, and how interaction was analysed."
+      "Reporting should say how many groups were run, how they were composed, who moderated, and how interaction was analyzed."
      ]},
     related:["research-interviews","interview-guide","qualitative-approach"],
     read:[{book:"hurst", where:"Chapter 12, “Focus Groups”"}],
@@ -860,8 +860,8 @@ ICA.addUnit({
      builder:[
       "**What to record:** date, times, place, who was present (by role, not name), the setting, actions and their order, talk (short exact quotes in quotation marks), changes over time, and what didn’t happen. Hurst suggests adding keywords so notes can be searched later.",
       "**Timing:** write full notes the same day if possible, or the next morning if you are exhausted. Hurst advises planning at least as much writing time as observing time; many researchers suggest double.",
-      "**Format:** two columns (description and reflection), or clearly labelled sections. Keep jottings as well as full notes.",
-      "**Judgement words** (lazy, rude, chaotic, friendly) belong in reflection, with the concrete behaviour that prompted them in the description.",
+      "**Format:** two columns (description and reflection), or clearly labeled sections. Keep jottings as well as full notes.",
+      "**Judgment words** (lazy, rude, chaotic, friendly) belong in reflection, with the concrete behavior that prompted them in the description.",
       "**From notes to analysis:** reflective notes grow into [[analytic-memo|analytic memos]]; full notes are coded like transcripts ({{qualitative-coding}}).",
       "The standard guide is Emerson, Fretz and Shaw, *Writing Ethnographic Fieldnotes* (2nd edition, 2011).",
       "**Example:** a jotting such as “7:40 queue 9 ppl, man w/ crate → front, ‘he’s family’” becomes a paragraph describing who was waiting, what the man did, what was said and how people reacted, with a separate reflective note asking whether family ties override queueing rules. **Storage:** keep notebooks and files secure, and replace names with roles or pseudonyms as you write up."
@@ -869,8 +869,8 @@ ICA.addUnit({
      pro:[
       "Fieldnotes are not neutral recordings. Every note selects, orders and frames. Emerson, Fretz and Shaw stress that writing notes is already analysis: choosing what to describe, from whose point of view, and how. Being aware of this is part of [[reflexivity|reflexivity]].",
       "The observer’s role shapes the notes. A full participant may only be able to write later from memory; a more detached observer can note on the spot. Gold’s (1958) classic four roles (complete participant, participant as observer, observer as participant, complete observer) are a useful vocabulary, though most fieldwork moves between them.",
-      "**[[thick-description|Thick description]]**, in Geertz’s sense, combines detailed description with the context and meanings that make actions intelligible to participants. It supports both interpretation and later readers’ judgements of transferability.",
-      "Ethical issues specific to fieldnotes: people may forget you are researching, so remind them periodically; notes may contain details that identify people, so store them securely and anonymise early; covert observation needs strong justification and ethics approval.",
+      "**[[thick-description|Thick description]]**, in Geertz’s sense, combines detailed description with the context and meanings that make actions intelligible to participants. It supports both interpretation and later readers’ judgments of transferability.",
+      "Ethical issues specific to fieldnotes: people may forget you are researching, so remind them periodically; notes may contain details that identify people, so store them securely and anonymize early; covert observation needs strong justification and ethics approval.",
       "Researchers increasingly take notes on phones or tablets. These are discreet and searchable, but check where the app stores and syncs your notes, because fieldnotes often contain personal details.",
       "Analytic memos written alongside notes record early interpretations, so you can later see how your thinking developed."
      ]},
@@ -883,7 +883,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "A [[transcript|transcript]] is a written version of a recorded interview or discussion. Most qualitative analysis works from transcripts.",
-      "**Verbatim** transcripts keep every word, including “um”, repeats and false starts. **[[intelligent-verbatim|Intelligent (clean) verbatim]]** keeps the full meaning and the person’s own words but drops fillers and false starts. Choose based on what you’ll analyse.",
+      "**Verbatim** transcripts keep every word, including “um”, repeats and false starts. **[[intelligent-verbatim|Intelligent (clean) verbatim]]** keeps the full meaning and the person’s own words but drops fillers and false starts. Choose based on what you’ll analyze.",
       "Typing transcripts by hand is slow. Automatic transcription tools are much faster, but they make mistakes, and many of them work by uploading the recording to a company’s servers. That matters, because a research recording is personal information that participants trusted you with.",
       "Labels such as P7 (participant 7) replace real names in transcripts, and identifying details such as a rare job title or a named village are removed or changed."
      ],
@@ -895,12 +895,12 @@ ICA.addUnit({
       "**Time:** typing a transcript by hand takes several hours for each hour of recording, so plan for it. Checking an automatic draft is faster but still needs a full listen. **Store safely:** keep recordings and transcripts in password-protected or encrypted locations, with consent forms kept separately, and delete recordings when your data plan says."
      ],
      pro:[
-      "Transcription is an interpretive act. Researchers distinguish **naturalised** transcription (keeping as many features of speech as possible) from **denaturalised** transcription (focusing on content). Conversation analysts use detailed systems such as Jefferson’s notation to mark pauses, overlaps and intonation, because those features are their data.",
+      "Transcription is an interpretive act. Researchers distinguish **naturalized** transcription (keeping as many features of speech as possible) from **denaturalized** transcription (focusing on content). Conversation analysts use detailed systems such as Jefferson’s notation to mark pauses, overlaps and intonation, because those features are their data.",
       "Translation adds a further layer: decide whether to code in the original language, translate before coding, or both, and report the choice. In vivo codes may not survive translation intact.",
       "Data protection: recordings capture voices (identifying) and often sensitive information (health, beliefs). Under laws such as the EU’s GDPR, sending them to a processor may require a data processing agreement and limits on transfers outside certain jurisdictions. Rules vary by country and institution, so follow your ethics approval and data management plan.",
-      "Doing at least some transcription yourself, or carefully correcting automatic drafts, is valued as part of familiarisation: many researchers find early analytic ideas while listening closely.",
+      "Doing at least some transcription yourself, or carefully correcting automatic drafts, is valued as part of familiarization: many researchers find early analytic ideas while listening closely.",
       "AI-based tools change quickly; check current terms before each project rather than relying on what was true last year.",
-      "When transcripts are shared for archiving or reuse, they are usually anonymised more heavily than for analysis, and participants must have agreed to that use.",
+      "When transcripts are shared for archiving or reuse, they are usually anonymized more heavily than for analysis, and participants must have agreed to that use.",
       "Whoever transcribes (a colleague, a paid transcriber or a service) should be covered by a confidentiality agreement and named in your ethics application."
      ]},
     related:["research-interviews","qualitative-coding","qda-software"],
@@ -918,7 +918,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Where codes come from:** [[deductive-coding|deductively]] from theory, earlier research or the research question, and [[inductive-coding|inductively]] from the data itself. Most projects use both.",
-      "**Cycles:** Saldaña distinguishes first cycle coding (initial passes that label the data) from second cycle coding (reorganising codes into fewer, broader categories, concepts or themes).",
+      "**Cycles:** Saldaña distinguishes first cycle coding (initial passes that label the data) from second cycle coding (reorganizing codes into fewer, broader categories, concepts or themes).",
       "**Codebook entries** usually give a name, a definition, when to use it, when not to use it, and an example. Hurst’s minimum is the code, a description of what it means and when to apply it, and an example. The codebook changes as you merge, split and rename codes; keep versions.",
       "**Memos:** write [[analytic-memo|analytic memos]] alongside coding to record ideas, links and questions.",
       "**Tools:** paper and highlighters, comments in a word processor, spreadsheets, or dedicated software ({{qda-software}}).",
@@ -930,7 +930,7 @@ ICA.addUnit({
       "Saldaña’s *The Coding Manual for Qualitative Researchers* (5th edition, 2025) profiles dozens of methods, grouped into families such as grammatical, elemental (including descriptive, in vivo and process coding), affective (including emotion and values coding), literary and language, exploratory and procedural methods, followed by second cycle methods (for example pattern, focused, axial and theoretical coding). Hurst recommends beginners start with descriptive, in vivo, process, values and emotion codes.",
       "Grounded theory uses its own sequence. Bhattacherjee’s textbook describes the Strauss and Corbin version: open, axial and selective coding, leading to a core category.",
       "**Coder agreement:** in coding-reliability approaches, several coders apply a fixed codebook and agreement is measured (for example with Cohen’s kappa). In reflexive approaches, coding is treated as interpretation and agreement statistics are seen as inappropriate. Team discussion of differences is valued in both.",
-      "Pitfalls: coding too coarsely (a few giant codes) or too finely (hundreds of near-duplicates); codes that only summarise the interview questions; and stopping at coding, mistaking a code list for an analysis.",
+      "Pitfalls: coding too coarsely (a few giant codes) or too finely (hundreds of near-duplicates); codes that only summarize the interview questions; and stopping at coding, mistaking a code list for an analysis.",
       "Good coding is transparent: someone reading your codebook, memos and a sample of coded extracts should be able to see how your categories were built from the data.",
       "Codes should stay close enough to the data that you can always return to the extracts behind them."
      ]},
@@ -949,10 +949,10 @@ ICA.addUnit({
      ],
      builder:[
       "**The 2006 paper:** Braun, V., & Clarke, V. (2006). Using thematic analysis in psychology. *Qualitative Research in Psychology*, 3(2), 77–101.",
-      "**Phase names, then and now** (2006 → 2022 book *Thematic Analysis: A Practical Guide*): familiarising yourself with your data → with the dataset; generating initial codes → coding; searching for themes → generating initial themes; reviewing themes → developing and reviewing themes; defining and naming themes → refining, defining and naming themes; producing the report → writing up.",
+      "**Phase names, then and now** (2006 → 2022 book *Thematic Analysis: A Practical Guide*): familiarizing yourself with your data → with the dataset; generating initial codes → coding; searching for themes → generating initial themes; reviewing themes → developing and reviewing themes; defining and naming themes → refining, defining and naming themes; producing the report → writing up.",
       "**Why the changes:** “initial” suggested a separate later round of coding, and “searching” implied themes already exist in the data. Braun and Clarke stress that themes are generated by the researcher, so “themes emerged” misdescribes the process.",
       "**Good practice:** name which version of TA you used; show how codes became themes; give each theme a clear definition and boundaries; use extracts from across participants; and write analytically, not just a string of quotes.",
-      "**Phase by phase:** familiarise (read, listen, note early ideas); code the whole dataset; cluster codes into candidate themes with central ideas; check them against coded extracts and the full dataset; write definitions and boundaries and choose meaningful names; then write up, where analysis continues. The phases are recursive: reviewing themes often sends you back to coding."
+      "**Phase by phase:** familiarize (read, listen, note early ideas); code the whole dataset; cluster codes into candidate themes with central ideas; check them against coded extracts and the full dataset; write definitions and boundaries and choose meaningful names; then write up, where analysis continues. The phases are recursive: reviewing themes often sends you back to coding."
      ],
      pro:[
       "Braun and Clarke now separate TA into broad families: **reflexive TA** (their own; researcher subjectivity as a resource, organic coding, themes as patterns of shared meaning, no coder-agreement measures), **codebook approaches** (such as template analysis and framework analysis, with structured codebooks often used in applied and team research) and **coding reliability TA** (fixed codebooks, multiple coders, agreement statistics, themes often closer to topic summaries).",
@@ -964,7 +964,7 @@ ICA.addUnit({
     related:["qualitative-coding","trustworthiness","qualitative-approach"],
     sources:[{t:"Braun & Clarke: Reflections on, and resources for, reflexive thematic analysis (UWE Bristol repository)", url:"https://uwe-repository.worktribe.com/OutputFile/9303933"},{t:"Braun & Clarke: To saturate or not to saturate? (UWE Bristol repository)", url:"https://uwe-repository.worktribe.com/output/4820803/to-saturate-or-not-to-saturate-questioning-data-saturation-as-a-useful-concept-for-thematic-analysis-and-sample-size-rationales"}], checked:"2026-11"},
 
-   {id:"trustworthiness", title:"Trustworthiness in qualitative research", aka:["rigour","credibility","transferability","dependability","confirmability"], tags:["research","quality","qualitative"],
+   {id:"trustworthiness", title:"Trustworthiness in qualitative research", aka:["rigor","credibility","transferability","dependability","confirmability"], tags:["research","quality","qualitative"],
     summary:"Lincoln and Guba’s four criteria for judging qualitative research, and the strategies used to meet them.",
     levels:{
      starter:[
@@ -1000,26 +1000,26 @@ ICA.addUnit({
     summary:"Programs that store qualitative data and help you code, retrieve and memo it: free options such as Taguette and QualCoder, paid ones such as NVivo, ATLAS.ti, MAXQDA and Dedoose.",
     levels:{
      starter:[
-      "[[caqdas|CAQDAS]] stands for computer-assisted qualitative data analysis software. These programs hold your transcripts, notes and other files, let you attach codes to passages, and pull together everything with the same code. They don’t analyse the data for you: the thinking is still yours.",
+      "[[caqdas|CAQDAS]] stands for computer-assisted qualitative data analysis software. These programs hold your transcripts, notes and other files, let you attach codes to passages, and pull together everything with the same code. They don’t analyze the data for you: the thinking is still yours.",
       "Free, open-source options include **Taguette** (for text documents) and **QualCoder** (text, images, audio and video). Long-established paid programs include **NVivo**, **ATLAS.ti** and **MAXQDA**; **Dedoose** is a paid web-based option.",
       "For small projects, paper and highlighters, a word processor’s comments or a spreadsheet can work perfectly well.",
-      "Most programs also let you write memos, link related ideas, and export coded extracts or reports. Many universities provide licences for at least one paid program.",
+      "Most programs also let you write memos, link related ideas, and export coded extracts or reports. Many universities provide licenses for at least one paid program.",
       "Choose by your data, your budget and what colleagues use."
      ],
      builder:[
       {table:[["Software","Cost","Notes"],["Taguette","Free, open source","Highlight and tag text; imports formats such as PDF, Word, ODT, RTF, HTML and plain text; desktop app and an online version; collaboration via a server"],["QualCoder","Free, open source","Desktop app; codes text, images, audio and video; recent versions add AI-assisted coding features"],["NVivo","Paid","Made by Lumivero"],["ATLAS.ti","Paid","Acquired by Lumivero in September 2024"],["MAXQDA","Paid","Made by VERBI"],["Dedoose","Paid subscription","Web-based; built with mixed methods in mind"]]},
-      "**Choosing:** what data types you have; team or solo; what your institution licenses and supports; budget after any student licence ends; and whether you can export your project (for example in the REFI-QDA exchange format that several programs support) if you switch tools later.",
+      "**Choosing:** what data types you have; team or solo; what your institution licenses and supports; budget after any student license ends; and whether you can export your project (for example in the REFI-QDA exchange format that several programs support) if you switch tools later.",
       "**Security:** desktop programs keep data on your computer; web-based tools store it on the provider’s servers. Check this against your ethics approval and data management plan.",
-      "**Learning curve:** all of these take time to learn, so practise on invented or practice data before importing real participant data. Look for official tutorials and user guides, and check whether your institution offers training. **Backups:** keep regular, secure backups of your project file; losing months of coding to a corrupted file is a real risk.",
+      "**Learning curve:** all of these take time to learn, so practice on invented or practice data before importing real participant data. Look for official tutorials and user guides, and check whether your institution offers training. **Backups:** keep regular, secure backups of your project file; losing months of coding to a corrupted file is a real risk.",
       "**Exporting:** check that you can export codebooks and coded extracts in common formats such as Word, spreadsheets or PDF."
      ],
      pro:[
       "Software shapes analysis in subtle ways: easy retrieval encourages lots of fine-grained codes, and code-frequency charts can tempt researchers to treat counts as findings. Use features in service of your approach, not the other way round.",
       "**AI features:** many current programs offer AI-assisted coding suggestions, summaries or chat with your data. These can speed up first passes but may miss irony, context and minority views, and some send data to external AI providers. Disclose AI use, check every suggestion against the data, and confirm it is allowed by your consent forms and ethics approval. Features and terms change frequently.",
       "Older textbooks (Bhattacherjee 2012 mentions ATLAS.ti 5, NVivo and QDA Miner) describe software versions that are long out of date; check current documentation.",
-      "Commercial ownership changes: NVivo and ATLAS.ti are both now owned by Lumivero (ATLAS.ti since 2024). Free, open-source tools reduce dependence on licences but depend on volunteer or small-team maintenance, so check that a tool is still being updated before starting a long project.",
+      "Commercial ownership changes: NVivo and ATLAS.ti are both now owned by Lumivero (ATLAS.ti since 2024). Free, open-source tools reduce dependence on licenses but depend on volunteer or small-team maintenance, so check that a tool is still being updated before starting a long project.",
       "Whatever tool you use, record which one and which version in your methods section, along with any AI-assisted features you used and how you checked their output.",
-      "Free tools can be a sensible default for students, small projects and anyone without an institutional licence."
+      "Free tools can be a sensible default for students, small projects and anyone without an institutional license."
      ]},
     related:["qualitative-coding","transcription","thematic-analysis"],
     read:[{book:"hurst", where:"Chapter 18, “Data Analysis and Coding” (on CAQDAS)"}],
@@ -1035,7 +1035,7 @@ ICA.addUnit({
    {id:"fieldnotes-term", term:"Fieldnotes", def:"The researcher’s written record of what they observed in a setting, usually written up in full soon after each visit.", codex:"fieldnotes"},
    {id:"jottings", term:"Jottings", def:"Brief notes taken during observation (key words, times, short quotes) to be expanded into full fieldnotes later.", codex:"fieldnotes"},
    {id:"analytic-memo", term:"Analytic memo", def:"A note a researcher writes to themself about what the data might mean: ideas, links between codes, questions and hunches.", codex:"qualitative-coding"},
-   {id:"thick-description", term:"Thick description", def:"Detailed description of what people do together with the context and meanings that make it understandable, a term popularised by Clifford Geertz.", codex:"trustworthiness"},
+   {id:"thick-description", term:"Thick description", def:"Detailed description of what people do together with the context and meanings that make it understandable, a term popularized by Clifford Geertz.", codex:"trustworthiness"},
    {id:"transcript", term:"Transcript", def:"A written version of a recorded interview or discussion, used as data for analysis.", codex:"transcription"},
    {id:"intelligent-verbatim", term:"Intelligent verbatim", def:"A transcription style (also called clean verbatim) that keeps the speaker’s words and meaning but leaves out fillers such as “um”, false starts and stutters.", codex:"transcription"},
    {id:"code-qual", term:"Code (qualitative)", def:"A short label attached to a piece of qualitative data to capture what it is about or what it means.", codex:"qualitative-coding"},
@@ -1044,7 +1044,7 @@ ICA.addUnit({
    {id:"deductive-coding", term:"Deductive coding", def:"Coding with codes decided in advance from theory, earlier research or the research question.", codex:"qualitative-coding"},
    {id:"codebook", term:"Codebook", def:"A document listing each code with its name, meaning, when to use it (and not), and an example, so coding stays consistent.", codex:"qualitative-coding"},
    {id:"caqdas", term:"CAQDAS", def:"Computer-assisted qualitative data analysis software: programs such as Taguette, QualCoder, NVivo, ATLAS.ti or MAXQDA that help store, code and retrieve qualitative data.", codex:"qda-software"},
-   {id:"theme-qual", term:"Theme (qualitative)", def:"A pattern of shared meaning across a dataset, organised around a central idea. Different from a topic summary that just lists what was said about a subject.", codex:"thematic-analysis"},
+   {id:"theme-qual", term:"Theme (qualitative)", def:"A pattern of shared meaning across a dataset, organized around a central idea. Different from a topic summary that just lists what was said about a subject.", codex:"thematic-analysis"},
    {id:"thematic-analysis-term", term:"Thematic analysis", def:"A method for developing and interpreting patterns of meaning (themes) across qualitative data, best known through Braun and Clarke’s six phases.", codex:"thematic-analysis"},
    {id:"data-saturation", term:"Saturation", def:"The point at which new data stop adding new codes, themes or insights. Widely used to decide when to stop collecting data, and widely debated.", codex:"thematic-analysis"},
    {id:"trustworthiness-term", term:"Trustworthiness", def:"How far a qualitative study can be trusted, often judged by Lincoln and Guba’s criteria: credibility, transferability, dependability and confirmability.", codex:"trustworthiness"},
@@ -1059,7 +1059,7 @@ ICA.addUnit({
    {id:"t4u7-q01", lesson:"t4u7-l1", level:1, q:"Which question is best suited to qualitative research?", options:[
      {t:"How do new parents decide whom to ask for advice?", ok:true, why:"A “how do they decide” question about a process and meanings suits qualitative methods."},
      {t:"What percentage of new parents use a parenting app?", why:"A percentage of a population needs a representative survey."},
-     {t:"Does a home-visit programme reduce hospital admissions?", why:"Measuring an effect needs an experimental or quasi-experimental design."},
+     {t:"Does a home-visit program reduce hospital admissions?", why:"Measuring an effect needs an experimental or quasi-experimental design."},
      {t:"How many hours a week do new parents sleep on average?", why:"An average across a group is a measurement question."}]},
    {id:"t4u7-q02", lesson:"t4u7-l1", level:2, q:"Mei interviewed 15 bus drivers about how they handle aggressive passengers. Which conclusion is appropriate?", options:[
      {t:"Drivers described several strategies, such as calming talk, and when they used each.", ok:true, why:"It reports what participants described, in depth, without claiming population percentages."},
@@ -1080,7 +1080,7 @@ ICA.addUnit({
      {t:"Mixed methods: a representative survey plus interviews", ok:true, why:"The survey shows how common loneliness is; interviews show experiences and causes as people describe them. Each method answers the part of the question it is good at."},
      {t:"Only interviews with 20 residents", why:"Interviews can’t estimate how common loneliness is across the city."},
      {t:"Only a survey with fixed answer options, sent to every older resident", why:"A survey measures prevalence but is weak at uncovering unexpected reasons and meanings."},
-     {t:"Only counting visits to community centres", why:"Visits are an indirect measure and say little about loneliness or what affects it."}]},
+     {t:"Only counting visits to community centers", why:"Visits are an indirect measure and say little about loneliness or what affects it."}]},
    {id:"t4u7-q06", lesson:"t4u7-l1", level:2, q:"Which of these is an example of photo elicitation?", options:[
      {t:"Young people photograph places where they feel welcome, then discuss the photos", ok:true, why:"Participants’ photos are used to prompt discussion: photo elicitation."},
      {t:"A researcher counts how often adverts show older people", why:"That is content analysis of media."},
@@ -1092,7 +1092,7 @@ ICA.addUnit({
      {t:"Quotes make research quantitative", why:"Quoting doesn’t change the type of research."},
      {t:"There is no risk, because the posts are already public and anyone can read them", why:"Being public doesn’t remove the risk of harm from drawing attention to identifiable people."}]},
    {id:"t4u7-q08", lesson:"t4u7-l1", level:1, q:"Which statement about qualitative research is accurate?", options:[
-     {t:"It uses systematic methods and has its own criteria for judging quality", ok:true, why:"Rigour in qualitative research comes from systematic, transparent procedures."},
+     {t:"It uses systematic methods and has its own criteria for judging quality", ok:true, why:"Rigor in qualitative research comes from systematic, transparent procedures."},
      {t:"It is just the researcher’s opinion", why:"Good qualitative research is evidence-based and documents how conclusions were reached."},
      {t:"It never involves any numbers at all", why:"Counts sometimes appear, though they aren’t the main point."},
      {t:"It needs at least 1,000 participants to be valid", why:"Qualitative samples are usually small and judged by fit with the question."}]},
@@ -1159,14 +1159,14 @@ ICA.addUnit({
      {t:"The teacher wrote three questions on the board and waited about ten seconds.", ok:true, why:"Observable actions, described concretely."},
      {t:"The teacher seemed bored.", why:"An interpretation of feelings: reflection."},
      {t:"I think the class is afraid of being wrong, so nobody wants to be the first to answer.", why:"A hunch: reflection."},
-     {t:"This was a badly run lesson.", why:"A judgement: reflection, with the behaviour behind it in the description."}]},
+     {t:"This was a badly run lesson.", why:"A judgment: reflection, with the behavior behind it in the description."}]},
    {id:"t4u7-q21", lesson:"t4u7-l3", level:2, q:"Tomás observed a market for three hours. When should he write his full fieldnotes?", options:[
      {t:"The same day if possible, or the next morning if he is exhausted", ok:true, why:"Memory fades fast; Hurst suggests the same day or the next morning."},
      {t:"At the end of the month, all at once", why:"Most detail would be lost by then."},
      {t:"Never: jottings are enough", why:"Jottings are reminders, not usable data on their own."},
      {t:"Only once he has formed a hypothesis to test against his observations", why:"Notes are written up after every visit, whatever stage the analysis is at."}]},
-   {id:"t4u7-q22", lesson:"t4u7-l3", level:1, q:"Who popularised the term “thick description” in a 1973 essay?", options:[
-     {t:"Clifford Geertz", ok:true, why:"Geertz popularised it, borrowing the term from the philosopher Gilbert Ryle."},
+   {id:"t4u7-q22", lesson:"t4u7-l3", level:1, q:"Who popularized the term “thick description” in a 1973 essay?", options:[
+     {t:"Clifford Geertz", ok:true, why:"Geertz popularized it, borrowing the term from the philosopher Gilbert Ryle."},
      {t:"Max Weber", why:"Weber wrote about verstehen (interpretive understanding) but not this term."},
      {t:"Virginia Braun", why:"Braun co-developed reflexive thematic analysis."},
      {t:"Johnny Saldaña", why:"Saldaña wrote the coding manual."}]},
@@ -1181,7 +1181,7 @@ ICA.addUnit({
      {t:"Is it true?", why:"Too simple: it may be accurate but selective. Start with purpose and audience."},
      {t:"Can I quote it without reading it?", why:"Documents need careful reading like any other data."}]},
    {id:"t4u7-q25", lesson:"t4u7-l3", level:3, q:"Lucía’s fieldnote says: “The shop assistant was rude to the customer.” What is the best improvement?", options:[
-     {t:"Describe what was said and done, and move “rude” to her reflections", ok:true, why:"For example: “She didn’t look up, said ‘Next,’ and turned away.” Concrete description lets readers judge; the interpretation stays, but labelled as hers."},
+     {t:"Describe what was said and done, and move “rude” to her reflections", ok:true, why:"For example: “She didn’t look up, said ‘Next,’ and turned away.” Concrete description lets readers judge; the interpretation stays, but labeled as hers."},
      {t:"Delete the line completely, since interpretation isn’t allowed in fieldnotes", why:"Interpretation is welcome, just kept separate from description."},
      {t:"Change “rude” to “very rude” for accuracy", why:"That adds emphasis, not evidence."},
      {t:"Ask the customer for their name to follow up", why:"That intrudes on a member of the public and doesn’t fix the note."}]},
@@ -1191,7 +1191,7 @@ ICA.addUnit({
      {t:"Because ethics committees ban reflection", why:"They don’t; this is about analytic clarity."},
      {t:"To make the notes twice as long", why:"Length isn’t the goal."}]},
    {id:"t4u7-q27", lesson:"t4u7-l3", level:2, q:"Hana wants to observe how people use a public library’s computers. Which plan is ethical for a practice exercise?", options:[
-     {t:"Note general patterns of use from a seat, without recording anyone’s details", ok:true, why:"That means no photographs, no reading screens and no names. Observing public behaviour in general terms, without intruding, is appropriate for practice."},
+     {t:"Note general patterns of use from a seat, without recording anyone’s details", ok:true, why:"That means no photographs, no reading screens and no names. Observing public behavior in general terms, without intruding, is appropriate for practice."},
      {t:"Photograph people’s screens to see what they search for", why:"That invades privacy and captures personal information."},
      {t:"Follow individual users around the library and note everything they do on screen", why:"Following someone singles them out and could alarm them."},
      {t:"Pretend to be library staff to ask users questions", why:"Deception isn’t acceptable, especially in practice work."}]},
@@ -1270,13 +1270,13 @@ ICA.addUnit({
      {t:"Interviews after the twelfth are always wasted", why:"Later interviews may deepen understanding even if they add few new codes."},
      {t:"Saturation is impossible", why:"Their study observed it under particular conditions."}]},
    {id:"t4u7-q42", lesson:"t4u7-l5", level:2, q:"Which is an example of investigator triangulation?", options:[
-     {t:"Two researchers analyse the same data and discuss their interpretations", ok:true, why:"Ideally they come from different backgrounds. Using more than one investigator is investigator triangulation (Denzin)."},
+     {t:"Two researchers analyze the same data and discuss their interpretations", ok:true, why:"Ideally they come from different backgrounds. Using more than one investigator is investigator triangulation (Denzin)."},
      {t:"Interviewing the same person twice", why:"That is repeated data collection, not a different investigator."},
      {t:"Using interviews and documents", why:"That is methods or data triangulation."},
      {t:"Sending your themes back to the participants to check whether they agree with them", why:"That is member checking."}]},
    {id:"t4u7-q43", lesson:"t4u7-l5", level:3, q:"Aoi, a master’s student in regional disaster and community studies, sends her themes to participants. Most agree, but one strongly disagrees with a theme. What does this mean?", options:[
      {t:"It is more data: she should reflect on it and re-check the theme", ok:true, why:"She should check the theme against the dataset and consider reporting the disagreement. Member checks inform analysis rather than acting as a vote."},
-     {t:"The theme is automatically wrong and must be removed from the report", why:"A theme summarises a pattern across people; one person may not see themselves in it."},
+     {t:"The theme is automatically wrong and must be removed from the report", why:"A theme summarizes a pattern across people; one person may not see themselves in it."},
      {t:"The participant must be removed from the study", why:"Removing inconvenient data is an integrity problem."},
      {t:"Member checking proves the other themes are true", why:"Agreement increases confidence but doesn’t prove truth."}]},
    {id:"t4u7-q44", lesson:"t4u7-l5", level:3, q:"A student writes: “Data collection stopped when saturation was reached.” What would make this stronger?", options:[

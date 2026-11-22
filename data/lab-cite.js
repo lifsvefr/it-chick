@@ -43,11 +43,11 @@ var APA_END = [{re:"^\\.$", msg:"No full stop after a DOI or URL at the end of a
 var DOI_END = [{re:"^[.,;]$", msg:"Just the link here, with nothing after it."}];
 var APA_BAD = [{re:"^Retrieved|^Accessed", f:"i", msg:"APA only adds a “Retrieved” date for pages that are designed to change over time, so leave it out here."}];
 function apaArticle(o){ return [apaAuthors(o.auth, o.ex, o.second), apaYear(o.year), apaArtTitle(o.title), apaJournal(o.journal), apaVol(o.vol), apaIss(o.iss), apaPages(o.pages), doiLink(o.doi)]; }
-var GARDEN_APA = apaArticle({auth:"Okafor, N., & Herrera, T.", ex:"Okafor, N.", second:"Herrera", year:2023, title:"Community gardens and neighbourhood trust: Evidence from three cities.", journal:"Urban Green Space Review", vol:12, iss:3, pages:"45–67", doi:"10.5555/ugsr.2023.0345"});
+var GARDEN_APA = apaArticle({auth:"Okafor, N., & Herrera, T.", ex:"Okafor, N.", second:"Herrera", year:2023, title:"Community gardens and neighborhood trust: Evidence from three cities.", journal:"Urban Green Space Review", vol:12, iss:3, pages:"45–67", doi:"10.5555/ugsr.2023.0345"});
 var SHADE_APA = apaArticle({auth:"Herrera, T., & Okafor, N.", ex:"Herrera, T.", second:"Okafor", year:2022, title:"Shade trees and walking: A survey of older residents.", journal:"Urban Green Space Review", vol:11, iss:1, pages:"5–19", doi:"10.5555/ugsr.2022.0102"});
 
 /* ----- MLA parts ----- */
-function mlaTitleQ(t, why, chicago){ return {label:"Title", t:"\"" + t + "\"", why:why || "Titles of articles and web pages go in quotation marks, in title case, with the full stop inside the closing quotation mark.", capMsg:(chicago ? "Chicago uses headline-style capitals" : "MLA uses title case") + ": capitalise the main words, but not short words like a, and, at, from, of, the and to (unless they come first or straight after a colon).", notItMsg:"Titles of articles and pages go in quotation marks, not italics.", bad:[{re:"\"\\.?$", msg:"Put the full stop inside the quotation marks: …Cities.” "}, {re:"^'", msg:"Use double quotation marks (“…”) around the title."}, {re:"^[^\"]", msg:"Put the title in quotation marks."}]}; }
+function mlaTitleQ(t, why, chicago){ return {label:"Title", t:"\"" + t + "\"", why:why || "Titles of articles and web pages go in quotation marks, in title case, with the full stop inside the closing quotation mark.", capMsg:(chicago ? "Chicago uses headline-style capitals" : "MLA uses title case") + ": capitalize the main words, but not short words like a, and, at, from, of, the and to (unless they come first or straight after a colon).", notItMsg:"Titles of articles and pages go in quotation marks, not italics.", bad:[{re:"\"\\.?$", msg:"Put the full stop inside the quotation marks: …Cities.” "}, {re:"^'", msg:"Use double quotation marks (“…”) around the title."}, {re:"^[^\"]", msg:"Put the title in quotation marks."}]}; }
 var GARDEN_MLA = [
   {label:"Authors", t:"Okafor, Ngozi, and Tomás Herrera.", why:"MLA: the first author surname first (Okafor, Ngozi), then “, and” and the second author in normal order.", bad:[{re:"&", msg:"MLA writes “and”, not “&”."},{re:"Herrera, Tom", msg:"Only the first author is reversed; the second is written first name first: Tomás Herrera."},{re:"N\\.", msg:"MLA uses full first names as they appear in the source, not initials."}]},
   mlaTitleQ("Community Gardens and Neighbourhood Trust: Evidence from Three Cities."),
@@ -65,19 +65,19 @@ window.CLAB = [
  task:"Write the APA reference-list entry for this article. Put italics between *asterisks* (or select the words and tap **I**).",
  source:GARDEN,
  fields:[{label:"Reference list entry", segs:GARDEN_APA, tail:APA_END, bad:APA_BAD}],
- also:[["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review, 12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"],
-       ["Okafor, N., &amp; Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. _Urban Green Space Review_, _12_(3), 45-67. https://doi.org/10.5555/ugsr.2023.0345".replace("&amp;", "&")],
-       ["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/UGSR.2023.0345"]],
+ also:[["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review, 12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"],
+       ["Okafor, N., &amp; Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. _Urban Green Space Review_, _12_(3), 45-67. https://doi.org/10.5555/ugsr.2023.0345".replace("&amp;", "&")],
+       ["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/UGSR.2023.0345"]],
  traps:[{a:["Okafor, N., & Herrera, T. (2023). Community Gardens and Neighbourhood Trust: Evidence from Three Cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"sentence case"},
-        {a:["Okafor, N., and Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"“&”"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. Urban Green Space Review, 12(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"italics"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12(3)*, 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"issue number isn’t in italics"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. doi:10.5555/ugsr.2023.0345"], expect:"links"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No full stop after a DOI"},
-        {a:["Ngozi Okafor, & Tomás Herrera. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"surname"},
-        {a:["Okafor, N., & Herrera, T. 2023. Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"round brackets"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), pp. 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"pp."},
-        {a:["Herrera, T., & Okafor, N. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Authors"}],
+        {a:["Okafor, N., and Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"“&”"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. Urban Green Space Review, 12(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"italics"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12(3)*, 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"issue number isn’t in italics"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. doi:10.5555/ugsr.2023.0345"], expect:"links"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No full stop after a DOI"},
+        {a:["Ngozi Okafor, & Tomás Herrera. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"surname"},
+        {a:["Okafor, N., & Herrera, T. 2023. Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"round brackets"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), pp. 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"pp."},
+        {a:["Herrera, T., & Okafor, N. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Authors"}],
  hints:["The pattern is: Authors. (Year). Title of article. *Journal*, *Volume*(Issue), pages. https://doi.org/…", "Sentence case for the article title: only “Community”, “Evidence” (after the colon) keep capitals. The journal name keeps all its capitals and goes in italics, and so does the volume number."],
  explain:"APA puts the **date near the front** because readers in fast-moving fields care how recent a study is. Only two things are in italics: the journal name and the volume number. Keep the authors in the order the article lists them: the order often shows who did the most work."},
 
@@ -116,11 +116,11 @@ window.CLAB = [
  hints:["Pattern: Chapter author. (Year). Chapter title. In Editor initials Surname & … (Eds.), *Book title* (pp. x–y). Publisher.", "Only the book title is in italics. The editors’ initials come before their surnames."],
  explain:"Cite the part you actually used. In an edited book, different chapters have different authors, so the chapter author goes first, and the editors are credited after “In”."},
 
-{id:"cl-apa-web", group:"apa", title:"Web page by an organisation", lesson:"t4u4-l2", style:"APA 7",
- task:"Cite this web page in APA. The organisation is both the author and the website, so its name appears only once.",
+{id:"cl-apa-web", group:"apa", title:"Web page by an organization", lesson:"t4u4-l2", style:"APA 7",
+ task:"Cite this web page in APA. The organization is both the author and the website, so its name appears only once.",
  source:WATER,
  fields:[{label:"Reference list entry", tail:APA_END, bad:APA_BAD, segs:[
-   {label:"Author", t:"Clean Rivers Network.", why:"When a group wrote the page, its full name is the author, followed by a full stop.", bad:[{re:"^\\(", msg:"Start with the author: the organisation’s name."}]},
+   {label:"Author", t:"Clean Rivers Network.", why:"When a group wrote the page, its full name is the author, followed by a full stop.", bad:[{re:"^\\(", msg:"Start with the author: the organization’s name."}]},
    {label:"Date", t:"(2024, May 14).", why:"APA dates for web pages: (year, Month day).", bad:[{re:"14 May|May 14, 2024|2024-05", msg:"APA writes the date as (2024, May 14): year first, then month and day."},{re:"^\\(2024\\)\\.?$", msg:"The page gives an exact date, so include it: (2024, May 14)."}]},
    {label:"Title", t:"*How to test your tap water at home*.", alt:["*How to test your tap water at home.*"], why:"A page on a website: title in italics and sentence case, then a full stop.", itMsg:"The page title goes in italics.", capMsg:"Sentence case for the page title: “How to test your tap water at home”.", bad:[{re:"^[\"']", msg:"APA puts the title of a web page in italics, not in quotation marks."}]},
    {label:"URL", t:"https://www.cleanriversnetwork.example/advice/test-tap-water", why:"End with the URL. Leave out the site name when it’s the same as the author.", bad:[{re:"Clean Rivers", msg:"Leave out the site name when it’s the same as the author."},{re:"Retrieved", msg:"APA only adds a “Retrieved” date for pages that are designed to change over time."}]}]}],
@@ -129,14 +129,14 @@ window.CLAB = [
         {a:["Clean Rivers Network. (14 May 2024). *How to test your tap water at home*. https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"(2024, May 14)"},
         {a:["Clean Rivers Network. (2024, May 14). How to test your tap water at home. https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"italics"},
         {a:["*How to test your tap water at home*. (2024, May 14). https://www.cleanriversnetwork.example/advice/test-tap-water"], expect:"Author"}],
- hints:["Pattern: Organisation. (Year, Month Day). *Title of page*. URL", "The organisation is also the site, so don’t repeat its name before the URL."],
+ hints:["Pattern: Organisation. (Year, Month Day). *Title of page*. URL", "The organization is also the site, so don’t repeat its name before the URL."],
  explain:"Group authors are spelled out in full. APA leaves out the site name when it would just repeat the author, and only adds a retrieval date for pages meant to change (like a live dashboard)."},
 
 {id:"cl-apa-report", group:"apa", title:"Report with a number", lesson:"t4u4-l2", style:"APA 7",
  task:"Cite this report in APA. The report number goes in brackets straight after the title.",
  source:HEAT,
  fields:[{label:"Reference list entry", tail:APA_END, bad:APA_BAD, segs:[
-   {label:"Author", t:"Regional Health Observatory.", why:"The organisation is the author."},
+   {label:"Author", t:"Regional Health Observatory.", why:"The organization is the author."},
    apaYear(2022),
    {label:"Title", t:"*Heat and health in cities: A 2022 update*", why:"Report titles are in italics and sentence case.", itMsg:"The report title goes in italics.", capMsg:"Sentence case for the title: “Heat and health in cities: A 2022 update”."},
    {label:"Report number", t:"(Report No. 7).", why:"The report number in round brackets after the title, not in italics, then a full stop.", notItMsg:"The report number isn’t in italics.", bad:[{re:"^\\.$", msg:"No full stop between the title and the report number: …update* (Report No. 7)."},{re:"number|Nr", f:"i", msg:"APA shortens it: (Report No. 7)."}]},
@@ -146,7 +146,7 @@ window.CLAB = [
         {a:["Regional Health Observatory. (2022). *Heat and health in cities: A 2022 update* (Report No. 7). Regional Health Observatory. https://www.rho.example/reports/heat-2022"], expect:"same as the author"},
         {a:["Regional Health Observatory. (2022). *Heat and Health in Cities: A 2022 Update* (Report No. 7). https://www.rho.example/reports/heat-2022"], expect:"Sentence case"}],
  hints:["Pattern: Organisation. (Year). *Title* (Report No. x). URL"],
- explain:"Reports from governments, charities and agencies are **grey literature**: not peer-reviewed journal articles, but often essential. The report number helps readers find the exact document among many similar ones."},
+ explain:"Reports from governments, charities and agencies are **gray literature**: not peer-reviewed journal articles, but often essential. The report number helps readers find the exact document among many similar ones."},
 
 {id:"cl-apa-intext", group:"apa", title:"In-text citations", lesson:"t4u4-l2", style:"APA 7",
  task:"You quote a sentence from **page 52** of the Okafor and Herrera (2023) article. Write (1) a parenthetical citation to put after the quotation, and (2) a narrative citation for a later sentence that names the authors as part of your sentence (paraphrasing, so no page number).",
@@ -228,7 +228,7 @@ window.CLAB = [
  also:[["Okafor, Ngozi, and Tomás Herrera. “Community Gardens and Neighbourhood Trust: Evidence from Three Cities.” *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."]],
  traps:[{a:["Okafor, Ngozi, and Tomás Herrera. Community Gardens and Neighbourhood Trust: Evidence from Three Cities. *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"quotation marks"},
         {a:["Okafor, Ngozi, and Herrera, Tomás. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"Only the first author"},
-        {a:["Okafor, Ngozi, and Tomás Herrera. \"Community gardens and neighbourhood trust: Evidence from three cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"title case"},
+        {a:["Okafor, Ngozi, and Tomás Herrera. \"Community gardens and neighborhood trust: Evidence from three cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"title case"},
         {a:["Okafor, Ngozi, and Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities\". *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"inside the quotation marks"},
         {a:["Okafor, Ngozi, & Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, vol. 12, no. 3, 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"“and”"},
         {a:["Okafor, Ngozi, and Tomás Herrera. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review*, 12(3), 2023, pp. 45–67, https://doi.org/10.5555/ugsr.2023.0345."], expect:"vol. 12"},
@@ -253,11 +253,11 @@ window.CLAB = [
  hints:["Pattern: Surname, First name. *Title in Title Case*. 2nd ed., Publisher, Year."],
  explain:"In MLA the year comes near the end. In literature and the humanities, who wrote what usually matters more than how recent it is, so the author and title lead."},
 
-{id:"cl-mla-web", group:"mla", title:"Web page by an organisation", lesson:"t4u4-l3", style:"MLA 9",
- task:"Write the MLA works-cited entry for this page. When an organisation is both the author and the publisher, MLA starts with the title instead of repeating the name. Here the website’s name is the organisation, so it appears once, as the container.",
+{id:"cl-mla-web", group:"mla", title:"Web page by an organization", lesson:"t4u4-l3", style:"MLA 9",
+ task:"Write the MLA works-cited entry for this page. When an organization is both the author and the publisher, MLA starts with the title instead of repeating the name. Here the website’s name is the organization, so it appears once, as the container.",
  source:WATER,
  fields:[{label:"Works-cited entry", segs:[
-   mlaTitleQ("How to Test Your Tap Water at Home.", "The page title in quotation marks and title case, full stop inside the closing mark. (No author: the organisation is also the publisher.)"),
+   mlaTitleQ("How to Test Your Tap Water at Home.", "The page title in quotation marks and title case, full stop inside the closing mark. (No author: the organization is also the publisher.)"),
    {label:"Website", t:"*Clean Rivers Network*,", why:"The website’s name in italics (it’s the container), then a comma.", itMsg:"The website’s name goes in italics."},
    {label:"Date", t:"14 May 2024,", why:"MLA dates are day month year, then a comma.", bad:[{re:"May 14", msg:"MLA writes dates day first: 14 May 2024."},{re:"\\(", msg:"No brackets around the date in MLA."}]},
    {label:"URL", t:"www.cleanriversnetwork.example/advice/test-tap-water.", alt:["https://www.cleanriversnetwork.example/advice/test-tap-water."], why:"The URL (MLA lets you leave out https://), then a full stop."},
@@ -265,7 +265,7 @@ window.CLAB = [
      {re:"January|February|March|April|August|September|October|November|December", msg:"In a works-cited list, MLA shortens months longer than four letters: Jan., Feb., Mar., Apr., Aug., Sept., Oct., Nov., Dec. (May, June and July stay as they are)."},
      {re:"^Accessed [A-Z]", msg:"MLA writes dates day first: Accessed 2 June 2026."},
      {re:"^(?!Accessed)", msg:"Start the access date with “Accessed”: Accessed 2 June 2026."}]}],
-   bad:[{re:"^Clean Rivers Network\\.", msg:"When the organisation is also the publisher, MLA starts with the title, not the organisation."}]}],
+   bad:[{re:"^Clean Rivers Network\\.", msg:"When the organization is also the publisher, MLA starts with the title, not the organization."}]}],
  also:[["“How to Test Your Tap Water at Home.” *Clean Rivers Network*, 14 May 2024, https://www.cleanriversnetwork.example/advice/test-tap-water."],
        ["\"How to Test Your Tap Water at Home.\" *Clean Rivers Network*, 14 May 2024, www.cleanriversnetwork.example/advice/test-tap-water. Accessed 2 June 2026."]],
  traps:[{a:["Clean Rivers Network. \"How to Test Your Tap Water at Home.\" *Clean Rivers Network*, 14 May 2024, www.cleanriversnetwork.example/advice/test-tap-water."], expect:"starts with the title"},
@@ -316,7 +316,7 @@ window.CLAB = [
  source:SALT,
  fields:[{label:"Bibliography entry", segs:[
    {label:"Author", t:"Raman, Priya.", why:"Surname, first name, full stop.", bad:[{re:", P\\.", msg:"Chicago uses the author’s name as it appears on the book: Raman, Priya."}]},
-   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"The title in italics and headline-style capitals, then a full stop.", itMsg:"Book titles go in italics.", capMsg:"Chicago capitalises titles headline-style: Salt and Stone: A Short History of Coastal Trade."},
+   {label:"Title", t:"*Salt and Stone: A Short History of Coastal Trade*.", alt:["*Salt and Stone: A Short History of Coastal Trade.*"], why:"The title in italics and headline-style capitals, then a full stop.", itMsg:"Book titles go in italics.", capMsg:"Chicago capitalizes titles headline-style: Salt and Stone: A Short History of Coastal Trade."},
    {label:"Edition", t:"2nd ed.", why:"The edition, then a full stop: 2nd ed.", bad:[{re:"\\(", msg:"No brackets around the edition in a Chicago bibliography."},{re:"ed\\.,", msg:"In Chicago the edition ends with a full stop (2nd ed.), not a comma."}]},
    {label:"Publisher", t:"Harbour Light Press,", why:"The publisher, then a comma.", bad:[{re:"^,$", msg:"After the edition, Chicago uses a full stop (2nd ed.), not a comma."},{re:":", msg:"Chicago’s 18th edition no longer requires the publisher’s city, and the card doesn’t give one, so leave it out."}]},
    {label:"Year", t:"2021.", why:"The year, then a full stop."}]}],
@@ -332,7 +332,7 @@ window.CLAB = [
  source:GARDEN,
  fields:[{label:"Footnote", bad:[{re:"^\\d+\\.$", msg:"Leave out the note number: your word processor adds it."}], segs:[
    {label:"Authors", t:"Ngozi Okafor and Tomás Herrera,", why:"In a note, names are in normal order (first name first), joined by “and”, then a comma.", bad:[{re:"^Okafor,", msg:"Notes give names first name first (Ngozi Okafor); only the bibliography reverses the first author."},{re:"&", msg:"Chicago writes “and”."}]},
-   {label:"Title", t:"\"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\"", why:"The article title in quotation marks and headline-style capitals, with the comma inside the closing mark.", capMsg:"Chicago capitalises titles headline-style.", bad:[{re:"\"\\s*,$|\",", msg:"Put the comma inside the quotation marks: …Cities,”"},{re:"\\.\"$", msg:"In a note, the title ends with a comma (inside the quotation marks), not a full stop."}]},
+   {label:"Title", t:"\"Community Gardens and Neighbourhood Trust: Evidence from Three Cities,\"", why:"The article title in quotation marks and headline-style capitals, with the comma inside the closing mark.", capMsg:"Chicago capitalizes titles headline-style.", bad:[{re:"\"\\s*,$|\",", msg:"Put the comma inside the quotation marks: …Cities,”"},{re:"\\.\"$", msg:"In a note, the title ends with a comma (inside the quotation marks), not a full stop."}]},
    {label:"Journal", t:"*Urban Green Space Review*", why:"The journal in italics, with no comma after it.", itMsg:"The journal name goes in italics.", bad:[{re:",$", msg:"No comma between the journal and the volume number in Chicago."}]},
    {label:"Volume", t:"12,", why:"The volume number, then a comma.", bad:[{re:"^,$", msg:"No comma between the journal and the volume number in Chicago."},{re:"vol", f:"i", msg:"Chicago doesn’t write “vol.” here: just the number after the journal."}]},
    {label:"Issue", t:"no. 3", why:"“no. 3”.", bad:[{re:"^\\(", msg:"In a note, write the issue as “no. 3”, after the volume and a comma: 12, no. 3."}]},
@@ -361,7 +361,7 @@ window.CLAB = [
    doiLink("10.5555/ugsr.2023.0345", ".")]}],
  also:[["Okafor, Ngozi, and Tomás Herrera. 2023. “Community Gardens and Neighbourhood Trust: Evidence from Three Cities.” *Urban Green Space Review* 12 (3): 45–67. https://doi.org/10.5555/ugsr.2023.0345."]],
  traps:[{a:["Okafor, Ngozi, and Tomás Herrera. (2023). \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review* 12 (3): 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"No brackets"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Authors"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Authors"},
         {a:["Okafor, Ngozi, and Tomás Herrera. 2023. \"Community Gardens and Neighbourhood Trust: Evidence from Three Cities.\" *Urban Green Space Review* 12, no. 3: 45–67. https://doi.org/10.5555/ugsr.2023.0345."], expect:"Issue"}],
  hints:["Pattern: Surname, First, and First Surname. Year. “Title.” *Journal* vol (issue): pages. https://doi.org/…."],
  explain:"Chicago author-date and APA both put the year after the authors, but Chicago keeps full first names, headline-style titles in quotation marks, and a different volume–issue pattern."},
@@ -407,10 +407,10 @@ window.CLAB = [
  task:"A free citation generator produced this APA reference from the article’s web page. It looks official, but it’s wrong in several places. Correct it using the card.",
  source:GARDEN,
  fields:[{label:"Corrected APA reference", start:"OKAFOR, N., & HERRERA, T. (2023). Community Gardens And Neighbourhood Trust: Evidence From Three Cities. Urban Green Space Review, 12, 45-67.", segs:GARDEN_APA, tail:APA_END, bad:APA_BAD}],
- also:[["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"]],
+ also:[["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67. https://doi.org/10.5555/ugsr.2023.0345"]],
  traps:[{a:["OKAFOR, N., & HERRERA, T. (2023). Community Gardens And Neighbourhood Trust: Evidence From Three Cities. Urban Green Space Review, 12, 45-67."], expect:"capital"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*, 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Issue"},
-        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighbourhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67."], expect:"DOI"}],
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*, 45–67. https://doi.org/10.5555/ugsr.2023.0345"], expect:"Issue"},
+        {a:["Okafor, N., & Herrera, T. (2023). Community gardens and neighborhood trust: Evidence from three cities. *Urban Green Space Review*, *12*(3), 45–67."], expect:"DOI"}],
  hints:["Check each part against the card: names, capitals, italics, the missing issue number and the missing DOI.", "Generators often copy the web page’s capitals and drop details they couldn’t find."],
  explain:"Citation generators and reference managers save hours, but they copy whatever the web page’s data says: capitals, missing issues and missing DOIs included. Always compare the output with the source."}
 ];

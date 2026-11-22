@@ -318,7 +318,7 @@ DL.explainR = function(err, ctx){
   }
   if (/there is no package called|not set up to install|install\.packages/.test(m)) return "The Data Lab has base R only, and packages can’t be installed here. Everything in these challenges can be done with base R, so leave out library() and install.packages().";
   if (/object of type 'closure' is not subsettable/.test(m)) return "You used $ or [ ] on a function rather than on data. R has built-in functions called df, data, c, t and mean, so a data frame name that’s misspelt or not created yet can land on one of them. Check the name: here the data frame is called " + df + ".";
-  if (/non-numeric argument to (binary operator|mathematical function)/.test(m)) return "You’re doing maths with text. Check the column type with str(): numbers stored as text can be converted with as.numeric().";
+  if (/non-numeric argument to (binary operator|mathematical function)/.test(m)) return "You’re doing math with text. Check the column type with str(): numbers stored as text can be converted with as.numeric().";
   if (/invalid 'type' \(character\) of argument/.test(m)) return "sum() and similar functions need numbers, but got text. Check the column type with str(" + df + "); numbers stored as text can be converted with as.numeric().";
   if (/'[xy]' must be numeric/.test(m) && !ctx.data) return "This function needs a vector of numbers, but got something else: text, or perhaps a function’s name (mean is a function; check you used the name of your own object).";
   if (/'[xy]' must be numeric/.test(m)) return "This function needs numbers: one numeric column, like " + df + "$hours, not the whole data frame or a text column. A misspelt column name (like " + df + "$Hours) gives NULL, which isn’t numeric either.";

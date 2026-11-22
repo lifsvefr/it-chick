@@ -34,7 +34,7 @@ ICA.addUnit({
       {lead:"You already know the 80 N5 kanji from Unit 4. Common JLPT N4 lists add about 170 more. The list used in this course and its Kanji Lab has exactly 167, so by the end of this unit you will have met about 250 kanji."},
       "What does N4 reading look like? The JLPT describes it like this: at N4 you can “read and understand passages on familiar daily topics written in basic vocabulary and kanji”. That means notices, short emails, simple stories and instructions, which is exactly where this unit ends, in Lesson 5.",
       "The new kanji are friendly. According to the kanji dictionary KANJIDIC, 150 of the 167 are taught in the first three years of Japanese primary school. Many of them write words you can already say: [私]{わたし} (I), [家]{いえ} (house), [駅]{えき} (station), [魚]{さかな} (fish), [映]{えい}[画]{が} (film). Learning the kanji for a word you already know is the easiest kind of kanji study.",
-      {table:[["Lesson","Groups","Kanji"],["1","People and family; the body and health","22"],["2","Seasons and time; nature, colours and animals; the town and work","51"],["3","Actions: thinking and studying, moving, daily life","51"],["4","Describing words; things, food and ideas","43"]]},
+      {table:[["Lesson","Groups","Kanji"],["1","People and family; the body and health","22"],["2","Seasons and time; nature, colors and animals; the town and work","51"],["3","Actions: thinking and studying, moving, daily life","51"],["4","Describing words; things, food and ideas","43"]]},
       "Each group comes as a table: the kanji, its core meaning, its main readings and two or three common words. [[on-yomi|On readings]] are in katakana and [[kun-yomi|kun readings]] in hiragana, with the [[okurigana]] in brackets: はや(い) means the word is [早]{はや}い. ★ marks a special reading ([[jukujikun]]).",
       {tip:"[[furigana|Furigana]] in this unit: N4 kanji, and anything harder, always have furigana. N5 kanji have furigana the first time they appear in a lesson, and none after that, because you know them already."},
       {warn:"The JLPT has published no official kanji list since 2010, so every “N4 list” is an estimate, and lists differ by a few kanji ({{jlpt-overview}}). If another book puts one of these kanji at N3, don’t worry: you will need it either way."}
@@ -54,7 +54,7 @@ ICA.addUnit({
       {key:"A sound part gives you a good first guess at an on reading. Check the guess in a real word, and learn the word."}
     ]},
     {h:"Look-alikes to keep apart", body:[
-      "Similar kanji cause more mistakes than difficult ones. These N4 pairs and trios are worth practising side by side.",
+      "Similar kanji cause more mistakes than difficult ones. These N4 pairs and trios are worth practicing side by side.",
       {table:[["Kanji","How to tell them apart"],["待 · 持 · 特","彳 (going) in 待 wait; 扌 (hand) in 持 hold; 牛 (cow) in 特 special"],["体 · 休","Both have 亻. 体 (body) has 本 on the right, with a short line near the bottom; 休 (rest, N5) has 木"],["牛 · 午","In 牛 (cow) the vertical stroke sticks out at the top; in 午 (noon, N5) it doesn’t"],["犬 · 大","犬 (dog) has a dot at the top right; 大 (big) has none"],["夕 · 多","多 (many) is two 夕 (evening) stacked"],["目 · 自","自 (self) is 目 (eye) with a short stroke on top"],["字 · 学","字 (character) has the roof 宀 over 子; 学 (study, N5) has three short strokes and a cover over 子"],["問 · 間 · 開 · 聞","門 with 口 (問 question), 日 (間 interval), 开 (開 open) or 耳 (聞 hear)"],["貸 · 借","貸 (lend) has 貝, shell money, at the bottom; 借 (borrow) has 亻 on the left"]]},
       {tip:"For each pair, write both kanji three times, side by side, and say a word for each: まつ for 待, もつ for 持. Your hand learns the difference faster than your eyes."}
     ]},
@@ -72,7 +72,7 @@ ICA.addUnit({
       "Read this short text about a family. It uses many of the kanji in this lesson.",
       {ex:"[私]{わたし}の[家]{か}[族]{ぞく}は[五]{ご}人です。父と[母]{はは}と[兄]{あに}と[妹]{いもうと}がいます。[兄]{あに}は[医]{い}[者]{しゃ}で、[駅]{えき}の[近]{ちか}くの[病]{びょう}[院]{いん}で[働]{はたら}いています。[妹]{いもうと}は[高]{こう}[校]{こう}[生]{せい}です。[体]{からだ}が[強]{つよ}くて、[毎]{まい}[朝]{あさ}[走]{はし}っています。[私]{わたし}は[会]{かい}[社]{しゃ}[員]{いん}です。","label":"Rui’s family"},
       {list:["**How many people are in Rui’s family?** 五人: five (his father, mother, older brother, younger sister and Rui).","**What does his brother do?** He is a [医]{い}[者]{しゃ} and works at a hospital near the station.","**Who runs every morning?** His younger sister, the 高校生 (high-school student): [体]{からだ}が[強]{つよ}い means she is strong and healthy."]},
-      {lab:"kl-n4", t:"Practise: start the N4 kanji deck (10 new kanji a day is plenty)"}
+      {lab:"kl-n4", t:"Practice: start the N4 kanji deck (10 new kanji a day is plenty)"}
     ]}
    ],
    try:[
@@ -81,7 +81,7 @@ ICA.addUnit({
       ["亻 (にんべん)","person","亻 is the narrow form of 人. It appears in 体 (body), 住 (live) and 使 (use)."],
       ["辶 (しんにょう)","moving, roads","辶 runs along the bottom left of 近 (near), 通 (pass), 送 (send) and 運 (carry)."],
       ["宀 (うかんむり)","roof, house","宀 is a roof on top: 家 (house), 室 (room), 安 (calm, cheap)."],
-      ["糸 (いとへん)","thread","糸 is a thread or fibre: 紙 (paper) and 終 (end)."],
+      ["糸 (いとへん)","thread","糸 is a thread or fiber: 紙 (paper) and 終 (end)."],
       ["貝","shell, money","Shells were once used as money, so 貝 appears in money kanji: 買 (buy), 貸 (lend)."]
     ]},
     {id:"e3u8-l1-x2", type:"sort", q:"Sort these N4 kanji by the meaning part they share.", buckets:["亻 person","氵 water","辶 moving"], items:[
@@ -164,7 +164,7 @@ ICA.addUnit({
      reveal:"**けさ.** [今朝]{けさ} has a special reading for the whole word, like [今日]{きょう} and [今年]{ことし}, which you met at N5. Time words are full of sets and a few specials like this, so this lesson teaches them together with the kanji for nature and for places in town."},
    goals:[
      "Read the N4 kanji for seasons, times of day, the calendar and eras",
-     "Read the N4 kanji for nature, colours and animals",
+     "Read the N4 kanji for nature, colors and animals",
      "Read the N4 kanji for places and buildings, and use endings such as 〜屋, 〜館 and 〜院 to guess what a place is",
      "Read a short invitation that uses these kanji"
    ],
@@ -188,14 +188,14 @@ ICA.addUnit({
       "田 is very common in family names, such as [田]{た}中 (たなか) and [山]{やま}[田]{だ} (やまだ). In ordinary words it means a rice field: [田]{た}んぼ, and the special reading ★[田舎]{いなか} (the countryside).",
       {tip:"お[風]{ふ}[呂]{ろ} (bath) uses 風 (wind) for its sound ふ, together with a kanji above N3. Most people simply learn the whole word."}
     ]},
-    {h:"Colours and animals", body:[
-      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["赤", "red", "On セキ · Kun あか, あか(い)", "[赤]{あか}い red · [赤]{あか}ちゃん baby · [赤]{せき}[道]{どう} the equator"], ["青", "blue; green", "On セイ · Kun あお, あお(い)", "[青]{あお}い blue · [青]{あお}[信]{しん}[号]{ごう} green (traffic) light · [青]{せい}年 young man"], ["黒", "black", "On コク · Kun くろ, くろ(い)", "[黒]{くろ}い black · [白]{しろ}[黒]{くろ} black and white · [黒]{こく}[板]{ばん} blackboard"], ["色", "colour", "On ショク, シキ · Kun いろ", "[色]{いろ} colour · [茶]{ちゃ}[色]{いろ} brown · ★[景色]{けしき} scenery, view"], ["犬", "dog", "On ケン · Kun いぬ", "[犬]{いぬ} dog · [子]{こ}[犬]{いぬ} puppy · [愛]{あい}[犬]{けん} pet dog"], ["牛", "cow, cattle", "On ギュウ · Kun うし", "[牛]{うし} cow · [牛]{ぎゅう}[肉]{にく} beef · [牛]{ぎゅう}[乳]{にゅう} milk"], ["鳥", "bird", "On チョウ · Kun とり", "[鳥]{とり} bird · [小]{こ}[鳥]{とり} small bird · [焼]{や}き[鳥]{とり} grilled chicken skewers"], ["魚", "fish", "On ギョ · Kun さかな, うお", "[魚]{さかな} fish · [金]{きん}[魚]{ぎょ} goldfish · [魚]{さかな}[屋]{や} fish shop"]]},
-      "The colour kanji are nouns, and 赤, 青 and 黒 add い to become い-adjectives, like 白 (white) at N5: [赤]{あか}い[花]{はな} (a red flower), [黒]{くろ}い[犬]{いぬ} (a black dog). [茶]{ちゃ}[色]{いろ} (brown) usually joins a noun with の: [茶]{ちゃ}[色]{いろ}のかばん.",
+    {h:"Colors and animals", body:[
+      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["赤", "red", "On セキ · Kun あか, あか(い)", "[赤]{あか}い red · [赤]{あか}ちゃん baby · [赤]{せき}[道]{どう} the equator"], ["青", "blue; green", "On セイ · Kun あお, あお(い)", "[青]{あお}い blue · [青]{あお}[信]{しん}[号]{ごう} green (traffic) light · [青]{せい}年 young man"], ["黒", "black", "On コク · Kun くろ, くろ(い)", "[黒]{くろ}い black · [白]{しろ}[黒]{くろ} black and white · [黒]{こく}[板]{ばん} blackboard"], ["色", "colour", "On ショク, シキ · Kun いろ", "[色]{いろ} color · [茶]{ちゃ}[色]{いろ} brown · ★[景色]{けしき} scenery, view"], ["犬", "dog", "On ケン · Kun いぬ", "[犬]{いぬ} dog · [子]{こ}[犬]{いぬ} puppy · [愛]{あい}[犬]{けん} pet dog"], ["牛", "cow, cattle", "On ギュウ · Kun うし", "[牛]{うし} cow · [牛]{ぎゅう}[肉]{にく} beef · [牛]{ぎゅう}[乳]{にゅう} milk"], ["鳥", "bird", "On チョウ · Kun とり", "[鳥]{とり} bird · [小]{こ}[鳥]{とり} small bird · [焼]{や}き[鳥]{とり} grilled chicken skewers"], ["魚", "fish", "On ギョ · Kun さかな, うお", "[魚]{さかな} fish · [金]{きん}[魚]{ぎょ} goldfish · [魚]{さかな}[屋]{や} fish shop"]]},
+      "The color kanji are nouns, and 赤, 青 and 黒 add い to become い-adjectives, like 白 (white) at N5: [赤]{あか}い[花]{はな} (a red flower), [黒]{くろ}い[犬]{いぬ} (a black dog). [茶]{ちゃ}[色]{いろ} (brown) usually joins a noun with の: [茶]{ちゃ}[色]{いろ}のかばん.",
       "青 covers blue and also some greens. The “go” light at a crossing is called [青]{あお}[信]{しん}[号]{ごう}, and leafy green vegetables are [青]{あお}[菜]{な}. When you need a clear green, Japanese has the word [緑]{みどり}.",
       "Animal kanji often show up inside food words: 牛 in [牛]{ぎゅう}[肉]{にく} (beef) and [牛]{ぎゅう}[乳]{にゅう} (milk), 鳥 in [焼]{や}き[鳥]{とり}. Two-kanji words like [牛]{ぎゅう}[肉]{にく} usually take the on reading (ギュウ), while the animal on its own takes the kun reading: [牛]{うし} (a cow). Words with kana or a kun partner keep the kun reading, as in [焼]{や}き[鳥]{とり} and [子]{こ}[犬]{いぬ}."
     ]},
     {h:"Places in town", body:[
-      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["町", "town", "On チョウ · Kun まち", "[町]{まち} town · [下]{した}[町]{まち} old downtown area · [町]{ちょう}[長]{ちょう} town mayor"], ["京", "capital", "On キョウ, ケイ", "[東]{とう}[京]{きょう} Tokyo · [上]{じょう}[京]{きょう} moving to Tokyo"], ["駅", "station", "On エキ", "[駅]{えき} station · [駅]{えき}[前]{まえ} in front of the station · [駅]{えき}[員]{いん} station staff"], ["道", "road; way", "On ドウ · Kun みち", "[道]{みち} road, way · 水[道]{どう} water supply · [歩]{ほ}[道]{どう} pavement, sidewalk"], ["店", "shop", "On テン · Kun みせ", "[店]{みせ} shop · [店]{てん}[員]{いん} shop assistant · [喫]{きっ}[茶]{さ}[店]{てん} café"], ["屋", "shop; roof", "On オク · Kun や", "[本]{ほん}[屋]{や} bookshop · ★[部屋]{へや} room · [屋]{おく}上 rooftop"], ["場", "place", "On ジョウ · Kun ば", "[場]{ば}[所]{しょ} place · [会]{かい}[場]{じょう} venue · [駐]{ちゅう}[車]{しゃ}[場]{じょう} car park"], ["図", "drawing, plan", "On ズ, ト", "[地]{ち}[図]{ず} map · [図]{と}[書]{しょ}[館]{かん} library · [図]{ず} figure, diagram"], ["台", "stand; counter for machines", "On ダイ, タイ", "[台]{だい}[所]{どころ} kitchen · [台]{たい}[風]{ふう} typhoon · [一]{いち}[台]{だい} one (car, machine)"], ["銀", "silver", "On ギン", "[銀]{ぎん}[行]{こう} bank · [銀]{ぎん} silver · [銀]{ぎん}[色]{いろ} silver (colour)"]]},
+      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["町", "town", "On チョウ · Kun まち", "[町]{まち} town · [下]{した}[町]{まち} old downtown area · [町]{ちょう}[長]{ちょう} town mayor"], ["京", "capital", "On キョウ, ケイ", "[東]{とう}[京]{きょう} Tokyo · [上]{じょう}[京]{きょう} moving to Tokyo"], ["駅", "station", "On エキ", "[駅]{えき} station · [駅]{えき}[前]{まえ} in front of the station · [駅]{えき}[員]{いん} station staff"], ["道", "road; way", "On ドウ · Kun みち", "[道]{みち} road, way · 水[道]{どう} water supply · [歩]{ほ}[道]{どう} pavement, sidewalk"], ["店", "shop", "On テン · Kun みせ", "[店]{みせ} shop · [店]{てん}[員]{いん} shop assistant · [喫]{きっ}[茶]{さ}[店]{てん} café"], ["屋", "shop; roof", "On オク · Kun や", "[本]{ほん}[屋]{や} bookshop · ★[部屋]{へや} room · [屋]{おく}上 rooftop"], ["場", "place", "On ジョウ · Kun ば", "[場]{ば}[所]{しょ} place · [会]{かい}[場]{じょう} venue · [駐]{ちゅう}[車]{しゃ}[場]{じょう} car park"], ["図", "drawing, plan", "On ズ, ト", "[地]{ち}[図]{ず} map · [図]{と}[書]{しょ}[館]{かん} library · [図]{ず} figure, diagram"], ["台", "stand; counter for machines", "On ダイ, タイ", "[台]{だい}[所]{どころ} kitchen · [台]{たい}[風]{ふう} typhoon · [一]{いち}[台]{だい} one (car, machine)"], ["銀", "silver", "On ギン", "[銀]{ぎん}[行]{こう} bank · [銀]{ぎん} silver · [銀]{ぎん}[色]{いろ} silver (color)"]]},
       "駅 combines with N5 kanji you know: [駅]{えき}前 (in front of the station), [北]{きた}[口]{ぐち} (north exit), [駅]{えき}[員]{いん} (station staff). 道 is a road or a way, and 北[海]{かい}[道]{どう} shows its on reading ドウ.",
       "屋 and 店 both mean “shop”. 〜屋 joins everyday words for small shops: 本[屋]{や} (bookshop), [花]{はな}[屋]{や} (florist), パン[屋]{や} (bakery). With さん it can also mean the person who runs the shop: 本[屋]{や}さん. 〜店 is a little more formal and appears in on-reading words: 書[店]{てん} (bookshop), [喫]{きっ}[茶]{さ}[店]{てん} (café)."
     ]},
@@ -211,7 +211,7 @@ ICA.addUnit({
       {ex:"チェスカさん\n今[週]{しゅう}の[土]{ど}[曜]{よう}日、[天]{てん}気がよかったら、[海]{うみ}の[近]{ちか}くの水[族]{ぞく}[館]{かん}に行きませんか。水[族]{ぞく}[館]{かん}は[午]{ご}前[九]{く}時から午[後]{ご}[五]{ご}時[半]{はん}までです。\n[朝]{あさ}十時に[駅]{えき}の北[口]{ぐち}で[会]{あ}いましょう。[昼]{ひる}ご[飯]{はん}は、[駅]{えき}前の[魚]{さかな}[料]{りょう}[理]{り}の[店]{みせ}で食べたいです。[夜]{よる}は[雨]{あめ}が[降]{ふ}るそうなので、[夕]{ゆう}[方]{がた}には[帰]{かえ}りましょう。\nロドリゴ", label:"Rodrigo’s message"},
       {list:["**What is Rodrigo suggesting?** A trip to the aquarium (水[族]{ぞく}[館]{かん}) near the sea this Saturday, if the weather is good: 〜たら is “if”, and 〜ませんか is an invitation.","**When and where do they meet?** At 10 a.m. at the station’s north exit (北[口]{ぐち}).","**Lunch?** At a fish restaurant in front of the station ([駅]{えき}前).","**Why come back by early evening?** 〜そうなので: “because they say” it will rain at night."]},
       "Notice how the kanji carried the meaning: the times (土[曜]{よう}日, 九時, 十時, [夕]{ゆう}[方]{がた}), the places ([海]{うみ}, 水[族]{ぞく}[館]{かん}, 北[口]{ぐち}, [駅]{えき}前, [店]{みせ}) and the food ([魚]{さかな}[料]{りょう}[理]{り}) all stand out from the hiragana grammar.",
-      {lab:"kl-n4", t:"Practise: today’s N4 kanji review"}
+      {lab:"kl-n4", t:"Practice: today’s N4 kanji review"}
     ]}
    ],
    try:[
@@ -277,14 +277,14 @@ ICA.addUnit({
     ], hint2:"Change 午後五時半 to the 24-hour clock first."}
    ],
    apply:{
-    intro:"Bring the time and place kanji into your own week and neighbourhood.",
+    intro:"Bring the time and place kanji into your own week and neighborhood.",
     tasks:[
      {t:"Your year in four sentences", how:[
        "Write one sentence for each season, using the kanji: [春]{はる}は…, [夏]{なつ}は…, [秋]{あき}は…, [冬]{ふゆ}は…",
        "Add one time word to each: [朝]{あさ}, [昼]{ひる}, [夕]{ゆう}[方]{がた} or [夜]{よる}.",
        "If you live somewhere without four seasons, write about the seasons you do have, or about a place you would like to visit."
      ], write:"[春]{はる}は… [夏]{なつ}は… [秋]{あき}は… [冬]{ふゆ}は…"},
-     {t:"Label your neighbourhood", how:[
+     {t:"Label your neighborhood", how:[
        "List six places near your home or work and write each one in kanji: [駅]{えき}, [銀]{ぎん}行, [病]{びょう}[院]{いん}, [図]{と}書[館]{かん}, 本[屋]{や}, [公]{こう}[園]{えん}…",
        "Write where each is: [駅]{えき}の[近]{ちか}くに[銀]{ぎん}行があります。",
        "Circle the last kanji of each place word and say what kind of place it is (shop, large building, institution, room)."
@@ -292,10 +292,10 @@ ICA.addUnit({
      {t:"Read a real calendar or timetable", how:[
        "Find a Japanese calendar, event poster or opening-hours sign online (or a photo you took).",
        "Find the days of the week, the times (午前, 午後, 時, 分, 半) and any season or month words.",
-       "Write in English what it tells you, and list the N4 kanji you recognised."
+       "Write in English what it tells you, and list the N4 kanji you recognized."
      ], write:"What it was… what it says… N4 kanji I knew…"}
     ],
-    proof:"Four season sentences, six labelled places with sentences, and one real calendar or sign read and explained."},
+    proof:"Four season sentences, six labeled places with sentences, and one real calendar or sign read and explained."},
    read:[
     {book:"irodori", where:"Elementary 1, Lessons 3 “It gets very cold in winter.” and 4 “It rained heavily yesterday.”", note:"Seasons and weather."},
     {book:"irodori", where:"Elementary 1, Lessons 5 “It is very lively and convenient.” and 6 “Please tell me how to get to the post office.”", note:"Your town: places, and asking the way."}
@@ -345,7 +345,7 @@ ICA.addUnit({
     ]},
     {h:"する verbs made from kanji words", body:[
       "Many kanji words become verbs when you add する. These [[kanji-compound-verbs|kanji compound verbs]] are everywhere at N4, because one kanji word plus する gives you a verb you can use in every form you know: します, しました, して, したい… ([[sahen-doushi]]).",
-      {table:[["Verb","Meaning","Example"],["[勉]{べん}[強]{きょう}する","study","[毎]{まい}日[漢]{かん}[字]{じ}を[勉]{べん}[強]{きょう}しています。"],["[運]{うん}[転]{てん}する","drive","[父]{ちち}は車を[運]{うん}[転]{てん}しません。"],["[出]{しゅっ}[発]{ぱつ}する","depart","バスは[九]{く}時に[出]{しゅっ}[発]{ぱつ}します。"],["[注]{ちゅう}[意]{い}する","be careful; warn","車に[注]{ちゅう}[意]{い}してください。"],["[質]{しつ}[問]{もん}する","ask a question","先生に[質]{しつ}[問]{もん}しました。"],["[旅]{りょ}行する","travel","[夏]{なつ}に[北]{ほっ}[海]{かい}[道]{どう}を[旅]{りょ}行しました。"],["[研]{けん}[究]{きゅう}する","research","大学で[日本]{にほん}の[音]{おん}[楽]{がく}を[研]{けん}[究]{きゅう}しています。"],["[練]{れん}[習]{しゅう}する","practise","毎[晩]{ばん}ギターを[練]{れん}[習]{しゅう}します。"]]},
+      {table:[["Verb","Meaning","Example"],["[勉]{べん}[強]{きょう}する","study","[毎]{まい}日[漢]{かん}[字]{じ}を[勉]{べん}[強]{きょう}しています。"],["[運]{うん}[転]{てん}する","drive","[父]{ちち}は車を[運]{うん}[転]{てん}しません。"],["[出]{しゅっ}[発]{ぱつ}する","depart","バスは[九]{く}時に[出]{しゅっ}[発]{ぱつ}します。"],["[注]{ちゅう}[意]{い}する","be careful; warn","車に[注]{ちゅう}[意]{い}してください。"],["[質]{しつ}[問]{もん}する","ask a question","先生に[質]{しつ}[問]{もん}しました。"],["[旅]{りょ}行する","travel","[夏]{なつ}に[北]{ほっ}[海]{かい}[道]{どう}を[旅]{りょ}行しました。"],["[研]{けん}[究]{きゅう}する","research","大学で[日本]{にほん}の[音]{おん}[楽]{がく}を[研]{けん}[究]{きゅう}しています。"],["[練]{れん}[習]{しゅう}する","practice","毎[晩]{ばん}ギターを[練]{れん}[習]{しゅう}します。"]]},
       "Two patterns are both correct: 日本語を[勉]{べん}[強]{きょう}する and 日本語の[勉]{べん}[強]{きょう}をする. Both mean “study Japanese”.",
       {warn:"Not every kanji word takes する. 時[代]{だい} (era), [世]{せ}[界]{かい} (world) and [研]{けん}[究]{きゅう}[室]{しつ} (laboratory) are only nouns. Dictionaries mark the words that do, and the Kanji Lab’s word cards show the tag “takes する”."}
     ]},
@@ -354,8 +354,8 @@ ICA.addUnit({
       {ex:"あおいさんは毎[朝]{あさ}[六]{ろく}時[半]{はん}に[起]{お}きて、[近]{ちか}くの[公]{こう}[園]{えん}を[三]{さん}[十]{じゅっ}[分]{ぷん}[走]{はし}ります。それから、シャワーを[浴]{あ}びて、[朝]{あさ}ご[飯]{はん}を[作]{つく}ります。[八]{はち}時に[家]{いえ}を出て、[駅]{えき}まで[歩]{ある}きます。\n[大]{だい}[学]{がく}では、[町]{まち}の[防]{ぼう}[災]{さい}の[研]{けん}[究]{きゅう}をしています。[昼]{ひる}[休]{やす}みには、[同]{おな}じ[研]{けん}[究]{きゅう}[室]{しつ}の人と食[堂]{どう}で[昼]{ひる}ご[飯]{はん}を食べます。\n[研]{けん}[究]{きゅう}は六時に[終]{お}わりますが、[火]{か}[曜]{よう}日と[木]{もく}[曜]{よう}日は、[家]{いえ}に[帰]{かえ}る前に[英]{えい}[会]{かい}[話]{わ}の[教]{きょう}[室]{しつ}に[通]{かよ}っています。", label:"Aoi’s day"},
       {list:["**What does Aoi do before breakfast?** She runs in the park near her home for 30 minutes, then showers.","**What does she research?** Disaster prevention in towns ([防]{ぼう}[災]{さい}).","**Where does she eat lunch?** In the canteen (食[堂]{どう}), with people from the same laboratory.","**What does she do on Tuesdays and Thursdays?** She goes to an English conversation class before going home: 〜に[通]{かよ}っています is going somewhere regularly."]},
       "Look at the verbs: [起]{お}きる, [走]{はし}る, [作]{つく}る, [歩]{ある}く, [終]{お}わる, [帰]{かえ}る, [通]{かよ}う, and the する word [研]{けん}[究]{きゅう}. With the kanji of this lesson, you can read the whole story of a day.",
-      {lab:"kl-n4", t:"Practise: today’s N4 kanji review"},
-      {lab:"kl-n4-vocab", t:"Practise: N4 words, including verb pairs and する verbs"}
+      {lab:"kl-n4", t:"Practice: today’s N4 kanji review"},
+      {lab:"kl-n4-vocab", t:"Practice: N4 words, including verb pairs and する verbs"}
     ]}
    ],
    try:[
@@ -463,7 +463,7 @@ ICA.addUnit({
    learn:[
     {h:"Size, amount and feeling", body:[
       {lead:"Many N4 describing words are い-adjectives with okurigana, and they come in opposite pairs. Learn the pairs together."},
-      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["新", "new", "On シン · Kun あたら(しい)", "[新]{あたら}しい new · [新]{しん}[聞]{ぶん} newspaper · [新]{しん}[年]{ねん} the New Year"], ["古", "old", "On コ · Kun ふる(い)", "[古]{ふる}い old · [中]{ちゅう}[古]{こ} second-hand · [古]{ふる}[本]{ほん} second-hand book"], ["多", "many, much", "On タ · Kun おお(い)", "[多]{おお}い many · [多]{た}[分]{ぶん} probably · [多]{た}[少]{しょう} a little, somewhat"], ["少", "few, a little", "On ショウ · Kun すく(ない), すこ(し)", "[少]{すこ}し a little · [少]{すく}ない few · [少]{しょう}年 boy"], ["強", "strong", "On キョウ, ゴウ · Kun つよ(い)", "[強]{つよ}い strong · [勉]{べん}[強]{きょう} study · [強]{きょう}[力]{りょく} powerful"], ["重", "heavy; important", "On ジュウ, チョウ · Kun おも(い)", "[重]{おも}い heavy · [体]{たい}[重]{じゅう} body weight · [重]{じゅう}[要]{よう} important"], ["広", "wide", "On コウ · Kun ひろ(い)", "[広]{ひろ}い wide, spacious · [広]{ひろ}[場]{ば} town square · [広]{こう}[告]{こく} advertisement"], ["近", "near", "On キン · Kun ちか(い)", "[近]{ちか}い near · [近]{きん}[所]{じょ} neighbourhood · [最]{さい}[近]{きん} recently"], ["明", "bright, clear", "On メイ, ミョウ · Kun あか(るい), あ(ける)", "[明]{あか}るい bright · [説]{せつ}[明]{めい} explanation · ★[明日]{あした} tomorrow"], ["楽", "fun; easy; music", "On ガク, ラク · Kun たの(しい)", "[楽]{たの}しい fun · [音]{おん}[楽]{がく} music · [楽]{らく} easy, comfortable"]]},
+      {table:[["Kanji", "Meaning", "Main readings", "Common words"], ["新", "new", "On シン · Kun あたら(しい)", "[新]{あたら}しい new · [新]{しん}[聞]{ぶん} newspaper · [新]{しん}[年]{ねん} the New Year"], ["古", "old", "On コ · Kun ふる(い)", "[古]{ふる}い old · [中]{ちゅう}[古]{こ} second-hand · [古]{ふる}[本]{ほん} second-hand book"], ["多", "many, much", "On タ · Kun おお(い)", "[多]{おお}い many · [多]{た}[分]{ぶん} probably · [多]{た}[少]{しょう} a little, somewhat"], ["少", "few, a little", "On ショウ · Kun すく(ない), すこ(し)", "[少]{すこ}し a little · [少]{すく}ない few · [少]{しょう}年 boy"], ["強", "strong", "On キョウ, ゴウ · Kun つよ(い)", "[強]{つよ}い strong · [勉]{べん}[強]{きょう} study · [強]{きょう}[力]{りょく} powerful"], ["重", "heavy; important", "On ジュウ, チョウ · Kun おも(い)", "[重]{おも}い heavy · [体]{たい}[重]{じゅう} body weight · [重]{じゅう}[要]{よう} important"], ["広", "wide", "On コウ · Kun ひろ(い)", "[広]{ひろ}い wide, spacious · [広]{ひろ}[場]{ば} town square · [広]{こう}[告]{こく} advertisement"], ["近", "near", "On キン · Kun ちか(い)", "[近]{ちか}い near · [近]{きん}[所]{じょ} neighborhood · [最]{さい}[近]{きん} recently"], ["明", "bright, clear", "On メイ, ミョウ · Kun あか(るい), あ(ける)", "[明]{あか}るい bright · [説]{せつ}[明]{めい} explanation · ★[明日]{あした} tomorrow"], ["楽", "fun; easy; music", "On ガク, ラク · Kun たの(しい)", "[楽]{たの}しい fun · [音]{おん}[楽]{がく} music · [楽]{らく} easy, comfortable"]]},
       {table:[["Word","Opposite"],["[新]{あたら}しい new","[古]{ふる}い old"],["[多]{おお}い many","[少]{すく}ない few"],["[強]{つよ}い strong","[弱]{よわ}い weak"],["[重]{おも}い heavy","[軽]{かる}い light"],["[近]{ちか}い near","[遠]{とお}い far"],["[明]{あか}るい bright","[暗]{くら}い dark"]]},
       "To say “many people” before a noun, Japanese uses [多]{おお}くの人 (or たくさんの人), not ✗[多]{おお}い人. [多]{おお}い works at the end: この[町]{まち}は人が[多]{おお}いです (this town has a lot of people). As in Unit 4, 多い can describe a noun when you say what there is a lot of: [雨]{あめ}の[多]{おお}い[国]{くに} (a country with a lot of rain).",
       "★[明日]{あした} (tomorrow) has three readings for the same word: あした in everyday speech, あす when a little more formal, and みょうにち in formal speech and business. All three are correct."
@@ -494,10 +494,10 @@ ICA.addUnit({
     ]},
     {h:"One kanji, several readings", body:[
       "The opposite problem also exists: the same kanji spelling can have different readings, sometimes with different meanings. The sentence tells you which.",
-      {table:[["Spelling","Readings","Meanings"],["人気","[人気]{にんき} · [人気]{ひとけ}","popularity · signs of people: [人気]{ひとけ}のない[道]{みち} is a deserted road"],["色紙","[色]{しき}[紙]{し} · [色]{いろ}[紙]{がみ}","a square card for autographs or poems · coloured paper"],["市場","[市]{いち}[場]{ば} · [市]{し}[場]{じょう}","a market you walk around (a fish market) · a market in economics (the job market)"],["止める","[止]{と}める · [止]{や}める","stop (a car, a machine) · stop doing, give up (usually written やめる)"],["開く","[開]{あ}く · [開]{ひら}く","(a door) opens · open (a book); hold (a party)"],["空いている","[空]{あ}いている · [空]{す}いている","free, vacant (a seat, a time) · not crowded (a train, a shop)"]]},
+      {table:[["Spelling","Readings","Meanings"],["人気","[人気]{にんき} · [人気]{ひとけ}","popularity · signs of people: [人気]{ひとけ}のない[道]{みち} is a deserted road"],["色紙","[色]{しき}[紙]{し} · [色]{いろ}[紙]{がみ}","a square card for autographs or poems · colored paper"],["市場","[市]{いち}[場]{ば} · [市]{し}[場]{じょう}","a market you walk around (a fish market) · a market in economics (the job market)"],["止める","[止]{と}める · [止]{や}める","stop (a car, a machine) · stop doing, give up (usually written やめる)"],["開く","[開]{あ}く · [開]{ひら}く","(a door) opens · open (a book); hold (a party)"],["空いている","[空]{あ}いている · [空]{す}いている","free, vacant (a seat, a time) · not crowded (a train, a shop)"]]},
       {list:["**Look at the okurigana and the particles.** ドアが[開]{あ}く, but [会]{かい}を[開]{ひら}く.","**Look at what the word describes.** A seat is [空]{あ}いている (free); a train is usually [空]{す}いている (not crowded).","**When you can’t decide, look it up** with the whole phrase. Dictionaries list each reading with its own meaning."]},
       {key:"In writing, the kanji tell homophones apart. In reading, the context tells you which reading a kanji word has."},
-      {lab:"kl-n4", t:"Practise: today’s N4 kanji review"}
+      {lab:"kl-n4", t:"Practice: today’s N4 kanji review"}
     ]}
    ],
    try:[
@@ -613,7 +613,7 @@ ICA.addUnit({
     ]},
     {h:"A notice: the pool rules", body:[
       "Notices are for scanning: you rarely read every word. Read the question first, then look for the line that answers it.",
-      {ex:"みどり[市]{し}スポーツセンター　プールのご[利]{り}[用]{よう}について\n・[利]{り}[用]{よう}[時]{じ}[間]{かん}：[午]{ご}前9時～午後8時（[月]{げつ}[曜]{よう}日は[休]{きゅう}[館]{かん}日です）\n・[料]{りょう}[金]{きん}：[大人]{おとな}400[円]{えん}、[中]{ちゅう}[学]{がく}[生]{せい}[以]{い}[下]{か}200円。65[歳]{さい}[以]{い}[上]{じょう}の[方]{かた}は[無]{む}[料]{りょう}です。\n・[小]{しょう}学生[以]{い}下のお[子]{こ}さんは、大人といっしょに入ってください。\n・プールの中で食べたり[飲]{の}んだりしないでください。\n・[毎]{まい}[月]{つき}[第]{だい}[一]{いち}日[曜]{よう}日の午前は、子ども[水]{すい}[泳]{えい}[教]{きょう}[室]{しつ}のため、[使]{つか}えません。", label:"A notice at a sports centre"},
+      {ex:"みどり[市]{し}スポーツセンター　プールのご[利]{り}[用]{よう}について\n・[利]{り}[用]{よう}[時]{じ}[間]{かん}：[午]{ご}前9時～午後8時（[月]{げつ}[曜]{よう}日は[休]{きゅう}[館]{かん}日です）\n・[料]{りょう}[金]{きん}：[大人]{おとな}400[円]{えん}、[中]{ちゅう}[学]{がく}[生]{せい}[以]{い}[下]{か}200円。65[歳]{さい}[以]{い}[上]{じょう}の[方]{かた}は[無]{む}[料]{りょう}です。\n・[小]{しょう}学生[以]{い}下のお[子]{こ}さんは、大人といっしょに入ってください。\n・プールの中で食べたり[飲]{の}んだりしないでください。\n・[毎]{まい}[月]{つき}[第]{だい}[一]{いち}日[曜]{よう}日の午前は、子ども[水]{すい}[泳]{えい}[教]{きょう}[室]{しつ}のため、[使]{つか}えません。", label:"A notice at a sports center"},
       {list:["**When is the pool closed?** On Mondays (休[館]{かん}日: closing day), and on the first Sunday morning of every month, because of a children’s swimming class (〜のため: because of).","**How much does it cost?** Adults 400 yen; junior high school students and younger 200 yen; people aged 65 and over are free. [以]{い}上 and [以]{い}下 include the number (Lesson 4).","**Can a primary school child swim alone?** No: 〜てください asks them to come in with an adult.","**What is not allowed?** Eating and drinking in the pool: 〜たり〜たりしないでください."]},
       "Strategy check: to answer “How much for a 70-year-old?”, you only needed the line with [料]{りょう}金 and the word [以]{い}上. You didn’t need [第]{だい}一 or 水[泳]{えい} for that question."
     ]},
@@ -645,14 +645,14 @@ ICA.addUnit({
     ]},
     {h:"Your N4 study plan with the Kanji Lab", body:[
       "The plan from Unit 4 still works: a little every day, honest answers, and some real reading. At N4 there is simply more to review, so keep the daily habit small enough to keep.",
-      {table:[["When","What","Time"],["Every day","Kanji Lab: the N4 kanji deck, then the N4 words deck","10–20 min"],["Every day","Read something short: a notice, a message, a page of a graded reader","5–10 min"],["Twice a week","Write five kanji by hand in words; practise one look-alike set","10 min"],["Once a week","Read one longer text (a story or an email) in two passes","15 min"],["Before the test","The official sample questions on jlpt.jp","1 hour"]]},
+      {table:[["When","What","Time"],["Every day","Kanji Lab: the N4 kanji deck, then the N4 words deck","10–20 min"],["Every day","Read something short: a notice, a message, a page of a graded reader","5–10 min"],["Twice a week","Write five kanji by hand in words; practice one look-alike set","10 min"],["Once a week","Read one longer text (a story or an email) in two passes","15 min"],["Before the test","The official sample questions on jlpt.jp","1 hour"]]},
       "**How the Lab’s N4 decks work.** The N4 kanji deck has 167 cards and the N4 words deck has 697. Each day a deck shows the cards that are due, then a few new ones (5, 10 or 20 a day, as you choose; 10 is the default). New kanji come in the deck’s own order, which starts with simple, common kanji such as 力, 口, 字 and 手, not in the groups of these lessons; meeting them in two orders helps. A new kanji card asks for its meaning; on later reviews it alternates between its meaning and one of its main readings. Word cards alternate between “How do you read this word?” and “Which word has this reading and meaning?”, where you pick the word that matches a reading and a meaning (words written only in kana ask for the meaning). After you answer, the full card shows everything: for a kanji, its meanings, on and kun readings and example words with furigana; for a word, its reading, meanings and tags such as “takes する”.",
       "Then you rate the card. **Again** brings it back tomorrow, and once more at the end of today’s session; **Good** moves it up one box; **Easy** skips a box. The boxes come back after 1, 3, 7, 14 and 30 days. If you don’t know a card at all, tap “I don’t know: show me” instead of guessing. Your progress is saved in this browser only, and the backup and “Erase all progress” in Progress on the desk include it.",
       {list:["**At 10 new kanji a day, you meet all 167 N4 kanji in 17 days.** The words deck takes about ten weeks at the same pace. Reviews grow as you add cards, so don’t raise the number if your daily reviews already feel heavy.","**Finished today’s cards?** The deck offers “Learn 5 more new cards now”. Use it on good days only.","**Missed a few days?** Due cards wait for you, and each session shows them before any new cards. Do the reviews first and stop there if there are many."]},
       "**Free reading at your level.** The [[graded-reader|graded readers]] from NPO[多]{た}[言]{げん}[語]{ご}[多]{た}読 (Tadoku) that you met in Unit 4 have higher levels too; move up a level when a book feels easy ({{n4-study-plan}}). The Japan Foundation’s free [*IRODORI*](https://www.irodori.jpf.go.jp/en/index.html) course continues with Elementary 1 and 2 (A2), which matches this stage.",
       {key:"Forgetting is part of learning. Press Again without guilt, come back tomorrow, and the kanji will stay."},
-      {lab:"kl-n4", t:"Practise: today’s N4 kanji review"},
-      {lab:"kl-n4-vocab", t:"Practise: today’s N4 words review"}
+      {lab:"kl-n4", t:"Practice: today’s N4 kanji review"},
+      {lab:"kl-n4-vocab", t:"Practice: today’s N4 words review"}
     ]}
    ],
    try:[
@@ -662,7 +662,7 @@ ICA.addUnit({
       {t:"Choose the entry for the dictionary form, with matching kanji and reading: [待]{ま}つ (まつ)", why:"Dictionaries list verbs in the dictionary form (待っていた → 待つ). Check that the spelling matches your text before you trust the meaning."},
       {t:"Choose the meaning that fits the sentence: “I was waiting for my friend at the station”", why:"Read all the meanings and pick the one that makes sense in context."}
     ]},
-    {id:"e3u8-l5-x2", type:"number", q:"At the sports centre pool, Megumi-san (46) comes with her son Sōta (9) and her mother, Fumiko-san (75). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Megumi-san pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
+    {id:"e3u8-l5-x2", type:"number", q:"At the sports center pool, Megumi-san (46) comes with her son Sōta (9) and her mother, Fumiko-san (75). Using the notice, how much do they pay in total?", answer:600, tol:0, unit:"yen", why:"Megumi-san pays the adult price, 400 yen. Her son is a primary school student, so 中学生[以]{い}下 applies: 200 yen. Her mother is 65 or over: [無]{む}[料]{りょう}, free. 400 + 200 + 0 = 600 yen.", wrongs:[
       {v:1000, tol:0, why:"You charged Fumiko-san the adult price. 65[歳]{さい}[以]{い}上 is free."},
       {v:800, tol:0, why:"Check each person once: Megumi-san 400, Sōta 200 (中学生[以]{い}下), Fumiko-san 0 (65 and over)."}
     ], hint2:"Find the [料]{りょう}金 line, then decide which price applies to each person."},
@@ -716,7 +716,7 @@ ICA.addUnit({
      {t:"Read a real notice or set of instructions", how:[
        "Find a Japanese notice, a timetable or the instructions on a product (a photo or a website is fine).",
        "Write the question you want answered first, then read in two passes: gist, then details.",
-       "Write what it says in English, and underline every N4 kanji you recognised."
+       "Write what it says in English, and underline every N4 kanji you recognized."
      ], write:"My question… the gist… the details… N4 kanji I knew…"},
      {t:"Write an email like Aoi’s", how:[
        "Write a short email to a teacher or a colleague (real or imaginary) saying you will miss something, with a reason using 〜ので.",
@@ -791,7 +791,7 @@ ICA.addUnit({
     {id:"e3u8-cp11", lesson:"e3u8-l5", level:3, q:"A notice: 「さくら[公園]{こうえん}でお[花見]{はなみ}をします。4月4日（土）午前11時～午後3時。雨が[降]{ふ}ったら、5日（日）にします。[飲]{の}み[物]{もの}は[用意]{ようい}します。食べ[物]{もの}は[持]{も}ってきてください。」 Rodrigo wants to go, and it rains on the 4th. What happens?", options:[
       {t:"It moves to Sunday the 5th, and Rodrigo brings food", ok:true, why:"雨が[降]{ふ}ったら、5日にします: if it rains, it is on the 5th instead. Drinks are provided; food is yours to bring."},
       {t:"It moves to Sunday the 5th, and Rodrigo brings drinks", why:"[飲]{の}み[物]{もの}は[用意]{ようい}します: the drinks are prepared for you. 食べ[物]{もの}は[持]{も}ってきてください asks for food."},
-      {t:"It is cancelled, and nobody needs to bring anything", why:"Cancelled would be [中止]{ちゅうし}. 5日にします means it moves to another day."},
+      {t:"It is canceled, and nobody needs to bring anything", why:"Canceled would be [中止]{ちゅうし}. 5日にします means it moves to another day."},
       {t:"It goes ahead on the 4th, and Rodrigo brings food", why:"Read the condition: 雨が[降]{ふ}ったら、5日にします. Rain moves it to the 5th."}]},
     {id:"e3u8-cp12", lesson:"e3u8-l2", level:3, q:"Toby writes 「[今日]{きょう}はぼくの[代]{か}わりに、まりやさんが[源]{げん}さんに[会]{あ}います。」 What does he mean?", options:[
       {t:"Toby and Mariya will both meet Gen-san today", why:"[代]{か}わりに means “instead of”: one person takes the other’s place."},
@@ -813,19 +813,19 @@ ICA.addUnit({
      ],
      builder:[
       
-      {table:[["Group","Kanji and core meanings"],["People, family","私 I · 自 self · 者 person (in words) · 員 member · 主 main · 兄 older brother · 弟 younger brother · 姉 older sister · 妹 younger sister · 親 parent · 族 family · 家 house"],["Body, health","体 body · 心 heart · 手 hand · 足 foot · 口 mouth · 目 eye · 力 power · 医 medicine · 病 illness · 死 death"],["Seasons, times of day","春 spring · 夏 summer · 秋 autumn · 冬 winter · 朝 morning · 昼 noon · 夕 evening · 夜 night"],["Calendar, eras, world","曜 day of the week · 週 week · 早 early · 世 world · 界 world · 代 generation · 元 origin · 去 leave"],["Nature","空 sky · 海 sea · 風 wind · 野 field · 田 rice field · 地 ground · 花 flower"],["Colours, animals","赤 red · 青 blue · 黒 black · 色 colour · 犬 dog · 牛 cow · 鳥 bird · 魚 fish"],["Places in town","町 town · 京 capital · 駅 station · 道 road · 店 shop · 屋 shop · 場 place · 図 drawing · 台 stand · 銀 silver"],["Buildings, work","室 room · 館 large building · 院 institution · 堂 hall · 社 company · 会 meet · 公 public · 工 craft · 仕 serve · 業 business"],["Thinking, studying","言 say · 思 think · 考 think · 知 know · 教 teach · 習 learn · 勉 effort · 研 polish · 究 research · 答 answer · 問 question · 試 try · 験 test"],["Moving, stopping","始 begin · 終 end · 起 get up · 帰 return home · 走 run · 歩 walk · 動 move · 運 carry · 転 roll · 送 send · 通 pass through · 急 hurry · 止 stop · 旅 travel"],["Hands and things","着 wear · 持 hold · 待 wait · 使 use · 借 borrow · 貸 lend · 写 copy · 映 reflect · 売 sell · 買 buy · 作 make · 開 open · 集 gather"],["Home, food, plans","住 live (somewhere) · 切 cut · 立 stand · 飲 drink · 歌 song · 用 use · 注 pour · 建 build · 発 depart · 計 measure · 有 have"],["Size, amount, feeling","新 new · 古 old · 多 many · 少 few · 強 strong · 重 heavy · 広 wide · 近 near · 明 bright · 楽 fun"],["Judging, comparing","安 cheap · 悪 bad · 正 correct · 同 same · 真 true · 特 special · 別 separate · 不 not · 以 from (a point) · 的 target"],["Things, food","物 thing · 品 goods · 紙 paper · 服 clothes · 茶 tea · 飯 cooked rice · 肉 meat · 音 sound · 画 picture · 方 direction · 度 degree · 事 thing"],["Language, ideas","意 mind · 味 taste · 理 reason · 料 fee · 質 quality · 題 title · 文 writing · 字 character · 漢 China · 英 English · 洋 ocean"]]},
+      {table:[["Group","Kanji and core meanings"],["People, family","私 I · 自 self · 者 person (in words) · 員 member · 主 main · 兄 older brother · 弟 younger brother · 姉 older sister · 妹 younger sister · 親 parent · 族 family · 家 house"],["Body, health","体 body · 心 heart · 手 hand · 足 foot · 口 mouth · 目 eye · 力 power · 医 medicine · 病 illness · 死 death"],["Seasons, times of day","春 spring · 夏 summer · 秋 autumn · 冬 winter · 朝 morning · 昼 noon · 夕 evening · 夜 night"],["Calendar, eras, world","曜 day of the week · 週 week · 早 early · 世 world · 界 world · 代 generation · 元 origin · 去 leave"],["Nature","空 sky · 海 sea · 風 wind · 野 field · 田 rice field · 地 ground · 花 flower"],["Colors, animals","赤 red · 青 blue · 黒 black · 色 color · 犬 dog · 牛 cow · 鳥 bird · 魚 fish"],["Places in town","町 town · 京 capital · 駅 station · 道 road · 店 shop · 屋 shop · 場 place · 図 drawing · 台 stand · 銀 silver"],["Buildings, work","室 room · 館 large building · 院 institution · 堂 hall · 社 company · 会 meet · 公 public · 工 craft · 仕 serve · 業 business"],["Thinking, studying","言 say · 思 think · 考 think · 知 know · 教 teach · 習 learn · 勉 effort · 研 polish · 究 research · 答 answer · 問 question · 試 try · 験 test"],["Moving, stopping","始 begin · 終 end · 起 get up · 帰 return home · 走 run · 歩 walk · 動 move · 運 carry · 転 roll · 送 send · 通 pass through · 急 hurry · 止 stop · 旅 travel"],["Hands and things","着 wear · 持 hold · 待 wait · 使 use · 借 borrow · 貸 lend · 写 copy · 映 reflect · 売 sell · 買 buy · 作 make · 開 open · 集 gather"],["Home, food, plans","住 live (somewhere) · 切 cut · 立 stand · 飲 drink · 歌 song · 用 use · 注 pour · 建 build · 発 depart · 計 measure · 有 have"],["Size, amount, feeling","新 new · 古 old · 多 many · 少 few · 強 strong · 重 heavy · 広 wide · 近 near · 明 bright · 楽 fun"],["Judging, comparing","安 cheap · 悪 bad · 正 correct · 同 same · 真 true · 特 special · 別 separate · 不 not · 以 from (a point) · 的 target"],["Things, food","物 thing · 品 goods · 紙 paper · 服 clothes · 茶 tea · 飯 cooked rice · 肉 meat · 音 sound · 画 picture · 方 direction · 度 degree · 事 thing"],["Language, ideas","意 mind · 味 taste · 理 reason · 料 fee · 質 quality · 題 title · 文 writing · 字 character · 漢 China · 英 English · 洋 ocean"]]},
       "Each kanji’s main readings and two or three common words are in Lessons 1–4 of Japanese Foundations Unit 8. Special readings to know at N4 include ★[今朝]{けさ} (this morning), [七夕]{たなばた} (the Star Festival), [田舎]{いなか} (the countryside), [景色]{けしき} (scenery), [部屋]{へや} (room), [時計]{とけい} (clock) and [明日]{あした} (tomorrow), and the family words お[兄]{にい}さん and お[姉]{ねえ}さん."
      ],
      pro:[
       
       "**Numbers.** In the KANJIDIC dictionary data, 150 of the 167 are taught in grades 1–3 of Japanese primary school (19 in grade 1, 73 in grade 2, 58 in grade 3) and the other 17 in grades 4–6. Stroke counts run from 2 (力) to 18 (曜, 題 and 験). The most common radicals in the set are 人 (亻), 口, 日, 辶 and 心.",
       "**Where the lists come from.** The JLPT published official kanji and word lists for its old four-level test, and stopped with the 2010 revision. The lists used today, including the one behind this course’s Kanji Lab, are estimates based on the old lists and on textbooks. A few kanji move between N4 and N3 from list to list, and real test passages can contain words and kanji that a given list does not include.",
-      "**Look-alikes.** The classic N4 confusions are 待/持/特, 体/休, 牛/午, 犬/大, 目/自, 字/学, 貸/借 and the 門 family 問/間/開/聞. Practise them side by side, in words.",
+      "**Look-alikes.** The classic N4 confusions are 待/持/特, 体/休, 牛/午, 犬/大, 目/自, 字/学, 貸/借 and the 門 family 問/間/開/聞. Practice them side by side, in words.",
       "**Readings that need care.** 物 (もの, ブツ, モツ), 家 (いえ, うち, カ, ケ, や), 重 (おも(い), ジュウ, チョウ) and 明 (あか(るい), メイ, ミョウ, and the special [明日]{あした}) each have several common readings; learn them in words. Words such as 人気 (にんき or ひとけ), 市場 (いちば or しじょう) and 空いて (あいて or すいて) change reading with meaning.",
       "**Kana for grammar words.** When 事, 物, 時 and 方 are grammar words rather than real things, they are usually written in kana: 〜ことができる, 〜ものです, 〜とき. Reading N4 texts means expecting both."
      ]},
     related:["n5-kanji","kanji-by-component","n4-vocabulary","jlpt-overview","on-and-kun-readings"],
-    sources:[{t:"JLPT: N1–N5 level summary", url:"https://www.jlpt.jp/e/about/levelsummary.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"EDRDG licence statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
+    sources:[{t:"JLPT: N1–N5 level summary", url:"https://www.jlpt.jp/e/about/levelsummary.html"},{t:"JLPT FAQ (no official kanji or vocabulary lists)", url:"https://www.jlpt.jp/e/faq/index.html"},{t:"EDRDG license statement (KANJIDIC2 data used under CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"kanji-by-component", title:"Learning kanji by their parts", aka:["Kanji components","Meaning and sound parts","Kanji families"], tags:["japanese","kanji","radicals","n4"],
     summary:"How meaning parts (such as 氵 and 亻) and sound parts (such as 寺 and 主) group N4 kanji into families, and where the hints fail.",
@@ -852,7 +852,7 @@ ICA.addUnit({
       "**Memory stories.** Stories built from parts are useful, but they are not etymology. Use them freely for memory; for the history of a character, use a good kanji dictionary."
      ]},
     related:["radicals","how-kanji-work","n4-kanji","dictionary-skills"],
-    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"KanjiVG: kanji stroke order and components", url:"https://kanjivg.tagaini.net/"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
+    sources:[{t:"Chinese character classification (Wikipedia)", url:"https://en.wikipedia.org/wiki/Chinese_character_classification"},{t:"KanjiVG: kanji stroke order and components", url:"https://kanjivg.tagaini.net/"},{t:"EDRDG license statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"n4-vocabulary", title:"N4 vocabulary", aka:["JLPT N4 words","N4 word list"], tags:["japanese","vocabulary","jlpt","n4"],
     summary:"How N4 words are built (kanji words, する verbs, verb pairs, homophones) and how to learn the roughly 700 words in the Kanji Lab’s N4 deck.",
@@ -900,7 +900,7 @@ ICA.addUnit({
       
       "**The JLPT N4 reading items.** The reading part of the 55-minute Language Knowledge (Grammar) · Reading section has three item types: comprehension of short passages (about 100–200 characters, on study, daily life and work), comprehension of a mid-size passage (about 450 characters, an easy everyday text) and information retrieval (finding what you need in a notice of about 400 characters).",
       "**Text grammar** in the same section asks whether sentences fit the flow of a text, so connectors (それで, でも, それから) and pointing words (この, その) matter as much as vocabulary.",
-      "**Kanji without furigana.** The kanji reading items show words without furigana, and passages use kanji at the level, so practise reading N4 kanji bare too: cover the furigana in your own materials, or review in the Kanji Lab, whose cards show no furigana until you answer.",
+      "**Kanji without furigana.** The kanji reading items show words without furigana, and passages use kanji at the level, so practice reading N4 kanji bare too: cover the furigana in your own materials, or review in the Kanji Lab, whose cards show no furigana until you answer.",
       "**Plain style.** Stories and some passages use the plain form (だ・である style for description, plain past for events); emails and notices use です・ます. Read both ({{plain-and-polite-speech}})."
      ]},
     related:["reading-n5-texts","dictionary-skills","n4-study-plan","jlpt-overview"],
@@ -925,13 +925,13 @@ ICA.addUnit({
      ],
      pro:[
       
-      "**Where the data comes from.** Many free Japanese–English tools, including Jisho.org and this course’s Kanji Lab, draw on JMdict and KANJIDIC from the Electronic Dictionary Research and Development Group, shared under a Creative Commons licence. They are broad and regularly updated, but definitions are short glosses: for nuance, read example sentences or a Japanese–Japanese dictionary later on.",
+      "**Where the data comes from.** Many free Japanese–English tools, including Jisho.org and this course’s Kanji Lab, draw on JMdict and KANJIDIC from the Electronic Dictionary Research and Development Group, shared under a Creative Commons license. They are broad and regularly updated, but definitions are short glosses: for nuance, read example sentences or a Japanese–Japanese dictionary later on.",
       "**Conjugated forms.** Some tools find the dictionary form for you (a pop-up reader usually does), but not always. Knowing the forms from Units 2–7 is what makes every tool work: [待]{ま}たされた → [待]{ま}つ, [来]{こ}られる → 来る.",
       "**Machine translation and camera tools** are good for a first look at a sign or a long message, and weak on readings, names and politeness. Check important words yourself.",
       "**Phones.** On a phone, a dictionary website or a trusted dictionary app works everywhere; copy a word and paste it in. Handwriting keyboards for Japanese exist on many phones, but names and settings differ by device ({{japanese-reading-tools}})."
      ]},
     related:["japanese-reading-tools","kanji-by-component","radicals","reading-n4-texts"],
-    sources:[{t:"10ten Japanese Reader (GitHub)", url:"https://github.com/birchill/10ten-ja-reader"},{t:"Yomitan (GitHub)", url:"https://github.com/yomidevs/yomitan"},{t:"EDRDG licence statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
+    sources:[{t:"10ten Japanese Reader (GitHub)", url:"https://github.com/birchill/10ten-ja-reader"},{t:"Yomitan (GitHub)", url:"https://github.com/yomidevs/yomitan"},{t:"EDRDG license statement (KANJIDIC and JMdict, CC BY-SA 4.0)", url:"https://www.edrdg.org/edrdg/licence.html"}],
     checked:"2026-11"},
    {id:"n4-study-plan", title:"An N4 study plan", aka:["Studying for the JLPT N4","N4 daily routine"], tags:["japanese","study","jlpt","n4"],
     summary:"A daily routine for N4 kanji and words in the Kanji Lab, reading at your level, and the JLPT N4 sections and scoring.",

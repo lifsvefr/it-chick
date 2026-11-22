@@ -202,7 +202,7 @@ window.FLAB = [
  explain:"`\">=\"&E2` builds the condition text from two parts: the operator and the value in E2. With E2 at 60, it becomes `\">=60\"`."},
 
 /* ---------- Looking things up ---------- */
-{id:"fl-xlookup", group:"lookup", title:"XLOOKUP a price", lesson:"t1u9-l3", lookup:true, keep:["E2"], must:{noFn:["VLOOKUP"], noFnWhy:"VLOOKUP gets the same answer here, which is great. This challenge is practising XLOOKUP; try it that way too. (There’s a VLOOKUP challenge next.)"}, vary:["shuffle","num"], extra:[{E2:"Plum"},{E2:"Kiwi"}],
+{id:"fl-xlookup", group:"lookup", title:"XLOOKUP a price", lesson:"t1u9-l3", lookup:true, keep:["E2"], must:{noFn:["VLOOKUP"], noFnWhy:"VLOOKUP gets the same answer here, which is great. This challenge is practicing XLOOKUP; try it that way too. (There’s a VLOOKUP challenge next.)"}, vary:["shuffle","num"], extra:[{E2:"Plum"},{E2:"Kiwi"}],
  task:"In `E3`, find the price of the fruit named in `E2`, using XLOOKUP.",
  data:[["Fruit","Price","","","Find"],["Apple",0.6,null,null,"Mango"],["Banana",0.3,null,null,null],["Mango",1.8,null,null,null],["Plum",0.45,null,null,null],["Pear",0.7,null,null,null],["Kiwi",0.5,null,null,null]],
  fmt:{B:"money", E3:"money"}, target:"E3", answer:"=XLOOKUP(E2,A2:A7,B2:B7)",
@@ -248,7 +248,7 @@ window.FLAB = [
  fmt:{}, target:"C2", fill:"C2:C5", answer:"=IF(B2>=18,\"Adult\",\"Child\")", also:["=IF(B2<18,\"Child\",\"Adult\")"],
  traps:[{f:"=IF(B2>18,\"Adult\",\"Child\")", why:"The quotes are fixed, but your test makes an 18-year-old (Hana) a Child. “18 and over” means `B2>=18`."}],
  hints:["Words without quotes look like names of cells or functions to the spreadsheet."],
- explain:"`#NAME?` means the spreadsheet met a word it doesn’t recognise: a misspelt function, or text without quotes. Text values always go in straight double quotes."},
+ explain:"`#NAME?` means the spreadsheet met a word it doesn’t recognize: a misspelt function, or text without quotes. Text values always go in straight double quotes."},
 {id:"fx-div0", group:"fix", title:"Fix: #DIV/0!", lesson:"t1u9-l3", start:"=B2/C2", keep:["C3","C5"], extra:[{C3:4}],
  task:"`D2` divides the cost by the number of people. Some events haven’t got sign-ups yet (0 people), so the copies show `#DIV/0!`. Change the formula so it shows **0** when there are no people. It will be copied down to `D5`.",
  data:[["Event","Cost","People","Per person"],["Picnic",120,8,null],["Quiz",60,0,null],["Walk",30,6,null],["Film",90,0,null]],

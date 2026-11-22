@@ -27,9 +27,9 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Every percentage has a “what”", body:[
-      {lead:"“Per cent” means “per hundred”. A percentage is a fraction written as if the bottom number were 100."},
+      {lead:"“Percent” means “per hundred”. A percentage is a fraction written as if the bottom number were 100."},
       "If 8 of the 20 people at a community meeting volunteered, that’s 8 ÷ 20 = 0.40, which is **40%**. The number you divide by, here 20, is the [[denominator]]. Every percentage has one, even when nobody says what it is.",
-      "Think of a percentage as a slice of a pie. “40%” tells you the slice’s share, not the size of the pie. Forty per cent of 20 people is 8 people; forty per cent of 2 million is 800,000. So the first question to ask about any percentage is: **percent of what?**",
+      "Think of a percentage as a slice of a pie. “40%” tells you the slice’s share, not the size of the pie. Forty percent of 20 people is 8 people; forty percent of 2 million is 800,000. So the first question to ask about any percentage is: **percent of what?**",
       {list:[
         "“30% of users prefer the new design.” 30% of all users, or of the 50 who answered a pop-up survey?",
         "“Sales up 200%!” Up from what? From 1 sale to 3 is up 200%.",
@@ -57,7 +57,7 @@ ICA.addUnit({
         "**Reversing a discount.** A coat costs 80 after a 20% discount. The original price was 80 ÷ 0.80 = **100**, not 80 × 1.20 = 96. Divide by the multiplier to go back."
       ]},
       {ex:"A price shown as 120 includes a 20% sales tax added to a pre-tax price of 100.\n\nTax amount: 120 − 100 = 20.\nAs a share of the pre-tax price: 20 ÷ 100 = 20%.\nAs a share of the price you pay: 20 ÷ 120 ≈ 16.7%.\n\nBoth are true. They have different denominators.", label:"Worked example: tax as a share of what? (invented figures)"},
-      {lab:"fl-pct", t:"Practise: take a percentage off a price with a formula"}
+      {lab:"fl-pct", t:"Practice: take a percentage off a price with a formula"}
     ]},
     {h:"Counts need denominators: rates", body:[
       "A raw count can’t tell you how common something is. A city will have more burglaries, births and bus users than a village simply because more people live there.",
@@ -71,9 +71,9 @@ ICA.addUnit({
     {h:"Choosing a fair denominator", body:[
       "The denominator is a choice, and different choices answer different questions.",
       {list:[
-        "**Road safety**: deaths per person, per vehicle, per kilometre travelled or per journey can rank the same types of transport in different orders, because people travel very different distances by each.",
+        "**Road safety**: deaths per person, per vehicle, per kilometer traveled or per journey can rank the same types of transport in different orders, because people travel very different distances by each.",
         "**Spending**: total spending or spending per person? Per person is fairer when comparing countries or towns of different sizes.",
-        "**Health**: a town with many older residents will have more deaths per 1,000 people even if its care is excellent. Comparing [[crude-rate|crude rates]] across places with different age structures can mislead, which is why statisticians also publish **age-standardised** rates."
+        "**Health**: a town with many older residents will have more deaths per 1,000 people even if its care is excellent. Comparing [[crude-rate|crude rates]] across places with different age structures can mislead, which is why statisticians also publish **age-standardized** rates."
       ]},
       {warn:"A rate measured in one period or group can’t be compared with one measured in another unless the denominators match: per 1,000 versus per 100,000, per year versus per month, all residents versus adults only."}
     ]},
@@ -83,10 +83,10 @@ ICA.addUnit({
       "Some percentages are not meant to add up to 100 at all:",
       {list:[
         "**Choose-all-that-apply questions.** If people could tick several reasons, the shares can add up to 160%.",
-        "**Rounding.** Three equal groups each round to 33%, totalling 99%. That’s honest rounding, not an error.",
+        "**Rounding.** Three equal groups each round to 33%, totaling 99%. That’s honest rounding, not an error.",
         "**Different bases.** “40% of women and 30% of men” can’t be combined into 70% of anything."
       ]},
-      {lab:"fl-share", t:"Practise: each item’s share of a total, with the total locked"},
+      {lab:"fl-share", t:"Practice: each item’s share of a total, with the total locked"},
       {key:"When in doubt, rebuild the counts: how many, out of how many. Percentages are summaries of counts, and the counts never mislead you about the denominator."}
     ]}
    ],
@@ -116,7 +116,7 @@ ICA.addUnit({
     {id:"t3u1-l1-x5", type:"spot", q:"A local newsletter writes about a youth club. Tap the phrases that could mislead a reader.", ask:"could mislead", parts:[
       "“",{t:"Membership is up 100%", flag:true, why:"Up from what? The rest of the article says it went from 4 members to 8. A 100% rise in a tiny group sounds dramatic; give the counts."}," this year, and ",{t:"attendance fell 10%", flag:true, why:"Ambiguous. If attendance is a percentage (say 70% of members came), does it mean 10 percentage points (to 60%) or 10 percent (to 63%)? Say which."}," as some members moved away. ",{t:"Membership went from 4 to 8", flag:false, why:"This gives the actual counts, which is exactly what a reader needs to judge the 100%."},". The club’s ",{t:"rate of 2 members per 1,000 young people", flag:false, why:"A rate with a stated denominator is a fair way to compare with other towns."}," is ",{t:"higher than the city’s, which has 900 members", flag:true, why:"This compares a rate with a raw count. To compare fairly, you need the city’s rate per 1,000 young people too."},".”"
     ]},
-    {id:"t3u1-l1-x6", type:"number", q:"Two branches of a library ran a reading challenge. Branch A: 30 of 40 children finished (75%). Branch B: 12 of 60 children finished (20%). What percentage of **all** the children finished?", answer:42, tol:0.1, unit:"%", why:"Rebuild the counts: (30 + 12) ÷ (40 + 60) = 42 ÷ 100 = 42%. Branch B is bigger, so it pulls the overall figure towards its 20%.", wrongs:[
+    {id:"t3u1-l1-x6", type:"number", q:"Two branches of a library ran a reading challenge. Branch A: 30 of 40 children finished (75%). Branch B: 12 of 60 children finished (20%). What percentage of **all** the children finished?", answer:42, tol:0.1, unit:"%", why:"Rebuild the counts: (30 + 12) ÷ (40 + 60) = 42 ÷ 100 = 42%. Branch B is bigger, so it pulls the overall figure toward its 20%.", wrongs:[
       {v:47.5, tol:0.1, why:"That’s the average of 75% and 20%. Averaging percentages treats the two branches as equal in size, but Branch B has 60 children and Branch A only 40."},
       {v:95, tol:0.1, why:"You added the two percentages. Percentages from different groups can’t be added; combine the counts instead."}
     ]},
@@ -179,7 +179,7 @@ ICA.addUnit({
       "The **[[risk-ratio|risk ratio]]** compares the two risks as a fraction: 0.75 means the treated group’s risk was three-quarters of the untreated group’s. One minus it gives the **relative risk reduction**, 25%. The **absolute risk difference** is the plain gap, here 5 people per 1,000 (Research Skills covers absolute and relative risk in papers: see [[absolute-risk]]).",
       "The **[[number-needed-to-treat|number needed to treat]]** (NNT) turns the absolute difference around: how many people need to take the medicine for one of them to avoid a stroke? If 5 in 1,000 benefit, 1,000 ÷ 5 = **200** people take it for five years for one stroke to be prevented. The other 199 took it without that benefit (some of them would never have had a stroke anyway, and some had one despite it).",
       {ex:"Relative change in a spreadsheet, with the old value in B2 and the new in C2:\n=(C2-B2)/B2\nThe brackets matter: without them, the app divides C2 by B2 first.", label:"Relative change formula", mono:true},
-      {lab:"fl-order", t:"Practise: use brackets so the subtraction happens before the division"}
+      {lab:"fl-order", t:"Practice: use brackets so the subtraction happens before the division"}
     ]},
     {h:"Same relative effect, different benefit", body:[
       "A relative effect often stays roughly similar across groups, while the absolute benefit depends on how high the risk was to begin with. Suppose (invented again) the same medicine is given to people at much higher risk: 200 in 1,000 would have a stroke without it.",
@@ -230,7 +230,7 @@ ICA.addUnit({
       {t:"“Cuts the risk of flu by 40%”", b:1, why:"A percentage of the starting risk, so it’s relative. Without the starting risk you can’t tell how many people are protected."},
       {t:"“3 fewer cases for every 1,000 people vaccinated”", b:0, why:"A plain difference in counts per 1,000: absolute."},
       {t:"“Twice as likely to be late”", b:1, why:"A ratio of two risks (a risk ratio of 2): relative."},
-      {t:"“Prices rose by 12 cents a litre”", b:0, why:"A difference in real units (cents): absolute."},
+      {t:"“Prices rose by 12 cents a liter”", b:0, why:"A difference in real units (cents): absolute."},
       {t:"“Unemployment rose 1.5 percentage points”", b:0, why:"Percentage points are the plain gap between two percentages: absolute."},
       {t:"“Unemployment rose 30%”", b:1, why:"30% of the starting rate: relative. From 5% to 6.5% is +1.5 points and +30%."}
     ]},
@@ -248,7 +248,7 @@ ICA.addUnit({
     ]},
     {id:"t3u1-l2-x7", type:"explain", q:"A medicine cuts the risk of a heart attack over five years by 25% (a relative reduction). Without it, 8 in 1,000 people in one group would have a heart attack, and 80 in 1,000 in another. Explain why the medicine matters far more to the second group.", hint:"Turn the 25% into people per 1,000 for each group.", model:"A 25% cut is a relative figure, so how many heart attacks it prevents depends on the starting risk. In the first group it prevents 25% of 8 = **2 per 1,000**, so about 500 people must take it for one to benefit. In the second it prevents 25% of 80 = **20 per 1,000**, a number needed to treat of 50. The relative effect is the same, but the absolute benefit is ten times larger for the higher-risk group.", points:["Says 25% is a relative change that depends on the starting risk", "Works out the absolute benefit for each group (2 and 20 per 1,000)", "Uses the number needed to treat (500 and 50) or a similar absolute comparison", "Concludes the absolute benefit is ten times larger for the higher-risk group"]}
    ],
-   apply:{intro:"Practise turning relative claims into counts of people.", tasks:[
+   apply:{intro:"Practice turning relative claims into counts of people.", tasks:[
      {t:"Build a risk calculator", app:{all:[
        "Headers in row 1: `Group`, `Risk untreated (per 1,000)`, `Risk treated (per 1,000)`, `Absolute difference`, `Relative reduction`, `NNT`.",
        "Row 2: `Lower risk`, 20, 15. Row 3: `Higher risk`, 200, 150.",
@@ -258,7 +258,7 @@ ICA.addUnit({
      {t:"Rewrite a headline", how:["Find a news story that reports a risk as “cuts”, “raises”, “doubles” or “% more likely”.","Find the starting risk in the story, its source or the study it is based on. If you can’t find it, note that.","Rewrite the claim as natural frequencies: “Out of 1,000 people like this, about X would … without it and Y with it, over Z years.”"], write:"The original claim and your rewritten version."}
    ], proof:"A small calculator with both groups correct, and one headline rewritten as natural frequencies (or a note of what information was missing)."},
    read:[
-     {book:"openintro", where:"Chapter 1, Section 1.1 “Case study: using stents to prevent strokes”", note:"A real trial reported as proportions in each group: practise working out the absolute difference yourself."}
+     {book:"openintro", where:"Chapter 1, Section 1.1 “Case study: using stents to prevent strokes”", note:"A real trial reported as proportions in each group: practice working out the absolute difference yourself."}
    ]
   },
   /* ===================== LESSON 3 ===================== */
@@ -282,7 +282,7 @@ ICA.addUnit({
       "Research Skills explains how to calculate these from survey data (see {{descriptive-statistics}}). This lesson is about how they **mislead**. When a headline says “the average family” or “the average price”, it often doesn’t say which average it used. Official statistics usually do say, and they often publish more than one, because the choice changes the answer."
     ]},
     {h:"Skew pulls the mean", body:[
-      "When most values are modest and a few are very large, the data are **[[skewness|skewed]]** (Unit 5 covers this fully: see {{distributions}}). Incomes, house prices, wealth, city sizes and social media followers are all like this. The few large values drag the mean towards them; the median barely moves.",
+      "When most values are modest and a few are very large, the data are **[[skewness|skewed]]** (Unit 5 covers this fully: see {{distributions}}). Incomes, house prices, wealth, city sizes and social media followers are all like this. The few large values drag the mean toward them; the median barely moves.",
       {fig:'<svg viewBox="0 0 340 200"><text x="170" y="18" text-anchor="middle">15 household incomes (invented)</text><line class="d-rose" x1="79.7" y1="72" x2="79.7" y2="150" stroke-width="2" stroke-dasharray="4 3"/><line class="d-sage" x1="59.6" y1="32" x2="59.6" y2="150" stroke-width="2"/><text class="s" x="64" y="42">median 33</text><text class="s" x="84" y="66">mean 49.7</text><circle class="d-lup" cx="41.6" cy="142" r="5" stroke-width="1.5"/><circle class="d-lup" cx="45.2" cy="131" r="5" stroke-width="1.5"/><circle class="d-lup" cx="48.8" cy="120" r="5" stroke-width="1.5"/><circle class="d-lup" cx="51.2" cy="109" r="5" stroke-width="1.5"/><circle class="d-lup" cx="52.4" cy="142" r="5" stroke-width="1.5"/><circle class="d-lup" cx="54.8" cy="98" r="5" stroke-width="1.5"/><circle class="d-lup" cx="57.2" cy="131" r="5" stroke-width="1.5"/><circle class="d-lup" cx="59.6" cy="120" r="5" stroke-width="1.5"/><circle class="d-lup" cx="62.0" cy="109" r="5" stroke-width="1.5"/><circle class="d-lup" cx="65.6" cy="142" r="5" stroke-width="1.5"/><circle class="d-lup" cx="70.4" cy="131" r="5" stroke-width="1.5"/><circle class="d-lup" cx="76.4" cy="142" r="5" stroke-width="1.5"/><circle class="d-lup" cx="86.0" cy="131" r="5" stroke-width="1.5"/><circle class="d-lup" cx="116.0" cy="142" r="5" stroke-width="1.5"/><circle class="d-lup" cx="308.0" cy="142" r="5" stroke-width="1.5"/><line class="d-ink" x1="20" y1="150" x2="322" y2="150" stroke-width="2"/><line class="d-ink" x1="20" y1="150" x2="20" y2="155" stroke-width="1.5"/><text class="s" x="20" y="170" text-anchor="middle">0</text><line class="d-ink" x1="80" y1="150" x2="80" y2="155" stroke-width="1.5"/><text class="s" x="80" y="170" text-anchor="middle">50</text><line class="d-ink" x1="140" y1="150" x2="140" y2="155" stroke-width="1.5"/><text class="s" x="140" y="170" text-anchor="middle">100</text><line class="d-ink" x1="200" y1="150" x2="200" y2="155" stroke-width="1.5"/><text class="s" x="200" y="170" text-anchor="middle">150</text><line class="d-ink" x1="260" y1="150" x2="260" y2="155" stroke-width="1.5"/><text class="s" x="260" y="170" text-anchor="middle">200</text><line class="d-ink" x1="320" y1="150" x2="320" y2="155" stroke-width="1.5"/><text class="s" x="320" y="170" text-anchor="middle">250</text><text class="s" x="304" y="126" text-anchor="end">one very high income</text><text class="s" x="170" y="190" text-anchor="middle">income, thousands per year</text></svg>', alt:"A dot plot of 15 invented household incomes in thousands. Fourteen dots cluster between 18 and 80; one dot sits far to the right at 240. A solid line marks the median at 33 and a dashed line marks the mean at 49.7, to the right of most dots.", cap:"One very high income pulls the mean to 49.7 thousand. The median stays at 33 thousand. Twelve of the 15 households earn less than the mean."},
       "So most households in this group earn **less than the average** (the mean). That isn’t a contradiction: it’s what skew does. A famous light-hearted version: almost everyone has more than the average number of legs, because a few people with fewer than two pull the mean just below 2.",
       "A mean can also be a value that nobody has. If 10 families have 18 children between them, the mean is 1.8 children per family, though every family has a whole number. That’s fine for planning school places (it gives the total), but it isn’t a description of any real family.",
@@ -296,12 +296,12 @@ ICA.addUnit({
         "A person asking “what will a home like mine cost?” is better served by the **median**, or better still by the range of prices of similar homes."
       ]},
       "The honest approach is to give both when they differ a lot, and to say which one you used.",
-      {lab:"fl-average", t:"Practise: an average with AVERAGE (and why dividing by the wrong count goes wrong)"}
+      {lab:"fl-average", t:"Practice: an average with AVERAGE (and why dividing by the wrong count goes wrong)"}
     ]},
     {h:"An average hides the spread", body:[
       "Two invented places have the same mean monthly temperature over a year: **15 °C**.",
       {table:[["Place (invented)","Mean","Coldest month","Warmest month"],["Coastal town","15 °C","11 °C","20 °C"],["Inland town","15 °C","1 °C","30 °C"]]},
-      "Pack the same clothes for both and you’ll be wrong in one of them for most of the year. An average describes the centre, never the whole story. Ask also for the spread: the range (lowest to highest), or the [[interquartile-range|interquartile range]] (the spread of the middle half of the values), which Unit 5 teaches.",
+      "Pack the same clothes for both and you’ll be wrong in one of them for most of the year. An average describes the center, never the whole story. Ask also for the spread: the range (lowest to highest), or the [[interquartile-range|interquartile range]] (the spread of the middle half of the values), which Unit 5 teaches.",
       "The same goes for averages about people. “On average, the training raised scores by 4 points” could mean everyone gained about 4 points, or that a few people gained 20 and most gained nothing. Both give the same mean. When a decision depends on what will happen to *you*, ask how much results varied from person to person, not only what the average was."
     ]},
     {h:"Averages of averages", body:[
@@ -389,7 +389,7 @@ ICA.addUnit({
      "Name the four outcomes of a test and define sensitivity, specificity and the false positive rate",
      "Work out what a positive or negative result means using natural frequencies",
      "Explain how the base rate changes the meaning of the same test",
-     "Apply the same reasoning to fraud alerts, detectors and forensic matches, and recognise the prosecutor’s fallacy"
+     "Apply the same reasoning to fraud alerts, detectors and forensic matches, and recognize the prosecutor’s fallacy"
    ],
    learn:[
     {h:"“Of whom?”: conditional probability", body:[
@@ -506,7 +506,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t3u1-l5", title:"Numbers in context: size, money, uncertainty and who’s missing", minutes:55,
-   hook:{q:"How long is a million seconds? And a billion seconds?", options:["About 12 days, and about 32 years","About 12 days, and about 120 days","About 1 year, and about 10 years","About 3 hours, and about 1 month"], answer:0, reveal:"**About 12 days, and about 32 years.** A million seconds is 1,000,000 ÷ 86,400 seconds a day ≈ 11.6 days. A billion is a thousand times more: about 31.7 years. In headlines “million” and “billion” sound like neighbours, but they are as far apart as a fortnight and a lifetime’s career. This lesson is about getting a feel for size, and the other context a number needs."},
+   hook:{q:"How long is a million seconds? And a billion seconds?", options:["About 12 days, and about 32 years","About 12 days, and about 120 days","About 1 year, and about 10 years","About 3 hours, and about 1 month"], answer:0, reveal:"**About 12 days, and about 32 years.** A million seconds is 1,000,000 ÷ 86,400 seconds a day ≈ 11.6 days. A billion is a thousand times more: about 31.7 years. In headlines “million” and “billion” sound like neighbors, but they are as far apart as a fortnight and a lifetime’s career. This lesson is about getting a feel for size, and the other context a number needs."},
    goals:[
      "Read millions, billions and trillions as orders of magnitude, including where words differ between languages",
      "Make big numbers meaningful: per person, per day, and as a share of a total",
@@ -529,9 +529,9 @@ ICA.addUnit({
         "**Per day or per year**: divide by the time period.",
         "**As a share of a total**: divide by the whole budget, market or population."
       ]},
-      {ex:"A country of 25 million people spends 500 million a year on a programme. Total government spending is 100 billion.\n\nPer person: 500,000,000 ÷ 25,000,000 = 20 a year, or about 0.05 a day.\nShare of spending: 500,000,000 ÷ 100,000,000,000 = 0.005 = 0.5%.\n\n“Half a billion” sounds huge; “20 each a year, half a per cent of the budget” lets readers judge it.", label:"Worked example: a big number made human-sized (invented figures)"},
+      {ex:"A country of 25 million people spends 500 million a year on a program. Total government spending is 100 billion.\n\nPer person: 500,000,000 ÷ 25,000,000 = 20 a year, or about 0.05 a day.\nShare of spending: 500,000,000 ÷ 100,000,000,000 = 0.005 = 0.5%.\n\n“Half a billion” sounds huge; “20 each a year, half a percent of the budget” lets readers judge it.", label:"Worked example: a big number made human-sized (invented figures)"},
       "One real anchor helps a lot: the United Nations marked the world’s population passing **8 billion** on 15 November 2022. So 1 billion of anything shared across the world is about one-eighth each: a billion dollars is about 12.5 cents per person.",
-      {tip:"Do a quick sanity check on any big figure: does it imply something impossible per person? A claim that “each resident uses 2,000 litres of water a day for drinking” fails at once."}
+      {tip:"Do a quick sanity check on any big figure: does it imply something impossible per person? A claim that “each resident uses 2,000 liters of water a day for drinking” fails at once."}
     ]},
     {h:"Nominal and real money", body:[
       "Money changes value. Prices in most countries rise over time (**[[inflation]]**), so the same amount buys less. A **nominal** amount is the number of currency units at the time. A **real** amount has been adjusted for inflation so different years can be compared ([[nominal-vs-real]]).",
@@ -576,7 +576,7 @@ ICA.addUnit({
         "**How sure?** Is there a range or a margin of error? Will it be revised?",
         "**Who’s missing?** Who dropped out, closed down or was never asked?"
       ]},
-      {key:"You don’t need advanced maths to read numbers critically. You need the habit of asking what each number is a number *of*, and what it is being compared with."}
+      {key:"You don’t need advanced math to read numbers critically. You need the habit of asking what each number is a number *of*, and what it is being compared with."}
     ]}
    ],
    try:[
@@ -604,7 +604,7 @@ ICA.addUnit({
     ]},
     {id:"t3u1-l5-x5", type:"sort", q:"Which of these are likely to suffer from survivorship bias?", buckets:["Survivorship bias likely","Survivorship bias unlikely"], items:[
       {t:"Studying the habits of companies still trading after 30 years to find the “secrets of success”", b:0, why:"Companies with the same habits that went bust aren’t in the sample, so you can’t tell whether the habits made any difference."},
-      {t:"Judging a fitness programme by the before-and-after photos of people who finished it", b:0, why:"People who dropped out, perhaps because it didn’t work for them, are missing."},
+      {t:"Judging a fitness program by the before-and-after photos of people who finished it", b:0, why:"People who dropped out, perhaps because it didn’t work for them, are missing."},
       {t:"Following up everyone who enrolled in a course, including those who left, to see how it went", b:1, why:"Including everyone who started, dropouts too, is exactly how to avoid survivorship bias."},
       {t:"Average past returns of the investment funds that are still open today", b:0, why:"Funds that did badly were often closed or merged and have dropped out of the list, so the average looks better than investors’ experience."},
       {t:"Concluding that old songs were better because the old songs you still hear are great", b:0, why:"The forgettable songs from the past have been forgotten; today’s forgettable ones are still on the radio."},
@@ -702,7 +702,7 @@ ICA.addUnit({
     summary:"What a percentage is a percentage of, points versus percent, chained changes, and fair rates per person.",
     levels:{
      starter:[
-      "A percentage is a share out of 100. “40% of the group” means 40 out of every 100 people in it. The key word is *of*: every percentage is a percentage **of something**, called the [[denominator]]. Forty per cent of 20 people is 8; forty per cent of 2 million is 800,000.",
+      "A percentage is a share out of 100. “40% of the group” means 40 out of every 100 people in it. The key word is *of*: every percentage is a percentage **of something**, called the [[denominator]]. Forty percent of 20 people is 8; forty percent of 2 million is 800,000.",
       "When a percentage changes, there are two ways to say how much. From 4% to 5% is a rise of **1 [[percentage-point|percentage point]]** (the simple gap) or a rise of **25%** (the gap compared with the starting 4%). Both are true. A good report says which it means.",
       "Counts on their own don’t show how common something is: a big city always has more of everything than a village. A **rate** divides the count by the population: “300 cases per 100,000 people”. A rate per person is called **per capita**.",
       {key:"Ask “percent of what?” and “out of how many?” before trusting any percentage or count."}
@@ -713,15 +713,15 @@ ICA.addUnit({
       "**Rates.** Rate = count ÷ population × a convenient base (1,000, 100,000). In a spreadsheet: `=B2/C2*100000`. “1 in X” is the same idea upside down: 1 in 400 = 0.25% = 250 per 100,000. In “1 in X” form a bigger X is a smaller risk, so convert everything to one format before comparing. Rates from small populations are noisy: a village going from 3 to 6 cases “doubles” its rate without anything changing.",
       "**Combining groups.** Never average percentages from groups of different sizes. Rebuild the counts: 9 of 10 and 20 of 40 together are 29 of 50 = 58%, not the 70% you get by averaging 90% and 50%.",
       "**Not adding to 100%** is often fine: choose-all-that-apply questions, rounding (three groups of 33%), or shares with different bases.",
-      {lab:"fl-share", t:"Practise: shares of a total in a spreadsheet"}
+      {lab:"fl-share", t:"Practice: shares of a total in a spreadsheet"}
      ],
      pro:[
       "**Rates, proportions and ratios.** In epidemiology a *proportion* is a part of a whole (prevalence: the share of people with a condition at a point in time); a *rate* strictly has time in its denominator (incidence: new cases per 1,000 person-years); a *ratio* compares two separate quantities (doctors per 1,000 residents). Everyday usage blurs these, but in papers the difference matters.",
       "**Basis points.** Finance often uses basis points for small changes in rates: 1 basis point = 0.01 percentage points, so “a 25 basis-point rise” is 0.25 points (for example, 4.00% to 4.25%).",
-      "**Age standardisation.** Places with older populations have more deaths per 1,000 people even with excellent care. Statistics offices therefore publish age-standardised rates, which apply each place’s age-specific rates to a common standard population, so that differences in age structure don’t drive the comparison. Compare crude with crude and standardised with standardised, never one with the other.",
+      "**Age standardization.** Places with older populations have more deaths per 1,000 people even with excellent care. Statistics offices therefore publish age-standardized rates, which apply each place’s age-specific rates to a common standard population, so that differences in age structure don’t drive the comparison. Compare crude with crude and standardized with standardized, never one with the other.",
       "**Averaging growth.** Average percentage changes over several periods with the geometric mean, not the arithmetic mean. +50% then −50% has an arithmetic average of 0% but a real result of −25% overall, which is √(1.5 × 0.5) − 1 ≈ −13.4% per period.",
       "**Doubling time.** At steady growth of r% per period, doubling takes about 70 ÷ r periods (the “rule of 70”). At 7% a year: 70 ÷ 7 = 10 years; the exact value is ln 2 ÷ ln 1.07 ≈ 10.2 years.",
-      "**Choosing the denominator is a choice of question.** Deaths per journey, per kilometre and per hour of travel answer different questions about transport safety, and can rank modes differently. State the one you used and why."
+      "**Choosing the denominator is a choice of question.** Deaths per journey, per kilometer and per hour of travel answer different questions about transport safety, and can rank modes differently. State the one you used and why."
      ]},
     related:["misleading-numbers","absolute-relative-risk","averages-misleading","numbers-in-context"],
     read:[{book:"ostat", where:"Chapter 1, Section 1.3 “Frequency, Frequency Tables, and Levels of Measurement”"}],
@@ -773,7 +773,7 @@ ICA.addUnit({
       "**[[simpsons-paradox|Simpson’s paradox]].** A real example: a 1986 *British Medical Journal* study of kidney stone treatments (Charig and colleagues). Open surgery succeeded in 93% of small-stone cases and 73% of large-stone cases; keyhole surgery in 87% and 69%. Yet overall, keyhole looked better (83% against 78%), because open surgery was given far more of the hard, large-stone cases. Stone size was a [[confounder]].",
       "**A mean nobody has.** 18 children in 10 families is a mean of 1.8, a value no family has; useful for totals, not as a description of a family. **Rates of different-sized groups** combine as total events ÷ total population, never as an unweighted average of the rates.",
       "**Composition effects.** An average changes when the group changes. If lower-paid staff leave, mean pay rises without anyone getting a raise. Ask whether the values changed or the membership did.",
-      {lab:"fl-average", t:"Practise: AVERAGE in a spreadsheet"}
+      {lab:"fl-average", t:"Practice: AVERAGE in a spreadsheet"}
      ],
      pro:[
       "**Which comparison is right in Simpson’s paradox?** It depends on the causal structure, not on arithmetic. If the splitting variable causes both the treatment choice and the outcome (stone size), compare within groups. If it is itself caused by the treatment (say, a side effect that then affects survival), splitting by it can introduce bias. Thinking in terms of causal diagrams is the standard way to decide.",
@@ -781,7 +781,7 @@ ICA.addUnit({
       "**Geometric means** are the right average for growth factors and ratios. Average annual growth from +50% and −50% is √(1.5 × 0.5) − 1 ≈ −13.4% a year, not 0%.",
       "**Ecological fallacy.** An average for a group doesn’t describe its members. Regions with higher average incomes may vote a certain way without richer individuals voting that way.",
       "**Means of rates need weights too.** Averaging the rates of a small and a large town as if equal gives each person in the small town far more weight. Population-weighted means, or the overall rate (total events ÷ total population), avoid this.",
-      "**Distributions matter.** Unit 5 of this track covers distributions, boxplots and spread ({{distributions}}, {{centre-spread}}, {{boxplots}}); the habit to build here is never to accept a single centre without asking for its spread and shape."
+      "**Distributions matter.** Unit 5 of this track covers distributions, boxplots and spread ({{distributions}}, {{centre-spread}}, {{boxplots}}); the habit to build here is never to accept a single center without asking for its spread and shape."
      ]},
     related:["percentages-rates","descriptive-statistics","numbers-in-context","centre-spread"],
     read:[{book:"ostat", where:"Chapter 2, Section 2.6 “Skewness and the Mean, Median, and Mode”"},{book:"openintro", where:"Chapter 2, Section 2.1 “Examining numerical data” (subsection “Robust statistics”)"}],
@@ -834,14 +834,14 @@ ICA.addUnit({
       "**Anchors.** The UN marked world population passing 8 billion on 15 November 2022. Your national statistics office publishes your country’s population; use it for per-person figures.",
       "**Real money.** A [[price-index|price index]] such as a consumer price index tracks the cost of a typical basket. To express an amount from year A in year B money: amount × index(B) ÷ index(A). In a spreadsheet: `=B2*C3/C2`. With an index of 100 in 2015 and 135 in 2025, 30,000 in 2015 is 40,500 in 2025 money.",
       "**Records.** Nominal records (box office, budgets, prices) are broken routinely under inflation. Ask for the real figure.",
-      "**Survivorship bias** examples: studying only companies still trading, investment funds still open, buildings still standing, testimonials from people who finished a programme. The aircraft story from the Second World War (Abraham Wald’s work for the Statistical Research Group at Columbia University) is the classic, often simplified, illustration."
+      "**Survivorship bias** examples: studying only companies still trading, investment funds still open, buildings still standing, testimonials from people who finished a program. The aircraft story from the Second World War (Abraham Wald’s work for the Statistical Research Group at Columbia University) is the classic, often simplified, illustration."
      ],
      pro:[
-      "**Which index?** Consumer price indexes measure household prices; a GDP deflator covers the whole economy; specialised indexes exist for housing, wages and construction. Use the one that matches the thing being adjusted, and state the base year.",
+      "**Which index?** Consumer price indexes measure household prices; a GDP deflator covers the whole economy; specialized indexes exist for housing, wages and construction. Use the one that matches the thing being adjusted, and state the base year.",
       "**Real interest and growth rates.** The exact real rate is (1 + nominal) ÷ (1 + inflation) − 1. At 5% nominal and 3% inflation: 1.05 ÷ 1.03 − 1 ≈ 1.94%; the common shortcut (5 − 3 = 2%) is close when rates are small.",
-      "**Comparing countries.** Converting at market exchange rates ignores that prices differ between countries. Purchasing power parity (PPP) conversions adjust for this and are used by international organisations to compare living standards.",
-      "**Orders of magnitude for checking.** A Fermi estimate (rough reasoning with round numbers) catches impossible claims quickly: if a figure implies each resident drinks 2,000 litres a day, something is wrong by about three orders of magnitude.",
-      "**Survivorship bias is a selection bias.** In research it shows up as attrition (people dropping out of a study for reasons linked to the outcome). Randomised trials guard against it with intention-to-treat analysis, which analyses everyone as randomised, including those who stopped. In finance, fund databases that drop closed funds overstate average returns.",
+      "**Comparing countries.** Converting at market exchange rates ignores that prices differ between countries. Purchasing power parity (PPP) conversions adjust for this and are used by international organizations to compare living standards.",
+      "**Orders of magnitude for checking.** A Fermi estimate (rough reasoning with round numbers) catches impossible claims quickly: if a figure implies each resident drinks 2,000 liters a day, something is wrong by about three orders of magnitude.",
+      "**Survivorship bias is a selection bias.** In research it shows up as attrition (people dropping out of a study for reasons linked to the outcome). Randomised trials guard against it with intention-to-treat analysis, which analyzes everyone as randomized, including those who stopped. In finance, fund databases that drop closed funds overstate average returns.",
       "**False precision.** An estimate written as 1,203,457 suggests accuracy to the last person. If it is really an estimate, round it and give its uncertainty."
      ]},
     related:["percentages-rates","estimates-uncertainty-news","averages-misleading"],
@@ -945,7 +945,7 @@ ICA.addUnit({
      {t:"45", why:"That takes another 25% off. To undo a discount, divide by the multiplier (0.75)."}
    ]},
    {id:"t3u1-q08", lesson:"t3u1-l1", level:3, q:"Priya combines results from two sites. Site 1: 45 of 50 people improved (90%). Site 2: 30 of 150 improved (20%). What share of all participants improved?", options:[
-     {t:"37.5%", ok:true, why:"(45 + 30) ÷ (50 + 150) = 75 ÷ 200 = 37.5%. Site 2 is three times bigger, so it pulls the overall figure towards 20%."},
+     {t:"37.5%", ok:true, why:"(45 + 30) ÷ (50 + 150) = 75 ÷ 200 = 37.5%. Site 2 is three times bigger, so it pulls the overall figure toward 20%."},
      {t:"55%", why:"That’s the average of 90% and 20%, which treats both sites as the same size."},
      {t:"110%", why:"Percentages from different groups can’t be added. Combine the counts."},
      {t:"20%", why:"That’s Site 2 alone. Site 1’s 45 improvers also count."}
@@ -1025,7 +1025,7 @@ ICA.addUnit({
      {t:"The total, 63 days", why:"The total doesn’t describe a typical patient’s wait."}
    ]},
    {id:"t3u1-q21", lesson:"t3u1-l3", level:1, q:"In data skewed to the right (a long tail of high values), how do the mean and median usually compare?", options:[
-     {t:"The mean is higher than the median", ok:true, why:"The high values in the tail pull the mean towards them; the median stays near the middle of the bulk."},
+     {t:"The mean is higher than the median", ok:true, why:"The high values in the tail pull the mean toward them; the median stays near the middle of the bulk."},
      {t:"The median is higher than the mean", why:"That is usual for left-skewed data, with a long tail of low values."},
      {t:"They are always equal", why:"They are close only for roughly symmetric data."},
      {t:"It is impossible to say anything in general", why:"Right skew has a typical, though not universal, signature: mean above median."}
@@ -1048,19 +1048,19 @@ ICA.addUnit({
      {t:"The average must have been calculated wrongly", why:"The arithmetic may be fine. The problem is which pupils were included."},
      {t:"Averages are meaningless and should never be used for schools", why:"Averages are useful when the groups compared are similar. Here, they aren’t."}
    ]},
-   {id:"t3u1-q25", lesson:"t3u1-l3", level:2, q:"A festival organiser wants to estimate the total amount of food needed for 5,000 visitors. Which summary of past visitors’ food purchases should she use?", options:[
+   {id:"t3u1-q25", lesson:"t3u1-l3", level:2, q:"A festival organizer wants to estimate the total amount of food needed for 5,000 visitors. Which summary of past visitors’ food purchases should she use?", options:[
      {t:"The mean amount per visitor, because mean × number of visitors = total", ok:true, why:"For totals, the mean is the right average: it includes the big eaters, who really do need food."},
      {t:"The median, because it isn’t affected by extremes", why:"The median ignores how much the big eaters buy, so median × 5,000 would underestimate the total if purchases are right-skewed."},
      {t:"The mode, because it’s the most common amount", why:"The most common purchase doesn’t tell you the total."},
      {t:"The largest purchase, to be safe", why:"Largest × 5,000 would hugely overestimate. The mean gives the expected total."}
    ]},
    {id:"t3u1-q26", lesson:"t3u1-l3", level:1, q:"Two towns both have an average yearly temperature of 15 °C. What does this tell you about their weather?", options:[
-     {t:"Only the centre: one town could stay mild all year while the other has cold winters and hot summers", ok:true, why:"An average says nothing about spread. You need the range or another measure of spread to compare."},
+     {t:"Only the center: one town could stay mild all year while the other has cold winters and hot summers", ok:true, why:"An average says nothing about spread. You need the range or another measure of spread to compare."},
      {t:"Their weather is the same", why:"Same average, possibly very different spread: 11 to 20 °C in one town and 1 to 30 °C in another."},
      {t:"Both towns have mild weather all year", why:"A 15 °C average can come from extreme seasons that average out."},
      {t:"Their coldest months are the same", why:"The average doesn’t tell you the coldest or warmest month."}
    ]},
-   {id:"t3u1-q27", lesson:"t3u1-l3", level:3, q:"Hana is house-hunting with a budget of 250,000. A website says the average home price in a neighbourhood is 400,000, so she rules it out. What should she check first?", options:[
+   {id:"t3u1-q27", lesson:"t3u1-l3", level:3, q:"Hana is house-hunting with a budget of 250,000. A website says the average home price in a neighborhood is 400,000, so she rules it out. What should she check first?", options:[
      {t:"The median and range of prices for homes like the one she wants", ok:true, why:"A few expensive homes can make the mean high, because house prices are right-skewed. Many homes may cost far less than the mean. The median and the prices of similar homes answer her real question."},
      {t:"Nothing: if the average is 400,000, nothing costs 250,000", why:"An average doesn’t tell you the lowest prices. Many homes could be well below it."},
      {t:"Whether the average includes homes for rent", why:"Possibly useful, but the bigger issue is that the mean may be pulled up by a few expensive homes."},
@@ -1110,7 +1110,7 @@ ICA.addUnit({
      {t:"It can’t be estimated without knowing how many essays were written with AI", why:"For **honest** essays, the false positive rate alone gives the number of false flags. You’d need the AI share only to work out what share of all flags are false."}
    ]},
    {id:"t3u1-q35", lesson:"t3u1-l4", level:2, q:"A report says most car crashes happen within 10 km of home. Someone concludes that long trips are safer. What’s wrong with this?", options:[
-     {t:"Most driving happens near home, so most crashes would too", ok:true, why:"That would be true even if every kilometre were equally risky. The base rate of driving near home is high. To compare safety, you need crashes per kilometre (or per hour) driven in each setting."},
+     {t:"Most driving happens near home, so most crashes would too", ok:true, why:"That would be true even if every kilometer were equally risky. The base rate of driving near home is high. To compare safety, you need crashes per kilometer (or per hour) driven in each setting."},
      {t:"Nothing: if most crashes are near home, home is more dangerous", why:"That ignores how much driving happens near home. Raw counts follow exposure."},
      {t:"The report must be wrong, because crashes are random", why:"The report may be accurate. The problem is the conclusion drawn from it."},
      {t:"Long trips involve faster roads, so the report is irrelevant", why:"Road type may matter, but the main flaw is ignoring exposure: how much driving happens where."}
@@ -1128,7 +1128,7 @@ ICA.addUnit({
      {t:"A hundred million (10⁸)", why:"Too small by a factor of ten."},
      {t:"Ten million (10⁷)", why:"Too small by a factor of a hundred."}
    ]},
-   {id:"t3u1-q38", lesson:"t3u1-l5", level:2, q:"A country of 40 million people announces a 2 billion programme for one year. How much is that per person?", options:[
+   {id:"t3u1-q38", lesson:"t3u1-l5", level:2, q:"A country of 40 million people announces a 2 billion program for one year. How much is that per person?", options:[
      {t:"50", ok:true, why:"2,000,000,000 ÷ 40,000,000 = 50 per person for the year."},
      {t:"5", why:"Check the zeros: 2 billion has nine zeros, 40 million has seven. (2 × 10⁹) ÷ (4 × 10⁷) = 50."},
      {t:"500", why:"Too large by ten times. 2,000,000,000 ÷ 40,000,000 = 50."},

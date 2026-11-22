@@ -322,7 +322,7 @@ ICA.addUnit({
         }
       ],
       apply:{
-        intro:"Practise switching between the two styles with your own sentences. Keep the notes for yourself.",
+        intro:"Practice switching between the two styles with your own sentences. Keep the notes for yourself.",
         tasks:[
           {
             t:"Make a four-box table for twelve words",
@@ -422,8 +422,8 @@ ICA.addUnit({
           body:[
             "Books on Japanese language and culture often describe this with the words [[uchi-soto|ウチ and ソト]]: inside and outside. ウチ is your own circle, the people you treat as “us”: family, close friends, sometimes your team. ソト is everyone outside it. Plain speech is the language of ウチ; polite speech is the language of ソト.",
             {
-              fig:"<svg viewBox='0 0 340 400'><text x='170' y='20' text-anchor='middle'>Who usually gets which style</text><rect class='d-rose' x='6' y='34' width='328' height='250' rx='14' stroke-width='2'/><text class='s' x='170' y='54' text-anchor='middle'>ソト (outside): polite</text><text class='s' x='170' y='72' text-anchor='middle'>strangers, shop staff, customers</text><rect class='d-gold' x='34' y='84' width='272' height='164' rx='12' stroke-width='2'/><text class='s' x='170' y='104' text-anchor='middle'>in between: it depends</text><text class='s' x='170' y='122' text-anchor='middle'>classmates, colleagues, neighbours</text><rect class='d-sage' x='68' y='136' width='204' height='92' rx='10' stroke-width='2'/><text x='170' y='160' text-anchor='middle'>ウチ (inside): plain</text><text class='s' x='170' y='182' text-anchor='middle'>family, close friends,</text><text class='s' x='170' y='200' text-anchor='middle'>partner, children</text><text class='s' x='170' y='218' text-anchor='middle'>(the circle you call “us”)</text><text class='s' x='170' y='272' text-anchor='middle'>The circles move with the situation.</text><rect class='d-panel' x='6' y='296' width='328' height='96' rx='8' stroke-width='1.5'/><text x='20' y='318'>The second dial: up and down</text><text class='s' x='20' y='340'>Older people, seniors (せんぱい), teachers</text><text class='s' x='20' y='358'>and bosses get polite speech, even when</text><text class='s' x='20' y='376'>you are close. They may answer in plain.</text></svg>",
-              alt:"Three nested boxes. Outer box, ソト (outside): polite, for strangers, shop staff and customers. Middle box: it depends, for classmates, colleagues and neighbours. Inner box, ウチ (inside): plain, for family, close friends, a partner and children. The circles move with the situation. A panel below explains the second dial, up and down: older people, seniors, teachers and bosses get polite speech even when you are close, and they may answer in plain.",
+              fig:"<svg viewBox='0 0 340 400'><text x='170' y='20' text-anchor='middle'>Who usually gets which style</text><rect class='d-rose' x='6' y='34' width='328' height='250' rx='14' stroke-width='2'/><text class='s' x='170' y='54' text-anchor='middle'>ソト (outside): polite</text><text class='s' x='170' y='72' text-anchor='middle'>strangers, shop staff, customers</text><rect class='d-gold' x='34' y='84' width='272' height='164' rx='12' stroke-width='2'/><text class='s' x='170' y='104' text-anchor='middle'>in between: it depends</text><text class='s' x='170' y='122' text-anchor='middle'>classmates, colleagues, neighbors</text><rect class='d-sage' x='68' y='136' width='204' height='92' rx='10' stroke-width='2'/><text x='170' y='160' text-anchor='middle'>ウチ (inside): plain</text><text class='s' x='170' y='182' text-anchor='middle'>family, close friends,</text><text class='s' x='170' y='200' text-anchor='middle'>partner, children</text><text class='s' x='170' y='218' text-anchor='middle'>(the circle you call “us”)</text><text class='s' x='170' y='272' text-anchor='middle'>The circles move with the situation.</text><rect class='d-panel' x='6' y='296' width='328' height='96' rx='8' stroke-width='1.5'/><text x='20' y='318'>The second dial: up and down</text><text class='s' x='20' y='340'>Older people, seniors (せんぱい), teachers</text><text class='s' x='20' y='358'>and bosses get polite speech, even when</text><text class='s' x='20' y='376'>you are close. They may answer in plain.</text></svg>",
+              alt:"Three nested boxes. Outer box, ソト (outside): polite, for strangers, shop staff and customers. Middle box: it depends, for classmates, colleagues and neighbors. Inner box, ウチ (inside): plain, for family, close friends, a partner and children. The circles move with the situation. A panel below explains the second dial, up and down: older people, seniors, teachers and bosses get polite speech even when you are close, and they may answer in plain.",
               cap:"Closeness and rank together decide the style. Polite is never wrong in the outer circles."
             },
             "The circles move. Two colleagues may chat in plain speech over lunch and switch to polite speech in a meeting with clients, where they speak as members of their company to outsiders. Polite speech marks the situation as public, plain speech as private.",
@@ -439,7 +439,7 @@ ICA.addUnit({
               ex:"A: [同]{おな}い[年]{どし}だから、タメ[口]{ぐち}でいいよ。\nWe’re the same age, so you can talk casually with me.\n\nB: ほんと？じゃあ、そうする。\nReally? OK, I will.",
               label:"An invitation to switch"
             },
-            "A good rule while you are learning: **follow the other person**. If a classmate or neighbour of your age speaks plainly to you for a while, you can answer the same way. If they keep using です and ます, stay polite too. Someone senior speaking plainly to you is not an invitation; keep answering politely unless they tell you otherwise.",
+            "A good rule while you are learning: **follow the other person**. If a classmate or neighbor of your age speaks plainly to you for a while, you can answer the same way. If they keep using です and ます, stay polite too. Someone senior speaking plainly to you is not an invitation; keep answering politely unless they tell you otherwise.",
             "During the change, people often mix the two styles. A sentence ends in です, the next in a plain form, and over a few weeks the plain forms take over. This mixing is natural, so don’t worry if your own speech wobbles.",
             {
               tip:"Not sure? You can ask: タメ[口]{ぐち}でもいいですか。 (Is it OK if I speak casually?) Asking politely is itself polite."
@@ -512,7 +512,7 @@ ICA.addUnit({
               why:"Rank matters: teachers get polite speech even when you know them well."
             },
             {
-              t:"Meeting a neighbour of your age for the first time",
+              t:"Meeting a neighbor of your age for the first time",
               b:1,
               why:"A new acquaintance: start polite, even at the same age."
             },
@@ -536,7 +536,7 @@ ICA.addUnit({
             },
             {
               t:"はい、[来]{き}ます。",
-              why:"Polite, but [来]{く}る is for movement towards the speaker. Mariya is talking about going to the practice, so she says 行きます."
+              why:"Polite, but [来]{く}る is for movement toward the speaker. Mariya is talking about going to the practice, so she says 行きます."
             },
             {t:"はい、行くです。", why:"です doesn’t follow a verb. The polite form is 行きます."}
           ]
@@ -788,7 +788,7 @@ ICA.addUnit({
         {
           h:"Contractions",
           body:[
-            "Casual speech also squeezes some common endings into shorter forms. Japanese calls these shortened forms [[shukuyakukei]] ([縮約]{しゅくやく}[形]{けい}); in this track they are [[contraction-casual|casual contractions]]. You need to recognise all of these, and you can use them with friends:",
+            "Casual speech also squeezes some common endings into shorter forms. Japanese calls these shortened forms [[shukuyakukei]] ([縮約]{しゅくやく}[形]{けい}); in this track they are [[contraction-casual|casual contractions]]. You need to recognize all of these, and you can use them with friends:",
             {
               table:[
                 ["Full form","Casual","Example"],
@@ -801,7 +801,7 @@ ICA.addUnit({
             },
             "When the て-form ends in で, the contractions use voiced sounds: [読]{よ}んでいる → 読んでる, 読んでおく → 読んどく, [飲]{の}んでしまった → [飲]{の}んじゃった.",
             "The contracted forms change just like the full forms: 見てる, 見てない (isn’t watching), 見てた (was watching); 食べちゃう, 食べちゃった.",
-            "What do they mean? ～ている you know from Unit 3 ([[te-iru]]). The others are N4 grammar that Unit 6 teaches in full ({{te-shimau-te-oku}}, {{must-and-dont-have-to}}): ～ておく is doing something in advance; ～てしまう is finishing something completely, often with regret or surprise (“oops”); ～なければ (ならない) means “must”, and casual speech often stops at ～なきゃ. For now, learn to recognise them.",
+            "What do they mean? ～ている you know from Unit 3 ([[te-iru]]). The others are N4 grammar that Unit 6 teaches in full ({{te-shimau-te-oku}}, {{must-and-dont-have-to}}): ～ておく is doing something in advance; ～てしまう is finishing something completely, often with regret or surprise (“oops”); ～なければ (ならない) means “must”, and casual speech often stops at ～なきゃ. For now, learn to recognize them.",
             {
               warn:"Contractions are spoken forms. In an email to a teacher or a report, use the full forms: [待]{ま}っています, not [待]{ま}ってます. In polite conversation, ～てます is very common and fine ([待]{ま}ってます); but the plain contractions on their own ([待]{ま}ってる, [寝]{ね}ちゃった) belong with friends and family."
             }
@@ -836,7 +836,7 @@ ICA.addUnit({
             "Notice the last one. In a question, a noun or な-adjective drops だ: [暇]{ひま}？, [学生]{がくせい}？, [本当]{ほんとう}？ (Really?). ✗ [暇]{ひま}だ？ sounds odd, because だ makes a firm statement. Only this non-past だ drops; the past stays: [昨日]{きのう}、[暇]{ひま}だった？ (Were you free yesterday?)",
             "Question words work the same way: どこ行く？ (Where are you going?) 何食べる？ (What shall we eat? / What are you having?)",
             "You will also hear casual questions ending in の: どこ行くの？ This sounds softer and shows interest in the background or the reason. It is the casual form of ～んですか, which Lesson 5 explains. After a noun or な-adjective it becomes なの: 学生なの？",
-            "か does appear in casual speech in a few fixed uses: そうか (I see; said to yourself as you realise something), and ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) [来]{く}るかな。 (I wonder if they’ll come.)",
+            "か does appear in casual speech in a few fixed uses: そうか (I see; said to yourself as you realize something), and ～かな, which means “I wonder”: [明日]{あした}、雨かな。 (I wonder if it’ll rain tomorrow.) [来]{く}るかな。 (I wonder if they’ll come.)",
             {key:"Casual question: plain form + rising voice. No か, and no だ after nouns."}
           ]
         },
@@ -936,7 +936,7 @@ ICA.addUnit({
         {
           id:"e3u5-l3-x4",
           type:"mcq",
-          q:"Cheska and Rodrigo both know that their favourite shop closes early on Sundays. Cheska wants to check: 「[日曜日]{にちようび}は[早]{はや}く[閉]{し}まる＿＿？」 What fills the gap?",
+          q:"Cheska and Rodrigo both know that their favorite shop closes early on Sundays. Cheska wants to check: 「[日曜日]{にちようび}は[早]{はや}く[閉]{し}まる＿＿？」 What fills the gap?",
           options:[
             {
               t:"よね",
@@ -1051,16 +1051,16 @@ ICA.addUnit({
             write:"Polite… → Casual…"
           },
           {
-            t:"Practise with someone you trust",
+            t:"Practice with someone you trust",
             how:[
-              "If you have a Japanese-speaking friend or a language exchange partner, ask if you may practise casual speech with them.",
+              "If you have a Japanese-speaking friend or a language exchange partner, ask if you may practice casual speech with them.",
               "Try a short chat about your weekend using at least one よ, one ね and one ～てる.",
               "Ask them to point out anything that sounded strange, and note it."
             ],
             write:"What I tried… What they said…"
           }
         ],
-        proof:"Ten real casual sentences with their features labelled, five questions in both styles, and (if you could) notes from one short casual conversation."
+        proof:"Ten real casual sentences with their features labeled, five questions in both styles, and (if you could) notes from one short casual conversation."
       },
       read:[
         {
@@ -1407,15 +1407,15 @@ ICA.addUnit({
             write:"1… 2… …"
           },
           {
-            t:"Your favourites",
+            t:"Your favorites",
             how:[
-              "Write five sentences about favourite things with [好]{す}きな and a clause, such as [子]{こ}どものころよく読んだ本は…",
+              "Write five sentences about favorite things with [好]{す}きな and a clause, such as [子]{こ}どものころよく読んだ本は…",
               "Read them aloud, pausing before the noun at the end of each clause."
             ],
             write:"1… 2… 3… 4… 5…"
           }
         ],
-        proof:"Five sentences describing a photo, ten objects described without their names, and five sentences about favourite things, each with a noun-modifying clause."
+        proof:"Five sentences describing a photo, ten objects described without their names, and five sentences about favorite things, each with a noun-modifying clause."
       },
       read:[
         {
@@ -1438,7 +1438,7 @@ ICA.addUnit({
         "Build ～んです after verbs, adjectives and nouns, including なんです",
         "Use ～んです to explain and give background, and ～んですか to ask for an explanation",
         "Avoid overusing ～んです where nothing needs explaining",
-        "Report what people said with と[言]{い}う, both as a direct quote and in your own words, and recognise casual って",
+        "Report what people said with と[言]{い}う, both as a direct quote and in your own words, and recognize casual って",
         "Give and ask for opinions with ～と[思]{おも}います, with だ after nouns and な-adjectives"
       ],
       hook:{
@@ -1573,8 +1573,8 @@ ICA.addUnit({
             },
             "You have now met the whole plain-form system and its most important uses. Plain forms will be inside almost every N4 pattern from here on: the potential and volitional forms and conditionals in Unit 6, and the passive, causative and ～そうだ in Unit 7. If some forms still feel slow, that is normal; forgetting and relearning is how memory works, and short daily review fixes it.",
             "The kanji in this unit include many from the N4 list, such as [思]{おも}う, [言]{い}う, [買]{か}う, [飲]{の}む and [作]{つく}る. Review them in the Kanji Lab, a few minutes a day:",
-            {lab:"kl-n4", t:"Practise: the N4 kanji deck"},
-            {lab:"kl-n4-vocab", t:"Practise: N4 vocabulary"}
+            {lab:"kl-n4", t:"Practice: the N4 kanji deck"},
+            {lab:"kl-n4-vocab", t:"Practice: N4 vocabulary"}
           ]
         }
       ],
@@ -2010,7 +2010,7 @@ ICA.addUnit({
           "**A point in time: ～た後で.** 後で puts the focus on the time after something, often with a gap in between, and it can stand alone as “later”."
         ]},
         {table:[["Use","～た後で","～てから"],["After X, Y","○ 見た後で、[食事]{しょくじ}しました","○ 見てから、[食事]{しょくじ}しました"],["First X, then Y (steps)","possible, less usual","○ [洗]{あら}ってから、[食]{た}べてください"],["Since X","✗","○ [来]{き}てから、二年になります"],["On its own: “later”","○ 後で","✗"]]},
-        {fig:'<svg viewBox="0 0 340 214"><defs><marker id="e3u5t2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Before and after: which form?</text><path class="d-ink" d="M10 134H330" stroke-width="2" marker-end="url(#e3u5t2)"/><rect class="d-lup" x="8" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="60" y="89" text-anchor="middle">くる まえに</text><rect class="d-gold" x="120" y="58" width="100" height="52" rx="8" stroke-width="2"/><text x="170" y="80" text-anchor="middle">にほんへ</text><text x="170" y="100" text-anchor="middle">くる</text><rect class="d-sage" x="228" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="280" y="89" text-anchor="middle">きた あとで</text><text class="s" x="60" y="158" text-anchor="middle">dictionary form</text><text class="s" x="60" y="176" text-anchor="middle">(not done yet)</text><text class="s" x="280" y="158" text-anchor="middle">た-form</text><text class="s" x="280" y="176" text-anchor="middle">(already done)</text><text class="s" x="170" y="204" text-anchor="middle">The same in the past and the future.</text></svg>', alt:"A timeline with the event にほんへ くる in the middle. On the left, before it: くる まえに, labelled dictionary form, not done yet. On the right, after it: きた あとで, labelled た-form, already done. A note says this is the same in the past and the future.", cap:"日本へ来る前に (before coming) and 日本へ来た後で (after coming): the form depends on whether coming to Japan has happened at that point, not on the tense of the sentence."}
+        {fig:'<svg viewBox="0 0 340 214"><defs><marker id="e3u5t2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Before and after: which form?</text><path class="d-ink" d="M10 134H330" stroke-width="2" marker-end="url(#e3u5t2)"/><rect class="d-lup" x="8" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="60" y="89" text-anchor="middle">くる まえに</text><rect class="d-gold" x="120" y="58" width="100" height="52" rx="8" stroke-width="2"/><text x="170" y="80" text-anchor="middle">にほんへ</text><text x="170" y="100" text-anchor="middle">くる</text><rect class="d-sage" x="228" y="64" width="104" height="40" rx="8" stroke-width="2"/><text x="280" y="89" text-anchor="middle">きた あとで</text><text class="s" x="60" y="158" text-anchor="middle">dictionary form</text><text class="s" x="60" y="176" text-anchor="middle">(not done yet)</text><text class="s" x="280" y="158" text-anchor="middle">た-form</text><text class="s" x="280" y="176" text-anchor="middle">(already done)</text><text class="s" x="170" y="204" text-anchor="middle">The same in the past and the future.</text></svg>', alt:"A timeline with the event にほんへ くる in the middle. On the left, before it: くる まえに, labeled dictionary form, not done yet. On the right, after it: きた あとで, labeled た-form, already done. A note says this is the same in the past and the future.", cap:"日本へ来る前に (before coming) and 日本へ来た後で (after coming): the form depends on whether coming to Japan has happened at that point, not on the tense of the sentence."}
       ]},
       {h:"Because: ～ので", body:[
         {lead:"You already give reasons with から (Unit 3). ～ので means the same, “because, so”, but it sounds softer and more polite."},
@@ -2115,7 +2115,7 @@ ICA.addUnit({
          "Check every verb: dictionary form before 前, た-form before 後."
        ], write:"[朝]{あさ}ご[飯]{はん}を食べる前に… [仕事]{しごと}の後で…"},
        {t:"Reasons, politely", how:[
-         "Write three short messages with ので: asking to leave early, apologising for being late, and saying no to an invitation.",
+         "Write three short messages with ので: asking to leave early, apologizing for being late, and saying no to an invitation.",
          "Check nouns and な-adjectives: な before ので.",
          "Rewrite one of them for a close friend, in casual speech with から."
        ], write:"…ので、… …から、…"},
@@ -2182,7 +2182,7 @@ ICA.addUnit({
       {t:"「[旅行]{りょこう}に[行]{い}くんですか。」", ok:true, why:"～んですか asks for an explanation of something you can see: “Are you going on a trip, then?”"},
       {t:"「[旅行]{りょこう}に[行]{い}くんです。」", why:"Without か this is a statement: Rodrigo would be explaining his own plans."},
       {t:"「[旅行]{りょこう}に[行]{い}くと[思]{おも}います。」", why:"～と[思]{おも}います gives his own opinion. It doesn’t ask Yến anything."},
-      {t:"「[旅行]{りょこう}に[行]{い}ったことがありますか。」", why:"This asks about past experience (“Have you ever travelled?”), not about the suitcase now."}]},
+      {t:"「[旅行]{りょこう}に[行]{い}ったことがありますか。」", why:"This asks about past experience (“Have you ever traveled?”), not about the suitcase now."}]},
     {id:"e3u5-cp08", lesson:"e3u5-l7", level:2, q:"Megumi tells Sōta to do his homework before he plays. Which fills the gap? 「＿＿、[宿題]{しゅくだい}をしてね。」", options:[
       {t:"[遊]{あそ}んだ[前]{まえ}に", why:"前に always follows the dictionary form, even when the events are in the past."},
       {t:"[遊]{あそ}ぶの[前]{まえ}に", why:"A verb goes straight before 前に. の is only for nouns: [食]{しょく}[事]{じ}の前に."},
@@ -2343,7 +2343,7 @@ ICA.addUnit({
               "**うん and ううん** for yes and no."
             ]
           },
-          "Use casual speech only with people you would speak plainly to. You will hear it constantly in dramas, videos and real life, so learn to recognise it even before you use it.",
+          "Use casual speech only with people you would speak plainly to. You will hear it constantly in dramas, videos and real life, so learn to recognize it even before you use it.",
           {key:"Casual speech = plain forms + fewer particles + contractions + よ/ね + rising questions."},
           "Why learn it early? Because it is what you will hear most from friends, on TV and online, and it is often hard to follow if you only know textbook です・ます. Recognising casual speech comes first; using it comes naturally once you have heard it many times."
         ],
@@ -2371,9 +2371,9 @@ ICA.addUnit({
           "All of these belong with the people you speak plainly to. With anyone else, keep the polite forms, even when the conversation is relaxed."
         ],
         pro:[
-          "**More contractions.** ～ていく → ～てく ([持]{も}ってく, take along); ～のだ → ～んだ; と[言]{い}う → って; ～なくては → ～なくちゃ (a common alternative to ～なきゃ). In fast casual speech, ら, る and れ before な or の often become ん: わからない → わかんない, つまらない → つまんない, くれない → くんない, [何]{なに}してるの → 何してんの. These are very casual; recognise them before you use them.",
+          "**More contractions.** ～ていく → ～てく ([持]{も}ってく, take along); ～のだ → ～んだ; と[言]{い}う → って; ～なくては → ～なくちゃ (a common alternative to ～なきゃ). In fast casual speech, ら, る and れ before な or の often become ん: わからない → わかんない, つまらない → つまんない, くれない → くんない, [何]{なに}してるの → 何してんの. These are very casual; recognize them before you use them.",
           "**Formal contractions.** Some contractions also appear in polite speech: [待]{ま}ってます (for [待]{ま}っています) and じゃありません are both very common. They are correct conversational Japanese but less careful than the full forms, so keep the full forms in writing and formal situations.",
-          "**Gendered and stylised endings.** Older descriptions of Japanese list “women’s” endings (わ, かしら, noun + ね/よ without だ) and “men’s” endings (ぞ, ぜ, だぜ). Studies of real conversation find that many speakers, especially younger ones, rarely use the most strongly marked of these, and that people of every gender choose endings to fit the situation and the relationship. Fiction, by contrast, exaggerates them to build characters; the linguist Kinsui Satoshi calls such stylised voices [役割語]{やくわりご} (yakuwarigo, “role language”). So anime and manga are unreliable models. Neutral choices such as だよ, だね and よね work for everyone.",
+          "**Gendered and stylized endings.** Older descriptions of Japanese list “women’s” endings (わ, かしら, noun + ね/よ without だ) and “men’s” endings (ぞ, ぜ, だぜ). Studies of real conversation find that many speakers, especially younger ones, rarely use the most strongly marked of these, and that people of every gender choose endings to fit the situation and the relationship. Fiction, by contrast, exaggerates them to build characters; the linguist Kinsui Satoshi calls such stylized voices [役割語]{やくわりご} (yakuwarigo, “role language”). So anime and manga are unreliable models. Neutral choices such as だよ, だね and よね work for everyone.",
           "**じゃん.** In casual speech, especially among younger speakers, じゃん is a short form related to じゃない(か), used as a tag for confirmation or mild insistence: いいじゃん (That’s good, isn’t it?). It is widely understood, very casual, and best used only after you have heard your friends use it.",
           "**Dialects.** Casual speech is where regional dialects show most. Kansai speakers say や for だ and へん for ない ([行]{い}かへん), for example. The patterns in this entry are standard (Tokyo-based) Japanese, which everyone understands."
         ]
@@ -2624,7 +2624,7 @@ ICA.addUnit({
         pro:[
           "**たり in requests and rules.** ～たりしないでください softens a prohibition into “please don’t do things like…”, and you will see it on signs: [館内]{かんない}で[走]{はし}ったりしないでください (Please don’t run, or do anything like that, inside the building). The たり makes the rule sound less blunt.",
           "**Hedging with one たり.** A single ～たり can make a statement vaguer and more modest: [時々]{ときどき}[料理]{りょうり}を[作]{つく}ったりします (I sometimes cook and so on). Used too often, it makes writing sound vague, so use it sparingly in essays.",
-          "**とき, ときに, ときは.** Bare とき, ときに and ときは are close in meaning. ときに points at the moment more sharply; ときは sets up a contrast or a general rule (“as for times when…”). In writing you will also see [際]{さい} as a formal equivalent, as in ご[利用]{りよう}の[際]{さい}は… (when using…). It is beyond N4, but recognising it helps with notices.",
+          "**とき, ときに, ときは.** Bare とき, ときに and ときは are close in meaning. ときに points at the moment more sharply; ときは sets up a contrast or a general rule (“as for times when…”). In writing you will also see [際]{さい} as a formal equivalent, as in ご[利用]{りよう}の[際]{さい}は… (when using…). It is beyond N4, but recognizing it helps with notices.",
           "**Kana or kanji.** とき is written both ways. Many writers, including official style guides, prefer hiragana とき when it works as grammar (“when, in the case that”) and keep 時 where it names a particular time or period. Either is understood.",
           "**Past experience in a past story.** ～たことがあった exists, but it is less common than you might expect: it looks back from a point in the past (“by then, I had once…”). For everyday talk about your life so far, ～たことがある is the form.",
           "**Experience with negatives.** ～なかったことがある (there was a time when I didn’t…) is possible but rare and easy to misread. To say you have never done something, use ～たことがない, often with [一度]{いちど}も.",
@@ -3416,16 +3416,16 @@ ICA.addUnit({
       q:"A classmate reads a message on her phone and tells you: 「[明日]{あした}のテスト、[中止]{ちゅうし}だって。」 What is she telling you?",
       options:[
         {
-          t:"She has heard that tomorrow’s test is cancelled.",
+          t:"She has heard that tomorrow’s test is canceled.",
           ok:true,
           why:"って is the casual quotation marker: she is passing on what she read or heard."
         },
         {
-          t:"She is asking whether the test is cancelled.",
+          t:"She is asking whether the test is canceled.",
           why:"The sentence ends with 。, a statement. って reports what someone else said."
         },
         {t:"She wants to cancel the test.", why:"A wish would use ～たい. って reports information."},
-        {t:"She thinks the test will happen.", why:"中[止]{し} means “cancelled”, so the message is the opposite."}
+        {t:"She thinks the test will happen.", why:"中[止]{し} means “canceled”, so the message is the opposite."}
       ]
     },
     {

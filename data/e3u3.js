@@ -45,7 +45,7 @@ ICA.addUnit({
       "Notice which rows end in で: verbs ending in む, ぶ, ぬ and ぐ all give で. The others give て.",
       "[死]{し}ぬ is the only common verb that ends in ぬ, so the ぬ row is short. It is still worth knowing, because it follows the same pattern as む and ぶ.",
       {fig:'<svg viewBox="0 0 340 432"><defs><marker id="e3u3a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Godan verbs: the last kana decides</text><rect class="d-lup" x="8" y="34" width="100" height="46" rx="8" stroke-width="2"/><text x="58" y="62" text-anchor="middle">う・つ・る</text><path class="d-ink" d="M112 57H134" stroke-width="2" marker-end="url(#e3u3a1)"/><rect class="d-sage" x="140" y="34" width="72" height="46" rx="8" stroke-width="2"/><text x="176" y="62" text-anchor="middle">って</text><text class="s" x="222" y="53">かう → かって</text><text class="s" x="222" y="71">まつ → まって</text><rect class="d-lup" x="8" y="88" width="100" height="46" rx="8" stroke-width="2"/><text x="58" y="116" text-anchor="middle">む・ぶ・ぬ</text><path class="d-ink" d="M112 111H134" stroke-width="2" marker-end="url(#e3u3a1)"/><rect class="d-sage" x="140" y="88" width="72" height="46" rx="8" stroke-width="2"/><text x="176" y="116" text-anchor="middle">んで</text><text class="s" x="222" y="107">のむ → のんで</text><text class="s" x="222" y="125">よぶ → よんで</text><rect class="d-lup" x="8" y="142" width="100" height="46" rx="8" stroke-width="2"/><text x="58" y="170" text-anchor="middle">く</text><path class="d-ink" d="M112 165H134" stroke-width="2" marker-end="url(#e3u3a1)"/><rect class="d-sage" x="140" y="142" width="72" height="46" rx="8" stroke-width="2"/><text x="176" y="170" text-anchor="middle">いて</text><text class="s" x="222" y="161">かく → かいて</text><text class="s" x="222" y="179">きく → きいて</text><rect class="d-lup" x="8" y="196" width="100" height="46" rx="8" stroke-width="2"/><text x="58" y="224" text-anchor="middle">ぐ</text><path class="d-ink" d="M112 219H134" stroke-width="2" marker-end="url(#e3u3a1)"/><rect class="d-sage" x="140" y="196" width="72" height="46" rx="8" stroke-width="2"/><text x="176" y="224" text-anchor="middle">いで</text><text class="s" x="222" y="215">およぐ → およいで</text><text class="s" x="222" y="233">いそぐ → いそいで</text><rect class="d-lup" x="8" y="250" width="100" height="46" rx="8" stroke-width="2"/><text x="58" y="278" text-anchor="middle">す</text><path class="d-ink" d="M112 273H134" stroke-width="2" marker-end="url(#e3u3a1)"/><rect class="d-sage" x="140" y="250" width="72" height="46" rx="8" stroke-width="2"/><text x="176" y="278" text-anchor="middle">して</text><text class="s" x="222" y="269">はなす → はなして</text><text class="s" x="222" y="287">かす → かして</text><rect class="d-rose" x="8" y="308" width="324" height="44" rx="8" stroke-width="2"/><text x="170" y="335" text-anchor="middle">Exception: いく → いって (not いいて)</text><rect class="d-panel" x="8" y="362" width="324" height="62" rx="8" stroke-width="1.5"/><text x="20" y="386">Ichidan: たべる → たべて (drop る)</text><text x="20" y="410">Irregular: する → して, くる → きて</text></svg>', alt:"A chart of godan verb endings and their て-forms: う, つ and る give って (かう, かって; まつ, まって); む, ぶ and ぬ give んで (のむ, のんで; よぶ, よんで); く gives いて (かく, かいて; きく, きいて); ぐ gives いで (およぐ, およいで; いそぐ, いそいで); す gives して (はなす, はなして; かす, かして). The exception いく gives いって. Ichidan verbs drop る and add て; する becomes して and くる becomes きて.", cap:"The whole て-form system on one card: five godan rows, one exception, and the two other groups."},
-      {tip:"Many learners memorise the table as a little chant: “う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して”, and then “[行]{い}く → [行]{い}って”. Say it aloud a few times a day for a week, and it will stick."}
+      {tip:"Many learners memorize the table as a little chant: “う・つ・る → って, む・ぶ・ぬ → んで, く → いて, ぐ → いで, す → して”, and then “[行]{い}く → [行]{い}って”. Say it aloud a few times a day for a week, and it will stick."}
     ]},
     {h:"The exceptions (there are very few)", body:[
       "**[行]{い}く (go)** is the only common verb ending in く that does not follow the く → いて rule. Its て-form is [行]{い}って, and its past form is [行]{い}った. Every other common く verb is regular: [書]{か}いて, [聞]{き}いて, [歩]{ある}いて (walk), [働]{はたら}いて (work).",
@@ -70,7 +70,7 @@ ICA.addUnit({
       "Most mistakes come from using a real rule on the wrong verb. When you are unsure, ask two questions in order: which group is this verb in (check the ます-form), and what is its last kana?",
       "You may also see verbs in the ます-form joined with まして, as in very formal speeches. That is a real form, but you don’t need it yet: in everyday Japanese, join actions with the plain て-form and let the last verb carry the politeness."
     ]},
-    {h:"Practise little and often", body:[
+    {h:"Practice little and often", body:[
       "The て-form is the first big hurdle in Japanese grammar, and almost everyone mixes up the rows at first. That is normal. Forgetting and relearning is how memory works; short, spaced review fixes it far better than one long session.",
       {list:[
         "Say the chant once a day for a week.",
@@ -190,7 +190,7 @@ ICA.addUnit({
       {ex:"ちょっと[待]{ま}ってください。\nPlease wait a moment.\n\nここに[名前]{なまえ}を[書]{か}いてください。\nPlease write your name here.\n\nもう[一度]{いちど}[言]{い}ってください。\nPlease say it once more.\n\nゆっくり[話]{はな}してください。\nPlease speak slowly.", label:"～てください"},
       "[言]{い}う (say) ends in う, so its て-form is [言]{い}って. It sounds just like [行]{い}って, but the kanji and the meaning are different.",
       "You have probably met ください with a noun already: [水]{みず}をください (Water, please). With a noun, ください means “please give me”. With a て-form, it means “please do”. Compare [本]{ほん}をください (Please give me the book) with [本]{ほん}を[読]{よ}んでください (Please read the book).",
-      "～てください is polite, but it is still a request or an instruction. Teachers use it with students, shops use it on signs, and you can use it with friends, strangers and staff. When you ask a favour of a teacher or a boss, Japanese speakers often soften it, for example to ～てくださいませんか (“would you please…?”). You will meet more of these softer forms at N4. The glossary entry [[kudasai]] sums up the pattern."
+      "～てください is polite, but it is still a request or an instruction. Teachers use it with students, shops use it on signs, and you can use it with friends, strangers and staff. When you ask a favor of a teacher or a boss, Japanese speakers often soften it, for example to ～てくださいませんか (“would you please…?”). You will meet more of these softer forms at N4. The glossary entry [[kudasai]] sums up the pattern."
     ]},
     {h:"Asking permission: ～てもいいですか", body:[
       "～てもいいです means “it’s all right to…” or “you may…”. Add か, and you are asking for permission: “May I…?”",
@@ -268,7 +268,7 @@ ICA.addUnit({
       {t:"いいえ、[知]{し}るません。", why:"ません attaches to the ます stem: [知]{し}り + ません. [知]{し}るません is not a form."},
       {t:"はい、[知]{し}りません。", why:"はい (yes) contradicts [知]{し}りません (I don’t know). Answer いいえ."}
     ]},
-    {id:"e3u3-l2-x5", type:"spot", q:"Cheska is helping write the rules for a children’s disaster-safety class at a community centre. Tap each rule that has a **grammar mistake**.", ask:"has a grammar mistake", parts:[
+    {id:"e3u3-l2-x5", type:"spot", q:"Cheska is helping write the rules for a children’s disaster-safety class at a community center. Tap each rule that has a **grammar mistake**.", ask:"has a grammar mistake", parts:[
       {t:"[教室]{きょうしつ}で[食]{た}べてはいけません。", flag:false, why:"Correct: ～てはいけません states a rule."},"\n",
       {t:"[大]{おお}きい[声]{こえ}で[話]{はな}さってはいけません。", flag:true, why:"A mistake. [話]{はな}す → [話]{はな}して, so the rule is [話]{はな}してはいけません."},"\n",
       {t:"くつを[脱]{ぬ}いでください。", flag:false, why:"Correct: [脱]{ぬ}ぐ (take off) → [脱]{ぬ}いで, because ぐ → いで."},"\n",
@@ -283,9 +283,9 @@ ICA.addUnit({
       {t:"[晩]{ばん}ごはんを[作]{つく}ってください。", why:"This asks your friend to make dinner."},
       {t:"[晩]{ばん}ごはんを[作]{つく}りました。", why:"This says you made dinner (finished). Your friend asked what you are doing now."}
     ]},
-    {id:"e3u3-l2-x7", type:"mcq", q:"Your neighbour asks: ここに[自転車]{じてんしゃ}を[止]{と}めてもいいですか。 There is no rule against it, but you would rather they didn’t. What is the most natural polite reply?", options:[
+    {id:"e3u3-l2-x7", type:"mcq", q:"Your neighbor asks: ここに[自転車]{じてんしゃ}を[止]{と}めてもいいですか。 There is no rule against it, but you would rather they didn’t. What is the most natural polite reply?", options:[
       {t:"すみません、ちょっと…。", ok:true, why:"Right. This is the usual soft refusal: apologetic and clear without saying no outright."},
-      {t:"いいえ、[止]{と}めてはいけません。", why:"Grammatically correct, but it sounds like announcing a rule or telling someone off. Too harsh for a neighbour’s polite question."},
+      {t:"いいえ、[止]{と}めてはいけません。", why:"Grammatically correct, but it sounds like announcing a rule or telling someone off. Too harsh for a neighbor’s polite question."},
       {t:"はい、どうぞ。", why:"This means “Yes, go ahead”: the opposite of what you want."},
       {t:"[止]{と}めてください。", why:"This asks them to park there."}
     ]},
@@ -309,7 +309,7 @@ ICA.addUnit({
        "Write three rules with ～てはいけません and three instructions with ～てください. For example: ここで[走]{はし}ってはいけません。 / くつを[脱]{ぬ}いでください。",
        "Check each て-form against the table in Lesson 1."
      ], write:"Place… Rules (～てはいけません)… Instructions (～てください)…"},
-     {t:"Practise asking permission", how:[
+     {t:"Practice asking permission", how:[
        "Write four ～てもいいですか questions you might really need: in a class, at a friend’s home, in a shop, at work.",
        "For each, write one friendly yes answer and one polite refusal (すみません、ちょっと…)."
      ], write:"Question… Yes… Polite no…"},
@@ -396,7 +396,7 @@ ICA.addUnit({
       "Don’t confuse the two から. After a time or a place, から means “from”: [九時]{くじ}から (from nine o’clock), [駅]{えき}から (from the station). After a sentence, it means “because”. The glossary has both: [[particle-kara-made]] and [[kara-reason]].",
       {tip:"You will also hear ので for “because”. It sounds softer and is common in polite explanations and requests. Many N5 lists leave it for N4, though some textbooks teach it earlier; for now, から works in everyday situations."}
     ]},
-    {h:"Near neighbours: ～たい and ほしい, polite and plain", body:[
+    {h:"Near neighbors: ～たい and ほしい, polite and plain", body:[
       "～たい is for **actions** you want to do. For **things** you want to have, use ほしい, an い-adjective, with が:",
       {table:[["Want","Pattern","Example"],["a thing","noun が ほしいです","[新]{あたら}しいパソコンがほしいです。\nI want a new computer."],["to do something","ます stem + たいです","[新]{あたら}しいパソコンを[買]{か}いたいです。\nI want to buy a new computer."]]},
       "Both behave like い-adjectives: ほしくないです (don’t want), ほしかったです (wanted). And the same caution applies: they describe **your own** wishes, so don’t use them to state someone else’s.",
@@ -724,13 +724,13 @@ ICA.addUnit({
         "[休館日]{きゅうかんび} is “closed day”. [毎週]{まいしゅう}[月曜日]{げつようび} means every Monday.",
         "The last line uses ～ again for a range of dates: from 29 December to 3 January (じゅうにがつにじゅうくにちから、いちがつみっかまで) the library is closed. This is the New Year holiday, when many offices in Japan close."
       ]},
-      "Notice that you didn’t need every kanji to get the meaning. The numbers, [時]{じ}, [月]{がつ}, [日]{にち} and the day of the week carried most of it. That is a useful reading strategy for signs and timetables, and Unit 4 practises it with more real-world texts."
+      "Notice that you didn’t need every kanji to get the meaning. The numbers, [時]{じ}, [月]{がつ}, [日]{にち} and the day of the week carried most of it. That is a useful reading strategy for signs and timetables, and Unit 4 practices it with more real-world texts."
     ]},
     {h:"Keep it going: review and the Kanji Lab", body:[
       "You have now met most of the N5 grammar: Unit 2’s sentence basics, particles and ます verbs, and this unit’s て-form, plain forms, counters and time. {{n5-grammar-patterns}} puts all the patterns on one page, and {{time-and-dates}} collects this lesson’s words.",
       "Counters and dates have many irregular readings, and everyone forgets some. That is normal. A few minutes of spaced review every day, where you see an item again just as you are about to forget it, works much better than cramming. The Kanji Lab does this for you.",
-      {lab:"kl-n5", t:"Practise: the N5 kanji, including numbers, days and time words"},
-      {lab:"kl-n5-vocab", t:"Practise: N5 vocabulary, including counters and time words"},
+      {lab:"kl-n5", t:"Practice: the N5 kanji, including numbers, days and time words"},
+      {lab:"kl-n5-vocab", t:"Practice: N5 vocabulary, including counters and time words"},
       "Unit 4 teaches the N5 kanji themselves, including the kanji for numbers, days of the week and time, so the words in this lesson will soon become easier to read.",
       "For more practice in everyday situations, [Irodori](https://www.irodori.jpf.go.jp/en/) is a free course from the Japan Foundation: you can download its textbooks as PDFs, with audio, from Starter (A1) through Elementary 1 and 2 (A2) to Pre-Intermediate (A2/B1). It is built around everyday situations in Japan. [Tae Kim’s Guide to Learning Japanese](https://www.guidetojapanese.org/learn/grammar/past) is a free online grammar guide that covers the forms in this unit."
     ]}
@@ -830,7 +830,7 @@ ICA.addUnit({
       {t:"[遊]{あそ}んで", ok:true, why:"Godan verbs ending in ぶ, む and ぬ change to んで: [遊]{あそ}ぶ → [遊]{あそ}んで."},
       {t:"[遊]{あそ}いで", why:"いで is only for verbs ending in ぐ, such as [泳]{およ}ぐ → [泳]{およ}いで."},
       {t:"[遊]{あそ}びて", why:"Godan verbs don’t simply add て to the ます stem. The last kana decides: ぶ → んで."}]},
-    {id:"e3u3-cp02", lesson:"e3u3-l2", level:2, q:"A neighbour asks Yến where she lives. Which answer is right?", options:[
+    {id:"e3u3-cp02", lesson:"e3u3-l2", level:2, q:"A neighbor asks Yến where she lives. Which answer is right?", options:[
       {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}みます。」", why:"The ます form is for habits and the future: “I will live near the station.” For where you live now, use ～ています."},
       {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}んでいます。」", ok:true, why:"[住]{す}む describes a change (moving in), so ～ています describes the result that is still true: “I live near the station.”"},
       {t:"「[駅]{えき}の[近]{ちか}くに[住]{す}みました。」", why:"The past says only that it happened: “I lived (moved in) near the station.” It doesn’t say she lives there now."},
@@ -860,7 +860,7 @@ ICA.addUnit({
       {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしいたいです。」", why:"ほしい is already an い-adjective meaning “want”. たい attaches to verb stems, not to ほしい."},
       {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしいです。」", ok:true, why:"For a thing you want to have: noun が ほしいです."},
       {t:"「[新]{あたら}しい[自転車]{じてんしゃ}がほしかったです。」", why:"ほしかった is past: “I wanted one.” Rodrigo still wants it."}]},
-    {id:"e3u3-cp08", lesson:"e3u3-l4", level:1, q:"Kaito sees three small fish in a bucket at the harbour. How does he count them? 「バケツに[魚]{さかな}が＿＿います。」", options:[
+    {id:"e3u3-cp08", lesson:"e3u3-l4", level:1, q:"Kaito sees three small fish in a bucket at the harbor. How does he count them? 「バケツに[魚]{さかな}が＿＿います。」", options:[
       {t:"みっつ", why:"～つ is the general counter for things. Fish, like small animals, take ～[匹]{ひき}."},
       {t:"さんにん", why:"～[人]{にん} is for people. Fish are counted with ～[匹]{ひき}."},
       {t:"さんぼん", why:"～[本]{ほん} is for long, thin things such as pencils and umbrellas, not for fish."},
@@ -1038,7 +1038,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Edges of the N5 list.** Because there is no official list, some patterns appear at N5 in one source and at N4 in another. Common border cases: ～てから (after doing), ほしい (want), まだ～ていません (not yet), ～たことがあります (have done), ～たり～たりします (do things like…), ～ながら (while), ～たほうがいいです (had better), ～ので (because) and ～たがる (someone else wants). This track teaches the first three at N5 and the others at N4: ～たことがある and ～たり in Unit 5, Lesson 6 (with ～とき); ～ので in Unit 5, Lesson 7 (with ～[前]{まえ}に and ～[後]{あと}で); ～たほうがいい in Unit 6, Lesson 6 (with ～かもしれない, ～でしょう and ～てみる); ～ながら in Unit 7, Lesson 5; and ～たがる in Unit 7, Lesson 6 (with ～すぎる, ～やすい and ～[方]{かた}). Unit 7, Lesson 7 adds ～てくる, ～ていく and ～かどうか. Other textbooks and lists draw the line in different places, so don’t worry if yours differs.",
-      "**What the test does with grammar.** At N5, grammar has its own part of the test, in the section “Language Knowledge (Grammar)・Reading”: questions ask you to choose the right particle or form for a gap, to put parts of a sentence in order, and to choose words that fit a short text. Reading and listening questions then use the same grammar in context. Knowing a form passively is not enough; practise choosing between near neighbours (は/が, に/で, ～ています/～ます, どちら/どれ).",
+      "**What the test does with grammar.** At N5, grammar has its own part of the test, in the section “Language Knowledge (Grammar)・Reading”: questions ask you to choose the right particle or form for a gap, to put parts of a sentence in order, and to choose words that fit a short text. Reading and listening questions then use the same grammar in context. Knowing a form passively is not enough; practice choosing between near neighbors (は/が, に/で, ～ています/～ます, どちら/どれ).",
       "**Why the て-form and plain forms matter so much.** Almost all N4 grammar is built on them: ～てみる, ～てしまう, ～ておく, ～と[思]{おも}う, ～つもり, relative clauses, conditionals. Time spent making them automatic now pays back many times.",
       "**Next steps.** Unit 4 covers N5 kanji, vocabulary and reading. Unit 5 turns the plain forms into natural casual speech. For more practice with audio, the Japan Foundation’s Irodori course (A1–A2) and Tae Kim’s free online guide are good companions."
      ]},

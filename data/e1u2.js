@@ -33,7 +33,7 @@ ICA.addUnit({
         "**Written, not spoken.** It avoids features of conversation such as contractions (“don’t”), fillers (“like”, “you know”) and chatty phrases (“at the end of the day”).",
         "**Focused on the ideas.** The writing keeps attention on the evidence and the argument, not on the writer’s feelings or the reader’s daily life."
       ]},
-      {key:"Formal does not mean long or complicated words. “Use” is better than “utilise” in most sentences. The goal is precision, not decoration."},
+      {key:"Formal does not mean long or complicated words. “Use” is better than “utilize” in most sentences. The goal is precision, not decoration."},
       "Register also changes with the genre (the type of text). A research article, a lab report and an exam essay are usually quite formal. A reflective journal, a blog post or a short email to a classmate can be less formal. This app is written in a plain, friendly style on purpose, with contractions and “you”, because it is a set of lessons, not an essay. The examples in this unit show the style of a **formal academic essay or report**, and every rule here assumes that context."
     ]},
     {h:"Contractions", body:[
@@ -103,18 +103,18 @@ ICA.addUnit({
       "English has more than one standard spelling system. The two you will meet most are US and UK spelling. Both are correct. Australian, Canadian, Indian, Nigerian, Singaporean and other varieties each mix them in their own ways. What matters in academic writing is **consistency**: choose one and use it throughout, unless your university, journal or publisher asks for a particular one.",
       {table:[
         ["US","UK"],
-        ["analyze, organization","analyse, organisation (or organization)"],
-        ["behavior, color","behaviour, colour"],
-        ["center, fiber","centre, fibre"],
-        ["modeling, traveled","modelling, travelled"],
-        ["program (all uses)","programme (a plan or course), program (computer)"]
+        ["analyze, organization","analyze, organization (or organization)"],
+        ["behavior, color","behavior, color"],
+        ["center, fiber","center, fiber"],
+        ["modeling, traveled","modeling, traveled"],
+        ["program (all uses)","program (a plan or course), program (computer)"]
       ]},
       "UK writers can also choose “-ize” spellings (organize, recognize), sometimes called Oxford spelling, but “analyse” keeps its “-yse” in UK English either way. Set your word processor’s spelling language to the variety you have chosen so it flags the other one.",
       {tip:"Quotations keep their original spelling. If you quote an American source in a UK-spelled essay, don’t “correct” its spelling."}
     ]},
     {h:"Putting it together", body:[
       "Here is how the changes work together. Each step fixes one feature, and the meaning becomes clearer at every step, not just more formal.",
-      {fig:'<svg viewBox="0 0 340 352"><defs><marker id="e1u2m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="10" y="10" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="32">Researchers haven’t looked into</text><text x="20" y="51">this stuff much.</text><path class="d-ink" d="M30,64 L30,92" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="83">1 Contraction → full form</text><rect class="d-gold" x="10" y="96" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="118">Researchers have not looked into</text><text x="20" y="137">this stuff much.</text><path class="d-ink" d="M30,150 L30,178" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="169">2 Phrasal verb → single verb</text><rect class="d-lup" x="10" y="182" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="204">Researchers have not investigated</text><text x="20" y="223">this stuff much.</text><path class="d-ink" d="M30,236 L30,264" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="255">3 Vague words → specific words</text><rect class="d-sage" x="10" y="268" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="290">Few studies have investigated the</text><text x="20" y="309">long-term effects of night-shift work.</text><text class="s" x="170" y="342" text-anchor="middle">Same idea, more precise wording</text></svg>', alt:"Four boxes, top to bottom, joined by arrows. Box 1: Researchers haven’t looked into this stuff much. Arrow labelled 1, contraction to full form. Box 2: Researchers have not looked into this stuff much. Arrow labelled 2, phrasal verb to single verb. Box 3: Researchers have not investigated this stuff much. Arrow labelled 3, vague words to specific words. Box 4: Few studies have investigated the long-term effects of night-shift work.", cap:"Three small changes turn a spoken sentence into an academic one. The biggest gain is the last: saying exactly what “this stuff” was."},
+      {fig:'<svg viewBox="0 0 340 352"><defs><marker id="e1u2m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="10" y="10" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="32">Researchers haven’t looked into</text><text x="20" y="51">this stuff much.</text><path class="d-ink" d="M30,64 L30,92" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="83">1 Contraction → full form</text><rect class="d-gold" x="10" y="96" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="118">Researchers have not looked into</text><text x="20" y="137">this stuff much.</text><path class="d-ink" d="M30,150 L30,178" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="169">2 Phrasal verb → single verb</text><rect class="d-lup" x="10" y="182" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="204">Researchers have not investigated</text><text x="20" y="223">this stuff much.</text><path class="d-ink" d="M30,236 L30,264" stroke-width="2" marker-end="url(#e1u2m1)"/><text class="s" x="44" y="255">3 Vague words → specific words</text><rect class="d-sage" x="10" y="268" width="320" height="52" rx="8" stroke-width="2"/><text x="20" y="290">Few studies have investigated the</text><text x="20" y="309">long-term effects of night-shift work.</text><text class="s" x="170" y="342" text-anchor="middle">Same idea, more precise wording</text></svg>', alt:"Four boxes, top to bottom, joined by arrows. Box 1: Researchers haven’t looked into this stuff much. Arrow labeled 1, contraction to full form. Box 2: Researchers have not looked into this stuff much. Arrow labeled 2, phrasal verb to single verb. Box 3: Researchers have not investigated this stuff much. Arrow labeled 3, vague words to specific words. Box 4: Few studies have investigated the long-term effects of night-shift work.", cap:"Three small changes turn a spoken sentence into an academic one. The biggest gain is the last: saying exactly what “this stuff” was."},
       "Notice step 3. “Not … much” became “Few studies”, and “this stuff” became the actual topic. That step needed knowledge of the subject, not just better vocabulary. Formal writing often forces you to decide what you really mean.",
       {table:[
         ["Common belief","Closer to the truth"],
@@ -129,10 +129,10 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u2-l1-x1", type:"mcq", q:"In a formal essay, which sentence is the most academic?", options:[
-      {t:"Rents in the city centre rose by 18% between 2019 and 2023.", ok:true, why:"It uses a precise single verb (“rose”), gives the size of the change and the period, and has no conversational features."},
-      {t:"Rents in the city centre went up a lot over the last few years.", why:"“Went up” is a conversational phrasal verb, “a lot” is vague, and “the last few years” doesn’t say which years. The reader can’t check or compare the claim."},
-      {t:"Rents in the city centre have gone through the roof!", why:"“Through the roof” is an idiom and the exclamation mark is conversational. Neither tells the reader how much rents changed."},
-      {t:"You’ll notice that rents in the city centre are kind of high now.", why:"This has a contraction (“you’ll”), the general “you” and a vague hedge (“kind of”). It also gives no figure or date."}
+      {t:"Rents in the city center rose by 18% between 2019 and 2023.", ok:true, why:"It uses a precise single verb (“rose”), gives the size of the change and the period, and has no conversational features."},
+      {t:"Rents in the city center went up a lot over the last few years.", why:"“Went up” is a conversational phrasal verb, “a lot” is vague, and “the last few years” doesn’t say which years. The reader can’t check or compare the claim."},
+      {t:"Rents in the city center have gone through the roof!", why:"“Through the roof” is an idiom and the exclamation mark is conversational. Neither tells the reader how much rents changed."},
+      {t:"You’ll notice that rents in the city center are kind of high now.", why:"This has a contraction (“you’ll”), the general “you” and a vague hedge (“kind of”). It also gives no figure or date."}
     ]},
     {id:"e1u2-l1-x2", type:"match", q:"Match each conversational phrasal verb to a more formal single verb with the same meaning.", pairs:[
       ["look into (a problem)","investigate","Both mean to study something carefully to find out the facts."],
@@ -186,7 +186,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e1u2-l2", title:"Building clear sentences", minutes:55,
-   hook:{q:"Which of these is a complete sentence in formal written English?", options:["Because the sample was small.","The sample was small.","Although the data were limited.","Which made the results hard to generalise."], answer:1, reveal:"**Only “The sample was small.” can stand alone.** The other three are **fragments**: they start with a word (because, although, which) that makes them depend on another idea, so the reader is left waiting for the rest. In speech we say fragments all the time, and they sound fine. In formal writing they look unfinished. This lesson shows how English sentences are built, how to join ideas, and how to fix the most common sentence errors."},
+   hook:{q:"Which of these is a complete sentence in formal written English?", options:["Because the sample was small.","The sample was small.","Although the data were limited.","Which made the results hard to generalize."], answer:1, reveal:"**Only “The sample was small.” can stand alone.** The other three are **fragments**: they start with a word (because, although, which) that makes them depend on another idea, so the reader is left waiting for the rest. In speech we say fragments all the time, and they sound fine. In formal writing they look unfinished. This lesson shows how English sentences are built, how to join ideas, and how to fix the most common sentence errors."},
    goals:[
      "Identify clauses, and tell simple, compound and complex sentences apart",
      "Join ideas with coordinators (and, but, so) and subordinators (because, although, whereas) that show the right relationship",
@@ -225,7 +225,7 @@ ICA.addUnit({
         ["Relationship","Subordinators","Example"],
         ["Reason","because, since, as","Because the road flooded, the clinic closed."],
         ["Contrast or concession","although, even though, while, whereas","Although the sample was small, the results were consistent."],
-        ["Condition","if, unless, provided that","Unless funding increases, the programme will end."],
+        ["Condition","if, unless, provided that","Unless funding increases, the program will end."],
         ["Time","when, after, before, until, once","Once the data were cleaned, the analysis began."],
         ["Purpose","so that","The forms were translated so that all residents could take part."]
       ]},
@@ -256,7 +256,7 @@ ICA.addUnit({
         ["Run-on","More research is needed it should cover a full year.","More research is needed. It should cover a full year."]
       ]},
       "“However” and its relatives can also sit inside a clause, between commas: “The policy, however, was expensive.” And “therefore” often sits inside a clause with no commas at all: “The sample was therefore small.”",
-      {tip:"One exception: when “however” means “in whatever way”, it is not a transition and takes no comma after it: “However the data are analysed, the trend remains.”"}
+      {tip:"One exception: when “however” means “in whatever way”, it is not a transition and takes no comma after it: “However the data are analyzed, the trend remains.”"}
     ]},
     {h:"Fragments", body:[
       "A [[sentence-fragment]] is a piece of a sentence punctuated as if it were complete. In formal academic writing, fragments are almost always errors. (Journalists and novelists use them on purpose; essays and reports usually don’t.) The three most common kinds:",
@@ -274,8 +274,8 @@ ICA.addUnit({
       {table:[
         ["Not parallel","Parallel"],
         ["The survey measured income, education and whether people owned a car.","The survey measured income, education and car ownership."],
-        ["The programme aimed not only to reduce costs but also improving access.","The programme aimed not only to reduce costs but also to improve access."],
-        ["Participants were asked to read the text, summarising it and then a discussion.","Participants were asked to read the text, summarise it and then discuss it."]
+        ["The program aimed not only to reduce costs but also improving access.","The program aimed not only to reduce costs but also to improve access."],
+        ["Participants were asked to read the text, summarizing it and then a discussion.","Participants were asked to read the text, summarize it and then discuss it."]
       ]},
       "Pairs such as **both … and**, **either … or**, **neither … nor** and **not only … but also** need the same form after each part: “both in rural and urban areas” is less balanced than “in both rural and urban areas”.",
       "Parallel structure matters in **bullet lists and headings** too. If one bullet starts with a verb (“Collect the data”), they all should.",
@@ -321,18 +321,18 @@ ICA.addUnit({
     ]},
     {id:"e1u2-l2-x7", type:"match", q:"Match each subordinator to the relationship it shows.", pairs:[
       ["whereas","contrast between two facts","“Urban rents rose, whereas rural rents fell.” It sets two facts side by side as opposites."],
-      ["unless","condition (if not)","“Unless funding increases, the programme will end” means “if funding does not increase…”."],
+      ["unless","condition (if not)","“Unless funding increases, the program will end” means “if funding does not increase…”."],
       ["so that","purpose","“The forms were translated so that all residents could take part.” It shows why something was done."],
       ["because","reason","It gives the cause of the main clause."],
       ["once","time (as soon as, after)","“Once the data were cleaned, the analysis began.”"]
     ]},
     {id:"e1u2-l2-x8", type:"explain", q:"Explain why “The policy was popular, however it was expensive.” is a punctuation error, and show two correct ways to write it.", size:"2–4 sentences", hint:"Is “however” a conjunction or an adverb?", model:"Both parts are independent clauses, and “however” is a conjunctive adverb, not a conjunction, so it can’t join them with only a comma: that’s a comma splice. You can use a semicolon before it and a comma after it: “The policy was popular; however, it was expensive.” Or you can make two sentences, use a coordinator (“The policy was popular, but it was expensive.”) or a subordinator (“Although the policy was popular, it was expensive.”).", points:["Says both parts are independent clauses", "Says “however” is an adverb, not a joining word, so a comma alone is a comma splice", "Gives a correct version with a semicolon (or full stop) before “however”", "Gives a second correct version (coordinator, subordinator or two sentences)"]}
    ],
-   apply:{intro:"Practise with your own writing. Each task takes 10–20 minutes.", tasks:[
+   apply:{intro:"Practice with your own writing. Each task takes 10–20 minutes.", tasks:[
     {t:"Map the sentences in your own paragraph", how:["Choose a paragraph you have written in English (or write one of about 120 words on a topic you know).","Underline each verb that shows tense and find its subject.","Label each sentence: simple, compound, complex or compound-complex.","If most sentences are the same type, rewrite two so the paragraph shows the links between ideas more clearly."], write:"Sentence types I found… The two sentences I rewrote, before and after…"},
     {t:"Hunt for splices, run-ons and fragments", how:["Read a draft of yours aloud, slowly, one sentence at a time.","Wherever you see “however”, “therefore” or “moreover”, check the punctuation before it.","Check every sentence that starts with because, although, which, such as or an -ing word: is there a main clause?","Fix each problem in one of the ways from this lesson."], write:"Errors found… How I fixed each one…"},
     {t:"Make a list parallel", how:["Find a list in your notes or a draft: a bullet list, a list of aims, or a sentence with three items.","Check whether every item has the same grammatical form.","Rewrite it so that it does (all verbs, all nouns, or all -ing forms)."], write:"My list before… My list after…"}
-   ], proof:"A labelled paragraph, a list of sentence errors you found and fixed in your own writing, and one list rewritten with parallel structure."},
+   ], proof:"A labeled paragraph, a list of sentence errors you found and fixed in your own writing, and one list rewritten with parallel structure."},
    read:[
      {book:"owg", where:"Handbook, section H3 “Clear and Effective Sentences” (“Parallelism” and “Variety”) and section H4 “Sentence Errors”", note:"Clear examples of the four sentence types, fragments, comma splices and run-ons, with several ways to fix each."},
      {book:"owg", where:"Section 3.6 “Editing Focus: Sentence Structure”", note:"Practice in combining short sentences into longer ones."}
@@ -497,7 +497,7 @@ ICA.addUnit({
    ],
    apply:{intro:"These tasks build your own grammar reference. Keep the notes; you will use them for years.", tasks:[
     {t:"Check ten nouns from your field", how:["List ten nouns you use often in your subject (for example: data, research, literature, equipment, analysis, feedback, software).","Look each one up in a free learner dictionary and note whether it is countable [C], uncountable [U] or both.","For each uncountable one, write a countable way to talk about one item (a study, a piece of equipment)."], write:"Noun… C / U / both… countable alternative…"},
-    {t:"Audit the articles in one paragraph", how:["Take a paragraph you have written.","Circle every noun. For each singular countable noun, check it has a word in front (a, an, the, this, our…).","For each “the”, ask: does the reader know which one? For each noun without an article, ask: is it plural or uncountable, and general?","Correct anything that fails, then ask a tutor or writing centre to check the doubtful ones."], write:"Changes I made and the reason for each…"},
+    {t:"Audit the articles in one paragraph", how:["Take a paragraph you have written.","Circle every noun. For each singular countable noun, check it has a word in front (a, an, the, this, our…).","For each “the”, ask: does the reader know which one? For each noun without an article, ask: is it plural or uncountable, and general?","Correct anything that fails, then ask a tutor or writing center to check the doubtful ones."], write:"Changes I made and the reason for each…"},
     {t:"Find the tense pattern in a real article", how:["Open a free research article in your field.","In the introduction, methods, results and discussion, copy one sentence each that reports something.","Note the tense of each main verb, and whether the methods use the passive or “we”.","Compare with the table in this lesson. Does your field follow it?"], write:"Introduction… Methods… Results… Discussion… My field’s pattern…"}
    ], proof:"A personal list of ten field nouns marked C or U, one paragraph with its articles checked, and a note of the tense pattern in your field."},
    read:[
@@ -524,7 +524,7 @@ ICA.addUnit({
         "[[supporting-sentence|Supporting sentences]] that explain, give evidence and examples, and show why the evidence matters.",
         "A [[concluding-sentence]] that sums up the point or links it to the next paragraph."
       ]},
-      {ex:"[Topic sentence] Community health workers have improved access to basic care in many rural areas.\n[Support: what they do] They visit homes, treat common illnesses and refer serious cases to clinics.\n[Support: why it works] Because they live in the communities they serve, they often know which families need help and are trusted by them.\n[Support: evidence] [A cited study or report would go here, for example figures on clinic referrals before and after a programme began.]\n[Concluding or linking sentence] Their success, however, depends partly on steady pay and supervision, which the next section examines.", label:"Worked example: the parts of a paragraph"},
+      {ex:"[Topic sentence] Community health workers have improved access to basic care in many rural areas.\n[Support: what they do] They visit homes, treat common illnesses and refer serious cases to clinics.\n[Support: why it works] Because they live in the communities they serve, they often know which families need help and are trusted by them.\n[Support: evidence] [A cited study or report would go here, for example figures on clinic referrals before and after a program began.]\n[Concluding or linking sentence] Their success, however, depends partly on steady pay and supervision, which the next section examines.", label:"Worked example: the parts of a paragraph"},
       "Research Skills Unit 10 describes the same shape as four moves (topic sentence, evidence, analysis, link) in {{argument-structure}}. The labels differ slightly between textbooks; the idea is the same. This lesson focuses on the language that makes the parts fit together.",
       {tip:"Paragraph length varies by genre and field. In most academic essays a body paragraph has several sentences: enough to state, support and explain one point. A one-sentence paragraph is rare in formal essays; very long paragraphs usually contain two ideas and can be split."}
     ]},
@@ -533,7 +533,7 @@ ICA.addUnit({
       {table:[
         ["Problem","Example","Better"],
         ["Too broad","Health is important.","Community health workers have improved access to basic care in many rural areas."],
-        ["Too narrow (just one fact)","In 2023, the district had 40 health workers.","The district’s health worker programme grew quickly but unevenly between 2018 and 2023."],
+        ["Too narrow (just one fact)","In 2023, the district had 40 health workers.","The district’s health worker program grew quickly but unevenly between 2018 and 2023."],
         ["An announcement","This paragraph will talk about health workers.","Health workers are most effective when they are recruited from the communities they serve."]
       ]},
       "The controlling idea is a promise to the reader. Every sentence that follows should keep it. If you notice the paragraph moving to a new idea, either start a new paragraph or rewrite the topic sentence."
@@ -561,7 +561,7 @@ ICA.addUnit({
         ["Substitution and ellipsis","Some districts introduced fees; others did not (introduce fees)."],
         ["Transition signals","**However**, … **As a result**, …"]
       ]},
-      "Cohesion helps coherence, but it is not enough on its own. This passage is full of cohesive links, yet it makes no sense as a paragraph: “My project is about rice. Rice is usually white. White is the colour of snow. Snow falls in winter.” Each sentence connects to the one before, but there is no main idea.",
+      "Cohesion helps coherence, but it is not enough on its own. This passage is full of cohesive links, yet it makes no sense as a paragraph: “My project is about rice. Rice is usually white. White is the color of snow. Snow falls in winter.” Each sentence connects to the one before, but there is no main idea.",
       {warn:"In academic writing, keep a key term the same throughout. If you write “participants” in one sentence and “subjects”, “respondents” and “people” in the next three, readers may think you mean four different groups. Changing words for variety is a habit from some school essays; in academic English, consistency usually wins."}
     ]},
     {h:"Given to new", body:[
@@ -579,7 +579,7 @@ ICA.addUnit({
       {table:[
         ["Unclear","Clear"],
         ["The council cut the bus budget and raised fares. This angered residents.","…raised fares. These fare rises angered residents."],
-        ["The report compared the new policy with the old one, and it was criticised.","…with the old one, and the report was criticised."]
+        ["The report compared the new policy with the old one, and it was criticized.","…with the old one, and the report was criticized."]
       ]},
       "A good habit: after “this” or “these” at the start of a sentence, add a noun that names what you mean. “This” alone often forces the reader to look back and guess.",
       {tip:"For a person whose gender is unknown or not relevant, APA Style endorses singular “they”, and many other style guides accept it: “Each participant signed the form before they began.” Another option is to make the subject plural: “Participants signed the form before they began.”"}
@@ -620,7 +620,7 @@ ICA.addUnit({
       {t:"This paragraph will discuss the bike-sharing scheme.", why:"An announcement of the topic. It doesn’t say what the writer thinks about the scheme."}
     ]},
     {id:"e1u2-l4-x2", type:"spot", q:"Tap every sentence that **drifts** away from the paragraph’s main idea. The other sentences belong.", ask:"drifting sentences", parts:[
-      {t:"School meal programmes can improve attendance in low-income areas.", flag:false, why:"The topic sentence: topic (school meal programmes) and controlling idea (they can improve attendance)."}," ",{t:"When a free lunch is available, some families are more likely to send children to school every day.", flag:false, why:"It explains how meals could affect attendance. On topic."}," ",{t:"The history of school buildings in Europe goes back several centuries.", flag:true, why:"Drift: it is about buildings in Europe, not meals and attendance."}," ",{t:"Programmes that buy food from local farmers may also support the local economy.", flag:true, why:"Possibly true and interesting, but it is about the economy, not attendance. It belongs in a different paragraph."}," ",{t:"Several evaluations have reported higher attendance after meal programmes began.", flag:false, why:"Evidence for the controlling idea. On topic (a real paragraph would cite the evaluations)."}," ",{t:"The effect, however, appears to depend on whether meals are served reliably.", flag:false, why:"A qualification of the main idea. On topic, and a good concluding sentence."}
+      {t:"School meal programs can improve attendance in low-income areas.", flag:false, why:"The topic sentence: topic (school meal programs) and controlling idea (they can improve attendance)."}," ",{t:"When a free lunch is available, some families are more likely to send children to school every day.", flag:false, why:"It explains how meals could affect attendance. On topic."}," ",{t:"The history of school buildings in Europe goes back several centuries.", flag:true, why:"Drift: it is about buildings in Europe, not meals and attendance."}," ",{t:"Programs that buy food from local farmers may also support the local economy.", flag:true, why:"Possibly true and interesting, but it is about the economy, not attendance. It belongs in a different paragraph."}," ",{t:"Several evaluations have reported higher attendance after meal programs began.", flag:false, why:"Evidence for the controlling idea. On topic (a real paragraph would cite the evaluations)."}," ",{t:"The effect, however, appears to depend on whether meals are served reliably.", flag:false, why:"A qualification of the main idea. On topic, and a good concluding sentence."}
     ]},
     {id:"e1u2-l4-x3", type:"order", q:"Put these sentences in order to make a coherent paragraph. Use the topic sentence, the given-to-new links and the transition signals as clues.", items:[
       {t:"Rainwater tanks can make schools in dry regions less dependent on piped water.", why:"First: the topic sentence states the main idea."},
@@ -666,7 +666,7 @@ ICA.addUnit({
      {book:"owg", where:"Handbook, section H2 “Paragraphs and Transitions”", note:"Effective paragraphs (main point, evidence and analysis, opening and closing paragraphs), flow and a table of transitional words and phrases."},
      {book:"owg", where:"Section 10.6 “Editing Focus: Paragraphs and Transitions”", note:"Practice using transitions in an argument."},
      {book:"phrasebank", where:"“Comparing and contrasting” (“Indicating difference across two sentences”) and “Explaining causality” (“Sentence connectors indicating causality”)", note:"Sentence-level signals for contrast and result."},
-     {book:"phrasebank", where:"“Signalling transition”", note:"Phrases for previewing, moving between sections and summarising: transitions between larger parts of a text."}
+     {book:"phrasebank", where:"“Signalling transition”", note:"Phrases for previewing, moving between sections and summarizing: transitions between larger parts of a text."}
    ]
   },
   /* ===================== LESSON 5 ===================== */
@@ -676,7 +676,7 @@ ICA.addUnit({
      "Use modal verbs, verbs such as “appear to”, adverbs, adjectives and phrases such as “it is likely that” to hedge a claim, with correct grammar",
      "Use boosters for claims the evidence strongly supports, and avoid over-claiming",
      "Decide where a hedge is needed and where plain reporting is better, and fix over-hedging",
-     "Cut empty phrases, redundancy and nominalisation overload without cutting hedges, definitions or limitations"
+     "Cut empty phrases, redundancy and nominalization overload without cutting hedges, definitions or limitations"
    ],
    learn:[
     {h:"Why academic writers hedge and boost", body:[
@@ -711,7 +711,7 @@ ICA.addUnit({
       {tip:"Many writers feel that “might” is slightly more tentative than “may”, and “could” is close to both. The differences are small and depend on context, so don’t worry about a precise ranking. What matters more is choosing one modal, not three."}
     ]},
     {h:"More hedging tools", body:[
-      "Modals are not the only way to hedge. Academic writers combine several kinds of word. The Academic Phrasebank’s “Being cautious” page groups them by job: distancing the writer from a claim, giving explanations and results cautiously, advising caution, and avoiding over-generalisation.",
+      "Modals are not the only way to hedge. Academic writers combine several kinds of word. The Academic Phrasebank’s “Being cautious” page groups them by job: distancing the writer from a claim, giving explanations and results cautiously, advising caution, and avoiding over-generalization.",
       {table:[
         ["Kind","Examples","Grammar to watch"],
         ["Verbs","appear to, seem to, tend to, suggest, indicate","“Income **appears to affect** health.” / “It appears that income affects health.”"],
@@ -734,7 +734,7 @@ ICA.addUnit({
       {list:[
         "the evidence is strong and consistent (“The data clearly show a decline: all 12 monitoring sites recorded lower levels.”);",
         "you are stating something well established in your field;",
-        "you want to emphasise a point you have just supported."
+        "you want to emphasize a point you have just supported."
       ]},
       {warn:"Be careful with “obviously” and “of course”. They tell the reader that something needs no evidence, which can sound dismissive to someone who doesn’t find it obvious. And “prove” is rarely justified outside mathematics and logic: one study almost never proves a general claim."}
     ]},
@@ -742,7 +742,7 @@ ICA.addUnit({
       "Hedge the parts of a claim that go **beyond what you observed**:",
       {list:[
         "**explanations** of why something happened (“This may reflect…”);",
-        "**generalisations** beyond your sample, place or time (“in similar towns”);",
+        "**generalizations** beyond your sample, place or time (“in similar towns”);",
         "**causal claims** from studies that only show an association (“was associated with” rather than “caused”);",
         "**predictions and recommendations** (“is likely to”, “could consider”)."
       ]},
@@ -753,7 +753,7 @@ ICA.addUnit({
         ["Over-hedging","It could possibly be suggested that scores might perhaps have risen.","Scores rose by 2 points."],
         ["Hedging the wrong part","Attendance may have risen by 12%. This proves the scheme works.","Attendance rose by 12%. This suggests that the scheme helped."]
       ]},
-      {tip:"Expectations about directness differ between academic traditions and languages, and between fields. Following the conventions of the place you are writing for is a practical skill, not a judgement on your own tradition."}
+      {tip:"Expectations about directness differ between academic traditions and languages, and between fields. Following the conventions of the place you are writing for is a practical skill, not a judgment on your own tradition."}
     ]},
     {h:"Writing concisely", body:[
       "[[concision|Concision]] means using no more words than clarity needs. It is different from being short: cutting a definition, a hedge or a limitation makes a text shorter but less accurate. Edit for clarity first, length second.",
@@ -769,11 +769,11 @@ ICA.addUnit({
       ]},
       "**Redundancy** means saying the same thing twice: “past history”, “final outcome”, “each and every”, “completely eliminate”, “a total of 25 people” (when nothing else is being added up). Keep one word.",
       {h:"Nominalisation overload"},
-      "[[nominalisation|Nominalisation]] ({{noun-phrases-nominalisation|Unit 1}}) turns verbs and adjectives into nouns: reduce → reduction, analyse → analysis. It is useful: “This reduction…” sums up a whole earlier sentence in two words, which helps cohesion. But too many nominalisations in one sentence bury the action and the actor.",
+      "[[nominalisation|Nominalisation]] ({{noun-phrases-nominalisation|Unit 1}}) turns verbs and adjectives into nouns: reduce → reduction, analyze → analysis. It is useful: “This reduction…” sums up a whole earlier sentence in two words, which helps cohesion. But too many nominalizations in one sentence bury the action and the actor.",
       {table:[
         ["Overloaded","Clearer"],
         ["The implementation of a reduction in the use of plastic bags by supermarkets was achieved.","Supermarkets reduced their use of plastic bags."],
-        ["The researchers conducted an analysis of the data.","The researchers analysed the data."],
+        ["The researchers conducted an analysis of the data.","The researchers analyzed the data."],
         ["The committee made a decision to give consideration to the proposal.","The committee decided to consider the proposal."]
       ]},
       "A quick test: find the main action in the sentence. If it is hidden in a noun (reduction, analysis, decision), try making it the verb again, with the actor as the subject.",
@@ -810,13 +810,13 @@ ICA.addUnit({
       {t:"may increased", why:"After a modal, use the base form. For the past, use “may have increased”."}
     ]},
     {id:"e1u2-l5-x3", type:"mcq", q:"Dmitri surveyed 300 adults in one city. Those who walked more reported better sleep. Which sentence is best for his discussion section?", options:[
-      {t:"In this sample, adults who walked more reported better sleep, which suggests a link worth testing in other settings.", ok:true, why:"It reports the finding accurately (reported sleep, in this sample), uses one hedge (“suggests”), and doesn’t claim cause or generalise beyond the city."},
+      {t:"In this sample, adults who walked more reported better sleep, which suggests a link worth testing in other settings.", ok:true, why:"It reports the finding accurately (reported sleep, in this sample), uses one hedge (“suggests”), and doesn’t claim cause or generalize beyond the city."},
       {t:"Walking improves sleep.", why:"A causal claim about everyone, from one survey in one city. A survey shows an association, not a cause, and the sample was one city."},
       {t:"It might possibly be that walking could perhaps be linked to sleep.", why:"Over-hedged: four hedges make Dmitri sound unsure of what he found. He did find an association; say so once, carefully."},
       {t:"Walking clearly causes better sleep in all adults.", why:"Two boosters (“clearly”, “all”) and a causal claim the design can’t support."}
     ]},
     {id:"e1u2-l5-x4", type:"spot", q:"Kenji is checking his discussion paragraph. Tap every claim that is **too strong** for the evidence and needs a hedge. Some parts are fine as they are.", ask:"over-claims", parts:[
-      "In our study, ",{t:"average test scores rose by 8 points", flag:false, why:"A measured result. Report it plainly; no hedge needed."}," after the tutoring programme began. ",{t:"This proves that tutoring raises scores.", flag:true, why:"One study can’t prove cause, especially when scores also rose at schools without tutoring. “This suggests that tutoring may raise scores” fits the evidence."}," However, ",{t:"scores also rose at two comparison schools without tutoring", flag:false, why:"Another measured fact. Reporting it honestly is good practice."},", so other factors ",{t:"may have contributed", flag:false, why:"An appropriate hedge on an explanation."},". ",{t:"Tutoring will clearly work in every school in the country.", flag:true, why:"A booster (“clearly”), a confident prediction (“will”) and a huge generalisation (“every school”), from one study. A cautious version: “The programme could be tested in other schools.”"}," ",{t:"Further research could test the programme in rural schools.", flag:false, why:"A suitably cautious recommendation."}
+      "In our study, ",{t:"average test scores rose by 8 points", flag:false, why:"A measured result. Report it plainly; no hedge needed."}," after the tutoring program began. ",{t:"This proves that tutoring raises scores.", flag:true, why:"One study can’t prove cause, especially when scores also rose at schools without tutoring. “This suggests that tutoring may raise scores” fits the evidence."}," However, ",{t:"scores also rose at two comparison schools without tutoring", flag:false, why:"Another measured fact. Reporting it honestly is good practice."},", so other factors ",{t:"may have contributed", flag:false, why:"An appropriate hedge on an explanation."},". ",{t:"Tutoring will clearly work in every school in the country.", flag:true, why:"A booster (“clearly”), a confident prediction (“will”) and a huge generalization (“every school”), from one study. A cautious version: “The program could be tested in other schools.”"}," ",{t:"Further research could test the program in rural schools.", flag:false, why:"A suitably cautious recommendation."}
     ]},
     {id:"e1u2-l5-x5", type:"mcq", q:"Lerato measured a 2-point rise in scores. Her draft says: “It could possibly be suggested that the results might perhaps indicate a small rise.” Which revision is best?", options:[
       {t:"Scores rose by 2 points.", ok:true, why:"It is a measured result, so it needs no hedge. Giving the number is more precise than “a small rise”."},
@@ -837,16 +837,16 @@ ICA.addUnit({
       {t:"Supermarkets stopped using plastic bags.", why:"Shorter, but it changes the meaning: “reduced” is not “stopped”. Concision must keep the meaning."},
       {t:"There was a reduction of bags.", why:"It drops the actor (supermarkets) and the word “plastic”, and still hides the action in a noun."}
     ]},
-    {id:"e1u2-l5-x8", type:"explain", q:"A classmate’s report says: “Attendance may have risen by 12% in the three schools. This proves the scheme works.” Explain why the hedge is in the wrong place, and rewrite the two sentences.", size:"3–4 sentences", hint:"Hedge what goes beyond what you observed; don’t hedge what you measured.", model:"The 12% rise was measured, so it needs no “may”: hedging a plain result makes readers wonder whether you trust your own data. The second sentence is the one that goes beyond the evidence, because it explains why attendance rose and generalises from three schools, and “proves” is almost never justified. Better: “Attendance rose by 12% in the three schools. This suggests that the scheme helped, although other factors could also explain the rise.”", points:["Says the measured result shouldn’t be hedged", "Says the causal or general claim is the part that needs a hedge", "Notes that “proves” overclaims", "Gives a rewrite with a plain result and a hedged explanation"]}
+    {id:"e1u2-l5-x8", type:"explain", q:"A classmate’s report says: “Attendance may have risen by 12% in the three schools. This proves the scheme works.” Explain why the hedge is in the wrong place, and rewrite the two sentences.", size:"3–4 sentences", hint:"Hedge what goes beyond what you observed; don’t hedge what you measured.", model:"The 12% rise was measured, so it needs no “may”: hedging a plain result makes readers wonder whether you trust your own data. The second sentence is the one that goes beyond the evidence, because it explains why attendance rose and generalizes from three schools, and “proves” is almost never justified. Better: “Attendance rose by 12% in the three schools. This suggests that the scheme helped, although other factors could also explain the rise.”", points:["Says the measured result shouldn’t be hedged", "Says the causal or general claim is the part that needs a hedge", "Notes that “proves” overclaims", "Gives a rewrite with a plain result and a hedged explanation"]}
    ],
    apply:{intro:"Use your own writing, or a draft you are working on now.", tasks:[
-    {t:"Do a hedge and booster audit", how:["Take a discussion or conclusion section you have written (or 200 words of any argument you have written).","Highlight every hedge in one colour and every booster in another.","For each claim, ask: is this something I measured, or an interpretation, generalisation or prediction?","Remove hedges from measured facts, add one to any unhedged interpretation, and remove stacked hedges."], write:"Hedges I found… Boosters I found… Changes I made, and why…"},
-    {t:"Borrow cautious phrases well", how:["Open the Academic Phrasebank page “Being cautious” (phrasebank.manchester.ac.uk).","Choose four phrases you would really use: one for explaining results, one for implications, one for recommendations and one for avoiding over-generalisation.","Write each into a sentence about your own topic, replacing the example content with yours."], write:"Explaining results… Implications… Recommendations… Avoiding over-generalisation…"},
-    {t:"Cut 15% without losing meaning", how:["Choose a paragraph of about 150–200 words that you have written.","Count the words. Your target is about 15% fewer.","Cut empty phrases, redundant pairs and overloaded nominalisations. Keep every hedge, definition, limitation and citation that is needed.","Ask: is anything less clear or less accurate now? If so, put it back."], write:"Word count before… after… Three cuts I made… Anything I put back…"},
+    {t:"Do a hedge and booster audit", how:["Take a discussion or conclusion section you have written (or 200 words of any argument you have written).","Highlight every hedge in one color and every booster in another.","For each claim, ask: is this something I measured, or an interpretation, generalization or prediction?","Remove hedges from measured facts, add one to any unhedged interpretation, and remove stacked hedges."], write:"Hedges I found… Boosters I found… Changes I made, and why…"},
+    {t:"Borrow cautious phrases well", how:["Open the Academic Phrasebank page “Being cautious” (phrasebank.manchester.ac.uk).","Choose four phrases you would really use: one for explaining results, one for implications, one for recommendations and one for avoiding over-generalization.","Write each into a sentence about your own topic, replacing the example content with yours."], write:"Explaining results… Implications… Recommendations… Avoiding over-generalization…"},
+    {t:"Cut 15% without losing meaning", how:["Choose a paragraph of about 150–200 words that you have written.","Count the words. Your target is about 15% fewer.","Cut empty phrases, redundant pairs and overloaded nominalizations. Keep every hedge, definition, limitation and citation that is needed.","Ask: is anything less clear or less accurate now? If so, put it back."], write:"Word count before… after… Three cuts I made… Anything I put back…"},
     {t:"Run the final checklist", how:["Take the 150-word paragraph you wrote in Lesson 4 (or write a new one).","Go through the eight questions in this lesson’s checklist, one at a time.","Fix one kind of problem at a time, rather than everything at once."], write:"Checklist results… What I fixed…"}
    ], proof:"A paragraph with its hedges and boosters audited, four cautious phrases rewritten for your own topic, a paragraph cut by about 15% with nothing important lost, and a checked paragraph."},
    read:[
-     {book:"phrasebank", where:"“Being cautious”", note:"Phrases for distancing, explaining results cautiously, advising caution and avoiding over-generalisation."},
+     {book:"phrasebank", where:"“Being cautious”", note:"Phrases for distancing, explaining results cautiously, advising caution and avoiding over-generalization."},
      {book:"owg", where:"Handbook, section H3 “Clear and Effective Sentences”: “Conciseness” (“Use Action Verbs” and “Cut Unnecessary Words and Phrases”)", note:"More examples of wordy phrases and their replacements."}
    ]
   }
@@ -862,7 +862,7 @@ ICA.addUnit({
      {t:"Both should avoid “I” and “we”, because academic writing is meant to be impersonal", why:"The use of “I” varies by field and genre. A reflective journal is about the writer’s own experience, and many fields accept “I” or “we”."},
      {t:"The journal can be less formal; the lab report needs a formal style, without contractions", ok:true, why:"Register changes with the genre. Reflective journals can be less formal; lab reports are usually quite formal."},
      {t:"Both should use the same style, because register depends on the subject, not on the genre", why:"Register changes with the type of text, so one course can need different levels of formality."},
-     {t:"The lab report should use long, rare words, so that it sounds properly formal", why:"Formal means precise, not decorated. *Use* is usually better than *utilise*."}]},
+     {t:"The lab report should use long, rare words, so that it sounds properly formal", why:"Formal means precise, not decorated. *Use* is usually better than *utilize*."}]},
    {id:"e1u2-cp03", lesson:"e1u2-l2", level:2, q:"What type of sentence is this? “The survey was short, but many residents skipped it because they distrusted the council.”", options:[
      {t:"Simple", why:"A simple sentence has only one clause. This one has three verbs that show tense: *was*, *skipped* and *distrusted*."},
      {t:"Compound", why:"It does have two independent clauses joined by *but*, but it also has a dependent clause beginning with *because*."},
@@ -912,7 +912,7 @@ ICA.addUnit({
      {t:"Because the site’s history was unknown, the team took soil samples to check for pollution.", ok:true, why:"*Due to the fact that* → *because*, *past history* → *history*, *in order to* → *to*. All of the meaning stays."},
      {t:"The team took soil samples.", why:"Shorter, but it cuts the reason and the purpose. Concision removes empty words, not meaning."},
      {t:"Because the site’s past history was unknown, the team took soil samples in order to check for pollution.", why:"Still wordy: *past history* says the same thing twice, and *in order to* can simply be *to*."},
-     {t:"Owing to the fact of the site’s history being unknown, soil samples were taken for the purpose of pollution checking.", why:"As wordy as the original, with extra nominalisations. The action and the actor are harder to see."}]}
+     {t:"Owing to the fact of the site’s history being unknown, soil samples were taken for the purpose of pollution checking.", why:"As wordy as the original, with extra nominalizations. The action and the actor are harder to see."}]}
   ],
   codex:[
    {id:"formal-informal-choices", title:"Formal and informal choices in academic English", aka:["formality","contractions","phrasal verbs","vague language","general you","US and UK spelling"], tags:["academic english","writing","style"],
@@ -967,7 +967,7 @@ ICA.addUnit({
       "**Coordinators** (for, and, nor, but, or, yet, so) join equal clauses; put a comma before them when they join two independent clauses. **Subordinators** show dependence and a precise relationship: reason (because, since, as), contrast (although, while, whereas), condition (if, unless), time (when, once, until), purpose (so that). A dependent clause placed first takes a comma after it.",
       "**Conjunctive adverbs** (however, therefore, moreover, consequently, nevertheless, thus) are adverbs, not conjunctions. Correct patterns: “X. However, Y.” / “X; however, Y.” / “X. Y, however, …”.",
       "Fixes for a comma splice or run-on: a full stop; a semicolon; a comma plus a coordinator; or a subordinator that makes one clause dependent. Choose the one that shows the right relationship.",
-      "Fixes for a fragment: attach it to the neighbouring sentence, or add the missing subject or verb. Watch sentences that begin with because, although, which, such as or an -ing form.",
+      "Fixes for a fragment: attach it to the neighboring sentence, or add the missing subject or verb. Watch sentences that begin with because, although, which, such as or an -ing form.",
       "Two learner traps: “Although…, but…” (use one joining word) and “Despite + clause” (use “despite + noun phrase” or “although + clause”).",
       "**Parallel structure**: items in a list or pair have the same form (“to plan, assess and give feedback”), including after both…and, either…or, not only…but also, and in bullet lists.",
       "**Sentence variety**: a paragraph of only short simple sentences hides the relationships between ideas; a paragraph of only long compound-complex sentences tires the reader. Use the structure that shows how ideas relate, and keep most sentences to one main idea."
@@ -1013,7 +1013,7 @@ ICA.addUnit({
       "Article choice depends on what writer and reader share, which is why simple rules leak. Generic reference can use three forms: “The smartphone has changed reading habits”, “Smartphones have changed…” and (less often) “A smartphone can…”. Fixed expressions follow their own patterns (“at home”, “by car”, “in practice”) and some differ between varieties (UK “in hospital”, “at university”; US “in the hospital”, “in college”). Proper names mostly take no article, except plural names and many names containing common nouns (the Philippines, the United Kingdom) and rivers and oceans.",
       "Agreement often follows meaning (notional number) rather than strict grammatical form. Some cases are fully standard in writing (“A number of studies have…”, “The majority of participants were…”); others, such as plural verbs after collective nouns, depend on the variety. “None of the samples was/were” is both used; traditional guides prefer singular, and modern usage accepts plural. When guides disagree, consistency and clarity matter more than the choice.",
       "Tense in reporting also carries **stance**: present (“Lee argues”) can present a view as current and alive in the debate; past (“Lee found”) ties a finding to a specific study. Writers sometimes switch tense to show which ideas they still treat as current.",
-      "The passive interacts with information structure: it lets writers keep the topic in subject position and move long or new information to the end (given → new). It is also used for distancing (“It has been argued that…”). Critical discourse analysts note that agentless passives and nominalisations can obscure responsibility, for example in reports about job losses or evictions. In analytical writing, ask whether the actor matters, and name it when it does."
+      "The passive interacts with information structure: it lets writers keep the topic in subject position and move long or new information to the end (given → new). It is also used for distancing (“It has been argued that…”). Critical discourse analysts note that agentless passives and nominalizations can obscure responsibility, for example in reports about job losses or evictions. In analytical writing, ask whether the actor matters, and name it when it does."
      ]},
     related:["academic-sentences","cohesion","hedging-and-boosting","dictionaries-corpora"],
     read:[{book:"owg", where:"Handbook, section H7 “Verbs”"}],
@@ -1044,8 +1044,8 @@ ICA.addUnit({
      ],
      pro:[
       "The topic-sentence-first paragraph is a strong convention in English academic writing, especially in essays and in the humanities and social sciences. It is not universal. Some paragraphs open with a transition sentence and state the point second; some build to the point; very short paragraphs may be used for emphasis or for a single step in a procedure. Methods sections often use paragraphs as containers for one procedure rather than one claim.",
-      "Contrastive rhetoric research, beginning with Robert Kaplan’s 1966 article on cultural thought patterns, argued that paragraph organisation differs between languages. That early work was widely criticised as oversimplified and as treating English patterns as the norm. Later research, which Ulla Connor proposed calling **intercultural rhetoric** (2002), looks at genre, discipline and context, and at the smaller cultures of fields and classrooms, rather than national stereotypes. The practical point remains: readers of English academic texts generally expect the main point early.",
-      "Paragraph length depends on genre, field and medium (web texts favour shorter paragraphs). Splitting is usually better than a page-long paragraph; but a string of two-sentence paragraphs often signals that ideas have not been developed or connected.",
+      "Contrastive rhetoric research, beginning with Robert Kaplan’s 1966 article on cultural thought patterns, argued that paragraph organization differs between languages. That early work was widely criticized as oversimplified and as treating English patterns as the norm. Later research, which Ulla Connor proposed calling **intercultural rhetoric** (2002), looks at genre, discipline and context, and at the smaller cultures of fields and classrooms, rather than national stereotypes. The practical point remains: readers of English academic texts generally expect the main point early.",
+      "Paragraph length depends on genre, field and medium (web texts favor shorter paragraphs). Splitting is usually better than a page-long paragraph; but a string of two-sentence paragraphs often signals that ideas have not been developed or connected.",
       "For writers in an additional language, a practical routine is to write a one-line “point” for each paragraph before drafting, then check each finished paragraph against its line. This separates planning the argument from finding the words, so you have fewer things to think about at once while writing."
      ]},
     related:["cohesion","academic-sentences","argument-structure"],
@@ -1093,11 +1093,11 @@ ICA.addUnit({
     levels:{
      starter:[
       "A **hedge** makes a claim more cautious (may, might, could, appears to, probably, it is likely that, approximately). A **booster** makes it more certain (clearly, certainly, undoubtedly, demonstrate, in fact).",
-      "Use them to match your words to your evidence. Hedge interpretations, explanations, generalisations and predictions. Don’t hedge what you measured: “Attendance rose by 12%” needs no “may”.",
+      "Use them to match your words to your evidence. Hedge interpretations, explanations, generalizations and predictions. Don’t hedge what you measured: “Attendance rose by 12%” needs no “may”.",
       "Modal verbs are followed by the base verb: “may increase”, not “may increases” or “may to increase”.",
       "Avoid **stacking**: “might possibly suggest” has three hedges where one will do.",
       {key:"Hedging is precision about certainty, not weakness."},
-      "A quick test: underline each verb that reports a finding or an idea (shows, suggests, proves, may…). Then ask of each: did I measure this, or am I interpreting, generalising or predicting? Measured facts need no hedge; the others usually need one."
+      "A quick test: underline each verb that reports a finding or an idea (shows, suggests, proves, may…). Then ask of each: did I measure this, or am I interpreting, generalizing or predicting? Measured facts need no hedge; the others usually need one."
      ],
      builder:[
       {table:[
@@ -1112,12 +1112,12 @@ ICA.addUnit({
       ]},
       "Grammar points: modal + have + past participle for past possibility (“may have caused”); modal + be + past participle for the passive (“could be explained”); “is likely to + verb” or “it is likely that + clause”. “Will likely rise” is common, especially in North American English; some UK editors prefer “will probably rise”.",
       "Boosters fit strong, consistent evidence and well-established knowledge. Use “obviously” and “of course” sparingly; they can sound dismissive. “Prove” rarely fits empirical research.",
-      "The Academic Phrasebank’s “Being cautious” page lists phrases for distancing, explaining results, advising caution, implications, recommendations and avoiding over-generalisation.",
+      "The Academic Phrasebank’s “Being cautious” page lists phrases for distancing, explaining results, advising caution, implications, recommendations and avoiding over-generalization.",
       "Where hedges cluster: discussion sections (explanations and implications), conclusions (recommendations and future research) and introductions (claims about previous work). Methods and results sections usually need far fewer.",
       "**Over-hedging** has two forms: stacking several hedges on one claim (“might possibly suggest”), and hedging facts you measured (“scores may have risen by 2 points”). Both make writers sound less sure than their evidence allows."
      ],
      pro:[
-      "Ken Hyland’s research (*Hedging in Scientific Research Articles*, 1998; *Metadiscourse: Exploring Interaction in Writing*, 2005) treats hedges and boosters as part of **interpersonal** meaning: ways writers position themselves towards their claims and their readers. Hedges open space for other views and protect the writer; boosters close it down and show commitment. Expert writers balance both.",
+      "Ken Hyland’s research (*Hedging in Scientific Research Articles*, 1998; *Metadiscourse: Exploring Interaction in Writing*, 2005) treats hedges and boosters as part of **interpersonal** meaning: ways writers position themselves toward their claims and their readers. Hedges open space for other views and protect the writer; boosters close it down and show commitment. Expert writers balance both.",
       "Hyland and others have found that the use of hedges and boosters varies by **discipline**: writers in the humanities and social sciences tend to use more stance markers, and take more explicitly involved positions, than writers in the natural sciences and engineering (some later studies suggest the gap is changing over time), and the preferred devices differ (for example, more modal verbs in some fields, more reporting verbs in others). Comparing your drafts with published articles in your own field is the best guide.",
       "Hedges also differ in **what** they qualify. Some reduce the writer’s commitment to the truth of a proposition (“may”, “possibly”); others reduce the precision or scope of the claim (“approximately”, “in most cases”, “in this sample”). Scope hedges are often more honest and informative than vague modal hedging: “in three of the four regions” says more than “in some regions may”.",
       "Translation can shift stance. Words that look equivalent across languages may carry different strength, and academic traditions differ in how directly claims are made. For writers moving between languages, the useful question is not “which is correct?” but “what will this reader, in this field, take this word to mean?”"
@@ -1126,7 +1126,7 @@ ICA.addUnit({
     read:[{book:"phrasebank", where:"“Being cautious”"}],
     sources:[{t:"Academic Phrasebank: Being cautious", url:"https://www.phrasebank.manchester.ac.uk/using-cautious-language/"}], checked:"2026-11"},
 
-   {id:"concise-writing", title:"Writing concisely", aka:["concision","wordiness","empty phrases","redundancy","nominalisation overload"], tags:["academic english","writing","style"],
+   {id:"concise-writing", title:"Writing concisely", aka:["concision","wordiness","empty phrases","redundancy","nominalization overload"], tags:["academic english","writing","style"],
     summary:"Saying exactly what you mean with no wasted words, while keeping hedges, definitions and limitations.",
     levels:{
      starter:[
@@ -1134,7 +1134,7 @@ ICA.addUnit({
       {list:[
         "**Empty phrases**: due to the fact that → because; in order to → to; at this point in time → now; it is important to note that → (delete).",
         "**Redundancy**: past history, final outcome, each and every, completely eliminate.",
-        "**Hidden verbs**: made a decision → decided; conducted an analysis of → analysed."
+        "**Hidden verbs**: made a decision → decided; conducted an analysis of → analyzed."
       ]},
       "Concise is not the same as short. Never cut a hedge, a definition, a limitation or a citation just to save words.",
       {key:"Clarity first, length second."},
@@ -1144,7 +1144,7 @@ ICA.addUnit({
      builder:[
       "**“There is/are … who/that”** openers can usually go: “There are many farmers who use drip irrigation” → “Many farmers use drip irrigation.”",
       "**“It is … that”** openers often add nothing: “It is clear that the results are mixed” → “The results are mixed” (unless you want “clearly” as a booster).",
-      "**Nominalisation overload.** Nominalisations (reduce → reduction) are useful for summarising and for cohesion (“This reduction…”). The problem is several in one sentence with a weak verb: “The implementation of a reduction in the use of plastic bags by supermarkets was achieved” → “Supermarkets reduced their use of plastic bags.” Find the main action, make it the verb, and put the actor first.",
+      "**Nominalisation overload.** Nominalisations (reduce → reduction) are useful for summarizing and for cohesion (“This reduction…”). The problem is several in one sentence with a weak verb: “The implementation of a reduction in the use of plastic bags by supermarkets was achieved” → “Supermarkets reduced their use of plastic bags.” Find the main action, make it the verb, and put the actor first.",
       "**A method**: count the words in a paragraph; aim to cut 10–20%; then reread to check that nothing became less clear or less accurate.",
       "Watch meaning when you cut: “reduced” is not “stopped”; “some” is not “many”.",
       {table:[["Weak verb + noun","Action verb"],["make a decision","decide"],["conduct an analysis of","analyse"],["give consideration to","consider"],["reach a conclusion","conclude"],["have a discussion","discuss"]]},
@@ -1196,7 +1196,7 @@ ICA.addUnit({
    /* ---- Lesson 1 ---- */
    {id:"e1u2-q01", lesson:"e1u2-l1", level:1, q:"In academic English, what does “formal” mainly mean?", options:[
      {t:"Precise, written not spoken, and focused on the ideas", ok:true, why:"These are the core features: precise, written rather than spoken in style, and focused on the ideas. Formality is about saying exactly what you mean for a reader who can’t ask questions."},
-     {t:"Using the longest and rarest words available in English", why:"Long words are not more formal or precise. “Use” is usually better than “utilise”."},
+     {t:"Using the longest and rarest words available in English", why:"Long words are not more formal or precise. “Use” is usually better than “utilize”."},
      {t:"Writing every verb in the passive", why:"The passive is useful in some places, but formal writing uses active verbs too."},
      {t:"Never expressing any opinion", why:"Academic writing makes and argues claims. Formality is about how you express them."}
    ]},
@@ -1236,7 +1236,7 @@ ICA.addUnit({
      {t:"It uses the passive voice.", why:"There is no passive in the sentence."},
      {t:"It should start with “And”.", why:"Starting with “And” would not help, and the problem is vagueness."}
    ]},
-   {id:"e1u2-q08", lesson:"e1u2-l1", level:3, q:"Kenji’s tutor says, “Use fewer phrasal verbs.” Kenji replaces every one, including “carried out”, with long Latin-based verbs such as “utilise” and “effectuate”. What is the problem?", options:[
+   {id:"e1u2-q08", lesson:"e1u2-l1", level:3, q:"Kenji’s tutor says, “Use fewer phrasal verbs.” Kenji replaces every one, including “carried out”, with long Latin-based verbs such as “utilize” and “effectuate”. What is the problem?", options:[
      {t:"He has made the writing stiffer without making it more precise.", ok:true, why:"The aim is precision. Some phrasal verbs, such as “carried out”, are standard, and simple words like “use” are often best. Change conversational phrasal verbs; keep standard ones and prefer natural words."},
      {t:"There is no problem: Latin-based verbs are always more academic.", why:"Rare Latinate verbs can make writing heavy and less clear. They are not automatically more academic."},
      {t:"Phrasal verbs are forbidden, so he should delete the sentences.", why:"Phrasal verbs are not forbidden; many are standard."},
@@ -1417,7 +1417,7 @@ ICA.addUnit({
    {id:"e1u2-q37", lesson:"e1u2-l5", level:1, q:"Which word is a booster rather than a hedge?", options:[
      {t:"undoubtedly", ok:true, why:"It makes the claim more certain."},
      {t:"perhaps", why:"A hedge: it adds caution."},
-     {t:"tend to", why:"A hedge: it softens a generalisation."},
+     {t:"tend to", why:"A hedge: it softens a generalization."},
      {t:"approximately", why:"A hedge (an approximator): it marks a number as not exact."}
    ]},
    {id:"e1u2-q38", lesson:"e1u2-l5", level:2, q:"Which sentence is grammatically correct?", options:[
@@ -1432,8 +1432,8 @@ ICA.addUnit({
      {t:"Rents are likely that they rise next year.", why:"The it-pattern is “It is likely that rents will rise”."},
      {t:"Rents likely to rising next year.", why:"Missing verb “are”, and “to” needs the base form “rise”."}
    ]},
-   {id:"e1u2-q40", lesson:"e1u2-l5", level:3, q:"Hana measured a fall in water use from 120 to 95 litres per day. Which sentence is best?", options:[
-     {t:"Water use fell from 120 to 95 litres per day.", ok:true, why:"A measured result needs no hedge, and the figures are precise."},
+   {id:"e1u2-q40", lesson:"e1u2-l5", level:3, q:"Hana measured a fall in water use from 120 to 95 liters per day. Which sentence is best?", options:[
+     {t:"Water use fell from 120 to 95 liters per day.", ok:true, why:"A measured result needs no hedge, and the figures are precise."},
      {t:"Water use may have possibly fallen somewhat.", why:"Two hedges on a measured fact, and the figures are lost."},
      {t:"Water use undoubtedly collapsed.", why:"A booster and an exaggeration: a fall of about a fifth is not a collapse."},
      {t:"It could be suggested that water use might have fallen.", why:"Over-hedged: she measured the fall."}
@@ -1441,7 +1441,7 @@ ICA.addUnit({
    {id:"e1u2-q41", lesson:"e1u2-l5", level:3, q:"Mei’s study found that districts with more clinics had lower infant mortality. Which claim fits the evidence?", options:[
      {t:"More clinics were associated with lower infant mortality, possibly because care was easier to reach.", ok:true, why:"It reports an association and hedges the explanation, without claiming proven cause."},
      {t:"This proves that building clinics reduces infant mortality.", why:"An association across districts can’t prove cause; richer districts might have both more clinics and lower mortality."},
-     {t:"Clinics clearly cause lower infant mortality everywhere.", why:"A causal claim, a booster and a generalisation beyond the data."},
+     {t:"Clinics clearly cause lower infant mortality everywhere.", why:"A causal claim, a booster and a generalization beyond the data."},
      {t:"It might perhaps possibly be that clinics could be related.", why:"Over-hedged: she did find an association and can say so."}
    ]},
    {id:"e1u2-q42", lesson:"e1u2-l5", level:1, q:"Which is the most concise version that keeps the meaning of “in order to”?", options:[
@@ -1456,7 +1456,7 @@ ICA.addUnit({
      {t:"He should have added “clearly”.", why:"A booster would make the over-claim worse."},
      {t:"The new sentence is a fragment.", why:"“The scheme helped” is a complete sentence; the problem is accuracy."}
    ]},
-   {id:"e1u2-q44", lesson:"e1u2-l5", level:2, q:"Which rewrite fixes nominalisation overload in “The committee made a decision to give consideration to the proposal”?", options:[
+   {id:"e1u2-q44", lesson:"e1u2-l5", level:2, q:"Which rewrite fixes nominalization overload in “The committee made a decision to give consideration to the proposal”?", options:[
      {t:"The committee decided to consider the proposal.", ok:true, why:"The hidden actions (decision, consideration) become verbs, and nothing is lost."},
      {t:"A decision was made by the committee regarding consideration of the proposal.", why:"Still built on nouns, and now passive as well."},
      {t:"The committee approved the proposal.", why:"Shorter, but it changes the meaning: deciding to consider is not approving."},

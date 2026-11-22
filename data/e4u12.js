@@ -4,7 +4,7 @@ ICA.addUnit({
   blurb:"Security studies at seminar level: what “security” means and for whom, from traditional strategic studies to critical and human security; why civil wars start, last and end; whether peacekeeping works and what the critics of the liberal peace say; nuclear, conventional and autonomous weapons and the treaties that try to govern them; and the Asia-Pacific security architecture, from hub-and-spoke alliances to ASEAN forums, told neutrally.",
   goals:[
     "Compare traditional, critical and human security approaches, and say what each one counts as a threat and whose security it puts first",
-    "Explain the main research programmes on civil war onset, duration, termination and recurrence, with the key works and their critics",
+    "Explain the main research programs on civil war onset, duration, termination and recurrence, with the key works and their critics",
     "Weigh the evidence on whether peacekeeping works, and the debate between defenders and critics of the liberal peace, including the local turn and Women, Peace and Security",
     "Describe the nuclear non-proliferation regime, the ban treaty, conventional arms treaties and the autonomous weapons talks accurately and as of November 2026",
     "Map the Asia-Pacific security architecture and describe the Korean Peninsula, cross-Strait relations and the South China Sea neutrally, attributing each position",
@@ -18,7 +18,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e4u12-l1", title:"Rethinking security: traditional, critical and human", minutes:60,
-   hook:{q:"In December 2021 the UN Security Council voted on a draft resolution that would have treated climate change as a risk to international peace and security. What happened?", options:["It was adopted unanimously","It was vetoed by Russia, with India also voting against","It was withdrawn before any vote","It was adopted, but only with China’s support"], answer:1, reveal:"**Russia vetoed it, India voted against and China abstained**, while 12 members voted in favour. Supporters argued that climate change multiplies threats such as hunger and displacement. Opponents argued that the Council was the wrong body and that framing climate as security could justify outside interference. That is a live argument about what “security” covers and who decides, which is what this lesson is about."},
+   hook:{q:"In December 2021 the UN Security Council voted on a draft resolution that would have treated climate change as a risk to international peace and security. What happened?", options:["It was adopted unanimously","It was vetoed by Russia, with India also voting against","It was withdrawn before any vote","It was adopted, but only with China’s support"], answer:1, reveal:"**Russia vetoed it, India voted against and China abstained**, while 12 members voted in favor. Supporters argued that climate change multiplies threats such as hunger and displacement. Opponents argued that the Council was the wrong body and that framing climate as security could justify outside interference. That is a live argument about what “security” covers and who decides, which is what this lesson is about."},
    goals:[
      "Use Baldwin’s questions to pin down what any security claim means",
      "Explain why traditional security studies kept a narrow, military focus, and what its defenders argue",
@@ -35,11 +35,11 @@ ICA.addUnit({
       {ol:["Security **for whom**?","Security **for which values**?","**How much** security?","From **what threats**?","By **what means**?","At **what cost**?","In **what time period**?"]},
       "Two people can both be “for security” and disagree on every one of these. That is why scholars call security an **essentially contested concept**: its meaning is part of the political argument, not settled before it.",
       {tip:"In a seminar, when someone says “X is a security issue”, ask Baldwin’s first two questions out loud. It usually reveals which school they belong to."},
-      {ex:"**Task:** in the Boe Declaration (2018), Pacific Islands Forum leaders reaffirmed that climate change is “the single greatest threat to the livelihoods, security and wellbeing of the peoples of the Pacific”. Analyse the claim with Baldwin’s seven questions.\n1. First I ask **security for whom**, because the referent tells me the school. The text names “peoples”, not only states: a deepened referent.\n2. Next, **which values**: livelihoods, wellbeing and, for low-lying atolls, the survival of land and communities. That is wider than territorial integrity.\n3. Then **from what threats**: sea-level rise, storms, drought. These are not military, so the claim widens security.\n4. Then **by what means**: emissions cuts by others, adaptation finance, regional cooperation. Few of these are military tools, which answers Walt’s worry that widening invites military solutions.\n5. Then **how much, at what cost and over what time**: the declaration sets priorities but no targets; its time horizon is decades, much longer than most defence planning.\n6. Finally I name the lens. The claim fits human security and a broad, Copenhagen-style sectoral view. A securitisation analyst would add a further question: did naming climate an existential threat change what governments were allowed to do?\n**Result:** “The Boe Declaration widens security to a non-military threat and deepens it to peoples and their livelihoods. By Baldwin’s questions, it is clear on referent, values and threat, but leaves cost and level of security open, which is typical of human security claims.”\n**Common mistake:** treating “is it really a security issue?” as a yes-or-no question. Baldwin’s point is that every security claim answers these questions somehow; the analyst’s job is to make the answers visible.", label:"Worked example: Baldwin’s questions on a real claim"}
+      {ex:"**Task:** in the Boe Declaration (2018), Pacific Islands Forum leaders reaffirmed that climate change is “the single greatest threat to the livelihoods, security and wellbeing of the peoples of the Pacific”. Analyse the claim with Baldwin’s seven questions.\n1. First I ask **security for whom**, because the referent tells me the school. The text names “peoples”, not only states: a deepened referent.\n2. Next, **which values**: livelihoods, wellbeing and, for low-lying atolls, the survival of land and communities. That is wider than territorial integrity.\n3. Then **from what threats**: sea-level rise, storms, drought. These are not military, so the claim widens security.\n4. Then **by what means**: emissions cuts by others, adaptation finance, regional cooperation. Few of these are military tools, which answers Walt’s worry that widening invites military solutions.\n5. Then **how much, at what cost and over what time**: the declaration sets priorities but no targets; its time horizon is decades, much longer than most defense planning.\n6. Finally I name the lens. The claim fits human security and a broad, Copenhagen-style sectoral view. A securitization analyst would add a further question: did naming climate an existential threat change what governments were allowed to do?\n**Result:** “The Boe Declaration widens security to a non-military threat and deepens it to peoples and their livelihoods. By Baldwin’s questions, it is clear on referent, values and threat, but leaves cost and level of security open, which is typical of human security claims.”\n**Common mistake:** treating “is it really a security issue?” as a yes-or-no question. Baldwin’s point is that every security claim answers these questions somehow; the analyst’s job is to make the answers visible.", label:"Worked example: Baldwin’s questions on a real claim"}
     ]},
     {h:"Traditional security studies and its defenders", body:[
       "[[traditional-security-studies|Traditional security studies]] grew out of Cold War **strategic studies**. This was the study of deterrence, arms races and the use of force: the world of Brodie and Schelling that Unit 1 introduced. Its referent is the state; its threats are mainly military; its theory is mostly [[realism]].",
-      "The classic defence of this focus is Stephen Walt’s “The Renaissance of Security Studies” (*International Studies Quarterly*, 1991). Walt defined the field as “the study of the threat, use, and control of military force”. He warned that adding pollution, disease and poverty would destroy the field’s “intellectual coherence” and make solutions harder to find.",
+      "The classic defense of this focus is Stephen Walt’s “The Renaissance of Security Studies” (*International Studies Quarterly*, 1991). Walt defined the field as “the study of the threat, use, and control of military force”. He warned that adding pollution, disease and poverty would destroy the field’s “intellectual coherence” and make solutions harder to find.",
       "Barry Buzan’s *People, States and Fear* (1983; second edition 1991) was a bridge. It kept the state central but argued that security has military, political, economic, societal and environmental sectors, the seed of the later Copenhagen School.",
       {key:"The traditionalist case is not that other harms don’t matter. It is that calling them all “security” blurs analysis and invites military solutions to non-military problems."},
       "Traditionalists also point to the data. In 2025, the Uppsala Conflict Data Program (UCDP) recorded eight interstate conflicts, the highest number since its records begin in 1946. Wars between states have not disappeared."
@@ -48,13 +48,13 @@ ICA.addUnit({
       "From the 1990s, scholars who rejected the state-and-military focus came to be grouped as [[critical-security-studies|critical security studies]]. The label was made popular by Keith Krause and Michael Williams’s edited book *Critical Security Studies* (1997). It is a family, not one theory:",
       {table:[
         ["School","Key works","Core claim"],
-        ["[[copenhagen-school|Copenhagen]]","Buzan, Wæver & de Wilde (1998)","Security is a speech act; study how issues are securitised"],
+        ["[[copenhagen-school|Copenhagen]]","Buzan, Wæver & de Wilde (1998)","Security is a speech act; study how issues are securitized"],
         ["[[welsh-school|Welsh (Aberystwyth)]]","Booth, “Security and Emancipation” (1991); Wyn Jones (1999)","Real security means **emancipation**: freeing people from constraints such as war, poverty and oppression"],
         ["[[paris-school|Paris]]","Bigo and others","Security is made by the everyday practices of police, border and intelligence professionals"],
         ["[[feminist-security-studies|Feminist]]","Tickner (1992); Enloe; Hansen (2000)","Ask where women and gender are; the state can be a source of insecurity"],
         ["Postcolonial","Ayoob, *The Third World Security Predicament* (1995)","For many postcolonial states, the main threats are internal, born of unfinished state-building"]
       ]},
-      "Unit 2 covered securitisation in depth ({{securitization-theory}}). Ken Booth’s Welsh School is different: it is openly normative. Following Frankfurt School [[critical-theory-ir|Critical Theory]], Booth defined security as [[emancipation-ir|emancipation]] and asked scholars to take the side of the insecure. Copenhagen scholars, by contrast, often prefer [[desecuritization|desecuritisation]], because securitising an issue can suspend normal politics.",
+      "Unit 2 covered securitization in depth ({{securitization-theory}}). Ken Booth’s Welsh School is different: it is openly normative. Following Frankfurt School [[critical-theory-ir|Critical Theory]], Booth defined security as [[emancipation-ir|emancipation]] and asked scholars to take the side of the insecure. Copenhagen scholars, by contrast, often prefer [[desecuritization|desecuritization]], because securitizing an issue can suspend normal politics.",
       "Mohammed Ayoob’s point matters for Asia and Africa. He argued that Western theories assumed states secure at home and threatened from outside. Many states in the [[global-south|Global South]], he pointed out, face insurgency, contested borders and weak institutions. Unit 2 called related ideas [[subaltern-realism|subaltern realism]].",
       {fig:'<svg viewBox="0 0 340 330"><path class="d-ink" d="M30,292 V22" stroke-width="2"/><path class="d-ink" d="M30,292 H332" stroke-width="2"/><path class="d-inkf" d="M30,14 L24,26 H36 Z"/><path class="d-inkf" d="M338,292 L326,286 V298 Z"/><rect class="d-rose" x="40" y="30" width="138" height="122" rx="8" stroke-width="2"/><text x="109" y="62" text-anchor="middle">Welsh School,</text><text x="109" y="80" text-anchor="middle">feminist</text><text class="s" x="109" y="104" text-anchor="middle">people facing war</text><text class="s" x="109" y="120" text-anchor="middle">and state violence</text><rect class="d-sage" x="188" y="30" width="142" height="122" rx="8" stroke-width="2"/><text x="259" y="62" text-anchor="middle">Human security</text><text class="s" x="259" y="86" text-anchor="middle">UNDP 1994: fear</text><text class="s" x="259" y="102" text-anchor="middle">and want, people</text><text class="s" x="259" y="118" text-anchor="middle">first</text><rect class="d-soft" x="40" y="162" width="138" height="122" rx="8" stroke-width="2"/><text x="109" y="194" text-anchor="middle">Traditional</text><text x="109" y="212" text-anchor="middle">security studies</text><text class="s" x="109" y="236" text-anchor="middle">Walt 1991: threat,</text><text class="s" x="109" y="252" text-anchor="middle">use, control of force</text><rect class="d-gold" x="188" y="162" width="142" height="122" rx="8" stroke-width="2"/><text x="259" y="194" text-anchor="middle">Copenhagen</text><text x="259" y="212" text-anchor="middle">School</text><text class="s" x="259" y="236" text-anchor="middle">five sectors; states</text><text class="s" x="259" y="252" text-anchor="middle">and societies</text><text class="s" x="109" y="312" text-anchor="middle">Military threats</text><text class="s" x="259" y="312" text-anchor="middle">Many kinds of threat</text><text class="s" x="20" y="230" text-anchor="middle" transform="rotate(-90 20 230)">State</text><text class="s" x="20" y="90" text-anchor="middle" transform="rotate(-90 20 90)">People</text></svg>', alt:"A two-by-two grid. The horizontal axis runs from military threats to many kinds of threat; the vertical axis from the state at the bottom to people at the top. Bottom left: traditional security studies, Walt 1991, the threat, use and control of force. Bottom right: the Copenhagen School, five sectors, states and societies. Top left: the Welsh School and feminist approaches, people facing war and state violence. Top right: human security, UNDP 1994, fear and want, people first.", cap:"Widening (what counts as a threat) and deepening (whose security). The placements are a simplification: each school argues about its own box."}
     ]},
@@ -70,13 +70,13 @@ ICA.addUnit({
       "UN Secretary-General Kofi Annan’s report *In Larger Freedom* (2005) added a third freedom, to live in dignity. In 2012 the General Assembly agreed a common understanding (resolution 66/290). It holds that human security does **not** entail the threat or use of force and does not replace state security. In 2022 the UNDP returned to the idea in a special report, *New Threats to Human Security in the Anthropocene*."
     ]},
     {h:"Is human security useful? The debate", body:[
-      "Roland Paris’s article “Human Security: Paradigm Shift or Hot Air?” (*International Security*, 2001) is the standard critique. He argued that the concept is so broad it gives no guide to priorities or research: if everything is a threat, nothing can be tested. Its vagueness, he noted, was also why so many governments and NGOs could sign up to it. Yuen Foong Khong (2001) added that labelling every misery “security” cannot tell policymakers what to do first.",
+      "Roland Paris’s article “Human Security: Paradigm Shift or Hot Air?” (*International Security*, 2001) is the standard critique. He argued that the concept is so broad it gives no guide to priorities or research: if everything is a threat, nothing can be tested. Its vagueness, he noted, was also why so many governments and NGOs could sign up to it. Yuen Foong Khong (2001) added that labeling every misery “security” cannot tell policymakers what to do first.",
       "Defenders reply that the concept is a **political agenda**, not a hypothesis. They add that it changed practice: the landmine ban, child-soldier protocols, the protection of civilians in peacekeeping. Shahrbanou Tadjbakhsh and Anuradha Chenoy (*Human Security: Concepts and Implications*, 2007) argued that the broad version reflects how insecurity is lived in much of the Global South.",
       "Critics from other directions add two points. Some governments, in Asia and elsewhere, welcomed “freedom from want” but distrusted “freedom from fear”, fearing it could justify intervention and erode [[non-interference]]. Some critical theorists warn that human security can be absorbed by states as a label for business as usual."
     ]},
     {h:"Regional security complexes", body:[
       "Most threats travel more easily over short distances than long ones. From this simple point Barry Buzan and Ole Wæver built {{regional-security-complex-theory|regional security complex theory}} in *Regions and Powers* (2003).",
-      "A [[regional-security-complex|regional security complex]] is a group of states whose security concerns are so linked that they cannot be analysed apart from each other. Examples are South Asia around India and Pakistan, the Gulf, and East Asia. In East Asia, Buzan and Wæver argued, Northeast and Southeast Asia were merging into one complex. Each complex has patterns of **amity and enmity**, and great powers can **penetrate** it from outside. Between complexes sit **insulator** states, such as Afghanistan, which in their account separates South Asia from the Middle East and Central Asia.",
+      "A [[regional-security-complex|regional security complex]] is a group of states whose security concerns are so linked that they cannot be analyzed apart from each other. Examples are South Asia around India and Pakistan, the Gulf, and East Asia. In East Asia, Buzan and Wæver argued, Northeast and Southeast Asia were merging into one complex. Each complex has patterns of **amity and enmity**, and great powers can **penetrate** it from outside. Between complexes sit **insulator** states, such as Afghanistan, which in their account separates South Asia from the Middle East and Central Asia.",
       "The theory is useful because it stops two errors. One is treating every regional crisis as a sideshow of great-power rivalry. The other is treating a region as if outsiders did not matter. Critics say its regional borders can be arbitrary and that it underplays transnational threats such as pandemics and climate change."
     ]},
     {h:"Worked example: one river, four lenses", body:[
@@ -87,15 +87,15 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u12-l1-x1", type:"sort", q:"Would a **traditional** security scholar such as Walt accept each topic as security studies, or is it a **widened** agenda?", buckets:["Traditional security studies","Widened agenda"], items:[
-      {t:"How missile defences affect a rival’s willingness to attack first", b:0, why:"The threat and use of military force between states: Walt’s core."},
+      {t:"How missile defenses affect a rival’s willingness to attack first", b:0, why:"The threat and use of military force between states: Walt’s core."},
       {t:"Whether alliances deter invasion", b:0, why:"Alliances and deterrence are classic strategic studies."},
       {t:"How drought threatens farmers’ livelihoods in a river basin", b:1, why:"A non-military threat to people: human security, a widening Walt warned against."},
-      {t:"How a government framed migration as an existential threat to national identity", b:1, why:"Societal security and securitisation: the Copenhagen School’s widened agenda."},
+      {t:"How a government framed migration as an existential threat to national identity", b:1, why:"Societal security and securitization: the Copenhagen School’s widened agenda."},
       {t:"How arms control agreements reduce the risk of accidental war", b:0, why:"The control of military force is part of Walt’s definition."},
       {t:"How women experience insecurity in refugee camps", b:1, why:"A deepened referent (people, gender), central to feminist security studies."}
     ]},
     {id:"e4u12-l1-x2", type:"match", q:"Match each approach to its core claim.", pairs:[
-      ["Copenhagen School","Security is a speech act: issues are securitised when an audience accepts a claim of existential threat","Buzan, Wæver and de Wilde (1998)."],
+      ["Copenhagen School","Security is a speech act: issues are securitized when an audience accepts a claim of existential threat","Buzan, Wæver and de Wilde (1998)."],
       ["Welsh (Aberystwyth) School","Security means emancipation: freeing people from war, poverty and oppression","Booth (1991), drawing on Critical Theory."],
       ["Paris School","Security is produced by routine practices of police, border and intelligence agencies","Bigo and others: practices, not only speeches."],
       ["Postcolonial approaches","Many states’ main threats are internal, from incomplete state-building","Ayoob (1995), the Third World security predicament."],
@@ -105,7 +105,7 @@ ICA.addUnit({
       {t:"Security for whom, and for which values?", ok:true, why:"Right. Baldwin’s first two questions identify the referent and the values (the state’s stability, farmers’ incomes or poor households’ access to food), which decide what policy follows."},
       {t:"Whether food is more important than military power", why:"That is a ranking, not a clarification. Baldwin’s point is that the claim is empty until its terms are specified."},
       {t:"Whether the minister belongs to a realist party", why:"Labels say little; the questions are about the content of the claim."},
-      {t:"How much the defence budget is", why:"The means and cost questions matter later, but first you need to know whose security, from what."}
+      {t:"How much the defense budget is", why:"The means and cost questions matter later, but first you need to know whose security, from what."}
     ]},
     {id:"e4u12-l1-x4", type:"sort", q:"Which version of human security does each initiative fit best?", buckets:["Freedom from fear (narrow)","Freedom from want (broad)"], items:[
       {t:"A treaty banning anti-personnel landmines", b:0, why:"Protection from violence: the Canadian-led agenda that produced the 1997 Mine Ban Convention."},
@@ -120,8 +120,8 @@ ICA.addUnit({
       {t:"It ignores violence against civilians", why:"The narrow version focuses on exactly that; Paris’s complaint was breadth, not omission."},
       {t:"It requires military intervention", why:"The UN’s 2012 understanding says human security does not entail the threat or use of force; Paris’s point was conceptual."}
     ]},
-    {id:"e4u12-l1-x6", type:"spot", q:"A student essay summarises the debate. Tap each sentence that **gets it wrong**.", ask:"gets it wrong", parts:[
-      {t:"The 1994 Human Development Report popularised human security as freedom from fear and freedom from want.", flag:false, why:"Correct: that is the report’s framing."},
+    {id:"e4u12-l1-x6", type:"spot", q:"A student essay summarizes the debate. Tap each sentence that **gets it wrong**.", ask:"gets it wrong", parts:[
+      {t:"The 1994 Human Development Report popularized human security as freedom from fear and freedom from want.", flag:false, why:"Correct: that is the report’s framing."},
       " ",
       {t:"Critical security studies is a single theory founded by Barry Buzan.", flag:true, why:"Wrong. It is a family of approaches (Copenhagen, Welsh, Paris, feminist, postcolonial). Buzan is linked to the Copenhagen School, and Booth to the Welsh School."},
       " ",
@@ -132,9 +132,9 @@ ICA.addUnit({
       {t:"Ayoob argued that for many postcolonial states the main threats are internal.", flag:false, why:"Correct: the Third World security predicament."}
     ]},
     {id:"e4u12-l1-x7", type:"mcq", q:"Hana is writing about India–Pakistan rivalry and asks why China and Afghanistan keep appearing in her sources. Which idea from regional security complex theory helps most?", options:[
-      {t:"Outside powers penetrate complexes, and insulators sit at their edges", ok:true, why:"Right: so neighbours matter without being core members. Buzan and Wæver treat South Asia as a complex centred on India and Pakistan, with outside penetration and Afghanistan as an insulator in their account."},
+      {t:"Outside powers penetrate complexes, and insulators sit at their edges", ok:true, why:"Right: so neighbors matter without being core members. Buzan and Wæver treat South Asia as a complex centered on India and Pakistan, with outside penetration and Afghanistan as an insulator in their account."},
       {t:"Regions don’t matter much; only global polarity and the great powers do", why:"That is the error the theory was built to correct."},
-      {t:"All security is a speech act", why:"That is securitisation theory, a related but separate idea."},
+      {t:"All security is a speech act", why:"That is securitization theory, a related but separate idea."},
       {t:"Every state in Asia belongs to one complex", why:"Buzan and Wæver distinguish South Asia from East Asia."}
     ]},
     {id:"e4u12-l1-x8", type:"explain", q:"A government says a long drought is now a “national security issue”. Explain how a traditionalist such as Walt and a supporter of human security would each react, and use one of Baldwin’s questions to show where they differ.", size:"3–4 sentences", hint:"Start with Baldwin’s first question: security for whom?", model:"Walt, a traditionalist, would worry that calling drought a security issue blurs the field, which he defines as the study of military force, and could invite military solutions to a non-military problem. A supporter of human security would welcome the claim, because drought threatens people’s livelihoods, their “freedom from want”. Baldwin’s question “security for whom?” shows the gap: the traditionalist puts the state first, while human security puts people first. Neither answer is settled in advance, which is why scholars call security an essentially contested concept.", points:["Gives Walt’s worry: it blurs the field or invites military solutions", "Gives the human security view: people and their livelihoods are the referent", "Uses a Baldwin question, such as “security for whom?”, to locate the difference", "Explains why security is called an essentially contested concept"]}
@@ -154,7 +154,7 @@ ICA.addUnit({
      {t:"Seminar questions", how:[
        "Choose one and write 150–250 words with a position and a counter-argument.",
        "1. Is widening security an analytical gain or a political risk?",
-       "2. Should scholars ever recommend securitising an issue, or always desecuritising?",
+       "2. Should scholars ever recommend securitizing an issue, or always desecuritizing?",
        "3. Does regional security complex theory fit your own region? Draw its core, penetrating powers and insulators."
      ], write:"My question… My position… Evidence… Counter-argument…"}
     ],
@@ -168,7 +168,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e4u12-l2", title:"Why civil wars happen, last and end", minutes:60,
-   hook:{q:"Mary Kaldor’s influential idea of “new wars” (1999) grew above all from her observation of one conflict. Which?", options:["The war in Bosnia and Herzegovina in the early 1990s","The Korean War","The Iran–Iraq War","The Vietnam War"], answer:0, reveal:"**Bosnia and Herzegovina**, which she observed closely in the early 1990s. Kaldor saw a war fought by militias and criminal networks and waged mostly against civilians in the name of identity. In her account, it was paid for through a globalised war economy. Critics soon asked how new these features really were. This lesson follows the main research debates on why civil wars start, why they last, and how they end."},
+   hook:{q:"Mary Kaldor’s influential idea of “new wars” (1999) grew above all from her observation of one conflict. Which?", options:["The war in Bosnia and Herzegovina in the early 1990s","The Korean War","The Iran–Iraq War","The Vietnam War"], answer:0, reveal:"**Bosnia and Herzegovina**, which she observed closely in the early 1990s. Kaldor saw a war fought by militias and criminal networks and waged mostly against civilians in the name of identity. In her account, it was paid for through a globalized war economy. Critics soon asked how new these features really were. This lesson follows the main research debates on why civil wars start, why they last, and how they end."},
    goals:[
      "Separate the four research questions about civil war: onset, duration, termination and recurrence",
      "Explain the greed, grievance and feasibility arguments, with the measurement problems behind them",
@@ -185,8 +185,8 @@ ICA.addUnit({
       "Each stage has its own literature, its own datasets and its own policy debates. Keep them apart in a seminar: a finding about onset is not a finding about how to end a war."
     ]},
     {h:"Greed, grievance and feasibility", body:[
-      "Paul Collier and Anke Hoeffler’s “Greed and Grievance in Civil War” (*Oxford Economic Papers*, 2004) became the most cited and most criticised paper in the field. Using civil wars from 1960 to 1999, they found that measures of **opportunity** predicted onset better than measures of **grievance** such as inequality or political repression.",
-      "Their key measure was a country’s dependence on **primary commodity exports** (oil, minerals, crops) as a share of GDP. They read it as a sign of “lootable” money for rebels. They also used low school enrolment of young men and slow economic growth, read as cheap recruits.",
+      "Paul Collier and Anke Hoeffler’s “Greed and Grievance in Civil War” (*Oxford Economic Papers*, 2004) became the most cited and most criticized paper in the field. Using civil wars from 1960 to 1999, they found that measures of **opportunity** predicted onset better than measures of **grievance** such as inequality or political repression.",
+      "Their key measure was a country’s dependence on **primary commodity exports** (oil, minerals, crops) as a share of GDP. They read it as a sign of “lootable” money for rebels. They also used low school enrollment of young men and slow economic growth, read as cheap recruits.",
       "The problem is that each proxy can mean several things. James Fearon (2005) showed that commodity dependence also signals a **weak state**: one that lives off resource rents instead of taxing and governing its people. That was his and David Laitin’s explanation (2003). Michael Ross (2004) reviewed the evidence. He found that oil was linked to the outbreak of war, and lootable resources such as gemstones and drugs to its length. Most other commodities, he found, showed no clear link. The wider [[resource-curse|resource curse]] literature asks why resource wealth so often goes with weak institutions.",
       "In 2009 Collier, Hoeffler and Dominic Rohner moved to a [[feasibility-hypothesis|feasibility hypothesis]]: where rebellion is financially and militarily feasible, it will happen, whatever its motive. Critics replied that “feasibility” is hard to falsify, and that the original [[greed-and-grievance|greed versus grievance]] framing had cast rebels as criminals and ignored politics.",
       {key:"The variables were never the whole argument. The fight was over what a number stands for: rebels’ greed, a weak state, or both."}
@@ -196,9 +196,9 @@ ICA.addUnit({
       "The lesson for research design: grievance had looked weak partly because it had been measured badly. It had been measured as inequality between **individuals** across a whole country, rather than as inequality and exclusion between **groups**."
     ]},
     {h:"“New wars” and their critics", body:[
-      "In *New and Old Wars* (1999; third edition 2012), {{mary-kaldor|Mary Kaldor}} argued that wars after the Cold War differed from “old” wars between states in four ways. For Kaldor, they differed in their **goals** (identity politics rather than ideology or territory) and their **methods** (displacement and terror against civilians rather than battles). They also differed, she argued, in their **actors** (militias, warlords, mercenaries and criminal networks alongside armies) and their **finance** (a globalised [[war-economy|war economy]] of looting, smuggling, diaspora money and aid diversion).",
+      "In *New and Old Wars* (1999; third edition 2012), {{mary-kaldor|Mary Kaldor}} argued that wars after the Cold War differed from “old” wars between states in four ways. For Kaldor, they differed in their **goals** (identity politics rather than ideology or territory) and their **methods** (displacement and terror against civilians rather than battles). They also differed, she argued, in their **actors** (militias, warlords, mercenaries and criminal networks alongside armies) and their **finance** (a globalized [[war-economy|war economy]] of looting, smuggling, diaspora money and aid diversion).",
       "Stathis Kalyvas’s reply, “‘New’ and ‘Old’ Civil Wars: A Valid Distinction?” (*World Politics*, 2001), argued that most of these features were present in older civil wars too. In his view, the end of the Cold War had changed how wars were **described** more than how they were fought. Others questioned the data behind the claim that civilians had become a far larger share of the dead.",
-      "Kalyvas’s own book, *The Logic of Violence in Civil War* (2006), changed the field. Drawing on fieldwork in Greece, he argued that violence against civilians is not mindless. In his account, armed groups use [[selective-violence|selective violence]] to control territory and deter defection. It is often based, he found, on denunciations by neighbours settling local scores.",
+      "Kalyvas’s own book, *The Logic of Violence in Civil War* (2006), changed the field. Drawing on fieldwork in Greece, he argued that violence against civilians is not mindless. In his account, armed groups use [[selective-violence|selective violence]] to control territory and deter defection. It is often based, he found, on denunciations by neighbors settling local scores.",
       "Kaldor defended the idea in “In Defence of New Wars” (2013): “new wars” is a lens for policy, she argued, not a claim that every feature is unprecedented. The debate taught the field to ask how wars are fought and financed, not only why they start.",
       {terms:["greed-and-grievance","feasibility-hypothesis","resource-curse","new-wars","war-economy","selective-violence"]}
     ]},
@@ -207,7 +207,7 @@ ICA.addUnit({
       {ex:"The rebels’ dilemma:\n1. A deal asks rebels to hand in their weapons.\n2. Once disarmed, they cannot punish a government that breaks the deal.\n3. Knowing this, they doubt the government’s promises today.\n4. So they refuse, or sign and keep weapons hidden.\nThe fix: a third party that guarantees the deal while trust is built, and power-sharing that gives rebels a stake.", label:"The commitment problem"},
       "This is the [[commitment-problem|commitment problem]] you met in Fearon’s bargaining model, applied inside a state. Walter found that settlements were far more likely to be implemented when an outside power guaranteed them. Caroline Hartzell and Matthew Hoddie (*American Journal of Political Science*, 2003) found that settlements sharing power along several dimensions (political, military, territorial, economic) lasted longer.",
       "Stephen Stedman (“Spoiler Problems in Peace Processes”, *International Security*, 1997) added the [[spoiler|spoiler]]. This is a leader or group that uses violence to undermine a peace that threatens its power. He distinguished **limited**, **greedy** and **total** spoilers, each needing a different strategy.",
-      "Not everyone favours negotiation. Monica Duffy Toft (*Securing the Peace*, 2010) argued that civil wars ended by military victory, especially rebel victory, recurred less often than negotiated ones. She also argued that settlements last best when they reform the security sector. Critics answer that victories can mean repression, and that the cases are hard to compare.",
+      "Not everyone favors negotiation. Monica Duffy Toft (*Securing the Peace*, 2010) argued that civil wars ended by military victory, especially rebel victory, recurred less often than negotiated ones. She also argued that settlements last best when they reform the security sector. Critics answer that victories can mean repression, and that the cases are hard to compare.",
       "Recurrence is common. A World Bank team led by Collier called it the [[conflict-trap|conflict trap]] (*Breaking the Conflict Trap*, 2003). In their account, war leaves poverty, armed groups and grievances that raise the risk of new war. Walter (2004) found that [[conflict-recurrence|recurrence]] is more likely where living conditions are poor and people have little access to politics."
     ]},
     {h:"Worked example: Nepal, 1996–2006", body:[
@@ -229,8 +229,8 @@ ICA.addUnit({
         ["How wars end","UCDP Peace Agreement and Conflict Termination datasets","Agreements; conflict episodes"],
         ["Exclusion and grievance","Ethnic Power Relations (EPR)","Ethnic group-year"]
       ]},
-      {warn:"Datasets define violence differently. ACLED also records protests and riots, and needs a free account; UCDP counts only deaths in organised armed violence. Two “counts of conflict” can differ for good reasons, so cite the dataset, its version and its definitions."},
-      {ex:"**Task:** design the data side of a study asking: “Did political exclusion of ethnic groups raise the risk of civil war onset in South and Southeast Asia after 1990?”\n1. First I name the **stage**, because each stage has its own data. The question is about **onset**, not duration or termination.\n2. Next I choose the **outcome variable**. Onset of a conflict between a government and a rebel group, using the UCDP/PRIO Armed Conflict Dataset, which records conflicts reaching 25 [[battle-related-deaths|battle-related deaths]] in a year.\n3. Then the **explanatory variable**. Political exclusion of ethnic groups from central power, from Ethnic Power Relations (EPR). Its unit is the **ethnic group-year**, so I must link conflicts to groups. EPR’s companion data on ethnic armed conflict are built for this.\n4. Then the **unit of observation**: group-years for every politically relevant group in the region, so that excluded and included groups can be compared.\n5. Then **controls** suggested by rival theories: group size, terrain, national income, past conflict. These help rule out the feasibility explanation.\n6. Finally I write down the limits: EPR is coded by experts, so “exclusion” reflects their judgements; the region has a small number of onsets, so estimates will be uncertain.\n**Result:** a one-paragraph data plan: “Outcome: conflict onset (UCDP/PRIO, version and year cited). Predictor: exclusion status (EPR). Unit: ethnic group-year, 1990 onwards, South and Southeast Asia. Controls: group size, terrain, GDP per capita, previous conflict.”\n**Common mistake:** using ACLED event counts for an onset question. ACLED records protests and riots as well as fighting, and counts events, not the start of wars.", label:"Worked example: matching data to a question step by step"},
+      {warn:"Datasets define violence differently. ACLED also records protests and riots, and needs a free account; UCDP counts only deaths in organized armed violence. Two “counts of conflict” can differ for good reasons, so cite the dataset, its version and its definitions."},
+      {ex:"**Task:** design the data side of a study asking: “Did political exclusion of ethnic groups raise the risk of civil war onset in South and Southeast Asia after 1990?”\n1. First I name the **stage**, because each stage has its own data. The question is about **onset**, not duration or termination.\n2. Next I choose the **outcome variable**. Onset of a conflict between a government and a rebel group, using the UCDP/PRIO Armed Conflict Dataset, which records conflicts reaching 25 [[battle-related-deaths|battle-related deaths]] in a year.\n3. Then the **explanatory variable**. Political exclusion of ethnic groups from central power, from Ethnic Power Relations (EPR). Its unit is the **ethnic group-year**, so I must link conflicts to groups. EPR’s companion data on ethnic armed conflict are built for this.\n4. Then the **unit of observation**: group-years for every politically relevant group in the region, so that excluded and included groups can be compared.\n5. Then **controls** suggested by rival theories: group size, terrain, national income, past conflict. These help rule out the feasibility explanation.\n6. Finally I write down the limits: EPR is coded by experts, so “exclusion” reflects their judgments; the region has a small number of onsets, so estimates will be uncertain.\n**Result:** a one-paragraph data plan: “Outcome: conflict onset (UCDP/PRIO, version and year cited). Predictor: exclusion status (EPR). Unit: ethnic group-year, 1990 onwards, South and Southeast Asia. Controls: group size, terrain, GDP per capita, previous conflict.”\n**Common mistake:** using ACLED event counts for an onset question. ACLED records protests and riots as well as fighting, and counts events, not the start of wars.", label:"Worked example: matching data to a question step by step"},
       {terms:["commitment-problem","spoiler","conflict-trap","conflict-recurrence"]}
     ]}
     ,{h:"Common misconceptions", body:[
@@ -257,7 +257,7 @@ ICA.addUnit({
       {t:"Commodity exports mean rebels are motivated by ideology", why:"The debate was between greed and state weakness, not ideology."}
     ]},
     {id:"e4u12-l2-x3", type:"match", q:"Match each work to its main argument.", pairs:[
-      ["Kaldor, *New and Old Wars* (1999)","Post-Cold War wars are fought over identity, against civilians, financed by a globalised war economy","The “new wars” thesis."],
+      ["Kaldor, *New and Old Wars* (1999)","Post-Cold War wars are fought over identity, against civilians, financed by a globalized war economy","The “new wars” thesis."],
       ["Kalyvas, “‘New’ and ‘Old’ Civil Wars” (2001)","Most supposedly new features existed in older civil wars too","The main critique of the thesis."],
       ["Kalyvas, *The Logic of Violence in Civil War* (2006)","Armed groups use selective violence to control territory and deter defection","His theory of violence against civilians."],
       ["Stedman, “Spoiler Problems” (1997)","Peace processes are threatened by limited, greedy and total spoilers","His typology of spoilers."],
@@ -296,7 +296,7 @@ ICA.addUnit({
     {id:"e4u12-l2-x8", type:"explain", q:"Explain why a civil war is usually harder to end with a deal than a war between states, using Walter’s idea of the commitment problem. Then say how a peace process can try to solve it, with Nepal as your example.", size:"3–5 sentences", prompt:"In a war between states each army can go home, but in a civil war…", hint:"Think about what happens to the rebels’ power once they hand in their weapons.", model:"In a war between states each army can go home, but in a civil war both sides must live in one country afterwards, and the rebels usually have to disarm. Once disarmed, they cannot punish a government that breaks the deal, so they doubt its promises today and refuse to sign, or keep weapons hidden. Walter found that deals were far more likely to be carried out when an outside power guaranteed them, and power-sharing gives rebels a stake. In Nepal, Maoist fighters went into cantonments with their weapons stored under UN monitoring, and the Maoists entered an elected Constituent Assembly.", points:["Says both sides must live together and the rebels must usually disarm", "Explains why disarmed rebels cannot trust the government’s promise", "Names an outside guarantee as one fix", "Names power-sharing or a political stake as another fix", "Uses Nepal’s cantonments, UN monitoring or the Constituent Assembly as the example"]}
    ],
    apply:{
-    intro:"Practise thinking like a civil war researcher. Use free sources only.",
+    intro:"Practice thinking like a civil war researcher. Use free sources only.",
     tasks:[
      {t:"One war, four stages", how:[
        "Choose a civil war that has ended (for example Sierra Leone, Aceh, Mozambique, Sri Lanka, Nepal or Guatemala).",
@@ -324,11 +324,11 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e4u12-l3", title:"Peacekeeping and peacebuilding: evidence and critics", minutes:60,
-   hook:{q:"UN Security Council resolution 1325 on Women, Peace and Security (2000) was adopted during the Council presidency of which country, which had pushed for it?", options:["Namibia","The United States","France","Japan"], answer:0, reveal:"**Namibia**, which held the presidency in October 2000 and had hosted a meeting in Windhoek that May on women in peace operations. Bangladesh, as a Council member, had also championed the issue, alongside women’s organisations worldwide. The Women, Peace and Security agenda began with strong Global South leadership. This lesson covers how peace operations have changed, what the evidence says about whether they work, the critics of the “liberal peace”, and Women, Peace and Security."},
+   hook:{q:"UN Security Council resolution 1325 on Women, Peace and Security (2000) was adopted during the Council presidency of which country, which had pushed for it?", options:["Namibia","The United States","France","Japan"], answer:0, reveal:"**Namibia**, which held the presidency in October 2000 and had hosted a meeting in Windhoek that May on women in peace operations. Bangladesh, as a Council member, had also championed the issue, alongside women’s organizations worldwide. The Women, Peace and Security agenda began with strong Global South leadership. This lesson covers how peace operations have changed, what the evidence says about whether they work, the critics of the “liberal peace”, and Women, Peace and Security."},
    goals:[
      "Describe the generations of peace operations and give an example of each",
      "Summarise the quantitative evidence on whether peacekeeping works, and its limits",
-     "Explain the liberal peace, Paris’s critique and the defence, and the idea of hybrid peace",
+     "Explain the liberal peace, Paris’s critique and the defense, and the idea of hybrid peace",
      "Explain the local turn, with Autesserre’s and Mac Ginty’s work",
      "Describe the Women, Peace and Security agenda, its evidence and its critics",
      "Describe the state of UN peacekeeping as of 2026 without predicting its future"
@@ -336,10 +336,10 @@ ICA.addUnit({
    learn:[
     {h:"Generations of peace operations", body:[
       {lead:"A blue helmet watching a ceasefire line in Cyprus and a UN administrator running a whole territory are both doing “peacekeeping”. How did one word come to cover so much?"},
-      "The primer set out the basics, from the first missions of 1948 and 1956 (see {{peacekeeping}}). The basics are consent, impartiality and the non-use of force except in self-defence and defence of the mandate. Scholars often sort later [[peace-operation|peace operations]] into “generations”. The labels are a teaching device, not an official UN scheme, and authors count them differently:",
+      "The primer set out the basics, from the first missions of 1948 and 1956 (see {{peacekeeping}}). The basics are consent, impartiality and the non-use of force except in self-defense and defense of the mandate. Scholars often sort later [[peace-operation|peace operations]] into “generations”. The labels are a teaching device, not an official UN scheme, and authors count them differently:",
       {fig:'<svg viewBox="0 0 340 330"><rect class="d-soft" x="10" y="10" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="34">1 · Traditional</text><text class="s" x="20" y="54">observe ceasefires, buffer zones</text><text class="s" x="20" y="68">UNTSO 1948; UNFICYP, Cyprus, 1964</text><rect class="d-sage" x="10" y="88" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="112">2 · Multidimensional</text><text class="s" x="20" y="132">elections, police, rights, returns</text><text class="s" x="20" y="146">UNTAG, Namibia, 1989–90</text><rect class="d-gold" x="10" y="166" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="190">3 · Robust and protection</text><text class="s" x="20" y="210">force to protect civilians, mandates</text><text class="s" x="20" y="224">UNAMSIL, Sierra Leone, 1999; MONUSCO</text><rect class="d-rose" x="10" y="244" width="320" height="76" rx="8" stroke-width="2"/><text x="20" y="268">4 · Transitional administration</text><text class="s" x="20" y="288">the UN governs a territory for a time</text><text class="s" x="20" y="304">UNMIK, Kosovo, 1999; UNTAET,</text><text class="s" x="20" y="316">East Timor, 1999–2002</text></svg>', alt:"Four stacked bands. 1, traditional: observe ceasefires and buffer zones, for example UNTSO 1948 and UNFICYP in Cyprus from 1964. 2, multidimensional: elections, police, rights and returns, for example UNTAG in Namibia, 1989–90. 3, robust and protection: force to protect civilians, for example UNAMSIL in Sierra Leone from 1999 and MONUSCO. 4, transitional administration: the UN governs a territory for a time, for example UNMIK in Kosovo from 1999 and UNTAET in East Timor, 1999–2002.", cap:"Later generations didn’t replace earlier ones: traditional missions still run alongside newer types."},
       "[[multidimensional-peacekeeping|Multidimensional peacekeeping]] added civilian tasks such as elections and policing. [[robust-peacekeeping|Robust peacekeeping]] allowed force to defend the mandate, and [[protection-of-civilians|protection of civilians]] (PoC) became a core task. The furthest step was the [[transitional-administration|transitional administration]], in which the UN itself governed. In 2013 the Security Council created a Force Intervention Brigade inside the mission in the Democratic Republic of the Congo (MONUSCO). Its job was to carry out offensive operations against armed groups. Critics said this blurred the line between peacekeeper and party to the war.",
-      "Two words recur in peacebuilding work: [[ddr|DDR]] (disarmament, demobilisation and reintegration of fighters) and [[security-sector-reform|security sector reform]] (rebuilding army, police and courts under civilian control)."
+      "Two words recur in peacebuilding work: [[ddr|DDR]] (disarmament, demobilization and reintegration of fighters) and [[security-sector-reform|security sector reform]] (rebuilding army, police and courts under civilian control)."
     ]},
     {h:"Peacekeeping since 2000, and as of 2026", body:[
       "After the Brahimi Report (2000), a High-Level Independent Panel on Peace Operations (2015) urged “primacy of politics”. Chaired by José Ramos-Horta of Timor-Leste, the panel argued that missions should serve a political strategy, not replace one. Regional and ad hoc operations grew too, notably the African Union’s missions in Somalia since 2007.",
@@ -367,20 +367,20 @@ ICA.addUnit({
       {terms:["peace-operation","multidimensional-peacekeeping","robust-peacekeeping","protection-of-civilians","transitional-administration","ddr","security-sector-reform","liberal-peace","hybrid-peace"]}
     ]},
     {h:"The local turn", body:[
-      "The [[local-turn|local turn]] asks what peace looks like from villages and neighbourhoods. {{severine-autesserre|Séverine Autesserre}}, in *The Trouble with the Congo* (2010), argued that international actors in the eastern Democratic Republic of the Congo treated violence as a national problem. In her account, they neglected local conflicts over land and power that kept it going. In *Peaceland* (2014), an ethnography of interveners themselves, she showed how everyday habits (short postings, reliance on outside expertise, distance from locals) undermine missions. *The Frontlines of Peace* (2021) collects examples of local peacebuilding.",
+      "The [[local-turn|local turn]] asks what peace looks like from villages and neighborhoods. {{severine-autesserre|Séverine Autesserre}}, in *The Trouble with the Congo* (2010), argued that international actors in the eastern Democratic Republic of the Congo treated violence as a national problem. In her account, they neglected local conflicts over land and power that kept it going. In *Peaceland* (2014), an ethnography of interveners themselves, she showed how everyday habits (short postings, reliance on outside expertise, distance from locals) undermine missions. *The Frontlines of Peace* (2021) collects examples of local peacebuilding.",
       "Mac Ginty’s *Everyday Peace* (2021) studies the small acts by which people avoid or reduce violence in divided societies. Examples are whom they greet, which routes they take and what they choose not to say.",
       {ex:"Bougainville, Papua New Guinea: after a war from 1988 to 1998, talks hosted by New Zealand (1997) were followed by an **unarmed** Truce Monitoring Group led by New Zealand and then a Peace Monitoring Group led by Australia, with Fijian and ni-Vanuatu personnel. The Bougainville Peace Agreement (2001) promised autonomy and a deferred referendum. In 2019 an overwhelming majority, about 98%, voted for independence. The result is not binding on its own: it needs ratification by Papua New Guinea’s national parliament. As of late October 2026 MPs were debating it but had not voted, and the two governments disagreed over the process, including the size of the majority required.", label:"A Pacific case"},
-      "Critics of the local turn warn against romanticising “the local”, which also has elites, armed men and exclusions. They also warn against using “local ownership” to shift responsibility and cost away from international actors."
+      "Critics of the local turn warn against romanticizing “the local”, which also has elites, armed men and exclusions. They also warn against using “local ownership” to shift responsibility and cost away from international actors."
     ]},
     {h:"Women, Peace and Security", body:[
-      "[[unscr-1325|Resolution 1325]] (31 October 2000) was the first Security Council resolution to link women’s experiences of conflict to international peace and security. The [[women-peace-and-security|Women, Peace and Security]] (WPS) agenda now rests on ten Security Council resolutions, from 1325 to 2493 (2019). They are organised around four pillars: **participation**, **protection**, **prevention**, and **relief and recovery**. Resolution 1820 (2008) recognised sexual violence as a tactic of war. More than 100 countries have adopted [[wps-national-action-plan|national action plans]].",
+      "[[unscr-1325|Resolution 1325]] (31 October 2000) was the first Security Council resolution to link women’s experiences of conflict to international peace and security. The [[women-peace-and-security|Women, Peace and Security]] (WPS) agenda now rests on ten Security Council resolutions, from 1325 to 2493 (2019). They are organized around four pillars: **participation**, **protection**, **prevention**, and **relief and recovery**. Resolution 1820 (2008) recognized sexual violence as a tactic of war. More than 100 countries have adopted [[wps-national-action-plan|national action plans]].",
       "The evidence on participation is encouraging but young. Jana Krause, Werner Krause and Piia Bränfors (*International Interactions*, 2018) found that agreements signed by women delegates were associated with more durable peace and better implementation. The link was strongest, they found, where women signatories had ties to women’s civil society groups. In 2014 Miriam Coronel-Ferrer, chief negotiator for the government of the Philippines, signed the Comprehensive Agreement on the Bangsamoro. She was one of the first women to sign a final peace agreement with a rebel group. Yet in 2023, according to the UN Secretary-General, women made up fewer than one in ten negotiators in peace processes.",
       "Critics, including feminist scholars such as Laura Shepherd, raise three concerns. First, the agenda can cast women mainly as victims or as naturally peaceful (an [[essentialism|essentialist]] view). Second, states can use it to make militaries look progressive without changing what they do. Third, national action plans often lack money. A parallel Youth, Peace and Security agenda began with resolution 2250 (2015).",
       {terms:["local-turn","everyday-peace","women-peace-and-security","unscr-1325","wps-national-action-plan"]}
     ]}
     ,{h:"Common misconceptions", body:[
       {list:[
-        "**“Peacekeepers are soldiers sent to win wars.”** UN peacekeeping rests on consent, impartiality and limited force; enforcement is a different tool, authorised separately.",
+        "**“Peacekeepers are soldiers sent to win wars.”** UN peacekeeping rests on consent, impartiality and limited force; enforcement is a different tool, authorized separately.",
         "**“Research shows peacekeeping fails.”** Raw comparisons mislead because missions go to harder cases; careful studies find that peacekeeping, on average, reduces violence.",
         "**“Critics of the liberal peace oppose democracy.”** Most dispute the speed, sequencing and ownership of liberal reforms, not democracy as such.",
         "**“WPS is only about protecting women.”** Participation and prevention are pillars too; the agenda treats women as actors in making peace."
@@ -391,7 +391,7 @@ ICA.addUnit({
     {id:"e4u12-l3-x1", type:"sort", q:"Which generation of peace operation does each mission description fit best?", buckets:["Traditional","Multidimensional","Robust / protection","Transitional administration"], items:[
       {t:"Unarmed observers report violations along a ceasefire line agreed by two states.", b:0, why:"Observing a ceasefire with the parties’ consent is traditional peacekeeping."},
       {t:"A mission helps run elections, train police and resettle refugees after a peace deal.", b:1, why:"Civilian tasks added to the military ones: multidimensional."},
-      {t:"A mission is authorised to use force to stop armed groups attacking camps for displaced people.", b:2, why:"Force to protect civilians and the mandate: robust peacekeeping."},
+      {t:"A mission is authorized to use force to stop armed groups attacking camps for displaced people.", b:2, why:"Force to protect civilians and the mandate: robust peacekeeping."},
       {t:"The UN holds executive and legislative authority over a territory until it can govern itself.", b:3, why:"The UN itself governs: transitional administration, as in Kosovo and East Timor."},
       {t:"A brigade inside a mission is mandated to carry out offensive operations against named armed groups.", b:2, why:"MONUSCO’s Force Intervention Brigade (2013) is the robust end of the spectrum."}
     ]},
@@ -416,7 +416,7 @@ ICA.addUnit({
     {id:"e4u12-l3-x5", type:"mcq", q:"Which statement best represents Paris’s reply to critics of the liberal peace (2010)?", options:[
       {t:"Critics often attack a caricature and offer no clear alternative; the task is to do liberal peacebuilding better", ok:true, why:"Yes. “Saving Liberal Peacebuilding” defended reform, not abandonment."},
       {t:"The liberal peace has failed and should be replaced by local customary rule", why:"That is closer to some critics’ position, which Paris rejected."},
-      {t:"Elections should always be held as soon as fighting stops", why:"His 2004 book argued the opposite: institutions before rapid liberalisation."},
+      {t:"Elections should always be held as soon as fighting stops", why:"His 2004 book argued the opposite: institutions before rapid liberalization."},
       {t:"Peacebuilding should be left to great powers alone", why:"Nothing in his argument says this."}
     ]},
     {id:"e4u12-l3-x6", type:"spot", q:"A briefing on Women, Peace and Security. Tap each claim that **is inaccurate**.", ask:"is inaccurate", parts:[
@@ -431,7 +431,7 @@ ICA.addUnit({
       {t:"More than 100 countries have adopted national action plans.", flag:false, why:"Correct as of 2025."}
     ]},
     {id:"e4u12-l3-x7", type:"mcq", q:"A seminar paper praises “local ownership” of a peace process. Which point would a critic of the local turn most likely raise?", options:[
-      {t:"“The local” also has its own elites and exclusions", ok:true, why:"Right. Local ownership can also let outsiders shed responsibility and cost. These are the two main warnings against romanticising the local."},
+      {t:"“The local” also has its own elites and exclusions", ok:true, why:"Right. Local ownership can also let outsiders shed responsibility and cost. These are the two main warnings against romanticizing the local."},
       {t:"Local actors never matter to peace", why:"No one in this debate argues that; the dispute is about how they matter."},
       {t:"Only quantitative studies can show whether local peace works", why:"The local turn relies heavily on ethnography and fieldwork."},
       {t:"Local peace makes international law and outside donors irrelevant", why:"That is not part of the critique."}
@@ -479,8 +479,8 @@ ICA.addUnit({
    learn:[
     {h:"The NPT as a regime", body:[
       {lead:"Why would almost every country in the world sign a treaty that lets five of them keep nuclear weapons?"},
-      "The primer covered the basics of the [[non-proliferation-treaty|NPT]]: opened for signature in 1968, in force since 1970, extended indefinitely in 1995, recognising five [[nuclear-weapon-state|nuclear-weapon states]] (see {{nuclear-weapons}}). The answer to the puzzle is the bargain behind it:",
-      {fig:'<svg viewBox="0 0 340 330"><rect class="d-soft" x="10" y="10" width="320" height="40" rx="8" stroke-width="2"/><text x="170" y="35" text-anchor="middle">The NPT bargain: three pillars</text><rect class="d-rose" x="10" y="62" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="86">Non-proliferation (Arts I–III)</text><text class="s" x="20" y="106">no transfer or acquisition of weapons;</text><text class="s" x="20" y="120">IAEA safeguards on nuclear material</text><rect class="d-gold" x="10" y="140" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="164">Disarmament (Art. VI)</text><text class="s" x="20" y="184">negotiate in good faith to end the arms</text><text class="s" x="20" y="198">race and towards disarmament</text><rect class="d-sage" x="10" y="218" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="242">Peaceful uses (Art. IV)</text><text class="s" x="20" y="262">the right to nuclear energy,</text><text class="s" x="20" y="276">with help to share technology</text><text class="s" x="170" y="304" text-anchor="middle">Review every five years (Art. VIII)</text><text class="s" x="170" y="320" text-anchor="middle">Withdrawal: 3 months’ notice (Art. X)</text></svg>', alt:"A heading, the NPT bargain: three pillars, above three bands. Non-proliferation (Articles I to III): no transfer or acquisition of weapons, IAEA safeguards on nuclear material. Disarmament (Article VI): negotiate in good faith to end the arms race and towards disarmament. Peaceful uses (Article IV): the right to nuclear energy, with help to share technology. A note below: review every five years (Article VIII); withdrawal on three months’ notice (Article X).", cap:"The NPT bargain. Disputes usually arise when one group says another isn’t keeping its side."},
+      "The primer covered the basics of the [[non-proliferation-treaty|NPT]]: opened for signature in 1968, in force since 1970, extended indefinitely in 1995, recognizing five [[nuclear-weapon-state|nuclear-weapon states]] (see {{nuclear-weapons}}). The answer to the puzzle is the bargain behind it:",
+      {fig:'<svg viewBox="0 0 340 330"><rect class="d-soft" x="10" y="10" width="320" height="40" rx="8" stroke-width="2"/><text x="170" y="35" text-anchor="middle">The NPT bargain: three pillars</text><rect class="d-rose" x="10" y="62" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="86">Non-proliferation (Arts I–III)</text><text class="s" x="20" y="106">no transfer or acquisition of weapons;</text><text class="s" x="20" y="120">IAEA safeguards on nuclear material</text><rect class="d-gold" x="10" y="140" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="164">Disarmament (Art. VI)</text><text class="s" x="20" y="184">negotiate in good faith to end the arms</text><text class="s" x="20" y="198">race and toward disarmament</text><rect class="d-sage" x="10" y="218" width="320" height="66" rx="8" stroke-width="2"/><text x="20" y="242">Peaceful uses (Art. IV)</text><text class="s" x="20" y="262">the right to nuclear energy,</text><text class="s" x="20" y="276">with help to share technology</text><text class="s" x="170" y="304" text-anchor="middle">Review every five years (Art. VIII)</text><text class="s" x="170" y="320" text-anchor="middle">Withdrawal: 3 months’ notice (Art. X)</text></svg>', alt:"A heading, the NPT bargain: three pillars, above three bands. Non-proliferation (Articles I to III): no transfer or acquisition of weapons, IAEA safeguards on nuclear material. Disarmament (Article VI): negotiate in good faith to end the arms race and toward disarmament. Peaceful uses (Article IV): the right to nuclear energy, with help to share technology. A note below: review every five years (Article VIII); withdrawal on three months’ notice (Article X).", cap:"The NPT bargain. Disputes usually arise when one group says another isn’t keeping its side."},
       "Non-nuclear-weapon states accept International Atomic Energy Agency (IAEA) **safeguards** (inspections), and many have accepted the stricter Additional Protocol (1997). Four states with nuclear weapons are outside. India, Israel (which neither confirms nor denies its arsenal) and Pakistan never joined. North Korea announced its withdrawal in 2003, a status some states parties dispute."
     ]},
     {h:"Review conferences: fragile consensus", body:[
@@ -488,7 +488,7 @@ ICA.addUnit({
       {table:[
         ["Year","Outcome"],
         ["1995","Indefinite extension, with a resolution calling for a Middle East zone free of weapons of mass destruction"],
-        ["2000","Final document with “13 practical steps” towards disarmament"],
+        ["2000","Final document with “13 practical steps” toward disarmament"],
         ["2005","No agreed final document"],
         ["2010","Action plan of 64 actions"],
         ["2015","No agreed document; a dispute over the Middle East zone"],
@@ -499,14 +499,14 @@ ICA.addUnit({
       {terms:["nuclear-weapon-state","npt-review-conference"]}
     ]},
     {h:"The ban treaty and the humanitarian initiative", body:[
-      "Frustrated by slow disarmament, a group of states and NGOs reframed nuclear weapons around their **humanitarian consequences**. The [[humanitarian-initiative|humanitarian initiative]] held conferences in Oslo (2013), Nayarit, Mexico (2014) and Vienna (2014). It led to the [[tpnw|Treaty on the Prohibition of Nuclear Weapons]] (TPNW), adopted on 7 July 2017 by 122 votes and in force since 22 January 2021. It bans developing, possessing, using or threatening to use nuclear weapons. The International Campaign to Abolish Nuclear Weapons (ICAN) won the 2017 Nobel Peace Prize. Nihon Hidankyo, the Japanese organisation of atomic bomb survivors (*hibakusha*), won it in 2024.",
+      "Frustrated by slow disarmament, a group of states and NGOs reframed nuclear weapons around their **humanitarian consequences**. The [[humanitarian-initiative|humanitarian initiative]] held conferences in Oslo (2013), Nayarit, Mexico (2014) and Vienna (2014). It led to the [[tpnw|Treaty on the Prohibition of Nuclear Weapons]] (TPNW), adopted on 7 July 2017 by 122 votes and in force since 22 January 2021. It bans developing, possessing, using or threatening to use nuclear weapons. The International Campaign to Abolish Nuclear Weapons (ICAN) won the 2017 Nobel Peace Prize. Nihon Hidankyo, the Japanese organization of atomic bomb survivors (*hibakusha*), won it in 2024.",
       {table:[
         ["","Supporters argue","Opponents argue"],
         ["Who","More than 70 states parties by 2026, many from Latin America, Africa, Southeast Asia and the Pacific","All nine nuclear-armed states and most of their allies, including NATO members, Japan, South Korea and Australia"],
-        ["Claim","It fulfils Article VI of the NPT and stigmatises the weapons","It ignores the security environment, lacks verification and may weaken the NPT"]
+        ["Claim","It fulfills Article VI of the NPT and stigmatizes the weapons","It ignores the security environment, lacks verification and may weaken the NPT"]
       ]},
-      "Japan’s government says it shares the goal of a world without nuclear weapons. But it says joining is not realistic while it relies on US [[extended-deterrence|extended deterrence]]. It has not attended TPNW meetings as an observer, which survivors’ groups have criticised. As of November 2026, the TPNW’s first review conference is scheduled for 30 November to 4 December 2026 in New York.",
-      {ex:"**Task:** write a seminar paragraph on whether the [[tpnw|TPNW]] strengthens or weakens the NPT, without taking a side until the end.\n1. First I state the **question precisely**, because “is the TPNW good?” is too vague. The question is its effect on the NPT regime.\n2. Next I set out the **supporters’ argument and evidence**. They argue that it gives legal form to the NPT’s Article VI disarmament promise, and that stigma has worked before: the mine and cluster munition bans changed behaviour even among some non-parties. Evidence: entry into force in 2021 and more than 70 states parties by 2026.\n3. Then the **opponents’ argument and evidence**. All nine nuclear-armed states and most of their allies reject it. They argue that it ignores security threats, lacks verification and could create a rival forum that divides NPT members. Japan’s government says joining is not realistic while it relies on US extended deterrence.\n4. Then I look for **common ground and testable claims**. Both sides say they support the NPT. One test: have NPT review conferences become harder since 2017? They failed in 2022 and 2026, but the stated disputes were about Ukraine and Iran, not the TPNW.\n5. Finally I add my judgement, separately.\n**Result:** “Supporters argue that the TPNW fulfils Article VI; opponents, including all nuclear-armed states, argue that it undermines the NPT. The recent review conferences failed over other disputes, so evidence that the ban treaty has damaged the NPT is so far weak, though its effect on nuclear-armed states’ behaviour is also unproven.”\n**Common mistake:** counting states as evidence. That 122 states adopted the treaty shows support, not effects.", label:"Worked example: a balanced paragraph on the ban treaty"}
+      "Japan’s government says it shares the goal of a world without nuclear weapons. But it says joining is not realistic while it relies on US [[extended-deterrence|extended deterrence]]. It has not attended TPNW meetings as an observer, which survivors’ groups have criticized. As of November 2026, the TPNW’s first review conference is scheduled for 30 November to 4 December 2026 in New York.",
+      {ex:"**Task:** write a seminar paragraph on whether the [[tpnw|TPNW]] strengthens or weakens the NPT, without taking a side until the end.\n1. First I state the **question precisely**, because “is the TPNW good?” is too vague. The question is its effect on the NPT regime.\n2. Next I set out the **supporters’ argument and evidence**. They argue that it gives legal form to the NPT’s Article VI disarmament promise, and that stigma has worked before: the mine and cluster munition bans changed behavior even among some non-parties. Evidence: entry into force in 2021 and more than 70 states parties by 2026.\n3. Then the **opponents’ argument and evidence**. All nine nuclear-armed states and most of their allies reject it. They argue that it ignores security threats, lacks verification and could create a rival forum that divides NPT members. Japan’s government says joining is not realistic while it relies on US extended deterrence.\n4. Then I look for **common ground and testable claims**. Both sides say they support the NPT. One test: have NPT review conferences become harder since 2017? They failed in 2022 and 2026, but the stated disputes were about Ukraine and Iran, not the TPNW.\n5. Finally I add my judgment, separately.\n**Result:** “Supporters argue that the TPNW fulfills Article VI; opponents, including all nuclear-armed states, argue that it undermines the NPT. The recent review conferences failed over other disputes, so evidence that the ban treaty has damaged the NPT is so far weak, though its effect on nuclear-armed states’ behavior is also unproven.”\n**Common mistake:** counting states as evidence. That 122 states adopted the treaty shows support, not effects.", label:"Worked example: a balanced paragraph on the ban treaty"}
     ]},
     {h:"Deterrence debates", body:[
       "Unit 1 introduced Brodie and Schelling, and Unit 2 the Waltz–Sagan debate. Graduate seminars add four concepts:",
@@ -516,8 +516,8 @@ ICA.addUnit({
         "**The [[stability-instability-paradox|stability–instability paradox]].** Glenn Snyder (1965) argued that stability at the nuclear level can make lower-level violence more likely, because each side expects the other not to escalate. Scholars often apply it to India and Pakistan, for example the Kargil conflict of 1999.",
         "**The [[nuclear-taboo|nuclear taboo]].** Nina Tannenwald (*International Organization*, 1999; book 2007) argued that non-use since 1945 rests partly on a growing norm against use, not only on deterrence."
       ]},
-      "Sceptics question how much credit deterrence deserves. Benoît Pelopidas (2017) argued that some crises, such as Cuba in 1962, were survived partly by **luck**, which people underrate afterwards. Supporters of deterrence answer that great powers have not fought each other directly since 1945. Seminars weigh these claims; neither side can run the counterfactual.",
-      {ex:"**Task:** does the Kargil conflict of 1999 support Snyder’s [[stability-instability-paradox|stability–instability paradox]]?\n1. First I state what the theory predicts, because a test needs a clear expectation. Mutual nuclear deterrence should make all-out war unlikely, and so make limited violence **more** tempting.\n2. Next I check the **conditions**. Did both sides have nuclear weapons? India and Pakistan both carried out nuclear tests in May 1998, a year before Kargil. Yes.\n3. Then I check the **behaviour**. From May to July 1999 fighters from the Pakistani side occupied positions on the Indian side of the Line of Control near Kargil. Pakistan first called them Kashmiri militants; India said, and later evidence showed, that Pakistani army regulars were among them. India fought to retake them but did not cross the Line of Control. The fighting stayed limited. This fits both parts of the prediction.\n4. Then I look for **rival explanations**. Did the planners count on the nuclear shield, or did they misjudge India’s response for other reasons? Did India’s restraint come from fear of escalation, from diplomacy (including US pressure on Pakistan to withdraw), or from wanting to keep the moral high ground? Each needs evidence from memoirs, archives or interviews.\n5. Finally I state how far one case can go.\n**Result:** “Kargil fits the stability–instability paradox: it was the first armed conflict between India and Pakistan after both tested nuclear weapons, and it stayed limited. But the case alone cannot show that nuclear weapons caused the limited war rather than local military planning or diplomatic pressure; that requires process tracing.”\n**Common mistake:** treating fit as proof. A case that matches a prediction supports a theory only when you have also looked for, and weighed, the rival explanations.", label:"Worked example: testing the stability–instability paradox on Kargil"},
+      "Skeptics question how much credit deterrence deserves. Benoît Pelopidas (2017) argued that some crises, such as Cuba in 1962, were survived partly by **luck**, which people underrate afterwards. Supporters of deterrence answer that great powers have not fought each other directly since 1945. Seminars weigh these claims; neither side can run the counterfactual.",
+      {ex:"**Task:** does the Kargil conflict of 1999 support Snyder’s [[stability-instability-paradox|stability–instability paradox]]?\n1. First I state what the theory predicts, because a test needs a clear expectation. Mutual nuclear deterrence should make all-out war unlikely, and so make limited violence **more** tempting.\n2. Next I check the **conditions**. Did both sides have nuclear weapons? India and Pakistan both carried out nuclear tests in May 1998, a year before Kargil. Yes.\n3. Then I check the **behavior**. From May to July 1999 fighters from the Pakistani side occupied positions on the Indian side of the Line of Control near Kargil. Pakistan first called them Kashmiri militants; India said, and later evidence showed, that Pakistani army regulars were among them. India fought to retake them but did not cross the Line of Control. The fighting stayed limited. This fits both parts of the prediction.\n4. Then I look for **rival explanations**. Did the planners count on the nuclear shield, or did they misjudge India’s response for other reasons? Did India’s restraint come from fear of escalation, from diplomacy (including US pressure on Pakistan to withdraw), or from wanting to keep the moral high ground? Each needs evidence from memoirs, archives or interviews.\n5. Finally I state how far one case can go.\n**Result:** “Kargil fits the stability–instability paradox: it was the first armed conflict between India and Pakistan after both tested nuclear weapons, and it stayed limited. But the case alone cannot show that nuclear weapons caused the limited war rather than local military planning or diplomatic pressure; that requires process tracing.”\n**Common mistake:** treating fit as proof. A case that matches a prediction supports a theory only when you have also looked for, and weighed, the rival explanations.", label:"Worked example: testing the stability–instability paradox on Kargil"},
       {terms:["humanitarian-initiative","tpnw","extended-deterrence","stability-instability-paradox","nuclear-taboo"]}
     ]},
     {h:"Conventional weapons: mines, cluster munitions and the arms trade", body:[
@@ -529,11 +529,11 @@ ICA.addUnit({
         ["Convention on Cluster Munitions (2008)","Bans cluster munitions","Lithuania withdrew in 2025"],
         ["[[arms-trade-treaty|Arms Trade Treaty]] (ATT; adopted 2013, in force 2014)","Bans transfers that would be used for genocide or war crimes, and requires exporters to assess risks","More than 110 states parties; the US signed in 2013 but said in 2019 it would not ratify; China joined in 2020"]
       ]},
-      "For [[small-arms-light-weapons|small arms and light weapons]], the main instrument is a politically binding UN Programme of Action (2001). The debates mirror the nuclear one. **Humanitarian disarmament** campaigners stress civilian harm, while some governments argue that the weapons they keep are needed for defence."
+      "For [[small-arms-light-weapons|small arms and light weapons]], the main instrument is a politically binding UN Programme of Action (2001). The debates mirror the nuclear one. **Humanitarian disarmament** campaigners stress civilian harm, while some governments argue that the weapons they keep are needed for defense."
     ]},
     {h:"Autonomous weapons, as of November 2026", body:[
       "[[lethal-autonomous-weapons|Lethal autonomous weapons systems]] (LAWS) are weapons that, once activated, select and engage targets without further human intervention. Talks have been held under the CCW since 2014, and a Group of Governmental Experts (GGE) since 2017, which agreed eleven guiding principles in 2019. In 2023 the UN Secretary-General and the International Committee of the Red Cross jointly called for a legally binding instrument by 2026.",
-      "On 5 September 2026 the GGE adopted by consensus a report on elements of a possible instrument, “without prejudging its nature”. It uses a **two-tier approach**: prohibit some systems and regulate the rest. It speaks of “context-appropriate human judgement and control”, wording chosen instead of the campaigners’ phrase [[meaningful-human-control|meaningful human control]]. The report goes to the CCW’s Seventh Review Conference in Geneva, 16–20 November 2026.",
+      "On 5 September 2026 the GGE adopted by consensus a report on elements of a possible instrument, “without prejudging its nature”. It uses a **two-tier approach**: prohibit some systems and regulate the rest. It speaks of “context-appropriate human judgment and control”, wording chosen instead of the campaigners’ phrase [[meaningful-human-control|meaningful human control]]. The report goes to the CCW’s Seventh Review Conference in Geneva, 16–20 November 2026.",
       "Positions differ. The ICRC, the Stop Killer Robots campaign and many states want a binding treaty. Some major military powers have argued that existing [[international-humanitarian-law|international humanitarian law]] is sufficient or have preferred non-binding measures. The Review Conference (16–20 November 2026) was still meeting when this was written; check its final report for what was decided."
     ]},
     {h:"Terrorism and counter-terrorism, in brief", body:[
@@ -545,7 +545,7 @@ ICA.addUnit({
       {list:[
         "**“The NPT bans nuclear weapons.”** It bans their spread to more states and commits the five nuclear-weapon states to negotiate on disarmament. The TPNW is the treaty that bans them outright, for its parties.",
         "**“A failed review conference ends the treaty.”** The NPT stays in force; a review conference only tries to agree a final document.",
-        "**“Arms control means disarmament.”** Arms control limits, verifies or stabilises weapons between rivals; disarmament seeks to reduce or eliminate them.",
+        "**“Arms control means disarmament.”** Arms control limits, verifies or stabilizes weapons between rivals; disarmament seeks to reduce or eliminate them.",
         "**“Autonomous weapons are already banned.”** As of November 2026 no treaty bans them; talks continue under the CCW."
       ]}
     ]}
@@ -556,7 +556,7 @@ ICA.addUnit({
       {t:"Non-nuclear states complain that the five nuclear-weapon states are not reducing their arsenals.", b:1, why:"Article VI: the disarmament side of the bargain."},
       {t:"A developing country seeks help to build its first nuclear power plant.", b:2, why:"Article IV: the right to peaceful nuclear energy."},
       {t:"States debate how to respond to a party that announces its withdrawal.", b:0, why:"Withdrawal to build weapons is the central non-proliferation fear (Article X sets the rules)."},
-      {t:"A conference calls for a test ban and cuts in deployed warheads.", b:1, why:"Steps towards disarmament."}
+      {t:"A conference calls for a test ban and cuts in deployed warheads.", b:1, why:"Steps toward disarmament."}
     ]},
     {id:"e4u12-l4-x2", type:"order", q:"Put these NPT milestones in chronological order.", items:[
       {t:"The treaty opens for signature.", why:"1968."},
@@ -586,7 +586,7 @@ ICA.addUnit({
       " ",
       {t:"It goes to the CCW Review Conference in Geneva in November 2026.", flag:false, why:"Correct: 16–20 November 2026."},
       " ",
-      {t:"The report adopts the phrase “meaningful human control”.", flag:true, why:"Inaccurate. It uses “context-appropriate human judgement and control” instead."},
+      {t:"The report adopts the phrase “meaningful human control”.", flag:true, why:"Inaccurate. It uses “context-appropriate human judgment and control” instead."},
       " ",
       {t:"States differ on whether a binding instrument is needed.", flag:false, why:"Correct, and a fair neutral summary."}
     ]},
@@ -609,7 +609,7 @@ ICA.addUnit({
     tasks:[
      {t:"Read the treaty itself", how:[
        "Open the text of the NPT (UNODA’s treaty database or the IAEA’s INFCIRC/140) and read Articles I, II, IV, VI and X.",
-       "Write one sentence summarising each, in your own words.",
+       "Write one sentence summarizing each, in your own words.",
        "Note which article the 2026 review conference disputes involved."
      ], write:"Art. I… Art. II… Art. IV… Art. VI… Art. X… Which articles the 2026 disputes touched…"},
      {t:"Two positions on the ban treaty", how:[
@@ -628,40 +628,40 @@ ICA.addUnit({
    read:[
     {book:"sipri26", where:"Chapter 8 “World nuclear forces” (free download) and the summary of Chapter 10 “Nuclear disarmament, arms control, non-proliferation and security”", note:"The standard figures on nuclear arsenals, and the year’s arms control developments."},
     {book:"sipri26", where:"The summaries of Chapter 13 “Conventional arms control and the regulation of inhumane weapons” and Chapter 14 “Artificial intelligence and international peace and security”", note:"For the conventional weapons and autonomous weapons sections."},
-    {book:"eir", where:"Chapter 14 “Transnational Terrorism” (Katherine Brown)", note:"Read after this lesson for how terrorist groups organise and are countered."}
+    {book:"eir", where:"Chapter 14 “Transnational Terrorism” (Katherine Brown)", note:"Read after this lesson for how terrorist groups organize and are countered."}
    ]
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e4u12-l5", title:"Asia-Pacific security architecture", minutes:65,
-   hook:{q:"In 1954 the United States and seven other states created a NATO-like collective defence organisation for Southeast Asia, SEATO. What became of it?", options:["It still exists and has grown","It was dissolved in 1977","It merged into ASEAN in 1967","It became the Quad"], answer:1, reveal:"**It was dissolved in 1977.** Only two of its members, Thailand and the Philippines, were in Southeast Asia, and it never acquired NATO’s integrated command. Asia’s security order grew instead from bilateral alliances and, later, ASEAN-centred forums. Scholars have long asked why there is no “Asian NATO”. This lesson maps the architecture and then describes three flashpoints neutrally, as of November 2026."},
+   hook:{q:"In 1954 the United States and seven other states created a NATO-like collective defense organization for Southeast Asia, SEATO. What became of it?", options:["It still exists and has grown","It was dissolved in 1977","It merged into ASEAN in 1967","It became the Quad"], answer:1, reveal:"**It was dissolved in 1977.** Only two of its members, Thailand and the Philippines, were in Southeast Asia, and it never acquired NATO’s integrated command. Asia’s security order grew instead from bilateral alliances and, later, ASEAN-centered forums. Scholars have long asked why there is no “Asian NATO”. This lesson maps the architecture and then describes three flashpoints neutrally, as of November 2026."},
    goals:[
      "Describe the layers of Asia-Pacific security architecture and why the metaphor is debated",
      "Explain the hub-and-spoke alliance system and the main explanations for it",
-     "Describe the ASEAN-centred forums (ARF, EAS, ADMM-Plus) and the debate about their effectiveness",
+     "Describe the ASEAN-centered forums (ARF, EAS, ADMM-Plus) and the debate about their effectiveness",
      "Describe the Quad and AUKUS and the main positions on them",
      "Describe the Korean Peninsula, cross-Strait relations and the South China Sea neutrally, attributing each position, as of November 2026",
      "Analyse the architecture through several theoretical lenses"
    ],
    learn:[
     {h:"An architecture with many layers", body:[
-      {lead:"Europe’s security order has a few big buildings: NATO, the EU, the OSCE. Asia’s looks more like a crowded neighbourhood of houses, bridges and footpaths."},
-      "Scholars and diplomats call the whole arrangement the regional **security architecture**. The metaphor is debated: some say an architecture needs a plan, while Asia’s grew piece by piece. Even the region’s name is political. “Asia-Pacific” and “Indo-Pacific” (see [[free-and-open-indo-pacific]]) draw different maps and are favoured by different governments.",
-      {fig:'<svg viewBox="0 0 340 300"><rect class="d-rose" x="10" y="10" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="34">Bilateral alliances</text><text class="s" x="20" y="54">US hub and spokes (1951–53); China–DPRK (1961);</text><text class="s" x="20" y="68">Russia–DPRK (2024)</text><rect class="d-gold" x="10" y="82" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="106">Minilaterals</text><text class="s" x="20" y="126">Quad; AUKUS; US–Japan–South Korea;</text><text class="s" x="20" y="140">US–Japan–Philippines</text><rect class="d-sage" x="10" y="154" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="178">ASEAN-centred forums</text><text class="s" x="20" y="198">ARF (1994); East Asia Summit (2005);</text><text class="s" x="20" y="212">ADMM-Plus (2010)</text><rect class="d-lup" x="10" y="226" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="250">Track 1.5 and 2 dialogues</text><text class="s" x="20" y="270">Shangri-La Dialogue (2002); think-tank</text><text class="s" x="20" y="284">networks</text></svg>', alt:"Four stacked layers. Bilateral alliances: the US hub and spokes from 1951 to 1953, China and North Korea from 1961, Russia and North Korea from 2024. Minilaterals: the Quad, AUKUS, US–Japan–South Korea, US–Japan–Philippines. ASEAN-centred forums: the ARF from 1994, the East Asia Summit from 2005, ADMM-Plus from 2010. Track 1.5 and Track 2 dialogues: the Shangri-La Dialogue from 2002 and think-tank networks.", cap:"The layers overlap: many states sit in several at once."}
+      {lead:"Europe’s security order has a few big buildings: NATO, the EU, the OSCE. Asia’s looks more like a crowded neighborhood of houses, bridges and footpaths."},
+      "Scholars and diplomats call the whole arrangement the regional **security architecture**. The metaphor is debated: some say an architecture needs a plan, while Asia’s grew piece by piece. Even the region’s name is political. “Asia-Pacific” and “Indo-Pacific” (see [[free-and-open-indo-pacific]]) draw different maps and are favored by different governments.",
+      {fig:'<svg viewBox="0 0 340 300"><rect class="d-rose" x="10" y="10" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="34">Bilateral alliances</text><text class="s" x="20" y="54">US hub and spokes (1951–53); China–DPRK (1961);</text><text class="s" x="20" y="68">Russia–DPRK (2024)</text><rect class="d-gold" x="10" y="82" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="106">Minilaterals</text><text class="s" x="20" y="126">Quad; AUKUS; US–Japan–South Korea;</text><text class="s" x="20" y="140">US–Japan–Philippines</text><rect class="d-sage" x="10" y="154" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="178">ASEAN-centered forums</text><text class="s" x="20" y="198">ARF (1994); East Asia Summit (2005);</text><text class="s" x="20" y="212">ADMM-Plus (2010)</text><rect class="d-lup" x="10" y="226" width="320" height="62" rx="8" stroke-width="2"/><text x="20" y="250">Track 1.5 and 2 dialogues</text><text class="s" x="20" y="270">Shangri-La Dialogue (2002); think-tank</text><text class="s" x="20" y="284">networks</text></svg>', alt:"Four stacked layers. Bilateral alliances: the US hub and spokes from 1951 to 1953, China and North Korea from 1961, Russia and North Korea from 2024. Minilaterals: the Quad, AUKUS, US–Japan–South Korea, US–Japan–Philippines. ASEAN-centered forums: the ARF from 1994, the East Asia Summit from 2005, ADMM-Plus from 2010. Track 1.5 and Track 2 dialogues: the Shangri-La Dialogue from 2002 and think-tank networks.", cap:"The layers overlap: many states sit in several at once."}
     ]},
     {h:"Hub and spoke: alliances", body:[
       "After 1945 the United States built separate treaties with Asian partners: the [[hub-and-spoke|hub-and-spoke]] system. The partners were the Philippines (August 1951), Australia and New Zealand (ANZUS, September 1951), Japan (September 1951, revised 1960; see {{us-japan-alliance}}) and South Korea (1953). Thailand was linked through the Manila Pact (1954). This was part of the [[san-francisco-system|San Francisco system]] Unit 1 described.",
       "Why bilateral, not a NATO? Christopher Hemmer and Peter Katzenstein (“Why Is There No NATO in Asia?”, *International Organization*, 2002) pointed to identity. In their account, US policymakers saw European allies as fellow members of one community and Asian ones as different. Victor Cha (“Powerplay”, *International Security*, 2009–10; book 2016) argued that separate treaties gave Washington **control**. In his view, they let it restrain allies, such as South Korea’s and Taiwan’s leaders, from dragging it into wars.",
-      "Other alignments exist. China and North Korea signed a treaty of friendship in 1961. Russia and North Korea signed a treaty with a mutual assistance clause in June 2024. Since the 2010s, US allies have also built ties with each other. The result is a “latticework” of trilateral meetings and defence agreements, such as Japan’s reciprocal access agreements with Australia and the Philippines. Many Southeast Asian states practise [[strategic-hedging|hedging]] instead of choosing sides."
+      "Other alignments exist. China and North Korea signed a treaty of friendship in 1961. Russia and North Korea signed a treaty with a mutual assistance clause in June 2024. Since the 2010s, US allies have also built ties with each other. The result is a “latticework” of trilateral meetings and defense agreements, such as Japan’s reciprocal access agreements with Australia and the Philippines. Many Southeast Asian states practice [[strategic-hedging|hedging]] instead of choosing sides."
     ]},
-    {h:"ASEAN-centred multilateralism", body:[
-      "ASEAN has convened the region’s inclusive forums, placing itself at the centre, an idea called [[asean-centrality|ASEAN centrality]] (Unit 9 discusses it):",
+    {h:"ASEAN-centered multilateralism", body:[
+      "ASEAN has convened the region’s inclusive forums, placing itself at the center, an idea called [[asean-centrality|ASEAN centrality]] (Unit 9 discusses it):",
       {table:[
         ["Forum","Since","Members and purpose"],
         ["[[asean-regional-forum|ASEAN Regional Forum]] (ARF)","1994","27 participants; confidence-building, then preventive diplomacy"],
         ["[[east-asia-summit|East Asia Summit]] (EAS)","2005","ASEAN plus eight partners (the US and Russia joined in 2011); a leaders’ forum"],
-        ["[[admm-plus|ADMM-Plus]]","2010","ASEAN defence ministers plus the same eight; practical cooperation such as disaster relief and maritime security"]
+        ["[[admm-plus|ADMM-Plus]]","2010","ASEAN defense ministers plus the same eight; practical cooperation such as disaster relief and maritime security"]
       ]},
-      "Do they work? David Martin Jones and Michael L. R. Smith (“Making Process, Not Progress”, *International Security*, 2007) argued that ASEAN-led forums produce talk, not results. Defenders reply that their aim is socialisation, not enforcement. Alastair Iain Johnston (*Social States*, 2008) found that participation in the ARF and similar bodies changed how Chinese officials thought about multilateral security in the 1990s. Amitav Acharya, writing on the [[asean-way|ASEAN way]], argued that norms of consultation have helped keep the peace among ASEAN members themselves."
+      "Do they work? David Martin Jones and Michael L. R. Smith (“Making Process, Not Progress”, *International Security*, 2007) argued that ASEAN-led forums produce talk, not results. Defenders reply that their aim is socialization, not enforcement. Alastair Iain Johnston (*Social States*, 2008) found that participation in the ARF and similar bodies changed how Chinese officials thought about multilateral security in the 1990s. Amitav Acharya, writing on the [[asean-way|ASEAN way]], argued that norms of consultation have helped keep the peace among ASEAN members themselves."
     ]},
     {h:"Minilaterals: the Quad and AUKUS", body:[
       "Unit 13 discusses [[minilateralism]], cooperation in small groups of states, in general ({{clubs-and-minilateralism}}). Two groupings dominate security debates:",
@@ -669,7 +669,7 @@ ICA.addUnit({
         "The [[quad|Quad]] (Australia, India, Japan, the United States) began as a core group coordinating relief after the 2004 Indian Ocean tsunami. It met in 2007, lapsed, was revived in 2017 and held its first leaders’ summit in 2021. Its stated agenda covers health, technology, infrastructure and maritime awareness. It is not an alliance.",
         "[[aukus|AUKUS]] (Australia, the United Kingdom, the United States) was announced on 15 September 2021. Its first pillar aims to give Australia nuclear-powered (not nuclear-armed) submarines, starting with US Virginia-class boats from the early 2030s. Its second pillar aims to develop advanced technologies. A Pentagon review completed in December 2025 said it had “identified opportunities to put AUKUS on the strongest possible footing”."
       ]},
-      "Members describe both as supporting a stable, rules-based region. China’s government has criticised them as exclusive blocs reflecting a “Cold War mentality”, and called AUKUS a proliferation risk. In 2021 the governments of Indonesia and Malaysia expressed concern about an arms race. Supporters answer that the submarines will carry no nuclear weapons and that arrangements with the IAEA will cover the fuel.",
+      "Members describe both as supporting a stable, rules-based region. China’s government has criticized them as exclusive blocs reflecting a “Cold War mentality”, and called AUKUS a proliferation risk. In 2021 the governments of Indonesia and Malaysia expressed concern about an arms race. Supporters answer that the submarines will carry no nuclear weapons and that arrangements with the IAEA will cover the fuel.",
       {terms:["hub-and-spoke","asean-regional-forum","east-asia-summit","admm-plus","quad","aukus"]}
     ]},
     {h:"The Korean Peninsula, as of November 2026", body:[
@@ -678,57 +678,57 @@ ICA.addUnit({
       {table:[
         ["Government","Stated position (as of November 2026)"],
         ["North Korea","Says its nuclear weapons deter US hostility and are not negotiable; since late 2023 describes the two Koreas as two separate, hostile states, and has rejected Seoul’s offers of talks"],
-        ["South Korea","President Lee Jae-myung (in office since June 2025) seeks to reduce military tensions and restore dialogue, and in October 2026 urged the North to resume talks, while pledging to strengthen defences"],
-        ["United States, Japan","State that their goal is the complete denuclearisation of North Korea; Japan also stresses the abduction issue"],
+        ["South Korea","President Lee Jae-myung (in office since June 2025) seeks to reduce military tensions and restore dialogue, and in October 2026 urged the North to resume talks, while pledging to strengthen defenses"],
+        ["United States, Japan","State that their goal is the complete denuclearization of North Korea; Japan also stresses the abduction issue"],
         ["China","Calls for dialogue and stability, opposes war and chaos on the peninsula, and has argued that sanctions alone cannot solve the issue"]
       ]}
     ]},
     {h:"Cross-Strait relations, as of November 2026", body:[
-      "In 1949 the government of the Republic of China (ROC) retreated to Taiwan after losing the civil war to the Communist Party. That year the Communist Party founded the People’s Republic of China (PRC). In 1971 UN General Assembly resolution 2758 recognised the PRC’s representatives as “the only legitimate representatives of China” at the UN. The resolution’s meaning for Taiwan is itself disputed. The PRC says it settled the question. Taiwan’s government and some others say it did not address Taiwan’s status.",
+      "In 1949 the government of the Republic of China (ROC) retreated to Taiwan after losing the civil war to the Communist Party. That year the Communist Party founded the People’s Republic of China (PRC). In 1971 UN General Assembly resolution 2758 recognized the PRC’s representatives as “the only legitimate representatives of China” at the UN. The resolution’s meaning for Taiwan is itself disputed. The PRC says it settled the question. Taiwan’s government and some others say it did not address Taiwan’s status.",
       {table:[
         ["Actor","Stated position"],
         ["PRC","Taiwan is part of China; the [[one-china-principle|one-China principle]]; seeks peaceful reunification but has not renounced force (Anti-Secession Law, 2005)"],
         ["Taiwan (ROC)","President Lai Ching-te (since May 2024) says the ROC is sovereign and not subordinate to the PRC, and that Taiwan’s future must be decided by its people; parties differ, for example over the “1992 Consensus”"],
-        ["United States","A [[one-china-policy|one China policy]]: recognises the PRC, “acknowledges” its position, keeps unofficial ties with Taiwan under the Taiwan Relations Act (1979), and opposes unilateral changes to the status quo"],
+        ["United States","A [[one-china-policy|one China policy]]: recognizes the PRC, “acknowledges” its position, keeps unofficial ties with Taiwan under the Taiwan Relations Act (1979), and opposes unilateral changes to the status quo"],
         ["Japan","In the 1972 Joint Communiqué, “fully understands and respects” the PRC’s position; keeps non-governmental working relations with Taiwan"]
       ]},
-      "As of mid-2026, 12 states recognised the ROC diplomatically, according to Reuters. Note the vocabulary: “reunification”, “unification”, “status quo” and “independence” each carry a position; attribute them."
+      "As of mid-2026, 12 states recognized the ROC diplomatically, according to Reuters. Note the vocabulary: “reunification”, “unification”, “status quo” and “independence” each carry a position; attribute them."
     ]},
     {h:"The South China Sea, as of November 2026", body:[
       "Six governments make overlapping claims to islands, reefs and waters. They are the PRC and Taiwan, Vietnam, the Philippines, Malaysia and Brunei. The PRC and Taiwan both claim on the basis of a dashed line first drawn in the 1940s, often called the [[nine-dash-line|nine-dash line]]. Indonesia does not claim any features but objects to the line where it overlaps its exclusive economic zone.",
-      "In 2016 an arbitral tribunal in a case brought by the Philippines ruled that China had no legal basis to claim historic rights to resources within the line. The Philippines’ government calls the award final and binding. China’s government did not take part, and rejects it as null and void (Unit 10 covers the law of the sea and the award: {{south-china-sea-arbitration}}). Much of the friction since has been [[grey-zone|grey-zone]] activity, below the threshold of armed conflict. It involves coast guard and maritime militia vessels, water cannon and blockades, with each side accusing the other.",
-      "ASEAN and China signed a non-binding Declaration on the Conduct of Parties in 2002 and have negotiated a binding [[code-of-conduct-scs|code of conduct]] for years. The Philippines, chairing ASEAN in 2026, aimed to conclude it that year. As of early November 2026 it had not been concluded. ASEAN leaders had renewed calls for self-restraint in May. Officials hoped to finalise the code at the ASEAN meetings in Manila in mid-November. They did not. On 15 November the Philippine foreign minister said there was “no conclusion yet”. About 80% of a draft was tentatively agreed, Al Jazeera reported, but key issues were still open, including whether the code would be legally binding. No new deadline was set (Al Jazeera, 16 November 2026).",
+      "In 2016 an arbitral tribunal in a case brought by the Philippines ruled that China had no legal basis to claim historic rights to resources within the line. The Philippines’ government calls the award final and binding. China’s government did not take part, and rejects it as null and void (Unit 10 covers the law of the sea and the award: {{south-china-sea-arbitration}}). Much of the friction since has been [[grey-zone|gray-zone]] activity, below the threshold of armed conflict. It involves coast guard and maritime militia vessels, water cannon and blockades, with each side accusing the other.",
+      "ASEAN and China signed a non-binding Declaration on the Conduct of Parties in 2002 and have negotiated a binding [[code-of-conduct-scs|code of conduct]] for years. The Philippines, chairing ASEAN in 2026, aimed to conclude it that year. As of early November 2026 it had not been concluded. ASEAN leaders had renewed calls for self-restraint in May. Officials hoped to finalize the code at the ASEAN meetings in Manila in mid-November. They did not. On 15 November the Philippine foreign minister said there was “no conclusion yet”. About 80% of a draft was tentatively agreed, Al Jazeera reported, but key issues were still open, including whether the code would be legally binding. No new deadline was set (Al Jazeera, 16 November 2026).",
       {tip:"For any of these three issues, write: “X’s government states that…”, give the date, and use both or all names on first mention."},
       {ex:"**Task:** a draft says: “Taiwan’s pro-independence president provokes Beijing, while China threatens to invade.” Rewrite it for a seminar paper.\n1. First I mark every **loaded word**, because each one carries a position. “Pro-independence” is how the PRC government describes him; President Lai Ching-te says the ROC is already sovereign. “Provokes” and “threatens to invade” judge intentions.\n2. Next I replace labels with **stated positions, attributed and dated**. The PRC says Taiwan is part of China, seeks peaceful reunification and has not renounced force (Anti-Secession Law, 2005). Lai says the ROC is sovereign and not subordinate to the PRC, and that Taiwan’s future must be decided by its people.\n3. Then I separate **actions** from **interpretations**. Military exercises, statements and laws are facts with dates; whether they “provoke” or “deter” is an interpretation, and I give it to the people who hold it.\n4. Finally I check the **vocabulary list** from this section: “reunification”, “unification”, “status quo”, “independence”. If I use one, I attribute it.\n**Result:** “As of November 2026, the PRC government states that Taiwan is part of China and seeks peaceful reunification without renouncing the use of force; Taiwan’s President Lai Ching-te states that the Republic of China is sovereign and not subordinate to the PRC. Each side describes the other’s actions as the main threat to stability.”\n**Common mistake:** thinking neutrality means vagueness. The rewrite is more precise than the original: it names who said what and when.", label:"Worked example: rewriting a sentence on a disputed issue"},
       {terms:["korean-armistice","six-party-talks","one-china-policy","one-china-principle","code-of-conduct-scs","grey-zone"]}
     ]}
     ,{h:"Reading the architecture through theory", body:[
       "The same facts support different readings, and a seminar answer should weigh them. A [[realism|realist]] sees balancing: US allies drawing closer as China’s power grows, and smaller states hedging. A [[liberalism-ir|liberal]] sees institutions such as the ARF and ADMM-Plus reducing uncertainty and building habits of cooperation. A [[constructivism|constructivist]] sees norms of consultation (the ASEAN way) and identities shaping who counts as a partner or a threat.",
-      {ex:"**Task:** explain the Japan–Philippines Reciprocal Access Agreement (signed 8 July 2024, in force since 11 September 2025), which eases the movement of each country’s forces for joint training, using three IR theories.\n1. First I state the facts neutrally, because every lens must explain the same thing. Two US allies, neither allied with each other, created a legal framework for their forces to train on each other’s territory.\n2. Next the **realist** reading: balancing. Both governments face pressure in nearby seas from China’s growing maritime power, so they pool capabilities. Evidence a realist would cite: the timing, as grey-zone incidents rose, and the emphasis on maritime exercises.\n3. Then the **liberal** reading: institutions reduce uncertainty. A standing legal framework makes cooperation routine, cheaper and more predictable, and links the two states into a wider “latticework” of US partners.\n4. Then the **constructivist** reading: identity. Both governments describe themselves as defenders of a “rules-based” maritime order, and the agreement expresses a shared identity as much as a calculation.\n5. Finally I ask what evidence would **separate** the readings. If cooperation grows only when tensions rise, realism gains; if it continues and widens to disaster relief whatever the tension, liberal and constructivist readings gain.\n**Result:** “The agreement fits a realist story of balancing against China’s maritime power, but its legal, routine form also fits liberal accounts of institution-building. After it was signed on 8 July 2024, China’s foreign ministry said the Asia-Pacific needs no military blocs; on 10 July the Philippine defence secretary replied that the pact was ‘none of China’s business’.”\n**Common mistake:** listing three theories as a menu. A good answer says which reading the evidence supports best and what would change your mind.", label:"Worked example: three lenses on one agreement"},
-      "Critical approaches ask whose security the architecture serves. Pacific Island leaders, for example, have called climate change the single greatest threat to their peoples (the Boe Declaration of 2018, which Unit 2 analysed). That priority is largely absent from the alliance agenda.",
+      {ex:"**Task:** explain the Japan–Philippines Reciprocal Access Agreement (signed 8 July 2024, in force since 11 September 2025), which eases the movement of each country’s forces for joint training, using three IR theories.\n1. First I state the facts neutrally, because every lens must explain the same thing. Two US allies, neither allied with each other, created a legal framework for their forces to train on each other’s territory.\n2. Next the **realist** reading: balancing. Both governments face pressure in nearby seas from China’s growing maritime power, so they pool capabilities. Evidence a realist would cite: the timing, as gray-zone incidents rose, and the emphasis on maritime exercises.\n3. Then the **liberal** reading: institutions reduce uncertainty. A standing legal framework makes cooperation routine, cheaper and more predictable, and links the two states into a wider “latticework” of US partners.\n4. Then the **constructivist** reading: identity. Both governments describe themselves as defenders of a “rules-based” maritime order, and the agreement expresses a shared identity as much as a calculation.\n5. Finally I ask what evidence would **separate** the readings. If cooperation grows only when tensions rise, realism gains; if it continues and widens to disaster relief whatever the tension, liberal and constructivist readings gain.\n**Result:** “The agreement fits a realist story of balancing against China’s maritime power, but its legal, routine form also fits liberal accounts of institution-building. After it was signed on 8 July 2024, China’s foreign ministry said the Asia-Pacific needs no military blocs; on 10 July the Philippine defense secretary replied that the pact was ‘none of China’s business’.”\n**Common mistake:** listing three theories as a menu. A good answer says which reading the evidence supports best and what would change your mind.", label:"Worked example: three lenses on one agreement"},
+      "Critical approaches ask whose security the architecture serves. Pacific Island leaders, for example, have called climate change the single greatest threat to their peoples (the Boe Declaration of 2018, which Unit 2 analyzed). That priority is largely absent from the alliance agenda.",
       {key:"Describe the facts with dates and attributions first; then argue which lens explains them best, and what evidence would change your mind."}
     ]}
    ],
    try:[
-    {id:"e4u12-l5-x1", type:"sort", q:"Which layer of the architecture does each arrangement belong to?", buckets:["Bilateral alliance","Minilateral","ASEAN-centred forum"], items:[
+    {id:"e4u12-l5-x1", type:"sort", q:"Which layer of the architecture does each arrangement belong to?", buckets:["Bilateral alliance","Minilateral","ASEAN-centered forum"], items:[
       {t:"The US–Philippines Mutual Defense Treaty (1951)", b:0, why:"A treaty between two states: a spoke of the hub-and-spoke system."},
       {t:"AUKUS", b:1, why:"Three states cooperating on submarines and technology: a minilateral."},
       {t:"The ASEAN Regional Forum", b:2, why:"An inclusive forum of 27 participants convened by ASEAN."},
       {t:"The Quad", b:1, why:"Four states, no treaty commitment: a minilateral grouping."},
-      {t:"ADMM-Plus", b:2, why:"ASEAN defence ministers with eight partners."},
+      {t:"ADMM-Plus", b:2, why:"ASEAN defense ministers with eight partners."},
       {t:"The 1961 treaty of friendship between China and North Korea", b:0, why:"A bilateral treaty outside the US system."}
     ]},
     {id:"e4u12-l5-x2", type:"match", q:"Match each explanation of the hub-and-spoke system to its author.", pairs:[
       ["US policymakers saw Asian partners as outside their own community, so no NATO-style alliance formed","Hemmer & Katzenstein (2002)","An identity explanation."],
       ["Separate treaties let Washington restrain allies from dragging it into wars","Victor Cha","The “powerplay” argument."],
-      ["ASEAN-led forums produce process rather than progress","Jones & Smith (2007)","A sceptical view of ASEAN forums."],
-      ["Participation in multilateral forums socialised Chinese officials","Alastair Iain Johnston (2008)","*Social States*."]
+      ["ASEAN-led forums produce process rather than progress","Jones & Smith (2007)","A skeptical view of ASEAN forums."],
+      ["Participation in multilateral forums socialized Chinese officials","Alastair Iain Johnston (2008)","*Social States*."]
     ]},
     {id:"e4u12-l5-x3", type:"mcq", q:"Which sentence describes AUKUS most accurately and neutrally?", options:[
-      {t:"AUKUS aims to give Australia nuclear-powered submarines; members praise it and China’s government criticises it", ok:true, why:"Right. Accurate (nuclear-powered, not nuclear-armed), and both positions are attributed: members say it supports regional stability; China’s government calls it a proliferation risk."},
+      {t:"AUKUS aims to give Australia nuclear-powered submarines; members praise it and China’s government criticizes it", ok:true, why:"Right. Accurate (nuclear-powered, not nuclear-armed), and both positions are attributed: members say it supports regional stability; China’s government calls it a proliferation risk."},
       {t:"AUKUS gives Australia nuclear weapons", why:"Inaccurate. The submarines are to be nuclear-powered, not nuclear-armed."},
       {t:"AUKUS is a dangerous alliance that threatens Asia", why:"An opinion stated as fact, not attributed to anyone."},
-      {t:"AUKUS is a formal military alliance whose three members are bound by treaty to defend each other if any one is attacked", why:"It is a technology and capability partnership, not a mutual defence treaty."}
+      {t:"AUKUS is a formal military alliance whose three members are bound by treaty to defend each other if any one is attacked", why:"It is a technology and capability partnership, not a mutual defense treaty."}
     ]},
     {id:"e4u12-l5-x4", type:"spot", q:"A draft paragraph on the Korean Peninsula. Tap each sentence that **breaks the neutrality rules** or **is inaccurate**.", ask:"breaks neutrality or is inaccurate", parts:[
       {t:"The Korean War ended in an armistice in July 1953, and no peace treaty has been signed.", flag:false, why:"Accurate and neutral."},
@@ -742,7 +742,7 @@ ICA.addUnit({
       {t:"North Korea conducted six nuclear tests between 2006 and 2017.", flag:false, why:"Accurate."}
     ]},
     {id:"e4u12-l5-x5", type:"mcq", q:"Ana writes: “The UN decided in 1971 that Taiwan is part of the People’s Republic of China.” How should she revise it?", options:[
-      {t:"Report what resolution 2758 says about UN seating, and give each side’s view of what it means for Taiwan", ok:true, why:"Right. Resolution 2758 recognised the PRC’s representatives as China’s only legitimate representatives at the UN; its meaning for Taiwan’s status is disputed, so each reading is attributed."},
+      {t:"Report what resolution 2758 says about UN seating, and give each side’s view of what it means for Taiwan", ok:true, why:"Right. Resolution 2758 recognized the PRC’s representatives as China’s only legitimate representatives at the UN; its meaning for Taiwan’s status is disputed, so each reading is attributed."},
       {t:"Say that the UN decided in 1971 that Taiwan is independent", why:"Equally one-sided, and not what the resolution says."},
       {t:"Leave it as it is, since it states the official UN position and so is neutral by definition", why:"The interpretation is contested; stating one reading as fact breaks neutrality."},
       {t:"Delete all mention of the resolution, because any sentence about Taiwan’s status will end up taking one side", why:"It is central to the history; the fix is accuracy and attribution, not omission."}
@@ -762,7 +762,7 @@ ICA.addUnit({
       {t:"Separate alliances gave the stronger power control over weaker partners.", b:0, why:"Cha’s powerplay is about power and control, a realist-leaning account."},
       {t:"No “Asian NATO” formed because US leaders did not see Asian partners as part of their community.", b:2, why:"Hemmer and Katzenstein’s explanation rests on identity."}
     ]},
-    {id:"e4u12-l5-x8", type:"explain", q:"Apply two IR lenses to the Quad (Australia, India, Japan and the United States). How would a realist and a liberal each explain it, and what evidence would help you decide between them?", size:"3–5 sentences", hint:"The lesson did this for the Japan–Philippines agreement. Use the same steps, and attribute contested claims.", model:"A realist would read the Quad as balancing: four states drawing closer as China’s power grows. China’s government gives a similar reading when it calls such groups exclusive blocs with a “Cold War mentality”, while members say the Quad supports a stable, rules-based region. A liberal would point to its broad agenda (health, technology, infrastructure and maritime awareness) and see a forum that makes cooperation routine and reduces uncertainty. To decide, I would ask whether cooperation grows only when tensions with China rise, which favours realism, or keeps widening whatever the tension, which favours the liberal reading.", points:["Gives a realist reading: balancing against China’s growing power", "Gives a liberal reading: a forum that makes cooperation routine and reduces uncertainty", "Uses facts from the lesson, such as the Quad’s agenda or that it is not an alliance", "Attributes contested views (“China’s government says…”, “members say…”)", "Says what evidence would separate the two readings"]}
+    {id:"e4u12-l5-x8", type:"explain", q:"Apply two IR lenses to the Quad (Australia, India, Japan and the United States). How would a realist and a liberal each explain it, and what evidence would help you decide between them?", size:"3–5 sentences", hint:"The lesson did this for the Japan–Philippines agreement. Use the same steps, and attribute contested claims.", model:"A realist would read the Quad as balancing: four states drawing closer as China’s power grows. China’s government gives a similar reading when it calls such groups exclusive blocs with a “Cold War mentality”, while members say the Quad supports a stable, rules-based region. A liberal would point to its broad agenda (health, technology, infrastructure and maritime awareness) and see a forum that makes cooperation routine and reduces uncertainty. To decide, I would ask whether cooperation grows only when tensions with China rise, which favors realism, or keeps widening whatever the tension, which favors the liberal reading.", points:["Gives a realist reading: balancing against China’s growing power", "Gives a liberal reading: a forum that makes cooperation routine and reduces uncertainty", "Uses facts from the lesson, such as the Quad’s agenda or that it is not an alliance", "Attributes contested views (“China’s government says…”, “members say…”)", "Says what evidence would separate the two readings"]}
    ],
    apply:{
     intro:"Read primary sources from several sides. Everything is free online.",
@@ -774,7 +774,7 @@ ICA.addUnit({
      ], write:"Issue… Government 1, date, position… Government 2… Government 3… Words each side uses that the others avoid…"},
      {t:"Map your own architecture", how:[
        "Pick one Asia-Pacific state (for example Indonesia, Vietnam, India, New Zealand or Fiji).",
-       "List which layers of the architecture it belongs to: alliances, minilaterals, ASEAN-centred forums, dialogues.",
+       "List which layers of the architecture it belongs to: alliances, minilaterals, ASEAN-centered forums, dialogues.",
        "Write two sentences on whether it is balancing, bandwagoning or hedging, and what evidence would test your view."
      ], write:"State… Its alliances… Minilaterals… Forums… Balancing, bandwagoning or hedging?… Evidence…"},
      {t:"Seminar questions", how:[
@@ -800,16 +800,16 @@ ICA.addUnit({
      {t:"From what threats?", why:"Both name drug smuggling as the threat. Their disagreement starts after the threat is agreed."},
      {t:"By what means?", ok:true, why:"Yes. They agree on whom to protect and from what, but choose different tools: boats at sea or checks at ports."},
      {t:"In what time period?", why:"Nothing in the scenario says they disagree about short-term or long-term security."}]},
-   {id:"e4u12-cp02", lesson:"e4u12-l1", level:2, q:"Chidi interviews airport screening staff and database managers to learn how they decide, day to day, which travellers count as “risky”. Which school of critical security studies is his project closest to?", options:[
-     {t:"The Copenhagen School, because it studies speeches that declare an existential threat to an audience", why:"Copenhagen focuses on securitising moves made to an audience. Chidi studies routine professional practice, not public speech acts."},
+   {id:"e4u12-cp02", lesson:"e4u12-l1", level:2, q:"Chidi interviews airport screening staff and database managers to learn how they decide, day to day, which travelers count as “risky”. Which school of critical security studies is his project closest to?", options:[
+     {t:"The Copenhagen School, because it studies speeches that declare an existential threat to an audience", why:"Copenhagen focuses on securitizing moves made to an audience. Chidi studies routine professional practice, not public speech acts."},
      {t:"The Welsh School, because it defines security as emancipation", why:"The Welsh School is openly normative and asks how to free people from constraints. Chidi is describing everyday practice, not arguing for emancipation."},
-     {t:"Traditional security studies, because airports are part of national defence", why:"Traditional security studies focuses on the threat, use and control of military force, not on screening routines."},
+     {t:"Traditional security studies, because airports are part of national defense", why:"Traditional security studies focuses on the threat, use and control of military force, not on screening routines."},
      {t:"The Paris School, because it studies the everyday practices of security professionals", ok:true, why:"Right. Bigo and others argue that security is made by the routine work of police, border and intelligence professionals."}]},
    {id:"e4u12-cp03", lesson:"e4u12-l1", level:2, q:"In a seminar, a classmate says human security is “just hot air”. Which reply uses the defenders’ strongest point, drawing on both Lesson 1 and Lesson 3?", options:[
      {t:"Quantitative studies have tested and confirmed human security as a scientific hypothesis many times", why:"Defenders do not claim this. They reply that it is a political agenda, not a hypothesis; Paris’s point was that it is hard to test."},
      {t:"It is a political agenda, not a hypothesis, and it changed practice, such as protection of civilians", ok:true, why:"Yes. Defenders point to real changes: the landmine ban, child-soldier protocols and protection of civilians, which Lesson 3 shows became a core mission task."},
      {t:"UN resolution 66/290 made human security a legal basis for using force to protect people", why:"The reverse: the 2012 common understanding says human security does not entail the threat or use of force."},
-     {t:"Walt agreed that poverty and disease belong at the centre of security studies", why:"Walt argued the opposite: widening the field would destroy its intellectual coherence."}]},
+     {t:"Walt agreed that poverty and disease belong at the center of security studies", why:"Walt argued the opposite: widening the field would destroy its intellectual coherence."}]},
    {id:"e4u12-cp04", lesson:"e4u12-l2", level:1, q:"A policy brief uses research on why civil wars **start** to recommend how to **end** a war that has lasted ten years. What is the main problem?", options:[
      {t:"It mixes up research questions: a finding about onset is not a finding about termination", ok:true, why:"Right. The lesson splits civil war into onset, duration, termination and recurrence, each with its own literature and data."},
      {t:"Research on civil wars only studies onset, so nothing is known about endings", why:"Not so. There is a large literature on termination, from Walter’s commitment problem to Toft’s work on victories and settlements."},
@@ -827,7 +827,7 @@ ICA.addUnit({
      {t:"He overreaches: Toft’s comparisons are disputed, and careful studies find peacekeeping helps peace last", ok:true, why:"Right. Victories can mean repression and the cases are hard to compare; the peacekeeping evidence (Fortna; Walter, Howard and Fortna) points the other way."}]},
    {id:"e4u12-cp07", lesson:"e4u12-l3", level:2, q:"A lightly armed mission mediates between leaders, pays for training for any group that disarms, and once arrests a commander who attacks a village. In Howard’s terms, which of these is **inducement**?", options:[
      {t:"Mediating between leaders", why:"Mediation works by changing minds through argument and information: Howard calls that persuasion."},
-     {t:"Paying for training for groups that disarm", ok:true, why:"Yes. Inducement offers material rewards for the behaviour the mission wants, such as disarming."},
+     {t:"Paying for training for groups that disarm", ok:true, why:"Yes. Inducement offers material rewards for the behavior the mission wants, such as disarming."},
      {t:"Arresting the commander", why:"That is limited coercion, the third kind of power in *Power in Peacekeeping*."},
      {t:"None of them, because peacekeepers have no power without large armies", why:"Howard’s point is that lightly armed missions do have power, mainly through persuasion and inducement."}]},
    {id:"e4u12-cp08", lesson:"e4u12-l3", level:2, q:"Years after a peace deal, a district has an elected council on paper. Land disputes are settled by elders’ councils, and a former commander controls the market. Which concept best describes this?", options:[
@@ -837,23 +837,23 @@ ICA.addUnit({
      {t:"Hybrid peace", ok:true, why:"Right. Mac Ginty’s hybrid peace is the mix of international models with local practices, institutions and power that actually emerges."}]},
    {id:"e4u12-cp09", lesson:"e4u12-l4", level:1, q:"Two rival states agree to cap their missile numbers and allow each other’s inspectors in. Both keep their weapons. How should this agreement be described?", options:[
      {t:"Disarmament, because the two states signed a treaty about their weapons", why:"Disarmament seeks to reduce or eliminate weapons. Here both sides keep their arsenals under agreed limits."},
-     {t:"Arms control, because it limits and verifies weapons between rivals", ok:true, why:"Yes. Arms control limits, verifies or stabilises weapons between rivals; it is not the same as disarmament."},
+     {t:"Arms control, because it limits and verifies weapons between rivals", ok:true, why:"Yes. Arms control limits, verifies or stabilizes weapons between rivals; it is not the same as disarmament."},
      {t:"A ban treaty, like the TPNW", why:"A ban prohibits possession outright for its parties. A cap with inspections does not."},
      {t:"Extended deterrence, because each side can still retaliate", why:"Extended deterrence is a threat made on behalf of allies, not an agreement between rivals."}]},
    {id:"e4u12-cp10", lesson:"e4u12-l4", level:3, q:"A government calls a small, peaceful protest movement “terrorists” and passes a broad law allowing detention without trial. Which pair of ideas from the unit fits best?", options:[
-     {t:"Securitisation, and UN experts’ warnings about broad counter-terrorism laws", ok:true, why:"Right. Labelling the group an existential threat justifies extraordinary measures (Lesson 1), and Lesson 4 records exactly this human rights concern."},
+     {t:"Securitisation, and UN experts’ warnings about broad counter-terrorism laws", ok:true, why:"Right. Labeling the group an existential threat justifies extraordinary measures (Lesson 1), and Lesson 4 records exactly this human rights concern."},
      {t:"The nuclear taboo, and the stability–instability paradox that Snyder described", why:"Both are about nuclear weapons and escalation, not about how a government labels domestic opponents."},
-     {t:"The commitment problem, and power-sharing guaranteed by a third party", why:"These explain how civil wars end through settlements; the scenario is about labelling and emergency law."},
-     {t:"Freedom from want, and the UN Trust Fund for Human Security", why:"Those concern the broad, development-centred version of human security, not counter-terrorism law."}]},
-   {id:"e4u12-cp11", lesson:"e4u12-l5", level:3, q:"Ravi wants to test the claim that ASEAN-led forums work by **socialising** officials, not by enforcing rules. Which evidence would test that claim most directly?", options:[
-     {t:"A count of binding rules the forums have enforced against members that broke them", why:"Defenders say enforcement is not the forums’ aim, so a low count would not test the socialisation claim."},
+     {t:"The commitment problem, and power-sharing guaranteed by a third party", why:"These explain how civil wars end through settlements; the scenario is about labeling and emergency law."},
+     {t:"Freedom from want, and the UN Trust Fund for Human Security", why:"Those concern the broad, development-centered version of human security, not counter-terrorism law."}]},
+   {id:"e4u12-cp11", lesson:"e4u12-l5", level:3, q:"Ravi wants to test the claim that ASEAN-led forums work by **socializing** officials, not by enforcing rules. Which evidence would test that claim most directly?", options:[
+     {t:"A count of binding rules the forums have enforced against members that broke them", why:"Defenders say enforcement is not the forums’ aim, so a low count would not test the socialization claim."},
      {t:"Changes in how officials think about multilateral security after years of taking part", ok:true, why:"Yes. This is the kind of evidence Johnston used in *Social States* to show that ARF participation changed Chinese officials’ thinking."},
-     {t:"The number of joint exercises among US allies", why:"That measures alliance cooperation, which a realist reads as balancing. It says nothing about socialisation inside ASEAN forums."},
-     {t:"Whether any two ASEAN members have gone to war with each other since 1994", why:"Peace could have many causes, so this alone cannot show that socialisation in the forums produced it."}]},
+     {t:"The number of joint exercises among US allies", why:"That measures alliance cooperation, which a realist reads as balancing. It says nothing about socialization inside ASEAN forums."},
+     {t:"Whether any two ASEAN members have gone to war with each other since 1994", why:"Peace could have many causes, so this alone cannot show that socialization in the forums produced it."}]},
    {id:"e4u12-cp12", lesson:"e4u12-l5", level:3, q:"A student writes: “US alliances show that Asia has no security dynamics of its own.” Which reply uses regional security complex theory correctly?", options:[
      {t:"The student is right: the theory says outside great powers define every regional complex", why:"The theory warns against exactly this error: treating every regional crisis as a sideshow of great-power rivalry."},
      {t:"The theory ignores outside powers, so the US alliances should simply be left out of the analysis", why:"Not so. The theory says great powers can penetrate a complex from outside; it also warns against ignoring them."},
-     {t:"Outside powers can penetrate a complex, but its own amity and enmity still need analysing", ok:true, why:"Right. Buzan and Wæver balance both: the US penetrates the East Asian complex, but regional relationships have their own logic."},
+     {t:"Outside powers can penetrate a complex, but its own amity and enmity still need analyzing", ok:true, why:"Right. Buzan and Wæver balance both: the US penetrates the East Asian complex, but regional relationships have their own logic."},
      {t:"East Asia is an insulator, so it has no regional dynamics to study", why:"Insulators are states between complexes, such as Afghanistan in their account. Buzan and Wæver treated East Asia as a complex in its own right."}]}
   ],
   codex:[
@@ -862,12 +862,12 @@ ICA.addUnit({
     levels:{
      starter:[
       "Traditional security studies asks how states protect themselves from military attack. **Critical security studies** asks two further questions: whose security, and who decides what counts as a threat?",
-      "Think of a city where the police say crime is falling, while people in one neighbourhood still feel unsafe walking home. Both views are about security; they just start from different people.",
+      "Think of a city where the police say crime is falling, while people in one neighborhood still feel unsafe walking home. Both views are about security; they just start from different people.",
       "The label became popular with a 1997 book edited by Keith Krause and Michael Williams. It covers several schools that disagree with each other: the Copenhagen School (security as a speech act), the Welsh School (security as emancipation), the Paris School (security as everyday practice), feminist security studies and postcolonial approaches.",
       {key:"Critical security studies widens what counts as a threat and deepens whose security counts."}
      ],
      builder:[
-      "**Copenhagen.** Buzan, Wæver and de Wilde (1998) study securitisation: how an actor presents something as an existential threat and an audience accepts emergency measures (see {{securitization-theory}}).",
+      "**Copenhagen.** Buzan, Wæver and de Wilde (1998) study securitization: how an actor presents something as an existential threat and an audience accepts emergency measures (see {{securitization-theory}}).",
       "**Welsh (Aberystwyth).** Ken Booth’s “Security and Emancipation” (*Review of International Studies*, 1991) and Richard Wyn Jones’s *Security, Strategy, and Critical Theory* (1999) draw on Frankfurt School Critical Theory. Security means freeing people from constraints; the scholar should side with the insecure.",
       "**Paris.** Didier Bigo and others look at practices: databases, border checks, risk profiling. Security is what professionals do, not only what leaders say.",
       "**Feminist.** Tickner, Enloe and Hansen show how gender shapes who is protected and who is silenced, and how the state itself can be a source of insecurity.",
@@ -875,10 +875,10 @@ ICA.addUnit({
       "**Using it.** In a paper, name the school you use; “critical security studies” alone is too vague."
      ],
      pro:[
-      "**The traditionalist reply.** Stephen Walt (1991) warned that widening destroys coherence. Some critical scholars accept part of the point: Copenhagen scholars often recommend **desecuritisation**, while the Welsh School wants to redefine security altogether. That disagreement inside the family is a good seminar topic.",
+      "**The traditionalist reply.** Stephen Walt (1991) warned that widening destroys coherence. Some critical scholars accept part of the point: Copenhagen scholars often recommend **desecuritization**, while the Welsh School wants to redefine security altogether. That disagreement inside the family is a good seminar topic.",
       "**Normative divides.** The Welsh School is explicitly emancipatory; the Copenhagen School claims analytical distance; the Paris School is sociological. Critics ask whether emancipation can be defined without imposing one group’s values.",
       "**Eurocentrism.** Several critics have argued that critical security studies grew from European debates and can underplay racial and colonial hierarchies; Ayoob’s subaltern realism and later postcolonial work push back.",
-      "**Asia.** Scholars of “non-traditional security”, such as Mely Caballero-Anthony, have used securitisation and human security to study disease, migration and disasters in Southeast Asia, often in partnership with governments, which some critics see as a loss of critical distance.",
+      "**Asia.** Scholars of “non-traditional security”, such as Mely Caballero-Anthony, have used securitization and human security to study disease, migration and disasters in Southeast Asia, often in partnership with governments, which some critics see as a loss of critical distance.",
       {tip:"Pair a school with a method: Copenhagen with discourse analysis, Paris with fieldwork on practices, feminist approaches with interviews and life histories."}
      ]
     },
@@ -891,9 +891,9 @@ ICA.addUnit({
     summary:"Buzan and Wæver’s theory that security interdependence clusters in regions, each with its own patterns of amity and enmity.",
     levels:{
      starter:[
-      "Most threats travel more easily over short distances than long ones. Neighbours worry about neighbours.",
+      "Most threats travel more easily over short distances than long ones. Neighbors worry about neighbors.",
       "From that simple idea, Barry Buzan and Ole Wæver built **regional security complex theory** in *Regions and Powers* (2003). A **regional security complex** is a group of states whose security problems are so tangled together that you can’t understand one without the others.",
-      "Examples they gave include South Asia (centred on India and Pakistan), the Middle East and East Asia. Big powers can reach into a region from outside, and some states sit at the edges between complexes as **insulators**.",
+      "Examples they gave include South Asia (centered on India and Pakistan), the Middle East and East Asia. Big powers can reach into a region from outside, and some states sit at the edges between complexes as **insulators**.",
       {key:"To understand a crisis, look first at the region’s own patterns of friendship and rivalry, then at the outside powers."}
      ],
      builder:[
@@ -904,7 +904,7 @@ ICA.addUnit({
       "**In a paper.** Use RSCT to justify why you study a region, and to separate regional causes from global ones."
      ],
      pro:[
-      "**Links to securitisation.** RSCT is built on the Copenhagen School: complexes are defined by patterns of securitisation, not only by geography. This makes it compatible with both realist and constructivist readings.",
+      "**Links to securitization.** RSCT is built on the Copenhagen School: complexes are defined by patterns of securitization, not only by geography. This makes it compatible with both realist and constructivist readings.",
       "**Critiques.** Regional boundaries can look arbitrary; transnational threats (pandemics, climate, terrorism networks) do not respect them; and the theory says less about non-state actors. Some argue the Indo-Pacific concept has redrawn the map in ways RSCT did not foresee.",
       "**Extensions.** Scholars have applied RSCT to the Gulf, the South Caucasus, Central Asia and the Pacific Islands, and debated whether the Arctic is becoming a complex.",
       {tip:"A good RSCT analysis draws a map: core states, the main rivalry, outside powers and insulators, with dates."}
@@ -952,15 +952,15 @@ ICA.addUnit({
       {key:"The debate asks: did war change, or did our way of seeing it change?"}
      ],
      builder:[
-      "**Kaldor’s four dimensions.** Goals (identity politics), methods (displacement and terror against civilians), actors (networks of state and non-state groups) and finance (a globalised war economy). Her main case was Bosnia and Herzegovina.",
+      "**Kaldor’s four dimensions.** Goals (identity politics), methods (displacement and terror against civilians), actors (networks of state and non-state groups) and finance (a globalized war economy). Her main case was Bosnia and Herzegovina.",
       "**Kalyvas’s critique.** “‘New’ and ‘Old’ Civil Wars: A Valid Distinction?” (*World Politics*, 2001) argued that looting, atrocities and identity appeals were common in earlier civil wars, and that Cold War labels had hidden them behind ideology.",
       "**Kalyvas’s theory.** *The Logic of Violence in Civil War* (2006) argued that violence is often **selective**, used to control territory and deter defection, based on local information.",
       "**Policy.** Kaldor linked new wars to a **human security** response: protecting civilians and building legitimate authority rather than defeating an enemy army."
      ],
      pro:[
       "**Data disputes.** Claims that civilians had become the vast majority of war dead in new wars rested on weak data; later research questioned them.",
-      "**Kaldor’s reply.** “In Defence of New Wars” (*Stability*, 2013) argued that “new wars” is a policy lens that highlights features neglected by state-centred thinking, not a claim that every feature is unprecedented.",
-      "**Legacy.** The debate pushed researchers to study war economies, armed group behaviour and violence against civilians with micro-level data, and influenced work on hybrid warfare and organised crime.",
+      "**Kaldor’s reply.** “In Defence of New Wars” (*Stability*, 2013) argued that “new wars” is a policy lens that highlights features neglected by state-centered thinking, not a claim that every feature is unprecedented.",
+      "**Legacy.** The debate pushed researchers to study war economies, armed group behavior and violence against civilians with micro-level data, and influenced work on hybrid warfare and organized crime.",
       {tip:"In a seminar, use “new wars” as an ideal type and test which features fit your case."}
      ]
     },
@@ -980,7 +980,7 @@ ICA.addUnit({
      builder:[
       "**Walter.** “The Critical Barrier to Civil War Settlement” (1997) and *Committing to Peace* (2002) showed that third-party security guarantees greatly raise the chance that settlements are implemented.",
       "**Power-sharing.** Hartzell and Hoddie (2003) found that agreements sharing power in several dimensions (political, military, territorial, economic) lasted longer.",
-      "**Spoilers.** Stedman (1997) distinguished limited, greedy and total spoilers, each requiring a different strategy: inducement, socialisation or coercion.",
+      "**Spoilers.** Stedman (1997) distinguished limited, greedy and total spoilers, each requiring a different strategy: inducement, socialization or coercion.",
       "**Victory or settlement?** Toft (2010) argued that military victories, especially by rebels, recur less often; critics stress the human cost and repression victories can bring.",
       "**Recurrence.** Collier and colleagues called it the conflict trap (2003); Walter (2004) linked recurrence to poor living conditions and political exclusion."
      ],
@@ -1005,7 +1005,7 @@ ICA.addUnit({
       {key:"The evidence is strongest for keeping a peace; it is weaker for building a state."}
      ],
      builder:[
-      "**Principles.** Consent, impartiality, and non-use of force except in self-defence and defence of the mandate (UN peacekeeping website).",
+      "**Principles.** Consent, impartiality, and non-use of force except in self-defense and defense of the mandate (UN peacekeeping website).",
       "**Evidence.** Fortna (2008) showed that the UN goes to harder cases and that peace lasts longer with peacekeepers once this is accounted for. Doyle and Sambanis (2000, 2006) linked multidimensional missions to peacebuilding success. Hultman, Kathman and Shannon (2013, 2014) linked larger troop numbers to fewer civilian and battle deaths. Walter, Howard and Fortna (2021) reviewed the literature.",
       "**How missions work.** Howard (2019) identifies persuasion, inducement and limited coercion.",
       "**Reform reports.** Brahimi (2000); the High-Level Independent Panel on Peace Operations (2015), chaired by José Ramos-Horta, stressing the primacy of politics."
@@ -1013,7 +1013,7 @@ ICA.addUnit({
      pro:[
       "**As of 2026.** Host-state consent has weakened in several places (MINUSMA in Mali closed at the end of 2023). In August 2025 resolution 2790 extended UNIFIL in Lebanon for a final time to 31 December 2026, with withdrawal within a year. In October 2025 the UN announced it would repatriate about a quarter of troops and police across 11 operations because of unpaid contributions.",
       "**Robust mandates.** MONUSCO’s Force Intervention Brigade (2013) raised the question of whether peacekeepers who fight remain impartial and protected.",
-      "**Regional and ad hoc missions.** The AU’s missions in Somalia, and coalitions authorised by the Security Council, are a growing share of operations; SIPRI’s Yearbook tracks them.",
+      "**Regional and ad hoc missions.** The AU’s missions in Somalia, and coalitions authorized by the Security Council, are a growing share of operations; SIPRI’s Yearbook tracks them.",
       "**Harms.** Sexual exploitation and abuse, and harms such as the cholera outbreak in Haiti, shape local legitimacy and are part of any evaluation.",
       {warn:"Mission counts and budgets change often; always date figures."}
      ]
@@ -1024,7 +1024,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"liberal-peace-debate", title:"The liberal peace and its critics", aka:["liberal peacebuilding","hybrid peace","local turn"], tags:["peace","peacebuilding","theory"],
-    summary:"The debate over exporting democracy and markets to war-torn societies: Paris’s critique and defence, the radical critics, hybrid peace and the local turn.",
+    summary:"The debate over exporting democracy and markets to war-torn societies: Paris’s critique and defense, the radical critics, hybrid peace and the local turn.",
     levels:{
      starter:[
       "After the Cold War, most international peacebuilding aimed at the same package: elections, a market economy, human rights and the rule of law. Scholars call this the **liberal peace**.",
@@ -1037,13 +1037,13 @@ ICA.addUnit({
       "**Radical critics.** Oliver Richmond, Mark Duffield and David Chandler saw the liberal peace as top-down governance by outsiders, at times a form of control over the Global South.",
       "**Hybrid peace.** Roger Mac Ginty (2010) described the mix of international and local practices that emerges after intervention.",
       "**Local turn.** {{severine-autesserre|Séverine Autesserre}} and Mac Ginty’s *Everyday Peace* (2021) focus on local conflicts and everyday practices.",
-      "**Defence.** Paris’s “Saving Liberal Peacebuilding” (2010) argued that critics attack a caricature and offer no clear alternative."
+      "**Defense.** Paris’s “Saving Liberal Peacebuilding” (2010) argued that critics attack a caricature and offer no clear alternative."
      ],
      pro:[
-      "**Asian perspectives.** Some scholars discuss Chinese approaches to post-conflict reconstruction, which put development and state capacity before political liberalisation; others question whether this amounts to an alternative model.",
-      "**Local ownership.** Widely endorsed in policy, but critics warn it can romanticise local elites or shift costs away from donors.",
+      "**Asian perspectives.** Some scholars discuss Chinese approaches to post-conflict reconstruction, which put development and state capacity before political liberalization; others question whether this amounts to an alternative model.",
+      "**Local ownership.** Widely endorsed in policy, but critics warn it can romanticize local elites or shift costs away from donors.",
       "**Evidence and normativity.** Quantitative studies measure durability (years without war); critics ask about justice, inclusion and who defines peace. A strong paper says which outcome it evaluates.",
-      {tip:"Map any peacebuilding case on two axes: speed of liberalisation, and degree of local ownership."}
+      {tip:"Map any peacebuilding case on two axes: speed of liberalization, and degree of local ownership."}
      ]
     },
     related:["peacebuilding","peace-operations","severine-autesserre","liberalism-ir","postcolonialism-ir"],
@@ -1056,7 +1056,7 @@ ICA.addUnit({
      starter:[
       "Wars affect women and men differently, and women have long been left out of peace talks. In October 2000 the UN Security Council adopted **resolution 1325**, the first to link women’s experiences of conflict to international peace and security.",
       "The **Women, Peace and Security** (WPS) agenda now rests on ten Security Council resolutions and four pillars: participation, protection, prevention, and relief and recovery.",
-      "Namibia, which held the Council presidency, and Bangladesh were key champions, alongside women’s organisations worldwide.",
+      "Namibia, which held the Council presidency, and Bangladesh were key champions, alongside women’s organizations worldwide.",
       {key:"WPS treats women as participants in making peace, not only as victims of war."}
      ],
      builder:[
@@ -1080,7 +1080,7 @@ ICA.addUnit({
     summary:"The NPT’s three-pillar bargain, IAEA safeguards, the states outside it, and the record of review conferences up to the failed 2026 conference.",
     levels:{
      starter:[
-      "The Treaty on the Non-Proliferation of Nuclear Weapons (NPT) is a bargain. States without nuclear weapons promise not to get them; the five recognised nuclear-weapon states promise to negotiate towards disarmament; and everyone keeps the right to peaceful nuclear energy.",
+      "The Treaty on the Non-Proliferation of Nuclear Weapons (NPT) is a bargain. States without nuclear weapons promise not to get them; the five recognized nuclear-weapon states promise to negotiate toward disarmament; and everyone keeps the right to peaceful nuclear energy.",
       "Every five years the parties meet in a **review conference** to check how the treaty is working and to agree, by consensus, on next steps.",
       "In recent years they have often failed to agree. The 2015, 2022 and 2026 conferences all ended without a final document.",
       {key:"The NPT survives because almost every state still prefers it to a world without it, even when they disagree about how it is kept."}
@@ -1092,7 +1092,7 @@ ICA.addUnit({
       "**2026.** Held in New York, 28 April to 22 May 2026, presided over by Do Hung Viet of Vietnam. According to the Arms Control Association, the main obstacle was a dispute between the United States and Iran over the draft’s language on Iran, while Russia objected to references to the Zaporizhzhia plant; the next conference is planned for 2031, with a preparatory meeting in 2028."
      ],
      pro:[
-      "**Safeguards.** Comprehensive safeguards agreements, and the stricter Additional Protocol (1997) developed after Iraq’s secret programme was discovered in 1991.",
+      "**Safeguards.** Comprehensive safeguards agreements, and the stricter Additional Protocol (1997) developed after Iraq’s secret program was discovered in 1991.",
       "**Disarmament gap.** Non-nuclear states argue that Article VI is unfulfilled; nuclear-weapon states point to large reductions since the Cold War and to the security environment. The expiry of New START in February 2026 sharpened the dispute.",
       "**Regime theory.** The NPT is a textbook international regime: principles, norms, rules and procedures around which expectations converge. Scholars debate whether it works through hegemonic enforcement, institutional benefits or a non-proliferation norm.",
       {tip:"Quote articles by number and check the official text (IAEA document INFCIRC/140)."}
@@ -1120,7 +1120,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Japan’s position.** The government says it shares the goal but relies on US extended deterrence and seeks to bridge nuclear and non-nuclear states; it has not attended meetings as an observer. Survivors’ groups, including Nihon Hidankyo (Nobel Peace Prize 2024), have urged it to join.",
-      "**Norm theory.** Supporters invoke norm dynamics: stigmatisation preceded the bans on chemical weapons and landmines. Sceptics argue that weapons central to great-power security are different.",
+      "**Norm theory.** Supporters invoke norm dynamics: stigmatization preceded the bans on chemical weapons and landmines. Skeptics argue that weapons central to great-power security are different.",
       "**Positive obligations.** Articles 6 and 7 require help for victims of use and testing and environmental remediation, a feature valued by Pacific and Central Asian states affected by testing.",
       {warn:"Party numbers change; check the UN treaty database. More than 70 states were parties by 2026."}
      ]
@@ -1145,9 +1145,9 @@ ICA.addUnit({
       "**Luck.** Pelopidas (2017): crises such as Cuba in 1962 were survived partly by luck, which observers underrate."
      ],
      pro:[
-      "**Proliferation optimism and pessimism.** The Waltz–Sagan debate (1995) frames whether spread is stabilising (rational deterrence) or dangerous (organisational failure).",
+      "**Proliferation optimism and pessimism.** The Waltz–Sagan debate (1995) frames whether spread is stabilizing (rational deterrence) or dangerous (organizational failure).",
       "**Arms control erosion.** With the INF Treaty gone (2019) and New START expired (February 2026), scholars debate whether deterrence can stay stable without negotiated limits and transparency.",
-      "**Asia.** Debates on extended deterrence in Japan and South Korea, China’s growing arsenal (SIPRI estimates), and North Korea’s programme shape regional strategy; present each government’s stated view.",
+      "**Asia.** Debates on extended deterrence in Japan and South Korea, China’s growing arsenal (SIPRI estimates), and North Korea’s program shape regional strategy; present each government’s stated view.",
       {tip:"State what your argument would predict if deterrence did not work, and look for evidence that could tell the stories apart."}
      ]
     },
@@ -1162,7 +1162,7 @@ ICA.addUnit({
      starter:[
       "Most people killed in today’s wars are killed by conventional weapons: guns, shells, mines and bombs. Several treaties try to limit the worst of them.",
       "The **Mine Ban Convention** (Ottawa, 1997) bans anti-personnel landmines; the **Convention on Cluster Munitions** (2008) bans cluster bombs; the **Arms Trade Treaty** (2013) sets rules for selling weapons across borders.",
-      "Campaigners call this **humanitarian disarmament**: putting civilian harm at the centre. Some states argue that they need certain weapons for defence, and in 2025–26 several left the landmine ban.",
+      "Campaigners call this **humanitarian disarmament**: putting civilian harm at the center. Some states argue that they need certain weapons for defense, and in 2025–26 several left the landmine ban.",
       {key:"Conventional arms treaties are built on the same tension as nuclear ones: humanitarian harm versus perceived security needs."}
      ],
      builder:[
@@ -1173,8 +1173,8 @@ ICA.addUnit({
      ],
      pro:[
       "**Small arms.** The UN Programme of Action (2001) is politically, not legally, binding; small arms cause a large share of deaths in conflicts and crime.",
-      "**Effectiveness.** Supporters point to stigmatisation: even some non-parties have largely stopped using anti-personnel mines. Sceptics note that major producers and users remain outside some treaties.",
-      "**Withdrawals.** The 2025–26 departures were the first from the Mine Ban Convention; campaigners and the ICRC criticised them, while the withdrawing governments said their security situation required it.",
+      "**Effectiveness.** Supporters point to stigmatization: even some non-parties have largely stopped using anti-personnel mines. Skeptics note that major producers and users remain outside some treaties.",
+      "**Withdrawals.** The 2025–26 departures were the first from the Mine Ban Convention; campaigners and the ICRC criticized them, while the withdrawing governments said their security situation required it.",
       {tip:"For any treaty, separate adoption, entry into force, and each state’s ratification or withdrawal date."}
      ]
     },
@@ -1190,16 +1190,16 @@ ICA.addUnit({
       "A **lethal autonomous weapon system** (LAWS) is a weapon that, once switched on, can select and attack targets without a human deciding each time.",
       "States have discussed how to govern them under the Convention on Certain Conventional Weapons (CCW) since 2014. Campaigners and the International Committee of the Red Cross want a treaty; some major military powers prefer to rely on existing law.",
       "In September 2026 a group of government experts agreed a report setting out elements of a possible instrument. The CCW’s Review Conference meets in Geneva on 16–20 November 2026.",
-      {key:"The core question is how much human judgement and control the law should require over the use of force."}
+      {key:"The core question is how much human judgment and control the law should require over the use of force."}
      ],
      builder:[
       "**Timeline.** Informal expert meetings 2014–16; a Group of Governmental Experts (GGE) from 2017; eleven guiding principles in 2019; a joint appeal by the UN Secretary-General and the ICRC in 2023 for a legally binding instrument by 2026; UN General Assembly resolutions from 2023.",
-      "**The 2026 report.** Adopted by consensus on 5 September 2026. It sets out elements of an instrument “without prejudging its nature”, using a two-tier approach of prohibitions and regulations, and speaks of “context-appropriate human judgement and control” rather than “meaningful human control”, according to an analysis on Opinio Juris.",
-      "**Positions.** The ICRC, Stop Killer Robots and many states seek a binding treaty; others argue existing international humanitarian law suffices or favour non-binding measures."
+      "**The 2026 report.** Adopted by consensus on 5 September 2026. It sets out elements of an instrument “without prejudging its nature”, using a two-tier approach of prohibitions and regulations, and speaks of “context-appropriate human judgment and control” rather than “meaningful human control”, according to an analysis on Opinio Juris.",
+      "**Positions.** The ICRC, Stop Killer Robots and many states seek a binding treaty; others argue existing international humanitarian law suffices or favor non-binding measures."
      ],
      pro:[
       "**Legal questions.** Can systems comply with distinction, proportionality and precaution? Who is responsible when they fail? The report keeps the principle that responsibility cannot be transferred to machines.",
-      "**Definitions.** Disputes over characterisation (what counts as autonomous, what as lethal) shape what any ban would cover.",
+      "**Definitions.** Disputes over characterization (what counts as autonomous, what as lethal) shape what any ban would cover.",
       "**Forum choice.** The CCW works by consensus; some states and NGOs have pressed to take negotiations to the General Assembly if the CCW stalls. Avoid predicting the outcome.",
       {warn:"This is a fast-moving topic. Check the date of every source and the CCW Review Conference’s final document."}
      ]
@@ -1208,19 +1208,19 @@ ICA.addUnit({
     sources:[{t:"Opinio Juris symposium, “Rolling Towards Consensus for the 2026 GGE LAWS Report”, 9 October 2026", url:"https://opiniojuris.org/2026/10/09/symposium-on-the-ccw-gge-laws-obstacles-avoided-rolling-towards-consensus-for-the-2026-gge-laws-report/"}],
     checked:"2026-11"},
 
-   {id:"asia-pacific-security-architecture", title:"Asia-Pacific security architecture", aka:["hub and spoke","ASEAN-centred forums","Indo-Pacific security"], tags:["Asia","security","regions"],
-    summary:"The layers of regional security: US bilateral alliances, other alignments, minilaterals such as the Quad and AUKUS, and ASEAN-centred forums.",
+   {id:"asia-pacific-security-architecture", title:"Asia-Pacific security architecture", aka:["hub and spoke","ASEAN-centered forums","Indo-Pacific security"], tags:["Asia","security","regions"],
+    summary:"The layers of regional security: US bilateral alliances, other alignments, minilaterals such as the Quad and AUKUS, and ASEAN-centered forums.",
     levels:{
      starter:[
-      "Asia has no single security organisation like NATO. Instead it has layers: bilateral alliances (mostly with the United States), small groups of states (minilaterals), and wider forums convened by ASEAN.",
+      "Asia has no single security organization like NATO. Instead it has layers: bilateral alliances (mostly with the United States), small groups of states (minilaterals), and wider forums convened by ASEAN.",
       "The US system of separate treaties with the Philippines, Australia and New Zealand, Japan, South Korea and Thailand is called **hub and spoke**. China and Russia each have treaties with North Korea.",
       "Forums such as the ASEAN Regional Forum (1994), the East Asia Summit (2005) and ADMM-Plus (2010) bring rivals to the same table.",
       {key:"Asia’s architecture is many overlapping arrangements, and most states belong to several."}
      ],
      builder:[
       "**Why no NATO?** Hemmer and Katzenstein (2002): identity; Cha (2009–10, 2016): control of allies.",
-      "**Forums.** ARF: 27 participants, confidence-building and preventive diplomacy. EAS: ASEAN plus eight. ADMM-Plus: defence ministers of the same group. Shangri-La Dialogue (IISS, since 2002): Track 1.5.",
-      "**Debate.** Jones and Smith (2007): “process, not progress”. Johnston (2008): socialisation in forums changed Chinese officials’ views. Acharya: the ASEAN way helped keep peace among members.",
+      "**Forums.** ARF: 27 participants, confidence-building and preventive diplomacy. EAS: ASEAN plus eight. ADMM-Plus: defense ministers of the same group. Shangri-La Dialogue (IISS, since 2002): Track 1.5.",
+      "**Debate.** Jones and Smith (2007): “process, not progress”. Johnston (2008): socialization in forums changed Chinese officials’ views. Acharya: the ASEAN way helped keep peace among members.",
       "**Minilaterals.** The Quad (revived 2017; leaders from 2021) and AUKUS (2021). Members describe them as supporting a rules-based region; China’s government calls them Cold War-style blocs."
      ],
      pro:[
@@ -1236,7 +1236,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"korean-peninsula-security", title:"Korean Peninsula security (as of November 2026)", aka:["inter-Korean relations","North Korean nuclear issue","Korean armistice"], tags:["Asia","security","nuclear"],
-    summary:"The armistice of 1953, North Korea’s nuclear programme, the record of talks and sanctions, and the main governments’ positions as of November 2026.",
+    summary:"The armistice of 1953, North Korea’s nuclear program, the record of talks and sanctions, and the main governments’ positions as of November 2026.",
     levels:{
      starter:[
       "The Korean War (1950–53) stopped with an **armistice**, not a peace treaty. The two Koreas have been divided ever since.",
@@ -1248,7 +1248,7 @@ ICA.addUnit({
       "**Armistice.** Signed on 27 July 1953 by the commanders of the UN Command, the Korean People’s Army and the Chinese People’s Volunteers; South Korea did not sign.",
       "**Talks.** Six-Party Talks (2003–2009: the two Koreas, China, Japan, Russia and the United States). Singapore summit (June 2018) and Hanoi summit (February 2019).",
       "**Sanctions.** Security Council sanctions since resolution 1718 (2006); in 2024 a Russian veto ended the panel of experts’ mandate.",
-      "**Positions.** North Korea: nuclear weapons deter US hostility and are not negotiable. South Korea (President Lee Jae-myung, since June 2025): reduce military tensions and restore dialogue; in October 2026 he urged the North to resume talks while pledging a stronger military. United States and Japan: complete denuclearisation; Japan also stresses abductions. China: dialogue, stability, no war or chaos."
+      "**Positions.** North Korea: nuclear weapons deter US hostility and are not negotiable. South Korea (President Lee Jae-myung, since June 2025): reduce military tensions and restore dialogue; in October 2026 he urged the North to resume talks while pledging a stronger military. United States and Japan: complete denuclearization; Japan also stresses abductions. China: dialogue, stability, no war or chaos."
      ],
      pro:[
       "**Russia–North Korea.** A treaty with a mutual assistance clause was signed in June 2024; governments and analysts debate its effects on sanctions and regional security.",
@@ -1266,7 +1266,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "In 1949, after losing China’s civil war, the government of the Republic of China (ROC) moved to Taiwan. The Communist Party founded the People’s Republic of China (PRC) in Beijing.",
-      "The PRC says Taiwan is part of China and seeks unification. Taiwan’s government says the ROC is a sovereign state not subordinate to the PRC. Most countries recognise the PRC and keep unofficial ties with Taiwan.",
+      "The PRC says Taiwan is part of China and seeks unification. Taiwan’s government says the ROC is a sovereign state not subordinate to the PRC. Most countries recognize the PRC and keep unofficial ties with Taiwan.",
       "Words carry positions here: “reunification”, “unification”, “independence” and “status quo” each tell you whose view is being expressed.",
       {key:"Attribute every claim to the government that makes it."}
      ],
@@ -1278,7 +1278,7 @@ ICA.addUnit({
       "**Japan.** The 1972 Joint Communiqué: Japan “fully understands and respects” the PRC’s position."
      ],
      pro:[
-      "**Recognition.** As of mid-2026, 12 states recognised the ROC (Reuters factbox, May 2026): Belize, Guatemala, Paraguay, Haiti, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, the Marshall Islands, Palau, Tuvalu, Eswatini and the Holy See.",
+      "**Recognition.** As of mid-2026, 12 states recognized the ROC (Reuters factbox, May 2026): Belize, Guatemala, Paraguay, Haiti, Saint Kitts and Nevis, Saint Lucia, Saint Vincent and the Grenadines, the Marshall Islands, Palau, Tuvalu, Eswatini and the Holy See.",
       "**Analytical lenses.** Deterrence and the military balance; economic interdependence across the Strait; identity change in Taiwan (survey data on identity are often cited); international law and recognition.",
       "**Policy vocabulary.** Distinguish the PRC’s “one-China **principle**” from the US and others’ “one China **policy**”: they are not the same.",
       {warn:"Do not predict; describe stated positions and verifiable events with dates."}
@@ -1289,24 +1289,24 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"south-china-sea-disputes", title:"South China Sea disputes (as of November 2026)", aka:["South China Sea","Spratly and Paracel disputes","code of conduct"], tags:["Asia","security","maritime"],
-    summary:"Who claims what, the 2016 arbitral award in brief, grey-zone incidents and the code of conduct negotiations.",
+    summary:"Who claims what, the 2016 arbitral award in brief, gray-zone incidents and the code of conduct negotiations.",
     levels:{
      starter:[
       "The South China Sea holds busy shipping lanes, fisheries and possible oil and gas. Six governments make overlapping claims to its islands, reefs and waters: the PRC, Taiwan, Vietnam, the Philippines, Malaysia and Brunei.",
       "The PRC and Taiwan base their claims on a dashed line first drawn in the 1940s. In 2016 an arbitral tribunal, in a case brought by the Philippines, ruled against China’s claim to historic rights within the line; China’s government rejected the ruling.",
-      "Today most incidents involve coast guards and fishing fleets rather than navies: what analysts call **grey-zone** activity.",
+      "Today most incidents involve coast guards and fishing fleets rather than navies: what analysts call **gray-zone** activity.",
       {key:"Use each side’s names for features and attribute each claim."}
      ],
      builder:[
       "**Claims.** PRC and Taiwan (dashed line); Vietnam (Paracels and Spratlys); the Philippines (parts of the Spratlys and Scarborough Shoal); Malaysia and Brunei (features and waters off Borneo). Indonesia claims no features but objects where the line overlaps its EEZ.",
       "**Law.** UNCLOS and the 2016 award are covered in Unit 10.",
-      "**Diplomacy.** ASEAN and China signed the non-binding Declaration on the Conduct of Parties (2002) and have negotiated a code of conduct for years. The Philippines aimed to conclude it during its 2026 ASEAN chairmanship; at the May 2026 summit leaders renewed calls for self-restraint (GMA News), and officials hoped to finalise the code at the Manila summit in November 2026, but on 15 November the talks ended without a conclusion: about 80% of a draft was tentatively agreed, whether the code would be binding was still disputed, and no new deadline was set (Al Jazeera).",
+      "**Diplomacy.** ASEAN and China signed the non-binding Declaration on the Conduct of Parties (2002) and have negotiated a code of conduct for years. The Philippines aimed to conclude it during its 2026 ASEAN chairmanship; at the May 2026 summit leaders renewed calls for self-restraint (GMA News), and officials hoped to finalize the code at the Manila summit in November 2026, but on 15 November the talks ended without a conclusion: about 80% of a draft was tentatively agreed, whether the code would be binding was still disputed, and no new deadline was set (Al Jazeera).",
       "**Positions.** China’s government says it has sovereignty over the islands and adjacent waters and rejects the 2016 award; the Philippines’ government calls the award final and binding. The Philippines and Vietnam reject China’s claims and accuse China of coercion; China accuses them of provocation. The United States says it takes no position on sovereignty but supports freedom of navigation and the 2016 award."
      ],
      pro:[
-      "**Grey zone.** Coast guard and maritime militia vessels, water cannon and blockades of resupply missions, for example at Second Thomas Shoal, sit below the threshold of armed conflict.",
+      "**Gray zone.** Coast guard and maritime militia vessels, water cannon and blockades of resupply missions, for example at Second Thomas Shoal, sit below the threshold of armed conflict.",
       "**Theory.** Realists see a power transition at sea; liberals examine institutions and the code of conduct; constructivists study nationalism and maps; legal scholars debate compliance with the award.",
-      "**Sources.** Official statements, ASEAN chairman’s statements, and trackers such as CSIS’s Asia Maritime Transparency Initiative (read as one research centre’s view).",
+      "**Sources.** Official statements, ASEAN chairman’s statements, and trackers such as CSIS’s Asia Maritime Transparency Initiative (read as one research center’s view).",
       {warn:"As of early November 2026 the code of conduct had not been concluded; check the latest ASEAN statements."}
      ]
     },
@@ -1363,7 +1363,7 @@ ICA.addUnit({
     summary:"Scholar of peacebuilding whose ethnographies of the Congo and of interveners launched much of the local turn.",
     levels:{
      starter:[
-      "**Séverine Autesserre** is a professor of political science at Barnard College, Columbia University, who studies peacebuilding through long fieldwork, especially in the eastern Democratic Republic of the Congo, where she has travelled since 2001.",
+      "**Séverine Autesserre** is a professor of political science at Barnard College, Columbia University, who studies peacebuilding through long fieldwork, especially in the eastern Democratic Republic of the Congo, where she has traveled since 2001.",
       "Her argument in plain words: international peacebuilders often look at national politics and miss the local conflicts (over land, chiefs, local power) that keep violence going, and their own everyday habits get in the way."
      ],
      builder:[
@@ -1371,9 +1371,9 @@ ICA.addUnit({
       "**Method.** Ethnography of interveners as well as of local people, with comparative research in places such as Burundi, Cyprus, South Sudan and Timor-Leste."
      ],
      pro:[
-      "**Influence.** Her work is central to the local turn and to debates on the culture of international organisations.",
-      "**Critiques.** Some scholars warn that “local” approaches can idealise local actors; others ask how far ethnographic findings generalise. Pair her with quantitative studies of peacekeeping for a full picture.",
-      {tip:"*Peaceland* is a model of how to study an organisation’s everyday practices for a thesis."}
+      "**Influence.** Her work is central to the local turn and to debates on the culture of international organizations.",
+      "**Critiques.** Some scholars warn that “local” approaches can idealize local actors; others ask how far ethnographic findings generalize. Pair her with quantitative studies of peacekeeping for a full picture.",
+      {tip:"*Peaceland* is a model of how to study an organization’s everyday practices for a thesis."}
      ]
     },
     related:["liberal-peace-debate","peace-operations","ir-fieldwork"],
@@ -1395,7 +1395,7 @@ ICA.addUnit({
      pro:[
       "**Practice.** At UNHCR she oversaw decisions such as assisting internally displaced people inside Iraq in 1991, extending the agency’s work beyond refugees who had crossed borders, a precedent debated by scholars of humanitarianism.",
       "**Japan’s diplomacy.** She is often cited as a figure who gave Japan’s human security policy international credibility.",
-      {tip:"She is a good case for thinking about how individuals and norm entrepreneurs shape international organisations."}
+      {tip:"She is a good case for thinking about how individuals and norm entrepreneurs shape international organizations."}
      ]
     },
     related:["human-security","critical-security-studies","japan-development-cooperation","refugees-and-displacement"],
@@ -1405,18 +1405,18 @@ ICA.addUnit({
   terms:[
    {id:"traditional-security-studies", term:"Traditional security studies", def:"The approach that treats security as the protection of the state from mainly military threats. Walt (1991) defined the field as the study of the threat, use and control of military force.", codex:"critical-security-studies"},
    {id:"critical-security-studies", term:"Critical security studies", def:"A family of approaches (Copenhagen, Welsh, Paris, feminist, postcolonial) that question whose security counts and who decides what is a threat.", codex:"critical-security-studies"},
-   {id:"copenhagen-school", term:"Copenhagen School", def:"The approach of Buzan, Wæver and others that studies security as a speech act (securitisation) across several sectors.", codex:"securitization-theory"},
+   {id:"copenhagen-school", term:"Copenhagen School", def:"The approach of Buzan, Wæver and others that studies security as a speech act (securitization) across several sectors.", codex:"securitization-theory"},
    {id:"welsh-school", term:"Welsh School (Aberystwyth School)", def:"The approach of Ken Booth and Richard Wyn Jones that defines security as emancipation, drawing on Frankfurt School Critical Theory.", codex:"critical-security-studies"},
    {id:"paris-school", term:"Paris School", def:"An approach associated with Didier Bigo that studies security as the everyday practices of police, border and intelligence professionals.", codex:"critical-security-studies"},
    {id:"feminist-security-studies", term:"Feminist security studies", def:"Research that asks how gender shapes who is protected, who is threatened and who is silenced, and treats the state itself as a possible source of insecurity.", codex:"critical-security-studies"},
    {id:"freedom-from-fear", term:"Freedom from fear", def:"The narrow version of human security, focused on protecting people from violence such as landmines, child soldiering and mass atrocities; championed by Canada and Norway.", codex:"human-security"},
    {id:"freedom-from-want", term:"Freedom from want", def:"The broad version of human security, which adds poverty, disease and disasters; championed by Japan.", codex:"human-security"},
    {id:"non-traditional-security", term:"Non-traditional security", def:"A term common in Asian scholarship and policy for non-military threats such as disease, disasters, migration and environmental change.", codex:"critical-security-studies"},
-   {id:"regional-security-complex", term:"Regional security complex", def:"A group of states whose security concerns are so linked that they cannot be analysed apart from each other (Buzan and Wæver, 2003).", codex:"regional-security-complex-theory"},
+   {id:"regional-security-complex", term:"Regional security complex", def:"A group of states whose security concerns are so linked that they cannot be analyzed apart from each other (Buzan and Wæver, 2003).", codex:"regional-security-complex-theory"},
    {id:"greed-and-grievance", term:"Greed versus grievance", def:"The debate over whether civil wars are better explained by rebels’ opportunity to profit or by political and economic grievances.", codex:"civil-war-onset"},
    {id:"feasibility-hypothesis", term:"Feasibility hypothesis", def:"Collier, Hoeffler and Rohner’s argument (2009) that where rebellion is financially and militarily feasible it will occur, whatever its motive.", codex:"civil-war-onset"},
    {id:"resource-curse", term:"Resource curse", def:"The pattern in which countries rich in natural resources, especially oil, tend to have weaker institutions, more corruption or more conflict than expected.", codex:"civil-war-onset"},
-   {id:"new-wars", term:"New wars", def:"Kaldor’s term (1999) for wars fought over identity by networks of state and non-state actors, mostly against civilians, financed by a globalised war economy.", codex:"new-wars-debate"},
+   {id:"new-wars", term:"New wars", def:"Kaldor’s term (1999) for wars fought over identity by networks of state and non-state actors, mostly against civilians, financed by a globalized war economy.", codex:"new-wars-debate"},
    {id:"war-economy", term:"War economy", def:"The ways an armed conflict is financed and sustained, such as looting, smuggling, taxation of trade, diaspora remittances and diverted aid.", codex:"new-wars-debate"},
    {id:"selective-violence", term:"Selective violence", def:"Violence targeted at particular individuals, often on the basis of local information, used by armed groups to control territory and deter defection (Kalyvas).", codex:"new-wars-debate"},
    {id:"commitment-problem", term:"Commitment problem", def:"A situation in which a party cannot credibly promise to keep a deal in the future, for example when rebels fear a government will cheat once they have disarmed.", codex:"civil-war-termination"},
@@ -1425,14 +1425,14 @@ ICA.addUnit({
    {id:"conflict-recurrence", term:"Conflict recurrence", def:"The return of armed conflict in a country after a previous war has ended.", codex:"civil-war-termination"},
    {id:"peace-operation", term:"Peace operation", def:"A broad term for missions that observe ceasefires, keep or build peace, protect civilians or administer territory, whether led by the UN, a regional body or a coalition.", codex:"peace-operations"},
    {id:"multidimensional-peacekeeping", term:"Multidimensional peacekeeping", def:"Peacekeeping that adds civilian tasks such as elections, policing, human rights and refugee return to military ones.", codex:"peace-operations"},
-   {id:"robust-peacekeeping", term:"Robust peacekeeping", def:"Peacekeeping authorised to use force, beyond self-defence, to defend its mandate and protect civilians.", codex:"peace-operations"},
+   {id:"robust-peacekeeping", term:"Robust peacekeeping", def:"Peacekeeping authorized to use force, beyond self-defense, to defend its mandate and protect civilians.", codex:"peace-operations"},
    {id:"protection-of-civilians", term:"Protection of civilians (PoC)", def:"A peacekeeping task, mandated since 1999, to protect civilians under threat of physical violence.", codex:"peace-operations"},
    {id:"transitional-administration", term:"Transitional administration", def:"A mission in which the UN temporarily exercises governmental authority over a territory, as in Kosovo and East Timor in 1999.", codex:"peace-operations"},
-   {id:"ddr", term:"DDR (disarmament, demobilisation and reintegration)", def:"The process of collecting fighters’ weapons, disbanding armed units and helping former combatants return to civilian life.", codex:"peacebuilding"},
+   {id:"ddr", term:"DDR (disarmament, demobilization and reintegration)", def:"The process of collecting fighters’ weapons, disbanding armed units and helping former combatants return to civilian life.", codex:"peacebuilding"},
    {id:"security-sector-reform", term:"Security sector reform (SSR)", def:"Rebuilding a country’s army, police, intelligence and courts so that they are effective and under civilian, accountable control.", codex:"peacebuilding"},
    {id:"liberal-peace", term:"Liberal peace", def:"The model of peacebuilding that promotes elections, market economies, human rights and the rule of law in war-torn societies.", codex:"liberal-peace-debate"},
    {id:"hybrid-peace", term:"Hybrid peace", def:"Mac Ginty’s term for the mix of international and local practices, institutions and power that emerges after intervention.", codex:"liberal-peace-debate"},
-   {id:"local-turn", term:"Local turn", def:"The shift in peace research towards local actors, conflicts and everyday practices, rather than national elites and international templates.", codex:"liberal-peace-debate"},
+   {id:"local-turn", term:"Local turn", def:"The shift in peace research toward local actors, conflicts and everyday practices, rather than national elites and international templates.", codex:"liberal-peace-debate"},
    {id:"everyday-peace", term:"Everyday peace", def:"Mac Ginty’s term for the small, routine acts by which people avoid or reduce violence in divided societies.", codex:"liberal-peace-debate"},
    {id:"women-peace-and-security", term:"Women, Peace and Security (WPS)", def:"The UN Security Council agenda, begun with resolution 1325 (2000), on women’s participation and protection in conflict and peace processes.", codex:"women-peace-and-security"},
    {id:"unscr-1325", term:"Resolution 1325", def:"UN Security Council resolution of 31 October 2000, the first to link women’s experiences of conflict to international peace and security.", codex:"women-peace-and-security"},
@@ -1447,7 +1447,7 @@ ICA.addUnit({
    {id:"arms-trade-treaty", term:"Arms Trade Treaty (ATT)", def:"A treaty adopted in 2013 and in force since 2014 that regulates international transfers of conventional arms and bans transfers for use in genocide or war crimes.", codex:"conventional-arms-control"},
    {id:"small-arms-light-weapons", term:"Small arms and light weapons (SALW)", def:"Weapons that one or a few people can carry and use, such as rifles and machine guns; governed mainly by a UN Programme of Action (2001).", codex:"conventional-arms-control"},
    {id:"lethal-autonomous-weapons", term:"Lethal autonomous weapons systems (LAWS)", def:"Weapons that, once activated, select and engage targets without further human intervention; under discussion in the CCW since 2014.", codex:"autonomous-weapons-governance"},
-   {id:"meaningful-human-control", term:"Meaningful human control", def:"A standard proposed by campaigners for how much human control the use of autonomous weapons should require. The 2026 CCW expert report instead speaks of context-appropriate human judgement and control.", codex:"autonomous-weapons-governance"},
+   {id:"meaningful-human-control", term:"Meaningful human control", def:"A standard proposed by campaigners for how much human control the use of autonomous weapons should require. The 2026 CCW expert report instead speaks of context-appropriate human judgment and control.", codex:"autonomous-weapons-governance"},
    {id:"counter-terrorism", term:"Counter-terrorism", def:"Policies to prevent and respond to terrorism, from policing and sanctions to military force; at the UN, Security Council regimes and the General Assembly’s 2006 Global Strategy.", codex:"terrorism-ir"},
    {id:"preventing-violent-extremism", term:"Preventing violent extremism (PVE)", def:"An approach, promoted by the UN from 2015, that addresses the conditions that drive recruitment to violent groups rather than only security measures.", codex:"terrorism-ir"},
    {id:"hub-and-spoke", term:"Hub and spoke", def:"The US system of separate bilateral alliances in Asia (the hub in Washington, spokes to Japan, South Korea, the Philippines, Australia and Thailand).", codex:"asia-pacific-security-architecture"},
@@ -1457,11 +1457,11 @@ ICA.addUnit({
    {id:"quad", term:"Quad", def:"The Quadrilateral Security Dialogue of Australia, India, Japan and the United States, revived in 2017; a grouping, not an alliance.", codex:"asia-pacific-security-architecture"},
    {id:"aukus", term:"AUKUS", def:"A partnership of Australia, the United Kingdom and the United States, announced in 2021, to provide Australia with nuclear-powered submarines and develop advanced technologies.", codex:"asia-pacific-security-architecture"},
    {id:"korean-armistice", term:"Korean Armistice Agreement", def:"The agreement of 27 July 1953 that halted the Korean War, signed by the UN Command, the Korean People’s Army and the Chinese People’s Volunteers. No peace treaty has followed.", codex:"korean-peninsula-security"},
-   {id:"six-party-talks", term:"Six-Party Talks", def:"Negotiations from 2003 to 2009 on North Korea’s nuclear programme among the two Koreas, China, Japan, Russia and the United States.", codex:"korean-peninsula-security"},
+   {id:"six-party-talks", term:"Six-Party Talks", def:"Negotiations from 2003 to 2009 on North Korea’s nuclear program among the two Koreas, China, Japan, Russia and the United States.", codex:"korean-peninsula-security"},
    {id:"one-china-principle", term:"One-China principle", def:"The PRC’s position that there is one China, that Taiwan is part of it, and that the PRC government is China’s sole legitimate government.", codex:"cross-strait-relations"},
-   {id:"one-china-policy", term:"One China policy", def:"The policy of the United States and others of recognising the PRC while acknowledging or noting its position on Taiwan. It differs from country to country and from the PRC’s principle.", codex:"cross-strait-relations"},
+   {id:"one-china-policy", term:"One China policy", def:"The policy of the United States and others of recognizing the PRC while acknowledging or noting its position on Taiwan. It differs from country to country and from the PRC’s principle.", codex:"cross-strait-relations"},
    {id:"code-of-conduct-scs", term:"Code of conduct (South China Sea)", def:"A set of rules that ASEAN and China have negotiated for years to manage tensions in the South China Sea. It was still not concluded after the November 2026 Manila meetings, partly because they disagree on whether it should be legally binding.", codex:"south-china-sea-disputes"},
-   {id:"grey-zone", term:"Grey-zone activity", def:"Coercive actions below the threshold of armed conflict, such as coast guard blockades, water cannon or maritime militia swarms.", codex:"south-china-sea-disputes"}
+   {id:"grey-zone", term:"Gray-zone activity", def:"Coercive actions below the threshold of armed conflict, such as coast guard blockades, water cannon or maritime militia swarms.", codex:"south-china-sea-disputes"}
   ],
   bank:[
    /* ---- Lesson 1 ---- */
@@ -1469,16 +1469,16 @@ ICA.addUnit({
      {t:"Stephen Walt (1991)", ok:true, why:"Right: in “The Renaissance of Security Studies”, defending a narrow field."},
      {t:"Ken Booth (1991)", why:"Booth argued the opposite, for security as emancipation."},
      {t:"Barry Buzan (1983)", why:"Buzan’s *People, States and Fear* widened security into several sectors."},
-     {t:"Ole Wæver (1995)", why:"Wæver developed securitisation theory, a widening approach."}]},
-   {id:"e4u12-q02", lesson:"e4u12-l1", level:2, q:"A government calls water scarcity “an existential threat to the nation” and suspends environmental review of a dam. Which approach is best suited to analysing this move?", options:[
-     {t:"Securitisation theory", ok:true, why:"Yes. In the Copenhagen School’s securitisation theory, an actor presents an issue as an existential threat to justify extraordinary measures: a securitising move."},
+     {t:"Ole Wæver (1995)", why:"Wæver developed securitization theory, a widening approach."}]},
+   {id:"e4u12-q02", lesson:"e4u12-l1", level:2, q:"A government calls water scarcity “an existential threat to the nation” and suspends environmental review of a dam. Which approach is best suited to analyzing this move?", options:[
+     {t:"Securitisation theory", ok:true, why:"Yes. In the Copenhagen School’s securitization theory, an actor presents an issue as an existential threat to justify extraordinary measures: a securitizing move."},
      {t:"Traditional security studies", why:"It would mainly ask about military threats, not how a non-military issue is framed as security."},
      {t:"The democratic peace", why:"That theory is about wars between democracies, not framing."},
      {t:"Regime theory", why:"It studies cooperation through institutions, not how threats are constructed."}]},
    {id:"e4u12-q03", lesson:"e4u12-l1", level:1, q:"Which school defines security as emancipation?", options:[
      {t:"The Welsh School", ok:true, why:"Right: the Welsh (Aberystwyth) School of Booth (1991) and Wyn Jones (1999), drawing on Critical Theory."},
      {t:"The Paris School", why:"It studies security practices of professionals."},
-     {t:"The Copenhagen School", why:"It studies securitisation, often preferring desecuritisation."},
+     {t:"The Copenhagen School", why:"It studies securitization, often preferring desecuritization."},
      {t:"Structural realism", why:"Realists focus on state survival in anarchy."}]},
    {id:"e4u12-q04", lesson:"e4u12-l1", level:2, q:"Priya argues that in her case study the main threats to the state come from insurgencies and contested borders inside the country, not from foreign armies. Whose work supports this framing?", options:[
      {t:"Mohammed Ayoob’s security predicament", ok:true, why:"Yes. In *The Third World Security Predicament* (1995), Ayoob argued that many postcolonial states face mainly internal threats rooted in incomplete state-building."},
@@ -1503,13 +1503,13 @@ ICA.addUnit({
    {id:"e4u12-q08", lesson:"e4u12-l1", level:2, q:"In regional security complex theory, what is an “insulator”?", options:[
      {t:"A state between complexes that separates or absorbs their dynamics", ok:true, why:"Right, such as Afghanistan at the edge of South Asia in Buzan and Wæver’s account."},
      {t:"A great power that suppresses a region’s dynamics", why:"That is overlay."},
-     {t:"An international organisation that mediates disputes", why:"Not the theory’s use of the term."},
+     {t:"An international organization that mediates disputes", why:"Not the theory’s use of the term."},
      {t:"A neutral state with no armed forces", why:"Insulators are defined by location between complexes, not by neutrality."}]},
    {id:"e4u12-q09", lesson:"e4u12-l1", level:3, q:"Mei is writing about the Mekong. She wants to show both upstream and downstream views without taking sides. Which sentence best does this?", options:[
      {t:"“China’s government says its dams bring clean power and dry-season water; some downstream researchers and communities say they alter flows and fisheries.”", ok:true, why:"Each position is attributed to who holds it, with no verdict."},
      {t:"“China’s dams are destroying the Mekong’s fisheries, and downstream communities are paying the price.”", why:"A contested claim stated as fact, attributed to no one."},
      {t:"“Both sides make claims, but the evidence clearly shows that the dams bring clean power and that downstream complaints about flows and fisheries are exaggerated.”", why:"It mentions both sides but then gives a verdict, without evidence or attribution."},
-     {t:"“The Mekong has no security dimension.”", why:"Ignores livelihoods and regional diplomacy, and is itself a judgement."}]},
+     {t:"“The Mekong has no security dimension.”", why:"Ignores livelihoods and regional diplomacy, and is itself a judgment."}]},
    /* ---- Lesson 2 ---- */
    {id:"e4u12-q10", lesson:"e4u12-l2", level:1, q:"Which variable was central to Collier and Hoeffler’s “greed” argument?", options:[
      {t:"Primary commodity exports", ok:true, why:"Right: dependence on them, which they read as a source of lootable finance for rebels."},
@@ -1544,7 +1544,7 @@ ICA.addUnit({
    {id:"e4u12-q16", lesson:"e4u12-l2", level:3, q:"A rebel commander says: “If we hand in our guns, who will stop them arresting us next year?” Which concept and remedy fit best?", options:[
      {t:"A commitment problem; remedies include outside guarantees and power-sharing", ok:true, why:"Exactly Walter’s mechanism and Hartzell and Hoddie’s remedy."},
      {t:"A spoiler problem; remedy is to defeat the commander", why:"He isn’t sabotaging a deal; he fears it will be broken."},
-     {t:"The resource curse; remedy is to nationalise mines", why:"Unrelated to his stated fear."},
+     {t:"The resource curse; remedy is to nationalize mines", why:"Unrelated to his stated fear."},
      {t:"The stability–instability paradox; remedy is nuclear deterrence", why:"A nuclear concept, irrelevant here."}]},
    {id:"e4u12-q17", lesson:"e4u12-l2", level:2, q:"What did Monica Duffy Toft argue in *Securing the Peace* (2010)?", options:[
      {t:"Wars ended by victory recur less often than negotiated ones", ok:true, why:"Right, especially rebel victory: a challenge to the preference for settlements. She also stressed security sector reform."},
@@ -1573,8 +1573,8 @@ ICA.addUnit({
      {t:"Only police matter, not troops", why:"They found that both troops and police were associated with fewer civilian deaths (observers were not)."},
      {t:"Peacekeeping has no measurable effect", why:"They found clear associations."}]},
    {id:"e4u12-q22", lesson:"e4u12-l3", level:2, q:"Paris recommended “Institutionalization Before Liberalization.” What policy follows?", options:[
-     {t:"Build institutions first, and liberalise later", ok:true, why:"Right: build effective institutions before rapid elections and market reforms. Rushed liberalisation could reignite conflict in fragile states."},
-     {t:"Never hold elections after war", why:"He favoured delaying and preparing, not abolishing, elections."},
+     {t:"Build institutions first, and liberalize later", ok:true, why:"Right: build effective institutions before rapid elections and market reforms. Rushed liberalization could reignite conflict in fragile states."},
+     {t:"Never hold elections after war", why:"He favored delaying and preparing, not abolishing, elections."},
      {t:"Hold elections and open markets as soon as fighting stops", why:"The opposite of his advice."},
      {t:"Let markets replace institutions", why:"Not his argument."}]},
    {id:"e4u12-q23", lesson:"e4u12-l3", level:1, q:"What is hybrid peace, in Mac Ginty’s sense?", options:[
@@ -1583,7 +1583,7 @@ ICA.addUnit({
      {t:"A peacekeeping mission run jointly by the UN and a regional body", why:"Joint missions are sometimes called “hybrid”, but Mac Ginty’s concept is the mix of practices that emerges after intervention."},
      {t:"Peace between two hybrid regimes", why:"Not the concept."}]},
    {id:"e4u12-q24", lesson:"e4u12-l3", level:3, q:"Lucía’s report praises a donor for handing a peace project to “local partners” and then cutting its funding. A critic of the local turn would most likely say:", options:[
-     {t:"“Local ownership” can let outsiders shed cost and blame, and “the local” has its own elites", ok:true, why:"Yes. Local ownership can shift responsibility and cost away from outsiders, and local partners have their own elites and exclusions: the main warnings against romanticising the local."},
+     {t:"“Local ownership” can let outsiders shed cost and blame, and “the local” has its own elites", ok:true, why:"Yes. Local ownership can shift responsibility and cost away from outsiders, and local partners have their own elites and exclusions: the main warnings against romanticizing the local."},
      {t:"Local partners should never be involved, because only outside experts can build lasting peace", why:"No critic in this debate argues that."},
      {t:"Funding is irrelevant to peace", why:"Funding is part of the critique."},
      {t:"The local turn requires military force", why:"Not part of the argument."}]},
@@ -1594,7 +1594,7 @@ ICA.addUnit({
      {t:"Twenty-five", why:"There are ten."}]},
    {id:"e4u12-q26", lesson:"e4u12-l3", level:2, q:"Which finding did Krause, Krause and Bränfors (2018) report?", options:[
      {t:"Women signatories were linked to more durable peace", ok:true, why:"Right: agreements signed by women delegates were associated with more durable peace, especially where they had ties to women’s civil society (*International Interactions*, 2018)."},
-     {t:"Women are naturally more peaceful than men", why:"They made no such claim about nature; that view is criticised as essentialist."},
+     {t:"Women are naturally more peaceful than men", why:"They made no such claim about nature; that view is criticized as essentialist."},
      {t:"Women’s participation had no link to how long peace lasted", why:"The opposite of their finding."},
      {t:"Only women mediators matter", why:"Their study focused on signatories and civil society links."}]},
    {id:"e4u12-q27", lesson:"e4u12-l3", level:2, q:"As of 2026, which statement about UNIFIL in Lebanon is accurate?", options:[
@@ -1610,7 +1610,7 @@ ICA.addUnit({
      {t:"Article III", why:"That concerns safeguards."}]},
    {id:"e4u12-q29", lesson:"e4u12-l4", level:1, q:"Which states with nuclear weapons have never joined the NPT?", options:[
      {t:"India, Israel and Pakistan", ok:true, why:"Right. North Korea joined and announced its withdrawal in 2003."},
-     {t:"China, France and the United Kingdom", why:"All three are recognised nuclear-weapon states inside the NPT."},
+     {t:"China, France and the United Kingdom", why:"All three are recognized nuclear-weapon states inside the NPT."},
      {t:"Russia and the United States", why:"Both are parties."},
      {t:"Japan and South Korea", why:"Both are non-nuclear-weapon states party to the NPT."}]},
    {id:"e4u12-q30", lesson:"e4u12-l4", level:1, q:"When did the TPNW enter into force?", options:[
@@ -1634,7 +1634,7 @@ ICA.addUnit({
      {t:"Japan and South Korea", why:"Japan is a party and did not withdraw; South Korea has not joined."},
      {t:"Brazil and Mexico", why:"Not among the withdrawing states."}]},
    {id:"e4u12-q34", lesson:"e4u12-l4", level:2, q:"What does the Arms Trade Treaty require of exporting states?", options:[
-     {t:"Not to authorise transfers for genocide or certain war crimes", ok:true, why:"Right (Articles 6 and 7). Exporting states must also assess the risks of each export."},
+     {t:"Not to authorize transfers for genocide or certain war crimes", ok:true, why:"Right (Articles 6 and 7). Exporting states must also assess the risks of each export."},
      {t:"To stop all arms exports", why:"It regulates, not bans, the trade."},
      {t:"To export arms only to democracies with good human rights records", why:"No such rule."},
      {t:"To register all civilian firearms", why:"Domestic ownership is outside its scope."}]},
@@ -1682,13 +1682,13 @@ ICA.addUnit({
    {id:"e4u12-q43", lesson:"e4u12-l5", level:3, q:"Which sentence on cross-Strait relations is accurate and neutral?", options:[
      {t:"“The PRC says Taiwan is part of China; Taiwan’s government says the ROC is sovereign and not subordinate to the PRC.”", ok:true, why:"Each position is attributed. The PRC also says it seeks reunification."},
      {t:"“Taiwan is a province of China.”", why:"One side’s position stated as fact."},
-     {t:"“Taiwan is an independent country recognised by most states.”", why:"Inaccurate: 12 states recognised the ROC as of mid-2026, and the status claim is one side’s."},
-     {t:"“The United States formally recognises Taiwan as a sovereign state and keeps official diplomatic relations with Taipei.”", why:"Inaccurate: the US recognises the PRC and keeps unofficial ties with Taiwan."}]},
+     {t:"“Taiwan is an independent country recognized by most states.”", why:"Inaccurate: 12 states recognized the ROC as of mid-2026, and the status claim is one side’s."},
+     {t:"“The United States formally recognizes Taiwan as a sovereign state and keeps official diplomatic relations with Taipei.”", why:"Inaccurate: the US recognizes the PRC and keeps unofficial ties with Taiwan."}]},
    {id:"e4u12-q44", lesson:"e4u12-l5", level:2, q:"A coast guard vessel blocks a supply mission to a disputed reef using water cannon, without firing weapons. Analysts would most likely call this:", options:[
-     {t:"Grey-zone activity", ok:true, why:"Right: coercion below the threshold of armed conflict."},
+     {t:"Gray-zone activity", ok:true, why:"Right: coercion below the threshold of armed conflict."},
      {t:"An interstate war", why:"No armed conflict at that level is involved."},
      {t:"Peacekeeping", why:"Not a peace operation."},
-     {t:"A securitising move", why:"That is a speech act; this is a physical action at sea."}]},
+     {t:"A securitizing move", why:"That is a speech act; this is a physical action at sea."}]},
    {id:"e4u12-q45", lesson:"e4u12-l5", level:2, q:"As of mid-2026, what was the status of the ASEAN–China code of conduct for the South China Sea?", options:[
      {t:"Still under negotiation", ok:true, why:"Right. The Philippines aimed to conclude it during its 2026 ASEAN chairmanship, as reported around the May 2026 summit; it was still not concluded in early November 2026."},
      {t:"Signed and in force since 2002", why:"2002 was the non-binding Declaration on the Conduct of Parties."},

@@ -22,7 +22,7 @@ ICA.addUnit({
      "Name the main kinds of academic paper and what each one gives you",
      "Use the front matter (title, abstract, DOI, dates) to decide quickly whether a paper is relevant",
      "Explain what each IMRaD section is for and where to find the aim, the method, the findings and the limitations",
-     "Recognise how humanities and theoretical articles are organised differently",
+     "Recognise how humanities and theoretical articles are organized differently",
      "Use the back matter: funding, competing interests, data availability and corrections"
    ],
    learn:[
@@ -30,24 +30,24 @@ ICA.addUnit({
       {lead:"A research paper is a formal report of a piece of research, written for other people who know the field, so they can understand it, check it and build on it."},
       "Think of a paper as a researcher’s case in a long public conversation. It says: here is the question, here is exactly what we did, here is what we found, and here is what we think it means. Most journals send papers to other experts before publishing them, a process called [[peer-review|peer review]] (see {{peer-review}}). That check helps, but it doesn’t guarantee a paper is right; Lesson 6 shows you how to judge it yourself.",
       "Not every paper reports a new study. Knowing the type tells you what you can take from it.",
-      {table:[["Type","What it gives you"],["Original research (empirical) article","A new study: data someone collected or analysed, with methods and results"],["Review article","A summary of many studies on one question; a good place to start a topic"],["Theoretical or conceptual paper","A new idea, model or argument, often with no new data"],["Methods paper","A new or improved way to measure or analyse something"],["Case report or case study","A detailed account of one person, organisation, event or place"],["Commentary, editorial or letter","An expert opinion or a reply to another paper; useful, but not evidence on its own"]]},
+      {table:[["Type","What it gives you"],["Original research (empirical) article","A new study: data someone collected or analyzed, with methods and results"],["Review article","A summary of many studies on one question; a good place to start a topic"],["Theoretical or conceptual paper","A new idea, model or argument, often with no new data"],["Methods paper","A new or improved way to measure or analyze something"],["Case report or case study","A detailed account of one person, organization, event or place"],["Commentary, editorial or letter","An expert opinion or a reply to another paper; useful, but not evidence on its own"]]},
       "You’ll also meet **conference papers** (in computing and engineering these can be as important as journal articles) and **[[preprint|preprints]]**, which are shared publicly before peer review. Preprints can be excellent and fast, but nobody outside the team has checked them yet, so read them with extra care."
     ]},
     {h:"Before the first heading: the front matter", body:[
       "The first page tells you a lot before you read a single paragraph of argument.",
       {list:[
-        "**Title.** Often states the question, the population and sometimes the design (“A randomised trial of…”, “Women’s letters in…”).",
+        "**Title.** Often states the question, the population and sometimes the design (“A randomized trial of…”, “Women’s letters in…”).",
         "**Authors and affiliations.** Who did the work and where. An affiliation with a company or campaign group isn’t a problem in itself, but note it.",
         "**Dates.** Many journals print when the paper was received, accepted and published. A long gap often means several rounds of revision.",
-        "**Abstract.** A summary of 150–300 words. A *structured* abstract has labelled parts (Background, Methods, Results, Conclusions); an unstructured one is a single paragraph.",
+        "**Abstract.** A summary of 150–300 words. A *structured* abstract has labeled parts (Background, Methods, Results, Conclusions); an unstructured one is a single paragraph.",
         "**Keywords and DOI.** The **DOI** (Digital Object Identifier) is a permanent ID for the paper. Writing it as a link, like `https://doi.org/10.5555/abc123`, takes anyone straight to it."
       ]},
-      {lab:"cl-doi", t:"Practise: write a DOI as a link"},
+      {lab:"cl-doi", t:"Practice: write a DOI as a link"},
       {warn:"The abstract is the authors’ own summary, written to persuade busy readers. It’s the best way to decide whether to read on, but the worst place to stop: an abstract can sound more certain or more positive than the full results support, and it leaves out the detail you need to judge the evidence. Use it to decide, then check inside."}
     ]},
     {h:"IMRaD: the shape of most empirical papers", body:[
       "Most research articles in the sciences, health and social sciences follow a pattern called [[imrad|IMRaD]]: **I**ntroduction, **M**ethods, **R**esults **a**nd **D**iscussion. Each section answers one question, so once you know the pattern you can jump straight to the part you need.",
-      {table:[["Section","Question it answers","Look for"],["Introduction","Why do this study?","What’s already known, the gap, and the aim or [[hypothesis]] (usually in the last paragraph)"],["Methods","What exactly did they do?","Who took part, the design, what was measured and how it was analysed"],["Results","What did they find?","Numbers, tables, figures, quotes from participants"],["Discussion","What does it mean?","The main finding restated, comparison with other studies, limitations, implications"]]},
+      {table:[["Section","Question it answers","Look for"],["Introduction","Why do this study?","What’s already known, the gap, and the aim or [[hypothesis]] (usually in the last paragraph)"],["Methods","What exactly did they do?","Who took part, the design, what was measured and how it was analyzed"],["Results","What did they find?","Numbers, tables, figures, quotes from participants"],["Discussion","What does it mean?","The main finding restated, comparison with other studies, limitations, implications"]]},
       {fig:'<svg viewBox="0 0 340 330"><path class="d-lup" d="M30 10 H310 L230 80 H110 Z" stroke-width="2"/><text x="170" y="38" text-anchor="middle">Introduction</text><text class="s" x="170" y="58" text-anchor="middle">wide topic → narrow gap</text><rect class="d-soft" x="110" y="90" width="120" height="60" rx="6" stroke-width="2"/><text x="170" y="116" text-anchor="middle">Methods</text><text class="s" x="170" y="136" text-anchor="middle">what we did</text><rect class="d-soft" x="110" y="160" width="120" height="60" rx="6" stroke-width="2"/><text x="170" y="186" text-anchor="middle">Results</text><text class="s" x="170" y="206" text-anchor="middle">what we found</text><path class="d-sage" d="M110 230 H230 L310 300 H30 Z" stroke-width="2"/><text x="170" y="262" text-anchor="middle">Discussion</text><text class="s" x="170" y="282" text-anchor="middle">narrow finding → wide meaning</text><text class="s" x="170" y="322" text-anchor="middle">The “hourglass”: broad, narrow, broad</text></svg>', alt:"An hourglass shape. The Introduction narrows from a wide topic to a narrow gap; Methods and Results are narrow boxes; the Discussion widens from the narrow finding back out to its wider meaning.", cap:"IMRaD is often drawn as an hourglass: the paper narrows to one precise study, then widens again to say what it means."},
       "The pattern is younger than it looks. A survey of four leading medical journals (Sollaci and Pereira, 2004) found IMRaD first appearing in the 1940s, used by most articles only in the 1970s, and the only pattern for original papers by the 1980s.",
       {h:"Common variations"},
@@ -60,13 +60,13 @@ ICA.addUnit({
     ]},
     {h:"Inside each section", body:[
       "**The Introduction** reviews earlier research and argues that something is missing. Its last paragraph usually states the aim, research question or hypothesis. If you remember one sentence from an introduction, make it that one.",
-      "**The [[methods-section|Methods]]** section is the recipe. It should let another researcher repeat the study. Look for who was studied (the [[sample]]) and how they were chosen; the design (for example a survey, an [[experiment]], interviews or an analysis of existing records); what was measured and with which instruments; and how the data were analysed. Lessons 3 and 6 show what to look for here.",
+      "**The [[methods-section|Methods]]** section is the recipe. It should let another researcher repeat the study. Look for who was studied (the [[sample]]) and how they were chosen; the design (for example a survey, an [[experiment]], interviews or an analysis of existing records); what was measured and with which instruments; and how the data were analyzed. Lessons 3 and 6 show what to look for here.",
       "**The [[results-section|Results]]** section reports what was found, ideally without interpretation. Figures and tables carry much of the weight; the text points to them. Lessons 2 and 5 show how to read them.",
       "**The [[discussion-section|Discussion]]** interprets. It usually opens by restating the main finding, compares it with other studies, admits the [[study-limitations|limitations]] and ends with implications and ideas for future research. This is where authors are most tempted to stretch, so compare its claims with the Results."
     ]},
     {h:"Other shapes: humanities, theory and more", body:[
       "Not all scholarship is a report of a study. In history, literature, philosophy, law, religious studies and the arts, an article is usually an **argued essay**. There is rarely a Methods section. Instead the author states a thesis early, then builds a case section by section, using evidence such as archival documents, texts, artworks or legal cases, and engaging with what other scholars have argued. Section headings are often descriptive or even poetic, and some articles have no abstract at all.",
-      {ex:"An invented history article, “Ledgers and Longing: Shopkeepers’ Credit in a Port Town, 1890–1910”, opens with a scene from one shop’s account book. Its third paragraph states the thesis: credit records reveal social ties that official trade statistics miss. Four sections follow, each analysing a different set of archival sources, and the conclusion returns to the opening scene. The ‘method’ is there, but woven into the argument and the footnotes.", label:"Worked example (invented)"},
+      {ex:"An invented history article, “Ledgers and Longing: Shopkeepers’ Credit in a Port Town, 1890–1910”, opens with a scene from one shop’s account book. Its third paragraph states the thesis: credit records reveal social ties that official trade statistics miss. Four sections follow, each analyzing a different set of archival sources, and the conclusion returns to the opening scene. The ‘method’ is there, but woven into the argument and the footnotes.", label:"Worked example (invented)"},
       {table:[["Shape","Typical field","Where the main claim is"],["IMRaD report","Sciences, health, many social sciences","Aim at end of Introduction; answer at start of Discussion"],["Argued essay","Humanities, law, some social sciences","Thesis in the Introduction, defended throughout"],["Definition–theorem–proof","Mathematics, theoretical computing","The theorems, stated precisely, then proved"],["Review","Any field","The summary of what many studies show, often in a table"]]},
       {tip:"To find the thesis of a humanities article, read the first few paragraphs slowly and look for a sentence that takes a position someone could disagree with. Then read the conclusion: the thesis usually comes back there in different words."}
     ]},
@@ -91,14 +91,14 @@ ICA.addUnit({
       ["Results","What did the data show?","Results reports findings, ideally without interpretation."],
       ["Discussion","What does it mean, and what are its limits?","The discussion interprets the findings, compares them with other studies and admits limitations."]
     ]},
-    {id:"t4u3-l1-x2", type:"sort", q:"These sentences come from an invented study of a community gardening programme. Which section would each most likely appear in?", buckets:["Introduction","Methods","Results","Discussion"], items:[
+    {id:"t4u3-l1-x2", type:"sort", q:"These sentences come from an invented study of a community gardening program. Which section would each most likely appear in?", buckets:["Introduction","Methods","Results","Discussion"], items:[
       {t:"“Little is known about whether shared gardens reduce loneliness among older adults.”", b:0, why:"Pointing out a gap in what’s known is the job of the introduction."},
-      {t:"“We recruited 86 residents aged 65 and over through three community centres.”", b:1, why:"Who took part and how they were found is a methods detail."},
+      {t:"“We recruited 86 residents aged 65 and over through three community centers.”", b:1, why:"Who took part and how they were found is a methods detail."},
       {t:"“Loneliness scores fell by an average of 3.1 points in the garden group.”", b:2, why:"A specific finding with a number belongs in the results."},
       {t:"“Because participants volunteered, they may have been more sociable to begin with.”", b:3, why:"Admitting a limitation and what it might mean is part of the discussion."},
       {t:"“Loneliness was measured with a validated 20-item questionnaire.”", b:1, why:"How a variable was measured is part of the methods."},
       {t:"“These findings are consistent with earlier studies of group volunteering.”", b:3, why:"Comparing your findings with other studies is interpretation, so it belongs in the discussion."},
-      {t:"“This study asks whether a 12-week gardening programme reduces loneliness.”", b:0, why:"Stating the aim or question usually closes the introduction."}
+      {t:"“This study asks whether a 12-week gardening program reduces loneliness.”", b:0, why:"Stating the aim or question usually closes the introduction."}
     ]},
     {id:"t4u3-l1-x3", type:"mcq", q:"Amara opens a philosophy journal article and finds no Methods or Results headings, just sections titled “I. The Puzzle”, “II. Two Replies”, “III. A Better Answer”. What should she conclude?", options:[
       {t:"It’s an argued essay; she should follow how each section supports the thesis", ok:true, why:"Humanities and philosophy articles usually argue a thesis through sections rather than reporting a study, so there’s no Methods heading to find. Look for the thesis early on."},
@@ -130,8 +130,8 @@ ICA.addUnit({
     ]},
     {id:"t4u3-l1-x6", type:"mcq", q:"Which statements about abstracts are accurate? Choose all that apply.", options:[
       {t:"They help you decide quickly whether a paper is relevant to your question", ok:true, why:"That’s exactly what they’re for."},
-      {t:"They are written by the authors, so they can present results more favourably than the full paper", ok:true, why:"Abstracts are the authors’ own summary and can overstate. Check the claims against the Results."},
-      {t:"A structured abstract has labelled parts such as Background, Methods, Results and Conclusions", ok:true, why:"That’s what ‘structured’ means. Many health journals require them."},
+      {t:"They are written by the authors, so they can present results more favorably than the full paper", ok:true, why:"Abstracts are the authors’ own summary and can overstate. Check the claims against the Results."},
+      {t:"A structured abstract has labeled parts such as Background, Methods, Results and Conclusions", ok:true, why:"That’s what ‘structured’ means. Many health journals require them."},
       {t:"If you’ve read the abstract, you can safely cite the paper’s findings", why:"An abstract leaves out the detail you need to judge the evidence (sample, measures, uncertainty). Read at least the Methods and Results before relying on a finding."},
       {t:"Every scholarly article has an abstract", why:"Many humanities articles, book chapters and older papers have none."}
     ]},
@@ -141,7 +141,7 @@ ICA.addUnit({
      {t:"Find an open access research article on a topic you care about and label its parts.", how:["Search a free source of open access papers, such as the Directory of Open Access Journals (doaj.org), PubMed Central (for health and life sciences) or a journal you know is open access.","Pick an article that reports a new study (look for Methods and Results headings).","For each IMRaD section, write one sentence saying what it tells you. Copy the aim (end of the Introduction) word for word, with its page or paragraph."], write:"Title and DOI, then one sentence each for Introduction (with the exact aim), Methods, Results and Discussion…"},
      {t:"Find a humanities article and locate its thesis.", how:["In the same kind of source, filter or search for a humanities subject such as history, literature or philosophy.","Read the first few paragraphs and find the sentence that takes a position someone could disagree with.","Read the conclusion and note how the thesis comes back."], write:"Title, the thesis sentence (quoted, with its location), and how the conclusion restates it…"},
      {t:"Check the back matter of your first article.", how:["Find the funding, competing-interests and data-availability statements (they may be near the references or on the article’s web page).","Note anything that could matter when you judge the paper."], write:"Funder, any declared interests, whether data are shared, and whether any of this changes how carefully you’ll read it…"}
-   ], proof:"Notes on two real articles: one IMRaD paper with each section summarised and its aim quoted, and one humanities article with its thesis quoted, plus what the back matter of the first one told you."},
+   ], proof:"Notes on two real articles: one IMRaD paper with each section summarized and its aim quoted, and one humanities article with its thesis quoted, plus what the back matter of the first one told you."},
    read:[{book:"owg", where:"Chapter 14, “Annotated Bibliography: Gathering, Evaluating, and Documenting Sources”, Section 14.1 “Compiling Sources for an Annotated Bibliography”", note:"Background reading: on choosing sources, reading abstracts and skimming before you commit to a full read."}]
   },
   /* ===================== LESSON 2 ===================== */
@@ -165,7 +165,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 360"><defs><marker id="t4u3a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-lup" x="20" y="10" width="300" height="78" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">Pass 1 · 5–10 minutes</text><text class="s" x="170" y="54" text-anchor="middle">title, abstract, introduction, headings,</text><text class="s" x="170" y="72" text-anchor="middle">conclusion, glance at references</text><path class="d-ink" d="M170 88 V108" stroke-width="2" marker-end="url(#t4u3a2)"/><text class="s" x="182" y="104">relevant? if not, stop</text><rect class="d-gold" x="35" y="112" width="270" height="78" rx="8" stroke-width="2"/><text x="170" y="136" text-anchor="middle">Pass 2 · up to an hour</text><text class="s" x="170" y="156" text-anchor="middle">read with care; study figures and</text><text class="s" x="170" y="174" text-anchor="middle">tables; skip proofs and fine detail</text><path class="d-ink" d="M170 190 V210" stroke-width="2" marker-end="url(#t4u3a2)"/><text class="s" x="182" y="206">must you master it?</text><rect class="d-rose" x="50" y="214" width="240" height="78" rx="8" stroke-width="2"/><text x="170" y="238" text-anchor="middle">Pass 3 · hours</text><text class="s" x="170" y="258" text-anchor="middle">rebuild the work in your head;</text><text class="s" x="170" y="276" text-anchor="middle">question every assumption</text><text class="s" x="170" y="318" text-anchor="middle">Most papers stop after pass 1 or 2.</text><text class="s" x="170" y="338" text-anchor="middle">Timings from Keshav (2007).</text></svg>', alt:"Three stacked boxes. Pass 1 takes 5 to 10 minutes: title, abstract, introduction, headings, conclusion and a glance at the references; if the paper isn’t relevant, stop. Pass 2 takes up to an hour: read carefully and study the figures and tables. Pass 3 takes hours and is only for papers you must master.", cap:"Each pass is a decision point. Keshav’s timings are a rough guide; beginners usually need longer."},
       {list:[
         "**Pass 1 (about 5–10 minutes).** Read the title, abstract and introduction, the section headings, the conclusion, and glance at the references. Keshav says you should then be able to answer five questions, his ‘five Cs’: **Category** (what kind of paper is it?), **Context** (which other work and theories does it build on?), **Correctness** (do the assumptions look valid?), **Contributions** (what’s new?) and **Clarity** (is it well written?).",
-        "**Pass 2 (up to an hour).** Read the paper with care but skip fine detail such as proofs. Look closely at figures and tables, and mark references you want to follow up. Afterwards you should be able to summarise the main thrust, with supporting evidence, to someone else.",
+        "**Pass 2 (up to an hour).** Read the paper with care but skip fine detail such as proofs. Look closely at figures and tables, and mark references you want to follow up. Afterwards you should be able to summarize the main thrust, with supporting evidence, to someone else.",
         "**Pass 3 (several hours for a beginner).** Try to rebuild the work in your head: if you had the same question, how would you have done it? Where does your version differ? This exposes hidden assumptions and weak spots."
       ]},
       {tip:"Keshav wrote for computer science. The same idea works in any field, but the speeds won’t: a dense economics paper or a paper in your second language can take several times longer. That’s normal, not a failing."}
@@ -195,7 +195,7 @@ ICA.addUnit({
       {warn:"Two bars with error bars that overlap do not automatically mean ‘no difference’, and bars that don’t overlap don’t automatically mean a real difference. It depends on what the bars show and how the comparison was tested. Look for the comparison itself in the text or table."}
     ]},
     {h:"Annotating as you read", body:[
-      "An [[annotation-research|annotation]] is a mark or note you add to a text while you read. Good annotation is a conversation with the paper, not colouring it in.",
+      "An [[annotation-research|annotation]] is a mark or note you add to a text while you read. Good annotation is a conversation with the paper, not coloring it in.",
       {list:[
         "**Highlight sparingly:** the aim, the key numbers, the main claim, the limitations. If everything is yellow, nothing stands out.",
         "**Write in the margin in your own words:** “small sample, all volunteers”, “compare with Table 2”, “is this causal?”.",
@@ -210,11 +210,11 @@ ICA.addUnit({
       {list:[
         "**Quotations:** the authors’ exact words, in quotation marks, with the page or section.",
         "**Paraphrase:** their ideas in your own words, with the page or section.",
-        "**Your own thinking:** your reactions, doubts and links, clearly labelled (for example, starting with “ME:”)."
+        "**Your own thinking:** your reactions, doubts and links, clearly labeled (for example, starting with “ME:”)."
       ]},
       "Mixing them up is how people accidentally copy words they thought were their own, or credit authors with ideas they never had.",
-      {ex:"Source: Okafor & Lindqvist (2025), invented, DOI 10.5555/garden.2025\nQuestion: Does a 12-week gardening group reduce loneliness in adults aged 65+?\nDesign and sample: before-and-after study, no control group; 86 volunteers from 3 community centres in one city.\nKey finding (p. 6, Table 2): loneliness fell 3.1 points on a 20–80 scale (95% CI 1.2 to 5.0).\nQuote (p. 9): “participants valued the routine as much as the plants.”\nAuthors’ limitations (p. 10): volunteers; no comparison group.\nME: Without a control group, the drop could be seasonal. Compare with the trial by …", label:"A literature note (invented study)", mono:true},
-      {key:"Write notes your future self can trust: every number with its unit and page, every quote in quotation marks, every opinion of yours labelled as yours."}
+      {ex:"Source: Okafor & Lindqvist (2025), invented, DOI 10.5555/garden.2025\nQuestion: Does a 12-week gardening group reduce loneliness in adults aged 65+?\nDesign and sample: before-and-after study, no control group; 86 volunteers from 3 community centers in one city.\nKey finding (p. 6, Table 2): loneliness fell 3.1 points on a 20–80 scale (95% CI 1.2 to 5.0).\nQuote (p. 9): “participants valued the routine as much as the plants.”\nAuthors’ limitations (p. 10): volunteers; no comparison group.\nME: Without a control group, the drop could be seasonal. Compare with the trial by …", label:"A literature note (invented study)", mono:true},
+      {key:"Write notes your future self can trust: every number with its unit and page, every quote in quotation marks, every opinion of yours labeled as yours."}
     ]}
    ],
    try:[
@@ -222,7 +222,7 @@ ICA.addUnit({
       {t:"Give each a quick first pass, then read the most relevant few in depth", ok:true, why:"A first pass covers the title, abstract, headings and conclusion. A first pass is designed for exactly this: deciding which papers deserve more time."},
       {t:"Read all 40 in full, in the order he found them", why:"That spends the same effort on irrelevant papers as on key ones, and he’ll run out of time before reaching the best."},
       {t:"Read only the abstracts, then cite the ones that agree with his own view", why:"Abstracts alone can’t show whether a finding is trustworthy, and choosing only agreeing papers is [[confirmation-bias|confirmation bias]]."},
-      {t:"Ask an AI tool to summarise all 40 and cite the summaries", why:"Summaries can help you sort papers, but they can be wrong, and you can only cite what you’ve checked in the paper itself (Lesson 6)."}
+      {t:"Ask an AI tool to summarize all 40 and cite the summaries", why:"Summaries can help you sort papers, but they can be wrong, and you can only cite what you’ve checked in the paper itself (Lesson 6)."}
     ]},
     {id:"t4u3-l2-x2", type:"match", q:"Keshav’s ‘five Cs’ are questions to answer after a first pass. Match each C to its question.", pairs:[
       ["Category","What kind of paper is this?","For example, a measurement study, a new system or a review."],
@@ -235,7 +235,7 @@ ICA.addUnit({
       {t:"The caption, to see whether the bars show standard deviation, standard error or a confidence interval", ok:true, why:"These are different quantities of different sizes. Without knowing which, she can’t interpret the bars."},
       {t:"Whether the bars overlap: overlapping bars always mean no real difference", why:"Overlap rules depend on what the bars show, and even then they’re only rough. The comparison must be tested directly."},
       {t:"Nothing: error bars always show a 95% confidence interval", why:"There’s no such convention. Many figures show standard deviations or standard errors instead."},
-      {t:"The colour of the bars, which indicates statistical significance", why:"Colour is a design choice. Significance, if reported, is in the text, table or caption."}
+      {t:"The color of the bars, which indicates statistical significance", why:"Color is a design choice. Significance, if reported, is in the text, table or caption."}
     ]},
     {id:"t4u3-l2-x4", type:"order", q:"Put this suggested first-and-second-pass reading order for an IMRaD paper in sequence.", items:[
       {t:"Title and abstract", why:"Start with what was asked and claimed."},
@@ -258,17 +258,17 @@ ICA.addUnit({
       " · ",
       {t:"Teens who used phones after 10 pm slept less.", flag:false, why:"A fair paraphrase of a finding. Ideally with a page number, but the meaning is clear."},
       " · ",
-      {t:"Sleep fell by 40.", flag:true, why:"40 what? Minutes a night? Per cent? A number without its unit and page is useless later."},
+      {t:"Sleep fell by 40.", flag:true, why:"40 what? Minutes a night? Percent? A number without its unit and page is useless later."},
       " · ",
       {t:"Phones are the main cause of teen sleep problems", flag:true, why:"Written without quotation marks or a label, it’s unclear whether the authors said this or the student thinks it. It also makes a causal claim a survey may not support."},
       " · ",
       {t:"“Late-night use was associated with shorter sleep” (p. 7)", flag:false, why:"An exact quote with a page number: future-proof."},
       " · ",
-      {t:"ME: survey only, so association, not proof of cause.", flag:false, why:"Clearly labelled as the student’s own thinking, and a good critical point."}
+      {t:"ME: survey only, so association, not proof of cause.", flag:false, why:"Clearly labeled as the student’s own thinking, and a good critical point."}
     ]},
-    {id:"t4u3-l2-x7", type:"explain", q:"Why should your literature notes keep quotations, paraphrase and your own thinking visibly apart? Give an example of what can go wrong if they’re mixed.", size:"3–4 sentences", hint:"Think about reading your notes again six months later, while writing an essay.", model:"Months later you won’t remember which words were the authors’ and which were yours. If a quotation isn’t in quotation marks, you might copy it into your essay as your own writing, which is plagiarism even if accidental. If your own doubt (“the drop could be seasonal”) isn’t labelled, you might cite the authors for an idea they never had. Keeping quotes marked, paraphrase with page numbers and your own ideas labelled “ME:” makes notes you can trust.", points:["Says you won’t remember the source of words later", "Gives the risk of copying unmarked quotes as your own", "Gives the risk of crediting authors with your own ideas", "Describes a way to keep them apart (quotation marks, pages, a label)"]}
+    {id:"t4u3-l2-x7", type:"explain", q:"Why should your literature notes keep quotations, paraphrase and your own thinking visibly apart? Give an example of what can go wrong if they’re mixed.", size:"3–4 sentences", hint:"Think about reading your notes again six months later, while writing an essay.", model:"Months later you won’t remember which words were the authors’ and which were yours. If a quotation isn’t in quotation marks, you might copy it into your essay as your own writing, which is plagiarism even if accidental. If your own doubt (“the drop could be seasonal”) isn’t labeled, you might cite the authors for an idea they never had. Keeping quotes marked, paraphrase with page numbers and your own ideas labeled “ME:” makes notes you can trust.", points:["Says you won’t remember the source of words later", "Gives the risk of copying unmarked quotes as your own", "Gives the risk of crediting authors with your own ideas", "Describes a way to keep them apart (quotation marks, pages, a label)"]}
    ],
-   apply:{intro:"Practise the passes and the notes on a real paper. Use the article you found in Lesson 1, or a new open access one.", tasks:[
+   apply:{intro:"Practice the passes and the notes on a real paper. Use the article you found in Lesson 1, or a new open access one.", tasks:[
      {t:"Do a timed first pass and answer the five Cs.", how:["Set a timer for 10 minutes.","Read only the title, abstract, introduction, headings, conclusion, and glance at the references and figures.","When the timer ends, answer the five Cs in a line each, then decide whether the paper deserves a second pass."], write:"Paper, then Category, Context, Correctness, Contributions, Clarity, and your decision (read on or stop, and why)…"},
      {t:"Read one figure or table in detail.", how:["Choose the figure or table that seems to carry the main result.","Write down what is measured, in whom, how many (n), the units, and what any error bars or asterisks mean (from the caption).","In one sentence, say what it shows, in your own words, before you read the authors’ description. Then compare."], write:"Figure/table number, what it measures, n, units, what the bars or symbols mean, your one-sentence reading, and whether the authors’ text matches it…"},
      {t:"Write a literature note using the three-way rule.", how:["Follow the template in the worked example: source, question, design and sample, key findings with numbers and pages, a short quote, limitations.","Label your own thoughts with “ME:”.","Save it somewhere you’ll find again, with the full reference or DOI."], write:"Your literature note…"}
@@ -281,7 +281,7 @@ ICA.addUnit({
    goals:[
      "Ask who was studied, how they were chosen and whom the findings can apply to",
      "Say what kinds of claims different designs can support",
-     "Read an effect size in raw and standardised form, and tell absolute from relative differences",
+     "Read an effect size in raw and standardized form, and tell absolute from relative differences",
      "Interpret a 95% confidence interval correctly and avoid the common wrong readings",
      "Explain how sample size affects precision and what can go wrong with very small or very large studies"
    ],
@@ -297,7 +297,7 @@ ICA.addUnit({
       {list:[
         "**Descriptive** studies say what is there: how many, how often, what people say. They can’t explain why.",
         "**Observational** studies compare groups that already differ (people who exercise and people who don’t). They can show a [[correlation]], but other differences between the groups may explain it. Such a hidden factor is called a [[confounder]].",
-        "**Experiments**, especially randomised ones, assign people to conditions by chance, so the groups differ only by chance apart from the treatment. That is the strongest basis for a claim about [[causation|cause]] (see {{correlation-causation}}).",
+        "**Experiments**, especially randomized ones, assign people to conditions by chance, so the groups differ only by chance apart from the treatment. That is the strongest basis for a claim about [[causation|cause]] (see {{correlation-causation}}).",
         "**Qualitative** studies (interviews, observation) explore experiences and meanings in depth. They aren’t trying to estimate numbers for a population, so judge them by different standards (Lesson 6)."
       ]},
       {ex:"An invented observational study finds that people who drink more tea have fewer heart problems. Before concluding tea protects the heart, ask: do tea drinkers also differ in smoking, income or diet? Each of those could be a confounder. The authors may adjust for some of them statistically, but they can only adjust for what they measured.", label:"Worked example (invented)"}
@@ -306,7 +306,7 @@ ICA.addUnit({
       "The most important number in most quantitative results is the [[effect-size|effect size]]: how big the difference or relationship is. It answers the question you actually care about, “how much?”, not just “is there anything?”.",
       "Effect sizes come in two main forms.",
       {list:[
-        "**Raw (unstandardised):** in the study’s own units, such as “4 points higher on a 100-point test”, “2.5 kg lighter” or “11 minutes more sleep”. These are the easiest to judge if you know the scale.",
+        "**Raw (unstandardized):** in the study’s own units, such as “4 points higher on a 100-point test”, “2.5 kg lighter” or “11 minutes more sleep”. These are the easiest to judge if you know the scale.",
         "**Standardised:** converted to a common scale so different studies can be compared. A common one, **Cohen’s d**, is the difference between two averages divided by the **[[standard-deviation|standard deviation]]** (the typical spread of individual scores around their average). Others include the **correlation coefficient r** (from −1 to +1, with 0 meaning no linear relationship) and **ratios** such as risk ratios or odds ratios (where 1 means no difference)."
       ]},
       {ex:"Invented study A: 240 pupils were randomly assigned to use a reading app or not for a term. App users averaged 64 on a 100-point reading test; the others averaged 60. The raw effect is 4 points. Scores in each group spread with a standard deviation of about 12 points, so d ≈ 4 ÷ 12 ≈ 0.33.", label:"Worked example (invented)"},
@@ -314,8 +314,8 @@ ICA.addUnit({
     ]},
     {h:"Absolute and relative differences", body:[
       "Differences in risk can be reported in two ways, and both can be true at once.",
-      {ex:"Invented trial: 4 in every 100 people given a placebo had a fall in a year, compared with 3 in every 100 given a balance programme.\n\nAbsolute difference: 4% − 3% = 1 percentage point (1 fewer fall per 100 people).\nRelative difference: 1 ÷ 4 = 0.25, so the risk is 25% lower.", label:"Worked example (invented)"},
-      "“Cuts falls by 25%” and “one fewer fall per 100 people” describe the same result. The relative figure sounds more impressive, which is why headlines and press releases prefer it. The [[absolute-risk|absolute]] figure tells you how much difference it makes in practice, and it depends on how common the outcome was to begin with. Note the [[percentage-point|percentage point]]: going from 4% to 3% is a drop of 1 percentage point but 25 per cent.",
+      {ex:"Invented trial: 4 in every 100 people given a placebo had a fall in a year, compared with 3 in every 100 given a balance program.\n\nAbsolute difference: 4% − 3% = 1 percentage point (1 fewer fall per 100 people).\nRelative difference: 1 ÷ 4 = 0.25, so the risk is 25% lower.", label:"Worked example (invented)"},
+      "“Cuts falls by 25%” and “one fewer fall per 100 people” describe the same result. The relative figure sounds more impressive, which is why headlines and press releases prefer it. The [[absolute-risk|absolute]] figure tells you how much difference it makes in practice, and it depends on how common the outcome was to begin with. Note the [[percentage-point|percentage point]]: going from 4% to 3% is a drop of 1 percentage point but 25 percent.",
       {tip:"When a paper or a news story gives only a relative change, look in the results tables for the actual numbers in each group and work out the absolute difference yourself."}
     ]},
     {h:"Uncertainty and confidence intervals", body:[
@@ -395,10 +395,10 @@ ICA.addUnit({
       "That probability is the [[p-value]]. The American Statistical Association (ASA) defines it as “the probability under a specified statistical model that a statistical summary of the data … would be equal to or more extreme than its observed value.”",
       {ex:"A friend tosses a coin 10 times and gets 9 heads. Is the coin fair?\n\nImagine it is fair (the null hypothesis). Of the 1,024 equally likely sequences of 10 tosses, 11 have 9 or more heads and 11 have 9 or more tails: 22 in all. So p = 22 ÷ 1,024 ≈ 0.02.\n\nReading: if the coin were fair, a result this lopsided (either way) would happen about 2% of the time.", label:"Worked example: a coin"},
       "Notice what that does *not* say. It doesn’t say there’s a 2% chance the coin is fair. To know that, you’d need to know how common trick coins are, how your friend got this one and so on. The p-value only says how well the data fit the ‘fair coin’ model.",
-      {fig:'<svg viewBox="0 0 340 260"><path class="d-rose" d="M273 190 L273 185.6 L277 186.6 L281 187.4 L285 188.1 L289 188.6 L293 188.9 L297 189.2 L301 189.4 L305 189.6 L309 189.7 L313 189.8 L317 189.9 L320 190 Z" stroke-width="1"/><path class="d-rose" d="M20 190 L20 189.9 L24 189.8 L28 189.8 L32 189.7 L36 189.6 L40 189.4 L44 189.2 L48 188.9 L52 188.5 L56 187.9 L60 187.3 L64 186.4 L67 185.6 L67 190 Z" stroke-width="1"/><path class="d-ink" fill="none" d="M20 189.9 L26 189.8 L32 189.7 L38 189.5 L44 189.2 L50 188.7 L56 187.9 L62 186.9 L68 185.4 L74 183.3 L80 180.5 L86 176.8 L92 172.1 L98 166.3 L104 159.2 L110 151.0 L116 141.8 L122 131.6 L128 120.9 L134 110.0 L140 99.4 L146 89.8 L152 81.6 L158 75.3 L164 71.3 L170 70.0 L176 71.3 L182 75.3 L188 81.6 L194 89.8 L200 99.4 L206 110.0 L212 120.9 L218 131.6 L224 141.8 L230 151.0 L236 159.2 L242 166.3 L248 172.1 L254 176.8 L260 180.5 L266 183.3 L272 185.4 L278 186.9 L284 187.9 L290 188.7 L296 189.2 L302 189.5 L308 189.7 L314 189.8 L320 189.9" stroke-width="2"/><line class="d-ink" x1="20" y1="190" x2="320" y2="190" stroke-width="1.5"/><line class="d-ink" x1="273" y1="120" x2="273" y2="190" stroke-width="2" stroke-dasharray="4 3"/><line class="d-ink" x1="67" y1="120" x2="67" y2="190" stroke-width="2" stroke-dasharray="4 3"/><text x="170" y="22" text-anchor="middle">If there were no real effect…</text><text class="s" x="170" y="42" text-anchor="middle">differences we’d get by chance</text><text class="s" x="170" y="60" text-anchor="middle">pile up around zero</text><text class="s" x="290" y="108" text-anchor="middle">observed +4</text><text class="s" x="52" y="108" text-anchor="middle">−4</text><text class="s" x="170" y="208" text-anchor="middle">0</text><text class="s" x="170" y="232" text-anchor="middle">p = the shaded tails beyond ±4</text><text class="s" x="170" y="252" text-anchor="middle">(here about 0.01: very thin)</text></svg>', alt:"A bell-shaped curve centred on zero shows the differences that would occur by chance if there were no real effect. Dashed lines mark the observed difference of plus 4 and its mirror at minus 4. The very thin shaded areas beyond those lines are the p-value, about 0.01.", cap:"Invented study A from Lesson 3. If the app did nothing, chance differences would cluster around zero. The p-value is the share of that curve as far out as the observed result, or further, in either direction."}
+      {fig:'<svg viewBox="0 0 340 260"><path class="d-rose" d="M273 190 L273 185.6 L277 186.6 L281 187.4 L285 188.1 L289 188.6 L293 188.9 L297 189.2 L301 189.4 L305 189.6 L309 189.7 L313 189.8 L317 189.9 L320 190 Z" stroke-width="1"/><path class="d-rose" d="M20 190 L20 189.9 L24 189.8 L28 189.8 L32 189.7 L36 189.6 L40 189.4 L44 189.2 L48 188.9 L52 188.5 L56 187.9 L60 187.3 L64 186.4 L67 185.6 L67 190 Z" stroke-width="1"/><path class="d-ink" fill="none" d="M20 189.9 L26 189.8 L32 189.7 L38 189.5 L44 189.2 L50 188.7 L56 187.9 L62 186.9 L68 185.4 L74 183.3 L80 180.5 L86 176.8 L92 172.1 L98 166.3 L104 159.2 L110 151.0 L116 141.8 L122 131.6 L128 120.9 L134 110.0 L140 99.4 L146 89.8 L152 81.6 L158 75.3 L164 71.3 L170 70.0 L176 71.3 L182 75.3 L188 81.6 L194 89.8 L200 99.4 L206 110.0 L212 120.9 L218 131.6 L224 141.8 L230 151.0 L236 159.2 L242 166.3 L248 172.1 L254 176.8 L260 180.5 L266 183.3 L272 185.4 L278 186.9 L284 187.9 L290 188.7 L296 189.2 L302 189.5 L308 189.7 L314 189.8 L320 189.9" stroke-width="2"/><line class="d-ink" x1="20" y1="190" x2="320" y2="190" stroke-width="1.5"/><line class="d-ink" x1="273" y1="120" x2="273" y2="190" stroke-width="2" stroke-dasharray="4 3"/><line class="d-ink" x1="67" y1="120" x2="67" y2="190" stroke-width="2" stroke-dasharray="4 3"/><text x="170" y="22" text-anchor="middle">If there were no real effect…</text><text class="s" x="170" y="42" text-anchor="middle">differences we’d get by chance</text><text class="s" x="170" y="60" text-anchor="middle">pile up around zero</text><text class="s" x="290" y="108" text-anchor="middle">observed +4</text><text class="s" x="52" y="108" text-anchor="middle">−4</text><text class="s" x="170" y="208" text-anchor="middle">0</text><text class="s" x="170" y="232" text-anchor="middle">p = the shaded tails beyond ±4</text><text class="s" x="170" y="252" text-anchor="middle">(here about 0.01: very thin)</text></svg>', alt:"A bell-shaped curve centered on zero shows the differences that would occur by chance if there were no real effect. Dashed lines mark the observed difference of plus 4 and its mirror at minus 4. The very thin shaded areas beyond those lines are the p-value, about 0.01.", cap:"Invented study A from Lesson 3. If the app did nothing, chance differences would cluster around zero. The p-value is the share of that curve as far out as the observed result, or further, in either direction."}
     ]},
     {h:"Statistical significance and the 0.05 line", body:[
-      "Before analysing, researchers often choose a threshold called the significance level (α, ‘alpha’), most commonly 0.05. If p falls below it, the result is called [[statistical-significance|statistically significant]].",
+      "Before analyzing, researchers often choose a threshold called the significance level (α, ‘alpha’), most commonly 0.05. If p falls below it, the result is called [[statistical-significance|statistically significant]].",
       "What α controls is this: if the null hypothesis were true and the assumptions held, a test at α = 0.05 would wrongly declare significance about 5% of the time in the long run. That’s a false-alarm rate for the method, not a statement about any single result.",
       {list:[
         "**0.05 is a convention,** not a law of nature. Some fields use much stricter thresholds; many statisticians now advise against treating any single cut-off as decisive.",
@@ -454,7 +454,7 @@ ICA.addUnit({
       ". ",
       {t:"This means there is only a 1% chance the finding is a fluke", flag:true, why:"p = 0.01 is not the chance that the result is a fluke. It’s the chance of data this extreme if the timetable made no difference."},
       ". Because the result is ",
-      {t:"statistically significant, the effect is clearly large and important", flag:true, why:"Significance doesn’t measure size or importance. Whether 2 percentage points matters is a judgement about the context."},
+      {t:"statistically significant, the effect is clearly large and important", flag:true, why:"Significance doesn’t measure size or importance. Whether 2 percentage points matters is a judgment about the context."},
       ". For younger pupils the effect was ",
       {t:"not significant (p = 0.20), so the timetable has no effect on them", flag:true, why:"A non-significant result isn’t evidence of no effect; the subgroup may simply be too small to tell. Check its interval."},
       ". ",
@@ -470,10 +470,10 @@ ICA.addUnit({
       {t:"The smaller the p-value, the bigger the effect.", b:1, why:"Principle 5: a p-value doesn’t measure the size of an effect."},
       {t:"A p-value should be weighed together with the design, effect size and other evidence.", b:0, why:"Principle 6: by itself, a p-value isn’t a good measure of evidence."}
     ]},
-    {id:"t4u3-l4-x5", type:"mcq", q:"Two invented studies test the same tutoring programme. Study 1 (30 students) finds 5 points (95% CI −2 to 12), p = 0.16. Study 2 (3,000 students) finds 0.6 points (95% CI 0.1 to 1.1), p = 0.02. Which summary is fairest?", options:[
+    {id:"t4u3-l4-x5", type:"mcq", q:"Two invented studies test the same tutoring program. Study 1 (30 students) finds 5 points (95% CI −2 to 12), p = 0.16. Study 2 (3,000 students) finds 0.6 points (95% CI 0.1 to 1.1), p = 0.02. Which summary is fairest?", options:[
       {t:"Study 2 shows a small but fairly certain benefit; Study 1 is inconclusive", ok:true, why:"This reads both by size and interval, as the ASA and Lesson 3 recommend. Study 1 is compatible with anything from slight harm to a large benefit."},
-      {t:"Study 2 found a big effect because it’s significant; Study 1 shows the programme doesn’t work", why:"Two misreadings at once: significance isn’t size, and non-significance isn’t proof of no effect."},
-      {t:"The studies contradict each other, so the programme can’t be judged", why:"They don’t contradict: Study 1’s wide interval includes Study 2’s small effect. They just have very different precision."},
+      {t:"Study 2 found a big effect because it’s significant; Study 1 shows the program doesn’t work", why:"Two misreadings at once: significance isn’t size, and non-significance isn’t proof of no effect."},
+      {t:"The studies contradict each other, so the program can’t be judged", why:"They don’t contradict: Study 1’s wide interval includes Study 2’s small effect. They just have very different precision."},
       {t:"Study 1 is better because its effect is bigger", why:"Its estimate is bigger but very uncertain; the interval even includes harm. Precision matters as much as the point estimate."}
     ]},
     {id:"t4u3-l4-x6", type:"order", q:"Put these steps for reading a reported result in a sensible order.", items:[
@@ -485,7 +485,7 @@ ICA.addUnit({
     ]},
     {id:"t4u3-l4-x7", type:"explain", q:"A news report says: “The new exercise programme had no effect on blood pressure (p = 0.3, not statistically significant).” Explain why that conclusion doesn’t follow.", size:"3–4 sentences", hint:"What could a non-significant result come from, and where should you look instead?", model:"A p-value above 0.05 means the data aren’t surprising if there were no effect; it doesn’t show that there is no effect. A small or noisy study can easily miss a real effect. To judge, look at the effect size and its confidence interval: if the interval includes zero but also includes worthwhile drops in blood pressure, the result is inconclusive. “Not significant” means “not shown”, not “shown not to exist”, unless the interval is narrow around zero.", points:["Says a non-significant p doesn’t prove there is no effect", "Mentions that a small or noisy study can miss a real effect", "Says to check the effect size and confidence interval", "Puts it as “not shown” rather than “shown not to exist”"]}
    ],
-   apply:{intro:"Practise on real reporting. Use the paper from Lesson 3 or another quantitative open access article.", tasks:[
+   apply:{intro:"Practice on real reporting. Use the paper from Lesson 3 or another quantitative open access article.", tasks:[
      {t:"Rewrite a results sentence the careful way.", how:["Find a sentence in the Results or Abstract that reports a p-value.","Rewrite it in plain words with three parts: the size of the effect (with units), its confidence interval, and the exact p-value.","If the paper gives only a p-value or stars, note what’s missing."], write:"The original sentence, your rewrite, and anything missing…"},
      {t:"Hunt for the classic misreadings in the wild.", how:["Find a news story, press release or blog post that reports a study using words like “significant”, “proved” or “no link”.","Check it against the five misreadings in this lesson.","If you can, open the study itself and see whether the story matches the numbers."], write:"Where you found it, the sentence, which misreading (if any), and what the study actually reported…"},
      {t:"Count the tests.", how:["In your paper, count roughly how many outcomes or comparisons were tested (tables are the quickest place).","Check whether a primary outcome was named in advance (look for a trial registration number or a phrase such as ‘primary outcome’).","Note how this affects your trust in any single p-value."], write:"Roughly how many tests, whether a primary outcome was pre-specified, and what that means for you…"}
@@ -530,7 +530,7 @@ ICA.addUnit({
       {list:[
         "**Check what each number is.** “Mean (SD)” gives the average and the [[standard-deviation|standard deviation]]; “median (IQR)” gives the middle value and the interquartile range (the middle half of the values), used for skewed data; “n (%)” gives a count and its percentage of the column.",
         "**Compare the groups.** Here the dog owners are younger and healthier. Those are possible [[confounder|confounders]]: younger, healthier people walk more anyway. A good paper deals with them later.",
-        "**In randomised trials, don’t look for p-values here.** Groups formed by chance differ only by chance, so the CONSORT 2025 reporting guideline says significance tests of baseline differences are not recommended. What matters is whether a chance imbalance is big enough to matter."
+        "**In randomized trials, don’t look for p-values here.** Groups formed by chance differ only by chance, so the CONSORT 2025 reporting guideline says significance tests of baseline differences are not recommended. What matters is whether a chance imbalance is big enough to matter."
       ]},
       "Data Literacy Unit 5 covers means, medians, standard deviations and quartiles in depth ({{centre-spread}})."
     ]},
@@ -576,7 +576,7 @@ ICA.addUnit({
         "**No stars isn’t no effect.** “Woman 2.0 (2.9)” has an interval of about −3.7 to 7.7 minutes: compatible with no difference, and with a modest one either way.",
         "**Control coefficients aren’t the findings.** The model was built to estimate the dog effect. The coefficients for age or health may themselves be confounded, or capture only part of their effect because other variables in the model lie on the path to walking. Westreich and Greenland (2013) called reading them as effects the **[[table-2-fallacy|Table 2 fallacy]]**.",
         "**Coefficients on different scales don’t compare directly.** 12.0 for yes/no dog ownership and −0.9 per year of age only compare in real units: ten years of age goes with about 9 minutes.",
-        "**R² isn’t a grade.** A low R² is normal for human behaviour and doesn’t make a coefficient wrong; a high one doesn’t show cause.",
+        "**R² isn’t a grade.** A low R² is normal for human behavior and doesn’t make a coefficient wrong; a high one doesn’t show cause.",
         "**Association isn’t cause.** Unless the design supports it (Unit 6), a coefficient describes a pattern. Perhaps healthier people get dogs *and* walk more ({{correlation-causation}}).",
         "**Many rows, many tests.** A table with 30 coefficients will show a star or two by chance."
       ]}
@@ -623,7 +623,7 @@ ICA.addUnit({
       {t:"Poor health causes people to walk 21 minutes a day less than they otherwise would", why:"An observational coefficient shows an association. And as a control variable it is open to the Table 2 fallacy: it may be confounded."},
       {t:"21% of people in poor health walked less than people in good health did", why:"The coefficient is in the outcome’s units, minutes a day, not a percentage of people."}
     ]},
-    {id:"t4u3-l6-x5", type:"spot", q:"Fatima summarised the invented Table 2 for a class. Tap each sentence that **over-reads** the table.", ask:"over-reads the table", parts:[
+    {id:"t4u3-l6-x5", type:"spot", q:"Fatima summarized the invented Table 2 for a class. Tap each sentence that **over-reads** the table.", ask:"over-reads the table", parts:[
       {t:"After adjusting for age, sex and health, dog owners walked about 12 minutes a day more than non-owners (95% CI about 5.7 to 18.3).", flag:false, why:"A careful reading: size, units, adjustment and interval."},
       " ",
       {t:"So getting a dog makes older people walk 12 minutes more a day.", flag:true, why:"An observational coefficient shows an association. Healthier, more active people may be the ones who get dogs."},
@@ -650,7 +650,7 @@ ICA.addUnit({
     {id:"t4u3-l6-x8", type:"explain", q:"In the invented dog-walking study, the “owns a dog” coefficient fell from 18.0 minutes (unadjusted) to 12.0 minutes after adjusting for age, sex and health. Explain what this change tells you, and why the 12 minutes still may not all be caused by the dog.", size:"3–4 sentences", hint:"Who were the dog owners in Table 1, and what can adjustment not cover?", model:"Dog owners in the sample were younger and healthier, and younger, healthier people walk more anyway. Adjusting compares owners with non-owners of the same age, sex and health, and the gap shrank by about a third, so part of the raw difference came from those confounders. But adjustment only covers what was measured. Something unmeasured, such as a love of the outdoors, could still explain some of the 12 minutes, and the design is observational, so it shows an association, not cause.", points:["Says owners differed in age and health (confounders)", "Explains that adjustment compares like with like, so the gap shrank", "Notes adjustment only covers measured variables", "Says the coefficient shows association, not cause"]}
    ],
    apply:{intro:"Read the tables of a real paper. Use the quantitative open access paper from Lessons 3 and 4, or find one with a regression table.", tasks:[
-     {t:"Read Table 1", how:["Find the descriptive table (often Table 1).","Note N for each group and how each variable is summarised (mean and SD, median and IQR, n and %).","Note any differences between groups that could be confounders, and whether the paper adjusts for them later."], write:"Groups and their N… How variables are summarised… Possible confounders… Adjusted later?…"},
+     {t:"Read Table 1", how:["Find the descriptive table (often Table 1).","Note N for each group and how each variable is summarized (mean and SD, median and IQR, n and %).","Note any differences between groups that could be confounders, and whether the paper adjusts for them later."], write:"Groups and their N… How variables are summarized… Possible confounders… Adjusted later?…"},
      {t:"Decode the main model table", how:["Find the table with the main result. Write down the outcome, its units and the kind of model (linear, logistic or other).","Find the row for the main variable. Write its coefficient or ratio, its standard error or interval, and what the stars mean.","Name the reference category of any categorical variable and list the controls.","If only a standard error is given, work out the approximate 95% interval with coefficient ± 1.96 × SE (for an odds ratio, use the interval the authors give)."], write:"Outcome and units… Model… Main row… Interval… Reference categories… Controls…"},
      {t:"Check the words against the table", how:["Write the main result as one plain sentence, using the template in this lesson.","Compare it with the abstract’s claim: are size, uncertainty and adjustment the same? Any causal words the design can’t support?","Note one over-reading you could imagine a news story making from this table."], write:"My sentence… The abstract’s claim… Match or mismatch… A tempting over-reading…"}
    ], proof:"Notes on one real paper: what its descriptive table shows and which confounders it hints at; the main model row decoded (outcome, units, size, interval, reference categories, controls); and a plain-words result compared with the abstract."},
@@ -672,7 +672,7 @@ ICA.addUnit({
    learn:[
     {h:"What critical appraisal is", body:[
       {lead:"Reading critically doesn’t mean looking for reasons to reject a paper. It means deciding, fairly and for stated reasons, how much to trust it and for what."},
-      "[[critical-appraisal-term|Critical appraisal]] is the structured judgement of a study’s trustworthiness, results and relevance. Think of a building survey before you buy a house: the surveyor doesn’t refuse every house with a crack, but notes which cracks matter, how much, and what they mean for you. Every study has limitations. The question is whether they’re serious enough to change the conclusion you’d draw.",
+      "[[critical-appraisal-term|Critical appraisal]] is the structured judgment of a study’s trustworthiness, results and relevance. Think of a building survey before you buy a house: the surveyor doesn’t refuse every house with a crack, but notes which cracks matter, how much, and what they mean for you. Every study has limitations. The question is whether they’re serious enough to change the conclusion you’d draw.",
       "Appraisal also depends on your purpose. A small, honest pilot study can be perfectly good for “is this worth investigating?” and useless for “should every hospital do this?”.",
       "Appraisal has two sides. One is internal: is the study sound on its own terms? The other is external: does it apply to your situation? A flawless trial in one country’s hospitals may not transfer to a very different health system, and a modest study done in a setting like yours may tell you more than a perfect one done elsewhere."
     ]},
@@ -683,12 +683,12 @@ ICA.addUnit({
       "Finally, the Discussion should state the [[study-limitations|limitations]]. Honest, specific limitations are a good sign. If you can spot a serious problem the authors don’t mention, note it."
     ]},
     {h:"Spotting spin", body:[
-      "[[spin-research|Spin]] is reporting that makes results look more favourable or certain than they are. It is usually subtle, and often unintentional.",
+      "[[spin-research|Spin]] is reporting that makes results look more favorable or certain than they are. It is usually subtle, and often unintentional.",
       {list:[
         "**Causal language from non-causal designs:** “X *improves* Y” when the study only found that X and Y go together.",
         "**Switching the spotlight:** the main outcome showed nothing, so the abstract leads with a secondary outcome that did.",
-        "**Rescuing non-significant results:** phrases like “a trend towards significance” or “marginally significant”.",
-        "**Over-generalising:** a study of one city’s university students concluding about “young people”.",
+        "**Rescuing non-significant results:** phrases like “a trend toward significance” or “marginally significant”.",
+        "**Over-generalizing:** a study of one city’s university students concluding about “young people”.",
         "**Relative figures only:** “halves the risk” with no absolute numbers (Lesson 3)."
       ]},
       {ex:"Invented abstract: “Our survey of 640 office workers shows that standing desks reduce back pain.”\nResults section: workers who had chosen standing desks reported slightly less back pain (difference 0.4 on a 10-point scale, 95% CI −0.1 to 0.9).\n\nProblems: a one-off survey can’t show that desks *reduce* pain (people with bad backs may avoid standing desks); the interval includes no difference; and 0.4 on a 10-point scale is small. A fair sentence: “Workers using standing desks reported slightly less back pain, but the difference was small and uncertain, and the design can’t show cause.”", label:"Worked example (invented)"}
@@ -700,7 +700,7 @@ ICA.addUnit({
         "**Humanities articles:** is the thesis clear? Is the evidence (archives, texts, artworks) well chosen and accurately used? Does the author deal fairly with other interpretations and counter-evidence? Do footnotes let you check the sources?",
         "**Reviews:** how were studies found and selected? A review that explains its search and selection can be checked; one that doesn’t may have picked studies to fit a view (Unit 5 covers reviews)."
       ]},
-      "You don’t have to invent your questions. The free **CASP checklists** (Critical Appraisal Skills Programme) give short question lists for trials, qualitative studies, systematic reviews and more. [[reporting-guideline|Reporting guidelines]], collected by the EQUATOR Network, list what a paper of each type should report: for example CONSORT for randomised trials (updated in 2025), STROBE for observational studies and PRISMA for systematic reviews. If a key item is missing from a paper, that’s worth noting."
+      "You don’t have to invent your questions. The free **CASP checklists** (Critical Appraisal Skills Programme) give short question lists for trials, qualitative studies, systematic reviews and more. [[reporting-guideline|Reporting guidelines]], collected by the EQUATOR Network, list what a paper of each type should report: for example CONSORT for randomized trials (updated in 2025), STROBE for observational studies and PRISMA for systematic reviews. If a key item is missing from a paper, that’s worth noting."
     ]},
     {h:"One paper is one voice", body:[
       "Scholarship is a conversation. A single study, however good, is one contribution, and its result may not hold up when others try again.",
@@ -708,16 +708,16 @@ ICA.addUnit({
         "**Check the paper’s status:** has it been corrected, had an [[expression-of-concern|expression of concern]], or been [[retraction|retracted]]? Unit 1 shows how.",
         "**Look for reviews:** a [[systematic-review|systematic review]] or [[meta-analysis]] combines many studies and usually deserves more weight than any one of them.",
         "**See who cites it:** later papers that cite it may confirm, extend or challenge it (Unit 2 shows how to follow citations forward).",
-        "**Watch your own bias:** we all scrutinise papers we disagree with harder than those we like. Apply the same questions to both ([[confirmation-bias]])."
+        "**Watch your own bias:** we all scrutinize papers we disagree with harder than those we like. Apply the same questions to both ([[confirmation-bias]])."
       ]}
     ]},
     {h:"AI reading tools: what they do", body:[
       "AI tools built on large language models ([[generative-ai]]) can now help with reading. They fall into a few broad kinds:",
-      {table:[["Kind","Example (checked November 2026)","What it does"],["One-line summaries in a search engine","Semantic Scholar’s TLDRs","Short automatic summaries shown with search results"],["Ask questions of documents you upload","NotebookLM, and the file features of general chatbots","Answers from your sources, often citing the passage it used"],["Research assistants","Elicit, among others","Search for papers and summarise or compare findings"],["General chatbots","ChatGPT, Claude, Gemini, Copilot","Explain jargon, translate, summarise pasted text"]]},
+      {table:[["Kind","Example (checked November 2026)","What it does"],["One-line summaries in a search engine","Semantic Scholar’s TLDRs","Short automatic summaries shown with search results"],["Ask questions of documents you upload","NotebookLM, and the file features of general chatbots","Answers from your sources, often citing the passage it used"],["Research assistants","Elicit, among others","Search for papers and summarize or compare findings"],["General chatbots","ChatGPT, Claude, Gemini, Copilot","Explain jargon, translate, summarize pasted text"]]},
       "Used well, they speed up the first pass: deciding what a paper is about, decoding unfamiliar terms, or getting a reading in your own language. Features, limits and prices change often, and many have free and paid tiers."
     ]},
     {h:"Using AI without being misled", body:[
-      "AI summaries fail in predictable ways. They can [[hallucination|invent]] details or citations, mix up numbers from different tables, drop the limitations, turn “associated with” into “causes”, summarise only the abstract, or describe a different paper with a similar title. Tools that cite passages are easier to check, but even a cited passage can be misread (see {{ai-chatbot-accuracy}}).",
+      "AI summaries fail in predictable ways. They can [[hallucination|invent]] details or citations, mix up numbers from different tables, drop the limitations, turn “associated with” into “causes”, summarize only the abstract, or describe a different paper with a similar title. Tools that cite passages are easier to check, but even a cited passage can be misread (see {{ai-chatbot-accuracy}}).",
       {ol:[
         "Use the AI output as a map, not a source: it tells you where to look.",
         "For every claim you might use, find the exact place in the paper (page, section, table) that supports it.",
@@ -726,7 +726,7 @@ ICA.addUnit({
         "Cite the paper, never the summary, and only for what you’ve verified yourself."
       ]},
       "If an AI tool runs the statistics or draws the charts for you, Track 3, Unit 9, Lesson 6 shows how to check them ({{checking-ai-data-work}}).",
-      {warn:"Think before you upload. A paper’s licence, your institution’s rules and a tool’s privacy terms may limit what you can upload. Never upload confidential material, such as a manuscript you’ve been asked to peer-review or unpublished data about people. Policies on AI use in research differ between universities, publishers and funders, and change often; Unit 9 covers them."},
+      {warn:"Think before you upload. A paper’s license, your institution’s rules and a tool’s privacy terms may limit what you can upload. Never upload confidential material, such as a manuscript you’ve been asked to peer-review or unpublished data about people. Policies on AI use in research differ between universities, publishers and funders, and change often; Unit 9 covers them."},
       {key:"An AI summary is a lead, not evidence. The paper is the evidence, and you are the reader responsible for what you take from it."}
     ]}
    ],
@@ -742,9 +742,9 @@ ICA.addUnit({
     {id:"t4u3-l5-x2", type:"sort", q:"These sentences come from invented abstracts. Which are fair to the design described, and which overclaim?", buckets:["Fair to the design","Overclaims"], items:[
       {t:"From a one-off survey: “Students who slept less reported lower grades.”", b:0, why:"Describes an association without claiming cause. Fair."},
       {t:"From a one-off survey: “Lack of sleep causes lower grades.”", b:1, why:"A survey at one point in time can’t establish cause; poor grades could disrupt sleep, or a third factor could affect both."},
-      {t:"From a randomised trial in three hospitals: “The checklist reduced errors in these hospitals.”", b:0, why:"A randomised design supports a causal claim, and the sentence keeps to the setting studied."},
+      {t:"From a randomized trial in three hospitals: “The checklist reduced errors in these hospitals.”", b:0, why:"A randomized design supports a causal claim, and the sentence keeps to the setting studied."},
       {t:"From interviews with 15 teachers in one district: “Teachers nationwide distrust the new curriculum.”", b:1, why:"A small qualitative study explores experiences in depth; it can’t estimate what teachers nationwide think."},
-      {t:"From a trial with p = 0.07: “The app showed a trend towards improved mood.”", b:1, why:"‘A trend towards significance’ is a common form of spin. The fair statement is that the result was inconclusive, with its interval."},
+      {t:"From a trial with p = 0.07: “The app showed a trend toward improved mood.”", b:1, why:"‘A trend toward significance’ is a common form of spin. The fair statement is that the result was inconclusive, with its interval."},
       {t:"From interviews with 15 teachers: “Participants described three sources of distrust.”", b:0, why:"Reports what these participants said, which is what an interview study can show."}
     ]},
     {id:"t4u3-l5-x3", type:"match", q:"Match each kind of study to a fitting appraisal tool or reporting guideline.", pairs:[
@@ -753,7 +753,7 @@ ICA.addUnit({
       ["Systematic review","PRISMA reporting guideline","PRISMA covers how reviews report their search, selection and results."],
       ["Interview study","A qualitative appraisal checklist (for example, CASP’s)","Qualitative research needs questions about fit, transparency and reflexivity, not sample-size calculations."]
     ]},
-    {id:"t4u3-l5-x4", type:"spot", q:"Mei asked an AI tool to summarise an invented paper. The paper says: a survey of 1,200 adults in two cities; people who cycled to work reported less stress (association only); difference 0.3 points on a 10-point scale, 95% CI 0.1 to 0.5; the authors note the sample was not representative. Which parts of the AI summary are wrong?", ask:"doesn’t match the paper", parts:[
+    {id:"t4u3-l5-x4", type:"spot", q:"Mei asked an AI tool to summarize an invented paper. The paper says: a survey of 1,200 adults in two cities; people who cycled to work reported less stress (association only); difference 0.3 points on a 10-point scale, 95% CI 0.1 to 0.5; the authors note the sample was not representative. Which parts of the AI summary are wrong?", ask:"doesn’t match the paper", parts:[
       {t:"A survey of 1,200 adults in two cities", flag:false, why:"Matches the paper."},
       " found that ",
       {t:"cycling to work reduces stress", flag:true, why:"The paper reports an association from a survey. ‘Reduces’ is a causal claim the design can’t support."},
@@ -762,7 +762,7 @@ ICA.addUnit({
       " (",
       {t:"95% CI 0.1 to 0.5", flag:false, why:"Matches the paper."},
       "). ",
-      {t:"The findings apply to adults in general.", flag:true, why:"The authors say the sample was not representative. The summary dropped that limitation and over-generalised."}
+      {t:"The findings apply to adults in general.", flag:true, why:"The authors say the sample was not representative. The summary dropped that limitation and over-generalized."}
     ]},
     {id:"t4u3-l5-x5", type:"mcq", q:"Tomás used a document-question tool on an open access paper. It answered: “The study found a 12% improvement (see Results).” What should he do before using this in his report?", options:[
       {t:"Check the 12% against the paper’s own passage and table, then cite the paper", ok:true, why:"Check what it’s 12% of, too. Checking the source passage and number is the only way to know the claim is right, and you cite the paper, not the summary."},
@@ -771,7 +771,7 @@ ICA.addUnit({
       {t:"Ask the tool the same question again and use the answer if it’s the same twice", why:"Repeating a question tests consistency, not accuracy. Only the paper can confirm the number."}
     ]},
     {id:"t4u3-l5-x6", type:"mcq", q:"Which of these is appropriate to upload to a general AI chatbot? Choose all that apply (assume the chatbot’s terms allow uploads).", options:[
-      {t:"An open access paper published under a licence that allows reuse", ok:true, why:"Openly licensed, published material is generally fine to process, though you should still check your institution’s rules."},
+      {t:"An open access paper published under a license that allows reuse", ok:true, why:"Openly licensed, published material is generally fine to process, though you should still check your institution’s rules."},
       {t:"A manuscript a journal has sent you to peer-review", why:"Peer review is confidential. Uploading a manuscript under review shares someone else’s unpublished work."},
       {t:"Interview transcripts with participants’ names in them", why:"That’s personal data collected under promises of confidentiality. It needs protection, not uploading to a third-party tool."},
       {t:"Your own notes on a published paper, with no personal data", ok:true, why:"Your own notes about published work raise no confidentiality issue, though your course or employer may have its own rules."}
@@ -781,7 +781,7 @@ ICA.addUnit({
    apply:{intro:"Appraise a real paper, then test an AI summary against it.", tasks:[
      {t:"Appraise one paper with the six core questions.", how:["Use a paper you’ve already read in this unit, or a new open access one.","For each of the six questions (question, design, sample, measures, results, conclusions), write one or two sentences.","End with a verdict: how much would you trust its main claim, for what purpose, and why?","Optional: download the free CASP checklist for that type of study from casp-uk.net and compare."], write:"Paper, then one or two sentences for each question, and your verdict…"},
      {t:"Compare the abstract with the results.", how:["Copy the main claim from the abstract.","Find the result that supports it in the Results section or a table.","Note any spin: causal words, a changed spotlight, stronger wording, missing uncertainty."], write:"Abstract claim, matching result, and any spin you found (or a note that it matched well)…"},
-     {t:"Fact-check an AI summary of the same paper (optional, if you use an AI tool).", how:["Check the tool’s terms and the paper’s licence first; use an open access paper.","Ask for a summary that includes the design, sample, main result with its interval, and limitations.","Check every claim against the paper, marking each as correct, wrong or missing. Note any limitations it left out."], write:"Tool used, claims checked (correct / wrong / missing), and what it left out…"}
+     {t:"Fact-check an AI summary of the same paper (optional, if you use an AI tool).", how:["Check the tool’s terms and the paper’s license first; use an open access paper.","Ask for a summary that includes the design, sample, main result with its interval, and limitations.","Check every claim against the paper, marking each as correct, wrong or missing. Note any limitations it left out."], write:"Tool used, claims checked (correct / wrong / missing), and what it left out…"}
    ], proof:"A short appraisal of one real paper with a reasoned verdict, a comparison of its abstract with its results, and (if you used AI) a claim-by-claim check of an AI summary."},
    read:[{book:"bhatt", where:"Chapter 5, “Research Design”", note:"Background reading on what makes designs stronger or weaker for different kinds of claims."},{book:"acrl", where:"Frame “Scholarship as Conversation”", note:"Short and conceptual: why one paper is one voice in an ongoing conversation."}]
   }
@@ -789,9 +789,9 @@ ICA.addUnit({
   checkpoint:["t4u3-q02","t4u3-q06","t4u3-q11","t4u3-q15","t4u3-q20","t4u3-q22","t4u3-q25","t4u3-q29","t4u3-q31","t4u3-q34","t4u3-q39","t4u3-q43"],
   cpBank:[
    {id:"t4u3-cp01", lesson:"t4u3-l1", level:1, q:"Gabriel finds a paper titled **“Why some fishing cooperatives last: a review of 64 studies”**. What kind of paper is it most likely to be?", options:[
-     {t:"An original research article reporting a new study", why:"An original article reports data the authors collected or analysed themselves. “A review of 64 studies” signals a summary of other people’s work."},
-     {t:"A review article that summarises many studies on one question", ok:true, why:"A review brings many studies together, which makes it a good place to start a topic."},
-     {t:"A case study of one fishing cooperative", why:"A case study gives a detailed account of one organisation or place. This title covers 64 studies."},
+     {t:"An original research article reporting a new study", why:"An original article reports data the authors collected or analyzed themselves. “A review of 64 studies” signals a summary of other people’s work."},
+     {t:"A review article that summarizes many studies on one question", ok:true, why:"A review brings many studies together, which makes it a good place to start a topic."},
+     {t:"A case study of one fishing cooperative", why:"A case study gives a detailed account of one organization or place. This title covers 64 studies."},
      {t:"A commentary giving one expert’s opinion", why:"A commentary is an opinion or reply, not a structured summary of many studies."}]},
    {id:"t4u3-cp02", lesson:"t4u3-l1", level:1, q:"Rosa wants to know whether the authors of a paper have shared their data and code. Which section should she look at?", options:[
      {t:"Funding", why:"The funding statement says who paid for the work, not whether the data are shared."},
@@ -800,7 +800,7 @@ ICA.addUnit({
      {t:"Data availability", ok:true, why:"The data availability statement, in the back matter, says whether the data and code are shared, and where."}]},
    {id:"t4u3-cp03", lesson:"t4u3-l2", level:1, q:"Leilani highlights almost every sentence of a paper in yellow. Later she can’t find the key points. What would work better?", options:[
      {t:"Highlight only key points and add short notes in her own words", ok:true, why:"If everything is yellow, nothing stands out. A few highlights plus notes in her own words make the paper usable later."},
-     {t:"Use a second colour to highlight the sentences that are even more important", why:"More colouring doesn’t fix the problem. Good annotation is a conversation with the paper, not colouring it in."},
+     {t:"Use a second color to highlight the sentences that are even more important", why:"More coloring doesn’t fix the problem. Good annotation is a conversation with the paper, not coloring it in."},
      {t:"Stop annotating and reread the whole paper each time she needs it", why:"Rereading is slow. Brief, selective annotations and notes save that time."},
      {t:"Copy every highlighted sentence into her notes without quotation marks", why:"Copying without quotation marks risks using the authors’ words as her own, and it adds no thinking."}]},
    {id:"t4u3-cp04", lesson:"t4u3-l3", level:2, q:"A headline says a hand-washing campaign **“cuts infections by a quarter”**. In the study, 8 in every 100 children got an infection without the campaign and 6 in every 100 with it. Which description is correct?", options:[
@@ -826,22 +826,22 @@ ICA.addUnit({
    {id:"t4u3-cp08", lesson:"t4u3-l5", level:2, q:"A trial’s main outcome was students’ grades, which showed no difference. Attendance, a secondary outcome, improved. The abstract opens: “Mentoring boosts attendance.” Which kind of spin is this?", options:[
      {t:"Giving relative figures only", why:"This kind of spin gives a relative change without absolute numbers. The problem here is which outcome is highlighted."},
      {t:"Switching the spotlight to a secondary outcome", ok:true, why:"The main outcome showed nothing, so the abstract leads with a secondary outcome that did. Readers may never learn the main result."},
-     {t:"Over-generalising attendance results to all students", why:"Over-generalising is about who the result applies to. Nothing here stretches the population."},
+     {t:"Over-generalizing attendance results to all students", why:"Over-generalizing is about who the result applies to. Nothing here stretches the population."},
      {t:"No spin: reporting any positive outcome is fair", why:"Reporting the secondary result is fine, but leading with it while hiding a null main outcome makes the results look better than they are."}]},
    {id:"t4u3-cp09", lesson:"t4u3-l5", level:2, q:"Rhea is appraising a history article arguing that guild records show women ran many businesses in an 18th-century port. Which question fits this kind of article best?", options:[
      {t:"Was the sample chosen at random, and how many people dropped out?", why:"Sampling and dropout questions fit quantitative studies. A humanities article argues from sources such as archives."},
      {t:"Is the main p-value below 0.05, so the result is significant?", why:"An argued essay from archives usually has no statistical test. It is judged by its evidence and argument."},
      {t:"Was there a comparison group assigned by chance, as in a trial?", why:"Randomised comparison groups belong to experiments, not to historical arguments from records."},
      {t:"Are sources used well, and are rival readings handled fairly?", ok:true, why:"Humanities articles are argued essays. Appraise the thesis, the use of sources, the handling of counter-evidence, and whether footnotes let you check."}]},
-   {id:"t4u3-cp10", lesson:"t4u3-l5", level:3, q:"A well-run trial in large city hospitals in Norway found a discharge programme reduced readmissions. Amina runs a small rural clinic in Malawi. How should she appraise the trial for her purpose?", options:[
+   {id:"t4u3-cp10", lesson:"t4u3-l5", level:3, q:"A well-run trial in large city hospitals in Norway found a discharge program reduced readmissions. Amina runs a small rural clinic in Malawi. How should she appraise the trial for her purpose?", options:[
      {t:"Accept it fully: a sound trial gives results that apply everywhere", why:"Internal soundness isn’t the same as relevance. A result may not transfer to a very different setting."},
      {t:"It is sound, but ask whether it fits her setting and patients", ok:true, why:"Appraisal has two sides: is the study sound, and does it apply to your situation? A modest study in a setting like hers may tell her more."},
      {t:"Reject it, because a study from another country is never relevant", why:"That goes too far. It may still be useful evidence; she needs to judge how well it transfers."},
      {t:"Look only at its p-value to decide", why:"A p-value says nothing about whether the setting matches hers, or about the size of the effect."}]},
-   {id:"t4u3-cp11", lesson:"t4u3-l2", level:3, q:"An abstract says tutoring “greatly improved maths scores”. Table 2 (page 7) shows a difference of 1.5 points on a 100-point test (95% CI −0.5 to 3.5). What should Pablo write in his literature note?", options:[
-     {t:"“Tutoring greatly improves maths scores (Table 2).”", why:"This repeats the abstract’s claim as if it were his own summary, and the table doesn’t support “greatly”."},
+   {id:"t4u3-cp11", lesson:"t4u3-l2", level:3, q:"An abstract says tutoring “greatly improved math scores”. Table 2 (page 7) shows a difference of 1.5 points on a 100-point test (95% CI −0.5 to 3.5). What should Pablo write in his literature note?", options:[
+     {t:"“Tutoring greatly improves math scores (Table 2).”", why:"This repeats the abstract’s claim as if it were his own summary, and the table doesn’t support “greatly”."},
      {t:"Nothing: the abstract is misleading, so the paper should be ignored", why:"The paper still contains useful data. He should record what it actually found."},
-     {t:"“1.5 points (95% CI −0.5 to 3.5), Table 2, p. 7. ME: abstract overstates.”", ok:true, why:"The note records the actual size, interval and location, and labels his own judgement. The abstract is the authors’ claim; the Results show whether to believe it."},
+     {t:"“1.5 points (95% CI −0.5 to 3.5), Table 2, p. 7. ME: abstract overstates.”", ok:true, why:"The note records the actual size, interval and location, and labels his own judgment. The abstract is the authors’ claim; the Results show whether to believe it."},
      {t:"Copy the abstract’s sentence without quotation marks, since abstracts are summaries", why:"Unquoted copying mixes the authors’ words with his own, which risks plagiarism. And it records the claim, not the evidence."}]},
    {id:"t4u3-cp12", lesson:"t4u3-l3", level:3, q:"A pilot study with 16 people found a large, statistically significant effect (d = 1.2). A later trial with 900 people, same design, found d = 0.2. What is the most likely explanation?", options:[
      {t:"The later trial must have been done badly", why:"Nothing suggests that. Large trials give more precise estimates; the pattern fits the pilot’s small size."},
@@ -856,13 +856,13 @@ ICA.addUnit({
      starter:[
       "A research paper is a formal report of research, written so other experts can understand, check and build on it. Most papers in the sciences, health and social sciences follow the same four-part pattern, called [[imrad|IMRaD]]: Introduction (why the study was needed), Methods (what was done), Results (what was found) and Discussion (what it means).",
       "Knowing the pattern is like knowing the layout of a supermarket: you can go straight to the aisle you need. The aim is usually in the last paragraph of the Introduction; the main finding is restated at the start of the Discussion; the limitations come near the end of the Discussion.",
-      "Not every paper looks like this. Humanities articles in history, literature or philosophy are usually argued essays: they state a thesis early and defend it section by section, often with no Methods heading at all. Reviews summarise many studies. Commentaries give opinions.",
+      "Not every paper looks like this. Humanities articles in history, literature or philosophy are usually argued essays: they state a thesis early and defend it section by section, often with no Methods heading at all. Reviews summarize many studies. Commentaries give opinions.",
       {key:"The abstract tells you what the authors claim; the Methods and Results tell you whether to believe it."},
       "Around the main text sit other useful parts: the abstract (a short summary at the top), the references (the works the authors used), and short statements about who funded the work and whether the authors have competing interests. Once you know where each part lives, you can judge a paper’s relevance in a minute and start judging its trustworthiness in an hour."
      ],
      builder:[
       {h:"Front, middle and back"},
-      "The **front matter** (title, authors, affiliations, dates, abstract, keywords, DOI) lets you judge relevance in a minute. A structured abstract has labelled parts; an unstructured one is a single paragraph. Abstracts are the authors’ own summary and can sound more certain than the results.",
+      "The **front matter** (title, authors, affiliations, dates, abstract, keywords, DOI) lets you judge relevance in a minute. A structured abstract has labeled parts; an unstructured one is a single paragraph. Abstracts are the authors’ own summary and can sound more certain than the results.",
       "The **main text** in IMRaD papers narrows from a broad topic to one precise study and then widens again in the Discussion, often drawn as an hourglass. Common variations: Results and Discussion merged; Methods at the end or in supplementary files; a separate Conclusion; a Related Work section in computing. Qualitative papers present themes illustrated by quotations rather than statistics.",
       "The **back matter** includes references, funding, competing interests, data availability, author contributions and supplementary material. Check for corrections or a retraction notice on the article page.",
       {h:"Other shapes"},
@@ -908,7 +908,7 @@ ICA.addUnit({
       "Overlap rules for error bars are rough at best. Non-overlapping standard-error bars don’t imply p < 0.05, and overlapping 95% confidence intervals don’t imply p > 0.05 for the difference; Greenland and colleagues (2016) list the latter as a common misinterpretation. For paired or repeated-measures designs, bars on each group can be almost uninformative about the within-person difference. Find the test of the comparison itself.",
       "For a third pass on a quantitative paper, try re-deriving one key number from the tables (a percentage, a difference, a ratio). Discrepancies are common and occasionally important. For a humanities paper, check two or three footnotes against the sources they cite, and ask what evidence would count against the thesis.",
       "When jargon is the obstacle, a recent review article is often the fastest route into a field’s vocabulary and its key debates.",
-      "Reading groups (often called journal clubs) are a well-established way to practise: one person presents a paper and the group appraises it together. They work in universities, workplaces and among friends meeting online."
+      "Reading groups (often called journal clubs) are a well-established way to practice: one person presents a paper and the group appraises it together. They work in universities, workplaces and among friends meeting online."
      ]
     },
     related:["paper-structure","research-notes","reading-results"],
@@ -920,7 +920,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "An [[annotation-research|annotation]] is a mark or comment you add to a paper as you read: a highlight, a question in the margin, a symbol. [[literature-notes|Literature notes]] are what you write afterwards, in your own words and in a separate place, so you can use the paper months later without rereading it.",
-      "The single most useful habit is to keep three things visibly apart: the authors’ exact words (in quotation marks, with a page number), your paraphrase of their ideas (with a page number), and your own thoughts (labelled, for example, “ME:”). Mixing them is how people accidentally copy text or misremember who said what.",
+      "The single most useful habit is to keep three things visibly apart: the authors’ exact words (in quotation marks, with a page number), your paraphrase of their ideas (with a page number), and your own thoughts (labeled, for example, “ME:”). Mixing them is how people accidentally copy text or misremember who said what.",
       {tip:"Every number in your notes needs its unit and its page. “Fell by 40” is useless later; “fell by 40 minutes a night (p. 6, Table 2)” is not."},
       "A note written in ten minutes right after reading can save an hour when you come to write, and it protects you from misquoting."
      ],
@@ -967,7 +967,7 @@ ICA.addUnit({
      ],
      pro:[
       "The correct frequentist reading of a 95% confidence interval: the procedure, applied over many repetitions with all assumptions met, would produce intervals containing the true parameter about 95% of the time; any one computed interval either does or doesn’t (Greenland et al., 2016, item 19). A Bayesian credible interval does carry a direct probability statement, conditional on the prior and model. In practice, values inside a confidence interval are more compatible with the data than values outside, but compatibility shades off gradually rather than stopping at the edges.",
-      "Intervals assume the model is right: random sampling or assignment, correct handling of clustering (pupils within schools, patients within hospitals), and no serious measurement or selection bias. Clustered designs analysed as if individuals were independent produce intervals that are too narrow. Intervals say nothing about bias; a precise estimate can be precisely wrong.",
+      "Intervals assume the model is right: random sampling or assignment, correct handling of clustering (pupils within schools, patients within hospitals), and no serious measurement or selection bias. Clustered designs analyzed as if individuals were independent produce intervals that are too narrow. Intervals say nothing about bias; a precise estimate can be precisely wrong.",
       "Small studies are often underpowered, and when they do reach significance, their estimates tend to exaggerate the true effect. Large observational datasets give narrow intervals around estimates that may still be confounded. Sullivan and Feinn (2012) note that with a big enough sample a test will almost always find a significant difference unless the true effect is exactly zero, which is why effect sizes must be reported and judged.",
       "For risks, the number needed to treat (1 ÷ absolute risk difference) converts a difference into people: a 1-percentage-point reduction means about 100 people treated for one fewer event."
      ]
@@ -994,7 +994,7 @@ ICA.addUnit({
       "A friend gets 9 heads in 10 tosses. If the coin were fair, 22 of the 1,024 equally likely sequences are at least this lopsided (9 or 10 heads, or 9 or 10 tails), so p ≈ 0.02. That says such a result would be unusual for a fair coin. It doesn’t say there’s a 2% chance the coin is fair."
      ],
      pro:[
-      "Greenland and colleagues (2016) catalogue misinterpretations, including: that p is the probability the test hypothesis is true; that p > 0.05 means no effect was observed or that the null should be accepted; that significance indicates a substantively important relation; and that overlapping confidence intervals imply a non-significant difference. They stress that p is computed assuming the whole model, not just the null, is correct, so a small p may reflect a violated assumption (bias, selective reporting, wrong model) rather than a real effect.",
+      "Greenland and colleagues (2016) catalog misinterpretations, including: that p is the probability the test hypothesis is true; that p > 0.05 means no effect was observed or that the null should be accepted; that significance indicates a substantively important relation; and that overlapping confidence intervals imply a non-significant difference. They stress that p is computed assuming the whole model, not just the null, is correct, so a small p may reflect a violated assumption (bias, selective reporting, wrong model) rather than a real effect.",
       "A difference in significance is not a significant difference (Gelman and Stern, 2006, put it as “the difference between ‘significant’ and ‘not significant’ is not itself statistically significant”): if a subgroup shows p = 0.01 and another p = 0.20, the subgroup difference must be tested directly (an interaction test). Such post-hoc subgroup claims are a frequent source of false findings.",
       "The 0.05 convention is arbitrary; some fields use far stricter thresholds for discoveries, and the debate continues over lowering thresholds, abandoning ‘significance’ language, or relying more on estimation and Bayesian methods. Whatever the framework, transparent reporting of all analyses, pre-specified primary outcomes, effect sizes with intervals and exact p-values remain the common ground.",
       "Sullivan and Feinn (2012) describe a large aspirin trial (over 22,000 participants) with p < 0.00001 but a risk difference of under 1 percentage point (0.77% in their account): a clear illustration that a tiny p can accompany a small effect."
@@ -1010,7 +1010,7 @@ ICA.addUnit({
      starter:[
       "[[critical-appraisal-term|Critical appraisal]] means judging how much to trust a study, and for what, using a fair set of questions. It isn’t fault-finding: every study has limitations, and the skill is deciding which ones change the conclusion.",
       "Six questions cover most studies: Is the question clear? Can the design answer it? Who was studied? Were the measures sound? Are the results complete, with sizes and ranges? Do the conclusions match the results?",
-      "Watch for [[spin-research|spin]]: causal words from studies that can only show association, abstracts that lead with a minor result, and ‘trends towards significance’.",
+      "Watch for [[spin-research|spin]]: causal words from studies that can only show association, abstracts that lead with a minor result, and ‘trends toward significance’.",
       "Think of a building survey before buying a house: the surveyor doesn’t refuse every house with a crack, but says which cracks matter and how much. Appraisal also depends on your purpose: a small pilot study can be fine for deciding whether an idea is worth testing and far too weak to change a national policy.",
       "A declared funder or competing interest is a reason to look closely at the design and wording, not proof of bias."
      ],
@@ -1019,17 +1019,17 @@ ICA.addUnit({
       "Use yardsticks that fit the research. Qualitative studies are judged on fit, transparency, rich description and reflexivity. Humanities articles are judged on the clarity of the thesis, the handling of sources and engagement with counter-arguments. Reviews are judged on how studies were found and selected.",
       "Free checklists help: the CASP checklists cover trials, qualitative studies, systematic reviews and other designs. [[reporting-guideline|Reporting guidelines]] such as CONSORT (trials), STROBE (observational studies) and PRISMA (systematic reviews), collected by the EQUATOR Network, list what a good report should contain.",
       {h:"Spin to watch for"},
-      {list:["Causal words (“improves”, “reduces”) from designs that can only show association", "An abstract that leads with a secondary outcome because the main one showed nothing", "“A trend towards significance” for an inconclusive result", "Conclusions about groups the study didn’t include", "Relative figures with no absolute numbers"]},
+      {list:["Causal words (“improves”, “reduces”) from designs that can only show association", "An abstract that leads with a secondary outcome because the main one showed nothing", "“A trend toward significance” for an inconclusive result", "Conclusions about groups the study didn’t include", "Relative figures with no absolute numbers"]},
       {h:"One paper is one voice"},
       "Before relying on a study, check whether it has been corrected or retracted, look for systematic reviews that combine it with other studies, and see what later papers that cite it say.",
-      "Apply the same questions to studies you agree with as to those you don’t: we all tend to scrutinise unwelcome findings harder."
+      "Apply the same questions to studies you agree with as to those you don’t: we all tend to scrutinize unwelcome findings harder."
      ],
      pro:[
-      "Formal tools go further. [[risk-of-bias|Risk-of-bias]] tools assess specific domains; Cochrane’s RoB 2 tool for randomised trials, for example, covers the randomisation process, deviations from intended interventions, missing outcome data, measurement of the outcome and selection of the reported result. Evidence-grading systems rate the certainty of a whole body of evidence. These are mostly used in systematic reviews (Unit 5).",
-      "CONSORT was updated in 2025 (‘CONSORT 2025 Statement: updated guideline for reporting randomised trials’), published simultaneously in several journals; check the EQUATOR Network for the current version of any guideline, because they’re revised over time.",
+      "Formal tools go further. [[risk-of-bias|Risk-of-bias]] tools assess specific domains; Cochrane’s RoB 2 tool for randomized trials, for example, covers the randomization process, deviations from intended interventions, missing outcome data, measurement of the outcome and selection of the reported result. Evidence-grading systems rate the certainty of a whole body of evidence. These are mostly used in systematic reviews (Unit 5).",
+      "CONSORT was updated in 2025 (‘CONSORT 2025 Statement: updated guideline for reporting randomized trials’), published simultaneously in several journals; check the EQUATOR Network for the current version of any guideline, because they’re revised over time.",
       "Declared funding and competing interests are signals for scrutiny, not verdicts. Look at choices the funder could influence: the comparator, the outcomes, the length of follow-up, and how results are framed. Check for a trial registration or preregistration and compare the registered primary outcome with the reported one; unexplained switching is a red flag.",
-      "Finally, appraise yourself: people tend to scrutinise unwelcome findings more than welcome ones. Applying the same questions to every paper is the practical defence.",
-      "Qualitative appraisal has its own vocabulary: credibility, transferability, dependability and confirmability, proposed by Lincoln and Guba (1985), are often used in place of internal validity, generalisability, reliability and objectivity (Unit 7 covers these: see {{trustworthiness}}). Humanities critique works through argument: whether the evidence is representative of the archive or corpus, whether translations and editions are reliable, and whether rival readings are fairly addressed."
+      "Finally, appraise yourself: people tend to scrutinize unwelcome findings more than welcome ones. Applying the same questions to every paper is the practical defense.",
+      "Qualitative appraisal has its own vocabulary: credibility, transferability, dependability and confirmability, proposed by Lincoln and Guba (1985), are often used in place of internal validity, generalizability, reliability and objectivity (Unit 7 covers these: see {{trustworthiness}}). Humanities critique works through argument: whether the evidence is representative of the archive or corpus, whether translations and editions are reliable, and whether rival readings are fairly addressed."
      ]
     },
     related:["reading-results","statistical-significance-basics","ai-reading-tools","evaluating-sources","retractions","systematic-reviews"],
@@ -1037,21 +1037,21 @@ ICA.addUnit({
     sources:[{t:"CASP: Critical Appraisal Skills Programme checklists", url:"https://casp-uk.net/casp-tools-checklists/systematic-reviews-meta-analysis-rcts/"},{t:"EQUATOR Network: CONSORT 2025", url:"https://www.equator-network.org/reporting-guidelines/consort/"}], checked:"2026-11"},
 
    {id:"ai-reading-tools", title:"AI tools for reading papers", aka:["AI summaries","AI research assistants"], tags:["research","ai"],
-    summary:"What AI summarising and question-answering tools can do for a reader, how they fail, and how to check them.",
+    summary:"What AI summarizing and question-answering tools can do for a reader, how they fail, and how to check them.",
     levels:{
      starter:[
-      "AI tools based on [[generative-ai|generative AI]] can summarise a paper, explain jargon, translate, or answer questions about a PDF you upload. They can save time on a first pass.",
+      "AI tools based on [[generative-ai|generative AI]] can summarize a paper, explain jargon, translate, or answer questions about a PDF you upload. They can save time on a first pass.",
       "They also make mistakes: inventing details ([[hallucination]]), mixing up numbers, dropping limitations, or turning “linked to” into “causes”. So treat an AI summary as a map that tells you where to look, never as the source.",
       {key:"Check every claim you use against the paper itself, and cite the paper."},
       "Some tools work like a search engine with short automatic summaries; some let you upload a PDF and ask questions about it; general chatbots can explain a confusing paragraph in plainer words or in another language. Used well, they help you decide which papers deserve a full read and get past jargon faster.",
-      "Before uploading anything, check you’re allowed to: the paper’s licence, your institution’s rules and the tool’s privacy terms all matter. Never upload confidential material, such as a manuscript you’re reviewing."
+      "Before uploading anything, check you’re allowed to: the paper’s license, your institution’s rules and the tool’s privacy terms all matter. Never upload confidential material, such as a manuscript you’re reviewing."
      ],
      builder:[
-      {table:[["Kind","Examples (checked November 2026)"],["Automatic one-line summaries in search","Semantic Scholar’s TLDRs"],["Questions answered from documents you upload","NotebookLM; file features of general chatbots"],["Research assistants that search and summarise","Elicit, among others"],["General chatbots","ChatGPT, Claude, Gemini, Copilot"]]},
+      {table:[["Kind","Examples (checked November 2026)"],["Automatic one-line summaries in search","Semantic Scholar’s TLDRs"],["Questions answered from documents you upload","NotebookLM; file features of general chatbots"],["Research assistants that search and summarize","Elicit, among others"],["General chatbots","ChatGPT, Claude, Gemini, Copilot"]]},
       "Tools that answer only from your uploaded sources and show the passage they used are easier to verify, but they can still misread a table or miss context elsewhere in the paper.",
       {h:"A checking routine"},
       {ol:["Find the exact passage, table or figure behind each claim.","Check numbers and units against the original.","Check that limitations and uncertainty survived.","Cite the paper, only for what you verified."]},
-      "Before uploading, check the paper’s licence, your institution’s rules and the tool’s privacy terms. Don’t upload confidential material such as manuscripts under review or identifiable research data.",
+      "Before uploading, check the paper’s license, your institution’s rules and the tool’s privacy terms. Don’t upload confidential material such as manuscripts under review or identifiable research data.",
       {h:"Good uses and poor uses"},
       {table:[["Good uses", "Poor uses"], ["Deciding relevance on a first pass", "Citing a summary instead of the paper"], ["Explaining a term or statistic, then checking it in a textbook", "Trusting an AI list of “the evidence” without checking each paper exists and says that"], ["A rough translation to decide whether a paper is worth a proper one", "Uploading confidential or personal data"], ["Making a list of claims to verify", "Letting it decide what a study means"]]},
       "Free tiers, limits and features change often, so check what a tool can currently do (and whether it reads the full text or only the abstract) before relying on it."
@@ -1083,7 +1083,7 @@ ICA.addUnit({
      ],
      builder:[
       {h:"Descriptive tables"},
-      "Look for how each variable is summarised: mean (SD) for roughly symmetric numbers, median (IQR) for skewed ones, n (%) for categories. Compare the groups: differences in age, health or income hint at [[confounder|confounders]] the paper should deal with later. In randomised trials, CONSORT 2025 says significance tests of baseline differences are not recommended, because chance alone formed the groups; judge whether any imbalance is large enough to matter.",
+      "Look for how each variable is summarized: mean (SD) for roughly symmetric numbers, median (IQR) for skewed ones, n (%) for categories. Compare the groups: differences in age, health or income hint at [[confounder|confounders]] the paper should deal with later. In randomized trials, CONSORT 2025 says significance tests of baseline differences are not recommended, because chance alone formed the groups; judge whether any imbalance is large enough to matter.",
       {h:"Cross-tabs"},
       "Ask which way the percentages run: across rows, down columns or over the whole table. To compare groups, use percentages within each group. Column percentages answer a different question and partly reflect group sizes. Always look for the counts behind the percentages ({{crosstabs}}).",
       {h:"Model tables"},
@@ -1112,14 +1112,14 @@ ICA.addUnit({
       {key:"Read the row that answers the research question, in the outcome’s units, with its uncertainty. A coefficient describes a pattern; whether it is a cause depends on the design."}
      ],
      builder:[
-      {table:[["Part","How to read it"],["Coefficient","Difference in the outcome per one-unit difference in the variable (or for being in a category), others held constant"],["(SE)","Sample-to-sample variation; approximate 95% CI = coefficient ± 1.96 × SE in large samples"],["Stars","p-value thresholds from the note; not size or importance"],["Ref. category","The comparison group for a categorical variable"],["Constant","Prediction when every variable is zero or at its reference; often not meaningful"],["N","Cases used; may fall when data are missing"],["R²","Share of variation accounted for in these data; adjusted R² penalises extra variables"]]},
+      {table:[["Part","How to read it"],["Coefficient","Difference in the outcome per one-unit difference in the variable (or for being in a category), others held constant"],["(SE)","Sample-to-sample variation; approximate 95% CI = coefficient ± 1.96 × SE in large samples"],["Stars","p-value thresholds from the note; not size or importance"],["Ref. category","The comparison group for a categorical variable"],["Constant","Prediction when every variable is zero or at its reference; often not meaningful"],["N","Cases used; may fall when data are missing"],["R²","Share of variation accounted for in these data; adjusted R² penalizes extra variables"]]},
       "**Unadjusted and [[adjusted-estimate|adjusted]] columns.** When a coefficient changes after controls are added, part of the raw difference went with those controls, as with confounders. Adjustment covers only what was measured.",
       "**Ratios.** Logistic regression usually reports [[odds-ratio|odds ratios]]; survival models report hazard ratios. For ratios, 1 means no difference, and an interval including 1 is compatible with none. Raw logistic coefficients are log odds, where 0 means no difference. For common outcomes, an odds ratio sits further from 1 than the risk ratio, so don’t read it as “times as likely” ({{absolute-relative-risk}}).",
       "**Interactions.** A row such as “dog × woman” tests whether a difference depends on another variable. When an interaction is present, the main rows describe the difference at the reference level of the other variable."
      ],
      pro:[
       "**The [[table-2-fallacy|Table 2 fallacy]].** Westreich and Greenland (*American Journal of Epidemiology*, 2013) warned that presenting every coefficient from one model invites readers to treat the control variables’ coefficients like the main estimate. A model chosen to estimate the effect of one exposure may leave the others’ coefficients confounded, and where a control lies on the path between another variable and the outcome, the coefficient shows only a direct part of that variable’s effect. Some authors now show only the main estimate, or fit separate models for each question.",
-      "**Comparing coefficients.** Unstandardised coefficients on different scales don’t compare directly; standardised coefficients (often β) rescale to standard deviations but depend on the spread in the sample. Coefficients from different samples, or from logistic models with different controls, are not always comparable either.",
+      "**Comparing coefficients.** Unstandardised coefficients on different scales don’t compare directly; standardized coefficients (often β) rescale to standard deviations but depend on the spread in the sample. Coefficients from different samples, or from logistic models with different controls, are not always comparable either.",
       "**Robustness.** Look for sensitivity analyses and alternative specifications; a result that appears in only one of many possible models is fragile. Running many specifications and reporting the most striking one inflates false positives ({{multiple-testing}}).",
       "**Clustered and repeated data.** When people are grouped (pupils in schools) or measured repeatedly, standard errors should account for it, for example with clustered standard errors or multilevel models; otherwise intervals are too narrow.",
       "The mechanics of fitting a line are in Data Literacy ({{linear-regression}}); the International Studies track discusses causal inference with regression ({{regression-causal-inference}})."
@@ -1131,7 +1131,7 @@ ICA.addUnit({
   ],
   terms:[
    {id:"imrad", term:"IMRaD", def:"The four-part structure of most empirical papers: **I**ntroduction, **M**ethods, **R**esults **a**nd **D**iscussion.", codex:"paper-structure"},
-   {id:"methods-section", term:"Methods section", def:"The part of a paper that says exactly what was done: who was studied, the design, what was measured and how the data were analysed.", codex:"paper-structure"},
+   {id:"methods-section", term:"Methods section", def:"The part of a paper that says exactly what was done: who was studied, the design, what was measured and how the data were analyzed.", codex:"paper-structure"},
    {id:"results-section", term:"Results section", def:"The part of a paper that reports what was found, usually with tables and figures and, ideally, without interpretation.", codex:"paper-structure"},
    {id:"discussion-section", term:"Discussion section", def:"The part of a paper that interprets the results, compares them with other studies, states limitations and suggests implications.", codex:"paper-structure"},
    {id:"study-limitations", term:"Limitations", def:"Weaknesses in a study’s design, sample, measures or analysis that limit what can be concluded. Good papers state them honestly in the Discussion.", codex:"critical-appraisal"},
@@ -1147,8 +1147,8 @@ ICA.addUnit({
    {id:"standard-error", term:"Standard error", def:"How much an estimate (such as an average) would typically vary from one sample to another. Confidence intervals are built from it.", codex:"reading-results"},
    {id:"absolute-risk", term:"Absolute and relative risk", def:"An absolute difference compares risks directly (4% vs 3% is 1 percentage point); a relative difference compares them as a proportion (25% lower). Both can describe the same result.", codex:"reading-results"},
    {id:"confounder", term:"Confounder", def:"A third factor linked to both the supposed cause and the outcome, which can create or hide an association between them.", codex:"reading-results"},
-   {id:"reporting-guideline", term:"Reporting guideline", def:"A checklist of what a paper of a given type should report, such as CONSORT for randomised trials or PRISMA for systematic reviews.", codex:"critical-appraisal"},
-   {id:"spin-research", term:"Spin (in research)", def:"Reporting that makes results look more favourable, certain or general than the data support, such as causal language from an observational study.", codex:"critical-appraisal"},
+   {id:"reporting-guideline", term:"Reporting guideline", def:"A checklist of what a paper of a given type should report, such as CONSORT for randomized trials or PRISMA for systematic reviews.", codex:"critical-appraisal"},
+   {id:"spin-research", term:"Spin (in research)", def:"Reporting that makes results look more favorable, certain or general than the data support, such as causal language from an observational study.", codex:"critical-appraisal"},
    {id:"descriptive-table", term:"Descriptive table (Table 1)", def:"A table, usually the first in a paper’s results, describing who was studied, often by group: means and SDs, medians and IQRs, counts and percentages.", codex:"results-tables"},
    {id:"regression-coefficient", term:"Regression coefficient", def:"The estimated difference in the outcome that goes with a one-unit difference in a variable (or with being in a category), holding the model’s other variables constant.", codex:"regression-tables"},
    {id:"reference-category", term:"Reference category", def:"The category a regression compares the others with, such as “good health”. It is often marked “ref.” and has no coefficient of its own.", codex:"regression-tables"},
@@ -1168,12 +1168,12 @@ ICA.addUnit({
      {t:"In the reference list", why:"References list the works cited; they don’t state this study’s aim."},
      {t:"In the middle of the Results", why:"Results report findings; the aim is set out before the methods."},
      {t:"In the funding statement", why:"Funding statements say who paid, not what was asked."}]},
-   {id:"t4u3-q03", lesson:"t4u3-l1", level:1, q:"Which kind of paper usually reports no new data but summarises many studies on one question?", options:[
+   {id:"t4u3-q03", lesson:"t4u3-l1", level:1, q:"Which kind of paper usually reports no new data but summarizes many studies on one question?", options:[
      {t:"A review article", ok:true, why:"Reviews bring together existing studies, which makes them a good starting point on a topic."},
      {t:"An original research article", why:"Original articles report a new study with its own data."},
      {t:"A case report", why:"A case report describes one case in detail."},
-     {t:"A methods paper", why:"A methods paper presents a new way to measure or analyse something."}]},
-   {id:"t4u3-q04", lesson:"t4u3-l1", level:2, q:"Sione reads an abstract that says a programme “significantly improved wellbeing”. What should he do before quoting this finding?", options:[
+     {t:"A methods paper", why:"A methods paper presents a new way to measure or analyze something."}]},
+   {id:"t4u3-q04", lesson:"t4u3-l1", level:2, q:"Sione reads an abstract that says a program “significantly improved wellbeing”. What should he do before quoting this finding?", options:[
      {t:"Read the Methods and Results to judge the evidence", ok:true, why:"Check how wellbeing was measured, how big the change was and how certain. The abstract is the authors’ summary; the evidence for judging the claim is in the Methods and Results."},
      {t:"Nothing: abstracts are peer-reviewed, so they’re accurate", why:"Peer review covers the whole paper and doesn’t guarantee the abstract is free of overstatement."},
      {t:"Check how many times the paper has been downloaded", why:"Popularity doesn’t tell you whether the claim is supported."},
@@ -1232,7 +1232,7 @@ ICA.addUnit({
    {id:"t4u3-q15", lesson:"t4u3-l2", level:3, q:"Mei is writing a policy brief and needs to decide whether a trial’s result can be relied on. How deeply should she read the trial report?", options:[
      {t:"Fully, including the methods, tables and any supplementary material", ok:true, why:"Relying on a finding for a decision needs the deepest read; that’s where problems with the evidence show."},
      {t:"A 5-minute first pass is enough", why:"A first pass decides relevance; it can’t show whether the evidence is sound."},
-     {t:"The abstract and conclusion are enough because they summarise everything", why:"Summaries leave out the details needed to judge reliability."},
+     {t:"The abstract and conclusion are enough because they summarize everything", why:"Summaries leave out the details needed to judge reliability."},
      {t:"She should rely on a news article about it instead", why:"News coverage is further from the evidence and often simplifies or overstates."}]},
    {id:"t4u3-q16", lesson:"t4u3-l2", level:2, q:"In Zotero’s built-in PDF reader, where are annotations stored?", options:[
      {t:"In the Zotero database, not written into the PDF file", ok:true, why:"Zotero’s documentation says annotations made in its reader are stored in the Zotero database."},
@@ -1246,7 +1246,7 @@ ICA.addUnit({
      {t:"Whether the paper is written in the right language for the course she is taking", why:"The issue is the technical term, not the paper’s language."}]},
    {id:"t4u3-q18", lesson:"t4u3-l2", level:1, q:"What should you read first when looking at a figure?", options:[
      {t:"The caption (legend)", ok:true, why:"It says what is shown and what the symbols mean. Without the caption you may misread axes, units or error bars."},
-     {t:"The colours, which show significance", why:"Colour is a design choice and has no standard meaning."},
+     {t:"The colors, which show significance", why:"Color is a design choice and has no standard meaning."},
      {t:"The authors’ conclusion in the Discussion", why:"It helps to read the evidence before the interpretation."},
      {t:"The references", why:"They don’t explain the figure."}]},
    /* Lesson 3 */
@@ -1309,7 +1309,7 @@ ICA.addUnit({
    {id:"t4u3-q30", lesson:"t4u3-l4", level:1, q:"What does ‘statistically significant’ mean?", options:[
      {t:"The p-value fell below a threshold chosen in advance, often 0.05", ok:true, why:"That’s the whole technical meaning."},
      {t:"The effect is large", why:"Size is shown by the effect size, not significance."},
-     {t:"The result is important for practice", why:"Importance is a judgement about size and context."},
+     {t:"The result is important for practice", why:"Importance is a judgment about size and context."},
      {t:"The result has been proven true", why:"No single test proves a result."}]},
    {id:"t4u3-q31", lesson:"t4u3-l4", level:3, q:"A small trial finds p = 0.31 for a new physiotherapy routine. Lucía’s manager says this “proves it doesn’t work”. What’s the best reply?", options:[
      {t:"Non-significance isn’t proof of no effect; the trial may be too small to tell", ok:true, why:"The interval may include worthwhile benefits. Absence of significance isn’t evidence of absence, especially in small studies."},
@@ -1343,7 +1343,7 @@ ICA.addUnit({
      {t:"There is a 98% chance the coin is biased", why:"1 − p isn’t the probability that the coin is biased."}]},
    /* Lesson 6 (t4u3-l5) */
    {id:"t4u3-q37", lesson:"t4u3-l5", level:1, q:"What is critical appraisal?", options:[
-     {t:"Judging how far to trust a study, and for what, using a fair set of structured questions", ok:true, why:"It’s calibrated judgement, not fault-finding."},
+     {t:"Judging how far to trust a study, and for what, using a fair set of structured questions", ok:true, why:"It’s calibrated judgment, not fault-finding."},
      {t:"Finding reasons to reject every study", why:"Every study has limitations; appraisal decides which matter."},
      {t:"Checking a paper’s spelling and grammar", why:"Clarity matters, but appraisal is about the evidence."},
      {t:"Counting how often a paper is cited", why:"Citations show attention, not trustworthiness."}]},
@@ -1352,13 +1352,13 @@ ICA.addUnit({
      {t:"Surveys can never be published as research", why:"Surveys are widely and usefully published; the issue is the claim."},
      {t:"Anxiety can’t be measured by asking teenagers questions", why:"It can be measured with validated questionnaires."},
      {t:"Teenagers shouldn’t be studied", why:"With proper ethics they can be; the issue is the causal claim."}]},
-   {id:"t4u3-q39", lesson:"t4u3-l5", level:3, q:"An AI tool summarises a paper as “a large trial proving the diet causes weight loss in all adults”. The paper is a 12-week trial in 90 women aged 30–50, with an uncertain result. What has the summary done?", options:[
-     {t:"Exaggerated the size and certainty and over-generalised beyond the sample", ok:true, why:"‘Large’, ‘proving’ and ‘all adults’ all go beyond what the paper reports. Check every claim against the paper."},
+   {id:"t4u3-q39", lesson:"t4u3-l5", level:3, q:"An AI tool summarizes a paper as “a large trial proving the diet causes weight loss in all adults”. The paper is a 12-week trial in 90 women aged 30–50, with an uncertain result. What has the summary done?", options:[
+     {t:"Exaggerated the size and certainty and over-generalized beyond the sample", ok:true, why:"‘Large’, ‘proving’ and ‘all adults’ all go beyond what the paper reports. Check every claim against the paper."},
      {t:"Summarised it accurately, since AI tools read the whole paper before answering", why:"Tools can misread or overstate; this summary contradicts the paper."},
      {t:"Made only a harmless simplification", why:"Changing ‘uncertain’ to ‘proving’ and ‘90 women’ to ‘all adults’ changes the meaning."},
      {t:"Shown that the paper is wrong", why:"The summary is wrong, not necessarily the paper."}]},
    {id:"t4u3-q40", lesson:"t4u3-l5", level:2, q:"What is a reporting guideline such as CONSORT?", options:[
-     {t:"A checklist of what a report of a particular type of study should include", ok:true, why:"For CONSORT, the type of study is a randomised trial. Reporting guidelines help authors report fully and readers check what’s missing."},
+     {t:"A checklist of what a report of a particular type of study should include", ok:true, why:"For CONSORT, the type of study is a randomized trial. Reporting guidelines help authors report fully and readers check what’s missing."},
      {t:"A rule that journals use to decide whether a trial’s results are true or false", why:"It covers reporting, not truth."},
      {t:"A citation style", why:"Citation styles format references; reporting guidelines cover content."},
      {t:"A law that applies in every country", why:"It’s a professional standard, adopted by many journals."}]},
@@ -1378,10 +1378,10 @@ ICA.addUnit({
      {t:"Upload only the abstract and methods", why:"Those parts are also confidential."},
      {t:"Upload it, as long as she deletes the authors’ names first", why:"Removing names doesn’t make the unpublished work hers to share."}]},
    {id:"t4u3-q44", lesson:"t4u3-l5", level:2, q:"Which phrase in a results section is a common sign of spin?", options:[
-     {t:"“A trend towards significance (p = 0.08)”", ok:true, why:"It presents an inconclusive result as if it were nearly positive."},
+     {t:"“A trend toward significance (p = 0.08)”", ok:true, why:"It presents an inconclusive result as if it were nearly positive."},
      {t:"“Difference 2.1 points (95% CI 0.4 to 3.8)”", why:"A plain report of size and uncertainty."},
      {t:"“The primary outcome did not differ between groups”", why:"An honest report of a null result."},
-     {t:"“Our sample was drawn from one region, which limits generalisability”", why:"An honest limitation, the opposite of spin."}]},
+     {t:"“Our sample was drawn from one region, which limits generalizability”", why:"An honest limitation, the opposite of spin."}]},
    {id:"t4u3-q45", lesson:"t4u3-l5", level:3, q:"Amara finds one well-designed study supporting a claim she likes. What should she do before relying on it?", options:[
      {t:"Check for corrections, look for reviews and later studies, and appraise it strictly", ok:true, why:"She should also check whether it has been retracted. One paper is one voice; checking context and her own bias guards against overconfidence. She should appraise it as strictly as a study she disagrees with."},
      {t:"Rely on it, because one well-designed study is enough to settle the question for good", why:"Single studies often aren’t replicated; context matters."},
@@ -1403,7 +1403,7 @@ ICA.addUnit({
      {t:"About 4.0 to 8.0", why:"That is ± one standard error. A 95% interval needs about 1.96 standard errors each side."},
      {t:"About 5.9 to 6.1", why:"That treats the standard error as if it were tiny. Use 1.96 × 2.0 = 3.92."},
      {t:"About 0.0 to 12.0", why:"That uses three standard errors each side, which gives a wider interval than 95%."}]},
-   {id:"t4u3-q49", lesson:"t4u3-l6", level:3, q:"Kenji’s summary of a paper says: “Age is the strongest cause of the outcome, since its coefficient has the most stars.” The paper’s question was about a training programme; age was a control variable. What is wrong?", options:[
+   {id:"t4u3-q49", lesson:"t4u3-l6", level:3, q:"Kenji’s summary of a paper says: “Age is the strongest cause of the outcome, since its coefficient has the most stars.” The paper’s question was about a training program; age was a control variable. What is wrong?", options:[
      {t:"Stars aren’t size, and control coefficients aren’t trustworthy effects", ok:true, why:"Two errors: stars mark p-value thresholds, not importance; and reading a control variable’s coefficient as an effect is the Table 2 fallacy, because the model wasn’t built to estimate it."},
      {t:"Nothing: more stars always mean a stronger cause", why:"Stars depend on sample size and precision as well as size, and say nothing about cause."},
      {t:"Only that he should have said “correlate” instead of “cause”", why:"That fixes one problem but not the other: control coefficients may be confounded or show only part of an effect."},
@@ -1418,16 +1418,16 @@ ICA.addUnit({
      {t:"Nothing: an odds ratio always means “times as likely”", why:"Only roughly, and only when the outcome is rare. Here the outcome is common and the two ratios differ."},
      {t:"They were 25% more likely, the gap in percentage points", why:"The gap is 25 percentage points, not “25% more likely”, which would be a relative change."},
      {t:"They were three times less likely, since odds ratios run backwards", why:"An odds ratio above 1 means higher odds in the first group, not lower."}]},
-   {id:"t4u3-q52", lesson:"t4u3-l6", level:2, q:"In a randomised trial’s Table 1, the groups differ slightly in average age. Following CONSORT 2025, what should a reader do?", options:[
-     {t:"Judge whether the imbalance is large enough to matter", ok:true, why:"With proper randomisation, baseline differences are due to chance, so significance tests of them are not recommended. The useful question is whether an imbalance in an important variable could affect the result."},
+   {id:"t4u3-q52", lesson:"t4u3-l6", level:2, q:"In a randomized trial’s Table 1, the groups differ slightly in average age. Following CONSORT 2025, what should a reader do?", options:[
+     {t:"Judge whether the imbalance is large enough to matter", ok:true, why:"With proper randomization, baseline differences are due to chance, so significance tests of them are not recommended. The useful question is whether an imbalance in an important variable could affect the result."},
      {t:"Look for a p-value showing whether the difference is real", why:"CONSORT 2025 says significance testing of baseline differences is not recommended and should not be reported."},
-     {t:"Conclude that the randomisation must have failed", why:"Chance alone produces small differences. That is expected, not a sign of failure."},
+     {t:"Conclude that the randomization must have failed", why:"Chance alone produces small differences. That is expected, not a sign of failure."},
      {t:"Ignore the table, since trials don’t need one", why:"CONSORT asks trials for a baseline table for each group; it shows who was studied."}]},
    {id:"t4u3-q53", lesson:"t4u3-l6", level:2, q:"A cross-tab of 400 survey answers has age groups as rows and preferred class type (online or in person) as columns, and each **column** adds to 100%. Which question can those percentages answer directly?", options:[
      {t:"Of those who prefer online classes, what share are in each age group?", ok:true, why:"Each column is a preference, so its percentages describe the age mix of the people with that preference."},
      {t:"Which age group is most likely to prefer online classes, compared with the others?", why:"That needs percentages within each age group (rows here), not within each preference."},
      {t:"Whether age causes people to prefer online classes", why:"No percentages in a cross-tab can show cause on their own."},
-     {t:"How many people in the whole country prefer online classes", why:"A cross-tab describes the sample; generalising needs a probability sample and a margin of error."}]},
+     {t:"How many people in the whole country prefer online classes", why:"A cross-tab describes the sample; generalizing needs a probability sample and a margin of error."}]},
    {id:"t4u3-q54", lesson:"t4u3-l6", level:3, q:"Model 1 reports N = 2,400 and Model 2, which adds household income, reports N = 1,650. What should you check first?", options:[
      {t:"Why 750 cases dropped out, and whether they differ", ok:true, why:"Many people may not have reported income. If they differ from the rest, Model 2 describes a different group, and the change between models may partly reflect who was left out."},
      {t:"Nothing: N always falls when variables are added", why:"N falls only when cases have missing data on the new variable. The drop needs explaining."},

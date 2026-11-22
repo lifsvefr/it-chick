@@ -20,7 +20,7 @@ ICA.addUnit({
    goals:[
      "Explain what a shell is and why people still use one",
      "Tell apart the terminal, the shell and the command line, and name the usual shell on Windows, Mac, ChromeOS and Linux",
-     "Open a terminal on your device and recognise the prompt",
+     "Open a terminal on your device and recognize the prompt",
      "Run your first commands (`echo`, `date`, `whoami`, `clear`) and read a command as a program, flags and arguments",
      "Stay calm: read a command before pressing Enter, stop a running command, and get out of the common “stuck” states"
    ],
@@ -46,7 +46,7 @@ ICA.addUnit({
         ["[[shell|Shell]]","The program that reads each line and runs it","The person who takes your order and passes it to the kitchen"],
         ["[[command-line|Command line]]","The way of working: typed commands, text replies (also the line where you type)","Ordering by speaking rather than pointing"]
       ]},
-      {fig:'<svg viewBox="0 0 340 312"><defs><marker id="t2u6a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="10" width="270" height="44" rx="8" stroke-width="1.5"/><text x="145" y="30" text-anchor="middle">You type: ls -l Documents</text><text class="s" x="145" y="46" text-anchor="middle">and press Enter</text><path class="d-ink" d="M145,54 L145,76" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-lup" x="10" y="80" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="100" text-anchor="middle">Terminal (the window)</text><text class="s" x="145" y="118" text-anchor="middle">shows text, passes your keys on</text><path class="d-ink" d="M145,128 L145,150" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-rose" x="10" y="154" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="174" text-anchor="middle">Shell: bash, zsh or PowerShell</text><text class="s" x="145" y="192" text-anchor="middle">splits the line into words, finds ls</text><path class="d-ink" d="M145,202 L145,224" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-sage" x="10" y="228" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="248" text-anchor="middle">The program ls runs</text><text class="s" x="145" y="266" text-anchor="middle">asks the system what’s in Documents</text><path class="d-ink" d="M300,252 L300,40" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#t2u6a1)"/><text class="s" x="322" y="150" text-anchor="middle" transform="rotate(-90 322 150)">output comes back</text><text class="s" x="10" y="300">The list appears in the terminal window.</text></svg>', alt:"A vertical flow. At the top, you type ls -l Documents and press Enter. An arrow leads to the terminal, the window that shows text and passes your keys on. Next is the shell, bash, zsh or PowerShell, which splits the line into words and finds the program ls. At the bottom, the program ls runs and asks the system what is in Documents. A dashed arrow on the right runs back up to the top, labelled output comes back: the list appears in the terminal window.", cap:"What happens when you press Enter. The terminal is the window; the shell reads your line and runs programs; their output comes back to the window."},
+      {fig:'<svg viewBox="0 0 340 312"><defs><marker id="t2u6a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="10" y="10" width="270" height="44" rx="8" stroke-width="1.5"/><text x="145" y="30" text-anchor="middle">You type: ls -l Documents</text><text class="s" x="145" y="46" text-anchor="middle">and press Enter</text><path class="d-ink" d="M145,54 L145,76" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-lup" x="10" y="80" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="100" text-anchor="middle">Terminal (the window)</text><text class="s" x="145" y="118" text-anchor="middle">shows text, passes your keys on</text><path class="d-ink" d="M145,128 L145,150" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-rose" x="10" y="154" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="174" text-anchor="middle">Shell: bash, zsh or PowerShell</text><text class="s" x="145" y="192" text-anchor="middle">splits the line into words, finds ls</text><path class="d-ink" d="M145,202 L145,224" stroke-width="2" marker-end="url(#t2u6a1)"/><rect class="d-sage" x="10" y="228" width="270" height="48" rx="8" stroke-width="1.5"/><text x="145" y="248" text-anchor="middle">The program ls runs</text><text class="s" x="145" y="266" text-anchor="middle">asks the system what’s in Documents</text><path class="d-ink" d="M300,252 L300,40" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#t2u6a1)"/><text class="s" x="322" y="150" text-anchor="middle" transform="rotate(-90 322 150)">output comes back</text><text class="s" x="10" y="300">The list appears in the terminal window.</text></svg>', alt:"A vertical flow. At the top, you type ls -l Documents and press Enter. An arrow leads to the terminal, the window that shows text and passes your keys on. Next is the shell, bash, zsh or PowerShell, which splits the line into words and finds the program ls. At the bottom, the program ls runs and asks the system what is in Documents. A dashed arrow on the right runs back up to the top, labeled output comes back: the list appears in the terminal window.", cap:"What happens when you press Enter. The terminal is the window; the shell reads your line and runs programs; their output comes back to the window."},
       "Several shells exist, and each device has a usual one:",
       {list:[
         "**[[bash]]**: the long-standing default on most Linux systems, including the Linux environment on Chromebooks.",
@@ -72,7 +72,7 @@ ICA.addUnit({
       {code:['amara@garden-laptop:~$','amara@Amaras-Mac ~ %','PS C:\\Users\\amara>'].join("\n"), lang:"txt", label:"Prompts in bash, zsh and PowerShell", cap:"bash usually ends in `$`, zsh in `%`, PowerShell in `>`. The `~` is short for your home folder (Lesson 2). A prompt ending in `#` means you are the all-powerful administrator account, called root: be extra careful there."},
       "Your prompt will look a little different, and that’s fine. What matters is the symbol at the end: it means the shell is waiting for you.",
       {key:"Never type the prompt itself. In guides, including this one, a line shown as `$ date` means: type `date` and press Enter. The `$` is just there to show which lines are typed and which are the computer’s reply."},
-      "In this unit, code boxes labelled **Command line** contain only what you type, so the **Copy** button gives you something you can paste. Boxes that show a conversation (what you typed plus the reply) are labelled **What you see**, and there the typed lines start with `$`."
+      "In this unit, code boxes labeled **Command line** contain only what you type, so the **Copy** button gives you something you can paste. Boxes that show a conversation (what you typed plus the reply) are labeled **What you see**, and there the typed lines start with `$`."
     ]},
     {h:"Your first commands", body:[
       "Try these four. Each is safe: none of them changes anything on your computer.",
@@ -100,7 +100,7 @@ ICA.addUnit({
     ]},
     {h:"It’s okay to be nervous: read before you press Enter", body:[
       "Many people feel uneasy at a blank prompt: no buttons, no undo, and stories of one command deleting everything. The worry is reasonable, and the cure is a habit: **read the whole line before pressing Enter**. Ask: what program is this, what do the flags do, and what will it act on?",
-      "Most commands only **look** (`ls`, `pwd`, `cat`, `date`). A few **change** things (`mv`, `cp`, `rm`, `mkdir`), and you’ll meet them in Lesson 3, practising in a throwaway folder. While you’re learning, nothing in this unit needs administrator power.",
+      "Most commands only **look** (`ls`, `pwd`, `cat`, `date`). A few **change** things (`mv`, `cp`, `rm`, `mkdir`), and you’ll meet them in Lesson 3, practicing in a throwaway folder. While you’re learning, nothing in this unit needs administrator power.",
       {h:"Getting unstuck"},
       {table:[
         ["What you see","What’s happening","What to do"],
@@ -164,7 +164,7 @@ ICA.addUnit({
      {t:"Open a terminal and find your prompt", how:{
        win:["Right-click the **Start** button and choose **Terminal** (on older versions of Windows this menu may say **Windows Terminal** or **Windows PowerShell** instead).","A window opens with a prompt like `PS C:\\Users\\yourname>`. That’s PowerShell.","Don’t choose **Terminal (Admin)**: you don’t need administrator power for anything in this unit."],
        mac:["Press [[kbd:Cmd]] + [[kbd:Space]], type `Terminal` and press [[kbd:Return]]. (Or open **Finder → Applications → Utilities → Terminal**.)","A window opens with a prompt ending in `%`. That’s zsh.","If you see a message about the default shell being zsh, your account still uses bash, which was the default on older Macs. Either is fine for this unit."],
-       chromeos:["Select the time at the bottom right, then **Settings → About ChromeOS → Developers**.","Next to **Linux development environment**, select **Set up** and follow the steps. It can take 10 minutes or more.","When it finishes, a Terminal window opens with a prompt ending in `$`. Later, open it from the Launcher by searching for Terminal.","If the Developers option is missing or greyed out, your administrator may have turned Linux off. Use the phone steps."],
+       chromeos:["Select the time at the bottom right, then **Settings → About ChromeOS → Developers**.","Next to **Linux development environment**, select **Set up** and follow the steps. It can take 10 minutes or more.","When it finishes, a Terminal window opens with a prompt ending in `$`. Later, open it from the Launcher by searching for Terminal.","If the Developers option is missing or grayed out, your administrator may have turned Linux off. Use the phone steps."],
        phone:["Phones don’t include a terminal. You can still learn everything here by reading and doing the exercises.","Optional, Android: terminal apps such as Termux give you a small Linux-like shell where most commands in this unit work.","Optional, iPhone and iPad: apps such as a-Shell or iSH offer a Unix-like shell; some commands differ or are missing.","Install only from your phone’s official app store or the project’s own site, and give such apps no permissions they don’t need."]
      }, write:"What does your prompt look like? Which shell are you using?"},
      {t:"Run your first four commands", how:["Type `echo Hello from the shell` and press Enter.","Type `date`, then `whoami`. Compare the replies with the examples in the lesson.","Try `echo Hello,    world` with extra spaces, then the same with quotes around the text. Notice the difference.","Type `clear` (or press [[kbd:Ctrl]] + [[kbd:L]]) to tidy the window."], write:"Copy one command and its output. What did the quotes change?"},
@@ -206,7 +206,7 @@ ICA.addUnit({
     {h:"What’s here? ls", body:[
       "`[[ls]]` (list) shows what’s in the working directory, or in a folder you name as an argument:",
       {code:['ls','ls Documents','ls -l Documents','ls -a'].join("\n"), lang:"sh", label:"Command line"},
-      {code:['$ ls',' Documents   Downloads  \'Garden club\'   Pictures','$ ls Documents','notes.txt  recipes'].join("\n"), lang:"txt", label:"What you see", cap:"Linux puts quotes around names with spaces so you can see where each name ends (and nudges the other names over by a space to keep them lined up); a Mac shows the name without quotes. Many terminals also colour folders differently from files."},
+      {code:['$ ls',' Documents   Downloads  \'Garden club\'   Pictures','$ ls Documents','notes.txt  recipes'].join("\n"), lang:"txt", label:"What you see", cap:"Linux puts quotes around names with spaces so you can see where each name ends (and nudges the other names over by a space to keep them lined up); a Mac shows the name without quotes. Many terminals also color folders differently from files."},
       {h:"-l: the long format"},
       {code:['$ ls -l Documents','total 8','-rw-r--r-- 1 amara amara    2 Nov  6 15:43 notes.txt','drwxr-xr-x 2 amara amara 4096 Nov  6 15:43 recipes'].join("\n"), lang:"txt", label:"What you see"},
       "Each line is one item. The first character says what it is: `d` for a directory, `-` for an ordinary file. The next nine characters are **[[permissions]]**: who may read (`r`), write (`w`) or run (`x`) it. Then come the owner, the group, the size in bytes, the date it last changed, and the name. You don’t need to decode the permissions yet; noticing `d` versus `-` is already useful.",
@@ -305,7 +305,7 @@ ICA.addUnit({
      {t:"Map your home folder", how:{
        win:["Open Terminal (PowerShell). Type `pwd`: you should see something like `C:\\Users\\yourname`.","Type `ls` to see your folders, then `ls -Force` to include hidden ones.","Type `cd Documents`, then `pwd`, then `ls`.","Type `cd ..` to go back, then `cd ~` from anywhere to go home."],
        mac:["Open Terminal. Type `pwd`: you should see `/Users/yourname`.","Type `ls`, then `ls -a` and `ls -l`. Spot which entries are folders (`d`).","Type `cd Documents`, then `pwd`, then `ls`. If macOS asks whether Terminal may access your Documents folder, that’s a normal privacy check: allow it if you’re happy to.","Type `cd ..`, then `cd ~`."],
-       chromeos:["Open Terminal. Type `pwd`: you’ll see `/home/yourname`. This is your Linux home, shown as **Linux files** in the Files app.","Type `ls`, then `ls -a`. A new Linux home has few visible files but several hidden ones.","Make a folder in the Files app under **Linux files**, then run `ls` again in Terminal to see it appear.","Practise `cd` into it, `cd ..` and `cd ~`."],
+       chromeos:["Open Terminal. Type `pwd`: you’ll see `/home/yourname`. This is your Linux home, shown as **Linux files** in the Files app.","Type `ls`, then `ls -a`. A new Linux home has few visible files but several hidden ones.","Make a folder in the Files app under **Linux files**, then run `ls` again in Terminal to see it appear.","Practice `cd` into it, `cd ..` and `cd ~`."],
        phone:["Without a terminal app: open your phone’s Files app and find a folder with a sub-folder inside it. Write down the path to it in shell style, like `Documents/recipes`.","Write what `cd ..` would do from there, and a relative path from one folder to a sibling (using `..`).","With Termux (Android) or a-Shell (iPhone and iPad): run `pwd`, `ls -a` and `cd ..` and compare with the lesson. Their home folders are inside the app, not your whole phone."]
      }, write:"What’s your home folder’s full path? Name one hidden file you found."},
      {t:"Practise Tab, history and quotes", how:["Type `cd Doc` and press [[kbd:Tab]]. Then go back with `cd ..`.","Type `ls D` and press [[kbd:Tab]] twice (once in zsh) to see every name starting with D.","Press [[kbd:↑]] a few times to see your previous commands. Type `history` (bash, zsh or PowerShell).","If you have a folder with a space in its name, try `cd` into it without quotes, read the error, then use quotes or Tab."], write:"Which shortcut will save you the most typing?"}
@@ -326,8 +326,8 @@ ICA.addUnit({
      "Preview what a wildcard matches before deleting with it"
    ],
    learn:[
-    {h:"A safe place to practise", body:[
-      {lead:"The commands in this lesson change things. So you’ll practise them where nothing matters."},
+    {h:"A safe place to practice", body:[
+      {lead:"The commands in this lesson change things. So you’ll practice them where nothing matters."},
       "Make a folder just for practice, inside your home folder, and do everything there. If something goes wrong, you lose only practice files.",
       {code:['cd ~','mkdir shell-practice','cd shell-practice','pwd'].join("\n"), lang:"sh", label:"Command line", cap:"`pwd` should end in `/shell-practice` (or `\\shell-practice` on Windows). These four lines work the same in PowerShell."},
       {key:"Before any command that changes or deletes files, check where you are with `pwd`, and what’s there with `ls`. Most shell accidents happen in the wrong folder."},
@@ -445,7 +445,7 @@ ICA.addUnit({
     ]},
       {id:"t2u6-l3-x7", type:"explain", q:"Explain why it’s wise to run `ls *.txt` before `rm *.txt`, and why deleting in the shell needs more care than deleting in a file manager.", hint:"When does the shell turn `*.txt` into a list of names? Where do files deleted with `rm` go?", model:"`rm` deletes straight away: there is no bin, no undo, and by default it doesn’t ask “are you sure?”. With a wildcard, the shell expands the pattern into a list of names before the command runs, so `rm` just receives those names. Running `ls` with the same pattern first shows exactly which files `rm` will get. That catches mistakes such as being in the wrong folder, or an extra space in `rm * .txt`, where `*` matches every file. A safe routine is `pwd`, `ls` with the pattern, `rm -i` with the pattern, then `ls` again.", points:["Says `rm` has no bin or undo and doesn’t ask by default", "Says the shell expands the wildcard before the command runs", "Says `ls` with the same pattern previews what will be deleted", "Mentions checking the folder with `pwd` or using `rm -i`"]}
    ],
-   apply:{intro:"Practise every command in a throwaway folder, so mistakes cost nothing.", tasks:[
+   apply:{intro:"Practice every command in a throwaway folder, so mistakes cost nothing.", tasks:[
      {t:"Build and rearrange a practice folder", how:{
        win:["Open Terminal (PowerShell) and type `cd ~`, `mkdir shell-practice`, `cd shell-practice`, `pwd`.","Make folders: `mkdir drafts, photos`. Make files: `New-Item notes.txt, todo.txt -ItemType File`.","Copy and rename: `cp notes.txt notes-backup.txt`, then `mv notes-backup.txt old-notes.txt`.","Move: `mv todo.txt drafts`. Check with `ls` and `ls drafts`.","Open the folder in File Explorer (type `explorer .`) and see the same files."],
        mac:["Open Terminal: `cd ~`, `mkdir shell-practice`, `cd shell-practice`, `pwd`.","`mkdir drafts photos`, then `touch notes.txt todo.txt`.","`cp notes.txt notes-backup.txt`, then `mv notes-backup.txt old-notes.txt`.","`mv todo.txt drafts/`, then `ls` and `ls drafts`.","Type `open .` to see the same folder in Finder."],
@@ -490,7 +490,7 @@ ICA.addUnit({
       ]},
       "Often you only need the start or the end. `head` shows the first lines and `tail` the last; `-n` says how many (10 if you don’t say):",
       {code:['$ head -n 3 harvest.txt','Mon tomatoes 3 Amara','Mon beans 2 Kenji','Tue Tomatoes 4 Hana','$ tail -n 2 harvest.txt','Thu beans 5 Mei','Fri herbs 1 Sione'].join("\n"), lang:"txt", label:"What you see"},
-      "`tail` is a favourite for **log files**, where the newest lines are at the bottom. `head` is handy for peeking at a big data file to see its column headings.",
+      "`tail` is a favorite for **log files**, where the newest lines are at the bottom. `head` is handy for peeking at a big data file to see its column headings.",
       "In PowerShell, `cat` runs `Get-Content`. Use `Get-Content harvest.txt -Head 3` and `Get-Content harvest.txt -Tail 2`; for page-by-page reading, `more` works in both Windows shells."
     ]},
     {h:"Counting: wc", body:[
@@ -565,7 +565,7 @@ ICA.addUnit({
       {t:"She needs `-n` to see all the lines", why:"`-n` adds line numbers; it doesn’t find more lines."}
     ]},
     {id:"t2u6-l4-x3", type:"order", q:"Put the steps of `grep -i beans harvest.txt | wc -l` in the order they happen.", items:[
-      {t:"The shell reads the line and sets up a pipe between `grep` and `wc`", why:"The shell organises everything before the programs do their work."},
+      {t:"The shell reads the line and sets up a pipe between `grep` and `wc`", why:"The shell organizes everything before the programs do their work."},
       {t:"grep reads `harvest.txt`", why:"The file is grep’s argument, so grep opens it."},
       {t:"grep sends each matching line into the pipe instead of to the screen", why:"Its output goes to `wc`, not to you."},
       {t:"wc counts the lines arriving through the pipe", why:"wc reads its input from the pipe because no file was named."},
@@ -579,7 +579,7 @@ ICA.addUnit({
     {id:"t2u6-l4-x5", type:"spot", q:"Tap each command that will leave a file **empty or with its old contents lost**.", ask:"loses data", mono:true, parts:[
       {t:"sort names.txt > names.txt", flag:true, why:"The shell empties `names.txt` before `sort` reads it. The result is an empty file."}, "\n", {t:"sort names.txt > sorted.txt", flag:false, why:"Safe: the output goes to a new file, and the original is untouched."}, "\n", {t:"echo \"Mei\" >> names.txt", flag:false, why:"Two arrows append: the old contents stay."}, "\n", {t:"echo \"Mei\" > names.txt", flag:true, why:"One arrow replaces the whole file with one line."}, "\n", {t:"grep -i mei names.txt | wc -l", flag:false, why:"This only reads and counts. Nothing is written."}, "\n", {t:"head -n 3 names.txt > top3.txt", flag:false, why:"Safe: it reads `names.txt` and writes a different file."}
     ]},
-    {id:"t2u6-l4-x6", type:"mcq", q:"Tomás wants to know how many lines of `orders.txt` mention “refund”, in any capitalisation. Which command answers it in one go?", options:[
+    {id:"t2u6-l4-x6", type:"mcq", q:"Tomás wants to know how many lines of `orders.txt` mention “refund”, in any capitalization. Which command answers it in one go?", options:[
       {t:"`grep -i refund orders.txt | wc -l`", ok:true, why:"Right. grep finds the lines, ignoring case, and the pipe hands them to `wc -l` to count. (`grep -ic refund orders.txt` gives the same number.)"},
       {t:"`grep refund orders.txt > wc -l`", why:"`>` sends output to a **file**: this creates a file named `wc` and passes `-l` to grep. Use `|` to feed another command."},
       {t:"`wc -l orders.txt | grep -i refund`", why:"The order is backwards: this counts all lines first, then searches the count (just a number and a file name) for “refund”."},
@@ -610,11 +610,11 @@ ICA.addUnit({
      "Get help from `--help`, `man` and example-first pages, and read a usage line",
      "Read the common error messages and know what to check for each",
      "Explain what `sudo` and “Run as administrator” do, and why to be wary of them",
-     "Judge a command copied from a website or an AI tool before running it, and recognise red flags",
+     "Judge a command copied from a website or an AI tool before running it, and recognize red flags",
      "Translate the everyday commands between bash or zsh and PowerShell"
    ],
    learn:[
-    {h:"Nobody memorises it all: --help", body:[
+    {h:"Nobody memorizes it all: --help", body:[
       {lead:"Experienced people look things up constantly. The skill is knowing where to look and how to read what you find."},
       "Most commands print a short summary of their flags when you add `--help`:",
       {code:['$ ls --help','Usage: ls [OPTION]... [FILE]...','List information about the FILEs (the current directory by default).','…'].join("\n"), lang:"txt", label:"What you see (Linux, ChromeOS)", cap:"The list of options follows. Pipe it into `less` if it scrolls past: `ls --help | less`."},
@@ -713,7 +713,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"t2u6-l5-x1", type:"mcq", q:"A simplified usage line for `cp` reads `cp [OPTION]... SOURCE DEST`. What does it tell you?", options:[
-      {t:"Options are optional, but SOURCE and DEST aren’t", ok:true, why:"Right. Square brackets mean optional, three dots mean “more than one allowed”, and capitalised words without brackets are things you must fill in, in that order."},
+      {t:"Options are optional, but SOURCE and DEST aren’t", ok:true, why:"Right. Square brackets mean optional, three dots mean “more than one allowed”, and capitalized words without brackets are things you must fill in, in that order."},
       {t:"You must give exactly one option", why:"The square brackets mean options are optional, and the dots allow several."},
       {t:"The destination comes first, then the source", why:"The usage line shows the order: SOURCE, then DEST. From, then to."},
       {t:"Words in capitals must be typed in capitals", why:"Capitals mark placeholders: replace SOURCE with your file’s name."}
@@ -754,7 +754,7 @@ ICA.addUnit({
     ]},
       {id:"t2u6-l5-x7", type:"explain", q:"A command fails with “Permission denied”, and a forum reply says “just put sudo in front”. Explain why you should stop and think first.", hint:"What is “Permission denied” protecting? What power does sudo give a command?", model:"“Permission denied” appears when you try to change something that belongs to the system or another account. It is the safety net working, so it is information, not an obstacle: first ask why you were stopped. `sudo` runs the command as root, which can change anything, so a typo could damage the system rather than just your own files, and anything malicious in the command or a script it downloads runs with full power. Files created with sudo also belong to root and cause problems later. Use it only when you know exactly what the command does and why it needs that power.", points:["Says “Permission denied” protects system or other users’ files", "Says sudo runs the command with full (root) power", "Gives a risk: typos, malicious code, or root-owned files", "Says to use it only when you understand the command and why it needs it"]}
    ],
-   apply:{intro:"Practise finding help and reading errors, then judge some commands you might meet online.", tasks:[
+   apply:{intro:"Practice finding help and reading errors, then judge some commands you might meet online.", tasks:[
      {t:"Get help three ways", how:{
        win:["In PowerShell, type `Get-Help Get-ChildItem`. If it offers to update help, you can say no and read the summary, or use the online version.","Try `Get-Help Copy-Item -Examples` and read one example.","Type `Get-Alias ls` to see which real command `ls` runs."],
        mac:["Type `man ls` and find the `-a` flag (type `/-a` and press Return; Q to quit).","Type `man grep` and find what `-c` does.","Try `ls --help`. Notice how the Mac version responds."],
@@ -879,7 +879,7 @@ ICA.addUnit({
     levels:{
      starter:[
       {table:[["Command","Does"],["`mkdir drafts`","Make a folder"],["`touch notes.txt`","Make an empty file"],["`cp a.txt b.txt`","Copy (from, then to)"],["`mv a.txt b.txt`","Move or rename"],["`rm a.txt`","Delete a file"],["`rmdir drafts`","Delete an empty folder"]]},
-      {warn:"`rm` has no undo and doesn’t use the Recycle Bin or Trash. Practise in a throwaway folder, and keep backups of anything that matters."},
+      {warn:"`rm` has no undo and doesn’t use the Recycle Bin or Trash. Practice in a throwaway folder, and keep backups of anything that matters."},
       "Think of `cp` as a photocopier (the original stays) and `mv` as picking a sheet up and putting it somewhere else, or writing a new label on it. `rm` is the shredder.",
       "Before changing anything, check where you are (`pwd`) and what’s there (`ls`). Add `-i` to `rm`, `cp` or `mv` to be asked before anything is deleted or replaced. In PowerShell, `New-Item` replaces `touch`, and `Remove-Item` (alias `rm`) is the delete command."
      ],
@@ -955,7 +955,7 @@ ICA.addUnit({
       "Every program has three standard **streams**: **standard input** (stdin, where it reads), **standard output** (stdout, its normal results) and **standard error** (stderr, its error messages). By default stdin is the keyboard and both outputs go to the terminal.",
       {table:[["Syntax","Effect"],["`a | b`","a’s stdout becomes b’s stdin"],["`cmd > file`","stdout into file (truncate first)"],["`cmd >> file`","stdout appended to file"],["`cmd < file`","stdin read from file"],["`cmd 2> errors.txt`","stderr into a file"]]},
       "Because errors use a separate stream, `ls missing.txt > out.txt` still shows the error on screen and leaves `out.txt` empty.",
-      "Programs that read stdin and write stdout are **filters**: grep, sort, uniq, head, tail, wc, cut. Chaining filters answers questions: `cut -d' ' -f2 harvest.txt | sort | uniq -c` counts how many times each crop appears (sort first, because `uniq` only merges neighbouring duplicates). Hana’s “Tomatoes” is counted separately from “tomatoes”: these tools compare text exactly.",
+      "Programs that read stdin and write stdout are **filters**: grep, sort, uniq, head, tail, wc, cut. Chaining filters answers questions: `cut -d' ' -f2 harvest.txt | sort | uniq -c` counts how many times each crop appears (sort first, because `uniq` only merges neighboring duplicates). Hana’s “Tomatoes” is counted separately from “tomatoes”: these tools compare text exactly.",
       "`tee` copies what flows through a pipe into a file while passing it on: `grep -i tomatoes harvest.txt | tee tomatoes.txt | wc -l` saves the lines **and** counts them.",
       "**PowerShell** supports `|`, `>`, `>>` and `2>`, but its pipes carry objects; `>` in Windows PowerShell 5.1 writes UTF-16, so use `Out-File -Encoding utf8` (or `Set-Content -Encoding utf8`) for files other tools will read."
      ],
@@ -993,7 +993,7 @@ ICA.addUnit({
       "Every command returns an **exit status**: 0 for success, anything else for failure (`echo $?` in bash and zsh; in PowerShell, `$?` is simply True or False, and `$LASTEXITCODE` holds the number from the last outside program). Scripts chain on it with `&&` and `||`.",
       "`sudo` is configured in `/etc/sudoers` (edit only with `visudo`); it logs use and caches your credentials for a few minutes. Running editors or installers under `sudo` can leave root-owned files in your home folder that later cause Permission denied.",
       "Piping a download straight into a shell means a compromised server, a typo-squatted domain or an interrupted download all run as code. Safer: download, inspect, verify a checksum or signature if offered, then run; or use the system’s package manager.",
-      "PowerShell’s execution policy (`Get-ExecutionPolicy`) controls whether script files run. Microsoft describes it as defence in depth, not a security boundary: it can be bypassed and doesn’t replace judging a script.",
+      "PowerShell’s execution policy (`Get-ExecutionPolicy`) controls whether script files run. Microsoft describes it as defense in depth, not a security boundary: it can be bypassed and doesn’t replace judging a script.",
       "AI assistants can produce plausible commands with invented flags or for the wrong platform, and can suggest packages that don’t exist, names that attackers may register; Unit 11 covers this. Ask for an explanation of each part and verify against documentation. Missing Semester’s “AI in the Shell” section discusses using these tools at the command line."
      ]
     },
@@ -1108,7 +1108,7 @@ ICA.addUnit({
      {t:"It worked: many commands are silent on success", ok:true, why:"Shell tools usually report only problems. Check with `ls` if you want to see the result."},
      {t:"It failed silently", why:"Failures print an error message."},
      {t:"It’s still running in secret", why:"The prompt returned, so the command finished."},
-     {t:"The terminal is broken", why:"Silence is normal behaviour for successful commands."}
+     {t:"The terminal is broken", why:"Silence is normal behavior for successful commands."}
    ]},
    {id:"t2u6-q09", lesson:"t2u6-l1", level:3, q:"Fatima uses a Chromebook from her school. She can’t find the Linux development environment in Settings. What’s the most likely reason?", options:[
      {t:"Her school has turned Linux off", ok:true, why:"A school’s administrator can turn Linux off for managed Chromebooks; Google’s help notes that work and school Chromebooks may not allow it. She can still learn from the lessons and exercises."},

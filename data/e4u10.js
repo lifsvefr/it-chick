@@ -5,7 +5,7 @@ ICA.addUnit({
   goals:[
     "Explain how treaties, custom, general principles, jus cogens and soft law work, using the Vienna Convention and leading ICJ cases",
     "Compare the main theories of why states comply with international law (managerial, enforcement, legitimacy, transnational legal process, rational choice) and the evidence for each",
-    "Apply the Charter rules on force and self-defence to real cases, and describe contested cases neutrally with each side’s legal argument",
+    "Apply the Charter rules on force and self-defense to real cases, and describe contested cases neutrally with each side’s legal argument",
     "Use UNCLOS to read maritime disputes, including the 2016 South China Sea arbitration and the positions of both parties",
     "Explain how territory is acquired and kept in law, and what uti possidetis does",
     "Trace international criminal justice from Nuremberg and Tokyo to the ICC and hybrid courts, and weigh the critiques from TWAIL, feminist and other scholars"
@@ -24,7 +24,7 @@ ICA.addUnit({
      "Use the Vienna Convention on the Law of Treaties to explain pacta sunt servanda, interpretation, reservations and termination",
      "Prove or disprove a customary rule using state practice and opinio juris, including the persistent objector rule",
      "Distinguish jus cogens from obligations erga omnes, with a real case",
-     "Explain soft law and the legalisation debate, with its critics"
+     "Explain soft law and the legalization debate, with its critics"
    ],
    learn:[
     {h:"From a list of sources to a lawyer’s toolkit", body:[
@@ -61,19 +61,19 @@ ICA.addUnit({
     ]},
     {h:"Jus cogens and erga omnes", body:[
       "The primer defined [[jus-cogens|jus cogens]]: norms no treaty may override (VCLT Articles 53 and 64). In 2022 the ILC adopted conclusions on such norms with a non-exhaustive list. It includes the prohibitions of aggression, genocide, crimes against humanity, slavery, torture, and racial discrimination and apartheid.",
-      "A different idea is often confused with it. Obligations [[erga-omnes|erga omnes]] are owed “towards the international community as a whole”, a phrase from the ICJ’s *Barcelona Traction* judgment (1970). Jus cogens is about **hierarchy** (which rule wins); erga omnes is about **standing** (who may complain).",
-      "Standing became concrete in 2019, when The Gambia sued Myanmar under the Genocide Convention over the treatment of the Rohingya. The Gambia was not directly injured, but the Court accepted that every party to the Convention has a common interest in compliance (obligations *erga omnes partes*). It did so provisionally when it ordered provisional measures in January 2020, and finally in its 2022 judgment on preliminary objections. Sceptics note the limits: in *Armed Activities* (DRC v. Rwanda, 2006) the Court held that a jus cogens norm does not by itself give the Court jurisdiction."
+      "A different idea is often confused with it. Obligations [[erga-omnes|erga omnes]] are owed “toward the international community as a whole”, a phrase from the ICJ’s *Barcelona Traction* judgment (1970). Jus cogens is about **hierarchy** (which rule wins); erga omnes is about **standing** (who may complain).",
+      "Standing became concrete in 2019, when The Gambia sued Myanmar under the Genocide Convention over the treatment of the Rohingya. The Gambia was not directly injured, but the Court accepted that every party to the Convention has a common interest in compliance (obligations *erga omnes partes*). It did so provisionally when it ordered provisional measures in January 2020, and finally in its 2022 judgment on preliminary objections. Skeptics note the limits: in *Armed Activities* (DRC v. Rwanda, 2006) the Court held that a jus cogens norm does not by itself give the Court jurisdiction."
     ]},
-    {h:"Soft law and the legalisation debate", body:[
-      "[[soft-law|Soft law]] means instruments that are not legally binding but still shape behaviour: declarations, codes, guidelines and standards. Examples include the Helsinki Final Act (1975), the Rio Declaration (1992) and the UN Guiding Principles on Business and Human Rights (2011). Another is the ASEAN–China Declaration on the Conduct of Parties in the South China Sea (2002), which Lesson 4 returns to.",
-      "IR scholars turned this into a theory. In a 2000 special issue of *International Organization*, Kenneth Abbott, Robert Keohane, Andrew Moravcsik, Anne-Marie Slaughter and Duncan Snidal described [[legalization|legalisation]]. In their account, it varies along three dimensions: **obligation** (how binding), **precision** (how exact) and **delegation** (whether third parties such as courts interpret and apply it). Abbott and Snidal argued that softer forms are often a rational choice. In their view, softer forms cost less to negotiate, cost less sovereignty and can be adjusted as knowledge grows.",
+    {h:"Soft law and the legalization debate", body:[
+      "[[soft-law|Soft law]] means instruments that are not legally binding but still shape behavior: declarations, codes, guidelines and standards. Examples include the Helsinki Final Act (1975), the Rio Declaration (1992) and the UN Guiding Principles on Business and Human Rights (2011). Another is the ASEAN–China Declaration on the Conduct of Parties in the South China Sea (2002), which Lesson 4 returns to.",
+      "IR scholars turned this into a theory. In a 2000 special issue of *International Organization*, Kenneth Abbott, Robert Keohane, Andrew Moravcsik, Anne-Marie Slaughter and Duncan Snidal described [[legalization|legalization]]. In their account, it varies along three dimensions: **obligation** (how binding), **precision** (how exact) and **delegation** (whether third parties such as courts interpret and apply it). Abbott and Snidal argued that softer forms are often a rational choice. In their view, softer forms cost less to negotiate, cost less sovereignty and can be adjusted as knowledge grows.",
       {table:[
         ["","Hard law","Soft law"],
         ["Binding?","Yes","No"],
         ["Strengths","Credible commitments, courts can apply it","Fast, flexible, easier to join"],
         ["Risks","Slow, states may refuse to join","Easy to ignore; blurs what is law"]
       ]},
-      "Critics push back from two sides. Prosper Weil’s article “Towards Relative Normativity in International Law?” (1983) warned that soft law and jus cogens together blur the line between law and non-law. Others worry about the [[fragmentation-of-international-law|fragmentation]] of international law into specialised regimes (trade, human rights, environment), each with its own experts and courts. This was the subject of an ILC study finalised by Martti Koskenniemi in 2006.",
+      "Critics push back from two sides. Prosper Weil’s article “Towards Relative Normativity in International Law?” (1983) warned that soft law and jus cogens together blur the line between law and non-law. Others worry about the [[fragmentation-of-international-law|fragmentation]] of international law into specialized regimes (trade, human rights, environment), each with its own experts and courts. This was the subject of an ILC study finalized by Martti Koskenniemi in 2006.",
       {terms:["international-law-commission","vclt","pacta-sunt-servanda","treaty-interpretation","treaty-reservation","state-practice","persistent-objector","erga-omnes","soft-law","legalization","fragmentation-of-international-law"]}
     ]}
    ],
@@ -94,8 +94,8 @@ ICA.addUnit({
     {id:"e4u10-l1-x3", type:"sort", q:"Each statement describes a state’s conduct. Does it show **state practice**, **opinio juris**, or **both**?", buckets:["Practice only","Opinio juris only","Both"], items:[
       {t:"Ships of several states regularly salute each other at sea, and every government calls it a courtesy.", b:0, why:"Regular conduct without any sense of legal obligation: practice, but no opinio juris, so no custom."},
       {t:"A foreign ministry states in the UN that “international law requires” a certain rule, but no state has yet acted on it.", b:1, why:"A statement of legal belief with no supporting conduct yet."},
-      {t:"Many states release foreign diplomats arrested by mistake, and apologise because “immunity is owed under international law”.", b:2, why:"Consistent conduct plus an explicit sense that it is legally required."},
-      {t:"Neighbouring states keep fishing quotas they say they follow only to stay on good terms.", b:0, why:"Conduct explained as goodwill, not legal duty."},
+      {t:"Many states release foreign diplomats arrested by mistake, and apologize because “immunity is owed under international law”.", b:2, why:"Consistent conduct plus an explicit sense that it is legally required."},
+      {t:"Neighboring states keep fishing quotas they say they follow only to stay on good terms.", b:0, why:"Conduct explained as goodwill, not legal duty."},
       {t:"Coastal states claim rights over their continental shelf as rights, and others accept the claims as lawful.", b:2, why:"The Truman Proclamation pattern: conduct plus acceptance as law."}
     ]},
     {id:"e4u10-l1-x4", type:"mcq", q:"State A joins a human rights treaty with a reservation excluding the treaty’s central non-discrimination article. Under the Vienna Convention, what is the main problem?", options:[
@@ -119,7 +119,7 @@ ICA.addUnit({
       {t:"The Convention’s duties are owed to all parties (erga omnes partes).", ok:true, why:"Right. So any party has standing. The ICJ accepted this common-interest reasoning in 2020."},
       {t:"Because genocide is jus cogens, the ICJ automatically has jurisdiction over every case about it.", why:"The Court has said jus cogens does not by itself create jurisdiction (*Armed Activities*, 2006). Jurisdiction here came from the Convention’s Article IX."},
       {t:"The Security Council referred the case to the ICJ.", why:"The Council did not refer it; states brought it, and the ICJ hears cases between states that consented."},
-      {t:"The Gambia is a neighbour of Myanmar.", why:"The Gambia is in West Africa. Its standing came from the treaty, not geography."}
+      {t:"The Gambia is a neighbor of Myanmar.", why:"The Gambia is in West Africa. Its standing came from the treaty, not geography."}
     ]},
     {id:"e4u10-l1-x7", type:"sort", q:"Is each instrument hard law (binding) or soft law (non-binding)?", buckets:["Hard law","Soft law"], items:[
       {t:"The Vienna Convention on the Law of Treaties (1969)", b:0, why:"A treaty, binding on its parties."},
@@ -160,12 +160,12 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e4u10-l2", title:"Why states comply: rival theories and the evidence", minutes:60,
-   hook:{q:"In 2014 the ICJ ruled that Japan’s whaling programme in the Antarctic, JARPA II, was not “for purposes of scientific research”. What did Japan do?", options:["Ignored the judgment and kept hunting under JARPA II","Stopped JARPA II, later designed a new research programme, and in 2019 left the International Whaling Commission and ended Antarctic whaling","Asked the Security Council to overturn the judgment","Withdrew from the UN"], answer:1, reveal:"**Japan stopped JARPA II** and announced it would abide by the judgment. It then designed a new programme meant to meet the Court’s criteria. Later it withdrew from the International Whaling Convention (effective 30 June 2019), ending whaling in the Antarctic and resuming commercial whaling in its own waters. Was that compliance? With the judgment, yes; with the anti-whaling hopes of the applicants, Australia and New Zealand (which intervened), not really. This lesson is about such puzzles: what compliance means, and why states comply at all."},
+   hook:{q:"In 2014 the ICJ ruled that Japan’s whaling program in the Antarctic, JARPA II, was not “for purposes of scientific research”. What did Japan do?", options:["Ignored the judgment and kept hunting under JARPA II","Stopped JARPA II, later designed a new research program, and in 2019 left the International Whaling Commission and ended Antarctic whaling","Asked the Security Council to overturn the judgment","Withdrew from the UN"], answer:1, reveal:"**Japan stopped JARPA II** and announced it would abide by the judgment. It then designed a new program meant to meet the Court’s criteria. Later it withdrew from the International Whaling Convention (effective 30 June 2019), ending whaling in the Antarctic and resuming commercial whaling in its own waters. Was that compliance? With the judgment, yes; with the anti-whaling hopes of the applicants, Australia and New Zealand (which intervened), not really. This lesson is about such puzzles: what compliance means, and why states comply at all."},
    goals:[
      "Distinguish compliance, implementation and effectiveness",
      "Explain the managerial model of Chayes and Chayes and the enforcement critique of Downs, Rocke and Barsoom",
      "Explain Franck’s legitimacy theory and Koh’s transnational legal process",
-     "Present the sceptical rational-choice view of Goldsmith and Posner, and Guzman’s reply",
+     "Present the skeptical rational-choice view of Goldsmith and Posner, and Guzman’s reply",
      "Use evidence from international courts to judge between the theories"
    ],
    learn:[
@@ -174,9 +174,9 @@ ICA.addUnit({
       "Recall Louis Henkin’s line from *How Nations Behave* (1968): “almost all nations observe almost all principles of international law and almost all of their obligations almost all of the time.” It is the starting point of the debate, not the end. Before testing it, separate three ideas that are often blurred:",
       {table:[
         ["Concept","Question","Example"],
-        ["Compliance","Does behaviour match the rule?","Emissions fall below a treaty cap"],
+        ["Compliance","Does behavior match the rule?","Emissions fall below a treaty cap"],
         ["Implementation","Has the state put the rule into its own law and practice?","A new national emissions law"],
-        ["Effectiveness","Did the rule change behaviour or solve the problem?","Would emissions have fallen anyway?"]
+        ["Effectiveness","Did the rule change behavior or solve the problem?","Would emissions have fallen anyway?"]
       ]},
       "High compliance can mean the law is powerful, or that it asks for little. Every theory below takes a side on that ambiguity. It is also an old jurisprudential worry: the legal philosopher H. L. A. Hart, in *The Concept of Law* (1961), called international law closer to a “primitive” system, with rules but few institutions to make, change and apply them."
     ]},
@@ -193,11 +193,11 @@ ICA.addUnit({
     {h:"Legitimacy and transnational legal process", body:[
       "A third family asks why rules feel binding. Thomas Franck, in *The Power of Legitimacy Among Nations* (1990), argued that rules exert a [[compliance-pull|compliance pull]] in proportion to their **legitimacy**. For Franck, legitimacy has four parts: determinacy (clarity), symbolic validation (rituals and signals of authority), coherence (consistency with other rules) and adherence (being made by accepted procedures).",
       "Harold Koh, in “Why Do Nations Obey International Law?” (*Yale Law Journal*, 1997), proposed [[transnational-legal-process|transnational legal process]] (see {{harold-koh}}). Obedience grows through a repeated cycle:",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="60" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="170" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="60" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="170" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="60" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="226" text-anchor="middle">3 Internalisation</text><text class="s" x="170" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M170,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M170,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M280,231 H318 V43 H284" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="326" y="140" text-anchor="middle">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalisation (into law, politics and habit). An arrow loops from the bottom back to the top, labelled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="60" y="12" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="38" text-anchor="middle">1 Interaction</text><text class="s" x="170" y="58" text-anchor="middle">states, NGOs, courts meet</text><rect class="d-gold" x="60" y="106" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="132" text-anchor="middle">2 Interpretation</text><text class="s" x="170" y="152" text-anchor="middle">a norm’s meaning is stated</text><rect class="d-sage" x="60" y="200" width="220" height="62" rx="10" stroke-width="2"/><text x="170" y="226" text-anchor="middle">3 Internalisation</text><text class="s" x="170" y="246" text-anchor="middle">into law, politics, habit</text><path class="d-ink" d="M170,74 V102" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M170,168 V196" stroke-width="2" marker-end="url(#ah2)"/><path class="d-ink" d="M280,231 H318 V43 H284" fill="none" stroke-width="2" marker-end="url(#ah2)"/><text class="s" x="326" y="140" text-anchor="middle">repeat</text><text class="s" x="170" y="290" text-anchor="middle">Each round makes the norm more</text><text class="s" x="170" y="308" text-anchor="middle">part of how the state works (Koh 1997)</text></svg>', alt:"Three boxes stacked vertically with arrows downward: 1 interaction (states, NGOs and courts meet), 2 interpretation (a norm’s meaning is stated), 3 internalization (into law, politics and habit). An arrow loops from the bottom back to the top, labeled repeat.", cap:"Koh’s cycle: compliance is learned through repeated contact, not only calculated."},
       "Internalisation can be **social** (the public accepts the norm), **political** (leaders adopt it) or **legal** (courts and statutes build it in). This fits {{constructivism|constructivist}} accounts of norms (see {{norm-dynamics}}). Jutta Brunnée and Stephen Toope’s *Legitimacy and Legality in International Law* (2010) developed a related “interactional” account. In their view, law binds when it meets criteria of legality and is sustained by a shared practice."
     ]},
-    {h:"The sceptics: rational choice", body:[
-      "Jack Goldsmith and Eric Posner’s *The Limits of International Law* (2005) argued that behaviour consistent with international law is usually explained by state interests, not by the law. They named four patterns:",
+    {h:"The skeptics: rational choice", body:[
+      "Jack Goldsmith and Eric Posner’s *The Limits of International Law* (2005) argued that behavior consistent with international law is usually explained by state interests, not by the law. They named four patterns:",
       {table:[
         ["Pattern","What happens","Does law do the work?"],
         ["Coincidence of interest","States do what they would do anyway","No"],
@@ -205,26 +205,26 @@ ICA.addUnit({
         ["Cooperation","Mutual restraint is kept while it pays","Only while the payoff lasts"],
         ["Coercion","A stronger state makes a weaker one act","No: power does"]
       ]},
-      "Andrew Guzman’s *How International Law Works* (2008) accepted the rational-choice starting point but drew the opposite conclusion. For Guzman, law matters through the “three Rs”: **reputation**, **reciprocity** and **retaliation**. In his account, these make breaking a legal promise costlier than breaking a political one. Realists such as Hans Morgenthau would side with the sceptics. Liberal institutionalists (see {{neoliberal-institutionalism}}) would side with Guzman, through the [[shadow-of-the-future|shadow of the future]].",
+      "Andrew Guzman’s *How International Law Works* (2008) accepted the rational-choice starting point but drew the opposite conclusion. For Guzman, law matters through the “three Rs”: **reputation**, **reciprocity** and **retaliation**. In his account, these make breaking a legal promise costlier than breaking a political one. Realists such as Hans Morgenthau would side with the skeptics. Liberal institutionalists (see {{neoliberal-institutionalism}}) would side with Guzman, through the [[shadow-of-the-future|shadow of the future]].",
       {warn:"Don’t present this as “law matters” versus “law doesn’t”. Each theory explains some cases better. A good seminar answer says which mechanism, for which rule, under what conditions."}
     ]},
     {h:"Critical voices: law as argument", body:[
-      "Two further traditions question the whole frame. Martti Koskenniemi’s *From Apology to Utopia* (1989) argued that international legal argument swings between two poles. In his account, legal argument can sit too close to state behaviour, and so become an **apology** for power. Or it can sit too far from it, and so become a **utopia** with no grip on reality. On this view, the compliance debate is part of that swing. In this reading, law matters less as a cause of behaviour than as the language in which states must justify themselves.",
+      "Two further traditions question the whole frame. Martti Koskenniemi’s *From Apology to Utopia* (1989) argued that international legal argument swings between two poles. In his account, legal argument can sit too close to state behavior, and so become an **apology** for power. Or it can sit too far from it, and so become a **utopia** with no grip on reality. On this view, the compliance debate is part of that swing. In this reading, law matters less as a cause of behavior than as the language in which states must justify themselves.",
       "The TWAIL tradition (Lesson 5) asks **who** is asked to comply. TWAIL scholars point out that debt conditions, investment rules and non-proliferation demands fall more heavily on some states than on others. Breaches by powerful states, they add, often bring few costs. Compliance, in this reading, is a question about hierarchy as well as incentives. Realists put a blunter version: law reflects the distribution of power and gives way when vital interests are at stake (see {{realism}}).",
       "These views explain a puzzle the other theories leave open: why governments put so much effort into legal justification even when they break a rule. Most scholars agree on this much: legal argument shapes what governments can say in public, and so what they can do without paying a price."
     ]},
     {h:"What the evidence shows: courts as a test", body:[
       "International courts let us test the theories, because a judgment is a clear standard. Colter Paulson’s study of ICJ final judgments from 1987 to 2004 (*American Journal of International Law*, 2004) found that most were complied with, though some only partly or slowly. Cases cluster:",
-      {ex:"**Task:** explain what Japan did after *Whaling in the Antarctic* (31 March 2014), using the theories in this lesson.\n1. First I set out the facts in order, because each theory must explain the same sequence. Japan stopped the JARPA II programme the Court had found was not “for purposes of scientific research”. In late 2015 it began a redesigned programme, NEWREP-A. In December 2018 it announced it would leave the International Whaling Commission; withdrawal took effect on 30 June 2019, and in July Japan resumed commercial whaling, limited to its own territorial sea and EEZ, and stopped whaling in the Antarctic.\n2. Next I apply each theory and ask what it predicts.\n• **Managerial**: Japan complied with the judgment itself and redesigned its programme to fit the Court’s reasoning; dispute, not defiance.\n• **Enforcement**: compliance was cheap at first, because a new programme could be designed; when the rules bit harder, Japan left.\n• **Transnational legal process** ({{harold-koh|Koh}}): the judgment was internalised as a legal constraint. Japan reshaped its conduct and kept a legal justification rather than ignoring the Court.\n• **Sceptics** (Goldsmith and Posner): behaviour tracked interests; exit shows the limits of the law.\n3. Then I ask which theory fits best and where each fails. The managerial reading explains 2014–15 well but not the exit. The sceptics explain the exit but not why Japan complied at all.\n**Result:** “Japan complied with the 2014 judgment and then left the regime that constrained it. This sequence supports a conditional view: law shaped how Japan pursued its interests, but did not stop it from changing the forum.”\n**Common mistake:** asking “did Japan comply, yes or no?”. Exit from a treaty regime is lawful; compliance and staying in are separate questions.", label:"Worked example: four compliance theories on one case"},
-      {list:["**Complied**: *Pedra Branca* (Malaysia/Singapore, 2008) gave the island to Singapore and nearby Middle Rocks to Malaysia. The two states then set up a joint technical committee to implement it. *Whaling in the Antarctic* (2014) led Japan to stop the programme concerned.","**Resisted**: the United States did not comply with *Nicaragua* (1986). After *Avena* (2004), about Mexican nationals denied consular access, the US Supreme Court held in *Medellín v. Texas* (2008) that the judgment was not directly enforceable in US courts, an example of how domestic law shapes compliance.","**Rejected**: China rejected the 2016 South China Sea arbitral award as made without jurisdiction (Lesson 4)."]},
-      "The pattern supports several theories at once. Consent cases (where both states agreed to go to court) are complied with more often, which fits both the managerial and selection arguments. When vital interests are at stake, compliance falls, as sceptics predict. For human rights treaties, the evidence debate (Hathaway 2002, Simmons 2009) is covered in the human rights unit.",
+      {ex:"**Task:** explain what Japan did after *Whaling in the Antarctic* (31 March 2014), using the theories in this lesson.\n1. First I set out the facts in order, because each theory must explain the same sequence. Japan stopped the JARPA II program the Court had found was not “for purposes of scientific research”. In late 2015 it began a redesigned program, NEWREP-A. In December 2018 it announced it would leave the International Whaling Commission; withdrawal took effect on 30 June 2019, and in July Japan resumed commercial whaling, limited to its own territorial sea and EEZ, and stopped whaling in the Antarctic.\n2. Next I apply each theory and ask what it predicts.\n• **Managerial**: Japan complied with the judgment itself and redesigned its program to fit the Court’s reasoning; dispute, not defiance.\n• **Enforcement**: compliance was cheap at first, because a new program could be designed; when the rules bit harder, Japan left.\n• **Transnational legal process** ({{harold-koh|Koh}}): the judgment was internalized as a legal constraint. Japan reshaped its conduct and kept a legal justification rather than ignoring the Court.\n• **Skeptics** (Goldsmith and Posner): behavior tracked interests; exit shows the limits of the law.\n3. Then I ask which theory fits best and where each fails. The managerial reading explains 2014–15 well but not the exit. The skeptics explain the exit but not why Japan complied at all.\n**Result:** “Japan complied with the 2014 judgment and then left the regime that constrained it. This sequence supports a conditional view: law shaped how Japan pursued its interests, but did not stop it from changing the forum.”\n**Common mistake:** asking “did Japan comply, yes or no?”. Exit from a treaty regime is lawful; compliance and staying in are separate questions.", label:"Worked example: four compliance theories on one case"},
+      {list:["**Complied**: *Pedra Branca* (Malaysia/Singapore, 2008) gave the island to Singapore and nearby Middle Rocks to Malaysia. The two states then set up a joint technical committee to implement it. *Whaling in the Antarctic* (2014) led Japan to stop the program concerned.","**Resisted**: the United States did not comply with *Nicaragua* (1986). After *Avena* (2004), about Mexican nationals denied consular access, the US Supreme Court held in *Medellín v. Texas* (2008) that the judgment was not directly enforceable in US courts, an example of how domestic law shapes compliance.","**Rejected**: China rejected the 2016 South China Sea arbitral award as made without jurisdiction (Lesson 4)."]},
+      "The pattern supports several theories at once. Consent cases (where both states agreed to go to court) are complied with more often, which fits both the managerial and selection arguments. When vital interests are at stake, compliance falls, as skeptics predict. For human rights treaties, the evidence debate (Hathaway 2002, Simmons 2009) is covered in the human rights unit.",
       {terms:["managerial-model","enforcement-model","compliance-pull","transnational-legal-process","countermeasures"]}
     ]}
    ],
    try:[
     {id:"e4u10-l2-x1", type:"sort", q:"Is each statement about **compliance**, **implementation** or **effectiveness**?", buckets:["Compliance","Implementation","Effectiveness"], items:[
-      {t:"A state’s parliament passes a law creating the offence of torture, as a treaty requires.", b:1, why:"Writing the rule into domestic law is implementation."},
-      {t:"A state’s catch stays under its treaty quota this year.", b:0, why:"Behaviour matching the rule is compliance."},
+      {t:"A state’s parliament passes a law creating the offense of torture, as a treaty requires.", b:1, why:"Writing the rule into domestic law is implementation."},
+      {t:"A state’s catch stays under its treaty quota this year.", b:0, why:"Behavior matching the rule is compliance."},
       {t:"Researchers ask whether the ozone layer is recovering because of the Montreal Protocol.", b:2, why:"Whether the rule solved the problem is effectiveness."},
       {t:"A state reports on time to a treaty committee as required.", b:0, why:"Meeting a procedural obligation is compliance."},
       {t:"An analyst asks whether emissions would have fallen anyway, without the treaty.", b:2, why:"Comparing with a counterfactual is an effectiveness question."}
@@ -233,7 +233,7 @@ ICA.addUnit({
       ["Chayes & Chayes, *The New Sovereignty* (1995)","Non-compliance comes mainly from ambiguity, capacity and time lags; manage it","The managerial model."],
       ["Downs, Rocke & Barsoom (1996)","High compliance may reflect shallow treaties; deep cooperation needs enforcement","The selection and depth critique."],
       ["Franck, *The Power of Legitimacy Among Nations* (1990)","Legitimate rules exert a compliance pull","Determinacy, symbolic validation, coherence, adherence."],
-      ["Koh, “Why Do Nations Obey International Law?” (1997)","Interaction, interpretation and internalisation build obedience","Transnational legal process."],
+      ["Koh, “Why Do Nations Obey International Law?” (1997)","Interaction, interpretation and internalization build obedience","Transnational legal process."],
       ["Goldsmith & Posner, *The Limits of International Law* (2005)","Apparent compliance is mostly explained by interests","Coincidence, coordination, cooperation, coercion."]
     ]},
     {id:"e4u10-l2-x3", type:"mcq", q:"A small island state misses three reporting deadlines under an environmental treaty. Its ministry has two staff. Which response would the managerial model recommend?", options:[
@@ -254,16 +254,16 @@ ICA.addUnit({
       {t:"Internalisation: the state’s courts, laws and officials adopt that interpretation", why:"The norm is built into domestic structures."},
       {t:"Obedience becomes habit, and the next interaction starts from a higher baseline", why:"Repetition deepens compliance: Koh’s distinction between mere compliance and obedience."}
     ]},
-    {id:"e4u10-l2-x6", type:"sort", q:"Which theory best fits each observation?", buckets:["Managerial","Enforcement","Legitimacy / process","Rational-choice sceptic"], items:[
+    {id:"e4u10-l2-x6", type:"sort", q:"Which theory best fits each observation?", buckets:["Managerial","Enforcement","Legitimacy / process","Rational-choice skeptic"], items:[
       {t:"Countries comply with shipping-lane rules because any agreed lane is better than collisions.", b:3, why:"A coordination case: Goldsmith and Posner say the law adds little beyond a focal point."},
-      {t:"A state’s supreme court starts citing a UN treaty body’s views, and officials change policy.", b:2, why:"Legal internalisation in Koh’s sense."},
+      {t:"A state’s supreme court starts citing a UN treaty body’s views, and officials change policy.", b:2, why:"Legal internalization in Koh’s sense."},
       {t:"Compliance with a fishing pact holds only after inspection and quota cuts for cheaters are added.", b:1, why:"Deep cooperation sustained by credible punishment."},
       {t:"A government falls behind on a treaty because its customs service has no laboratory to test chemicals.", b:0, why:"Capacity, one of the Chayeses’ three sources of non-compliance."}
     ]},
     {id:"e4u10-l2-x7", type:"spot", q:"Part of an essay on compliance. Tap each claim that **overreaches** the evidence.", ask:"overreaches", parts:[
       {t:"Most ICJ judgments have been complied with, at least in large part.", flag:false, why:"Supported by studies such as Paulson (2004), with the caveat that some compliance was partial or slow."},
       " ",
-      {t:"This proves that international law changes state behaviour.", flag:true, why:"Overreach. States that consent to a court may already be willing to comply: a selection effect."},
+      {t:"This proves that international law changes state behavior.", flag:true, why:"Overreach. States that consent to a court may already be willing to comply: a selection effect."},
       " ",
       {t:"The United States did not comply with the 1986 *Nicaragua* judgment.", flag:false, why:"Accurate."},
       " ",
@@ -289,11 +289,11 @@ ICA.addUnit({
      {t:"Seminar questions", how:[
        "Choose one and write 150–250 words with a position and a counter-argument.",
        "1. Is high compliance good news or a sign that treaties ask too little?",
-       "2. Can a rational-choice sceptic explain why states spend so much effort arguing in legal terms?",
+       "2. Can a rational-choice skeptic explain why states spend so much effort arguing in legal terms?",
        "3. Was Japan’s response to the whaling judgment compliance, evasion, or both?"
      ], write:"My question… My position… Evidence… Counter-argument…"}
     ],
-    proof:"A four-theory analysis of one judgment, a depth judgement on one treaty, and a seminar paragraph with a counter-argument."
+    proof:"A four-theory analysis of one judgment, a depth judgment on one treaty, and a seminar paragraph with a counter-argument."
    },
    read:[
     {book:"pilmpa", where:"Chapter 5 “International and Domestic Law” and Chapter 12 “Peaceful Settlement of Disputes”", note:"How international rules enter domestic legal systems, and how disputes are settled: the practical side of compliance."},
@@ -302,11 +302,11 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e4u10-l3", title:"The use of force: the rule, the exceptions and the hard cases", minutes:65,
-   hook:{q:"The test lawyers still use for self-defence against an attack that has not yet happened comes from an incident in 1837. What was it?", options:["A Japanese warship firing on a British trading post","British forces crossing into the United States to destroy a steamboat, the Caroline, used by rebels from Canada","A French invasion of Algeria","A Russian blockade of a Black Sea port"], answer:1, reveal:"**The Caroline.** British forces crossed the Niagara River into US territory, set the steamboat on fire and sent it over the falls. They did so because it was supplying rebels in Upper Canada. In 1841 the US Secretary of State, Daniel Webster, wrote that such action needed “a necessity of self-defence, instant, overwhelming, leaving no choice of means, and no moment for deliberation.” Britain accepted the standard while arguing it had met it. Nearly two centuries later, governments and courts still argue in those words. This lesson works through the Charter rules on force and the cases that strain them."},
+   hook:{q:"The test lawyers still use for self-defense against an attack that has not yet happened comes from an incident in 1837. What was it?", options:["A Japanese warship firing on a British trading post","British forces crossing into the United States to destroy a steamboat, the Caroline, used by rebels from Canada","A French invasion of Algeria","A Russian blockade of a Black Sea port"], answer:1, reveal:"**The Caroline.** British forces crossed the Niagara River into US territory, set the steamboat on fire and sent it over the falls. They did so because it was supplying rebels in Upper Canada. In 1841 the US Secretary of State, Daniel Webster, wrote that such action needed “a necessity of self-defence, instant, overwhelming, leaving no choice of means, and no moment for deliberation.” Britain accepted the standard while arguing it had met it. Nearly two centuries later, governments and courts still argue in those words. This lesson works through the Charter rules on force and the cases that strain them."},
    goals:[
      "State the Charter’s prohibition of force and its two clear exceptions precisely",
-     "Apply the requirements of self-defence (armed attack, necessity, proportionality, reporting) to cases",
-     "Distinguish anticipatory from preventive self-defence and explain why the difference matters",
+     "Apply the requirements of self-defense (armed attack, necessity, proportionality, reporting) to cases",
+     "Distinguish anticipatory from preventive self-defense and explain why the difference matters",
      "Explain the debate over force against non-state actors and the “unwilling or unable” doctrine",
      "Present the legal arguments on humanitarian intervention, Iraq 2003 and Ukraine 2022 neutrally, attributing each position"
    ],
@@ -315,11 +315,11 @@ ICA.addUnit({
       {lead:"Before 1945, going to war was, for most lawyers, a sovereign right. The UN Charter tried to end that."},
       "Article 2(4) of the [[un-charter|Charter]] sets out the [[prohibition-of-force|prohibition of force]]: Members “shall refrain in their international relations from the threat or use of force against the territorial integrity or political independence of any state, or in any other manner inconsistent with the Purposes of the United Nations.” The ban is also customary law, and the ILC lists the prohibition of aggression as jus cogens.",
       "The Charter allows two clear exceptions:",
-      {list:["**Security Council authorisation** under [[chapter-vii|Chapter VII]]: the Council determines a threat to the peace (Article 39) and may authorise force (Article 42). It usually does so with the words “all necessary means” or “measures”.","**[[self-defence|Self-defence]]** under Article 51, against an armed attack, until the Council acts."]},
+      {list:["**Security Council authorization** under [[chapter-vii|Chapter VII]]: the Council determines a threat to the peace (Article 39) and may authorize force (Article 42). It usually does so with the words “all necessary means” or “measures”.","**[[self-defence|Self-defense]]** under Article 51, against an armed attack, until the Council acts."]},
       "A third ground, **consent** (a government inviting foreign forces onto its territory), is widely accepted. Kazakhstan’s request for troops from the Collective Security Treaty Organization during unrest in January 2022 is a recent example. The hard cases arise when rival governments both claim to speak for a state, or when the inviting government has lost control of most of its territory.",
       "Scholars have long asked whether the rule survives its violations. Thomas Franck’s “Who Killed Article 2(4)?” (*American Journal of International Law*, 1970) argued that Cold War practice had hollowed it out. Louis Henkin replied in the same journal in 1971 that reports of its death were “greatly exaggerated”. In his view, states still justified themselves under the rule, which showed it was alive. That exchange is still a model seminar debate."
     ]},
-    {h:"Self-defence: what Article 51 requires", body:[
+    {h:"Self-defense: what Article 51 requires", body:[
       "Article 51 preserves “the inherent right of individual or collective self-defence if an armed attack occurs”. From the text and ICJ cases come four requirements:",
       {table:[
         ["Requirement","Meaning","Key source"],
@@ -328,24 +328,24 @@ ICA.addUnit({
         ["Proportionality","Force limited to repelling the attack","*Nuclear Weapons* opinion (1996)"],
         ["Reporting","Measures reported to the Security Council at once","Article 51 itself"]
       ]},
-      "[[collective-self-defence|Collective self-defence]] (helping another state) requires, according to *Nicaragua*, that the victim declares it has been attacked and asks for help. That is why requests matter so much in practice, and why alliance treaties (see {{us-japan-alliance}}) are framed around Article 51.",
-      {ex:"**Task:** fictional Norland shells an Ostavian border post, killing twelve soldiers. Two days later Ostavia bombs three Norlandic artillery sites near the border and reports to the Security Council under Article 51. Was this lawful self-defence?\n1. First I ask whether there was an **armed attack**, because Article 51 starts there. After *Nicaragua* (1986), only the “most grave forms” of force count. Deliberate shelling that kills twelve soldiers is more than a minor border incident, so the threshold is probably met. I flag that this is a judgement of scale.\n2. Next, **necessity**: were peaceful means enough? If the shelling was continuing or likely to resume, force could be needed. If Norland had withdrawn and offered talks, Ostavia’s case would be weaker.\n3. Then, **proportionality**: Ostavia hit the sites that fired, near the border. Force limited to stopping the attack fits; bombing Norland’s capital would not.\n4. Then, **reporting**: Ostavia reported to the Council at once, as Article 51 requires.\n5. Finally I check the alternatives a critic would raise: was this a reprisal (punishment), which is unlawful, rather than defence?\n**Result:** “Ostavia’s strikes probably met the requirements of self-defence: the shelling was grave enough to be an armed attack; the response targeted the sources of fire and was reported. The weakest point is necessity: if the attack had ended, the strikes risk being seen as an unlawful reprisal.”\n**Common mistake:** treating “they attacked first” as the whole answer. Each requirement is a separate test, and a lawful start can become unlawful through excess.", label:"Worked example: testing a self-defence claim"},
+      "[[collective-self-defence|Collective self-defense]] (helping another state) requires, according to *Nicaragua*, that the victim declares it has been attacked and asks for help. That is why requests matter so much in practice, and why alliance treaties (see {{us-japan-alliance}}) are framed around Article 51.",
+      {ex:"**Task:** fictional Norland shells an Ostavian border post, killing twelve soldiers. Two days later Ostavia bombs three Norlandic artillery sites near the border and reports to the Security Council under Article 51. Was this lawful self-defense?\n1. First I ask whether there was an **armed attack**, because Article 51 starts there. After *Nicaragua* (1986), only the “most grave forms” of force count. Deliberate shelling that kills twelve soldiers is more than a minor border incident, so the threshold is probably met. I flag that this is a judgment of scale.\n2. Next, **necessity**: were peaceful means enough? If the shelling was continuing or likely to resume, force could be needed. If Norland had withdrawn and offered talks, Ostavia’s case would be weaker.\n3. Then, **proportionality**: Ostavia hit the sites that fired, near the border. Force limited to stopping the attack fits; bombing Norland’s capital would not.\n4. Then, **reporting**: Ostavia reported to the Council at once, as Article 51 requires.\n5. Finally I check the alternatives a critic would raise: was this a reprisal (punishment), which is unlawful, rather than defense?\n**Result:** “Ostavia’s strikes probably met the requirements of self-defense: the shelling was grave enough to be an armed attack; the response targeted the sources of fire and was reported. The weakest point is necessity: if the attack had ended, the strikes risk being seen as an unlawful reprisal.”\n**Common mistake:** treating “they attacked first” as the whole answer. Each requirement is a separate test, and a lawful start can become unlawful through excess.", label:"Worked example: testing a self-defense claim"},
       {tip:"“Inherent” matters: it suggests a right older than the Charter. That is why states argue that customary rules, such as the *Caroline* test, still shape what Article 51 allows."}
     ]},
     {h:"Before the attack: anticipatory and preventive force", body:[
       "The hardest timing question is whether a state must wait to be hit.",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><path class="d-ink" d="M18,250 V22" stroke-width="2" marker-end="url(#ah3)"/><text class="s" x="18" y="272" text-anchor="middle">earlier</text><rect class="d-sage" x="36" y="186" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="212" text-anchor="middle">Attack under way</text><text class="s" x="184" y="232" text-anchor="middle">Article 51: widely accepted</text><rect class="d-gold" x="36" y="104" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="130" text-anchor="middle">Attack imminent</text><text class="s" x="184" y="150" text-anchor="middle">anticipatory: contested, many accept</text><rect class="d-rose" x="36" y="22" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="48" text-anchor="middle">Threat emerging, not imminent</text><text class="s" x="184" y="68" text-anchor="middle">preventive: widely rejected</text><text class="s" x="184" y="290" text-anchor="middle">At any stage the Security Council</text><text class="s" x="184" y="308" text-anchor="middle">can authorise force under Chapter VII</text></svg>', alt:"Three stacked boxes with an arrow pointing upward labelled earlier in time. Bottom: attack under way, Article 51 self-defence, widely accepted. Middle: attack imminent, anticipatory self-defence, contested but many accept. Top: threat emerging but not imminent, preventive force, widely rejected. A note says the Security Council can authorise force at any stage.", cap:"The earlier the force, the weaker its legal support. The Council route is open throughout."},
-      {list:["**[[anticipatory-self-defence|Anticipatory self-defence]]** against an **imminent** attack is accepted by many states and scholars, using the *Caroline* standard. Israel’s strikes at the start of the 1967 war are still debated in these terms.","**[[preventive-self-defence|Preventive force]]** against a threat that is not imminent is widely rejected. The Security Council unanimously condemned Israel’s 1981 strike on Iraq’s Osirak reactor (Resolution 487). The US National Security Strategy of 2002 argued for acting against emerging threats; critics said it stretched self-defence into prevention."]},
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="ah3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><path class="d-ink" d="M18,250 V22" stroke-width="2" marker-end="url(#ah3)"/><text class="s" x="18" y="272" text-anchor="middle">earlier</text><rect class="d-sage" x="36" y="186" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="212" text-anchor="middle">Attack under way</text><text class="s" x="184" y="232" text-anchor="middle">Article 51: widely accepted</text><rect class="d-gold" x="36" y="104" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="130" text-anchor="middle">Attack imminent</text><text class="s" x="184" y="150" text-anchor="middle">anticipatory: contested, many accept</text><rect class="d-rose" x="36" y="22" width="296" height="64" rx="8" stroke-width="2"/><text x="184" y="48" text-anchor="middle">Threat emerging, not imminent</text><text class="s" x="184" y="68" text-anchor="middle">preventive: widely rejected</text><text class="s" x="184" y="290" text-anchor="middle">At any stage the Security Council</text><text class="s" x="184" y="308" text-anchor="middle">can authorize force under Chapter VII</text></svg>', alt:"Three stacked boxes with an arrow pointing upward labeled earlier in time. Bottom: attack under way, Article 51 self-defense, widely accepted. Middle: attack imminent, anticipatory self-defense, contested but many accept. Top: threat emerging but not imminent, preventive force, widely rejected. A note says the Security Council can authorize force at any stage.", cap:"The earlier the force, the weaker its legal support. The Council route is open throughout."},
+      {list:["**[[anticipatory-self-defence|Anticipatory self-defense]]** against an **imminent** attack is accepted by many states and scholars, using the *Caroline* standard. Israel’s strikes at the start of the 1967 war are still debated in these terms.","**[[preventive-self-defence|Preventive force]]** against a threat that is not imminent is widely rejected. The Security Council unanimously condemned Israel’s 1981 strike on Iraq’s Osirak reactor (Resolution 487). The US National Security Strategy of 2002 argued for acting against emerging threats; critics said it stretched self-defense into prevention."]},
       "Watch the vocabulary: US officials called the 2002 doctrine “pre-emption”, but many lawyers call that *preventive* and keep “pre-emptive” for imminent threats. The UN High-level Panel on Threats, Challenges and Change (2004) offered a middle line. In its view, states may act against an imminent threat, but should take non-imminent threats to the Council."
     ]},
     {h:"Attacks by non-state actors", body:[
-      "Article 51 does not say who must attack. After 11 September 2001 the Security Council, in Resolutions 1368 and 1373, recognised the right of self-defence in its preambles. Most states accepted the US-led action in Afghanistan. Yet in its 2004 advisory opinion on the *Wall* the ICJ described Article 51 as concerning an armed attack “by one State against another State”. Several judges disagreed in separate opinions, and the question remains open.",
-      "From 2014, the United States and its partners used force against the Islamic State group in Syria without the Syrian government’s consent. The United States set out its argument in a letter to the Council. A state may act in self-defence, it argued, when the territorial state is [[unwilling-or-unable|“unwilling or unable”]] to stop the threat. Some partners made similar arguments. Russia and the Syrian government rejected the doctrine. Many other states were silent, a silence scholars read as either quiet acceptance or refusal to endorse.",
+      "Article 51 does not say who must attack. After 11 September 2001 the Security Council, in Resolutions 1368 and 1373, recognized the right of self-defense in its preambles. Most states accepted the US-led action in Afghanistan. Yet in its 2004 advisory opinion on the *Wall* the ICJ described Article 51 as concerning an armed attack “by one State against another State”. Several judges disagreed in separate opinions, and the question remains open.",
+      "From 2014, the United States and its partners used force against the Islamic State group in Syria without the Syrian government’s consent. The United States set out its argument in a letter to the Council. A state may act in self-defense, it argued, when the territorial state is [[unwilling-or-unable|“unwilling or unable”]] to stop the threat. Some partners made similar arguments. Russia and the Syrian government rejected the doctrine. Many other states were silent, a silence scholars read as either quiet acceptance or refusal to endorse.",
       "New technology raises similar questions. Can a cyber operation be a “use of force” or even an “armed attack”? Most governments that have published positions say yes, if its scale and effects are comparable to a conventional attack. For them, an example would be an operation causing deaths or physical destruction. An influential but non-binding expert study, the *Tallinn Manual 2.0* (2017), takes the same view. UN groups of governmental experts have affirmed since 2013 that international law, including the Charter, applies in cyberspace."
     ]},
     {h:"Humanitarian intervention", body:[
-      "The primer covered Kosovo (1999), the “illegal but legitimate” verdict and the [[responsibility-to-protect|responsibility to protect]] (see {{responsibility-to-protect}}). The deeper question is whether there is a legal right of [[humanitarian-intervention|humanitarian intervention]] without Council authorisation.",
-      "History is less helpful than it looks. India’s intervention in East Pakistan in 1971, Vietnam’s in Cambodia in 1978–79 and Tanzania’s in Uganda in 1979 all ended governments that had committed grave abuses. But each intervening government mainly argued **self-defence**, not a humanitarian right. Vietnam’s action was widely condemned. The General Assembly kept seating the deposed Khmer Rouge government’s delegation for years.",
+      "The primer covered Kosovo (1999), the “illegal but legitimate” verdict and the [[responsibility-to-protect|responsibility to protect]] (see {{responsibility-to-protect}}). The deeper question is whether there is a legal right of [[humanitarian-intervention|humanitarian intervention]] without Council authorization.",
+      "History is less helpful than it looks. India’s intervention in East Pakistan in 1971, Vietnam’s in Cambodia in 1978–79 and Tanzania’s in Uganda in 1979 all ended governments that had committed grave abuses. But each intervening government mainly argued **self-defense**, not a humanitarian right. Vietnam’s action was widely condemned. The General Assembly kept seating the deposed Khmer Rouge government’s delegation for years.",
       {table:[
         ["Position","Who and when","Argument"],
         ["A limited right exists","United Kingdom, legal position on the Syria strikes, April 2018","Lawful if there is extreme humanitarian distress, no practicable alternative, and force is necessary and proportionate"],
@@ -356,46 +356,46 @@ ICA.addUnit({
     ]},
     {h:"Hard cases, told neutrally", body:[
       {h:"Iraq, 2003"},
-      "The United States, the United Kingdom and Australia argued that earlier Council resolutions (678 of 1990 and 687 of 1991) still authorised force. In their argument, that authority was revived by Iraq’s “material breach” identified in Resolution 1441 (2002). France, Germany, Russia and others replied that 1441 did not authorise force without a further decision. In 2004 Secretary-General Kofi Annan said the war was not in conformity with the Charter. The UK’s Iraq Inquiry (the Chilcot report, 2016) found the way the UK decided there was a legal basis “far from satisfactory”, without ruling on legality.",
+      "The United States, the United Kingdom and Australia argued that earlier Council resolutions (678 of 1990 and 687 of 1991) still authorized force. In their argument, that authority was revived by Iraq’s “material breach” identified in Resolution 1441 (2002). France, Germany, Russia and others replied that 1441 did not authorize force without a further decision. In 2004 Secretary-General Kofi Annan said the war was not in conformity with the Charter. The UK’s Iraq Inquiry (the Chilcot report, 2016) found the way the UK decided there was a legal basis “far from satisfactory”, without ruling on legality.",
       {h:"Ukraine, 2022"},
-      "On 24 February 2022 Russia told the Council it was acting under Article 51. It said this included collective self-defence of the “Donetsk and Luhansk People’s Republics”, which it had recognised three days earlier. Ukraine and most other states called the invasion aggression. On 2 March 2022 the General Assembly deplored “the aggression by the Russian Federation against Ukraine” (Resolution ES-11/1: 141 in favour, 5 against, 35 abstentions). Russia had also accused Ukraine of genocide in eastern Ukraine. Ukraine replied by suing Russia under the Genocide Convention, asking the ICJ to declare that no genocide had occurred. On 16 March the Court, by 13 votes to 2, ordered Russia to suspend military operations; Russia did not comply.",
+      "On 24 February 2022 Russia told the Council it was acting under Article 51. It said this included collective self-defense of the “Donetsk and Luhansk People’s Republics”, which it had recognized three days earlier. Ukraine and most other states called the invasion aggression. On 2 March 2022 the General Assembly deplored “the aggression by the Russian Federation against Ukraine” (Resolution ES-11/1: 141 in favor, 5 against, 35 abstentions). Russia had also accused Ukraine of genocide in eastern Ukraine. Ukraine replied by suing Russia under the Genocide Convention, asking the ICJ to declare that no genocide had occurred. On 16 March the Court, by 13 votes to 2, ordered Russia to suspend military operations; Russia did not comply.",
       {warn:"For seminar writing, state each government’s legal argument in its own terms. Give the institutional responses (votes, rulings) with dates. Keep your own assessment separate and reasoned."},
-      {ex:"**Task:** write a neutral seminar paragraph on the US, UK and French strikes on Syrian chemical-weapons sites on 14 April 2018.\n1. First I list the **actors and their legal arguments in their own terms**, because neutrality starts with attribution. The United Kingdom published a legal position: limited force was lawful as humanitarian intervention to prevent further chemical attacks, under three conditions (see the table above). The United States and France stressed deterring chemical weapons use. Russia and Syria called the strikes aggression.\n2. Next I add the **institutional response with a date and numbers**, because votes are facts, not opinions. On 14 April 2018 a Russian draft resolution condemning the strikes received 3 votes in favour (Russia, China, Bolivia), 8 against and 4 abstentions, so it failed.\n3. Then I note what the vote does and does not show. Rejecting a condemnation is not approval: several states abstained, and many governments said little on legality.\n4. Finally I add my own assessment, **separately and with reasons**.\n**Result:** “The United Kingdom justified the strikes as a limited humanitarian intervention; Russia and Syria called them aggression. A Russian draft condemning them failed in the Security Council on 14 April 2018 (3–8–4). The episode shows how contested the doctrine remains: the strikes were not condemned, but few states endorsed the UK’s legal theory. In my view, this supports Chesterman’s conclusion that state practice does not yet establish a legal right.”\n**Common mistake:** letting adjectives decide the case (“the illegal strikes”, “the justified strikes”) before the arguments have been set out.", label:"Worked example: a neutral paragraph on a contested strike"},
+      {ex:"**Task:** write a neutral seminar paragraph on the US, UK and French strikes on Syrian chemical-weapons sites on 14 April 2018.\n1. First I list the **actors and their legal arguments in their own terms**, because neutrality starts with attribution. The United Kingdom published a legal position: limited force was lawful as humanitarian intervention to prevent further chemical attacks, under three conditions (see the table above). The United States and France stressed deterring chemical weapons use. Russia and Syria called the strikes aggression.\n2. Next I add the **institutional response with a date and numbers**, because votes are facts, not opinions. On 14 April 2018 a Russian draft resolution condemning the strikes received 3 votes in favor (Russia, China, Bolivia), 8 against and 4 abstentions, so it failed.\n3. Then I note what the vote does and does not show. Rejecting a condemnation is not approval: several states abstained, and many governments said little on legality.\n4. Finally I add my own assessment, **separately and with reasons**.\n**Result:** “The United Kingdom justified the strikes as a limited humanitarian intervention; Russia and Syria called them aggression. A Russian draft condemning them failed in the Security Council on 14 April 2018 (3–8–4). The episode shows how contested the doctrine remains: the strikes were not condemned, but few states endorsed the UK’s legal theory. In my view, this supports Chesterman’s conclusion that state practice does not yet establish a legal right.”\n**Common mistake:** letting adjectives decide the case (“the illegal strikes”, “the justified strikes”) before the arguments have been set out.", label:"Worked example: a neutral paragraph on a contested strike"},
       "Finally, the [[crime-of-aggression|crime of aggression]] links this lesson to Lesson 5: since 17 July 2018 the ICC can try leaders for it, within narrow limits.",
       {terms:["prohibition-of-force","chapter-vii","self-defence","armed-attack","caroline-test","anticipatory-self-defence","preventive-self-defence","unwilling-or-unable","humanitarian-intervention","crime-of-aggression"]}
     ]}
    ],
    try:[
     {id:"e4u10-l3-x1", type:"mcq", q:"Which of these uses of force fits one of the Charter’s two clear exceptions to Article 2(4)?", options:[
-      {t:"Force authorised by the Security Council under Chapter VII.", ok:true, why:"Right. Such resolutions use words like “all necessary measures”. Council authorisation is one of the two clear exceptions; self-defence under Article 51 is the other."},
-      {t:"Force approved by a two-thirds vote of the General Assembly.", why:"The Assembly can recommend, including under Uniting for Peace, but it cannot authorise force with binding effect."},
-      {t:"Force by a regional organisation without Council approval.", why:"Article 53 says regional enforcement action needs Council authorisation."},
+      {t:"Force authorized by the Security Council under Chapter VII.", ok:true, why:"Right. Such resolutions use words like “all necessary measures”. Council authorization is one of the two clear exceptions; self-defense under Article 51 is the other."},
+      {t:"Force approved by a two-thirds vote of the General Assembly.", why:"The Assembly can recommend, including under Uniting for Peace, but it cannot authorize force with binding effect."},
+      {t:"Force by a regional organization without Council approval.", why:"Article 53 says regional enforcement action needs Council authorization."},
       {t:"Force to recover territory lost in a war decades ago.", why:"No exception covers this; the 1970 Friendly Relations Declaration rejects force to settle territorial disputes."}
     ]},
     {id:"e4u10-l3-x2", type:"match", q:"Match each source to the rule it is used for.", pairs:[
-      ["*Caroline* (1837; Webster 1841)","Necessity that is “instant, overwhelming”","The classic anticipatory self-defence standard."],
-      ["*Nicaragua* (1986)","Only the gravest uses of force are armed attacks","The gravity threshold and the request requirement for collective self-defence."],
-      ["Resolution 487 (1981)","Council condemnation of the Osirak strike","Evidence against preventive self-defence."],
+      ["*Caroline* (1837; Webster 1841)","Necessity that is “instant, overwhelming”","The classic anticipatory self-defense standard."],
+      ["*Nicaragua* (1986)","Only the gravest uses of force are armed attacks","The gravity threshold and the request requirement for collective self-defense."],
+      ["Resolution 487 (1981)","Council condemnation of the Osirak strike","Evidence against preventive self-defense."],
       ["*Wall* advisory opinion (2004)","Article 51 concerns attacks by one state against another","The narrow reading on non-state actors."],
       ["South Summit, Havana (2000)","Rejects a “right” of humanitarian intervention","The Group of 77’s position."]
     ]},
     {id:"e4u10-l3-x3", type:"sort", q:"Place each scenario on the timing spectrum.", buckets:["Attack under way","Imminent attack","Not imminent"], items:[
       {t:"Missiles from State B are striking State A’s cities.", b:0, why:"An armed attack is occurring: Article 51 applies directly."},
-      {t:"State B’s fleet is sailing towards A with launch orders already issued, according to reliable intelligence.", b:1, why:"An imminent attack: the anticipatory case, judged by the Caroline standard."},
+      {t:"State B’s fleet is sailing toward A with launch orders already issued, according to reliable intelligence.", b:1, why:"An imminent attack: the anticipatory case, judged by the Caroline standard."},
       {t:"State B might build a weapon in five years that could threaten A.", b:2, why:"A distant, uncertain threat: preventive force, widely rejected without Council approval."},
       {t:"Troops of State B have crossed A’s border and are advancing.", b:0, why:"An ongoing armed attack."},
       {t:"State B is enlarging its army but has made no threat.", b:2, why:"A capability, not an imminent attack."}
     ]},
     {id:"e4u10-l3-x4", type:"mcq", q:"An armed group based in State C launches attacks across the border into State D. C’s government condemns the group but has no control over that region. D strikes the group in C without C’s consent. Which argument is D most likely to make?", options:[
-      {t:"That C is “unwilling or unable” to stop the threat.", ok:true, why:"Right. D would claim it may act in self-defence on C’s territory. This is the doctrine invoked by the United States and some partners in Syria from 2014; it is contested."},
+      {t:"That C is “unwilling or unable” to stop the threat.", ok:true, why:"Right. D would claim it may act in self-defense on C’s territory. This is the doctrine invoked by the United States and some partners in Syria from 2014; it is contested."},
       {t:"That the ICJ’s *Wall* opinion clearly allows it.", why:"The *Wall* opinion pointed the other way, describing Article 51 as about attacks by one state against another."},
-      {t:"That humanitarian intervention is clearly lawful here.", why:"The case is about self-defence against attacks, not protecting a population, and there is no agreed humanitarian right."},
+      {t:"That humanitarian intervention is clearly lawful here.", why:"The case is about self-defense against attacks, not protecting a population, and there is no agreed humanitarian right."},
       {t:"That C consented.", why:"The scenario says C did not consent."}
     ]},
     {id:"e4u10-l3-x5", type:"spot", q:"A draft paragraph on humanitarian intervention. Tap each sentence that is **inaccurate or one-sided**.", ask:"inaccurate or one-sided", parts:[
       {t:"India (1971), Vietnam (1978–79) and Tanzania (1979) all ended abusive governments by force.", flag:false, why:"Accurate as a description of outcomes."},
       " ",
-      {t:"Each government openly claimed a legal right of humanitarian intervention.", flag:true, why:"Inaccurate. Each relied mainly on self-defence, which is why these cases are weak precedents for a humanitarian right."},
+      {t:"Each government openly claimed a legal right of humanitarian intervention.", flag:true, why:"Inaccurate. Each relied mainly on self-defense, which is why these cases are weak precedents for a humanitarian right."},
       " ",
       {t:"The United Kingdom has argued that a limited right exists under strict conditions.", flag:false, why:"Accurate: its 2018 legal position on Syria."},
       " ",
@@ -404,9 +404,9 @@ ICA.addUnit({
       {t:"Today every state accepts that humanitarian intervention without the Council is lawful.", flag:true, why:"Inaccurate. Most states, including the large Group of 77, reject such a right; it is deeply contested."}
     ]},
     {id:"e4u10-l3-x6", type:"mcq", q:"Which sentence describes Iraq 2003 most neutrally for a seminar paper?", options:[
-      {t:"Coalition states said earlier resolutions sufficed; others said not.", ok:true, why:"Yes. The US, UK and Australia argued that earlier resolutions authorised force; France, Germany, Russia and others argued they did not; Annan later said the war was not in conformity with the Charter. It attributes each position and the Secretary-General’s view, with no adjectives doing the arguing."},
+      {t:"Coalition states said earlier resolutions sufficed; others said not.", ok:true, why:"Yes. The US, UK and Australia argued that earlier resolutions authorized force; France, Germany, Russia and others argued they did not; Annan later said the war was not in conformity with the Charter. It attributes each position and the Secretary-General’s view, with no adjectives doing the arguing."},
       {t:"The illegal invasion of Iraq was condemned by everyone.", why:"It asserts a conclusion and overstates agreement; several governments argued it was lawful."},
-      {t:"The coalition clearly had Council authorisation under Resolution 1441.", why:"That was one side’s argument, strongly disputed; 1441 did not expressly authorise force."},
+      {t:"The coalition clearly had Council authorization under Resolution 1441.", why:"That was one side’s argument, strongly disputed; 1441 did not expressly authorize force."},
       {t:"International law had nothing to say about Iraq in 2003.", why:"Governments argued at length in legal terms; the debate shows law shaping justification."}
     ]},
     {id:"e4u10-l3-x7", type:"order", q:"Put these events in the right order.", items:[
@@ -417,14 +417,14 @@ ICA.addUnit({
       {t:"The ICJ decides *Nicaragua v. United States* on the merits", why:"27 June 1986."},
       {t:"The ICC gains jurisdiction over the crime of aggression", why:"17 July 2018."}
     ]},
-    {id:"e4u10-l3-x8", type:"explain", q:"Explain the difference between anticipatory and preventive self-defence, and why international lawyers treat them so differently. Use the 1981 Osirak strike or the 2002 US security strategy as an example.", size:"3–5 sentences", hint:"Must a state wait to be hit? How close must the threat be?", model:"Article 51 allows self-defence “if an armed attack occurs”, so the hard question is whether a state must wait to be hit. Anticipatory self-defence acts against an imminent attack. Many states and scholars accept it, using the *Caroline* standard of a necessity that is “instant, overwhelming”. Preventive force acts against a threat that isn’t imminent, and it is widely rejected: the Security Council unanimously condemned Israel’s 1981 strike on Iraq’s Osirak reactor. US officials called their 2002 doctrine “pre-emption”, but many lawyers call it preventive. The UN High-level Panel (2004) suggested acting alone only against imminent threats and taking others to the Council.", points:["Defines anticipatory self-defence as acting against an imminent attack", "Mentions the *Caroline* standard", "Defines preventive force as acting against a threat that isn’t imminent, and says it is widely rejected", "Uses Osirak or the 2002 strategy as an example", "Notes the vocabulary problem with “pre-emption” or the High-level Panel’s middle line"]}
+    {id:"e4u10-l3-x8", type:"explain", q:"Explain the difference between anticipatory and preventive self-defense, and why international lawyers treat them so differently. Use the 1981 Osirak strike or the 2002 US security strategy as an example.", size:"3–5 sentences", hint:"Must a state wait to be hit? How close must the threat be?", model:"Article 51 allows self-defense “if an armed attack occurs”, so the hard question is whether a state must wait to be hit. Anticipatory self-defense acts against an imminent attack. Many states and scholars accept it, using the *Caroline* standard of a necessity that is “instant, overwhelming”. Preventive force acts against a threat that isn’t imminent, and it is widely rejected: the Security Council unanimously condemned Israel’s 1981 strike on Iraq’s Osirak reactor. US officials called their 2002 doctrine “pre-emption”, but many lawyers call it preventive. The UN High-level Panel (2004) suggested acting alone only against imminent threats and taking others to the Council.", points:["Defines anticipatory self-defense as acting against an imminent attack", "Mentions the *Caroline* standard", "Defines preventive force as acting against a threat that isn’t imminent, and says it is widely rejected", "Uses Osirak or the 2002 strategy as an example", "Notes the vocabulary problem with “pre-emption” or the High-level Panel’s middle line"]}
    ],
    apply:{
     intro:"Work with primary documents. UN letters, resolutions and votes are free on the UN’s websites and digital library.",
     tasks:[
      {t:"Read an Article 51 letter", how:[
        "Search the UN Digital Library or press.un.org for a letter to the Security Council “under Article 51” from any state in any year.",
-       "Note who sent it, what armed attack it cites, whether it claims individual or collective self-defence, and what it says about necessity or proportionality.",
+       "Note who sent it, what armed attack it cites, whether it claims individual or collective self-defense, and what it says about necessity or proportionality.",
        "Check whether the Council or other states responded."
      ], write:"State and date… Attack cited… Individual or collective… Necessity and proportionality… Responses…"},
      {t:"Map the positions on one case", how:[
@@ -448,7 +448,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e4u10-l4", title:"The law of the sea and territory", minutes:65,
-   hook:{q:"Under the UN Convention on the Law of the Sea, how far from the coast can a state’s rights over the seabed (its continental shelf) reach at most?", options:["12 nautical miles","200 nautical miles","Up to 350 nautical miles, or 100 nautical miles beyond a set depth line","Without limit, as far as the seabed slopes"], answer:2, reveal:"**Up to 350 nautical miles** (or 100 nautical miles beyond the 2,500-metre depth line), where the natural continental margin reaches that far. So a state’s seabed rights can extend well beyond its 200-mile exclusive economic zone. Claims beyond 200 miles go to a UN expert body, the Commission on the Limits of the Continental Shelf. This lesson explains the zones, then uses them to read the South China Sea arbitration, the Arctic and the law of territory."},
+   hook:{q:"Under the UN Convention on the Law of the Sea, how far from the coast can a state’s rights over the seabed (its continental shelf) reach at most?", options:["12 nautical miles","200 nautical miles","Up to 350 nautical miles, or 100 nautical miles beyond a set depth line","Without limit, as far as the seabed slopes"], answer:2, reveal:"**Up to 350 nautical miles** (or 100 nautical miles beyond the 2,500-meter depth line), where the natural continental margin reaches that far. So a state’s seabed rights can extend well beyond its 200-mile exclusive economic zone. Claims beyond 200 miles go to a UN expert body, the Commission on the Limits of the Continental Shelf. This lesson explains the zones, then uses them to read the South China Sea arbitration, the Arctic and the law of territory."},
    goals:[
      "Describe the UNCLOS maritime zones and the rights each gives",
      "Explain why the status of islands, rocks and low-tide elevations matters so much",
@@ -464,7 +464,7 @@ ICA.addUnit({
       "Asia shaped UNCLOS. Indonesia’s 1957 Djuanda Declaration and the Philippines’ claims pushed the concept of **archipelagic states** (Part IV). In such states, the outer islands are joined by baselines that enclose the waters between them."
     ]},
     {h:"The zones, measured from the baseline", body:[
-      "Every zone is measured from the **baseline**, usually the low-water line along the coast. One nautical mile is 1,852 metres.",
+      "Every zone is measured from the **baseline**, usually the low-water line along the coast. One nautical mile is 1,852 meters.",
       {fig:'<svg viewBox="0 0 340 380"><rect class="d-panel" x="60" y="8" width="274" height="38" rx="6" stroke-width="2"/><text x="197" y="32" text-anchor="middle">Land</text><path class="d-ink" d="M60,52 H334" stroke-width="3"/><text class="s" x="30" y="56" text-anchor="middle">0</text><text class="s" x="300" y="66" text-anchor="middle">baseline</text><rect class="d-sage" x="60" y="72" width="200" height="52" rx="6" stroke-width="2"/><text x="160" y="94" text-anchor="middle">Territorial sea</text><text class="s" x="160" y="113" text-anchor="middle">sovereignty</text><text class="s" x="30" y="128" text-anchor="middle">12 nm</text><rect class="d-lup" x="60" y="130" width="200" height="46" rx="6" stroke-width="2"/><text x="160" y="150" text-anchor="middle">Contiguous zone</text><text class="s" x="160" y="168" text-anchor="middle">customs, immigration</text><text class="s" x="30" y="180" text-anchor="middle">24 nm</text><rect class="d-gold" x="60" y="182" width="200" height="82" rx="6" stroke-width="2"/><text x="160" y="214" text-anchor="middle">EEZ</text><text class="s" x="160" y="234" text-anchor="middle">resource rights;</text><text class="s" x="160" y="250" text-anchor="middle">others may navigate</text><text class="s" x="30" y="268" text-anchor="middle">200 nm</text><rect class="d-soft" x="60" y="270" width="200" height="50" rx="6" stroke-width="2"/><text x="160" y="292" text-anchor="middle">High seas</text><text class="s" x="160" y="310" text-anchor="middle">open to all</text><rect class="d-rose" x="268" y="72" width="66" height="248" rx="6" stroke-width="2"/><text class="s" x="301" y="140" text-anchor="middle">Shelf</text><text class="s" x="301" y="158" text-anchor="middle">(seabed)</text><text class="s" x="301" y="176" text-anchor="middle">to 200,</text><text class="s" x="301" y="194" text-anchor="middle">or up to</text><text class="s" x="301" y="212" text-anchor="middle">350 nm</text><rect class="d-panel" x="60" y="328" width="274" height="44" rx="6" stroke-width="2"/><text x="197" y="348" text-anchor="middle">The Area</text><text class="s" x="197" y="364" text-anchor="middle">deep seabed: common heritage</text></svg>', alt:"A vertical diagram moving away from land. Below the land is the baseline at 0. Then the territorial sea to 12 nautical miles (sovereignty), the contiguous zone to 24 (customs and immigration control), the exclusive economic zone to 200 (resource rights; others may navigate), then the high seas, open to all. A column on the right shows the continental shelf seabed reaching 200 or up to 350 nautical miles. At the bottom, the Area: the deep seabed beyond, common heritage of mankind.", cap:"Water zones (left) and seabed zones (right) are separate. Distances are from the baseline."},
       {list:["**[[territorial-sea|Territorial sea]]** (12 nm): sovereignty, subject to other ships’ [[innocent-passage|innocent passage]]. In straits used for international navigation, ships and aircraft have the stronger right of [[transit-passage|transit passage]].","**[[contiguous-zone|Contiguous zone]]** (24 nm): enforcement of customs, fiscal, immigration and health laws.","**[[exclusive-economic-zone|Exclusive economic zone]]** (EEZ, 200 nm): sovereign rights over fish, oil, gas and wind; other states keep freedoms of navigation and overflight.","**[[continental-shelf|Continental shelf]]**: seabed rights to 200 nm, or further where the margin extends, up to the outer limits above."]},
       "One live disagreement concerns **military activities in another state’s EEZ**. The United States and many others say surveillance and exercises are part of freedom of navigation. China and some other coastal states say certain military activities need the coastal state’s consent. UNCLOS does not settle it explicitly."
@@ -472,7 +472,7 @@ ICA.addUnit({
     {h:"Islands, rocks and low-tide elevations", body:[
       "Because zones are measured from land, tiny features can generate huge areas of sea. Article 121 sets the [[regime-of-islands|regime of islands]]. A naturally formed area of land above water at high tide gets full zones. **But** “rocks which cannot sustain human habitation or economic life of their own” get only a 12 nm territorial sea, no EEZ or shelf. A [[low-tide-elevation|low-tide elevation]] (above water only at low tide) generates no territorial sea of its own, unless it lies within the territorial sea of other land.",
       {ex:"**Task:** classify three invented features off the coast of Norland and say what maritime zones each generates.\n1. First I ask the **tide question**, because Article 121 starts there. Is the feature above water at high tide?\n• Feature A: a 2 km² island with a spring, a fishing village and farms. Above water at high tide.\n• Feature B: a bare rock, 30 m², above water at high tide; nothing grows and no one lives there.\n• Feature C: a reef that is above water only at low tide, 40 nm from any land.\n2. Next I apply the **habitation and economic life test** to the high-tide features. A can sustain human habitation and economic life of its own, so it is a full island. B cannot: it is a **rock** under Article 121(3).\n3. Then I check the low-tide feature’s position. C is a [[low-tide-elevation|low-tide elevation]] beyond 12 nm from any land, so it has no territorial sea of its own.\n4. Finally I write the zones.\n• A: territorial sea (12 nm), contiguous zone, EEZ (200 nm) and continental shelf.\n• B: a 12 nm territorial sea (and, most agree, a contiguous zone); no EEZ or shelf.\n• C: no zones; it lies in whatever zone surrounds it.\n**Result:** a three-line table like the one above, and one sentence: “Only Feature A generates an EEZ, so Norland’s claim to 200 nm around Feature B has no basis under Article 121.”\n**Common mistake:** judging by size alone. In the 2016 South China Sea award the tribunal looked at the feature’s natural capacity, not at buildings or garrisons added later; Itu Aba, the largest Spratly feature, was still classed as a rock.", label:"Worked example: what zones does a feature get?"},
-      "The stakes are clear at Okinotorishima, a tiny feature in the Pacific. Japan treats it as an island with an EEZ. China and South Korea argue it is a rock. Delimitation between neighbours raises different questions. *Bangladesh/Myanmar* (2012) drew a boundary in the Bay of Bengal. It was the first maritime boundary case decided by the [[itlos|International Tribunal for the Law of the Sea]] (ITLOS, in Hamburg). In 2016–18, Timor-Leste and Australia used UNCLOS’s **compulsory conciliation**, for the first time, and signed a maritime boundary treaty at the UN in March 2018."
+      "The stakes are clear at Okinotorishima, a tiny feature in the Pacific. Japan treats it as an island with an EEZ. China and South Korea argue it is a rock. Delimitation between neighbors raises different questions. *Bangladesh/Myanmar* (2012) drew a boundary in the Bay of Bengal. It was the first maritime boundary case decided by the [[itlos|International Tribunal for the Law of the Sea]] (ITLOS, in Hamburg). In 2016–18, Timor-Leste and Australia used UNCLOS’s **compulsory conciliation**, for the first time, and signed a maritime boundary treaty at the UN in March 2018."
     ]},
     {h:"The South China Sea arbitration: both positions", body:[
       "Several governments have overlapping claims in the South China Sea: China, the Philippines, Vietnam, Malaysia and Brunei, and the authorities in Taiwan. China’s claims are often drawn as a [[nine-dash-line|“nine-dash line”]], whose legal meaning China has not precisely defined.",
@@ -489,12 +489,12 @@ ICA.addUnit({
     ]},
     {h:"How territory is won and kept", body:[
       "Land disputes turn on **title**: the legal basis for sovereignty. The classic case is from the Asia-Pacific. *Island of Palmas* (1928) was a dispute between the Netherlands and the United States over an island near the Philippines. The arbitrator, Max Huber, held that Spain’s early discovery gave only an “inchoate” title. The Dutch, in his view, had shown the “continuous and peaceful display” of state authority. Since then, three ideas recur:",
-      {list:["**[[effectivites|Effectivités]]**: acts of administration, such as running a lighthouse, licensing or taxation. In *Ligitan and Sipadan* (Indonesia/Malaysia, 2002) the ICJ gave the islands to Malaysia on this basis.","**Acquiescence**: failing to protest. In *Temple of Preah Vihear* (Cambodia v. Thailand, 1962) Thailand was held to have accepted a map placing the temple in Cambodia; a 2013 judgment clarified the area. In *Pedra Branca* (2008) Malaysia’s silence while Singapore ran a lighthouse helped Singapore.","**The [[critical-date|critical date]]**: the moment a dispute crystallised, after which new acts count for little."]},
+      {list:["**[[effectivites|Effectivités]]**: acts of administration, such as running a lighthouse, licensing or taxation. In *Ligitan and Sipadan* (Indonesia/Malaysia, 2002) the ICJ gave the islands to Malaysia on this basis.","**Acquiescence**: failing to protest. In *Temple of Preah Vihear* (Cambodia v. Thailand, 1962) Thailand was held to have accepted a map placing the temple in Cambodia; a 2013 judgment clarified the area. In *Pedra Branca* (2008) Malaysia’s silence while Singapore ran a lighthouse helped Singapore.","**The [[critical-date|critical date]]**: the moment a dispute crystallized, after which new acts count for little."]},
       {ex:"**Task:** explain why the ICJ gave Pedra Branca/Pulau Batu Puteh to Singapore in 2008 although Malaysia had the original title.\n1. First I establish **original title**, because the Court did. It found that the island belonged to the Sultanate of Johor, Malaysia’s predecessor, and that no one had challenged this.\n2. Next I ask whether title **passed** through later conduct. The Court looked at **[[effectivites|effectivités]]**: Singapore investigated shipwrecks in the island’s waters, decided whether Malaysian officials could survey the surrounding waters, and in 1977 installed military communications equipment. These were acts “as sovereign”, not just running a lighthouse.\n3. Then I look for **acquiescence**. In 1953 Singapore’s Colonial Secretary asked about the island’s status, and Johor’s Acting State Secretary replied that Johor “does not claim ownership”. Malaysia also did not protest Singapore’s acts for decades.\n4. Then I fix the **[[critical-date|critical date]]**: 14 February 1980, when Singapore protested a 1979 Malaysian map. Acts after that date count for little.\n5. Finally I note the limits of the result. Nearby Middle Rocks went to Malaysia (15–1), because the same conduct did not cover it; South Ledge, a low-tide elevation, goes to whichever state’s territorial sea it lies in.\n**Result:** “The Court held 12–4 that sovereignty over Pedra Branca had passed to Singapore by 1980: Singapore acted as sovereign, Johor disclaimed ownership in 1953, and Malaysia did not protest.”\n**Common mistake:** arguing from discovery or ancient maps alone. Since *Island of Palmas*, courts ask who actually governed, and who stayed silent.", label:"Worked example: building a title argument (Pedra Branca)"},
-      "[[terra-nullius|Terra nullius]] (land belonging to no one) was a colonial doctrine. In its *Western Sahara* opinion (1975) the ICJ held that the territory, inhabited by organised tribes, was not terra nullius when Spain colonised it. Several disputes in Northeast Asia have never reached a court, because both parties have not consented (see {{japan-and-neighbours}})."
+      "[[terra-nullius|Terra nullius]] (land belonging to no one) was a colonial doctrine. In its *Western Sahara* opinion (1975) the ICJ held that the territory, inhabited by organized tribes, was not terra nullius when Spain colonized it. Several disputes in Northeast Asia have never reached a court, because both parties have not consented (see {{japan-and-neighbours}})."
     ]},
     {h:"Uti possidetis, the Arctic and the ICJ docket", body:[
-      "[[uti-possidetis|Uti possidetis]] (“as you possess”) means new states inherit their colonial administrative borders. Spanish American republics used it from the 1810s. The Organization of African Unity endorsed existing borders in 1964. In *Burkina Faso/Mali* (1986) an ICJ chamber called it a general principle linked to independence “wherever it occurs”. Supporters credit it with preventing border wars; critics say it froze lines drawn by empires. The ICJ’s *Chagos* opinion (2019) found that the United Kingdom’s separation of the Chagos Archipelago from Mauritius before independence meant decolonisation was not lawfully completed. In May 2025 the two governments signed a treaty to transfer sovereignty to Mauritius, with a long lease of the Diego Garcia base. Check whether it is in force before citing it.",
+      "[[uti-possidetis|Uti possidetis]] (“as you possess”) means new states inherit their colonial administrative borders. Spanish American republics used it from the 1810s. The Organization of African Unity endorsed existing borders in 1964. In *Burkina Faso/Mali* (1986) an ICJ chamber called it a general principle linked to independence “wherever it occurs”. Supporters credit it with preventing border wars; critics say it froze lines drawn by empires. The ICJ’s *Chagos* opinion (2019) found that the United Kingdom’s separation of the Chagos Archipelago from Mauritius before independence meant decolonization was not lawfully completed. In May 2025 the two governments signed a treaty to transfer sovereignty to Mauritius, with a long lease of the Diego Garcia base. Check whether it is in force before citing it.",
       "In the **Arctic**, the five coastal states declared at Ilulissat (2008) that the law of the sea applies and no new treaty is needed. Russia, Denmark (for Greenland) and Canada have made overlapping continental shelf submissions reaching the North Pole. Canada treats the Northwest Passage as internal waters; the United States and others see an international strait.",
       "The ICJ itself is busy. In 2026 reports described its docket as the busiest in its history. Its cases included Myanmar’s treatment of the Rohingya, South Africa’s case against Israel over Gaza, Ukraine’s Genocide Convention case against Russia and the Guyana–Venezuela boundary. It had also given advisory opinions on climate change (2025) and on Israel and the occupied Palestinian territory (2024 and 2025). Its President since 2025, Iwasawa Yuji, is from Japan.",
       {terms:["unclos","territorial-sea","contiguous-zone","exclusive-economic-zone","continental-shelf","innocent-passage","transit-passage","regime-of-islands","low-tide-elevation","itlos","nine-dash-line","annex-vii-arbitration","historic-rights","effectivites","critical-date","terra-nullius","uti-possidetis","bbnj-agreement","optional-clause","provisional-measures"]}
@@ -533,7 +533,7 @@ ICA.addUnit({
       " ",
       {t:"China said the award was null and void and did not take part in the proceedings.", flag:false, why:"Accurate attribution of China’s position."},
       " ",
-      {t:"China’s rejection proves that international law is meaningless.", flag:true, why:"An opinion presented as fact, and an overgeneralisation. Writers can argue this, but must attribute and support it."},
+      {t:"China’s rejection proves that international law is meaningless.", flag:true, why:"An opinion presented as fact, and an overgeneralization. Writers can argue this, but must attribute and support it."},
       " ",
       {t:"The Philippines says the award is final and binding under Article 296 of UNCLOS.", flag:false, why:"Accurate attribution."}
     ]},
@@ -558,8 +558,8 @@ ICA.addUnit({
      {t:"Draw a coast’s zones", how:[
        "Pick any coastal country. Using a free online map, find a stretch of its coast.",
        "Sketch the baseline and mark roughly where 12, 24 and 200 nautical miles would fall (1 nm = 1.852 km).",
-       "Note any neighbour whose 200 nm zone would overlap, and how a median line would divide it."
-     ], write:"Country and coast… Where 12, 24 and 200 nm fall… Overlapping neighbour… How a median line would divide it…"},
+       "Note any neighbor whose 200 nm zone would overlap, and how a median line would divide it."
+     ], write:"Country and coast… Where 12, 24 and 200 nm fall… Overlapping neighbor… How a median line would divide it…"},
      {t:"Read both sides of the arbitration", how:[
        "Find the tribunal’s press release of 12 July 2016 (search “South China Sea Arbitration press release 12 July 2016”) and China’s Foreign Ministry statement of the same day.",
        "List three findings, and China’s three main objections.",
@@ -569,7 +569,7 @@ ICA.addUnit({
        "Choose one and write 150–250 words with a position and a counter-argument.",
        "1. Does uti possidetis keep the peace or keep colonial injustice?",
        "2. Should the line between an island and a rock depend on modern engineering?",
-       "3. Can a court’s ruling settle a dispute that one party refuses to recognise?"
+       "3. Can a court’s ruling settle a dispute that one party refuses to recognize?"
      ], write:"My question… My position… Evidence… Counter-argument…"}
     ],
     proof:"A sketch of one coast’s zones, a two-sided summary of the 2016 arbitration, and a seminar paragraph with a counter-argument."
@@ -592,7 +592,7 @@ ICA.addUnit({
    learn:[
     {h:"From states to individuals", body:[
       {lead:"Traditional international law dealt with states. The idea that a minister or general could personally stand trial under international law is less than a century old."},
-      "The Nuremberg tribunal put it plainly in its 1946 judgment: “Crimes against international law are committed by men, not by abstract entities, and only by punishing individuals who commit such crimes can the provisions of international law be enforced.” That is [[individual-criminal-responsibility|individual criminal responsibility]]. Official position is no defence, and “superior orders” can at most reduce a sentence.",
+      "The Nuremberg tribunal put it plainly in its 1946 judgment: “Crimes against international law are committed by men, not by abstract entities, and only by punishing individuals who commit such crimes can the provisions of international law be enforced.” That is [[individual-criminal-responsibility|individual criminal responsibility]]. Official position is no defense, and “superior orders” can at most reduce a sentence.",
       "The primer and the history unit introduced the [[war-crimes-tribunals|Nuremberg and Tokyo tribunals]] and the charge of [[victors-justice|victors’ justice]], including Justice Radhabinod Pal’s dissent at Tokyo (see {{world-war-two}}). Seminars add three points. At Nuremberg, 22 defendants were tried and 19 convicted. At Tokyo, 25 of the 28 accused were convicted after two died and one was found unfit. Tokyo’s eleven judges came from eleven countries, including India, the Philippines and China. Several wrote separate or dissenting opinions. And choices about whom not to try, such as the US decision not to prosecute Emperor Hirohito, shaped the trials’ legacy as much as the verdicts did.",
       "The General Assembly affirmed the Nuremberg principles in 1946. The Genocide Convention (1948) and the Geneva Conventions (1949) followed. [[command-responsibility|Command responsibility]] is the liability of superiors who knew of crimes and failed to stop them. It was developed partly in the US military trial of General Yamashita Tomoyuki in Manila (1945), still a debated precedent."
     ]},
@@ -617,7 +617,7 @@ ICA.addUnit({
       "The primer covered the basics of the [[international-criminal-court|ICC]] and [[complementarity|complementarity]] (see {{international-courts}}). Here are the mechanics seminars test:",
       {list:["**Triggers** (Article 13): a state party refers a situation, the Security Council refers one under Chapter VII, or the Prosecutor opens an investigation [[proprio-motu|proprio motu]], with judges’ approval.","**Preconditions** (Article 12): unless the Council refers, the crime must occur on a state party’s territory or be committed by its national. (A state may also accept jurisdiction for a situation.)","**Council powers**: it referred Darfur (2005) and Libya (2011), and may defer an investigation for a renewable 12 months (Article 16).","**Aggression**: since 17 July 2018, but not over nationals of non-parties or on their territory, unless the Council refers."]},
       {ex:"**Task:** in a fictional case, soldiers from Norland, which has not joined the Rome Statute, are accused of deporting civilians from Ostavia, a state party, in 2025. Can the ICC act?\n1. First I check the **crime** (subject matter), because the Court tries only listed crimes. Deportation of civilians can be a crime against humanity or a war crime. Yes.\n2. Next the **time**: the Statute has applied to Ostavia since it joined, and the acts happened after that. Yes.\n3. Then the **preconditions** (Article 12). Without a Security Council referral, the crime must happen on a state party’s territory **or** be committed by a party’s national. Ostavia is a party and the acts took place there, so Norland’s non-membership does not matter.\n4. Then the **trigger** (Article 13). Ostavia could refer the situation, or the Prosecutor could open an investigation [[proprio-motu|proprio motu]] with judges’ approval.\n5. Finally **admissibility**: under [[complementarity]], the case is inadmissible if a state with jurisdiction is genuinely investigating it. If Norland’s courts hold real proceedings, the ICC steps back; a sham trial does not count.\n**Result:** “The ICC has jurisdiction because the alleged deportations occurred on Ostavia’s territory; Norland’s refusal to join the Statute is not a bar. Whether the case proceeds depends on admissibility: a genuine Norlandic investigation would take priority.”\n**Common mistake:** concluding that non-party nationals are always out of reach. That is true for aggression (unless the Council refers), but not for genocide, crimes against humanity or war crimes on a party’s territory, as the Myanmar–Bangladesh decision of 2018 showed.", label:"Worked example: running the ICC jurisdiction checklist"},
-      "The territorial rule reaches **nationals of non-parties**, which explains several controversies. In 2018 judges held the Court could act on deportations of Rohingya from Myanmar (not a party) into Bangladesh (a party). In 2024 the Prosecutor sought an arrest warrant for Myanmar’s military leader. The Court has issued warrants for Russia’s president (2023) over the deportation of Ukrainian children. It has also issued warrants for Israel’s prime minister and a former defence minister (2024) over Gaza. The governments concerned reject the Court’s jurisdiction.",
+      "The territorial rule reaches **nationals of non-parties**, which explains several controversies. In 2018 judges held the Court could act on deportations of Rohingya from Myanmar (not a party) into Bangladesh (a party). In 2024 the Prosecutor sought an arrest warrant for Myanmar’s military leader. The Court has issued warrants for Russia’s president (2023) over the deportation of Ukrainian children. It has also issued warrants for Israel’s prime minister and a former defense minister (2024) over Gaza. The governments concerned reject the Court’s jurisdiction.",
       "As of November 2026, 125 states were parties. Burkina Faso, Mali and Niger announced their withdrawal in September 2025. They deposited formal notice in June 2026 (Niger on 18 June, Burkina Faso and Mali on 24 June). Venezuela and Chad did so in July 2026. Under Article 127 each withdrawal takes effect one year after notice. Hungary, which had announced its withdrawal in 2025, reversed the decision in 2026 and remains a party. The Philippines left in 2019, but the Court kept jurisdiction over earlier crimes. Former president Rodrigo Duterte was surrendered in March 2025. On 23 April 2026 judges confirmed charges of crimes against humanity and sent the case to trial. (As of September 2026, the trial was scheduled to open in November.) In 2025 the United States imposed sanctions on the Prosecutor and several judges. The Court and many states parties condemned them. The US government said they protected its personnel and allies."
     ]},
     {h:"Critics and defenders", body:[
@@ -633,8 +633,8 @@ ICA.addUnit({
       {ex:"**Task:** a draft paper says: “The ICC targets Africa.” Rewrite it for a seminar.\n1. First I identify **who makes the claim**, because a critique is a position held by someone. The African Union adopted the critique from 2013, and several African governments made it, especially after cases against sitting leaders.\n2. Next I find the **evidence behind it**: most early investigations concerned African situations, and in the *Kenyatta* case a sitting president faced charges until they were withdrawn in December 2014.\n3. Then I add the **counter-evidence**, because a fair paper sets out both. Several situations reached the Court through **self-referral**: Uganda, the Democratic Republic of the Congo, the Central African Republic and Mali referred situations on their own territory. Darfur and Libya came from the Security Council. Investigations have also been opened outside Africa: Georgia, Ukraine, Bangladesh/Myanmar, Afghanistan, the Philippines and Palestine.\n4. Then I name the **deeper question** the slogan points to: selectivity. Even defenders accept that the Council’s veto shields some states; they argue that the problem lies in the system, not in the Court’s intent.\n5. Finally I state my own view separately, with reasons.\n**Result:** “The African Union and several governments argued from 2013 that the ICC unfairly focused on Africa. Supporters reply that many African cases were self-referred and that investigations have since been opened in other regions. The stronger form of the critique concerns selectivity built into the Rome system, especially the Security Council’s role.”\n**Common mistake:** replacing one slogan with another (“the critique is just about leaders avoiding justice”). Both sides deserve their best evidence.", label:"Worked example: turning a slogan into an attributed argument"}
     ]},
     {h:"TWAIL and feminist approaches", body:[
-      "**[[twail|TWAIL]]** (Third World Approaches to International Law) grew from discussions among graduate students at Harvard Law School in 1996, with a first meeting in 1997. It asks how international law was shaped by colonialism and still reflects it (see {{twail}}). Antony Anghie’s *Imperialism, Sovereignty and the Making of International Law* (2005) argued that the discipline was formed through a “dynamic of difference” between “civilised” and “uncivilised” peoples. In his account, this dynamic runs from the Spanish conquest to the [[standard-of-civilisation|standard of civilisation]] and the [[mandate-system|mandate system]] (see {{antony-anghie}}). B. S. Chimni’s “Third World Approaches to International Law: A Manifesto” (2006) and Makau Mutua’s “Savages, Victims, and Saviors” (2001) carried the critique into the economy and human rights. Japan’s Onuma Yasuaki proposed a related “transcivilisational” perspective. TWAIL is not anti-law: many TWAIL scholars defend the ICC while criticising its selectivity.",
-      "**[[feminist-international-law|Feminist approaches]]** began with Hilary Charlesworth, Christine Chinkin and Shelley Wright’s “Feminist Approaches to International Law” (*American Journal of International Law*, 1991) and Charlesworth and Chinkin’s *The Boundaries of International Law* (2000) (see {{hilary-charlesworth}}). They criticised the [[public-private-divide|public/private divide]], which left violence in homes and families outside “international” concern. They also criticised the near-absence of women from courts and diplomacy. Successes followed: *Akayesu* on rape as genocide, the ICTY’s rulings on rape as torture and enslavement, and the Rome Statute’s list of sexual and gender-based crimes. Feminists also debate their own wins. Karen Engle’s *The Grip of Sexual Violence in Conflict* (2020) argued that a focus on criminal prosecution of sexual violence can crowd out other harms and remedies.",
+      "**[[twail|TWAIL]]** (Third World Approaches to International Law) grew from discussions among graduate students at Harvard Law School in 1996, with a first meeting in 1997. It asks how international law was shaped by colonialism and still reflects it (see {{twail}}). Antony Anghie’s *Imperialism, Sovereignty and the Making of International Law* (2005) argued that the discipline was formed through a “dynamic of difference” between “civilized” and “uncivilized” peoples. In his account, this dynamic runs from the Spanish conquest to the [[standard-of-civilisation|standard of civilization]] and the [[mandate-system|mandate system]] (see {{antony-anghie}}). B. S. Chimni’s “Third World Approaches to International Law: A Manifesto” (2006) and Makau Mutua’s “Savages, Victims, and Saviors” (2001) carried the critique into the economy and human rights. Japan’s Onuma Yasuaki proposed a related “transcivilizational” perspective. TWAIL is not anti-law: many TWAIL scholars defend the ICC while criticizing its selectivity.",
+      "**[[feminist-international-law|Feminist approaches]]** began with Hilary Charlesworth, Christine Chinkin and Shelley Wright’s “Feminist Approaches to International Law” (*American Journal of International Law*, 1991) and Charlesworth and Chinkin’s *The Boundaries of International Law* (2000) (see {{hilary-charlesworth}}). They criticized the [[public-private-divide|public/private divide]], which left violence in homes and families outside “international” concern. They also criticized the near-absence of women from courts and diplomacy. Successes followed: *Akayesu* on rape as genocide, the ICTY’s rulings on rape as torture and enslavement, and the Rome Statute’s list of sexual and gender-based crimes. Feminists also debate their own wins. Karen Engle’s *The Grip of Sexual Violence in Conflict* (2020) argued that a focus on criminal prosecution of sexual violence can crowd out other harms and remedies.",
       {terms:["individual-criminal-responsibility","victors-justice","command-responsibility","hybrid-tribunal","universal-jurisdiction","proprio-motu","twail","feminist-international-law","public-private-divide"]}
     ]}
    ],
@@ -664,8 +664,8 @@ ICA.addUnit({
       ["*Habré* (Extraordinary African Chambers, 2016)","A former head of state convicted by an AU-backed court","An African-led hybrid model."],
       ["*Ongwen* (ICC, 2021)","Conviction of a former child soldier turned commander, including for forced pregnancy","A hard case about victims who become perpetrators."]
     ]},
-    {id:"e4u10-l5-x5", type:"sort", q:"Which approach does each argument come from?", buckets:["TWAIL","Feminist","Rational-choice sceptic"], items:[
-      {t:"International law was formed through a “dynamic of difference” between “civilised” and “uncivilised” peoples.", b:0, why:"Anghie’s central argument."},
+    {id:"e4u10-l5-x5", type:"sort", q:"Which approach does each argument come from?", buckets:["TWAIL","Feminist","Rational-choice skeptic"], items:[
+      {t:"International law was formed through a “dynamic of difference” between “civilized” and “uncivilized” peoples.", b:0, why:"Anghie’s central argument."},
       {t:"Treating violence in the home as “private” left much harm to women outside international law’s concern.", b:1, why:"The critique of the public/private divide."},
       {t:"States support international courts only when it suits their interests.", b:2, why:"The Goldsmith and Posner style of argument from Lesson 2."},
       {t:"The same institutions that once ranked peoples now prosecute mostly leaders from the Global South.", b:0, why:"A TWAIL critique of selectivity."},
@@ -683,7 +683,7 @@ ICA.addUnit({
       {t:"The Court has no police and depends on states to make arrests.", flag:false, why:"Accurate."}
     ]},
     {id:"e4u10-l5-x7", type:"mcq", q:"Which statement about the ECCC in Cambodia is most balanced?", options:[
-      {t:"It drew public interest but was slow, costly and criticised.", ok:true, why:"Yes. It drew large public attendance and built a lasting archive, but convicted only three people and faced allegations of political interference. It states both supporters’ and critics’ main points."},
+      {t:"It drew public interest but was slow, costly and criticized.", ok:true, why:"Yes. It drew large public attendance and built a lasting archive, but convicted only three people and faced allegations of political interference. It states both supporters’ and critics’ main points."},
       {t:"It was a complete failure that achieved nothing.", why:"One-sided: it convicted senior leaders, including of genocide, and engaged the public widely."},
       {t:"It was a purely international court with no Cambodian judges.", why:"Inaccurate: it was a hybrid court with Cambodian and international judges."},
       {t:"It tried hundreds of Khmer Rouge officials.", why:"Inaccurate: only three people were convicted."}
@@ -721,7 +721,7 @@ ICA.addUnit({
   ],
   checkpoint:["e4u10-q02","e4u10-q05","e4u10-q08","e4u10-q12","e4u10-q15","e4u10-q20","e4u10-q23","e4u10-q27","e4u10-q31","e4u10-q35","e4u10-q39","e4u10-q43"],
   cpBank:[
-   {id:"e4u10-cp01", lesson:"e4u10-l1", level:1, q:"A new agreement is legally binding and sets exact numerical limits, but it creates no court or panel to interpret it. In the legalisation framework of Abbott and colleagues, how would you describe it?", options:[
+   {id:"e4u10-cp01", lesson:"e4u10-l1", level:1, q:"A new agreement is legally binding and sets exact numerical limits, but it creates no court or panel to interpret it. In the legalization framework of Abbott and colleagues, how would you describe it?", options:[
      {t:"Soft law, because it has no court", why:"Soft law means non-binding. This agreement is binding; lacking a court affects only one dimension."},
      {t:"High obligation, high precision, low delegation", ok:true, why:"Right. Legalisation has three dimensions: obligation (binding), precision (exact) and delegation (third parties interpret and apply). This agreement scores high, high and low."},
      {t:"High delegation, because the states apply it themselves", why:"Delegation means handing interpretation to third parties such as courts. States applying it themselves is low delegation."},
@@ -747,19 +747,19 @@ ICA.addUnit({
      {t:"Goldsmith and Posner’s coincidence of interest", why:"Coincidence of interest means the state would act the same way without the treaty. Here breaking it would pay, so the treaty is doing work."},
      {t:"Guzman’s reputation, reciprocity and retaliation", ok:true, why:"Right. Guzman argued that law matters because breaking a legal promise costs more, through reputation, reciprocity and retaliation."}]},
    {id:"e4u10-cp06", lesson:"e4u10-l2", level:2, q:"A critic says a new rule was drafted to match exactly what the most powerful states already do, so it restrains no one. In Koskenniemi’s terms, the rule risks being what?", options:[
-     {t:"A utopia with no grip on reality", why:"That is the other pole: a rule so far from state behaviour that it has no grip. This rule is too close to behaviour."},
-     {t:"An apology for power", ok:true, why:"Right. Koskenniemi argued that legal argument swings between apology (too close to state behaviour) and utopia (too far from it)."},
+     {t:"A utopia with no grip on reality", why:"That is the other pole: a rule so far from state behavior that it has no grip. This rule is too close to behavior."},
+     {t:"An apology for power", ok:true, why:"Right. Koskenniemi argued that legal argument swings between apology (too close to state behavior) and utopia (too far from it)."},
      {t:"A jus cogens norm", why:"Jus cogens norms override other rules. A rule that just mirrors powerful states’ practice is the opposite of a strong constraint."},
      {t:"A coordination focal point", why:"That is Goldsmith and Posner’s category for picking one convention, such as a shipping lane. The critic’s point is about power, not coordination."}]},
    {id:"e4u10-cp07", lesson:"e4u10-l2", level:3, q:"Lina argues that debt conditions and non-proliferation demands fall heavily on weaker states, while breaches by powerful states cost little. She says the same pattern shapes which situations reach international criminal courts. Which tradition is she drawing on?", options:[
      {t:"TWAIL (Third World Approaches to International Law)", ok:true, why:"Right. This combines Lesson 2 (TWAIL asks who is asked to comply) with Lesson 5 (TWAIL critiques of selectivity in international criminal justice)."},
      {t:"The managerial model", why:"The managerial model explains breaches by ambiguity, capacity and time lags. It doesn’t focus on hierarchy between states."},
      {t:"Hart’s view of international law as a “primitive” system", why:"Hart pointed to the lack of institutions to make and apply rules, not to unequal burdens on weaker states."},
-     {t:"Feminist critiques of the public/private divide", why:"Feminist approaches criticise how law left violence in homes outside international concern. Lina’s argument is about hierarchy between states."}]},
-   {id:"e4u10-cp08", lesson:"e4u10-l3", level:2, q:"State M is attacked. Its neighbour, State N, sends forces to help, citing collective self-defence, but M has said nothing. According to *Nicaragua* (1986), what is missing?", options:[
-     {t:"Security Council authorisation, which all collective self-defence needs", why:"Self-defence, individual or collective, is an exception that doesn’t need prior Council authorisation, though measures must be reported."},
-     {t:"An armed attack on N itself", why:"Collective self-defence is about helping another state. N doesn’t need to be attacked itself."},
-     {t:"A declaration by M that it has been attacked, and a request for help", ok:true, why:"Right. *Nicaragua* held that collective self-defence requires the victim to declare it has been attacked and ask for help."},
+     {t:"Feminist critiques of the public/private divide", why:"Feminist approaches criticize how law left violence in homes outside international concern. Lina’s argument is about hierarchy between states."}]},
+   {id:"e4u10-cp08", lesson:"e4u10-l3", level:2, q:"State M is attacked. Its neighbor, State N, sends forces to help, citing collective self-defense, but M has said nothing. According to *Nicaragua* (1986), what is missing?", options:[
+     {t:"Security Council authorization, which all collective self-defense needs", why:"Self-defense, individual or collective, is an exception that doesn’t need prior Council authorization, though measures must be reported."},
+     {t:"An armed attack on N itself", why:"Collective self-defense is about helping another state. N doesn’t need to be attacked itself."},
+     {t:"A declaration by M that it has been attacked, and a request for help", ok:true, why:"Right. *Nicaragua* held that collective self-defense requires the victim to declare it has been attacked and ask for help."},
      {t:"A formal alliance treaty between M and N", why:"Alliance treaties are framed around Article 51, but the legal requirement in *Nicaragua* is the victim’s declaration and request, not a treaty."}]},
    {id:"e4u10-cp09", lesson:"e4u10-l4", level:1, q:"Coastguard officers stop a boat smuggling goods 20 nautical miles off State R’s coast. In which zone may R enforce its customs laws at that distance?", options:[
      {t:"The territorial sea", why:"The territorial sea ends at 12 nautical miles. The boat is beyond it."},
@@ -787,7 +787,7 @@ ICA.addUnit({
     summary:"How treaties, custom, general principles and the subsidiary means relate to each other, how each is proved, and where hierarchy enters.",
     levels:{
      starter:[
-      "International law has no single law-maker. Courts and governments find the rules in a few recognised places, listed in Article 38(1) of the Statute of the International Court of Justice: **treaties**, **custom**, **general principles of law**, and, as helpers, **court decisions and the writings of leading scholars** (see {{international-law}}).",
+      "International law has no single law-maker. Courts and governments find the rules in a few recognized places, listed in Article 38(1) of the Statute of the International Court of Justice: **treaties**, **custom**, **general principles of law**, and, as helpers, **court decisions and the writings of leading scholars** (see {{international-law}}).",
       "Think of a family that runs on a mix of written agreements (“whoever cooks doesn’t wash up”), long habits everyone treats as rules, and common-sense fairness. Nobody ranks these in advance; when they clash, the family asks which is more specific or more recent.",
       {key:"Treaties and custom have equal force. The only clear hierarchy comes from jus cogens and from Article 103 of the UN Charter."},
       "Much of the law is drafted by the International Law Commission, a UN body of experts created in 1947."
@@ -799,9 +799,9 @@ ICA.addUnit({
       "**Other law-making.** Unilateral declarations can bind (*Nuclear Tests*, 1974). General Assembly resolutions are not binding as such, but can be evidence of opinio juris (*Nuclear Weapons* opinion, 1996)."
      ],
      pro:[
-      "**Debates.** Positivists stress state consent; others see a growing role for community interests (jus cogens, erga omnes obligations). The phrase “civilized nations” in Article 38(1)(c), dating from 1920, is criticised as a colonial relic, and TWAIL scholars ask whose practice counts as “general” (see {{twail}}).",
-      "**Fragmentation.** The ILC’s 2006 study (finalised by Martti Koskenniemi) concluded that specialised regimes such as trade and human rights remain part of one legal system, held together by interpretation rules such as VCLT Article 31(3)(c).",
-      "**Soft law and relative normativity.** Prosper Weil (1983) warned that graded normativity blurs the line between law and non-law; legalisation scholars reply that the line was never sharp (see {{soft-law}}).",
+      "**Debates.** Positivists stress state consent; others see a growing role for community interests (jus cogens, erga omnes obligations). The phrase “civilized nations” in Article 38(1)(c), dating from 1920, is criticized as a colonial relic, and TWAIL scholars ask whose practice counts as “general” (see {{twail}}).",
+      "**Fragmentation.** The ILC’s 2006 study (finalized by Martti Koskenniemi) concluded that specialized regimes such as trade and human rights remain part of one legal system, held together by interpretation rules such as VCLT Article 31(3)(c).",
+      "**Soft law and relative normativity.** Prosper Weil (1983) warned that graded normativity blurs the line between law and non-law; legalization scholars reply that the line was never sharp (see {{soft-law}}).",
       {tip:"In a seminar, always ask: which source is being claimed, and what evidence would prove it?"}
      ]
     },
@@ -814,7 +814,7 @@ ICA.addUnit({
     summary:"The rules on how treaties are made, interpreted, reserved, invalidated and ended, mostly codified in the 1969 Vienna Convention.",
     levels:{
      starter:[
-      "A **treaty** is a written agreement between states (or international organisations) governed by international law. The rules about treaties themselves are mostly in the **Vienna Convention on the Law of Treaties** (VCLT), adopted in 1969 and in force since 1980.",
+      "A **treaty** is a written agreement between states (or international organizations) governed by international law. The rules about treaties themselves are mostly in the **Vienna Convention on the Law of Treaties** (VCLT), adopted in 1969 and in force since 1980.",
       "Its core is **pacta sunt servanda**: agreements must be kept in good faith (Article 26). A state cannot excuse a breach by pointing to its own law (Article 27).",
       "Treaties are interpreted by their ordinary meaning, in context, in light of their purpose (Article 31). States can join with **reservations** excluding some clauses, unless a reservation defeats the treaty’s purpose.",
       {key:"Treaty law is about consent: how it is given, what it covers, and how hard it is to take back."}
@@ -837,24 +837,24 @@ ICA.addUnit({
     sources:[{t:"Vienna Convention on the Law of Treaties, 1969 (UN text)", url:"https://legal.un.org/ilc/texts/instruments/english/conventions/1_1_1969.pdf"},{t:"ICJ, Dispute regarding Navigational and Related Rights (Costa Rica v. Nicaragua), case page (judgment of 13 July 2009)", url:"https://www.icj-cij.org/en/case/133"}],
     checked:"2026-11"},
 
-   {id:"soft-law", title:"Soft law and legalisation", aka:["non-binding instruments","legalization"], tags:["international law","soft law","institutions"],
-    summary:"Non-binding norms that still shape behaviour, and the IR theory of when states choose hard or soft law.",
+   {id:"soft-law", title:"Soft law and legalization", aka:["non-binding instruments","legalization"], tags:["international law","soft law","institutions"],
+    summary:"Non-binding norms that still shape behavior, and the IR theory of when states choose hard or soft law.",
     levels:{
      starter:[
       "**Soft law** is the name for rules that are not legally binding but that states and others still take seriously: declarations, guidelines, codes of conduct and standards.",
-      "Think of a group of neighbours who sign a friendly pledge to keep noise down after 10 p.m. Nobody can be sued for breaking it, but most keep it, and it shapes what counts as reasonable.",
+      "Think of a group of neighbors who sign a friendly pledge to keep noise down after 10 p.m. Nobody can be sued for breaking it, but most keep it, and it shapes what counts as reasonable.",
       "Examples include the Helsinki Final Act (1975), the Rio Declaration (1992), the UN Guiding Principles on Business and Human Rights (2011) and the 2002 ASEAN–China Declaration on the Conduct of Parties in the South China Sea.",
       {key:"Soft law can harden: the Universal Declaration of Human Rights was non-binding in 1948, and parts of it are now widely treated as custom."}
      ],
      builder:[
-      "**Legalisation.** In a 2000 special issue of *International Organization*, Abbott, Keohane, Moravcsik, Slaughter and Snidal described legalisation on three dimensions: **obligation**, **precision** and **delegation** to third parties. An instrument can be high on one and low on others.",
+      "**Legalisation.** In a 2000 special issue of *International Organization*, Abbott, Keohane, Moravcsik, Slaughter and Snidal described legalization on three dimensions: **obligation**, **precision** and **delegation** to third parties. An instrument can be high on one and low on others.",
       "**Why choose soft law?** Abbott and Snidal argued that soft law lowers contracting and sovereignty costs, handles uncertainty, and allows compromise between states with different preferences. Hard law makes commitments more credible.",
-      "**How soft law works.** It can be evidence of opinio juris, a first step towards a treaty, a guide to interpreting treaties, or a standard enforced by markets and peers (financial standards are an example).",
+      "**How soft law works.** It can be evidence of opinio juris, a first step toward a treaty, a guide to interpreting treaties, or a standard enforced by markets and peers (financial standards are an example).",
       {tip:"In essays, say “non-binding instrument” rather than “not law”: soft law has legal effects, just not binding ones."}
      ],
      pro:[
       "**Critiques.** Prosper Weil’s “Towards Relative Normativity in International Law?” (1983) warned that soft law and jus cogens together erode the clarity of the legal/non-legal line. Some TWAIL scholars add that soft law lets powerful actors set standards without the accountability of treaty-making; others see it as a tool weaker states use to put issues on the agenda.",
-      "**Asian practice.** Regional cooperation in Southeast Asia has relied heavily on declarations and consensus (the [[asean-way|ASEAN way]]), which scholars read either as weakness or as a deliberate, flexible form of legalisation.",
+      "**Asian practice.** Regional cooperation in Southeast Asia has relied heavily on declarations and consensus (the [[asean-way|ASEAN way]]), which scholars read either as weakness or as a deliberate, flexible form of legalization.",
       "**Research use.** Legalisation is a useful variable: compare how obligation, precision and delegation differ across regimes, and whether compliance differs too (see {{compliance-theories}})."
      ]
     },
@@ -868,8 +868,8 @@ ICA.addUnit({
      starter:[
       "States mostly keep international law, even without a world police. Louis Henkin wrote in 1968 that “almost all nations observe almost all principles of international law and almost all of their obligations almost all of the time.” The question is **why**.",
       "Think of why people stop at red lights: habit, fear of a fine, belief that the rule is fair, or simply because crashing is bad for everyone. Each theory of compliance stresses a different one of these.",
-      {key:"Compliance (behaviour matches the rule) is not the same as effectiveness (the rule changed behaviour)."},
-      "Theories range from optimistic (states have a propensity to comply) to sceptical (states do what they would do anyway)."
+      {key:"Compliance (behavior matches the rule) is not the same as effectiveness (the rule changed behavior)."},
+      "Theories range from optimistic (states have a propensity to comply) to skeptical (states do what they would do anyway)."
      ],
      builder:[
       {table:[
@@ -877,17 +877,17 @@ ICA.addUnit({
         ["Managerial","Chayes & Chayes 1993, 1995","Propensity to comply; failures come from ambiguity, capacity, time lags"],
         ["Enforcement","Downs, Rocke & Barsoom 1996","Deep cooperation needs punishment; high compliance may reflect shallow treaties"],
         ["Legitimacy","Franck 1990","Legitimate rules exert a compliance pull"],
-        ["Transnational legal process","Koh 1997","Interaction, interpretation, internalisation"],
-        ["Rational choice (sceptical)","Goldsmith & Posner 2005","Interests, not law, explain behaviour"],
+        ["Transnational legal process","Koh 1997","Interaction, interpretation, internalization"],
+        ["Rational choice (skeptical)","Goldsmith & Posner 2005","Interests, not law, explain behavior"],
         ["Rational choice (law matters)","Guzman 2008","Reputation, reciprocity, retaliation"]
       ]},
       "Each theory implies a policy: management suggests reporting and capacity-building; enforcement suggests sanctions; legitimacy suggests fair procedures; process suggests litigation and domestic incorporation.",
-      "**Mixing them.** Most scholars now combine mechanisms: managerial tools for capacity problems, enforcement for deep commitments, legitimacy and internalisation for norms that become part of a state’s identity. The Montreal Protocol on the ozone layer is often cited because it uses several at once: reporting and review, a fund that pays for capacity, and restrictions on trade in controlled substances with non-parties."
+      "**Mixing them.** Most scholars now combine mechanisms: managerial tools for capacity problems, enforcement for deep commitments, legitimacy and internalization for norms that become part of a state’s identity. The Montreal Protocol on the ozone layer is often cited because it uses several at once: reporting and review, a fund that pays for capacity, and restrictions on trade in controlled substances with non-parties."
      ],
      pro:[
       "**Testing.** Selection effects are the central methodological problem: states choose which treaties to join and which disputes to send to court. Comparing similar states inside and outside a treaty, or before and after, helps (see {{case-selection}} and {{regression-causal-inference}}).",
       "**Evidence from courts.** Studies of ICJ judgments (for example Paulson, 2004) find mostly full or partial compliance, with resistance when vital interests are involved. Domestic institutions matter: *Medellín v. Texas* (2008) shows a national court limiting the effect of an ICJ judgment.",
-      "**Human rights.** Whether human rights treaties change behaviour is a separate, rich debate (Hathaway 2002; Simmons 2009), covered with the human rights material.",
+      "**Human rights.** Whether human rights treaties change behavior is a separate, rich debate (Hathaway 2002; Simmons 2009), covered with the human rights material.",
       {tip:"A strong seminar answer names a mechanism, a rule and a condition: “for coordination rules, compliance is high because…; for deep commitments, enforcement matters because…”."}
      ]
     },
@@ -896,18 +896,18 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"use-of-force-law", title:"The law on the use of force (jus ad bellum)", aka:["Article 2(4)","self-defence","Article 51","jus ad bellum"], tags:["international law","force","security"],
-    summary:"The Charter’s prohibition of force, its exceptions, and the contested questions of anticipatory self-defence and non-state actors.",
+    summary:"The Charter’s prohibition of force, its exceptions, and the contested questions of anticipatory self-defense and non-state actors.",
     levels:{
      starter:[
-      "The UN Charter bans the threat or use of force between states (Article 2(4)). There are two clear exceptions: force authorised by the Security Council, and **self-defence** against an armed attack (Article 51).",
+      "The UN Charter bans the threat or use of force between states (Article 2(4)). There are two clear exceptions: force authorized by the Security Council, and **self-defense** against an armed attack (Article 51).",
       "Think of a school rule against fighting with two exceptions: a teacher may separate fighters, and you may defend yourself if someone hits you. The arguments start with “he was about to hit me”.",
       {key:"*Jus ad bellum* is the law on whether force may be used. The separate law on how wars are fought is [[international-humanitarian-law|international humanitarian law]] (*jus in bello*)."},
       "Almost every state that uses force claims it is lawful. That is why lawyers say the rule is alive even when broken."
      ],
      builder:[
-      "**Self-defence requirements.** An armed attack (the “most grave forms” of force, *Nicaragua* 1986), necessity, proportionality and immediate reporting to the Council. Collective self-defence needs the victim’s request.",
-      "**Timing.** Anticipatory self-defence against an imminent attack is accepted by many (the *Caroline* test, 1837/1841); preventive force against distant threats is widely rejected (Resolution 487 on Osirak, 1981). The UN High-level Panel (2004) told states to take non-imminent threats to the Council.",
-      "**Non-state actors.** Resolutions 1368 and 1373 (2001) recognised self-defence after 9/11; the *Wall* opinion (2004) read Article 51 narrowly; the “unwilling or unable” doctrine (Syria, from 2014) is contested.",
+      "**Self-defense requirements.** An armed attack (the “most grave forms” of force, *Nicaragua* 1986), necessity, proportionality and immediate reporting to the Council. Collective self-defense needs the victim’s request.",
+      "**Timing.** Anticipatory self-defense against an imminent attack is accepted by many (the *Caroline* test, 1837/1841); preventive force against distant threats is widely rejected (Resolution 487 on Osirak, 1981). The UN High-level Panel (2004) told states to take non-imminent threats to the Council.",
+      "**Non-state actors.** Resolutions 1368 and 1373 (2001) recognized self-defense after 9/11; the *Wall* opinion (2004) read Article 51 narrowly; the “unwilling or unable” doctrine (Syria, from 2014) is contested.",
       "**Consent.** Intervention by invitation is accepted, but disputed when the inviting government’s authority is in question."
      ],
      pro:[
@@ -922,17 +922,17 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"humanitarian-intervention", title:"Humanitarian intervention", aka:["intervention for humanity","unilateral humanitarian intervention"], tags:["international law","force","human rights"],
-    summary:"The debate over whether states may use force without Council authorisation to stop mass atrocities, and how R2P reshaped it.",
+    summary:"The debate over whether states may use force without Council authorization to stop mass atrocities, and how R2P reshaped it.",
     levels:{
      starter:[
       "**Humanitarian intervention** means using military force in another state, without its consent, to stop mass atrocities against its people.",
       "The hard question is not whether atrocities matter, but **who decides** when force is justified. The UN Charter gives that decision to the Security Council, where any permanent member can veto.",
       "The idea is older than the UN. In the 19th century European powers claimed to intervene to protect Christian minorities in the Ottoman Empire; critics then and since have seen such claims as cover for imperial interests.",
-      "NATO’s 1999 bombing over Kosovo, without Council authorisation, made the modern debate famous; an independent commission called it “illegal but legitimate” (see {{responsibility-to-protect}}).",
-      {key:"R2P (2005) did not create a right of unilateral intervention: it channelled forcible action through the Council."}
+      "NATO’s 1999 bombing over Kosovo, without Council authorization, made the modern debate famous; an independent commission called it “illegal but legitimate” (see {{responsibility-to-protect}}).",
+      {key:"R2P (2005) did not create a right of unilateral intervention: it channeled forcible action through the Council."}
      ],
      builder:[
-      "**History.** India in East Pakistan (1971), Vietnam in Cambodia (1978–79) and Tanzania in Uganda (1979) ended abusive governments, but each mainly claimed self-defence. Vietnam’s action was widely condemned.",
+      "**History.** India in East Pakistan (1971), Vietnam in Cambodia (1978–79) and Tanzania in Uganda (1979) ended abusive governments, but each mainly claimed self-defense. Vietnam’s action was widely condemned.",
       {table:[
         ["View","Example"],
         ["A limited right exists","United Kingdom, 2018 legal position on Syria (extreme distress, no alternative, necessity and proportionality)"],
@@ -943,7 +943,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Arguments for a right**: Article 2(4) bans force against territorial integrity or political independence, which a limited rescue might not threaten; human rights are among the UN’s purposes; Council paralysis should not condemn victims.",
-      "**Arguments against**: the drafting history and practice; the risk of abuse by powerful states; postcolonial memory of “civilising” interventions (see {{postcolonialism-ir}}); the Libya 2011 experience, which many states read as a protection mandate turned into regime change.",
+      "**Arguments against**: the drafting history and practice; the risk of abuse by powerful states; postcolonial memory of “civilizing” interventions (see {{postcolonialism-ir}}); the Libya 2011 experience, which many states read as a protection mandate turned into regime change.",
       {tip:"Distinguish legality (what the law allows), legitimacy (what is widely accepted as justified) and prudence (what is likely to work). Kosovo’s “illegal but legitimate” verdict sits exactly on that line."}
      ]
     },
@@ -1005,7 +1005,7 @@ ICA.addUnit({
      ]
     },
     related:["law-of-the-sea","territory-and-boundaries","japan-and-neighbours"],
-    sources:[{t:"PCA press release on the Award of 12 July 2016 (copy at NUS Centre for International Law)", url:"https://cil.nus.edu.sg/wp-content/uploads/2016/12/Eleventh-Press-Release-12072016-English.pdf"}],
+    sources:[{t:"PCA press release on the Award of 12 July 2016 (copy at NUS Center for International Law)", url:"https://cil.nus.edu.sg/wp-content/uploads/2016/12/Eleventh-Press-Release-12072016-English.pdf"}],
     checked:"2026-11"},
 
    {id:"territory-and-boundaries", title:"Territory, title and boundaries", aka:["territorial sovereignty","uti possidetis","effectivités"], tags:["international law","territory","borders"],
@@ -1013,18 +1013,18 @@ ICA.addUnit({
     levels:{
      starter:[
       "When two states claim the same land, courts ask which has better **title**: a legal basis for sovereignty.",
-      "Think of a disputed garden. One neighbour says “my grandfather saw it first”; the other says “I have mown it, fenced it and paid tax on it for fifty years, and you never complained.” International law usually prefers the second kind of evidence.",
+      "Think of a disputed garden. One neighbor says “my grandfather saw it first”; the other says “I have mown it, fenced it and paid tax on it for fifty years, and you never complained.” International law usually prefers the second kind of evidence.",
       {key:"Peaceful, continuous display of state authority, and the other side’s silence, often decide territorial cases."},
       "New states born from empires usually inherit the old colonial borders: the principle of **uti possidetis**."
      ],
      builder:[
       "**Leading cases.** *Island of Palmas* (1928, Max Huber): discovery gives only inchoate title; effective display of authority prevails. *Temple of Preah Vihear* (1962): Thailand’s acceptance of a map by conduct. *Ligitan and Sipadan* (2002): Malaysia’s effectivités. *Pedra Branca* (2008): Singapore’s lighthouse administration and Malaysia’s lack of reaction.",
       "**Tools.** Effectivités, acquiescence and the critical date (after which new acts count for little). Treaties and maps matter if they express the parties’ agreement.",
-      "**Terra nullius.** The *Western Sahara* opinion (1975) held that territory inhabited by socially and politically organised peoples was not terra nullius."
+      "**Terra nullius.** The *Western Sahara* opinion (1975) held that territory inhabited by socially and politically organized peoples was not terra nullius."
      ],
      pro:[
       "**Uti possidetis.** From Spanish America (1810s) to the OAU’s 1964 Cairo resolution and *Burkina Faso/Mali* (1986), it turned colonial administrative lines into international borders; the Badinter Commission applied a similar logic to Yugoslavia’s republics (1992). Critics say it sanctifies imperial lines; defenders say alternatives would invite war.",
-      "**Self-determination.** The *Chagos* opinion (2019) found decolonisation of Mauritius incomplete because of the prior separation of the archipelago, linking territory to the right of peoples to [[self-determination]].",
+      "**Self-determination.** The *Chagos* opinion (2019) found decolonization of Mauritius incomplete because of the prior separation of the archipelago, linking territory to the right of peoples to [[self-determination]].",
       "**Consent.** Many disputes, including several in Northeast Asia, never reach a court because the parties have not consented (see {{japan-and-neighbours}}).",
       {tip:"Ask of any territorial claim: what is the claimed title, what is the critical date, and what effectivités or acquiescence can each side show?"}
      ]
@@ -1049,7 +1049,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Compliance.** Studies find most judgments complied with in whole or part; failures cluster where vital interests are at stake (see {{compliance-theories}}). Enforcement through the Security Council (Article 94(2) of the Charter) has never been used effectively.",
-      "**Global South use.** Many recent cases were brought by smaller and Global South states, sometimes as “strategic litigation” on behalf of community interests (erga omnes partes), which critics see as politicising the Court and supporters see as democratising it.",
+      "**Global South use.** Many recent cases were brought by smaller and Global South states, sometimes as “strategic litigation” on behalf of community interests (erga omnes partes), which critics see as politicizing the Court and supporters see as democratizing it.",
       "**Limits.** Fewer than half of UN members (about 74 states) accept the optional clause, many with reservations; of the permanent Council members, only the United Kingdom does.",
       {tip:"Always check the basis of jurisdiction in a case summary: it tells you what the Court could and could not decide."}
      ]
@@ -1063,14 +1063,14 @@ ICA.addUnit({
     levels:{
      starter:[
       "Until 1945 international law dealt almost only with states. The **Nuremberg** and **Tokyo** tribunals put individual leaders on trial for crimes against peace, war crimes and crimes against humanity (see {{world-war-two}}).",
-      "Their key idea, in Nuremberg’s words: “Crimes against international law are committed by men, not by abstract entities.” Holding an office is no defence.",
+      "Their key idea, in Nuremberg’s words: “Crimes against international law are committed by men, not by abstract entities.” Holding an office is no defense.",
       "After the Cold War, the Security Council set up tribunals for the former Yugoslavia (1993) and Rwanda (1994). Later came **hybrid courts**, mixing national and international judges, in Sierra Leone, Cambodia and Senegal.",
       {key:"Each model trades off legitimacy, cost, speed and closeness to the people affected."}
      ],
      builder:[
       {table:[
         ["Model","Examples","Strengths and weaknesses"],
-        ["Military tribunals of the victors","Nuremberg 1945–46; Tokyo 1946–48","Founding precedents; criticised as victors’ justice"],
+        ["Military tribunals of the victors","Nuremberg 1945–46; Tokyo 1946–48","Founding precedents; criticized as victors’ justice"],
         ["UN ad hoc tribunals","ICTY (161 indicted, closed 2017); ICTR (93 indicted, closed 2015)","Built modern case law; costly, slow, far from victims"],
         ["Hybrid courts","Sierra Leone (2002); ECCC (2006); Extraordinary African Chambers (2013)","Closer to affected societies; funding and political pressures"],
         ["National courts, universal jurisdiction","Eichmann (1961); Pinochet ruling (1999)","Any state can act; selective and diplomatically sensitive"]
@@ -1078,8 +1078,8 @@ ICA.addUnit({
       "Landmark rulings: *Tadić* (1995) on war crimes in internal conflicts; *Akayesu* (1998), the first international genocide conviction and a ruling that rape can be genocide; *Taylor* (2012), a former head of state convicted by the Sierra Leone court; *Habré* (2016)."
      ],
      pro:[
-      "**Tokyo.** 25 of 28 accused were convicted; Justice Radhabinod Pal of India dissented, rejecting the legitimacy of the charge of crimes against peace, and other judges wrote separate opinions. The decision not to try Emperor Hirohito remains debated. Command responsibility owes much to the 1945 Yamashita trial in Manila, criticised for imposing liability without proof of knowledge.",
-      "**ECCC.** Three convictions (Kaing Guek Eav, Nuon Chea, Khieu Samphan), with genocide convictions in 2018 concerning the Cham and Vietnamese; Khieu Samphan’s appeal was rejected in 2022. Debates centre on cost, delay and alleged political limits on prosecutions.",
+      "**Tokyo.** 25 of 28 accused were convicted; Justice Radhabinod Pal of India dissented, rejecting the legitimacy of the charge of crimes against peace, and other judges wrote separate opinions. The decision not to try Emperor Hirohito remains debated. Command responsibility owes much to the 1945 Yamashita trial in Manila, criticized for imposing liability without proof of knowledge.",
+      "**ECCC.** Three convictions (Kaing Guek Eav, Nuon Chea, Khieu Samphan), with genocide convictions in 2018 concerning the Cham and Vietnamese; Khieu Samphan’s appeal was rejected in 2022. Debates center on cost, delay and alleged political limits on prosecutions.",
       "**Legacy.** The Residual Mechanism continues ICTY and ICTR work. Rwanda’s community *gacaca* courts tried far more cases than the ICTR, raising the question of whether international trials or local processes better serve [[transitional-justice|transitional justice]].",
       {tip:"In essays, distinguish the legal legacy (doctrines, definitions) from the social legacy (what affected communities saw and believed)."}
      ]
@@ -1099,8 +1099,8 @@ ICA.addUnit({
       "Supporters see it as a hope against impunity; critics see selective justice. Both views are argued seriously."
      ],
      builder:[
-      "**Triggers** (Article 13): state referral, Security Council referral, or the Prosecutor acting proprio motu with judges’ authorisation. **Preconditions** (Article 12): territory or nationality of a state party, unless the Council refers.",
-      "**Non-party nationals.** Territorial jurisdiction allowed action over deportations from Myanmar into Bangladesh (2018 ruling), and over situations in Ukraine and Palestine; warrants for Russia’s president (2023) and Israel’s prime minister and a former defence minister (2024) followed. The governments concerned reject jurisdiction.",
+      "**Triggers** (Article 13): state referral, Security Council referral, or the Prosecutor acting proprio motu with judges’ authorization. **Preconditions** (Article 12): territory or nationality of a state party, unless the Council refers.",
+      "**Non-party nationals.** Territorial jurisdiction allowed action over deportations from Myanmar into Bangladesh (2018 ruling), and over situations in Ukraine and Palestine; warrants for Russia’s president (2023) and Israel’s prime minister and a former defense minister (2024) followed. The governments concerned reject jurisdiction.",
       "**Membership changes.** Burundi (2017) and the Philippines (2019) left. Burkina Faso, Mali and Niger (announced September 2025) deposited formal notice in June 2026, Venezuela and Chad in July 2026, each effective one year after notice (Article 127). Hungary’s new parliament voted in May 2026 to revoke its planned withdrawal, before it took effect.",
       "**Philippines.** The Court kept jurisdiction over crimes committed while the Philippines was a party; Rodrigo Duterte was surrendered in March 2025 and charges of crimes against humanity were confirmed on 23 April 2026, committing him to trial."
      ],
@@ -1109,7 +1109,7 @@ ICA.addUnit({
         ["Critique","Reply"],
         ["Focus on Africa (AU, from 2013)","Many cases were self-referrals; investigations now span several continents"],
         ["Great powers escape","The Council’s veto, not the Court, protects them; recent warrants target leaders of powerful states"],
-        ["Peace versus justice","Impunity can fuel conflict; prosecutions can also marginalise spoilers"],
+        ["Peace versus justice","Impunity can fuel conflict; prosecutions can also marginalize spoilers"],
         ["Jurisdiction over non-parties","Territorial criminal jurisdiction is ordinary in law"]
       ]},
       "**Pressure on the Court.** In 2025 the United States imposed sanctions on the Prosecutor and several judges; the Court and many states parties condemned them, while the US government said they protected its personnel and allies. Russia withdrew its signature in 2016; the United States announced in 2002 it did not intend to ratify.",
@@ -1127,18 +1127,18 @@ ICA.addUnit({
     levels:{
      starter:[
       "**TWAIL** stands for Third World Approaches to International Law. It is a network of scholars, many from Asia, Africa and Latin America, who ask how international law was shaped by **colonialism** and whether it still works unevenly.",
-      "Think of a club whose rules were written before most current members were allowed in. The rules may now apply to everyone, but they may still favour the founders.",
+      "Think of a club whose rules were written before most current members were allowed in. The rules may now apply to everyone, but they may still favor the founders.",
       "TWAIL grew from discussions among graduate students at Harvard Law School in 1996, with a first meeting in 1997.",
       {key:"TWAIL is critical but not anti-law: it also studies how newly independent states used law to win sovereignty, resources and rights."}
      ],
      builder:[
-      "**Key works.** Antony Anghie, *Imperialism, Sovereignty and the Making of International Law* (2005): the discipline was formed through a “dynamic of difference” between “civilised” and “uncivilised” peoples (see {{antony-anghie}}). B. S. Chimni, “Third World Approaches to International Law: A Manifesto” (2006). Makau Mutua, “Savages, Victims, and Saviors: The Metaphor of Human Rights” (2001).",
+      "**Key works.** Antony Anghie, *Imperialism, Sovereignty and the Making of International Law* (2005): the discipline was formed through a “dynamic of difference” between “civilized” and “uncivilized” peoples (see {{antony-anghie}}). B. S. Chimni, “Third World Approaches to International Law: A Manifesto” (2006). Makau Mutua, “Savages, Victims, and Saviors: The Metaphor of Human Rights” (2001).",
       "**Generations.** Scholars distinguish “TWAIL I”, the first post-independence generation (for example R. P. Anand of India and Mohammed Bedjaoui of Algeria), from “TWAIL II”, the post-1990s movement.",
-      "**Themes.** The [[standard-of-civilisation|standard of civilisation]] and the [[mandate-system|mandate system]]; the New International Economic Order (see {{third-world-project}}); development, debt and investment law; selectivity in international criminal justice; the *Chagos* advisory opinion (2019) as unfinished decolonisation."
+      "**Themes.** The [[standard-of-civilisation|standard of civilization]] and the [[mandate-system|mandate system]]; the New International Economic Order (see {{third-world-project}}); development, debt and investment law; selectivity in international criminal justice; the *Chagos* advisory opinion (2019) as unfinished decolonization."
      ],
      pro:[
-      "**Debates within TWAIL.** Should the Global South reform international law from within or treat it as structurally imperial? Some TWAIL scholars defend the ICC while criticising its record; others see it as a new civilising mission.",
-      "**Related perspectives.** Japan’s Onuma Yasuaki proposed a “transcivilisational” perspective on international law (2017). Global IR in international relations raises parallel questions (see {{postcolonialism-ir}}).",
+      "**Debates within TWAIL.** Should the Global South reform international law from within or treat it as structurally imperial? Some TWAIL scholars defend the ICC while criticizing its record; others see it as a new civilizing mission.",
+      "**Related perspectives.** Japan’s Onuma Yasuaki proposed a “transcivilizational” perspective on international law (2017). Global IR in international relations raises parallel questions (see {{postcolonialism-ir}}).",
       "**Critiques of TWAIL.** Critics say the category “Third World” is too broad, that it underplays the agency of non-Western states in shaping law, or that critique can drift away from concrete reform proposals. TWAIL scholars reply that history and structure must be understood before reform.",
       {tip:"Use TWAIL as a lens with questions: who made this rule, when, with whom absent, and who bears its costs today?"}
      ]
@@ -1149,7 +1149,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"feminist-international-law", title:"Feminist approaches to international law", aka:["feminist legal theory","gender and international law"], tags:["international law","theory","gender"],
-    summary:"How feminist scholars analyse the boundaries and institutions of international law, what they changed, and the debates among them.",
+    summary:"How feminist scholars analyze the boundaries and institutions of international law, what they changed, and the debates among them.",
     levels:{
      starter:[
       "**Feminist approaches** ask how international law treats women and gender, and whose experiences it was built around.",
@@ -1159,7 +1159,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Institutions.** Women were long almost absent from international courts and diplomacy. The ICJ had no woman judge until Rosalyn Higgins was elected in 1995; she later served as its President (2006–09). Feminist scholars track representation and ask whether it changes outcomes, not only who sits on the bench.",
-      "**Criminal law.** *Akayesu* (ICTR, 1998) held rape could be genocide; ICTY cases recognised rape as torture and enslavement; the Rome Statute lists rape, sexual slavery, enforced prostitution, forced pregnancy and enforced sterilisation; *Ongwen* (ICC, 2021) included the first conviction for forced pregnancy.",
+      "**Criminal law.** *Akayesu* (ICTR, 1998) held rape could be genocide; ICTY cases recognized rape as torture and enslavement; the Rome Statute lists rape, sexual slavery, enforced prostitution, forced pregnancy and enforced sterilization; *Ongwen* (ICC, 2021) included the first conviction for forced pregnancy.",
       "**Security.** Feminist legal and IR scholars helped shape the Women, Peace and Security agenda (Security Council Resolution 1325, 2000) (see {{feminism-ir}})."
      ],
      pro:[
@@ -1174,15 +1174,15 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"antony-anghie", title:"Antony Anghie", aka:["Anghie"], tags:["thinker","international law","postcolonial"],
-    summary:"A leading TWAIL scholar whose history of international law places colonialism at its centre.",
+    summary:"A leading TWAIL scholar whose history of international law places colonialism at its center.",
     levels:{
      starter:[
       "**Antony Anghie** is an international lawyer born in Sri Lanka, educated in Australia and the United States, who taught for many years at the University of Utah and later at the National University of Singapore.",
       "His big idea is that colonialism was not a side story in international law but central to how its key concepts, especially **sovereignty**, were made.",
-      {key:"International law, he argues, defined itself by distinguishing “civilised” from “uncivilised” peoples, and then offered to civilise the latter."}
+      {key:"International law, he argues, defined itself by distinguishing “civilized” from “uncivilized” peoples, and then offered to civilize the latter."}
      ],
      builder:[
-      "**Main work.** *Imperialism, Sovereignty and the Making of International Law* (Cambridge University Press, 2005). Anghie traces a **dynamic of difference** from the 16th-century Spanish jurist Francisco de Vitoria, through 19th-century positivism and the [[standard-of-civilisation|standard of civilisation]], to the League’s [[mandate-system|mandate system]] and post-war development institutions.",
+      "**Main work.** *Imperialism, Sovereignty and the Making of International Law* (Cambridge University Press, 2005). Anghie traces a **dynamic of difference** from the 16th-century Spanish jurist Francisco de Vitoria, through 19th-century positivism and the [[standard-of-civilisation|standard of civilization]], to the League’s [[mandate-system|mandate system]] and post-war development institutions.",
       "He also co-edited *The Third World and International Order* (2003) with B. S. Chimni, Karin Mickelson and Obiora Okafor, an early collection of TWAIL scholarship.",
       "**Use today.** Scholars use his framework to read development lending, international criminal justice and the “war on terror” as continuing patterns of ranking and reform (see {{twail}})."
      ],
@@ -1209,7 +1209,7 @@ ICA.addUnit({
       "**Use today.** Her work shaped debates on sexual violence in conflict, women’s representation in international institutions and the Women, Peace and Security agenda (see {{feminist-international-law}})."
      ],
      pro:[
-      "**Legacy and debate.** Her move from critic to judge raises a question seminars enjoy: can critical scholarship be carried into the institutions it criticises? Internal feminist critics, such as Karen Engle, question how far legal success through criminal law serves wider feminist aims.",
+      "**Legacy and debate.** Her move from critic to judge raises a question seminars enjoy: can critical scholarship be carried into the institutions it criticizes? Internal feminist critics, such as Karen Engle, question how far legal success through criminal law serves wider feminist aims.",
       {tip:"Pair her 1991 article with Tickner’s and Enloe’s feminist IR (see {{feminism-ir}}) to compare law and politics perspectives."}
      ]
     },
@@ -1217,20 +1217,20 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"harold-koh", title:"Harold Hongju Koh", aka:["Koh","transnational legal process"], tags:["thinker","international law","compliance"],
-    summary:"A Yale scholar and former US official whose theory of transnational legal process explains how international norms become internalised.",
+    summary:"A Yale scholar and former US official whose theory of transnational legal process explains how international norms become internalized.",
     levels:{
      starter:[
       "**Harold Hongju Koh** is an American legal scholar, the son of Korean immigrants, who taught at Yale Law School and was its dean from 2004 to 2009. He also served in the US government, including as Legal Adviser of the State Department from 2009 to 2013.",
-      "His big idea is **transnational legal process**: states come to obey international law through repeated interaction with other states, courts and activists, which leads them to interpret and finally internalise norms.",
+      "His big idea is **transnational legal process**: states come to obey international law through repeated interaction with other states, courts and activists, which leads them to interpret and finally internalize norms.",
       {key:"For Koh, compliance is learned, not only calculated."}
      ],
      builder:[
-      "**Key work.** “Why Do Nations Obey International Law?” (*Yale Law Journal*, 1997), a review essay on the Chayeses’ *The New Sovereignty* and Franck’s *Fairness in International Law and Institutions*. Koh distinguishes coincidence, conformity, compliance and obedience, and argues that internalisation (social, political and legal) moves states towards obedience.",
+      "**Key work.** “Why Do Nations Obey International Law?” (*Yale Law Journal*, 1997), a review essay on the Chayeses’ *The New Sovereignty* and Franck’s *Fairness in International Law and Institutions*. Koh distinguishes coincidence, conformity, compliance and obedience, and argues that internalization (social, political and legal) moves states toward obedience.",
       "He first set out the idea in “Transnational Legal Process” (*Nebraska Law Review*, 1996).",
       "**Use today.** The theory fits litigation strategies by NGOs and the spread of international norms into domestic courts (see {{compliance-theories}} and {{norm-dynamics}})."
      ],
      pro:[
-      "**Debates.** Rational-choice sceptics (Goldsmith and Posner) say the theory describes rather than explains. Critics on several sides also debated his legal positions as a government lawyer, for example on targeted drone strikes and the 2011 Libya operation, which shows the tension between scholar and practitioner roles.",
+      "**Debates.** Rational-choice skeptics (Goldsmith and Posner) say the theory describes rather than explains. Critics on several sides also debated his legal positions as a government lawyer, for example on targeted drone strikes and the 2011 Libya operation, which shows the tension between scholar and practitioner roles.",
       {tip:"Use Koh for “how” questions (how did this norm enter national law?) and pair him with Downs, Rocke and Barsoom for “how much” questions (how deep is the commitment?)."}
      ]
     },
@@ -1248,21 +1248,21 @@ ICA.addUnit({
    {id:"erga-omnes", term:"Erga omnes obligations", def:"Obligations owed to the international community as a whole (or, erga omnes partes, to all parties of a treaty), so that any such state may complain of a breach.", codex:"sources-of-international-law"},
    {id:"soft-law", term:"Soft law", def:"Non-binding instruments, such as declarations, guidelines and codes, that still shape how states and others behave and can contribute to binding law.", codex:"soft-law"},
    {id:"legalization", term:"Legalisation", def:"The degree to which an international arrangement is law-like, measured by obligation (how binding), precision (how exact) and delegation (whether third parties interpret and apply it).", codex:"soft-law"},
-   {id:"fragmentation-of-international-law", term:"Fragmentation of international law", def:"The growth of specialised regimes (trade, human rights, environment, investment), each with its own rules and courts, and the worry that they may conflict.", codex:"sources-of-international-law"},
+   {id:"fragmentation-of-international-law", term:"Fragmentation of international law", def:"The growth of specialized regimes (trade, human rights, environment, investment), each with its own rules and courts, and the worry that they may conflict.", codex:"sources-of-international-law"},
    {id:"managerial-model", term:"Managerial model (of compliance)", def:"Chayes and Chayes’ view that states generally intend to comply and that breaches come mostly from ambiguity, lack of capacity or time lags. On this view, the cure is management rather than punishment.", codex:"compliance-theories"},
    {id:"enforcement-model", term:"Enforcement model (of compliance)", def:"The view, associated with Downs, Rocke and Barsoom, that deep international cooperation needs credible punishment of cheating, and that high compliance with shallow treaties proves little.", codex:"compliance-theories"},
    {id:"compliance-pull", term:"Compliance pull", def:"Thomas Franck’s term for the force that draws states to obey a rule. He linked it to the rule’s legitimacy: its clarity, symbolic validation, coherence and adherence to accepted procedures.", codex:"compliance-theories"},
-   {id:"transnational-legal-process", term:"Transnational legal process", def:"Harold Koh’s theory that states come to obey international law through repeated interaction, interpretation and internalisation of norms into their own law and politics.", codex:"harold-koh"},
+   {id:"transnational-legal-process", term:"Transnational legal process", def:"Harold Koh’s theory that states come to obey international law through repeated interaction, interpretation and internalization of norms into their own law and politics.", codex:"harold-koh"},
    {id:"countermeasures", term:"Countermeasures", def:"Otherwise unlawful but non-forcible acts that an injured state may take against a wrongdoing state to induce it to comply, if they are proportionate and reversible.", codex:"compliance-theories"},
    {id:"prohibition-of-force", term:"Prohibition of the use of force", def:"The rule in Article 2(4) of the UN Charter, also customary law, that states must not threaten or use force against the territorial integrity or political independence of any state.", codex:"use-of-force-law"},
-   {id:"chapter-vii", term:"Chapter VII (UN Charter)", def:"The part of the Charter that lets the Security Council determine threats to the peace and take binding measures, from sanctions to authorising force.", codex:"use-of-force-law"},
-   {id:"self-defence", term:"Self-defence (Article 51)", def:"A state’s “inherent right” to use force against an armed attack, alone or with others, until the Security Council acts. The force must be necessary and proportionate and reported to the Council.", codex:"use-of-force-law"},
-   {id:"armed-attack", term:"Armed attack", def:"The trigger for self-defence under Article 51. The ICJ has held that only the gravest forms of the use of force qualify.", codex:"use-of-force-law"},
-   {id:"caroline-test", term:"Caroline test", def:"The standard, from an 1837 incident and an 1841 letter by Daniel Webster, that anticipatory self-defence requires a necessity that is “instant, overwhelming, leaving no choice of means, and no moment for deliberation”.", codex:"use-of-force-law"},
-   {id:"anticipatory-self-defence", term:"Anticipatory self-defence", def:"Force used against an attack that is imminent but has not yet begun. Many states and scholars accept it under strict conditions; it remains contested.", codex:"use-of-force-law"},
-   {id:"preventive-self-defence", term:"Preventive force", def:"Force used against a threat that is not imminent, such as a possible future weapon. Widely rejected as self-defence; such threats are supposed to go to the Security Council.", codex:"use-of-force-law"},
-   {id:"unwilling-or-unable", term:"“Unwilling or unable” doctrine", def:"The contested claim that a state may use force in self-defence against a non-state group in another state’s territory if that state is unwilling or unable to stop the threat.", codex:"use-of-force-law"},
-   {id:"humanitarian-intervention", term:"Humanitarian intervention", def:"Military force in another state, without its consent, to stop mass atrocities. Whether it is lawful without Security Council authorisation is deeply contested.", codex:"humanitarian-intervention"},
+   {id:"chapter-vii", term:"Chapter VII (UN Charter)", def:"The part of the Charter that lets the Security Council determine threats to the peace and take binding measures, from sanctions to authorizing force.", codex:"use-of-force-law"},
+   {id:"self-defence", term:"Self-defense (Article 51)", def:"A state’s “inherent right” to use force against an armed attack, alone or with others, until the Security Council acts. The force must be necessary and proportionate and reported to the Council.", codex:"use-of-force-law"},
+   {id:"armed-attack", term:"Armed attack", def:"The trigger for self-defense under Article 51. The ICJ has held that only the gravest forms of the use of force qualify.", codex:"use-of-force-law"},
+   {id:"caroline-test", term:"Caroline test", def:"The standard, from an 1837 incident and an 1841 letter by Daniel Webster, that anticipatory self-defense requires a necessity that is “instant, overwhelming, leaving no choice of means, and no moment for deliberation”.", codex:"use-of-force-law"},
+   {id:"anticipatory-self-defence", term:"Anticipatory self-defense", def:"Force used against an attack that is imminent but has not yet begun. Many states and scholars accept it under strict conditions; it remains contested.", codex:"use-of-force-law"},
+   {id:"preventive-self-defence", term:"Preventive force", def:"Force used against a threat that is not imminent, such as a possible future weapon. Widely rejected as self-defense; such threats are supposed to go to the Security Council.", codex:"use-of-force-law"},
+   {id:"unwilling-or-unable", term:"“Unwilling or unable” doctrine", def:"The contested claim that a state may use force in self-defense against a non-state group in another state’s territory if that state is unwilling or unable to stop the threat.", codex:"use-of-force-law"},
+   {id:"humanitarian-intervention", term:"Humanitarian intervention", def:"Military force in another state, without its consent, to stop mass atrocities. Whether it is lawful without Security Council authorization is deeply contested.", codex:"humanitarian-intervention"},
    {id:"crime-of-aggression", term:"Crime of aggression", def:"Planning or leading a manifest violation of the UN Charter by force, by a person in a position to direct a state’s actions. The ICC can try it since 2018, within narrow limits.", codex:"icc-debates"},
    {id:"unclos", term:"UNCLOS", def:"The United Nations Convention on the Law of the Sea, signed in 1982 and in force since 1994, which sets out maritime zones, navigation rights and compulsory dispute settlement.", codex:"law-of-the-sea"},
    {id:"territorial-sea", term:"Territorial sea", def:"The belt of sea up to 12 nautical miles from the baseline, under the coastal state’s sovereignty, subject to other ships’ right of innocent passage.", codex:"law-of-the-sea"},
@@ -1279,19 +1279,19 @@ ICA.addUnit({
    {id:"itlos", term:"International Tribunal for the Law of the Sea (ITLOS)", def:"A standing court of 21 judges in Hamburg, created by UNCLOS, that hears disputes about the law of the sea and gives urgent provisional measures.", codex:"law-of-the-sea"},
    {id:"bbnj-agreement", term:"BBNJ Agreement", def:"The 2023 agreement under UNCLOS on marine biological diversity in areas beyond national jurisdiction (the “High Seas Treaty”), in force since 17 January 2026.", codex:"law-of-the-sea"},
    {id:"effectivites", term:"Effectivités", def:"Acts of state administration over a territory, such as policing, taxation or running a lighthouse, used as evidence of sovereignty in territorial disputes.", codex:"territory-and-boundaries"},
-   {id:"critical-date", term:"Critical date", def:"The moment a territorial dispute crystallised, after which new acts by the parties carry little weight as evidence of sovereignty.", codex:"territory-and-boundaries"},
-   {id:"terra-nullius", term:"Terra nullius", def:"Latin for “land belonging to no one”: a doctrine once used to justify colonial occupation, rejected by the ICJ for inhabited, organised territory in *Western Sahara* (1975).", codex:"territory-and-boundaries"},
+   {id:"critical-date", term:"Critical date", def:"The moment a territorial dispute crystallized, after which new acts by the parties carry little weight as evidence of sovereignty.", codex:"territory-and-boundaries"},
+   {id:"terra-nullius", term:"Terra nullius", def:"Latin for “land belonging to no one”: a doctrine once used to justify colonial occupation, rejected by the ICJ for inhabited, organized territory in *Western Sahara* (1975).", codex:"territory-and-boundaries"},
    {id:"uti-possidetis", term:"Uti possidetis", def:"The principle that new states inherit their former colonial or administrative boundaries, applied in Latin America, Africa and the former Yugoslavia.", codex:"territory-and-boundaries"},
    {id:"optional-clause", term:"Optional clause", def:"Article 36(2) of the ICJ Statute, under which a state may declare in advance that it accepts the Court’s jurisdiction against any other state making the same declaration.", codex:"icj-in-practice"},
    {id:"provisional-measures", term:"Provisional measures", def:"Urgent orders by an international court to protect parties’ rights while a case continues; ICJ provisional measures are binding.", codex:"icj-in-practice"},
-   {id:"individual-criminal-responsibility", term:"Individual criminal responsibility", def:"The principle, established at Nuremberg, that individuals, including leaders, can be tried and punished under international law; official position is no defence.", codex:"international-criminal-tribunals"},
+   {id:"individual-criminal-responsibility", term:"Individual criminal responsibility", def:"The principle, established at Nuremberg, that individuals, including leaders, can be tried and punished under international law; official position is no defense.", codex:"international-criminal-tribunals"},
    {id:"command-responsibility", term:"Command responsibility", def:"The liability of military commanders and civilian superiors for crimes by subordinates that they knew or should have known about and failed to prevent or punish.", codex:"international-criminal-tribunals"},
    {id:"victors-justice", term:"Victors’ justice", def:"The criticism that trials run by the winners of a war judge only the losers’ crimes; made especially of the Nuremberg and Tokyo tribunals.", codex:"international-criminal-tribunals"},
    {id:"hybrid-tribunal", term:"Hybrid tribunal", def:"A court mixing national and international judges, staff and law, usually based in or near the affected country, such as the courts for Sierra Leone and Cambodia.", codex:"international-criminal-tribunals"},
    {id:"universal-jurisdiction", term:"Universal jurisdiction", def:"The power of any state’s courts to try certain grave crimes, such as torture or genocide, regardless of where they were committed or the nationality of those involved.", codex:"international-criminal-tribunals"},
    {id:"proprio-motu", term:"Proprio motu", def:"Latin for “on one’s own initiative”: the ICC Prosecutor’s power to open an investigation without a referral, with the approval of the Court’s judges.", codex:"icc-debates"},
    {id:"twail", term:"TWAIL", def:"Third World Approaches to International Law: a scholarly movement studying how colonialism shaped international law and how it affects the Global South today.", codex:"twail"},
-   {id:"feminist-international-law", term:"Feminist approaches to international law", def:"Scholarship that analyses how international law’s categories and institutions treat women and gender, launched by Charlesworth, Chinkin and Wright in 1991.", codex:"feminist-international-law"},
+   {id:"feminist-international-law", term:"Feminist approaches to international law", def:"Scholarship that analyzes how international law’s categories and institutions treat women and gender, launched by Charlesworth, Chinkin and Wright in 1991.", codex:"feminist-international-law"},
    {id:"public-private-divide", term:"Public/private divide", def:"The line between the public sphere of states and the private sphere of home and family. Feminist scholars argue it kept much harm to women outside international law.", codex:"feminist-international-law"}
   ],
   bank:[
@@ -1327,13 +1327,13 @@ ICA.addUnit({
      {t:"Erga omnes norms override treaties; jus cogens norms do not.", why:"It is the reverse: jus cogens voids conflicting treaties."},
      {t:"Jus cogens applies only in human rights treaties.", why:"It is general international law; the ILC list includes the ban on aggression."}]},
    {id:"e4u10-q07", lesson:"e4u10-l1", level:2, q:"Mei reads that the Helsinki Final Act “shaped Cold War diplomacy” though it was not a treaty. Which concept best describes it?", options:[
-     {t:"Soft law, which is non-binding.", ok:true, why:"Right. Soft law still shapes behaviour. The Act was deliberately a political commitment, not a treaty."},
+     {t:"Soft law, which is non-binding.", ok:true, why:"Right. Soft law still shapes behavior. The Act was deliberately a political commitment, not a treaty."},
      {t:"Jus cogens, a binding peremptory norm.", why:"Jus cogens norms are binding and peremptory; the Final Act was not binding."},
      {t:"Customary international law.", why:"Custom requires general practice and opinio juris; the Act itself is a document, not custom."},
      {t:"A reservation to a treaty.", why:"A reservation is a statement modifying a treaty obligation."}]},
    {id:"e4u10-q08", lesson:"e4u10-l1", level:3, q:"A government negotiator prefers a non-binding declaration to a treaty on a new technology because the science is uncertain and her parliament is wary. Which theory best supports her choice?", options:[
      {t:"Abbott and Snidal on soft law.", ok:true, why:"Yes. They argue soft law lowers contracting and sovereignty costs and handles uncertainty. Their work on hard and soft law explains exactly this choice."},
-     {t:"Weil’s warning about relative normativity.", why:"Weil criticised soft law; he would not support the choice."},
+     {t:"Weil’s warning about relative normativity.", why:"Weil criticized soft law; he would not support the choice."},
      {t:"The persistent objector rule.", why:"That concerns custom, not the choice of instrument."},
      {t:"Pacta sunt servanda.", why:"That rule applies to binding treaties, which she is avoiding."}]},
    {id:"e4u10-q09", lesson:"e4u10-l1", level:2, q:"Why could The Gambia bring a Genocide Convention case against Myanmar?", options:[
@@ -1358,19 +1358,19 @@ ICA.addUnit({
      {t:"Treaty B must be less effective because it is harder.", why:"Harder treaties with 95% compliance are more impressive, not less."},
      {t:"Inspections never matter.", why:"The enforcement model says they matter for deep treaties."}]},
    {id:"e4u10-q13", lesson:"e4u10-l2", level:1, q:"Which three stages make up Koh’s transnational legal process?", options:[
-     {t:"Interaction, interpretation, internalisation", ok:true, why:"Right, from his 1997 *Yale Law Journal* essay."},
+     {t:"Interaction, interpretation, internalization", ok:true, why:"Right, from his 1997 *Yale Law Journal* essay."},
      {t:"Negotiation, signature, ratification", why:"Those are treaty-making steps."},
-     {t:"Emergence, cascade, internalisation", why:"That is Finnemore and Sikkink’s norm life cycle, a related but different model."},
+     {t:"Emergence, cascade, internalization", why:"That is Finnemore and Sikkink’s norm life cycle, a related but different model."},
      {t:"Coincidence, coordination, coercion", why:"Those are among Goldsmith and Posner’s patterns."}]},
    {id:"e4u10-q14", lesson:"e4u10-l2", level:2, q:"Countries all follow one convention for radio frequencies because any agreed system is better than interference. How would Goldsmith and Posner classify this?", options:[
-     {t:"Coordination: the law is a focal point.", ok:true, why:"Yes. Interests drive behaviour, and they argue such compliance says little about law’s independent force."},
+     {t:"Coordination: the law is a focal point.", ok:true, why:"Yes. Interests drive behavior, and they argue such compliance says little about law’s independent force."},
      {t:"Coercion.", why:"No stronger state is forcing others."},
-     {t:"Obedience in Koh’s sense.", why:"Koh’s obedience implies internalised norms, not convenience."},
+     {t:"Obedience in Koh’s sense.", why:"Koh’s obedience implies internalized norms, not convenience."},
      {t:"A breach of international law by all of them.", why:"Following the convention is compliance."}]},
    {id:"e4u10-q15", lesson:"e4u10-l2", level:3, q:"After an ICJ judgment against it, a state’s supreme court rules that the judgment cannot be enforced domestically without legislation, and the legislature does nothing. Which case does this resemble, and what does it show?", options:[
      {t:"*Medellín v. Texas*: domestic limits on compliance.", ok:true, why:"Right. In *Medellín* (2008), after *Avena*, domestic institutions limited compliance even though the executive did not reject the judgment. Compliance runs through domestic law and politics."},
      {t:"*Pedra Branca* (2008): a smooth implementation.", why:"Malaysia and Singapore implemented that judgment through a joint committee."},
-     {t:"*Whaling in the Antarctic* (2014): a state ignoring a ruling.", why:"Japan stopped the programme concerned."},
+     {t:"*Whaling in the Antarctic* (2014): a state ignoring a ruling.", why:"Japan stopped the program concerned."},
      {t:"*Gabčíkovo–Nagymaros* (1997): a treaty termination.", why:"That case was about ending a treaty, not domestic enforcement."}]},
    {id:"e4u10-q16", lesson:"e4u10-l2", level:2, q:"Which feature of the Montreal Protocol best illustrates the managerial model?", options:[
      {t:"Help for states that fall behind.", ok:true, why:"Yes. A non-compliance procedure and a Multilateral Fund offer assistance and review, rather than punishment."},
@@ -1383,40 +1383,40 @@ ICA.addUnit({
      {t:"Whether the rule is written in English.", why:"Not one of his indicators."},
      {t:"How old the treaty is.", why:"Age is not one of the four."}]},
    {id:"e4u10-q18", lesson:"e4u10-l2", level:3, q:"Kenji writes: “Most ICJ judgments are complied with, so international law clearly changes state behaviour.” Which objection is strongest?", options:[
-     {t:"Selection: consenting states may comply anyway.", ok:true, why:"Yes. States that consent may already be willing to comply, so high compliance does not prove the law changed behaviour. This is the methodological core of the enforcement critique."},
+     {t:"Selection: consenting states may comply anyway.", ok:true, why:"Yes. States that consent may already be willing to comply, so high compliance does not prove the law changed behavior. This is the methodological core of the enforcement critique."},
      {t:"Most ICJ judgments are ignored.", why:"Studies find most are complied with in whole or part."},
      {t:"The ICJ has no judges from Asia to hear such cases.", why:"Inaccurate: its President since 2025 is from Japan, and irrelevant to the logic."},
      {t:"Compliance cannot be studied.", why:"It can, with care about selection and counterfactuals."}]},
    /* ---- Lesson 3 ---- */
    {id:"e4u10-q19", lesson:"e4u10-l3", level:1, q:"What are the two clear exceptions to the Charter’s prohibition of force?", options:[
-     {t:"Security Council authorisation under Chapter VII, and self-defence under Article 51", ok:true, why:"Right. Consent is a third, widely accepted ground but not an exception to Article 2(4) in the same sense."},
-     {t:"General Assembly approval and regional organisation approval", why:"Neither can authorise force by itself; regional enforcement needs Council authorisation."},
+     {t:"Security Council authorization under Chapter VII, and self-defense under Article 51", ok:true, why:"Right. Consent is a third, widely accepted ground but not an exception to Article 2(4) in the same sense."},
+     {t:"General Assembly approval and regional organization approval", why:"Neither can authorize force by itself; regional enforcement needs Council authorization."},
      {t:"Humanitarian intervention and reprisals", why:"Both are contested or unlawful; armed reprisals are widely regarded as prohibited."},
      {t:"Recovering lost territory and protecting investments", why:"Neither is a lawful ground for force."}]},
-   {id:"e4u10-q20", lesson:"e4u10-l3", level:2, q:"Border guards of two states exchange a few shots in a brief incident. State A then bombs State B’s capital, citing self-defence. Which requirement is A most likely to fail?", options:[
+   {id:"e4u10-q20", lesson:"e4u10-l3", level:2, q:"Border guards of two states exchange a few shots in a brief incident. State A then bombs State B’s capital, citing self-defense. Which requirement is A most likely to fail?", options:[
      {t:"Armed attack and proportionality.", ok:true, why:"Yes. A minor incident may not be an armed attack, and bombing a capital far exceeds it. *Nicaragua* set a gravity threshold; proportionality limits the response."},
      {t:"Reporting: A forgot to tell the General Assembly.", why:"Reports go to the Security Council; and the bigger problems are gravity and proportionality."},
-     {t:"Consent: B did not agree to be bombed.", why:"Self-defence never requires the attacker’s consent; the issue is whether its conditions are met."},
-     {t:"Nothing: any use of force allows any response.", why:"Self-defence requires necessity and proportionality."}]},
-   {id:"e4u10-q21", lesson:"e4u10-l3", level:1, q:"Which incident gave rise to the classic standard for anticipatory self-defence?", options:[
+     {t:"Consent: B did not agree to be bombed.", why:"Self-defense never requires the attacker’s consent; the issue is whether its conditions are met."},
+     {t:"Nothing: any use of force allows any response.", why:"Self-defense requires necessity and proportionality."}]},
+   {id:"e4u10-q21", lesson:"e4u10-l3", level:1, q:"Which incident gave rise to the classic standard for anticipatory self-defense?", options:[
      {t:"The Caroline (1837)", ok:true, why:"Right, with Webster’s 1841 formula: “instant, overwhelming, leaving no choice of means, and no moment for deliberation.”"},
      {t:"The Corfu Channel (1946)", why:"That was the ICJ’s first case, about mines in a strait."},
      {t:"The Osirak strike (1981)", why:"Osirak is cited against preventive force, not as the origin of the standard."},
      {t:"The Gulf of Tonkin (1964)", why:"Not the source of the test."}]},
    {id:"e4u10-q22", lesson:"e4u10-l3", level:2, q:"A government argues it may strike another state’s research site because that state might build a dangerous weapon in a decade. What is this called, and how is it generally viewed?", options:[
-     {t:"Preventive force; widely rejected as self-defence without Security Council authorisation.", ok:true, why:"Yes. The threat is not imminent, so the Caroline standard is not met."},
-     {t:"Anticipatory self-defence; universally accepted.", why:"Anticipatory self-defence concerns imminent attacks, and even it is contested."},
-     {t:"Collective self-defence; lawful if an ally agrees.", why:"Collective self-defence still requires an armed attack."},
-     {t:"Humanitarian intervention; lawful under R2P.", why:"Nothing humanitarian is claimed, and R2P does not authorise unilateral force."}]},
-   {id:"e4u10-q23", lesson:"e4u10-l3", level:3, q:"Sione is drafting a seminar paper on force against an armed group in a neighbouring state that cannot control its border regions. Which framing is most accurate and neutral?", options:[
+     {t:"Preventive force; widely rejected as self-defense without Security Council authorization.", ok:true, why:"Yes. The threat is not imminent, so the Caroline standard is not met."},
+     {t:"Anticipatory self-defense; universally accepted.", why:"Anticipatory self-defense concerns imminent attacks, and even it is contested."},
+     {t:"Collective self-defense; lawful if an ally agrees.", why:"Collective self-defense still requires an armed attack."},
+     {t:"Humanitarian intervention; lawful under R2P.", why:"Nothing humanitarian is claimed, and R2P does not authorize unilateral force."}]},
+   {id:"e4u10-q23", lesson:"e4u10-l3", level:3, q:"Sione is drafting a seminar paper on force against an armed group in a neighboring state that cannot control its border regions. Which framing is most accurate and neutral?", options:[
      {t:"Some states accept an “unwilling or unable” test; others reject it.", ok:true, why:"Right. The United States argued for the test in 2014; Russia and others reject it, and the ICJ’s *Wall* opinion read Article 51 narrowly. It attributes each position and notes the unsettled law."},
      {t:"International law clearly permits such strikes.", why:"The law is contested; “clearly” overstates it."},
-     {t:"International law clearly forbids any force against non-state actors.", why:"Also overstated: the Council recognised self-defence after 9/11, and practice is divided."},
+     {t:"International law clearly forbids any force against non-state actors.", why:"Also overstated: the Council recognized self-defense after 9/11, and practice is divided."},
      {t:"The question is purely political and has no legal dimension.", why:"States argue at length in legal terms."}]},
    {id:"e4u10-q24", lesson:"e4u10-l3", level:1, q:"How did the governments of India (1971), Vietnam (1978–79) and Tanzania (1979) mainly justify their interventions?", options:[
-     {t:"As self-defence", ok:true, why:"Right. This is why these cases are weak precedents for a humanitarian right."},
+     {t:"As self-defense", ok:true, why:"Right. This is why these cases are weak precedents for a humanitarian right."},
      {t:"As humanitarian intervention under R2P", why:"R2P did not exist until 2001–05."},
-     {t:"As Security Council-authorised operations", why:"None was authorised by the Council."},
+     {t:"As Security Council-authorized operations", why:"None was authorized by the Council."},
      {t:"As consent from the governments they overthrew", why:"Those governments did not consent."}]},
    {id:"e4u10-q25", lesson:"e4u10-l3", level:2, q:"Which body rejected “the so-called ‘right’ of humanitarian intervention” as having no basis in the Charter?", options:[
      {t:"The Group of 77, in 2000", ok:true, why:"Yes, at the South Summit in Havana, April 2000, in paragraph 54 of its Declaration."},
@@ -1425,13 +1425,13 @@ ICA.addUnit({
      {t:"The ICJ in 1986", why:"*Nicaragua* rejected a right to intervene in support of rebels, but the quoted words are from the G77."}]},
    {id:"e4u10-q26", lesson:"e4u10-l3", level:2, q:"What did General Assembly Resolution ES-11/1 of 2 March 2022 do?", options:[
      {t:"It deplored Russia’s aggression, by 141 votes to 5.", ok:true, why:"Right. There were 35 abstentions. Assembly resolutions are recommendations, but this one recorded a wide majority view."},
-     {t:"It authorised force against Russia.", why:"The Assembly cannot authorise force with binding effect, and it did not try to."},
+     {t:"It authorized force against Russia.", why:"The Assembly cannot authorize force with binding effect, and it did not try to."},
      {t:"It expelled Russia from the UN.", why:"No such step was taken."},
      {t:"It referred the situation to the ICJ for an opinion.", why:"Ukraine itself brought a case to the ICJ."}]},
-   {id:"e4u10-q27", lesson:"e4u10-l3", level:3, q:"Fatima must summarise the legal debate over Iraq 2003 in one sentence for a neutral briefing. Which is best?", options:[
-     {t:"The coalition claimed authority; France and others disputed it.", ok:true, why:"Yes. The US, UK and Australia argued that Resolutions 678, 687 and 1441 together authorised force; France, Germany, Russia and others argued that a further Council decision was needed. It attributes both positions without loaded words."},
+   {id:"e4u10-q27", lesson:"e4u10-l3", level:3, q:"Fatima must summarize the legal debate over Iraq 2003 in one sentence for a neutral briefing. Which is best?", options:[
+     {t:"The coalition claimed authority; France and others disputed it.", ok:true, why:"Yes. The US, UK and Australia argued that Resolutions 678, 687 and 1441 together authorized force; France, Germany, Russia and others argued that a further Council decision was needed. It attributes both positions without loaded words."},
      {t:"The war was an obvious crime that everyone in the world condemned.", why:"Loaded and inaccurate about the range of views."},
-     {t:"Resolution 1441 expressly authorised the invasion.", why:"It did not expressly authorise force; that was the core of the dispute."},
+     {t:"Resolution 1441 expressly authorized the invasion.", why:"It did not expressly authorize force; that was the core of the dispute."},
      {t:"No one raised legal arguments about the war.", why:"Legal argument was central to the debate."}]},
    /* ---- Lesson 4 ---- */
    {id:"e4u10-q28", lesson:"e4u10-l4", level:1, q:"How far does the territorial sea extend?", options:[
@@ -1472,7 +1472,7 @@ ICA.addUnit({
    {id:"e4u10-q35", lesson:"e4u10-l4", level:3, q:"Two new states emerge from a former colony and disagree over their border. One proposes redrawing it along ethnic lines; the other cites the old administrative line. Which principle supports the second, and what is the main critique?", options:[
      {t:"Uti possidetis; critics cite its colonial origins.", ok:true, why:"Right. It was applied in *Burkina Faso/Mali* (1986). Its defenders say it prevents wars; its critics say it freezes lines drawn by empires."},
      {t:"Terra nullius; critics say it is too recent.", why:"Terra nullius is a colonial doctrine for unclaimed land, not a border rule."},
-     {t:"The Caroline test; critics say it is too strict.", why:"That concerns self-defence."},
+     {t:"The Caroline test; critics say it is too strict.", why:"That concerns self-defense."},
      {t:"Historic rights; critics say UNCLOS replaced them.", why:"That concerns maritime claims."}]},
    {id:"e4u10-q36", lesson:"e4u10-l4", level:2, q:"Why might a long-running island dispute between two states never reach the ICJ?", options:[
      {t:"Because the Court needs both parties’ consent.", ok:true, why:"Yes. Consent can come through a special agreement, a treaty clause or the optional clause. It is the foundation of its jurisdiction."},
@@ -1483,7 +1483,7 @@ ICA.addUnit({
    {id:"e4u10-q37", lesson:"e4u10-l5", level:1, q:"Which principle did the Nuremberg tribunal establish?", options:[
      {t:"Individuals can be criminally responsible.", ok:true, why:"Right. Individuals, including leaders, can be held responsible under international law: “crimes against international law are committed by men, not by abstract entities.”"},
      {t:"Only states can violate international law.", why:"Nuremberg rejected this."},
-     {t:"Superior orders are a complete defence for soldiers.", why:"At most they can reduce punishment."},
+     {t:"Superior orders are a complete defense for soldiers.", why:"At most they can reduce punishment."},
      {t:"Genocide is the gravest crime.", why:"Genocide was not charged; it was defined by treaty only in 1948."}]},
    {id:"e4u10-q38", lesson:"e4u10-l5", level:1, q:"What was historic about the ICTR’s *Akayesu* judgment (1998)?", options:[
      {t:"It was the first international conviction for genocide and held that rape could be an act of genocide.", ok:true, why:"Right. Nuremberg could not convict of genocide, and the ICJ judges states, not people."},
@@ -1517,7 +1517,7 @@ ICA.addUnit({
      {t:"That the ICC has never prosecuted anyone from Africa.", why:"Factually wrong."}]},
    {id:"e4u10-q44", lesson:"e4u10-l5", level:1, q:"Which work is central to TWAIL?", options:[
      {t:"Anghie, *Imperialism, Sovereignty and the Making of International Law* (2005)", ok:true, why:"Right: the “dynamic of difference” argument."},
-     {t:"Goldsmith and Posner, *The Limits of International Law* (2005)", why:"A rational-choice sceptic’s book."},
+     {t:"Goldsmith and Posner, *The Limits of International Law* (2005)", why:"A rational-choice skeptic’s book."},
      {t:"Charlesworth and Chinkin, *The Boundaries of International Law* (2000)", why:"A feminist classic."},
      {t:"Henkin, *How Nations Behave* (1968)", why:"A classic on compliance."}]},
    {id:"e4u10-q45", lesson:"e4u10-l5", level:2, q:"Which idea is most associated with feminist approaches to international law?", options:[

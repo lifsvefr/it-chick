@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u8-l1", title:"Giving a 発表 in a ゼミ or at a conference", minutes:55,
-   hook:{q:"A Japanese classmate says: 「[来週]{らいしゅう}のゼミの[発表]{はっぴょう}、レジュメは[何]{なん}ページ？」 What is a レジュメ here?", options:["A CV (a [履歴書]{りれきしょ}) for a job application","A handout that summarises your presentation","The full text of your graduation thesis","The list of students in the seminar"], answer:1, reveal:"**A handout.** In English a “résumé” is a CV, but at Japanese universities a レジュメ (from the French *résumé*, “summary”) is the handout you give out with a presentation: headings, key points, quotations, figures and references on one or two pages. A CV is a [履歴書]{りれきしょ}. This lesson covers the kinds of [発表]{はっぴょう} you’ll give, how to build the レジュメ and the talk, and the stock phrases for each stage."},
+   hook:{q:"A Japanese classmate says: 「[来週]{らいしゅう}のゼミの[発表]{はっぴょう}、レジュメは[何]{なん}ページ？」 What is a レジュメ here?", options:["A CV (a [履歴書]{りれきしょ}) for a job application","A handout that summarizes your presentation","The full text of your graduation thesis","The list of students in the seminar"], answer:1, reveal:"**A handout.** In English a “résumé” is a CV, but at Japanese universities a レジュメ (from the French *résumé*, “summary”) is the handout you give out with a presentation: headings, key points, quotations, figures and references on one or two pages. A CV is a [履歴書]{りれきしょ}. This lesson covers the kinds of [発表]{はっぴょう} you’ll give, how to build the レジュメ and the talk, and the stock phrases for each stage."},
    goals:[
      "Recognise the main kinds of 発表 at a Japanese university and conference",
      "Make a レジュメ in the usual written style, separate from the spoken talk",
@@ -28,11 +28,11 @@ ICA.addUnit({
    learn:[
     {h:"Where you’ll give a 発表", body:[
       {lead:"At a Japanese university, a [発表]{はっぴょう} (*happyō*, a presentation) is part of ordinary study, not a rare event."},
-      "Much of it happens in a [[zemi|ゼミ]] (*zemi*, from the German *Seminar*): a small class led by one teacher, where students take turns presenting and then discuss. In many humanities and social science programmes, students join a ゼミ, often from the third year (sometimes earlier), and stay with it until they finish their graduation thesis. Science and engineering students usually join a [研究室]{けんきゅうしつ} (a lab), which holds similar meetings. Arrangements vary by university and field.",
+      "Much of it happens in a [[zemi|ゼミ]] (*zemi*, from the German *Seminar*): a small class led by one teacher, where students take turns presenting and then discuss. In many humanities and social science programs, students join a ゼミ, often from the third year (sometimes earlier), and stay with it until they finish their graduation thesis. Science and engineering students usually join a [研究室]{けんきゅうしつ} (a lab), which holds similar meetings. Arrangements vary by university and field.",
       {table:[
         ["Kind of 発表","What you do"],
         ["[輪読]{りんどく}","Members take turns presenting a chapter of a book the ゼミ reads together"],
-        ["[文献]{ぶんけん}紹介","You summarise and comment on one paper or book"],
+        ["[文献]{ぶんけん}紹介","You summarize and comment on one paper or book"],
         ["[進捗]{しんちょく}報告","You report how your own research is going"],
         ["[卒論]{そつろん}[中間]{ちゅうかん}発表","An interim presentation on your graduation thesis (卒業論文)"],
         ["[学会]{がっかい}発表","A conference talk: [口頭]{こうとう}発表 (oral) or ポスター発表 (poster)"]
@@ -54,8 +54,8 @@ ICA.addUnit({
     ]},
     {h:"The shape of a talk", body:[
       "A research 発表 follows the same order as a paper: background and aim, method, results, discussion, conclusion (see {{japanese-paper-structure}}). Japanese talks add a clear opening and closing ritual around it, and the audience expects to hear each stage named.",
-      {fig:'<svg viewBox="0 0 340 520"><defs><marker id="e1u8a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">The stages of a 発表</text><rect class="d-lup" x="20" y="30" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="51" text-anchor="middle">1 挨拶・名乗り・テーマ</text><text class="s" x="170" y="70" text-anchor="middle">「本日は〜について発表いたします」</text><path class="d-ink" d="M170,82 L170,96" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-soft" x="20" y="98" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="119" text-anchor="middle">2 構成の説明</text><text class="s" x="170" y="138" text-anchor="middle">「本発表の構成は次のとおりです」</text><path class="d-ink" d="M170,150 L170,164" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="166" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="187" text-anchor="middle">3 背景と目的</text><text class="s" x="170" y="206" text-anchor="middle">「まず、研究の背景について…」</text><path class="d-ink" d="M170,218 L170,232" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="234" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="255" text-anchor="middle">4 方法と結果</text><text class="s" x="170" y="274" text-anchor="middle">「次に、調査の結果について…」</text><path class="d-ink" d="M170,286 L170,300" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="302" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="323" text-anchor="middle">5 考察</text><text class="s" x="170" y="342" text-anchor="middle">「この結果から〜と考えられます」</text><path class="d-ink" d="M170,354 L170,368" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-soft" x="20" y="370" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="391" text-anchor="middle">6 まとめと今後の課題</text><text class="s" x="170" y="410" text-anchor="middle">「最後に、まとめと今後の課題…」</text><path class="d-ink" d="M170,422 L170,436" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-gold" x="20" y="438" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="459" text-anchor="middle">7 終わりの挨拶 → 質疑応答</text><text class="s" x="170" y="478" text-anchor="middle">「以上で発表を終わります」</text><text class="s" x="170" y="510" text-anchor="middle">Green: the research content. Other colours: framing.</text></svg>', alt:"A vertical flow of seven stages of a Japanese academic presentation, each with its stock phrase: 1 greeting, name and topic (本日は〜について発表いたします); 2 outline (本発表の構成は次のとおりです); 3 background and aim; 4 method and results; 5 discussion (この結果から〜と考えられます); 6 summary and future tasks; 7 closing (以上で発表を終わります), leading into questions. Stages 3 to 5 are the research content; the rest is framing.", cap:"The research content sits inside a clear frame. Naming each stage aloud helps listeners who are following on the レジュメ."},
-      "Time is usually strict. A ゼミ might give 20–30 minutes plus discussion; a conference talk is often around 10–20 minutes plus a few minutes of questions, and some conferences ring a bell to warn you. Check the programme or ask, and plan about one minute per slide or レジュメ section."
+      {fig:'<svg viewBox="0 0 340 520"><defs><marker id="e1u8a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="170" y="18" text-anchor="middle">The stages of a 発表</text><rect class="d-lup" x="20" y="30" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="51" text-anchor="middle">1 挨拶・名乗り・テーマ</text><text class="s" x="170" y="70" text-anchor="middle">「本日は〜について発表いたします」</text><path class="d-ink" d="M170,82 L170,96" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-soft" x="20" y="98" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="119" text-anchor="middle">2 構成の説明</text><text class="s" x="170" y="138" text-anchor="middle">「本発表の構成は次のとおりです」</text><path class="d-ink" d="M170,150 L170,164" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="166" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="187" text-anchor="middle">3 背景と目的</text><text class="s" x="170" y="206" text-anchor="middle">「まず、研究の背景について…」</text><path class="d-ink" d="M170,218 L170,232" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="234" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="255" text-anchor="middle">4 方法と結果</text><text class="s" x="170" y="274" text-anchor="middle">「次に、調査の結果について…」</text><path class="d-ink" d="M170,286 L170,300" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-sage" x="20" y="302" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="323" text-anchor="middle">5 考察</text><text class="s" x="170" y="342" text-anchor="middle">「この結果から〜と考えられます」</text><path class="d-ink" d="M170,354 L170,368" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-soft" x="20" y="370" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="391" text-anchor="middle">6 まとめと今後の課題</text><text class="s" x="170" y="410" text-anchor="middle">「最後に、まとめと今後の課題…」</text><path class="d-ink" d="M170,422 L170,436" stroke-width="2" marker-end="url(#e1u8a1)"/><rect class="d-gold" x="20" y="438" width="300" height="52" rx="6" stroke-width="2"/><text x="170" y="459" text-anchor="middle">7 終わりの挨拶 → 質疑応答</text><text class="s" x="170" y="478" text-anchor="middle">「以上で発表を終わります」</text><text class="s" x="170" y="510" text-anchor="middle">Green: the research content. Other colors: framing.</text></svg>', alt:"A vertical flow of seven stages of a Japanese academic presentation, each with its stock phrase: 1 greeting, name and topic (本日は〜について発表いたします); 2 outline (本発表の構成は次のとおりです); 3 background and aim; 4 method and results; 5 discussion (この結果から〜と考えられます); 6 summary and future tasks; 7 closing (以上で発表を終わります), leading into questions. Stages 3 to 5 are the research content; the rest is framing.", cap:"The research content sits inside a clear frame. Naming each stage aloud helps listeners who are following on the レジュメ."},
+      "Time is usually strict. A ゼミ might give 20–30 minutes plus discussion; a conference talk is often around 10–20 minutes plus a few minutes of questions, and some conferences ring a bell to warn you. Check the program or ask, and plan about one minute per slide or レジュメ section."
     ]},
     {h:"Stock phrases, stage by stage", body:[
       {lead:"Japanese academic talks rely on set phrases. Learn them as chunks: they are expected, they sound right, and they give you a moment to think."},
@@ -98,7 +98,7 @@ ICA.addUnit({
         ["「めっちゃ増えてます。」","「大きく増加しています。」"],
         ["「これ、見てください。」","「こちらの図をご覧ください。」"]
       ]},
-      "Don’t read the レジュメ aloud word for word: it is written in a different style, and listeners can read it themselves. Talk through it instead, and tell them where you are (「レジュメの3番をご覧ください」). Many teachers advise against reading a full script too. When you’re starting out, a script is a fine safety net: practise it until you can look up for most of each sentence, then move to keyword notes.",
+      "Don’t read the レジュメ aloud word for word: it is written in a different style, and listeners can read it themselves. Talk through it instead, and tell them where you are (「レジュメの3番をご覧ください」). Many teachers advise against reading a full script too. When you’re starting out, a script is a fine safety net: practice it until you can look up for most of each sentence, then move to keyword notes.",
       {list:[
         "**Rehearse aloud with a timer** at least once, ideally twice.",
         "**Mark hard words** in your notes with their readings, so you don’t freeze on a kanji compound.",
@@ -255,7 +255,7 @@ ICA.addUnit({
       "[[kushion-kotoba|クッション言葉]] (*kusshon kotoba*, “cushion words”) are short phrases placed before a request, a question or a disagreement to soften it, like a cushion that breaks a fall. They are the Japanese side of [[softening]].",
       {table:[
         ["クッション言葉","Typical use"],
-        ["[恐]{おそ}れ[入]{い}りますが","Before asking a favour or a question of someone senior"],
+        ["[恐]{おそ}れ[入]{い}りますが","Before asking a favor or a question of someone senior"],
         ["[差]{さ}し[支]{つか}えなければ","Asking for something they might prefer not to give"],
         ["お[手数]{てすう}をおかけしますが","Asking someone to do extra work for you"],
         ["申し訳ありませんが","Before an inconvenient request or bad news"],
@@ -300,16 +300,16 @@ ICA.addUnit({
       {t:"「付け加えると、留学生の場合も同じ傾向があります。」", b:2, why:"付け加えると (to add) introduces extra support."}
     ]},
     {id:"e1u8-l2-x4", type:"match", q:"Match each クッション言葉 to the situation it suits best.", pairs:[
-      ["恐れ入りますが","Asking a professor a question or a favour","A polite cushion for troubling someone senior."],
+      ["恐れ入りますが","Asking a professor a question or a favor","A polite cushion for troubling someone senior."],
       ["差し支えなければ","Asking for information they may prefer not to share","It means “if it’s no problem for you”, leaving room to say no."],
       ["お手数をおかけしますが","Asking someone to do extra work for you","It acknowledges the trouble (手数) you are causing."],
-      ["せっかくですが","Declining a kind offer","It recognises the kindness before saying no."]
+      ["せっかくですが","Declining a kind offer","It recognizes the kindness before saying no."]
     ]},
     {id:"e1u8-l2-x5", type:"mcq", q:"In a ゼミ discussion, Mei disagrees with a classmate who said remote classes suit all students. Which is the best way to say it?", options:[
       {t:"「確かに、通学の時間が減るという利点はあると思います。ただ、通信環境が十分でない学生もいるのではないでしょうか。」", ok:true, why:"Concedes a real point, turns with ただ, and states the disagreement clearly but softly with 〜ではないでしょうか."},
       {t:"「それは違います。」", why:"Blunt: it rejects the point without acknowledging it or giving a reason."},
       {t:"「まあ、いろいろな考え方がありますよね。」", why:"So soft that no point is made; the discussion doesn’t move."},
-      {t:"「通信環境が十分でない学生もいるので、その意見は間違っています。」", why:"Gives a reason, but 間違っています is a strong judgement on a classmate’s view; the concession pattern is expected."}
+      {t:"「通信環境が十分でない学生もいるので、その意見は間違っています。」", why:"Gives a reason, but 間違っています is a strong judgment on a classmate’s view; the concession pattern is expected."}
     ]},
     {id:"e1u8-l2-x6", type:"spot", q:"Tap every reply in this 質疑応答 transcript that is **inappropriate**.", ask:"is inappropriate", parts:[
       {t:"「ご質問ありがとうございます。」", flag:false, why:"The standard first move."},
@@ -334,7 +334,7 @@ ICA.addUnit({
    apply:{intro:"These tasks work best with a real ゼミ or study group, but you can do them on your own with a recorded talk.", tasks:[
     {t:"Predict and prepare answers", how:["Take your 3-minute outline from lesson 1 (or any topic you know).","Write three questions someone might ask.","For each, write a four-move answer. For one of them, write a 勉強不足で… answer with an offer to check."], write:"Question 1 and my answer… Question 2… Question 3 (the one I can’t fully answer)…"},
     {t:"Ask questions of a recorded talk", how:["Watch a short Japanese talk or lecture with subtitles or a transcript (many universities post public lectures online).","Write two questions you would ask, each with the four-part frame: name, thanks, number of points, question tied to a place in the talk."], write:"Talk and speaker… Question 1… Question 2…"},
-    {t:"Practise a cushioned disagreement", how:["Pick an opinion you partly disagree with (from a newspaper column, a classmate or the reading).","Write one disagreement with the 確かに〜。ただ、〜ではないでしょうか pattern.","Write one agreement with a reason (〜に賛成です。というのも〜からです) and one 補足."], write:"The opinion… My disagreement… My agreement… My 補足…"}
+    {t:"Practice a cushioned disagreement", how:["Pick an opinion you partly disagree with (from a newspaper column, a classmate or the reading).","Write one disagreement with the 確かに〜。ただ、〜ではないでしょうか pattern.","Write one agreement with a reason (〜に賛成です。というのも〜からです) and one 補足."], write:"The opinion… My disagreement… My agreement… My 補足…"}
    ], proof:"Three prepared answers (one of them honestly admitting a gap), two well-framed questions for a talk, and three discussion moves you wrote yourself."},
    read:[
      {book:"keigo", where:"第3章「敬語の具体的な使い方」: worked questions on choosing polite expressions in real situations", note:"Browse it alongside this lesson’s phrases; the keigo itself is explained in lessons 3 and 4."}
@@ -360,11 +360,11 @@ ICA.addUnit({
     ]},
     {h:"From three kinds to five", body:[
       "In 2007 the 文化審議会 (Council for Cultural Affairs, an advisory body of Japan’s Agency for Cultural Affairs) published [[keigo-no-shishin|[敬語]{けいご}の[指針]{ししん}]], the official guidelines on keigo. They keep the familiar three kinds but split two of them, giving five categories.",
-      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="e1u8a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="60" y="20" text-anchor="middle">Three kinds</text><text x="250" y="20" text-anchor="middle">Five (2007)</text><rect class="d-lup" x="10" y="36" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="63" text-anchor="middle">尊敬語</text><path class="d-ink" d="M110,58 L156,58" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-lup" x="160" y="32" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="54" text-anchor="middle">尊敬語</text><text class="s" x="245" y="73" text-anchor="middle">raises the other’s action</text><rect class="d-sage" x="10" y="140" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="167" text-anchor="middle">謙譲語</text><path class="d-ink" d="M110,156 L156,128" stroke-width="2" marker-end="url(#e1u8a3)"/><path class="d-ink" d="M110,168 L156,196" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-sage" x="160" y="100" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="122" text-anchor="middle">謙譲語Ⅰ</text><text class="s" x="245" y="141" text-anchor="middle">raises who you act towards</text><rect class="d-sage" x="160" y="170" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="192" text-anchor="middle">謙譲語Ⅱ（丁重語）</text><text class="s" x="245" y="211" text-anchor="middle">polite to the listener</text><rect class="d-gold" x="10" y="274" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="301" text-anchor="middle">丁寧語</text><path class="d-ink" d="M110,290 L156,262" stroke-width="2" marker-end="url(#e1u8a3)"/><path class="d-ink" d="M110,302 L156,330" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-gold" x="160" y="236" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="258" text-anchor="middle">丁寧語</text><text class="s" x="245" y="277" text-anchor="middle">です・ます</text><rect class="d-gold" x="160" y="304" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="326" text-anchor="middle">美化語</text><text class="s" x="245" y="345" text-anchor="middle">お茶, ご飯: refined words</text><text class="s" x="170" y="374" text-anchor="middle">Two of the three were split.</text></svg>', alt:"On the left, the traditional three kinds of keigo; on the right, the five of 2007. 尊敬語 stays 尊敬語 (raises the other’s action). 謙譲語 splits into 謙譲語Ⅰ (raises who you act towards) and 謙譲語Ⅱ, also called 丁重語 (polite to the listener). 丁寧語 splits into 丁寧語 (です・ます) and 美化語 (refined words like お茶 and ご飯).", cap:"The guidelines keep the old three but split 謙譲語 and 丁寧語, because the parts work in different ways."},
+      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="e1u8a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="60" y="20" text-anchor="middle">Three kinds</text><text x="250" y="20" text-anchor="middle">Five (2007)</text><rect class="d-lup" x="10" y="36" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="63" text-anchor="middle">尊敬語</text><path class="d-ink" d="M110,58 L156,58" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-lup" x="160" y="32" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="54" text-anchor="middle">尊敬語</text><text class="s" x="245" y="73" text-anchor="middle">raises the other’s action</text><rect class="d-sage" x="10" y="140" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="167" text-anchor="middle">謙譲語</text><path class="d-ink" d="M110,156 L156,128" stroke-width="2" marker-end="url(#e1u8a3)"/><path class="d-ink" d="M110,168 L156,196" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-sage" x="160" y="100" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="122" text-anchor="middle">謙譲語Ⅰ</text><text class="s" x="245" y="141" text-anchor="middle">raises who you act toward</text><rect class="d-sage" x="160" y="170" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="192" text-anchor="middle">謙譲語Ⅱ（丁重語）</text><text class="s" x="245" y="211" text-anchor="middle">polite to the listener</text><rect class="d-gold" x="10" y="274" width="100" height="44" rx="6" stroke-width="2"/><text x="60" y="301" text-anchor="middle">丁寧語</text><path class="d-ink" d="M110,290 L156,262" stroke-width="2" marker-end="url(#e1u8a3)"/><path class="d-ink" d="M110,302 L156,330" stroke-width="2" marker-end="url(#e1u8a3)"/><rect class="d-gold" x="160" y="236" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="258" text-anchor="middle">丁寧語</text><text class="s" x="245" y="277" text-anchor="middle">です・ます</text><rect class="d-gold" x="160" y="304" width="170" height="52" rx="6" stroke-width="2"/><text x="245" y="326" text-anchor="middle">美化語</text><text class="s" x="245" y="345" text-anchor="middle">お茶, ご飯: refined words</text><text class="s" x="170" y="374" text-anchor="middle">Two of the three were split.</text></svg>', alt:"On the left, the traditional three kinds of keigo; on the right, the five of 2007. 尊敬語 stays 尊敬語 (raises the other’s action). 謙譲語 splits into 謙譲語Ⅰ (raises who you act toward) and 謙譲語Ⅱ, also called 丁重語 (polite to the listener). 丁寧語 splits into 丁寧語 (です・ます) and 美化語 (refined words like お茶 and ご飯).", cap:"The guidelines keep the old three but split 謙譲語 and 丁寧語, because the parts work in different ways."},
       {table:[
         ["Category","What it does","Examples"],
         ["[[sonkeigo|[尊敬語]{そんけいご}]]","Raises the person who does the action or owns the thing","いらっしゃる、おっしゃる、お読みになる、先生のご研究"],
-        ["[[kenjougo|[謙譲語]{けんじょうご}]]Ⅰ","Raises the person your action goes towards","[伺]{うかが}う、申し上げる、[拝見]{はいけん}する、お送りする"],
+        ["[[kenjougo|[謙譲語]{けんじょうご}]]Ⅰ","Raises the person your action goes toward","[伺]{うかが}う、申し上げる、[拝見]{はいけん}する、お送りする"],
         ["[[teichougo|[謙譲語]{けんじょうご}Ⅱ（[丁重語]{ていちょうご}）]]","Speaks of your own action politely to the listener","[参]{まい}ります、申します、いたします、おります"],
         ["[[teineigo|[丁寧語]{ていねいご}]]","Polite to the listener","です、ます、（で）ございます"],
         ["[[bikago|[美化語]{びかご}]]","Makes the word itself more refined","お茶、お酒、ご飯"]
@@ -386,7 +386,7 @@ ICA.addUnit({
       {ex:"山田先生は、明日の学会にいらっしゃいますか。\n先生がおっしゃったとおり、もう一度データを確認しました。\nこちらの資料をご覧ください。", label:"Worked example: 尊敬語 for the professor"}
     ]},
     {h:"謙譲語Ⅰ: raising the person your action is for", body:[
-      "謙譲語Ⅰ describes **your** action (or your side’s) that goes **towards someone you respect**, and raises that person. The guidelines define it as describing an action that goes from your side to the other side or a third person, raising the person it goes towards.",
+      "謙譲語Ⅰ describes **your** action (or your side’s) that goes **toward someone you respect**, and raises that person. The guidelines define it as describing an action that goes from your side to the other side or a third person, raising the person it goes toward.",
       {table:[
         ["Way of forming it","Examples"],
         ["Special verbs","伺う (visit; ask; hear), 申し上げる (say to), 拝見する (look at their thing), いただく (receive), 差し上げる (give), お目にかかる (meet), 存じ上げる (know a person)"],
@@ -417,7 +417,7 @@ ICA.addUnit({
         ["✓ 「明日、弟のところに参ります。」","参る raises nobody: it is simply polite to the professor you are talking to."],
         ["✓ 「明日は図書館に参ります。」","Nobody to raise at the library; 参ります is polite to the listener."]
       ]},
-      "Because 謙譲語Ⅱ is about the listener, it can even be used for things that aren’t people, as in the station announcement 「まもなく電車が参ります」. 「お／ご〜いたす」 (ご連絡いたします, ご案内いたします) combines both: it raises the person you act towards (Ⅰ) and is polite to your listener (Ⅱ)."
+      "Because 謙譲語Ⅱ is about the listener, it can even be used for things that aren’t people, as in the station announcement 「まもなく電車が参ります」. 「お／ご〜いたす」 (ご連絡いたします, ご案内いたします) combines both: it raises the person you act toward (Ⅰ) and is polite to your listener (Ⅱ)."
     ]},
     {h:"丁寧語, 美化語, and the three jobs of お／ご", body:[
       "[丁寧語]{ていねいご} is です and ます (and the more formal ございます, as in 「こちらでございます」). It is polite to the listener and is the base of almost everything else in this unit.",
@@ -447,7 +447,7 @@ ICA.addUnit({
         ["読む","お読みになる","[拝読]{はいどく}する","—"],
         ["もらう・くれる","くださる (くれる)","いただく (もらう)","—"]
       ]},
-      {key:"Two questions choose the form. Whose action is it? (The professor’s: 尊敬語. Yours: 謙譲語.) If it’s yours, does it go towards someone you respect? (Yes: 謙譲語Ⅰ. No, you’re just being polite to your listener: 謙譲語Ⅱ.)"}
+      {key:"Two questions choose the form. Whose action is it? (The professor’s: 尊敬語. Yours: 謙譲語.) If it’s yours, does it go toward someone you respect? (Yes: 謙譲語Ⅰ. No, you’re just being polite to your listener: 謙譲語Ⅱ.)"}
     ]}
    ],
    try:[
@@ -492,7 +492,7 @@ ICA.addUnit({
     ]},
     {id:"e1u8-l3-x6", type:"mcq", q:"In 「先生のご研究について、お話を伺いたいと思っております」, what is the ご in ご研究?", options:[
       {t:"尊敬語: it is the professor’s own research", ok:true, why:"お／ご on the respected person’s own things raises them."},
-      {t:"謙譲語Ⅰ: it is research going towards the professor", why:"The research belongs to the professor; it isn’t something you give them."},
+      {t:"謙譲語Ⅰ: it is research going toward the professor", why:"The research belongs to the professor; it isn’t something you give them."},
       {t:"謙譲語Ⅱ: it is polite to the listener", why:"謙譲語Ⅱ is for your own actions, such as 参ります and いたします."},
       {t:"美化語: it just makes the word refined", why:"美化語 is for neutral things like お茶. Here the ご raises the professor as the owner."}
     ]},
@@ -565,13 +565,13 @@ ICA.addUnit({
       {tip:"A good habit: write いたします or the plain polite form first. Use させていただく only when you are really asking for, or thanking for, permission."}
     ]},
     {h:"Set phrases that teachers notice", body:[
-      "Some phrases are not grammar errors at all, but many people (including many teachers) consider them unsuitable towards someone senior. Most business-etiquette and university guides advise the following. Treat them as widely held expectations, not as rules of grammar.",
+      "Some phrases are not grammar errors at all, but many people (including many teachers) consider them unsuitable toward someone senior. Most business-etiquette and university guides advise the following. Treat them as widely held expectations, not as rules of grammar.",
       {table:[
         ["Often advised against","Usually advised instead","Why"],
         ["ご苦労さまです","お疲れさまです","ご苦労さま is felt to be said by seniors to juniors (a few guides question お疲れさま to seniors too)"],
         ["了解しました","承知しました・承知いたしました","了解 is felt to be casual or for equals; this view is recent and not universal"],
         ["参考になりました","勉強になりました","参考 can suggest you only partly used their advice"],
-        ["すみません (to apologise)","申し訳ありません・申し訳ございません","More formal for a real apology"]
+        ["すみません (to apologize)","申し訳ありません・申し訳ございません","More formal for a real apology"]
       ]},
       "In emails to teachers, the usual opening is 「お世話になっております」 rather than 「お疲れさまです」 (lesson 5). With your own ゼミ teacher, the ゼミ’s habits may be more relaxed; listen to how 先輩 speak.",
       {listen:"e1u8-l4-a1", ex:"[大西]{おおにし}先生：「来週の発表、資料は前日までに送ってください。」\nチェスカ：「承知いたしました。前日の正午までにお送りいたします。」", label:"Worked example: Cheska accepts an instruction from Prof. Ōnishi, her ゼミ teacher"}
@@ -648,7 +648,7 @@ ICA.addUnit({
       {t:"「お母様が、先生によろしくと申しておりました。」", why:"お母様 is for someone else’s mother, never your own."}
     ]},
     {id:"e1u8-l4-x6", type:"sort", q:"Business-etiquette and university guides commonly give advice on these phrases for speaking to a professor. Sort them the way most of those guides do.", buckets:["Usually advised","Usually advised against"], items:[
-      {t:"申し訳ございません (to apologise)", b:0, why:"The formal apology guides recommend to a teacher, rather than a casual すみません."},
+      {t:"申し訳ございません (to apologize)", b:0, why:"The formal apology guides recommend to a teacher, rather than a casual すみません."},
       {t:"承知いたしました", b:0, why:"The phrase most guides advise for accepting an instruction."},
       {t:"勉強になりました", b:0, why:"A safe way to thank a teacher for advice."},
       {t:"ご苦労さまです", b:1, why:"Felt to be said by seniors to juniors."},
@@ -665,7 +665,7 @@ ICA.addUnit({
    apply:{intro:"These tasks need paper or a notes app, and some real Japanese you come across.", tasks:[
     {t:"Proofread for direction and doubling", how:["Take an email or message you wrote to a teacher in Japanese (or write a short one now).","Underline every verb about the teacher and every verb about you.","Check each: 尊敬語 for theirs, 謙譲語 for yours, and no 二重敬語."], write:"Verbs about the teacher… Verbs about me… What I corrected…"},
     {t:"Rewrite over-used させていただく", how:["Find five sentences with させていただく (in emails, shop signs, announcements or your own writing).","For each, decide whether permission and benefit are really involved.","Rewrite the ones that don’t fit with いたします or a plain polite form."], write:"Sentence → fits? → my rewrite (×5)…"},
-    {t:"Practise ウチ・ソト", how:["Write three sentences you might say to a professor about a family member.","Write two sentences you might say on the phone to an outsider about a colleague or manager.","Check: 母・父・兄 (not お母さん…), no さん or titles for your side, 謙譲語 for their actions."], write:"Family sentences… Workplace sentences… What I checked…"}
+    {t:"Practice ウチ・ソト", how:["Write three sentences you might say to a professor about a family member.","Write two sentences you might say on the phone to an outsider about a colleague or manager.","Check: 母・父・兄 (not お母さん…), no さん or titles for your side, 謙譲語 for their actions."], write:"Family sentences… Workplace sentences… What I checked…"}
    ], proof:"A proofread message with corrected keigo, five させていただく sentences judged and rewritten where needed, and five ウチ・ソト sentences you checked."},
    read:[
      {book:"keigo", where:"第2章「敬語の仕組み」: the notes on 二重敬語 and 敬語連結; 第3章 for questions on 〜させていただく", note:"The reasoning behind this lesson’s advice, with more examples."}
@@ -712,7 +712,7 @@ ICA.addUnit({
       "Leila is a third-year student who wants to discuss her graduation thesis topic with her supervisor ([[shidou-kyouin|[指導教員]{しどうきょういん}]]). Read it once for the parts, then once for the keigo.",
       {ex:"件名：卒業論文のテーマについてのご相談（経済学部3年　レイラ・ハサン）\n\n山田先生\n\nお世話になっております。\n経済学部経済学科3年のレイラ・ハサンです。\n\n卒業論文のテーマについてご相談したく、ご連絡いたしました。\n\n現在、「地方都市における外国人住民の就労」をテーマに考えておりますが、調査の対象をどこまで絞るべきか迷っております。\nつきましては、15分ほどお時間をいただけないでしょうか。\n\n来週は、以下の時間であれば伺うことができます。\n・月曜日　13時～17時\n・水曜日　10時～12時\n\nご都合のよい日時をお知らせいただけますと幸いです。なお、オフィスアワーに伺うことも可能です。\n\nお忙しいところ恐れ入りますが、どうぞよろしくお願いいたします。\n\n――――――――――\nレイラ・ハサン\n〇〇大学　経済学部経済学科3年\n学籍番号：E2304512\nメール：e2304512@〇〇.ac.jp", mono:true, label:"Model email: asking for a meeting"},
       {list:[
-        "**ご相談したく、ご連絡いたしました**: ご相談する is ご〜する (謙譲語Ⅰ), because the consulting goes towards the professor. ご連絡いたしました is ご〜いたす, which is both 謙譲語Ⅰ (the message goes to the professor) and 謙譲語Ⅱ (polite to her reader), as in lesson 3. 〜したく is a written way of saying 〜したいと思って (“because I would like to…”).",
+        "**ご相談したく、ご連絡いたしました**: ご相談する is ご〜する (謙譲語Ⅰ), because the consulting goes toward the professor. ご連絡いたしました is ご〜いたす, which is both 謙譲語Ⅰ (the message goes to the professor) and 謙譲語Ⅱ (polite to her reader), as in lesson 3. 〜したく is a written way of saying 〜したいと思って (“because I would like to…”).",
         "**お時間をいただけないでしょうか**: a soft request with いただく (謙譲語Ⅰ), shaped as a question.",
         "**伺うことができます**: 伺う, because she would be visiting the professor.",
         "**オフィスアワーに伺うことも可能です**: offers another option without telling the professor what to do. (Avoid 「〜でもかまいません」 here: “that’s fine with me” sounds as if the student is granting permission.)",
@@ -743,7 +743,7 @@ ICA.addUnit({
       "If something is truly urgent (you are ill on the day of an exam, say), check the university’s official procedure first: it may require the office, not only the professor."
     ]},
     {h:"Visiting a professor: アポ, オフィスアワー and the 研究室", body:[
-      "A professor’s office is called their [[kenkyuushitsu|[研究室]{けんきゅうしつ}]] (*kenkyūshitsu*). The same word also means their research group or lab. Many professors hold [[office-hours|オフィスアワー]], set times when students can drop in; otherwise, make an appointment (アポ, short for アポイントメント) by email, as Leila did. [研究室訪問]{けんきゅうしつほうもん} also has a special meaning: visiting a professor’s lab before applying to their graduate programme, which is common in Japan.",
+      "A professor’s office is called their [[kenkyuushitsu|[研究室]{けんきゅうしつ}]] (*kenkyūshitsu*). The same word also means their research group or lab. Many professors hold [[office-hours|オフィスアワー]], set times when students can drop in; otherwise, make an appointment (アポ, short for アポイントメント) by email, as Leila did. [研究室訪問]{けんきゅうしつほうもん} also has a special meaning: visiting a professor’s lab before applying to their graduate program, which is common in Japan.",
       {ol:[
         "**Arrive on time**, with your notes and questions ready.",
         "**Knock and wait** for 「どうぞ」.",
@@ -840,7 +840,7 @@ ICA.addUnit({
     {t:"Draft an email to a professor", how:["Choose a real or imagined purpose: asking for a meeting, a question about a report, or a request for a reference.","Write the full email: 件名, 宛名, 挨拶, 名乗り, 用件, details and request, 結び and 署名.","Check every verb with lesson 4’s two questions (whose action? one form only?)."], write:"件名… 本文… 署名… What I checked…"},
     {t:"Write the reply and the thank-you", how:["Imagine the professor’s short reply suggesting a time.","Write your reply accepting it.","Write a thank-you email for after the meeting, mentioning one piece of advice you’ll act on."], write:"My reply… My thank-you…"},
     {t:"Prepare a 研究室 visit", how:["Write what you’ll say at each step: entering, name and thanks, purpose, checking understanding, closing.","List two or three questions to ask.","If you can, make a real visit or go to オフィスアワー, and note afterwards what went well."], write:"My phrases for each step… My questions… How it went…"},
-    {t:"Look back and look ahead", how:["List the three most useful things you learned in Academic Japanese, and in IT CHICK Academy as a whole.","Choose one skill to keep practising, and how often.","Pick one unit or Lab to come back to next, and put a time for it in your calendar."], write:"Three useful things… The skill I’ll keep practising… What I’ll come back to, and when…"}
+    {t:"Look back and look ahead", how:["List the three most useful things you learned in Academic Japanese, and in IT CHICK Academy as a whole.","Choose one skill to keep practicing, and how often.","Pick one unit or Lab to come back to next, and put a time for it in your calendar."], write:"Three useful things… The skill I’ll keep practicing… What I’ll come back to, and when…"}
    ], proof:"A complete email to a professor, a reply and a thank-you, your phrases and questions for a 研究室 visit, and a short reflection with your plan for what to learn next."},
    read:[
      {book:"keigo", where:"第3章「敬語の具体的な使い方」: worked questions on choosing polite expressions in real situations", note:"Browse for situations like your own; after this unit, the reasoning will make sense."}
@@ -851,12 +851,12 @@ ICA.addUnit({
   cpBank:[
    {id:"e1u8-cp01", lesson:"e1u8-l1", level:1, q:"Kenji will tell his ゼミ how his own graduation research is going: what he has done so far and what he will do next. What kind of 発表 is this?", options:[
      {t:"輪読", why:"In 輪読, members take turns presenting chapters of a book that the ゼミ reads together."},
-     {t:"文献紹介", why:"In a 文献紹介, you summarise and comment on one paper or book by someone else."},
+     {t:"文献紹介", why:"In a 文献紹介, you summarize and comment on one paper or book by someone else."},
      {t:"進捗報告", ok:true, why:"A 進捗報告 reports how your own research is going."},
      {t:"学会発表", why:"A 学会発表 is a talk at an academic society’s conference, not an update in a ゼミ."}]},
    {id:"e1u8-cp02", lesson:"e1u8-l1", level:2, q:"In her 発表, Ana is moving on to the next part, where she will explain her method to the audience. Which sentence is correct?", options:[
-     {t:"「次に、調査の方法についてご説明になります。」", why:"ご〜になる is 尊敬語, so it would raise Ana’s own explaining. Her action towards the audience takes ご〜する."},
-     {t:"「次に、調査の方法についてご説明します。」", ok:true, why:"ご〜する is 謙譲語Ⅰ: Ana’s own explaining, which goes towards the audience. It is the standard light keigo of a 発表."},
+     {t:"「次に、調査の方法についてご説明になります。」", why:"ご〜になる is 尊敬語, so it would raise Ana’s own explaining. Her action toward the audience takes ご〜する."},
+     {t:"「次に、調査の方法についてご説明します。」", ok:true, why:"ご〜する is 謙譲語Ⅰ: Ana’s own explaining, which goes toward the audience. It is the standard light keigo of a 発表."},
      {t:"「次に、調査の方法についてご説明ください。」", why:"お／ご〜ください is a request, so this asks the audience to do the explaining."},
      {t:"「次に、調査の方法について説明しちゃいます。」", why:"～ちゃう is a casual spoken contraction. A 発表 uses です・ます with light keigo: ご説明します."}]},
    {id:"e1u8-cp03", lesson:"e1u8-l2", level:1, q:"While her professor explains a point, Hana keeps answering 「なるほど」. What do some etiquette guides advise?", options:[
@@ -871,16 +871,16 @@ ICA.addUnit({
      {t:"「ご指摘ありがとうございます。その点は、今後の課題とさせていただきます。」", why:"That phrase is for points beyond the study. The number of interviews is part of her design, which she can explain."}]},
    {id:"e1u8-cp05", lesson:"e1u8-l2", level:3, q:"In 質疑応答, Kofi is asked why scores fell in the second year. He didn’t study the cause, but he has a reasoned idea. Which reply is best?", options:[
      {t:"「2年生はアルバイトが増えるからです。データでは約6割です。」", why:"This states a guess as fact and adds a figure he never checked. Never invent a number to fill a silence."},
-     {t:"「わかりません。」", why:"Too abrupt. If he really had no idea, 勉強不足で申し訳ありませんが… would be the polite way; here he can offer a labelled guess."},
+     {t:"「わかりません。」", why:"Too abrupt. If he really had no idea, 勉強不足で申し訳ありませんが… would be the polite way; here he can offer a labeled guess."},
      {t:"「推測になりますが、2年生になるとアルバイトの時間が増えるためではないかと考えています。確認して、後日ご報告いたします。」", ok:true, why:"推測になりますが labels the guess clearly, and offering to check is honest and helpful."},
-     {t:"「その点は、今後の課題とさせていただきます。」", why:"This avoids the question. It suits points beyond the study, but a clearly labelled guess is more helpful here."}]},
+     {t:"「その点は、今後の課題とさせていただきます。」", why:"This avoids the question. It suits points beyond the study, but a clearly labeled guess is more helpful here."}]},
    {id:"e1u8-cp06", lesson:"e1u8-l3", level:2, q:"Priya’s professor asks: 「金曜日は図書館が早く閉まるそうですが、知っていますか。」 Priya knows about it. Which reply is correct?", options:[
      {t:"「はい、存じ上げております。」", why:"存じ上げる (謙譲語Ⅰ) is for knowing a respected person or something of theirs, such as their name. A library’s opening hours are neither."},
      {t:"「はい、ご存じです。」", why:"ご存じ is 尊敬語, for the other person’s knowing, not Priya’s."},
      {t:"「はい、存じております。」", ok:true, why:"存じる (謙譲語Ⅱ) is “know” said politely to the listener. What Priya knows is a plain fact, not a respected person."},
      {t:"「はい、知っていらっしゃいます。」", why:"いらっしゃる is 尊敬語, so this would raise Priya herself."}]},
    {id:"e1u8-cp07", lesson:"e1u8-l3", level:3, q:"Kenji brings tea to a visiting professor and says 「お茶をお持ちしました。」 What do the two お do?", options:[
-     {t:"お茶 is 美化語; お持ちする is 謙譲語Ⅰ, raising the professor", ok:true, why:"Ask whose thing it is and who it is for: お茶 raises nobody, while お〜する raises the person the action goes towards."},
+     {t:"お茶 is 美化語; お持ちする is 謙譲語Ⅰ, raising the professor", ok:true, why:"Ask whose thing it is and who it is for: お茶 raises nobody, while お〜する raises the person the action goes toward."},
      {t:"Both are 尊敬語, raising the professor", why:"お持ちする is お〜する, which is 謙譲語Ⅰ: Kenji’s own action. 尊敬語 would be お〜になる."},
      {t:"お茶 is 尊敬語 because the tea is for the professor; お持ちする is 美化語", why:"お茶 is the standard example of 美化語, and お〜する is a 謙譲語Ⅰ verb pattern."},
      {t:"Both are 美化語, so neither raises anyone", why:"お茶 is 美化語, but お持ちする raises the professor, who receives the action."}]},
@@ -917,12 +917,12 @@ ICA.addUnit({
      starter:[
       "A [[happyou|発表]] (*happyō*) is an academic presentation. At Japanese universities you give them in a [[zemi|ゼミ]] (a small seminar class) and, later, perhaps at a [学会]{がっかい} (an academic conference).",
       "You usually hand out a [[rejume|レジュメ]] with it. Careful: in English a résumé is a CV, but in Japanese university life a レジュメ is a one- or two-page summary of your talk, with headings, bullet points, figures and references.",
-      "The talk itself follows a fixed frame. You open with your name and topic (「本日は〜について発表いたします」), say how the talk is organised, go through background, method, results and discussion, and close with 「以上で発表を終わります。ご清聴ありがとうございました。」 Then come questions.",
+      "The talk itself follows a fixed frame. You open with your name and topic (「本日は〜について発表いたします」), say how the talk is organized, go through background, method, results and discussion, and close with 「以上で発表を終わります。ご清聴ありがとうございました。」 Then come questions.",
       {key:"Clear stages and set phrases matter more than perfect Japanese."}
      ],
      builder:[
       {h:"Kinds of 発表"},
-      {list:["**輪読**: presenting a chapter of a book the ゼミ reads together","**文献紹介**: summarising and commenting on one paper","**進捗報告**: reporting progress on your own research","**卒論中間発表**: an interim talk on your graduation thesis","**学会発表**: a conference talk, oral (口頭発表) or poster (ポスター発表), chaired by a 座長"]},
+      {list:["**輪読**: presenting a chapter of a book the ゼミ reads together","**文献紹介**: summarizing and commenting on one paper","**進捗報告**: reporting progress on your own research","**卒論中間発表**: an interim talk on your graduation thesis","**学会発表**: a conference talk, oral (口頭発表) or poster (ポスター発表), chaired by a 座長"]},
       {h:"The レジュメ"},
       "Header (course and session, presenter and year, title), numbered headings with short bullets, key quotations with page numbers, one to three 論点 for discussion, and 参考文献. Written in noun-ending lines (体言止め) or である体, not in full です・ます sentences. Size and length follow your teacher: ask for a past example.",
       {h:"Stock phrases"},
@@ -932,7 +932,7 @@ ICA.addUnit({
      ],
      pro:[
       {h:"Register"},
-      "The spoken talk is in です・ます with light keigo: いたします for your own acts, ご覧ください and ご説明します towards the audience. 「発表させていただきます」 is common and accepted; 「発表いたします」 is simpler, and stacking させていただく on every verb sounds heavy. Avoid 話し言葉 markers (えっと, なんか, めっちゃ, sentence-initial で、) and use pauses instead of fillers.",
+      "The spoken talk is in です・ます with light keigo: いたします for your own acts, ご覧ください and ご説明します toward the audience. 「発表させていただきます」 is common and accepted; 「発表いたします」 is simpler, and stacking させていただく on every verb sounds heavy. Avoid 話し言葉 markers (えっと, なんか, めっちゃ, sentence-initial で、) and use pauses instead of fillers.",
       {h:"Delivery"},
       "Many teachers advise against reading the レジュメ or a full script aloud, since listeners can read the handout themselves and a read text loses contact with them. One university guide to ゼミ presentations also asks presenters to keep strictly to the time set (for example 30 minutes plus 10 for questions), to bring enough copies, and to tell listeners which part of the レジュメ they are on. Rehearse with a timer; conferences are stricter than ゼミ, and some ring a bell as a warning.",
       {h:"Field and institution differences"},
@@ -991,7 +991,7 @@ ICA.addUnit({
      ],
      builder:[
       {h:"The five categories"},
-      {table:[["Category","Function","Examples"],["尊敬語","Raises the person who acts or owns","いらっしゃる、おっしゃる、お読みになる、先生のご研究"],["謙譲語Ⅰ","Raises the person your action goes towards","伺う、申し上げる、拝見する、お送りする"],["謙譲語Ⅱ（丁重語）","Your action, said politely to the listener","参ります、申します、いたします、おります"],["丁寧語","Polite to the listener","です、ます、ございます"],["美化語","Refines the word itself","お茶、ご飯"]]},
+      {table:[["Category","Function","Examples"],["尊敬語","Raises the person who acts or owns","いらっしゃる、おっしゃる、お読みになる、先生のご研究"],["謙譲語Ⅰ","Raises the person your action goes toward","伺う、申し上げる、拝見する、お送りする"],["謙譲語Ⅱ（丁重語）","Your action, said politely to the listener","参ります、申します、いたします、おります"],["丁寧語","Polite to the listener","です、ます、ございます"],["美化語","Refines the word itself","お茶、ご飯"]]},
       {h:"Patterns"},
       "尊敬語: special verbs, お〜になる / ご〜になる, 〜れる／られる, お／ご〜ください. 謙譲語Ⅰ: special verbs, お〜する / ご〜する, お／ご〜いただく. 謙譲語Ⅱ: 参る, 申す, いたす, おる, 存じる, nearly always with ます. お／ご〜いたす (ご連絡いたします) is both Ⅰ and Ⅱ.",
       {h:"Ⅰ or Ⅱ?"},
@@ -999,13 +999,13 @@ ICA.addUnit({
      ],
      pro:[
       {h:"The guidelines’ definitions"},
-      "The guidelines define 謙譲語Ⅰ as describing an action or thing that goes from your side towards the other side or a third person, raising the person it goes towards; 謙譲語Ⅱ as describing your own side’s actions politely to the listener or reader; 丁寧語 as speaking politely to the listener; and 美化語 as describing things in a refined way. They present keigo as grounded in mutual respect and chosen by the speaker to suit the situation.",
+      "The guidelines define 謙譲語Ⅰ as describing an action or thing that goes from your side toward the other side or a third person, raising the person it goes toward; 謙譲語Ⅱ as describing your own side’s actions politely to the listener or reader; 丁寧語 as speaking politely to the listener; and 美化語 as describing things in a refined way. They present keigo as grounded in mutual respect and chosen by the speaker to suit the situation.",
       {h:"The three jobs of お／ご"},
       "先生のお名前 (尊敬語: theirs), 先生へのお手紙 (謙譲語Ⅰ: yours, going to them), お茶 (美化語: nobody raised). Usually お with native words and ご with Sino-Japanese words, with exceptions such as お電話 and お時間.",
       {h:"Choosing between 尊敬語 forms"},
       "Special verbs and お〜になる are the most respectful. 〜れる／られる is lighter and common in speech, but can be confused with passive or potential forms (来られる). Cited authors in papers get no keigo: 「山田（2020）は〜と述べている」.",
       {h:"Labels versus use"},
-      "Many textbooks still teach three categories; the five are a finer description, not a different system. Usage changes, and the guidelines themselves treat many points as matters of judgement. Read them for the reasoning: they are written for the general public.",
+      "Many textbooks still teach three categories; the five are a finer description, not a different system. Usage changes, and the guidelines themselves treat many points as matters of judgment. Read them for the reasoning: they are written for the general public.",
       {h:"Key verbs"},
       {table:[["Plain","尊敬語","謙譲語"],["いる・行く・来る","いらっしゃる","おります・参ります; 伺う (visit)"],["言う","おっしゃる","申します・申し上げる"],["見る","ご覧になる","拝見する"],["もらう・くれる","くださる","いただく"],["知っている","ご存じだ","存じております・存じ上げる"]]}
      ]
@@ -1106,7 +1106,7 @@ ICA.addUnit({
      ],
      pro:[
       {h:"研究室訪問 before graduate school"},
-      "In Japan, 研究室訪問 also means visiting a professor’s lab before applying to their graduate programme, to discuss your research plan and see whether the lab suits you. It is common and often expected; arrange it by a careful first-contact email (「はじめてご連絡いたします」) with your research interests and a short plan. For graduate study in general, see {{supervision}} and {{graduate-degrees}}.",
+      "In Japan, 研究室訪問 also means visiting a professor’s lab before applying to their graduate program, to discuss your research plan and see whether the lab suits you. It is common and often expected; arrange it by a careful first-contact email (「はじめてご連絡いたします」) with your research interests and a short plan. For graduate study in general, see {{supervision}} and {{graduate-degrees}}.",
       {h:"Supervisors and labs"},
       "Your [[shidou-kyouin|指導教員]] (supervisor) is your main contact for thesis work. In science and engineering, daily life happens in the 研究室, where 先輩 can explain local customs: how to book the professor, how to address them, what to bring.",
       {h:"Follow-up"},
@@ -1120,7 +1120,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"academic-japanese-next-steps", title:"Academic Japanese: keeping going", aka:["after Academic Japanese","Academic Language send-off","keep learning"], tags:["academic Japanese","study skills"],
-    summary:"A map of what Academic Japanese covered, how to keep practising, and where to go next in IT CHICK Academy.",
+    summary:"A map of what Academic Japanese covered, how to keep practicing, and where to go next in IT CHICK Academy.",
     levels:{
      starter:[
       "Academic Japanese covered four areas: the styles and words of academic Japanese ({{desu-masu-and-dearu}}, {{written-vs-spoken-japanese}}), reading papers ({{reading-japanese-papers}}), writing reports ({{japanese-report-structure}}), and speaking with professors and in ゼミ ({{japanese-presentations}}, {{keigo-system}}).",
@@ -1137,7 +1137,7 @@ ICA.addUnit({
       {h:"Use the real thing"},
       "Your best materials are your own: your teachers’ emails, your ゼミ’s past レジュメ, your field’s journals and theses. Copy their structures, not their sentences, and cite what you use (see {{japanese-plagiarism-ai}}).",
       {h:"Get feedback"},
-      "Many universities have a writing centre or learning support office that reads drafts in Japanese. A 先輩 or a classmate can check keigo in an email. Teachers usually welcome a short, specific question more than a long, general one.",
+      "Many universities have a writing center or learning support office that reads drafts in Japanese. A 先輩 or a classmate can check keigo in an email. Teachers usually welcome a short, specific question more than a long, general one.",
       {h:"Be kind to yourself"},
       "Keigo and academic style are learned over years, by everyone. A clear message with one small slip is better than no message at all, and every 発表 you give makes the next one easier."
      ]
@@ -1147,8 +1147,8 @@ ICA.addUnit({
   ],
   terms:[
    {id:"happyou", term:"発表 (happyō)", def:"An academic presentation, such as a talk in a ゼミ or at a conference (学会発表). Usually given with a レジュメ handout and followed by 質疑応答.", codex:"japanese-presentations"},
-   {id:"rejume", term:"レジュメ (rejume)", def:"At Japanese universities, the one- or two-page handout that summarises a presentation: headings, bullet points, figures, discussion points and references. Not a CV, which is a 履歴書.", codex:"japanese-presentations"},
-   {id:"zemi", term:"ゼミ (zemi)", def:"A small seminar class led by one teacher, where students present and discuss; in many programmes students stay in one ゼミ until their graduation thesis. From the German “Seminar”.", codex:"japanese-presentations"},
+   {id:"rejume", term:"レジュメ (rejume)", def:"At Japanese universities, the one- or two-page handout that summarizes a presentation: headings, bullet points, figures, discussion points and references. Not a CV, which is a 履歴書.", codex:"japanese-presentations"},
+   {id:"zemi", term:"ゼミ (zemi)", def:"A small seminar class led by one teacher, where students present and discuss; in many programs students stay in one ゼミ until their graduation thesis. From the German “Seminar”.", codex:"japanese-presentations"},
    {id:"shikai", term:"司会 (shikai)", def:"The person who chairs or hosts a session: introduces speakers, keeps time and runs the questions. At a conference this role is called 座長 (zachō).", codex:"zemi-discussion"},
    {id:"shitsugi-outou", term:"質疑応答 (shitsugi ōtō)", def:"Questions and answers: the part after a 発表 when the audience asks questions or makes comments and the presenter answers.", codex:"zemi-discussion"},
    {id:"kushion-kotoba", term:"クッション言葉 (kusshon kotoba)", def:"“Cushion words”: short phrases such as 恐れ入りますが or 差し支えなければ, placed before a request, question or disagreement to soften it.", codex:"zemi-discussion"},
@@ -1156,20 +1156,20 @@ ICA.addUnit({
    {id:"keigo", term:"Keigo (敬語)", def:"Japanese honorific language: ways of showing respect and consideration by changing verbs, nouns and set phrases depending on who acts and who you are speaking to.", codex:"keigo-system"},
    {id:"keigo-no-shishin", term:"敬語の指針 (Guidelines on Keigo)", def:"The official guidelines on keigo published in 2007 by Japan’s Council for Cultural Affairs (文化審議会). They describe five categories of keigo.", codex:"keigo-system"},
    {id:"sonkeigo", term:"尊敬語 (sonkeigo)", def:"Respectful language: forms that raise the person who does an action or owns a thing, such as いらっしゃる, おっしゃる, お読みになる and 先生のご研究.", codex:"keigo-system"},
-   {id:"kenjougo", term:"謙譲語 (kenjōgo)", def:"Humble language for your own (or your side’s) actions. The 2007 guidelines divide it into 謙譲語Ⅰ, which raises the person your action goes towards (伺う, 拝見する, お送りする), and 謙譲語Ⅱ (丁重語).", codex:"keigo-system"},
+   {id:"kenjougo", term:"謙譲語 (kenjōgo)", def:"Humble language for your own (or your side’s) actions. The 2007 guidelines divide it into 謙譲語Ⅰ, which raises the person your action goes toward (伺う, 拝見する, お送りする), and 謙譲語Ⅱ (丁重語).", codex:"keigo-system"},
    {id:"teichougo", term:"謙譲語Ⅱ / 丁重語 (teichōgo)", def:"Forms that describe your own actions politely to the person you are talking to, without raising anyone in the sentence: 参ります, 申します, いたします, おります.", codex:"keigo-system"},
    {id:"teineigo", term:"丁寧語 (teineigo)", def:"Polite language addressed to the listener: です, ます and the more formal ございます.", codex:"keigo-system"},
    {id:"bikago", term:"美化語 (bikago)", def:"Words made more refined with お or ご, such as お茶 and ご飯, without raising anyone. One of the five categories in the 2007 guidelines.", codex:"keigo-system"},
    {id:"nijuu-keigo", term:"二重敬語 (nijū keigo)", def:"Using the same kind of keigo twice in one word, such as おっしゃられる (おっしゃる + 〜れる). Generally considered inappropriate, though a few forms such as お召し上がりになる are accepted by custom.", codex:"keigo-mistakes"},
    {id:"uchi-soto", term:"ウチ・ソト (uchi/soto)", def:"Inside and outside groups. When speaking to an outsider, you treat people on your own side (family, colleagues, your boss) as part of “you”: no 尊敬語 or titles for them.", codex:"keigo-mistakes"},
    {id:"kenmei", term:"件名 (kenmei)", def:"The subject line of an email. To a professor, it should name the topic and usually the course and your name.", codex:"emailing-japanese-professors"},
-   {id:"kenkyuushitsu", term:"研究室 (kenkyūshitsu)", def:"A professor’s office, and also their research group or lab. 研究室訪問 means visiting it, including visits before applying to a graduate programme.", codex:"visiting-a-professor"},
+   {id:"kenkyuushitsu", term:"研究室 (kenkyūshitsu)", def:"A professor’s office, and also their research group or lab. 研究室訪問 means visiting it, including visits before applying to a graduate program.", codex:"visiting-a-professor"},
    {id:"shidou-kyouin", term:"指導教員 (shidō kyōin)", def:"Your academic supervisor: the teacher who guides your ゼミ work, graduation thesis or graduate research.", codex:"visiting-a-professor"}
   ],
   bank:[
    /* ---------- Lesson 1 ---------- */
    {id:"e1u8-q01", lesson:"e1u8-l1", level:1, q:"At a Japanese university, what is a レジュメ?", options:[
-     {t:"A handout that summarises a presentation", ok:true, why:"In Japanese academic life, a レジュメ is the summary handout for a 発表."},
+     {t:"A handout that summarizes a presentation", ok:true, why:"In Japanese academic life, a レジュメ is the summary handout for a 発表."},
      {t:"A CV for job applications", why:"That is the English meaning of résumé; in Japanese a CV is a 履歴書."},
      {t:"The final version of a graduation thesis", why:"That is the 卒業論文 itself."},
      {t:"An attendance sheet", why:"A レジュメ is about the content of a talk, not attendance."}
@@ -1315,13 +1315,13 @@ ICA.addUnit({
      {t:"申します", why:"That is 謙譲語Ⅱ."}
    ]},
    {id:"e1u8-q25", lesson:"e1u8-l3", level:2, q:"What is the お in 先生へのお手紙 (your letter to the professor)?", options:[
-     {t:"謙譲語Ⅰ: your letter, going towards the professor", ok:true, why:"お on your thing directed to a respected person raises them."},
+     {t:"謙譲語Ⅰ: your letter, going toward the professor", ok:true, why:"お on your thing directed to a respected person raises them."},
      {t:"尊敬語: the professor’s letter", why:"The letter is yours, not the professor’s; 先生からのお手紙 would be 尊敬語."},
      {t:"美化語: just a refined word", why:"Here the お raises the professor as the receiver."},
      {t:"丁寧語", why:"丁寧語 is です・ます."}
    ]},
    {id:"e1u8-q26", lesson:"e1u8-l3", level:3, q:"Priya wants to say she will send the professor the documents. Which is correct?", options:[
-     {t:"「資料をお送りします。」", ok:true, why:"お〜する (謙譲語Ⅰ): her action, going towards the professor."},
+     {t:"「資料をお送りします。」", ok:true, why:"お〜する (謙譲語Ⅰ): her action, going toward the professor."},
      {t:"「資料をお送りになります。」", why:"お〜になる is 尊敬語: it would raise Priya herself."},
      {t:"「資料を送られます。」", why:"〜れる here would be 尊敬語 (or passive): wrong for her own action."},
      {t:"「資料をお送りくださいます。」", why:"お〜くださる is 尊敬語: it would mean the professor does the sending."}

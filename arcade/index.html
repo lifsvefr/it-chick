@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=84">
+<link rel="stylesheet" href="../shared/style.css?v=85">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=84"></script>
+<script src="../shared/engine.js?v=85"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
@@ -1490,7 +1490,7 @@ HOW.echo = ["Listen to a line, then say it back. Copying a voice straight after 
   "8 lines a round. First-try matches score most."];
 ART.echo = '<g class="mv"><rect x="40" y="10" width="20" height="32" rx="10" class="A"/><path d="M32 32 a18 18 0 0 0 36 0 M50 50 v10 M40 60 h20" class="S" style="stroke-width:3"/></g><path d="M76 24 q6 8 0 16 M84 18 q12 14 0 28" class="S idle"/><path d="M24 24 q-6 8 0 16 M16 18 q-12 14 0 28" class="S idle"/>';
 var ECHO_SR = window.SpeechRecognition || window.webkitSpeechRecognition || null;
-/* Android Chrome and iPads can't record and recognise at once (the owner's Speaking Quest found this): there, Say it only checks */
+/* Android Chrome and iPads can't record and recognize at once (the owner's Speaking Quest found this): there, Say it only checks */
 var ECHO_SHARE = !/Android/i.test(navigator.userAgent) && !(navigator.maxTouchPoints > 1 && /Macintosh|iPad/.test(navigator.userAgent));
 function echoNorm(s){ return String(s || "").replace(/\[([^\]]*)\]\{[^}]*\}/g, "$1").replace(/[\s、。！？!?,.「」『』・…ー〜～]/g, "").replace(/[ァ-ヶ]/g, function(c){ return String.fromCharCode(c.charCodeAt(0) - 0x60); }); }
 function echoReading(furi, t){ return furi ? furi.replace(/\[[^\]]*\]\{([^}]*)\}/g, "$1") : t; }

@@ -28,7 +28,7 @@ ICA.addUnit({
     {h:"From your device to everyone’s", body:[
       {lead:"A page on your own device is like a poster in your drawer. To let anyone see it, you need a wall in a public place that never closes."},
       "So far your pages have lived in the Web Lab or in files on your device. Only you can open them. For a page to have a web address that works for anyone, anywhere, at any time, its files have to sit on a [[web-server|web server]]: a computer that is always on, always connected, and ready to answer browsers’ requests.",
-      "Very few people run their own server. Instead they use [[hosting]]: a company keeps servers in [[data-center|data centres]], with backup power and fast connections, and stores your files on them. You rent space (or get it free), and the host answers every visitor for you.",
+      "Very few people run their own server. Instead they use [[hosting]]: a company keeps servers in [[data-center|data centers]], with backup power and fast connections, and stores your files on them. You rent space (or get it free), and the host answers every visitor for you.",
       "When someone opens your address, the steps are the ones you met in Digital Foundations ({{how-the-web-works}}): the browser looks up the name with [[dns|DNS]], connects to the host’s server, asks for a file such as `index.html`, and gets it back. Then it asks for the style sheet, the images and the scripts the page mentions.",
       {key:"Hosting means renting space on an always-on computer that answers visitors for you. Publishing means putting your files there."}
     ]},
@@ -92,7 +92,7 @@ ICA.addUnit({
         ["Project","Good fit","Why"],
         ["Kenji’s portfolio of design work","GitHub Pages","Static, personal, free"],
         ["Fatima’s bakery taking online orders","A paid host or shop platform","Payments and orders need a server; e-commerce is outside GitHub Pages’ rules"],
-        ["A neighbourhood garden club with a contact form","Any free static host plus a form service","Static pages; the form service keeps the messages"]
+        ["A neighborhood garden club with a contact form","Any free static host plus a form service","Static pages; the form service keeps the messages"]
       ]},
       {h:"Common misconceptions"},
       {list:[
@@ -136,7 +136,7 @@ ICA.addUnit({
       {v:56, tol:0, why:"That’s 4 × $14. The first year is only $2."},
       {v:16, tol:0, why:"That’s one year at $2 plus one at $14. The question asks for four years."}
     ]},
-    {id:"t2u5-l1-x6", type:"mcq", q:"Oluwaseun wants to sell hand-made jewellery with a basket and card payments. Which hosting choice fits?", options:[
+    {id:"t2u5-l1-x6", type:"mcq", q:"Oluwaseun wants to sell hand-made jewelry with a basket and card payments. Which hosting choice fits?", options:[
       {t:"A paid host or a shop platform that handles orders and payments", ok:true, why:"Orders and payments need server-side software, and a commercial shop is outside the free static hosts’ intended use."},
       {t:"GitHub Pages, because it’s free and supports custom domains", why:"GitHub’s rules say Pages isn’t for e-commerce or online businesses, and it can’t process payments."},
       {t:"Any static host, adding JavaScript to take card numbers", why:"Never collect card numbers in your own page script. Payments need a secure payment service, and GitHub says Pages sites shouldn’t be used for sensitive transactions such as sending card numbers."},
@@ -204,7 +204,7 @@ ICA.addUnit({
       "Here is a small `index.html` for that site. Every path in it is relative, so it works wherever the site is published:",
       {code:'<!doctype html>\n<html lang="en">\n<head>\n  <meta charset="utf-8">\n  <meta name="viewport"\n    content="width=device-width, initial-scale=1">\n  <title>Riverside Garden Club</title>\n  <link rel="stylesheet" href="style.css">\n</head>\n<body>\n  <h1>Riverside Garden Club</h1>\n  <p>We meet every Saturday at 9:00.</p>\n  <img src="images/beds.jpg"\n    alt="Raised vegetable beds">\n  <p><a href="about.html">About us</a></p>\n</body>\n</html>', lang:"html", label:"index.html", weblab:"wl-first-page", cap:"`style.css`, `images/beds.jpg` and `about.html` are found relative to the page itself."},
       {warn:"A [[github-pages|GitHub Pages]] **project site** lives one folder down, at `your-username.github.io/garden-club/`. A path starting with a slash, such as `href=\"/style.css\"`, means “from the top of the whole domain”, so it points to `your-username.github.io/style.css`, which doesn’t exist. Leave out the leading slash."},
-      {lab:"wl-first-page", t:"Practise: build a small home page with a heading and a paragraph, ready to publish"}
+      {lab:"wl-first-page", t:"Practice: build a small home page with a heading and a paragraph, ready to publish"}
     ]},
     {h:"Create a repository and upload your files", body:[
       "On github.com, signed in:",
@@ -431,7 +431,7 @@ ICA.addUnit({
         ["Message or symptom","What it usually means"],
         ["A message that the domain doesn’t resolve to the GitHub Pages server","Records missing, mistyped, or still spreading"],
         ["A message that the domain is already taken","Another repository uses it; verifying the domain releases it to you (unless someone else verified it first)"],
-        ["Enforce HTTPS is greyed out","The certificate isn’t ready yet; wait, or remove and re-add the domain"],
+        ["Enforce HTTPS is grayed out","The certificate isn’t ready yet; wait, or remove and re-add the domain"],
         ["Site worked, now 404 at the domain","The `CNAME` file was deleted, or the domain was removed in Settings"],
         ["Some people see the old site","Cached DNS answers; wait for the TTL to pass"]
       ]}
@@ -476,7 +476,7 @@ ICA.addUnit({
       {t:"The only risk is that the old site keeps showing", why:"The old site is gone; the danger is that a stranger’s site could appear at his address."},
       {t:"He should delete his GitHub account so the domain can’t be used", why:"That doesn’t touch the DNS record, which is the actual problem."}
     ]},
-    {id:"t2u5-l3-x7", type:"mcq", q:"Fatima added `www.example.com` to her site ten minutes ago. The site loads, but **Enforce HTTPS** is greyed out. What’s the best next step?", options:[
+    {id:"t2u5-l3-x7", type:"mcq", q:"Fatima added `www.example.com` to her site ten minutes ago. The site loads, but **Enforce HTTPS** is grayed out. What’s the best next step?", options:[
       {t:"Wait: the certificate may not be ready yet", ok:true, why:"GitHub says it can take up to 24 hours for the option. The certificate is requested after the DNS check passes and takes time. If it stays stuck, removing and re-adding the domain restarts the process."},
       {t:"Buy a certificate and upload it to the repository", why:"GitHub Pages gets and renews a free Let’s Encrypt certificate itself; there’s nothing to upload."},
       {t:"Change every link on the site to `http://`", why:"That creates mixed content later. The fix is to wait for the certificate."},
@@ -536,7 +536,7 @@ ICA.addUnit({
     ]},
     {h:"Images: the usual culprit", body:[
       "An image has two sizes: its **dimensions** in pixels and its **file size** in bytes. A camera photo can be thousands of pixels wide and several megabytes. A web page rarely shows it wider than about 1,000–1,600 pixels.",
-      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="20" text-anchor="middle">From the camera: 4000 × 3000</text><rect class="d-soft" x="20" y="30" width="300" height="225" stroke-width="2"/><path class="d-soft" d="M80 30L80 255M140 30L140 255M200 30L200 255M260 30L260 255M20 75L320 75M20 120L320 120M20 165L320 165M20 210L320 210" stroke-width="1"/><rect class="d-rose" x="20" y="30" width="60" height="45" stroke-width="3"/><rect class="d-panel" x="84" y="44" width="116" height="20" stroke-width="0"/><text class="s" x="88" y="58">shown: 800 × 600</text><rect class="d-panel" x="132" y="134" width="136" height="24" stroke-width="0"/><text x="200" y="151" text-anchor="middle">12 million pixels</text><text x="20" y="280">On screen it fills 1 of these 25 boxes:</text><text x="20" y="300">0.48 million pixels, 4% of the photo.</text></svg>', alt:"A large rectangle representing a 4000 by 3000 pixel camera photo, 12 million pixels, divided into a 5 by 5 grid. One small box in the top-left corner, outlined in rose, is labelled shown: 800 by 600. Text below: on screen it fills 1 of these 25 boxes, 0.48 million pixels, 4% of the photo.", cap:"A fifth of the width times a fifth of the height is a twenty-fifth of the pixels."},
+      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="20" text-anchor="middle">From the camera: 4000 × 3000</text><rect class="d-soft" x="20" y="30" width="300" height="225" stroke-width="2"/><path class="d-soft" d="M80 30L80 255M140 30L140 255M200 30L200 255M260 30L260 255M20 75L320 75M20 120L320 120M20 165L320 165M20 210L320 210" stroke-width="1"/><rect class="d-rose" x="20" y="30" width="60" height="45" stroke-width="3"/><rect class="d-panel" x="84" y="44" width="116" height="20" stroke-width="0"/><text class="s" x="88" y="58">shown: 800 × 600</text><rect class="d-panel" x="132" y="134" width="136" height="24" stroke-width="0"/><text x="200" y="151" text-anchor="middle">12 million pixels</text><text x="20" y="280">On screen it fills 1 of these 25 boxes:</text><text x="20" y="300">0.48 million pixels, 4% of the photo.</text></svg>', alt:"A large rectangle representing a 4000 by 3000 pixel camera photo, 12 million pixels, divided into a 5 by 5 grid. One small box in the top-left corner, outlined in rose, is labeled shown: 800 by 600. Text below: on screen it fills 1 of these 25 boxes, 0.48 million pixels, 4% of the photo.", cap:"A fifth of the width times a fifth of the height is a twenty-fifth of the pixels."},
       {ol:[
         "**Resize** to about the largest size the page shows it. MDN notes that very few people can see any gain beyond twice the displayed size on sharp screens, so 2× is a sensible maximum.",
         "**Compress**: save at a sensible quality. MDN suggests a JPEG quality around 75% gives decent results. Free tools such as Squoosh (`squoosh.app`) work in the browser, even on a phone, and show before and after side by side.",
@@ -545,7 +545,7 @@ ICA.addUnit({
       {table:[
         ["Content","Good format","Why"],
         ["Photos","JPEG or WebP","Small files for smooth, detailed images; WebP is usually smaller"],
-        ["Screenshots, flat colours, transparency","PNG or WebP","Keeps sharp edges and text crisp"],
+        ["Screenshots, flat colors, transparency","PNG or WebP","Keeps sharp edges and text crisp"],
         ["Logos, icons, diagrams","SVG","Drawn from shapes, so sharp at any size and tiny"]
       ]},
       "AVIF compresses even better and is supported by current versions of the major browsers; MDN’s compatibility tables show which versions. You can offer a modern format with a fallback using the `<picture>` element.",
@@ -553,7 +553,7 @@ ICA.addUnit({
       {code:'<img src="images/market-800.webp"\n  width="800" height="533"\n  alt="Fruit stalls at the Saturday market"\n  loading="lazy">', lang:"html", label:"HTML", weblab:"wl-image"},
       {code:'img {\n  max-width: 100%;\n  height: auto;\n}', lang:"css", label:"CSS", cap:"The image shrinks to fit narrow screens and keeps its shape; `width` and `height` still give the browser its proportions."},
       "`loading=\"lazy\"` tells the browser to wait until the visitor scrolls near the image. Use it for images further down the page, **not** for the main image at the top, which should load straight away.",
-      {lab:"wl-image", t:"Practise: add an image with useful alt text"}
+      {lab:"wl-image", t:"Practice: add an image with useful alt text"}
     ]},
     {h:"Titles and descriptions: how you look in search", body:[
       "Two lines in your page’s `<head>` decide how it’s introduced to the world:",
@@ -582,7 +582,7 @@ ICA.addUnit({
         "**Link text that makes sense alone:** “Read the menu”, not “click here”.",
         "**[[contrast|Contrast]].** WCAG asks for at least 4.5:1 between normal text and its background."
       ]},
-      {lab:"wl-headings", t:"Practise: put headings in a sensible order"}
+      {lab:"wl-headings", t:"Practice: put headings in a sensible order"}
     ]},
     {h:"A ten-minute accessibility check", body:[
       {ol:[
@@ -608,7 +608,7 @@ ICA.addUnit({
     ]},
     {id:"t2u5-l4-x2", type:"match", q:"Match each image with the format that suits it best.", pairs:[
       ["A photo of a sunset over hills","JPEG or WebP","Photos compress well in these formats."],
-      ["A screenshot of a settings menu with small text","PNG","PNG keeps the sharp edges of text and flat colours."],
+      ["A screenshot of a settings menu with small text","PNG","PNG keeps the sharp edges of text and flat colors."],
       ["The café’s logo, made of simple shapes","SVG","Drawn from shapes, so it stays sharp at any size and is tiny."],
       ["A photo where you want the smallest file current browsers support","AVIF, with a fallback","AVIF compresses better still; a `<picture>` fallback covers older browsers."]
     ]},
@@ -626,9 +626,9 @@ ICA.addUnit({
       {t:"`alt=\"logo.png\"`", why:"A file name tells listeners nothing useful."},
       {t:"`alt=\"Image of a blue and white logo with a coffee cup\"`", why:"Screen readers already say it’s an image or link; what matters is the link’s purpose, not the drawing."}
     ]},
-    {id:"t2u5-l4-x5", type:"sort", q:"Kenji ran WAVE on his site. Which problems can an automated checker reliably find, and which need a person to judge?", buckets:["A tool can find it","Needs human judgement"], items:[
+    {id:"t2u5-l4-x5", type:"sort", q:"Kenji ran WAVE on his site. Which problems can an automated checker reliably find, and which need a person to judge?", buckets:["A tool can find it","Needs human judgment"], items:[
       {t:"An image with no alt attribute at all", b:0, why:"The tool can see the attribute is missing."},
-      {t:"Grey text on a white background below 4.5:1 contrast", b:0, why:"Contrast between solid colours is a calculation tools do well."},
+      {t:"Gray text on a white background below 4.5:1 contrast", b:0, why:"Contrast between solid colors is a calculation tools do well."},
       {t:"A link with no text inside it", b:0, why:"Empty links are easy to detect in the HTML."},
       {t:"Alt text that describes the wrong photo", b:1, why:"A tool can see alt text exists, but not whether it matches the image."},
       {t:"Keyboard focus that jumps around in a confusing order", b:1, why:"Whether the order makes sense needs someone to tab through and judge."},
@@ -705,7 +705,7 @@ ICA.addUnit({
       {tip:"Put these in your calendar as repeating reminders now, while you remember. A five-minute check each month beats a weekend of repairs after two years."}
     ]},
     {h:"Broken links", body:[
-      "A [[broken-link|broken link]] leads to an error, usually a 404. Links to your **own** pages break when you rename or move a file, or change capitals. Links to **other** sites break when those sites reorganise or disappear.",
+      "A [[broken-link|broken link]] leads to an error, usually a 404. Links to your **own** pages break when you rename or move a file, or change capitals. Links to **other** sites break when those sites reorganize or disappear.",
       {list:[
         "**Small site:** click through every link yourself once a month.",
         "**Bigger site:** use a link checker. The W3C Link Checker (`validator.w3.org/checklink`) is free and checks a page’s links online; some browser extensions do the same.",
@@ -724,14 +724,14 @@ ICA.addUnit({
     ]},
     {h:"Backups: the repository remembers", body:[
       "Your repository is already a [[backup]] with full [[version-history|version history]]: every commit is kept. To see a file’s past, open it on GitHub and select **History**. Each entry shows what changed and when, with your commit message.",
-      "**To restore an earlier version** of one file through the website: open the old version from History, copy its contents, then open the current file, select the pencil, paste, and commit with a message such as “Restore menu from 3 May”. The mistake stays in the history too, which is fine: history is a record, not a judgement.",
+      "**To restore an earlier version** of one file through the website: open the old version from History, copy its contents, then open the current file, select the pencil, paste, and commit with a message such as “Restore menu from 3 May”. The mistake stays in the history too, which is fine: history is a record, not a judgment.",
       "But one copy, in one account, isn’t a full backup plan ({{backup}}). An account lockout or a deleted repository could take it away. Every few months, on the repository’s main page, select **Code → Download ZIP** and keep that file somewhere else, such as cloud storage or an external drive.",
       {warn:"Some important things aren’t in the repository at all: your DNS records, the registrar login and renewal date, the Pages settings, and any form or analytics service you signed up for. Keep a short private note of them (not in the public repository), so you or a successor can rebuild the setup."}
     ]},
     {h:"Privacy: what your site collects", body:[
       "A plain static site of your own files sets no cookies and collects no form data. One thing does happen: GitHub states that when a Pages site is visited, the visitor’s IP address is logged and stored for security purposes. Other hosts keep similar logs; their privacy statements say what and for how long.",
       "Adding things changes the picture. [[web-analytics|Analytics]] scripts, embedded videos and maps, social media buttons and fonts loaded from other servers can set [[cookie|cookies]] or send visitors’ data (such as their IP address and the page they’re on) to other companies.",
-      "**The law depends on where you and your visitors are, and it changes.** As one example, the EU’s official guidance for businesses says sites need visitors’ consent before setting cookies used for things like analytics or behavioural advertising, while cookies strictly necessary for a service the visitor asked for (such as a shopping basket) don’t need it. Other countries have different rules. This lesson isn’t legal advice; for a site with real visitors, read the guidance from the data-protection authority where you are ({{data-protection-laws}}).",
+      "**The law depends on where you and your visitors are, and it changes.** As one example, the EU’s official guidance for businesses says sites need visitors’ consent before setting cookies used for things like analytics or behavioral advertising, while cookies strictly necessary for a service the visitor asked for (such as a shopping basket) don’t need it. Other countries have different rules. This lesson isn’t legal advice; for a site with real visitors, read the guidance from the data-protection authority where you are ({{data-protection-laws}}).",
       {list:[
         "**Collect less.** The simplest privacy plan is not to collect data you don’t need. Many small sites need no analytics at all.",
         "**If you add analytics,** prefer a tool that counts visits without tracking people across sites, and read what it collects.",
@@ -752,7 +752,7 @@ ICA.addUnit({
     ]},
     {h:"Security basics for a static site", body:[
       {list:[
-        "**No secrets in the repository.** A public repository shows every file and every past version. Never commit passwords, API keys or tokens (a [[secret-key|secret key]] is like a password for a service). GitHub may block an upload that contains a recognised secret (push protection), but don’t rely on that.",
+        "**No secrets in the repository.** A public repository shows every file and every past version. Never commit passwords, API keys or tokens (a [[secret-key|secret key]] is like a password for a service). GitHub may block an upload that contains a recognized secret (push protection), but don’t rely on that.",
         "**If a secret does get committed,** treat it as stolen: revoke it or change it at the service immediately. Deleting the file isn’t enough, because the old version stays in the history.",
         "**Secure your accounts.** Use a unique password and two-step verification on GitHub, your registrar and any form service. Whoever controls those controls your site. Keep GitHub’s recovery codes safe.",
         "**HTTPS always.** Keep **Enforce HTTPS** on, and use `https://` for anything you load from elsewhere.",
@@ -798,7 +798,7 @@ ICA.addUnit({
       {t:"It depends on what the script does and which laws apply", ok:true, why:"Rules differ by place and by what the tool stores or sends. In the EU, for example, the guidance names analytics cookies among those that need consent before being set."},
       {t:"Every website everywhere must show a cookie banner by law", why:"Requirements depend on the law and on what the site does. A plain static site that sets no cookies may need no banner at all."},
       {t:"A cookie banner makes any tracking legal", why:"Where consent is required, cookies mustn’t be set until the visitor agrees, and withdrawing consent must be easy. A banner alone doesn’t do that."},
-      {t:"Privacy laws only apply to big companies", why:"Many data-protection laws apply to any organisation or person running a site that handles personal data, with some exceptions that vary by country."}
+      {t:"Privacy laws only apply to big companies", why:"Many data-protection laws apply to any organization or person running a site that handles personal data, with some exceptions that vary by country."}
     ]},
     {id:"t2u5-l5-x5", type:"spot", q:"Mei is about to make her club’s repository public. Here is its file list. Tap every file that shouldn’t be in a public repository.", ask:"shouldn’t be public", mono:true, parts:[
       {t:"index.html", flag:false, why:"The site’s home page: meant to be public."},"\n",
@@ -831,11 +831,11 @@ ICA.addUnit({
        "Add repeating reminders to your calendar: monthly (links, dates, events), every three months (PageSpeed, WAVE, backup), yearly (domain renewal, account access, privacy note).",
        "Add a “Last updated” line to your home page if your content changes often."
      ], write:"Broken links you found and fixed, and the reminders you set."},
-     {t:"Make a backup and practise a restore", how:{
-       win:["On your repository’s main page, select **Code → Download ZIP**. Move the ZIP into a cloud storage folder or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practise restoring: copy an old version’s contents, edit the current file, paste, and commit with a message such as “Restore earlier home page text”. Then restore the latest version the same way."],
-       mac:["On your repository’s main page, select **Code → Download ZIP**. Move the ZIP into a cloud storage folder or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practise restoring: copy an old version’s contents, edit the current file, paste, and commit. Then restore the latest version the same way."],
-       chromeos:["On your repository’s main page, select **Code → Download ZIP**. In the Files app, move the ZIP into Google Drive or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practise restoring: copy an old version’s contents, edit the current file, paste, and commit. Then restore the latest version."],
-       phone:["On the repository’s main page in your phone’s browser, tap **Code → Download ZIP** (if you don’t see it, use **Request Desktop Website** from Safari’s page menu in the address bar, or **Desktop site** in Chrome’s **⋮** menu).","**iPhone:** the ZIP goes to Files → Downloads; move it to iCloud Drive or another cloud service. **Android:** it goes to Downloads; move it to Google Drive or another cloud service (app names vary by phone maker).","Open a page file on GitHub and tap **History** to see its earlier versions. Practise restoring one through the pencil editor, then restore the latest."]
+     {t:"Make a backup and practice a restore", how:{
+       win:["On your repository’s main page, select **Code → Download ZIP**. Move the ZIP into a cloud storage folder or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practice restoring: copy an old version’s contents, edit the current file, paste, and commit with a message such as “Restore earlier home page text”. Then restore the latest version the same way."],
+       mac:["On your repository’s main page, select **Code → Download ZIP**. Move the ZIP into a cloud storage folder or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practice restoring: copy an old version’s contents, edit the current file, paste, and commit. Then restore the latest version the same way."],
+       chromeos:["On your repository’s main page, select **Code → Download ZIP**. In the Files app, move the ZIP into Google Drive or onto an external drive.","Open a page file on GitHub and select **History**. Open an earlier version and compare it with the current one.","Practice restoring: copy an old version’s contents, edit the current file, paste, and commit. Then restore the latest version."],
+       phone:["On the repository’s main page in your phone’s browser, tap **Code → Download ZIP** (if you don’t see it, use **Request Desktop Website** from Safari’s page menu in the address bar, or **Desktop site** in Chrome’s **⋮** menu).","**iPhone:** the ZIP goes to Files → Downloads; move it to iCloud Drive or another cloud service. **Android:** it goes to Downloads; move it to Google Drive or another cloud service (app names vary by phone maker).","Open a page file on GitHub and tap **History** to see its earlier versions. Practice restoring one through the pencil editor, then restore the latest."]
      }},
      {t:"Do a privacy and security check", how:[
        "Look through every file in your repository (and the README). Remove anything personal or secret; if you find a secret, revoke it at the service.",
@@ -843,7 +843,7 @@ ICA.addUnit({
        "List everything your site loads from other servers (fonts, scripts, videos, maps, analytics). Remove what you don’t need.",
        "Write a short privacy note for your site: what it collects (if anything), which outside services it uses, and how to contact you. Keep it honest and simple."
      ], write:"What you removed or changed, and your privacy note."}
-   ], proof:"A link-checked site, maintenance reminders in your calendar, a downloaded ZIP backup stored in a second place, a practised restore from History, two-step verification on your accounts, and a short privacy note on your site."},
+   ], proof:"A link-checked site, maintenance reminders in your calendar, a downloaded ZIP backup stored in a second place, a practiced restore from History, two-step verification on your accounts, and a short privacy note on your site."},
    read:[
      {book:"ghdocs", where:"GitHub Pages → “Troubleshooting custom domains and GitHub Pages” and “Troubleshooting 404 errors for GitHub Pages sites”"},
      {book:"ghdocs", where:"GitHub Actions → Manage workflow runs → “Re-running workflows and jobs”", note:"How to re-run a failed Pages deploy from the Actions tab."},
@@ -928,7 +928,7 @@ ICA.addUnit({
       ]},
       "**Static site generators** are a middle path: tools such as Jekyll, Hugo or Eleventy build a whole static site from templates and Markdown **once**, at deploy time, instead of for every visit. GitHub Pages runs Jekyll automatically when you publish from a branch; plain HTML files pass through unchanged.",
       "**Adding dynamic bits to a static site:** form services for contact forms, embedded comment or booking tools, or (on some hosts) small serverless functions. Each brings its own privacy and reliability considerations.",
-      {ex:"Mei’s recipe site: every recipe is a page she writes once, and a script scales the ingredient amounts in the visitor’s browser. Static. Her friend Tomás wants members to log in and save favourite recipes to their account. That needs accounts and storage, so either a dynamic platform or an outside login-and-database service.", label:"Worked example"}
+      {ex:"Mei’s recipe site: every recipe is a page she writes once, and a script scales the ingredient amounts in the visitor’s browser. Static. Her friend Tomás wants members to log in and save favorite recipes to their account. That needs accounts and storage, so either a dynamic platform or an outside login-and-database service.", label:"Worked example"}
      ],
      pro:[
       "**Where the work happens.** Server-side rendering builds HTML per request. Static generation builds it at deploy time. Client-side rendering ships a mostly empty HTML page plus JavaScript that builds the content in the browser; it can be hosted statically, but search engines and slow devices may struggle with it, so pre-built HTML is usually better for content sites.",
@@ -972,7 +972,7 @@ ICA.addUnit({
       "**Updating.** Edit a file with the pencil button, or upload a file with the same name to replace it, then commit. Each commit to the publishing branch triggers a new deploy. If a fix doesn’t seem to appear, check the run is green, then look in a private window, because browsers cache files."
      ],
      pro:[
-      "**Limits** (GitHub Pages limits article): one user or organisation site per account; source repository recommended under 1 GB; published site no larger than 1 GB; deployments time out after 10 minutes; soft bandwidth limit of 100 GB a month; soft limit of 10 builds an hour when publishing from a branch. Rate limiting answers with HTTP 429.",
+      "**Limits** (GitHub Pages limits article): one user or organization site per account; source repository recommended under 1 GB; published site no larger than 1 GB; deployments time out after 10 minutes; soft bandwidth limit of 100 GB a month; soft limit of 10 builds an hour when publishing from a branch. Rate limiting answers with HTTP 429.",
       "**Allowed use:** not as free hosting for an online business, e-commerce or commercial SaaS, and not for sensitive transactions. Educational copies of other sites need your own code, no data collection and a prominent disclaimer.",
       "**Publishing sources.** *Deploy from a branch* runs a GitHub-managed workflow that builds with Jekyll (unless `.nojekyll` is present) and deploys. *GitHub Actions* as the source lets you write your own workflow (checkout, build, `upload-pages-artifact`, `deploy-pages`), needed for other static site generators or for repositories with symbolic links.",
       "**Failed deploys.** Read the run’s log. For errors on GitHub’s side or timeouts, re-run the job (**Re-run jobs → Re-run failed jobs**) or push a new commit. Commits pushed by a workflow using `GITHUB_TOKEN` don’t trigger a Pages build. If a branch-published site never builds, make sure someone with admin rights and a verified email has pushed to it.",
@@ -1014,7 +1014,7 @@ ICA.addUnit({
       {ex:"Lucía registers `example.org` for her café. She verifies it on GitHub, saves `www.example.org` as the custom domain, adds four A records for `@` and a CNAME for `www` pointing to her `your-username.github.io` address (with her own username), waits for the check mark, and ticks Enforce HTTPS. Visitors who type `example.org` are redirected to `https://www.example.org`.", label:"Worked example"}
      ],
      pro:[
-      "**Takeovers.** If DNS points at GitHub Pages but no repository claims the domain (the repository was deleted, Pages disabled, a plan downgraded), another user could add your domain to their repository. Verification restricts the domain and its immediate subdomains to your account or organisation. Wildcard records (`*.example.com`) remain risky even when verified, because deeper names such as `b.a.example.com` aren’t covered. If you stop using Pages, remove the DNS records.",
+      "**Takeovers.** If DNS points at GitHub Pages but no repository claims the domain (the repository was deleted, Pages disabled, a plan downgraded), another user could add your domain to their repository. Verification restricts the domain and its immediate subdomains to your account or organization. Wildcard records (`*.example.com`) remain risky even when verified, because deeper names such as `b.a.example.com` aren’t covered. If you stop using Pages, remove the DNS records.",
       "**Verifying a domain someone else is using** releases it from their Pages site immediately, unless they verified it first.",
       "**Supported setups:** `www` subdomain, custom subdomain (`blog.example.com`) or apex. Not supported: more than one apex, more than one `www`, or an apex plus a custom subdomain on one site. Internationalised domain names must be entered in Punycode.",
       "**Default domain for projects.** A custom domain on your user site also applies to your project sites (`www.example.com/project`) unless a project sets its own.",
@@ -1064,7 +1064,7 @@ ICA.addUnit({
       "**Propagation is caching.** Nothing is pushed around the world: resolvers keep answers for the TTL, then ask again. Lowering a record’s TTL a day before a planned change shortens the wait during the switch. GitHub’s guidance allows up to 24 hours.",
       "**IPv6.** If you add AAAA records, keep the A records: IPv6 isn’t available on every network.",
       "**CAA records** restrict which certificate authorities may issue for the domain. With GitHub Pages, one must permit `letsencrypt.org`.",
-      "**Verification record name** for GitHub: `_github-pages-challenge-USERNAME.example.com` (or the organisation name). Keep it in place to stay verified.",
+      "**Verification record name** for GitHub: `_github-pages-challenge-USERNAME.example.com` (or the organization name). Keep it in place to stay verified.",
       "**Email records.** If you use email at your domain, its MX and TXT (SPF, DKIM, DMARC) records sit beside the website records. Change only the records you need to."
      ]
     },
@@ -1157,7 +1157,7 @@ ICA.addUnit({
      {t:"MDN: Multimedia: Images", url:"https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Performance/Multimedia"}
     ], checked:"2026-11"},
 
-   {id:"seo-basics", title:"Titles, descriptions, link previews and favicons", aka:["SEO","search engine optimisation","title element","meta description","Open Graph","og:image","favicon","Search Console"], tags:["web","publishing"],
+   {id:"seo-basics", title:"Titles, descriptions, link previews and favicons", aka:["SEO","search engine optimization","title element","meta description","Open Graph","og:image","favicon","Search Console"], tags:["web","publishing"],
     summary:"How a page introduces itself to search engines, chat apps and browser tabs: the title, meta description, Open Graph tags and favicon.",
     levels:{
      starter:[
@@ -1201,7 +1201,7 @@ ICA.addUnit({
     ], checked:"2026-11"},
 
    {id:"site-accessibility-check", title:"A first accessibility check for your site", aka:["WAVE","keyboard test","alt text on the web","accessibility audit","Easy Checks","screen reader test"], tags:["accessibility","web"],
-    summary:"A quick, repeatable check of a live site: WAVE, a keyboard test, zoom, and the human judgement automated tools can’t give.",
+    summary:"A quick, repeatable check of a live site: WAVE, a keyboard test, zoom, and the human judgment automated tools can’t give.",
     levels:{
      starter:[
       "Accessibility means people can use your site however they use the web: with a [[screen-reader|screen reader]], a keyboard instead of a mouse, magnified text, or voice control.",
@@ -1226,10 +1226,10 @@ ICA.addUnit({
       ]},
       "WAVE is available as a website and as extensions for Chrome, Firefox and Edge; Lighthouse (in PageSpeed Insights and Chrome DevTools) also runs accessibility audits. On phones, VoiceOver (iPhone) and TalkBack (Android) let you hear your pages.",
       "W3C’s **Easy Checks** guide covers page title, alt text, headings, contrast, keyboard focus, language, zoom, captions and form labels, and warns that a page “could seem to pass these checks, yet still have significant accessibility barriers”.",
-      {ex:"Priya runs WAVE on her portfolio: two errors (an image with no alt, a link wrapping only an icon) and a contrast error on pale grey captions. She adds alt text, gives the icon link a text label, and darkens the captions. Then she tabs through the page and notices the focus outline has been removed in her CSS, which no tool flagged. She puts it back.", label:"Worked example"}
+      {ex:"Priya runs WAVE on her portfolio: two errors (an image with no alt, a link wrapping only an icon) and a contrast error on pale gray captions. She adds alt text, gives the icon link a text label, and darkens the captions. Then she tabs through the page and notices the focus outline has been removed in her CSS, which no tool flagged. She puts it back.", label:"Worked example"}
      ],
      pro:[
-      "**What automation catches.** Tools reliably detect missing attributes, empty links and buttons, many contrast failures between solid colours, missing form labels, missing language and skipped heading levels. They can’t judge whether alt text is accurate, whether focus order makes sense, whether instructions rely on colour or shape alone, or whether content is understandable.",
+      "**What automation catches.** Tools reliably detect missing attributes, empty links and buttons, many contrast failures between solid colors, missing form labels, missing language and skipped heading levels. They can’t judge whether alt text is accurate, whether focus order makes sense, whether instructions rely on color or shape alone, or whether content is understandable.",
       "**Standards.** WCAG 2.2 is the current W3C recommendation; its success criteria (for example 1.1.1 Non-text Content, 1.4.3 Contrast (Minimum), 2.1.1 Keyboard, 2.4.7 Focus Visible) are what accessibility laws in many places refer to. Rules of thumb are helpful, but the criteria are the standard.",
       "**Screen reader testing.** Learn a few commands: navigate by headings, by landmarks and by links. Listen for images announced by file name, links that all say “read more”, and form fields without names.",
       "**Process.** Check early and after every significant change. MDN’s accessibility module recommends combining tools, knowledge and testing with disabled users; no single tool is enough.",
@@ -1266,17 +1266,17 @@ ICA.addUnit({
         ["Fonts from another server","Send visitors’ IP addresses to that server","Host the font files yourself"],
         ["Contact form service","Store names, emails and messages","Spam protection; retention; mention in your notice"]
       ]},
-      "**The EU’s guidance** (Your Europe, for businesses): consent is needed before setting cookies such as tracking cookies for analytics or behavioural advertising; it should be specific to each purpose, and withdrawing must be as easy as giving it. Cookies strictly necessary for a service the user requested are exempt.",
+      "**The EU’s guidance** (Your Europe, for businesses): consent is needed before setting cookies such as tracking cookies for analytics or behavioral advertising; it should be specific to each purpose, and withdrawing must be as easy as giving it. Cookies strictly necessary for a service the user requested are exempt.",
       "A [[cookie-banner|cookie banner]] is only a way of asking. It doesn’t make anything lawful by itself: cookies that need consent must wait until the visitor agrees.",
       "Other places have different rules, and some cover any personal data, not just cookies. See {{data-protection-laws}}.",
       "**A privacy notice for a small site** can be a short page: who runs the site and how to contact them; what is collected (for example, messages sent through the contact form); which outside services receive data (the host, the form service, any analytics); how long you keep it; and how people can ask for their data to be deleted."
      ],
      pro:[
       "**Storage, not just cookies.** EU rules concern storing or reading information on the visitor’s device: cookies, localStorage and similar technologies alike. Server-side logging is governed by data-protection law (such as the GDPR) rather than cookie rules.",
-      "**Lawful basis and minimisation.** Under the GDPR, processing personal data needs a lawful basis and should be limited to what’s necessary. IP addresses can be personal data. Purely personal or household activity is outside the GDPR’s scope, but a club, business or public-facing project usually isn’t purely personal.",
-      "**Third parties.** Each embedded service is a separate organisation receiving data. Their terms and privacy statements matter; some offer data-processing agreements for organisations.",
+      "**Lawful basis and minimization.** Under the GDPR, processing personal data needs a lawful basis and should be limited to what’s necessary. IP addresses can be personal data. Purely personal or household activity is outside the GDPR’s scope, but a club, business or public-facing project usually isn’t purely personal.",
+      "**Third parties.** Each embedded service is a separate organization receiving data. Their terms and privacy statements matter; some offer data-processing agreements for organizations.",
       "**Forms.** Decide how long you keep messages and who can read them. Don’t ask for more than you need. Forms on GitHub Pages must post to an outside service: GitHub says Pages sites shouldn’t be used for sensitive transactions such as passwords or card numbers.",
-      "**Change and jurisdiction.** Laws and official guidance change (several countries revised cookie rules in recent years). Re-check yearly, and for an organisation’s site, ask someone qualified.",
+      "**Change and jurisdiction.** Laws and official guidance change (several countries revised cookie rules in recent years). Re-check yearly, and for an organization’s site, ask someone qualified.",
       "**Children and sensitive data.** Sites aimed at children, or that collect health, religious or similar sensitive information, face stricter rules in many places. Avoid collecting such data on a hobby site."
      ]
     },
@@ -1303,7 +1303,7 @@ ICA.addUnit({
      builder:[
       "**Broken links.** Renaming your own page breaks other people’s links to it. On GitHub Pages (no server redirects), leave a small page at the old address linking to the new one. Check outside links with a link checker such as W3C’s.",
       "**Backups.** The repository is one copy in one account. Keep a second copy elsewhere, and keep a private note of what isn’t in the repository: DNS records, registrar login and renewal date, Pages settings, form and analytics services.",
-      "**Secrets.** Never commit passwords, API keys or tokens. A deleted file stays in the history, so a leaked secret must be revoked and replaced. GitHub may block some recognised secrets at upload (push protection); don’t rely on it.",
+      "**Secrets.** Never commit passwords, API keys or tokens. A deleted file stays in the history, so a leaked secret must be revoked and replaced. GitHub may block some recognized secrets at upload (push protection); don’t rely on it.",
       "**When it breaks, outside in:**",
       {ol:[
         "Just you? Private window, mobile data, another device.",
@@ -1320,7 +1320,7 @@ ICA.addUnit({
       "**Rewriting history.** Removing a secret from every past commit needs Git tooling (a later unit) and doesn’t help once the secret has been copied, so revocation comes first.",
       "**Account security.** Two-step verification on GitHub (which GitHub requires for many contributors), the registrar and DNS provider, and any form service. Store recovery codes in a password manager. Review collaborators and deploy keys on the repository yearly.",
       "**Dependencies.** Pin outside scripts to a specific version, prefer self-hosting small libraries, and consider Subresource Integrity (`integrity` attribute) for scripts from a CDN, so a changed file is refused.",
-      "**Handover.** For club or community sites, document the setup and add a second trusted owner so the site survives a volunteer leaving. An organisation account on GitHub helps here.",
+      "**Handover.** For club or community sites, document the setup and add a second trusted owner so the site survives a volunteer leaving. An organization account on GitHub helps here.",
       "**Retiring a site.** Unpublish Pages, then remove DNS records (to prevent takeovers), let the domain lapse or transfer it deliberately, and leave a note where visitors might look.",
       "**Logs of change.** Clear commit messages turn history into documentation: future you can see why a change was made, not just what changed."
      ]
@@ -1403,7 +1403,7 @@ ICA.addUnit({
      {t:"Netlify", ok:true, why:"Netlify’s free plan has hard monthly limits; a site that reaches them is paused until the next billing cycle."},
      {t:"GitHub Pages", why:"GitHub’s bandwidth limit is described as soft; it may rate-limit or contact you rather than pause by a monthly credit count."},
      {t:"Every host works this way", why:"Hosts handle limits differently, which is why reading each one’s page matters."},
-     {t:"No host would ever do this", why:"Netlify’s pricing page describes exactly this behaviour."}
+     {t:"No host would ever do this", why:"Netlify’s pricing page describes exactly this behavior."}
    ]},
    {id:"t2u5-q07", lesson:"t2u5-l1", level:2, q:"Why do many people choose static hosting for a personal site?", options:[
      {t:"It’s often free, fast and low-maintenance", ok:true, why:"No server program of yours means little maintenance or security work: less to update and less to attack."},

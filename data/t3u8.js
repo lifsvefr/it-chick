@@ -1,12 +1,12 @@
 /* Track 3 · Unit 9 · R for wrangling and charts */
 ICA.addUnit({
   id:"t3u8", track:"t3", n:9, title:"R for wrangling and charts", icon:"🛠️",
-  blurb:"Use the tidyverse to pick, change, group, summarise and reshape data with readable pipelines, draw clear charts with ggplot2, and turn the whole analysis into a report that rebuilds itself. Every idea comes with its base R twin, so you can practise in the Data Lab on any device.",
+  blurb:"Use the tidyverse to pick, change, group, summarize and reshape data with readable pipelines, draw clear charts with ggplot2, and turn the whole analysis into a report that rebuilds itself. Every idea comes with its base R twin, so you can practice in the Data Lab on any device.",
   goals:[
     "Install and load tidyverse packages, and choose where to run them: R on a computer, Posit Cloud, or base R in the Data Lab",
     "Pick rows and columns, sort, and add new columns with filter(), select(), arrange() and mutate(), and write the same steps in base R",
     "Chain steps into readable pipelines with |> and %>%, and know how the two pipes differ",
-    "Summarise by group with group_by() + summarise() and count(), and reshape tables with pivot_longer() and pivot_wider()",
+    "Summarise by group with group_by() + summarize() and count(), and reshape tables with pivot_longer() and pivot_wider()",
     "Build charts with ggplot2’s grammar (aesthetics, geoms, facets, labels, themes) and save them with ggsave()",
     "Outline a reproducible report in Quarto, where text, code and results stay in step",
     "Check AI-written code, statistics and charts on a known case, and record and disclose how you used AI"
@@ -20,7 +20,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u8-l1", title:"The tidyverse: picking rows and columns", minutes:55,
-   hook:{q:"On her laptop, Ana reads `survey.csv` and types `filter(survey, age >= 30)`. R replies: `object 'age' not found`, even though the file has an `age` column. What’s the most likely cause?", options:["The age column is spelt differently in the file","She hasn’t loaded dplyr, so R used a different, built-in filter() function","filter() only works on data typed in by hand","Column names must be in quotes: \"age\""], answer:1, reveal:"**She hasn’t loaded the package yet.** Base R already has a function called `filter()` (in the stats package, for smoothing time series) that knows nothing about columns. Until you run `library(dplyr)` or `library(tidyverse)`, R uses that one, and it can’t find `age`. This lesson starts with what packages are, how to install and load them, and then teaches dplyr’s first three verbs."},
+   hook:{q:"On her laptop, Ana reads `survey.csv` and types `filter(survey, age >= 30)`. R replies: `object 'age' not found`, even though the file has an `age` column. What’s the most likely cause?", options:["The age column is spelled differently in the file","She hasn’t loaded dplyr, so R used a different, built-in filter() function","filter() only works on data typed in by hand","Column names must be in quotes: \"age\""], answer:1, reveal:"**She hasn’t loaded the package yet.** Base R already has a function called `filter()` (in the stats package, for smoothing time series) that knows nothing about columns. Until you run `library(dplyr)` or `library(tidyverse)`, R uses that one, and it can’t find `age`. This lesson starts with what packages are, how to install and load them, and then teaches dplyr’s first three verbs."},
    goals:[
      "Explain what the tidyverse is and how its packages work together",
      "Install a package once and load it in every session, and read the start-up messages",
@@ -35,11 +35,11 @@ ICA.addUnit({
       "What makes it a family is a shared design:",
       {list:[
         "**Data lives in tidy data frames**: one variable per column, one observation per row, one value per cell, the same rules you met for spreadsheets in {{tidy-data-principles|Unit 2}}.",
-        "**Functions are named like verbs**: `filter()`, `select()`, `arrange()`, `mutate()`, `summarise()`. You can often read code aloud as a sentence.",
+        "**Functions are named like verbs**: `filter()`, `select()`, `arrange()`, `mutate()`, `summarize()`. You can often read code aloud as a sentence.",
         "**The data comes first**: the first argument of each function is a data frame, and the result is a new data frame. That’s what lets you chain steps together (Lesson 2)."
       ]},
       "Loading the `tidyverse` package attaches nine core packages at once. You’ll use four of them in this unit:",
-      {table:[["Package","Its job"],["**readr**","Read files such as CSV (`read_csv()`)"],["**dplyr**","Pick, change, group and summarise data"],["**tidyr**","Reshape tables (`pivot_longer()`, `pivot_wider()`)"],["**ggplot2**","Draw charts with a grammar of layers"],["tibble, purrr, stringr, forcats, lubridate","Data frames, repeating tasks, text, categories, dates"]]},
+      {table:[["Package","Its job"],["**readr**","Read files such as CSV (`read_csv()`)"],["**dplyr**","Pick, change, group and summarize data"],["**tidyr**","Reshape tables (`pivot_longer()`, `pivot_wider()`)"],["**ggplot2**","Draw charts with a grammar of layers"],["tibble, purrr, stringr, forcats, lubridate","Data frames, repeating tasks, text, categories, dates"]]},
       "You don’t *have* to use the tidyverse. Base R is just as real, and you’ll see its version of every step in this unit. Many people mix both. The tidyverse’s strength is that long chains of steps stay readable."
     ]},
     {h:"Installing once, loading every time", body:[
@@ -53,9 +53,9 @@ ICA.addUnit({
     ]},
     {h:"Where to run it: computer, Posit Cloud or the Data Lab", body:[
       "Unit 8 showed three ways to run R. They differ in one way that matters for this unit: **only two of them can run the tidyverse**.",
-      {table:[["Where","Tidyverse?","Good for"],["R + RStudio on your computer","Yes, after `install.packages()`","Regular work; Windows, macOS, Linux"],["Posit Cloud (RStudio in a web browser)","Yes, install it inside each project","Chromebooks, tablets, shared computers"],["This app’s **Data Lab** (webR)","No: base R only","Practising on any device, including phones"]]},
+      {table:[["Where","Tidyverse?","Good for"],["R + RStudio on your computer","Yes, after `install.packages()`","Regular work; Windows, macOS, Linux"],["Posit Cloud (RStudio in a web browser)","Yes, install it inside each project","Chromebooks, tablets, shared computers"],["This app’s **Data Lab** (webR)","No: base R only","Practicing on any device, including phones"]]},
       "**[[posit-cloud|Posit Cloud]]** runs RStudio on Posit’s servers, so all you need is a browser and a free account. The free plan limits how much computing time you can use (counted in “compute hours”), and a project that’s idle (not running code) is suspended after about 15 minutes. Check posit.cloud’s plans page for the current limits before relying on it for a course. It works on a phone’s browser too, but the screen is cramped; a tablet with a keyboard or a Chromebook is much easier.",
-      "The **Data Lab** runs real R (version 4.6) inside your browser, but it can’t install packages. So each code block in this unit is labelled:",
+      "The **Data Lab** runs real R (version 4.6) inside your browser, but it can’t install packages. So each code block in this unit is labeled:",
       {list:["**R · computer or Posit Cloud**: needs the tidyverse.","**R · base R, runs in the Data Lab**: works anywhere, including the lab. To try one, open an R challenge that uses `survey.csv` (such as “Pick rows”), paste the code into its editor and press **Run**."]},
       {tip:"Learning on a phone? Read the tidyverse code to understand the idea, then run its base R twin in the Data Lab. The thinking (which rows? which columns? what order?) is the same."}
     ]},
@@ -87,10 +87,10 @@ ICA.addUnit({
       {warn:"Missing values behave differently. If a value is `NA` (missing), `d[d$age > 30, ]` gives you a row full of NA, because R can’t say whether a missing age is over 30. `filter()` and `subset()` quietly drop those rows instead."},
       {code:"df <- data.frame(\n  name = c(\"Ana\", \"Tomás\", \"Mei\"),\n  age = c(34, NA, 27)\n)\ndf[df$age > 30, ]\nsubset(df, age > 30)", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"   name age\n1   Ana  34\nNA <NA>  NA\n  name age\n1  Ana  34", lang:"txt", label:"What R prints"},
-      {lab:"dl-r-subset", t:"Practise: pick the rows of people aged 30 or over with subset() or [ ]"}
+      {lab:"dl-r-subset", t:"Practice: pick the rows of people aged 30 or over with subset() or [ ]"}
     ]},
     {h:"select(): keep the columns you want", body:[
-      "`filter()` works on rows; `select()` works on columns. List the columns to keep, or use a minus sign to drop one, or a colon for a range of neighbours:",
+      "`filter()` works on rows; `select()` works on columns. List the columns to keep, or use a minus sign to drop one, or a colon for a range of neighbors:",
       {code:"select(survey, id, age, score)\nselect(survey, -answer)\nselect(survey, age:score)", lang:"r", label:"R · computer or Posit Cloud"},
       "The first keeps `id`, `age` and `score`; the second keeps everything except `answer`; the third keeps `age`, `hours` and `score` (every column from `age` to `score`). Helpers such as `starts_with(\"week\")` pick columns by their names, which you’ll use in Lesson 3.",
       {code:"d[, c(\"id\", \"age\", \"score\")]\nsubset(d, select = -answer)\nsubset(d, select = age:score)", lang:"r", label:"R · base R, runs in the Data Lab"},
@@ -108,7 +108,7 @@ ICA.addUnit({
       {code:"older <- filter(survey, age >= 30)\nolder <- select(older, id, age, score)\narrange(older, desc(score))", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"older <- subset(d, age >= 30, select = c(id, age, score))\nolder[order(-older$score), ]", lang:"r", label:"R · base R, runs in the Data Lab"},
       "Both give the same 8 rows, starting with person 10 (score 88). Overwriting `older` again and again works, but it’s clumsy. Lesson 2 shows the pipe, which removes the need for it.",
-      {lab:"dl-r-fix", t:"Practise: fix two classic errors, a missing comma in d[rows, ] and a capital letter"}
+      {lab:"dl-r-fix", t:"Practice: fix two classic errors, a missing comma in d[rows, ] and a capital letter"}
     ]}
    ],
    try:[
@@ -142,7 +142,7 @@ ICA.addUnit({
     ]},
     {id:"t3u8-l1-x7", type:"explain", q:"Compare `filter()` and `select()`: what does each one act on, and how would you get just the `id` and `score` of people aged 30 or over?", model:"`filter()` works on **rows**: it keeps the rows where a condition is TRUE, such as `age >= 30`, and leaves all the columns. `select()` works on **columns**: it keeps the columns you name, such as `id` and `score`, and leaves all the rows. To get both, filter first and then select: `select(filter(survey, age >= 30), id, score)`. In base R, `subset(d, age >= 30, select = c(id, score))` does both at once. Neither changes `survey`; store the result with `<-` to keep it.", points:["Says `filter()` keeps rows that meet a condition", "Says `select()` keeps named columns", "Combines them to answer the question", "Notes the result must be stored, or gives the base R version"]}
    ],
-   apply:{intro:"Set up somewhere to run tidyverse code, then practise the base R versions in the Data Lab. If you only have a phone, do task 3 and read the others.", tasks:[
+   apply:{intro:"Set up somewhere to run tidyverse code, then practice the base R versions in the Data Lab. If you only have a phone, do task 3 and read the others.", tasks:[
      {t:"Install R and the tidyverse (optional, on a computer)", how:{
        win:["Install R and RStudio Desktop if you haven’t yet (Unit 8 has the steps: R from **cran.r-project.org**, then RStudio Desktop from **posit.co**)","Open **RStudio**. In the **Console** pane, type `install.packages(\"tidyverse\")` and press [[kbd:Enter]]","Wait until the `>` prompt comes back (a few minutes), then type `library(tidyverse)`","Check you see “Attaching core tidyverse packages” with ticks, and the Conflicts list"],
        mac:["Install R (choose the installer for your Mac’s chip: Apple silicon or Intel) and RStudio Desktop, as in Unit 8","Open **RStudio**. In the **Console**, type `install.packages(\"tidyverse\")` and press [[kbd:Return]]","When the `>` prompt returns, type `library(tidyverse)`","Check for the list of attached packages and the Conflicts section"],
@@ -170,7 +170,7 @@ ICA.addUnit({
       {code:"mutate(survey,\n  hours_year = hours * 52,\n  age_band = if_else(age >= 40, \"40+\", \"under 40\")\n)", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"# A tibble: 12 × 8\n      id group   age hours score answer hours_year age_band\n   <dbl> <chr> <dbl> <dbl> <dbl> <chr>       <dbl> <chr>   \n 1     1 A        24     3    61 Yes           156 under 40\n 2     2 A        31     5    70 Yes           260 under 40\n 3     3 B        45     2    55 No            104 40+     \n…", lang:"txt", label:"What R prints (first rows)"},
       "`hours_year` multiplies each person’s weekly hours by 52. `if_else(condition, yes, no)` gives one value when the condition is TRUE and another when it’s FALSE. Like every verb, `mutate()` returns a new tibble; store it with `<-` if you want to keep the columns.",
-      "Two handy behaviours:",
+      "Two handy behaviors:",
       {list:[
         "Inside one `mutate()`, a later column can use an earlier one: `mutate(survey, hours_year = hours * 52, hours_day = hours_year / 365)` works.",
         "Reusing an existing name **replaces** that column: `mutate(survey, hours = hours * 60)` turns hours into minutes, with no warning. Choose a new name unless you mean it."
@@ -201,7 +201,7 @@ ICA.addUnit({
       {code:"survey |>\n  filter(group == \"B\") |>\n  select(id, hours, score) |>\n  arrange(desc(score))", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"     id hours score\n1    10     8    88\n2     4     6    78\n3    12     6    75\n4     8     5    72\n5     3     2    55\n6     6     1    49", lang:"txt", label:"What R prints (tibble header left out)"},
       "Read `|>` aloud as **“then”**: take survey, *then* keep group B, *then* keep three columns, *then* sort. All three versions give exactly the same result.",
-      {fig:'<svg viewBox="0 0 340 374"><defs><marker id="u8a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-gold" x="20" y="8" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="28" text-anchor="middle">survey</text><text class="s" x="170" y="45" text-anchor="middle">12 rows × 6 columns</text><path class="d-ink" d="M170 56 L170 88" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="77" text-anchor="start">|&gt;</text><text class="s" x="206" y="77" text-anchor="start">then</text><rect class="d-lup" x="20" y="92" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="112" text-anchor="middle">filter(group == "B")</text><text class="s" x="170" y="129" text-anchor="middle">6 rows × 6 columns</text><path class="d-ink" d="M170 140 L170 172" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="161" text-anchor="start">|&gt;</text><text class="s" x="206" y="161" text-anchor="start">then</text><rect class="d-lup" x="20" y="176" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="196" text-anchor="middle">select(id, hours, score)</text><text class="s" x="170" y="213" text-anchor="middle">6 rows × 3 columns</text><path class="d-ink" d="M170 224 L170 256" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="245" text-anchor="start">|&gt;</text><text class="s" x="206" y="245" text-anchor="start">then</text><rect class="d-lup" x="20" y="260" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="280" text-anchor="middle">arrange(desc(score))</text><text class="s" x="170" y="297" text-anchor="middle">same 6 rows, highest first</text><text class="s" x="170" y="348" text-anchor="middle">Each |&gt; hands the result on as the first</text><text class="s" x="170" y="364" text-anchor="middle">argument of the next function.</text></svg>', alt:"Four boxes stacked vertically, joined by arrows labelled |> then: survey (12 rows by 6 columns), filter(group == \"B\") (6 rows by 6 columns), select(id, hours, score) (6 rows by 3 columns), arrange(desc(score)) (same 6 rows, highest first).", cap:"A pipeline: each step’s result becomes the first argument of the next step."}
+      {fig:'<svg viewBox="0 0 340 374"><defs><marker id="u8a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-gold" x="20" y="8" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="28" text-anchor="middle">survey</text><text class="s" x="170" y="45" text-anchor="middle">12 rows × 6 columns</text><path class="d-ink" d="M170 56 L170 88" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="77" text-anchor="start">|&gt;</text><text class="s" x="206" y="77" text-anchor="start">then</text><rect class="d-lup" x="20" y="92" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="112" text-anchor="middle">filter(group == "B")</text><text class="s" x="170" y="129" text-anchor="middle">6 rows × 6 columns</text><path class="d-ink" d="M170 140 L170 172" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="161" text-anchor="start">|&gt;</text><text class="s" x="206" y="161" text-anchor="start">then</text><rect class="d-lup" x="20" y="176" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="196" text-anchor="middle">select(id, hours, score)</text><text class="s" x="170" y="213" text-anchor="middle">6 rows × 3 columns</text><path class="d-ink" d="M170 224 L170 256" stroke-width="2" marker-end="url(#u8a2)"/><text x="186" y="245" text-anchor="start">|&gt;</text><text class="s" x="206" y="245" text-anchor="start">then</text><rect class="d-lup" x="20" y="260" width="300" height="46" rx="8" stroke-width="2"/><text x="170" y="280" text-anchor="middle">arrange(desc(score))</text><text class="s" x="170" y="297" text-anchor="middle">same 6 rows, highest first</text><text class="s" x="170" y="348" text-anchor="middle">Each |&gt; hands the result on as the first</text><text class="s" x="170" y="364" text-anchor="middle">argument of the next function.</text></svg>', alt:"Four boxes stacked vertically, joined by arrows labeled |> then: survey (12 rows by 6 columns), filter(group == \"B\") (6 rows by 6 columns), select(id, hours, score) (6 rows by 3 columns), arrange(desc(score)) (same 6 rows, highest first).", cap:"A pipeline: each step’s result becomes the first argument of the next step."}
     ]},
     {h:"The native pipe |>", body:[
       "The [[pipe-operator|pipe]] `|>` has been built into R since version 4.1.0 (2021), so it needs no package. R rewrites `x |> f(y)` as `f(x, y)` before running anything: the left side becomes the **first argument**. That’s why tidyverse functions, which all take the data first, chain so neatly.",
@@ -212,7 +212,7 @@ ICA.addUnit({
       {code:"x <- c(4, 9, 16)\nx |> sum", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"Error: The pipe operator requires a function call as RHS", lang:"txt", label:"What R prints"},
       "(RHS means “right-hand side”.) Write `x |> sum()`.",
-      {lab:"dl-r-subset", t:"Practise: solve “Pick rows”, then try writing your answer as d |> subset(age >= 30)"}
+      {lab:"dl-r-subset", t:"Practice: solve “Pick rows”, then try writing your answer as d |> subset(age >= 30)"}
     ]},
     {h:"The magrittr pipe %>%, and how they differ", body:[
       "Before R had its own pipe, the magrittr package (2014) introduced `%>%`. It’s loaded with the tidyverse, and you’ll meet it in older books, course notes and answers online. For everyday chains the two behave identically. The differences, in outline:",
@@ -257,8 +257,8 @@ ICA.addUnit({
       {t:"Works in the Data Lab", b:0, why:"The lab is base R, so `|>` works there; magrittr isn’t available."}
     ]},
     {id:"t3u8-l2-x5", type:"mcq", q:"Sione writes `case_when(age < 45 ~ \"30 to 44\", age < 30 ~ \"under 30\", .default = \"45 and over\")`. What happens to a 24-year-old?", options:[
-      {t:"They’re labelled “30 to 44”: the first TRUE condition wins", ok:true, why:"Right. 24 < 45 is TRUE, and case_when() checks conditions top to bottom and stops at the first TRUE. Put the narrower condition (`age < 30`) first."},
-      {t:"They’re labelled “under 30”, because R picks the most specific condition", why:"R doesn’t judge which condition is more specific; it uses order. The first TRUE condition wins."},
+      {t:"They’re labeled “30 to 44”: the first TRUE condition wins", ok:true, why:"Right. 24 < 45 is TRUE, and case_when() checks conditions top to bottom and stops at the first TRUE. Put the narrower condition (`age < 30`) first."},
+      {t:"They’re labeled “under 30”, because R picks the most specific condition", why:"R doesn’t judge which condition is more specific; it uses order. The first TRUE condition wins."},
       {t:"They get both labels", why:"Each row gets exactly one value: the one from the first matching condition."},
       {t:"They get “45 and over”, the default", why:"The default is only used when no condition is TRUE. Here `age < 45` is TRUE."}
     ]},
@@ -274,37 +274,37 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t3u8-l3", title:"Groups, counts and reshaping", minutes:60,
-   hook:{q:"A wide table has 3 people and three week columns (week1, week2, week3) of distances walked. You make it long with one row per person per week. How many rows does the long table have?", options:["3","6","9","12"], answer:2, reveal:"**9 rows**: 3 people × 3 weeks. Every number in the week columns becomes its own row, labelled with whose it is and which week. Nothing is added or lost; the same 9 numbers are just arranged differently. This lesson first summarises data by group, then reshapes tables between wide and long."},
+   hook:{q:"A wide table has 3 people and three week columns (week1, week2, week3) of distances walked. You make it long with one row per person per week. How many rows does the long table have?", options:["3","6","9","12"], answer:2, reveal:"**9 rows**: 3 people × 3 weeks. Every number in the week columns becomes its own row, labeled with whose it is and which week. Nothing is added or lost; the same 9 numbers are just arranged differently. This lesson first summarizes data by group, then reshapes tables between wide and long."},
    goals:[
-     "Collapse data to summaries with summarise(), and per group with group_by()",
+     "Collapse data to summaries with summarize(), and per group with group_by()",
      "Count categories with count(), and turn counts into shares",
      "Handle missing values in summaries and keep group sizes visible",
      "Do the same with tapply(), aggregate() and table() in base R",
      "Reshape tables with pivot_longer() and pivot_wider(), and know base R’s reshape()"
    ],
    learn:[
-    {h:"summarise(): many rows into one", body:[
-      {lead:"`summarise()` boils a whole column down to one number per result: a mean, a median, a count."},
-      {code:"survey |>\n  summarise(n = n(), mean_score = mean(score))", lang:"r", label:"R · computer or Posit Cloud"},
+    {h:"summarize(): many rows into one", body:[
+      {lead:"`summarize()` boils a whole column down to one number per result: a mean, a median, a count."},
+      {code:"survey |>\n  summarize(n = n(), mean_score = mean(score))", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"# A tibble: 1 × 2\n      n mean_score\n  <int>      <dbl>\n1    12       67.4", lang:"txt", label:"What R prints"},
       "Each argument names a result and gives a summary function. `n()` counts rows; you can also use `median()`, `sd()`, `min()`, `max()` and others from Unit 5. (`summarize()` with a z is the same function.) One summary of everyone is useful, but the real power comes with groups."
     ]},
-    {h:"group_by() + summarise(): split, apply, combine", body:[
+    {h:"group_by() + summarize(): split, apply, combine", body:[
       "[[group-by|group_by()]] marks rows as belonging to groups. On its own it changes nothing you can see except a label: printing a grouped tibble shows `# Groups:   group [2]`. But every verb after it works **group by group**:",
-      {code:"survey |>\n  group_by(group) |>\n  summarise(\n    n = n(),\n    mean_score = mean(score),\n    median_hours = median(hours)\n  )", lang:"r", label:"R · computer or Posit Cloud"},
+      {code:"survey |>\n  group_by(group) |>\n  summarize(\n    n = n(),\n    mean_score = mean(score),\n    median_hours = median(hours)\n  )", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"# A tibble: 2 × 4\n  group     n mean_score median_hours\n  <chr> <int>      <dbl>        <dbl>\n1 A         6       65.3          3.5\n2 B         6       69.5          5.5", lang:"txt", label:"What R prints"},
       "This pattern is called **split–apply–combine**: split the rows into groups, apply a summary to each, and combine the answers into a new table with one row per group. It’s what a spreadsheet [[pivot-table]] does too.",
-      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="u8a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="170" y="18" text-anchor="middle">1. Start: 12 rows, groups mixed</text><rect class="d-lup" x="14" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="26" y="42" text-anchor="middle">A</text><text class="s" x="26" y="57" text-anchor="middle">61</text><rect class="d-lup" x="40" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="52" y="42" text-anchor="middle">A</text><text class="s" x="52" y="57" text-anchor="middle">70</text><rect class="d-gold" x="66" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="78" y="42" text-anchor="middle">B</text><text class="s" x="78" y="57" text-anchor="middle">55</text><rect class="d-gold" x="92" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="104" y="42" text-anchor="middle">B</text><text class="s" x="104" y="57" text-anchor="middle">78</text><rect class="d-lup" x="118" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="130" y="42" text-anchor="middle">A</text><text class="s" x="130" y="57" text-anchor="middle">66</text><rect class="d-gold" x="144" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="156" y="42" text-anchor="middle">B</text><text class="s" x="156" y="57" text-anchor="middle">49</text><rect class="d-lup" x="170" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="182" y="42" text-anchor="middle">A</text><text class="s" x="182" y="57" text-anchor="middle">83</text><rect class="d-gold" x="196" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="208" y="42" text-anchor="middle">B</text><text class="s" x="208" y="57" text-anchor="middle">72</text><rect class="d-lup" x="222" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="234" y="42" text-anchor="middle">A</text><text class="s" x="234" y="57" text-anchor="middle">60</text><rect class="d-gold" x="248" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="260" y="42" text-anchor="middle">B</text><text class="s" x="260" y="57" text-anchor="middle">88</text><rect class="d-lup" x="274" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="286" y="42" text-anchor="middle">A</text><text class="s" x="286" y="57" text-anchor="middle">52</text><rect class="d-gold" x="300" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="312" y="42" text-anchor="middle">B</text><text class="s" x="312" y="57" text-anchor="middle">75</text><path class="d-ink" d="M170 68 L170 92" stroke-width="2" marker-end="url(#u8a3)"/><text class="s" x="178" y="84" text-anchor="start">group_by(group)</text><text x="170" y="110" text-anchor="middle">2. Split into groups</text><rect class="d-lup" x="14" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="25.5" y="138" text-anchor="middle">61</text><rect class="d-lup" x="39" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="50.5" y="138" text-anchor="middle">70</text><rect class="d-lup" x="64" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="75.5" y="138" text-anchor="middle">66</text><rect class="d-lup" x="89" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="100.5" y="138" text-anchor="middle">83</text><rect class="d-lup" x="114" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="125.5" y="138" text-anchor="middle">60</text><rect class="d-lup" x="139" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="150.5" y="138" text-anchor="middle">52</text><text class="s" x="88" y="162" text-anchor="middle">group A</text><rect class="d-gold" x="180" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="191.5" y="138" text-anchor="middle">55</text><rect class="d-gold" x="205" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="216.5" y="138" text-anchor="middle">78</text><rect class="d-gold" x="230" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="241.5" y="138" text-anchor="middle">49</text><rect class="d-gold" x="255" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="266.5" y="138" text-anchor="middle">72</text><rect class="d-gold" x="280" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="291.5" y="138" text-anchor="middle">88</text><rect class="d-gold" x="305" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="316.5" y="138" text-anchor="middle">75</text><text class="s" x="254" y="162" text-anchor="middle">group B</text><path class="d-ink" d="M88 168 L88 196" stroke-width="2" marker-end="url(#u8a3)"/><path class="d-ink" d="M254 168 L254 196" stroke-width="2" marker-end="url(#u8a3)"/><text class="s" x="170" y="186" text-anchor="middle">mean(score)</text><text x="170" y="214" text-anchor="middle">3. Apply a summary to each group</text><rect class="d-lup" x="44" y="222" width="90" height="28" rx="6" stroke-width="1.5"/><text x="89" y="241" text-anchor="middle">65.3</text><rect class="d-gold" x="210" y="222" width="90" height="28" rx="6" stroke-width="1.5"/><text x="255" y="241" text-anchor="middle">69.5</text><path class="d-ink" d="M89 254 L150 284" stroke-width="2" marker-end="url(#u8a3)"/><path class="d-ink" d="M255 254 L192 284" stroke-width="2" marker-end="url(#u8a3)"/><text x="170" y="304" text-anchor="middle">4. Combine: one row per group</text><rect class="d-panel" x="95" y="312" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="327" text-anchor="middle">group</text><rect class="d-panel" x="170" y="312" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="327" text-anchor="middle">mean_score</text><rect class="d-panel" x="95" y="332" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="347" text-anchor="middle">A</text><rect class="d-panel" x="170" y="332" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="347" text-anchor="middle">65.3</text><rect class="d-panel" x="95" y="352" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="367" text-anchor="middle">B</text><rect class="d-panel" x="170" y="352" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="367" text-anchor="middle">69.5</text></svg>', alt:"Twelve scores in mixed groups A and B are split into group A (61, 70, 66, 83, 60, 52) and group B (55, 78, 49, 72, 88, 75). The mean of each is 65.3 and 69.5, combined into a two-row table of group and mean_score.", cap:"Split–apply–combine with group_by(group) and summarise(mean_score = mean(score))."},
+      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="u8a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="170" y="18" text-anchor="middle">1. Start: 12 rows, groups mixed</text><rect class="d-lup" x="14" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="26" y="42" text-anchor="middle">A</text><text class="s" x="26" y="57" text-anchor="middle">61</text><rect class="d-lup" x="40" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="52" y="42" text-anchor="middle">A</text><text class="s" x="52" y="57" text-anchor="middle">70</text><rect class="d-gold" x="66" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="78" y="42" text-anchor="middle">B</text><text class="s" x="78" y="57" text-anchor="middle">55</text><rect class="d-gold" x="92" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="104" y="42" text-anchor="middle">B</text><text class="s" x="104" y="57" text-anchor="middle">78</text><rect class="d-lup" x="118" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="130" y="42" text-anchor="middle">A</text><text class="s" x="130" y="57" text-anchor="middle">66</text><rect class="d-gold" x="144" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="156" y="42" text-anchor="middle">B</text><text class="s" x="156" y="57" text-anchor="middle">49</text><rect class="d-lup" x="170" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="182" y="42" text-anchor="middle">A</text><text class="s" x="182" y="57" text-anchor="middle">83</text><rect class="d-gold" x="196" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="208" y="42" text-anchor="middle">B</text><text class="s" x="208" y="57" text-anchor="middle">72</text><rect class="d-lup" x="222" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="234" y="42" text-anchor="middle">A</text><text class="s" x="234" y="57" text-anchor="middle">60</text><rect class="d-gold" x="248" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="260" y="42" text-anchor="middle">B</text><text class="s" x="260" y="57" text-anchor="middle">88</text><rect class="d-lup" x="274" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="286" y="42" text-anchor="middle">A</text><text class="s" x="286" y="57" text-anchor="middle">52</text><rect class="d-gold" x="300" y="28" width="24" height="34" rx="3" stroke-width="1"/><text class="s" x="312" y="42" text-anchor="middle">B</text><text class="s" x="312" y="57" text-anchor="middle">75</text><path class="d-ink" d="M170 68 L170 92" stroke-width="2" marker-end="url(#u8a3)"/><text class="s" x="178" y="84" text-anchor="start">group_by(group)</text><text x="170" y="110" text-anchor="middle">2. Split into groups</text><rect class="d-lup" x="14" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="25.5" y="138" text-anchor="middle">61</text><rect class="d-lup" x="39" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="50.5" y="138" text-anchor="middle">70</text><rect class="d-lup" x="64" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="75.5" y="138" text-anchor="middle">66</text><rect class="d-lup" x="89" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="100.5" y="138" text-anchor="middle">83</text><rect class="d-lup" x="114" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="125.5" y="138" text-anchor="middle">60</text><rect class="d-lup" x="139" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="150.5" y="138" text-anchor="middle">52</text><text class="s" x="88" y="162" text-anchor="middle">group A</text><rect class="d-gold" x="180" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="191.5" y="138" text-anchor="middle">55</text><rect class="d-gold" x="205" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="216.5" y="138" text-anchor="middle">78</text><rect class="d-gold" x="230" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="241.5" y="138" text-anchor="middle">49</text><rect class="d-gold" x="255" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="266.5" y="138" text-anchor="middle">72</text><rect class="d-gold" x="280" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="291.5" y="138" text-anchor="middle">88</text><rect class="d-gold" x="305" y="120" width="23" height="26" rx="3" stroke-width="1"/><text class="s" x="316.5" y="138" text-anchor="middle">75</text><text class="s" x="254" y="162" text-anchor="middle">group B</text><path class="d-ink" d="M88 168 L88 196" stroke-width="2" marker-end="url(#u8a3)"/><path class="d-ink" d="M254 168 L254 196" stroke-width="2" marker-end="url(#u8a3)"/><text class="s" x="170" y="186" text-anchor="middle">mean(score)</text><text x="170" y="214" text-anchor="middle">3. Apply a summary to each group</text><rect class="d-lup" x="44" y="222" width="90" height="28" rx="6" stroke-width="1.5"/><text x="89" y="241" text-anchor="middle">65.3</text><rect class="d-gold" x="210" y="222" width="90" height="28" rx="6" stroke-width="1.5"/><text x="255" y="241" text-anchor="middle">69.5</text><path class="d-ink" d="M89 254 L150 284" stroke-width="2" marker-end="url(#u8a3)"/><path class="d-ink" d="M255 254 L192 284" stroke-width="2" marker-end="url(#u8a3)"/><text x="170" y="304" text-anchor="middle">4. Combine: one row per group</text><rect class="d-panel" x="95" y="312" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="327" text-anchor="middle">group</text><rect class="d-panel" x="170" y="312" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="327" text-anchor="middle">mean_score</text><rect class="d-panel" x="95" y="332" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="347" text-anchor="middle">A</text><rect class="d-panel" x="170" y="332" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="347" text-anchor="middle">65.3</text><rect class="d-panel" x="95" y="352" width="75" height="20" stroke-width="1"/><text class="s" x="132.5" y="367" text-anchor="middle">B</text><rect class="d-panel" x="170" y="352" width="75" height="20" stroke-width="1"/><text class="s" x="207.5" y="367" text-anchor="middle">69.5</text></svg>', alt:"Twelve scores in mixed groups A and B are split into group A (61, 70, 66, 83, 60, 52) and group B (55, 78, 49, 72, 88, 75). The mean of each is 65.3 and 69.5, combined into a two-row table of group and mean_score.", cap:"Split–apply–combine with group_by(group) and summarize(mean_score = mean(score))."},
       {tip:"Always include `n = n()` in a grouped summary. A group mean of 80 means a lot more from 200 people than from 2. *R for Data Science* gives a whole case study to this: small groups produce the most extreme averages."},
       "Grouping by two columns gives one row per combination. dplyr then drops the **last** grouping level and tells you so:",
-      {code:"survey |>\n  group_by(group, answer) |>\n  summarise(mean_score = mean(score))", lang:"r", label:"R · computer or Posit Cloud"},
-      {code:"`summarise()` has regrouped the output.\nℹ Summaries were computed grouped by group and answer.\nℹ Output is grouped by group.\nℹ Use `summarise(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarise(.by = c(group, answer))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.", lang:"txt", label:"What R prints (message, dplyr 1.2 or later)"},
-      "Older versions (dplyr 1.1 and earlier) say the same thing more briefly: “`summarise()` has grouped output by 'group'. You can override using the `.groups` argument.”",
-      "The result (6 rows) is still grouped by `group`, so any later verb would work within groups. Add `|> ungroup()` when you’re done, or skip grouping by using the `.by` argument for a one-off grouped summary, which never leaves groups behind: `summarise(survey, mean_score = mean(score), .by = group)`.",
+      {code:"survey |>\n  group_by(group, answer) |>\n  summarize(mean_score = mean(score))", lang:"r", label:"R · computer or Posit Cloud"},
+      {code:"`summarize()` has regrouped the output.\nℹ Summaries were computed grouped by group and answer.\nℹ Output is grouped by group.\nℹ Use `summarize(.groups = \"drop_last\")` to silence this message.\nℹ Use `summarize(.by = c(group, answer))` for per-operation grouping\n  (`?dplyr::dplyr_by`) instead.", lang:"txt", label:"What R prints (message, dplyr 1.2 or later)"},
+      "Older versions (dplyr 1.1 and earlier) say the same thing more briefly: “`summarize()` has grouped output by 'group'. You can override using the `.groups` argument.”",
+      "The result (6 rows) is still grouped by `group`, so any later verb would work within groups. Add `|> ungroup()` when you’re done, or skip grouping by using the `.by` argument for a one-off grouped summary, which never leaves groups behind: `summarize(survey, mean_score = mean(score), .by = group)`.",
       "Grouping works with `mutate()` too. Then the summary is computed per group but every row is kept: `survey |> group_by(group) |> mutate(vs_group = score - mean(score)) |> ungroup()` shows how far each person is above or below their own group’s mean (person 1: 61 − 65.3 = −4.33)."
     ]},
     {h:"count(), shares and missing values", body:[
-      "Counting is so common that dplyr has a shortcut: `count(x)` is `group_by(x) |> summarise(n = n())`.",
+      "Counting is so common that dplyr has a shortcut: `count(x)` is `group_by(x) |> summarize(n = n())`.",
       {code:"survey |> count(answer)\nsurvey |> count(answer, sort = TRUE)\nsurvey |> count(group, answer)", lang:"r", label:"R · computer or Posit Cloud"},
       "The first gives No 4, Unsure 2, Yes 6 (alphabetical order); `sort = TRUE` puts the biggest first; two columns count every combination (6 rows here). Turn counts into **shares** by dividing by the total:",
       {code:"survey |>\n  count(answer) |>\n  mutate(share = n / sum(n))", lang:"r", label:"R · computer or Posit Cloud"},
@@ -314,13 +314,13 @@ ICA.addUnit({
       {code:"[1] NA\n[1] 65.5", lang:"txt", label:"What R prints"},
       "`na.rm = TRUE` (“remove NAs”) computes the mean of the values you have. That’s often right, but say so in your write-up, and remember `n()` still counts the rows with missing scores. `sum(!is.na(score))` counts the values actually used. Unit 2 covers why values go missing and how to record them ([[na-value|NA]])."
     ]},
-    {h:"The base R way to summarise", body:[
+    {h:"The base R way to summarize", body:[
       {code:"tapply(d$score, d$group, mean)\naggregate(score ~ group, data = d, FUN = mean)\naggregate(cbind(score, hours) ~ group, data = d, FUN = mean)\ntable(d$answer)\nprop.table(table(d$answer))", lang:"r", label:"R · base R, runs in the Data Lab"},
       {code:"       A        B \n65.33333 69.50000 \n  group    score\n1     A 65.33333\n2     B 69.50000\n  group    score    hours\n1     A 65.33333 4.000000\n2     B 69.50000 4.666667\n\n    No Unsure    Yes \n     4      2      6 \n\n       No    Unsure       Yes \n0.3333333 0.1666667 0.5000000 ", lang:"txt", label:"What R prints"},
-      {table:[["Job","dplyr","Base R"],["Mean per group","`group_by(g) |> summarise(m = mean(x))`","`tapply(d$x, d$g, mean)` or `aggregate(x ~ g, data = d, FUN = mean)`"],["Count each category","`count(answer)`","`table(d$answer)`"],["Shares","`mutate(share = n / sum(n))`","`prop.table(table(d$answer))`"],["Per-row group mean","`group_by(g) |> mutate(m = mean(x))`","`ave(d$x, d$g)`"]]},
-      "The base results come in different shapes: `tapply()` and `table()` return labelled lists of numbers (strictly, arrays; handy to print), while `aggregate()` returns a data frame (handy to keep working with). dplyr always returns a tibble, which is one reason long pipelines are easier there.",
-      {lab:"dl-r-groups", t:"Practise: the mean score for each group with tapply() or aggregate()"},
-      {lab:"dl-r-table", t:"Practise: count the answers with table() and work out the share of Yes"}
+      {table:[["Job","dplyr","Base R"],["Mean per group","`group_by(g) |> summarize(m = mean(x))`","`tapply(d$x, d$g, mean)` or `aggregate(x ~ g, data = d, FUN = mean)`"],["Count each category","`count(answer)`","`table(d$answer)`"],["Shares","`mutate(share = n / sum(n))`","`prop.table(table(d$answer))`"],["Per-row group mean","`group_by(g) |> mutate(m = mean(x))`","`ave(d$x, d$g)`"]]},
+      "The base results come in different shapes: `tapply()` and `table()` return labeled lists of numbers (strictly, arrays; handy to print), while `aggregate()` returns a data frame (handy to keep working with). dplyr always returns a tibble, which is one reason long pipelines are easier there.",
+      {lab:"dl-r-groups", t:"Practice: the mean score for each group with tapply() or aggregate()"},
+      {lab:"dl-r-table", t:"Practice: count the answers with table() and work out the share of Yes"}
     ]},
     {h:"Reshaping: the same data, longer or wider", body:[
       "Unit 2 showed that one table can come in a [[wide-format|wide]] shape (one row per person, a column for each week) or a [[long-format|long]] shape (one row per person per week). Wide is easy for people to read; long is what dplyr and ggplot2 want, because “week” is a variable and belongs in a column, not hidden in column names. tidyr moves between them.",
@@ -331,7 +331,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 342"><defs><marker id="u8a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="170" y="16" text-anchor="middle">Wide: one row per person</text><rect class="d-panel" x="30" y="24" width="70" height="20" stroke-width="1"/><text class="s" x="65" y="39" text-anchor="middle">name</text><rect class="d-panel" x="100" y="24" width="70" height="20" stroke-width="1"/><text class="s" x="135" y="39" text-anchor="middle">week1</text><rect class="d-panel" x="170" y="24" width="70" height="20" stroke-width="1"/><text class="s" x="205" y="39" text-anchor="middle">week2</text><rect class="d-panel" x="240" y="24" width="70" height="20" stroke-width="1"/><text class="s" x="275" y="39" text-anchor="middle">week3</text><rect class="d-lup" x="30" y="44" width="70" height="20" stroke-width="1"/><text class="s" x="65" y="59" text-anchor="middle">Amara</text><rect class="d-lup" x="100" y="44" width="70" height="20" stroke-width="1"/><text class="s" x="135" y="59" text-anchor="middle">12</text><rect class="d-lup" x="170" y="44" width="70" height="20" stroke-width="1"/><text class="s" x="205" y="59" text-anchor="middle">10</text><rect class="d-lup" x="240" y="44" width="70" height="20" stroke-width="1"/><text class="s" x="275" y="59" text-anchor="middle">14</text><rect class="d-panel" x="30" y="64" width="70" height="20" stroke-width="1"/><text class="s" x="65" y="79" text-anchor="middle">Kenji</text><rect class="d-panel" x="100" y="64" width="70" height="20" stroke-width="1"/><text class="s" x="135" y="79" text-anchor="middle">8</text><rect class="d-panel" x="170" y="64" width="70" height="20" stroke-width="1"/><text class="s" x="205" y="79" text-anchor="middle">11</text><rect class="d-panel" x="240" y="64" width="70" height="20" stroke-width="1"/><text class="s" x="275" y="79" text-anchor="middle">9</text><rect class="d-panel" x="30" y="84" width="70" height="20" stroke-width="1"/><text class="s" x="65" y="99" text-anchor="middle">Lucía</text><rect class="d-panel" x="100" y="84" width="70" height="20" stroke-width="1"/><text class="s" x="135" y="99" text-anchor="middle">15</text><rect class="d-panel" x="170" y="84" width="70" height="20" stroke-width="1"/><text class="s" x="205" y="99" text-anchor="middle">14</text><rect class="d-panel" x="240" y="84" width="70" height="20" stroke-width="1"/><text class="s" x="275" y="99" text-anchor="middle">16</text><path class="d-ink" d="M24 108 L24 150" stroke-width="2" marker-end="url(#u8a4)"/><path class="d-ink" d="M316 150 L316 108" stroke-width="2" marker-end="url(#u8a4)"/><text class="s" x="170" y="124" text-anchor="middle">pivot_longer(): wide to long ↓</text><text class="s" x="170" y="142" text-anchor="middle">↑ pivot_wider(): long to wide</text><text x="170" y="166" text-anchor="middle">Long: one row per person per week</text><rect class="d-panel" x="65" y="174" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="189" text-anchor="middle">name</text><rect class="d-panel" x="135" y="174" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="189" text-anchor="middle">week</text><rect class="d-panel" x="205" y="174" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="189" text-anchor="middle">km</text><rect class="d-lup" x="65" y="194" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="209" text-anchor="middle">Amara</text><rect class="d-lup" x="135" y="194" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="209" text-anchor="middle">week1</text><rect class="d-lup" x="205" y="194" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="209" text-anchor="middle">12</text><rect class="d-lup" x="65" y="214" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="229" text-anchor="middle">Amara</text><rect class="d-lup" x="135" y="214" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="229" text-anchor="middle">week2</text><rect class="d-lup" x="205" y="214" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="229" text-anchor="middle">10</text><rect class="d-lup" x="65" y="234" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="249" text-anchor="middle">Amara</text><rect class="d-lup" x="135" y="234" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="249" text-anchor="middle">week3</text><rect class="d-lup" x="205" y="234" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="249" text-anchor="middle">14</text><rect class="d-panel" x="65" y="254" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="269" text-anchor="middle">Kenji</text><rect class="d-panel" x="135" y="254" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="269" text-anchor="middle">week1</text><rect class="d-panel" x="205" y="254" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="269" text-anchor="middle">8</text><rect class="d-panel" x="65" y="274" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="289" text-anchor="middle">…</text><rect class="d-panel" x="135" y="274" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="289" text-anchor="middle">…</text><rect class="d-panel" x="205" y="274" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="289" text-anchor="middle">…</text><rect class="d-panel" x="65" y="294" width="70" height="20" stroke-width="1"/><text class="s" x="100" y="309" text-anchor="middle">Lucía</text><rect class="d-panel" x="135" y="294" width="70" height="20" stroke-width="1"/><text class="s" x="170" y="309" text-anchor="middle">week3</text><rect class="d-panel" x="205" y="294" width="70" height="20" stroke-width="1"/><text class="s" x="240" y="309" text-anchor="middle">16</text><text class="s" x="170" y="332" text-anchor="middle">3 people × 3 weeks = 9 rows (… = rows not shown)</text></svg>', alt:"A wide table with columns name, week1, week2, week3 and rows Amara, Kenji, Lucía. pivot_longer turns it into a long table with columns name, week, km where Amara’s three values become three rows. pivot_wider goes back.", cap:"pivot_longer() stacks the week columns into rows; pivot_wider() spreads them back out."},
       "The new `week` column holds text like \"week1\". Two extra arguments clean it while pivoting: `names_prefix = \"week\"` strips the prefix and `names_transform = as.integer` makes it a number, so weeks sort and plot properly:",
       {code:"library(tidyverse)\nwalks <- tibble(\n  name  = c(\"Amara\", \"Kenji\", \"Lucía\"),\n  week1 = c(12, 8, 15),\n  week2 = c(10, 11, 14),\n  week3 = c(14, 9, 16)\n)\nwalks |>\n  pivot_longer(\n    cols = starts_with(\"week\"),\n    names_to = \"week\",\n    names_prefix = \"week\",\n    names_transform = as.integer,\n    values_to = \"km\"\n  )", lang:"r", label:"R · computer or Posit Cloud"},
-      "Once data is long, the other verbs just work: `long |> group_by(name) |> summarise(total_km = sum(km))` gives Amara 36, Kenji 28, Lucía 45."
+      "Once data is long, the other verbs just work: `long |> group_by(name) |> summarize(total_km = sum(km))` gives Amara 36, Kenji 28, Lucía 45."
     ]},
     {h:"pivot_wider(), and reshaping in base R", body:[
       "[[pivot-wider|pivot_wider()]] is the reverse. `names_from` says which column supplies the new column names, `values_from` which supplies the cells: `long |> pivot_wider(names_from = week, values_from = km)` rebuilds the original wide table.",
@@ -347,18 +347,18 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t3u8-l3-x1", type:"number", q:"Group B’s scores are 55, 78, 49, 72, 88 and 75. What is `mean_score` for B in `survey |> group_by(group) |> summarise(mean_score = mean(score))`?", answer:69.5, tol:0.05, unit:"points", why:"55 + 78 + 49 + 72 + 88 + 75 = 417, and 417 ÷ 6 = 69.5. group_by() makes summarise() compute this separately for each group.", wrongs:[{v:67.4, tol:0.1, why:"67.4 is the mean of all 12 people, as if group_by() were missing."},{v:73.5, tol:0.05, why:"73.5 is the median of group B (the middle of 72 and 75). The code asks for mean()."},{v:417, tol:0, why:"That’s the total. The mean divides by the 6 people."}]},
+    {id:"t3u8-l3-x1", type:"number", q:"Group B’s scores are 55, 78, 49, 72, 88 and 75. What is `mean_score` for B in `survey |> group_by(group) |> summarize(mean_score = mean(score))`?", answer:69.5, tol:0.05, unit:"points", why:"55 + 78 + 49 + 72 + 88 + 75 = 417, and 417 ÷ 6 = 69.5. group_by() makes summarize() compute this separately for each group.", wrongs:[{v:67.4, tol:0.1, why:"67.4 is the mean of all 12 people, as if group_by() were missing."},{v:73.5, tol:0.05, why:"73.5 is the median of group B (the middle of 72 and 75). The code asks for mean()."},{v:417, tol:0, why:"That’s the total. The mean divides by the 6 people."}]},
     {id:"t3u8-l3-x2", type:"match", q:"Match each question to the code that answers it.", pairs:[
-      ["How many people gave each answer?","`count(survey, answer)`","count() is group_by() + summarise(n = n()) in one step."],
-      ["What’s the mean score of everyone?","`summarise(survey, m = mean(score))`","No grouping, so one row for the whole table."],
-      ["What’s the mean score in each group?","`survey |> group_by(group) |> summarise(m = mean(score))`","Grouping first gives one row per group."],
+      ["How many people gave each answer?","`count(survey, answer)`","count() is group_by() + summarize(n = n()) in one step."],
+      ["What’s the mean score of everyone?","`summarize(survey, m = mean(score))`","No grouping, so one row for the whole table."],
+      ["What’s the mean score in each group?","`survey |> group_by(group) |> summarize(m = mean(score))`","Grouping first gives one row per group."],
       ["How far is each person from their group’s mean?","`survey |> group_by(group) |> mutate(d = score - mean(score))`","A grouped mutate() keeps every row and uses each group’s own mean."]
     ]},
-    {id:"t3u8-l3-x3", type:"mcq", q:"Hana groups by `group` and `answer` (2 groups × 3 answers, every combination present) and summarises the mean score. How many rows, and how is the result grouped?", options:[
-      {t:"6 rows, still grouped by `group`", ok:true, why:"One row per combination (2 × 3 = 6). summarise() peels off the last grouping level (answer) and keeps the rest, which is what its message says. Use ungroup() or .groups to change that."},
-      {t:"6 rows, no grouping left", why:"summarise() drops only the last grouping level by default; the result is still grouped by group."},
+    {id:"t3u8-l3-x3", type:"mcq", q:"Hana groups by `group` and `answer` (2 groups × 3 answers, every combination present) and summarizes the mean score. How many rows, and how is the result grouped?", options:[
+      {t:"6 rows, still grouped by `group`", ok:true, why:"One row per combination (2 × 3 = 6). summarize() peels off the last grouping level (answer) and keeps the rest, which is what its message says. Use ungroup() or .groups to change that."},
+      {t:"6 rows, no grouping left", why:"summarize() drops only the last grouping level by default; the result is still grouped by group."},
       {t:"2 rows, one per group", why:"With two grouping columns you get one row per combination of both."},
-      {t:"12 rows, one per person", why:"That would be a grouped mutate(). summarise() collapses each group to one row."}
+      {t:"12 rows, one per person", why:"That would be a grouped mutate(). summarize() collapses each group to one row."}
     ]},
     {id:"t3u8-l3-x4", type:"mcq", q:"Dmitri’s summary says the mean score is `NA`. He checks: one person’s score is missing. What’s the best next step?", options:[
       {t:"Use `na.rm = TRUE` and report how many values it uses", ok:true, why:"`mean(score, na.rm = TRUE)` averages the values you have; reporting the count (for example with `sum(!is.na(score))`) keeps readers informed that one value is missing."},
@@ -373,22 +373,22 @@ ICA.addUnit({
       {t:"`reshape(walks, direction = \"long\", …)`", b:0, why:"Base R’s reshape with direction = \"long\" stacks columns into rows."}
     ]},
     {id:"t3u8-l3-x6", type:"number", q:"A wide table records 5 bus routes (rows), with a `route` column and 7 columns of passenger counts, one per day of the week. After `pivot_longer()` on the 7 day columns, how many rows does it have?", answer:35, tol:0, unit:"rows", why:"Each route contributes one row per stacked column: 5 routes × 7 days = 35 rows (with columns route, day and passengers).", wrongs:[{v:12, tol:0, why:"That adds 5 + 7. Each of the 5 rows is repeated 7 times, so multiply."},{v:40, tol:0, why:"That counts 8 columns per route (including route itself). Only the 7 day columns are stacked."},{v:7, tol:0, why:"That’s the number of day columns. Each one becomes a row for every route."}]},
-    {id:"t3u8-l3-x7", type:"explain", q:"Explain what `survey |> group_by(group) |> summarise(n = n(), mean_score = mean(score))` does, and why including `n = n()` is a good habit.", model:"`group_by()` marks which group each row belongs to, and `summarise()` then works group by group. The rows are split into groups A and B, each group’s rows are boiled down to a count and a mean, and the answers are combined into a new table with one row per group: here 6 people with mean 65.3 in A and 6 with mean 69.5 in B. This is split–apply–combine, like a pivot table. `n = n()` shows how many rows each mean rests on, and small groups give the most extreme averages.", points:["Says `group_by()` marks groups and later verbs work within them", "Describes split–apply–combine, giving one row per group", "Says `n()` counts the rows in each group", "Explains that small groups give less reliable, more extreme means"]}
+    {id:"t3u8-l3-x7", type:"explain", q:"Explain what `survey |> group_by(group) |> summarize(n = n(), mean_score = mean(score))` does, and why including `n = n()` is a good habit.", model:"`group_by()` marks which group each row belongs to, and `summarize()` then works group by group. The rows are split into groups A and B, each group’s rows are boiled down to a count and a mean, and the answers are combined into a new table with one row per group: here 6 people with mean 65.3 in A and 6 with mean 69.5 in B. This is split–apply–combine, like a pivot table. `n = n()` shows how many rows each mean rests on, and small groups give the most extreme averages.", points:["Says `group_by()` marks groups and later verbs work within them", "Describes split–apply–combine, giving one row per group", "Says `n()` counts the rows in each group", "Explains that small groups give less reliable, more extreme means"]}
    ],
    apply:{intro:"Summarise and reshape the survey. Use the Data Lab for base R; the tidyverse parts need a computer or Posit Cloud.", tasks:[
      {t:"Compare groups in base R (Data Lab, any device)", how:["Solve the Data Lab’s **Compare groups** and **Count answers** challenges","In the same editor, press **Run** on `aggregate(cbind(score, hours) ~ group, data = d, FUN = mean)` and `table(d$group, d$answer)`","Write one sentence comparing A and B, including how many people are in each group"]},
-     {t:"Do it with dplyr (computer or Posit Cloud)", how:["Run `survey |> group_by(group) |> summarise(n = n(), mean_score = mean(score), mean_hours = mean(hours))`","Run `survey |> count(group, answer) |> pivot_wider(names_from = answer, values_from = n, values_fill = 0)`","Check both against your base R results"]},
-     {t:"Reshape a table of your own", how:["Write down a small wide table from your life (3–4 rows, 3 measurement columns: weekly spending, monthly bills, practice minutes…)","Type it in as a tibble and make it long with pivot_longer(); predict the number of rows first","Summarise the long table by row with group_by() + summarise()"]}
+     {t:"Do it with dplyr (computer or Posit Cloud)", how:["Run `survey |> group_by(group) |> summarize(n = n(), mean_score = mean(score), mean_hours = mean(hours))`","Run `survey |> count(group, answer) |> pivot_wider(names_from = answer, values_from = n, values_fill = 0)`","Check both against your base R results"]},
+     {t:"Reshape a table of your own", how:["Write down a small wide table from your life (3–4 rows, 3 measurement columns: weekly spending, monthly bills, practice minutes…)","Type it in as a tibble and make it long with pivot_longer(); predict the number of rows first","Summarise the long table by row with group_by() + summarize()"]}
    ], proof:"Your group comparison sentence (with group sizes), plus the predicted and actual row count of your own long table."},
    read:[{book:"r4ds", where:"Chapter 3, “Data transformation”: Section 3.5 “Groups” and Section 3.6 “Case study: aggregates and sample size”"},{book:"r4ds", where:"Chapter 5, “Data tidying”: Sections 5.2 “Tidy data”, 5.3 “Lengthening data” and 5.4 “Widening data”"},{book:"dcss", where:"R for Social Scientists: “Data Wrangling with dplyr” (section “Split-apply-combine data analysis and the summarize() function”) and “Data Wrangling with tidyr”"}]
   },
   /* ===================== LESSON 4 ===================== */
   {id:"t3u8-l4", title:"The grammar of ggplot2", minutes:55,
-   hook:{q:"In R, this code runs without an error: `ggplot(survey, aes(x = hours, y = score, colour = \"blue\")) + geom_point()`. What colour are the points?", options:["Blue","A reddish pink, with a legend that says “blue”","Black","Every point a different colour"], answer:1, reveal:"**Reddish pink, with a legend labelled “blue”.** Anything inside `aes()` is treated as data to be *mapped*: ggplot2 sees a column whose every value is the word \"blue\", gives that one category its first default colour (a salmon pink), and adds a legend for it. To simply *set* a colour, put it outside `aes()`: `geom_point(colour = \"blue\")`. This lesson explains that difference and the rest of ggplot2’s grammar."},
+   hook:{q:"In R, this code runs without an error: `ggplot(survey, aes(x = hours, y = score, color = \"blue\")) + geom_point()`. What color are the points?", options:["Blue","A reddish pink, with a legend that says “blue”","Black","Every point a different color"], answer:1, reveal:"**Reddish pink, with a legend labeled “blue”.** Anything inside `aes()` is treated as data to be *mapped*: ggplot2 sees a column whose every value is the word \"blue\", gives that one category its first default color (a salmon pink), and adds a legend for it. To simply *set* a color, put it outside `aes()`: `geom_point(color = \"blue\")`. This lesson explains that difference and the rest of ggplot2’s grammar."},
    goals:[
      "Describe a chart as data + aesthetic mappings + geoms, the grammar behind ggplot2",
      "Build scatterplots, histograms, boxplots, bar charts and line charts",
-     "Tell mapping (inside aes()) from setting (outside), and use more than colour to show groups",
+     "Tell mapping (inside aes()) from setting (outside), and use more than color to show groups",
      "Split a chart into small multiples with facet_wrap()",
      "Fix the two most common ggplot2 errors, and draw the same charts in base R"
    ],
@@ -398,27 +398,27 @@ ICA.addUnit({
       "[[ggplot2]] is based on the **grammar of graphics**: the idea that every chart is made of the same components, as every sentence is made of nouns and verbs. The ones you need first:",
       {list:[
         "**Data**: a tidy data frame.",
-        "**[[aesthetic-mapping|Aesthetic mappings]]**: which column drives which visual property: x position, y position, colour, shape, size.",
+        "**[[aesthetic-mapping|Aesthetic mappings]]**: which column drives which visual property: x position, y position, color, shape, size.",
         "**[[geom|Geoms]]**: the marks that draw the data: points, bars, lines, boxes.",
-        "Optional extras: **facets** (small multiples), **scales** (how values become colours or axis ticks), **labels** and a **theme**."
+        "Optional extras: **facets** (small multiples), **scales** (how values become colors or axis ticks), **labels** and a **theme**."
       ]},
       "You add them together with `+`, one layer at a time. Because the parts are independent, swapping `geom_point()` for `geom_line()` changes the chart type without touching anything else. That’s also why ggplot2 wants **long** data (Lesson 3): each aesthetic needs one column to map.",
-      {fig:'<svg viewBox="0 0 340 498"><defs><marker id="u8a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-gold" x="14" y="8" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="28" text-anchor="start">Data</text><text class="s" x="26" y="46" text-anchor="start">ggplot(survey, …)</text><text x="170" y="74" text-anchor="middle">+</text><rect class="d-lup" x="14" y="80" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="100" text-anchor="start">Aesthetic mappings</text><text class="s" x="26" y="118" text-anchor="start">aes(x = hours, y = score, colour = group)</text><text x="170" y="146" text-anchor="middle">+</text><rect class="d-sage" x="14" y="152" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="172" text-anchor="start">Geom: the marks</text><text class="s" x="26" y="190" text-anchor="start">geom_point()</text><text x="170" y="218" text-anchor="middle">+</text><rect class="d-rose" x="14" y="224" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="244" text-anchor="start">Facets (optional)</text><text class="s" x="26" y="262" text-anchor="start">facet_wrap(~ group)</text><text x="170" y="290" text-anchor="middle">+</text><rect class="d-panel" x="14" y="296" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="316" text-anchor="start">Labels, scales, theme</text><text class="s" x="26" y="334" text-anchor="start">labs(…) + theme_minimal()</text><text class="s" x="170" y="372" text-anchor="middle">Result: one chart, built layer by layer</text><path class="d-ink" d="M40 382 L40 472 L300 472" stroke-width="1.5"/><circle class="d-lup" cx="130" cy="441.6" r="5" stroke-width="2"/><circle class="d-lup" cx="190" cy="424.5" r="5" stroke-width="2"/><rect class="d-gold" x="95.5" y="448.5" width="9" height="9" stroke-width="2"/><rect class="d-gold" x="215.5" y="404.8" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="160" cy="432.1" r="5" stroke-width="2"/><rect class="d-gold" x="65.5" y="459.9" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="250" cy="399.8" r="5" stroke-width="2"/><rect class="d-gold" x="185.5" y="416.2" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="130" cy="443.5" r="5" stroke-width="2"/><rect class="d-gold" x="275.5" y="385.8" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="100" cy="458.7" r="5" stroke-width="2"/><rect class="d-gold" x="215.5" y="410.5" width="9" height="9" stroke-width="2"/><text class="s" x="170" y="488" text-anchor="middle">hours →</text><text class="s" x="36" y="390" text-anchor="end">score</text><circle class="d-lup" cx="250" cy="484" r="5" stroke-width="2"/><text class="s" x="260" y="488" text-anchor="start">A</text><rect class="d-gold" x="281.5" y="479.5" width="9" height="9" stroke-width="2"/><text class="s" x="296" y="488" text-anchor="start">B</text></svg>', alt:"Five stacked layers joined by plus signs: Data ggplot(survey); Aesthetic mappings aes(x = hours, y = score, colour = group); Geom geom_point(); Facets facet_wrap(~ group), optional; Labels, scales, theme. Below, a small scatterplot of score against hours with circles for group A and squares for group B.", cap:"A ggplot2 chart is built from layers added with +."}
+      {fig:'<svg viewBox="0 0 340 498"><defs><marker id="u8a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-gold" x="14" y="8" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="28" text-anchor="start">Data</text><text class="s" x="26" y="46" text-anchor="start">ggplot(survey, …)</text><text x="170" y="74" text-anchor="middle">+</text><rect class="d-lup" x="14" y="80" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="100" text-anchor="start">Aesthetic mappings</text><text class="s" x="26" y="118" text-anchor="start">aes(x = hours, y = score, color = group)</text><text x="170" y="146" text-anchor="middle">+</text><rect class="d-sage" x="14" y="152" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="172" text-anchor="start">Geom: the marks</text><text class="s" x="26" y="190" text-anchor="start">geom_point()</text><text x="170" y="218" text-anchor="middle">+</text><rect class="d-rose" x="14" y="224" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="244" text-anchor="start">Facets (optional)</text><text class="s" x="26" y="262" text-anchor="start">facet_wrap(~ group)</text><text x="170" y="290" text-anchor="middle">+</text><rect class="d-panel" x="14" y="296" width="312" height="48" rx="8" stroke-width="2"/><text x="26" y="316" text-anchor="start">Labels, scales, theme</text><text class="s" x="26" y="334" text-anchor="start">labs(…) + theme_minimal()</text><text class="s" x="170" y="372" text-anchor="middle">Result: one chart, built layer by layer</text><path class="d-ink" d="M40 382 L40 472 L300 472" stroke-width="1.5"/><circle class="d-lup" cx="130" cy="441.6" r="5" stroke-width="2"/><circle class="d-lup" cx="190" cy="424.5" r="5" stroke-width="2"/><rect class="d-gold" x="95.5" y="448.5" width="9" height="9" stroke-width="2"/><rect class="d-gold" x="215.5" y="404.8" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="160" cy="432.1" r="5" stroke-width="2"/><rect class="d-gold" x="65.5" y="459.9" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="250" cy="399.8" r="5" stroke-width="2"/><rect class="d-gold" x="185.5" y="416.2" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="130" cy="443.5" r="5" stroke-width="2"/><rect class="d-gold" x="275.5" y="385.8" width="9" height="9" stroke-width="2"/><circle class="d-lup" cx="100" cy="458.7" r="5" stroke-width="2"/><rect class="d-gold" x="215.5" y="410.5" width="9" height="9" stroke-width="2"/><text class="s" x="170" y="488" text-anchor="middle">hours →</text><text class="s" x="36" y="390" text-anchor="end">score</text><circle class="d-lup" cx="250" cy="484" r="5" stroke-width="2"/><text class="s" x="260" y="488" text-anchor="start">A</text><rect class="d-gold" x="281.5" y="479.5" width="9" height="9" stroke-width="2"/><text class="s" x="296" y="488" text-anchor="start">B</text></svg>', alt:"Five stacked layers joined by plus signs: Data ggplot(survey); Aesthetic mappings aes(x = hours, y = score, color = group); Geom geom_point(); Facets facet_wrap(~ group), optional; Labels, scales, theme. Below, a small scatterplot of score against hours with circles for group A and squares for group B.", cap:"A ggplot2 chart is built from layers added with +."}
     ]},
     {h:"Your first ggplot", body:[
       {code:"ggplot(survey, aes(x = hours, y = score)) +\n  geom_point()", lang:"r", label:"R · computer or Posit Cloud"},
       "Read it in two parts. `ggplot(survey, aes(x = hours, y = score))` sets up the data and the mappings: an empty canvas with hours along the bottom and score up the side. `+ geom_point()` adds a layer of points, one per row. The result is a [[scatterplot]] where scores clearly rise with study hours.",
-      "Now map a third column. Adding `colour = group` inside `aes()` colours points by group and adds a legend automatically. Mapping **shape** too means the groups stay distinguishable in greyscale and for people with colour vision deficiency (Unit 4’s advice: never rely on colour alone):",
-      {code:"ggplot(survey,\n  aes(x = hours, y = score, colour = group, shape = group)) +\n  geom_point(size = 3)", lang:"r", label:"R · computer or Posit Cloud"},
-      "A second geom adds a second layer on the same mappings. `geom_smooth(method = \"lm\")` draws the straight line of best fit with a grey band showing its uncertainty; R also prints a short message saying which formula it used (`y ~ x`, a straight line):",
+      "Now map a third column. Adding `color = group` inside `aes()` colors points by group and adds a legend automatically. Mapping **shape** too means the groups stay distinguishable in greyscale and for people with color vision deficiency (Unit 4’s advice: never rely on color alone):",
+      {code:"ggplot(survey,\n  aes(x = hours, y = score, color = group, shape = group)) +\n  geom_point(size = 3)", lang:"r", label:"R · computer or Posit Cloud"},
+      "A second geom adds a second layer on the same mappings. `geom_smooth(method = \"lm\")` draws the straight line of best fit with a gray band showing its uncertainty; R also prints a short message saying which formula it used (`y ~ x`, a straight line):",
       {code:"ggplot(survey, aes(x = hours, y = score)) +\n  geom_point() +\n  geom_smooth(method = \"lm\")", lang:"r", label:"R · computer or Posit Cloud"}
     ]},
     {h:"Mapping or setting?", body:[
       "This is the single most important distinction in ggplot2, and the trick behind the warm-up:",
-      {table:[["","Mapping","Setting"],["Where","Inside `aes()`","Outside `aes()`, in the geom"],["Value comes from","A column of the data","A fixed value you type"],["Example","`aes(colour = group)`","`geom_point(colour = \"steelblue\")`"],["Legend?","Yes, explains the mapping","No, nothing to explain"]]},
-      {code:"# mapping: colour comes from the data\nggplot(survey, aes(x = hours, y = score)) +\n  geom_point(aes(colour = group))\n\n# setting: every point is the same colour\nggplot(survey, aes(x = hours, y = score)) +\n  geom_point(colour = \"steelblue\", size = 3)", lang:"r", label:"R · computer or Posit Cloud"},
-      "The first chart’s colours change with group. The second chart’s points are all steel blue and size 3. Put `colour = \"blue\"` inside `aes()` instead, and ggplot2 treats \"blue\" as a data value, picks its first default colour for it and adds a pointless legend.",
-      "Common aesthetics: `x`, `y`, `colour` (outline or point colour), `fill` (inside of bars and boxes), `shape`, `size`, `linewidth` (thickness of lines) and `alpha` (transparency from 0 to 1, useful when points overlap)."
+      {table:[["","Mapping","Setting"],["Where","Inside `aes()`","Outside `aes()`, in the geom"],["Value comes from","A column of the data","A fixed value you type"],["Example","`aes(color = group)`","`geom_point(color = \"steelblue\")`"],["Legend?","Yes, explains the mapping","No, nothing to explain"]]},
+      {code:"# mapping: color comes from the data\nggplot(survey, aes(x = hours, y = score)) +\n  geom_point(aes(color = group))\n\n# setting: every point is the same color\nggplot(survey, aes(x = hours, y = score)) +\n  geom_point(color = \"steelblue\", size = 3)", lang:"r", label:"R · computer or Posit Cloud"},
+      "The first chart’s colors change with group. The second chart’s points are all steel blue and size 3. Put `color = \"blue\"` inside `aes()` instead, and ggplot2 treats \"blue\" as a data value, picks its first default color for it and adds a pointless legend.",
+      "Common aesthetics: `x`, `y`, `color` (outline or point color), `fill` (inside of bars and boxes), `shape`, `size`, `linewidth` (thickness of lines) and `alpha` (transparency from 0 to 1, useful when points overlap)."
     ]},
     {h:"Choosing a geom for the question", body:[
       "Unit 4 matched questions to chart types. Here are the ggplot2 geoms for them:",
@@ -428,8 +428,8 @@ ICA.addUnit({
       "If you’ve already counted, use `geom_col()`, which draws the y values you give it:",
       {code:"answers <- count(survey, answer)\nggplot(answers, aes(x = answer, y = n)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
       "Lines need long data with a time column. Using the walking club from Lesson 3, with `week` as a number:",
-      {code:"library(tidyverse)\nwalks <- tibble(\n  name  = c(\"Amara\", \"Kenji\", \"Lucía\"),\n  week1 = c(12, 8, 15),\n  week2 = c(10, 11, 14),\n  week3 = c(14, 9, 16)\n)\nlong <- walks |>\n  pivot_longer(starts_with(\"week\"), names_to = \"week\",\n    names_prefix = \"week\", names_transform = as.integer,\n    values_to = \"km\")\nggplot(long, aes(x = week, y = km, colour = name)) +\n  geom_line(linewidth = 1) +\n  geom_point()", lang:"r", label:"R · computer or Posit Cloud"},
-      "Mapping `colour = name` also tells ggplot2 to draw one line per person. Without a grouping it would try to join all nine points into one zig-zag."
+      {code:"library(tidyverse)\nwalks <- tibble(\n  name  = c(\"Amara\", \"Kenji\", \"Lucía\"),\n  week1 = c(12, 8, 15),\n  week2 = c(10, 11, 14),\n  week3 = c(14, 9, 16)\n)\nlong <- walks |>\n  pivot_longer(starts_with(\"week\"), names_to = \"week\",\n    names_prefix = \"week\", names_transform = as.integer,\n    values_to = \"km\")\nggplot(long, aes(x = week, y = km, color = name)) +\n  geom_line(linewidth = 1) +\n  geom_point()", lang:"r", label:"R · computer or Posit Cloud"},
+      "Mapping `color = name` also tells ggplot2 to draw one line per person. Without a grouping it would try to join all nine points into one zig-zag."
     ]},
     {h:"Facets: small multiples", body:[
       "When one chart gets crowded, split it into a panel per group with the same axes, Unit 4’s [[small-multiples]]. In ggplot2 that’s one more layer, a [[facet-ggplot|facet]]:",
@@ -451,19 +451,19 @@ ICA.addUnit({
     {h:"The base R way to chart", body:[
       "Base R’s graphics work differently: each function draws immediately, like a pen on paper, rather than building an object from layers. They’re quick for a first look, and they run in the Data Lab:",
       {code:"plot(d$hours, d$score)\nhist(d$hours)\nboxplot(score ~ group, data = d)\nbarplot(table(d$answer))", lang:"r", label:"R · base R, runs in the Data Lab"},
-      "`plot()` makes a scatterplot, `hist()` a histogram, `boxplot(score ~ group)` one box per group, and `barplot(table(…))` a bar chart of counts. Colouring by group means building the colours and the legend yourself:",
+      "`plot()` makes a scatterplot, `hist()` a histogram, `boxplot(score ~ group)` one box per group, and `barplot(table(…))` a bar chart of counts. Coloring by group means building the colors and the legend yourself:",
       {code:"plot(score ~ hours, data = d, pch = 19,\n  col = ifelse(d$group == \"A\", \"darkorange\", \"steelblue\"))\nlegend(\"topleft\", legend = c(\"A\", \"B\"), pch = 19,\n  col = c(\"darkorange\", \"steelblue\"))", lang:"r", label:"R · base R, runs in the Data Lab"},
       "That manual work is the main reason people move to ggplot2: the mapping, legend and facets come from the grammar. Unit 8 covers base plots in more detail ({{base-plots-r}}).",
-      {lab:"dl-r-hist", t:"Practise: a histogram of hours with a title and axis label, in base R"},
-      {lab:"dl-r-cor", t:"Practise: plot(d$hours, d$score), then measure the pattern with cor()"}
+      {lab:"dl-r-hist", t:"Practice: a histogram of hours with a title and axis label, in base R"},
+      {lab:"dl-r-cor", t:"Practice: plot(d$hours, d$score), then measure the pattern with cor()"}
     ]}
    ],
    try:[
     {id:"t3u8-l4-x1", type:"sort", q:"For each instruction, does the code go inside `aes()` (mapping) or outside it, in the geom (setting)?", buckets:["Inside aes()","Outside aes()"], items:[
-      {t:"Colour each point by its group", b:0, why:"The colour depends on a column, so it’s a mapping."},
+      {t:"Color each point by its group", b:0, why:"The color depends on a column, so it’s a mapping."},
       {t:"Make every point size 3", b:1, why:"A fixed value for all points is a setting: `geom_point(size = 3)`."},
       {t:"Put hours on the x-axis", b:0, why:"Position comes from a column: `aes(x = hours)`."},
-      {t:"Make all bars grey", b:1, why:"One colour for everything: `geom_bar(fill = \"grey\")`."},
+      {t:"Make all bars gray", b:1, why:"One color for everything: `geom_bar(fill = \"gray\")`."},
       {t:"Use a different shape for each answer", b:0, why:"Shape depends on the answer column: `aes(shape = answer)`."},
       {t:"Make every point half transparent", b:1, why:"A fixed transparency: `geom_point(alpha = 0.5)`."}
     ]},
@@ -475,7 +475,7 @@ ICA.addUnit({
       ["How did each walker’s distance change week by week?","`geom_line()`","Change over time, one line per person."]
     ]},
     {id:"t3u8-l4-x3", type:"number", q:"`ggplot(survey, aes(x = answer)) + geom_bar()` on the 12-person survey (6 Yes, 4 No, 2 Unsure). How tall is the tallest bar?", answer:6, tol:0, unit:"people", why:"geom_bar() counts the rows in each category. Yes has 6 rows, so its bar reaches 6.", wrongs:[{v:12, tol:0, why:"12 is the total. geom_bar() draws one bar per answer, each with that answer’s count."},{v:0.5, tol:0, why:"0.5 is Yes’s share. geom_bar() shows counts unless you ask for proportions."}]},
-    {id:"t3u8-l4-x4", type:"spot", q:"Oluwaseun’s chart code gives an error. Tap the parts that are wrong.", ask:"is wrong", mono:true, parts:["survey |> ",{t:"ggplot(aes(x = hours, y = score))", flag:false, why:"Piping data into ggplot() is fine; the data becomes its first argument."},{t:" |> ", flag:true, why:"Between layers ggplot2 needs `+`, not a pipe. R even suggests this in its error message."},{t:"geom_point(colour = \"darkgreen\")", flag:false, why:"Setting one colour outside aes() is correct."},{t:" + ", flag:false, why:"Correct: + joins layers."},{t:"facet_wrap(~ group)", flag:false, why:"Correct: one panel per group."}]},
+    {id:"t3u8-l4-x4", type:"spot", q:"Oluwaseun’s chart code gives an error. Tap the parts that are wrong.", ask:"is wrong", mono:true, parts:["survey |> ",{t:"ggplot(aes(x = hours, y = score))", flag:false, why:"Piping data into ggplot() is fine; the data becomes its first argument."},{t:" |> ", flag:true, why:"Between layers ggplot2 needs `+`, not a pipe. R even suggests this in its error message."},{t:"geom_point(color = \"darkgreen\")", flag:false, why:"Setting one color outside aes() is correct."},{t:" + ", flag:false, why:"Correct: + joins layers."},{t:"facet_wrap(~ group)", flag:false, why:"Correct: one panel per group."}]},
     {id:"t3u8-l4-x5", type:"mcq", q:"Lucía has a table `answers` with columns `answer` and `n` (already counted). Which code draws a bar chart of those counts?", options:[
       {t:"`ggplot(answers, aes(x = answer, y = n)) + geom_col()`", ok:true, why:"geom_col() draws the y values it’s given, which are her counts."},
       {t:"`ggplot(answers, aes(x = answer)) + geom_bar()`", why:"geom_bar() counts rows. Each answer has one row in `answers`, so every bar would be 1 high."},
@@ -484,25 +484,25 @@ ICA.addUnit({
     ]},
     {id:"t3u8-l4-x6", type:"mcq", q:"Ana wants separate panels for groups A and B, with the same axes so they’re easy to compare. Which layer does that?", options:[
       {t:"`facet_wrap(~ group)`", ok:true, why:"Facets split the chart into small multiples, one per group, sharing scales by default."},
-      {t:"`aes(colour = group)`", why:"That colours the groups within a single panel; it doesn’t split the chart."},
-      {t:"`geom_boxplot()`", why:"A boxplot compares groups in one panel; it doesn’t make panels, and it summarises rather than showing points."},
+      {t:"`aes(color = group)`", why:"That colors the groups within a single panel; it doesn’t split the chart."},
+      {t:"`geom_boxplot()`", why:"A boxplot compares groups in one panel; it doesn’t make panels, and it summarizes rather than showing points."},
       {t:"`group_by(group)`", why:"group_by() is dplyr; it affects later dplyr verbs, not the chart layout."}
     ]},
-    {id:"t3u8-l4-x7", type:"explain", q:"Explain the difference between `aes(colour = group)` and `geom_point(colour = \"steelblue\")` in ggplot2, and what goes wrong with `aes(colour = \"blue\")`.", model:"Inside `aes()`, colour is a **mapping**: its value comes from a column, so each group gets its own colour and ggplot2 adds a legend to explain it. Outside `aes()`, in the geom, colour is a **setting**: one fixed value for every point, with no legend because nothing varies with the data. `aes(colour = \"blue\")` mixes them up: ggplot2 treats “blue” as a data value, a single constant category, colours every point with its first default colour (not blue) and adds a pointless legend.", points:["Says inside `aes()` is a mapping from a column of data", "Says outside `aes()` is a fixed setting", "Mentions that mappings get a legend and settings don’t", "Explains that `\"blue\"` inside `aes()` is treated as a data value"]}
+    {id:"t3u8-l4-x7", type:"explain", q:"Explain the difference between `aes(color = group)` and `geom_point(color = \"steelblue\")` in ggplot2, and what goes wrong with `aes(color = \"blue\")`.", model:"Inside `aes()`, color is a **mapping**: its value comes from a column, so each group gets its own color and ggplot2 adds a legend to explain it. Outside `aes()`, in the geom, color is a **setting**: one fixed value for every point, with no legend because nothing varies with the data. `aes(color = \"blue\")` mixes them up: ggplot2 treats “blue” as a data value, a single constant category, colors every point with its first default color (not blue) and adds a pointless legend.", points:["Says inside `aes()` is a mapping from a column of data", "Says outside `aes()` is a fixed setting", "Mentions that mappings get a legend and settings don’t", "Explains that `\"blue\"` inside `aes()` is treated as a data value"]}
    ],
    apply:{intro:"Draw the same charts twice: base R in the Data Lab, and ggplot2 on a computer or Posit Cloud.", tasks:[
      {t:"Base R charts (Data Lab, any device)", how:["Solve the **A histogram** challenge","In any survey.csv challenge, press **Run** on `boxplot(score ~ group, data = d)` and `barplot(table(d$answer))`","Note what each chart suggests in one sentence"]},
-     {t:"ggplot2 charts (computer or Posit Cloud)", how:["Make the scatterplot of score against hours, coloured and shaped by group","Add `geom_smooth(method = \"lm\")`, then try `facet_wrap(~ group)` instead of colour","Make a histogram with binwidth 1, then 3: does the story change?"]},
-     {t:"Break it on purpose", how:["Put `colour = \"blue\"` inside aes() and look at the legend","Move a `+` to the start of a line and read the error","Fix both, and write down what each error taught you"]}
-   ], proof:"Your base R histogram (passed in the Data Lab) and, if you have a computer, a ggplot2 scatterplot coloured by group, with one sentence about what it shows."},
+     {t:"ggplot2 charts (computer or Posit Cloud)", how:["Make the scatterplot of score against hours, colored and shaped by group","Add `geom_smooth(method = \"lm\")`, then try `facet_wrap(~ group)` instead of color","Make a histogram with binwidth 1, then 3: does the story change?"]},
+     {t:"Break it on purpose", how:["Put `color = \"blue\"` inside aes() and look at the legend","Move a `+` to the start of a line and read the error","Fix both, and write down what each error taught you"]}
+   ], proof:"Your base R histogram (passed in the Data Lab) and, if you have a computer, a ggplot2 scatterplot colored by group, with one sentence about what it shows."},
    read:[{book:"r4ds", where:"Chapter 1, “Data visualization”: Sections 1.2 “First steps” to 1.5 “Visualizing relationships”"},{book:"r4ds", where:"Chapter 9, “Layers”: Sections 9.2 “Aesthetic mappings”, 9.3 “Geometric objects” and 9.4 “Facets”"},{book:"dcss", where:"R for Social Scientists: “Data Visualisation with ggplot2” (sections “Plotting with ggplot2” to “Faceting”)"}]
   },
   /* ===================== LESSON 5 ===================== */
   {id:"t3u8-l5", title:"Polished charts and reproducible reports", minutes:55,
-   hook:{q:"Sione’s report quotes a mean score of 67.4, typed in by hand, along with a pasted chart. Then two late survey responses arrive. With a Quarto report, what does updating the numbers and chart take?", options:["Retyping every number and re-pasting every chart","Rendering the report again: the code recomputes every number and redraws every chart","Nothing: Quarto watches the file and edits the old PDF","Rewriting the analysis code from scratch"], answer:1, reveal:"**Render again.** In a Quarto report the numbers and charts aren’t pasted; they’re produced by code inside the document each time it is rendered. New data in, render, and every figure updates, with no copying mistakes. This lesson first polishes charts (labels, colours, themes, saving), then outlines how a Quarto report works."},
+   hook:{q:"Sione’s report quotes a mean score of 67.4, typed in by hand, along with a pasted chart. Then two late survey responses arrive. With a Quarto report, what does updating the numbers and chart take?", options:["Retyping every number and re-pasting every chart","Rendering the report again: the code recomputes every number and redraws every chart","Nothing: Quarto watches the file and edits the old PDF","Rewriting the analysis code from scratch"], answer:1, reveal:"**Render again.** In a Quarto report the numbers and charts aren’t pasted; they’re produced by code inside the document each time it is rendered. New data in, render, and every figure updates, with no copying mistakes. This lesson first polishes charts (labels, colors, themes, saving), then outlines how a Quarto report works."},
    goals:[
      "Give a chart a title that states the point, clear axis labels, a source caption and alt text with labs()",
-     "Choose colour-blind-safe scales and adjust a theme",
+     "Choose color-blind-safe scales and adjust a theme",
      "Save a chart at a chosen size and resolution with ggsave()",
      "Describe the parts of a Quarto document: YAML header, text, code chunks, chunk options and inline code",
      "Explain what makes an analysis reproducible, and what a Quarto render does"
@@ -510,31 +510,31 @@ ICA.addUnit({
    learn:[
     {h:"Labels that say the point", body:[
       {lead:"A chart that’s correct but unlabelled makes readers do the work. labs() does most of the polishing in one place."},
-      {code:"p <- ggplot(survey,\n  aes(x = hours, y = score, colour = group)) +\n  geom_point(size = 3) +\n  labs(\n    title = \"More study, higher scores\",\n    subtitle = \"12 people, invented survey data\",\n    x = \"Hours of study per week\",\n    y = \"Test score\",\n    colour = \"Group\",\n    caption = \"Data: survey.csv (invented)\",\n    alt = \"Scatterplot: score rises with study hours\"\n  )\np", lang:"r", label:"R · computer or Posit Cloud"},
+      {code:"p <- ggplot(survey,\n  aes(x = hours, y = score, color = group)) +\n  geom_point(size = 3) +\n  labs(\n    title = \"More study, higher scores\",\n    subtitle = \"12 people, invented survey data\",\n    x = \"Hours of study per week\",\n    y = \"Test score\",\n    color = \"Group\",\n    caption = \"Data: survey.csv (invented)\",\n    alt = \"Scatterplot: score rises with study hours\"\n  )\np", lang:"r", label:"R · computer or Posit Cloud"},
       {list:[
         "`title` states the finding (“More study, higher scores”), not just the topic, as Unit 4 recommends ({{annotation-charts|annotation and titles}}).",
         "`subtitle` gives context: who, how many, when.",
         "`x` and `y` replace column names with words and units.",
-        "`colour = \"Group\"` renames the legend: each mapped aesthetic gets its own label (`fill`, `shape`, `size`…).",
+        "`color = \"Group\"` renames the legend: each mapped aesthetic gets its own label (`fill`, `shape`, `size`…).",
         "`caption` credits the data source.",
         "`alt` stores [[alt-text|alt text]] inside the chart object (`get_alt_text(p)` reads it back). Whether a tool attaches it to the image automatically varies, so in a Quarto report also set the chunk option `fig-alt` (see the Quarto sections below)."
       ]},
       "Storing the chart as `p` means you can print it, change it (`p + theme_minimal()`) or save it later."
     ]},
-    {h:"Scales: colours and axes", body:[
-      "**Scales** control how data values become visual values. Each aesthetic has scale functions named `scale_<aesthetic>_<type>()`. The default colours for categories are evenly spaced hues, not designed for colour vision deficiency. Two good built-in choices:",
-      {code:"p <- ggplot(survey,\n  aes(x = hours, y = score, colour = group)) +\n  geom_point(size = 3)\np + scale_colour_brewer(palette = \"Dark2\")\np + scale_colour_viridis_d(end = 0.8)\nggplot(survey, aes(x = answer)) +\n  geom_bar() +\n  scale_y_continuous(limits = c(0, NA))", lang:"r", label:"R · computer or Posit Cloud"},
+    {h:"Scales: colors and axes", body:[
+      "**Scales** control how data values become visual values. Each aesthetic has scale functions named `scale_<aesthetic>_<type>()`. The default colors for categories are evenly spaced hues, not designed for color vision deficiency. Two good built-in choices:",
+      {code:"p <- ggplot(survey,\n  aes(x = hours, y = score, color = group)) +\n  geom_point(size = 3)\np + scale_color_brewer(palette = \"Dark2\")\np + scale_color_viridis_d(end = 0.8)\nggplot(survey, aes(x = answer)) +\n  geom_bar() +\n  scale_y_continuous(limits = c(0, NA))", lang:"r", label:"R · computer or Posit Cloud"},
       {list:[
-        "`scale_colour_brewer(palette = \"Dark2\")` uses a ColorBrewer qualitative palette for categories.",
-        "`scale_colour_viridis_d()` uses viridis colours (`_d` for discrete categories, `_c` for continuous numbers), designed to read in greyscale and for common kinds of colour blindness. `end = 0.8` avoids its palest yellow, which is hard to see on white.",
+        "`scale_color_brewer(palette = \"Dark2\")` uses a ColorBrewer qualitative palette for categories.",
+        "`scale_color_viridis_d()` uses viridis colors (`_d` for discrete categories, `_c` for continuous numbers), designed to read in greyscale and for common kinds of color blindness. `end = 0.8` avoids its palest yellow, which is hard to see on white.",
         "`scale_y_continuous(limits = c(0, NA))` makes the y-axis start at 0 and lets ggplot2 choose the top (NA). Bar charts already start at zero; for other charts, choose the baseline deliberately ({{axes-baselines|Unit 4}})."
       ]},
       {tip:"`fill` has its own scales: `scale_fill_brewer()`, `scale_fill_viridis_d()`. Use the one that matches the aesthetic you mapped."}
     ]},
     {h:"Themes: everything that isn’t data", body:[
       "A [[ggplot-theme|theme]] controls the non-data parts: background, grid lines, fonts, legend position. Complete themes change everything at once; `theme()` adjusts single elements:",
-      {code:"p <- ggplot(survey, aes(x = hours, y = score, colour = group)) +\n  geom_point(size = 3)\np + theme_minimal()\np + theme_bw(base_size = 14)\np +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")", lang:"r", label:"R · computer or Posit Cloud"},
-      {table:[["Theme","Look"],["`theme_grey()`","The default: grey panel, white grid"],["`theme_bw()`","White panel with a border and grid"],["`theme_minimal()`","No border or background; light grid"],["`theme_classic()`","Axis lines, no grid, like many journals"]]},
+      {code:"p <- ggplot(survey, aes(x = hours, y = score, color = group)) +\n  geom_point(size = 3)\np + theme_minimal()\np + theme_bw(base_size = 14)\np +\n  theme_minimal() +\n  theme(legend.position = \"bottom\")", lang:"r", label:"R · computer or Posit Cloud"},
+      {table:[["Theme","Look"],["`theme_gray()`","The default: gray panel, white grid"],["`theme_bw()`","White panel with a border and grid"],["`theme_minimal()`","No border or background; light grid"],["`theme_classic()`","Axis lines, no grid, like many journals"]]},
       "`base_size = 14` enlarges all text, a quick win for slides and phone screens. `theme(legend.position = \"bottom\")` moves the legend under the chart, which suits narrow screens. Add `theme()` **after** a complete theme, or the complete theme will undo your change."
     ]},
     {h:"Saving charts with ggsave()", body:[
@@ -546,7 +546,7 @@ ICA.addUnit({
         "Without `plot =`, ggsave() saves the last chart you displayed. Naming the plot is safer in scripts.",
         "Without `width` and `height`, the size comes from your current plot window, so it changes from session to session. Set them for repeatable results."
       ]},
-      {warn:"Avoid saving charts by screenshot or copy-paste for anything you’ll update. ggsave() in a script makes the same file every time from the same data: that’s the first step towards reproducibility."}
+      {warn:"Avoid saving charts by screenshot or copy-paste for anything you’ll update. ggsave() in a script makes the same file every time from the same data: that’s the first step toward reproducibility."}
     ]},
     {h:"What a reproducible report is", body:[
       "An analysis is **reproducible** when someone else (or you, next year) can take the same data and code and get exactly the same results. The usual way it breaks: numbers are copied by hand from R into a document, charts are pasted, and after one change to the data nobody is sure which numbers are current.",
@@ -576,17 +576,17 @@ ICA.addUnit({
         "**Track changes** with Git (Track 2) if the project matters."
       ]},
       {key:"Reproducible doesn’t mean correct: a report can rebuild the same mistake perfectly. But it makes mistakes findable and fixable, because every number can be traced back to the line of code that made it."},
-      {tip:"No computer? You can still write the outline of a report on paper or in a notes app: the question, the data source, each step as a verb (filter, mutate, summarise), the chart you’d draw and the sentence it supports. That’s the skeleton of every Quarto report."}
+      {tip:"No computer? You can still write the outline of a report on paper or in a notes app: the question, the data source, each step as a verb (filter, mutate, summarize), the chart you’d draw and the sentence it supports. That’s the skeleton of every Quarto report."}
     ]}
    ],
    try:[
-    {id:"t3u8-l5-x1", type:"mcq", q:"Kenji’s chart maps `colour = group`. The legend title says “group” and he wants “Study group”. Which addition does that?", options:[
-      {t:"`labs(colour = \"Study group\")`", ok:true, why:"Each mapped aesthetic’s legend is labelled through labs(), using the aesthetic’s name: colour here."},
-      {t:"`labs(legend = \"Study group\")`", why:"There’s no `legend` label; legends are named after the aesthetic they explain (colour, fill, shape…)."},
+    {id:"t3u8-l5-x1", type:"mcq", q:"Kenji’s chart maps `color = group`. The legend title says “group” and he wants “Study group”. Which addition does that?", options:[
+      {t:"`labs(color = \"Study group\")`", ok:true, why:"Each mapped aesthetic’s legend is labeled through labs(), using the aesthetic’s name: color here."},
+      {t:"`labs(legend = \"Study group\")`", why:"There’s no `legend` label; legends are named after the aesthetic they explain (color, fill, shape…)."},
       {t:"`labs(title = \"Study group\")`", why:"That sets the chart’s title, not the legend’s."},
       {t:"`theme(legend.position = \"Study group\")`", why:"legend.position moves the legend (\"bottom\", \"none\"…); it doesn’t set its text."}
     ]},
-    {id:"t3u8-l5-x2", type:"number", q:"`ggsave(\"chart.png\", width = 16, height = 10, units = \"cm\", dpi = 300)`. About how many pixels wide is the PNG? (1 inch = 2.54 cm.)", answer:1890, tol:3, unit:"pixels", why:"16 cm ÷ 2.54 = 6.30 inches; 6.30 × 300 dots per inch ≈ 1,890 pixels. (The file ggsave made in testing was 1,889 pixels wide, because it rounds down.)", wrongs:[{v:4800, tol:5, why:"That’s 16 × 300: it treats centimetres as inches. Convert to inches first (÷ 2.54)."},{v:189, tol:2, why:"That would be at 30 dpi. Check the multiplication: 6.3 × 300."},{v:16, tol:0, why:"16 is the width in centimetres, not pixels."}]},
+    {id:"t3u8-l5-x2", type:"number", q:"`ggsave(\"chart.png\", width = 16, height = 10, units = \"cm\", dpi = 300)`. About how many pixels wide is the PNG? (1 inch = 2.54 cm.)", answer:1890, tol:3, unit:"pixels", why:"16 cm ÷ 2.54 = 6.30 inches; 6.30 × 300 dots per inch ≈ 1,890 pixels. (The file ggsave made in testing was 1,889 pixels wide, because it rounds down.)", wrongs:[{v:4800, tol:5, why:"That’s 16 × 300: it treats centimeters as inches. Convert to inches first (÷ 2.54)."},{v:189, tol:2, why:"That would be at 30 dpi. Check the multiplication: 6.3 × 300."},{v:16, tol:0, why:"16 is the width in centimeters, not pixels."}]},
     {id:"t3u8-l5-x3", type:"sort", q:"In a Quarto `.qmd` file, where does each line belong?", buckets:["YAML header","Code chunk","Markdown text"], items:[
       {t:"`title: \"Study hours and scores\"`", b:0, why:"Document settings like the title go in the YAML header between --- lines."},
       {t:"`format: html`", b:0, why:"The output format is a YAML setting."},
@@ -617,13 +617,13 @@ ICA.addUnit({
     {id:"t3u8-l5-x7", type:"explain", q:"Explain why writing a report in Quarto, with inline code such as `r nrow(survey)`, is more reproducible than copying numbers and charts from R into a word-processor document.", model:"When numbers and charts are copied by hand, one change to the data leaves nobody sure which figures are current. In Quarto, text, code and results live in one `.qmd` file. Rendering runs every chunk from top to bottom in a fresh session, so the file must load its own packages and read its own data, and inline code puts computed values straight into sentences. Change the data and render again, and every number and chart updates. Reproducible doesn’t mean correct, but every number can be traced to its code.", points:["Says copied numbers can go out of date without anyone noticing", "Says Quarto keeps text, code and results in one file", "Explains that rendering reruns everything from a fresh session", "Says inline code and charts update automatically when the data change"]}
    ],
    apply:{intro:"Polish one chart and outline a report. The ggplot2 and Quarto steps need a computer or Posit Cloud; the planning task works on any device.", tasks:[
-     {t:"Polish and save a chart (computer or Posit Cloud)", how:["Take your scatterplot from Lesson 4 and add labs() with a title that states the point, axis labels with units, a caption and alt text","Add `scale_colour_viridis_d(end = 0.8)` and `theme_minimal(base_size = 14)`","Save it with `ggsave(\"scores.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)` and open the file"]},
+     {t:"Polish and save a chart (computer or Posit Cloud)", how:["Take your scatterplot from Lesson 4 and add labs() with a title that states the point, axis labels with units, a caption and alt text","Add `scale_color_viridis_d(end = 0.8)` and `theme_minimal(base_size = 14)`","Save it with `ggsave(\"scores.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)` and open the file"]},
      {t:"Render a Quarto report (computer or Posit Cloud)", how:{
        win:["In RStudio: **File → New File → Quarto Document…**, give it a title, choose HTML, click **Create**","Replace the content with this lesson’s report outline (and make survey.csv in the same folder)","Save as report.qmd and click **Render** ([[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:K]])","Change one score in survey.csv, render again, and check that the mean sentence changes"],
        mac:["In RStudio: **File → New File → Quarto Document…**, choose HTML, click **Create**","Paste the report outline, save as report.qmd next to survey.csv","Click **Render** ([[kbd:Cmd]] + [[kbd:Shift]] + [[kbd:K]])","Change one score in survey.csv, render again, and watch the numbers update"],
        chromeos:["In a Posit Cloud RStudio project, use **File → New File → Quarto Document…**","If RStudio offers to install packages it needs (such as rmarkdown), accept","Paste the outline, save as report.qmd in the project folder with survey.csv, and click **Render**","The HTML report opens in the Viewer or a new browser tab"],
        phone:["Rendering needs R; on a phone, do task 3 instead","If you use Posit Cloud on a phone browser, the ChromeOS steps work, but expect a cramped screen"]}},
-     {t:"Plan a reproducible report (any device)", how:["Pick a question about data you care about (club attendance, household spending, a class survey)","Write the YAML title, then one heading per section","Under each, write the steps as verbs (read, filter, mutate, group_by + summarise, ggplot) and the sentence each result will support, marking every number that should come from inline code"]}
+     {t:"Plan a reproducible report (any device)", how:["Pick a question about data you care about (club attendance, household spending, a class survey)","Write the YAML title, then one heading per section","Under each, write the steps as verbs (read, filter, mutate, group_by + summarize, ggplot) and the sentence each result will support, marking every number that should come from inline code"]}
    ], proof:"A saved PNG of your polished chart, a rendered report whose numbers changed after you edited the data, or (on a phone) your written report plan with each number marked as computed."},
    read:[{book:"r4ds", where:"Chapter 11, “Communication”: Sections 11.2 “Labels”, 11.4 “Scales” and 11.5 “Themes”; and Chapter 1, Section 1.6 “Saving your plots”"},{book:"r4ds", where:"Chapter 28, “Quarto”: Sections 28.2 “Quarto basics”, 28.5 “Code chunks” and 28.10 “YAML header”; and Chapter 29, “Quarto formats”"},{book:"dcss", where:"R for Social Scientists: “Getting started with R Markdown (Optional)”, the older format Quarto replaces, which works the same way"}]
   },
@@ -634,7 +634,7 @@ ICA.addUnit({
      "Say what AI assistants do well and badly in data work, and why",
      "Test AI-written R (and a little Python) on a small known case, and check rows, missing values and every line",
      "Catch made-up numbers, wrong tests, misread p-values and invented citations",
-     "Find wrong summaries, cut axes and poor colour choices in AI-made charts",
+     "Find wrong summaries, cut axes and poor color choices in AI-made charts",
      "Keep an AI log, record versions, and write a short disclosure statement"
    ],
    learn:[
@@ -643,7 +643,7 @@ ICA.addUnit({
       "Chatbots and coding assistants run on [[large-language-model|large language models]] (Track 1, Unit 6 explains how in {{ai-chatbot-accuracy}}). Some only write text. Others can also **run code** in a sandbox and show you the code and its output. Either way, what comes back is a draft to check, not a result to quote.",
       {table:[["Usually helpful","Check every time"],["Explaining an error message or a function","Any number stated without code behind it"],["Drafting code that you then read and test","Code that runs but answers a different question"],["Translating between R, Python and SQL","Missing values, odd codes and repeated rows"],["Suggesting chart types and labels","Which statistical test fits your design"],["Writing comments and documentation","References, quotes and “studies show” claims"]]},
       "The pattern: an assistant knows what code *usually* looks like, not what *your* file contains. It doesn’t know that 99 means “no answer”, that one person has three rows, or that before and after scores come from the same people. It can also invent functions and arguments (Track 2, Unit 11 covers AI code in general: {{ai-code-review}}).",
-      {warn:"Think before you paste. Data about people (names, health, grades) may not be yours to upload to an outside service. Follow your organisation’s rules, give the assistant column names or invented sample rows, and run the code on the real data yourself ({{ai-privacy-disclosure}})."},
+      {warn:"Think before you paste. Data about people (names, health, grades) may not be yours to upload to an outside service. Follow your organization’s rules, give the assistant column names or invented sample rows, and run the code on the real data yourself ({{ai-privacy-disclosure}})."},
       {key:"The assistant drafts; you verify. Responsibility for every number stays with you."}
     ]},
     {h:"Test the code on a small known case", body:[
@@ -659,7 +659,7 @@ ICA.addUnit({
       {code:"           No    Unsure       Yes\n  A 0.3333333 0.1666667 0.5000000\n  B 0.3333333 0.1666667 0.5000000", lang:"txt", label:"What R prints"},
       "Now half of each group said Yes, matching a count by hand (3 of 6). A [[sanity-check|sanity check]] would also have caught it: each group’s shares must add up to 1, and `rowSums()` shows the first version’s rows add up to 0.5.",
       {tip:"Build the known case to catch likely mistakes: unequal group sizes, a missing value, a value exactly on a boundary. The Data Lab works the same way: every challenge is checked again on a second, hidden file."},
-      {lab:"dl-r-table", t:"Practise: count the answers and compute the share of Yes, then check it by hand"}
+      {lab:"dl-r-table", t:"Practice: count the answers and compute the share of Yes, then check it by hand"}
     ]},
     {h:"Check rows, missing values and every line", body:[
       "Code can pass a tidy test and still fail on real data, often as a [[silent-failure|silent failure]]: no error, wrong answer. After each step, check rows (`nrow()`), missing values (`colSums(is.na(d))`) and ranges (`range()`). Suppose person 5 left their score blank. (Nobody did in the Data Lab’s file, so the second line below makes that blank.)",
@@ -693,15 +693,15 @@ ICA.addUnit({
       "Asked for “a bar chart of the mean score in each group”, an assistant wrote:",
       {code:"ggplot(survey, aes(x = group, y = score)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
       "`geom_col()` draws values as they are, and when several rows share an x position it **stacks** them. Each bar is six scores piled up: 392 for A and 417 for B, on a test out of 100. The axis shows the problem, if you read it. Summarise first, then draw:",
-      {code:"survey |>\n  summarise(mean_score = mean(score), .by = group) |>\n  ggplot(aes(x = group, y = mean_score)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
+      {code:"survey |>\n  summarize(mean_score = mean(score), .by = group) |>\n  ggplot(aes(x = group, y = mean_score)) +\n  geom_col()", lang:"r", label:"R · computer or Posit Cloud"},
       {code:"d <- read.csv(\"survey.csv\")\ntapply(d$score, d$group, sum)    # stacked bars\ntapply(d$score, d$group, mean)   # what was asked\nbarplot(tapply(d$score, d$group, mean), ylim = c(0, 100))", lang:"r", label:"R · base R, runs in the Data Lab"},
       {fig:'<svg viewBox="0 0 340 516"><text x="10" y="16">1. AI’s chart: geom_col() on raw rows</text><text class="s" x="10" y="33">Each bar is 6 scores stacked: totals</text><path class="d-ink" d="M64 44 L64 138 L300 138" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 138.0 L64 138.0" stroke-width="1.5"/><text class="s" x="56" y="142.0" text-anchor="end">0</text><path class="d-soft" d="M60 98.0 L64 98.0" stroke-width="1.5"/><text class="s" x="56" y="102.0" text-anchor="end">200</text><path class="d-soft" d="M60 58.0 L64 58.0" stroke-width="1.5"/><text class="s" x="56" y="62.0" text-anchor="end">400</text><rect class="d-rose" x="110" y="59.6" width="60" height="78.4" stroke-width="1.5"/><path class="d-ink" d="M110 125.8 L170 125.8" stroke-width="1"/><path class="d-ink" d="M110 111.8 L170 111.8" stroke-width="1"/><path class="d-ink" d="M110 98.6 L170 98.6" stroke-width="1"/><path class="d-ink" d="M110 82.0 L170 82.0" stroke-width="1"/><path class="d-ink" d="M110 70.0 L170 70.0" stroke-width="1"/><text x="140" y="53.6" text-anchor="middle">392</text><text x="140" y="155" text-anchor="middle">A</text><rect class="d-rose" x="210" y="54.6" width="60" height="83.4" stroke-width="1.5"/><path class="d-ink" d="M210 127.0 L270 127.0" stroke-width="1"/><path class="d-ink" d="M210 111.4 L270 111.4" stroke-width="1"/><path class="d-ink" d="M210 101.6 L270 101.6" stroke-width="1"/><path class="d-ink" d="M210 87.2 L270 87.2" stroke-width="1"/><path class="d-ink" d="M210 69.6 L270 69.6" stroke-width="1"/><text x="240" y="48.6" text-anchor="middle">417</text><text x="240" y="155" text-anchor="middle">B</text><text x="10" y="188">2. What was asked: mean score</text><text class="s" x="10" y="205">Axis from 0: means 65.3 and 69.5</text><path class="d-ink" d="M64 216 L64 310 L300 310" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 310.0 L64 310.0" stroke-width="1.5"/><text class="s" x="56" y="314.0" text-anchor="end">0</text><path class="d-soft" d="M60 265.0 L64 265.0" stroke-width="1.5"/><text class="s" x="56" y="269.0" text-anchor="end">50</text><path class="d-soft" d="M60 220.0 L64 220.0" stroke-width="1.5"/><text class="s" x="56" y="224.0" text-anchor="end">100</text><rect class="d-lup" x="110" y="251.2" width="60" height="58.8" stroke-width="1.5"/><text x="140" y="245.2" text-anchor="middle">65.3</text><text x="140" y="327" text-anchor="middle">A</text><rect class="d-lup" x="210" y="247.4" width="60" height="62.6" stroke-width="1.5"/><text x="240" y="241.4" text-anchor="middle">69.5</text><text x="240" y="327" text-anchor="middle">B</text><text x="10" y="360">3. Same means, axis cut at 60</text><text class="s" x="10" y="377">B looks 1.8× as tall; it’s only 1.06×</text><path class="d-ink" d="M64 388 L64 482 L300 482" fill="none" stroke-width="1.5"/><path class="d-soft" d="M60 482.0 L64 482.0" stroke-width="1.5"/><text class="s" x="56" y="486.0" text-anchor="end">60</text><path class="d-soft" d="M60 437.0 L64 437.0" stroke-width="1.5"/><text class="s" x="56" y="441.0" text-anchor="end">66</text><path class="d-soft" d="M60 392.0 L64 392.0" stroke-width="1.5"/><text class="s" x="56" y="396.0" text-anchor="end">72</text><rect class="d-rose" x="110" y="442.0" width="60" height="40.0" stroke-width="1.5"/><text x="140" y="436.0" text-anchor="middle">65.3</text><text x="140" y="499" text-anchor="middle">A</text><rect class="d-rose" x="210" y="410.8" width="60" height="71.2" stroke-width="1.5"/><text x="240" y="404.8" text-anchor="middle">69.5</text><text x="240" y="499" text-anchor="middle">B</text></svg>', alt:"Three small bar charts of groups A and B. 1: the AI’s chart stacks six scores per bar, giving totals of 392 and 417 on an axis marked 0, 200 and 400. 2: the means, 65.3 and 69.5, on an axis from 0 to 100; the bars look almost equal. 3: the same means on an axis from 60 to 72, where B’s bar looks 1.8 times as tall as A’s although the means differ by only 6%.", cap:"Check what each bar shows (total or mean) and where the axis starts."},
       {list:[
         "**Axes.** Bars need an axis that starts at zero ({{axes-baselines}}). Asked to “make the difference clearer”, an assistant may cut the axis at 60, so B looks 1.8 times as tall as A when the means differ by 6% ([[truncated-axis]]).",
         "**Summaries.** Does each mark show a sum, mean, median or count? When groups differ in size, the mean of the group means can differ from the overall mean.",
-        "**Colour.** Defaults aren’t always colour-blind-safe, and red versus green alone fails many readers. Match the palette to the data ({{colour-in-charts}}): qualitative for groups, sequential for amounts, diverging around a meaningful middle."
+        "**Color.** Defaults aren’t always color-blind-safe, and red versus green alone fails many readers. Match the palette to the data ({{colour-in-charts}}): qualitative for groups, sequential for amounts, diverging around a meaningful middle."
       ]},
-      {lab:"dl-r-groups", t:"Practise: compute each group’s mean score, the numbers a bar chart of means should show"}
+      {lab:"dl-r-groups", t:"Practice: compute each group’s mean score, the numbers a bar chart of means should show"}
     ]},
     {h:"A routine and a checklist", body:[
       "Put the checks in an order you can repeat. It takes minutes, whoever wrote the code: an assistant, a colleague or you last month.",
@@ -712,7 +712,7 @@ ICA.addUnit({
         "Row counts and missing values are reported (“11 of 12 people answered”).",
         "The test fits how the data were collected (paired? counts?).",
         "The words match the numbers: no “proves”, no “causes” from a correlation, p-values read correctly.",
-        "Each chart shows the summary I meant, bars start at zero, colours are readable.",
+        "Each chart shows the summary I meant, bars start at zero, colors are readable.",
         "I opened every source, and it says what I claim.",
         "No personal data went into a tool that wasn’t approved for it."
       ]}
@@ -771,8 +771,8 @@ ICA.addUnit({
       {t:"`geom_col()` on the raw rows, for a chart of each group’s mean", b:0, why:"geom_col() stacks the rows, so each bar shows a total. Summarise to means first."},
       {t:"A bar chart of two means with the y-axis from 60 to 72", b:0, why:"Bars are judged by length, so the axis must start at 0. Here a 6% difference looks like nearly 80%."},
       {t:"A line chart of daily temperatures with the y-axis from 10 to 25 °C", b:1, why:"Line charts show change by position, not length, so an axis that fits the data is fine (Unit 4)."},
-      {t:"`scale_colour_viridis_d()` to tell two groups apart", b:1, why:"viridis is designed to read for common colour vision deficiencies and in greyscale."},
-      {t:"Only red and green to tell two groups apart", b:0, why:"Many people can’t tell red from green. Use a colour-blind-safe palette, or add shapes or labels."},
+      {t:"`scale_color_viridis_d()` to tell two groups apart", b:1, why:"viridis is designed to read for common color vision deficiencies and in greyscale."},
+      {t:"Only red and green to tell two groups apart", b:0, why:"Many people can’t tell red from green. Use a color-blind-safe palette, or add shapes or labels."},
       {t:"Means calculated first, then `geom_col()`, with the axis from 0", b:1, why:"Each bar shows the intended summary on an honest baseline."}
     ]},
     {id:"t3u8-l6-x7", type:"order", q:"Put the routine for checking AI-written analysis code in order.", items:[
@@ -786,7 +786,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Check some AI-written code yourself. Task 1 works on any device in the Data Lab; task 2 needs R with the tidyverse (a computer or Posit Cloud); task 3 is a note you can write anywhere. If you don’t use AI tools, use the AI-written code from this lesson instead.", tasks:[
      {t:"Test AI-written base R in the Data Lab (any device)", how:["Open the Data Lab’s **Compare groups** challenge (mean score for each group) and copy its task text","Paste the task into an AI assistant you’re allowed to use, adding: “base R only, the data frame is d with columns id, group, age, hours, score, answer”. Share no personal data","Before running it, write one line per line of code saying what it does. Mark anything you can’t explain and look it up","Make a known case in the editor, such as `test <- data.frame(group = c(\"A\", \"A\", \"B\"), score = c(50, 70, 90))` (A’s mean is 60, B’s is 90). Run the AI’s code on it, with `d <- test` in place of its read.csv() line","Then put the read.csv() line back, run it on survey.csv and press **Check**: the lab tests it again on a second, hidden file. Note anything you had to fix"]},
-     {t:"Check an AI-made chart and test (computer or Posit Cloud)", how:["Ask an assistant for “a ggplot2 bar chart of mean score by group” and “a test of whether groups A and B differ in score” for survey.csv","Run the chart code. Check what each bar shows (compare with `tapply(survey$score, survey$group, mean)`), where the axis starts, and whether the colours are colour-blind-safe","Read the test code: which test is it, and does it fit 12 different people in two groups? (A paired test would not.) Check how the assistant describes the p-value against this lesson’s table","On a phone instead: in the Data Lab, after `d <- read.csv(\"survey.csv\")`, run `barplot(tapply(d$score, d$group, sum))` and `barplot(tapply(d$score, d$group, mean))` and explain the difference"]},
+     {t:"Check an AI-made chart and test (computer or Posit Cloud)", how:["Ask an assistant for “a ggplot2 bar chart of mean score by group” and “a test of whether groups A and B differ in score” for survey.csv","Run the chart code. Check what each bar shows (compare with `tapply(survey$score, survey$group, mean)`), where the axis starts, and whether the colors are color-blind-safe","Read the test code: which test is it, and does it fit 12 different people in two groups? (A paired test would not.) Check how the assistant describes the p-value against this lesson’s table","On a phone instead: in the Data Lab, after `d <- read.csv(\"survey.csv\")`, run `barplot(tapply(d$score, d$group, sum))` and `barplot(tapply(d$score, d$group, mean))` and explain the difference"]},
      {t:"Start an AI log and write a disclosure (any device)", how:["Make a note or text file called AI-log in your project folder or notes app","For task 1 or 2, record: the date, the tool and the model name it shows, your prompt, what came back, how you tested it, what you fixed, and the R version (`R.version.string` in the Data Lab)","Write one disclosure sentence you could put in a report: what the AI did, and how you checked it"]}
    ], proof:"An AI log entry with your prompt, the code you got, the known case you tested it on and its result, any fix, the R version, and a one-sentence disclosure, plus the Data Lab’s “Compare groups” challenge marked as passed (or, without AI, the same checks on this lesson’s code)."},
    read:[{book:"r4ds", where:"Chapter 8, “Workflow: getting help”: section “Making a reprex” (small, self-contained examples that reproduce a problem)"},{book:"ostat", where:"Chapter 10, Section 10.4 “Matched or Paired Samples”"},{book:"wilke", where:"Chapter 17, “The principle of proportional ink”, and Chapter 19, “Common pitfalls of color use”"},{book:"missing", where:"“Agentic Coding” → What to watch out for"}]
@@ -808,7 +808,7 @@ ICA.addUnit({
 ],
   cpBank:[
    {id:"t3u8-cp01", lesson:"t3u8-l1", level:1, q:"The survey tibble has the columns id, group, age, hours, score and answer, in that order. Which columns does `select(survey, group:hours)` keep?", options:[
-     {t:"group and hours only", why:"The colon means a range of neighbouring columns, so everything between them is kept too."},
+     {t:"group and hours only", why:"The colon means a range of neighboring columns, so everything between them is kept too."},
      {t:"group, age and hours", ok:true, why:"`group:hours` keeps every column from group to hours: group, age and hours."},
      {t:"id, group, age and hours", why:"The range starts at group, so id (before it) is not included."},
      {t:"Every column except group and hours", why:"Dropping columns needs a minus sign, such as `-group`. The colon picks a range to keep."}]},
@@ -829,24 +829,24 @@ ICA.addUnit({
      {t:"10", why:"That counts every score of 50 or more. The `.default` covers scores below 60, which are “low”."}]},
    {id:"t3u8-cp05", lesson:"t3u8-l2", level:3, q:"Group B’s scores are 55, 78, 49, 72, 88 and 75. In `survey |> group_by(group) |> mutate(vs_group = score - mean(score)) |> ungroup()`, what is `vs_group` for person 10 (group B, score 88)?", options:[
      {t:"About 20.6", why:"That uses the mean of all 12 people (67.4). After group_by(), mean(score) is computed within each group."},
-     {t:"0, because mutate() after group_by() returns one row per group", why:"That is what summarise() does. Grouped mutate() keeps every row and adds the group’s value to each."},
-     {t:"88, because the mean is subtracted only in summarise()", why:"mutate() does the calculation for every row. Here it subtracts B’s mean from each B score."},
+     {t:"0, because mutate() after group_by() returns one row per group", why:"That is what summarize() does. Grouped mutate() keeps every row and adds the group’s value to each."},
+     {t:"88, because the mean is subtracted only in summarize()", why:"mutate() does the calculation for every row. Here it subtracts B’s mean from each B score."},
      {t:"18.5", ok:true, why:"B’s mean is 417 ÷ 6 = 69.5. Grouped mutate() keeps every row: 88 − 69.5 = 18.5."}]},
-   {id:"t3u8-cp06", lesson:"t3u8-l3", level:1, q:"In the survey, `answer` is Yes, No or Unsure. How many rows does `summarise(survey, m = mean(score), .by = answer)` return?", options:[
-     {t:"1", why:"Without `.by`, summarise() gives one row. With `.by = answer`, it gives one row per answer."},
-     {t:"12", why:"summarise() boils rows down; it doesn’t keep one row per person. That would be mutate()."},
+   {id:"t3u8-cp06", lesson:"t3u8-l3", level:1, q:"In the survey, `answer` is Yes, No or Unsure. How many rows does `summarize(survey, m = mean(score), .by = answer)` return?", options:[
+     {t:"1", why:"Without `.by`, summarize() gives one row. With `.by = answer`, it gives one row per answer."},
+     {t:"12", why:"summarize() boils rows down; it doesn’t keep one row per person. That would be mutate()."},
      {t:"3", ok:true, why:"`.by` groups for this one summary: one row each for Yes, No and Unsure."},
      {t:"6", why:"6 would be the combinations of group and answer. Here the grouping is by answer alone."}]},
-   {id:"t3u8-cp07", lesson:"t3u8-l3", level:2, q:"The four people who answered No scored 55, 49, 60 and 52. In `survey |> group_by(answer) |> summarise(mean_score = mean(score))`, what is `mean_score` for No?", options:[
+   {id:"t3u8-cp07", lesson:"t3u8-l3", level:2, q:"The four people who answered No scored 55, 49, 60 and 52. In `survey |> group_by(answer) |> summarize(mean_score = mean(score))`, what is `mean_score` for No?", options:[
      {t:"54", ok:true, why:"(55 + 49 + 60 + 52) ÷ 4 = 216 ÷ 4 = 54. Each answer gets its own mean."},
-     {t:"67.4", why:"That is the mean of all 12 scores. group_by(answer) makes summarise() work within each answer."},
+     {t:"67.4", why:"That is the mean of all 12 scores. group_by(answer) makes summarize() work within each answer."},
      {t:"53.5", why:"That is the median of the four scores (52 and 55 averaged). mean() adds them and divides by 4."},
      {t:"216", why:"That is the sum. mean() divides it by the 4 people."}]},
-   {id:"t3u8-cp08", lesson:"t3u8-l3", level:3, q:"A wide table has 6 rows (classrooms) and the columns `room`, `floor` and `temp_mon` to `temp_fri`. After `pivot_longer(cols = starts_with(\"temp_\"), names_to = \"day\", values_to = \"temp\")`, how many rows does `summarise(m = mean(temp), .by = day)` return?", options:[
+   {id:"t3u8-cp08", lesson:"t3u8-l3", level:3, q:"A wide table has 6 rows (classrooms) and the columns `room`, `floor` and `temp_mon` to `temp_fri`. After `pivot_longer(cols = starts_with(\"temp_\"), names_to = \"day\", values_to = \"temp\")`, how many rows does `summarize(m = mean(temp), .by = day)` return?", options:[
      {t:"6, one per classroom", why:"That would need `.by = room`. Here the grouping column is day, which holds 5 values (temp_mon to temp_fri)."},
-     {t:"30, one for each room and day", why:"30 (6 × 5) is the size of the long table. summarise() boils each group down to one row."},
+     {t:"30, one for each room and day", why:"30 (6 × 5) is the size of the long table. summarize() boils each group down to one row."},
      {t:"5, one per day", ok:true, why:"pivot_longer() makes 6 × 5 = 30 rows, with a day column holding 5 different values. Grouping by day gives one summary row for each."},
-     {t:"1, the mean of all readings", why:"Without `.by`, summarise() would give one row. `.by = day` gives one row per day."}]},
+     {t:"1, the mean of all readings", why:"Without `.by`, summarize() would give one row. `.by = day` gives one row per day."}]},
    {id:"t3u8-cp09", lesson:"t3u8-l4", level:2, q:"Which line makes each point’s size depend on study hours, with a legend explaining it?", options:[
      {t:"`geom_point(aes(size = hours))`", ok:true, why:"Inside `aes()` is a mapping: size comes from the hours column, and ggplot2 adds a legend."},
      {t:"`geom_point(size = hours)`", why:"Outside `aes()` is a setting, which expects a fixed value. R looks for an object called hours and doesn’t find one."},
@@ -862,11 +862,11 @@ ICA.addUnit({
      {t:"74.0, the mean of the two new scores", why:"mean() uses every score in the data, old and new: 14 in all."},
      {t:"68.4", ok:true, why:"(809 + 90 + 58) ÷ 14 = 957 ÷ 14 ≈ 68.36, which rounds to 68.4. The render recomputes it."},
      {t:"79.8, because the new total is divided by 12", why:"There are now 14 responses, so the total is divided by 14."}]},
-   {id:"t3u8-cp12", lesson:"t3u8-l5", level:3, q:"Ravi’s bar chart maps `fill = group`. He adds `scale_colour_viridis_d()`, but the bars keep their default colours. Why, and what is the fix?", options:[
+   {id:"t3u8-cp12", lesson:"t3u8-l5", level:3, q:"Ravi’s bar chart maps `fill = group`. He adds `scale_color_viridis_d()`, but the bars keep their default colors. Why, and what is the fix?", options:[
      {t:"viridis only works on scatterplots; use a Brewer palette instead", why:"viridis scales work with any geom. The problem is which aesthetic the scale is for."},
      {t:"The scale must come before `geom_col()`; move it up", why:"Layer order doesn’t matter for scales. The scale has to match the aesthetic that was mapped."},
-     {t:"The bars use fill, not colour; use `scale_fill_viridis_d()`", ok:true, why:"Each scale controls one aesthetic. A colour scale changes outlines and points; a fill scale changes bar insides."},
-     {t:"`_d` is for numbers; use `scale_colour_viridis_c()`", why:"`_d` is for discrete categories, which group is. The fix is a fill scale, not a continuous one."}]},
+     {t:"The bars use fill, not color; use `scale_fill_viridis_d()`", ok:true, why:"Each scale controls one aesthetic. A color scale changes outlines and points; a fill scale changes bar insides."},
+     {t:"`_d` is for numbers; use `scale_color_viridis_c()`", why:"`_d` is for discrete categories, which group is. The fix is a fill scale, not a continuous one."}]},
   ],
   codex:[
  {
@@ -885,7 +885,7 @@ ICA.addUnit({
   "levels": {
    "starter": [
     "R comes with many functions built in, often called **base R**. People also write **packages**: bundles of extra functions anyone can install. The **tidyverse** is a popular collection of packages that were designed together, so they feel like one toolkit.",
-    "Think of a set of kitchen tools from one maker: the handles fit the same hand, and they stack in the same drawer. In the tidyverse, every function takes a table of data first and gives back a table, and the function names are verbs: filter, select, arrange, mutate, summarise.",
+    "Think of a set of kitchen tools from one maker: the handles fit the same hand, and they stack in the same drawer. In the tidyverse, every function takes a table of data first and gives back a table, and the function names are verbs: filter, select, arrange, mutate, summarize.",
     "You install it once on a computer with `install.packages(\"tidyverse\")`, then load it at the start of each session with `library(tidyverse)`. It runs in R on your computer or in Posit Cloud (RStudio in a browser). This app’s Data Lab runs base R only, so there you use base R versions of the same ideas.",
     "You don’t need the tidyverse to use R well, but it makes long chains of data steps much easier to read."
    ],
@@ -926,7 +926,7 @@ ICA.addUnit({
    "pro": [
     "Packages come from CRAN, R’s official archive, which checks that each package installs and passes its own checks on several platforms. `install.packages()` also installs dependencies; on Linux, packages may be compiled from source, which is slower and may need system libraries. `update.packages()` updates installed packages, and results can change slightly when they do, so record versions with `sessionInfo()` for reproducible work (the renv package can lock versions per project).",
     "The tidyverse uses **tidy evaluation**: inside verbs you write bare column names (`filter(d, age > 30)`) rather than `d$age`. That’s convenient interactively but needs care when writing your own functions (look up “embracing” with `{{ }}` in dplyr’s programming vignette).",
-    "Version notes as of 2026: the `tidyverse` meta-package is at 2.0.0, and current dplyr and tidyr releases need R 4.1 or later. dplyr 1.2.0 made the `.by` argument and `reframe()` stable, added `filter_out()` for dropping rows, and soft-deprecated `case_match()` in favour of `recode_values()`. ggplot2 4.0.0 moved to a new internal object system (S7) and no longer translates `size` to `linewidth` for the outlines of `geom_bar()` and `geom_col()`; for lines, `size` has been deprecated since 3.4.0 in favour of `linewidth`. Code in this unit avoids those edge cases, but older tutorials may use them.",
+    "Version notes as of 2026: the `tidyverse` meta-package is at 2.0.0, and current dplyr and tidyr releases need R 4.1 or later. dplyr 1.2.0 made the `.by` argument and `reframe()` stable, added `filter_out()` for dropping rows, and soft-deprecated `case_match()` in favor of `recode_values()`. ggplot2 4.0.0 moved to a new internal object system (S7) and no longer translates `size` to `linewidth` for the outlines of `geom_bar()` and `geom_col()`; for lines, `size` has been deprecated since 3.4.0 in favor of `linewidth`. Code in this unit avoids those edge cases, but older tutorials may use them.",
     "Base R and the tidyverse mix freely: a tibble is a data frame, and base functions such as `nrow()`, `table()` and `lm()` work on it. *R for Data Science* (2e) has a chapter, “A field guide to base R”, mapping dplyr verbs to base equivalents."
    ]
   },
@@ -1153,7 +1153,7 @@ ICA.addUnit({
  },
  {
   "id": "grouped-summaries",
-  "title": "Grouped summaries: group_by(), summarise() and count()",
+  "title": "Grouped summaries: group_by(), summarize() and count()",
   "aka": [
    "split-apply-combine",
    "summarize",
@@ -1169,7 +1169,7 @@ ICA.addUnit({
   "levels": {
    "starter": [
     "Often the question isn’t about one person but about groups: “What’s the average score in each class?” or “How many people answered Yes?”",
-    "dplyr answers these in two steps. `group_by(group)` sorts the rows into piles, one per group. `summarise(mean_score = mean(score))` then works out the average of each pile and puts the answers in a small new table, one row per group.",
+    "dplyr answers these in two steps. `group_by(group)` sorts the rows into piles, one per group. `summarize(mean_score = mean(score))` then works out the average of each pile and puts the answers in a small new table, one row per group.",
     "This is called **split–apply–combine**: split into groups, apply a calculation, combine the results. It’s the same idea as a spreadsheet pivot table.",
     "For counting there’s a shortcut: `count(answer)` gives the number of rows for each answer.",
     "In base R (and in the Data Lab), `tapply(d$score, d$group, mean)` and `table(d$answer)` do the same jobs.",
@@ -1177,12 +1177,12 @@ ICA.addUnit({
    ],
    "builder": [
     {
-     "ex": "survey |>\n  group_by(group) |>\n  summarise(n = n(), mean_score = mean(score))",
+     "ex": "survey |>\n  group_by(group) |>\n  summarize(n = n(), mean_score = mean(score))",
      "label": "One row per group, with its size",
      "mono": true
     },
     "Useful summary functions: `n()` (rows), `mean()`, `median()`, `sd()`, `min()`, `max()`, `sum()`, `n_distinct()` and `quantile(x, 0.25)`. Always include `n()`: a mean from 3 people is far less stable than one from 300, and extreme group averages often come from the smallest groups.",
-    "`count(x)` equals `group_by(x) |> summarise(n = n())`; `sort = TRUE` puts the largest first; several columns count combinations. Divide by the total for shares: `mutate(share = n / sum(n))`.",
+    "`count(x)` equals `group_by(x) |> summarize(n = n())`; `sort = TRUE` puts the largest first; several columns count combinations. Divide by the total for shares: `mutate(share = n / sum(n))`.",
     "Missing values: one NA makes `mean()` NA. Add `na.rm = TRUE`, and report how many values were used (`sum(!is.na(x))`).",
     {
      "table": [
@@ -1191,7 +1191,7 @@ ICA.addUnit({
        "Base R"
       ],
       [
-       "`group_by(g) |> summarise(m = mean(x))`",
+       "`group_by(g) |> summarize(m = mean(x))`",
        "`tapply(d$x, d$g, mean)`, `aggregate(x ~ g, data = d, FUN = mean)`"
       ],
       [
@@ -1204,11 +1204,11 @@ ICA.addUnit({
       ]
      ]
     },
-    "Keep the grouping columns few and meaningful: grouping by two columns gives one row per combination, so 5 regions × 4 age bands gives up to 20 rows, some possibly tiny. To compare groups fairly, report a measure of spread (such as `sd()` or the IQR) as well as the centre, and remember that a grouped `mutate()` keeps every row, which is the way to compare each person with their own group (`score - mean(score)`). In base R, `aggregate(cbind(score, hours) ~ group, data = d, FUN = mean)` summarises several columns at once."
+    "Keep the grouping columns few and meaningful: grouping by two columns gives one row per combination, so 5 regions × 4 age bands gives up to 20 rows, some possibly tiny. To compare groups fairly, report a measure of spread (such as `sd()` or the IQR) as well as the center, and remember that a grouped `mutate()` keeps every row, which is the way to compare each person with their own group (`score - mean(score)`). In base R, `aggregate(cbind(score, hours) ~ group, data = d, FUN = mean)` summarizes several columns at once."
    ],
    "pro": [
-    "**Grouping that lingers.** After `summarise()` with several grouping columns, dplyr drops the last level and keeps the rest, printing a message about `.groups`. Later verbs then act within groups, which can surprise you (a later `mutate(share = n / sum(n))` would compute shares within each remaining group). Use `.groups = \"drop\"`, `ungroup()`, or the per-operation `.by` argument (`summarise(d, m = mean(x), .by = g)`), stable since dplyr 1.2.0, which never leaves grouping behind and keeps groups in order of first appearance rather than sorting them.",
-    "`summarise()` should return one row per group; for summaries that return several values (like `quantile(x, c(0.25, 0.75))`) use `reframe()`.",
+    "**Grouping that lingers.** After `summarize()` with several grouping columns, dplyr drops the last level and keeps the rest, printing a message about `.groups`. Later verbs then act within groups, which can surprise you (a later `mutate(share = n / sum(n))` would compute shares within each remaining group). Use `.groups = \"drop\"`, `ungroup()`, or the per-operation `.by` argument (`summarize(d, m = mean(x), .by = g)`), stable since dplyr 1.2.0, which never leaves grouping behind and keeps groups in order of first appearance rather than sorting them.",
+    "`summarize()` should return one row per group; for summaries that return several values (like `quantile(x, c(0.25, 0.75))`) use `reframe()`.",
     "**Base R shapes.** `tapply()` returns an array (a named vector for one factor, a matrix for two); `aggregate()` returns a data frame and by default drops rows with NA in the formula variables (its `na.action`). `table()` excludes NA unless `useNA = \"ifany\"`; `count()` keeps NA as its own group. These differences can make base and dplyr counts disagree on messy data, so check NA handling when comparing.",
     "**Statistics.** A grouped mean describes the groups in this data. Whether a difference between groups is larger than chance would produce is a question for inference (standard errors, confidence intervals and tests), and whether it’s causal is a question of study design."
    ]
@@ -1232,7 +1232,7 @@ ICA.addUnit({
     "url": "https://r4ds.hadley.nz/data-transform.html"
    },
    {
-    "t": "dplyr reference: summarise()",
+    "t": "dplyr reference: summarize()",
     "url": "https://dplyr.tidyverse.org/reference/summarise.html"
    },
    {
@@ -1278,7 +1278,7 @@ ICA.addUnit({
    "pro": [
     "**Several variables in column names.** Names like `bp_morning`, `bp_evening`, `hr_morning` hold two variables. Use `names_to = c(\"measure\", \"time\"), names_sep = \"_\"` (or `names_pattern` with a regular expression). The special name `\".value\"` in `names_to` keeps part of the name as an output column: `names_to = c(\".value\", \"time\")` gives columns `bp` and `hr`.",
     "**Missing cells.** `values_drop_na = TRUE` in pivot_longer() drops rows whose value is NA, useful when wide data had empty cells by design. In pivot_wider(), absent combinations become NA unless you set `values_fill`.",
-    "**Duplicate keys.** If pivot_wider() finds several values for the same row and column, it warns and produces list-columns. Usually that means the identifying columns don’t uniquely identify a row; fix the data, or summarise with `values_fn = mean` (or `length` to count).",
+    "**Duplicate keys.** If pivot_wider() finds several values for the same row and column, it warns and produces list-columns. Usually that means the identifying columns don’t uniquely identify a row; fix the data, or summarize with `values_fn = mean` (or `length` to count).",
     "**Base R.** `reshape(d, direction = \"long\", varying, v.names, timevar, times, idvar)` and `direction = \"wide\"` mirror the two pivots; the long result has row names like `Amara.1` and wide names like `km.1` (set `sep`). `stack()` stacks columns into `values` and `ind` but drops identifier columns. For counts, `table()` and `xtabs()` give cross-tables directly. Older tidyverse code used `gather()` and `spread()`, which are superseded by the pivots."
    ]
   },
@@ -1323,7 +1323,7 @@ ICA.addUnit({
   "tags": [
    "r",
    "charts",
-   "visualisation"
+   "visualization"
   ],
   "summary": "Build charts from data, aesthetic mappings and geoms, add facets, labels, scales and themes with +, and save them with ggsave().",
   "levels": {
@@ -1332,7 +1332,7 @@ ICA.addUnit({
     {
      "list": [
       "the **data** (a table),",
-      "the **mappings**: which column goes on the x-axis, which on the y-axis, which decides colour,",
+      "the **mappings**: which column goes on the x-axis, which on the y-axis, which decides color,",
       "the **geom**: what shape marks to draw (points, bars, lines, boxes)."
      ]
     },
@@ -1369,11 +1369,11 @@ ICA.addUnit({
       ]
      ]
     },
-    "**Mapping vs setting.** Inside `aes()`, a value comes from a column and gets a legend: `aes(colour = group)`. Outside, in the geom, it’s fixed for every mark: `geom_point(colour = \"steelblue\", size = 3)`. Putting a constant inside aes() (`aes(colour = \"blue\")`) creates a fake category with default colours and a legend.",
-    "Map shape or linetype as well as colour so groups stay distinguishable without colour. `facet_wrap(~ group)` makes small multiples with shared scales.",
-    "Polish: `labs(title, subtitle, x, y, colour, caption, alt)`; colour-blind-safe scales such as `scale_colour_viridis_d()` or `scale_colour_brewer(palette = \"Dark2\")`; themes such as `theme_minimal(base_size = 14)`, then `theme(legend.position = \"bottom\")`.",
+    "**Mapping vs setting.** Inside `aes()`, a value comes from a column and gets a legend: `aes(color = group)`. Outside, in the geom, it’s fixed for every mark: `geom_point(color = \"steelblue\", size = 3)`. Putting a constant inside aes() (`aes(color = \"blue\")`) creates a fake category with default colors and a legend.",
+    "Map shape or linetype as well as color so groups stay distinguishable without color. `facet_wrap(~ group)` makes small multiples with shared scales.",
+    "Polish: `labs(title, subtitle, x, y, color, caption, alt)`; color-blind-safe scales such as `scale_color_viridis_d()` or `scale_color_brewer(palette = \"Dark2\")`; themes such as `theme_minimal(base_size = 14)`, then `theme(legend.position = \"bottom\")`.",
     "Two errors: `+` must end a line (starting a line with it fails), and layers are joined with `+`, not `|>`.",
-    "To save, store the plot (`p <- ggplot(...) + ...`) and call `ggsave(\"chart.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)`. The extension picks the format: PNG for screens and documents, PDF or SVG for print. In the Data Lab, base R’s `plot()`, `hist()`, `boxplot(score ~ group, data = d)` and `barplot(table(d$answer))` draw similar charts, though colours and legends have to be added by hand."
+    "To save, store the plot (`p <- ggplot(...) + ...`) and call `ggsave(\"chart.png\", plot = p, width = 16, height = 10, units = \"cm\", dpi = 300)`. The extension picks the format: PNG for screens and documents, PDF or SVG for print. In the Data Lab, base R’s `plot()`, `hist()`, `boxplot(score ~ group, data = d)` and `barplot(table(d$answer))` draw similar charts, though colors and legends have to be added by hand."
    ],
    "pro": [
     "The **layered grammar** has seven parts: data, mappings, geoms, statistical transformations (stats: `geom_bar()` uses `stat_count()`, `geom_histogram()` uses `stat_bin()`), position adjustments (`position = \"dodge\"`, `\"fill\"`, `\"jitter\"`), coordinate systems (`coord_flip()`, `coord_cartesian()`) and facets. Any chart can be described as a combination of these.",
@@ -1482,7 +1482,7 @@ ICA.addUnit({
    "pro": [
     "Quarto is a command-line program (`quarto render report.qmd`, `quarto preview`), not an R package, so its help lives at quarto.org rather than in `?`. RStudio 2022.07 and later bundle it; the `quarto` R package can call it from R (`quarto::quarto_render()`). It also supports Python and Julia (via Jupyter) and projects such as websites and books (*R for Data Science* itself is a Quarto book).",
     "Reproducibility habits beyond the document: keep raw data unchanged and read it with relative paths inside a project folder; set seeds for randomness; record versions (`sessionInfo()`, or renv to lock package versions); keep the project under version control; and render from a clean session before sharing. `cache: true` speeds up slow chunks but can hide stale results when upstream data changes, so clear the cache before a final render.",
-    "**Parameters** in the YAML (`params:`) let one report render for different inputs (a region, a year). Cross-references (`@fig-scores` for a chunk labelled `fig-scores`) and citations (a `bibliography:` file and `[@key]`) work across formats.",
+    "**Parameters** in the YAML (`params:`) let one report render for different inputs (a region, a year). Cross-references (`@fig-scores` for a chunk labeled `fig-scores`) and citations (a `bibliography:` file and `[@key]`) work across formats.",
     "Reproducible is not the same as correct, or as *replicable* (getting consistent results from new data). It’s the floor: it makes errors traceable and lets others check your work."
    ]
   },
@@ -1529,7 +1529,7 @@ ICA.addUnit({
     {h:"Statistics"},
     {list:["**Numbers with no code** are guesses until recomputed. Check that shares add up, counts match rows, and means sit inside the data’s range.","**Tests**: the assistant can’t see the design. Paired data need a paired test; chi-square needs counts, not percentages; groups of different sizes need care.","**p-values**: p is not the chance a hypothesis is true, a large p doesn’t prove “no effect”, and significance isn’t size.","**Citations**: find and open every source outside the chatbot."]},
     {h:"Charts"},
-    "Check what each mark shows (`geom_col()` on raw rows stacks them into totals), where a bar chart’s axis starts (zero), and whether colours suit the data and readers with colour vision deficiency."
+    "Check what each mark shows (`geom_col()` on raw rows stacks them into totals), where a bar chart’s axis starts (zero), and whether colors suit the data and readers with color vision deficiency."
    ],
    pro:[
     "**Why the errors are silent.** Many failures produce no error: R’s `mean()` passes unknown arguments to `...`, so `na.omit = TRUE` is ignored; `prop.table()` without `margin` divides by the grand total; `merge()` defaults to an inner join and multiplies rows when keys repeat; pandas’ `mean()` skips NaN by default while R’s returns NA, so a faithful-looking translation changes the result. Defaults are where translations and AI drafts most often go wrong.",
@@ -1561,7 +1561,7 @@ ICA.addUnit({
    ],
    pro:[
     "**Silent failures to know.** In R, unknown arguments to `mean()` disappear into `...`; `d[d$x > 30, ]` adds NA rows when `x` has NAs; `prop.table()` without `margin` uses the grand total; `merge()` is an inner join by default (`all.x = TRUE` keeps unmatched rows) and gives one row per match, so rows multiply when keys repeat. In pandas, `mean()` and `groupby` skip NaN by default, and `value_counts()` drops NaN unless `dropna=False`; `groupby().agg([\"count\", \"size\"])` shows non-missing values beside rows.",
-    "**From checks to tests.** A known case you keep is a test. In R, `stopifnot(nrow(m) == nrow(people))` stops a script when an assumption breaks; the testthat package formalises tests for functions. In Python, `assert` and pytest do the same (Track 2, Unit 11).",
+    "**From checks to tests.** A known case you keep is a test. In R, `stopifnot(nrow(m) == nrow(people))` stops a script when an assumption breaks; the testthat package formalizes tests for functions. In Python, `assert` and pytest do the same (Track 2, Unit 11).",
     "**Minimal examples.** The same small data make a reproducible example (“reprex”) when you ask for help: `dput(head(d))` prints code that rebuilds your data, and the reprex package formats code and output for sharing (R for Data Science, “Workflow: getting help”)."
    ]
   },
@@ -1593,7 +1593,7 @@ ICA.addUnit({
  {
   "id": "dplyr",
   "term": "dplyr",
-  "def": "The tidyverse package for manipulating data frames with verbs such as `filter()`, `select()`, `mutate()` and `summarise()`.",
+  "def": "The tidyverse package for manipulating data frames with verbs such as `filter()`, `select()`, `mutate()` and `summarize()`.",
   "codex": "dplyr-verbs"
  },
  {
@@ -1629,13 +1629,13 @@ ICA.addUnit({
  {
   "id": "group-by",
   "term": "group_by()",
-  "def": "The dplyr verb that marks rows as belonging to groups, so that later verbs such as `summarise()` work group by group.",
+  "def": "The dplyr verb that marks rows as belonging to groups, so that later verbs such as `summarize()` work group by group.",
   "codex": "grouped-summaries"
  },
  {
   "id": "summarise-verb",
-  "term": "summarise()",
-  "def": "The dplyr verb that collapses rows into summary values, such as a mean or a count; one row per group after `group_by()`. Also spelt `summarize()`.",
+  "term": "summarize()",
+  "def": "The dplyr verb that collapses rows into summary values, such as a mean or a count; one row per group after `group_by()`. Also spelled `summarize()`.",
   "codex": "grouped-summaries"
  },
  {
@@ -1665,7 +1665,7 @@ ICA.addUnit({
  {
   "id": "aesthetic-mapping",
   "term": "aesthetic mapping",
-  "def": "In ggplot2, a link from a column of data to a visual property such as x position, colour or shape, written inside `aes()`.",
+  "def": "In ggplot2, a link from a column of data to a visual property such as x position, color or shape, written inside `aes()`.",
   "codex": "ggplot2-basics"
  },
  {
@@ -2169,7 +2169,7 @@ ICA.addUnit({
    {
     "t": "Marks the groups for later verbs; the rows don’t change",
     "ok": true,
-    "why": "Printing shows `# Groups: group [2]`; the effect appears with summarise() or mutate()."
+    "why": "Printing shows `# Groups: group [2]`; the effect appears with summarize() or mutate()."
    },
    {
     "t": "Sorts the rows by group",
@@ -2177,7 +2177,7 @@ ICA.addUnit({
    },
    {
     "t": "Collapses the table to one row per group, like a summary",
-    "why": "That’s summarise() after group_by()."
+    "why": "That’s summarize() after group_by()."
    },
    {
     "t": "Deletes the group column",
@@ -2214,7 +2214,7 @@ ICA.addUnit({
   "id": "t3u8-q21",
   "lesson": "t3u8-l3",
   "level": 2,
-  "q": "Which base R line matches `survey |> group_by(group) |> summarise(m = mean(score))`?",
+  "q": "Which base R line matches `survey |> group_by(group) |> summarize(m = mean(score))`?",
   "options": [
    {
     "t": "`tapply(d$score, d$group, mean)`",
@@ -2369,7 +2369,7 @@ ICA.addUnit({
    {
     "t": "pivot_longer() the week columns into `week` and `km`",
     "ok": true,
-    "why": "Then each aesthetic has one column to map. ggplot2 maps columns to x, y and colour; the week variable must be in a column, not spread across names."
+    "why": "Then each aesthetic has one column to map. ggplot2 maps columns to x, y and color; the week variable must be in a column, not spread across names."
    },
    {
     "t": "pivot_wider() the table",
@@ -2394,7 +2394,7 @@ ICA.addUnit({
    {
     "t": "Maps data columns to visual properties such as x and y",
     "ok": true,
-    "why": "aes() is short for aesthetic mappings, such as x, y and colour."
+    "why": "aes() is short for aesthetic mappings, such as x, y and color."
    },
    {
     "t": "Adds a title",
@@ -2417,21 +2417,21 @@ ICA.addUnit({
   "q": "Which code draws every point dark green?",
   "options": [
    {
-    "t": "`ggplot(d, aes(hours, score)) + geom_point(colour = \"darkgreen\")`",
+    "t": "`ggplot(d, aes(hours, score)) + geom_point(color = \"darkgreen\")`",
     "ok": true,
-    "why": "Setting a fixed colour goes outside aes(), in the geom."
+    "why": "Setting a fixed color goes outside aes(), in the geom."
    },
    {
-    "t": "`ggplot(d, aes(hours, score, colour = \"darkgreen\")) + geom_point()`",
-    "why": "Inside aes(), \"darkgreen\" is treated as a data value: default colour and a legend saying darkgreen."
+    "t": "`ggplot(d, aes(hours, score, color = \"darkgreen\")) + geom_point()`",
+    "why": "Inside aes(), \"darkgreen\" is treated as a data value: default color and a legend saying darkgreen."
    },
    {
-    "t": "`ggplot(d, aes(hours, score)) + geom_point(aes(colour = group))`",
-    "why": "That colours by group."
+    "t": "`ggplot(d, aes(hours, score)) + geom_point(aes(color = group))`",
+    "why": "That colors by group."
    },
    {
-    "t": "`ggplot(d, aes(hours, score)) + labs(colour = \"darkgreen\")`",
-    "why": "labs() sets legend titles, not colours."
+    "t": "`ggplot(d, aes(hours, score)) + labs(color = \"darkgreen\")`",
+    "why": "labs() sets legend titles, not colors."
    }
   ]
  },
@@ -2476,8 +2476,8 @@ ICA.addUnit({
     "why": "Both draw vertical bars by default; orientation is changed by mapping."
    },
    {
-    "t": "geom_col() is only for colours",
-    "why": "The “col” is short for column (as in bar), not colour."
+    "t": "geom_col() is only for colors",
+    "why": "The “col” is short for column (as in bar), not color."
    },
    {
     "t": "They’re identical",
@@ -2514,23 +2514,23 @@ ICA.addUnit({
   "id": "t3u8-q33",
   "lesson": "t3u8-l4",
   "level": 3,
-  "q": "Priya’s scatterplot colours two groups red and green. A colleague with red–green colour blindness can’t tell them apart. Which change helps most?",
+  "q": "Priya’s scatterplot colors two groups red and green. A colleague with red–green color blindness can’t tell them apart. Which change helps most?",
   "options": [
    {
     "t": "Map shape to group too, and use a safer palette",
     "ok": true,
-    "why": "Use `aes(colour = group, shape = group)` and a colour-blind-safe palette. A second channel (shape) doesn’t rely on colour at all, and palettes such as viridis or Dark2 are designed to stay distinguishable."
+    "why": "Use `aes(color = group, shape = group)` and a color-blind-safe palette. A second channel (shape) doesn’t rely on color at all, and palettes such as viridis or Dark2 are designed to stay distinguishable."
    },
    {
-    "t": "Make the points bigger so the colours are easier to see",
-    "why": "Size alone doesn’t separate the two colours."
+    "t": "Make the points bigger so the colors are easier to see",
+    "why": "Size alone doesn’t separate the two colors."
    },
    {
     "t": "Add a title",
     "why": "Useful, but it doesn’t help tell the groups apart."
    },
    {
-    "t": "Use theme_dark() so the colours stand out more",
+    "t": "Use theme_dark() so the colors stand out more",
     "why": "A dark background doesn’t solve the red–green confusion."
    }
   ]
@@ -2592,9 +2592,9 @@ ICA.addUnit({
   "q": "Which code draws one line per walker from long data with columns name, week (a number) and km?",
   "options": [
    {
-    "t": "`ggplot(long, aes(x = week, y = km, colour = name)) + geom_line()`",
+    "t": "`ggplot(long, aes(x = week, y = km, color = name)) + geom_line()`",
     "ok": true,
-    "why": "Mapping colour to name also groups the points, so each walker gets their own line."
+    "why": "Mapping color to name also groups the points, so each walker gets their own line."
    },
    {
     "t": "`ggplot(long, aes(x = week, y = km)) + geom_line()`",
@@ -2619,7 +2619,7 @@ ICA.addUnit({
    {
     "t": "`labs()`",
     "ok": true,
-    "why": "labs(title, subtitle, x, y, caption, colour…, alt) covers the text labels."
+    "why": "labs(title, subtitle, x, y, caption, color…, alt) covers the text labels."
    },
    {
     "t": "`theme()`",
@@ -2747,7 +2747,7 @@ ICA.addUnit({
     "why": "The sentence updates when the data changes. It becomes “12” today and a new number after new data, with no retyping."
    },
    {
-    "t": "Shows the code in grey, without running it",
+    "t": "Shows the code in gray, without running it",
     "why": "It’s run and replaced by its result."
    },
    {
@@ -2878,7 +2878,7 @@ ICA.addUnit({
  {id:"t3u8-q54", lesson:"t3u8-l6", level:3, q:"An AI-made bar chart of the mean score per group shows bars of 392 and 417, for a test scored out of 100. What happened?", options:[
    {t:"`geom_col()` stacked every row’s score into a total", ok:true, why:"geom_col() draws values as they are and stacks rows that share an x position, so each bar is six scores added up. Summarise to means first."},
    {t:"The axis was truncated, which makes the gap look far bigger", why:"A truncated axis changes how big the gap looks, not the values on the bars. Values of 392 and 417 are impossible as mean scores out of 100."},
-   {t:"The colour palette isn’t colour-blind-safe", why:"Colour can make a chart hard to read, but it can’t change bar heights."},
+   {t:"The color palette isn’t color-blind-safe", why:"Color can make a chart hard to read, but it can’t change bar heights."},
    {t:"R turned the scores into percentages", why:"Percentages of a score out of 100 would still be at most 100. These bars are totals."}]},
  {id:"t3u8-q55", lesson:"t3u8-l6", level:2, q:"Mei used an AI assistant to draft the R code in her report. Which record lets someone check her work a year later?", options:[
    {t:"Prompts, final tested code, versions and the date", ok:true, why:"The checked code is what reproduces the results; prompts, tool and software versions and the date show how it was made."},

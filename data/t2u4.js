@@ -6,7 +6,7 @@ ICA.addUnit({
     "Explain what JavaScript does on a web page, add a script with `defer`, use the Console, and read an error message without panic",
     "Store strings, numbers and booleans in well-named `const` and `let` variables, and predict the classic surprises such as `0.1 + 0.2` and `\"5\" + 1`",
     "Make decisions with `===`, `if`/`else` and `&&`, `||`, `!`, and repeat work over arrays with `for...of` and `for` loops without getting stuck",
-    "Write functions that take parameters and return values, and organise data as objects and arrays of objects",
+    "Write functions that take parameters and return values, and organize data as objects and arrays of objects",
     "Find elements, change text safely with `textContent`, toggle classes, respond to clicks and read inputs, then debug with `console.log`"
   ],
   read:[
@@ -26,17 +26,17 @@ ICA.addUnit({
    learn:[
     {h:"The third layer of a web page", body:[
       {lead:"HTML says what is on a page, CSS says how it looks, and JavaScript says what it does."},
-      "Think of a café’s web page. The HTML holds the content: the menu items, the prices, the opening hours. The CSS decides the colours, fonts and layout. Neither of them can **react**: they can’t show today’s specials when someone taps a button, add up an order, or tell you the café opens in 25 minutes. That is JavaScript’s job.",
+      "Think of a café’s web page. The HTML holds the content: the menu items, the prices, the opening hours. The CSS decides the colors, fonts and layout. Neither of them can **react**: they can’t show today’s specials when someone taps a button, add up an order, or tell you the café opens in 25 minutes. That is JavaScript’s job.",
       {table:[
         ["Layer","Its job","On the café page"],
         ["HTML","Structure and content","The headings, the menu list, the order form"],
-        ["CSS","Presentation","Warm colours, two columns on wide screens"],
-        ["JavaScript","Behaviour","Show specials on a tap, total an order, check a form before it is sent"]
+        ["CSS","Presentation","Warm colors, two columns on wide screens"],
+        ["JavaScript","Behavior","Show specials on a tap, total an order, check a form before it is sent"]
       ]},
       "JavaScript is a **programming language**: a precise way of writing instructions that a computer follows. A small piece of JavaScript is often called a **script**. Your browser contains a **JavaScript engine** (V8 in Chrome and Edge, SpiderMonkey in Firefox, JavaScriptCore in Safari) that reads the script and runs it.",
       "Here is the answer to the warm-up puzzle: browser JavaScript runs **on your device**, inside the browser, not on the website’s computer. The script arrives with the page, like the HTML and CSS do. That is why a page can still respond after the connection drops, and why a slow phone can make a heavy page feel sluggish.",
       "JavaScript also runs outside browsers. Tools such as Node.js run it on servers and ordinary computers, which is how some websites run JavaScript on both ends. This unit stays in the browser.",
-      {key:"JavaScript is not Java. They are different languages. When JavaScript appeared in 1995, the name was chosen to ride on Java’s popularity: Eloquent JavaScript calls it a marketing decision rather than good judgement."},
+      {key:"JavaScript is not Java. They are different languages. When JavaScript appeared in 1995, the name was chosen to ride on Java’s popularity: Eloquent JavaScript calls it a marketing decision rather than good judgment."},
       "The official standard for the language is called **[[ecmascript|ECMAScript]]**, published by Ecma International. A committee called TC39 updates it every year, and browsers follow it. A big update in 2015 added much of what this unit teaches, such as `let`, `const` and template literals, so in old tutorials you may see older ways of doing things."
     ]},
     {h:"Your first script, and where to put it", body:[
@@ -59,7 +59,7 @@ ICA.addUnit({
         "**Just before `</body>`**: the older habit. It works, because the page above it has been read, but the download may start later, because the script is near the end of the HTML.",
         "**`<script type=\"module\" src=\"…\">`** in the `<head>`: modules wait for the page automatically, and MDN’s course uses them. They need the page to come from a web server, though: opened straight from a file on your computer, a module script is blocked. That’s why this unit uses `defer`."
       ]},
-      {lab:"wl-js-hello", t:"Practise: make a button change some text"}
+      {lab:"wl-js-hello", t:"Practice: make a button change some text"}
     ]},
     {h:"Statements, order and comments", body:[
       "A script is a list of instructions called **[[js-statement|statements]]**. The engine runs them **one after another, top to bottom**, unless you tell it otherwise (Lesson 3 shows how). Each statement usually sits on its own line and ends with a semicolon.",
@@ -110,7 +110,7 @@ ICA.addUnit({
       ]},
       "The wording differs between browsers. For `document.querySelector(\"#totl\").textContent = \"5\"` (a misspelled id), Chrome says `Cannot set properties of null (setting 'textContent')`, while Firefox says something like `can't access property \"textContent\", … is null`. Both are TypeErrors, and both point to the same line.",
       {key:"Calm routine: read the type, read the message, go to the line, look at that line and the one before it, and fix the first error first. Later errors are often caused by the first one."},
-      {lab:"wl-js-fix", t:"Practise: use the error messages to fix a broken Like button"}
+      {lab:"wl-js-fix", t:"Practice: use the error messages to fix a broken Like button"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
@@ -125,8 +125,8 @@ ICA.addUnit({
    try:[
     {id:"t2u4-l1-x1", type:"sort", q:"Amara is building a page for her family’s bakery. Which layer does each job belong to?", buckets:["HTML","CSS","JavaScript"], items:[
       {t:"The list of breads and their prices", b:0, why:"That’s content, so it belongs in the HTML (for example a list or a table)."},
-      {t:"Prices shown in a warm brown colour", b:1, why:"Colour is presentation, which is CSS’s job."},
-      {t:"Show “Fresh out of the oven!” when someone taps a loaf", b:2, why:"Reacting to a tap is behaviour, which needs JavaScript."},
+      {t:"Prices shown in a warm brown color", b:1, why:"Color is presentation, which is CSS’s job."},
+      {t:"Show “Fresh out of the oven!” when someone taps a loaf", b:2, why:"Reacting to a tap is behavior, which needs JavaScript."},
       {t:"A heading for each section of the menu", b:0, why:"Headings are structure: `<h2>` elements in the HTML."},
       {t:"Count down the minutes until the bakery opens", b:2, why:"The page has to calculate and update itself as time passes, which takes JavaScript."},
       {t:"Two columns on wide screens, one on phones", b:1, why:"Layout that adapts to the screen is CSS (flexbox or grid with a media query)."}
@@ -224,16 +224,16 @@ ICA.addUnit({
         "**`[[let]]`** creates a name that **can** be reassigned. Use it for values that change, such as a counter or a running total.",
         "`=` means **“make this name refer to this value”**, not “is equal to”. Read `visitors = visitors + 1` as: work out `visitors + 1` (which is 4), then move the tag `visitors` to that new value."
       ]},
-      {fig:'<svg viewBox="0 0 340 266"><defs><marker id="t2u4a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="18">A variable is a name tag tied to a value</text><rect class="d-rose" x="10" y="34" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="54" text-anchor="middle">const siteName</text><path class="d-ink" d="M150,49 L196,49" stroke-width="2" marker-end="url(#t2u4a2)"/><rect class="d-panel" x="200" y="34" width="130" height="30" rx="4" stroke-width="1.5"/><text x="265" y="54" text-anchor="middle">"Garden club"</text><rect class="d-lup" x="10" y="110" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="130" text-anchor="middle">let visitors</text><path class="d-ink" d="M150,125 L196,104" stroke-width="1.5" stroke-dasharray="4 4"/><rect class="d-soft" x="200" y="88" width="60" height="28" rx="4" stroke-width="1.5"/><text x="230" y="107" text-anchor="middle">3</text><text class="s" x="268" y="107">before</text><path class="d-ink" d="M150,125 L196,146" stroke-width="2" marker-end="url(#t2u4a2)"/><rect class="d-sage" x="200" y="132" width="60" height="28" rx="4" stroke-width="2"/><text x="230" y="151" text-anchor="middle">4</text><text class="s" x="268" y="151">after</text><text class="s" x="10" y="184">visitors = visitors + 1 moves the tag</text><text class="s" x="10" y="200">to a new value. The old 3 is left behind.</text><rect class="d-rose" x="10" y="218" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="238" text-anchor="middle">const siteName</text><text x="164" y="230">✗ can’t be moved:</text><text class="s" x="164" y="248">reassigning is a TypeError</text></svg>', alt:"A name tag labelled const siteName points to the value Garden club. Below, a tag labelled let visitors has a dashed line to its old value 3 and an arrow to its new value 4, with the note that visitors = visitors + 1 moves the tag to a new value. At the bottom, the const siteName tag is marked as unable to move: reassigning it is a TypeError.", cap:"Assignment moves a name to a value. `let` names can move; `const` names can’t."},
+      {fig:'<svg viewBox="0 0 340 266"><defs><marker id="t2u4a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="18">A variable is a name tag tied to a value</text><rect class="d-rose" x="10" y="34" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="54" text-anchor="middle">const siteName</text><path class="d-ink" d="M150,49 L196,49" stroke-width="2" marker-end="url(#t2u4a2)"/><rect class="d-panel" x="200" y="34" width="130" height="30" rx="4" stroke-width="1.5"/><text x="265" y="54" text-anchor="middle">"Garden club"</text><rect class="d-lup" x="10" y="110" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="130" text-anchor="middle">let visitors</text><path class="d-ink" d="M150,125 L196,104" stroke-width="1.5" stroke-dasharray="4 4"/><rect class="d-soft" x="200" y="88" width="60" height="28" rx="4" stroke-width="1.5"/><text x="230" y="107" text-anchor="middle">3</text><text class="s" x="268" y="107">before</text><path class="d-ink" d="M150,125 L196,146" stroke-width="2" marker-end="url(#t2u4a2)"/><rect class="d-sage" x="200" y="132" width="60" height="28" rx="4" stroke-width="2"/><text x="230" y="151" text-anchor="middle">4</text><text class="s" x="268" y="151">after</text><text class="s" x="10" y="184">visitors = visitors + 1 moves the tag</text><text class="s" x="10" y="200">to a new value. The old 3 is left behind.</text><rect class="d-rose" x="10" y="218" width="140" height="30" rx="15" stroke-width="2"/><text x="80" y="238" text-anchor="middle">const siteName</text><text x="164" y="230">✗ can’t be moved:</text><text class="s" x="164" y="248">reassigning is a TypeError</text></svg>', alt:"A name tag labeled const siteName points to the value Garden club. Below, a tag labeled let visitors has a dashed line to its old value 3 and an arrow to its new value 4, with the note that visitors = visitors + 1 moves the tag to a new value. At the bottom, the const siteName tag is marked as unable to move: reassigning it is a TypeError.", cap:"Assignment moves a name to a value. `let` names can move; `const` names can’t."},
       "Try to reassign a `const` and JavaScript stops with an error:",
       {code:['const siteName = "Garden club";','siteName = "Allotment club";'].join("\n"), lang:"js", label:"Not allowed", cap:"Chrome reports `TypeError: Assignment to constant variable.`"},
       "A `const` must also get its value straight away: `const total;` on its own is a SyntaxError. A `let` can start empty: `let total;` creates the name with the value `undefined` until you assign something.",
       {key:"Use `const` by default. Switch to `let` only when you know the value will be reassigned. MDN’s advice is the same: “Use const when you can, and use let when you have to.”"},
-      {lab:"wl-js-counter", t:"Practise: a counter keeps its number in a `let` variable (the click part is explained in Lesson 5)"}
+      {lab:"wl-js-counter", t:"Practice: a counter keeps its number in a `let` variable (the click part is explained in Lesson 5)"}
     ]},
     {h:"Why not var?", body:[
       "Older code and tutorials use a third keyword, `var`. It still works, but it was designed in a way that makes mistakes easy, which is why `let` and `const` were added in 2015. Every current browser supports them.",
-      {code:['console.log(price);  // undefined (no error!)','var price = 5;','','console.log(total);  // ReferenceError','let total = 5;'].join("\n"), lang:"js", label:"Two different behaviours", cap:"With `var`, using the name too early quietly gives `undefined`. With `let`, Chrome stops with `ReferenceError: Cannot access 'total' before initialization`, which points you to the mistake."},
+      {code:['console.log(price);  // undefined (no error!)','var price = 5;','','console.log(total);  // ReferenceError','let total = 5;'].join("\n"), lang:"js", label:"Two different behaviors", cap:"With `var`, using the name too early quietly gives `undefined`. With `let`, Chrome stops with `ReferenceError: Cannot access 'total' before initialization`, which points you to the mistake."},
       {list:[
         "`var` lets you declare the same name twice by accident; `let` and `const` refuse.",
         "`var` ignores the braces `{ }` of an `if` or a loop, so a name can leak out of the block where it was made. `let` and `const` stay inside (Lesson 4 explains this “scope”).",
@@ -259,7 +259,7 @@ ICA.addUnit({
         ["`%`","Remainder after dividing","`7 % 2` → 1"]
       ]},
       {code:['console.log(2 + 3 * 4);  // 14','console.log((2 + 3) * 4);  // 20','console.log(2 ** 3);  // 8 (2 × 2 × 2)'].join("\n"), lang:"js", label:"Order of operations, and powers"},
-      "As in maths, `*` and `/` happen before `+` and `-`, and brackets go first. Two stars make the power operator.",
+      "As in math, `*` and `/` happen before `+` and `-`, and brackets go first. Two stars make the power operator.",
       {h:"Surprise 1: decimals are approximate"},
       "`0.1 + 0.2` gives `0.30000000000000004`, as the warm-up showed. The tiny error comes from storing decimals in binary. For display, round the result: `(0.1 + 0.2).toFixed(2)` gives `\"0.30\"`, a **string** with two decimal places. For money, many programs count in whole cents (or pence, or yen) and only divide for display.",
       {h:"Surprise 2: NaN, “not a number”"},
@@ -339,7 +339,7 @@ ICA.addUnit({
       {t:"Sione booked 3 seats", ok:true, why:"Right. In a template literal, each `${…}` is worked out first: `guest` is \"Sione\" and `seats + 1` is 3."},
       {t:"Sione booked 21 seats", why:"That would happen with string joining, such as `\"…\" + seats + 1`. Inside `${ }`, `seats + 1` is plain number arithmetic: 3."},
       {t:"${guest} booked ${seats + 1} seats", why:"That’s what you’d get with ordinary quotes. Backticks make it a template literal, so the `${ }` parts are filled in."},
-      {t:"An error, because you can’t do maths inside text", why:"Any expression can go inside `${ }`, including arithmetic."}
+      {t:"An error, because you can’t do math inside text", why:"Any expression can go inside `${ }`, including arithmetic."}
     ]},
     {id:"t2u4-l2-x6", type:"spot", q:"Lucía wrote these variable names. Tap every one that JavaScript will **reject** as a name.", ask:"not a valid name", mono:true, parts:[
       "let ", {t:"2ndPlace", flag:true, why:"Names can’t start with a digit. `secondPlace` or `place2` would work."}, " = \"Ana\";\nlet ", {t:"firstName", flag:false, why:"Valid, and in the recommended lower camel case."}, " = \"Lucía\";\nlet ", {t:"first-name", flag:true, why:"A hyphen is the minus sign, so this reads as `first` minus `name`. Use `firstName`."}, " = \"Lucía\";\nlet ", {t:"total_cost", flag:false, why:"Underscores are allowed. Camel case (`totalCost`) is the usual JavaScript style, but this is valid."}, " = 12;\nlet ", {t:"let", flag:true, why:"`let` is a keyword in this position, so it can’t be used as a variable name."}, " = 5;\nlet ", {t:"$price", flag:false, why:"`$` is allowed anywhere in a name, so this is valid (if unusual)."}, " = 4;"
@@ -429,7 +429,7 @@ ICA.addUnit({
       "A **[[loop]]** repeats a block of code. The simplest way to visit every item in an array is `for...of`:",
       {code:['const prices = [3.5, 2, 4.25];','let total = 0;','','for (const price of prices) {','  total = total + price;','}','console.log(total);  // 9.75'].join("\n"), lang:"js", label:"Adding up a basket", cap:"`total += price` is a common shorthand for `total = total + price`."},
       "Read it as “for each `price` in `prices`, run the block”. On the first time round, `price` is 3.5; then 2; then 4.25. Then there are no items left, so the loop ends and the next line runs. Note the two variables: `total` is a `let` because it changes, and `price` can be a `const` because each time round it’s a fresh variable.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="t2u4a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="18">prices = [3.5, 2, 4.25]</text><rect class="d-gold" x="10" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="60" y="49" text-anchor="middle">3.5</text><rect class="d-gold" x="120" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="170" y="49" text-anchor="middle">2</text><rect class="d-gold" x="230" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="280" y="49" text-anchor="middle">4.25</text><text class="s" x="60" y="76" text-anchor="middle">index 0</text><text class="s" x="170" y="76" text-anchor="middle">index 1</text><text class="s" x="280" y="76" text-anchor="middle">index 2</text><text class="s" x="10" y="98">length is 3, so the last index is 2</text><path class="d-lup" d="M30,150 L120,122 L210,150 L120,178 Z" stroke-width="2"/><text x="120" y="155" text-anchor="middle">another item?</text><path class="d-ink" d="M120,178 L120,206" stroke-width="2" marker-end="url(#t2u4a4)"/><text class="s" x="128" y="198">yes</text><rect class="d-sage" x="30" y="210" width="180" height="48" rx="6" stroke-width="2"/><text x="120" y="230" text-anchor="middle">price = next item</text><text x="120" y="249" text-anchor="middle">run the { } block</text><path class="d-ink" d="M30,234 L14,234 L14,150 L26,150" stroke-width="2" marker-end="url(#t2u4a4)"/><path class="d-ink" d="M210,150 L246,150" stroke-width="2" marker-end="url(#t2u4a4)"/><text class="s" x="228" y="142" text-anchor="middle">no</text><rect class="d-panel" x="250" y="134" width="80" height="32" rx="6" stroke-width="1.5"/><text x="290" y="155" text-anchor="middle">carry on</text><text class="s" x="10" y="286">The block runs once per item: three times here.</text></svg>', alt:"Top: an array of three prices, 3.5, 2 and 4.25, in boxes labelled index 0, index 1 and index 2, with the note that length is 3 so the last index is 2. Below, a loop flowchart: a diamond asks another item?; yes leads to a box saying price = next item, run the block, with an arrow looping back to the diamond; no leads to carry on.", cap:"A `for...of` loop asks “another item?” before every round, and stops when the answer is no."}
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="t2u4a4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="18">prices = [3.5, 2, 4.25]</text><rect class="d-gold" x="10" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="60" y="49" text-anchor="middle">3.5</text><rect class="d-gold" x="120" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="170" y="49" text-anchor="middle">2</text><rect class="d-gold" x="230" y="28" width="100" height="32" rx="4" stroke-width="1.5"/><text x="280" y="49" text-anchor="middle">4.25</text><text class="s" x="60" y="76" text-anchor="middle">index 0</text><text class="s" x="170" y="76" text-anchor="middle">index 1</text><text class="s" x="280" y="76" text-anchor="middle">index 2</text><text class="s" x="10" y="98">length is 3, so the last index is 2</text><path class="d-lup" d="M30,150 L120,122 L210,150 L120,178 Z" stroke-width="2"/><text x="120" y="155" text-anchor="middle">another item?</text><path class="d-ink" d="M120,178 L120,206" stroke-width="2" marker-end="url(#t2u4a4)"/><text class="s" x="128" y="198">yes</text><rect class="d-sage" x="30" y="210" width="180" height="48" rx="6" stroke-width="2"/><text x="120" y="230" text-anchor="middle">price = next item</text><text x="120" y="249" text-anchor="middle">run the { } block</text><path class="d-ink" d="M30,234 L14,234 L14,150 L26,150" stroke-width="2" marker-end="url(#t2u4a4)"/><path class="d-ink" d="M210,150 L246,150" stroke-width="2" marker-end="url(#t2u4a4)"/><text class="s" x="228" y="142" text-anchor="middle">no</text><rect class="d-panel" x="250" y="134" width="80" height="32" rx="6" stroke-width="1.5"/><text x="290" y="155" text-anchor="middle">carry on</text><text class="s" x="10" y="286">The block runs once per item: three times here.</text></svg>', alt:"Top: an array of three prices, 3.5, 2 and 4.25, in boxes labeled index 0, index 1 and index 2, with the note that length is 3 so the last index is 2. Below, a loop flowchart: a diamond asks another item?; yes leads to a box saying price = next item, run the block, with an arrow looping back to the diamond; no leads to carry on.", cap:"A `for...of` loop asks “another item?” before every round, and stops when the answer is no."}
     ]},
     {h:"The classic for loop, and while", body:[
       "Sometimes you need the position number too, for example to number a recipe’s steps. The **classic `for` loop** has three parts in its brackets, separated by semicolons:",
@@ -450,11 +450,11 @@ ICA.addUnit({
       "The tab then freezes, because the browser is busy running your loop and can’t redraw the page. It isn’t dangerous: close the tab (browsers may also offer to stop an unresponsive page), fix the code, and reopen.",
       {list:[
         "**Prefer `for...of`** for arrays: it stops by itself when the items run out (as long as the loop doesn’t keep adding to that same array; see the last point).",
-        "**Check the update.** In a `while` loop, find the line that moves things towards the end (`count = count + 1`). In a classic `for`, check the third part.",
+        "**Check the update.** In a `while` loop, find the line that moves things toward the end (`count = count + 1`). In a classic `for`, check the third part.",
         "**Check the direction.** `for (let i = 10; i > 0; i++)` counts **up** while waiting for `i` to get small, so it never ends.",
         "**Don’t change an array while looping over it**, for example by pushing to the same array inside a `for...of`: the end keeps moving away."
       ]},
-      {key:"Every loop needs an exit: a condition that will become false, and code inside that moves towards it."}
+      {key:"Every loop needs an exit: a condition that will become false, and code inside that moves toward it."}
     ]}
    ],
    try:[
@@ -543,7 +543,7 @@ ICA.addUnit({
     ]},
     {h:"Return values", body:[
       "The word **`return`** does two things: it sends a value back to the code that called the function, and it **ends** the function straight away. The value that comes back is the **[[return-value|return value]]**, and you can store it, log it or use it in a calculation, just like any other value.",
-      {fig:'<svg viewBox="0 0 340 312"><defs><marker id="t2u4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="95" y="8" width="150" height="30" rx="15" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">splitBill(60, 4)</text><text class="s" x="10" y="58">arguments</text><path class="d-ink" d="M130,38 L100,82" stroke-width="2" marker-end="url(#t2u4a5)"/><path class="d-ink" d="M210,38 L240,82" stroke-width="2" marker-end="url(#t2u4a5)"/><rect class="d-gold" x="58" y="86" width="96" height="26" rx="5" stroke-width="1.5"/><text x="106" y="104" text-anchor="middle">total = 60</text><rect class="d-gold" x="186" y="86" width="104" height="26" rx="5" stroke-width="1.5"/><text x="238" y="104" text-anchor="middle">people = 4</text><text class="s" x="10" y="132">parameters take the values, by position</text><rect class="d-lup" x="20" y="142" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="166" text-anchor="middle">function splitBill(total, people)</text><text x="170" y="190" text-anchor="middle">{ return total / people; }</text><path class="d-ink" d="M170,204 L170,232" stroke-width="2" marker-end="url(#t2u4a5)"/><text class="s" x="180" y="224">return value</text><rect class="d-sage" x="130" y="236" width="80" height="30" rx="15" stroke-width="2"/><text x="170" y="256" text-anchor="middle">15</text><text class="s" x="10" y="290">The 15 goes back to where the call was:</text><text class="s" x="10" y="306">const share = splitBill(60, 4); stores 15.</text></svg>', alt:"The call splitBill(60, 4) at the top. Arrows take the arguments 60 and 4 down into the parameters total = 60 and people = 4. They feed a box containing function splitBill(total, people) with the body return total / people. An arrow labelled return value leads to 15. A note says the 15 goes back to where the call was, so const share = splitBill(60, 4) stores 15.", cap:"Arguments go in, parameters receive them, and `return` sends one value back to the place the function was called."},
+      {fig:'<svg viewBox="0 0 340 312"><defs><marker id="t2u4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="95" y="8" width="150" height="30" rx="15" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">splitBill(60, 4)</text><text class="s" x="10" y="58">arguments</text><path class="d-ink" d="M130,38 L100,82" stroke-width="2" marker-end="url(#t2u4a5)"/><path class="d-ink" d="M210,38 L240,82" stroke-width="2" marker-end="url(#t2u4a5)"/><rect class="d-gold" x="58" y="86" width="96" height="26" rx="5" stroke-width="1.5"/><text x="106" y="104" text-anchor="middle">total = 60</text><rect class="d-gold" x="186" y="86" width="104" height="26" rx="5" stroke-width="1.5"/><text x="238" y="104" text-anchor="middle">people = 4</text><text class="s" x="10" y="132">parameters take the values, by position</text><rect class="d-lup" x="20" y="142" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="166" text-anchor="middle">function splitBill(total, people)</text><text x="170" y="190" text-anchor="middle">{ return total / people; }</text><path class="d-ink" d="M170,204 L170,232" stroke-width="2" marker-end="url(#t2u4a5)"/><text class="s" x="180" y="224">return value</text><rect class="d-sage" x="130" y="236" width="80" height="30" rx="15" stroke-width="2"/><text x="170" y="256" text-anchor="middle">15</text><text class="s" x="10" y="290">The 15 goes back to where the call was:</text><text class="s" x="10" y="306">const share = splitBill(60, 4); stores 15.</text></svg>', alt:"The call splitBill(60, 4) at the top. Arrows take the arguments 60 and 4 down into the parameters total = 60 and people = 4. They feed a box containing function splitBill(total, people) with the body return total / people. An arrow labeled return value leads to 15. A note says the 15 goes back to where the call was, so const share = splitBill(60, 4) stores 15.", cap:"Arguments go in, parameters receive them, and `return` sends one value back to the place the function was called."},
       "The most common beginner mix-up is between **returning** and **logging**:",
       {code:['function doubleAndLog(n) {','  console.log(n * 2);','}','function double(n) {','  return n * 2;','}','','const a = doubleAndLog(5);  // logs 10','const b = double(5);  // logs nothing','console.log(a);  // undefined','console.log(b);  // 10'].join("\n"), lang:"js", label:"Logging is not returning"},
       "`console.log` only **shows** a value to a human in the Console; the program can’t use it. `return` **hands** the value back to the program. A function with no `return` gives back `undefined`, which is why the warm-up logged `undefined`.",
@@ -568,7 +568,7 @@ ICA.addUnit({
       "Arrow functions and `function` declarations differ in a few advanced ways. For now, treat them as two spellings of the same idea; use whichever the surrounding code uses."
     ]},
     {h:"Objects: values with named parts", body:[
-      "An array keeps values in numbered order. An **[[object]]** keeps values under **names**, like a labelled card. Each name–value pair is a **property**:",
+      "An array keeps values in numbered order. An **[[object]]** keeps values under **names**, like a labeled card. Each name–value pair is a **property**:",
       {code:['const book = {','  title: "The Shared Garden",','  pages: 320,','  borrowed: false','};','','console.log(book.title);  // The Shared Garden','console.log(book["pages"]);  // 320','book.borrowed = true;  // change a property','book.dueDays = 14;  // add a new one','console.log(book.author);  // undefined'].join("\n"), lang:"js", label:"A library book"},
       {list:[
         "Curly braces create the object; each property is `name: value`, separated by commas.",
@@ -584,7 +584,7 @@ ICA.addUnit({
       "Real data is often a **list of similar things**: books on loan, events in a calendar, plants in a garden. That’s an array of objects, and a `for...of` loop with an `if` inside does a lot of useful work:",
       {code:['const loans = [','  { title: "Atlas", days: 7 },','  { title: "Poems", days: 21 },','  { title: "Recipes", days: 14 }','];','','let longLoans = 0;','for (const loan of loans) {','  if (loan.days > 10) {','    longLoans++;','    console.log(`${loan.title}: ${loan.days} days`);','  }','}','console.log(longLoans);','// Poems: 21 days','// Recipes: 14 days','// 2'].join("\n"), lang:"js", label:"Loans longer than 10 days"},
       "Each time round, `loan` is one object, so `loan.days` and `loan.title` read that object’s properties. This pattern (loop, check, count or collect) appears in almost every program.",
-      {lab:"wl-js-counter", t:"Practise: a click counter, built from a variable and a function that runs on each click"},
+      {lab:"wl-js-counter", t:"Practice: a click counter, built from a variable and a function that runs on each click"},
       {key:"Arrays answer “which one, in what order?”; objects answer “which property?”. Arrays of objects answer both."}
     ]}
    ],
@@ -618,7 +618,7 @@ ICA.addUnit({
       {t:"`guests.push(\"Mei\")`", b:1, why:"`push` is an array method, called with the value to add."},
       {t:"`book[\"title\"]`", b:0, why:"Bracket notation reads a property by its name as a string; no call happens."}
     ]},
-    {id:"t2u4-l4-x6", type:"mcq", q:"`const pet = { name: \"Biscuit\", age: 4 };` What does `console.log(pet.colour);` show?", options:[
+    {id:"t2u4-l4-x6", type:"mcq", q:"`const pet = { name: \"Biscuit\", age: 4 };` What does `console.log(pet.color);` show?", options:[
       {t:"`undefined`", ok:true, why:"Right. Reading a property that doesn’t exist gives `undefined`, without an error. (So a typo such as `pet.nmae` also gives `undefined`: worth knowing when debugging.)"},
       {t:"A ReferenceError", why:"ReferenceErrors are for unknown **variable** names. `pet` exists; a missing property on it just gives `undefined`."},
       {t:"`null`", why:"JavaScript doesn’t use `null` for missing properties; that’s `undefined`. `null` appears only when something is set to it."},
@@ -685,7 +685,7 @@ ICA.addUnit({
       "To change how something looks, the clean way is to define the look in **CSS** and let JavaScript switch a **class** on or off. Every element has a `classList` with four handy methods:",
       {code:['.hidden { display: none; }','.highlight { background: gold; }'].join("\n"), lang:"css", label:"CSS: the looks"},
       {code:['const menu = document.querySelector("#menu");','menu.classList.add("highlight");','menu.classList.remove("hidden");','menu.classList.toggle("hidden"); // on if off, else off','console.log(menu.classList.contains("hidden")); // true'].join("\n"), lang:"js", label:"JavaScript: switching classes", cap:"Class names in `classList` have **no dot**: it’s `\"hidden\"`, not `\".hidden\"`."},
-      "Keeping style in CSS and behaviour in JavaScript means a designer can change the look without touching the script, and the script stays short. You can also set styles directly (`menu.style.color = \"red\"`), but that scatters design decisions through your code."
+      "Keeping style in CSS and behavior in JavaScript means a designer can change the look without touching the script, and the script stays short. You can also set styles directly (`menu.style.color = \"red\"`), but that scatters design decisions through your code."
     ]},
     {h:"Responding to clicks", body:[
       "An **[[event]]** is something that happens on the page: a click, a key press, a form being submitted. An **[[event-listener|event listener]]** is a function you ask the browser to run whenever that event happens on an element:",
@@ -699,8 +699,8 @@ ICA.addUnit({
       ]},
       "Old tutorials put JavaScript in the HTML, like `<button onclick=\"show()\">`. It still works, but MDN calls it bad practice: it mixes the two languages and has to be repeated on every element. Keep JavaScript in its file and use `addEventListener`.",
       {tip:"For a show-and-hide button, accessibility guidance (the WAI-ARIA “disclosure” pattern) also sets `aria-expanded` to `\"true\"` or `\"false\"` on the button, so screen-reader users hear whether the content is open."},
-      {lab:"wl-js-hello", t:"Practise: change some text when a button is clicked"},
-      {lab:"wl-js-counter", t:"Practise: count clicks"}
+      {lab:"wl-js-hello", t:"Practice: change some text when a button is clicked"},
+      {lab:"wl-js-counter", t:"Practice: count clicks"}
     ]},
     {h:"Reading what people type", body:[
       "A text box’s current contents are in its **`value`** property. Read it **inside** the listener, so you get what’s there at the moment of the click; read it when the page loads and you only ever get the empty box.",
@@ -715,7 +715,7 @@ ICA.addUnit({
       "Every piece is something you’ve met:",
       {list:[
         "**Find:** four `querySelector` calls, stored in `const` variables at the top.",
-        "**A function** with three parameters does the maths and `return`s the share, so it can be reused and tested on its own.",
+        "**A function** with three parameters does the math and `return`s the share, so it can be reused and tested on its own.",
         "**Listen:** the click listener reads the three values **at the moment of the click** and converts them with `Number`.",
         "**Decide:** two `if` checks catch an empty bill and an impossible number of people. `return;` with no value simply stops the listener early. `!(bill >= 0)` is true for negative numbers and for NaN, because any comparison with NaN is false.",
         "**Change:** `textContent` shows the answer, and `toFixed(2)` rounds it to two decimal places for display.",
@@ -737,7 +737,7 @@ ICA.addUnit({
         ["TypeError mentioning `null`","The selector found nothing: a typo, a missing `#` or `.`, or no `defer`"],
         ["Nothing happens, no error","Listener on the wrong element, `\"onclick\"` instead of `\"click\"`, or the function was called with `()` when passed"],
         ["`128` instead of `20`","Two strings joined with `+`; convert with `Number(…)`"],
-        ["`NaN`","Something that isn’t a number went into the maths; log each value"],
+        ["`NaN`","Something that isn’t a number went into the math; log each value"],
         ["`[object HTMLInputElement]`","You showed the input itself; you meant its `.value`"]
       ]},
       "Developer tools can also **pause** a script. In Chrome’s **Sources** panel (Firefox’s **Debugger**), click a line number to set a breakpoint; the next time that line runs, everything stops and you can inspect every variable. Writing the statement `debugger;` in your code does the same while the tools are open. On a phone, the Web Lab shows the Console output and error messages, which is enough for everything in this unit.",
@@ -818,10 +818,10 @@ ICA.addUnit({
   ],
   codex:[
    {id:"js-what-it-does", title:"What JavaScript does, and where it runs", aka:["JavaScript","JS","ECMAScript","script element","defer"], tags:["javascript","basics","web"],
-    summary:"JavaScript is the programming language that gives web pages behaviour; browsers download it with the page and run it on your device.",
+    summary:"JavaScript is the programming language that gives web pages behavior; browsers download it with the page and run it on your device.",
     levels:{
      starter:[
-      "A web page has three layers. **HTML** is the content, **CSS** is the look, and **JavaScript** is the behaviour: what happens when you tap a button, type in a box or wait for a countdown.",
+      "A web page has three layers. **HTML** is the content, **CSS** is the look, and **JavaScript** is the behavior: what happens when you tap a button, type in a box or wait for a countdown.",
       "JavaScript comes with the page, like a set of instructions tucked inside a parcel. Your browser opens the parcel and follows the instructions **on your own device**. That’s why a menu can still open after your connection drops, and why heavy pages can feel slow on an older phone.",
       "Despite the name, JavaScript has almost nothing to do with the language Java. The name was chosen in 1995 for marketing reasons.",
       {key:"HTML is what’s there, CSS is how it looks, JavaScript is what it does."},
@@ -837,12 +837,12 @@ ICA.addUnit({
         ["Plain script before `</body>`","Runs after the content above it; the download may start later"],
         ["`type=\"module\"` in the `<head>`","Deferred automatically; needs the page served over HTTP(S), not opened as a file"]
       ]},
-      "`defer` only applies to scripts with a `src`; on code written inside the `<script>` element itself it has no effect. Inline event attributes such as `onclick=\"…\"` still work but mix languages; keep JavaScript in its own file and attach behaviour with `addEventListener`.",
+      "`defer` only applies to scripts with a `src`; on code written inside the `<script>` element itself it has no effect. Inline event attributes such as `onclick=\"…\"` still work but mix languages; keep JavaScript in its own file and attach behavior with `addEventListener`.",
       "The browser’s **JavaScript engine** runs the code: V8 in Chrome and Edge, SpiderMonkey in Firefox, JavaScriptCore in Safari. Code runs as a list of statements, top to bottom.",
       "MDN’s course puts module scripts in the head; this unit uses `defer` because it also works when you open the HTML file straight from your computer, without a web server."
      ],
      pro:[
-      "The language is standardised as **ECMAScript** (ECMA-262), maintained by Ecma International’s TC39 committee, which publishes a new edition every year. ES2015 (also called ES6) was the big modern update: `let`, `const`, arrow functions, template literals, classes, modules and `for...of`. Browsers then add the **Web APIs** on top, such as the DOM, `fetch` and `localStorage`. These aren’t part of ECMAScript; they come from WHATWG and W3C standards. Node.js offers different APIs (files, network servers) around the same language.",
+      "The language is standardized as **ECMAScript** (ECMA-262), maintained by Ecma International’s TC39 committee, which publishes a new edition every year. ES2015 (also called ES6) was the big modern update: `let`, `const`, arrow functions, template literals, classes, modules and `for...of`. Browsers then add the **Web APIs** on top, such as the DOM, `fetch` and `localStorage`. These aren’t part of ECMAScript; they come from WHATWG and W3C standards. Node.js offers different APIs (files, network servers) around the same language.",
       "Engines don’t simply interpret line by line: they parse the whole script first (which is why a syntax error anywhere stops the whole script), then interpret and **just-in-time compile** hot code into machine code. MDN still calls JavaScript an interpreted language, since compilation happens while the program runs rather than ahead of time.",
       "Script loading in detail: `async` scripts download in parallel and run as soon as they arrive, in no guaranteed order, which suits independent scripts such as analytics. `defer` scripts keep document order and run before the `DOMContentLoaded` event. Module scripts are deferred by default, run in strict mode, have their own top-level scope, and can `import` other modules.",
       "Security model: page JavaScript runs in a **sandbox**. It can’t read your files or other sites’ data (the same-origin policy), but it can do anything the page itself can, with your login. That’s why pasting unknown code into the Console, or letting other people’s text become code (XSS), is dangerous."
@@ -878,7 +878,7 @@ ICA.addUnit({
      pro:[
       "`var` is the pre-2015 keyword. Its differences are why style guides and MDN recommend against it:",
       {table:[
-        ["Behaviour","var","let / const"],
+        ["Behavior","var","let / const"],
         ["Scope","Whole function (ignores blocks)","The enclosing block"],
         ["Redeclare in same scope","Allowed silently","SyntaxError"],
         ["Use before declaration","`undefined` (hoisted)","ReferenceError (temporal dead zone)"],
@@ -1127,7 +1127,7 @@ ICA.addUnit({
       "The DOM is defined by the WHATWG DOM and HTML standards. Nodes include elements, text nodes and comments; `children` gives element children only, while `childNodes` includes text nodes (often whitespace).",
       "`querySelectorAll` returns a **static** NodeList (a snapshot), while older methods such as `getElementsByClassName` return **live** HTMLCollections that update as the document changes. `element.querySelector` searches only inside that element. `getElementById` is a fast alternative for ids (no `#`).",
       "`textContent` vs `innerText`: `textContent` returns all text, including hidden elements and the text of `<script>`/`<style>`, and doesn’t trigger layout. `innerText` is aware of CSS (skips hidden text) and forces a reflow when read, so it is slower.",
-      "Defence in depth against XSS: never build HTML by concatenating untrusted strings; prefer DOM methods (`createElement`, `textContent`, `setAttribute` on safe attributes); be careful with URLs in `href` (a `javascript:` URL runs code); and on real sites use a **Content Security Policy**, and Trusted Types where supported, to block injected scripts. Note that `<script>` elements inserted via `innerHTML` don’t run, but event-handler attributes do.",
+      "Defense in depth against XSS: never build HTML by concatenating untrusted strings; prefer DOM methods (`createElement`, `textContent`, `setAttribute` on safe attributes); be careful with URLs in `href` (a `javascript:` URL runs code); and on real sites use a **Content Security Policy**, and Trusted Types where supported, to block injected scripts. Note that `<script>` elements inserted via `innerHTML` don’t run, but event-handler attributes do.",
       "Performance: each DOM change can trigger style recalculation and layout. Batch changes (build a list in a `DocumentFragment` or a string you control, then insert once), and avoid reading layout values (`offsetHeight`) between writes in a loop."
      ]
     },
@@ -1154,7 +1154,7 @@ ICA.addUnit({
         "The function receives an **event object**: `(event) => { … }`. `event.target` is the element the event happened on."
       ]},
       "For forms, listen for `\"submit\"` on the `<form>` rather than `\"click\"` on its button: that also catches someone pressing [[kbd:Enter]]. Call `event.preventDefault()` first if you handle the data in JavaScript instead of sending the page somewhere.",
-      "Inline handlers (`<button onclick=\"go()\">`) still work but mix HTML and JavaScript and must be repeated on every element; MDN calls them bad practice. `addEventListener` keeps behaviour in the script and allows several listeners per event.",
+      "Inline handlers (`<button onclick=\"go()\">`) still work but mix HTML and JavaScript and must be repeated on every element; MDN calls them bad practice. `addEventListener` keeps behavior in the script and allows several listeners per event.",
       "Variables that must remember things between events (a click count) belong **outside** the listener; variables needed for one event belong inside.",
       "Keep listeners short: read the values, call a function that does the work, then update the page. The function can then be tested on its own in the Console."
      ],
@@ -1274,9 +1274,9 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"t2u4-q01", lesson:"t2u4-l1", level:1, q:"What does JavaScript add to a web page that HTML and CSS can’t?", options:[
-     {t:"Behaviour: reacting to what visitors do", ok:true, why:"Responding to taps and typing, calculating, and changing the page while it’s open. HTML gives structure and CSS gives presentation; reacting and calculating need a programming language."},
+     {t:"Behavior: reacting to what visitors do", ok:true, why:"Responding to taps and typing, calculating, and changing the page while it’s open. HTML gives structure and CSS gives presentation; reacting and calculating need a programming language."},
      {t:"The text and headings", why:"Content is HTML’s job. JavaScript can change text, but the page’s content belongs in the HTML."},
-     {t:"Colours, fonts and the layout of the page", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself lives in CSS."},
+     {t:"Colors, fonts and the layout of the page", why:"That’s CSS. JavaScript can switch classes that CSS styles, but the styling itself lives in CSS."},
      {t:"The web address of the page", why:"Addresses come from where the file is hosted, not from JavaScript."}
    ]},
    {id:"t2u4-q02", lesson:"t2u4-l1", level:1, q:"Where does the JavaScript of an ordinary web page run?", options:[
@@ -1321,7 +1321,7 @@ ICA.addUnit({
      {t:"A browser made by Ecma", why:"It’s a specification document, not a browser."},
      {t:"A library you must install before you can use JavaScript", why:"Nothing needs installing: browsers already implement the ECMAScript standard."}
    ]},
-   {id:"t2u4-q09", lesson:"t2u4-l1", level:3, q:"Hana types `console.log(\"Hello\")` into the Console. It shows `Hello`, then a grey `undefined`. What does the `undefined` mean?", options:[
+   {id:"t2u4-q09", lesson:"t2u4-l1", level:3, q:"Hana types `console.log(\"Hello\")` into the Console. It shows `Hello`, then a gray `undefined`. What does the `undefined` mean?", options:[
      {t:"`console.log` gives back no value", ok:true, why:"The Console prints the value of each line you enter. `console.log` displays its message and returns nothing, which shows as `undefined`. It isn’t an error."},
      {t:"Her code has an error", why:"Errors appear in red with a type such as ReferenceError. This is just a value."},
      {t:"The word Hello wasn’t defined", why:"`\"Hello\"` is a string, and it was logged successfully."},
@@ -1366,7 +1366,7 @@ ICA.addUnit({
    ]},
    {id:"t2u4-q16", lesson:"t2u4-l2", level:2, q:"What does `0.1 + 0.2 === 0.3` give?", options:[
      {t:"`false`: the sum is 0.30000000000000004", ok:true, why:"Most decimals can’t be stored exactly in binary, so 0.1 + 0.2 is very slightly off. Round for display, or compare with a small tolerance."},
-     {t:"`true`, because that’s just basic arithmetic", why:"In exact maths it would be true, but computer numbers store decimals approximately."},
+     {t:"`true`, because that’s just basic arithmetic", why:"In exact math it would be true, but computer numbers store decimals approximately."},
      {t:"An error", why:"The comparison works fine; it just gives a surprising result."},
      {t:"`NaN`", why:"All three are real numbers, so nothing is NaN. The comparison gives a boolean."}
    ]},
@@ -1432,7 +1432,7 @@ ICA.addUnit({
      {t:"It never stops", why:"n triples every round, so it soon passes 20."}
    ]},
    {id:"t2u4-q27", lesson:"t2u4-l3", level:3, q:"Tomás runs a page with a new `while` loop and the tab freezes. What’s the most likely cause?", options:[
-     {t:"Nothing inside the loop changes the condition, so it never becomes false", ok:true, why:"An infinite loop keeps the browser busy, so it can’t redraw the page. Check the line that should move towards the end, such as `count = count + 1`."},
+     {t:"Nothing inside the loop changes the condition, so it never becomes false", ok:true, why:"An infinite loop keeps the browser busy, so it can’t redraw the page. Check the line that should move toward the end, such as `count = count + 1`."},
      {t:"The computer is too slow for loops", why:"Loops of thousands of rounds take milliseconds. A freeze means the loop doesn’t end."},
      {t:"`while` loops aren’t supported in browsers", why:"They’re a standard part of JavaScript."},
      {t:"The loop has too few rounds", why:"Too few rounds would end quickly, not freeze."}
@@ -1536,7 +1536,7 @@ ICA.addUnit({
      {t:"`<div>` elements are invalid HTML", why:"Divs are valid; they’re just not interactive controls."}
    ]},
    {id:"t2u4-q44", lesson:"t2u4-l5", level:3, q:"Hana removes the empty-bill check from the bill splitter and clicks with the bill box empty (2 people, 10% tip). What appears?", options:[
-     {t:"“Each person pays 0.00”, because `Number(\"\")` is 0", ok:true, why:"An empty box gives `\"\"`, and `Number(\"\")` is 0, so the maths quietly works on 0. That’s why the code checks for an empty box before converting."},
+     {t:"“Each person pays 0.00”, because `Number(\"\")` is 0", ok:true, why:"An empty box gives `\"\"`, and `Number(\"\")` is 0, so the math quietly works on 0. That’s why the code checks for an empty box before converting."},
      {t:"“Each person pays NaN”", why:"NaN comes from text that isn’t a number, such as \"abc\". The empty string converts to 0."},
      {t:"A TypeError in the Console", why:"Nothing is `null`; every value is a number, so no error appears. That’s what makes this bug quiet."},
      {t:"Nothing at all", why:"The listener still runs and sets `textContent` to a message with 0.00."}

@@ -6,7 +6,7 @@ ICA.addUnit({
     "Explain what an IR theory is, how it simplifies like a map, and the difference between explaining, understanding and judging",
     "Use realist ideas (power, self-help, the security dilemma, the balance of power) and say where realism struggles",
     "Use liberal ideas (interdependence, institutions, absolute gains, the democratic peace) and weigh the evidence and critiques",
-    "Explain how constructivists and the English School put ideas, identities, norms and shared rules at the centre",
+    "Explain how constructivists and the English School put ideas, identities, norms and shared rules at the center",
     "Describe Marxist, feminist and postcolonial lenses and the Global IR agenda carefully, and read one event through several lenses without declaring a single winner"
   ],
   read:[
@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u6-l1", title:"Why theory? Maps, lenses and debates", minutes:50,
-   hook:{q:"In October 1962 the world came close to nuclear war over Soviet missiles in Cuba. In the United States this is called the Cuban Missile Crisis. What was it usually called in the Soviet Union?", options:["The Missile Gap","The October Crisis","The Caribbean Crisis","The Thirteen Days"], answer:2, reveal:"**The Caribbean Crisis.** In Cuba it is usually called the **October Crisis**. Each name puts a different place or thing at the centre: the missiles, the region, or the month a small country lived through. Theories do the same with every event, which is why this unit follows this one crisis through every lens."},
+   hook:{q:"In October 1962 the world came close to nuclear war over Soviet missiles in Cuba. In the United States this is called the Cuban Missile Crisis. What was it usually called in the Soviet Union?", options:["The Missile Gap","The October Crisis","The Caribbean Crisis","The Thirteen Days"], answer:2, reveal:"**The Caribbean Crisis.** In Cuba it is usually called the **October Crisis**. Each name puts a different place or thing at the center: the missiles, the region, or the month a small country lived through. Theories do the same with every event, which is why this unit follows this one crisis through every lens."},
    goals:[
      "Explain what an IR theory is and why simplifying is a strength, not a flaw",
      "Tell explaining, understanding and judging (normative) claims apart",
@@ -78,11 +78,11 @@ ICA.addUnit({
       "IR textbooks often tell the field’s history as a series of **great debates**. The usual version goes like this:",
       {ol:[
         "**First debate (1930s–1940s): “idealists” against realists.** After 1919, scholars hoped the League of Nations and international law could end war. (The field’s founding is covered in Unit 5.) The Second World War seemed to prove them naïve, and realists such as E. H. Carr (*The Twenty Years’ Crisis*, 1939) and Hans Morgenthau took over.",
-        "**Second debate (1950s–1960s):** “traditional” scholars who used history, law and philosophy against “behaviouralists” who wanted measurement and statistics.",
+        "**Second debate (1950s–1960s):** “traditional” scholars who used history, law and philosophy against “behavioralists” who wanted measurement and statistics.",
         "**Inter-paradigm debate (1970s–1980s):** realists, liberals and Marxists arguing about which picture of the world was best.",
         "**A later debate (from the late 1980s):** positivists, who aim to explain from the outside, against post-positivists, who question whether that is possible."
       ]},
-      "It is a handy outline, but historians of the field warn against taking it literally. In a 1998 article, “The Myth of the ‘First Great Debate’”, Peter Wilson argued that the 1930s scholars later labelled “idealists” never formed a single school. He also argued that the label was mostly attached to them by their critics. Others note that the story starts in Britain and the United States and leaves out thinkers elsewhere, a point Lesson 5 develops.",
+      "It is a handy outline, but historians of the field warn against taking it literally. In a 1998 article, “The Myth of the ‘First Great Debate’”, Peter Wilson argued that the 1930s scholars later labeled “idealists” never formed a single school. He also argued that the label was mostly attached to them by their critics. Others note that the story starts in Britain and the United States and leaves out thinkers elsewhere, a point Lesson 5 develops.",
       {key:"Treat the great debates as a rough sketch drawn by the winners of each round, not as a full history of ideas about world politics."}
      ]},
     {h:"The running example: thirteen days in October 1962", body:[
@@ -98,9 +98,9 @@ ICA.addUnit({
         "**“Theories are just opinions.”** No. A theory states its assumptions and its expectations so that others can test it. An opinion does not have to.",
         "**“One case that doesn’t fit proves a theory wrong.”** Theories in IR describe tendencies, not iron laws. One odd case is a puzzle; many odd cases are a problem.",
         "**“There must be one right theory.”** Most scholars use more than one. Rudra Sil and Peter Katzenstein called combining insights from several theories “analytic eclecticism” (2010).",
-        "**“A theory is the same as a political ideology.”** Being a realist scholar does not mean you favour war. And being a liberal theorist says nothing about how you vote. Theories explain; ideologies are programmes for action."
+        "**“A theory is the same as a political ideology.”** Being a realist scholar does not mean you favor war. And being a liberal theorist says nothing about how you vote. Theories explain; ideologies are programs for action."
       ]},
-      "A useful habit for any lens: ask **what does it explain well, what does it leave out, and whose point of view does it start from?** You will practise this in every lesson.",
+      "A useful habit for any lens: ask **what does it explain well, what does it leave out, and whose point of view does it start from?** You will practice this in every lesson.",
       {terms:["ir-theory","normative-theory","empirical-theory","paradigm","theory","analytic-eclecticism"]}
      ]}
    ],
@@ -112,10 +112,10 @@ ICA.addUnit({
       {t:"Theories can’t be judged at all, so it makes no difference what realism leaves out.", why:"Theories can be judged: by how well their expectations fit the evidence, how much they explain and what they miss."}
     ]},
     {id:"e2u6-l1-x2", type:"sort", q:"Is each sentence mainly explaining (what caused something), understanding (what it meant to those involved) or judging (what ought to be)?", buckets:["Explaining","Understanding","Judging"], items:[
-      {t:"Rising fear of a neighbour’s army makes states more likely to form alliances.", b:0, why:"It proposes a cause (fear) and an effect (alliances) that could be checked across many cases."},
+      {t:"Rising fear of a neighbor’s army makes states more likely to form alliances.", b:0, why:"It proposes a cause (fear) and an effect (alliances) that could be checked across many cases."},
       {t:"Rich countries have a duty to help poor countries cope with climate change.", b:2, why:"“Have a duty” is an ought-claim. Reasons can support it, but evidence alone cannot settle it."},
       {t:"For many Cubans, the 1962 crisis meant living under the threat of invasion.", b:1, why:"It reconstructs how the event looked and felt from the inside, to the people who lived it."},
-      {t:"Leaders should never threaten to use nuclear weapons.", b:2, why:"“Should never” is a normative judgement about right conduct."},
+      {t:"Leaders should never threaten to use nuclear weapons.", b:2, why:"“Should never” is a normative judgment about right conduct."},
       {t:"Heavy trade between two states makes war between them less likely.", b:0, why:"It is a claim about a cause (trade) and an effect (less war), which researchers can test with data."},
       {t:"Officials in 1962 saw backing down as a sign of weakness that would damage their country’s standing.", b:1, why:"It describes the meanings and beliefs that shaped choices, the core of understanding."}
     ]},
@@ -123,16 +123,16 @@ ICA.addUnit({
       ["Realism","Who has power, and who fears whom?","Realists start from power and survival in a world without a government above states."],
       ["Liberalism","How can trade, rules and institutions make cooperation easier?","Liberals start from the possibility of cooperation and progress."],
       ["Constructivism","What do shared ideas and identities make possible?","Constructivists start from meanings: friend or enemy, normal or unthinkable."],
-      ["Feminist IR","Where are the women, and how does gender shape power?","Feminist scholars start by asking whose lives and labour the usual story leaves out."],
+      ["Feminist IR","Where are the women, and how does gender shape power?","Feminist scholars start by asking whose lives and labor the usual story leaves out."],
       ["Postcolonialism","What did empire leave behind, and whose voice is missing?","Postcolonial scholars start from the legacies of colonial rule."]
     ]},
     {id:"e2u6-l1-x4", type:"spot", q:"A student wrote this summary of the great debates. Tap the claims that are wrong or overstated.", ask:"wrong or overstated", parts:[
       "The field’s history is often told as a series of debates. ",
-      {t:"In the first, realists such as E. H. Carr criticised hopes that law and the League could end war.", flag:false, why:"Fine. Carr’s *The Twenty Years’ Crisis* (1939) is the classic realist attack on those hopes."},
+      {t:"In the first, realists such as E. H. Carr criticized hopes that law and the League could end war.", flag:false, why:"Fine. Carr’s *The Twenty Years’ Crisis* (1939) is the classic realist attack on those hopes."},
       " ",
-      {t:"The “idealists” were a tightly organised school who all called themselves idealists.", flag:true, why:"Historians such as Peter Wilson (1998) argue the opposite: they were a varied group, and the label was mostly attached to them by critics."},
+      {t:"The “idealists” were a tightly organized school who all called themselves idealists.", flag:true, why:"Historians such as Peter Wilson (1998) argue the opposite: they were a varied group, and the label was mostly attached to them by critics."},
       " ",
-      {t:"A second debate set history and philosophy against measurement and statistics.", flag:false, why:"Fine. That is the usual description of the traditionalist–behaviouralist debate."},
+      {t:"A second debate set history and philosophy against measurement and statistics.", flag:false, why:"Fine. That is the usual description of the traditionalist–behavioralist debate."},
       " ",
       {t:"These debates are a complete history of all thinking about world politics.", flag:true, why:"The story starts in Britain and the United States and leaves out much older and non-Western thought. It is a sketch, not a full history."},
       " ",
@@ -154,13 +154,13 @@ ICA.addUnit({
     ]},
     {id:"e2u6-l1-x7", type:"explain", q:"A classmate says, ‘Realism ignores most of what happens inside countries, so it’s a bad theory.’ Using the map analogy, explain why simplifying can be a strength, and what makes a theory good rather than just simple.", size:"4–5 sentences", model:"A theory is like a metro map: it leaves out almost everything, such as streets and real distances, and that is exactly why it helps you find your route. Realism deliberately sets aside what happens inside countries to focus on power and security between them. That isn’t a flaw in itself. A theory states its assumptions, a mechanism and expectations, so it can be tested against what happens. A good theory explains a lot with a little, fits the evidence across many cases and says what would prove it wrong. The fair question is whether its simplification hides something that matters for the question asked.", points:["Uses the map analogy: leaving things out makes a map useful", "Explains that simplifying focuses attention", "Mentions that a theory can be tested through its expectations", "Gives a test of a good theory, such as fitting many cases or saying what would prove it wrong"]}
    ],
-   apply:{intro:"Practise noticing lenses in the world around you. These tasks need only a news source you already use and a notes box.", tasks:[
+   apply:{intro:"Practice noticing lenses in the world around you. These tasks need only a news source you already use and a notes box.", tasks:[
      {t:"Find the lens in a news story", how:["Pick one news article or broadcast about relations between two or more countries.","Copy one or two sentences that explain why something happened.","Ask: does it stress power and threats, cooperation and rules, ideas and identity, money and inequality, or someone’s missing voice?","Note which sentences explain, which describe meanings and which judge."], write:"The story… The key sentences… The lens it seems to use… Explaining / understanding / judging…"},
      {t:"Draw your own map", how:["Think of a place you know well: your street, workplace or school.","Imagine two maps of it for two different jobs (for example, a fire-safety map and a map for a new visitor).","List what each map would leave out, and why that is fine for its job.","Write one sentence on what this suggests about IR theories."], write:"Map 1 is for… it leaves out… Map 2 is for… it leaves out… What this says about theories…"},
-     {t:"One event, three names", how:["Choose a well-known historical event that has different names in different countries or languages (the 1962 crisis is one; you can look up others in an encyclopedia).","Write down each name and what it puts at the centre.","Note what each name might lead a reader to notice or overlook."], write:"The event… Name 1 and what it stresses… Name 2… What I noticed…"}
+     {t:"One event, three names", how:["Choose a well-known historical event that has different names in different countries or languages (the 1962 crisis is one; you can look up others in an encyclopedia).","Write down each name and what it puts at the center.","Note what each name might lead a reader to notice or overlook."], write:"The event… Name 1 and what it stresses… Name 2… What I noticed…"}
    ], proof:"Notes naming the lens used in one real news story, two imagined maps with what each leaves out, and one event with its different names."},
    read:[
-    {book:"eirt", where:"Introduction “Getting Started with International Relations Theory” (Stephen McGlinchey, Rosie Walters and Dana Gold)", note:"Read it after this lesson: it explains why theory matters and how the rest of the book is organised."},
+    {book:"eirt", where:"Introduction “Getting Started with International Relations Theory” (Stephen McGlinchey, Rosie Walters and Dana Gold)", note:"Read it after this lesson: it explains why theory matters and how the rest of the book is organized."},
     {book:"eir", where:"Chapter 4 “International Relations Theory” (Dana Gold and Stephen McGlinchey)", note:"A quick tour of all the main theories; useful now for the big picture and again at the end of the unit."},
     {book:"ospol", where:"Chapter 14, section 14.5 “The Realist Worldview”, opening paragraphs", note:"Its first paragraphs explain how theories and “worldviews” help us understand state decisions."}
    ]
@@ -171,17 +171,17 @@ ICA.addUnit({
    goals:[
      "Explain self-help and why realists think anarchy pushes states to seek power and security",
      "Tell classical realism (Morgenthau) from neorealism (Waltz)",
-     "Trace the security dilemma step by step and recognise it in a real case",
+     "Trace the security dilemma step by step and recognize it in a real case",
      "Distinguish balancing from bandwagoning and defensive from offensive realism",
      "State realism’s main critiques and how realists reply"
    ],
    learn:[
-    {h:"A neighbourhood with no police", body:[
-      {lead:"Picture a neighbourhood where there are no police, no courts and no one to call if a neighbour breaks into your house."},
-      "Most neighbours may be perfectly decent. But you can never be sure, and if you guess wrong, the cost could be terrible. So you fit stronger locks, and perhaps team up with the family next door. And you keep an eye on the person who has just bought a large dog. You are not evil. You are being careful in a place where no one else will protect you.",
+    {h:"A neighborhood with no police", body:[
+      {lead:"Picture a neighborhood where there are no police, no courts and no one to call if a neighbor breaks into your house."},
+      "Most neighbors may be perfectly decent. But you can never be sure, and if you guess wrong, the cost could be terrible. So you fit stronger locks, and perhaps team up with the family next door. And you keep an eye on the person who has just bought a large dog. You are not evil. You are being careful in a place where no one else will protect you.",
       "That is the realist picture of world politics. Unit 5 introduced [[anarchy]]: the absence of any government above states (see {{anarchy-ir}}). Anarchy does not mean chaos. It means each state must rely on itself in the end. Realists call this [[self-help]]. They draw four conclusions from it:",
       {list:[
-        "**States are the main actors**, because they hold most of the organised force.",
+        "**States are the main actors**, because they hold most of the organized force.",
         "**Survival comes first.** A state that is conquered cannot pursue any other goal.",
         "**[[power|Power]] is the currency**, above all military power and the wealth that pays for it.",
         "**Trust is scarce.** You cannot know for certain what another government intends, today or in ten years."
@@ -192,7 +192,7 @@ ICA.addUnit({
       "Realists like to trace their lens back a long way. These thinkers did not call themselves realists; later scholars **claimed them as ancestors**, and each claim is debated:",
       {list:[
         "**Thucydides** (5th century BCE), *History of the Peloponnesian War*. In the famous Melian Dialogue, Athenian envoys speak to the small island of Melos. In a well-known translation, they say that “the strong do what they can and the weak suffer what they must”. Many classicists point out that Thucydides also shows Athens’ arrogance leading to disaster. So he may be warning against this attitude as much as describing it.",
-        "**The Arthashastra**, a treatise on statecraft traditionally attributed to Kautilya, an adviser at India’s Maurya court in the 4th century BCE. (Many scholars think the text was compiled over later centuries.) Its “circle of states” advises a ruler that a neighbouring kingdom is a likely enemy and the kingdom beyond it a likely friend.",
+        "**The Arthashastra**, a treatise on statecraft traditionally attributed to Kautilya, an adviser at India’s Maurya court in the 4th century BCE. (Many scholars think the text was compiled over later centuries.) Its “circle of states” advises a ruler that a neighboring kingdom is a likely enemy and the kingdom beyond it a likely friend.",
         "**Niccolò Machiavelli**, *The Prince* (written 1513), on rulers who must sometimes act against ordinary morality to keep the state safe.",
         "**Thomas Hobbes**, *Leviathan* (1651), who described life without a government as a war of all against all, “solitary, poor, nasty, brutish, and short”."
       ]},
@@ -202,7 +202,7 @@ ICA.addUnit({
      ]},
     {h:"Neorealism: it’s the structure", body:[
       "In 1979 the American scholar {{kenneth-waltz|Kenneth Waltz}} published *Theory of International Politics* and changed the conversation. Twenty years earlier, in *Man, the State, and War* (1959), he had sorted explanations of war into three “images”. They are human nature, the type of state, and the international system (Unit 5’s [[levels-of-analysis|levels of analysis]]). His new theory, called **[[neorealism]]** or **structural realism**, focused on the third.",
-      "Waltz argued that you do not need to assume people are power-hungry. The **structure** of the system pushes states into similar behaviour, whatever their leaders are like. He defined that structure by three things:",
+      "Waltz argued that you do not need to assume people are power-hungry. The **structure** of the system pushes states into similar behavior, whatever their leaders are like. He defined that structure by three things:",
       {ol:[
         "**The ordering principle**: anarchy (no one is in charge).",
         "**The character of the units**: in anarchy, every state must handle its own security, so states end up doing broadly similar jobs (“like units”).",
@@ -218,11 +218,11 @@ ICA.addUnit({
       ]}
      ]},
     {h:"The security dilemma", body:[
-      "Here is realism’s most useful idea for everyday news. Go back to the neighbourhood. You buy a large dog **for protection**. Your neighbour sees a large dog and wonders whether you are planning something. So they buy two. Now you feel less safe than before.",
+      "Here is realism’s most useful idea for everyday news. Go back to the neighborhood. You buy a large dog **for protection**. Your neighbor sees a large dog and wonders whether you are planning something. So they buy two. Now you feel less safe than before.",
       "The [[security-dilemma|security dilemma]] (a term from John Herz in 1950) is exactly this trap. Steps one state takes to make itself safer can make others feel less safe, so they respond. In the end **everyone is less secure**, even though no one wanted conflict.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e2u6-l2-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="20" width="148" height="60" rx="8" stroke-width="2"/><text x="82" y="45" text-anchor="middle">A arms for safety</text><text class="s" x="82" y="64" text-anchor="middle">ships, missiles, allies</text><rect class="d-gold" x="184" y="20" width="148" height="60" rx="8" stroke-width="2"/><text x="258" y="45" text-anchor="middle">B can’t read A</text><text class="s" x="258" y="64" text-anchor="middle">defence or attack?</text><rect class="d-rose" x="184" y="190" width="148" height="60" rx="8" stroke-width="2"/><text x="258" y="215" text-anchor="middle">B arms too</text><text class="s" x="258" y="234" text-anchor="middle">“just in case”</text><rect class="d-lup" x="8" y="190" width="148" height="60" rx="8" stroke-width="2"/><text x="82" y="215" text-anchor="middle">A feels less safe</text><text class="s" x="82" y="234" text-anchor="middle">and arms more</text><path class="d-ink" d="M158 50 L182 50" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M258 82 L258 188" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M182 220 L158 220" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M82 188 L82 82" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><text x="170" y="130" text-anchor="middle">Both end up</text><text x="170" y="148" text-anchor="middle">less secure</text><text class="s" x="170" y="280" text-anchor="middle">No one has to want war for the spiral to turn.</text></svg>', alt:"Four boxes in a loop. A arms for safety; B cannot read whether this is defence or attack; B arms too, just in case; A feels less safe and arms more, which leads back to the start. In the middle: both end up less secure.", cap:"The security dilemma spiral. The trap is uncertainty: weapons that defend can usually also attack."},
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e2u6-l2-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="20" width="148" height="60" rx="8" stroke-width="2"/><text x="82" y="45" text-anchor="middle">A arms for safety</text><text class="s" x="82" y="64" text-anchor="middle">ships, missiles, allies</text><rect class="d-gold" x="184" y="20" width="148" height="60" rx="8" stroke-width="2"/><text x="258" y="45" text-anchor="middle">B can’t read A</text><text class="s" x="258" y="64" text-anchor="middle">defense or attack?</text><rect class="d-rose" x="184" y="190" width="148" height="60" rx="8" stroke-width="2"/><text x="258" y="215" text-anchor="middle">B arms too</text><text class="s" x="258" y="234" text-anchor="middle">“just in case”</text><rect class="d-lup" x="8" y="190" width="148" height="60" rx="8" stroke-width="2"/><text x="82" y="215" text-anchor="middle">A feels less safe</text><text class="s" x="82" y="234" text-anchor="middle">and arms more</text><path class="d-ink" d="M158 50 L182 50" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M258 82 L258 188" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M182 220 L158 220" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><path class="d-ink" d="M82 188 L82 82" stroke-width="2" marker-end="url(#e2u6-l2-a)"/><text x="170" y="130" text-anchor="middle">Both end up</text><text x="170" y="148" text-anchor="middle">less secure</text><text class="s" x="170" y="280" text-anchor="middle">No one has to want war for the spiral to turn.</text></svg>', alt:"Four boxes in a loop. A arms for safety; B cannot read whether this is defense or attack; B arms too, just in case; A feels less safe and arms more, which leads back to the start. In the middle: both end up less secure.", cap:"The security dilemma spiral. The trap is uncertainty: weapons that defend can usually also attack."},
       {ex:"Before 1914, Britain’s security depended on its navy controlling the seas around it. Germany began building a large modern fleet in the 1890s and 1900s, partly for prestige and to strengthen its hand in diplomacy. British leaders read the fleet as a direct threat, and after Britain launched the powerful new battleship HMS *Dreadnought* in 1906, both countries raced to build similar ships. Each step seemed defensive to the side taking it and menacing to the other. Historians still debate how much the race contributed to the war of 1914, but it is the textbook illustration of the spiral.", label:"Worked example: the naval race"},
-      "Robert Jervis (1978) showed that the dilemma is milder when **defensive weapons can be told apart from offensive ones**, or when defence has the advantage. That is one reason arms-control talks often focus on which kinds of weapons are allowed. Unit 8 covers this topic under [[deterrence]] and [[arms-race|arms races]]."
+      "Robert Jervis (1978) showed that the dilemma is milder when **defensive weapons can be told apart from offensive ones**, or when defense has the advantage. That is one reason arms-control talks often focus on which kinds of weapons are allowed. Unit 8 covers this topic under [[deterrence]] and [[arms-race|arms races]]."
      ]},
     {h:"Balance of power: defensive and offensive realism", body:[
       "If no one is in charge, what stops the strongest state from swallowing the rest? Realists answer: the [[balance-of-power|balance of power]]. When one state grows threatening, others **balance** against it. They build up their own strength (internal balancing) or form alliances (external balancing).",
@@ -235,7 +235,7 @@ ICA.addUnit({
         ["Expansion","Usually backfires: others balance","Rational when it can succeed"],
         ["Key text","*Theory of International Politics* (1979)","*The Tragedy of Great Power Politics* (2001)"]
       ]},
-      "Waltz argued that a state’s first concern is to keep its position in the system, not to maximise power. Grabbing too much provokes others to unite against it. Mearsheimer replied that you can never be sure of others’ intentions. So the safest position is to be the strongest power in your own region.",
+      "Waltz argued that a state’s first concern is to keep its position in the system, not to maximize power. Grabbing too much provokes others to unite against it. Mearsheimer replied that you can never be sure of others’ intentions. So the safest position is to be the strongest power in your own region.",
       "Both care about [[relative-gains|relative gains]]: not just “do we gain?” but “do we gain **more than them**?” Lesson 3 shows why this makes cooperation harder.",
       {tip:"A third branch is **[[neoclassical-realism|neoclassical realism]]** (named by Gideon Rose in 1998). It keeps the system as the main driver but adds domestic factors to explain particular foreign policies. These include leaders’ perceptions and how much a government can raise from its society."}
      ]},
@@ -254,12 +254,12 @@ ICA.addUnit({
     {h:"The 1962 crisis through a realist lens", body:[
       "A realist sees the crisis as a struggle over the **balance of power**. In 1962 the United States had far more long-range nuclear missiles than the Soviet Union and had placed missiles in Turkey. Placing missiles in Cuba was a quick, cheap way for the Soviets to narrow that gap and to protect an ally. For the United States, nuclear missiles on an island about 150 km from its coast changed the balance in its own region. No great power accepts that lightly.",
       "The ending also looks realist: two great powers, each able to destroy the other, bargained. The Soviet missiles left Cuba; the US promised not to invade and quietly removed its missiles from Turkey. **Deterrence** and hard interests, not trust, produced the deal.",
-      "**What the lens misses:** first, the misperceptions and near-accidents that nearly turned the crisis into war. (The spy plane shot down on 27 October was downed by Soviet forces in Cuba without a direct order from Moscow.) Second, the personal judgement of individual leaders. And third, Cuba itself. Cuba appears in this account mainly as a location, yet its government had its own fears and goals. The postcolonial lens takes up this point in Lesson 5.",
+      "**What the lens misses:** first, the misperceptions and near-accidents that nearly turned the crisis into war. (The spy plane shot down on 27 October was downed by Soviet forces in Cuba without a direct order from Moscow.) Second, the personal judgment of individual leaders. And third, Cuba itself. Cuba appears in this account mainly as a location, yet its government had its own fears and goals. The postcolonial lens takes up this point in Lesson 5.",
       {terms:["realism","classical-realism","neorealism","self-help","national-interest","security-dilemma","balance-of-power","bandwagoning","defensive-realism","offensive-realism","relative-gains","neoclassical-realism"]}
      ]}
    ],
    try:[
-    {id:"e2u6-l2-x1", type:"mcq", q:"Two neighbouring countries have been at peace for decades. Each still keeps an army and watches the other’s military spending closely. What would a realist say this shows?", options:[
+    {id:"e2u6-l2-x1", type:"mcq", q:"Two neighboring countries have been at peace for decades. Each still keeps an army and watches the other’s military spending closely. What would a realist say this shows?", options:[
       {t:"Under anarchy, even peaceful states must prepare for the worst.", ok:true, why:"Right. No one guarantees a state’s survival: that is self-help. Realists say watchfulness follows from the structure of the system, not from hostility. Peace and preparation can go together."},
       {t:"The two countries must secretly be planning to attack each other.", why:"Realism doesn’t claim that. Preparing for the worst is prudent even when no attack is planned, which is exactly what makes the security dilemma tragic."},
       {t:"There must be a world government that requires them to keep armies.", why:"There is no world government; that absence (anarchy) is the realist starting point."},
@@ -267,29 +267,29 @@ ICA.addUnit({
     ]},
     {id:"e2u6-l2-x2", type:"sort", q:"Does each claim sound more like classical realism or neorealism?", buckets:["Classical realism","Neorealism"], items:[
       {t:"States seek power because human beings have a drive for power.", b:0, why:"Rooting power politics in human nature is the classical realist move, as in Morgenthau."},
-      {t:"Whatever their leaders are like, states in anarchy behave in similar ways.", b:1, why:"This is Waltz’s structural argument: the system, not personality, pushes states into similar behaviour."},
+      {t:"Whatever their leaders are like, states in anarchy behave in similar ways.", b:1, why:"This is Waltz’s structural argument: the system, not personality, pushes states into similar behavior."},
       {t:"Wise leaders guide policy by the national interest and by prudence.", b:0, why:"Statecraft, prudence and the national interest are Morgenthau’s themes."},
       {t:"A world with two superpowers is more stable than one with several great powers.", b:1, why:"Waltz’s argument about polarity is a claim about the distribution of capabilities in the system."},
       {t:"To explain world politics, look at how power is distributed across the system.", b:1, why:"The distribution of capabilities is one of Waltz’s three elements of structure."},
       {t:"Leaders should not crusade to remake the world in their own image.", b:0, why:"Morgenthau warned against ideological crusades, arguing for a modest, interest-based foreign policy."}
     ]},
     {id:"e2u6-l2-x3", type:"order", q:"Put the steps of a security dilemma spiral in order.", items:[
-      {t:"State A feels uncertain about its neighbours and builds up its forces for defence.", why:"The spiral starts with a step meant to increase safety."},
-      {t:"State B sees the build-up but can’t tell whether it is for defence or attack.", why:"Uncertainty about intentions is the heart of the dilemma."},
+      {t:"State A feels uncertain about its neighbors and builds up its forces for defense.", why:"The spiral starts with a step meant to increase safety."},
+      {t:"State B sees the build-up but can’t tell whether it is for defense or attack.", why:"Uncertainty about intentions is the heart of the dilemma."},
       {t:"State B builds up its own forces, just in case.", why:"B’s response is also meant defensively."},
-      {t:"State A sees B’s build-up as a new threat and arms further.", why:"The spiral turns again: each side reads the other’s defence as danger."},
+      {t:"State A sees B’s build-up as a new threat and arms further.", why:"The spiral turns again: each side reads the other’s defense as danger."},
       {t:"Both states spend more and feel less secure than when they started.", why:"The tragic outcome: no one wanted conflict, yet everyone is worse off."}
     ]},
     {id:"e2u6-l2-x4", type:"match", q:"Match each thinker to the idea most associated with them.", pairs:[
-      ["Thucydides","A war caused by one power’s growth and the fear it created","His history of the Peloponnesian War is realism’s favourite ancient source."],
+      ["Thucydides","A war caused by one power’s growth and the fear it created","His history of the Peloponnesian War is realism’s favorite ancient source."],
       ["Hans Morgenthau","Interest defined as power, pursued with prudence","*Politics Among Nations* (1948) is the classic of classical realism."],
       ["Kenneth Waltz","The structure of the system shapes how states behave","*Theory of International Politics* (1979) founded neorealism."],
       ["John Mearsheimer","Great powers seek as much power as they can get","*The Tragedy of Great Power Politics* (2001) set out offensive realism."],
       ["John Herz","Seeking security can make others, and yourself, less secure","Herz named the security dilemma in 1950."]
     ]},
-    {id:"e2u6-l2-x5", type:"sort", q:"Invented example: a large state, Norland, is growing fast and stationing troops near its borders. Is each neighbour balancing or bandwagoning?", buckets:["Balancing","Bandwagoning"], items:[
-      {t:"Eastmark doubles its defence budget and buys air-defence systems.", b:0, why:"Building up your own strength against a rising threat is internal balancing."},
-      {t:"Southvale signs a military alliance with two other worried neighbours.", b:0, why:"Teaming up against the rising power is external balancing."},
+    {id:"e2u6-l2-x5", type:"sort", q:"Invented example: a large state, Norland, is growing fast and stationing troops near its borders. Is each neighbor balancing or bandwagoning?", buckets:["Balancing","Bandwagoning"], items:[
+      {t:"Eastmark doubles its defense budget and buys air-defense systems.", b:0, why:"Building up your own strength against a rising threat is internal balancing."},
+      {t:"Southvale signs a military alliance with two other worried neighbors.", b:0, why:"Teaming up against the rising power is external balancing."},
       {t:"Westria joins Norland’s new alliance, hoping to share in its success.", b:1, why:"Siding with the rising power is bandwagoning."},
       {t:"Lakeland gives Norland military bases in return for a promise not to be attacked.", b:1, why:"Accommodating the threat to avoid its anger is a form of bandwagoning."},
       {t:"Rivermouth invites a distant great power to station forces on its soil to offset Norland.", b:0, why:"Bringing in an outside power to counter the threat is balancing."}
@@ -312,13 +312,13 @@ ICA.addUnit({
       " ",
       {t:"Because realism explains the naval race before 1914, it explains every event in world politics.", flag:true, why:"Explaining one case well doesn’t mean a theory explains everything. Realism has well-known blind spots, such as lasting cooperation and peaceful change."}
     ]},
-    {id:"e2u6-l2-x8", type:"explain", q:"Two neighbouring states, A and B, have no quarrel. State A buys new missiles purely for defence. Explain how the security dilemma could still leave both less safe, and one condition that makes the dilemma milder.", size:"3–5 sentences", model:"The security dilemma, John Herz’s term, is that steps one state takes to make itself safer can make others feel less safe. In an anarchy, B can’t be sure what A intends, today or in ten years, so the new missiles look like a possible threat. B arms in response; A then sees B arming and buys more. Neither wanted conflict, but both end up less secure and spending more. Robert Jervis showed the dilemma is milder when defensive weapons can be told apart from offensive ones, or when defence has the advantage.", points:["Defines the security dilemma", "Explains that B can’t be sure of A’s intentions", "Describes the spiral that leaves both less secure", "Gives a condition that makes it milder, such as telling defensive from offensive weapons"]}
+    {id:"e2u6-l2-x8", type:"explain", q:"Two neighboring states, A and B, have no quarrel. State A buys new missiles purely for defense. Explain how the security dilemma could still leave both less safe, and one condition that makes the dilemma milder.", size:"3–5 sentences", model:"The security dilemma, John Herz’s term, is that steps one state takes to make itself safer can make others feel less safe. In an anarchy, B can’t be sure what A intends, today or in ten years, so the new missiles look like a possible threat. B arms in response; A then sees B arming and buys more. Neither wanted conflict, but both end up less secure and spending more. Robert Jervis showed the dilemma is milder when defensive weapons can be told apart from offensive ones, or when defense has the advantage.", points:["Defines the security dilemma", "Explains that B can’t be sure of A’s intentions", "Describes the spiral that leaves both less secure", "Gives a condition that makes it milder, such as telling defensive from offensive weapons"]}
    ],
    apply:{intro:"Try the realist lens on the world around you. Keep your notes private; there are no right or wrong conclusions, only clear reasoning.", tasks:[
-     {t:"Spot a security dilemma in the news", how:["Find a news report about a country increasing its military spending, buying new weapons or joining an alliance.","Write down how the country itself describes the step (usually “defensive”).","Find how a neighbouring government or commentator describes the same step.","Explain in two or three sentences how this could become a spiral, and one thing that might stop it."], write:"The step… How the country describes it… How others see it… How a spiral could start… What might stop it…"},
+     {t:"Spot a security dilemma in the news", how:["Find a news report about a country increasing its military spending, buying new weapons or joining an alliance.","Write down how the country itself describes the step (usually “defensive”).","Find how a neighboring government or commentator describes the same step.","Explain in two or three sentences how this could become a spiral, and one thing that might stop it."], write:"The step… How the country describes it… How others see it… How a spiral could start… What might stop it…"},
      {t:"Balancing or bandwagoning in history", how:["Choose a historical alliance from any region (an encyclopedia or a library website is enough).","Note who joined it and what threat, if any, they were responding to.","Decide whether members were mainly balancing against a threat or bandwagoning with a strong power, and give your reason."], write:"The alliance… Members… The threat… Balancing or bandwagoning, and why…"},
-     {t:"Realism in everyday life", how:["Think of a situation with no referee: a group of neighbours sharing a parking area, or shops competing on one street.","Describe how a realist would predict people behave there.","Note one way the prediction might be wrong, and why."], write:"The situation… What a realist would expect… Where that might be wrong…"}
-   ], proof:"Notes analysing one real security dilemma (both sides’ descriptions and how a spiral could start), one historical alliance classified as balancing or bandwagoning, and an everyday realist prediction with its limits."},
+     {t:"Realism in everyday life", how:["Think of a situation with no referee: a group of neighbors sharing a parking area, or shops competing on one street.","Describe how a realist would predict people behave there.","Note one way the prediction might be wrong, and why."], write:"The situation… What a realist would expect… Where that might be wrong…"}
+   ], proof:"Notes analyzing one real security dilemma (both sides’ descriptions and how a spiral could start), one historical alliance classified as balancing or bandwagoning, and an everyday realist prediction with its limits."},
    read:[
     {book:"eirt", where:"Chapter 1 “Realism” (Sandrina Antunes and Isabel Camisão)", note:"Read it after this lesson: it adds the debate between realism’s branches and applies realism to the Islamic State group."},
     {book:"eirt", where:"Chapter 19 “A Contemporary Perspective on Realism” (Felix Rösch and Richard Ned Lebow)", note:"For going further: a newer reading of classical realism, which presents thinkers such as Morgenthau as more concerned with ethics than the label “power politics” suggests."},
@@ -336,16 +336,16 @@ ICA.addUnit({
      "Explain the democratic peace, the evidence for it and its main critiques"
    ],
    learn:[
-    {h:"Neighbours who share a well", body:[
-      {lead:"Go back to the neighbourhood with no police, but add one detail: everyone draws water from the same well."},
-      "Now the neighbours have a reason to talk. They agree on a timetable, fix the pump together and keep a notebook of who has paid for repairs. Nobody forces them. The well, the notebook and the habit of meeting change what is sensible. Cheating on the timetable would cost you your neighbours’ cooperation next week.",
+    {h:"Neighbors who share a well", body:[
+      {lead:"Go back to the neighborhood with no police, but add one detail: everyone draws water from the same well."},
+      "Now the neighbors have a reason to talk. They agree on a timetable, fix the pump together and keep a notebook of who has paid for repairs. Nobody forces them. The well, the notebook and the habit of meeting change what is sensible. Cheating on the timetable would cost you your neighbors’ cooperation next week.",
       "That is the heart of **[[liberalism-ir|liberalism]]** in IR. Liberals accept that there is no world government. But they argue that cooperation is possible and common, and that it can grow. Three things make the difference:",
       {list:[
         "**Interdependence**: trade, investment, travel and communication tie societies together and raise the cost of conflict.",
-        "**Institutions**: rules and organisations make promises easier to keep.",
-        "**What happens inside states**: governments answer to their own societies, and democracies may behave differently towards each other."
+        "**Institutions**: rules and organizations make promises easier to keep.",
+        "**What happens inside states**: governments answer to their own societies, and democracies may behave differently toward each other."
       ]},
-      "Liberals also see many actors beyond states: [[intergovernmental-organization|intergovernmental organisations]], [[ngo|NGOs]] and [[multinational-corporation|multinational corporations]] (introduced in Unit 5).",
+      "Liberals also see many actors beyond states: [[intergovernmental-organization|intergovernmental organizations]], [[ngo|NGOs]] and [[multinational-corporation|multinational corporations]] (introduced in Unit 5).",
       {warn:"“Liberal” here names a theory of world politics. It is not the same as a party called liberal in any country. And “neoliberal institutionalism” in IR (below) is a different idea from “neoliberal” free-market economic policy, though the words are easily confused."}
      ]},
     {h:"Roots: Kant, Angell and Wilson", body:[
@@ -405,7 +405,7 @@ ICA.addUnit({
       {key:"The democratic peace is one of the strongest patterns in IR research, but why it holds, and how far, is still argued over."}
      ]},
     {h:"Critiques, and the 1962 crisis through a liberal lens", body:[
-      "Beyond the democratic peace debate, liberalism faces three broad critiques. Realists such as Mearsheimer argue that institutions mostly reflect the interests of powerful states and have little independent effect. Marxist and postcolonial critics argue that the “liberal international order” has worked best for rich countries. They add that it was built while much of the world was still colonised. And interdependence can create new conflicts, not only reduce old ones. Liberals reply that states keep creating, joining and using institutions even when they could walk away. That would make little sense if institutions had no effect.",
+      "Beyond the democratic peace debate, liberalism faces three broad critiques. Realists such as Mearsheimer argue that institutions mostly reflect the interests of powerful states and have little independent effect. Marxist and postcolonial critics argue that the “liberal international order” has worked best for rich countries. They add that it was built while much of the world was still colonized. And interdependence can create new conflicts, not only reduce old ones. Liberals reply that states keep creating, joining and using institutions even when they could walk away. That would make little sense if institutions had no effect.",
       "**The 1962 crisis.** At first sight it is a hard case for liberalism. Here were two rivals with almost no trade between them, at the edge of nuclear war. But a liberal sees important things. Communication mattered: back-channel contacts and public letters let each leader understand what the other could accept. The [[united-nations|United Nations]] gave a stage for the US and Soviet ambassadors’ public debate in the [[security-council|Security Council]]. It also gave a mediator in the acting Secretary-General, U Thant.",
       "Most of all, a liberal points to what came **after**. There was the hotline (1963), the Partial Test Ban Treaty (1963) and, later, the [[non-proliferation-treaty|Nuclear Non-Proliferation Treaty]] (opened for signature in 1968). Rivals who had nearly destroyed each other began building **institutions** to make the next crisis less dangerous.",
       "**What the lens misses:** the crisis was resolved largely by threats and a secret bargain between two leaders, which looks more realist. And liberal accounts say little about how Cubans, or anyone outside the superpowers, experienced it.",
@@ -469,12 +469,12 @@ ICA.addUnit({
    ],
    apply:{intro:"Look for liberal ideas at work in your everyday life and in the news. Nothing here needs an account or a purchase.", tasks:[
      {t:"Trace three things you own", how:["Choose three everyday items: a phone, a piece of clothing, a food product.","Check the label, packaging or the maker’s website for where each was made or grown, and where its parts or ingredients came from if you can find out.","List every country involved and note one way a dispute between two of them could affect you."], write:"Item 1, where it came from… Item 2… Item 3… Countries involved… How a dispute could affect me…"},
-     {t:"Find an institution that just works", how:["Think of something cross-border you used recently: an international letter or parcel, a phone call abroad, a flight, a payment in another currency.","Look up which international organisation or agreement sets the rules for it (for example, the Universal Postal Union for mail).","Write what would be harder if that institution did not exist."], write:"What I used… The institution behind it… What would be harder without it…"},
+     {t:"Find an institution that just works", how:["Think of something cross-border you used recently: an international letter or parcel, a phone call abroad, a flight, a payment in another currency.","Look up which international organization or agreement sets the rules for it (for example, the Universal Postal Union for mail).","Write what would be harder if that institution did not exist."], write:"What I used… The institution behind it… What would be harder without it…"},
      {t:"Score a deal two ways", how:["Find a news story about a trade, investment or technology agreement between two countries.","Write down what each side says it gains.","Explain how a liberal (absolute gains) and a realist (relative gains) might judge the deal differently."], write:"The deal… What each side gains… The liberal view… The realist view…"}
    ], proof:"Notes tracing three items to the countries involved, one cross-border institution and what it makes possible, and a real agreement judged from both absolute- and relative-gains viewpoints."},
    read:[
     {book:"eirt", where:"Chapter 2 “Liberalism” (Jeffrey W. Meiser)", note:"Read it after this lesson: it adds more on liberalism’s core ideas and applies the theory to US–Mexico relations in the early 20th century."},
-    {book:"ospol", where:"Chapter 14, section 14.6 “The Liberal and Social Worldview”", note:"A gentle overview of liberalism, collective security and complex interdependence. It calls NATO an example of collective security. NATO itself calls its mutual-defence pledge (Article 5) “collective defence”, and many scholars keep “collective security” for systems that include every state, possible aggressors too, as the League and the UN aimed to."}
+    {book:"ospol", where:"Chapter 14, section 14.6 “The Liberal and Social Worldview”", note:"A gentle overview of liberalism, collective security and complex interdependence. It calls NATO an example of collective security. NATO itself calls its mutual-defense pledge (Article 5) “collective defense”, and many scholars keep “collective security” for systems that include every state, possible aggressors too, as the League and the UN aimed to."}
    ]
   },
   /* ===================== LESSON 4 ===================== */
@@ -483,19 +483,19 @@ ICA.addUnit({
    goals:[
      "Explain constructivism’s core claim that ideas, identities and norms shape interests and power",
      "Use Wendt’s “anarchy is what states make of it” and his three cultures of anarchy",
-     "Trace a norm through emergence, cascade and internalisation",
+     "Trace a norm through emergence, cascade and internalization",
      "Tell an international system from an international society, in the English School’s sense",
      "State the main critiques of both approaches"
    ],
    learn:[
     {h:"Same object, different meaning", body:[
       {lead:"A raised hand means “I have a question” in a classroom, “I bid” at an auction and “stop” to traffic. The hand is the same; the meaning comes from shared rules."},
-      "Much of social life works like this. A piece of paper becomes money because people treat it as money. A line on a map becomes a border because governments and neighbours treat it as one. The sociology units called this [[social-construction|social construction]]: things that are real and powerful because people share an understanding of them.",
+      "Much of social life works like this. A piece of paper becomes money because people treat it as money. A line on a map becomes a border because governments and neighbors treat it as one. The sociology units called this [[social-construction|social construction]]: things that are real and powerful because people share an understanding of them.",
       "[[constructivism|Constructivism]] brings that idea to world politics. The American scholar Nicholas Onuf introduced the term to IR in *World of Our Making* (1989), and Alexander Wendt’s work made it famous. Its core claims:",
       {list:[
         "**Ideas matter as much as material things.** Weapons, wealth and borders matter, but what they mean depends on shared understandings.",
         "**Identities shape interests.** What a state wants depends on who it thinks it is. It may see itself as a great power, a neutral country, a member of a region or a former colony. This is [[identity-ir|identity]] in IR.",
-        "**[[norm|Norms]] shape behaviour.** Shared expectations of proper conduct make some actions normal and others unthinkable.",
+        "**[[norm|Norms]] shape behavior.** Shared expectations of proper conduct make some actions normal and others unthinkable.",
         "**Agents and structures make each other.** States act within shared rules, and by acting they reproduce or change those rules."
       ]},
       "Constructivism is often described as an **approach** rather than one theory. It tells you where to look (ideas, identities, norms) without predicting which ideas will win."
@@ -503,20 +503,20 @@ ICA.addUnit({
     {h:"Anarchy is what states make of it", body:[
       "In 1992 Wendt published an article in the journal *International Organization* with a title that became a slogan: “Anarchy is What States Make of It”. Realists and liberals both treated [[anarchy]] as a fixed fact with fixed effects. Wendt replied that anarchy alone tells you very little. Self-help, he argued, is not built into anarchy; it develops when states treat each other as threats.",
       "In *Social Theory of International Politics* (1999) he described three “cultures” of anarchy, named after three philosophers:",
-      {fig:'<svg viewBox="0 0 340 296"><rect class="d-rose" x="20" y="10" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">Hobbesian culture</text><text x="170" y="54" text-anchor="middle">Others are enemies</text><text class="s" x="170" y="72" text-anchor="middle">survival by force; no limits on violence</text><rect class="d-gold" x="20" y="102" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="126" text-anchor="middle">Lockean culture</text><text x="170" y="146" text-anchor="middle">Others are rivals</text><text class="s" x="170" y="164" text-anchor="middle">compete, but accept each other’s right to exist</text><rect class="d-sage" x="20" y="194" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="218" text-anchor="middle">Kantian culture</text><text x="170" y="238" text-anchor="middle">Others are friends</text><text class="s" x="170" y="256" text-anchor="middle">disputes settled without war; mutual help</text><text class="s" x="170" y="288" text-anchor="middle">All three are anarchy: no world government.</text></svg>', alt:"Three stacked boxes. Hobbesian culture: others are enemies, survival by force, no limits on violence. Lockean culture: others are rivals who compete but accept each other’s right to exist. Kantian culture: others are friends who settle disputes without war and help each other. A note says all three are anarchy, with no world government.", cap:"Wendt’s three cultures of anarchy. The structure is the same; the shared understanding is different, so behaviour is different."},
-      "Wendt argued that the modern states system has been mostly **Lockean**, with states rarely wiped off the map. He also argued that some regions have moved towards a **Kantian** culture. That is how constructivists explain the change between France and Germany. The two were enemies in three wars between 1870 and 1945, but now find war between them unthinkable, although both are still armed.",
-      {key:"For constructivists, the same material facts can lead to very different behaviour, depending on shared identities and understandings."}
+      {fig:'<svg viewBox="0 0 340 296"><rect class="d-rose" x="20" y="10" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">Hobbesian culture</text><text x="170" y="54" text-anchor="middle">Others are enemies</text><text class="s" x="170" y="72" text-anchor="middle">survival by force; no limits on violence</text><rect class="d-gold" x="20" y="102" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="126" text-anchor="middle">Lockean culture</text><text x="170" y="146" text-anchor="middle">Others are rivals</text><text class="s" x="170" y="164" text-anchor="middle">compete, but accept each other’s right to exist</text><rect class="d-sage" x="20" y="194" width="300" height="72" rx="8" stroke-width="2"/><text x="170" y="218" text-anchor="middle">Kantian culture</text><text x="170" y="238" text-anchor="middle">Others are friends</text><text class="s" x="170" y="256" text-anchor="middle">disputes settled without war; mutual help</text><text class="s" x="170" y="288" text-anchor="middle">All three are anarchy: no world government.</text></svg>', alt:"Three stacked boxes. Hobbesian culture: others are enemies, survival by force, no limits on violence. Lockean culture: others are rivals who compete but accept each other’s right to exist. Kantian culture: others are friends who settle disputes without war and help each other. A note says all three are anarchy, with no world government.", cap:"Wendt’s three cultures of anarchy. The structure is the same; the shared understanding is different, so behavior is different."},
+      "Wendt argued that the modern states system has been mostly **Lockean**, with states rarely wiped off the map. He also argued that some regions have moved toward a **Kantian** culture. That is how constructivists explain the change between France and Germany. The two were enemies in three wars between 1870 and 1945, but now find war between them unthinkable, although both are still armed.",
+      {key:"For constructivists, the same material facts can lead to very different behavior, depending on shared identities and understandings."}
      ]},
     {h:"Norms: how the unthinkable changes", body:[
       "Constructivists study how norms are born and spread. Martha Finnemore and Kathryn Sikkink (1998) described a **[[norm-life-cycle|norm life cycle]]**:",
       {fig:'<svg viewBox="0 0 340 290"><defs><marker id="e2u6-l4-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="20" y="10" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="34" text-anchor="middle">1 · Emergence</text><text class="s" x="170" y="54" text-anchor="middle">“norm entrepreneurs” argue for a new rule</text><path class="d-ink" d="M170 74 L170 96" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><text class="s" x="182" y="90">tipping point</text><rect class="d-gold" x="20" y="98" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="122" text-anchor="middle">2 · Cascade</text><text class="s" x="170" y="142" text-anchor="middle">many states adopt it, partly to fit in</text><path class="d-ink" d="M170 162 L170 184" stroke-width="2" marker-end="url(#e2u6-l4-a)"/><rect class="d-sage" x="20" y="186" width="300" height="62" rx="8" stroke-width="2"/><text x="170" y="210" text-anchor="middle">3 · Internalisation</text><text class="s" x="170" y="230" text-anchor="middle">taken for granted; breaking it is shocking</text><text class="s" x="170" y="278" text-anchor="middle">Norms can also weaken or be challenged.</text></svg>', alt:"Three stages stacked with arrows. Emergence: norm entrepreneurs argue for a new rule. After a tipping point, cascade: many states adopt it, partly to fit in. Internalisation: the norm is taken for granted and breaking it is shocking. A note says norms can also weaken or be challenged.", cap:"The norm life cycle (Finnemore and Sikkink, 1998)."},
-      {ex:"In 1900 most of Africa and much of Asia, the Pacific and the Caribbean were ruled as colonies, and European governments presented empire as normal, even as a duty. Anti-colonial movements and leaders across those regions argued for [[self-determination]] (emergence). After 1945, as many colonies won independence, the new states joined the UN and used its [[general-assembly|General Assembly]]. In December 1960 the Assembly adopted Resolution 1514, the Declaration on the Granting of Independence to Colonial Countries and Peoples, with no votes against (cascade). Today very few governments would openly defend ruling another people as a colony (internalisation). Material changes mattered too, such as the war-weakened finances of colonial powers, but constructivists stress that the **legitimacy** of empire collapsed.", label:"Worked example: the end of empire’s legitimacy"},
+      {ex:"In 1900 most of Africa and much of Asia, the Pacific and the Caribbean were ruled as colonies, and European governments presented empire as normal, even as a duty. Anti-colonial movements and leaders across those regions argued for [[self-determination]] (emergence). After 1945, as many colonies won independence, the new states joined the UN and used its [[general-assembly|General Assembly]]. In December 1960 the Assembly adopted Resolution 1514, the Declaration on the Granting of Independence to Colonial Countries and Peoples, with no votes against (cascade). Today very few governments would openly defend ruling another people as a colony (internalization). Material changes mattered too, such as the war-weakened finances of colonial powers, but constructivists stress that the **legitimacy** of empire collapsed.", label:"Worked example: the end of empire’s legitimacy"},
       "Another example is what Nina Tannenwald called the **nuclear taboo**. It is a widely shared sense, growing since 1945, that using nuclear weapons is unacceptable. She argued that it helps explain why they have not been used in war since then.",
-      "Norms do not simply travel from powerful countries to others. Amitav Acharya (2004) showed how Southeast Asian states adapted outside ideas to fit local beliefs, a process he called **norm localisation**. Lesson 5 returns to his work."
+      "Norms do not simply travel from powerful countries to others. Amitav Acharya (2004) showed how Southeast Asian states adapted outside ideas to fit local beliefs, a process he called **norm localization**. Lesson 5 returns to his work."
      ]},
     {h:"Identity in action: the ASEAN Way", body:[
       "Five Southeast Asian states (Indonesia, Malaysia, the Philippines, Singapore and Thailand) founded the Association of Southeast Asian Nations in Bangkok in August 1967. At the time, several of them had recent or ongoing disputes with each other. Realists might have expected rivalry. Instead the group built habits that came to be called the **ASEAN Way**. They include non-interference in each other’s internal affairs, decisions by consensus, informal and quiet diplomacy, and avoiding the use of force against each other.",
-      "Constructivists such as Acharya (*Constructing a Security Community in Southeast Asia*, 2001) argue that these shared norms helped create a regional identity. In their view, the norms made war between members far less likely. Critics, including some constructivists, reply that the same norm of non-interference has a cost. It has made it hard for [[asean|ASEAN]] to respond firmly to crises inside member states. Unit 7 looks at ASEAN as an organisation.",
+      "Constructivists such as Acharya (*Constructing a Security Community in Southeast Asia*, 2001) argue that these shared norms helped create a regional identity. In their view, the norms made war between members far less likely. Critics, including some constructivists, reply that the same norm of non-interference has a cost. It has made it hard for [[asean|ASEAN]] to respond firmly to crises inside member states. Unit 7 looks at ASEAN as an organization.",
       "**The 1962 crisis through a constructivist lens.** Why were Soviet missiles in Cuba treated as an intolerable threat? US missiles in Turkey were also close to the other side’s border, yet US leaders treated them as normal. Jutta Weldes (*Constructing National Interests*, 1999) argued that the answer lies in how US officials understood their country’s identity and role. It also lies in how they saw Cuba’s place in “its” hemisphere. The material facts were similar; the **meanings** were different. A constructivist also notes how the crisis helped build new shared understandings about nuclear danger. **What the lens misses:** it explains why the missiles seemed intolerable better than why the crisis ended as it did. The final bargain over missiles and pledges looks more like the realist story."
      ]},
     {h:"The English School: a society of states", body:[
@@ -525,10 +525,10 @@ ICA.addUnit({
       {table:[
         ["","International system","International society"],
         ["What it is","States interact enough to affect each other’s calculations","States see themselves as bound by common rules and share common institutions"],
-        ["Everyday picture","Strangers on a crowded road","Neighbours who follow and defend shared rules"],
-        ["Example","Rival empires that trade and fight but recognise no common rules","States that exchange ambassadors, sign treaties and accept each other’s sovereignty"]
+        ["Everyday picture","Strangers on a crowded road","Neighbors who follow and defend shared rules"],
+        ["Example","Rival empires that trade and fight but recognize no common rules","States that exchange ambassadors, sign treaties and accept each other’s sovereignty"]
       ]},
-      "An [[international-society|international society]], Bull argued, rests on **institutions** in a broad sense. These are not only organisations, but deep practices. They include diplomacy, international law, the balance of power, the special responsibilities of great powers, and even war fought by agreed rules.",
+      "An [[international-society|international society]], Bull argued, rests on **institutions** in a broad sense. These are not only organizations, but deep practices. They include diplomacy, international law, the balance of power, the special responsibilities of great powers, and even war fought by agreed rules.",
       {ex:"Under the 1961 Vienna Convention on Diplomatic Relations, an embassy cannot be entered by the host country’s police without the ambassador’s consent, and diplomats cannot be prosecuted in the host country’s courts unless their own government waives that immunity. Governments keep these rules even with countries they dislike, because they want their own diplomats protected. For the English School, everyday rules like these show a society of states at work.", label:"Worked example: why embassies are protected"},
       "Martin Wight, another founder, described three traditions of thought, and the English School places itself in the middle one:",
       {table:[
@@ -545,7 +545,7 @@ ICA.addUnit({
         "**Solidarists** (for example Nicholas Wheeler, *Saving Strangers*, 2000) say states can and should agree on more, including protecting people from mass atrocities. This debate feeds into the [[responsibility-to-protect|Responsibility to Protect]], which Unit 7 covers."
       ]},
       "In *The Expansion of International Society* (1984), Bull and Adam Watson told how a European society of states spread to cover the world. Critics point out that this story mostly looks out from Europe. Societies in Asia, Africa and the Americas had their own long-established rules for relations between polities. And the “expansion” happened largely through conquest and colonial rule.",
-      "Gerrit Gong (1984) showed how European powers used a **“standard of civilisation”** to decide who counted as a full member. States such as China, Siam (now Thailand) and the Ottoman Empire were treated as unequal until they met European tests. This was done through unequal treaties and special legal privileges for Europeans. Postcolonial scholars build on this point (Lesson 5).",
+      "Gerrit Gong (1984) showed how European powers used a **“standard of civilization”** to decide who counted as a full member. States such as China, Siam (now Thailand) and the Ottoman Empire were treated as unequal until they met European tests. This was done through unequal treaties and special legal privileges for Europeans. Postcolonial scholars build on this point (Lesson 5).",
       "**The 1962 crisis through an English School lens.** Even at the brink, the two superpowers kept talking through ambassadors, letters and the UN. Both treated the crisis as something great powers had a special responsibility to manage. Afterwards, they built new shared practices of crisis management. Order survived because, in Bull’s terms, both sides still acted as members of a society, not only as rivals in a system. **What the lens misses:** order nearly failed through near-accidents that no shared rule prevented. And Cuba had little say in this society of great powers."
      ]},
     {h:"What critics say", body:[
@@ -555,7 +555,7 @@ ICA.addUnit({
         ["English School","Methods are loose and historical; it looks out from Europe; it can treat an unequal order as a society of equals"]
       ]},
       "Defenders reply that measuring ideas is hard but possible, through documents, speeches and interviews. They add that both approaches explain change and order that purely material theories miss.",
-      {key:"Constructivism asks what shared ideas make possible; the English School asks what shared rules hold states together. Both reject the view that anarchy alone decides behaviour."},
+      {key:"Constructivism asks what shared ideas make possible; the English School asks what shared rules hold states together. Both reject the view that anarchy alone decides behavior."},
       {terms:["constructivism","identity-ir","norm","norm-life-cycle","english-school","international-society","social-construction"]}
      ]}
    ],
@@ -568,7 +568,7 @@ ICA.addUnit({
     ]},
     {id:"e2u6-l4-x2", type:"sort", q:"Is each explanation more typical of realism or constructivism?", buckets:["Realism","Constructivism"], items:[
       {t:"The two countries don’t fear each other’s armies because they see each other as part of the same community.", b:1, why:"Explaining the absence of fear through shared identity is constructivist."},
-      {t:"The country armed because its neighbour’s military power was growing.", b:0, why:"Responding to the distribution of power is the realist explanation."},
+      {t:"The country armed because its neighbor’s military power was growing.", b:0, why:"Responding to the distribution of power is the realist explanation."},
       {t:"Colonial rule ended partly because it came to be seen as illegitimate.", b:1, why:"A change in shared beliefs about legitimacy is a constructivist explanation."},
       {t:"Small states sided with the strongest power to stay safe.", b:0, why:"Alliance choices driven by power and safety are realist explanations."},
       {t:"A government refused an option because it was “not the kind of country that does that”.", b:1, why:"Ruling out options because of identity and norms is constructivist."},
@@ -581,7 +581,7 @@ ICA.addUnit({
       {t:"Almost no government openly defends colonial rule.", why:"Internalisation: the norm is taken for granted."}
     ]},
     {id:"e2u6-l4-x4", type:"sort", q:"In Hedley Bull’s terms, is each case closer to an international system or an international society?", buckets:["International system","International society"], items:[
-      {t:"Two rival empires trade and fight but recognise no common rules or each other’s legitimacy.", b:0, why:"They affect each other’s calculations but share no rules: a system, not a society."},
+      {t:"Two rival empires trade and fight but recognize no common rules or each other’s legitimacy.", b:0, why:"They affect each other’s calculations but share no rules: a system, not a society."},
       {t:"States exchange ambassadors and protect each other’s embassies, even during disputes.", b:1, why:"Shared rules and institutions such as diplomacy are the marks of a society."},
       {t:"Governments sign treaties and generally expect each other to keep them.", b:1, why:"International law, and the expectation that it binds, is a core institution of international society."},
       {t:"Armies on a frontier watch each other, with no agreements or contact between their rulers.", b:0, why:"Interaction without shared rules or common institutions is a system."},
@@ -595,7 +595,7 @@ ICA.addUnit({
     {id:"e2u6-l4-x6", type:"mcq", q:"Fatima argues that international society should rest only on sovereignty and non-intervention, because states disagree too much about values to agree on more. Which English School position is this?", options:[
       {t:"Pluralism", ok:true, why:"Right. Pluralists want a thin set of rules that states with different values can all live with."},
       {t:"Solidarism", why:"Solidarists argue the opposite: that states can agree on more, such as protecting people from mass atrocities."},
-      {t:"Offensive realism", why:"Offensive realism is a realist theory about power maximisation, not a position within the English School."},
+      {t:"Offensive realism", why:"Offensive realism is a realist theory about power maximization, not a position within the English School."},
       {t:"Complex interdependence", why:"That is Keohane and Nye’s liberal ideal type, not an English School position."}
     ]},
     {id:"e2u6-l4-x7", type:"spot", q:"A student’s paragraph on constructivism. Tap the claims that are wrong.", ask:"wrong", parts:[
@@ -606,16 +606,16 @@ ICA.addUnit({
       " ",
       {t:"Wendt argued that self-help is not built into anarchy.", flag:false, why:"Fine. That is the point of “anarchy is what states make of it”."},
       " ",
-      {t:"Because norms are ideas, they can never change state behaviour.", flag:true, why:"Constructivists argue the opposite: norms such as the rejection of colonial rule have changed behaviour profoundly."},
+      {t:"Because norms are ideas, they can never change state behavior.", flag:true, why:"Constructivists argue the opposite: norms such as the rejection of colonial rule have changed behavior profoundly."},
       " ",
-      {t:"Norms only ever spread from powerful Western states to everyone else.", flag:true, why:"Acharya’s work on norm localisation and the role of anti-colonial movements show that norms can come from, and be reshaped by, many places."}
+      {t:"Norms only ever spread from powerful Western states to everyone else.", flag:true, why:"Acharya’s work on norm localization and the role of anti-colonial movements show that norms can come from, and be reshaped by, many places."}
     ]},
-    {id:"e2u6-l4-x8", type:"explain", q:"Two pairs of neighbouring states have similar armies. One pair leaves its border almost unguarded; the other pair is arming fast. Use Wendt’s idea that ‘anarchy is what states make of it’ to explain the difference.", size:"4–5 sentences", model:"Realists and liberals treat anarchy as a fixed fact that pushes all states in similar ways. Wendt argued that what anarchy means depends on the shared ideas and identities states create through interaction. The same material facts can lead to very different behaviour: neighbours with similar armies may see each other as friends and leave their border open, or as enemies and arm. Wendt described three cultures of anarchy, Hobbesian (enemies), Lockean (rivals) and Kantian (friends). Because these understandings are made, they can also change, as some regions have moved towards the Kantian culture.", points:["Contrasts Wendt with the view that anarchy has fixed effects", "Explains that shared ideas and identities shape how states see each other", "Applies this to the two pairs of states", "Mentions the three cultures or that these understandings can change"]}
+    {id:"e2u6-l4-x8", type:"explain", q:"Two pairs of neighboring states have similar armies. One pair leaves its border almost unguarded; the other pair is arming fast. Use Wendt’s idea that ‘anarchy is what states make of it’ to explain the difference.", size:"4–5 sentences", model:"Realists and liberals treat anarchy as a fixed fact that pushes all states in similar ways. Wendt argued that what anarchy means depends on the shared ideas and identities states create through interaction. The same material facts can lead to very different behavior: neighbors with similar armies may see each other as friends and leave their border open, or as enemies and arm. Wendt described three cultures of anarchy, Hobbesian (enemies), Lockean (rivals) and Kantian (friends). Because these understandings are made, they can also change, as some regions have moved toward the Kantian culture.", points:["Contrasts Wendt with the view that anarchy has fixed effects", "Explains that shared ideas and identities shape how states see each other", "Applies this to the two pairs of states", "Mentions the three cultures or that these understandings can change"]}
    ],
    apply:{intro:"Notice ideas, identities and shared rules in action. Use public sources only.", tasks:[
      {t:"Find an identity at work", how:["Find a speech or statement by a government leader on foreign policy (official government websites often publish them).","Copy one phrase where the leader describes what kind of country theirs is (“a peaceful nation”, “a bridge between regions”, “a defender of…”).","Write how that identity might make some policies seem natural and others unthinkable."], write:"The speech… The identity phrase… Policies it makes natural… Policies it rules out…"},
-     {t:"Trace a norm", how:["Choose a norm in world politics (for example, against using child soldiers, for protecting refugees, or against colonial rule).","Look up when it began to be argued for, and by whom.","Note one sign of a cascade (a treaty, resolution or wave of adoptions) and one sign that it is or isn’t internalised today."], write:"The norm… Who argued for it first… Sign of a cascade… Internalised? Evidence…"},
-     {t:"Spot international society in your news", how:["Over a few days, notice news stories involving ambassadors, embassies, treaties or summits.","Pick one and identify which shared rule or practice it shows (diplomatic immunity, keeping treaties, recognising sovereignty).","Write one sentence on what would happen if states stopped following that rule."], write:"The story… The shared rule it shows… What would happen without it…"}
+     {t:"Trace a norm", how:["Choose a norm in world politics (for example, against using child soldiers, for protecting refugees, or against colonial rule).","Look up when it began to be argued for, and by whom.","Note one sign of a cascade (a treaty, resolution or wave of adoptions) and one sign that it is or isn’t internalized today."], write:"The norm… Who argued for it first… Sign of a cascade… Internalised? Evidence…"},
+     {t:"Spot international society in your news", how:["Over a few days, notice news stories involving ambassadors, embassies, treaties or summits.","Pick one and identify which shared rule or practice it shows (diplomatic immunity, keeping treaties, recognizing sovereignty).","Write one sentence on what would happen if states stopped following that rule."], write:"The story… The shared rule it shows… What would happen without it…"}
    ], proof:"Notes on one leader’s identity language and its effects, one norm traced through its life cycle, and one news story showing a rule of international society."},
    read:[
     {book:"eirt", where:"Chapter 4 “Constructivism” (Sarina Theys)", note:"Read it after this lesson: it adds the different branches of constructivism and a worked example."},
@@ -641,13 +641,13 @@ ICA.addUnit({
       "The lenses below share that starting point but focus on different things. Marxist lenses focus on **class and the global economy**, feminist lenses on **gender**, and postcolonial lenses on **empire and its legacies**. Global IR then asks how the whole field would look if it listened to every region."
      ]},
     {h:"Marxist and world-systems lenses", body:[
-      "Marxist lenses start from {{karl-marx|Karl Marx}}’s argument that the way a society produces wealth shapes its politics. Capitalism, he argued, divides those who own the means of production ([[bourgeoisie]]) from those who sell their labour ([[proletariat]]). In IR, the key move is to look at the **global** economy:",
+      "Marxist lenses start from {{karl-marx|Karl Marx}}’s argument that the way a society produces wealth shapes its politics. Capitalism, he argued, divides those who own the means of production ([[bourgeoisie]]) from those who sell their labor ([[proletariat]]). In IR, the key move is to look at the **global** economy:",
       {list:[
         "**Lenin** wrote *Imperialism, the Highest Stage of Capitalism* (written 1916, published 1917). He argued that rivalry among capitalist powers for markets and colonies drove imperial expansion and the First World War.",
         "**[[dependency-theory|Dependency theory]]** was developed largely by Latin American economists and sociologists from the 1950s and 1960s. It argued that poorer countries stayed poor partly because of the way they were tied into the world economy (Unit 3 covers it).",
         "**[[world-systems-theory|World-systems theory]]**, from Immanuel Wallerstein (*The Modern World-System*, first volume 1974), divides the world economy into a **core**, a **semi-periphery** and a **periphery**."
       ]},
-      {fig:'<svg viewBox="0 0 340 372"><defs><marker id="e2u6-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><circle class="d-gold" cx="170" cy="150" r="140" stroke-width="2"/><circle class="d-lup" cx="170" cy="150" r="92" stroke-width="2"/><circle class="d-rose" cx="170" cy="150" r="44" stroke-width="2"/><text x="170" y="36" text-anchor="middle">Periphery</text><text x="170" y="84" text-anchor="middle">Semi-periphery</text><text x="170" y="155" text-anchor="middle">Core</text><path class="d-ink" d="M300 132 L218 132" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M218 170 L300 170" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M20 316 L58 316" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="320">inward: raw materials, low-wage</text><text class="s" x="66" y="335">work and profits flow to the core</text><path class="d-ink" d="M58 352 L20 352" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="356">outward: high-value goods, loans, tech</text></svg>', alt:"Three nested circles: the core in the centre, the semi-periphery around it and the periphery on the outside. One arrow points inward towards the core, another points outward. A legend explains that raw materials, low-wage work and profits flow inward to the core, while high-value goods, loans and technology flow outward.", cap:"Core and periphery in world-systems theory. Countries can move between zones over time; the semi-periphery has features of both."},
+      {fig:'<svg viewBox="0 0 340 372"><defs><marker id="e2u6-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><circle class="d-gold" cx="170" cy="150" r="140" stroke-width="2"/><circle class="d-lup" cx="170" cy="150" r="92" stroke-width="2"/><circle class="d-rose" cx="170" cy="150" r="44" stroke-width="2"/><text x="170" y="36" text-anchor="middle">Periphery</text><text x="170" y="84" text-anchor="middle">Semi-periphery</text><text x="170" y="155" text-anchor="middle">Core</text><path class="d-ink" d="M300 132 L218 132" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M218 170 L300 170" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><path class="d-ink" d="M20 316 L58 316" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="320">inward: raw materials, low-wage</text><text class="s" x="66" y="335">work and profits flow to the core</text><path class="d-ink" d="M58 352 L20 352" stroke-width="2" marker-end="url(#e2u6-l5-a)"/><text class="s" x="66" y="356">outward: high-value goods, loans, tech</text></svg>', alt:"Three nested circles: the core in the center, the semi-periphery around it and the periphery on the outside. One arrow points inward toward the core, another points outward. A legend explains that raw materials, low-wage work and profits flow inward to the core, while high-value goods, loans and technology flow outward.", cap:"Core and periphery in world-systems theory. Countries can move between zones over time; the semi-periphery has features of both."},
       "The [[core-periphery|core–periphery]] picture explains a pattern a realist ignores: why the gap between rich and poor regions can last even when no army is involved. Robert Cox, drawing on the Italian Marxist Antonio Gramsci, added the idea of **[[hegemony]]**. Hegemony is leadership that rests not only on force, but on making one group’s interests look like common sense to everyone.",
       "**Critiques.** Critics say Marxist lenses reduce politics to economics: in 1914 most workers backed their nations, not their class. They add that rapid growth in some closely integrated economies, such as South Korea’s, challenges strong dependency claims. Defenders reply that inequality between and within countries remains central and neglected."
      ]},
@@ -656,21 +656,21 @@ ICA.addUnit({
       "**[[feminist-ir|Feminist IR]]** builds on the wider [[feminist-theory|feminist theory]] from the sociology units. It does more than “add women”. It uses a **[[gendered-lens|gendered lens]]**: looking at how ideas about masculinity and femininity shape what counts as strength, security and serious politics.",
       {list:[
         "**J. Ann Tickner**, in *Gender in International Relations* (1992), argued that core ideas such as security, power and the rational state had been defined around one masculine ideal. She proposed broader security that includes freedom from poverty and violence at home.",
-        "**Carol Cohn** (1987) studied the language of US nuclear strategists. She found that abstract, sanitised terms such as “collateral damage” made it hard to speak about human costs. Anyone who did speak about them risked being seen as soft.",
-        "In October 2000 the UN Security Council adopted **Resolution 1325** on Women, Peace and Security. It recognised women’s roles in preventing and resolving conflict, a step that feminist researchers and activists had pushed for."
+        "**Carol Cohn** (1987) studied the language of US nuclear strategists. She found that abstract, sanitized terms such as “collateral damage” made it hard to speak about human costs. Anyone who did speak about them risked being seen as soft.",
+        "In October 2000 the UN Security Council adopted **Resolution 1325** on Women, Peace and Security. It recognized women’s roles in preventing and resolving conflict, a step that feminist researchers and activists had pushed for."
       ]},
-      "**Critiques and debates.** Some critics argue that gender is less important than power or class in explaining war. Within feminism, most scholars reject the stereotype that women are “naturally peaceful”. Chandra Talpade Mohanty (1984) warned Western feminists against speaking for women in the [[global-south|Global South]] as one victimised group. Feminists reply that leaving gender out is itself a choice that hides evidence, and many study everyday lives through interviews rather than statistics."
+      "**Critiques and debates.** Some critics argue that gender is less important than power or class in explaining war. Within feminism, most scholars reject the stereotype that women are “naturally peaceful”. Chandra Talpade Mohanty (1984) warned Western feminists against speaking for women in the [[global-south|Global South]] as one victimized group. Feminists reply that leaving gender out is itself a choice that hides evidence, and many study everyday lives through interviews rather than statistics."
      ]},
     {h:"Postcolonialism: the view from the former colonies", body:[
       "**[[postcolonialism|Postcolonialism]]** starts from a fact that classic IR theories often treat as background. For centuries much of the world was ruled by European empires (Unit 5 covers [[colonialism]] and [[decolonization]]). When the UN was founded in 1945, most of Africa and much of Asia was still under colonial rule.",
       "Three thinkers from outside IR shaped the lens:",
       {list:[
         "**Edward Said**, a Palestinian-American literary scholar, wrote *Orientalism* (1978). He argued that Western writing, art and scholarship had built an image of “the Orient” as exotic, backward and unchanging. This **[[orientalism|Orientalism]]** was bound up with imperial power: knowledge about a people helped justify ruling them.",
-        "**Frantz Fanon** was a psychiatrist from Martinique who worked in Algeria during its war of independence. He wrote *The Wretched of the Earth* (1961) on the violence of colonialism and the struggle to decolonise minds as well as territories.",
-        "**Gayatri Chakravorty Spivak** wrote “Can the Subaltern Speak?” (1988). The **subaltern** are the most marginalised people in a colonial society, and she asked whether they can be heard when others always speak for them."
+        "**Frantz Fanon** was a psychiatrist from Martinique who worked in Algeria during its war of independence. He wrote *The Wretched of the Earth* (1961) on the violence of colonialism and the struggle to decolonize minds as well as territories.",
+        "**Gayatri Chakravorty Spivak** wrote “Can the Subaltern Speak?” (1988). The **subaltern** are the most marginalized people in a colonial society, and she asked whether they can be heard when others always speak for them."
       ]},
-      "Postcolonial IR scholars apply these ideas to the field itself. [[sovereignty|Sovereignty]] was presented as a universal principle, yet for a long time it was denied to colonised peoples (recall the “standard of civilisation” from Lesson 4). Theories built mostly from European history, they argue, show **[[eurocentrism]]**: treating Europe’s experience as the normal pattern for everyone.",
-      "**Critiques.** Critics say postcolonialism is better at criticising than at offering testable explanations. They also say it can treat “the West” as a single bloc, and may underplay the power and choices of post-independence elites. Defenders reply that seeing whose experience a theory rests on is the first step to better theory, which is where Global IR comes in."
+      "Postcolonial IR scholars apply these ideas to the field itself. [[sovereignty|Sovereignty]] was presented as a universal principle, yet for a long time it was denied to colonized peoples (recall the “standard of civilization” from Lesson 4). Theories built mostly from European history, they argue, show **[[eurocentrism]]**: treating Europe’s experience as the normal pattern for everyone.",
+      "**Critiques.** Critics say postcolonialism is better at criticizing than at offering testable explanations. They also say it can treat “the West” as a single bloc, and may underplay the power and choices of post-independence elites. Defenders reply that seeing whose experience a theory rests on is the first step to better theory, which is where Global IR comes in."
      ]},
     {h:"Global IR: a field for the whole world", body:[
       "In 2007 Amitav Acharya and Barry Buzan asked in a journal article: “Why is there no non-Western international relations theory?” Their answer was not that other regions lacked ideas. They pointed to the dominance of Western scholarship and to ideas elsewhere that the field had overlooked. They also pointed to the lack of money and recognition for scholars in many countries.",
@@ -683,7 +683,7 @@ ICA.addUnit({
         "Reject **exceptionalism**: no culture or country should be treated as uniquely special or as the model for all.",
         "Recognise many forms of **agency** (the power to act and shape events), including resistance, norm-making and local visions of order."
       ]},
-      "Global IR draws on many traditions of thought. Each one below is internally diverse and argued over by its own scholars; these are examples, not summaries of whole civilisations:",
+      "Global IR draws on many traditions of thought. Each one below is internally diverse and argued over by its own scholars; these are examples, not summaries of whole civilizations:",
       {table:[
         ["Region or tradition","Examples of ideas"],
         ["South Asia","The Arthashastra’s circle of states; Gandhi’s non-violent resistance; Nehru’s non-alignment; the Five Principles of Peaceful Coexistence agreed by India and China in 1954"],
@@ -693,13 +693,13 @@ ICA.addUnit({
         ["Islamic thought","Ibn Khaldun’s *Muqaddimah* (1377) on group solidarity (asabiyya) and the rise and fall of dynasties; siyar, the law of war, treaties and envoys developed by jurists such as al-Shaybani (8th century)"],
         ["The Pacific","Pacific Islands leaders’ idea of the “Blue Pacific Continent”, adopted in their 2050 Strategy (2022)"]
       ]},
-      {warn:"Be careful with “civilisational” labels. Critics such as William Callahan argue that some new “national schools” can serve a government’s foreign-policy aims. One example is readings of tianxia that make a hierarchical order sound harmonious. Global IR itself warns against exceptionalism of any kind."},
+      {warn:"Be careful with “civilizational” labels. Critics such as William Callahan argue that some new “national schools” can serve a government’s foreign-policy aims. One example is readings of tianxia that make a hierarchical order sound harmonious. Global IR itself warns against exceptionalism of any kind."},
       "**Critiques.** Some mainstream scholars say good theory is universal already. Some critical scholars say Global IR is too cautious about who holds power in the field. Acharya replies that it is an agenda for widening the conversation, not a single new theory."
      ]},
     {h:"One crisis, every lens", body:[
       "Now turn the critical and global lenses on October 1962:",
       {list:[
-        "**Marxist:** the crisis was part of a struggle between two economic systems. Cuba’s revolutionary government had nationalised US-owned businesses in 1960, and the United States had responded with an economic embargo. This lens ties the superpower showdown to that conflict over property and development.",
+        "**Marxist:** the crisis was part of a struggle between two economic systems. Cuba’s revolutionary government had nationalized US-owned businesses in 1960, and the United States had responded with an economic embargo. This lens ties the superpower showdown to that conflict over property and development.",
         "**Feminist:** the ExComm advisers who debated nuclear war were all men. Accounts of the crisis are full of talk of toughness, nerve and not appearing weak. A gendered lens asks how those ideas narrowed the options that felt acceptable. It also asks who would have borne the costs: the millions of civilians who were never consulted.",
         "**Postcolonial:** in Cuba the event is the October Crisis, and the island appears in most accounts mainly as a launch site. Cuba had lived under a US right to intervene (the Platt Amendment, 1901–1934), and the US base at Guantánamo remains. Fidel Castro publicly set out conditions of his own, including the return of Guantánamo. But the final deal was made between Washington and Moscow without Cuba.",
         "**Global IR:** U Thant of Burma (now Myanmar) was the UN’s acting Secretary-General. He sent appeals to both leaders on 24 October and helped open space for a pause. At the end of the month he flew to Havana to discuss UN verification, which Castro refused. A field that looked only at the superpowers would miss him."
@@ -726,10 +726,10 @@ ICA.addUnit({
    try:[
     {id:"e2u6-l5-x1", type:"sort", q:"Which critical lens does each claim come from?", buckets:["Marxist / world-systems","Feminist","Postcolonial"], items:[
       {t:"Profits from mining in one region mostly flow to firms and investors in another.", b:0, why:"Surplus flowing from periphery to core is the world-systems picture."},
-      {t:"Diplomacy depended on the unpaid work of diplomats’ spouses, who were mostly women.", b:1, why:"Making women’s hidden labour visible is Enloe’s feminist move."},
+      {t:"Diplomacy depended on the unpaid work of diplomats’ spouses, who were mostly women.", b:1, why:"Making women’s hidden labor visible is Enloe’s feminist move."},
       {t:"Western scholarship long portrayed “the East” as exotic and backward, which helped justify ruling it.", b:2, why:"That is Said’s argument about Orientalism, the founding text of postcolonial studies."},
       {t:"Leaders feared looking “soft”, and that narrowed the options they would consider.", b:1, why:"Asking how ideas of masculinity shape policy is a gendered lens."},
-      {t:"Sovereignty was called universal but was denied to colonised peoples for generations.", b:2, why:"Exposing the double standard of the colonial era is a postcolonial critique."},
+      {t:"Sovereignty was called universal but was denied to colonized peoples for generations.", b:2, why:"Exposing the double standard of the colonial era is a postcolonial critique."},
       {t:"Capitalist rivalry for markets and colonies drove imperial expansion.", b:0, why:"That is Lenin’s Marxist argument about imperialism."}
     ]},
     {id:"e2u6-l5-x2", type:"match", q:"Match each scholar to the work or idea.", pairs:[
@@ -737,19 +737,19 @@ ICA.addUnit({
       ["Immanuel Wallerstein","Core, semi-periphery and periphery","His world-systems theory began with *The Modern World-System* (1974)."],
       ["Cynthia Enloe","*Bananas, Beaches and Bases* and “where are the women?”","Her 1989 book founded much of feminist IR."],
       ["Edward Said","*Orientalism* (1978)","Said showed how knowledge about “the Orient” was tied to imperial power."],
-      ["Amitav Acharya","Global IR and norm localisation","His 2014 address set out the Global IR agenda."],
+      ["Amitav Acharya","Global IR and norm localization","His 2014 address set out the Global IR agenda."],
       ["J. Ann Tickner","*Gender in International Relations* (1992)","Tickner argued that core IR concepts were built around a masculine ideal."]
     ]},
     {id:"e2u6-l5-x3", type:"mcq", q:"Oluwaseun reads that a country exports mostly unprocessed cocoa and imports most of its chocolate and machinery. Which lens explains this pattern most directly?", options:[
       {t:"World-systems theory: peripheral economies sell raw materials and buy high-value goods from the core.", ok:true, why:"Right. This is the core–periphery pattern of trade that Wallerstein and dependency theorists described."},
-      {t:"The security dilemma: the country is arming against its neighbours.", why:"Nothing here concerns weapons or fear. The security dilemma is a realist idea about arms build-ups."},
+      {t:"The security dilemma: the country is arming against its neighbors.", why:"Nothing here concerns weapons or fear. The security dilemma is a realist idea about arms build-ups."},
       {t:"Wendt’s Kantian culture: the country sees its trading partners as friends.", why:"Friendship might affect trade, but it doesn’t explain why the country sells raw materials and buys finished goods."},
       {t:"Pluralism in the English School: states agree only on sovereignty.", why:"Pluralism concerns how many rules international society shares, not trade patterns."}
     ]},
     {id:"e2u6-l5-x4", type:"mcq", q:"Which statement best describes what a gendered lens does in IR?", options:[
       {t:"It asks how ideas about gender shape power and security.", ok:true, why:"Right. It looks at how ideas about masculinity and femininity shape power, security and what counts as serious politics, as well as where women are. Feminist IR goes beyond counting women: it examines how gender shapes the concepts and choices of world politics."},
       {t:"It argues that women are naturally more peaceful than men.", why:"Most feminist IR scholars reject that stereotype. Their focus is on how gender roles are built and used, not on fixed natures."},
-      {t:"It studies only women’s organisations and ignores war and security.", why:"Feminist IR studies war and security directly, as Tickner and Cohn did."},
+      {t:"It studies only women’s organizations and ignores war and security.", why:"Feminist IR studies war and security directly, as Tickner and Cohn did."},
       {t:"It counts how many women are heads of government, and nothing else.", why:"Counting is one starting point. A gendered lens also looks at ideas, language and unpaid work."}
     ]},
     {id:"e2u6-l5-x5", type:"spot", q:"A magazine column about Global IR. Tap the claims that are wrong or that stereotype whole regions.", ask:"wrong or stereotyping", parts:[
@@ -806,10 +806,10 @@ ICA.addUnit({
      {t:"Defensive realism", why:"Defensive realists, like Waltz, say states want enough power to be secure, and that grabbing too much makes others unite against them."},
      {t:"Offensive realism", ok:true, why:"Yes. Mearsheimer argues that, since intentions are uncertain, the safest position is to be the strongest power in your region."},
      {t:"Neoliberal institutionalism", why:"This is a liberal theory about how institutions help states cooperate. It doesn’t advise seeking regional dominance."},
-     {t:"English School pluralism", why:"Pluralists argue about how many shared rules international society needs. They don’t advise maximising power."}]},
+     {t:"English School pluralism", why:"Pluralists argue about how many shared rules international society needs. They don’t advise maximizing power."}]},
    {id:"e2u6-cp03", lesson:"e2u6-l5", level:1, q:"A leading power’s ideas about how the world economy should work come to be seen everywhere as simple common sense, so few governments question them. Which idea from Cox and Gramsci describes this?", options:[
      {t:"Bandwagoning", why:"Bandwagoning is joining a rising power instead of balancing against it. It is about alliances, not ideas that seem like common sense."},
-     {t:"The security dilemma", why:"The security dilemma is about defence steps that make others feel less safe. It has nothing to do with economic ideas."},
+     {t:"The security dilemma", why:"The security dilemma is about defense steps that make others feel less safe. It has nothing to do with economic ideas."},
      {t:"Complex interdependence", why:"Complex interdependence describes many channels linking societies. It doesn’t explain why one group’s ideas seem natural to all."},
      {t:"Hegemony", ok:true, why:"Correct. In Cox’s use of Gramsci, hegemony is leadership resting not only on force but on making one group’s interests look like common sense."}]},
    {id:"e2u6-cp04", lesson:"e2u6-l3", level:2, q:"Country M broke a fishing agreement last year. Now, when it proposes a trade deal, several partners are reluctant to sign. Which liberal idea about institutions does this show?", options:[
@@ -826,7 +826,7 @@ ICA.addUnit({
      {t:"A regional norm cascade", why:"A cascade is the stage when a norm spreads rapidly among many states. This case is about reshaping a norm to fit local beliefs."},
      {t:"Orientalism", why:"Orientalism, Said’s idea, is Western writing that pictured “the Orient” as backward. It isn’t about states adapting outside norms."},
      {t:"Bandwagoning", why:"Bandwagoning is joining a rising power. Here governments are adapting an idea, not joining a power."},
-     {t:"Norm localisation", ok:true, why:"Correct. Acharya showed that norms don’t simply flow from powerful countries; local actors adapt outside ideas to fit their own beliefs."}]},
+     {t:"Norm localization", ok:true, why:"Correct. Acharya showed that norms don’t simply flow from powerful countries; local actors adapt outside ideas to fit their own beliefs."}]},
    {id:"e2u6-cp07", lesson:"e2u6-l1", level:2, q:"Report A asks how to make the global supply chain for phones run more efficiently. Report B asks who profits along that chain, how it came about and how it could change. In Cox’s terms…", options:[
      {t:"both are critical theory, because both study the world economy", why:"The topic doesn’t decide the type. Report A takes the order as given and asks how to improve it, which is problem-solving."},
      {t:"A is problem-solving theory and B is critical theory", ok:true, why:"Right. Problem-solving theory takes the world as given and helps it run smoothly. Critical theory asks how the order arose, whom it serves and how it might change."},
@@ -836,7 +836,7 @@ ICA.addUnit({
      {t:"Feminist IR", ok:true, why:"Yes. Asking how ideas of toughness and emotion decide what counts as serious security talk is a gendered lens, like Carol Cohn’s study of nuclear strategists’ language."},
      {t:"World-systems theory", why:"World-systems theory looks at core, semi-periphery and periphery in the global economy, not at whose voices count in security debates."},
      {t:"The English School", why:"The English School studies the shared rules of a society of states. It doesn’t focus on gendered ideas of strength and emotion."},
-     {t:"Neorealism", why:"Neorealism explains state behaviour by the structure of the system. It sets language and gender aside."}]},
+     {t:"Neorealism", why:"Neorealism explains state behavior by the structure of the system. It sets language and gender aside."}]},
    {id:"e2u6-cp09", lesson:"e2u6-l2", level:3, q:"Invented case. Country A is offered the same trade deal with its close ally B and with its rival C. Both partners would gain more than A. A signs with B but hesitates with C. Which explanation fits the “middle ground” the unit describes?", options:[
      {t:"A cares only about absolute gains", why:"If A cared only about absolute gains, it would sign both deals, since it gains from each. Its hesitation with C shows it compares gains."},
      {t:"Relative gains matter most between rivals and on security issues, and much less between close allies", ok:true, why:"Right. Grieco’s relative-gains concern is strongest with a rival, whose extra gain could become a military edge. Between allies it matters less."},
@@ -848,13 +848,13 @@ ICA.addUnit({
      {t:"The pattern holds, but a shared enemy may explain part of it, so correlation alone can’t show democracy causes the peace", ok:true, why:"Correct. This is Farber and Gowa’s point: another cause may be at work. Correlation is not causation, and IR theories describe tendencies that need careful testing."},
      {t:"Because the democracies were allies, institutions and norms play no role", why:"An alliance doesn’t rule out norms or institutions. Several causes may work together."}]},
    {id:"e2u6-cp11", lesson:"e2u6-l4", level:3, q:"Two rival states arm against each other. Yet they keep exchanging ambassadors, follow the rules of war in their border clashes and accept each other’s sovereignty. Which combination of lenses explains both halves best?", options:[
-     {t:"Realism alone: shared rules mean nothing in an anarchy", why:"Realism explains the arming well, but it can’t easily explain why rivals keep following shared rules. The rules here are clearly shaping behaviour."},
+     {t:"Realism alone: shared rules mean nothing in an anarchy", why:"Realism explains the arming well, but it can’t easily explain why rivals keep following shared rules. The rules here are clearly shaping behavior."},
      {t:"Liberalism alone: complex interdependence means states don’t arm", why:"These states are arming, and nothing describes dense trade or many channels. Liberalism alone doesn’t fit."},
      {t:"Postcolonialism: the shared rules show Orientalism at work", why:"Orientalism is about Western images of “the Orient” that served empire. It doesn’t explain rivals following diplomatic rules."},
      {t:"Realism for the arming, and the English School for the shared rules of a society of states", ok:true, why:"Yes. Realism explains rivalry and arming under anarchy. The English School explains why rivals still act as members of an international society with shared rules and institutions."}]},
    {id:"e2u6-cp12", lesson:"e2u6-l5", level:3, q:"A scholar argues that sovereignty was presented as a universal principle, yet in the 19th century European powers forced unequal treaties on states they said did not meet their tests. Which lens is she using, and what evidence from Lesson 4 supports her?", options:[
      {t:"Neorealism; Waltz’s idea of polarity", why:"Polarity describes how power is spread among great powers. It doesn’t show how sovereignty was denied to some states."},
-     {t:"Postcolonialism; Gong’s “standard of civilisation”", ok:true, why:"Right. Gong showed how European powers used a “standard of civilisation” to treat states such as China, Siam and the Ottoman Empire as unequal. Postcolonial scholars build on this."},
+     {t:"Postcolonialism; Gong’s “standard of civilization”", ok:true, why:"Right. Gong showed how European powers used a “standard of civilization” to treat states such as China, Siam and the Ottoman Empire as unequal. Postcolonial scholars build on this."},
      {t:"Liberalism; Kant’s “universal hospitality”", why:"Kant’s hospitality is a condition for peace in liberal thought. It doesn’t explain unequal treaties imposed by empires."},
      {t:"Feminist IR; Enloe’s question “where are the women?”", why:"Enloe’s question is central to feminist IR, but this argument is about empire and unequal sovereignty, which the postcolonial lens examines."}]}
   ],
@@ -883,10 +883,10 @@ ICA.addUnit({
       "Theories are often grouped by what they treat as the main **level of analysis** (the individual, the state or the international system, introduced in Unit 5). Realists such as Waltz work mainly at the system level; theories of foreign policy work at the state and individual levels. Asking which level an argument uses is a quick way to see what kind of explanation it offers."
      ],
      pro:[
-      "IR’s history is often told as a sequence of “great debates”: idealism against realism (1930s–40s), traditionalism against behaviouralism (1950s–60s), the inter-paradigm debate (1970s–80s) and positivism against post-positivism (from the late 1980s). Historians of the discipline treat this as a teaching device, not a literal record: Peter Wilson’s 1998 article “The Myth of the ‘First Great Debate’” argued that the interwar “idealists” never formed a coherent school and that the label was largely applied by their critics. Others note that the narrative is centred on Britain and the United States.",
-      "There are deep disagreements about what kind of knowledge IR can produce. Martin Hollis and Steve Smith (*Explaining and Understanding International Relations*, 1990) contrasted explanation from the outside, modelled on natural science, with understanding from the inside, reconstructing actors’ meanings. Positivist approaches stress testable hypotheses and general patterns; post-positivist approaches stress that observers are part of the world they study.",
+      "IR’s history is often told as a sequence of “great debates”: idealism against realism (1930s–40s), traditionalism against behavioralism (1950s–60s), the inter-paradigm debate (1970s–80s) and positivism against post-positivism (from the late 1980s). Historians of the discipline treat this as a teaching device, not a literal record: Peter Wilson’s 1998 article “The Myth of the ‘First Great Debate’” argued that the interwar “idealists” never formed a coherent school and that the label was largely applied by their critics. Others note that the narrative is centered on Britain and the United States.",
+      "There are deep disagreements about what kind of knowledge IR can produce. Martin Hollis and Steve Smith (*Explaining and Understanding International Relations*, 1990) contrasted explanation from the outside, modeled on natural science, with understanding from the inside, reconstructing actors’ meanings. Positivist approaches stress testable hypotheses and general patterns; post-positivist approaches stress that observers are part of the world they study.",
       "Kenneth Waltz distinguished a theory of **international politics**, which explains recurrent outcomes of the system, from a theory of **foreign policy**, which explains particular states’ decisions. Confusing the two is a common source of unfair criticism.",
-      "Many scholars now practise what Rudra Sil and Peter Katzenstein (2010) called **analytic eclecticism**: combining mechanisms from several theories to explain a specific problem, rather than defending one paradigm against all others.",
+      "Many scholars now practice what Rudra Sil and Peter Katzenstein (2010) called **analytic eclecticism**: combining mechanisms from several theories to explain a specific problem, rather than defending one paradigm against all others.",
       "A further divide is between **rationalist** theories (neorealism and neoliberal institutionalism), which treat states’ interests as given and ask how they pursue them, and **reflectivist** or constructivist approaches, which ask where interests and identities come from. Robert Keohane drew this distinction in his 1988 presidential address to the International Studies Association. Recognising it helps explain why scholars sometimes talk past each other: they are answering different questions."
      ]
     },
@@ -898,7 +898,7 @@ ICA.addUnit({
     summary:"The family of theories that sees world politics as a competition for power and security among states in a system with no government above them.",
     levels:{
      starter:[
-      "Picture a neighbourhood with no police. Even decent neighbours fit stronger locks and watch each other, because no one else will protect them. Realism sees world politics this way: there is no world government, so each state must look after itself.",
+      "Picture a neighborhood with no police. Even decent neighbors fit stronger locks and watch each other, because no one else will protect them. Realism sees world politics this way: there is no world government, so each state must look after itself.",
       "Realists say states care first about **survival**, rely on their own **power** (especially military power and the wealth behind it) and can never be fully sure what others intend. That makes trust scarce and competition common, even between countries that do not want war.",
       "Realism is not a single theory but a family. Its members agree on these starting points and disagree about why states seek power.",
       {key:"Realism: in a world without a referee, power and security come first."},
@@ -919,7 +919,7 @@ ICA.addUnit({
       "Realism does not say states are always at war or that leaders are wicked. It says that in a world without a referee, even cautious, well-meaning governments face pressures to compete, and that ignoring power is dangerous. Many realists therefore recommend restraint, diplomacy and a careful reading of others’ interests, rather than crusades. The naval race between Britain and Germany before 1914 is the textbook illustration of the security dilemma that realists describe."
      ],
      pro:[
-      "Defensive realists (Waltz, Robert Jervis, Stephen Van Evera) argue that states seek security rather than maximum power, because expansion provokes balancing; Jervis (1978) showed that the security dilemma eases when defensive and offensive weapons can be distinguished or defence has the advantage. Offensive realists (Mearsheimer) argue that uncertainty about intentions makes regional hegemony the safest goal. Stephen Walt’s balance-of-threat theory (1987) adds geography, offensive capability and perceived intentions to raw power.",
+      "Defensive realists (Waltz, Robert Jervis, Stephen Van Evera) argue that states seek security rather than maximum power, because expansion provokes balancing; Jervis (1978) showed that the security dilemma eases when defensive and offensive weapons can be distinguished or defense has the advantage. Offensive realists (Mearsheimer) argue that uncertainty about intentions makes regional hegemony the safest goal. Stephen Walt’s balance-of-threat theory (1987) adds geography, offensive capability and perceived intentions to raw power.",
       "Main critiques:",
       {list:[
         "It did not foresee the peaceful end of the Cold War (Gaddis, 1992).",
@@ -937,10 +937,10 @@ ICA.addUnit({
     sources:[{t:"Stanford Encyclopedia of Philosophy: Political Realism in International Relations", url:"https://plato.stanford.edu/entries/realism-intl-relations/"},{t:"OpenStax Introduction to Political Science, 14.5 The Realist Worldview", url:"https://openstax.org/books/introduction-political-science/pages/14-5-the-realist-worldview"}], checked:"2026-11"},
 
    {id:"neorealism", title:"Neorealism", aka:["structural realism"], tags:["international relations","theory","realism"],
-    summary:"Kenneth Waltz’s theory that the anarchic structure of the international system, not human nature, pushes states into similar competitive behaviour.",
+    summary:"Kenneth Waltz’s theory that the anarchic structure of the international system, not human nature, pushes states into similar competitive behavior.",
     levels:{
      starter:[
-      "Imagine a game of musical chairs. Kind people and selfish people alike end up rushing for a seat when the music stops, because the rules of the game reward it. Neorealism says world politics is like that: the **structure** of the system shapes behaviour more than the personalities of leaders.",
+      "Imagine a game of musical chairs. Kind people and selfish people alike end up rushing for a seat when the music stops, because the rules of the game reward it. Neorealism says world politics is like that: the **structure** of the system shapes behavior more than the personalities of leaders.",
       "The structure Waltz had in mind is simple. There is no government above states (anarchy), every state must look after its own security, and states differ mainly in how much power they have.",
       "So neorealists look less at who is in charge of a country and more at how power is spread across the whole system: one dominant power, two, or several.",
       {key:"Neorealism: the shape of the system pushes states to act alike."},
@@ -960,7 +960,7 @@ ICA.addUnit({
      pro:[
       "Waltz insisted that his was a theory of international politics, explaining recurrent patterns such as balancing and the rarity of lasting hegemony, not a theory of foreign policy that predicts individual decisions. Critics who test it against single decisions are, in his view, testing the wrong thing.",
       "Neorealism drew wide criticism. Richard Ashley (“The Poverty of Neorealism”, 1984) attacked its narrow view of structure. John Ruggie argued that it could not explain the shift from medieval to modern systems because it ignored changes in the character of units. Constructivists, notably Wendt (1992), argued that self-help and power politics are not logically implied by anarchy. After 1989, critics noted the theory had not foreseen a peaceful end of bipolarity.",
-      "Within realism, Mearsheimer’s offensive realism (2001) kept the structural starting point but argued that states maximise relative power. Neoclassical realists added domestic factors to explain specific foreign policies.",
+      "Within realism, Mearsheimer’s offensive realism (2001) kept the structural starting point but argued that states maximize relative power. Neoclassical realists added domestic factors to explain specific foreign policies.",
       "Waltz also argued, controversially, that the gradual spread of nuclear weapons could strengthen deterrence; Scott Sagan argued the opposite, and their exchange was published as *The Spread of Nuclear Weapons: A Debate* (1995; later editions).",
       "Neorealism’s legacy includes the habit of explaining outcomes through polarity, the concept of balancing as a recurrent system-level pattern, and the relative-gains argument against easy cooperation, developed by Joseph Grieco (1988). Its insistence on parsimony set the standard that later theories had to meet or reject, which is why even its critics usually begin by engaging with Waltz’s structure."
      ]
@@ -973,8 +973,8 @@ ICA.addUnit({
     summary:"The family of theories holding that interdependence, institutions and domestic politics can make cooperation common and conflict less likely, even without a world government.",
     levels:{
      starter:[
-      "Picture neighbours with no police who all draw water from one well. They agree a timetable, share repairs and keep a notebook of who has paid. No one forces them; the shared well and the habit of meeting make cooperation sensible.",
-      "Liberalism in IR says world politics can work like that. There is no world government, but trade, travel and communication tie countries together, international organisations and rules make promises easier to keep, and what happens inside countries, such as elections, shapes how they behave abroad.",
+      "Picture neighbors with no police who all draw water from one well. They agree a timetable, share repairs and keep a notebook of who has paid. No one forces them; the shared well and the habit of meeting make cooperation sensible.",
+      "Liberalism in IR says world politics can work like that. There is no world government, but trade, travel and communication tie countries together, international organizations and rules make promises easier to keep, and what happens inside countries, such as elections, shapes how they behave abroad.",
       {warn:"“Liberal” here is a theory of world politics, not a political party or a view on domestic issues."},
       {key:"Liberalism: cooperation is possible, and ties and rules make it easier."},
       "Liberals do not say conflict disappears. They say it can be managed, and that the habits of cooperation can spread over time."
@@ -989,15 +989,15 @@ ICA.addUnit({
         ["Democratic peace","Democracies rarely if ever fight each other","Doyle (1983)"]
       ]},
       "Its roots include Kant’s *Perpetual Peace* (1795) and Norman Angell’s *The Great Illusion* (1910), which argued that conquest no longer paid.",
-      "Liberals stress **absolute gains** (is everyone better off?) where realists stress relative gains. They see many actors, including international organisations, NGOs and companies, and they argue that institutions provide information, lower the costs of making deals and build reputations, which lengthens “the shadow of the future”.",
+      "Liberals stress **absolute gains** (is everyone better off?) where realists stress relative gains. They see many actors, including international organizations, NGOs and companies, and they argue that institutions provide information, lower the costs of making deals and build reputations, which lengthens “the shadow of the future”.",
       {warn:"“Neoliberal institutionalism” in IR is a theory of cooperation; it is not the same as “neoliberal” free-market economic policy."},
       "Liberals do not claim that cooperation is easy or automatic. They argue it is possible and often rational, and they study the conditions that make it more likely: repeated dealings, transparent information, institutions that monitor commitments, and domestic politics that reward peace and trade. The long history of bodies such as the Universal Postal Union (1874) shows how ordinary cross-border cooperation can become."
      ],
      pro:[
       "Keohane and Nye’s complex interdependence has three features: multiple channels connecting societies, no fixed hierarchy of issues, and a minor role for military force among the states concerned. They distinguished **sensitivity** from **vulnerability** interdependence, and noted that asymmetric interdependence is a source of power, a point that bridges liberal and realist thinking.",
-      "The neoliberal–neorealist debate of the 1980s–90s narrowed the gap: both accepted anarchy and rational states, and argued over whether relative-gains concerns (Grieco, 1988) prevent cooperation. Snidal (1991) showed relative gains matter less with many players. Andrew Moravcsik (1997) set out a “liberal” theory centred on state preferences formed by domestic society.",
-      "Critiques: realists (Mearsheimer, “The False Promise of International Institutions”, 1994/95) argue institutions mostly reflect great-power interests; Marxist and postcolonial critics argue that the liberal international order has served rich states and was built while much of the world was colonised; and interdependence can be used as a weapon (sanctions, supply chains) rather than a brake on conflict.",
-      "In the 1962 crisis a liberal emphasises communication channels, the UN’s role and the institutions built afterwards: the hotline and the Partial Test Ban Treaty (1963), and later the Non-Proliferation Treaty (opened for signature 1968).",
+      "The neoliberal–neorealist debate of the 1980s–90s narrowed the gap: both accepted anarchy and rational states, and argued over whether relative-gains concerns (Grieco, 1988) prevent cooperation. Snidal (1991) showed relative gains matter less with many players. Andrew Moravcsik (1997) set out a “liberal” theory centered on state preferences formed by domestic society.",
+      "Critiques: realists (Mearsheimer, “The False Promise of International Institutions”, 1994/95) argue institutions mostly reflect great-power interests; Marxist and postcolonial critics argue that the liberal international order has served rich states and was built while much of the world was colonized; and interdependence can be used as a weapon (sanctions, supply chains) rather than a brake on conflict.",
+      "In the 1962 crisis a liberal emphasizes communication channels, the UN’s role and the institutions built afterwards: the hotline and the Partial Test Ban Treaty (1963), and later the Non-Proliferation Treaty (opened for signature 1968).",
       "Liberal ideas strongly shaped the institutions built after 1945, from the United Nations to the Bretton Woods institutions covered in Unit 7. Supporters credit this “liberal international order” with expanding trade and reducing great-power war; critics stress its unequal benefits and the gap between its universal language and its practice. The debate about whether that order is weakening is one of the liveliest in IR today, and different liberal scholars answer it differently."
      ]
     },
@@ -1025,8 +1025,8 @@ ICA.addUnit({
       ]},
       "Distinguish the **dyadic** claim (pairs of democracies rarely fight), which is strongly supported, from the **monadic** claim (democracies are more peaceful in general), which is much weaker and disputed.",
       "Correlation is not causation: alliances, wealth, trade and a shared enemy may also explain peace among democracies.",
-      "Researchers test the claim with large data sets that code every pair of countries in each year as democratic or not and record any wars between them. Results depend on how “democracy” and “war” are defined, which is why the definitions are debated so closely. Even sceptics generally accept that wars between stable, well-established democracies have been extremely rare; the argument is mostly about why.",
-      "The pattern is about war, usually defined in research as large-scale organised fighting between states; lesser disputes and threats between democracies do occur and are studied separately."
+      "Researchers test the claim with large data sets that code every pair of countries in each year as democratic or not and record any wars between them. Results depend on how “democracy” and “war” are defined, which is why the definitions are debated so closely. Even skeptics generally accept that wars between stable, well-established democracies have been extremely rare; the argument is mostly about why.",
+      "The pattern is about war, usually defined in research as large-scale organized fighting between states; lesser disputes and threats between democracies do occur and are studied separately."
      ],
      pro:[
       "Main critiques:",
@@ -1051,8 +1051,8 @@ ICA.addUnit({
     levels:{
      starter:[
       "A raised hand means “a question” in a classroom, “I bid” at an auction and “stop” to traffic. The hand is the same; the shared rules give it meaning.",
-      "Constructivism says world politics works like this too. Weapons, money and borders are real, but what they mean depends on shared understandings. A neighbour’s army looks different if you see that neighbour as a friend or as an enemy.",
-      "Constructivists study **identities** (who a state thinks it is), **norms** (shared expectations of proper behaviour) and how these change over time. Because they are made by people, they can be remade.",
+      "Constructivism says world politics works like this too. Weapons, money and borders are real, but what they mean depends on shared understandings. A neighbor’s army looks different if you see that neighbor as a friend or as an enemy.",
+      "Constructivists study **identities** (who a state thinks it is), **norms** (shared expectations of proper behavior) and how these change over time. Because they are made by people, they can be remade.",
       {key:"Constructivism: shared ideas shape what states want and what they think they can do."},
       "For example, the end of colonial rule was not only about armies and money; it also depended on a change in what most people around the world thought was legitimate."
      ],
@@ -1064,14 +1064,14 @@ ICA.addUnit({
         ["Lockean","Rivals who accept each other’s survival"],
         ["Kantian","Friends who settle disputes without war"]
       ]},
-      "Martha Finnemore and Kathryn Sikkink (1998) described a **norm life cycle**: emergence (norm entrepreneurs), a tipping point and cascade, then internalisation. The end of colonial rule’s legitimacy, marked by UN General Assembly Resolution 1514 (1960), is a classic example.",
+      "Martha Finnemore and Kathryn Sikkink (1998) described a **norm life cycle**: emergence (norm entrepreneurs), a tipping point and cascade, then internalization. The end of colonial rule’s legitimacy, marked by UN General Assembly Resolution 1514 (1960), is a classic example.",
       "Constructivists explain regional communities, such as the ASEAN Way of non-interference and consensus (Acharya, 2001), and how states’ interests change when their identities change. Jutta Weldes (1999) applied the lens to the 1962 Cuban crisis.",
-      "Constructivism also helps explain change. If interests were fixed by material facts, big shifts in behaviour would be hard to account for. Constructivists point to changes in identity and norms, such as former enemies coming to see each other as partners, or colonial rule losing its legitimacy, as causes of lasting change in how states act. That is why many textbooks present it as the lens of change and possibility."
+      "Constructivism also helps explain change. If interests were fixed by material facts, big shifts in behavior would be hard to account for. Constructivists point to changes in identity and norms, such as former enemies coming to see each other as partners, or colonial rule losing its legitimacy, as causes of lasting change in how states act. That is why many textbooks present it as the lens of change and possibility."
      ],
      pro:[
-      "Constructivism is better described as a social ontology or approach than a substantive theory: it says ideas and practices constitute actors and interests, but it does not predict which ideas will prevail. Within it, **conventional** constructivists (Wendt, Katzenstein, Finnemore) accept many mainstream methods and often keep states at the centre; **critical** constructivists draw closer to post-structuralism and focus on language and power.",
-      "Important contributions include Peter Katzenstein’s edited *The Culture of National Security* (1996), Nina Tannenwald’s work on the nuclear taboo, and Acharya’s “norm localisation” (2004), which shows how local actors reshape outside norms instead of simply adopting them.",
-      "Critiques: ideas are hard to measure independently of the behaviour they are said to cause; explanations can be offered after the fact; mainstream versions underplay material power and coercion; and Wendt’s state-centred version is criticised by critical scholars as too close to the mainstream. Constructivists reply with process tracing, discourse analysis and comparative case studies, and argue that only an ideas-based lens can explain why the same material facts (British versus North Korean nuclear weapons, in Wendt’s 1995 example) produce different reactions.",
+      "Constructivism is better described as a social ontology or approach than a substantive theory: it says ideas and practices constitute actors and interests, but it does not predict which ideas will prevail. Within it, **conventional** constructivists (Wendt, Katzenstein, Finnemore) accept many mainstream methods and often keep states at the center; **critical** constructivists draw closer to post-structuralism and focus on language and power.",
+      "Important contributions include Peter Katzenstein’s edited *The Culture of National Security* (1996), Nina Tannenwald’s work on the nuclear taboo, and Acharya’s “norm localization” (2004), which shows how local actors reshape outside norms instead of simply adopting them.",
+      "Critiques: ideas are hard to measure independently of the behavior they are said to cause; explanations can be offered after the fact; mainstream versions underplay material power and coercion; and Wendt’s state-centered version is criticized by critical scholars as too close to the mainstream. Constructivists reply with process tracing, discourse analysis and comparative case studies, and argue that only an ideas-based lens can explain why the same material facts (British versus North Korean nuclear weapons, in Wendt’s 1995 example) produce different reactions.",
       "In the 1962 crisis, a constructivist reading also notes that the event itself changed shared understandings: leaders on both sides spoke afterwards of the need to avoid such confrontations, and the hotline and the Partial Test Ban Treaty (both 1963) can be read as early steps in building new norms of crisis management and restraint. Constructivists therefore see the crisis as both shaped by meanings and productive of new ones."
      ]
     },
@@ -1083,7 +1083,7 @@ ICA.addUnit({
     summary:"The approach that explains order among states through an international society: states that see themselves as bound by common rules and share common institutions.",
     levels:{
      starter:[
-      "Strangers on a crowded road affect each other: they swerve, brake and honk. Neighbours on a quiet street do more: they follow shared rules, expect others to follow them, and defend them together.",
+      "Strangers on a crowded road affect each other: they swerve, brake and honk. Neighbors on a quiet street do more: they follow shared rules, expect others to follow them, and defend them together.",
       "The English School says states can be like either group. When states merely affect each other, they form an **international system**. When they also accept common rules and practices, such as exchanging ambassadors and keeping treaties, they form an **international society**.",
       "This helps explain a puzzle: there is no world government, yet there is a lot of order in world politics.",
       {key:"The English School: anarchy, but a society of states with shared rules."},
@@ -1105,9 +1105,9 @@ ICA.addUnit({
      ],
      pro:[
       "English School scholars divide into **pluralists**, who want international society to rest on minimal shared rules such as sovereignty and non-intervention (Bull in much of his work, Robert Jackson), and **solidarists**, who argue states can agree on more, including protecting people from mass atrocities (Nicholas Wheeler, *Saving Strangers*, 2000). This debate informs discussion of the Responsibility to Protect.",
-      "Bull and Adam Watson’s *The Expansion of International Society* (1984) told how a European society spread worldwide. Critics argue that this narrative looks outward from Europe, treats expansion largely as diffusion rather than conquest, and overlooks long-established non-European orders. Gerrit Gong (1984) documented the “standard of civilisation” used to deny equal status to states such as China, Siam and the Ottoman Empire.",
+      "Bull and Adam Watson’s *The Expansion of International Society* (1984) told how a European society spread worldwide. Critics argue that this narrative looks outward from Europe, treats expansion largely as diffusion rather than conquest, and overlooks long-established non-European orders. Gerrit Gong (1984) documented the “standard of civilization” used to deny equal status to states such as China, Siam and the Ottoman Empire.",
       "Barry Buzan (*From International to World Society?*, 2004) refined the distinction between international society (states) and world society (individuals and non-state actors) and called for more attention to regional international societies.",
-      "Other critiques: loose, historical methods; an emphasis on order that can mask inequality; and a state-centred view. Defenders value its historical depth and its middle way between realism and liberalism.",
+      "Other critiques: loose, historical methods; an emphasis on order that can mask inequality; and a state-centered view. Defenders value its historical depth and its middle way between realism and liberalism.",
       "The approach has enjoyed a revival since the 1990s, with new work on regional international societies (for example in East Asia or the Middle East), on the role of great-power management and on how international society responds to new challenges such as climate change. Its emphasis on history makes it a natural partner for Global IR’s call to ground the field in world history rather than in European history alone."
      ]
     },
@@ -1122,7 +1122,7 @@ ICA.addUnit({
       "Think about the chocolate in a shop. The cocoa may be grown in one region, processed and branded in another, and most of the profit may end up far from the farms. Marxist lenses ask why the world economy works like this, and who gains.",
       "They build on Karl Marx’s idea that the way a society produces wealth shapes its politics, and that capitalism divides owners from workers. In IR, that division is traced across the whole globe: between rich **core** regions and poorer **periphery** regions, and between classes within every country.",
       {key:"Marxist lenses: follow the money, and ask who gains from the global economy."},
-      "These lenses are critical: they ask not only how the world economy works, but whom it works for, and how it could be organised differently."
+      "These lenses are critical: they ask not only how the world economy works, but whom it works for, and how it could be organized differently."
      ],
      builder:[
       "Main strands:",
@@ -1135,7 +1135,7 @@ ICA.addUnit({
       ]},
       "These lenses explain lasting inequality between regions, the role of companies and finance in world politics, and why some states push for a different economic order. Unit 3 covers dependency and world-systems theory as sociology; IR adds questions about states, war and international institutions.",
       "Robert Cox’s line “theory is always for someone and for some purpose” comes from this tradition and underlies much critical IR.",
-      "Marxist lenses also ask who benefits from international institutions and rules. For example, they examine how trade and investment rules, debt arrangements or intellectual property protections may favour countries and companies at the core. In the 1962 crisis, a Marxist reading stresses the conflict between Cuba’s revolutionary government, which nationalised US-owned businesses in 1960, and the United States, which responded with an embargo.",
+      "Marxist lenses also ask who benefits from international institutions and rules. For example, they examine how trade and investment rules, debt arrangements or intellectual property protections may favor countries and companies at the core. In the 1962 crisis, a Marxist reading stresses the conflict between Cuba’s revolutionary government, which nationalized US-owned businesses in 1960, and the United States, which responded with an embargo.",
       "The core–periphery picture shows why inequality between regions can last even without any army being involved, a pattern that realists rarely discuss."
      ],
      pro:[
@@ -1154,7 +1154,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Feminist IR begins with a question the political scientist Cynthia Enloe made famous: **where are the women?**",
-      "Look at a tourist resort, a banana plantation, an embassy or a military base, and women are there: working, caring, migrating, organising. The usual story of world politics, told through presidents and generals, leaves most of them out.",
+      "Look at a tourist resort, a banana plantation, an embassy or a military base, and women are there: working, caring, migrating, organizing. The usual story of world politics, told through presidents and generals, leaves most of them out.",
       "Feminist scholars also look at **gender**: how ideas about being “manly” or “womanly” shape what counts as strong or weak, serious or soft. These ideas affect which policies feel acceptable to leaders.",
       {key:"Feminist IR: find the people the usual story leaves out, and see how gender shapes power."},
       "Feminist IR is not one theory. It includes many approaches that share these questions but answer them in different ways."
@@ -1162,9 +1162,9 @@ ICA.addUnit({
      builder:[
       "Key works:",
       {list:[
-        "**Cynthia Enloe**, *Bananas, Beaches and Bases* (1989): women’s labour and lives in plantations, tourism, diplomacy, military bases and domestic work; “the personal is international”.",
+        "**Cynthia Enloe**, *Bananas, Beaches and Bases* (1989): women’s labor and lives in plantations, tourism, diplomacy, military bases and domestic work; “the personal is international”.",
         "**J. Ann Tickner**, *Gender in International Relations* (1992): security, power and the rational state defined around a masculine ideal; a broader idea of security including freedom from poverty and violence.",
-        "**Carol Cohn** (1987): the abstract, sanitised language of nuclear strategists."
+        "**Carol Cohn** (1987): the abstract, sanitized language of nuclear strategists."
       ]},
       "A **gendered lens** is not the same as “adding women”. It asks how masculinity and femininity are used, for example when leaders fear looking “soft”.",
       "Feminist research and activism helped bring about UN Security Council Resolution 1325 on Women, Peace and Security, adopted unanimously on 31 October 2000.",
@@ -1173,7 +1173,7 @@ ICA.addUnit({
       "Feminist scholars point out that much world politics depends on work that is rarely counted, such as care, cleaning and the support provided by the families of diplomats and soldiers."
      ],
      pro:[
-      "Feminist IR includes liberal feminists (equal representation and rights), critical and standpoint feminists (knowledge from women’s experience), post-structural feminists (gender as discourse) and postcolonial feminists. Chandra Talpade Mohanty’s “Under Western Eyes” (1984) criticised Western feminist writing that portrayed women in the Global South as a single victimised group.",
+      "Feminist IR includes liberal feminists (equal representation and rights), critical and standpoint feminists (knowledge from women’s experience), post-structural feminists (gender as discourse) and postcolonial feminists. Chandra Talpade Mohanty’s “Under Western Eyes” (1984) criticized Western feminist writing that portrayed women in the Global South as a single victimized group.",
       "A notable exchange followed Robert Keohane’s invitation for feminists to offer testable hypotheses; Tickner’s “You Just Don’t Understand” (1997) argued that the disagreement was about epistemology, not just method. Feminist IR often relies on interviews, ethnography and discourse analysis.",
       "Critiques: some argue gender explains less than power or class; others warn against essentialism, the idea that women are naturally peaceful, which most feminist IR scholars reject; others question whether Resolution 1325’s implementation has matched its promise, a debate within feminism itself.",
       "Applied to the 1962 crisis, a gendered lens notes that the US advisers debating nuclear war were all men, that the language of toughness and resolve shaped acceptable options, and that the civilians who would have borne the cost were not consulted.",
@@ -1189,8 +1189,8 @@ ICA.addUnit({
     levels:{
      starter:[
       "For centuries much of the world was ruled by European empires. Postcolonialism asks what that history left behind: in borders, economies, languages and ideas, and in how people in former colonies are seen and heard.",
-      "It also turns the question on IR itself. Many of the field’s favourite concepts, such as sovereignty and the “Westphalian” system, were described as universal while colonised peoples were denied them.",
-      "A simple test it offers: when you read about an event, ask whose experience is at the centre, and whose voice is missing.",
+      "It also turns the question on IR itself. Many of the field’s favorite concepts, such as sovereignty and the “Westphalian” system, were described as universal while colonized peoples were denied them.",
+      "A simple test it offers: when you read about an event, ask whose experience is at the center, and whose voice is missing.",
       {key:"Postcolonialism: empire’s legacy still shapes world politics and the ways we study it."},
       "Postcolonial scholars come from many places and disciplines, including literature, history and philosophy, and they often disagree with each other."
      ],
@@ -1198,19 +1198,19 @@ ICA.addUnit({
       "Key thinkers, mostly from outside IR:",
       {list:[
         "**Edward Said**, *Orientalism* (1978): Western knowledge built an image of “the Orient” as exotic, backward and unchanging, bound up with imperial power.",
-        "**Frantz Fanon**, *The Wretched of the Earth* (1961): the violence of colonialism and decolonising minds as well as territories.",
-        "**Gayatri Chakravorty Spivak**, “Can the Subaltern Speak?” (1988): whether the most marginalised can be heard when others speak for them.",
+        "**Frantz Fanon**, *The Wretched of the Earth* (1961): the violence of colonialism and decolonizing minds as well as territories.",
+        "**Gayatri Chakravorty Spivak**, “Can the Subaltern Speak?” (1988): whether the most marginalized can be heard when others speak for them.",
         "**Dipesh Chakrabarty**, *Provincializing Europe* (2000): treating Europe as one region among many, not the measure of all."
       ]},
-      "In IR, postcolonial scholars criticise **Eurocentrism**, highlight the “standard of civilisation” used to exclude non-European states, and study the agency of anti-colonial movements, including the 1955 Bandung Conference of Asian and African states.",
+      "In IR, postcolonial scholars criticize **Eurocentrism**, highlight the “standard of civilization” used to exclude non-European states, and study the agency of anti-colonial movements, including the 1955 Bandung Conference of Asian and African states.",
       "Applied to the 1962 crisis, the lens notes that in Cuba it is the October Crisis, that Cuba had lived under a US right to intervene (the Platt Amendment, 1901–1934), and that the deal was made without Cuba.",
-      "Postcolonial scholars also look at how the past lives on: in borders drawn by colonial powers, in economic ties between former colonies and former colonisers, in languages of government and education, and in the ways news and scholarship describe different parts of the world. They ask who is presented as an actor and who as a problem to be managed, which links their work to feminist and Global IR concerns about voice and agency."
+      "Postcolonial scholars also look at how the past lives on: in borders drawn by colonial powers, in economic ties between former colonies and former colonizers, in languages of government and education, and in the ways news and scholarship describe different parts of the world. They ask who is presented as an actor and who as a problem to be managed, which links their work to feminist and Global IR concerns about voice and agency."
      ],
      pro:[
       "Postcolonial IR (associated with scholars such as Sankaran Krishna, Siba Grovogui, Robbie Shilliam and Sheila Nair) argues that race and empire are constitutive of modern international order rather than background. Decolonial approaches, rooted especially in Latin American scholarship (for example Aníbal Quijano and Walter Mignolo), speak of a “coloniality” of power and knowledge that outlasted formal empire.",
       "These scholars also examine the discipline’s own history, including how early 20th-century Western IR writing treated colonial administration and race as central topics.",
-      "Critiques: postcolonialism is said to be stronger in critique than in testable explanation; to treat “the West” as monolithic; and to underplay the power and choices of post-independence elites. Some critics also argue it can romanticise pre-colonial orders. Defenders answer that exposing the standpoint of theories is a precondition for better ones, which links postcolonialism to the Global IR agenda.",
-      "Postcolonial IR has been influential in debates about humanitarian intervention, development and the “war on terror”, where critics ask whether familiar justifications repeat older imperial patterns of speaking for others. It has also encouraged the discipline to rethink its teaching: reading thinkers from former colonies, studying anti-colonial diplomacy and treating decolonisation as one of the central events of the 20th century."
+      "Critiques: postcolonialism is said to be stronger in critique than in testable explanation; to treat “the West” as monolithic; and to underplay the power and choices of post-independence elites. Some critics also argue it can romanticize pre-colonial orders. Defenders answer that exposing the standpoint of theories is a precondition for better ones, which links postcolonialism to the Global IR agenda.",
+      "Postcolonial IR has been influential in debates about humanitarian intervention, development and the “war on terror”, where critics ask whether familiar justifications repeat older imperial patterns of speaking for others. It has also encouraged the discipline to rethink its teaching: reading thinkers from former colonies, studying anti-colonial diplomacy and treating decolonization as one of the central events of the 20th century."
      ]
     },
     related:["global-ir","marxism-ir","feminism-ir","decolonization","ir-theory"],
@@ -1245,12 +1245,12 @@ ICA.addUnit({
       "Acharya and Buzan’s *The Making of Global International Relations* (2019) retells the discipline’s history from its origins to its centenary with a global cast. Global IR overlaps with postcolonial critique but is more reformist: it seeks to broaden the mainstream rather than reject it.",
       "Debates:",
       {list:[
-        "**National schools:** critics such as William Callahan warn that some theories presented as national or civilisational (for instance readings of tianxia) can serve state agendas and present hierarchy as harmony.",
-        "**Essentialism:** labelling ideas “Asian” or “African” risks treating diverse traditions as single blocs.",
-        "**Too little or too much:** mainstream sceptics say good theory is universal already; critical scholars say Global IR is too cautious about the power structures of the discipline (publishing, funding, language)."
+        "**National schools:** critics such as William Callahan warn that some theories presented as national or civilizational (for instance readings of tianxia) can serve state agendas and present hierarchy as harmony.",
+        "**Essentialism:** labeling ideas “Asian” or “African” risks treating diverse traditions as single blocs.",
+        "**Too little or too much:** mainstream skeptics say good theory is universal already; critical scholars say Global IR is too cautious about the power structures of the discipline (publishing, funding, language)."
       ]},
-      "Acharya’s earlier work on **norm localisation** (2004) is an example of the approach: it shows how Southeast Asian actors adapted outside norms to local beliefs, giving them agency in norm diffusion.",
-      "Global IR connects to other parts of this unit in several ways. It shares constructivism’s interest in norms and their localisation, the English School’s attention to history and regional international societies, and postcolonialism’s critique of Eurocentrism. Its distinctive contribution is to frame these as a positive programme for the whole discipline, inviting scholars everywhere to treat their own region’s history as a source of general theory rather than only as a case to which Western theories are applied."
+      "Acharya’s earlier work on **norm localization** (2004) is an example of the approach: it shows how Southeast Asian actors adapted outside norms to local beliefs, giving them agency in norm diffusion.",
+      "Global IR connects to other parts of this unit in several ways. It shares constructivism’s interest in norms and their localization, the English School’s attention to history and regional international societies, and postcolonialism’s critique of Eurocentrism. Its distinctive contribution is to frame these as a positive program for the whole discipline, inviting scholars everywhere to treat their own region’s history as a source of general theory rather than only as a case to which Western theories are applied."
      ]
     },
     related:["amitav-acharya","postcolonialism-ir","constructivism","ir-theory"],
@@ -1272,7 +1272,7 @@ ICA.addUnit({
       "From the second edition (1954), *Politics Among Nations* opens with six principles of political realism, including that politics is governed by objective laws rooted in human nature, that leaders think and act in terms of **interest defined as power**, and that the moral aspirations of one nation should not be confused with universal moral law.",
       "Concepts associated with him: the **national interest**, the **balance of power** as a source of stability, and diplomacy as the best means of keeping peace.",
       "He was not an advocate of ruthlessness. He was an early, prominent critic of the US war in Vietnam, arguing that it served no vital national interest. IR students today read him for the classical realist tradition and for his warnings against moralistic crusades.",
-      "Morgenthau combined realism with a strong sense of moral responsibility. He argued that leaders face tragic choices in which every option has costs, and that pretending otherwise leads to disaster. He also hoped that skilful diplomacy and a stable balance of power could preserve peace, and late in life he worried deeply about nuclear weapons, which he believed made traditional power politics far more dangerous."
+      "Morgenthau combined realism with a strong sense of moral responsibility. He argued that leaders face tragic choices in which every option has costs, and that pretending otherwise leads to disaster. He also hoped that skillful diplomacy and a stable balance of power could preserve peace, and late in life he worried deeply about nuclear weapons, which he believed made traditional power politics far more dangerous."
      ],
      pro:[
       "Morgenthau’s realism grew from European legal and political thought (including debates with Carl Schmitt) and from his experience of the collapse of the Weimar Republic. *Scientific Man vs. Power Politics* attacked the belief that social science or reason alone could solve political conflict.",
@@ -1291,7 +1291,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Kenneth Waltz was born in Ann Arbor, Michigan, in 1924 and died in New York in 2013. He served in the US Army, taught at several universities and spent much of his career at the University of California, Berkeley.",
-      "His big idea: to understand world politics, look at the **structure** of the international system. Because there is no government above states, all states must look after their own security, and that pushes them into similar behaviour whoever leads them.",
+      "His big idea: to understand world politics, look at the **structure** of the international system. Because there is no government above states, all states must look after their own security, and that pushes them into similar behavior whoever leads them.",
       "Students also know him for sorting the causes of war into three “images”: human nature, the type of state and the international system.",
       {key:"Waltz: the system’s structure shapes how states behave."},
       "His approach became known as neorealism or structural realism, and it dominated debates in IR for decades."
@@ -1302,7 +1302,7 @@ ICA.addUnit({
         ["Work","Main idea"],
         ["*Man, the State, and War* (1959)","Three images of the causes of war: individual, state, international system"],
         ["*Theory of International Politics* (1979)","Neorealism: structure defined by anarchy, like units and the distribution of capabilities"],
-        ["*The Spread of Nuclear Weapons* (with Scott Sagan, 1995)","A debate on whether nuclear spread stabilises or endangers"]
+        ["*The Spread of Nuclear Weapons* (with Scott Sagan, 1995)","A debate on whether nuclear spread stabilizes or endangers"]
       ]},
       "Waltz argued that bipolar systems are more stable than multipolar ones, that states balance against concentrations of power, and that states seek security more than maximum power (defensive realism). He served as president of the American Political Science Association in 1987–88.",
       "The three images became the basis of the “levels of analysis” used throughout IR.",
@@ -1310,10 +1310,10 @@ ICA.addUnit({
       "He also argued that theories must simplify: a theory is a picture of a part of the world, mentally formed, that leaves most things out in order to explain the patterns that matter."
      ],
      pro:[
-      "Waltz modelled his theory partly on microeconomics: as market structure constrains firms, the international structure constrains states. He insisted it was a theory of international politics, not of foreign policy, and that its explanatory power came from deliberate simplification.",
+      "Waltz modeled his theory partly on microeconomics: as market structure constrains firms, the international structure constrains states. He insisted it was a theory of international politics, not of foreign policy, and that its explanatory power came from deliberate simplification.",
       "His work prompted the neorealist–neoliberal debate and sharp critiques: Ashley’s “The Poverty of Neorealism” (1984), Ruggie’s argument about change in the character of units, Wendt’s constructivist reply (1992), and the charge that the theory could not anticipate the peaceful end of the Cold War. Waltz later defended his approach in “Structural Realism after the Cold War” (2000).",
-      "His argument that the gradual spread of nuclear weapons may strengthen deterrence remains controversial; Sagan’s organisational critique (accidents, military biases) is the classic counterpoint.",
-      "Few IR scholars have been as widely cited, criticised and taught.",
+      "His argument that the gradual spread of nuclear weapons may strengthen deterrence remains controversial; Sagan’s organizational critique (accidents, military biases) is the classic counterpoint.",
+      "Few IR scholars have been as widely cited, criticized and taught.",
       "Waltz’s style of theory building has been as influential as its content. He argued that a theory should be judged by how much it explains with how little, and that theories are inventions, not discoveries, that must be tested against the patterns they claim to explain. Even scholars who reject neorealism often adopt his distinction between theories of the system and theories of foreign policy.",
       "For students, the practical lesson of Waltz’s work is to ask, of any explanation of world politics, which image or level it relies on, and whether a system-level pattern is being mistaken for a single government’s choice."
      ]
@@ -1337,22 +1337,22 @@ ICA.addUnit({
       {table:[
         ["Work","Main idea"],
         ["*Constructing a Security Community in Southeast Asia* (2001)","ASEAN’s norms helped make war among members unlikely"],
-        ["“How Ideas Spread: Whose Norms Matter?” (2004)","Norm localisation: local actors adapt outside norms"],
+        ["“How Ideas Spread: Whose Norms Matter?” (2004)","Norm localization: local actors adapt outside norms"],
         ["“Why is there no non-Western IR theory?” (with Buzan, 2007)","The field had not looked for non-Western ideas"],
         ["“Global International Relations (IR) and Regional Worlds” (2014)","The six-point Global IR agenda"],
         ["*The Making of Global International Relations* (with Buzan, 2019)","A global history of the discipline"]
       ]},
       "His work bridges constructivism (norms, identity), regionalism and the critique of Eurocentrism. Students meet him in debates about ASEAN, norm diffusion and the future of world order.",
-      "Acharya’s work on ASEAN shows how a group of states with recent conflicts and very different political systems built shared expectations of non-interference and consensus. He argued that these norms, rather than a balance of power or a strong regional organisation, explain much of the region’s peace among members, while acknowledging the limits critics point to.",
+      "Acharya’s work on ASEAN shows how a group of states with recent conflicts and very different political systems built shared expectations of non-interference and consensus. He argued that these norms, rather than a balance of power or a strong regional organization, explain much of the region’s peace among members, while acknowledging the limits critics point to.",
       "He has taught at universities in Asia, North America and Europe, and his work on ASEAN norms is widely cited in studies of Southeast Asia.",
       "Students often meet his ideas first through the debate on ASEAN, then through the Global IR agenda that grew out of his work on how ideas spread between regions."
      ],
      pro:[
-      "Acharya’s norm localisation argument challenged the view that norms diffuse from a Western core to a passive periphery: local actors select, reframe and adapt norms to fit existing beliefs, and sometimes generate norms that spread outward (“norm subsidiarity”).",
+      "Acharya’s norm localization argument challenged the view that norms diffuse from a Western core to a passive periphery: local actors select, reframe and adapt norms to fit existing beliefs, and sometimes generate norms that spread outward (“norm subsidiarity”).",
       "His Global IR agenda is reformist rather than revolutionary: it aims to broaden existing theories and include regional worlds, while rejecting exceptionalism of every kind, including national schools that claim a country’s tradition is uniquely virtuous.",
       "Critics from the mainstream question whether regional origins matter for theory; critics from postcolonial and decolonial perspectives argue the agenda leaves the discipline’s power structures largely intact. Others debate his security-community reading of ASEAN, pointing to the limits of non-interference.",
-      "He has also written on the changing world order, for example in *The End of American World Order*, arguing that a “multiplex” world with many centres of power and ideas is emerging.",
-      "Acharya has also argued for recognising the agency of the Global South in building the post-1945 order, for example the contributions of Asian, African and Latin American states and thinkers to norms of sovereignty, non-intervention, human rights and development. This historical claim, developed in his later work, is central to his case that Global IR is not only a moral demand but a more accurate history of world politics."
+      "He has also written on the changing world order, for example in *The End of American World Order*, arguing that a “multiplex” world with many centers of power and ideas is emerging.",
+      "Acharya has also argued for recognizing the agency of the Global South in building the post-1945 order, for example the contributions of Asian, African and Latin American states and thinkers to norms of sovereignty, non-intervention, human rights and development. This historical claim, developed in his later work, is central to his case that Global IR is not only a moral demand but a more accurate history of world politics."
      ]
     },
     related:["global-ir","constructivism","postcolonialism-ir"],
@@ -1366,7 +1366,7 @@ ICA.addUnit({
    {id:"analytic-eclecticism", term:"Analytic eclecticism", def:"Combining ideas from several theories to explain a specific problem, instead of defending one theory against all others (Sil and Katzenstein, 2010).", codex:"ir-theory"},
    {id:"realism", term:"Realism", def:"A family of IR theories that sees world politics as a competition for power and security among states, with no government above them.", codex:"realism"},
    {id:"classical-realism", term:"Classical realism", def:"Realism that roots power politics in human nature and stresses statecraft and prudence; its central figure is Hans Morgenthau.", codex:"realism"},
-   {id:"neorealism", term:"Neorealism", def:"Kenneth Waltz’s structural realism: the anarchic structure of the system, not human nature, pushes states into similar behaviour.", codex:"neorealism"},
+   {id:"neorealism", term:"Neorealism", def:"Kenneth Waltz’s structural realism: the anarchic structure of the system, not human nature, pushes states into similar behavior.", codex:"neorealism"},
    {id:"neoclassical-realism", term:"Neoclassical realism", def:"Realism that keeps the international system as the main driver but adds domestic factors, such as leaders’ perceptions, to explain particular foreign policies.", codex:"realism"},
    {id:"defensive-realism", term:"Defensive realism", def:"The realist view that states seek enough power to be secure, because grabbing too much provokes others to balance against them.", codex:"realism"},
    {id:"offensive-realism", term:"Offensive realism", def:"John Mearsheimer’s realist view that states seek as much power as they can get, ideally becoming the strongest power in their region.", codex:"realism"},
@@ -1384,7 +1384,7 @@ ICA.addUnit({
    {id:"democratic-peace-theory", term:"Democratic peace theory", def:"The finding that established democracies have very rarely, if ever, fought wars against each other, and the explanations offered for it.", codex:"democratic-peace"},
    {id:"constructivism", term:"Constructivism", def:"An approach to IR that sees shared ideas, identities and norms as shaping what states want and how they act.", codex:"constructivism"},
    {id:"identity-ir", term:"Identity (IR)", def:"A state’s or group’s sense of who it is (for example, a neutral country or a regional leader), which constructivists say shapes its interests.", codex:"constructivism"},
-   {id:"norm-life-cycle", term:"Norm life cycle", def:"Finnemore and Sikkink’s three stages of a norm: emergence, cascade after a tipping point, and internalisation.", codex:"constructivism"},
+   {id:"norm-life-cycle", term:"Norm life cycle", def:"Finnemore and Sikkink’s three stages of a norm: emergence, cascade after a tipping point, and internalization.", codex:"constructivism"},
    {id:"english-school", term:"English School", def:"An approach to IR that explains order among states through an international society of shared rules and institutions.", codex:"english-school"},
    {id:"international-society", term:"International society", def:"In Hedley Bull’s terms, states that see themselves as bound by common rules and share common institutions such as diplomacy and international law.", codex:"english-school"},
    {id:"critical-theory-ir", term:"Critical theory (IR)", def:"Theory that asks how the current world order came about, whose interests it serves and how it could change, as opposed to problem-solving theory.", codex:"marxism-ir"},
@@ -1404,10 +1404,10 @@ ICA.addUnit({
      {t:"A simplified explanation of world politics that evidence can test", ok:true, why:"That is the core idea: a theory selects what matters, proposes how it works and sets out expectations that evidence can test."},
      {t:"A personal opinion about which countries in the world are good or bad", why:"Opinions don’t have to state assumptions or be testable. Theories do, and they are not about which countries are good."},
      {t:"A complete list of every fact about world politics", why:"A theory deliberately leaves things out, like a map. A list of every fact would explain nothing."},
-     {t:"A political party’s programme for foreign policy", why:"That is an ideology or programme. Theories aim to explain or understand, not to win votes."}
+     {t:"A political party’s program for foreign policy", why:"That is an ideology or program. Theories aim to explain or understand, not to win votes."}
    ]},
    {id:"e2u6-q02", lesson:"e2u6-l1", level:2, q:"“Rich countries should cancel the debts of the poorest countries.” What kind of claim is this?", options:[
-     {t:"Normative: it says what ought to happen", ok:true, why:"“Should” marks a judgement about what is right. Reasons can support it, but evidence alone can’t settle it."},
+     {t:"Normative: it says what ought to happen", ok:true, why:"“Should” marks a judgment about what is right. Reasons can support it, but evidence alone can’t settle it."},
      {t:"Explaining: it identifies a cause and an effect", why:"It names no cause or effect; it recommends an action."},
      {t:"Understanding: it reconstructs what an event meant to those involved", why:"It doesn’t describe anyone’s experience or beliefs; it states a view about what should be done."},
      {t:"A statistic that can be checked in a database", why:"No data could prove that something should happen. Data could inform the argument but not settle it."}
@@ -1427,12 +1427,12 @@ ICA.addUnit({
    {id:"e2u6-q05", lesson:"e2u6-l1", level:1, q:"What did Peter Wilson argue in “The Myth of the ‘First Great Debate’” (1998)?", options:[
      {t:"The interwar “idealists” were not a single school, and the label was mostly attached by their critics", ok:true, why:"Right. Wilson showed that the neat idealist–realist debate is a simplification of a more varied history."},
      {t:"Realists lost the first debate to the idealists", why:"Wilson didn’t argue that; he questioned whether the debate, as usually told, happened at all."},
-     {t:"The first debate was about statistics and measurement", why:"That describes the second debate (traditionalists against behaviouralists)."},
+     {t:"The first debate was about statistics and measurement", why:"That describes the second debate (traditionalists against behavioralists)."},
      {t:"There have never been any disagreements in IR", why:"IR is full of disagreements. Wilson questioned one particular story about them."}
    ]},
    {id:"e2u6-q06", lesson:"e2u6-l1", level:3, q:"Mei reads two articles about the same summit. One focuses on which country gained military advantage; the other on how the agreement’s rules will be monitored. What is the best interpretation?", options:[
      {t:"The writers are using different lenses (roughly realist and liberal), so each notices different features of the same event", ok:true, why:"Right. Different lenses direct attention to different evidence. Reading both gives a fuller picture."},
-     {t:"One of the articles must be false", why:"Both can be accurate; they are emphasising different aspects of one event."},
+     {t:"One of the articles must be false", why:"Both can be accurate; they are emphasizing different aspects of one event."},
      {t:"The summit must have been two separate events", why:"One event can be described in very different ways depending on the lens used."},
      {t:"Theories don’t affect how journalists write", why:"Writers, like everyone, use implicit theories that shape which facts they put first."}
    ]},
@@ -1444,9 +1444,9 @@ ICA.addUnit({
    ]},
    {id:"e2u6-q08", lesson:"e2u6-l1", level:2, q:"Which statement about using IR theories is accurate?", options:[
      {t:"Most scholars use more than one theory", ok:true, why:"Right. They judge each theory by what it explains and what it misses. No theory has won; analysts combine them, an approach called analytic eclecticism."},
-     {t:"Being a realist scholar means you personally favour war", why:"Realism explains why conflict happens. Many realists have opposed wars they saw as reckless."},
+     {t:"Being a realist scholar means you personally favor war", why:"Realism explains why conflict happens. Many realists have opposed wars they saw as reckless."},
      {t:"A single case that doesn’t fit proves a theory completely wrong", why:"IR theories describe tendencies. One odd case is a puzzle; many would be a problem."},
-     {t:"Theories are just political ideologies with academic names", why:"Theories aim to explain or understand; ideologies are programmes for action. A liberal theorist may vote any way."}
+     {t:"Theories are just political ideologies with academic names", why:"Theories aim to explain or understand; ideologies are programs for action. A liberal theorist may vote any way."}
    ]},
    {id:"e2u6-q09", lesson:"e2u6-l1", level:3, q:"Tomás says: “Waltz’s theory failed because it couldn’t predict exactly what one government would decide last week.” What would Waltz reply?", options:[
      {t:"It explains broad patterns, not single decisions", ok:true, why:"Right. His was a theory of international politics explaining broad, recurring patterns, not a theory of foreign policy. Waltz stressed this distinction: his theory explains patterns such as balancing across the system, not one government’s choice."},
@@ -1459,9 +1459,9 @@ ICA.addUnit({
      {t:"Under anarchy, each state must ultimately rely on itself for its security", ok:true, why:"Right. With no government above states, no one guarantees anyone’s survival."},
      {t:"States should help each other whenever they can", why:"That is closer to a liberal or solidarist hope. Self-help is about relying on yourself."},
      {t:"Citizens should improve themselves without government help", why:"The term isn’t about personal development; it describes states under anarchy."},
-     {t:"International organisations protect weaker states", why:"Realists doubt that institutions can guarantee security; that doubt is the point of self-help."}
+     {t:"International organizations protect weaker states", why:"Realists doubt that institutions can guarantee security; that doubt is the point of self-help."}
    ]},
-   {id:"e2u6-q11", lesson:"e2u6-l2", level:2, q:"Country X builds new air-defence missiles, saying they are purely defensive. Its neighbour, unsure, expands its own air force, and X then orders more missiles. Which concept fits best?", options:[
+   {id:"e2u6-q11", lesson:"e2u6-l2", level:2, q:"Country X builds new air-defense missiles, saying they are purely defensive. Its neighbor, unsure, expands its own air force, and X then orders more missiles. Which concept fits best?", options:[
      {t:"The security dilemma", ok:true, why:"Right. Each defensive step is read as a possible threat by the other, starting a spiral that leaves both less secure."},
      {t:"Complex interdependence", why:"That describes dense, cooperative ties with little role for force, the opposite of this situation."},
      {t:"Bandwagoning", why:"Bandwagoning means joining a stronger power. Here each side is arming against the other."},
@@ -1469,30 +1469,30 @@ ICA.addUnit({
    ]},
    {id:"e2u6-q12", lesson:"e2u6-l2", level:1, q:"Which book is the classic text of classical realism?", options:[
      {t:"Hans Morgenthau, *Politics Among Nations* (1948)", ok:true, why:"Right. It set out classical realism, with interest defined as power."},
-     {t:"Kenneth Waltz, *Theory of International Politics* (1979)", why:"That founded neorealism, which moved away from human nature towards structure."},
+     {t:"Kenneth Waltz, *Theory of International Politics* (1979)", why:"That founded neorealism, which moved away from human nature toward structure."},
      {t:"Hedley Bull, *The Anarchical Society* (1977)", why:"That is the classic of the English School."},
      {t:"Cynthia Enloe, *Bananas, Beaches and Bases* (1989)", why:"That is a founding text of feminist IR."}
    ]},
    {id:"e2u6-q13", lesson:"e2u6-l2", level:2, q:"How does neorealism mainly differ from classical realism?", options:[
-     {t:"It stresses system structure, not human nature", ok:true, why:"Right. It explains power politics through the anarchic structure of the system. Waltz argued that structure pushes states into similar behaviour whatever their leaders are like."},
-     {t:"It rejects the idea that states care about security", why:"Neorealists put security at the centre."},
-     {t:"It says international institutions are the main actors", why:"Neorealists keep states at the centre and doubt institutions’ independent effect."},
+     {t:"It stresses system structure, not human nature", ok:true, why:"Right. It explains power politics through the anarchic structure of the system. Waltz argued that structure pushes states into similar behavior whatever their leaders are like."},
+     {t:"It rejects the idea that states care about security", why:"Neorealists put security at the center."},
+     {t:"It says international institutions are the main actors", why:"Neorealists keep states at the center and doubt institutions’ independent effect."},
      {t:"It focuses on gender and identity", why:"Those are feminist and constructivist concerns, not neorealist ones."}
    ]},
    {id:"e2u6-q14", lesson:"e2u6-l2", level:3, q:"Several small states near a fast-growing power each decide to join an alliance led by that power, hoping for protection and trade. A realist would call this…", options:[
      {t:"Bandwagoning", ok:true, why:"Right. Joining the rising power rather than opposing it is bandwagoning. Walt found balancing more common, but bandwagoning happens, often among small, exposed states."},
      {t:"Balancing", why:"Balancing would mean opposing the rising power, by arming or allying against it."},
      {t:"The security dilemma", why:"The security dilemma is a spiral of mutual arming, not a decision to join the stronger side."},
-     {t:"Norm internalisation", why:"That is a constructivist idea about norms being taken for granted."}
+     {t:"Norm internalization", why:"That is a constructivist idea about norms being taken for granted."}
    ]},
    {id:"e2u6-q15", lesson:"e2u6-l2", level:2, q:"What separates offensive from defensive realism?", options:[
      {t:"They disagree about how much power states seek", ok:true, why:"Right. Offensive realists say states seek as much power as possible; defensive realists say states seek enough power to be secure. Mearsheimer (offensive) and Waltz (defensive) agree on anarchy but disagree about how much power states want."},
-     {t:"Offensive realists support war; defensive realists oppose it", why:"These are explanations of behaviour, not personal positions on war."},
+     {t:"Offensive realists support war; defensive realists oppose it", why:"These are explanations of behavior, not personal positions on war."},
      {t:"Defensive realists ignore the balance of power", why:"Defensive realists rely heavily on balancing: they say expansion backfires because others balance."},
      {t:"Offensive realism is about domestic politics", why:"Adding domestic politics is the move of neoclassical realism."}
    ]},
    {id:"e2u6-q16", lesson:"e2u6-l2", level:1, q:"In the Melian Dialogue, which ancient writer has Athenian envoys tell a small island that the strong do what they can and the weak suffer what they must?", options:[
-     {t:"Thucydides", ok:true, why:"Right. It appears in his *History of the Peloponnesian War*, a favourite source for realists, though scholars debate his own view."},
+     {t:"Thucydides", ok:true, why:"Right. It appears in his *History of the Peloponnesian War*, a favorite source for realists, though scholars debate his own view."},
      {t:"Kautilya", why:"The Arthashastra attributed to Kautilya is an Indian treatise on statecraft, not a history of Athens."},
      {t:"Machiavelli", why:"Machiavelli wrote *The Prince* in 1513, nearly 2,000 years after the Peloponnesian War."},
      {t:"Hobbes", why:"Hobbes translated Thucydides into English, but the dialogue is Thucydides’ own."}
@@ -1505,9 +1505,9 @@ ICA.addUnit({
    ]},
    {id:"e2u6-q18", lesson:"e2u6-l2", level:2, q:"Which is a well-known critique of realism?", options:[
      {t:"It did not foresee that the Cold War would end peacefully", ok:true, why:"Right. Gaddis (1992) made this point about the major theories, and it is often aimed at realism."},
-     {t:"It ignores military power", why:"Military power is at the centre of realism."},
+     {t:"It ignores military power", why:"Military power is at the center of realism."},
      {t:"It assumes a world government exists", why:"Realism assumes the opposite: anarchy, the absence of world government."},
-     {t:"It focuses only on women’s experiences", why:"That would describe feminist IR, which in fact criticises realism for leaving women out."}
+     {t:"It focuses only on women’s experiences", why:"That would describe feminist IR, which in fact criticizes realism for leaving women out."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"e2u6-q19", lesson:"e2u6-l3", level:1, q:"Which is one of Keohane and Nye’s three features of complex interdependence?", options:[
@@ -1520,7 +1520,7 @@ ICA.addUnit({
      {t:"Cheating today can be punished tomorrow", ok:true, why:"Right. When players expect to meet again, they live in “the shadow of the future”. Repetition makes reputations and reciprocity matter, so cooperating can pay."},
      {t:"Repeated dealings remove anarchy", why:"Anarchy remains; repetition changes incentives within it."},
      {t:"Players forget earlier betrayals", why:"The opposite: remembering betrayals is what makes punishment, and therefore cooperation, possible."},
-     {t:"Repeated games guarantee equal gains for all players", why:"Repetition doesn’t equalise gains; it makes cooperation more attractive."}
+     {t:"Repeated games guarantee equal gains for all players", why:"Repetition doesn’t equalize gains; it makes cooperation more attractive."}
    ]},
    {id:"e2u6-q21", lesson:"e2u6-l3", level:3, q:"Invented figures. A deal raises country P’s income from 100 to 120 and country Q’s from 100 to 160. P’s leaders reject it, saying Q will gain too much. Which concept explains their reasoning?", options:[
      {t:"Relative gains: P gains, but its share of the pair’s combined income falls from 50% to about 43%", ok:true, why:"Right. 120 ÷ 280 ≈ 43%. Worrying about position compared with a rival is the realist relative-gains concern (Grieco, 1988)."},
@@ -1552,14 +1552,14 @@ ICA.addUnit({
      {t:"*The Great Illusion*", why:"That is Norman Angell’s 1910 book."},
      {t:"*The Tragedy of Great Power Politics*", why:"That is Mearsheimer’s 2001 book setting out offensive realism."}
    ]},
-   {id:"e2u6-q26", lesson:"e2u6-l3", level:2, q:"A news article calls a free-market reform programme “neoliberal” and says it is based on Keohane’s neoliberal institutionalism. What is wrong?", options:[
+   {id:"e2u6-q26", lesson:"e2u6-l3", level:2, q:"A news article calls a free-market reform program “neoliberal” and says it is based on Keohane’s neoliberal institutionalism. What is wrong?", options:[
      {t:"It confuses neoliberal economic policy with an IR theory", ok:true, why:"Right. Neoliberal economic policy and neoliberal institutionalism share a word but not a meaning. The IR theory is about cooperation through institutions."},
      {t:"Nothing: they are the same idea", why:"They are different. Textbooks warn about exactly this confusion."},
      {t:"Keohane was a realist, not a liberal", why:"Keohane is the leading figure of neoliberal institutionalism. The problem is the mix-up of terms."},
      {t:"Neoliberal institutionalism is a theory of nuclear weapons", why:"It is a theory of how institutions help cooperation, not of nuclear weapons."}
    ]},
    {id:"e2u6-q27", lesson:"e2u6-l3", level:3, q:"Dmitri argues: “The democratic peace proves that invading a country to install democracy will bring peace.” What is the strongest response?", options:[
-     {t:"The research doesn’t show that imposing democracy by force works", ok:true, why:"Right. Unstable transitions can raise war risks: Mansfield and Snyder found democratising states can be war-prone, and the finding is about established democracies."},
+     {t:"The research doesn’t show that imposing democracy by force works", ok:true, why:"Right. Unstable transitions can raise war risks: Mansfield and Snyder found democratizing states can be war-prone, and the finding is about established democracies."},
      {t:"He is right; the theory says this explicitly", why:"The theory makes no claim about imposing democracy by force."},
      {t:"The democratic peace has been completely disproved by recent wars", why:"It remains one of the strongest patterns in IR, though its causes are debated."},
      {t:"Democracy has no connection to war or peace at all", why:"The pattern between established democracies is well documented; the question is why and how far it holds."}
@@ -1578,13 +1578,13 @@ ICA.addUnit({
      {t:"Westphalian", why:"That isn’t one of Wendt’s three cultures."}
    ]},
    {id:"e2u6-q30", lesson:"e2u6-l4", level:2, q:"What is the correct order of Finnemore and Sikkink’s norm life cycle?", options:[
-     {t:"Emergence, cascade, internalisation", ok:true, why:"Right. Norm entrepreneurs argue for a norm, it spreads rapidly after a tipping point, then it is taken for granted."},
-     {t:"Cascade, emergence, internalisation", why:"A norm must emerge before it can cascade."},
+     {t:"Emergence, cascade, internalization", ok:true, why:"Right. Norm entrepreneurs argue for a norm, it spreads rapidly after a tipping point, then it is taken for granted."},
+     {t:"Cascade, emergence, internalization", why:"A norm must emerge before it can cascade."},
      {t:"Internalisation, cascade, emergence", why:"This is reversed. Internalisation comes last."},
-     {t:"Emergence, internalisation, cascade", why:"Internalisation is the final stage, after the cascade."}
+     {t:"Emergence, internalization, cascade", why:"Internalisation is the final stage, after the cascade."}
    ]},
-   {id:"e2u6-q31", lesson:"e2u6-l4", level:3, q:"Two neighbouring countries both have large armies, yet neither government considers the other a military threat, and their citizens cross the border freely for work. Which explanation is most constructivist?", options:[
-     {t:"Shared identity makes each army seem unthreatening", ok:true, why:"Right. They share an identity as friendly neighbours. Constructivists explain the lack of fear through shared identity and understanding, not the balance of forces."},
+   {id:"e2u6-q31", lesson:"e2u6-l4", level:3, q:"Two neighboring countries both have large armies, yet neither government considers the other a military threat, and their citizens cross the border freely for work. Which explanation is most constructivist?", options:[
+     {t:"Shared identity makes each army seem unthreatening", ok:true, why:"Right. They share an identity as friendly neighbors. Constructivists explain the lack of fear through shared identity and understanding, not the balance of forces."},
      {t:"Their armies are exactly equal, so they balance each other", why:"That is a balance-of-power (realist) explanation."},
      {t:"Neither has noticed the other’s army", why:"Governments notice; the point is how they interpret what they see."},
      {t:"A world government has banned war between them", why:"There is no world government."}
@@ -1604,7 +1604,7 @@ ICA.addUnit({
    {id:"e2u6-q34", lesson:"e2u6-l4", level:2, q:"Which position is solidarist, within the English School?", options:[
      {t:"States can agree on more than sovereignty, such as stopping atrocities", ok:true, why:"Right. Protecting people from mass atrocities is one example. Solidarists such as Nicholas Wheeler argue for thicker shared values."},
      {t:"International society should rest only on sovereignty and non-intervention", why:"That is the pluralist position."},
-     {t:"States always maximise their power", why:"That is offensive realism."},
+     {t:"States always maximize their power", why:"That is offensive realism."},
      {t:"There is no such thing as international society", why:"Both pluralists and solidarists believe in international society; they disagree about how much it shares."}
    ]},
    {id:"e2u6-q35", lesson:"e2u6-l4", level:3, q:"Kenji notes that US leaders in 1962 treated Soviet missiles in Cuba as intolerable but saw US missiles in Turkey, also near the other side’s border, as normal. Which lens best explains this difference?", options:[
@@ -1614,14 +1614,14 @@ ICA.addUnit({
      {t:"The prisoner’s dilemma", why:"The dilemma explains why rational actors fail to cooperate, not why identical facts are seen differently."}
    ]},
    {id:"e2u6-q36", lesson:"e2u6-l4", level:1, q:"Which is a common critique of constructivism?", options:[
-     {t:"Ideas are hard to measure, and explanations can be offered after the fact", ok:true, why:"Right. Critics say it’s hard to show ideas caused behaviour; constructivists answer with documents, speeches and careful case studies."},
-     {t:"It ignores ideas and identity", why:"Ideas and identity are at the centre of constructivism."},
+     {t:"Ideas are hard to measure, and explanations can be offered after the fact", ok:true, why:"Right. Critics say it’s hard to show ideas caused behavior; constructivists answer with documents, speeches and careful case studies."},
+     {t:"It ignores ideas and identity", why:"Ideas and identity are at the center of constructivism."},
      {t:"It says only weapons matter", why:"That is closer to a crude realism; constructivism argues meanings matter."},
      {t:"It denies that states exist", why:"Most constructivists study states closely; they ask how state identities are formed."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e2u6-q37", lesson:"e2u6-l5", level:1, q:"In world-systems theory, what typically flows from the periphery to the core?", options:[
-     {t:"Raw materials, low-wage labour and profits", ok:true, why:"Right. In Wallerstein’s picture, surplus flows inward to the core."},
+     {t:"Raw materials, low-wage labor and profits", ok:true, why:"Right. In Wallerstein’s picture, surplus flows inward to the core."},
      {t:"High-value manufactured goods and technology", why:"Those usually flow outward from the core."},
      {t:"Military protection", why:"World-systems theory is about economic flows, not protection."},
      {t:"Nothing: the zones are unconnected", why:"The whole point is that the zones are tied together in one world economy."}
@@ -1634,13 +1634,13 @@ ICA.addUnit({
    ]},
    {id:"e2u6-q39", lesson:"e2u6-l5", level:2, q:"What did Edward Said argue in *Orientalism* (1978)?", options:[
      {t:"Western images of “the Orient” aided empire", ok:true, why:"Right. Western knowledge portrayed “the Orient” as exotic, backward and unchanging, and this was bound up with imperial power. Said showed how ways of knowing a people helped justify ruling them."},
-     {t:"Eastern societies had no ideas about politics", why:"Said argued against such views; he criticised how the West represented the East."},
-     {t:"Empires were mostly beneficial for colonised peoples", why:"Said’s work is a critique of imperial power and its knowledge."},
+     {t:"Eastern societies had no ideas about politics", why:"Said argued against such views; he criticized how the West represented the East."},
+     {t:"Empires were mostly beneficial for colonized peoples", why:"Said’s work is a critique of imperial power and its knowledge."},
      {t:"Trade between East and West caused the World Wars", why:"That isn’t Said’s argument."}
    ]},
    {id:"e2u6-q40", lesson:"e2u6-l5", level:3, q:"Sione compares reports of a regional summit. One quotes only foreign ministers of large states; another also quotes Pacific Island leaders and civil society groups, and asks how decisions affect island communities. Which lenses does the second report reflect?", options:[
      {t:"Global IR and postcolonial concerns: it widens whose voices and experiences count", ok:true, why:"Right. Including smaller states and affected communities as actors with their own views is what these lenses ask for."},
-     {t:"Offensive realism: it focuses on maximising power", why:"The second report is about widening voices, not power maximisation."},
+     {t:"Offensive realism: it focuses on maximizing power", why:"The second report is about widening voices, not power maximization."},
      {t:"The prisoner’s dilemma", why:"That is a model of cooperation problems, not a choice about whose voices to include."},
      {t:"Neorealism: only great powers matter", why:"The second report does the opposite of focusing only on great powers."}
    ]},
@@ -1660,11 +1660,11 @@ ICA.addUnit({
      {t:"Rejecting exceptionalism, so no culture or country is treated as uniquely special", ok:true, why:"Right. Global IR warns against exceptionalism of every kind, Western or non-Western."},
      {t:"Replacing all existing theories with new ones", why:"Global IR aims to add to and widen existing theories, not replace them."},
      {t:"Studying only European history", why:"Global IR asks for grounding in world history."},
-     {t:"Treating regions as unimportant", why:"Global IR puts regions and regionalism at the centre."}
+     {t:"Treating regions as unimportant", why:"Global IR puts regions and regionalism at the center."}
    ]},
    {id:"e2u6-q44", lesson:"e2u6-l5", level:3, q:"A columnist writes: “Chinese thought teaches that world order should be harmonious, so China’s foreign policy is always peaceful.” What would a careful Global IR scholar say?", options:[
-     {t:"Traditions are diverse, and ideas don’t automatically decide policy", ok:true, why:"Right. Critics also warn that “harmony” readings can serve state agendas. Global IR rejects essentialism and exceptionalism, and scholars such as Callahan have criticised uses of tianxia that present hierarchy as harmony."},
-     {t:"The columnist is right, because Global IR says each civilisation has one view", why:"Global IR says the opposite: traditions are internally diverse."},
+     {t:"Traditions are diverse, and ideas don’t automatically decide policy", ok:true, why:"Right. Critics also warn that “harmony” readings can serve state agendas. Global IR rejects essentialism and exceptionalism, and scholars such as Callahan have criticized uses of tianxia that present hierarchy as harmony."},
+     {t:"The columnist is right, because Global IR says each civilization has one view", why:"Global IR says the opposite: traditions are internally diverse."},
      {t:"Chinese thought has nothing to say about world order", why:"Chinese scholars have developed several theories (tianxia, relational theory, moral realism). The problem is the sweeping claim."},
      {t:"Only Western theories can describe Chinese policy", why:"Global IR argues that theories from many traditions, including Chinese ones, can contribute."}
    ]},

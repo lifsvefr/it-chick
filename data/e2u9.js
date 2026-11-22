@@ -7,7 +7,7 @@ ICA.addUnit({
     "Classify movements as internal or international, by main purpose (work, family, study, safety) and by time pattern (temporary, circular, return, permanent), and use “irregular” rather than “illegal”",
     "Define refugee, asylum seeker, internally displaced person and stateless person precisely, and describe the latest UNHCR figures with their source and date",
     "Tell migrant stocks from flows, calculate net migration, name the main data sources and their gaps, and read a migration statistic critically",
-    "Describe major migrations in history across all regions, from early human dispersal and the transatlantic slave trade to Gulf labour migration and today’s mostly regional movement"
+    "Describe major migrations in history across all regions, from early human dispersal and the transatlantic slave trade to Gulf labor migration and today’s mostly regional movement"
   ],
   read:[
     {book:"imis", where:"Chapter 1 “An Introduction to Migration Studies: The Rise and Coming of Age of a Research Field” (Scholten, Pisarevskaya & Levy), Chapter 2 “Migration Histories” (Schrover), Chapter 6 “Migration Forms: What Forms of Migration Can Be Distinguished?” (Talleraas), Chapter 9 “Humanitarian Migration” (Talleraas, Brekke & Buhr) and Chapter 27 “Migration Statistics” (Kraler & Reichel)", note:"Academic chapters written for university students. Read each one after the matching lesson: the lessons build the background the chapters assume."},
@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e2u9-l1", title:"What migration studies is, and who counts as a migrant", minutes:50,
-   hook:{q:"International migrants live in a country other than the one where they were born. According to the United Nations’ latest estimate (mid-2024), roughly what share of the world’s people were international migrants?", options:["About 1 in 100 (1%)","About 1 in 27 (3.7%)","About 1 in 10 (10%)","About 1 in 4 (25%)"], answer:1, reveal:"**About 1 in 27, or 3.7 per cent.** UN DESA estimated 304 million international migrants in mid-2024. That is more people than ever before, yet still a small share of humanity. Most people live in the country where they were born. Many more people move *within* their own country. This lesson explains who counts as a migrant, and why different organisations answer that question differently."},
+   hook:{q:"International migrants live in a country other than the one where they were born. According to the United Nations’ latest estimate (mid-2024), roughly what share of the world’s people were international migrants?", options:["About 1 in 100 (1%)","About 1 in 27 (3.7%)","About 1 in 10 (10%)","About 1 in 4 (25%)"], answer:1, reveal:"**About 1 in 27, or 3.7 percent.** UN DESA estimated 304 million international migrants in mid-2024. That is more people than ever before, yet still a small share of humanity. Most people live in the country where they were born. Many more people move *within* their own country. This lesson explains who counts as a migrant, and why different organizations answer that question differently."},
    goals:[
      "Describe migration studies as an interdisciplinary field and name the questions different disciplines ask",
      "Explain UN DESA’s statistical definition of an international migrant, including long-term and short-term migrants",
@@ -36,12 +36,12 @@ ICA.addUnit({
       "[[migration-studies|Migration studies]] is the study of [[migration|human movement from place to place]]. It also studies what that movement means for the people who move, the people they leave and the people they join. It is **interdisciplinary**: no single subject owns it. Researchers from many fields bring their own questions and methods.",
       {table:[["Discipline","A typical question"],["Sociology","How do migrants and their children find a place in a new society?"],["Geography","Where do people move, along which routes, and why there?"],["Economics","How does moving change people’s earnings, and what do sending and receiving places gain or lose?"],["Law","Who has the right to enter, stay or be protected, and what do treaties require of states?"],["Politics and IR","How do governments decide migration policy, and how do states cooperate or clash over it?"],["Anthropology","How do people keep family life, faith and culture going across borders?"],["History","How did past migrations shape today’s populations and cities?"],["Demography","How does migration change a population’s size and age structure?"]]},
       "The field has old roots. In 1885 and 1889 the geographer Ernst Georg Ravenstein used census records of where people were born, first for Britain and then for many other countries. From them he proposed “laws of migration” (you’ll meet them in {{push-pull-theories|Unit 10}}). Between 1918 and 1920 the sociologists William I. Thomas and Florian Znaniecki published *The Polish Peasant in Europe and America*, a famous study built partly from letters migrants wrote home.",
-      "Migration studies grew fast from the 1990s. Stephen Castles and Mark Miller’s textbook *The Age of Migration* (first edition 1993) argued that migration had become central to how societies change. Large research networks formed, such as IMISCOE in Europe, which began in 2004 and later produced this unit’s companion book. Migration research centres now exist on every continent.",
+      "Migration studies grew fast from the 1990s. Stephen Castles and Mark Miller’s textbook *The Age of Migration* (first edition 1993) argued that migration had become central to how societies change. Large research networks formed, such as IMISCOE in Europe, which began in 2004 and later produced this unit’s companion book. Migration research centers now exist on every continent.",
       {tip:"When you read migration research, ask which discipline it comes from. An economist and an anthropologist can study the same village and ask completely different, equally useful questions."}
     ]},
     {h:"Who counts as a migrant? The statistical answer", body:[
       "Statisticians need a definition they can count. The [[united-nations|United Nations]] Department of Economic and Social Affairs (UN DESA) set one out in its 1998 *Recommendations on Statistics of International Migration*. It defines an [[international-migrant|international migrant]] as “any person who changes his or her country of usual residence”.",
-      "**Usual residence** means the place where you normally live and sleep, not where you happen to be today. So a tourist, a business traveller or someone visiting family abroad is not an international migrant, however far they travel.",
+      "**Usual residence** means the place where you normally live and sleep, not where you happen to be today. So a tourist, a business traveler or someone visiting family abroad is not an international migrant, however far they travel.",
       "The recommendations then split migrants by how long they stay:",
       {list:[
         "A **[[long-term-migrant|long-term migrant]]** moves to another country for at least a year. The new country becomes their country of usual residence.",
@@ -66,7 +66,7 @@ ICA.addUnit({
         "**India.** The 2011 census recorded roughly 450 million people, over a third of the population, as migrants. These were people counted somewhere other than their last place of residence. Most women recorded as migrants had moved on marriage."
       ]},
       "The line between internal and international can move, even when people don’t. Millions of people had moved inside the Soviet Union, for example from Russia to Kazakhstan. When it broke up in 1991, they suddenly lived in a different independent state. In the statistics they became international migrants without taking a single step.",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e2u9-l1-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-panel" x="6" y="6" width="328" height="104" rx="12" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">Country A: country of origin</text><rect class="d-sage" x="20" y="42" width="96" height="40" rx="8" stroke-width="2"/><text x="68" y="67" text-anchor="middle">Village</text><rect class="d-sage" x="224" y="42" width="96" height="40" rx="8" stroke-width="2"/><text x="272" y="67" text-anchor="middle">City</text><path class="d-ink" d="M120 62 L218 62" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="170" y="100" text-anchor="middle">internal migration: no border crossed</text><path class="d-ink" d="M170 112 L170 140" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="180" y="131">emigration from A</text><rect class="d-gold" x="40" y="144" width="260" height="52" rx="8" stroke-width="2"/><text x="170" y="166" text-anchor="middle">Country B: transit</text><text class="s" x="170" y="184" text-anchor="middle">passed through; some stay for years</text><path class="d-ink" d="M170 198 L170 226" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="180" y="217">immigration to C</text><rect class="d-lup" x="40" y="230" width="260" height="52" rx="8" stroke-width="2"/><text x="170" y="252" text-anchor="middle">Country C: destination</text><text class="s" x="170" y="270" text-anchor="middle">where the person now lives</text><text class="s" x="170" y="304" text-anchor="middle">Crossing a border to live elsewhere</text><text class="s" x="170" y="322" text-anchor="middle">makes it international migration.</text></svg>', alt:"Top panel: Country A, the country of origin, with an arrow from a village to a city labelled internal migration, no border crossed. An arrow leads down, labelled emigration from A, to Country B, transit, passed through, where some stay for years. Another arrow, labelled immigration to C, leads to Country C, the destination, where the person now lives.", cap:"One journey seen from several places. The same move is emigration from the country of origin and immigration to the country of destination."}
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e2u9-l1-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-panel" x="6" y="6" width="328" height="104" rx="12" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">Country A: country of origin</text><rect class="d-sage" x="20" y="42" width="96" height="40" rx="8" stroke-width="2"/><text x="68" y="67" text-anchor="middle">Village</text><rect class="d-sage" x="224" y="42" width="96" height="40" rx="8" stroke-width="2"/><text x="272" y="67" text-anchor="middle">City</text><path class="d-ink" d="M120 62 L218 62" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="170" y="100" text-anchor="middle">internal migration: no border crossed</text><path class="d-ink" d="M170 112 L170 140" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="180" y="131">emigration from A</text><rect class="d-gold" x="40" y="144" width="260" height="52" rx="8" stroke-width="2"/><text x="170" y="166" text-anchor="middle">Country B: transit</text><text class="s" x="170" y="184" text-anchor="middle">passed through; some stay for years</text><path class="d-ink" d="M170 198 L170 226" stroke-width="2" marker-end="url(#e2u9-l1-ar)"/><text class="s" x="180" y="217">immigration to C</text><rect class="d-lup" x="40" y="230" width="260" height="52" rx="8" stroke-width="2"/><text x="170" y="252" text-anchor="middle">Country C: destination</text><text class="s" x="170" y="270" text-anchor="middle">where the person now lives</text><text class="s" x="170" y="304" text-anchor="middle">Crossing a border to live elsewhere</text><text class="s" x="170" y="322" text-anchor="middle">makes it international migration.</text></svg>', alt:"Top panel: Country A, the country of origin, with an arrow from a village to a city labeled internal migration, no border crossed. An arrow leads down, labeled emigration from A, to Country B, transit, passed through, where some stay for years. Another arrow, labeled immigration to C, leads to Country C, the destination, where the person now lives.", cap:"One journey seen from several places. The same move is emigration from the country of origin and immigration to the country of destination."}
     ]},
     {h:"Emigration, immigration and the places in between", body:[
       "The same move has different names depending on where you stand. [[emigration|Emigration]] is leaving your country to live in another; the person is an **emigrant** from the country they left. [[immigration|Immigration]] is arriving in a country to live there; the same person is an **immigrant** in their new country.",
@@ -84,13 +84,13 @@ ICA.addUnit({
       {t:"How much more do people earn, on average, after moving to another country?", b:0, why:"Earnings and income gains are the core of economic questions about migration."},
       {t:"What does a treaty oblige a state to do when someone asks for protection at its border?", b:1, why:"Treaty obligations and rights are legal questions."},
       {t:"How do families keep their festivals and language alive across two countries?", b:2, why:"Everyday culture, family life and identity across borders are classic sociology and anthropology topics."},
-      {t:"Do money transfers from abroad reduce poverty in the villages migrants come from?", b:0, why:"Remittances and poverty are measured and analysed mainly by economists."},
+      {t:"Do money transfers from abroad reduce poverty in the villages migrants come from?", b:0, why:"Remittances and poverty are measured and analyzed mainly by economists."},
       {t:"Which residence rights does a long-term resident without citizenship hold?", b:1, why:"Rights attached to a legal status are a question for law."},
       {t:"How do the children of migrants describe where they belong?", b:2, why:"Belonging and identity are studied mainly through sociological and anthropological methods such as interviews."}
     ]},
     {id:"e2u9-l1-x2", type:"mcq", q:"Using UN DESA’s 1998 statistical definition, which of these people is an international migrant?", options:[
       {t:"Tomás, who moved from Bolivia to Argentina three years ago and lives and works there", ok:true, why:"Right. He changed his country of usual residence for more than a year, so he is a long-term international migrant."},
-      {t:"Kaito, a first-year student, who moved from a small mountain town in Gifu to the harbour town of Shioura for university", why:"Gifu and Shioura are both in Japan. Kaito is an internal migrant, which the UN’s *international* definition doesn’t cover."},
+      {t:"Kaito, a first-year student, who moved from a small mountain town in Gifu to the harbor town of Shioura for university", why:"Gifu and Shioura are both in Japan. Kaito is an internal migrant, which the UN’s *international* definition doesn’t cover."},
       {t:"Hana, who spent two weeks abroad on holiday", why:"A holiday doesn’t change your country of usual residence, and holidays are explicitly excluded even from short-term migration."},
       {t:"Dmitri, who flies abroad for a three-day business meeting every month", why:"Business trips are excluded. Dmitri’s country of usual residence never changes."}
     ]},
@@ -160,7 +160,7 @@ ICA.addUnit({
   {id:"e2u9-l2", title:"Many ways to move: work, family, study, safety and time", minutes:50,
    hook:{q:"Each year New Zealand’s Recognised Seasonal Employer scheme brings workers from Pacific Island countries to pick and pack fruit for a few months. Then they go home, and many come back the next season. What do migration researchers call this pattern?", options:["Permanent migration","Circular migration","Transit migration","Return migration"], answer:1, reveal:"**Circular migration.** People move back and forth between two places, again and again, often for seasonal work. Schemes like this one (running since 2007) are designed that way. Circular migration is easy to miss in the statistics, because each stay is short. This lesson sorts movement by its main purpose and by its pattern over time. It also looks at the words we use for it."},
    goals:[
-     "Classify a move as mainly labour, family, study or forced migration, and explain why real motives are often mixed",
+     "Classify a move as mainly labor, family, study or forced migration, and explain why real motives are often mixed",
      "Tell temporary, circular, return and permanent migration apart, and explain why plans change",
      "Explain what mixed migration and forced migration mean",
      "Explain irregular migration, why “illegal” is not a status of a person, and how words such as “expat” carry assumptions"
@@ -173,8 +173,8 @@ ICA.addUnit({
       "Governments also sort people, through visas and permits: a work visa, a family visa, a student visa, a protection status. The category on the paper shapes a person’s rights, but it is not the whole story of why they moved. IOM’s *World Migration Report* notes that most people who migrate internationally do so for reasons related to work, family and study.",
       {key:"Kinds of migration are lenses for seeing patterns, not labels that capture a whole person."}
     ]},
-    {h:"Labour migration", body:[
-      "[[labour-migration|Labour migration]] is moving, within a country or across borders, for work. Work is one of the main reasons people migrate internationally, and labour migration covers the whole range of jobs and incomes.",
+    {h:"Labor migration", body:[
+      "[[labour-migration|Labor migration]] is moving, within a country or across borders, for work. Work is one of the main reasons people migrate internationally, and labor migration covers the whole range of jobs and incomes.",
       {list:[
         "Construction and domestic workers from Nepal, Bangladesh, India, Pakistan, the Philippines, Kenya and many other countries working in the Gulf states.",
         "Software engineers from India and China working in North America and Europe.",
@@ -182,7 +182,7 @@ ICA.addUnit({
         "Farm and mine workers from Zimbabwe, Mozambique and Lesotho in South Africa; workers from Burkina Faso and Mali on plantations in Côte d’Ivoire.",
         "Nurses and care workers from the Philippines, India, Nigeria and the Caribbean in hospitals and care homes in many richer countries."
       ]},
-      "Labour migration can be highly skilled or less skilled, regular or irregular, short or long. Many schemes tie a worker’s visa to one employer. You’ll look at those systems (such as [[kafala]] in several Gulf states) and at migrant workers’ rights in {{migrant-workers-rights|Unit 11}}.",
+      "Labor migration can be highly skilled or less skilled, regular or irregular, short or long. Many schemes tie a worker’s visa to one employer. You’ll look at those systems (such as [[kafala]] in several Gulf states) and at migrant workers’ rights in {{migrant-workers-rights|Unit 11}}.",
       "Researchers avoid the shortcut “economic migrant” as if it were a separate kind of person. Wanting a better income is one of the oldest human reasons to move, and it often sits alongside family, safety and ambition."
     ]},
     {h:"Family and study", body:[
@@ -194,7 +194,7 @@ ICA.addUnit({
       "[[forced-migration|Forced migration]] is movement that involves force, compulsion or coercion. People flee armed conflict, persecution, violence or disasters. Others are displaced by development projects such as dams (China’s Three Gorges Dam relocated more than a million people). Still others are moved by traffickers ([[human-trafficking]], Unit 10).",
       "“Forced” and “voluntary” are better seen as two ends of a scale than as two boxes. Almost every move involves some choice and some constraint. People who flee still make choices: where to go, when, with whom. And people who move “voluntarily” for work may have had very few options at home. Showing both the constraint and the choice treats people as agents, not just victims or calculators.",
       "Refugees, asylum seekers and internally displaced people are forced migrants with specific legal definitions. Lesson 3 is devoted to them.",
-      "[[mixed-migration|Mixed migration]] describes people with different reasons and different legal situations travelling together along the same routes, often with the same smugglers. They include refugees, people seeking work, unaccompanied children and victims of trafficking. Well-studied examples are routes across the Mediterranean Sea, the Bay of Bengal and Andaman Sea, and the Gulf of Aden. Another is the Darién region between Colombia and Panama. Mixed movements are one reason officials can’t tell who needs protection just by looking."
+      "[[mixed-migration|Mixed migration]] describes people with different reasons and different legal situations traveling together along the same routes, often with the same smugglers. They include refugees, people seeking work, unaccompanied children and victims of trafficking. Well-studied examples are routes across the Mediterranean Sea, the Bay of Bengal and Andaman Sea, and the Gulf of Aden. Another is the Darién region between Colombia and Panama. Mixed movements are one reason officials can’t tell who needs protection just by looking."
     ]},
     {h:"Time: temporary, circular, return and permanent", body:[
       "The second way to sort movement is by its shape over time.",
@@ -210,14 +210,14 @@ ICA.addUnit({
     {h:"Irregular, not “illegal”", body:[
       "[[irregular-migration|Irregular migration]] is, in IOM’s words, movement “that takes place outside the laws, regulations, or international agreements” governing entry into or exit from a country. A person can come to have irregular status in several ways:",
       {list:[
-        "entering a country without authorisation, for example away from an official border crossing;",
+        "entering a country without authorization, for example away from an official border crossing;",
         "**overstaying** a visa that was valid when they arrived (in many countries this is a common route into irregular status);",
         "losing status, for example when a work permit tied to one employer ends, or a permit isn’t renewed in time;",
         "being born to parents with irregular status, in a country that doesn’t give citizenship by birth: the child never migrated at all."
       ]},
-      "Status can change in the other direction too. Many countries have run **regularisation** programmes that give legal status to people already living there.",
-      "Most migration research, the UN and many news organisations avoid calling people “illegal”. An action, such as crossing a border without permission, can break a law; a person cannot *be* illegal. As early as 1975 the UN General Assembly (resolution 3449) asked UN bodies to use “non-documented or irregular migrant workers”. In 2013 the AP Stylebook, which many English-language newsrooms follow, stopped using “illegal immigrant”. “Undocumented” is also common, though some people with irregular status do hold documents, such as an expired visa.",
-      {warn:"Asylum seekers are a special case. A person who crosses a border without papers to ask for protection is using a right recognised in international law. Article 31 of the 1951 Refugee Convention protects some refugees who enter or stay without authorisation. If they come directly from a place where their life or freedom was threatened, present themselves to the authorities without delay and show good cause, they should not be penalised for it."}
+      "Status can change in the other direction too. Many countries have run **regularization** programs that give legal status to people already living there.",
+      "Most migration research, the UN and many news organizations avoid calling people “illegal”. An action, such as crossing a border without permission, can break a law; a person cannot *be* illegal. As early as 1975 the UN General Assembly (resolution 3449) asked UN bodies to use “non-documented or irregular migrant workers”. In 2013 the AP Stylebook, which many English-language newsrooms follow, stopped using “illegal immigrant”. “Undocumented” is also common, though some people with irregular status do hold documents, such as an expired visa.",
+      {warn:"Asylum seekers are a special case. A person who crosses a border without papers to ask for protection is using a right recognized in international law. Article 31 of the 1951 Refugee Convention protects some refugees who enter or stay without authorization. If they come directly from a place where their life or freedom was threatened, present themselves to the authorities without delay and show good cause, they should not be penalized for it."}
     ]},
     {h:"Words that carry assumptions", body:[
       "Words for people who move are never quite neutral. Researchers have noticed that **“expat”** (short for [[expatriate]]) tends to be used for professionals from richer countries, often white or Western. People doing the same thing from poorer countries are called “migrants” or “immigrants”. The move is the same; the word signals status.",
@@ -228,14 +228,14 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e2u9-l2-x1", type:"sort", q:"What is the **main** kind of movement described in each case?", buckets:["Labour","Family","Study","Forced"], items:[
-      {t:"Ana accepts a job offer as an engineer in another country.", b:0, why:"Moving to take up a job is labour migration."},
+    {id:"e2u9-l2-x1", type:"sort", q:"What is the **main** kind of movement described in each case?", buckets:["Labor","Family","Study","Forced"], items:[
+      {t:"Ana accepts a job offer as an engineer in another country.", b:0, why:"Moving to take up a job is labor migration."},
       {t:"Kwame’s wife moves to join him in the country where he has lived for five years.", b:1, why:"Joining a spouse is family migration (family reunification)."},
-      {t:"Mei enrols in a three-year degree programme abroad.", b:2, why:"Moving to study is student migration."},
+      {t:"Mei enrolls in a three-year degree program abroad.", b:2, why:"Moving to study is student migration."},
       {t:"A family flees across the border after armed groups burn their village.", b:3, why:"Fleeing violence involves force and compulsion: forced migration."},
       {t:"Hana’s elderly parents move abroad to live with her and her children.", b:1, why:"Parents moving to live with adult children is family migration."},
       {t:"Thousands of people are moved from a valley before it is flooded by a new dam.", b:3, why:"Development-induced displacement is a form of forced migration."},
-      {t:"Dmitri signs a two-year contract on a building site in another country.", b:0, why:"A work contract abroad is labour migration, here also temporary."}
+      {t:"Dmitri signs a two-year contract on a building site in another country.", b:0, why:"A work contract abroad is labor migration, here also temporary."}
     ]},
     {id:"e2u9-l2-x2", type:"match", q:"Match each time pattern to the example that fits it best.", pairs:[
       ["Circular migration","Sione picks fruit abroad every season, going home between seasons","Repeated back-and-forth moves."],
@@ -244,17 +244,17 @@ ICA.addUnit({
       ["Permanent migration","Lucía moves abroad, buys a home, becomes a citizen and settles for good","Settling permanently."]
     ]},
     {id:"e2u9-l2-x3", type:"mcq", q:"Oluwaseun moves abroad to study, then gets a work permit, then marries a local citizen and stays. What does his story best show?", options:[
-      {t:"One person can pass through several migration categories.", ok:true, why:"Right. Kinds of migration describe situations, not fixed types of people. He was a student migrant, then a labour migrant, then a family migrant. The categories are tools for patterns, not labels for a whole life."},
-      {t:"He was secretly a labour migrant from the start, and the student visa was a cover.", why:"Nothing in the story suggests that. Plans commonly change as lives change; reading bad faith into it is an assumption, not evidence."},
+      {t:"One person can pass through several migration categories.", ok:true, why:"Right. Kinds of migration describe situations, not fixed types of people. He was a student migrant, then a labor migrant, then a family migrant. The categories are tools for patterns, not labels for a whole life."},
+      {t:"He was secretly a labor migrant from the start, and the student visa was a cover.", why:"Nothing in the story suggests that. Plans commonly change as lives change; reading bad faith into it is an assumption, not evidence."},
       {t:"Student migration is always permanent.", why:"Many students return home or move on. His case is one possible path, not a rule."},
       {t:"He stopped being a migrant when he married.", why:"In the statistics he remains an international migrant (born abroad). Marriage changed his legal route, not that fact."}
     ]},
     {id:"e2u9-l2-x4", type:"mcq", q:"Which of these are ways a person can come to have **irregular** status in a country? Choose all that apply.", options:[
       {t:"Staying on after their visa has expired", ok:true, why:"Yes. Overstaying a visa that was valid on arrival is a common route into irregular status."},
-      {t:"Entering the country without authorisation", ok:true, why:"Yes. Entry outside the rules is irregular entry."},
+      {t:"Entering the country without authorization", ok:true, why:"Yes. Entry outside the rules is irregular entry."},
       {t:"Losing a work permit that was tied to one employer, and not finding another route to stay", ok:true, why:"Yes. People can fall out of status without moving at all."},
       {t:"Studying abroad on a valid student visa", why:"A valid visa means regular status, as long as its conditions are met."},
-      {t:"Becoming a naturalised citizen of the country", why:"Naturalisation is the most secure status there is: a citizen can’t be an irregular migrant in their own country."}
+      {t:"Becoming a naturalized citizen of the country", why:"Naturalisation is the most secure status there is: a citizen can’t be an irregular migrant in their own country."}
     ]},
     {id:"e2u9-l2-x5", type:"spot", q:"Tap each phrase in this news paragraph that the lesson’s advice on careful language would **change**.", ask:"should be changed", parts:[
       "Officials said ",
@@ -266,7 +266,7 @@ ICA.addUnit({
       ". Some of those arriving ",
       {t:"have applied for asylum", flag:false, why:"Fine: an accurate description of a legal step."},
       ", and ",
-      {t:"all of them sneaked across the border", flag:true, why:"An overgeneralisation with a loaded verb. It claims to know how every single person entered, without evidence, and some of them have just been described as asylum seekers, who have a recognised right to seek protection."},
+      {t:"all of them sneaked across the border", flag:true, why:"An overgeneralization with a loaded verb. It claims to know how every single person entered, without evidence, and some of them have just been described as asylum seekers, who have a recognized right to seek protection."},
       ". Meanwhile ",
       {t:"expats from wealthy countries", flag:true, why:"Using “expats” for some migrants and “illegals” for others gives the same act different moral weight. Use the same word, or the specific status, for everyone."},
       " continue to move into the old town."
@@ -283,7 +283,7 @@ ICA.addUnit({
       {t:"Because “expat” is a legal status that only some countries give.", why:"It isn’t a legal status anywhere. It’s an everyday word."},
       {t:"Because expats are not counted as international migrants in UN statistics.", why:"They are counted. Anyone who changes country of usual residence counts, whatever they call themselves."}
     ]},
-    {id:"e2u9-l2-x8", type:"explain", q:"Explain why most migration researchers and the UN say ‘a person with irregular status’ rather than ‘an illegal immigrant’. Use two different ways a person can come to have irregular status.", size:"3–5 sentences", model:"An action, such as crossing a border without permission, can break a law, but a person cannot be illegal. Irregular status describes a situation, not an identity, and it can change. People reach it in different ways. Some enter without authorisation, but many arrive legally and later overstay a visa, or lose status when a work permit tied to one employer ends. A child born to parents with irregular status may never have migrated at all. Status can also change the other way, through regularisation programmes.", points:["Explains that acts can be unlawful but people can’t be illegal", "Describes irregular status as a situation that can change", "Gives one route into irregular status", "Gives a second, different route"]}
+    {id:"e2u9-l2-x8", type:"explain", q:"Explain why most migration researchers and the UN say ‘a person with irregular status’ rather than ‘an illegal immigrant’. Use two different ways a person can come to have irregular status.", size:"3–5 sentences", model:"An action, such as crossing a border without permission, can break a law, but a person cannot be illegal. Irregular status describes a situation, not an identity, and it can change. People reach it in different ways. Some enter without authorization, but many arrive legally and later overstay a visa, or lose status when a work permit tied to one employer ends. A child born to parents with irregular status may never have migrated at all. Status can also change the other way, through regularization programs.", points:["Explains that acts can be unlawful but people can’t be illegal", "Describes irregular status as a situation that can change", "Gives one route into irregular status", "Gives a second, different route"]}
    ],
    apply:{
     intro:"Two short tasks on kinds of movement and the language used to describe them.",
@@ -308,7 +308,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e2u9-l3", title:"Refugees, asylum seekers, internally displaced and stateless people", minutes:55,
-   hook:{q:"At the end of 2025, UNHCR estimated that 117.8 million people worldwide had been forced from their homes. The causes were persecution, conflict, violence or human rights violations. Where were most of them?", options:["In Europe and North America","In refugee camps run by the UN","Still inside their own country","In countries far from their own"], answer:2, reveal:"**Still inside their own country.** About 68.7 million of them were internally displaced. They had fled their homes but not crossed an international border, so they are not refugees in law. Of those who did cross a border, most stayed in a neighbouring country, and most lived in low- and middle-income countries. This lesson sets out the precise words for people who are forced to move. It also covers people who have no nationality at all."},
+   hook:{q:"At the end of 2025, UNHCR estimated that 117.8 million people worldwide had been forced from their homes. The causes were persecution, conflict, violence or human rights violations. Where were most of them?", options:["In Europe and North America","In refugee camps run by the UN","Still inside their own country","In countries far from their own"], answer:2, reveal:"**Still inside their own country.** About 68.7 million of them were internally displaced. They had fled their homes but not crossed an international border, so they are not refugees in law. Of those who did cross a border, most stayed in a neighboring country, and most lived in low- and middle-income countries. This lesson sets out the precise words for people who are forced to move. It also covers people who have no nationality at all."},
    goals:[
      "State the 1951 Refugee Convention definition of a refugee and break it into its parts",
      "Explain what an asylum seeker is, and why a refused claim doesn’t mean someone lied",
@@ -320,12 +320,12 @@ ICA.addUnit({
     {h:"Four situations, four words", body:[
       {lead:"Imagine four people. None of them is defined by the word that follows; each word describes a legal situation they are in right now."},
       {list:[
-        "**Daniel** fled his country after being jailed and beaten for his political writing. Another country has examined his case and recognised him as a [[refugee]].",
-        "**Ana** fled threats from an armed group and has asked for protection in a neighbouring country. Her case hasn’t been decided yet. She is an [[asylum-seeker|asylum seeker]].",
+        "**Daniel** fled his country after being jailed and beaten for his political writing. Another country has examined his case and recognized him as a [[refugee]].",
+        "**Ana** fled threats from an armed group and has asked for protection in a neighboring country. Her case hasn’t been decided yet. She is an [[asylum-seeker|asylum seeker]].",
         "**Kwame** fled fighting near his town and now lives with relatives in another region of the same country. He is an [[internally-displaced-person|internally displaced person]] (IDP).",
-        "**Nadia** was born and has always lived in the same country, but no state, including that one, recognises her as a citizen. She is a [[stateless-person|stateless person]]."
+        "**Nadia** was born and has always lived in the same country, but no state, including that one, recognizes her as a citizen. She is a [[stateless-person|stateless person]]."
       ]},
-      "The differences are not about who suffered more or who deserves sympathy. They decide which laws apply, which organisation is responsible and what rights a person can claim. That is why journalists, lawyers and researchers take care to get them right.",
+      "The differences are not about who suffered more or who deserves sympathy. They decide which laws apply, which organization is responsible and what rights a person can claim. That is why journalists, lawyers and researchers take care to get them right.",
       {key:"Refugee, asylum seeker, IDP and stateless person are legal situations, not identities. A person can move from one to another."}
     ]},
     {h:"Refugee: the 1951 definition, piece by piece", body:[
@@ -333,13 +333,13 @@ ICA.addUnit({
       "It helps to break the definition into parts. A person must meet **all** of them:",
       {fig:'<svg viewBox="0 0 340 392"><rect class="d-lup" x="10" y="8" width="320" height="64" rx="8" stroke-width="2"/><text x="24" y="34">1. Outside their own country</text><text class="s" x="24" y="56">of nationality (or former home, if stateless)</text><rect class="d-sage" x="10" y="84" width="320" height="64" rx="8" stroke-width="2"/><text x="24" y="110">2. A well-founded fear</text><text class="s" x="24" y="132">a real risk, judged on the evidence</text><rect class="d-gold" x="10" y="160" width="320" height="64" rx="8" stroke-width="2"/><text x="24" y="186">3. Of being persecuted</text><text class="s" x="24" y="208">serious harm, such as threats to life or freedom</text><rect class="d-rose" x="10" y="236" width="320" height="76" rx="8" stroke-width="2"/><text x="24" y="260">4. For one of five reasons</text><text class="s" x="24" y="280">race, religion, nationality, a particular</text><text class="s" x="24" y="298">social group, or political opinion</text><rect class="d-soft" x="10" y="324" width="320" height="64" rx="8" stroke-width="2"/><text x="24" y="350">5. Unable or unwilling to seek</text><text class="s" x="24" y="372">their own state’s protection, owing to that fear</text></svg>', alt:"Five stacked boxes listing the parts of the refugee definition: 1, outside their own country of nationality, or former home if stateless; 2, a well-founded fear, a real risk judged on the evidence; 3, of being persecuted, serious harm such as threats to life or freedom; 4, for one of five reasons: race, religion, nationality, a particular social group, or political opinion; 5, unable or unwilling to seek their own state’s protection, owing to that fear.", cap:"The 1951 refugee definition in five parts. All five must be met."},
       "The 1951 Convention originally covered only events before 1 January 1951, and let states limit it to events in Europe. The **1967 Protocol** removed those time and geographic limits, so the definition now applies worldwide. You’ll look at the Convention’s other key rules, such as [[non-refoulement]] (not sending a refugee back to danger), in {{refugee-law|Unit 11}}.",
-      "Two details matter. First, refugee status is **declaratory**. UNHCR’s *Handbook* explains that a person is a refugee as soon as they meet the definition. Recognition by a state or UNHCR *declares* that fact rather than creating it. Second, some regions use wider definitions. Examples are the OAU (now African Union) Convention of 1969 and the Latin American Cartagena Declaration of 1984. They also include people fleeing generalised violence or events seriously disturbing public order ([[oau-refugee-convention]], [[cartagena-declaration]], Unit 11).",
+      "Two details matter. First, refugee status is **declaratory**. UNHCR’s *Handbook* explains that a person is a refugee as soon as they meet the definition. Recognition by a state or UNHCR *declares* that fact rather than creating it. Second, some regions use wider definitions. Examples are the OAU (now African Union) Convention of 1969 and the Latin American Cartagena Declaration of 1984. They also include people fleeing generalized violence or events seriously disturbing public order ([[oau-refugee-convention]], [[cartagena-declaration]], Unit 11).",
       "Palestine refugees are a separate case. About 6 million are registered with UNRWA, a UN agency created for them in 1949. While they receive its help, they fall outside the 1951 Convention under its Article 1D."
     ]},
     {h:"Asylum seekers", body:[
       "An **asylum seeker** is a person who is seeking international protection and whose claim has not yet been finally decided. Article 14 of the [[universal-declaration-human-rights|Universal Declaration of Human Rights]] (1948) says “Everyone has the right to seek and to enjoy in other countries asylum from persecution.”",
-      "States decide claims through **refugee status determination** ([[refugee-status-determination]], Unit 11). Officials or courts examine the person’s account and the evidence about their country. In some large emergencies, people fleeing a particular conflict are recognised as a group (*prima facie*), without individual interviews.",
-      "Not every asylum seeker is recognised as a refugee. A refusal can mean the person’s situation doesn’t fit the five-part definition. For example, the danger they fled may not be linked to one of the five reasons. Some refused applicants receive another form of protection instead ([[complementary-protection]], Unit 11). A refusal is a legal finding about the definition; it isn’t proof that someone lied.",
+      "States decide claims through **refugee status determination** ([[refugee-status-determination]], Unit 11). Officials or courts examine the person’s account and the evidence about their country. In some large emergencies, people fleeing a particular conflict are recognized as a group (*prima facie*), without individual interviews.",
+      "Not every asylum seeker is recognized as a refugee. A refusal can mean the person’s situation doesn’t fit the five-part definition. For example, the danger they fled may not be linked to one of the five reasons. Some refused applicants receive another form of protection instead ([[complementary-protection]], Unit 11). A refusal is a legal finding about the definition; it isn’t proof that someone lied.",
       {tip:"“Bogus asylum seeker” is a contradiction worth noticing: seeking asylum is a lawful act. What a decision tests is whether the person meets the legal definition."}
     ]},
     {h:"Internally displaced people", body:[
@@ -359,29 +359,29 @@ ICA.addUnit({
       ]},
       "Without nationality, people can be shut out of school, health care, legal work, bank accounts, marriage registration and travel, sometimes for generations. Most Rohingya were left without nationality under Myanmar’s 1982 citizenship law. They are one of the largest stateless populations, and many are also refugees in Bangladesh and elsewhere.",
       "UNHCR’s #IBelong campaign (2014–2024) aimed to end statelessness. Over that decade about half a million stateless people acquired a nationality, and several countries changed their laws. UNHCR reported 4.5 million stateless people at the end of 2025. It stresses that the true number is likely to be much higher, because many countries have no data.",
-      {fig:'<svg viewBox="0 0 340 348"><rect class="d-panel" x="6" y="6" width="328" height="250" rx="14" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">People who have moved home</text><rect class="d-sage" x="16" y="40" width="122" height="200" rx="10" stroke-width="2"/><text x="77" y="62" text-anchor="middle">Within their</text><text x="77" y="80" text-anchor="middle">own country</text><ellipse class="d-rose" cx="77" cy="160" rx="50" ry="36" stroke-width="2"/><text x="77" y="165" text-anchor="middle">IDPs</text><rect class="d-lup" x="146" y="40" width="178" height="200" rx="10" stroke-width="2"/><text x="235" y="62" text-anchor="middle">Across a border</text><text class="s" x="235" y="80" text-anchor="middle">(international migrants)</text><rect class="d-gold" x="156" y="94" width="158" height="132" rx="24" stroke-width="2"/><text class="s" x="235" y="114" text-anchor="middle">forcibly displaced</text><ellipse class="d-panel" cx="196" cy="168" rx="36" ry="30" stroke-width="1.5"/><text x="196" y="173" text-anchor="middle">Refugees</text><ellipse class="d-panel" cx="276" cy="168" rx="34" ry="30" stroke-width="1.5"/><text x="276" y="164" text-anchor="middle">Asylum</text><text x="276" y="182" text-anchor="middle">seekers</text><ellipse class="d-soft" cx="170" cy="266" rx="118" ry="32" stroke-width="2" stroke-dasharray="6 4" fill-opacity="0.7"/><text x="170" y="272" text-anchor="middle">Stateless people</text><text class="s" x="170" y="318" text-anchor="middle">Stateless people can be in any group,</text><text class="s" x="170" y="336" text-anchor="middle">and many have never moved at all.</text></svg>', alt:"A large panel labelled people who have moved home, split into two areas. Left: within their own country, containing an oval for IDPs. Right: across a border, international migrants, containing a box labelled forcibly displaced with two ovals, refugees and asylum seekers. A dashed oval labelled stateless people overlaps the bottom edge of the panel, partly inside and partly outside it. Text below: stateless people can be in any group, and many have never moved at all.", cap:"How the groups relate. Refugees and asylum seekers are international migrants in UN statistics, but they hold a distinct legal status. Stateless people may or may not have moved."}
+      {fig:'<svg viewBox="0 0 340 348"><rect class="d-panel" x="6" y="6" width="328" height="250" rx="14" stroke-width="1.5"/><text x="170" y="28" text-anchor="middle">People who have moved home</text><rect class="d-sage" x="16" y="40" width="122" height="200" rx="10" stroke-width="2"/><text x="77" y="62" text-anchor="middle">Within their</text><text x="77" y="80" text-anchor="middle">own country</text><ellipse class="d-rose" cx="77" cy="160" rx="50" ry="36" stroke-width="2"/><text x="77" y="165" text-anchor="middle">IDPs</text><rect class="d-lup" x="146" y="40" width="178" height="200" rx="10" stroke-width="2"/><text x="235" y="62" text-anchor="middle">Across a border</text><text class="s" x="235" y="80" text-anchor="middle">(international migrants)</text><rect class="d-gold" x="156" y="94" width="158" height="132" rx="24" stroke-width="2"/><text class="s" x="235" y="114" text-anchor="middle">forcibly displaced</text><ellipse class="d-panel" cx="196" cy="168" rx="36" ry="30" stroke-width="1.5"/><text x="196" y="173" text-anchor="middle">Refugees</text><ellipse class="d-panel" cx="276" cy="168" rx="34" ry="30" stroke-width="1.5"/><text x="276" y="164" text-anchor="middle">Asylum</text><text x="276" y="182" text-anchor="middle">seekers</text><ellipse class="d-soft" cx="170" cy="266" rx="118" ry="32" stroke-width="2" stroke-dasharray="6 4" fill-opacity="0.7"/><text x="170" y="272" text-anchor="middle">Stateless people</text><text class="s" x="170" y="318" text-anchor="middle">Stateless people can be in any group,</text><text class="s" x="170" y="336" text-anchor="middle">and many have never moved at all.</text></svg>', alt:"A large panel labeled people who have moved home, split into two areas. Left: within their own country, containing an oval for IDPs. Right: across a border, international migrants, containing a box labeled forcibly displaced with two ovals, refugees and asylum seekers. A dashed oval labeled stateless people overlaps the bottom edge of the panel, partly inside and partly outside it. Text below: stateless people can be in any group, and many have never moved at all.", cap:"How the groups relate. Refugees and asylum seekers are international migrants in UN statistics, but they hold a distinct legal status. Stateless people may or may not have moved."}
     ]},
     {h:"How the groups overlap, and the numbers", body:[
       "In UN DESA’s statistics, refugees and asylum seekers living abroad are counted among international migrants. In mid-2024, about 51.7 million of the 304 million international migrants (roughly one in six) had been forcibly displaced across borders. So **most international migrants are not refugees**: people displaced across borders are a minority of all international migrants.",
       "UNHCR adds an important caution. International law defines and protects refugees in ways that do not apply to other migrants. So mixing the words up can weaken that protection. That is why UNHCR usually says “refugees and migrants” when both are involved.",
       "UNHCR’s annual report *Global Trends: Forced Displacement in 2025* (published June 2026) gives these estimates for the **end of 2025**:",
       {table:[["Group (end of 2025)","Estimate"],["All forcibly displaced people","117.8 million"],["Internally displaced by conflict and violence (IDMC)","68.7 million"],["Refugees under UNHCR’s mandate (including about 1.5 million in refugee-like situations)","28.5 million"],["Palestine refugees under UNRWA’s mandate","6 million"],["Asylum seekers","about 9 million"],["Other people in need of international protection","7.2 million"],["Stateless people (reported)","4.5 million"]]},
-      "The parts don’t add up exactly to the total. One reason is rounding. Another is that some people (for example internally displaced Palestine refugees in Gaza) are counted only once. The same report found that 2025 saw the first fall in global forced displacement in a decade. About two-thirds of refugees and other people needing international protection lived in neighbouring countries (65%). And 68% lived in low- and middle-income countries.",
+      "The parts don’t add up exactly to the total. One reason is rounding. Another is that some people (for example internally displaced Palestine refugees in Gaza) are counted only once. The same report found that 2025 saw the first fall in global forced displacement in a decade. About two-thirds of refugees and other people needing international protection lived in neighboring countries (65%). And 68% lived in low- and middle-income countries.",
       {warn:"These numbers change every year and are revised as new data arrive. When you quote one, give the group, the date it refers to (here, the end of 2025) and the source (UNHCR Global Trends)."},
       {terms:["refugee","asylum-seeker","internally-displaced-person","stateless-person","forced-migration"]}
     ]},
     {h:"Common misconceptions", body:[
-      {table:[["Misconception","Closer to the truth"],["Refugee and migrant mean the same thing.","Refugees meet a specific legal definition and have specific protections. UNHCR speaks of “refugees and migrants”."],["Asylum seekers are breaking the law.","Seeking asylum is a right (UDHR Article 14). Refugees who enter irregularly to seek protection shouldn’t be penalised (1951 Convention, Article 31)."],["Most refugees go to rich countries.","At the end of 2025, 68% lived in low- and middle-income countries and 65% in neighbouring countries."],["People fleeing war inside their country are refugees.","Without crossing a border they are internally displaced people, with a different legal framework."],["Stateless people are all migrants.","Many stateless people live in the country where they were born and have never moved."]]}
+      {table:[["Misconception","Closer to the truth"],["Refugee and migrant mean the same thing.","Refugees meet a specific legal definition and have specific protections. UNHCR speaks of “refugees and migrants”."],["Asylum seekers are breaking the law.","Seeking asylum is a right (UDHR Article 14). Refugees who enter irregularly to seek protection shouldn’t be penalized (1951 Convention, Article 31)."],["Most refugees go to rich countries.","At the end of 2025, 68% lived in low- and middle-income countries and 65% in neighboring countries."],["People fleeing war inside their country are refugees.","Without crossing a border they are internally displaced people, with a different legal framework."],["Stateless people are all migrants.","Many stateless people live in the country where they were born and have never moved."]]}
     ]}
    ],
    try:[
     {id:"e2u9-l3-x1", type:"sort", q:"Which word describes each person’s **current** legal situation?", buckets:["Refugee","Asylum seeker","Internally displaced","Stateless"], items:[
       {t:"Ana fled across the border and applied for protection last month; her interview is next week.", b:1, why:"She has asked for international protection and her claim hasn’t been decided: an asylum seeker."},
-      {t:"Daniel fled persecution for his political writing and has been recognised by another country under the 1951 Convention.", b:0, why:"He meets the definition and has been recognised: a refugee."},
+      {t:"Daniel fled persecution for his political writing and has been recognized by another country under the 1951 Convention.", b:0, why:"He meets the definition and has been recognized: a refugee."},
       {t:"Kwame fled fighting in the north and lives in a camp in the south of his own country.", b:2, why:"Forced from his home but still inside his own country: an IDP."},
-      {t:"Nadia has always lived in the country where she was born, but no state recognises her as a national.", b:3, why:"Not considered a national by any state under its law: stateless, though she never moved."},
+      {t:"Nadia has always lived in the country where she was born, but no state recognizes her as a national.", b:3, why:"Not considered a national by any state under its law: stateless, though she never moved."},
       {t:"After a flood destroyed her town, Hana stays with relatives in a city 200 km away, in the same country.", b:2, why:"The Guiding Principles include people displaced by disasters who haven’t crossed a border."},
-      {t:"A man who fled religious persecution was recognised by UNHCR in the country where he sheltered.", b:0, why:"Recognised as meeting the refugee definition, here by UNHCR rather than the state: a refugee."}
+      {t:"A man who fled religious persecution was recognized by UNHCR in the country where he sheltered.", b:0, why:"Recognised as meeting the refugee definition, here by UNHCR rather than the state: a refugee."}
     ]},
     {id:"e2u9-l3-x2", type:"match", q:"Match each part of the 1951 refugee definition to what it rules in or out.", pairs:[
       ["Outside their country","Someone still inside their own country is not a refugee, however serious the danger","This is what separates refugees from IDPs."],
@@ -407,11 +407,11 @@ ICA.addUnit({
       {v:0.58, tol:0.01, why:"That’s the fraction. Multiply by 100 to turn it into a percentage."}
     ]},
     {id:"e2u9-l3-x6", type:"spot", q:"Tap each claim in this blog post that is **inaccurate**.", ask:"inaccurate", parts:[
-      {t:"A person meets the refugee definition before any official recognises them; recognition confirms it.", flag:false, why:"Accurate: UNHCR’s Handbook says refugee status is declaratory."},
+      {t:"A person meets the refugee definition before any official recognizes them; recognition confirms it.", flag:false, why:"Accurate: UNHCR’s Handbook says refugee status is declaratory."},
       " ",
-      {t:"Asylum seekers are illegal migrants until their case is decided.", flag:true, why:"Inaccurate. Seeking asylum is a recognised right, and asylum seekers are in a legal procedure. “Illegal” isn’t a status of a person anyway."},
+      {t:"Asylum seekers are illegal migrants until their case is decided.", flag:true, why:"Inaccurate. Seeking asylum is a recognized right, and asylum seekers are in a legal procedure. “Illegal” isn’t a status of a person anyway."},
       " ",
-      {t:"Most of the world’s refugees live in wealthy countries far from home.", flag:true, why:"Inaccurate. At the end of 2025, 68% lived in low- and middle-income countries and 65% in neighbouring countries (UNHCR)."},
+      {t:"Most of the world’s refugees live in wealthy countries far from home.", flag:true, why:"Inaccurate. At the end of 2025, 68% lived in low- and middle-income countries and 65% in neighboring countries (UNHCR)."},
       " ",
       {t:"People who flee fighting but stay in their own country are internally displaced, not refugees.", flag:false, why:"Accurate: they haven’t crossed an international border."},
       " ",
@@ -423,10 +423,10 @@ ICA.addUnit({
       {t:"She is an internally displaced person.", why:"She hasn’t been forced from her home. IDP status is about displacement, not nationality."},
       {t:"She is automatically a citizen of Country Y because she lives there.", why:"Living somewhere doesn’t make you a national. Country Y’s law gives nationality only by descent."}
     ]},
-    {id:"e2u9-l3-x8", type:"explain", q:"Fatima fled fighting and now lives with relatives in another region of her own country. Her brother Yusuf fled the same fighting across the border and has asked for protection there. Explain why international law treats them differently, even though their experiences are similar.", size:"4–5 sentences", model:"The key difference is the border. Yusuf is outside his country, so he may be a refugee if he meets the 1951 Convention definition: a well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group or political opinion, without protection at home. Until his claim is decided, he is an asylum seeker. Fatima is still inside her own country, so she is an internally displaced person, not a refugee in law. Her own government has the main responsibility to protect her. These are legal situations, not judgements about who suffered more.", points:["Identifies crossing a border as the key difference", "Gives the main parts of the refugee definition", "Explains that Yusuf is an asylum seeker until his claim is decided", "Explains that Fatima is an IDP and her own government is mainly responsible"]}
+    {id:"e2u9-l3-x8", type:"explain", q:"Fatima fled fighting and now lives with relatives in another region of her own country. Her brother Yusuf fled the same fighting across the border and has asked for protection there. Explain why international law treats them differently, even though their experiences are similar.", size:"4–5 sentences", model:"The key difference is the border. Yusuf is outside his country, so he may be a refugee if he meets the 1951 Convention definition: a well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group or political opinion, without protection at home. Until his claim is decided, he is an asylum seeker. Fatima is still inside her own country, so she is an internally displaced person, not a refugee in law. Her own government has the main responsibility to protect her. These are legal situations, not judgments about who suffered more.", points:["Identifies crossing a border as the key difference", "Gives the main parts of the refugee definition", "Explains that Yusuf is an asylum seeker until his claim is decided", "Explains that Fatima is an IDP and her own government is mainly responsible"]}
    ],
    apply:{
-    intro:"Practise using the precise words, and the numbers, the way a careful researcher would.",
+    intro:"Practice using the precise words, and the numbers, the way a careful researcher would.",
     tasks:[
      {t:"Read the latest UNHCR figures yourself", how:[
        "Open UNHCR’s Global Trends page (unhcr.org/global-trends) or its Refugee Data Finder.",
@@ -461,7 +461,7 @@ ICA.addUnit({
       {lead:"Picture a bathtub with a tap and a drain."},
       "The water in the tub at any moment is a **stock**: how much is there right now. The water running in through the tap and out through the drain are **flows**. A flow is how much moves in or out over a period of time. If more runs in than out, the level rises; if more runs out, it falls.",
       "Migration statistics work the same way. An [[international-migrant-stock|international migrant stock]] is the number of international migrants living in a place **at one point in time**. That point might be census day or 1 July. A [[migration-flow|migration flow]] is the number of people moving in or out **during a period**, usually a year. Immigration is the inflow; emigration is the outflow.",
-      {fig:'<svg viewBox="0 0 340 336"><defs><marker id="e2u9-l4-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="10" y="22">Inflow: immigration</text><text class="s" x="10" y="40">people arriving during a year</text><path class="d-ink" d="M70 50 L118 106" stroke-width="3" marker-end="url(#e2u9-l4-ar)"/><path class="d-ink" d="M70 112 L70 224 L270 224 L270 112" fill="none" stroke-width="3"/><rect class="d-lup" x="72" y="150" width="196" height="72" stroke-width="0"/><text x="170" y="180" text-anchor="middle">Stock</text><text class="s" x="170" y="200" text-anchor="middle">migrants living here on one day</text><path class="d-ink" d="M240 226 L292 268" stroke-width="3" marker-end="url(#e2u9-l4-ar)"/><text x="330" y="290" text-anchor="end">Outflow: emigration</text><text class="s" x="330" y="306" text-anchor="end">people leaving during a year</text><text x="10" y="330">Net migration = inflow − outflow</text></svg>', alt:"A bathtub drawn as a U shape, partly filled. The water is labelled stock: migrants living here on one day. An arrow pours in from the top left, labelled inflow: immigration, people arriving during a year. An arrow leaves from the bottom right, labelled outflow: emigration, people leaving during a year. Below: net migration equals inflow minus outflow.", cap:"Stocks are levels; flows are movements over time. Net migration is the difference between the two flows."},
+      {fig:'<svg viewBox="0 0 340 336"><defs><marker id="e2u9-l4-ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><text x="10" y="22">Inflow: immigration</text><text class="s" x="10" y="40">people arriving during a year</text><path class="d-ink" d="M70 50 L118 106" stroke-width="3" marker-end="url(#e2u9-l4-ar)"/><path class="d-ink" d="M70 112 L70 224 L270 224 L270 112" fill="none" stroke-width="3"/><rect class="d-lup" x="72" y="150" width="196" height="72" stroke-width="0"/><text x="170" y="180" text-anchor="middle">Stock</text><text class="s" x="170" y="200" text-anchor="middle">migrants living here on one day</text><path class="d-ink" d="M240 226 L292 268" stroke-width="3" marker-end="url(#e2u9-l4-ar)"/><text x="330" y="290" text-anchor="end">Outflow: emigration</text><text class="s" x="330" y="306" text-anchor="end">people leaving during a year</text><text x="10" y="330">Net migration = inflow − outflow</text></svg>', alt:"A bathtub drawn as a U shape, partly filled. The water is labeled stock: migrants living here on one day. An arrow pours in from the top left, labeled inflow: immigration, people arriving during a year. An arrow leaves from the bottom right, labeled outflow: emigration, people leaving during a year. Below: net migration equals inflow minus outflow.", cap:"Stocks are levels; flows are movements over time. Net migration is the difference between the two flows."},
       "UN DESA’s famous global figure (304 million in 2024) is a **stock**. A headline such as “1.2 million people moved to Country X last year” is a **flow**. Mixing them up is one of the commonest mistakes in migration reporting."
     ]},
     {h:"Net migration", body:[
@@ -473,14 +473,14 @@ ICA.addUnit({
     ]},
     {h:"Where the numbers come from", body:[
       "No country has one perfect source. Statisticians piece together several, each with strengths and weaknesses.",
-      {table:[["Source","What it gives","Main weakness"],["[[census|Census]]","Everyone counted on one day, with country of birth and citizenship; the main source for UN DESA’s stock estimates","Usually only every ten years; people with irregular status may avoid it"],["[[population-register|Population register]]","A continuous list of residents (Nordic countries, the Netherlands and others); good for flows","Relies on people registering arrivals and, harder, departures"],["Household and labour force [[survey|surveys]]","Details such as reasons for moving, jobs and earnings","Samples are small, so rare groups and small areas are uncertain"],["[[administrative-data|Administrative data]]","Visas, residence and work permits, asylum applications, border crossings","Counts documents and events, not people; one person can hold several permits"],["New digital sources","Mobile phone and social media data can show movement quickly","Privacy risks, and not everyone has a phone or account"]]},
+      {table:[["Source","What it gives","Main weakness"],["[[census|Census]]","Everyone counted on one day, with country of birth and citizenship; the main source for UN DESA’s stock estimates","Usually only every ten years; people with irregular status may avoid it"],["[[population-register|Population register]]","A continuous list of residents (Nordic countries, the Netherlands and others); good for flows","Relies on people registering arrivals and, harder, departures"],["Household and labor force [[survey|surveys]]","Details such as reasons for moving, jobs and earnings","Samples are small, so rare groups and small areas are uncertain"],["[[administrative-data|Administrative data]]","Visas, residence and work permits, asylum applications, border crossings","Counts documents and events, not people; one person can hold several permits"],["New digital sources","Mobile phone and social media data can show movement quickly","Privacy risks, and not everyone has a phone or account"]]},
       "Censuses also ask about **internal** migration, usually with questions such as “Where did you live five years ago?” or “Where did you live before you came here?” India’s and China’s internal migration figures in Lesson 1 come from such questions.",
-      "International organisations then combine national sources. UN DESA builds its migrant stock estimates mainly from censuses, supplemented by registers and surveys. For the 2024 edition, 60 countries and areas got a full reassessment; for the rest, the 2024 figures are extrapolated from the 2020 edition. UNHCR relies largely on governments’ and its own registration of refugees and asylum seekers. IDMC relies on many field sources for internal displacement."
+      "International organizations then combine national sources. UN DESA builds its migrant stock estimates mainly from censuses, supplemented by registers and surveys. For the 2024 edition, 60 countries and areas got a full reassessment; for the rest, the 2024 figures are extrapolated from the 2020 edition. UNHCR relies largely on governments’ and its own registration of refugees and asylum seekers. IDMC relies on many field sources for internal displacement."
     ]},
     {h:"Gaps and traps", body:[
       "Migration is one of the hardest things in demography to measure well. The [[migration-data-gap|migration data gap]] is the distance between what policymakers and researchers need to know and what the data can tell them. The 2018 Global Compact for Migration made better data its first objective ([[global-compact-migration]], Unit 11). The main gaps:",
       {list:[
-        "**Different definitions.** Some countries count people by country of birth, others by citizenship. A person who naturalises vanishes from a citizenship-based count but not from a birth-based one. And some countries don’t give citizenship by birth. There, children born locally to foreign parents can be counted as foreign citizens, though they never migrated.",
+        "**Different definitions.** Some countries count people by country of birth, others by citizenship. A person who naturalizes vanishes from a citizenship-based count but not from a birth-based one. And some countries don’t give citizenship by birth. There, children born locally to foreign parents can be counted as foreign citizens, though they never migrated.",
         "**Emigration is undercounted.** People rarely deregister when they leave, so analysts often use **mirror statistics**: other countries’ counts of arrivals from that country.",
         "**Irregular migration is estimated, not counted.** By definition it is outside official records, so figures are ranges built from indirect methods.",
         "**Short and circular moves slip through.** Annual statistics built on 12-month stays miss seasonal workers and people who come and go.",
@@ -563,7 +563,7 @@ ICA.addUnit({
     {id:"e2u9-l4-x8", type:"explain", q:"A country reports net migration of zero last year. A politician says, ‘So migration had no effect on us.’ Explain what net migration measures and why this conclusion doesn’t follow.", size:"3–5 sentences", model:"Net migration is the difference between two flows over a period: immigrants minus emigrants. A net figure of zero could mean nobody moved, or that 500,000 people arrived and 500,000 left. The people arriving may be very different from those leaving: for example, young graduates leaving and retirees arriving, which changes the population’s age and skills. Net migration also says nothing about the stock, the number of migrants living in the country. To judge the effect, you need the gross flows, in and out separately.", points:["Defines net migration as immigrants minus emigrants", "Explains that zero can hide large flows in both directions", "Explains that the people arriving and leaving can differ", "Says you need the gross flows (or mentions stock versus flow)"]}
    ],
    apply:{
-    intro:"Look at real migration data yourself, and practise reading it carefully. No accounts are needed.",
+    intro:"Look at real migration data yourself, and practice reading it carefully. No accounts are needed.",
     tasks:[
      {t:"Find one statistic and take it apart", how:[
        "Open the Migration Data Portal (migrationdataportal.org) or your national statistics office’s website.",
@@ -587,9 +587,9 @@ ICA.addUnit({
    hook:{q:"Between 1846 and 1940, tens of millions of Europeans crossed the Atlantic. How did long-distance migration from India and southern China in the same years compare?", options:["It was tiny: a few hundred thousand people","About a tenth of the European total","Roughly similar in size","About ten times bigger"], answer:2, reveal:"**Roughly similar in size.** The historian Adam McKeown (2004) estimated about 55–58 million long-distance migrants from Europe, mostly to the Americas. He estimated about 48–52 million from India and southern China, mostly to South-East Asia and around the Indian Ocean. He put another 46–51 million moving into Manchuria, Siberia and Central Asia. The European story is the one most textbooks tell. This lesson looks at migration history from every region."},
    goals:[
      "Outline early human dispersal and the great early migrations across Africa, Asia and the Pacific, with the uncertainty in the evidence",
-     "Explain the transatlantic slave trade as forced migration, and indentured labour as the system that followed slavery in many colonies",
+     "Explain the transatlantic slave trade as forced migration, and indentured labor as the system that followed slavery in many colonies",
      "Describe the age of mass migration (1846–1940) as three great systems, not one",
-     "Describe partition and post-colonial migration, guest-worker schemes and Gulf labour migration",
+     "Describe partition and post-colonial migration, guest-worker schemes and Gulf labor migration",
      "Explain why most migration today stays within world regions, with examples from several continents"
    ],
    learn:[
@@ -606,8 +606,8 @@ ICA.addUnit({
       "It was not the only slave trade. Over many centuries, enslaved people were also carried across the Sahara, the Red Sea and the Indian Ocean.",
       {warn:"Language matters here too. Many historians now write “enslaved people” rather than “slaves”. This keeps the person in view and makes clear that slavery was something done to them."}
     ]},
-    {h:"Indentured labour after slavery", body:[
-      "When the British Empire abolished slavery (by an 1833 law that took effect in 1834), plantation owners looked for new workers. The answer was [[indentured-labour|indentured labour]]. Workers signed contracts, typically for about five years, binding them to one employer in a distant colony. In return they got passage, wages and sometimes a ticket home.",
+    {h:"Indentured labor after slavery", body:[
+      "When the British Empire abolished slavery (by an 1833 law that took effect in 1834), plantation owners looked for new workers. The answer was [[indentured-labour|indentured labor]]. Workers signed contracts, typically for about five years, binding them to one employer in a distant colony. In return they got passage, wages and sometimes a ticket home.",
       {list:[
         "More than a million people from India went to Mauritius, Trinidad, British Guiana (now Guyana), Fiji, Natal in South Africa, East Africa and elsewhere. This lasted from 1834 until the system ended around 1917–1920.",
         "More than 200,000 Chinese contract workers went to Cuba and Peru between the late 1840s and the 1870s.",
@@ -663,7 +663,7 @@ ICA.addUnit({
     ]},
     {id:"e2u9-l5-x2", type:"match", q:"Match each episode to the description that fits it best.", pairs:[
       ["Transatlantic slave trade","Forced migration: people captured, sold and transported against their will","About 12.5 million people embarked, 1501–1866 (SlaveVoyages)."],
-      ["Indentured labour","Contract workers bound to one employer in a distant colony for several years","The system that replaced slavery on many plantations after 1834."],
+      ["Indentured labor","Contract workers bound to one employer in a distant colony for several years","The system that replaced slavery on many plantations after 1834."],
       ["Partition of British India","Mass displacement across new borders at the end of empire","Around 15 million people crossed the new borders in 1947."],
       ["Guest-worker schemes","Recruitment of workers expected to rotate home, many of whom stayed","West Germany’s agreements, 1955–1968, ended in 1973."],
       ["Windrush generation","Post-colonial migration from the Caribbean to the United Kingdom","Named after the ship that arrived in 1948."]
@@ -684,11 +684,11 @@ ICA.addUnit({
       {t:"Poland → Germany", b:0, why:"Both are in Europe."}
     ]},
     {id:"e2u9-l5-x5", type:"spot", q:"Tap each claim in this short history that is **inaccurate**.", ask:"inaccurate", parts:[
-      {t:"Migration is a recent phenomenon that began with industrialisation.", flag:true, why:"Inaccurate. Humans have migrated since our species began; people reached Australia at least 50,000 years ago."},
+      {t:"Migration is a recent phenomenon that began with industrialization.", flag:true, why:"Inaccurate. Humans have migrated since our species began; people reached Australia at least 50,000 years ago."},
       " ",
       {t:"The transatlantic slave trade was a form of forced migration.", flag:false, why:"Accurate: people were captured and transported against their will."},
       " ",
-      {t:"Indentured labour was a contract system that replaced slavery on many plantations.", flag:false, why:"Accurate, though conditions were often harsh and coercive."},
+      {t:"Indentured labor was a contract system that replaced slavery on many plantations.", flag:false, why:"Accurate, though conditions were often harsh and coercive."},
       " ",
       {t:"Migration from Asia in 1846–1940 was tiny compared with migration from Europe.", flag:true, why:"Inaccurate. McKeown estimated about 48–52 million from India and southern China alone, similar to Europe’s 55–58 million."},
       " ",
@@ -710,7 +710,7 @@ ICA.addUnit({
      {t:"The migrations behind a place", how:[
        "Choose a town, city or region you know (where you live, where you grew up, or one you’re curious about).",
        "Using a local museum website, a library, an encyclopedia or a local history society, find out which migrations shaped it: who arrived, who left, when and why.",
-       "Place each one on a simple timeline and label it with the kinds of movement from this unit (labour, family, forced, internal, international…)."
+       "Place each one on a simple timeline and label it with the kinds of movement from this unit (labor, family, forced, internal, international…)."
      ], write:"Place… migration 1: who, when, why, kind… migration 2… migration 3… what surprised me…"},
      {t:"Read one first-person account", how:[
        "Find a published first-person account of migration: an oral history from a museum or archive, a memoir, or a letter collection.",
@@ -718,7 +718,7 @@ ICA.addUnit({
        "Write how their story fits, or doesn’t fit, the categories in this unit."
      ], write:"Whose account… reasons… obstacles… choices they made… how the categories fit…"}
     ],
-    proof:"A timeline of migrations that shaped one place, labelled by kind, and notes on one first-person account compared with the unit’s categories."
+    proof:"A timeline of migrations that shaped one place, labeled by kind, and notes on one first-person account compared with the unit’s categories."
    },
    read:[
     {book:"imis", where:"Chapter 2 “Migration Histories” (Marlou Schrover)", note:"Read it after this lesson: it explains how historians study migration and why the past is often misremembered."},
@@ -743,11 +743,11 @@ ICA.addUnit({
      {t:"The number of international students enrolled at universities on 1 October", why:"This counts people present on one date, so it is a stock."},
      {t:"The share of a city’s residents born abroad in 2024", why:"A share of residents at one point in time describes a stock, not movement over a period."},
      {t:"The number of people who moved to Country P to live during 2025", ok:true, why:"Yes. People moving in during a period (here, a year) is a flow: immigration."}]},
-   {id:"e2u9-cp04", lesson:"e2u9-l1", level:2, q:"Ahmed leaves his country and works in a neighbouring country for two years, saving for the next stage. Then he finds a good job there and decides to stay. What was the neighbouring country for him?", options:[
+   {id:"e2u9-cp04", lesson:"e2u9-l1", level:2, q:"Ahmed leaves his country and works in a neighboring country for two years, saving for the next stage. Then he finds a good job there and decides to stay. What was the neighboring country for him?", options:[
      {t:"First a country of transit, then his country of destination", ok:true, why:"Right. People often spend long periods in a “transit” country, and some decide to stay, so it becomes their destination. Most countries are origin, transit and destination for different people."},
      {t:"Only a country of transit, because he first planned to move on", why:"Plans change. Once he settled there, it became his country of destination."},
-     {t:"His country of origin", why:"The country of origin is the one he left. He moved to the neighbouring country from there."},
-     {t:"Not part of his migration, because he never reached the place he first imagined", why:"His move to the neighbouring country changed his country of usual residence. That is migration, wherever he first planned to go."}]},
+     {t:"His country of origin", why:"The country of origin is the one he left. He moved to the neighboring country from there."},
+     {t:"Not part of his migration, because he never reached the place he first imagined", why:"His move to the neighboring country changed his country of usual residence. That is migration, wherever he first planned to go."}]},
    {id:"e2u9-cp05", lesson:"e2u9-l2", level:2, q:"Lina was born in a country that doesn’t give citizenship by birth. Her parents have irregular status there. Lina has never left the country. Which statement is accurate?", options:[
      {t:"She can’t have irregular status, because she never crossed a border", why:"Irregular status is about legal permission to stay, not only about how someone arrived. A child born to parents with irregular status can have it too."},
      {t:"She is an illegal immigrant", why:"Lina never immigrated. And researchers, the UN and many style guides avoid calling any person “illegal”."},
@@ -756,8 +756,8 @@ ICA.addUnit({
    {id:"e2u9-cp06", lesson:"e2u9-l3", level:2, q:"Hamid fled his country and meets every part of the 1951 refugee definition. His asylum claim is still waiting for a decision. Which statement is accurate?", options:[
      {t:"He will become a refugee only on the day a state finally decides his claim", why:"This is the reverse of what UNHCR’s *Handbook* explains. Refugee status is declaratory: recognition declares a fact; it doesn’t create it."},
      {t:"He is already a refugee; recognition would declare that, not create it", ok:true, why:"Right. Refugee status is declaratory: a person is a refugee as soon as they meet the definition. Until his claim is decided, he is also an asylum seeker."},
-     {t:"He can’t be a refugee at all, because he entered without papers", why:"Article 31 says refugees who come directly from danger and present themselves without delay shouldn’t be penalised for irregular entry."},
-     {t:"He is an internally displaced person until he is recognised", why:"IDPs haven’t crossed an international border. Hamid has left his country."}]},
+     {t:"He can’t be a refugee at all, because he entered without papers", why:"Article 31 says refugees who come directly from danger and present themselves without delay shouldn’t be penalized for irregular entry."},
+     {t:"He is an internally displaced person until he is recognized", why:"IDPs haven’t crossed an international border. Hamid has left his country."}]},
    {id:"e2u9-cp07", lesson:"e2u9-l4", level:2, q:"Invented figures. A country of 2.5 million people has 30,000 immigrants and 42,500 emigrants in one year. What is its net migration rate per 1,000 people?", options:[
      {t:"+5 per 1,000", why:"More people left than arrived, so net migration is negative: 30,000 − 42,500 = −12,500."},
      {t:"−12.5 per 1,000", why:"−12,500 is the net migration itself. To get the rate, divide by the population and multiply by 1,000."},
@@ -765,12 +765,12 @@ ICA.addUnit({
      {t:"−5 per 1,000", ok:true, why:"Correct. Net migration = 30,000 − 42,500 = −12,500. Rate = −12,500 ÷ 2,500,000 × 1,000 = −5 per 1,000."}]},
    {id:"e2u9-cp08", lesson:"e2u9-l5", level:2, q:"In the 1800s, workers sign five-year contracts that bind them to one plantation in a distant colony, in return for passage and wages. Breaking the contract brings penalties. Which system is this?", options:[
      {t:"The transatlantic slave trade", why:"Enslaved people were captured and sold, not hired on contracts. Indenture was legally different, though conditions were often harsh."},
-     {t:"Indentured labour", ok:true, why:"Yes. Contracts of about five years, binding workers to one employer in a distant colony, describe indentured labour after slavery was abolished."},
+     {t:"Indentured labor", ok:true, why:"Yes. Contracts of about five years, binding workers to one employer in a distant colony, describe indentured labor after slavery was abolished."},
      {t:"A post-war guest-worker scheme", why:"Guest-worker schemes like West Germany’s came after the Second World War, recruiting workers to industrial economies, not plantation colonies in the 1800s."},
      {t:"Circular migration", why:"Circular migration means repeated moves back and forth. These workers were bound to one place for years."}]},
-   {id:"e2u9-cp09", lesson:"e2u9-l2", level:3, q:"Rosa flees threats from an armed group that targets her for her political activism. Tomás, travelling on the same boat, left after his factory closed and he could find no work. Both ask for asylum in Country Q. What is most accurate?", options:[
-     {t:"Both are refugees, because they travelled together on a dangerous route", why:"Travelling together doesn’t give people the same legal situation. Each claim is tested against the definition."},
-     {t:"Neither can apply, because both arrived without authorisation", why:"Seeking asylum is a right, and Article 31 protects refugees who enter irregularly to seek protection."},
+   {id:"e2u9-cp09", lesson:"e2u9-l2", level:3, q:"Rosa flees threats from an armed group that targets her for her political activism. Tomás, traveling on the same boat, left after his factory closed and he could find no work. Both ask for asylum in Country Q. What is most accurate?", options:[
+     {t:"Both are refugees, because they traveled together on a dangerous route", why:"Traveling together doesn’t give people the same legal situation. Each claim is tested against the definition."},
+     {t:"Neither can apply, because both arrived without authorization", why:"Seeking asylum is a right, and Article 31 protects refugees who enter irregularly to seek protection."},
      {t:"If Tomás is refused, that proves he lied", why:"A refusal is a legal finding that a situation doesn’t fit the definition. It isn’t proof that someone lied."},
      {t:"Rosa’s reason is a Convention ground and Tomás’s is not; their shared route is mixed migration", ok:true, why:"Right. Persecution for political opinion is a Convention reason; losing a job is not, though Tomás may still need other help. People with different reasons and legal situations on one route is mixed migration."}]},
    {id:"e2u9-cp10", lesson:"e2u9-l3", level:3, q:"A student says: “The UN’s international migrant figure includes all forcibly displaced people, so most international migrants are refugees.” What is the best correction?", options:[
@@ -800,10 +800,10 @@ ICA.addUnit({
       {key:"Migration studies = many disciplines looking at one very human activity: moving to live somewhere else."}
      ],
      builder:[
-      {table:[["Discipline","Typical focus"],["Sociology","Integration, networks, identity, inequality"],["Geography","Routes, places, distance, cities"],["Economics","Wages, labour markets, remittances, public finances"],["Law","Status, rights, treaties, citizenship"],["Politics and IR","Policy making, borders, cooperation between states"],["Anthropology","Everyday life, culture, family across borders"],["History","Past migrations and how they are remembered"],["Demography","Population size, age structure, measurement"]]},
+      {table:[["Discipline","Typical focus"],["Sociology","Integration, networks, identity, inequality"],["Geography","Routes, places, distance, cities"],["Economics","Wages, labor markets, remittances, public finances"],["Law","Status, rights, treaties, citizenship"],["Politics and IR","Policy making, borders, cooperation between states"],["Anthropology","Everyday life, culture, family across borders"],["History","Past migrations and how they are remembered"],["Demography","Population size, age structure, measurement"]]},
       "Early landmarks include E. G. Ravenstein’s “laws of migration” (1885, 1889), based on census birthplace data, first British and then from many countries, and W. I. Thomas and Florian Znaniecki’s *The Polish Peasant in Europe and America* (1918–1920). Stephen Castles and Mark Miller’s *The Age of Migration* (first edition 1993; later editions with Hein de Haas) helped define the modern field.",
-      "Since the 1990s the field has grown rapidly, with dedicated journals, degree programmes and research networks such as IMISCOE in Europe (since 2004), and research centres in Africa, Asia, Latin America and elsewhere. Its main themes include why people move (Unit 10), how states govern movement (Unit 11) and how migrants and societies change each other (Unit 12).",
-      "Methods are just as varied. Researchers analyse censuses and large surveys, interview migrants about their life histories, spend months doing fieldwork in neighbourhoods, workplaces or along routes, read archives and court decisions, and compare laws across countries. Many projects mix several methods: numbers to show a pattern, interviews to explain it.",
+      "Since the 1990s the field has grown rapidly, with dedicated journals, degree programs and research networks such as IMISCOE in Europe (since 2004), and research centers in Africa, Asia, Latin America and elsewhere. Its main themes include why people move (Unit 10), how states govern movement (Unit 11) and how migrants and societies change each other (Unit 12).",
+      "Methods are just as varied. Researchers analyze censuses and large surveys, interview migrants about their life histories, spend months doing fieldwork in neighborhoods, workplaces or along routes, read archives and court decisions, and compare laws across countries. Many projects mix several methods: numbers to show a pattern, interviews to explain it.",
       "Because some people who move are in vulnerable situations, ethics are central. Researchers ask for [[informed-consent|informed consent]], protect people’s identities, never put anyone’s legal status at risk and think about their own position in relation to the people they study ([[positionality]]) ({{researching-migration-ethically}}, Unit 12)."
      ],
      pro:[
@@ -824,14 +824,14 @@ ICA.addUnit({
     levels:{
      starter:[
       "There is no single answer to “who is a migrant?”, and that surprises many people.",
-      "For **statistics**, the UN counts an international migrant as anyone who changes their country of usual residence: the country where they normally live. A tourist or business traveller doesn’t count. Someone who moves abroad for a year or more is a long-term migrant; three months to a year makes a short-term migrant.",
+      "For **statistics**, the UN counts an international migrant as anyone who changes their country of usual residence: the country where they normally live. A tourist or business traveler doesn’t count. Someone who moves abroad for a year or more is a long-term migrant; three months to a year makes a short-term migrant.",
       "The **International Organization for Migration** (IOM) uses a wider working definition: anyone who moves away from their usual home, within their own country or across a border, for any reason and for any length of time.",
       "In **everyday speech**, “migrant” often carries extra ideas about wealth, origin or race, and some people who move are called “expats” instead.",
       {key:"Always ask which definition a number or a claim is using."}
      ],
      builder:[
       "**UN DESA (1998 Recommendations on Statistics of International Migration, Rev. 1):** an international migrant is “any person who changes his or her country of usual residence”. Long-term: at least one year. Short-term: at least three months but less than a year, excluding recreation, holidays, visits to friends and relatives, business, medical treatment and religious pilgrimage.",
-      "In practice, UN DESA’s stock estimates use **country of birth**, or **country of citizenship** where birthplace isn’t recorded. So naturalised citizens usually still count, and children born in a country to foreign parents may count where citizenship is used.",
+      "In practice, UN DESA’s stock estimates use **country of birth**, or **country of citizenship** where birthplace isn’t recorded. So naturalized citizens usually still count, and children born in a country to foreign parents may count where citizenship is used.",
       "**IOM (Glossary on Migration, 2019):** “An umbrella term, not defined under international law, reflecting the common lay understanding of a person who moves away from his or her place of usual residence, whether within a country or across an international border, temporarily or permanently, and for a variety of reasons.”",
       {table:[["","UN DESA (statistics)","IOM (working)"],["Internal moves","No","Yes"],["Minimum stay","3 months (short-term) or 1 year (long-term)","None"],["Refugees","Counted in the stock","Included in the umbrella"],["Legal status","Not a legal definition","Says it is not a legal definition"]]},
       "Several related categories appear in statistics, and they are not the same:",
@@ -841,7 +841,7 @@ ICA.addUnit({
       "The two definitions reflect a debate. An **inclusive** view (IOM) uses “migrant” for everyone who moves, including refugees, and stresses shared rights. A **residual** view, associated with UNHCR, keeps “migrant” for people who are not refugees, to protect the distinct legal status refugees have under the 1951 Convention; UNHCR therefore says “refugees and migrants”.",
       "Statistical definitions are being refined. A revised UN conceptual framework for international migration statistics, endorsed by the UN Statistical Commission in 2021, aims to capture temporary and circular mobility better and to link migration with population statistics.",
       "Edge cases show why definitions matter: borders that move (the break-up of the Soviet Union in 1991 turned many internal migrants into international ones), cross-border commuters, seafarers, nomadic and pastoralist peoples, and people who move frequently between two homes. Each can be counted, or missed, depending on the rules used.",
-      "Definitions also have consequences beyond statistics. They decide who is covered by a policy target, a programme or a set of rights, and who is left out. That is one reason organisations argue over them so carefully, and why a careful writer says which definition they are using.",
+      "Definitions also have consequences beyond statistics. They decide who is covered by a policy target, a program or a set of rights, and who is left out. That is one reason organizations argue over them so carefully, and why a careful writer says which definition they are using.",
       "Some groups are counted very differently from country to country. International students may be included in long-term migration if they stay a year or more, or left out as temporary residents. Asylum seekers may or may not appear in census counts. Before comparing two countries, check how each treats these groups."
      ]
     },
@@ -866,16 +866,16 @@ ICA.addUnit({
      ],
      builder:[
       "**1951 Convention, Article 1A(2):** a refugee is a person who, “owing to well-founded fear of being persecuted for reasons of race, religion, nationality, membership of a particular social group or political opinion, is outside the country of his nationality and is unable or, owing to such fear, is unwilling to avail himself of the protection of that country”. The **1967 Protocol** removed the original time limit (events before 1951) and the optional limit to Europe.",
-      "Refugee status is **declaratory**: recognition confirms that someone already meets the definition. Regional instruments widen it: the 1969 OAU Convention and the 1984 Cartagena Declaration also cover people fleeing generalised violence or events seriously disturbing public order.",
+      "Refugee status is **declaratory**: recognition confirms that someone already meets the definition. Regional instruments widen it: the 1969 OAU Convention and the 1984 Cartagena Declaration also cover people fleeing generalized violence or events seriously disturbing public order.",
       "**Asylum seekers** use the right in Article 14 of the Universal Declaration of Human Rights to seek asylum. A refused claim means the person didn’t meet the legal definition; some receive complementary protection instead.",
-      "**IDPs** are defined in the *Guiding Principles on Internal Displacement* (1998): forced or obliged to flee because of armed conflict, generalised violence, human rights violations or disasters, without crossing an internationally recognised border. The AU’s Kampala Convention (2009, in force 2012) is the first binding continent-wide treaty on IDPs.",
+      "**IDPs** are defined in the *Guiding Principles on Internal Displacement* (1998): forced or obliged to flee because of armed conflict, generalized violence, human rights violations or disasters, without crossing an internationally recognized border. The AU’s Kampala Convention (2009, in force 2012) is the first binding continent-wide treaty on IDPs.",
       "**Who is responsible?** States are responsible for protecting refugees on their territory. UNHCR, created in 1950, supervises the refugee treaties and helps states; it also works with stateless people and, in many emergencies, with IDPs. UNRWA assists Palestine refugees in its areas of operation. For IDPs, the main duty lies with their own government."
      ],
      pro:[
       {table:[["UNHCR, Global Trends: Forced Displacement in 2025 (end of 2025)","Estimate"],["All forcibly displaced","117.8 million"],["IDPs (conflict and violence, IDMC)","68.7 million"],["Refugees under UNHCR’s mandate","28.5 million"],["Palestine refugees under UNRWA’s mandate","6 million"],["Other people in need of international protection","7.2 million"],["Asylum seekers","about 9 million"]]},
-      "The report found the first fall in global forced displacement in a decade (5.4 million fewer than at the end of 2024), 14.7 million refugee and IDP returns during 2025, 68% of refugees and others in need of international protection hosted in low- and middle-income countries and 65% in neighbouring countries. Components overlap slightly and are rounded.",
-      "Palestine refugees assisted by UNRWA fall outside the 1951 Convention under Article 1D while they receive that assistance. “Other people in need of international protection” is a UNHCR reporting category for people outside their country who need protection but haven’t been formally recognised; most of them (about 6 million at the end of 2025) are Venezuelans.",
-      "Debates continue over whether the 1951 definition fits today’s displacement (generalised violence, gang persecution, climate-related harm), and over the gap between the legal concept and the much larger group of people who are forced to move. These are taken up in {{refugee-law}} and {{climate-and-mobility}}.",
+      "The report found the first fall in global forced displacement in a decade (5.4 million fewer than at the end of 2024), 14.7 million refugee and IDP returns during 2025, 68% of refugees and others in need of international protection hosted in low- and middle-income countries and 65% in neighboring countries. Components overlap slightly and are rounded.",
+      "Palestine refugees assisted by UNRWA fall outside the 1951 Convention under Article 1D while they receive that assistance. “Other people in need of international protection” is a UNHCR reporting category for people outside their country who need protection but haven’t been formally recognized; most of them (about 6 million at the end of 2025) are Venezuelans.",
+      "Debates continue over whether the 1951 definition fits today’s displacement (generalized violence, gang persecution, climate-related harm), and over the gap between the legal concept and the much larger group of people who are forced to move. These are taken up in {{refugee-law}} and {{climate-and-mobility}}.",
       "For refugees, UNHCR and states seek three **durable solutions**: voluntary return home in safety and dignity, local integration in the country of asylum, or resettlement to a third country ([[durable-solutions]], Unit 11). In practice many refugees live for years, even decades, in “protracted” situations without any of the three."
      ]
     },
@@ -888,9 +888,9 @@ ICA.addUnit({
     summary:"A stateless person is not considered a national by any state under the operation of its law; many have never moved.",
     levels:{
      starter:[
-      "Most people have a nationality from birth and never think about it. A **stateless person** has none: no country recognises them as a citizen.",
-      "Many stateless people have never left the country where they were born. They may have been left out by a nationality law, belong to a group that a state refuses to recognise, or lack the documents to prove where they belong.",
-      "Without nationality, everyday life can be very hard: going to school, seeing a doctor, getting a legal job, opening a bank account, registering a marriage or travelling can all be blocked. The problem can pass from parents to children.",
+      "Most people have a nationality from birth and never think about it. A **stateless person** has none: no country recognizes them as a citizen.",
+      "Many stateless people have never left the country where they were born. They may have been left out by a nationality law, belong to a group that a state refuses to recognize, or lack the documents to prove where they belong.",
+      "Without nationality, everyday life can be very hard: going to school, seeing a doctor, getting a legal job, opening a bank account, registering a marriage or traveling can all be blocked. The problem can pass from parents to children.",
       "UNHCR reported 4.5 million stateless people at the end of 2025, and says the true number is likely much higher.",
       {key:"Statelessness is about nationality, not movement. A person can be stateless without ever crossing a border."}
      ],
@@ -903,7 +903,7 @@ ICA.addUnit({
         "**Lack of documentation**, such as unregistered births."
       ]},
       "The Rohingya, most of whom were left without nationality under Myanmar’s 1982 citizenship law, are among the largest stateless populations; many are also refugees.",
-      "**Protection.** The 1954 Convention gives stateless people certain rights, such as identity and travel documents and access to courts, schools and work on terms set out in the treaty. Some countries have **statelessness determination procedures** to identify stateless people on their territory and grant them a protected status, and some offer a route to naturalisation.",
+      "**Protection.** The 1954 Convention gives stateless people certain rights, such as identity and travel documents and access to courts, schools and work on terms set out in the treaty. Some countries have **statelessness determination procedures** to identify stateless people on their territory and grant them a protected status, and some offer a route to naturalization.",
       "Statelessness can also overlap with forced displacement: some refugees are stateless, and lacking a nationality can make it impossible to return home."
      ],
      pro:[
@@ -935,10 +935,10 @@ ICA.addUnit({
       "**Reference dates** matter: UN DESA’s stock refers to 1 July of each year, while UNHCR reports at mid-year and at the end of each year. Always quote the date the number refers to, not just the year a report came out."
      ],
      pro:[
-      "Common traps: **definitions** (birthplace versus citizenship; naturalisation; children of foreign citizens), **emigration undercounts** (handled with mirror statistics from destination countries), **irregular migration** (only indirect estimates), **short and circular moves** missed by 12-month thresholds, **residual net migration** that absorbs errors in population counts, and **missing breakdowns** by sex, age or disability.",
+      "Common traps: **definitions** (birthplace versus citizenship; naturalization; children of foreign citizens), **emigration undercounts** (handled with mirror statistics from destination countries), **irregular migration** (only indirect estimates), **short and circular moves** missed by 12-month thresholds, **residual net migration** that absorbs errors in population counts, and **missing breakdowns** by sex, age or disability.",
       "Global flow data are especially weak: only some countries publish annual flow statistics, and researchers such as Abel and Sander (2014) have estimated global flows indirectly from changes in stocks. New sources (mobile phone records, social media advertising audiences, satellite imagery for displacement) are promising but raise privacy and bias concerns.",
       "The 2018 Global Compact for Migration made data its first objective, and a revised UN statistical framework was endorsed in 2021. Kraler and Reichel’s chapter in *Introduction to Migration Studies* is a clear guide to these issues. See also {{survey-research}} and {{demography}}.",
-      "Estimates of **irregular migration** use indirect methods, such as comparing a census count of the foreign-born with the number of people holding residence permits (the residual method), or working back from regularisation programmes. They come with wide ranges and should be quoted as such.",
+      "Estimates of **irregular migration** use indirect methods, such as comparing a census count of the foreign-born with the number of people holding residence permits (the residual method), or working back from regularization programs. They come with wide ranges and should be quoted as such.",
       "Displacement data have their own traps: IDMC counts both **displacements** (movements, which one person can make several times in a year) and the number of **people** displaced at the end of the year. Mixing the two gives very different numbers."
      ]
     },
@@ -947,23 +947,23 @@ ICA.addUnit({
     sources:[{t:"UN DESA: International Migrant Stock 2024, Key facts and figures (PDF)", url:"https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2025_intlmigstock_2024_key_facts_and_figures_advance-unedited.pdf"},{t:"Migration Data Portal: International migrant stocks", url:"https://www.migrationdataportal.org/themes/international-migrant-stocks-overview"},{t:"Kraler & Reichel, “Migration Statistics”, in Introduction to Migration Studies (2022)", url:"https://doi.org/10.1007/978-3-030-92377-8_27"}],
     checked:"2026-11"},
 
-   {id:"migration-in-history", title:"Migration in history", aka:["history of migration","age of mass migration","transatlantic slave trade","indentured labour","guest workers","Partition"], tags:["migration","history"],
-    summary:"From early human dispersal to Gulf labour migration: a global history in which Asia, Africa and the Pacific matter as much as Europe.",
+   {id:"migration-in-history", title:"Migration in history", aka:["history of migration","age of mass migration","transatlantic slave trade","indentured labor","guest workers","Partition"], tags:["migration","history"],
+    summary:"From early human dispersal to Gulf labor migration: a global history in which Asia, Africa and the Pacific matter as much as Europe.",
     levels:{
      starter:[
-      "People have always moved. *Homo sapiens* first appeared in Africa, and over tens of thousands of years people spread to every continent except Antarctica. Pacific voyagers settled islands across thousands of kilometres of ocean.",
-      "Some of history’s largest movements were forced. In the **transatlantic slave trade** (1500s–1860s) about 12.5 million enslaved Africans were put on ships to the Americas. After slavery was abolished in the British Empire, more than a million Indians and many Chinese, Javanese and Pacific Islanders went to distant plantations as **indentured labourers**.",
+      "People have always moved. *Homo sapiens* first appeared in Africa, and over tens of thousands of years people spread to every continent except Antarctica. Pacific voyagers settled islands across thousands of kilometers of ocean.",
+      "Some of history’s largest movements were forced. In the **transatlantic slave trade** (1500s–1860s) about 12.5 million enslaved Africans were put on ships to the Americas. After slavery was abolished in the British Empire, more than a million Indians and many Chinese, Javanese and Pacific Islanders went to distant plantations as **indentured laborers**.",
       "From the 1840s to 1940, tens of millions moved from Europe *and* from India, China, Russia and north-east Asia. In the 20th century, the end of empires (such as the Partition of India in 1947), guest-worker schemes and the Gulf oil boom all moved millions.",
       {key:"Migration history is global. Most of it isn’t European, and much of it stayed within regions."}
      ],
      builder:[
-      {table:[["Period","Examples"],["Deep past","Dispersal from Africa (roughly 50,000–70,000 years ago for most non-African ancestry); Australia by at least 50,000 years ago; Americas by at least 15,000 years ago; Bantu expansion; Austronesian and Polynesian voyaging"],["1500s–1860s","Transatlantic slave trade (SlaveVoyages: about 12.5 million embarked, 10.7 million disembarked)"],["1834–1930s","Indentured and contract labour from India, China, Java and the Pacific"],["1846–1940","Three systems of mass migration (McKeown 2004)"],["1940s–1970s","Partition (1947); displacement after the Second World War; post-colonial migration; Bracero Program; Western European guest workers"],["1970s–today","Gulf labour migration; regional corridors in Africa, Asia and Latin America"]]},
+      {table:[["Period","Examples"],["Deep past","Dispersal from Africa (roughly 50,000–70,000 years ago for most non-African ancestry); Australia by at least 50,000 years ago; Americas by at least 15,000 years ago; Bantu expansion; Austronesian and Polynesian voyaging"],["1500s–1860s","Transatlantic slave trade (SlaveVoyages: about 12.5 million embarked, 10.7 million disembarked)"],["1834–1930s","Indentured and contract labor from India, China, Java and the Pacific"],["1846–1940","Three systems of mass migration (McKeown 2004)"],["1940s–1970s","Partition (1947); displacement after the Second World War; post-colonial migration; Bracero Program; Western European guest workers"],["1970s–today","Gulf labor migration; regional corridors in Africa, Asia and Latin America"]]},
       "The age of mass migration also produced the first modern race-based restrictions, such as the US Chinese Exclusion Act (1882) and Australia’s Immigration Restriction Act (1901).",
       "The end of empires moved millions: around 15 million people crossed the new borders at the Partition of British India in 1947; more than 700,000 Palestinians fled or were expelled in 1947–1949; an estimated 12 to 14 million ethnic Germans fled or were expelled from central and eastern Europe after 1945; and people from former colonies moved to Britain, France, the Netherlands and Portugal.",
       "Postwar economies recruited workers on purpose: the US Bracero Program (1942–1964) for Mexican farm workers, and West Germany’s agreements with Italy (1955), Spain and Greece (1960), Türkiye (1961), Morocco (1963), Portugal (1964), Tunisia (1965) and Yugoslavia (1968), ended in 1973. From the 1970s the Gulf states recruited workers, first mainly from other Arab countries and then from South and South-East Asia."
      ],
      pro:[
-      "Adam McKeown’s “Global Migration, 1846–1940” (*Journal of World History*, 2004) estimated 55–58 million long-distance migrants from Europe, 48–52 million from India and southern China and 46–51 million from north-east Asia and Russia, challenging Atlantic-centred histories. Historians such as Marlou Schrover also stress that migration was often temporary and circular, and that the line between “free” and “unfree” migration was blurry (indenture, debt bondage, convict transportation).",
+      "Adam McKeown’s “Global Migration, 1846–1940” (*Journal of World History*, 2004) estimated 55–58 million long-distance migrants from Europe, 48–52 million from India and southern China and 46–51 million from north-east Asia and Russia, challenging Atlantic-centered histories. Historians such as Marlou Schrover also stress that migration was often temporary and circular, and that the line between “free” and “unfree” migration was blurry (indenture, debt bondage, convict transportation).",
       "Dates for early human dispersal are ranges that shift with new evidence from archaeology and ancient DNA; claims of very early arrivals in Australia and the Americas are actively debated.",
       "Today’s geography carries this history: Gulf–South Asia corridors, intra-African mobility (64% of migrants born in sub-Saharan Africa lived elsewhere in the region in 2024, UN DESA), and diasporas formed by slavery, indenture and empire.",
       "How migration is remembered is itself a research topic. National stories often celebrate some migrations (founding settlers, a “nation of immigrants”) and forget others (forced removals, indenture, expulsions). Museums, monuments and school curricula in many countries have been revised as historians and descendants have pressed for fuller accounts, for example of slavery, indenture and the Windrush generation.",
@@ -989,9 +989,9 @@ ICA.addUnit({
       {key:"Describe the situation, not the person: status can change, people remain people."}
      ],
      builder:[
-      "**Irregular migration** is movement outside the rules governing entry, stay or exit (IOM). People can become irregular by entering without authorisation, overstaying a visa or losing a permit, and can become regular again through regularisation.",
+      "**Irregular migration** is movement outside the rules governing entry, stay or exit (IOM). People can become irregular by entering without authorization, overstaying a visa or losing a permit, and can become regular again through regularization.",
       "Early official guidance: UN General Assembly resolution 3449 (1975) asked UN bodies to use “non-documented or irregular migrant workers”. In 2013 the AP Stylebook stopped using “illegal immigrant”. The PICUM network’s “Words Matter” campaign promotes “undocumented” and person-first language.",
-      "**Asylum seekers** are a special case: seeking asylum is a right (UDHR Article 14), and Article 31 of the 1951 Convention protects refugees who enter without authorisation from penalties, under conditions.",
+      "**Asylum seekers** are a special case: seeking asylum is a right (UDHR Article 14), and Article 31 of the 1951 Convention protects refugees who enter without authorization from penalties, under conditions.",
       "Metaphors matter too: “flood”, “wave”, “swarm” and “invasion” frame people as a disaster or an enemy. Specific numbers with sources say more and frame less.",
       "Some useful contrasts:",
       {table:[["Loaded or vague","More precise"],["Illegal immigrant","Irregular or undocumented migrant; a person with irregular status"],["Bogus asylum seeker","Asylum seeker (whose claim was refused, if that is the case)"],["Flood, wave, swarm","An increase in arrivals, with the number, the period and the source"],["Expat (for some only)","Migrant, or the specific status, for everyone"]]},
@@ -1002,7 +1002,7 @@ ICA.addUnit({
       "Researchers on “expat” language (for example studies of professionals in Asian and Gulf cities) show how the term marks class, race and nationality, and how it shapes access to housing, social life and status. Some people adopt it, others reject it.",
       "Language changes, and preferences differ between communities and countries. Follow the self-description of the people involved where you can, prefer precise legal terms where they apply, and avoid words that turn a status into an identity. Framing and its effects are covered in {{migration-narratives}}.",
       "Researchers also study how these words travel: from politicians and campaigners to headlines, and from headlines into everyday speech. Studies of media coverage in several countries have found that coverage often concentrates on borders, crises and numbers, and less often quotes migrants themselves; Unit 12 looks at that evidence and its limits.",
-      "Other languages have their own debates. French activists popularised *sans-papiers* (“without papers”) as a self-chosen name for undocumented people, and similar discussions exist in Spanish, German, Japanese and other languages. When writing in or translating from another language, check which terms the people concerned and specialist organisations use there."
+      "Other languages have their own debates. French activists popularized *sans-papiers* (“without papers”) as a self-chosen name for undocumented people, and similar discussions exist in Spanish, German, Japanese and other languages. When writing in or translating from another language, check which terms the people concerned and specialist organizations use there."
      ]
     },
     related:["who-is-a-migrant","refugees-and-displacement","migration-narratives"],
@@ -1022,14 +1022,14 @@ ICA.addUnit({
    {id:"country-of-origin", term:"Country of origin", def:"The country a migrant comes from: their country of nationality or former usual residence.", codex:"who-is-a-migrant"},
    {id:"country-of-destination", term:"Country of destination", def:"The country a migrant is going to, or now lives in.", codex:"who-is-a-migrant"},
    {id:"transit-migration", term:"Transit migration", def:"Passing through one or more countries on the way to another. Stays in “transit” countries can last months or years, and some people settle there.", codex:"who-is-a-migrant"},
-   {id:"labour-migration", term:"Labour migration", def:"Moving, within a country or across borders, for work.", codex:"who-is-a-migrant"},
+   {id:"labour-migration", term:"Labor migration", def:"Moving, within a country or across borders, for work.", codex:"who-is-a-migrant"},
    {id:"family-migration", term:"Family migration", def:"Moving to join or accompany family members, such as a spouse, parents or children; includes family reunification and marriage migration.", codex:"who-is-a-migrant"},
    {id:"student-migration", term:"Student migration", def:"Moving to another place, often another country, to study. It is often the first step of a longer stay or a return with new skills.", codex:"who-is-a-migrant"},
    {id:"forced-migration", term:"Forced migration", def:"Movement that involves force, compulsion or coercion, for example because of conflict, persecution, disasters, development projects or trafficking.", codex:"refugees-and-displacement"},
-   {id:"mixed-migration", term:"Mixed migration", def:"People with different reasons and legal situations (refugees, workers, children travelling alone, trafficking victims) moving together along the same routes.", codex:"refugees-and-displacement"},
+   {id:"mixed-migration", term:"Mixed migration", def:"People with different reasons and legal situations (refugees, workers, children traveling alone, trafficking victims) moving together along the same routes.", codex:"refugees-and-displacement"},
    {id:"temporary-migration", term:"Temporary migration", def:"Migration for a limited period, often tied to a contract, course or visa, after which the person plans to leave. Plans often change.", codex:"who-is-a-migrant"},
    {id:"circular-migration", term:"Circular migration", def:"Repeated movement back and forth between places, such as seasonal work abroad followed by time at home.", codex:"who-is-a-migrant"},
-   {id:"irregular-migration", term:"Irregular migration", def:"Movement or stay outside the laws and rules governing entry, stay or exit, for example entry without authorisation or overstaying a visa. Researchers avoid calling people “illegal”.", codex:"words-and-migration"},
+   {id:"irregular-migration", term:"Irregular migration", def:"Movement or stay outside the laws and rules governing entry, stay or exit, for example entry without authorization or overstaying a visa. Researchers avoid calling people “illegal”.", codex:"words-and-migration"},
    {id:"expatriate", term:"Expatriate (expat)", def:"Someone living outside their country of origin. In practice the word is often reserved for wealthier people from richer countries, which researchers question.", codex:"words-and-migration"},
    {id:"refugee", term:"Refugee", def:"Under the 1951 Convention, a person outside their country who has a well-founded fear of persecution for reasons of race, religion, nationality, a particular social group or political opinion. They must also be unable or unwilling to seek that country’s protection.", codex:"refugees-and-displacement"},
    {id:"asylum-seeker", term:"Asylum seeker", def:"A person seeking international protection whose claim has not yet been finally decided. Seeking asylum is a human right.", codex:"refugees-and-displacement"},
@@ -1043,7 +1043,7 @@ ICA.addUnit({
    {id:"administrative-data", term:"Administrative data", def:"Records kept for running a service, such as visas, residence permits or asylum applications, that can also be used for statistics. They count documents and events, not people.", codex:"measuring-migration"},
    {id:"migration-data-gap", term:"Migration data gap", def:"The distance between what we need to know about migration and what the available data can tell us. It comes from differing definitions, missing sources and hard-to-count groups.", codex:"measuring-migration"},
    {id:"transatlantic-slave-trade", term:"Transatlantic slave trade", def:"The forced transport of enslaved Africans across the Atlantic to the Americas, from the early 1500s to the 1860s; about 12.5 million people were embarked (SlaveVoyages).", codex:"migration-in-history"},
-   {id:"indentured-labour", term:"Indentured labour", def:"Work under a contract binding a worker to one employer for several years, often in a distant colony, in return for passage and wages. It was widely used on plantations after slavery was abolished.", codex:"migration-in-history"},
+   {id:"indentured-labour", term:"Indentured labor", def:"Work under a contract binding a worker to one employer for several years, often in a distant colony, in return for passage and wages. It was widely used on plantations after slavery was abolished.", codex:"migration-in-history"},
    {id:"guest-worker", term:"Guest worker", def:"A worker recruited from abroad under a scheme that expects them to stay only temporarily, as in West Germany’s Gastarbeiter recruitment (1955–1973).", codex:"migration-in-history"}
   ],
   bank:[
@@ -1054,7 +1054,7 @@ ICA.addUnit({
      {t:"The legal study of visas", why:"Law is one part; the field also studies history, culture, identity and data."},
      {t:"A government department that sets and enforces migration policy", why:"It is an academic field of research, not a government body."}]},
    {id:"e2u9-q02", lesson:"e2u9-l1", level:2, q:"Kenji’s grandmother moved abroad fifty years ago and became a citizen of her new country long ago. In UN DESA’s international migrant figures, is she usually counted?", options:[
-     {t:"Yes, because the estimates mostly use country of birth, which naturalisation doesn’t change", ok:true, why:"Right. UN DESA uses birthplace where available, so naturalised citizens usually remain in the migrant stock."},
+     {t:"Yes, because the estimates mostly use country of birth, which naturalization doesn’t change", ok:true, why:"Right. UN DESA uses birthplace where available, so naturalized citizens usually remain in the migrant stock."},
      {t:"No, because citizens are never counted as migrants", why:"That is true only of citizenship-based counts. Most UN figures are birthplace-based."},
      {t:"No, because she moved more than 30 years ago", why:"There is no time limit. Anyone living outside their country of birth is counted."},
      {t:"Only if she still holds her original passport", why:"Passports don’t decide it; country of birth (or, where unavailable, citizenship) does."}]},
@@ -1110,7 +1110,7 @@ ICA.addUnit({
      {t:"A refugee", why:"Refugee status depends on the 1951 definition, not on visa status."},
      {t:"A stateless person", why:"An expired visa doesn’t remove anyone’s nationality."}]},
    {id:"e2u9-q13", lesson:"e2u9-l2", level:1, q:"What did UN General Assembly resolution 3449 (1975) ask UN bodies to do?", options:[
-     {t:"Use the terms “non-documented or irregular migrant workers”", ok:true, why:"Correct. It was an early official move away from labelling people “illegal”."},
+     {t:"Use the terms “non-documented or irregular migrant workers”", ok:true, why:"Correct. It was an early official move away from labeling people “illegal”."},
      {t:"Close all borders to migrant workers", why:"The resolution concerned human rights and terminology, not closing borders."},
      {t:"Create the 1951 Refugee Convention", why:"That Convention was adopted in 1951, 24 years earlier."},
      {t:"Count internal migrants in every census", why:"The resolution wasn’t about census methods."}]},
@@ -1122,7 +1122,7 @@ ICA.addUnit({
    {id:"e2u9-q15", lesson:"e2u9-l2", level:2, q:"Which is an example of forced migration?", options:[
      {t:"People relocated before a valley is flooded for a dam", ok:true, why:"Correct. Development-induced displacement is forced migration."},
      {t:"A student moving abroad for a degree", why:"That is voluntary student migration."},
-     {t:"An engineer accepting a job offer abroad for higher pay", why:"That is labour migration by choice."},
+     {t:"An engineer accepting a job offer abroad for higher pay", why:"That is labor migration by choice."},
      {t:"A retired couple moving to the coast", why:"That is a voluntary internal move."}]},
    {id:"e2u9-q16", lesson:"e2u9-l2", level:3, q:"On one boat crossing, there are people fleeing persecution, people seeking work, two unaccompanied teenagers and a woman who was deceived by traffickers. What concept describes this?", options:[
      {t:"Mixed migration", ok:true, why:"Right. People with different reasons and legal situations travel the same route together, so each person’s situation must be assessed."},
@@ -1133,9 +1133,9 @@ ICA.addUnit({
      {t:"Many returned, but many stayed and brought families", ok:true, why:"Correct. Temporary schemes often lead to some permanent settlement."},
      {t:"Every worker returned exactly as planned", why:"Many stayed, and their families joined them."},
      {t:"No worker ever returned", why:"Many did return. Both happened."},
-     {t:"The schemes were cancelled before any workers arrived", why:"Millions of workers came between 1955 and 1973."}]},
+     {t:"The schemes were canceled before any workers arrived", why:"Millions of workers came between 1955 and 1973."}]},
    {id:"e2u9-q18", lesson:"e2u9-l2", level:1, q:"According to Article 31 of the 1951 Refugee Convention, refugees who come directly from danger and present themselves to the authorities without delay should not be…", options:[
-     {t:"penalised for entering or being present without authorisation", ok:true, why:"Correct, provided they meet the article’s conditions."},
+     {t:"penalized for entering or being present without authorization", ok:true, why:"Correct, provided they meet the article’s conditions."},
      {t:"allowed to apply for asylum", why:"The opposite: the Convention exists to protect people who seek refuge."},
      {t:"given any documents", why:"The Convention provides for identity and travel documents for refugees."},
      {t:"counted in migration statistics", why:"The Convention says nothing about statistics; refugees are counted."}]},
@@ -1161,9 +1161,9 @@ ICA.addUnit({
      {t:"That she was never really an asylum seeker", why:"She was an asylum seeker while her claim was pending."},
      {t:"That she is now stateless", why:"A refused asylum claim doesn’t affect nationality."}]},
    {id:"e2u9-q23", lesson:"e2u9-l3", level:3, q:"A headline says “Most refugees head for rich countries.” What do UNHCR’s figures for the end of 2025 show?", options:[
-     {t:"Most lived in low- and middle-income countries", ok:true, why:"Right. 68% of refugees and others needing international protection lived in low- and middle-income countries, and 65% in neighbouring countries. The headline contradicts UNHCR’s data."},
+     {t:"Most lived in low- and middle-income countries", ok:true, why:"Right. 68% of refugees and others needing international protection lived in low- and middle-income countries, and 65% in neighboring countries. The headline contradicts UNHCR’s data."},
      {t:"90% lived in Europe and North America", why:"The figures show the opposite pattern."},
-     {t:"Refugees are spread equally across all countries", why:"They are concentrated in neighbouring and lower-income countries."},
+     {t:"Refugees are spread equally across all countries", why:"They are concentrated in neighboring and lower-income countries."},
      {t:"No data exist on where refugees live", why:"UNHCR publishes host-country data every year."}]},
    {id:"e2u9-q24", lesson:"e2u9-l3", level:1, q:"How does the 1954 Convention define a stateless person?", options:[
      {t:"A person who is not considered as a national by any State under the operation of its law", ok:true, why:"Correct, word for word."},
@@ -1211,7 +1211,7 @@ ICA.addUnit({
      {t:"Airline passenger lists", why:"Passenger lists count trips, not residents."},
      {t:"Social media posts", why:"Digital sources are experimental, not the main basis."},
      {t:"UNHCR refugee registrations only", why:"Those cover refugees, a minority of all migrants."}]},
-   {id:"e2u9-q33", lesson:"e2u9-l4", level:3, q:"Country A counts migrants by citizenship; Country B by country of birth. Country A has a high naturalisation rate. What should you expect when comparing their figures?", options:[
+   {id:"e2u9-q33", lesson:"e2u9-l4", level:3, q:"Country A counts migrants by citizenship; Country B by country of birth. Country A has a high naturalization rate. What should you expect when comparing their figures?", options:[
      {t:"Country A’s count will look lower", ok:true, why:"Right. Naturalised migrants drop out of a citizenship-based count. Definitions, not just reality, shape the numbers."},
      {t:"The figures will be directly comparable", why:"Different definitions make direct comparison misleading."},
      {t:"Country B’s count will exclude everyone born abroad", why:"A birth-based count includes everyone born abroad."},
@@ -1238,7 +1238,7 @@ ICA.addUnit({
      {t:"About 125 million", why:"Far too high; the estimate is about 12.5 million."},
      {t:"No estimates exist", why:"Historians have built detailed estimates from shipping records."}]},
    {id:"e2u9-q38", lesson:"e2u9-l5", level:2, q:"After the British Empire’s abolition of slavery took effect in 1834, how did many plantation colonies such as Mauritius, Trinidad and Fiji get workers?", options:[
-     {t:"Through indentured labour, especially from India", ok:true, why:"Correct. More than a million Indians went as indentured workers between 1834 and about 1917–1920."},
+     {t:"Through indentured labor, especially from India", ok:true, why:"Correct. More than a million Indians went as indentured workers between 1834 and about 1917–1920."},
      {t:"Through guest-worker agreements with Türkiye", why:"Those were West German agreements in the 1960s."},
      {t:"Through the EU’s free movement rules", why:"The EU didn’t exist until the 20th century."},
      {t:"By hiring only local workers", why:"Plantation owners recruited workers from far away."}]},
@@ -1252,9 +1252,9 @@ ICA.addUnit({
      {t:"Nothing: European migration was the only large movement", why:"McKeown’s whole point was that it wasn’t."},
      {t:"That the European figure was exaggerated tenfold", why:"He didn’t claim that; he added the Asian systems."},
      {t:"That migration stopped entirely between 1846 and 1940", why:"This was a period of very high migration."}]},
-   {id:"e2u9-q41", lesson:"e2u9-l5", level:2, q:"Which description of Gulf labour migration is accurate?", options:[
+   {id:"e2u9-q41", lesson:"e2u9-l5", level:2, q:"Which description of Gulf labor migration is accurate?", options:[
      {t:"From the 1970s, oil wealth drew workers from abroad", ok:true, why:"Correct. They came first mainly from other Arab countries, then increasingly from South and South-East Asia. Today migrants are most residents in several Gulf states."},
-     {t:"It began in the 1500s with the slave trade", why:"Modern Gulf labour migration grew from the 1970s oil boom."},
+     {t:"It began in the 1500s with the slave trade", why:"Modern Gulf labor migration grew from the 1970s oil boom."},
      {t:"Gulf migrants are mostly refugees", why:"Most are workers on contracts."},
      {t:"Migrants are a small minority in every single Gulf state", why:"They are the majority of residents in Kuwait, Qatar and the United Arab Emirates."}]},
    {id:"e2u9-q42", lesson:"e2u9-l5", level:1, q:"When did people of the Lapita culture begin settling the islands of Remote Oceania?", options:[

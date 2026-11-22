@@ -33,7 +33,7 @@ ICA.addUnit({
         {key:"A computer = input → processing → output, with storage keeping things for later. Everything else in this unit is detail on those four jobs."}
       ]},
       {h:"The four jobs: input, processing, storage, output", body:[
-        "Every computer, from a smartwatch to a data-centre [[server]], does the same four jobs. Learning to see them is the most useful habit in this whole unit, because when something goes wrong you can ask: “Which of the four jobs is failing?”",
+        "Every computer, from a smartwatch to a data-center [[server]], does the same four jobs. Learning to see them is the most useful habit in this whole unit, because when something goes wrong you can ask: “Which of the four jobs is failing?”",
         {table:[
           ["Job","What it means","Examples of parts"],
           ["**Input**","Information coming **into** the computer","Keyboard, mouse, touchscreen, microphone, camera, fingerprint reader, sensors (GPS, motion)"],
@@ -69,13 +69,13 @@ ICA.addUnit({
           ["Smartwatch, fitness band","Touch, heart-rate and motion sensors","Small screen, vibration","Usually paired with a phone"],
           ["Car","Pedals, sensors, buttons, voice","Dashboard screen, engine control","Modern cars contain many small computers"],
           ["Wi-Fi router","Network traffic","Network traffic","A computer with no screen; has firmware that needs updates"],
-          ["Server","Requests from other computers","Web pages, email, files","Serves other computers over a network, usually in a data centre"]
+          ["Server","Requests from other computers","Web pages, email, files","Serves other computers over a network, usually in a data center"]
         ]},
         "Small computers built into other products (a washing machine, a thermostat, a car’s braking system) are called **embedded** computers. You rarely see them, but they follow the same four jobs. The practical lesson: anything that runs software can have bugs, needs updates, and can be a security risk. That is why Unit 3 talks about routers and smart devices, not just laptops."
       ]},
-      {h:"Servers, data centres and what “the cloud” physically is", body:[
-        "A [[server]] is a computer whose job is to serve other computers. When you open a website, your phone (the **client**) sends a request across the internet, and a server somewhere sends back the page. Servers usually have no screen or keyboard of their own. Thousands of them are stacked in racks inside large buildings called **data centres**, with powerful cooling, backup power and fast network links.",
-        "That is all “[[cloud|the cloud]]” is: storage and processing on **other people’s computers**, run by a company, that you reach over the internet. When Lucía “saves to the cloud”, her photos are copied onto storage drives in servers in one or more data centres. They are real files on real hardware; she just doesn’t own or see that hardware.",
+      {h:"Servers, data centers and what “the cloud” physically is", body:[
+        "A [[server]] is a computer whose job is to serve other computers. When you open a website, your phone (the **client**) sends a request across the internet, and a server somewhere sends back the page. Servers usually have no screen or keyboard of their own. Thousands of them are stacked in racks inside large buildings called **data centers**, with powerful cooling, backup power and fast network links.",
+        "That is all “[[cloud|the cloud]]” is: storage and processing on **other people’s computers**, run by a company, that you reach over the internet. When Lucía “saves to the cloud”, her photos are copied onto storage drives in servers in one or more data centers. They are real files on real hardware; she just doesn’t own or see that hardware.",
         {tip:"Cloud storage is useful (your files survive if your phone is lost) but it is not magic. It depends on your internet connection, your account, and the provider. Unit 2 covers cloud storage, syncing and backups properly."}
       ]},
       {h:"Why this model matters in real life", body:[
@@ -129,9 +129,9 @@ ICA.addUnit({
         {t:"A friend’s phone downloads it and plays it through the speaker", why:"Finally, output to a person, on another computer."}
       ]},
       {id:"t1u1-l1-x5", type:"mcq", q:"Lucía taps “Back up photos to the cloud”. Physically, where do her photos end up?", options:[
-        {t:"On storage drives in servers in the provider’s data centres", ok:true, why:"The cloud is other organisations’ computers that you reach over the internet. Her photos are real files on real drives."},
+        {t:"On storage drives in servers in the provider’s data centers", ok:true, why:"The cloud is other organizations’ computers that you reach over the internet. Her photos are real files on real drives."},
         {t:"Floating in the internet itself, not on any particular machine", why:"Data always has to be stored on some physical hardware. The internet only carries data between computers."},
-        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places, but cloud storage lives in ground-based data centres."},
+        {t:"In a satellite orbiting the Earth", why:"Satellites can carry internet signals in some places, but cloud storage lives in ground-based data centers."},
         {t:"Only on her phone, with a link to it saved online", why:"That would not protect her photos if the phone were lost. A cloud backup copies the files onto the provider’s servers."}
       ]},
       {id:"t1u1-l1-x6", type:"match", q:"Match each problem to the job that is most likely failing.", pairs:[
@@ -190,7 +190,7 @@ ICA.addUnit({
           "[[ram|RAM]] (random-access memory) is the **countertop** where the cook works. Whatever you have open right now (apps, browser tabs, the document you are typing) sits in RAM so the CPU can reach it instantly. RAM is very fast but **volatile**: it empties when the power goes off.",
           "[[storage|Storage]] is the **pantry and fridge**. It keeps your files, apps and the operating system permanently, even with the power off. It is much bigger than RAM but slower."
         ]},
-        {fig:'<svg viewBox="0 0 340 380"><defs><marker id="t1u1-l2-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="18.9" y="14" width="170" height="60" rx="10" stroke-width="2"/><text x="103.9" y="40" text-anchor="middle">CPU</text><text class="s" x="103.9" y="60" text-anchor="middle">does the work</text><path class="d-ink" d="M85,76 L85,110" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,110 L122.8,76" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><rect class="d-lup" x="18.9" y="114" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="138" text-anchor="middle">RAM</text><text class="s" x="103.9" y="157" text-anchor="middle">what’s open now</text><text class="s" x="103.9" y="175" text-anchor="middle">empties at power-off</text><path class="d-ink" d="M85,192 L85,226" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,226 L122.8,192" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><text class="s" x="75.6" y="213" text-anchor="end">save</text><text class="s" x="132.2" y="213">open</text><rect class="d-gold" x="18.9" y="230" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="254" text-anchor="middle">Storage</text><text class="s" x="103.9" y="273" text-anchor="middle">SSD or HDD</text><text class="s" x="103.9" y="291" text-anchor="middle">keeps files, no power</text><path class="d-ink" d="M226.7,26 L226.7,294" stroke-width="2" marker-start="url(#t1u1-l2-mk)" marker-end="url(#t1u1-l2-mk)"/><text x="238" y="40">faster,</text><text x="238" y="58">smaller</text><text x="238" y="268">bigger,</text><text x="238" y="286">slower</text><rect class="d-panel" x="9.4" y="320" width="321.1" height="50" rx="8" stroke-width="1"/><text class="s" x="170" y="341" text-anchor="middle">Open a file: storage → RAM → CPU.</text><text class="s" x="170" y="359" text-anchor="middle">Save: RAM → storage.</text></svg>', alt:"Diagram: CPU, RAM and Storage stacked from top to bottom, with two-way arrows between CPU and RAM, and between RAM and Storage. Opening a file copies it from storage into RAM for the CPU; saving copies it from RAM back to storage. A side arrow shows that towards the CPU things are faster and smaller; towards storage they are bigger and slower, and storage keeps files without power.", cap:"When you open a file it is copied from storage into RAM, where the CPU works on it. Saving copies your changes back to storage."},
+        {fig:'<svg viewBox="0 0 340 380"><defs><marker id="t1u1-l2-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-rose" x="18.9" y="14" width="170" height="60" rx="10" stroke-width="2"/><text x="103.9" y="40" text-anchor="middle">CPU</text><text class="s" x="103.9" y="60" text-anchor="middle">does the work</text><path class="d-ink" d="M85,76 L85,110" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,110 L122.8,76" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><rect class="d-lup" x="18.9" y="114" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="138" text-anchor="middle">RAM</text><text class="s" x="103.9" y="157" text-anchor="middle">what’s open now</text><text class="s" x="103.9" y="175" text-anchor="middle">empties at power-off</text><path class="d-ink" d="M85,192 L85,226" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><path class="d-ink" d="M122.8,226 L122.8,192" stroke-width="2" marker-end="url(#t1u1-l2-mk)"/><text class="s" x="75.6" y="213" text-anchor="end">save</text><text class="s" x="132.2" y="213">open</text><rect class="d-gold" x="18.9" y="230" width="170" height="76" rx="10" stroke-width="2"/><text x="103.9" y="254" text-anchor="middle">Storage</text><text class="s" x="103.9" y="273" text-anchor="middle">SSD or HDD</text><text class="s" x="103.9" y="291" text-anchor="middle">keeps files, no power</text><path class="d-ink" d="M226.7,26 L226.7,294" stroke-width="2" marker-start="url(#t1u1-l2-mk)" marker-end="url(#t1u1-l2-mk)"/><text x="238" y="40">faster,</text><text x="238" y="58">smaller</text><text x="238" y="268">bigger,</text><text x="238" y="286">slower</text><rect class="d-panel" x="9.4" y="320" width="321.1" height="50" rx="8" stroke-width="1"/><text class="s" x="170" y="341" text-anchor="middle">Open a file: storage → RAM → CPU.</text><text class="s" x="170" y="359" text-anchor="middle">Save: RAM → storage.</text></svg>', alt:"Diagram: CPU, RAM and Storage stacked from top to bottom, with two-way arrows between CPU and RAM, and between RAM and Storage. Opening a file copies it from storage into RAM for the CPU; saving copies it from RAM back to storage. A side arrow shows that toward the CPU things are faster and smaller; toward storage they are bigger and slower, and storage keeps files without power.", cap:"When you open a file it is copied from storage into RAM, where the CPU works on it. Saving copies your changes back to storage."},
         {table:[
           ["","RAM (memory)","Storage"],
           ["Job","Holds what is open right now","Keeps files, apps and the operating system"],
@@ -240,14 +240,14 @@ ICA.addUnit({
           ["Wi-Fi","No plug: radio","Connecting to a wireless network and the internet"]
         ]},
         {warn:"**USB-C is a shape, not a promise.** The same oval plug can carry slow or fast data, small or large amounts of charging power, and sometimes a video signal to a monitor, but only if the port, the cable **and** the device all support that feature. If a monitor shows nothing over USB-C, the port or cable may simply not carry video. Look for small symbols next to the port, or check the maker’s spec sheet."},
-        "Some USB-C ports are also labelled **Thunderbolt** (a lightning-bolt symbol). They use the same shape and add extra speed and features. A Thunderbolt port works with ordinary USB-C devices too."
+        "Some USB-C ports are also labeled **Thunderbolt** (a lightning-bolt symbol). They use the same shape and add extra speed and features. A Thunderbolt port works with ordinary USB-C devices too."
       ]},
       {h:"Reading a real spec sheet", body:[
         "A [[spec-sheet|spec sheet]] (specifications) is the list of parts printed on a shop page or box. It looks intimidating, but you now know most of the words. Here is a made-up but typical example:",
         {ex:"Processor:  8-core, up to 4.4 GHz\nMemory:     16 GB RAM\nStorage:    512 GB SSD\nGraphics:   Integrated\nDisplay:    14-inch, 1920 × 1200\nPorts:      2 × USB-C (charging + display), 1 × USB-A, HDMI, headphone jack\nWireless:   Wi-Fi 6E, Bluetooth 5.3\nBattery:    up to 12 hours (maker’s claim)\nWeight:     1.4 kg\nOS:         Windows 11 Home", label:"A spec sheet", mono:true},
         "How to read it for everyday study and work (documents, browsing, video calls, spreadsheets):",
         {ol:[
-          "**Check the operating system first.** It decides which apps you can run. If your course, workplace or favourite app needs a specific one, that settles it.",
+          "**Check the operating system first.** It decides which apps you can run. If your course, workplace or favorite app needs a specific one, that settles it.",
           "**RAM:** more RAM lets you keep more open at once. If you use many browser tabs plus a video call, extra RAM is often what you notice most. Check the recommended (not minimum) requirements of the software you rely on.",
           "**Storage type and size:** prefer an SSD (or flash storage) to a hard disk for the main drive. Leave room for growth: the operating system and its updates take a large share, and phones and many laptops can’t be upgraded later.",
           "**Processor:** for everyday tasks almost any current processor is fine. Compare model generations, not just GHz.",
@@ -311,7 +311,7 @@ ICA.addUnit({
       {id:"t1u1-l2-x8", type:"explain", q:"A shop assistant says: “This laptop has 512 GB of memory, so it will never slow down, however many tabs you open.” Explain what is wrong with that.", hint:"Is 512 GB more likely to be RAM or storage? Which one holds what you have open?", model:"512 GB is almost certainly the storage (the SSD), not the memory. Storage is the cupboard: it keeps files, apps and the operating system even when the power is off. RAM is the workspace: it holds whatever is open right now and empties when you switch off. How many tabs and apps you can keep open smoothly depends mainly on RAM, which is usually a few to a few dozen GB, so you would need to check the RAM figure instead.", points:["Says 512 GB is storage, not RAM", "Explains that RAM holds what is open right now", "Explains that storage keeps things when the power is off", "Says lots of open tabs depend mainly on RAM"]}
     ],
     apply:{
-      intro:"Find the real specs of the device you’re using, and practise reading a spec sheet.",
+      intro:"Find the real specs of the device you’re using, and practice reading a spec sheet.",
       tasks:[
         {t:"Find your processor, RAM and storage", how:{
           win:["Open **Settings → System → About**. Under **Device specifications**, note **Processor** and **Installed RAM**.","Open **Settings → System → Storage** and note the total size and how much is used.","Optional: press [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:Esc]] to open Task Manager and look at the **Performance** tab for CPU, Memory and Disk."],
@@ -343,7 +343,7 @@ ICA.addUnit({
     learn:[
       {h:"Why computers count in twos", body:[
         {lead:"Inside a computer, every piece of information is stored as a long row of tiny switches that are either off or on."},
-        "Electronics are very good at telling two states apart: current or no current, charged or not charged, magnetised one way or the other. So computers use [[binary]]: a number system with only two digits, **0** and **1**. One binary digit is called a [[bit]] (short for “binary digit”).",
+        "Electronics are very good at telling two states apart: current or no current, charged or not charged, magnetized one way or the other. So computers use [[binary]]: a number system with only two digits, **0** and **1**. One binary digit is called a [[bit]] (short for “binary digit”).",
         "One bit can only say two things: yes/no, on/off. But bits combine quickly. Two bits give four patterns (00, 01, 10, 11). Every extra bit doubles the number of patterns:",
         {table:[
           ["Number of bits","Different patterns","Enough to store…"],
@@ -351,19 +351,19 @@ ICA.addUnit({
           ["2","4","the four seasons"],
           ["4","16","one hexadecimal digit (0–9, A–F)"],
           ["8","256","one basic letter, digit or symbol"],
-          ["24","about 16.7 million","one pixel’s colour (8 bits each for red, green, blue)"]
+          ["24","about 16.7 million","one pixel’s color (8 bits each for red, green, blue)"]
         ]},
         {ex:"In ordinary (decimal) numbers each place is worth ten times the one to its right: ones, tens, hundreds. In binary each place is worth **two** times the one to its right: 1, 2, 4, 8, 16…\n\nSo binary 0101 = (0 × 8) + (1 × 4) + (0 × 2) + (1 × 1) = **5**.\nAnd binary 1101 = 8 + 4 + 0 + 1 = **13**.", label:"Worked example: reading binary"},
-        "You will never need to do binary arithmetic for everyday computing. What matters is the idea: **everything is numbers**, and numbers are stored as bits. A letter, a pixel’s colour, a moment of sound: each is given a numeric code, and the code is stored in binary."
+        "You will never need to do binary arithmetic for everyday computing. What matters is the idea: **everything is numbers**, and numbers are stored as bits. A letter, a pixel’s color, a moment of sound: each is given a numeric code, and the code is stored in binary."
       ]},
       {h:"From bits to bytes", body:[
         "Bits are too small to be handy, so they are grouped in eights. Eight bits make one [[byte]]. One byte can hold 256 different patterns, enough for one basic letter, digit or punctuation mark in common text encodings.",
         {fig:'<svg viewBox="0 0 340 274"><defs><marker id="t1u1-l3-mk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text class="s" x="170" y="22" text-anchor="middle">8 bits = 1 byte</text><rect class="d-lup" x="49.1" y="32" width="30.2" height="40" stroke-width="2"/><text x="64.2" y="58" text-anchor="middle">0</text><rect class="d-rose" x="79.3" y="32" width="30.2" height="40" stroke-width="2"/><text x="94.4" y="58" text-anchor="middle">1</text><rect class="d-lup" x="109.6" y="32" width="30.2" height="40" stroke-width="2"/><text x="124.7" y="58" text-anchor="middle">0</text><rect class="d-lup" x="139.8" y="32" width="30.2" height="40" stroke-width="2"/><text x="154.9" y="58" text-anchor="middle">0</text><rect class="d-lup" x="170" y="32" width="30.2" height="40" stroke-width="2"/><text x="185.1" y="58" text-anchor="middle">0</text><rect class="d-lup" x="200.2" y="32" width="30.2" height="40" stroke-width="2"/><text x="215.3" y="58" text-anchor="middle">0</text><rect class="d-lup" x="230.4" y="32" width="30.2" height="40" stroke-width="2"/><text x="245.6" y="58" text-anchor="middle">0</text><rect class="d-rose" x="260.7" y="32" width="30.2" height="40" stroke-width="2"/><text x="275.8" y="58" text-anchor="middle">1</text><text class="s" x="64.2" y="88" text-anchor="middle">128</text><text class="s" x="94.4" y="88" text-anchor="middle">64</text><text class="s" x="124.7" y="88" text-anchor="middle">32</text><text class="s" x="154.9" y="88" text-anchor="middle">16</text><text class="s" x="185.1" y="88" text-anchor="middle">8</text><text class="s" x="215.3" y="88" text-anchor="middle">4</text><text class="s" x="245.6" y="88" text-anchor="middle">2</text><text class="s" x="275.8" y="88" text-anchor="middle">1</text><path class="d-ink" d="M170,98 L170,146" stroke-width="2" marker-end="url(#t1u1-l3-mk)"/><text class="s" x="181.3" y="126">64 + 1 = 65</text><rect class="d-gold" x="141.7" y="150" width="56.7" height="40" rx="8" stroke-width="2"/><text x="170" y="176" text-anchor="middle">65</text><path class="d-ink" d="M200.2,170 L236.1,170" stroke-width="2" marker-end="url(#t1u1-l3-mk)"/><rect class="d-sage" x="239.9" y="150" width="41.6" height="40" rx="8" stroke-width="2"/><text x="260.7" y="176" text-anchor="middle">A</text><text class="s" x="211.6" y="212" text-anchor="middle">code 65 means “A”</text><text class="s" x="170" y="242" text-anchor="middle">Each box is one bit. Each place is</text><text class="s" x="170" y="260" text-anchor="middle">worth twice the place to its right.</text></svg>', alt:"Diagram: eight boxes containing the bits 0 1 0 0 0 0 0 1, with place values 128, 64, 32, 16, 8, 4, 2, 1 below. The 64 and 1 places are on, so the byte equals 65, which is the text code for the capital letter A.", cap:"One byte. The bits 01000001 add up to 64 + 1 = 65, and in common text encodings code 65 means the capital letter A."},
-        "Not everything fits in one byte. Letters from many of the world’s writing systems, and emoji, usually take 2 to 4 bytes each in the encoding the web uses (UTF-8). A photo takes millions of bytes, because it stores a colour for millions of pixels.",
+        "Not everything fits in one byte. Letters from many of the world’s writing systems, and emoji, usually take 2 to 4 bytes each in the encoding the web uses (UTF-8). A photo takes millions of bytes, because it stores a color for millions of pixels.",
         {warn:"Watch the letter case. A lowercase **b** means **bits**; an uppercase **B** means **bytes**. So **Mb** is megabits and **MB** is megabytes, eight times bigger. Many mistakes in this lesson come from that one letter."}
       ]},
       {h:"Kilo, mega, giga, tera", body:[
-        "File sizes and drive sizes are counted in bytes, with prefixes for big numbers. In the international system of units (SI) these prefixes mean powers of **1,000**, just as a kilometre is 1,000 metres:",
+        "File sizes and drive sizes are counted in bytes, with prefixes for big numbers. In the international system of units (SI) these prefixes mean powers of **1,000**, just as a kilometer is 1,000 meters:",
         {table:[
           ["Unit","Symbol","Bytes (decimal, SI)","Roughly the size of…"],
           ["[[kilobyte|kilobyte]]","kB (often written KB)","1,000","a short plain-text email"],
@@ -385,7 +385,7 @@ ICA.addUnit({
           ["tebibyte","TiB","1,099,511,627,776","10% more than 1 TB"]
         ]},
         "The trouble is that not every system uses the new names. **Windows** (File Explorer and Settings) calculates sizes in binary units but still labels them “KB”, “MB” and “GB”. **Current macOS, iOS and iPadOS** calculate in decimal, matching the box (Apple says much older versions, up to iOS 10 and OS X Leopard, used binary). Linux tools, Android and individual apps vary; some show “GiB” honestly.",
-        {fig:'<svg viewBox="0 0 340 244"><text class="s" x="170" y="20" text-anchor="middle">The same drive, measured</text><text class="s" x="170" y="36" text-anchor="middle">with two different rulers</text><rect class="d-gold" x="9.4" y="46" width="321.1" height="36" rx="6" stroke-width="2"/><text x="170" y="69" text-anchor="middle">512,000,000,000 bytes</text><rect class="d-sage" x="9.4" y="94" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="114" text-anchor="middle">= 512 GB</text><text class="s" x="170" y="132" text-anchor="middle">÷ 1,000 ÷ 1,000 ÷ 1,000</text><text class="s" x="170" y="150" text-anchor="middle">the box, macOS and iOS show this</text><rect class="d-lup" x="9.4" y="170" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="190" text-anchor="middle">= 476.8 GiB</text><text class="s" x="170" y="208" text-anchor="middle">÷ 1,024 ÷ 1,024 ÷ 1,024</text><text class="s" x="170" y="226" text-anchor="middle">Windows shows this as “476 GB”</text></svg>', alt:"Diagram: one bar labelled 512,000,000,000 bytes. Below it, two equally long bars: one says equals 512 GB, dividing by 1,000 three times, as the box, macOS and iOS show it; the other says equals 476.8 GiB, dividing by 1,024 three times, which Windows shows as 476 GB.", cap:"Nothing is missing: the same number of bytes is divided by 1,000 three times or by 1,024 three times."},
+        {fig:'<svg viewBox="0 0 340 244"><text class="s" x="170" y="20" text-anchor="middle">The same drive, measured</text><text class="s" x="170" y="36" text-anchor="middle">with two different rulers</text><rect class="d-gold" x="9.4" y="46" width="321.1" height="36" rx="6" stroke-width="2"/><text x="170" y="69" text-anchor="middle">512,000,000,000 bytes</text><rect class="d-sage" x="9.4" y="94" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="114" text-anchor="middle">= 512 GB</text><text class="s" x="170" y="132" text-anchor="middle">÷ 1,000 ÷ 1,000 ÷ 1,000</text><text class="s" x="170" y="150" text-anchor="middle">the box, macOS and iOS show this</text><rect class="d-lup" x="9.4" y="170" width="321.1" height="66" rx="6" stroke-width="2"/><text x="170" y="190" text-anchor="middle">= 476.8 GiB</text><text class="s" x="170" y="208" text-anchor="middle">÷ 1,024 ÷ 1,024 ÷ 1,024</text><text class="s" x="170" y="226" text-anchor="middle">Windows shows this as “476 GB”</text></svg>', alt:"Diagram: one bar labeled 512,000,000,000 bytes. Below it, two equally long bars: one says equals 512 GB, dividing by 1,000 three times, as the box, macOS and iOS show it; the other says equals 476.8 GiB, dividing by 1,024 three times, which Windows shows as 476 GB.", cap:"Nothing is missing: the same number of bytes is divided by 1,000 three times or by 1,024 three times."},
         {ex:"A drive sold as **512 GB** holds 512 × 1,000,000,000 = 512,000,000,000 bytes.\nIn binary units: 512,000,000,000 ÷ 1,073,741,824 ≈ **476.8 GiB**.\nWindows shows this as about **476 GB**. A Mac would show about **512 GB**.\nOn top of that, the operating system, recovery tools and pre-installed apps use part of the drive, so the space **available** to you is smaller again.", label:"Worked example: the “missing” 35 GB"},
         {key:"Nobody stole your space. The box uses decimal GB; Windows uses binary units but calls them GB. The operating system then takes its own share."},
         "One more twist: RAM is always made in powers of two, so “16 GB of RAM” really means 16 GiB. You don’t need to do anything with that fact; just don’t be surprised by it."
@@ -508,7 +508,7 @@ ICA.addUnit({
           "**Protects the system.** It enforces permissions, installs security updates, and stops one app from reading another app’s data.",
           "**Gives you an interface.** The desktop, home screen, windows, notifications and settings are all the OS."
         ]},
-        {fig:'<svg viewBox="0 0 340 300"><rect class="d-sage" x="9.4" y="8" width="321.1" height="40" rx="8" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Apps: browser, email, photos, games</text><rect class="d-rose" x="9.4" y="58" width="321.1" height="76" rx="8" stroke-width="2"/><text x="170" y="82" text-anchor="middle">Operating system</text><text class="s" x="170" y="102" text-anchor="middle">runs apps · shares CPU and RAM</text><text class="s" x="170" y="120" text-anchor="middle">files · users · security</text><rect class="d-lup" x="9.4" y="144" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="167" text-anchor="middle">Drivers (one per kind of device)</text><rect class="d-gold" x="9.4" y="190" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Firmware (built into the hardware)</text><rect class="d-panel" x="9.4" y="236" width="321.1" height="56" rx="8" stroke-width="2"/><text x="170" y="259" text-anchor="middle">Hardware: CPU, RAM, storage,</text><text x="170" y="278" text-anchor="middle">screen, Wi-Fi</text></svg>', alt:"Diagram of five stacked layers. From top: Apps; Operating system, which runs apps, shares CPU and RAM, and manages files, users and security; Drivers; Firmware built into the hardware; and Hardware at the bottom.", cap:"Layers: apps ask the operating system; the OS uses drivers and firmware to control the hardware. Each layer only talks to its neighbours."},
+        {fig:'<svg viewBox="0 0 340 300"><rect class="d-sage" x="9.4" y="8" width="321.1" height="40" rx="8" stroke-width="2"/><text x="170" y="33" text-anchor="middle">Apps: browser, email, photos, games</text><rect class="d-rose" x="9.4" y="58" width="321.1" height="76" rx="8" stroke-width="2"/><text x="170" y="82" text-anchor="middle">Operating system</text><text class="s" x="170" y="102" text-anchor="middle">runs apps · shares CPU and RAM</text><text class="s" x="170" y="120" text-anchor="middle">files · users · security</text><rect class="d-lup" x="9.4" y="144" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="167" text-anchor="middle">Drivers (one per kind of device)</text><rect class="d-gold" x="9.4" y="190" width="321.1" height="36" rx="8" stroke-width="2"/><text x="170" y="213" text-anchor="middle">Firmware (built into the hardware)</text><rect class="d-panel" x="9.4" y="236" width="321.1" height="56" rx="8" stroke-width="2"/><text x="170" y="259" text-anchor="middle">Hardware: CPU, RAM, storage,</text><text x="170" y="278" text-anchor="middle">screen, Wi-Fi</text></svg>', alt:"Diagram of five stacked layers. From top: Apps; Operating system, which runs apps, shares CPU and RAM, and manages files, users and security; Drivers; Firmware built into the hardware; and Hardware at the bottom.", cap:"Layers: apps ask the operating system; the OS uses drivers and firmware to control the hardware. Each layer only talks to its neighbors."},
         {key:"Apps do your tasks; the operating system runs the device and keeps apps, users and hardware in order."}
       ]},
       {h:"The main operating systems", body:[
@@ -523,7 +523,7 @@ ICA.addUnit({
           ["Android","Google, with phone makers","Phones and tablets from many makers","Each maker adds its own look and menus, so settings names vary"]
         ]},
         "Android is built on the Linux kernel (the core part of an OS), and macOS and iOS share a common core too. You don’t need those details day to day, but they explain why some ideas, such as app permissions, look similar across systems.",
-        {tip:"Because Android phone makers customise their menus, instructions for “Android” may not match your phone word for word. The search box at the top of the Settings app is your best friend: type what you’re looking for (“storage”, “update”, “permission”)."}
+        {tip:"Because Android phone makers customize their menus, instructions for “Android” may not match your phone word for word. The search box at the top of the Settings app is your best friend: type what you’re looking for (“storage”, “update”, “permission”)."}
       ]},
       {h:"Apps, programs and web apps", body:[
         "An [[app]] (application, program) is software that does a task for you: writing, editing photos, messaging, calculating. There are two main kinds:",
@@ -551,7 +551,7 @@ ICA.addUnit({
           "**Read prompts before clicking.** If your system asks for permission or an administrator password during an install you didn’t start, say no.",
           "**Remove apps you no longer use.** Fewer apps means fewer things to update and fewer things that could go wrong."
         ]},
-        "Your system helps too. On a Mac, **System Settings → Privacy & Security** controls whether apps can come from the App Store only, or also from developers identified by Apple. On Android, installing from outside Google Play requires you to grant an app the special “install unknown apps” permission, and Google Play Protect scans apps. Windows uses Microsoft Defender SmartScreen (and, on some newer installations, Smart App Control) to warn about unrecognised downloads. These warnings are worth taking seriously.",
+        "Your system helps too. On a Mac, **System Settings → Privacy & Security** controls whether apps can come from the App Store only, or also from developers identified by Apple. On Android, installing from outside Google Play requires you to grant an app the special “install unknown apps” permission, and Google Play Protect scans apps. Windows uses Microsoft Defender SmartScreen (and, on some newer installations, Smart App Control) to warn about unrecognized downloads. These warnings are worth taking seriously.",
         {h:"Permission prompts"},
         "Phones and modern computers ask before an app uses sensitive things: your location, camera, microphone, contacts, photos, files. Ask one question: **does this app need this to do its job?** A video-call app needs the camera and microphone. A calculator does not need your contacts. You can usually choose “Only while using the app” or allow access to selected photos only. Unit 3 covers [[app-permissions|app permissions]] in more depth."
       ]},
@@ -580,14 +580,14 @@ ICA.addUnit({
       {id:"t1u1-l4-x1", type:"match", q:"Match each operating system to the devices it typically runs on.", pairs:[
         ["Windows","PCs and laptops from many different makers","Microsoft licenses Windows to many computer makers."],
         ["macOS","Mac computers only","Apple makes macOS for its own computers."],
-        ["ChromeOS","Chromebooks","Google’s browser-centred OS runs on Chromebooks from several makers."],
+        ["ChromeOS","Chromebooks","Google’s browser-centered OS runs on Chromebooks from several makers."],
         ["iOS","iPhone","Apple’s phone operating system."],
-        ["Android","Phones and tablets from many makers","Google develops Android; makers customise it for their devices."],
+        ["Android","Phones and tablets from many makers","Google develops Android; makers customize it for their devices."],
         ["Linux","Most web servers, and PCs of people who install it","Linux is free and open source, and very common on servers."]
       ]},
       {id:"t1u1-l4-x2", type:"sort", q:"Is each task done by the **operating system** or by an **app**?", buckets:["Operating system","App"], items:[
         {t:"Decides which program gets the processor next", b:0, why:"Sharing out the processor is a core OS job."},
-        {t:"Edits a photo’s colours", b:1, why:"That’s the task a photo-editing app exists for."},
+        {t:"Edits a photo’s colors", b:1, why:"That’s the task a photo-editing app exists for."},
         {t:"Talks to the printer through its driver", b:0, why:"Apps ask the OS to print; the OS uses the driver."},
         {t:"Keeps track of where each file is stored on the drive", b:0, why:"File management is an OS job."},
         {t:"Plays a podcast episode", b:1, why:"A podcast or audio app does that, using the OS to reach the speakers."},
@@ -628,7 +628,7 @@ ICA.addUnit({
         {t:"Check your account type", how:{
           win:["Open **Settings → Accounts**. Your account type (for example **Administrator**) is shown under your name.","To see or change other accounts, go to **Settings → Accounts → Other users**. Select an account, then **Change account type**.","Don’t change your only administrator account to standard (see the warning in this lesson)."],
           mac:["Open **Apple menu → System Settings → Users & Groups**.","Each account shows **Admin** or **Standard** under its name."],
-          chromeos:["Chromebooks don’t have administrator and standard accounts in the same way. The first account added is the **owner**, who controls some device settings. Open **Settings** and search for “owner” or “people” to see how accounts are managed on yours.","On a school or work Chromebook, an organisation manages the device."],
+          chromeos:["Chromebooks don’t have administrator and standard accounts in the same way. The first account added is the **owner**, who controls some device settings. Open **Settings** and search for “owner” or “people” to see how accounts are managed on yours.","On a school or work Chromebook, an organization manages the device."],
           phone:["Phones normally have a single owner. Instead of account types, check your app permissions (next task)."]
         }},
         {t:"Review app permissions", how:{
@@ -711,7 +711,7 @@ ICA.addUnit({
           ["Android","**Settings → Storage** (many phones also have a cleaning tool, often called **Free up space** or **Device care**)"]
         ]},
         "Usually safe to remove: apps you don’t use (you can reinstall them), old installers and files in your Downloads folder that you no longer need, duplicate or failed photos and videos, and items already in the Recycle Bin or Trash (empty it, or the space isn’t freed). Phones can also **offload** unused apps, removing the app but keeping its data.",
-        {warn:"Never delete files from system folders (such as `C:\\Windows` or files you don’t recognise inside the system) to make room. Before deleting photos or videos, make sure they are backed up somewhere else: a [[backup]] is a second copy, and Unit 2 shows how to make one."}
+        {warn:"Never delete files from system folders (such as `C:\\Windows` or files you don’t recognize inside the system) to make room. Before deleting photos or videos, make sure they are backed up somewhere else: a [[backup]] is a second copy, and Unit 2 shows how to make one."}
       ]},
       {h:"See what’s using your device", body:[
         "When a device is slow, hot, noisy or draining its battery, look before you guess. Every system has a tool that shows what is running and how much of each resource it uses. On Windows it is called [[task-manager|Task Manager]].",
@@ -725,7 +725,7 @@ ICA.addUnit({
         ]},
         {ex:"Mei’s laptop fan is roaring. She opens Task Manager and clicks the **CPU** column to sort. A browser tab with a video ad is using most of the processor. She closes that tab and the fan calms down within a minute.\n\nIn another case, the **Memory** column is near 100% and nothing single is huge: she just has too much open. Closing a few apps fixes it.", label:"Worked example"},
         "If an app is frozen, end it from here: in Task Manager select it and choose **End task**; on a Mac press [[kbd:Option]] + [[kbd:Cmd]] + [[kbd:Esc]] for **Force Quit**, or use Activity Monitor. Unsaved work in that app will be lost, so wait a minute first in case it recovers.",
-        {warn:"Only end apps you recognise. Long lists of system processes are normal. Ending unknown system processes can make the device unstable, and a quick restart is the safer fix."}
+        {warn:"Only end apps you recognize. Long lists of system processes are normal. Ending unknown system processes can make the device unstable, and a quick restart is the safer fix."}
       ]},
       {h:"Describe the problem and search the error", body:[
         "Whether you search online or ask someone, a clear description is half the fix. Helpers can’t see your screen, and “it’s broken” gives them nothing to work with. Include:",
@@ -749,13 +749,13 @@ ICA.addUnit({
       {h:"When to stop and ask for help", body:[
         "Knowing when to stop is a skill, not a failure. Stop and get help when:",
         {list:[
-          "**There is a physical danger:** smoke, a burning smell, sparks, a swollen or bulging battery, a device too hot to hold, or liquid inside. Unplug it (if safe), don’t charge it, and contact the maker or an authorised repairer.",
+          "**There is a physical danger:** smoke, a burning smell, sparks, a swollen or bulging battery, a device too hot to hold, or liquid inside. Unplug it (if safe), don’t charge it, and contact the maker or an authorized repairer.",
           "**Your data is at risk:** clicking or grinding noises from a hard disk, warnings about drive failure, or files disappearing. Stop using the device so you don’t make recovery harder.",
           "**Something demands payment** to unlock your files or device, or you suspect someone has access to your accounts. Unit 3 covers what to do.",
           "**It is a work or school device.** Contact your IT team; they may have rules and tools you don’t, and changes you make could break their setup.",
           "**The simple fixes haven’t worked** and you are about to try something you don’t understand, such as editing system settings or resetting the device."
         ]},
-        "Good places to get help: the official support site or support app of the maker, your organisation’s IT help desk, an authorised repair shop, or a knowledgeable person you trust who you contacted yourself. Give them your clear description and say what you’ve tried.",
+        "Good places to get help: the official support site or support app of the maker, your organization’s IT help desk, an authorized repair shop, or a knowledgeable person you trust who you contacted yourself. Give them your clear description and say what you’ve tried.",
         {key:"Simple, safe steps in order; one change at a time; a clear description; and stop as soon as there is danger or risk to your data."}
       ]}
     ],
@@ -805,7 +805,7 @@ ICA.addUnit({
         {t:"Turn off her antivirus so the page can fix the problem", why:"Never turn off protection because a web page tells you to. That is a classic scam instruction."}
       ]},
       {id:"t1u1-l5-x7", type:"mcq", q:"Tomás notices his phone’s back is bulging and the screen is lifting at one edge. What is the right first step?", options:[
-        {t:"Stop using and charging it, and contact the maker or an authorised repairer", ok:true, why:"A swollen battery is a physical safety risk. It is not a first-aid job for you to fix."},
+        {t:"Stop using and charging it, and contact the maker or an authorized repairer", ok:true, why:"A swollen battery is a physical safety risk. It is not a first-aid job for you to fix."},
         {t:"Restart it to see if the problem goes away", why:"Restarting is for software problems. A swollen battery is physical damage and restarting won’t help."},
         {t:"Press the screen back into place", why:"Pressing on a swollen battery can damage it further and is dangerous."},
         {t:"Install the latest software update", why:"Updates fix software, not a physically damaged battery. And an update needs charging, which you should avoid."}
@@ -813,7 +813,7 @@ ICA.addUnit({
       {id:"t1u1-l5-x8", type:"explain", q:"Why does restarting fix so many device problems? And why, on a Windows PC, is Restart better than Shut down for this?", hint:"What is in RAM after a device has been running for days? What does Fast Startup save?", model:"While a device runs, small problems pile up: an app gets stuck, memory isn’t handed back, a driver gets confused or an update is half-finished. A restart empties RAM, ends every program, reloads the operating system and drivers from storage and finishes updates, so you start again from a clean, known state. On Windows with Fast Startup on, Shut down saves the core of Windows to storage, like hibernating, so some stuck states survive it. Restart always does a full fresh start.", points:["Says small problems build up while a device runs", "Says a restart empties RAM and reloads the system from a clean state", "Explains that Fast Startup keeps the Windows core between shutdowns", "Concludes that Restart gives the full fresh start"]}
     ],
     apply:{
-      intro:"Practise the first-aid routine on a device that’s working, so it feels familiar when something does go wrong.",
+      intro:"Practice the first-aid routine on a device that’s working, so it feels familiar when something does go wrong.",
       tasks:[
         {t:"Do a full restart and check for updates", how:{
           win:["Save your work, then choose **Start → Power → Restart** (not Shut down).","After signing in, open **Settings → Windows Update** and select **Check for updates**. Install any found, then restart if asked."],
@@ -896,14 +896,14 @@ ICA.addUnit({
     {id:"t1u1-cp10", lesson:"t1u1-l3", level:3, q:"Rosa’s external drive says **2 TB** on the box. Her Windows PC shows its total size as about **1.8 TB**. What total will her brother’s Mac most likely show for it?", options:[
       {t:"About 1.6 TB, because macOS also keeps a share of external drives", why:"The operating system’s share mostly reduces free space on the drive it runs from. It doesn’t shrink the total size of an external drive."},
       {t:"About 1.8 TB, because every computer counts the same bytes the same way", why:"The bytes are the same, but the counting isn’t. Windows divides by 1,024 at each step and still writes “TB”; current macOS divides by 1,000."},
-      {t:"About 1.8 TB, but labelled “TiB” instead of “TB”", why:"Current macOS calculates in decimal, matching the box, so it shows about 2 TB. Honest binary names like “GiB” appear in some Linux tools and apps."},
+      {t:"About 1.8 TB, but labeled “TiB” instead of “TB”", why:"Current macOS calculates in decimal, matching the box, so it shows about 2 TB. Honest binary names like “GiB” appear in some Linux tools and apps."},
       {t:"About 2 TB, because current macOS divides by 1,000 like the box", ok:true, why:"2,000,000,000,000 bytes ÷ 1,000⁴ = 2 TB on the Mac. Windows divides by 1,024⁴ instead (≈ 1.82) but still writes “TB”. Same bytes, different counting."}
     ]},
     {id:"t1u1-cp11", lesson:"t1u1-l5", level:3, q:"Yusuf’s phone camera says it can’t save photos, and an app update failed yesterday. A shop assistant says, “You need a new phone with more RAM.” What is the best response?", options:[
       {t:"Storage is full, not RAM: free space by removing unused apps or backed-up videos", ok:true, why:"Can’t save and failed updates are signs of full storage. RAM shortage makes a device slow with many things open. Freeing storage is the first-aid step."},
       {t:"Agree, because RAM is where the phone keeps photos and app updates", why:"RAM empties when the power goes off, so photos can’t live there. Photos are kept in storage."},
       {t:"Restart the phone, because restarting frees up room on its storage for new photos", why:"A restart clears RAM and finishes stuck tasks, but it doesn’t make room on a full drive."},
-      {t:"Delete system files you don’t recognise, since they are the quickest space to free", why:"Never delete system files to make room. Remove things you recognise, such as unused apps or videos that are already backed up."}
+      {t:"Delete system files you don’t recognize, since they are the quickest space to free", why:"Never delete system files to make room. Remove things you recognize, such as unused apps or videos that are already backed up."}
     ]},
     {id:"t1u1-cp12", lesson:"t1u1-l2", level:3, q:"Ravi’s course needs a program that runs only on Windows. He compares a Chromebook (16 GB RAM, 512 GB SSD) with a Windows laptop (8 GB RAM, 256 GB SSD). Which one should he choose, and why?", options:[
       {t:"The Chromebook, because more RAM and storage always matter most", why:"Bigger numbers don’t help if the program can’t run at all. The operating system decides which apps you can use."},
@@ -936,7 +936,7 @@ ICA.addUnit({
          {list:[
            "**Systems on a chip (SoCs)** in phones, tablets and many laptops combine CPU cores, GPU, memory controller and other processors on one chip, sometimes with RAM in the same package.",
            "**Embedded computers** inside appliances, cars and routers run fixed firmware with little or no user interface, yet they still process input and produce output, and still need security updates.",
-           "**Client and server.** Much processing and storage now happens on servers in data centres. Your device is the client that sends requests and shows results. The “cloud” is this arrangement offered as a service.",
+           "**Client and server.** Much processing and storage now happens on servers in data centers. Your device is the client that sends requests and shows results. The “cloud” is this arrangement offered as a service.",
            "**Virtual machines** let one physical computer behave like several separate computers, each with its own operating system. Cloud providers rely on this heavily."
          ]},
          "For troubleshooting, professionals extend the four jobs with a fifth: **communication** (network). Many “the computer is broken” reports turn out to be a network problem between a perfectly working client and server."
@@ -969,7 +969,7 @@ ICA.addUnit({
        ],
        pro:[
          "The line between hardware and software is a design choice. The same function can be built into a chip (fast, efficient, fixed) or written as software (flexible, updatable). Video decoding, encryption and AI acceleration have all moved partly into dedicated hardware over the years, while things like modems moved partly into software.",
-         "**Firmware** deserves more attention than it usually gets. A PC’s UEFI firmware initialises hardware and starts the operating system; Secure Boot uses it to check that the boot software is signed by a trusted party. Storage drives, network cards, keyboards and batteries contain their own firmware. Because firmware runs before and beneath the operating system, flaws in it can be hard to detect and hard to remove, which is why makers ship firmware updates and why interrupting one can leave a device unable to start.",
+         "**Firmware** deserves more attention than it usually gets. A PC’s UEFI firmware initializes hardware and starts the operating system; Secure Boot uses it to check that the boot software is signed by a trusted party. Storage drives, network cards, keyboards and batteries contain their own firmware. Because firmware runs before and beneath the operating system, flaws in it can be hard to detect and hard to remove, which is why makers ship firmware updates and why interrupting one can leave a device unable to start.",
          "**Microcode** is a further layer inside the CPU itself; processor makers occasionally patch it through firmware or OS updates to fix bugs and security issues.",
          "For support work, the practical rule is to rule out software first: it is cheaper and faster to test. Restart, update, try another account or a clean boot, and only then suspect the hardware. Built-in diagnostics (many PC makers ship them, and Chromebooks have a Diagnostics app) can test hardware directly."
        ]
@@ -999,7 +999,7 @@ ICA.addUnit({
          "A CPU that is constantly near 100% (see {{task-manager}}) usually means one program is busy or stuck, not that the processor is too slow."
        ],
        pro:[
-         "Performance is roughly **instructions per cycle × cycles per second × number of cores that the work can use**. Clock frequency stopped rising quickly in the mid-2000s, when power and heat limits (the end of Dennard scaling) made faster clocks impractical. Designers turned instead to more cores, wider cores that do more per cycle, bigger caches and specialised units.",
+         "Performance is roughly **instructions per cycle × cycles per second × number of cores that the work can use**. Clock frequency stopped rising quickly in the mid-2000s, when power and heat limits (the end of Dennard scaling) made faster clocks impractical. Designers turned instead to more cores, wider cores that do more per cycle, bigger caches and specialized units.",
          "Things professionals keep in mind:",
          {list:[
            "**Amdahl’s law:** the part of a task that can’t be split up limits how much extra cores help. Many everyday apps use only a few cores.",
@@ -1068,9 +1068,9 @@ ICA.addUnit({
          "External storage works the same way: USB sticks and memory cards are flash; big external drives may be SSDs or hard disks. Whatever the type, a drive can fail without warning, so important files need a second copy somewhere else (Unit 2 covers backups)."
        ],
        pro:[
-         "Flash memory stores charge in cells that wear out after a limited number of write cycles. SSD controllers spread writes evenly (**wear levelling**), keep spare cells, and use the **TRIM** command from the operating system to learn which blocks are free. For normal personal use, modern SSDs typically outlast the rest of the device, but the wear is real, and makers state endurance as total terabytes written (TBW).",
+         "Flash memory stores charge in cells that wear out after a limited number of write cycles. SSD controllers spread writes evenly (**wear leveling**), keep spare cells, and use the **TRIM** command from the operating system to learn which blocks are free. For normal personal use, modern SSDs typically outlast the rest of the device, but the wear is real, and makers state endurance as total terabytes written (TBW).",
          {list:[
-           "**Failure modes differ.** Hard disks often give warning signs (clicking, grinding, slowdowns, SMART warnings). SSDs more often fail suddenly. Either way, the defence is a backup, not a better drive.",
+           "**Failure modes differ.** Hard disks often give warning signs (clicking, grinding, slowdowns, SMART warnings). SSDs more often fail suddenly. Either way, the defense is a backup, not a better drive.",
            "**Deleting is not erasing.** On a hard disk, deleted data can often be recovered until overwritten. On SSDs, TRIM and encryption make recovery harder, but before selling or recycling a device use the operating system’s full reset or the maker’s secure-erase method, ideally with encryption already on.",
            "**Formatted capacity.** The file system, a recovery partition and spare areas use some raw capacity. Apple notes that formatting uses some storage space and that the operating system uses more.",
            "**Speed figures.** Sequential speeds (MB/s for big files) look impressive in adverts; random small-file performance matters more for how responsive a computer feels."
@@ -1087,7 +1087,7 @@ ICA.addUnit({
      summary:"A processor built to do many simple calculations at once: drawing the screen, video, games, editing and AI.",
      levels:{
        starter:[
-         "The [[gpu|GPU]] (graphics processing unit) is a processor specialised in doing many simple calculations at the same time. Its first job was drawing pictures on the screen, which means working out the colour of millions of pixels many times a second.",
+         "The [[gpu|GPU]] (graphics processing unit) is a processor specialized in doing many simple calculations at the same time. Its first job was drawing pictures on the screen, which means working out the color of millions of pixels many times a second.",
          "If the CPU is one very clever cook, the GPU is a huge team of kitchen helpers all chopping at once. Each helper is simpler, but together they finish repetitive work fast.",
          "Most phones and laptops have an **integrated** GPU built into the main chip. That is fine for everyday work, video calls and streaming. A **dedicated** GPU (a separate chip or graphics card) adds power for gaming, 3D design, video editing and some AI work, but costs more, uses more power and makes more heat."
        ],
@@ -1106,7 +1106,7 @@ ICA.addUnit({
          "For most learners the GPU is something to notice, not something to shop for."
        ],
        pro:[
-         "Architecturally, a GPU has thousands of simple arithmetic units organised to run the same instruction across many data items at once (often called SIMD or SIMT). That suits **data-parallel** work: pixels, vertices, matrix multiplication. It is poor at branching, sequential logic, which stays on the CPU. This is an example of **heterogeneous computing**, where different processors handle the work they are best at.",
+         "Architecturally, a GPU has thousands of simple arithmetic units organized to run the same instruction across many data items at once (often called SIMD or SIMT). That suits **data-parallel** work: pixels, vertices, matrix multiplication. It is poor at branching, sequential logic, which stays on the CPU. This is an example of **heterogeneous computing**, where different processors handle the work they are best at.",
          {list:[
            "**VRAM** capacity often limits what a dedicated GPU can do (texture-heavy games, large AI models) more than its raw speed.",
            "**Unified memory** SoCs let CPU and GPU share one pool, which avoids copying but means graphics use system RAM.",
@@ -1159,22 +1159,22 @@ ICA.addUnit({
        starter:[
          "Inside a computer, every piece of information is stored as rows of tiny switches that are either off or on. We write them as **0** and **1**. One of these is a [[bit]] (binary digit). This two-digit number system is called [[binary]].",
          "One bit can only say yes or no, but bits add up fast: every extra bit doubles the number of patterns. Eight bits make a [[byte]], which has 256 possible patterns: enough for one basic letter, digit or symbol.",
-         "Everything you see on a computer is numbers in disguise. A letter has a numeric code, each pixel’s colour is three numbers, and sound is a long list of numbers measuring the wave.",
+         "Everything you see on a computer is numbers in disguise. A letter has a numeric code, each pixel’s color is three numbers, and sound is a long list of numbers measuring the wave.",
          {warn:"Lowercase **b** = bits, uppercase **B** = bytes. Mb (megabits) and MB (megabytes) differ by a factor of 8."}
        ],
        builder:[
          "In decimal, each place is worth ten times the place to its right (1, 10, 100…). In binary, each place is worth twice as much: 1, 2, 4, 8, 16, 32, 64, 128.",
          {ex:"01000001 = 64 + 1 = 65. In common text encodings, 65 is the code for the capital letter A.\n1101 = 8 + 4 + 1 = 13.", label:"Reading binary", mono:true},
-         {table:[["Bits","Patterns","Used for"],["1","2","on/off, yes/no"],["8 (1 byte)","256","one basic character"],["16","65,536","one sample of CD-quality sound"],["24","about 16.7 million","one pixel’s colour (8 bits each for red, green, blue)"]]},
+         {table:[["Bits","Patterns","Used for"],["1","2","on/off, yes/no"],["8 (1 byte)","256","one basic character"],["16","65,536","one sample of CD-quality sound"],["24","about 16.7 million","one pixel’s color (8 bits each for red, green, blue)"]]},
          "Text uses a standard called **Unicode** to give every character in the world’s writing systems a number. The web mostly stores those numbers using **UTF-8**, where basic Latin letters take 1 byte and other characters and emoji take 2 to 4 bytes.",
          "Sizes are measured in bytes (kilobytes, megabytes…; see {{file-size-units}}); speeds in bits per second.",
-         "Why this matters to you: it explains why file sizes grow with quality. A photo with more pixels, more colour depth or less compression needs more bytes; a longer or sharper video needs many more. Units of size and speed are all just ways of counting bits and bytes.",
+         "Why this matters to you: it explains why file sizes grow with quality. A photo with more pixels, more color depth or less compression needs more bytes; a longer or sharper video needs many more. Units of size and speed are all just ways of counting bits and bytes.",
          "Keep the lowercase-b and uppercase-B rule in mind and most unit mistakes disappear."
        ],
        pro:[
-         "**n bits give 2ⁿ patterns.** That single rule explains a lot: 32-bit systems could address about 4 GiB of memory (2³²), IPv4 has about 4.3 billion addresses, and an 8-bit colour channel has 256 levels.",
+         "**n bits give 2ⁿ patterns.** That single rule explains a lot: 32-bit systems could address about 4 GiB of memory (2³²), IPv4 has about 4.3 billion addresses, and an 8-bit color channel has 256 levels.",
          {list:[
-           "**Hexadecimal** (base 16, digits 0–9 and A–F) is a compact way to write binary: one hex digit is exactly 4 bits, so a byte is two hex digits (01000001 = 0x41). You’ll see hex in error codes such as 0x80070070, colour codes like #FF8800, and MAC addresses.",
+           "**Hexadecimal** (base 16, digits 0–9 and A–F) is a compact way to write binary: one hex digit is exactly 4 bits, so a byte is two hex digits (01000001 = 0x41). You’ll see hex in error codes such as 0x80070070, color codes like #FF8800, and MAC addresses.",
            "**Integers** are usually stored in two’s complement so the same circuits can add positive and negative numbers. **Real numbers** use floating point (IEEE 754), which is why some decimals, such as 0.1, can’t be stored exactly and spreadsheet results occasionally show tiny rounding errors.",
            "**Bits vs bytes in practice:** storage and memory are measured in bytes; network links and some audio and video bitrates in bits per second.",
            "**Compression** reduces the number of bits needed, losslessly (ZIP, PNG) or by discarding detail people barely notice (JPEG, MP3, most video)."
@@ -1192,7 +1192,7 @@ ICA.addUnit({
      summary:"Decimal units (1,000) vs binary units (1,024), why drives look smaller, and how to convert Mbps to MB/s.",
      levels:{
        starter:[
-         "File and drive sizes are measured in bytes, with prefixes for big numbers: a [[kilobyte]] (kB) is 1,000 bytes, a [[megabyte]] (MB) a million, a [[gigabyte]] (GB) a billion, a [[terabyte]] (TB) a trillion. Each step is ×1,000, just like metres and kilometres.",
+         "File and drive sizes are measured in bytes, with prefixes for big numbers: a [[kilobyte]] (kB) is 1,000 bytes, a [[megabyte]] (MB) a million, a [[gigabyte]] (GB) a billion, a [[terabyte]] (TB) a trillion. Each step is ×1,000, just like meters and kilometers.",
          "Two traps catch almost everyone:",
          {list:[
            "**The “missing” space.** Windows measures in steps of 1,024 but still writes “GB”, so a 512 GB drive shows as about 476 GB. Nothing is missing; it’s a different ruler.",
@@ -1238,7 +1238,7 @@ ICA.addUnit({
          {list:[
            "**Hardware:** uses [[driver|drivers]] to talk to each device, so apps don’t need to know the details of every printer or camera.",
            "**Processes and memory:** switches the processor between programs many times a second and gives each its own protected share of RAM.",
-           "**Files:** organises storage into files and folders, with names, permissions and search.",
+           "**Files:** organizes storage into files and folders, with names, permissions and search.",
            "**Users:** separate accounts, sign-in, and rights (see {{user-accounts}}).",
            "**Security:** permissions, app isolation, built-in protection and security updates.",
            "**Interface:** the desktop or home screen, windows, notifications and settings."
@@ -1283,12 +1283,12 @@ ICA.addUnit({
            "**Install,** answering an administrator prompt only for an install you started.",
            "**Review permissions** after installing, choosing “while using the app” or “selected photos only” where offered, and keep updates on."
          ]},
-         "Built-in protections help: macOS lets you choose in **System Settings → Privacy & Security** whether apps may come from the App Store only or also from developers identified by Apple, and Apple notarises apps it has checked for malicious software. Android requires you to grant a special “install unknown apps” permission before installing from outside Google Play, and Google Play Protect scans apps. Windows warns about unrecognised downloads with Microsoft Defender SmartScreen.",
+         "Built-in protections help: macOS lets you choose in **System Settings → Privacy & Security** whether apps may come from the App Store only or also from developers identified by Apple, and Apple notarizes apps it has checked for malicious software. Android requires you to grant a special “install unknown apps” permission before installing from outside Google Play, and Google Play Protect scans apps. Windows warns about unrecognized downloads with Microsoft Defender SmartScreen.",
          "Installed apps vs web apps: installed apps work offline and use the hardware fully; web apps need no installation, update themselves on the server and work across systems, but usually need a connection.",
          "Keep installed apps up to date: most stores update apps automatically, and many desktop apps have an update option in their settings or Help menu. An app that is no longer updated by its developer is a reason to look for a maintained alternative."
        ],
        pro:[
-         "App stores add several layers: developer identity verification, automated and human review, code signing (so tampering is detectable), and the ability to remove a malicious app from sale and sometimes from devices. None is perfect; malicious apps occasionally pass review, often by adding harmful behaviour in a later update or by imitating a popular app.",
+         "App stores add several layers: developer identity verification, automated and human review, code signing (so tampering is detectable), and the ability to remove a malicious app from sale and sometimes from devices. None is perfect; malicious apps occasionally pass review, often by adding harmful behavior in a later update or by imitating a popular app.",
          {list:[
            "**Code signing** ties software to a developer certificate. Windows shows the verified publisher in its administrator prompt; an “Unknown publisher” is a reason to pause.",
            "**Sideloading** (installing outside the store) bypasses review. It has legitimate uses (open-source apps, workplace apps) but needs a trusted source; some regions now require platforms to allow alternative stores.",
@@ -1297,7 +1297,7 @@ ICA.addUnit({
            "**Bundleware:** some free installers include extra offers. Choose “custom” install and untick extras, or prefer the store version."
          ]},
          "Unit 3 covers {{app-permissions}} and malware in depth.",
-         "In workplaces, IT teams often restrict installs to an approved catalogue, which is the same principle applied at scale."
+         "In workplaces, IT teams often restrict installs to an approved catalog, which is the same principle applied at scale."
        ]
      },
      related:["operating-system","user-accounts","hardware-software"],
@@ -1334,11 +1334,11 @@ ICA.addUnit({
            "**Processor names** encode generation and class; compare like with like using independent benchmarks for the workloads you care about (office, browser, video export, compiling).",
            "**Storage type** matters as much as size: eMMC is much slower than NVMe SSD. Some listings say “SSD” for any flash storage.",
            "**RAM configuration:** dual-channel memory performs better than single-channel, especially with integrated graphics. Listings rarely say which.",
-           "**Display:** resolution, brightness (nits), colour coverage and refresh rate affect comfort more than many processor upgrades.",
+           "**Display:** resolution, brightness (nits), color coverage and refresh rate affect comfort more than many processor upgrades.",
            "**Ports:** “USB-C” may or may not include display output or charging; look for Thunderbolt or DisplayPort symbols or detailed port tables.",
            "**Total cost:** add adapters, a case, extended warranty and software subscriptions."
          ]},
-         "For organisations, standardising on a few models simplifies support, spare parts and security management. For individuals, the most common regret is too little RAM or storage, not too slow a processor.",
+         "For organizations, standardizing on a few models simplifies support, spare parts and security management. For individuals, the most common regret is too little RAM or storage, not too slow a processor.",
          "Second-hand and refurbished devices can be good value, but check the remaining update support period first and whether the battery has been replaced or tested.",
          "Return policies matter too: test a new device early and return it if it doesn’t suit you."
        ]
@@ -1388,7 +1388,7 @@ ICA.addUnit({
        starter:[
          "When a device is slow, hot, noisy or losing battery fast, look before you guess. Every system has a tool that shows what is running and how much it uses.",
          {table:[["Device","Tool"],["Windows","[[task-manager|Task Manager]]: [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:Esc]]"],["Mac","Activity Monitor (search for it with [[kbd:Cmd]] + [[kbd:Space]])"],["Chromebook","Task Manager ([[kbd:Shift]] + [[kbd:Esc]], or Chrome’s **⋮ → More tools → Task manager**)"],["Phones","Settings → Battery, and the Storage screen"]]},
-         "Sort by CPU or Memory to see the biggest users. If one app is frozen, you can end it from here (Windows: **End task**; Mac: **Force Quit**). Only end apps you recognise.",
+         "Sort by CPU or Memory to see the biggest users. If one app is frozen, you can end it from here (Windows: **End task**; Mac: **Force Quit**). Only end apps you recognize.",
          "Tip: on phones, the Battery screen is the most useful “what’s using my device” view. An app you rarely open that uses lots of battery deserves a closer look at its permissions and background activity."
        ],
        builder:[
@@ -1410,9 +1410,9 @@ ICA.addUnit({
            "**CPU % semantics:** Windows shows a share of the whole processor; macOS Activity Monitor shows per-core percentages, so one process can exceed 100% on a multi-core Mac.",
            "**Memory figures** vary: working set, private bytes, compressed memory and cached files are all counted differently. High usage is normal because the OS caches aggressively; sustained swapping or memory pressure is the real signal.",
            "**Deeper tools:** Windows Resource Monitor and Performance Monitor, Reliability Monitor for crash history, and Microsoft’s Sysinternals Process Explorer; macOS `top` and Console; Linux `top`, `htop` and `free`.",
-           "**Suspicious processes:** a name you don’t recognise using lots of CPU could be legitimate (indexing, updates, antivirus scans) or malicious. Look up the exact name and file location on official sources before acting, and run a security scan rather than deleting files by hand."
+           "**Suspicious processes:** a name you don’t recognize using lots of CPU could be legitimate (indexing, updates, antivirus scans) or malicious. Look up the exact name and file location on official sources before acting, and run a security scan rather than deleting files by hand."
          ]},
-         "Background activity after an update is normal. Operating systems often index files, optimise apps and scan for malware for a while after a big update, using noticeable CPU and disk until they finish."
+         "Background activity after an update is normal. Operating systems often index files, optimize apps and scan for malware for a while after a big update, using noticeable CPU and disk until they finish."
        ]
      },
      related:["device-first-aid","ram","cpu","operating-system"],
@@ -1446,9 +1446,9 @@ ICA.addUnit({
          "This is the **principle of least privilege**: every user and program should have only the rights it needs. It appears in security frameworks such as NIST SP 800-53 (access control) and in national guidance for home and business users.",
          {list:[
            "**User Account Control (UAC)** on Windows: even administrators run most programs with standard rights; elevation requires consent (for admins) or credentials (for standard users). Elevation prompts show the verified publisher when the program is signed.",
-           "**Separate admin accounts** in organisations: IT staff use a normal account for email and browsing and a separate privileged account only for administration, because email and the web are the main ways attacks arrive.",
+           "**Separate admin accounts** in organizations: IT staff use a normal account for email and browsing and a separate privileged account only for administration, because email and the web are the main ways attacks arrive.",
            "**Managed devices:** work and school devices are often enrolled in device management (such as Microsoft Intune or Google Admin), which controls who has administrator rights.",
-           "**macOS and Linux** use `sudo` or an authorisation dialog to grant temporary administrator rights for one action."
+           "**macOS and Linux** use `sudo` or an authorization dialog to grant temporary administrator rights for one action."
          ]},
          "Account hygiene also means removing accounts that are no longer needed, giving each person their own sign-in instead of sharing one, and protecting administrator accounts with strong, unique passwords.",
          "Remember that rights apply to programs too: anything you run inherits your account’s permissions, which is the core reason this principle protects you."
@@ -1488,7 +1488,7 @@ ICA.addUnit({
     {id:"terabyte", term:"terabyte (TB)", def:"1,000,000,000,000 bytes (a trillion), or 1,000 GB, in decimal units.", codex:"file-size-units"},
     {id:"gibibyte", term:"gibibyte (GiB)", def:"A binary unit: 1,073,741,824 bytes (1,024 × 1,024 × 1,024), about 7.4% more than a gigabyte. Windows shows this amount but calls it “GB”.", codex:"file-size-units"},
     {id:"mbps", term:"Mbps (megabits per second)", def:"A speed: millions of **bits** per second, used for internet plans. Divide by 8 to get megabytes per second (MB/s).", codex:"file-size-units"},
-    {id:"operating-system", term:"operating system (OS)", def:"The main program that runs a device: it manages hardware, runs apps, organises files and users, and keeps the system secure. Examples: Windows, macOS, ChromeOS, Linux, iOS, Android.", codex:"operating-system"},
+    {id:"operating-system", term:"operating system (OS)", def:"The main program that runs a device: it manages hardware, runs apps, organizes files and users, and keeps the system secure. Examples: Windows, macOS, ChromeOS, Linux, iOS, Android.", codex:"operating-system"},
     {id:"app", term:"app", def:"An application or program that does a task for you, such as writing, messaging or editing photos.", codex:"installing-apps"},
     {id:"web-app", term:"web app", def:"An app that runs inside a web browser, loaded from a server, with nothing to install.", codex:"installing-apps"},
     {id:"app-store", term:"app store", def:"An operating system’s official place to get apps, such as the Microsoft Store, Apple’s App Store or Google Play. Apps there are checked before listing.", codex:"installing-apps"},
@@ -1501,7 +1501,7 @@ ICA.addUnit({
     {id:"restart", term:"restart", def:"Turning a device off and on again in one step. It clears memory, ends stuck programs and reloads the operating system. On Windows it does a fuller reset than Shut down when Fast Startup is on.", codex:"device-first-aid"},
     {id:"fast-startup", term:"Fast Startup", def:"A Windows feature that, at Shut down, saves the core of Windows to storage (like hibernation) so the next start is quicker. Restart is not affected by it.", codex:"device-first-aid"},
     {id:"spec-sheet", term:"spec sheet", def:"A list of a device’s specifications: processor, RAM, storage, screen, ports, battery and operating system.", codex:"reading-specs"},
-    {id:"server", term:"server", def:"A computer whose job is to provide services (web pages, email, files) to other computers over a network, usually in a data centre.", codex:"what-is-a-computer"}
+    {id:"server", term:"server", def:"A computer whose job is to provide services (web pages, email, files) to other computers over a network, usually in a data center.", codex:"what-is-a-computer"}
   ],
   bank:[
     /* ---- Lesson 1 ---- */
@@ -1530,9 +1530,9 @@ ICA.addUnit({
       {t:"A protective case for a laptop", why:"That’s an accessory, not software of any kind."}
     ]},
     {id:"t1u1-q05", lesson:"t1u1-l1", level:3, q:"Lucía says, “My photos are safe because they’re in the cloud, which isn’t a physical place.” What’s the most accurate reply?", options:[
-      {t:"The cloud is real storage: her photos are files on a provider’s servers", ok:true, why:"“The cloud” means servers in data centres run by a provider, which you reach over the internet. Her photos are files on their drives."},
+      {t:"The cloud is real storage: her photos are files on a provider’s servers", ok:true, why:"“The cloud” means servers in data centers run by a provider, which you reach over the internet. Her photos are files on their drives."},
       {t:"She’s right: cloud files exist only as internet signals", why:"Data always has to be stored on physical hardware somewhere."},
-      {t:"The cloud means her photos are stored in satellites", why:"Cloud storage is in ground-based data centres, not satellites."},
+      {t:"The cloud means her photos are stored in satellites", why:"Cloud storage is in ground-based data centers, not satellites."},
       {t:"The cloud is just a folder on her own phone, given a special name by the app", why:"A local folder wouldn’t survive losing the phone. Cloud storage copies files to the provider’s servers."}
     ]},
     {id:"t1u1-q06", lesson:"t1u1-l1", level:2, q:"Which device does **not** count as a computer?", options:[
@@ -1682,7 +1682,7 @@ ICA.addUnit({
       {t:"iOS", why:"iOS runs on iPhones."},
       {t:"Windows", why:"Windows runs on PCs; Chromebooks come with ChromeOS."}
     ]},
-    {id:"t1u1-q30", lesson:"t1u1-l4", level:3, q:"Oluwaseun searches for a popular free video editor. The first result is an advert for “Free Video Editor Download” on a site he doesn’t recognise. What should he do?", options:[
+    {id:"t1u1-q30", lesson:"t1u1-l4", level:3, q:"Oluwaseun searches for a popular free video editor. The first result is an advert for “Free Video Editor Download” on a site he doesn’t recognize. What should he do?", options:[
       {t:"Skip the advert and use the official store or developer’s site", ok:true, why:"Get the app from the official store or the developer’s own website. Look-alike sites in search adverts sometimes bundle unwanted or harmful software."},
       {t:"Download from the advert, since adverts are checked by the search engine", why:"Checks on adverts aren’t perfect, and look-alike download sites do appear in them."},
       {t:"Ask a friend to send him the installer file in a chat", why:"A file passed around in chats has no trustworthy source."},
@@ -1749,7 +1749,7 @@ ICA.addUnit({
       {t:"The keyboard connection", why:"Input devices aren’t involved in storing updates."},
       {t:"How much RAM the open apps are using right now", why:"The message is about storage space, not working memory."}
     ]},
-    {id:"t1u1-q41", lesson:"t1u1-l5", level:3, q:"Priya needs space and finds a folder of system files she doesn’t recognise inside the Windows folder. What should she do?", options:[
+    {id:"t1u1-q41", lesson:"t1u1-l5", level:3, q:"Priya needs space and finds a folder of system files she doesn’t recognize inside the Windows folder. What should she do?", options:[
       {t:"Leave them alone and use Storage settings instead", ok:true, why:"System files keep Windows running. Storage settings shows safe things to remove, such as downloads, unused apps and items in the Recycle Bin."},
       {t:"Delete them, since she didn’t create them and doesn’t use them", why:"Deleting system files can stop Windows from starting."},
       {t:"Move them to a USB stick", why:"Windows still needs them in place; moving them can break the system."},

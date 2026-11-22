@@ -7,7 +7,7 @@ ICA.addUnit({
     "Tell narrative, scoping, systematic, rapid and umbrella reviews and meta-analyses apart, and choose one that fits a question",
     "Read and draw a PRISMA flow diagram, and outline a review protocol and where to register it",
     "Build a synthesis matrix and use it to find themes, debates and gaps",
-    "Write paragraphs that synthesise several sources, organised by theme, time or method"
+    "Write paragraphs that synthesize several sources, organized by theme, time or method"
   ],
   read:[
     {book:"bhatt", where:"Chapter 3, “The Research Process”, section “Overview of the Research Process” (the literature review step)", note:"Short and clear on why reviews matter. Written in 2012, before PRISMA 2020 and the scoping-review reporting guideline (PRISMA-ScR, 2018); the lessons cover those."},
@@ -24,9 +24,9 @@ ICA.addUnit({
     {h:"Joining a conversation", body:[
       {lead:"Imagine arriving late to a long dinner-table discussion. Before you speak, you listen: who has said what, where people agree, where they argue, and what nobody has mentioned yet."},
       "Research works the same way. Every published study answers earlier work and invites later work. A [[literature-review-term|literature review]] is your account of that conversation on one topic: what has been studied, what was found, how strong the evidence is, where researchers disagree, and what is still unknown.",
-      "Here “literature” doesn’t mean novels. It means the body of written work on a topic: journal articles, books, reports, theses, conference papers and, often, [[grey-literature-term|grey literature]] such as government or charity reports.",
+      "Here “literature” doesn’t mean novels. It means the body of written work on a topic: journal articles, books, reports, theses, conference papers and, often, [[grey-literature-term|gray literature]] such as government or charity reports.",
       {key:"A literature review is an argument about the state of knowledge, built from sources. It is not a list of what you read."},
-      "The precise version: a literature review identifies, evaluates and **synthesises** relevant research on a defined topic or question, so that readers understand what is known and how a new piece of work fits. [[synthesis|Synthesis]] means combining sources to say something none of them says alone."
+      "The precise version: a literature review identifies, evaluates and **synthesizes** relevant research on a defined topic or question, so that readers understand what is known and how a new piece of work fits. [[synthesis|Synthesis]] means combining sources to say something none of them says alone."
     ]},
     {h:"The jobs a review does", body:[
       "The textbook for this track (Bhattacherjee, Chapter 3) gives a review three purposes: to survey the current state of knowledge, to identify key authors, articles, theories and findings, and to identify gaps in knowledge. In practice, a good review does a little more:",
@@ -38,7 +38,7 @@ ICA.addUnit({
         "**Positions your work.** Explains why your question matters and why your method is a sensible choice, given what others did."
       ]},
       "That last job is why reviews appear at the start of so much research. It stops people repeating studies that already exist, and it lets readers judge whether a new study adds something.",
-      {tip:"Even outside academia, people do this. A nurse checking guidance, a policy officer writing a briefing or a teacher choosing a reading programme all ask: “What does the evidence say, and how sure are we?”"}
+      {tip:"Even outside academia, people do this. A nurse checking guidance, a policy officer writing a briefing or a teacher choosing a reading program all ask: “What does the evidence say, and how sure are we?”"}
     ]},
     {h:"Where you meet literature reviews", body:[
       "Reviews come in different sizes and settings. The core moves (map, weigh, compare, find gaps) are the same.",
@@ -49,14 +49,14 @@ ICA.addUnit({
         ["[[review-article|Review article]]","A whole published paper whose findings are the review itself"],
         ["Grant or research proposal","Shows the gap and why the project is worth funding"],
         ["Policy or practice brief","Summarises evidence for a decision, often in plain language"],
-        ["Course assignment","Practises finding, judging and connecting sources"]
+        ["Course assignment","Practices finding, judging and connecting sources"]
       ]},
       "Some reviews follow strict, pre-planned methods (Lesson 2 covers these kinds); others are written more freely by experts. Both are “literature reviews” in the broad sense."
     ]},
     {h:"Annotated bibliography or literature review?", body:[
-      "These two are often confused, and many courses ask for an annotated bibliography first, as a step towards a review.",
-      "An [[annotated-bibliography|annotated bibliography]] is a list of sources, each with its full reference followed by a short note (an annotation) that usually summarises the source and often evaluates it or says how you might use it. Each entry stands alone.",
-      "A literature review is organised by **ideas**, not by source. One paragraph may draw on five sources; one source may appear in three different paragraphs.",
+      "These two are often confused, and many courses ask for an annotated bibliography first, as a step toward a review.",
+      "An [[annotated-bibliography|annotated bibliography]] is a list of sources, each with its full reference followed by a short note (an annotation) that usually summarizes the source and often evaluates it or says how you might use it. Each entry stands alone.",
+      "A literature review is organized by **ideas**, not by source. One paragraph may draw on five sources; one source may appear in three different paragraphs.",
       {table:[
         ["","Annotated bibliography","Literature review"],
         ["Organised by","Source (often alphabetical)","Theme, time or method"],
@@ -64,13 +64,13 @@ ICA.addUnit({
         ["Main move","Summarise and evaluate","Compare, connect, judge"],
         ["Ends with","The last entry","What’s known, the gaps, and why it matters"]
       ]},
-      {fig:'<svg viewBox="0 0 340 440" role="img"><defs><marker id="u5a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Annotated bibliography</text><rect class="d-soft" x="10" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="120" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="230" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><text x="60" y="56" text-anchor="middle">Source A</text><text x="170" y="56" text-anchor="middle">Source B</text><text x="280" y="56" text-anchor="middle">Source C</text><text class="s" x="60" y="76" text-anchor="middle">summary +</text><text class="s" x="170" y="76" text-anchor="middle">summary +</text><text class="s" x="280" y="76" text-anchor="middle">summary +</text><text class="s" x="60" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="92" text-anchor="middle">evaluation</text><text class="s" x="280" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="124" text-anchor="middle">Each entry stands alone</text><path class="d-ink" d="M10 140H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="166" text-anchor="middle">Literature review</text><circle class="d-lup" cx="50" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="130" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="210" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="290" cy="196" r="17" stroke-width="1.5"/><text x="50" y="201" text-anchor="middle">A</text><text x="130" y="201" text-anchor="middle">B</text><text x="210" y="201" text-anchor="middle">C</text><text x="290" y="201" text-anchor="middle">D</text><path class="d-ink" d="M55 213L80 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M126 213L105 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M138 212L225 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M212 213L240 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M285 213L270 242" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-sage" x="20" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><rect class="d-sage" x="180" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><text x="90" y="266" text-anchor="middle">Theme 1:</text><text class="s" x="90" y="284" text-anchor="middle">where they agree</text><text x="250" y="266" text-anchor="middle">Theme 2:</text><text class="s" x="250" y="284" text-anchor="middle">where they disagree</text><path class="d-ink" d="M90 294L130 320" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M250 294L210 320" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-gold" x="40" y="324" width="260" height="48" rx="8" stroke-width="1.5"/><text x="170" y="344" text-anchor="middle">What we know, how well,</text><text x="170" y="362" text-anchor="middle">and what’s missing (the gap)</text><path class="d-ink" d="M170 372V394" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-rose" x="70" y="398" width="200" height="36" rx="8" stroke-width="1.5"/><text x="170" y="421" text-anchor="middle">Your question or project</text></svg>', alt:"Top: three separate boxes, Source A, B and C, each with its own summary and evaluation. Bottom: four sources, A to D, with arrows into two theme boxes (where they agree, where they disagree); source B feeds both themes. The themes lead to a box saying what we know, how well, and what is missing, which leads to your question.", cap:"An annotated bibliography is a set of separate notes. A review sorts sources into ideas, and the ideas build towards a gap and a question."}
+      {fig:'<svg viewBox="0 0 340 440" role="img"><defs><marker id="u5a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Annotated bibliography</text><rect class="d-soft" x="10" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="120" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><rect class="d-soft" x="230" y="32" width="100" height="70" rx="8" stroke-width="1.5"/><text x="60" y="56" text-anchor="middle">Source A</text><text x="170" y="56" text-anchor="middle">Source B</text><text x="280" y="56" text-anchor="middle">Source C</text><text class="s" x="60" y="76" text-anchor="middle">summary +</text><text class="s" x="170" y="76" text-anchor="middle">summary +</text><text class="s" x="280" y="76" text-anchor="middle">summary +</text><text class="s" x="60" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="92" text-anchor="middle">evaluation</text><text class="s" x="280" y="92" text-anchor="middle">evaluation</text><text class="s" x="170" y="124" text-anchor="middle">Each entry stands alone</text><path class="d-ink" d="M10 140H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="166" text-anchor="middle">Literature review</text><circle class="d-lup" cx="50" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="130" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="210" cy="196" r="17" stroke-width="1.5"/><circle class="d-lup" cx="290" cy="196" r="17" stroke-width="1.5"/><text x="50" y="201" text-anchor="middle">A</text><text x="130" y="201" text-anchor="middle">B</text><text x="210" y="201" text-anchor="middle">C</text><text x="290" y="201" text-anchor="middle">D</text><path class="d-ink" d="M55 213L80 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M126 213L105 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M138 212L225 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M212 213L240 242" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M285 213L270 242" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-sage" x="20" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><rect class="d-sage" x="180" y="246" width="140" height="48" rx="8" stroke-width="1.5"/><text x="90" y="266" text-anchor="middle">Theme 1:</text><text class="s" x="90" y="284" text-anchor="middle">where they agree</text><text x="250" y="266" text-anchor="middle">Theme 2:</text><text class="s" x="250" y="284" text-anchor="middle">where they disagree</text><path class="d-ink" d="M90 294L130 320" stroke-width="1.5" marker-end="url(#u5a1)"/><path class="d-ink" d="M250 294L210 320" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-gold" x="40" y="324" width="260" height="48" rx="8" stroke-width="1.5"/><text x="170" y="344" text-anchor="middle">What we know, how well,</text><text x="170" y="362" text-anchor="middle">and what’s missing (the gap)</text><path class="d-ink" d="M170 372V394" stroke-width="1.5" marker-end="url(#u5a1)"/><rect class="d-rose" x="70" y="398" width="200" height="36" rx="8" stroke-width="1.5"/><text x="170" y="421" text-anchor="middle">Your question or project</text></svg>', alt:"Top: three separate boxes, Source A, B and C, each with its own summary and evaluation. Bottom: four sources, A to D, with arrows into two theme boxes (where they agree, where they disagree); source B feeds both themes. The themes lead to a box saying what we know, how well, and what is missing, which leads to your question.", cap:"An annotated bibliography is a set of separate notes. A review sorts sources into ideas, and the ideas build toward a gap and a question."}
     ]},
     {h:"The shape of a review", body:[
       "Most reviews, long or short, follow a funnel: wide at the start, narrowing to your question.",
       {list:[
         "**Introduction.** The topic, why it matters, the scope (which years, places, kinds of study) and, in more formal reviews, how sources were found.",
-        "**Body.** Sections organised by theme, by period or by method (Lesson 5). Each section compares sources and judges the evidence.",
+        "**Body.** Sections organized by theme, by period or by method (Lesson 5). Each section compares sources and judges the evidence.",
         "**Conclusion.** What is well established, what is contested, what is missing, and how that leads to the question or decision at hand."
       ]},
       {ex:"Topic: teaching young children to read in their home language.\n\nIntro: why early reading matters; scope = primary schools, studies from 2000 onwards, any country.\n\nTheme 1: reading gains in the first years (most studies agree).\nTheme 2: effects on learning the second language later (findings conflict; studies measure at different ages).\nTheme 3: what teachers and families think (few studies, mostly from two regions).\n\nConclusion: strong evidence for early reading gains; mixed evidence on later effects; little on families’ views outside two regions → a gap a new study could fill.", label:"Worked example: an outline (all studies invented)"},
@@ -89,7 +89,7 @@ ICA.addUnit({
     {h:"Common misconceptions", body:[
       {list:[
         "**“Include everything ever written.”** A review covers the work that is *relevant to a defined scope*. Saying what you included and why is what makes it trustworthy.",
-        "**“It should be neutral, so no opinions.”** A review should be fair, but it makes judgements: which evidence is stronger, which explanation fits better. Those judgements must be backed by reasons.",
+        "**“It should be neutral, so no opinions.”** A review should be fair, but it makes judgments: which evidence is stronger, which explanation fits better. Those judgments must be backed by reasons.",
         "**“Only cite sources that agree with me.”** Leaving out conflicting work is a form of [[confirmation-bias|confirmation bias]], and reviewers and examiners notice.",
         "**“Newest is always best.”** Recent work matters, but classic studies that shaped the field often belong, especially to explain where ideas came from.",
         "**“You write it once, at the start.”** In real projects, the review is revised as you read more and as your question sharpens.",
@@ -102,15 +102,15 @@ ICA.addUnit({
     {id:"t4u5-l1-x1", type:"mcq", q:"Which statement best describes the main purpose of a literature review?", options:[
       {t:"To show what is known, how strong the evidence is, and what is still unknown", ok:true, why:"Right. Mapping, weighing and finding gaps are the core jobs; they also set up any new study."},
       {t:"To prove that the writer has read a large number of sources", why:"Quantity isn’t the goal. A focused review of 15 well-chosen studies can be better than a list of 80."},
-      {t:"To summarise each source in the order it was published", why:"That’s a summary list (or an annotated bibliography). A review organises by idea and compares sources."},
+      {t:"To summarize each source in the order it was published", why:"That’s a summary list (or an annotated bibliography). A review organizes by idea and compares sources."},
       {t:"To present only the evidence that supports the writer’s own view on the topic", why:"Leaving out conflicting work makes a review biased and less trustworthy. Debates belong in the review."}
     ]},
     {id:"t4u5-l1-x2", type:"sort", q:"Sort each feature: is it typical of an annotated bibliography or of a literature review?", buckets:["Annotated bibliography","Literature review"], items:[
       {t:"Entries listed alphabetically by author", b:0, why:"Annotated bibliographies are usually ordered like a reference list."},
       {t:"A paragraph that cites four sources to make one point", b:1, why:"Combining several sources around one idea is synthesis, the heart of a review."},
-      {t:"Each note summarises one source and says how useful it is", b:0, why:"That’s an annotation: summary plus evaluation, one source at a time."},
+      {t:"Each note summarizes one source and says how useful it is", b:0, why:"That’s an annotation: summary plus evaluation, one source at a time."},
       {t:"Ends by explaining what is still unknown", b:1, why:"Reviews end with what’s established, what’s contested and the gaps."},
-      {t:"Sections named after themes, such as “Effects on older adults”", b:1, why:"Reviews are organised by ideas, not by source."},
+      {t:"Sections named after themes, such as “Effects on older adults”", b:1, why:"Reviews are organized by ideas, not by source."},
       {t:"The same source appears in three different sections", b:1, why:"In a review, one study can support several points. In an annotated bibliography each source appears once."}
     ]},
     {id:"t4u5-l1-x3", type:"match", q:"Match each setting to what a literature review mainly does there.", pairs:[
@@ -119,16 +119,16 @@ ICA.addUnit({
       ["Policy brief for a city council","Summarises what the evidence says for a decision","Decision-makers need the bottom line and how sure it is."],
       ["Review article in a journal","The review’s findings are the paper’s main contribution","A review article doesn’t report a new study; the synthesis is the result."]
     ]},
-    {id:"t4u5-l1-x4", type:"mcq", q:"Amara is preparing a short evidence summary on school breakfast programmes for a community group. She finds eight studies: six report better attendance, two find no difference. What should her review do with the two studies?", options:[
+    {id:"t4u5-l1-x4", type:"mcq", q:"Amara is preparing a short evidence summary on school breakfast programs for a community group. She finds eight studies: six report better attendance, two find no difference. What should her review do with the two studies?", options:[
       {t:"Include them, and look for reasons the results differ", ok:true, why:"Yes. Reasons might be different ages, places or measures. Conflicting results are part of the evidence; explaining them is one of a review’s most useful jobs."},
-      {t:"Leave them out, because most studies agree", why:"Dropping inconvenient results biases the summary and may hide real limits on when programmes work."},
+      {t:"Leave them out, because most studies agree", why:"Dropping inconvenient results biases the summary and may hide real limits on when programs work."},
       {t:"Leave them out, unless they are newer than the six that agree", why:"Publication date alone doesn’t decide relevance. Quality and fit to the question do."},
       {t:"Mention them in a footnote without discussing them", why:"Hiding disagreement in a footnote still misleads readers about how settled the evidence is."}
     ]},
     {id:"t4u5-l1-x5", type:"spot", q:"Here is the start of a student’s “literature review”. Tap the parts that show it is really a list of summaries rather than a review.", ask:"shows it’s a list, not a review", parts:[
       {t:"Research on remote work and productivity has grown quickly, and findings vary by type of job.", flag:false, why:"A good opening: it states the topic and hints at a pattern across studies."},
       " ",
-      {t:"Source 1: Moreau (2020) surveyed office staff.", flag:true, why:"Labelling paragraphs “Source 1, Source 2…” organises the text by source, not by idea."},
+      {t:"Source 1: Moreau (2020) surveyed office staff.", flag:true, why:"Labeling paragraphs “Source 1, Source 2…” organizes the text by source, not by idea."},
       " ",
       {t:"Source 2: Adeyemi (2021) interviewed managers.", flag:true, why:"Again one source per unit, with no link to Moreau. A review would compare what the two found."},
       " ",
@@ -143,13 +143,13 @@ ICA.addUnit({
       {t:"Say what is established, contested and missing", why:"The conclusion draws the threads together, including the gaps."},
       {t:"Link the gap to the question or decision at hand", why:"The funnel ends at your question: why this study or decision is needed now."}
     ]},
-    {id:"t4u5-l1-x7", type:"explain", q:"Explain to a friend the difference between an annotated bibliography and a literature review on the same topic.", size:"3–4 sentences", hint:"What is each one organised by, and what does each unit of text talk about?", model:"An annotated bibliography is a list of sources, each with its reference and a short note that summarises and perhaps evaluates it; every entry stands alone. A literature review is organised by ideas, such as themes, periods or methods, so one paragraph may draw on several sources and one source may appear in several places. Its job is to compare and judge the sources and argue what is known, what is contested and what is missing.", points:["Says an annotated bibliography is organised source by source", "Says a review is organised by ideas or themes across sources", "Notes a source can appear in several places in a review", "Says a review makes an argument about what is known and missing"]}
+    {id:"t4u5-l1-x7", type:"explain", q:"Explain to a friend the difference between an annotated bibliography and a literature review on the same topic.", size:"3–4 sentences", hint:"What is each one organized by, and what does each unit of text talk about?", model:"An annotated bibliography is a list of sources, each with its reference and a short note that summarizes and perhaps evaluates it; every entry stands alone. A literature review is organized by ideas, such as themes, periods or methods, so one paragraph may draw on several sources and one source may appear in several places. Its job is to compare and judge the sources and argue what is known, what is contested and what is missing.", points:["Says an annotated bibliography is organized source by source", "Says a review is organized by ideas or themes across sources", "Notes a source can appear in several places in a review", "Says a review makes an argument about what is known and missing"]}
    ],
    apply:{intro:"Look at real reviews and start your own small practice review. You can use any free search tool, such as Google Scholar, CORE, BASE or DOAJ. A library card or university login may unlock more full texts, but you don’t need one here.", tasks:[
-     {t:"Dissect a published review", how:["Search for your topic plus the word “review” (for example: urban trees heat review). Open a review article whose full text is free.","Read only the introduction, the section headings and the conclusion.","Note how the body is organised (themes? time? methods?), how the authors say they found sources, and what gap they end on."], write:"Review title and link… How the body is organised… How sources were found… The gap they end with…"},
+     {t:"Dissect a published review", how:["Search for your topic plus the word “review” (for example: urban trees heat review). Open a review article whose full text is free.","Read only the introduction, the section headings and the conclusion.","Note how the body is organized (themes? time? methods?), how the authors say they found sources, and what gap they end on."], write:"Review title and link… How the body is organized… How sources were found… The gap they end with…"},
      {t:"Choose a practice topic for this unit", how:["Pick a topic you care about and that has some research: something from your work, studies, community or health.","Write it as a question, for example “Do school gardens change what children eat?”","Note two or three words people might use for it, so you can search later."], write:"My topic… My question… Other words for it…"},
      {t:"Turn three notes into one connection", how:["Find three short sources on your topic (abstracts are enough for now).","Write one line about each, as in an annotated bibliography.","Then write one or two sentences that say something about all three together: do they agree? use different methods? study different places?"], write:"Source 1… Source 2… Source 3… What they show together…"}
-   ], proof:"Notes on how one real review is organised, a practice topic written as a question, and one or two sentences that connect three sources instead of listing them."},
+   ], proof:"Notes on how one real review is organized, a practice topic written as a question, and one or two sentences that connect three sources instead of listing them."},
    read:[
      {book:"bhatt", where:"Chapter 3, “The Research Process”, section “Overview of the Research Process” (the paragraph on the literature review)"},
      {book:"owg", where:"Section 14.1, “Compiling Sources for an Annotated Bibliography”"}
@@ -157,7 +157,7 @@ ICA.addUnit({
   },
   /* ───────────── LESSON 2 ───────────── */
   {id:"t4u5-l2", title:"Kinds of review", minutes:50,
-   hook:{q:"What mainly makes a review “systematic”?", options:["It is very long","It includes only randomised controlled trials","It follows explicit, pre-planned methods that someone else could repeat","It is published in a medical journal"], answer:2,
+   hook:{q:"What mainly makes a review “systematic”?", options:["It is very long","It includes only randomized controlled trials","It follows explicit, pre-planned methods that someone else could repeat","It is published in a medical journal"], answer:2,
      reveal:"**Explicit, pre-planned, repeatable methods.** A systematic review sets its question and eligibility criteria in advance, searches thoroughly, appraises the studies and reports every step. Length, field and study design don’t define it: there are systematic reviews in education, ecology and criminology, and of qualitative studies too. This lesson sorts out the main kinds of review."},
    goals:["Define narrative, scoping, systematic, rapid and umbrella reviews and meta-analysis accurately","Explain what each kind can and can’t tell you","Choose a kind of review that fits a question and the time available"],
    learn:[
@@ -203,7 +203,7 @@ ICA.addUnit({
       "A [[scoping-review|scoping review]] systematically identifies and **maps** the breadth of evidence on a topic. It asks “what is out there?” rather than “does this work?”.",
       {list:[
         "**Typical aims:** see how much research exists and of what kinds, clarify key concepts and definitions, find gaps, and decide whether a full systematic review is possible or worthwhile.",
-        "**Question format:** JBI (an international evidence-synthesis organisation) recommends **PCC**: Population, Concept, Context. Example: older adults (P), use of video calls to keep in touch (C), in rural areas (C).",
+        "**Question format:** JBI (an international evidence-synthesis organization) recommends **PCC**: Population, Concept, Context. Example: older adults (P), use of video calls to keep in touch (C), in rural areas (C).",
         "**Methods:** a protocol, a thorough search, set criteria and a charting form, like a systematic review. Assessing the quality of each study is optional and often not done.",
         "**Output:** tables and charts of what has been studied, plus a narrative summary. Scoping reviews do not usually make recommendations for practice."
       ]},
@@ -212,7 +212,7 @@ ICA.addUnit({
     ]},
     {h:"Rapid and umbrella reviews", body:[
       "A [[rapid-review|rapid review]] is, in one widely used definition, “a form of knowledge synthesis that accelerates the process of conducting a traditional systematic review through streamlining or omitting a variety of methods to produce evidence in a resource-efficient manner” (Hamel and colleagues, 2021). Shortcuts might include searching fewer databases, limiting languages or dates, or having one person screen while a second checks a sample. Rapid reviews suit urgent decisions (for example, early in a disease outbreak) but must report their shortcuts honestly, because each one can miss evidence.",
-      "An [[umbrella-review|umbrella review]] is a review of existing systematic reviews (Cochrane calls these “overviews of reviews”). It’s useful when many reviews exist on related questions, for example several reviews of different exercise programmes for back pain. One known trap: the same original study can appear in several reviews and get counted twice."
+      "An [[umbrella-review|umbrella review]] is a review of existing systematic reviews (Cochrane calls these “overviews of reviews”). It’s useful when many reviews exist on related questions, for example several reviews of different exercise programs for back pain. One known trap: the same original study can appear in several reviews and get counted twice."
     ]},
     {h:"Choosing a kind of review", body:[
       "The question and the resources decide. Start from what you need to know.",
@@ -249,14 +249,14 @@ ICA.addUnit({
       ["Umbrella review","Reviews existing systematic reviews","Its “studies” are reviews, not original research."]
     ]},
     {id:"t4u5-l2-x2", type:"mcq", q:"Dmitri reads: “This systematic review found 14 studies, but they used very different outcome measures, so no meta-analysis was done.” What should he conclude?", options:[
-      {t:"That’s normal: a systematic review can synthesise studies in words and tables", ok:true, why:"Right. Meta-analysis is optional; forcing very different studies into one average can be misleading."},
+      {t:"That’s normal: a systematic review can synthesize studies in words and tables", ok:true, why:"Right. Meta-analysis is optional; forcing very different studies into one average can be misleading."},
       {t:"It isn’t a real systematic review, because every systematic review includes a meta-analysis", why:"A common mix-up. Systematic review is the method; meta-analysis is an optional statistical step within it."},
       {t:"The authors made an error and should have averaged the results anyway", why:"Combining incompatible measures can produce a meaningless number. Declining to pool is often the careful choice."},
       {t:"The review is a scoping review instead", why:"Scoping reviews map breadth. Having no meta-analysis doesn’t turn a focused systematic review into a scoping review."}
     ]},
     {id:"t4u5-l2-x3", type:"sort", q:"For each question, which kind of review fits best?", buckets:["Scoping review","Systematic review (maybe with meta-analysis)"], items:[
       {t:"What kinds of research exist on how small farmers use mobile phones for market prices?", b:0, why:"A broad “what exists?” question: a mapping job."},
-      {t:"Does a specific reading programme raise test scores for 7-year-olds compared with usual teaching?", b:1, why:"A focused effectiveness question with a defined comparison."},
+      {t:"Does a specific reading program raise test scores for 7-year-olds compared with usual teaching?", b:1, why:"A focused effectiveness question with a defined comparison."},
       {t:"How have researchers defined “digital literacy” in studies of adult learners?", b:0, why:"Clarifying concepts and definitions is a classic scoping aim."},
       {t:"Do text-message reminders reduce missed clinic appointments?", b:1, why:"Focused question about an intervention and an outcome; studies may allow pooling."},
       {t:"Is there enough research on community fridges to make a systematic review worthwhile?", b:0, why:"Checking whether a systematic review is feasible is a stated purpose of scoping reviews."},
@@ -315,7 +315,7 @@ ICA.addUnit({
         "how studies will be screened and by whom;",
         "what information will be extracted from each study;",
         "how study quality ([[risk-of-bias|risk of bias]]) will be judged;",
-        "how results will be synthesised (for example, meta-analysis if studies are similar enough)."
+        "how results will be synthesized (for example, meta-analysis if studies are similar enough)."
       ]},
       "Why bother? Deciding methods after seeing results lets the results steer the review, even unintentionally. A protocol also shows others that the review is under way, which reduces wasted duplicate work. Plans can change; when they do, the final review reports what changed and why."
     ]},
@@ -323,7 +323,7 @@ ICA.addUnit({
       "Registering means publishing the protocol (or a summary) on a public, time-stamped register. Two common, free options:",
       {table:[
         ["Register","What it accepts"],
-        ["PROSPERO (run by the Centre for Reviews and Dissemination, University of York; funded by the UK’s NIHR)","Systematic reviews with an outcome relevant to human health (it also has a section for animal studies). It does not accept scoping reviews. It asks you to register before data extraction starts."],
+        ["PROSPERO (run by the Center for Reviews and Dissemination, University of York; funded by the UK’s NIHR)","Systematic reviews with an outcome relevant to human health (it also has a section for animal studies). It does not accept scoping reviews. It asks you to register before data extraction starts."],
         ["OSF Registries (Center for Open Science)","Any field and any type of review, including scoping reviews. It offers a general systematic review registration template."]
       ]},
       "Some teams also publish their protocol as a journal article. Registration rules change, so check the register’s current guidance before you submit.",
@@ -331,12 +331,12 @@ ICA.addUnit({
     ]},
     {h:"Eligibility criteria", body:[
       "Eligibility criteria decide which studies belong. They follow from the question. Health reviews often use **PICO** (Population, Intervention, Comparison, Outcome); scoping reviews often use **PCC** (Population, Concept, Context). Add practical limits such as study design, dates and languages, and give a reason for each.",
-      {ex:"Question: Do school vegetable gardens change how many vegetables children eat?\n\nInclude:\n• Population: children aged 5–12 in primary school, any country\n• Intervention: a school garden programme children take part in\n• Comparison: schools without a garden programme\n• Outcome: vegetable intake, measured in any way\n• Design: studies with a comparison group\n\nExclude:\n• Gardens used only as decoration, with no child participation\n• Opinion pieces and news stories (no data)\n• Outcomes about knowledge only, with no measure of eating", label:"Worked example: criteria for an invented review"},
+      {ex:"Question: Do school vegetable gardens change how many vegetables children eat?\n\nInclude:\n• Population: children aged 5–12 in primary school, any country\n• Intervention: a school garden program children take part in\n• Comparison: schools without a garden program\n• Outcome: vegetable intake, measured in any way\n• Design: studies with a comparison group\n\nExclude:\n• Gardens used only as decoration, with no child participation\n• Opinion pieces and news stories (no data)\n• Outcomes about knowledge only, with no measure of eating", label:"Worked example: criteria for an invented review"},
       "Good criteria are specific enough that two people applying them independently would mostly agree. Vague criteria (“good-quality studies about gardens”) produce inconsistent screening.",
-      {warn:"Limiting to one language is common, but it can miss important studies and tilt the evidence towards some regions. If you do it, say so as a limitation."}
+      {warn:"Limiting to one language is common, but it can miss important studies and tilt the evidence toward some regions. If you do it, say so as a limitation."}
     ]},
     {h:"Searching and screening", body:[
-      "Systematic searches use several databases, plus other routes such as reports from organisations, trial or study registers, and following references backwards and citations forwards (the searching unit of this track covers these skills). Every search is recorded so it can be repeated.",
+      "Systematic searches use several databases, plus other routes such as reports from organizations, trial or study registers, and following references backwards and citations forwards (the searching unit of this track covers these skills). Every search is recorded so it can be repeated.",
       "Three words matter here, and PRISMA uses them precisely:",
       {list:[
         "A **record** is a title and abstract found by a search. The same paper found in two databases gives two records (a duplicate).",
@@ -353,12 +353,12 @@ ICA.addUnit({
       "[[prisma-term|PRISMA]] (Preferred Reporting Items for Systematic reviews and Meta-Analyses) is a **[[reporting-guideline|reporting guideline]]**. The current version, PRISMA 2020, has a 27-item checklist of what a systematic review report should include, plus a flow diagram showing how records moved from search to inclusion. PRISMA tells you what to report; it isn’t a step-by-step guide to doing a review, nor a score of review quality.",
       {fig:'<svg viewBox="0 0 340 520" role="img"><defs><marker id="u5a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="8" y="18">Identification</text><rect class="d-lup" x="8" y="26" width="196" height="66" rx="6" stroke-width="1.5"/><text x="106" y="46" text-anchor="middle">Records identified</text><text class="s" x="106" y="64" text-anchor="middle">databases: n = 1,186</text><text class="s" x="106" y="81" text-anchor="middle">registers: n = 54</text><rect class="d-soft" x="216" y="26" width="118" height="66" rx="6" stroke-width="1.5"/><text class="s" x="275" y="44" text-anchor="middle">Removed before</text><text class="s" x="275" y="59" text-anchor="middle">screening:</text><text class="s" x="275" y="74" text-anchor="middle">duplicates</text><text class="s" x="275" y="88" text-anchor="middle">n = 312</text><path class="d-ink" d="M204 59H213" stroke-width="1.5" marker-end="url(#u5a3)"/><path class="d-ink" d="M106 92V120" stroke-width="1.5" marker-end="url(#u5a3)"/><text class="s" x="8" y="112">Screening</text><rect class="d-lup" x="8" y="124" width="196" height="44" rx="6" stroke-width="1.5"/><text x="106" y="143" text-anchor="middle">Records screened</text><text class="s" x="106" y="160" text-anchor="middle">n = 928</text><rect class="d-soft" x="216" y="124" width="118" height="44" rx="6" stroke-width="1.5"/><text class="s" x="275" y="142" text-anchor="middle">Records excluded</text><text class="s" x="275" y="159" text-anchor="middle">n = 841</text><path class="d-ink" d="M204 146H213" stroke-width="1.5" marker-end="url(#u5a3)"/><path class="d-ink" d="M106 168V186" stroke-width="1.5" marker-end="url(#u5a3)"/><rect class="d-lup" x="8" y="190" width="196" height="44" rx="6" stroke-width="1.5"/><text x="106" y="209" text-anchor="middle">Reports sought</text><text class="s" x="106" y="226" text-anchor="middle">for retrieval: n = 87</text><rect class="d-soft" x="216" y="190" width="118" height="44" rx="6" stroke-width="1.5"/><text class="s" x="275" y="208" text-anchor="middle">Not retrieved</text><text class="s" x="275" y="225" text-anchor="middle">n = 5</text><path class="d-ink" d="M204 212H213" stroke-width="1.5" marker-end="url(#u5a3)"/><path class="d-ink" d="M106 234V252" stroke-width="1.5" marker-end="url(#u5a3)"/><rect class="d-lup" x="8" y="256" width="196" height="44" rx="6" stroke-width="1.5"/><text x="106" y="275" text-anchor="middle">Reports assessed</text><text class="s" x="106" y="292" text-anchor="middle">for eligibility: n = 82</text><rect class="d-soft" x="216" y="256" width="118" height="96" rx="6" stroke-width="1.5"/><text class="s" x="275" y="274" text-anchor="middle">Reports excluded</text><text class="s" x="275" y="290" text-anchor="middle">n = 63:</text><text class="s" x="275" y="306" text-anchor="middle">population 24</text><text class="s" x="275" y="322" text-anchor="middle">outcome 21</text><text class="s" x="275" y="338" text-anchor="middle">not a study 18</text><path class="d-ink" d="M204 278H213" stroke-width="1.5" marker-end="url(#u5a3)"/><text class="s" x="8" y="350">Included</text><path class="d-ink" d="M106 300V364" stroke-width="1.5" marker-end="url(#u5a3)"/><rect class="d-sage" x="8" y="368" width="196" height="64" rx="6" stroke-width="1.5"/><text x="106" y="390" text-anchor="middle">Studies included: 16</text><text class="s" x="106" y="408" text-anchor="middle">Reports of included</text><text class="s" x="106" y="424" text-anchor="middle">studies: 19</text><text class="s" x="170" y="460" text-anchor="middle">1,186 + 54 = 1,240; 1,240 − 312 = 928</text><text class="s" x="170" y="478" text-anchor="middle">928 − 841 = 87; 87 − 5 = 82</text><text class="s" x="170" y="496" text-anchor="middle">82 − 63 = 19 reports (of 16 studies)</text></svg>', alt:"A PRISMA 2020 style flow diagram with invented numbers. Identification: 1,186 records from databases and 54 from registers; 312 duplicates removed before screening. Screening: 928 records screened, 841 excluded; 87 reports sought for retrieval, 5 not retrieved; 82 reports assessed for eligibility, 63 excluded (24 wrong population, 21 wrong outcome, 18 not a study). Included: 16 studies, reported in 19 reports. The sums are shown at the bottom.", cap:"A simplified PRISMA 2020 flow diagram for a new review (all numbers invented). Every box can be checked with simple arithmetic."},
       "Read it top to bottom. The main column shows what goes forward; the side boxes show what was removed at each stage and, at full-text stage, why. The last box separates **studies** from **reports**: here, 19 reports describe 16 studies, because three studies each have two reports.",
-      "The official PRISMA 2020 template has a few more boxes (for example, records removed by automation tools, and a second column for records found by other methods, such as websites, organisations or citation searching). Templates are free on the PRISMA website.",
+      "The official PRISMA 2020 template has a few more boxes (for example, records removed by automation tools, and a second column for records found by other methods, such as websites, organizations or citation searching). Templates are free on the PRISMA website.",
       {tip:"Scoping reviews report with PRISMA-ScR (2018), which has 20 essential items and 2 optional ones and uses a similar flow diagram."}
     ]},
     {h:"Extraction, appraisal and synthesis", body:[
       "After screening, the team uses a form to extract the same details from every included study: setting, participants, design, outcomes, results. This is a structured version of the synthesis matrix in Lesson 4.",
-      "Next comes [[critical-appraisal-term|critical appraisal]] (see {{critical-appraisal}}): how far can each study’s results be trusted? Published tools guide this, for example Cochrane’s RoB 2 for randomised trials, and checklists from JBI and from CASP for many study designs. Appraisal asks about the study’s design and conduct, not whether you like its findings.",
+      "Next comes [[critical-appraisal-term|critical appraisal]] (see {{critical-appraisal}}): how far can each study’s results be trusted? Published tools guide this, for example Cochrane’s RoB 2 for randomized trials, and checklists from JBI and from CASP for many study designs. Appraisal asks about the study’s design and conduct, not whether you like its findings.",
       "Finally, synthesis. If studies are similar enough, a meta-analysis may pool the numbers. If not, results are grouped and compared in words and tables; a reporting guideline called SWiM (Synthesis Without Meta-analysis) helps describe how that was done."
     ]},
     {h:"Borrowing the habits for smaller projects", body:[
@@ -398,11 +398,11 @@ ICA.addUnit({
       {t:"Three studies were excluded after all", why:"Excluded reports appear in the “reports excluded” box, not in the included box."},
       {t:"It’s a mistake: the two numbers must always match", why:"PRISMA 2020 deliberately separates studies and reports because they often differ."}
     ]},
-    {id:"t4u5-l3-x5", type:"sort", q:"Criteria for an invented review: adults aged 65+, living at home, any programme using video calls to reduce loneliness, with a measure of loneliness. Include or exclude each study?", buckets:["Include","Exclude"], items:[
+    {id:"t4u5-l3-x5", type:"sort", q:"Criteria for an invented review: adults aged 65+, living at home, any program using video calls to reduce loneliness, with a measure of loneliness. Include or exclude each study?", buckets:["Include","Exclude"], items:[
       {t:"Weekly video calls with volunteers for adults aged 70–90 living at home; loneliness scale before and after", b:0, why:"Matches population, setting, intervention and outcome."},
       {t:"Video calls for adults aged 65+ in care homes", b:1, why:"Setting doesn’t match: the criteria say living at home."},
       {t:"A blog post by a charity describing its video-call service, with no data", b:1, why:"No data on loneliness: it isn’t a study."},
-      {t:"Video-call programme for people aged 65+ at home; measured loneliness and mood", b:0, why:"Extra outcomes are fine as long as loneliness is measured."},
+      {t:"Video-call program for people aged 65+ at home; measured loneliness and mood", b:0, why:"Extra outcomes are fine as long as loneliness is measured."},
       {t:"Phone (voice-only) calls for adults 65+ at home", b:1, why:"The intervention must use video calls."},
       {t:"Video calls for students aged 18–25 living alone", b:1, why:"Population doesn’t match: the review is about adults aged 65+."}
     ]},
@@ -420,7 +420,7 @@ ICA.addUnit({
     ]},
     {id:"t4u5-l3-x8", type:"explain", q:"Why does a systematic review write and register its protocol before any searching begins?", size:"2–4 sentences", hint:"What could happen if methods were decided after seeing the results?", model:"If the team decided its criteria and methods after seeing the results, the results could steer the review, even unintentionally: for example, by quietly narrowing the criteria to drop awkward studies. Writing the protocol first fixes the question, criteria, search and analysis in advance, and registering it on a public, time-stamped register such as PROSPERO or OSF lets others check that the final review followed the plan. It also shows the review is under way, reducing duplicate work.", points:["Says deciding methods after seeing results lets results steer the review", "Says the protocol fixes the methods in advance", "Says public registration lets others compare the plan with the final review", "Mentions reducing duplicate work"]}
    ],
-   apply:{intro:"Practise the systematic habits on your own topic. Everything here works with free tools; keep it small.", tasks:[
+   apply:{intro:"Practice the systematic habits on your own topic. Everything here works with free tools; keep it small.", tasks:[
      {t:"Write a mini-protocol", how:["Write your question in one sentence.","Write the elements: PICO (for effects of something) or PCC (for mapping a topic).","List three inclusion criteria and three exclusion criteria, each with a reason.","Name two places you will search, and the search string you will use."], write:"Question… PICO or PCC… Include (and why)… Exclude (and why)… Where I’ll search… Search string…"},
      {t:"Screen and count", how:["Run your search in one free tool and look at the first 30 results.","Screen each title and abstract against your criteria: include, exclude or unsure.","Count each group. For 3 included or unsure results, open the full text if free and decide; note a reason for each exclusion."], write:"Results checked: 30… Excluded at title/abstract… Full texts read… Excluded with reasons… Included…"},
      {t:"Check a real flow diagram", how:["Find a published systematic review with free full text (for example, search your topic plus “systematic review PRISMA”).","Find its flow diagram and check that each box adds up.","Note whether it separates studies from reports, and the main reasons for exclusion."], write:"Review… Do the numbers add up?… Studies vs reports… Main exclusion reasons…"}
@@ -432,7 +432,7 @@ ICA.addUnit({
   },
   /* ───────────── LESSON 4 ───────────── */
   {id:"t4u5-l4", title:"The synthesis matrix: themes, debates and gaps", minutes:55,
-   hook:{q:"Lucía has read 12 studies on her topic and has notes on each. What is the most useful next step before she starts writing?", options:["Write a paragraph summarising each study","Put the key points into a table: one row per study, one column per question she’s asking","Keep only the three studies she found most convincing","Ask an AI chatbot to write the review from the titles"], answer:1,
+   hook:{q:"Lucía has read 12 studies on her topic and has notes on each. What is the most useful next step before she starts writing?", options:["Write a paragraph summarizing each study","Put the key points into a table: one row per study, one column per question she’s asking","Keep only the three studies she found most convincing","Ask an AI chatbot to write the review from the titles"], answer:1,
      reveal:"**A table: one row per study, one column per question.** This is a synthesis matrix. Reading down a column shows how all the studies answer the same question, which is exactly what a review needs. Paragraph summaries keep her stuck one source at a time, dropping studies loses evidence, and AI text built from titles can misstate findings. This lesson builds a matrix and uses it to find themes, debates and gaps."},
    goals:["Build a synthesis matrix with useful columns","Use the matrix to find themes and explain disagreements","Identify different kinds of research gaps and state them carefully"],
    learn:[
@@ -454,7 +454,7 @@ ICA.addUnit({
         ["Limitations","The authors’ own, plus yours"],
         ["Your question’s themes","One column for each idea you’re tracking"]
       ]},
-      "Keep cells to a phrase or two. If a cell needs a paragraph, you are summarising again. Mark direct quotations with quotation marks and a page number so you don’t accidentally copy wording later.",
+      "Keep cells to a phrase or two. If a cell needs a paragraph, you are summarizing again. Mark direct quotations with quotation marks and a page number so you don’t accidentally copy wording later.",
       "Expect to add columns as you read. When the fourth study raises something new (say, results differ at night), add a column and go back to check the earlier studies."
     ]},
     {h:"Reading down the columns", body:[
@@ -473,7 +473,7 @@ ICA.addUnit({
       ]},
       "Ways to find themes in your matrix:",
       {list:[
-        "Highlight cells that say similar things in the same colour.",
+        "Highlight cells that say similar things in the same color.",
         "Look for words that recur in findings or limitations.",
         "Ask each column: what do most sources say? Who says something different?",
         "Notice which columns are mostly empty. Empty cells are often gaps."
@@ -488,11 +488,11 @@ ICA.addUnit({
         "**Who or where** (different ages, countries, climates, income levels).",
         "**How** (a [[case-study|case study]] vs a survey vs an [[experiment]]; small vs large [[sample|samples]]).",
         "**When** (before or after a policy change; one season vs a whole year).",
-        "**Definitions** (what counts as “remote work” or “a garden programme”).",
+        "**Definitions** (what counts as “remote work” or “a garden program”).",
         "**Quality** (a study with serious flaws shouldn’t outweigh several careful ones)."
       ]},
       "Often the disagreement turns out to be conditional: X helps under some conditions but not others. Say that clearly. If you can’t explain a conflict, say that too: “the reasons for these different results are unclear” is honest and points to a gap.",
-      {ex:"Matrix observation: Haddad (2022) found little cooling in a drought scenario; the sensor studies were in places with regular rain or watering.\n\nPossible explanation: trees cool through shade and through releasing water from their leaves; without enough water, the second effect may shrink.\n\nHow to write it: “The one study modelling drought conditions found much smaller cooling (Haddad, 2022), suggesting that water availability may limit the benefit; no field study has tested this.”", label:"Worked example: from a matrix pattern to a careful sentence (studies invented)"},
+      {ex:"Matrix observation: Haddad (2022) found little cooling in a drought scenario; the sensor studies were in places with regular rain or watering.\n\nPossible explanation: trees cool through shade and through releasing water from their leaves; without enough water, the second effect may shrink.\n\nHow to write it: “The one study modeling drought conditions found much smaller cooling (Haddad, 2022), suggesting that water availability may limit the benefit; no field study has tested this.”", label:"Worked example: from a matrix pattern to a careful sentence (studies invented)"},
       "Notice the steps: a pattern in the matrix, a reason grounded in the studies, and wording (“suggesting”, “may”) that matches how strong the evidence is."
     ]},
     {h:"Gaps: what is missing", body:[
@@ -526,17 +526,17 @@ ICA.addUnit({
       {t:"How reading was measured", ok:true, why:"Different measures can explain different results."},
       {t:"Country and languages involved", ok:true, why:"Context matters a lot for language-of-instruction research."},
       {t:"Whether you enjoyed reading the paper", why:"Personal enjoyment says nothing about the evidence. Note quality and limitations instead."},
-      {t:"The journal’s cover colour", why:"Irrelevant to the findings or their quality."}
+      {t:"The journal’s cover color", why:"Irrelevant to the findings or their quality."}
     ]},
     {id:"t4u5-l4-x3", type:"sort", q:"Is each item a theme or just a topic label?", buckets:["Theme (says something)","Topic label (too thin)"], items:[
       {t:"“Sample size”", b:1, why:"Names an area but makes no claim. What about sample size?"},
-      {t:"“Programmes with trained mentors showed larger gains than those using volunteers”", b:0, why:"States a pattern across sources that can be supported or challenged."},
+      {t:"“Programs with trained mentors showed larger gains than those using volunteers”", b:0, why:"States a pattern across sources that can be supported or challenged."},
       {t:"“Parents”", b:1, why:"A heading, not a finding."},
       {t:"“Most studies measured outcomes only in the first month, so long-term effects are unknown”", b:0, why:"A pattern across studies that also points to a gap."},
       {t:"“Rural areas”", b:1, why:"A label for a setting; it doesn’t say what the studies show there."},
       {t:"“Studies disagree on cost savings, partly because they count costs differently”", b:0, why:"Describes a debate and a likely reason for it."}
     ]},
-    {id:"t4u5-l4-x4", type:"mcq", q:"Two invented studies of a peer-tutoring programme disagree: one found clear gains in maths, the other none. The first measured after a full school year, the second after six weeks. What is the best way to report this?", options:[
+    {id:"t4u5-l4-x4", type:"mcq", q:"Two invented studies of a peer-tutoring program disagree: one found clear gains in math, the other none. The first measured after a full school year, the second after six weeks. What is the best way to report this?", options:[
       {t:"Note the different timing: effects may take longer than six weeks to appear", ok:true, why:"Yes. A difference in timing is a plausible reason for the conflict. Say that this idea needs testing: that keeps the claim honest."},
       {t:"Report only the study with the positive result", why:"Leaving out the conflicting study biases the review."},
       {t:"Conclude that peer tutoring doesn’t work, because one of the studies found no effect", why:"One null result doesn’t outweigh the other, and the timing difference may explain it."},
@@ -558,7 +558,7 @@ ICA.addUnit({
       " ",
       {t:"and most measured eating only at school lunch.", flag:false, why:"Another precise observation from the matrix: a methodological limit worth noting."}
     ]},
-    {id:"t4u5-l4-x7", type:"explain", q:"Two studies disagree about whether a school breakfast programme raises attendance. Before deciding which one is right, what should you check, and why?", size:"3–4 sentences", hint:"Think about the ways two studies can differ, and what your synthesis matrix can show you.", model:"Before choosing a side, I’d check whether the studies actually differ in what they measured, who or where they studied, how they did it, when, how they defined the programme, and how good each study was. Often a disagreement turns out to be conditional: the programme may help in one setting but not another. Explaining the difference is one of the most useful things a review does, and if I can’t explain it, I should say so honestly, because that is itself a gap.", points:["Names several ways studies can differ (measures, setting, method, timing, definitions, quality)", "Says the disagreement may be conditional rather than one study being wrong", "Says an unexplained conflict should be stated as a gap"]}
+    {id:"t4u5-l4-x7", type:"explain", q:"Two studies disagree about whether a school breakfast program raises attendance. Before deciding which one is right, what should you check, and why?", size:"3–4 sentences", hint:"Think about the ways two studies can differ, and what your synthesis matrix can show you.", model:"Before choosing a side, I’d check whether the studies actually differ in what they measured, who or where they studied, how they did it, when, how they defined the program, and how good each study was. Often a disagreement turns out to be conditional: the program may help in one setting but not another. Explaining the difference is one of the most useful things a review does, and if I can’t explain it, I should say so honestly, because that is itself a gap.", points:["Names several ways studies can differ (measures, setting, method, timing, definitions, quality)", "Says the disagreement may be conditional rather than one study being wrong", "Says an unexplained conflict should be stated as a gap"]}
    ],
    apply:{intro:"Build a small synthesis matrix for your own topic. Any free spreadsheet works, on a computer or a phone.", tasks:[
      {t:"Set up your matrix", how:{
@@ -572,20 +572,20 @@ ICA.addUnit({
    ], proof:"A synthesis matrix with 4–6 sources, a sentence for each theme column, one explained disagreement and one carefully worded gap statement."},
    read:[
      {book:"owg", where:"Section 13.5, “Research Process: Making Notes, Synthesizing Information, and Keeping a Research Log”", note:"Its types of research notes feed straight into a matrix."},
-     {book:"bhatt", where:"Chapter 3, “The Research Process”, section “Overview of the Research Process”", note:"The literature review paragraph mentions identifying gaps and summarising articles in tables."}
+     {book:"bhatt", where:"Chapter 3, “The Research Process”, section “Overview of the Research Process”", note:"The literature review paragraph mentions identifying gaps and summarizing articles in tables."}
    ]
   },
   /* ───────────── LESSON 5 ───────────── */
   {id:"t4u5-l5", title:"Writing synthesis, not summary", minutes:55,
    hook:{q:"Which of these sentences is synthesis rather than summary? (All studies are invented.)", options:["Okafor (2019) measured air temperature on 40 streets in Lagos.","Lindqvist (2021) used satellite data from Stockholm.","Studies agree that tree-lined streets are cooler, but the size of the difference depends on what was measured (Lindqvist, 2021; Mendes, 2023; Okafor, 2019).","Tanaka (2020) is an interesting and useful study."], answer:2,
-     reveal:"**The third.** It makes one claim, supports it with three sources and explains why their results differ. The first two each report one study, which is summary. The fourth gives an opinion without saying what the study shows. This lesson turns summaries into sentences like the third, and shows how to organise a whole review."},
-   goals:["Explain the difference between summary and synthesis","Choose a thematic, chronological or methodological structure","Write and revise paragraphs that synthesise several sources with clear signposting"],
+     reveal:"**The third.** It makes one claim, supports it with three sources and explains why their results differ. The first two each report one study, which is summary. The fourth gives an opinion without saying what the study shows. This lesson turns summaries into sentences like the third, and shows how to organize a whole review."},
+   goals:["Explain the difference between summary and synthesis","Choose a thematic, chronological or methodological structure","Write and revise paragraphs that synthesize several sources with clear signposting"],
    learn:[
     {h:"Summary and synthesis", body:[
       {lead:"Summary tells the reader what one source says. Synthesis tells the reader what several sources show together."},
-      "Summary is a useful skill: the writing guide for this track defines a summary as “a brief condensation or distillation of the main point and most important details of the original source”. In a review, you still summarise, but briefly, and in service of a point.",
+      "Summary is a useful skill: the writing guide for this track defines a summary as “a brief condensation or distillation of the main point and most important details of the original source”. In a review, you still summarize, but briefly, and in service of a point.",
       "[[synthesis|Synthesis]] combines sources to make a claim none of them makes alone: they agree, they disagree for a reason, they share a weakness, or together they leave a question open.",
-      {fig:'<svg viewBox="0 0 340 380" role="img"><text x="170" y="20" text-anchor="middle">Summary: source by source</text><rect class="d-soft" x="10" y="32" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="54" text-anchor="middle">Okafor (2019) found… Then…</text><rect class="d-soft" x="10" y="74" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="96" text-anchor="middle">Lindqvist (2021) found… Then…</text><rect class="d-soft" x="10" y="116" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="138" text-anchor="middle">Tanaka (2020) found… Then…</text><path class="d-ink" d="M10 168H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="194" text-anchor="middle">Synthesis: idea by idea</text><rect class="d-sage" x="10" y="206" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="226" text-anchor="middle">Idea 1: trees cool streets</text><text class="s" x="170" y="244" text-anchor="middle">Lindqvist; Mendes; Okafor</text><rect class="d-sage" x="10" y="262" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="282" text-anchor="middle">Idea 2: size depends on measure</text><text class="s" x="170" y="300" text-anchor="middle">satellite vs street sensors</text><rect class="d-gold" x="10" y="318" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="338" text-anchor="middle">Idea 3: comfort rarely studied</text><text class="s" x="170" y="356" text-anchor="middle">Tanaka only → a gap</text></svg>', alt:"Top: three stacked boxes, each about one source: Okafor found, Lindqvist found, Tanaka found. Bottom: three boxes each about one idea: trees cool streets (Lindqvist, Mendes, Okafor); the size depends on the measure (satellite versus street sensors); comfort is rarely studied (Tanaka only, a gap).", cap:"The same five invented studies, organised two ways. Synthesis puts ideas in charge and brings sources in as evidence."},
+      {fig:'<svg viewBox="0 0 340 380" role="img"><text x="170" y="20" text-anchor="middle">Summary: source by source</text><rect class="d-soft" x="10" y="32" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="54" text-anchor="middle">Okafor (2019) found… Then…</text><rect class="d-soft" x="10" y="74" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="96" text-anchor="middle">Lindqvist (2021) found… Then…</text><rect class="d-soft" x="10" y="116" width="320" height="34" rx="6" stroke-width="1.5"/><text class="s" x="170" y="138" text-anchor="middle">Tanaka (2020) found… Then…</text><path class="d-ink" d="M10 168H330" stroke-width="1" stroke-dasharray="4 4"/><text x="170" y="194" text-anchor="middle">Synthesis: idea by idea</text><rect class="d-sage" x="10" y="206" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="226" text-anchor="middle">Idea 1: trees cool streets</text><text class="s" x="170" y="244" text-anchor="middle">Lindqvist; Mendes; Okafor</text><rect class="d-sage" x="10" y="262" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="282" text-anchor="middle">Idea 2: size depends on measure</text><text class="s" x="170" y="300" text-anchor="middle">satellite vs street sensors</text><rect class="d-gold" x="10" y="318" width="320" height="48" rx="6" stroke-width="1.5"/><text x="170" y="338" text-anchor="middle">Idea 3: comfort rarely studied</text><text class="s" x="170" y="356" text-anchor="middle">Tanaka only → a gap</text></svg>', alt:"Top: three stacked boxes, each about one source: Okafor found, Lindqvist found, Tanaka found. Bottom: three boxes each about one idea: trees cool streets (Lindqvist, Mendes, Okafor); the size depends on the measure (satellite versus street sensors); comfort is rarely studied (Tanaka only, a gap).", cap:"The same five invented studies, organized two ways. Synthesis puts ideas in charge and brings sources in as evidence."},
       {key:"In synthesis, ideas lead and sources support them. In summary, sources lead and ideas follow."}
     ]},
     {h:"Organising the whole review", body:[
@@ -595,13 +595,13 @@ ICA.addUnit({
         ["Thematic","Themes or questions","Most reviews; when several ideas run through the literature"],
         ["Chronological","Periods or turning points","How thinking changed over time matters, e.g. after a new law or technology"],
         ["Methodological","Kinds of method or data","Different methods give different answers"],
-        ["Theoretical","Competing theories or models","The field is organised around rival explanations"]
+        ["Theoretical","Competing theories or models","The field is organized around rival explanations"]
       ]},
-      "Structures can be combined: a thematic review might be chronological inside one theme. Avoid “chronological” meaning only “in the order studies were published”; that is a list with dates. A useful chronological review is organised around **changes**.",
+      "Structures can be combined: a thematic review might be chronological inside one theme. Avoid “chronological” meaning only “in the order studies were published”; that is a list with dates. A useful chronological review is organized around **changes**.",
       {ex:"1. Introduction: why heat in cities matters; scope; how I searched\n2. Do street trees cool streets? (they do; the size varies)\n3. Why estimates differ: satellite vs street-level measures\n4. Conditions: water, street width, tree type\n5. What people feel: the missing evidence\n6. Conclusion: what is known, the gaps, my question", label:"Worked example: a thematic outline (invented review)"}
     ]},
     {h:"The synthesis paragraph", body:[
-      "Most synthesis paragraphs follow a simple pattern (some writing centres call it MEAL: Main idea, Evidence, Analysis, Link):",
+      "Most synthesis paragraphs follow a simple pattern (some writing centers call it MEAL: Main idea, Evidence, Analysis, Link):",
       {ol:[
         "**Claim.** A topic sentence stating the paragraph’s point in your words, about the literature, not about one source.",
         "**Evidence.** Sources that support the claim, often several in one citation.",
@@ -610,13 +610,13 @@ ICA.addUnit({
       ]},
       "A quick test: cover the citations. If the paragraph still makes a point, it’s synthesis. If it becomes a list of “they did… they found…”, it’s still summary.",
       {tip:"In APA style, several sources in one parenthesis go in alphabetical order by first author, separated by semicolons: (Lindqvist, 2021; Mendes, 2023; Okafor, 2019). Other styles have their own rules."},
-      {lab:"cl-apa-intext", t:"Practise: APA in-text citations"}
+      {lab:"cl-apa-intext", t:"Practice: APA in-text citations"}
     ]},
     {h:"Before and after: city trees", body:[
-      "Here is a summary-style paragraph and a synthesised version using the same invented studies.",
+      "Here is a summary-style paragraph and a synthesized version using the same invented studies.",
       {ex:"Okafor (2019) studied 40 streets in Lagos using air sensors. The study found that streets with trees were cooler. Lindqvist (2021) used satellite data in Stockholm. This study found large differences in temperature. Mendes (2023) also used sensors, in São Paulo, and found that tree-lined streets were slightly cooler. Tanaka (2020) surveyed residents in Osaka about comfort.", label:"Before: summary"},
       {ex:"Studies in very different climates agree that tree-lined streets are cooler than bare ones (Lindqvist, 2021; Mendes, 2023; Okafor, 2019), but how much cooler depends on what was measured. The largest difference comes from satellite estimates of surface temperature (Lindqvist, 2021), while street-level sensors measuring the air people breathe found smaller differences (Mendes, 2023; Okafor, 2019). Surface and air temperature can differ considerably, so satellite estimates may overstate the cooling people experience. Only one study asked residents how comfortable they felt (Tanaka, 2020), so the link between measured cooling and lived comfort remains largely untested.", label:"After: synthesis"},
-      "What changed: the paragraph opens with a claim; sources are grouped by what they show; a difference is explained (measurement); a judgement is made (“may overstate”), with a reason; and it ends on a gap."
+      "What changed: the paragraph opens with a claim; sources are grouped by what they show; a difference is explained (measurement); a judgment is made (“may overstate”), with a reason; and it ends on a gap."
     ]},
     {h:"Before and after: clinic reminders", body:[
       "A second example, from health, again with invented studies.",
@@ -639,10 +639,10 @@ ICA.addUnit({
       "Match the strength of your words to the strength of the evidence. One small study “suggests”; several large, careful studies that agree “consistently show”."
     ]},
     {h:"Your voice in the review", body:[
-      "A review is built from other people’s work, but readers want **your** judgement: which evidence is stronger, how differences can be explained, what matters most. That judgement is your voice.",
+      "A review is built from other people’s work, but readers want **your** judgment: which evidence is stronger, how differences can be explained, what matters most. That judgment is your voice.",
       {list:[
-        "**Quote sparingly.** Paraphrase most material in your own words; quote only when the exact wording matters, such as a definition or a striking claim you will analyse.",
-        "**Give reasons for judgements.** “This study is more convincing” needs a because: a larger sample, a comparison group, a longer follow-up.",
+        "**Quote sparingly.** Paraphrase most material in your own words; quote only when the exact wording matters, such as a definition or a striking claim you will analyze.",
+        "**Give reasons for judgments.** “This study is more convincing” needs a because: a larger sample, a comparison group, a longer follow-up.",
         "**Be fair to work you disagree with.** Describe it accurately before you critique it.",
         "**Check the conventions for “I”.** Many styles, including APA, allow the first person (“I searched…”), but fields and instructors differ, so check yours."
       ]},
@@ -658,7 +658,7 @@ ICA.addUnit({
         "Have you included work that disagrees, and explained it?",
         "Do the gaps follow from the evidence you discussed?"
       ]},
-      {warn:"Paraphrase in your own words and cite every source you draw on, even when synthesising. Merging ideas from several authors without citations is still plagiarism."}
+      {warn:"Paraphrase in your own words and cite every source you draw on, even when synthesizing. Merging ideas from several authors without citations is still plagiarism."}
     ]}
    ],
    try:[
@@ -702,17 +702,17 @@ ICA.addUnit({
       {t:"“Mbeki (2020) argued that flexible deadlines reduce stress.”", why:"“Argued” suits a claim or opinion; this was a finding from data. The verb misdescribes the source and still doesn’t show how limited the evidence is."}
     ]},
     {id:"t4u5-l5-x6", type:"mcq", q:"Tomás reverse-outlines his draft. Seven paragraphs in a row begin with an author’s name and each discusses one study. What does this most likely show, and what should he do?", options:[
-      {t:"It’s organised by source; he should regroup it by theme, using his matrix", ok:true, why:"Yes. Each paragraph should make one claim across several studies. Paragraphs that each start with an author usually mean summary. Regrouping by idea turns them into synthesis."},
+      {t:"It’s organized by source; he should regroup it by theme, using his matrix", ok:true, why:"Yes. Each paragraph should make one claim across several studies. Paragraphs that each start with an author usually mean summary. Regrouping by idea turns them into synthesis."},
       {t:"Nothing is wrong; starting each paragraph with the author is required in APA style", why:"APA allows narrative citations but doesn’t require them, and the issue here is structure, not citation format."},
       {t:"He should add more sources so each paragraph is longer", why:"More summaries make the list longer, not more synthetic."},
-      {t:"He should remove all citations to make it read more smoothly", why:"Every source used must be cited. The fix is to organise by idea, not to drop citations."}
+      {t:"He should remove all citations to make it read more smoothly", why:"Every source used must be cited. The fix is to organize by idea, not to drop citations."}
     ]},
-    {id:"t4u5-l5-x7", type:"explain", q:"What is the difference between summary and synthesis in a literature review? Explain it using the “cover the citations” test.", size:"3–4 sentences", hint:"In which one do ideas lead, and in which do sources lead?", model:"Summary tells the reader what one source says, so the paragraph is organised source by source: “Okafor found… Lindqvist found…”. Synthesis tells the reader what several sources show together, so it opens with a claim about the literature and groups sources as evidence for it, then compares and judges them. If you cover the citations and the paragraph still makes a point, it’s synthesis; if it turns into a list of “they did, they found”, it’s still summary.", points:["Says summary reports one source at a time", "Says synthesis makes a claim across several sources", "Explains the cover-the-citations test", "Says in synthesis ideas lead and sources support them"]}
+    {id:"t4u5-l5-x7", type:"explain", q:"What is the difference between summary and synthesis in a literature review? Explain it using the “cover the citations” test.", size:"3–4 sentences", hint:"In which one do ideas lead, and in which do sources lead?", model:"Summary tells the reader what one source says, so the paragraph is organized source by source: “Okafor found… Lindqvist found…”. Synthesis tells the reader what several sources show together, so it opens with a claim about the literature and groups sources as evidence for it, then compares and judges them. If you cover the citations and the paragraph still makes a point, it’s synthesis; if it turns into a list of “they did, they found”, it’s still summary.", points:["Says summary reports one source at a time", "Says synthesis makes a claim across several sources", "Explains the cover-the-citations test", "Says in synthesis ideas lead and sources support them"]}
    ],
    apply:{intro:"Write a short piece of your own review, using the matrix you built in Lesson 4. Use any word processor or notes app.", tasks:[
      {t:"Outline your review", how:["Look down your matrix columns and list the themes, debates and gaps you found.","Choose a structure (thematic, chronological, methodological or theoretical) and say why it fits.","Write section headings that make claims, not just labels, where you can."], write:"Structure chosen and why… Section 1… Section 2… Section 3… Gap the conclusion will end on…"},
      {t:"Write one synthesis paragraph", how:["Pick one theme with at least three sources.","Write a claim sentence first, in your own words.","Add the evidence, with several sources in one citation where they agree; then explain any difference; end with a link to your question.","Cover the citations and check the paragraph still makes a point."], write:"My paragraph…"},
-     {t:"Revise a summary into synthesis", how:["Write (or find in your old notes) a paragraph that summarises sources one by one.","Rewrite it so ideas lead: claim, grouped evidence, analysis, link.","Compare the two and note what changed."], write:"Before… After… What changed…"}
+     {t:"Revise a summary into synthesis", how:["Write (or find in your old notes) a paragraph that summarizes sources one by one.","Rewrite it so ideas lead: claim, grouped evidence, analysis, link.","Compare the two and note what changed."], write:"Before… After… What changed…"}
    ], proof:"A review outline with a reasoned structure, one synthesis paragraph drawing on at least three sources, and a before-and-after revision of a summary paragraph."},
    read:[
      {book:"owg", where:"Section 13.5, “Research Process: Making Notes, Synthesizing Information, and Keeping a Research Log”", note:"Includes the definition of summary quoted in this lesson."},
@@ -723,8 +723,8 @@ ICA.addUnit({
   checkpoint:["t4u5-q02","t4u5-q06","t4u5-q11","t4u5-q14","t4u5-q17","t4u5-q21","t4u5-q24","t4u5-q29","t4u5-q32","t4u5-q36","t4u5-q40","t4u5-q44"],
   cpBank:[
    {id:"t4u5-cp01", lesson:"t4u5-l1", level:1, q:"Diego’s course asks for “ten sources, each with its full reference and a short note on what it says and how useful it is”. What kind of document is this?", options:[
-     {t:"A literature review", why:"A review is organised by ideas, with several sources per paragraph. This assignment has one note per source."},
-     {t:"An annotated bibliography", ok:true, why:"A list of sources, each with a reference and a note that summarises and often evaluates it, is an annotated bibliography. Each entry stands alone."},
+     {t:"A literature review", why:"A review is organized by ideas, with several sources per paragraph. This assignment has one note per source."},
+     {t:"An annotated bibliography", ok:true, why:"A list of sources, each with a reference and a note that summarizes and often evaluates it, is an annotated bibliography. Each entry stands alone."},
      {t:"A synthesis matrix", why:"A matrix is a table with sources in rows and questions in columns. The assignment asks for separate notes, not a grid."},
      {t:"A systematic review", why:"A systematic review needs a protocol, set criteria and a full search. Ten notes on sources isn’t that."}]},
    {id:"t4u5-cp02", lesson:"t4u5-l2", level:1, q:"Rehana finds five systematic reviews, each on a different way of teaching fractions. She wants to bring their conclusions together. What kind of review is she planning?", options:[
@@ -755,17 +755,17 @@ ICA.addUnit({
    {id:"t4u5-cp07", lesson:"t4u5-l5", level:2, q:"Ines notices that interview studies of remote workers report strong loneliness, while large surveys find little change. She thinks the method explains the difference. Which body structure suits her review best?", options:[
      {t:"Methodological: interview and survey studies compared", ok:true, why:"A methodological structure works well when different methods give different answers, which is the pattern she found."},
      {t:"Chronological: studies in the order they were published", why:"Publication order is just a list with dates. A chronological structure should be built around changes over time."},
-     {t:"One section per study, in alphabetical order", why:"That is summary, not synthesis. Sections should be organised by ideas."},
-     {t:"Theoretical: one section per rival theory", why:"A theoretical structure suits a field organised around competing explanations. Her pattern is about methods."}]},
-   {id:"t4u5-cp08", lesson:"t4u5-l5", level:2, q:"Three large, careful trials and one small study all find that a reading programme helps. Which wording matches the strength of this evidence?", options:[
-     {t:"“These studies prove the programme works.”", why:"Studies rarely prove anything. “Prove” claims more certainty than research can give."},
-     {t:"“A single small study suggests the programme may help.”", why:"This understates the evidence and ignores the three large trials."},
-     {t:"“It is unclear whether the programme helps.”", why:"The studies agree, and three of them are large and careful. “Unclear” fits conflicting or thin evidence."},
+     {t:"One section per study, in alphabetical order", why:"That is summary, not synthesis. Sections should be organized by ideas."},
+     {t:"Theoretical: one section per rival theory", why:"A theoretical structure suits a field organized around competing explanations. Her pattern is about methods."}]},
+   {id:"t4u5-cp08", lesson:"t4u5-l5", level:2, q:"Three large, careful trials and one small study all find that a reading program helps. Which wording matches the strength of this evidence?", options:[
+     {t:"“These studies prove the program works.”", why:"Studies rarely prove anything. “Prove” claims more certainty than research can give."},
+     {t:"“A single small study suggests the program may help.”", why:"This understates the evidence and ignores the three large trials."},
+     {t:"“It is unclear whether the program helps.”", why:"The studies agree, and three of them are large and careful. “Unclear” fits conflicting or thin evidence."},
      {t:"“Several large trials consistently show it helps.”", ok:true, why:"Several large, careful studies that agree justify “consistently show”. Word strength should match evidence strength."}]},
    {id:"t4u5-cp09", lesson:"t4u5-l2", level:2, q:"Mateo’s systematic review includes 11 interview studies of nurses’ experiences of night shifts. Should he do a meta-analysis?", options:[
      {t:"Yes: every systematic review must include a meta-analysis", why:"A meta-analysis is an optional step inside a systematic review, used only when studies give comparable numbers."},
-     {t:"No, and without one it can’t be called a systematic review", why:"A systematic review can synthesise in words and tables. Its defining features are a protocol, criteria, a full search and appraisal."},
-     {t:"No: it needs comparable numbers, so he synthesises in words", ok:true, why:"Interview studies don’t produce the comparable numbers a meta-analysis pools. The review is still systematic."},
+     {t:"No, and without one it can’t be called a systematic review", why:"A systematic review can synthesize in words and tables. Its defining features are a protocol, criteria, a full search and appraisal."},
+     {t:"No: it needs comparable numbers, so he synthesizes in words", ok:true, why:"Interview studies don’t produce the comparable numbers a meta-analysis pools. The review is still systematic."},
      {t:"Yes, by averaging how often each theme appears in the studies", why:"Counting themes isn’t a meta-analysis. Meta-analysis pools comparable numerical results, such as effect sizes."}]},
    {id:"t4u5-cp10", lesson:"t4u5-l2", level:3, q:"Sofia finds a review published in 2025. Its methods say the search ended in January 2023. She plans to cite it as “the current state of the evidence”. What should she do first?", options:[
      {t:"Cite it as planned; the publication year is what counts", why:"A review is a snapshot up to its search date, which can be well before publication. Newer studies may change the picture."},
@@ -779,31 +779,31 @@ ICA.addUnit({
      {t:"Remove the limits and try to include everything ever written on it", why:"A review covers work relevant to a defined scope. The fix is to state the scope, not to drop it."}]},
    {id:"t4u5-cp12", lesson:"t4u5-l4", level:3, q:"On a tutoring scheme, Nia has five small studies with no comparison group that report large gains, and two large trials with comparison groups that find small gains. How should she write this up?", options:[
      {t:"Five studies outnumber two, so she should report large gains", why:"A review weighs evidence; it doesn’t count heads. Studies with serious design weaknesses shouldn’t outweigh careful ones."},
-     {t:"Present all seven studies as equally strong and let readers decide", why:"Being fair doesn’t mean making no judgements. A review should say which evidence is stronger, and why."},
+     {t:"Present all seven studies as equally strong and let readers decide", why:"Being fair doesn’t mean making no judgments. A review should say which evidence is stronger, and why."},
      {t:"Leave the five small studies out without mentioning them", why:"Hiding work makes the review less trustworthy. She should include it and explain how much weight it deserves."},
      {t:"Weigh the designs: the controlled trials suggest small gains", ok:true, why:"The disagreement has a reason in the studies’ designs. Explaining it, with wording that matches the evidence, is what synthesis does."}]},
   ],
   codex:[
    {id:"literature-review", title:"Literature review", aka:["lit review","review of the literature","background section"], tags:["research","reviews","writing"],
-    summary:"An organised, evaluative account of what research says on a topic: what is known, how well, where it conflicts and what is missing.",
+    summary:"An organized, evaluative account of what research says on a topic: what is known, how well, where it conflicts and what is missing.",
     levels:{
      starter:[
       "A literature review is your account of the conversation researchers have been having about a topic. It explains what has been studied, what was found, where people disagree and what nobody has answered yet.",
       "Think of arriving late to a long discussion: before adding your view, you listen, work out who said what, and notice what’s missing. A review does that in writing.",
       "“Literature” here means the body of work on a topic: journal articles, books, reports, theses and conference papers, not novels.",
-      "A review is organised by ideas, not by source. One paragraph might bring together five studies that agree, then explain why a sixth found something different.",
+      "A review is organized by ideas, not by source. One paragraph might bring together five studies that agree, then explain why a sixth found something different.",
       {key:"A literature review is an argument about the state of knowledge, built from sources."}
      ],
      builder:[
       "Reviews appear in many places: the introduction of a journal article (a few paragraphs), a thesis chapter, a stand-alone review article, a grant proposal or a policy brief. The core jobs are the same:",
       {ol:["Map what has been studied, where, with whom and how.","Weigh how strong the evidence is.","Show debates and explain them where possible.","Identify gaps.","Position a new study or decision against all of this."]},
       "Bhattacherjee’s methods textbook gives the review three purposes: surveying the current state of knowledge, identifying key authors, articles, theories and findings, and identifying gaps.",
-      "A typical review moves like a funnel: an introduction with the topic, scope and (in formal reviews) the search method; a body organised by theme, time or method; and a conclusion that states what is established, contested and missing, then leads to a question.",
-      "It differs from an [[annotated-bibliography|annotated bibliography]], which lists sources one at a time with a summary and evaluation of each. Many courses use the annotated bibliography as a stepping stone towards a review.",
-      "The same skills apply outside universities. A clinical guideline group, a school leadership team choosing a reading programme or a charity planning a new service all need to know what the evidence says and how far to trust it. Their reviews may be shorter and plainer, but the moves are the same: find, weigh, connect, and say what is missing."
+      "A typical review moves like a funnel: an introduction with the topic, scope and (in formal reviews) the search method; a body organized by theme, time or method; and a conclusion that states what is established, contested and missing, then leads to a question.",
+      "It differs from an [[annotated-bibliography|annotated bibliography]], which lists sources one at a time with a summary and evaluation of each. Many courses use the annotated bibliography as a stepping stone toward a review.",
+      "The same skills apply outside universities. A clinical guideline group, a school leadership team choosing a reading program or a charity planning a new service all need to know what the evidence says and how far to trust it. Their reviews may be shorter and plainer, but the moves are the same: find, weigh, connect, and say what is missing."
      ],
      pro:[
-      "“Literature review” covers a family of methods, from expert narrative reviews to fully systematic reviews with meta-analysis (see {{review-types}}). In a thesis or article, the review is usually narrative but benefits from systematic habits: a stated scope, a recorded search, explicit reasons for inclusion and transparent judgements about quality.",
+      "“Literature review” covers a family of methods, from expert narrative reviews to fully systematic reviews with meta-analysis (see {{review-types}}). In a thesis or article, the review is usually narrative but benefits from systematic habits: a stated scope, a recorded search, explicit reasons for inclusion and transparent judgments about quality.",
       "Experienced readers judge a review by:",
       {list:[
         "**Coverage:** does it include the main strands of work, including conflicting findings and work from different regions and languages where relevant?",
@@ -863,7 +863,7 @@ ICA.addUnit({
     checked:"2026-11"},
 
    {id:"systematic-reviews", title:"Systematic reviews and meta-analysis", aka:["systematic literature review","SR","evidence synthesis"], tags:["research","reviews","evidence"],
-    summary:"Reviews that use pre-planned, explicit, reproducible methods to find, appraise and synthesise all eligible studies on a focused question; meta-analysis may pool their results.",
+    summary:"Reviews that use pre-planned, explicit, reproducible methods to find, appraise and synthesize all eligible studies on a focused question; meta-analysis may pool their results.",
     levels:{
      starter:[
       "A systematic review tries to find **all** the studies that answer a specific question, using rules written down before starting. Then it checks how trustworthy each study is and combines what they found.",
@@ -881,10 +881,10 @@ ICA.addUnit({
       "You can search for existing systematic reviews in the Cochrane Library (health), the Campbell Collaboration’s library (social sciences), PubMed with a systematic review filter, or any database by adding “systematic review” to your search."
      ],
      pro:[
-      "Quality hinges on things readers can check: was the protocol registered before the search? Were searches comprehensive (several databases, [[grey-literature-term|grey literature]], registers, citation chasing) and reported in full? Were criteria applied by two people independently? Was risk of bias assessed with a recognised tool (for example RoB 2 for randomised trials, or JBI or CASP checklists for other designs)?",
-      "Meta-analysis adds its own issues. **Heterogeneity** (how much results vary beyond chance) affects whether pooling is sensible and which model is used. **[[publication-bias|Publication bias]]** (positive results being likelier to be published) can inflate pooled effects; reviewers search registers and grey literature partly to counter it. A meta-analysis is only as good as the studies in it.",
+      "Quality hinges on things readers can check: was the protocol registered before the search? Were searches comprehensive (several databases, [[grey-literature-term|gray literature]], registers, citation chasing) and reported in full? Were criteria applied by two people independently? Was risk of bias assessed with a recognized tool (for example RoB 2 for randomised trials, or JBI or CASP checklists for other designs)?",
+      "Meta-analysis adds its own issues. **Heterogeneity** (how much results vary beyond chance) affects whether pooling is sensible and which model is used. **[[publication-bias|Publication bias]]** (positive results being likelier to be published) can inflate pooled effects; reviewers search registers and gray literature partly to counter it. A meta-analysis is only as good as the studies in it.",
       "When pooling isn’t appropriate, synthesis is done in structured text and tables; the SWiM (Synthesis Without Meta-analysis) reporting guideline describes how to report it transparently.",
-      "Systematic reviews can also synthesise qualitative research (qualitative evidence synthesis) or combine qualitative and quantitative evidence (mixed-methods reviews; JBI has chapters on both).",
+      "Systematic reviews can also synthesize qualitative research (qualitative evidence synthesis) or combine qualitative and quantitative evidence (mixed-methods reviews; JBI has chapters on both).",
       "Reviews age: check the search date and whether an update exists. Some topics now have living systematic reviews that are updated as evidence appears.",
       "Many health reviews also rate the overall certainty of evidence for each outcome, commonly with the GRADE approach (high, moderate, low or very low certainty). A review can be well conducted and still conclude that the evidence is weak."
      ]},
@@ -911,7 +911,7 @@ ICA.addUnit({
         "**Included:** studies included in the review, and reports of included studies."
       ]},
       {ex:"Databases 1,186 + registers 54 = 1,240 records\n− 312 duplicates = 928 screened\n− 841 excluded = 87 reports sought\n− 5 not retrieved = 82 assessed\n− 63 excluded = 19 reports, of 16 studies", label:"Worked example: checking the arithmetic (invented numbers)"},
-      "A version of the diagram adds a second column for records found by other methods, such as websites, organisations or citation searching.",
+      "A version of the diagram adds a second column for records found by other methods, such as websites, organizations or citation searching.",
       "The 27 checklist items run through the whole report: title, abstract, rationale and objectives, eligibility criteria, information sources and search strategy, selection and data collection processes, risk-of-bias methods, synthesis methods, results of each step, certainty of evidence, discussion, registration and protocol, funding and competing interests. Journals often ask authors to submit a completed checklist with the manuscript.",
       "Templates for the diagram and checklist are free to download from the PRISMA website, and translations exist in many languages."
      ],
@@ -944,7 +944,7 @@ ICA.addUnit({
         ["PROSPERO","Systematic reviews with a health-related outcome (human or animal studies). Doesn’t accept scoping reviews. Register before data extraction starts. Free."],
         ["OSF Registries","Any field and any review type, including scoping reviews. Free. Has a general systematic review registration template."]
       ]},
-      "PROSPERO is developed and managed by the Centre for Reviews and Dissemination at the University of York and funded by the UK’s National Institute for Health and Care Research (NIHR). Its current version was launched in February 2025, with more automatic processing and checks for similar reviews already registered. PROSPERO’s guidance says Cochrane protocols should not be registered separately, to avoid duplicate records.",
+      "PROSPERO is developed and managed by the Center for Reviews and Dissemination at the University of York and funded by the UK’s National Institute for Health and Care Research (NIHR). Its current version was launched in February 2025, with more automatic processing and checks for similar reviews already registered. PROSPERO’s guidance says Cochrane protocols should not be registered separately, to avoid duplicate records.",
       "Before registering, search the register for similar reviews already planned or under way; if one exists, consider whether your review would add anything, or contact the team. Registration typically asks for the review title, team and contacts, question, searches, criteria, outcomes, risk-of-bias and synthesis plans, and the anticipated dates. The record is time-stamped and, once published, changes are shown as dated versions.",
       "Scoping reviews can be registered on OSF Registries or published as protocols in some journals; JBI also encourages a published or registered protocol for scoping reviews.",
       "If your plans change after registration, update the record or explain the change in the final report; either way, readers can see what happened and why."
@@ -979,7 +979,7 @@ ICA.addUnit({
         "Put quotation marks and a page number on anything copied.",
         "Add columns as new issues appear, then go back and fill them for earlier sources.",
         "Leave cells empty when a source doesn’t address that column; empty columns often reveal gaps.",
-        "Colour-code cells that say similar things to spot themes."
+        "Color-code cells that say similar things to spot themes."
       ]},
       "In a systematic review, the matrix becomes a formal **data extraction form**, piloted and applied by two people. In a scoping review, it’s often called a charting table.",
       "A practical workflow:",
@@ -989,10 +989,10 @@ ICA.addUnit({
      ],
      pro:[
       "Design columns from your question and your expected sources of variation: population, context, intervention or concept, comparison, outcome and how it was measured, timing, design, sample size, and risk-of-bias or quality notes. These are the variables most likely to explain disagreements.",
-      "Separate **what the source reports** from **your judgement**. A “my comments” column prevents your interpretation from being mistaken for the authors’ findings later.",
+      "Separate **what the source reports** from **your judgment**. A “my comments” column prevents your interpretation from being mistaken for the authors’ findings later.",
       "For qualitative studies, columns may hold concepts, themes and illustrative quotations with page numbers; for quantitative studies, [[effect-size|effect sizes]] with their [[confidence-interval|confidence intervals]] and the comparison used.",
       "Keep the matrix linked to your reference manager (a citation key or DOI column) so citations stay accurate. If you use AI to draft cells, verify each against the source, especially numbers, populations and whether a result was statistically meaningful.",
-      "Bhattacherjee’s textbook already noted that reviewed articles can be summarised in tables; the matrix is the working version of that idea.",
+      "Bhattacherjee’s textbook already noted that reviewed articles can be summarized in tables; the matrix is the working version of that idea.",
       "In published reviews, a cleaned-up version of the matrix often appears as a “characteristics of included studies” table, so readers can check the evidence behind each claim.",
       "Teams often pilot their extraction form on two or three studies, compare what each person extracted and clarify columns that people filled in differently, the same idea as piloting screening criteria."
      ]},
@@ -1030,19 +1030,19 @@ ICA.addUnit({
      ],
      pro:[
       "Gap taxonomies vary. One often-shared list (Miles, 2017, a doctoral workshop paper) names seven: evidence, knowledge, practical-knowledge conflict, methodological, empirical, theoretical and population gaps. Its labels differ from this unit’s: Miles uses “evidence gap” for findings that contradict each other or accepted conclusions, and “knowledge gap” for missing knowledge. Names matter less than precise description.",
-      "A gap is a claim, so it needs evidence: a transparent search, enough coverage (several databases, grey literature, other languages where relevant) and honest wording. Absence of evidence is not evidence of absence: an unstudied effect isn’t thereby shown to be zero.",
+      "A gap is a claim, so it needs evidence: a transparent search, enough coverage (several databases, gray literature, other languages where relevant) and honest wording. Absence of evidence is not evidence of absence: an unstudied effect isn’t thereby shown to be zero.",
       "Strong gap statements also explain consequences: why the missing knowledge matters for theory, practice or policy, and why existing evidence can’t simply be extrapolated.",
       "Beware “gap-spotting” for its own sake. Some scholars argue that the most valuable research questions challenge assumptions in the literature rather than filling small holes in it. Reviews can do both: show what’s missing and question what everyone has taken for granted.",
       "Turning a gap into a research question is covered in the research questions unit of this track.",
       "Gaps also exist in the voices represented: research may come mostly from a few countries or languages, or rarely include the people most affected. Naming these gaps accurately, without overstating, is part of a fair review.",
-      "Finally, gaps can be in reviews themselves: perhaps the primary studies exist but nobody has synthesised them, or the last review is out of date. That is a legitimate reason to write a new review."
+      "Finally, gaps can be in reviews themselves: perhaps the primary studies exist but nobody has synthesized them, or the last review is out of date. That is a legitimate reason to write a new review."
      ]},
     related:["synthesis-matrix","literature-review","synthesis-writing"],
     sources:[{t:"University of Manchester Lantern: Types of research gaps (citing Miles, 2017)", url:"https://lantern.humanities.manchester.ac.uk/?p=11666"},{t:"University of Montana Writing Center: Literature reviews defined", url:"https://www.umt.edu/writing-center/writing-resources/writing-resources-files/literature-reviews-defined.pdf"}],
     checked:"2026-11"},
 
-   {id:"synthesis-writing", title:"Writing synthesis", aka:["synthesising sources","synthesis vs summary"], tags:["research","writing","reviews"],
-    summary:"Writing that combines several sources to make claims none of them makes alone: organised by idea, with sources as evidence.",
+   {id:"synthesis-writing", title:"Writing synthesis", aka:["synthesizing sources","synthesis vs summary"], tags:["research","writing","reviews"],
+    summary:"Writing that combines several sources to make claims none of them makes alone: organized by idea, with sources as evidence.",
     levels:{
      starter:[
       "Summary says what one source says. Synthesis says what several sources show **together**: where they agree, why they differ, what they leave out.",
@@ -1050,7 +1050,7 @@ ICA.addUnit({
       "A quick test: cover the citations in your paragraph. If it still makes a point, it’s synthesis. If it turns into “they did this, then they found that”, it’s summary.",
       {key:"Ideas lead; sources support."},
       "You still need summaries, but short ones, used where a detail helps your point. Most of each paragraph should be about what the sources show together.",
-      "Synthesis is a habit you can practise with any group of sources: three news reports of the same event, three product reviews, three studies. Ask what they share, where they differ and why."
+      "Synthesis is a habit you can practice with any group of sources: three news reports of the same event, three product reviews, three studies. Ask what they share, where they differ and why."
      ],
      builder:[
       "A synthesis paragraph usually has four moves: **claim** (a topic sentence about the literature), **evidence** (several sources, often in one citation), **analysis** (compare, explain differences, weigh strength) and **link** (to the review’s question or next section).",
@@ -1075,10 +1075,10 @@ ICA.addUnit({
     checked:"2026-11"}
   ],
   terms:[
-   {id:"literature-review-term", term:"literature review", def:"An organised, evaluative account of the research on a topic: what is known, how strong the evidence is, where studies disagree and what is still missing.", codex:"literature-review"},
-   {id:"annotated-bibliography", term:"annotated bibliography", def:"A list of sources, each with its full reference and a short note that summarises it and often evaluates it. Each entry stands alone, unlike a literature review.", codex:"literature-review"},
+   {id:"literature-review-term", term:"literature review", def:"An organized, evaluative account of the research on a topic: what is known, how strong the evidence is, where studies disagree and what is still missing.", codex:"literature-review"},
+   {id:"annotated-bibliography", term:"annotated bibliography", def:"A list of sources, each with its full reference and a short note that summarizes it and often evaluates it. Each entry stands alone, unlike a literature review.", codex:"literature-review"},
    {id:"narrative-review", term:"narrative review", def:"A review in which experts select and discuss the literature, usually without a pre-published plan or fully reported search. Good for overviews; its selection can’t easily be checked.", codex:"review-types"},
-   {id:"systematic-review", term:"systematic review", def:"A review that uses explicit methods set in advance to find, appraise and synthesise all studies meeting set criteria, to answer a focused question.", codex:"systematic-reviews"},
+   {id:"systematic-review", term:"systematic review", def:"A review that uses explicit methods set in advance to find, appraise and synthesize all studies meeting set criteria, to answer a focused question.", codex:"systematic-reviews"},
    {id:"scoping-review", term:"scoping review", def:"A review that systematically maps the breadth of research on a topic (what exists, how concepts are defined, where the gaps are) rather than testing whether something works.", codex:"review-types"},
    {id:"rapid-review", term:"rapid review", def:"A systematic-style review that speeds things up by streamlining or leaving out some methods, for urgent decisions. Its shortcuts should be reported.", codex:"review-types"},
    {id:"umbrella-review", term:"umbrella review", def:"A review of existing systematic reviews, also called an overview of reviews.", codex:"review-types"},
@@ -1096,9 +1096,9 @@ ICA.addUnit({
   bank:[
    /* Lesson 1 */
    {id:"t4u5-q01", lesson:"t4u5-l1", level:1, q:"What is the main difference between an annotated bibliography and a literature review?", options:[
-     {t:"A bibliography goes source by source; a review is organised by ideas", ok:true, why:"Right. Annotations treat sources one at a time; a review connects them."},
+     {t:"A bibliography goes source by source; a review is organized by ideas", ok:true, why:"Right. Annotations treat sources one at a time; a review connects them."},
      {t:"A bibliography includes evaluation; a review doesn’t", why:"Reviews evaluate evidence too, across sources. Many annotations also evaluate."},
-     {t:"A review never includes summaries", why:"Reviews summarise briefly, but in service of a point about several sources."},
+     {t:"A review never includes summaries", why:"Reviews summarize briefly, but in service of a point about several sources."},
      {t:"There is no real difference; the two names are interchangeable in most fields", why:"They have different structures and purposes."}]},
    {id:"t4u5-q02", lesson:"t4u5-l1", level:1, q:"Which of these is NOT usually a job of a literature review?", options:[
      {t:"Collecting new data from participants", ok:true, why:"Correct: a review works with existing research. Collecting new data is the job of a primary study."},
@@ -1121,19 +1121,19 @@ ICA.addUnit({
      {t:"Remove the references and keep the text", why:"Then she would present uncited claims, which is both unsupported and possibly plagiarism."},
      {t:"Ask the chatbot whether its references are real", why:"The same tool can confidently confirm false information; checking the sources directly is the only reliable test."}]},
    {id:"t4u5-q06", lesson:"t4u5-l1", level:3, q:"A policy officer writing a review on youth employment schemes leaves out three studies that found no effect, “to keep the message clear”. What is the main problem?", options:[
-     {t:"The review becomes biased towards a positive picture", ok:true, why:"Yes. Readers will think the evidence is more favourable than it is. Omitting conflicting studies distorts the state of knowledge, which a review exists to show."},
+     {t:"The review becomes biased toward a positive picture", ok:true, why:"Yes. Readers will think the evidence is more favorable than it is. Omitting conflicting studies distorts the state of knowledge, which a review exists to show."},
      {t:"The review will be too short", why:"Length isn’t the issue; accuracy is."},
      {t:"Studies that find no effect are always low quality, so leaving them out is fine", why:"No-effect studies can be well designed; quality must be judged on design and conduct."},
      {t:"Policy reviews aren’t allowed to cite studies", why:"Policy reviews rely on studies; the problem is selective citation."}]},
    {id:"t4u5-q07", lesson:"t4u5-l1", level:1, q:"In “literature review”, what does “literature” mean?", options:[
      {t:"The body of written work on a topic, such as articles, books, reports and theses", ok:true, why:"Right. It means the research and scholarship on the topic."},
      {t:"Novels, poems and plays", why:"That’s literature in the artistic sense; here it means the research literature."},
-     {t:"Only peer-reviewed journal articles", why:"Reviews often include books, reports, theses and grey literature too."},
+     {t:"Only peer-reviewed journal articles", why:"Reviews often include books, reports, theses and gray literature too."},
      {t:"Only sources older than ten years", why:"Age has nothing to do with it."}]},
    {id:"t4u5-q08", lesson:"t4u5-l1", level:2, q:"Kenji’s draft review has paragraphs titled “Study 1”, “Study 2” and so on. What is the best first fix?", options:[
      {t:"Regroup the material under themes that each draw on several studies", ok:true, why:"Yes. Organising by idea is what turns a list into a review."},
      {t:"Add more studies, “Study 13” to “Study 20”", why:"More of the same makes a longer list, not a review."},
-     {t:"Rename each heading with the author’s name and year, such as “Garcia (2018)”", why:"Still organised by source."},
+     {t:"Rename each heading with the author’s name and year, such as “Garcia (2018)”", why:"Still organized by source."},
      {t:"Shorten each summary", why:"Shorter summaries are still summaries; the structure is the problem."}]},
    {id:"t4u5-q09", lesson:"t4u5-l1", level:2, q:"Why does a literature review usually come before a new study is designed?", options:[
      {t:"It shows what is already known, so the study can fill a real gap", ok:true, why:"Right. It prevents needless repetition and justifies the question and design. The study can also learn from earlier methods."},
@@ -1148,8 +1148,8 @@ ICA.addUnit({
      {t:"An expert’s overview of a field", why:"That’s a narrative review."}]},
    {id:"t4u5-q11", lesson:"t4u5-l2", level:1, q:"Which feature is essential to a systematic review?", options:[
      {t:"Eligibility criteria and methods set out in advance", ok:true, why:"Pre-specified, explicit, reproducible methods are the defining feature."},
-     {t:"A meta-analysis", why:"Meta-analysis is optional; many systematic reviews synthesise in words and tables."},
-     {t:"Including only randomised trials", why:"Systematic reviews can include many designs, including qualitative studies."},
+     {t:"A meta-analysis", why:"Meta-analysis is optional; many systematic reviews synthesize in words and tables."},
+     {t:"Including only randomized trials", why:"Systematic reviews can include many designs, including qualitative studies."},
      {t:"Being written by a single expert", why:"Systematic reviews are usually team efforts, with independent screening."}]},
    {id:"t4u5-q12", lesson:"t4u5-l2", level:2, q:"Ana wants to know what research exists on how small museums use social media, and how “engagement” has been defined. Which kind of review fits?", options:[
      {t:"A scoping review", ok:true, why:"Mapping what exists and clarifying definitions are classic scoping aims."},
@@ -1203,7 +1203,7 @@ ICA.addUnit({
      {t:"1,000", why:"That’s before duplicates are removed."},
      {t:"1,250", why:"Duplicates are subtracted, not added."}]},
    {id:"t4u5-q22", lesson:"t4u5-l3", level:2, q:"Where must reasons for exclusion be given in a PRISMA flow diagram?", options:[
-     {t:"For reports excluded after full-text assessment", ok:true, why:"Correct. At full text, each exclusion has a recorded reason, summarised in the diagram."},
+     {t:"For reports excluded after full-text assessment", ok:true, why:"Correct. At full text, each exclusion has a recorded reason, summarized in the diagram."},
      {t:"For every record excluded at title and abstract stage", why:"PRISMA asks for the number excluded at screening, not a reason for each one."},
      {t:"Only for duplicates", why:"Duplicates are counted; no reason is needed beyond being duplicates."},
      {t:"Nowhere; reasons are optional", why:"Full-text exclusion reasons are an expected part of the diagram."}]},
@@ -1222,16 +1222,16 @@ ICA.addUnit({
      {t:"A database of systematic reviews", why:"PRISMA is not a database."},
      {t:"A statistical software package", why:"It’s a reporting guideline."},
      {t:"A score that rates review quality", why:"PRISMA covers reporting; quality is judged with other tools."}]},
-   {id:"t4u5-q26", lesson:"t4u5-l3", level:3, q:"Halfway through a review, Lucía realises one exclusion criterion was a mistake and changes it. What should she do?", options:[
+   {id:"t4u5-q26", lesson:"t4u5-l3", level:3, q:"Halfway through a review, Lucía realizes one exclusion criterion was a mistake and changes it. What should she do?", options:[
      {t:"Apply it consistently, and report the change and the reason", ok:true, why:"Right. Protocols can change; transparency about deviations is what matters."},
      {t:"Hide the change so the review looks consistent with the protocol", why:"Hidden deviations undermine the whole point of a protocol."},
      {t:"Apply the new criterion only to studies screened from now on", why:"Inconsistent screening makes the results unreliable; re-check earlier decisions."},
      {t:"Abandon the review", why:"Reported, justified changes are acceptable."}]},
    {id:"t4u5-q27", lesson:"t4u5-l3", level:2, q:"Why do systematic reviews usually have two people screen records independently?", options:[
-     {t:"To reduce errors and individual bias in deciding what is included", ok:true, why:"Independent screening catches mistakes and inconsistent judgements."},
+     {t:"To reduce errors and individual bias in deciding what is included", ok:true, why:"Independent screening catches mistakes and inconsistent judgments."},
      {t:"Because one person isn’t allowed to read abstracts", why:"No such rule; the goal is reliability."},
      {t:"To make the review take twice as long", why:"Time is a cost, not the purpose."},
-     {t:"So that each person can include their own favourite studies in the review", why:"The opposite: it limits personal preference."}]},
+     {t:"So that each person can include their own favorite studies in the review", why:"The opposite: it limits personal preference."}]},
    /* Lesson 4 */
    {id:"t4u5-q28", lesson:"t4u5-l4", level:1, q:"In a synthesis matrix, what does each row usually represent?", options:[
      {t:"One source", ok:true, why:"Rows are sources; columns are questions or themes."},
@@ -1241,22 +1241,22 @@ ICA.addUnit({
    {id:"t4u5-q29", lesson:"t4u5-l4", level:2, q:"Reading down the “sample” column of his matrix, Dmitri sees that all ten studies used university students. What has he found?", options:[
      {t:"A population gap: little is known about other groups", ok:true, why:"Yes. The question was studied, but only for one group."},
      {t:"A theme showing that the topic only matters to students", why:"The evidence covers students only; that doesn’t mean others are unaffected."},
-     {t:"Proof that the results apply to everyone", why:"Results from one group can’t simply be generalised."},
+     {t:"Proof that the results apply to everyone", why:"Results from one group can’t simply be generalized."},
      {t:"A methodological error in his matrix", why:"The matrix is working; it has revealed a pattern in the studies."}]},
    {id:"t4u5-q30", lesson:"t4u5-l4", level:1, q:"Which of these is a theme rather than a topic label?", options:[
-     {t:"“Programmes run by trained staff report larger effects than volunteer-run ones”", ok:true, why:"It states a pattern across sources that can be supported or challenged."},
+     {t:"“Programs run by trained staff report larger effects than volunteer-run ones”", ok:true, why:"It states a pattern across sources that can be supported or challenged."},
      {t:"“Staff”", why:"A label, with no claim."},
      {t:"“Effects”", why:"A label, with no claim."},
-     {t:"“Programmes”", why:"A label, with no claim."}]},
+     {t:"“Programs”", why:"A label, with no claim."}]},
    {id:"t4u5-q31", lesson:"t4u5-l4", level:3, q:"Two studies of a reading app disagree. One, in Nairobi, found gains; one, in Lima, didn’t. The matrix shows the Lima study gave the app only in English to Spanish-speaking children. What is the best interpretation?", options:[
      {t:"The language mismatch may explain the difference, and this should be tested", ok:true, why:"Right. It’s a plausible, evidence-based reason, stated cautiously. The review should say so."},
      {t:"The app works in Africa but not in South America", why:"A sweeping regional claim; the matrix points to language, not continent."},
      {t:"The Lima study is wrong and should be dropped", why:"Disagreement isn’t error; explaining it is more useful."},
      {t:"The two results cancel each other out, so overall the app has no real effect on reading", why:"Conflicting studies don’t simply cancel; the conditions differ."}]},
    {id:"t4u5-q32", lesson:"t4u5-l4", level:2, q:"Which gap statement is worded most carefully?", options:[
-     {t:"“In the three databases I searched, I found no studies of this programme in rural schools.”", ok:true, why:"Specific and limited to what was searched."},
-     {t:"“No one has ever studied this programme in rural schools.”", why:"An absolute claim no single search can support."},
-     {t:"“The programme doesn’t work in rural schools, as no studies exist.”", why:"Absence of evidence isn’t evidence of no effect."},
+     {t:"“In the three databases I searched, I found no studies of this program in rural schools.”", ok:true, why:"Specific and limited to what was searched."},
+     {t:"“No one has ever studied this program in rural schools.”", why:"An absolute claim no single search can support."},
+     {t:"“The program doesn’t work in rural schools, as no studies exist.”", why:"Absence of evidence isn’t evidence of no effect."},
      {t:"“Rural schools are a gap.”", why:"Too vague: a gap in what, exactly?"}]},
    {id:"t4u5-q33", lesson:"t4u5-l4", level:1, q:"Why should copied wording in a matrix cell be marked with quotation marks and a page number?", options:[
      {t:"So you don’t later reuse the authors’ words as your own by mistake", ok:true, why:"Right. It protects against accidental plagiarism and makes quoting accurate."},
@@ -1290,9 +1290,9 @@ ICA.addUnit({
      {t:"Gives a direct quotation", why:"Quotations rarely make good topic sentences in reviews."},
      {t:"Lists the databases searched", why:"Search details belong in the introduction or methods."}]},
    {id:"t4u5-q39", lesson:"t4u5-l5", level:2, q:"A review on online learning has sections: “Before 2010”, “2010–2019”, “Since 2020”. When is this chronological structure most useful?", options:[
-     {t:"When something changed between periods that shaped the research", ok:true, why:"Yes. For example, new technology or a major event. A useful chronological review is organised around changes."},
+     {t:"When something changed between periods that shaped the research", ok:true, why:"Yes. For example, new technology or a major event. A useful chronological review is organized around changes."},
      {t:"Always; it’s the best structure for every review", why:"Thematic structure suits most reviews; chronology fits when change over time matters."},
-     {t:"When the writer wants to list the studies in the order they were published", why:"That’s a dated list, not an organised review."},
+     {t:"When the writer wants to list the studies in the order they were published", why:"That’s a dated list, not an organized review."},
      {t:"Only when there are exactly three periods", why:"The number of periods is irrelevant."}]},
    {id:"t4u5-q40", lesson:"t4u5-l5", level:2, q:"In APA style, how should three sources be cited together in one parenthesis?", options:[
      {t:"Alphabetically by first author, separated by semicolons: (Lindqvist, 2021; Mendes, 2023; Okafor, 2019)", ok:true, why:"Correct APA 7 practice for multiple works in one parenthetical citation."},
@@ -1316,11 +1316,11 @@ ICA.addUnit({
      {t:"Remove the conclusion; reviews don’t need one", why:"The conclusion is where the review’s argument lands."}]},
    {id:"t4u5-q44", lesson:"t4u5-l5", level:3, q:"Kenji merges ideas from four authors into smooth paragraphs in his own words but adds no citations, saying “it’s synthesis, so the ideas are mine now”. What is the problem?", options:[
      {t:"Using others’ ideas without citing them is plagiarism, even when combined", ok:true, why:"Right. Synthesis adds your analysis; the sources still need credit."},
-     {t:"None: once ideas are synthesised in his own words, they don’t need citations", why:"Combining ideas doesn’t make them yours; citation is still required."},
+     {t:"None: once ideas are synthesized in his own words, they don’t need citations", why:"Combining ideas doesn’t make them yours; citation is still required."},
      {t:"He should copy their exact words instead", why:"Quoting also needs citation; the problem is the missing citations."},
      {t:"He should cite only the first author", why:"Every source whose ideas he uses should be cited."}]},
    {id:"t4u5-q45", lesson:"t4u5-l5", level:2, q:"Which phrase signals that the writer is about to explain why studies disagree?", options:[
-     {t:"“This difference may reflect…”", ok:true, why:"It moves from reporting a difference to analysing it."},
+     {t:"“This difference may reflect…”", ok:true, why:"It moves from reporting a difference to analyzing it."},
      {t:"“Similarly,…”", why:"Signals agreement."},
      {t:"“A second theme concerns…”", why:"Signals a new section or idea."},
      {t:"“Little is known about…”", why:"Signals a gap."}]}

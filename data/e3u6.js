@@ -3,10 +3,10 @@ ICA.addUnit({
   id:"e3u6", track:"e3", n:6, title:"N4 grammar I", icon:"🧭",
   blurb:"Saying what you can do (the potential form and ～ことができる), what you will do (the volitional form, ～ようと[思]{おも}う and つもり), what happens if (と, ば, たら and なら, with a guide for choosing), who gives what to whom (あげる, くれる, もらう and their ～て forms), and what you must or don’t have to do, plus ～てしまう and ～ておく; then guessing with ～かもしれない and ～でしょう, trying things out with ～てみる, and giving advice with ～たほうがいい.",
   goals:[
-    "Build the potential form of any verb, use ～ことができる, and recognise ら[抜]{ぬ}き forms such as [見]{み}れる in speech",
+    "Build the potential form of any verb, use ～ことができる, and recognize ら[抜]{ぬ}き forms such as [見]{み}れる in speech",
     "Build the volitional form, and talk about plans with ～ようと[思]{おも}う and つもり",
     "Build and use the conditionals と, ば, たら and なら, and choose between them with a step-by-step guide",
-    "Describe giving, receiving and favours with あげる, くれる and もらう, from the right point of view",
+    "Describe giving, receiving and favors with あげる, くれる and もらう, from the right point of view",
     "Say what you must and don’t have to do, from formal ～なければなりません to casual ～なきゃ",
     "Use ～てしまう for finishing and for regret, and ～ておく for doing things in advance",
     "Guess with ～かもしれない and ～でしょう, try things out with ～てみる, and give advice with ～たほうがいい and ～ないほうがいい"
@@ -50,7 +50,7 @@ ICA.addUnit({
       "Here is a piece of good news. Every potential verb, whatever group it came from, is itself an ichidan verb: it conjugates by dropping る. So you already know all its forms.",
       {table:[["Form","From 書く","From 食べる"],["polite","書けます","食べられます"],["polite negative","書けません","食べられません"],["polite past","書けました","食べられました"],["plain negative","書けない","食べられない"],["plain past","書けた","食べられた"],["て-form","書けて","食べられて"]]},
       {ex:"[昨日]{きのう}の[夜]{よる}は、あまり[寝]{ね}られませんでした。\nI couldn’t sleep much last night.\n\nやっと[自転車]{じてんしゃ}に[乗]{の}れた！\nI could finally ride a bike! (casual)\n\n[明日]{あした}のパーティーに[来]{こ}られますか。\nCan you come to the party tomorrow?", label:"Potential verbs in sentences"},
-      {tip:"Practise potential forms in pairs: 書く → 書ける → 書けません. Saying the negative out loud is useful, because “I can’t…” is one of the things you will need most."}
+      {tip:"Practice potential forms in pairs: 書く → 書ける → 書けません. Saying the negative out loud is useful, because “I can’t…” is one of the things you will need most."}
       ,{ex:"[面接官]{めんせつかん}：[何語]{なにご}が話せますか。\nオルワ：[英語]{えいご}とフランス語が話せます。日本語も[少]{すこ}し話せます。\n[面接官]{めんせつかん}：[車]{くるま}の[運転]{うんてん}はできますか。\nオルワ：はい、できます。\n[面接官]{めんせつかん}：[土曜日]{どようび}も[来]{こ}られますか。\nオルワ：すみません、[土曜日]{どようび}は[来]{こ}られません。\n\nInterviewer: Which languages can you speak?\nOluwa: I can speak English and French. I can speak a little Japanese too.\nInterviewer: Can you drive?\nOluwa: Yes, I can.\nInterviewer: Can you also come on Saturdays?\nOluwa: I’m sorry, I can’t come on Saturdays.", label:"Worked example: a job interview"},
       "Notice how the answers reuse the verb from the question: 話せますか → 話せます, できますか → できます. That is the natural way to say yes or no in Japanese. Notice also that the interviewer, who is at the workplace, asks [来]{こ}られますか (can you come here?)."
     ]},
@@ -71,7 +71,7 @@ ICA.addUnit({
     ]},
     {h:"Spoken short forms, and みえる vs みられる", body:[
       "In conversation, many people drop the ら from the potential of ichidan verbs and [来]{く}る: 見れる for 見られる, 食べれる for 食べられる, [来]{こ}れる for [来]{こ}られる. These are called [[ra-nuki-kotoba|ら[抜]{ぬ}き[言葉]{ことば}]] (*ra-nuki kotoba*, “words with the ら removed”).",
-      "They are extremely common in speech, and many linguists describe them as a natural change in the language. But textbooks, the JLPT and careful writing use the full forms with ら. Learn the full forms first, and recognise the short ones when you hear them. Academic Japanese covers this in {{written-vs-spoken-japanese}}.",
+      "They are extremely common in speech, and many linguists describe them as a natural change in the language. But textbooks, the JLPT and careful writing use the full forms with ら. Learn the full forms first, and recognize the short ones when you hear them. Academic Japanese covers this in {{written-vs-spoken-japanese}}.",
       {warn:"Godan potentials such as [帰]{かえ}れる, [走]{はし}れる and [入]{はい}れる are **not** ら[抜]{ぬ}き. They come from godan verbs ([帰]{かえ}ります), so る → れる is the standard rule. Only verbs that take られる (ichidan verbs and [来]{く}る) can lose a ら."},
       "Two pairs of verbs deserve a special note. 見える (be visible) and 聞こえる (be audible) describe what reaches your eyes or ears on its own, without effort. 見られる and 聞ける mean that you are able to watch or listen because the situation allows it.",
       {table:[["Verb","Meaning","Example"],["見える","is visible, can see","[窓]{まど}から[山]{やま}が見えます。\nI can see the mountains from the window."],["見られる","can watch (it is possible)","この[映画]{えいが}はネットで見られます。\nYou can watch this film online."],["聞こえる","is audible, can hear","[隣]{となり}の[部屋]{へや}から[音楽]{おんがく}が聞こえます。\nI can hear music from the next room."],["聞ける","can listen; can ask","このアプリでラジオが聞けます。\nYou can listen to the radio with this app."]]},
@@ -237,7 +237,7 @@ ICA.addUnit({
     ]},
     {h:"Putting it together: talking about plans", body:[
       "Here is how these patterns sound together in a polite conversation between two housemates.",
-      {ex:"イエン：[夏休]{なつやす}みは何をしますか。\nまりや：[北]{きた}の[方]{ほう}へ[旅行]{りょこう}に[行]{い}こうと[思]{おも}っています。イエンさんは？\nイエン：[国]{くに}へ[帰]{かえ}るつもりです。もう[飛行機]{ひこうき}を[予約]{よやく}しました。[八月]{はちがつ}[三日]{みっか}に[出発]{しゅっぱつ}する[予定]{よてい}です。\nまりや：いいですね。じゃあ、その[前]{まえ}に[一度]{いちど}、[一緒]{いっしょ}に[食事]{しょくじ}しませんか。\nイエン：ええ、そうしましょう。\n\nYến: What are you doing in the summer holidays?\nMariya: I’m thinking of travelling up north. And you, Yến?\nYến: I intend to go back to my country. I’ve already booked the flight; I’m due to leave on 3 August.\nMariya: Sounds good. Then shall we have a meal together once before that?\nYến: Yes, let’s do that.", label:"Worked example: summer plans"},
+      {ex:"イエン：[夏休]{なつやす}みは何をしますか。\nまりや：[北]{きた}の[方]{ほう}へ[旅行]{りょこう}に[行]{い}こうと[思]{おも}っています。イエンさんは？\nイエン：[国]{くに}へ[帰]{かえ}るつもりです。もう[飛行機]{ひこうき}を[予約]{よやく}しました。[八月]{はちがつ}[三日]{みっか}に[出発]{しゅっぱつ}する[予定]{よてい}です。\nまりや：いいですね。じゃあ、その[前]{まえ}に[一度]{いちど}、[一緒]{いっしょ}に[食事]{しょくじ}しませんか。\nイエン：ええ、そうしましょう。\n\nYến: What are you doing in the summer holidays?\nMariya: I’m thinking of traveling up north. And you, Yến?\nYến: I intend to go back to my country. I’ve already booked the flight; I’m due to leave on 3 August.\nMariya: Sounds good. Then shall we have a meal together once before that?\nYến: Yes, let’s do that.", label:"Worked example: summer plans"},
       "Look at how certain each speaker is. Mariya’s trip is still an idea, so she uses ～ようと[思]{おも}っています. Yến has decided, so つもりです; and her flight has a date, so [予定]{よてい}です. Mariya’s invitation uses polite ～ませんか, and Yến accepts with ～ましょう.",
       "Between close friends the same exchange would use the volitional form directly: [一緒]{いっしょ}にごはん[食]{た}べない？ — うん、そうしよう。"
     ]},
@@ -293,7 +293,7 @@ ICA.addUnit({
       "。[向]{む}こうでは[日本語]{にほんご}を",
       {t:"[習]{なら}おうと[思]{おも}っています", flag:false, why:"Correct: [習]{なら}う (learn) is godan, so う → お + う: [習]{なら}おう."},
       "。[毎日]{まいにち}、[新]{あたら}しい[漢字]{かんじ}を[五]{いつ}つ",
-      {t:"[覚]{おぼ}えろうと[思]{おも}います", flag:true, why:"Wrong. [覚]{おぼ}える (memorise) is ichidan ([覚]{おぼ}えます), so it takes よう: [覚]{おぼ}えようと[思]{おも}います."},
+      {t:"[覚]{おぼ}えろうと[思]{おも}います", flag:true, why:"Wrong. [覚]{おぼ}える (memorize) is ichidan ([覚]{おぼ}えます), so it takes よう: [覚]{おぼ}えようと[思]{おも}います."},
       "。[週末]{しゅうまつ}は[山]{やま}に",
       {t:"[登]{のぼ}ろうと[思]{おも}っています", flag:false, why:"Correct: [登]{のぼ}る (climb) is godan ([登]{のぼ}ります): [登]{のぼ}ろう."},
       "。[弟]{おとうと}も[一緒]{いっしょ}に",
@@ -328,7 +328,7 @@ ICA.addUnit({
       why:"Dictionary form + つもりです states a firm personal plan: [受]{う}けるつもりです."}
    ],
    apply:{
-    intro:"Plans are easy to practise, because you make them every day. Keep these notes for yourself.",
+    intro:"Plans are easy to practice, because you make them every day. Keep these notes for yourself.",
     tasks:[
      {t:"Talk yourself through your evening", how:[
        "Tonight, say your next actions to yourself in the volitional form as you do them: [晩]{ばん}ごはんを[作]{つく}ろう。お[風呂]{ふろ}に入ろう。[寝]{ね}よう。",
@@ -484,13 +484,13 @@ ICA.addUnit({
     ]},
     {id:"e3u6-l3-x8", type:"mcq", q:"Cheska tells you her plan: she will buy a guidebook **before** her trip. Which sentence does she say?", options:[
       {t:"[旅行]{りょこう}に[行]{い}くなら、ガイドブックを[買]{か}います。", ok:true, why:"Right. With なら, the result (buying the guidebook) can happen before the condition (the trip)."},
-      {t:"[旅行]{りょこう}に[行]{い}ったら、ガイドブックを[買]{か}います。", why:"With たら, the trip comes first: she would buy the guidebook once she is travelling."},
+      {t:"[旅行]{りょこう}に[行]{い}ったら、ガイドブックを[買]{か}います。", why:"With たら, the trip comes first: she would buy the guidebook once she is traveling."},
       {t:"[旅行]{りょこう}に[行]{い}くと、ガイドブックを[買]{か}います。", why:"With と this can only be a habit (“whenever I travel, I buy a guidebook”), with the buying after setting off. と can’t state a one-time plan, and it doesn’t put the buying first."},
       {t:"[旅行]{りょこう}に[行]{い}けば、ガイドブックを[買]{か}います。", why:"Going on a trip is an action, and Cheska does both things, so a plan after ば sounds unnatural here. ば doesn’t put the buying first either."}
     ]},
     {id:"e3u6-l3-x9", type:"type", q:"Rodrigo would like to go to the gym more, but it is far away. Type the ば-form of [近]{ちか}い (near) in hiragana: 「ジムがもっと___、[毎日]{まいにち}行くんですが。」 (“If the gym were closer, I’d go every day.”)", answer:"ちかければ",
       wrongs:[{v:"ちかいば", why:"ば doesn’t attach to the dictionary form. For い-adjectives, い → ければ: [近]{ちか}ければ."},
-              {v:"ちかかったら", why:"That is the たら form. It is also natural here, but this item practises ば: い → ければ."}],
+              {v:"ちかかったら", why:"That is the たら form. It is also natural here, but this item practices ば: い → ければ."}],
       why:"い-adjective: drop い, add ければ: [近]{ちか}い → [近]{ちか}ければ. ば puts the spotlight on the condition that is missing."},
     {id:"e3u6-l3-x10", type:"type", q:"A notice on a hot-water dispenser. Type the particle in hiragana: 「このボタンを[押]{お}す___、お[湯]{ゆ}が出ます。」 (“When you press this button, hot water comes out.”)", answer:"と",
       wrongs:[{v:"なら", why:"なら takes something as given and adds advice or an opinion. For a result that follows automatically every time, use と."},
@@ -535,7 +535,7 @@ ICA.addUnit({
      "Mark the giver and the receiver with the right particles (は/が, に, から)",
      "Treat family and your own group as “your side” (ウチ) when choosing くれる",
      "Recognise the polite forms さしあげる, くださる and いただく, and casual やる",
-     "Describe favours with ～てあげる, ～てくれる and ～てもらう, and ask for favours politely",
+     "Describe favors with ～てあげる, ～てくれる and ～てもらう, and ask for favors politely",
      "Avoid offering help with ～てあげる to people above you"
    ],
    learn:[
@@ -546,7 +546,7 @@ ICA.addUnit({
       "Now imagine that **you** are Kaito. Something has come to you, and Japanese uses a third verb, [[kureru|くれる]]:",
       {ex:"イエンさんが本をくれました。\nYến gave me a book.\n\n[私]{わたし}はイエンさんに本をもらいました。\nI received a book from Yến.", label:"When the receiver is you"},
       "You usually don’t need to say [私]{わたし}に (to me) with くれる: the verb itself tells the listener that the book came to you.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e3u6a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Which way is it going?</text><rect class="d-lup" x="16" y="34" width="308" height="80" rx="10" stroke-width="2"/><text class="s" x="28" y="52">others (ソト)</text><rect class="d-panel" x="44" y="66" width="56" height="30" rx="6" stroke-width="1.5"/><text x="72" y="86" text-anchor="middle">A</text><rect class="d-panel" x="240" y="66" width="56" height="30" rx="6" stroke-width="1.5"/><text x="268" y="86" text-anchor="middle">B</text><path class="d-ink" d="M104 81H234" stroke-width="2" marker-end="url(#e3u6a5)"/><text x="170" y="74" text-anchor="middle">あげる</text><rect class="d-sage" x="16" y="196" width="308" height="64" rx="10" stroke-width="2"/><text class="s" x="28" y="214">me and my side (ウチ)</text><text x="170" y="240" text-anchor="middle">わたし ・ かぞく</text><path class="d-ink" d="M84 118V190" stroke-width="2.5" marker-end="url(#e3u6a5)"/><text x="96" y="152">くれる</text><text class="s" x="96" y="170">others → me</text><path class="d-ink" d="M256 192V120" stroke-width="2.5" marker-end="url(#e3u6a5)"/><text x="244" y="152" text-anchor="end">あげる</text><text class="s" x="244" y="170" text-anchor="end">me → others</text><text class="s" x="170" y="282" text-anchor="middle">もらう: told from the receiver’s side, either way</text></svg>', alt:"Two areas. At the top, others (ソト), with person A giving to person B: あげる. At the bottom, me and my side (ウチ): わたし and かぞく. A downward arrow from others to me is labelled くれる, others to me. An upward arrow from me to others is labelled あげる, me to others. A note at the bottom: もらう is told from the receiver’s side, either way.", cap:"あげる goes outward or sideways; くれる comes inward, to you or your side. もらう tells the same events from the receiver’s side."}
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e3u6a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">Which way is it going?</text><rect class="d-lup" x="16" y="34" width="308" height="80" rx="10" stroke-width="2"/><text class="s" x="28" y="52">others (ソト)</text><rect class="d-panel" x="44" y="66" width="56" height="30" rx="6" stroke-width="1.5"/><text x="72" y="86" text-anchor="middle">A</text><rect class="d-panel" x="240" y="66" width="56" height="30" rx="6" stroke-width="1.5"/><text x="268" y="86" text-anchor="middle">B</text><path class="d-ink" d="M104 81H234" stroke-width="2" marker-end="url(#e3u6a5)"/><text x="170" y="74" text-anchor="middle">あげる</text><rect class="d-sage" x="16" y="196" width="308" height="64" rx="10" stroke-width="2"/><text class="s" x="28" y="214">me and my side (ウチ)</text><text x="170" y="240" text-anchor="middle">わたし ・ かぞく</text><path class="d-ink" d="M84 118V190" stroke-width="2.5" marker-end="url(#e3u6a5)"/><text x="96" y="152">くれる</text><text class="s" x="96" y="170">others → me</text><path class="d-ink" d="M256 192V120" stroke-width="2.5" marker-end="url(#e3u6a5)"/><text x="244" y="152" text-anchor="end">あげる</text><text class="s" x="244" y="170" text-anchor="end">me → others</text><text class="s" x="170" y="282" text-anchor="middle">もらう: told from the receiver’s side, either way</text></svg>', alt:"Two areas. At the top, others (ソト), with person A giving to person B: あげる. At the bottom, me and my side (ウチ): わたし and かぞく. A downward arrow from others to me is labeled くれる, others to me. An upward arrow from me to others is labeled あげる, me to others. A note at the bottom: もらう is told from the receiver’s side, either way.", cap:"あげる goes outward or sideways; くれる comes inward, to you or your side. もらう tells the same events from the receiver’s side."}
     ]},
     {h:"あげる: giving away from you, or between others", body:[
       "Use あげる when you (or your side) give something to someone else, or when one person gives to another and neither is on your side. The giver is marked with は or が, the receiver with に, and the thing with を.",
@@ -556,14 +556,14 @@ ICA.addUnit({
     ]},
     {h:"くれる: giving to you and your side", body:[
       "Use くれる when someone gives something to you, or to someone on your side: your family, and often your own group, team or company when you talk to outsiders. This idea of an inside group (ウチ) and an outside group (ソト) runs through Japanese; see [[uchi-soto]].",
-      {ex:"[友達]{ともだち}が[誕生日]{たんじょうび}のプレゼントをくれました。\nMy friend gave me a birthday present.\n\n[隣]{となり}の[人]{ひと}が[弟]{おとうと}にお[菓子]{かし}をくれました。\nThe neighbour gave my little brother some sweets.\n\nこれ、[父]{ちち}がくれた[時計]{とけい}です。\nThis is a watch my father gave me.", label:"くれる"},
+      {ex:"[友達]{ともだち}が[誕生日]{たんじょうび}のプレゼントをくれました。\nMy friend gave me a birthday present.\n\n[隣]{となり}の[人]{ひと}が[弟]{おとうと}にお[菓子]{かし}をくれました。\nThe neighbor gave my little brother some sweets.\n\nこれ、[父]{ちち}がくれた[時計]{とけい}です。\nThis is a watch my father gave me.", label:"くれる"},
       "In the second example, the sweets went to your brother, not to you, but he is on your side, so くれる is natural. (You may sometimes hear あげる in sentences like this when people tell a story from outside, but くれる is what textbooks teach and what most speakers use.) In the third, くれた is the plain past in a noun-modifying clause, a pattern from Unit 5 ([[noun-modifier-clause]]).",
       {warn:"The opposite mistake is just as common: ✗ [私]{わたし}は[友達]{ともだち}に本をくれました. When you are the giver, the verb is あげる: [私]{わたし}は[友達]{ともだち}に本をあげました."}
     ]},
     {h:"もらう: receiving", body:[
       "もらう means “receive” or “get”. The **receiver** is the subject, and the giver is marked with に or から.",
       {ex:"[私]{わたし}はロドリゴさんに本をもらいました。\nI got a book from Rodrigo.\n\nまりやさんは[先生]{せんせい}から[手紙]{てがみ}をもらいました。\nMariya received a letter from her teacher.\n\n[会社]{かいしゃ}からボーナスをもらいました。\nI got a bonus from the company.", label:"もらう"},
-      "With a person, に and から are both fine. With an organisation, such as a company, a school or a city office, から is the usual choice, and it is what textbooks teach.",
+      "With a person, に and から are both fine. With an organization, such as a company, a school or a city office, から is the usual choice, and it is what textbooks teach.",
       "くれる and もらう often describe the same event. Compare: [友達]{ともだち}が本をくれました (My friend gave me a book) and [友達]{ともだち}に本をもらいました (I got a book from my friend). The first starts from the friend; the second starts from you. Both are correct and common.",
       {key:"Find the giver and the receiver. If the receiver is you or your side, use くれる (giver が) or もらう (receiver は, giver に). Otherwise, use あげる (giver は, receiver に) or もらう."}
     ]},
@@ -574,26 +574,26 @@ ICA.addUnit({
       "さしあげる and いただく lower yourself, and くださる raises the other person. These are kinds of [[keigo]]: さしあげる and いただく belong to [[kenjougo]], and くださる to [[sonkeigo]]. Unit 7 previews the common polite forms ({{polite-speech-basics}}).",
       "At the other end, やる means “give” to animals and plants: [犬]{いぬ}にえさをやる (feed the dog), [花]{はな}に[水]{みず}をやる (water the flowers). Some people also use it casually for younger family members, but used for people it can sound rough or looking down, so it is safest to keep it for animals and plants. Many people now say あげる here too, as in [花]{はな}に水をあげる, and you will hear both."
     ]},
-    {h:"Favours: ～てあげる, ～てくれる, ～てもらう", body:[
-      "All three verbs combine with the [[te-form]] to describe favours: doing something for someone, or having someone do something for you. The direction rules stay exactly the same.",
+    {h:"Favors: ～てあげる, ～てくれる, ～てもらう", body:[
+      "All three verbs combine with the [[te-form]] to describe favors: doing something for someone, or having someone do something for you. The direction rules stay exactly the same.",
       {table:[["Pattern","Meaning","Example"],["～てあげる","do for someone else","[妹]{いもうと}に本を[読]{よ}んであげました。\nI read a book to my little sister."],["～てくれる","someone does for me","トビーさんが[駅]{えき}まで[送]{おく}ってくれました。\nToby took me to the station."],["～てもらう","I have someone do","まりやさんに[写真]{しゃしん}をとってもらいました。\nI had Mariya take a photo (of me)."]]},
-      "With ～てもらう, the helper is marked with に: まりやさんに. With ～てあげる, use the particle the verb itself takes for the person: [妹]{いもうと}に読む (read to), [友達]{ともだち}を[手伝]{てつだ}う (help a friend). Verbs that hand something over, such as [買]{か}う or [作]{つく}る, can add the person with に: [妹]{いもうと}に本を[買]{か}ってあげました. Otherwise, use の: [友達]{ともだち}の[荷物]{にもつ}を[持]{も}ってあげました (I carried my friend’s bag as a favour).",
+      "With ～てもらう, the helper is marked with に: まりやさんに. With ～てあげる, use the particle the verb itself takes for the person: [妹]{いもうと}に読む (read to), [友達]{ともだち}を[手伝]{てつだ}う (help a friend). Verbs that hand something over, such as [買]{か}う or [作]{つく}る, can add the person with に: [妹]{いもうと}に本を[買]{か}ってあげました. Otherwise, use の: [友達]{ともだち}の[荷物]{にもつ}を[持]{も}ってあげました (I carried my friend’s bag as a favor).",
       "These patterns add feeling. ～てくれる and ～てもらう show that you are grateful. Compare:",
       {ex:"母が[弁当]{べんとう}を[作]{つく}ってくれました。\nMy mother made me a packed lunch. (warm: I’m grateful)\n\n母が[弁当]{べんとう}を[作]{つく}りました。\nMy mother made a packed lunch. (a plain fact)", label:"Adding gratitude"},
       "When someone does something for you, Japanese speakers usually add ～てくれる or ～てもらう. Leaving it out can sound cool or distant, as if you didn’t notice the kindness.",
-      {ex:"まりやさんは[私]{わたし}に[地図]{ちず}を[書]{か}いてくれました。\nMariya drew me a map. (from Mariya’s side, coming to me)\n\n[私]{わたし}はまりやさんに[地図]{ちず}を書いてもらいました。\nI had Mariya draw me a map. (from my side)\n\nまりやさんはイエンさんに[地図]{ちず}を書いてあげました。\nMariya drew Yến a map. (between two other people)", label:"Worked example: one favour, three sentences"},
-      "The first two describe the same event and are both polite and grateful. ～てもらう can also suggest that you asked for the favour, while ～てくれる often suggests that the other person offered. Both are common, so don’t worry about choosing perfectly."
+      {ex:"まりやさんは[私]{わたし}に[地図]{ちず}を[書]{か}いてくれました。\nMariya drew me a map. (from Mariya’s side, coming to me)\n\n[私]{わたし}はまりやさんに[地図]{ちず}を書いてもらいました。\nI had Mariya draw me a map. (from my side)\n\nまりやさんはイエンさんに[地図]{ちず}を書いてあげました。\nMariya drew Yến a map. (between two other people)", label:"Worked example: one favor, three sentences"},
+      "The first two describe the same event and are both polite and grateful. ～てもらう can also suggest that you asked for the favor, while ～てくれる often suggests that the other person offered. Both are common, so don’t worry about choosing perfectly."
     ]},
-    {h:"Asking for favours, and a warning about ～てあげる", body:[
+    {h:"Asking for favors, and a warning about ～てあげる", body:[
       "To ask someone to do something for you, turn ～てくれる or ～てもらう into a question. From casual to most polite:",
       {table:[["Request","Style"],["ちょっと[手伝]{てつだ}ってくれない？","casual, to friends"],["[手伝]{てつだ}ってくれませんか。","polite"],["[手伝]{てつだ}ってもらえませんか。","polite (literally “can’t I have you help?”)"],["[手伝]{てつだ}っていただけませんか。","very polite: to a teacher, a boss, a stranger"]]},
       "The negative question (～ませんか) is softer than the positive one (～ますか), because it leaves the other person room to say no. ～てもらえませんか uses the potential form of もらう from Lesson 1.",
-      {warn:"Be careful with ～てあげる when you speak **to** the person you are helping. 「[持]{も}ってあげましょうか」 (Shall I carry it for you, as a favour?) stresses the favour you are doing, which can sound condescending, especially to someone above you. To offer help, use ～ましょうか: 「[持]{も}ちましょうか」 (Shall I carry it?)."},
-      "～てあげる is fine for talking about favours between other people, or about what you did for a friend or a younger family member."
+      {warn:"Be careful with ～てあげる when you speak **to** the person you are helping. 「[持]{も}ってあげましょうか」 (Shall I carry it for you, as a favor?) stresses the favor you are doing, which can sound condescending, especially to someone above you. To offer help, use ～ましょうか: 「[持]{も}ちましょうか」 (Shall I carry it?)."},
+      "～てあげる is fine for talking about favors between other people, or about what you did for a friend or a younger family member."
     ]},
     {h:"Common mistakes", body:[
-      {table:[["✗ Mistake","✓ Correct","Why"],["[友達]{ともだち}が[私]{わたし}に本をあげました","[友達]{ともだち}が本をくれました","Things that come to you take くれる."],["[私]{わたし}は[友達]{ともだち}に本をくれました","[私]{わたし}は[友達]{ともだち}に本をあげました","When you give, use あげる."],["母が[弁当]{べんとう}を[作]{つく}ってあげました (meaning for me)","母が[弁当]{べんとう}を[作]{つく}ってくれました","A favour coming to you takes ～てくれる."],["先生に[持]{も}ってあげましょうか","先生、[持]{も}ちましょうか","Offer help with ～ましょうか, not ～てあげる."],["[友達]{ともだち}に[手伝]{てつだ}ってあげました","[友達]{ともだち}を[手伝]{てつだ}ってあげました","[手伝]{てつだ}う takes を for the person helped."],["くださります","くださいます","くださる has an irregular ます-form."]]},
-      "If you mix up くれる and あげる at first, you are in good company: it is one of the most common N4 mistakes. Each time you describe a gift or a favour, ask yourself one question: is it coming to my side? If yes, くれる.",
+      {table:[["✗ Mistake","✓ Correct","Why"],["[友達]{ともだち}が[私]{わたし}に本をあげました","[友達]{ともだち}が本をくれました","Things that come to you take くれる."],["[私]{わたし}は[友達]{ともだち}に本をくれました","[私]{わたし}は[友達]{ともだち}に本をあげました","When you give, use あげる."],["母が[弁当]{べんとう}を[作]{つく}ってあげました (meaning for me)","母が[弁当]{べんとう}を[作]{つく}ってくれました","A favor coming to you takes ～てくれる."],["先生に[持]{も}ってあげましょうか","先生、[持]{も}ちましょうか","Offer help with ～ましょうか, not ～てあげる."],["[友達]{ともだち}に[手伝]{てつだ}ってあげました","[友達]{ともだち}を[手伝]{てつだ}ってあげました","[手伝]{てつだ}う takes を for the person helped."],["くださります","くださいます","くださる has an irregular ます-form."]]},
+      "If you mix up くれる and あげる at first, you are in good company: it is one of the most common N4 mistakes. Each time you describe a gift or a favor, ask yourself one question: is it coming to my side? If yes, くれる.",
       {terms:["ageru","kureru","morau","uchi-soto"]}
     ]}
    ],
@@ -620,15 +620,15 @@ ICA.addUnit({
       ["～てくれませんか","～てくださいませんか","くださる’s ます-form is くださいます, so the request becomes ～てくださいませんか."],
       ["～てもらえませんか","～ていただけませんか","The potential of いただく is いただける: a very polite request."]
     ]},
-    {id:"e3u6-l4-x4", type:"mcq", q:"On a rainy day, your neighbour carried your heavy shopping home for you. Telling a friend later, you want to show you are grateful. Which sentence fits best?", options:[
+    {id:"e3u6-l4-x4", type:"mcq", q:"On a rainy day, your neighbor carried your heavy shopping home for you. Telling a friend later, you want to show you are grateful. Which sentence fits best?", options:[
       {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ってくれました。", ok:true, why:"Right. ～てくれる says someone did something for you, and it shows your gratitude."},
-      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ちました。", why:"This is grammatical, but it is a plain fact: “The neighbour carried the bags.” It doesn’t show that it was a kindness to you."},
-      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ってあげました。", why:"～てあげる is for favours going away from you. This says the neighbour carried bags for somebody else."},
-      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ってもらいました。", why:"With ～てもらう the subject is the person who receives the favour, so this says the neighbour had someone carry the bags. You would need [隣]{となり}の人に[持]{も}ってもらいました."}
+      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ちました。", why:"This is grammatical, but it is a plain fact: “The neighbor carried the bags.” It doesn’t show that it was a kindness to you."},
+      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ってあげました。", why:"～てあげる is for favors going away from you. This says the neighbor carried bags for somebody else."},
+      {t:"[隣]{となり}の人が[荷物]{にもつ}を[持]{も}ってもらいました。", why:"With ～てもらう the subject is the person who receives the favor, so this says the neighbor had someone carry the bags. You would need [隣]{となり}の人に[持]{も}ってもらいました."}
     ]},
     {id:"e3u6-l4-x5", type:"mcq", q:"Choose the particle: [私]{わたし}はまりやさん___[写真]{しゃしん}をとってもらいました。 (I had Mariya take my photo.)", options:[
-      {t:"に", ok:true, why:"Right. With ～てもらう, the person who does the favour is marked with に."},
-      {t:"が", why:"が would make Mariya the subject, but the subject of もらう is the receiver of the favour, [私]{わたし}."},
+      {t:"に", ok:true, why:"Right. With ～てもらう, the person who does the favor is marked with に."},
+      {t:"が", why:"が would make Mariya the subject, but the subject of もらう is the receiver of the favor, [私]{わたし}."},
       {t:"を", why:"を already marks the thing ([写真]{しゃしん}). The helper takes に."},
       {t:"で", why:"で marks places and means, not the person who helps you."}
     ]},
@@ -642,36 +642,36 @@ ICA.addUnit({
       "。[夜]{よる}、[私]{わたし}はふみこさんにもケーキを[少]{すこ}し",
       {t:"くれました", flag:true, why:"Wrong: Rodrigo gave some cake to Fumiko-san, so the verb is あげました."},
       "。母は[電話]{でんわ}で[歌]{うた}を",
-      {t:"[歌]{うた}ってくれました", flag:false, why:"Correct: his mother sang to him over the phone, a favour to him."},
+      {t:"[歌]{うた}ってくれました", flag:false, why:"Correct: his mother sang to him over the phone, a favor to him."},
       "。"
     ]},
     {id:"e3u6-l4-x7", type:"order", q:"Put the pieces in order to ask a stranger, very politely: “Could you take our photo?”", items:[
       {t:"[写真]{しゃしん}を", why:"The object comes first, before the verb."},
       {t:"とって", why:"The て-form of とる (take a photo) carries the action."},
-      {t:"いただけ", why:"いただける, the potential of いただく, turns the favour into “could I receive it?”"},
+      {t:"いただけ", why:"いただける, the potential of いただく, turns the favor into “could I receive it?”"},
       {t:"ませんか", why:"The negative question ending makes the request soft and polite."}
     ]},
     {id:"e3u6-l4-x8", type:"mcq", q:"Your teacher is carrying a heavy box down the corridor. How do you offer to help?", options:[
       {t:"[先生]{せんせい}、[持]{も}ちましょうか。", ok:true, why:"Right. ～ましょうか is the polite, natural way to offer help."},
-      {t:"[先生]{せんせい}、[持]{も}ってあげましょうか。", why:"～てあげる stresses the favour you are doing, which can sound condescending to someone above you."},
+      {t:"[先生]{せんせい}、[持]{も}ってあげましょうか。", why:"～てあげる stresses the favor you are doing, which can sound condescending to someone above you."},
       {t:"[先生]{せんせい}、[持]{も}ってくれませんか。", why:"This asks the teacher to carry something for you: the opposite of an offer."},
       {t:"[先生]{せんせい}、[持]{も}ってもらいましょうか。", why:"This means “Shall I have someone carry it?” It doesn’t offer your own help."}
     ]},
     {id:"e3u6-l4-x9", type:"type", q:"Rodrigo tells a colleague: “Fumiko made rice balls for me.” Type the missing verb in hiragana, polite past: 「ふみこさんがおにぎりを[作]{つく}って___。」", answer:"くれました",
-      wrongs:[{v:"あげました", why:"あげる is for giving away from you, or between other people. The favour comes to Rodrigo, so くれました."},
+      wrongs:[{v:"あげました", why:"あげる is for giving away from you, or between other people. The favor comes to Rodrigo, so くれました."},
               {v:"もらいました", why:"With もらう the receiver is the subject and the giver takes に: ふみこさんに[作]{つく}ってもらいました. With ふみこさんが, use くれました."}],
-      why:"～てくれる: someone does a favour for you or your side, and the giver takes が: ふみこさんが[作]{つく}ってくれました."},
+      why:"～てくれる: someone does a favor for you or your side, and the giver takes が: ふみこさんが[作]{つく}ってくれました."},
     {id:"e3u6-l4-x10", type:"type", q:"You tell a friend that Toby gave Sōta, the Satōs’ grandson, a manga. Type the missing verb in hiragana, polite past: 「トビーさんはそうたくんにマンガを___。」", answer:"あげました",
       wrongs:[{v:"くれました", why:"くれる is only for giving toward the speaker or the speaker’s side. Here one person gives to another, so あげました."},
               {v:"もらいました", why:"With もらう the receiver is the subject: そうたくんはトビーさんにマンガをもらいました."}],
       why:"Giving between two other people uses あげる, with the receiver marked に: トビーさんはそうたくんにマンガをあげました."},
     {id:"e3u6-l4-x11", type:"type", q:"Cheska asked Aoi to check her essay, and Aoi did. Cheska tells the teacher. Type the missing verb in hiragana, polite past: 「あおいさんに[作文]{さくぶん}を[見]{み}て___。」 (“I had Aoi look over my essay.”)", answer:"もらいました",
       wrongs:[{v:"くれました", why:"With くれる the giver is the subject and takes が: あおいさんが見てくれました. With あおいさんに, the receiver is the subject, so もらいました."},
-              {v:"あげました", why:"あげる would mean Cheska did the favour for Aoi. Here Aoi did it for Cheska."}],
-      why:"～てもらう: the receiver (Cheska, left unsaid) is the subject, and the person who does the favour takes に: あおいさんに見てもらいました."}
+              {v:"あげました", why:"あげる would mean Cheska did the favor for Aoi. Here Aoi did it for Cheska."}],
+      why:"～てもらう: the receiver (Cheska, left unsaid) is the subject, and the person who does the favor takes に: あおいさんに見てもらいました."}
    ],
    apply:{
-    intro:"Gifts and favours happen every day, so there is plenty to practise with. Keep these notes for yourself.",
+    intro:"Gifts and favors happen every day, so there is plenty to practice with. Keep these notes for yourself.",
     tasks:[
      {t:"Map the gifts in your life", how:[
        "Think of three things you have been given (a present, a meal, some advice) and three things you have given.",
@@ -683,7 +683,7 @@ ICA.addUnit({
        "Add one sentence about something you did for someone, with ～てあげました (in your own diary, this is fine).",
        "At the end of the week, read them back. This is good practice, and a nice record too."
      ], write:"[今日]{きょう}、…が～てくれました。"},
-     {t:"Practise asking for help", how:[
+     {t:"Practice asking for help", how:[
        "Write the same request four ways, from ～てくれない？ to ～ていただけませんか.",
        "Decide who you would say each one to: a sibling, a classmate, a colleague, a stranger, a teacher.",
        "Say the most polite one aloud until it feels smooth."
@@ -702,8 +702,8 @@ ICA.addUnit({
      "Build ～なければなりません and ～なくてはいけません from the ない-form, and understand why they mean “must”",
      "Choose between formal, polite and casual ways to say “must”, including ～ないと and ～なきゃ",
      "Say “don’t have to” with ～なくてもいい, and tell it apart from “must not” (～てはいけない)",
-     "Use ～てしまう for finishing completely and for regret, and recognise casual ～ちゃう",
-     "Use ～ておく for doing something in advance or leaving something as it is, and recognise casual ～とく"
+     "Use ～てしまう for finishing completely and for regret, and recognize casual ～ちゃう",
+     "Use ～ておく for doing something in advance or leaving something as it is, and recognize casual ～とく"
    ],
    learn:[
     {h:"“Must” is a double negative", body:[
@@ -717,7 +717,7 @@ ICA.addUnit({
       "There is a second shape with the same meaning: the ない-form’s て-form, ～なくて, plus は and いけません: 行かなくてはいけません, literally “not going is not OK”."
     ]},
     {h:"From formal to casual: five ways to say “must”", body:[
-      "Japanese speakers switch between several versions depending on the situation. You need to recognise all of them, and use two or three.",
+      "Japanese speakers switch between several versions depending on the situation. You need to recognize all of them, and use two or three.",
       {table:[["Form","Style","Example"],["～なければなりません","formal; rules, notices, writing","[申込書]{もうしこみしょ}を出さなければなりません。"],["～なければいけません","polite; very common in speech","[今日]{きょう}は[早]{はや}く[帰]{かえ}らなければいけません。"],["～なくてはいけません\n～なくてはなりません","polite; common","[宿題]{しゅくだい}をしなくてはいけません。"],["～ないといけません","polite; spoken","もう行かないといけません。"],["～なきゃ(いけない)\n～なくちゃ(いけない)\n～ないと","casual: friends and family","もう[帰]{かえ}らなきゃ。\n[宿題]{しゅくだい}、やらなくちゃ。\nそろそろ行かないと。"]]},
       "[[nakereba-naranai|～なければならない]] and ～なければいけない mean the same. Some textbooks say that ならない suits general rules and duties and いけない suits one person’s situation, but in everyday speech the difference is small. Use ～なければなりません in formal writing and either one in polite speech.",
       "The casual forms are contractions: ～なきゃ comes from ～なければ, and ～なくちゃ from ～なくては. In casual speech the end is often dropped altogether: もう[帰]{かえ}らなきゃ (I have to go home now), with いけない understood. These belong to [[casual-speech]]; Unit 5 explains contractions like these ([[contraction-casual]]).",
@@ -763,8 +763,8 @@ ICA.addUnit({
       {table:[["✗ Mistake","✓ Correct","Why"],["行かないければ","行かなければ","Drop い from ない, then add ければ."],["[来]{こ}なければ read きなければ","[来]{こ}なければ read こなければ","Like [来]{こ}ない, it uses こ."],["行かなくてはいいです","行かなくてもいいです","“Don’t have to” uses ても."],["[写真]{しゃしん}をとらなくてもいいです (meaning “must not”)","[写真]{しゃしん}をとってはいけません","A ban is ～てはいけません."],["食べてしまうました","食べてしまいました","しまう conjugates: しまいます, しまいました."],["読んどいてください (in a work email)","読んでおいてください","～とく is casual; write the full form."]]},
       "You have now met all the main grammar of this unit: the potential and volitional forms, the four conditionals, giving and receiving, obligation, ～てしまう and ～ておく. Unit 7 continues with the passive, the causative and ways of saying “it seems”. {{n4-grammar-patterns}} collects the N4 patterns on one page.",
       "New grammar slips away if you don’t use it, and that is normal. Short, spaced review brings it back, and so does reading: N4 grammar is everywhere in simple stories, messages and signs. Keep up your kanji and vocabulary alongside it in the Kanji Lab.",
-      {lab:"kl-n4", t:"Practise: the N4 kanji, including the verbs in this unit"},
-      {lab:"kl-n4-vocab", t:"Practise: N4 vocabulary"},
+      {lab:"kl-n4", t:"Practice: the N4 kanji, including the verbs in this unit"},
+      {lab:"kl-n4-vocab", t:"Practice: N4 vocabulary"},
       "For more free practice, [Irodori](https://www.irodori.jpf.go.jp/en/) (the Japan Foundation) has free textbooks with audio up to Pre-Intermediate (A2/B1), built around everyday situations, and [Tae Kim’s Guide to Learning Japanese](https://guidetojapanese.org/learn/grammar) explains each pattern in this unit in its own words.",
       {terms:["nakereba-naranai","nakute-mo-ii","te-shimau","te-oku"]}
     ]}
@@ -1081,10 +1081,10 @@ ICA.addUnit({
       {t:"よくない", why:"This says leaving earlier would be bad, the opposite of his regret."},
       {t:"よかったら", why:"よかったら means “if you like” and starts an offer. It can’t end this sentence."}]},
     {id:"e3u6-cp07", lesson:"e3u6-l4", level:2, q:"Cheska missed a class, and Aoi lent her notes to her. Cheska tells Toby. 「あおいさんがノートを＿＿。」", options:[
-      {t:"[貸]{か}してあげました", why:"～てあげる goes away from the speaker. The favour came to Cheska, so use ～てくれる."},
+      {t:"[貸]{か}してあげました", why:"～てあげる goes away from the speaker. The favor came to Cheska, so use ～てくれる."},
       {t:"[貸]{か}してもらいました", why:"～てもらう needs the giver with に: あおいさんにノートを[貸]{か}してもらいました. With あおいさんが, use ～てくれる."},
       {t:"[借]{か}りてくれました", why:"[借]{か}りる is “borrow”. Aoi lent the notes; Cheska borrowed them."},
-      {t:"[貸]{か}してくれました", ok:true, why:"Aoi (が) did a favour for Cheska, the speaker: ～てくれる shows the favour came to her."}]},
+      {t:"[貸]{か}してくれました", ok:true, why:"Aoi (が) did a favor for Cheska, the speaker: ～てくれる shows the favor came to her."}]},
     {id:"e3u6-cp08", lesson:"e3u6-l5", level:2, q:"The TV is on. Leaving the room, Fumiko says 「すぐ[戻]{もど}るから、テレビはつけておいてね。」 What does she want?", options:[
       {t:"Turn the TV off until she comes back", why:"That would be [消]{け}しておいて. つけておいて asks for the TV to stay on."},
       {t:"Leave the TV on", ok:true, why:"～ておく can mean leaving something in a state on purpose: she’ll be right back, so keep it on."},
@@ -1159,7 +1159,7 @@ ICA.addUnit({
       "**A rough scale:** ～たい (wish) → ～ようと[思]{おも}っている (intention) → つもり (firm plan) → [予定]{よてい} (arranged). The middle two overlap a lot."
      ],
      pro:[
-      "**Grammar terms.** The volitional form is called [意向形]{いこうけい} in many textbooks for learners. In Japanese school grammar it is analysed as a stem plus the auxiliary う or よう, which in older Japanese also expressed conjecture. That older meaning survives in written phrases and in だろう, which comes from であろう (である + う).",
+      "**Grammar terms.** The volitional form is called [意向形]{いこうけい} in many textbooks for learners. In Japanese school grammar it is analyzed as a stem plus the auxiliary う or よう, which in older Japanese also expressed conjecture. That older meaning survives in written phrases and in だろう, which comes from であろう (である + う).",
       "**The negative volitional.** Formal and literary Japanese has ～まい: [二度]{にど}と[行]{い}くまい (I will never go again). Everyday speech uses other patterns, such as 行くのはやめよう or もう行かない.",
       "**～ようか and ～ようかな.** In self-talk, the volitional + か or かな wonders aloud: どうしようか (what shall I do?), [帰]{かえ}ろうかな (maybe I’ll go home).",
       "**～ようとする** (N3) means “try to” or “be about to”: [出]{で}かけようとしたとき、[電話]{でんわ}が[鳴]{な}った (Just as I was about to go out, the phone rang).",
@@ -1199,33 +1199,33 @@ ICA.addUnit({
     sources:[{t:"Tae Kim’s Guide to Learning Japanese: How to say “if” in Japanese (と, なら, ば, たら, もし)", url:"https://guidetojapanese.org/learn/grammar/conditionals"},{t:"奈良夕里枝 (2020) 「日本語教育の現場における条件表現ナラの効果的な提示のしかた」『人文』19 (university repository PDF)", url:"https://glim-re.repo.nii.ac.jp/record/4891/files/jinbun_19_39_52.pdf"}],
     checked:"2026-11"},
    {id:"giving-and-receiving", title:"Giving and receiving: あげる, くれる, もらう", aka:["giving","receiving","ageru","kureru","morau","jujuhyougen","～てあげる","～てくれる","～てもらう","くださる","いただく","さしあげる","やる"], tags:["japanese","grammar","n4","verbs"],
-    summary:"Three verbs for giving and receiving, chosen by direction and point of view, with their polite forms and their ～て forms for favours.",
+    summary:"Three verbs for giving and receiving, chosen by direction and point of view, with their polite forms and their ～て forms for favors.",
     levels:{
      starter:[
       "English has one verb, “give”. Japanese chooses by direction.",
       "**あげる**: you (or your side) give to someone else, or one person gives to another: [私]{わたし}はトビーさんに[本]{ほん}をあげました.",
       "**くれる**: someone gives to you or to someone on your side, such as your family: [友達]{ともだち}が本をくれました (my friend gave me a book).",
       "**もらう**: receive. The receiver is the subject, and the giver takes に or から: [私]{わたし}は[友達]{ともだち}に本をもらいました.",
-      "The same verbs follow a て-form to describe favours: [妹]{いもうと}に本を[読]{よ}んであげました (I read a book to my sister), [母]{はは}が[弁当]{べんとう}を[作]{つく}ってくれました (my mother made me lunch), まりやさんに[写真]{しゃしん}をとってもらいました (I had Mariya take my photo). ～てくれる and ～てもらう also show you are grateful."
+      "The same verbs follow a て-form to describe favors: [妹]{いもうと}に本を[読]{よ}んであげました (I read a book to my sister), [母]{はは}が[弁当]{べんとう}を[作]{つく}ってくれました (my mother made me lunch), まりやさんに[写真]{しゃしん}をとってもらいました (I had Mariya take my photo). ～てくれる and ～てもらう also show you are grateful."
      ],
      builder:[
       {table:[["Verb","Subject","Direction","Polite"],["あげる","giver","away from me, or between others","さしあげる"],["くれる","giver","to me or my side","くださる"],["もらう","receiver","from anyone (giver に/から)","いただく"]]},
       "**My side.** Your family, and often your own group when you speak to outsiders, count as “your side” (ウチ). Gifts coming to them take くれる: [隣]{となり}の[人]{ひと}が[弟]{おとうと}にお[菓子]{かし}をくれました. Gifts you give them still take あげる.",
-      "**Particles.** Giver は/が, receiver に, thing を. With もらう, the giver is に or から; from an organisation, から is the usual choice: [会社]{かいしゃ}からボーナスをもらいました.",
+      "**Particles.** Giver は/が, receiver に, thing を. With もらう, the giver is に or から; from an organization, から is the usual choice: [会社]{かいしゃ}からボーナスをもらいました.",
       "**Polite forms.** さしあげる and いただく are humble ([[kenjougo]]); くださる is respectful ([[sonkeigo]]), with the irregular ます-form くださいます. やる is used for animals and plants (and casually for younger family); many people use あげる there too.",
-      "**Favours.** With ～てもらう, the helper takes に. With ～てあげる, the person keeps the verb’s own particle ([友達]{ともだち}を[手伝]{てつだ}う, [妹]{いもうと}に[読]{よ}む); verbs that hand something over can add に ([妹]{いもうと}に[本]{ほん}を[買]{か}ってあげる); otherwise use の ([友達]{ともだち}の[荷物]{にもつ}を[持]{も}ってあげる).",
+      "**Favors.** With ～てもらう, the helper takes に. With ～てあげる, the person keeps the verb’s own particle ([友達]{ともだち}を[手伝]{てつだ}う, [妹]{いもうと}に[読]{よ}む); verbs that hand something over can add に ([妹]{いもうと}に[本]{ほん}を[買]{か}ってあげる); otherwise use の ([友達]{ともだち}の[荷物]{にもつ}を[持]{も}ってあげる).",
       "**Requests**, from casual to very polite: ～てくれない？, ～てくれませんか, ～てもらえませんか, ～ていただけませんか.",
-      "**Offering help.** Say [持]{も}ちましょうか, not [持]{も}ってあげましょうか, which stresses the favour."
+      "**Offering help.** Say [持]{も}ちましょうか, not [持]{も}ってあげましょうか, which stresses the favor."
      ],
      pro:[
       "**Point of view.** Linguists group these as the three series of [授受表現]{じゅじゅひょうげん}: もらう, くれる and あげる. With もらう the subject is the receiver, and the speaker’s point of view is with the receiver. With くれる the subject is the giver, but the point of view is with the receiver, who must be on the speaker’s side (ウチ), so the giver must be outside it. With あげる the subject is the giver, the point of view is neutral or with the giver, and the receiver can’t be closer to the speaker than the giver is (Inaguma 2004). This is why ✗ [友達]{ともだち}が[私]{わたし}にあげた and ✗ [私]{わたし}が[友達]{ともだち}にくれた are impossible.",
       "**Difficulty.** An earlier error study cited by Inaguma (2004) (Sakamoto and Okada 1996) found that learners acquire あげる first, then もらう, then くれる. Inaguma’s own study of Korean-speaking learners found that ～てもらう and ～ていただく took especially long to acquire, and found no significant difference between もらう and くれる. Mistakes here are normal for a long time.",
-      "**～てあげる to the listener.** Inaguma (2004) notes that ～てあげる is not normally used towards the person you are talking to unless you are close, and cites Horiguchi (1983), who found that learners’ overuse of ～てあげる often sounds pushy. For superiors, humble forms such as お[持]{も}ちしましょうか are used (see {{polite-speech-basics}}).",
-      "**Honorific favours.** ～てくださる and ～ていただく describe favours from superiors: [先生]{せんせい}が[推薦状]{すいせんじょう}を[書]{か}いてくださいました / 先生に[推薦状]{すいせんじょう}を書いていただきました (The teacher wrote me a recommendation). ください itself is the command form of くださる.",
+      "**～てあげる to the listener.** Inaguma (2004) notes that ～てあげる is not normally used toward the person you are talking to unless you are close, and cites Horiguchi (1983), who found that learners’ overuse of ～てあげる often sounds pushy. For superiors, humble forms such as お[持]{も}ちしましょうか are used (see {{polite-speech-basics}}).",
+      "**Honorific favors.** ～てくださる and ～ていただく describe favors from superiors: [先生]{せんせい}が[推薦状]{すいせんじょう}を[書]{か}いてくださいました / 先生に[推薦状]{すいせんじょう}を書いていただきました (The teacher wrote me a recommendation). ください itself is the command form of くださる.",
       "**Causative + いただく.** You will hear ～させていただきます (“allow me to…”) everywhere in business Japanese. It combines the causative (Unit 7) with いただく, and style guides debate when it is overused."
      ]},
     related:["polite-speech-basics","keigo-system","te-form","requests-and-permission","potential-form"],
-    sources:[{t:"Tae Kim’s Guide to Learning Japanese: Giving and Receiving (あげる, くれる, もらう, やる, favours and requests)", url:"https://guidetojapanese.org/learn/grammar/favors"},{t:"稲熊美保 (2004) 「韓国人日本語学習者の授受表現の習得について」『国際開発研究フォーラム』26, Nagoya University repository", url:"https://nagoya.repo.nii.ac.jp/record/4712/files/02.pdf"}],
+    sources:[{t:"Tae Kim’s Guide to Learning Japanese: Giving and Receiving (あげる, くれる, もらう, やる, favors and requests)", url:"https://guidetojapanese.org/learn/grammar/favors"},{t:"稲熊美保 (2004) 「韓国人日本語学習者の授受表現の習得について」『国際開発研究フォーラム』26, Nagoya University repository", url:"https://nagoya.repo.nii.ac.jp/record/4712/files/02.pdf"}],
     checked:"2026-11"},
    {id:"te-shimau-te-oku", title:"～てしまう and ～ておく", aka:["te-shimau","te-oku","～ちゃう","～じゃう","～とく","～どく","shimau","oku"], tags:["japanese","grammar","n4","verbs"],
     summary:"Two て-form helpers: ～てしまう (finished completely, or regret) and ～ておく (done in advance, or left as it is), with their casual forms ～ちゃう and ～とく.",
@@ -1247,7 +1247,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Meaning.** The main verb しまう means “put away, finish”. As a helper it marks completion, and from there the sense of something irreversible and regrettable. Tae Kim presents “unintended action” as the main meaning and “finish completely” as a separate one; most learner grammars present both together, as in this unit.",
-      "**Rough forms.** ～ちまう / ～じまう are even more colloquial contractions of ～てしまう. Tae Kim says they call up the image of a rough, coarse speaker; learners should recognise them, not use them.",
+      "**Rough forms.** ～ちまう / ～じまう are even more colloquial contractions of ～てしまう. Tae Kim says they call up the image of a rough, coarse speaker; learners should recognize them, not use them.",
       "**Deliberately not doing.** ～ないでおく means choosing not to do something for now: [彼]{かれ}には[言]{い}わないでおこう (Let’s not tell him yet).",
       "**～ておく, ～てある and ～ている.** ～ておく is the purposeful action (someone does it, for later). ～てある describes the resulting state of a transitive verb’s action, often prepared for later: [窓]{まど}が[開]{あ}けてある (Unit 7, [[te-aru]]). ～ている with an intransitive verb describes a state with no implied doer: [窓]{まど}が[開]{あ}いている. See {{transitive-intransitive}}.",
       "**Spoken sounds.** In fast speech, ～ておく after a verb in で gives ～どく: [読]{よ}んでおく → 読んどく; ～てしまう after で gives ～じゃう: [死]{し}んでしまう → [死]{し}んじゃう."
@@ -1337,8 +1337,8 @@ ICA.addUnit({
    {id:"conditional-ba", term:"Conditional ば", def:"The ば-form ([行]{い}けば, [食]{た}べれば, [高]{たか}ければ, よければ, 行かなければ): if X (is true), Y, with the focus on the condition. Common in advice: どうすればいいですか.", codex:"conditionals-to-ba-tara-nara"},
    {id:"conditional-tara", term:"Conditional たら", def:"Plain past + ら ([行]{い}ったら, [雨]{あめ}だったら): if X, or once X has happened, Y. The most flexible conditional; requests and plans can follow it.", codex:"conditionals-to-ba-tara-nara"},
    {id:"conditional-nara", term:"Conditional なら", def:"Plain form or noun + なら ([行]{い}くなら, [学生]{がくせい}なら): if (it is the case that) X. Takes up a topic or what someone just said; the result can happen before the condition.", codex:"conditionals-to-ba-tara-nara"},
-   {id:"ageru", term:"あげる (give)", def:"To give, away from the speaker or between other people: [私]{わたし}は[友達]{ともだち}に[本]{ほん}をあげました. Never used for things coming to you. Polite: さしあげる. ～てあげる: do a favour for someone.", codex:"giving-and-receiving"},
-   {id:"kureru", term:"くれる (give to me)", def:"To give to the speaker or the speaker’s side (family, own group): [友達]{ともだち}が[本]{ほん}をくれました. Polite: くださる. ～てくれる: someone does a favour for you.", codex:"giving-and-receiving"},
+   {id:"ageru", term:"あげる (give)", def:"To give, away from the speaker or between other people: [私]{わたし}は[友達]{ともだち}に[本]{ほん}をあげました. Never used for things coming to you. Polite: さしあげる. ～てあげる: do a favor for someone.", codex:"giving-and-receiving"},
+   {id:"kureru", term:"くれる (give to me)", def:"To give to the speaker or the speaker’s side (family, own group): [友達]{ともだち}が[本]{ほん}をくれました. Polite: くださる. ～てくれる: someone does a favor for you.", codex:"giving-and-receiving"},
    {id:"morau", term:"もらう (receive)", def:"To receive; the receiver is the subject and the giver takes に or から: [友達]{ともだち}に[本]{ほん}をもらいました. Polite: いただく. ～てもらう: have someone do something for you.", codex:"giving-and-receiving"},
    {id:"te-shimau", term:"～てしまう", def:"て-form + しまう: the action is completely finished, or it happened with regret or by accident ([傘]{かさ}を[忘]{わす}れてしまいました). Casual: ～ちゃう / ～じゃう.", codex:"te-shimau-te-oku"},
    {id:"te-oku", term:"～ておく", def:"て-form + おく: do something in advance so it is ready for later ([予約]{よやく}しておきます), or leave something as it is. Casual: ～とく / ～どく.", codex:"te-shimau-te-oku"},
@@ -1528,9 +1528,9 @@ ICA.addUnit({
      {t:"[弟]{おとうと}に[本]{ほん}をもらいました。", why:"This means you received a book from your brother."},
      {t:"[弟]{おとうと}に[本]{ほん}をくださいました。", why:"くださる is the respectful form of くれる, so the direction is wrong, and it is too polite for your own brother."}
    ]},
-   {id:"e3u6-q30", lesson:"e3u6-l4", level:1, q:"Choose the particle this lesson teaches for an organisation: [市]{し}___[手紙]{てがみ}をもらいました。 (I got a letter from the city office.)", options:[
-     {t:"から", ok:true, why:"From an organisation, から is the usual choice and the one textbooks teach."},
-     {t:"に", why:"に is fine for a person who gives. With an organisation such as a city office or a company, から is the usual choice."},
+   {id:"e3u6-q30", lesson:"e3u6-l4", level:1, q:"Choose the particle this lesson teaches for an organization: [市]{し}___[手紙]{てがみ}をもらいました。 (I got a letter from the city office.)", options:[
+     {t:"から", ok:true, why:"From an organization, から is the usual choice and the one textbooks teach."},
+     {t:"に", why:"に is fine for a person who gives. With an organization such as a city office or a company, から is the usual choice."},
      {t:"が", why:"が would make the city the subject, but the subject of もらう is the receiver."},
      {t:"で", why:"で marks a place of action or a means, not the giver."}
    ]},
@@ -1541,34 +1541,34 @@ ICA.addUnit({
      {t:"[先生]{せんせい}が[辞書]{じしょ}をくださりました。", why:"くださる has an irregular ます-form: くださいます, くださいました."}
    ]},
    {id:"e3u6-q32", lesson:"e3u6-l4", level:2, q:"What does 「ふみこさんに[日本語]{にほんご}を[教]{おし}えてもらいました。」 mean?", options:[
-     {t:"Fumiko-san taught me Japanese.", ok:true, why:"～てもらう: I received the favour of Fumiko-san teaching me. The helper takes に, and the speaker sounds grateful."},
+     {t:"Fumiko-san taught me Japanese.", ok:true, why:"～てもらう: I received the favor of Fumiko-san teaching me. The helper takes に, and the speaker sounds grateful."},
      {t:"I taught Fumiko-san Japanese.", why:"That would be ふみこさんに日本語を[教]{おし}えてあげました."},
-     {t:"Fumiko-san was taught Japanese by someone.", why:"The subject of もらう is the receiver of the favour, which is the speaker here, not Fumiko-san."},
-     {t:"I asked Fumiko-san to teach me, but she refused.", why:"The sentence says the favour happened: もらいました is past and positive."}
+     {t:"Fumiko-san was taught Japanese by someone.", why:"The subject of もらう is the receiver of the favor, which is the speaker here, not Fumiko-san."},
+     {t:"I asked Fumiko-san to teach me, but she refused.", why:"The sentence says the favor happened: もらいました is past and positive."}
    ]},
    {id:"e3u6-q33", lesson:"e3u6-l4", level:3, q:"Mariya tells a friend that Toby helped her, and she wants to show she is grateful. Which sentence fits?", options:[
      {t:"トビーさんが[手伝]{てつだ}ってくれました。", ok:true, why:"～てくれる: someone did something for you, with gratitude."},
-     {t:"トビーさんが[手伝]{てつだ}ってあげました。", why:"～てあげる is for favours going away from you: this says Toby helped someone else."},
+     {t:"トビーさんが[手伝]{てつだ}ってあげました。", why:"～てあげる is for favors going away from you: this says Toby helped someone else."},
      {t:"トビーさんが[手伝]{てつだ}ってもらいました。", why:"With ～てもらう, the subject receives the help: this says Toby was helped."},
      {t:"トビーさんが[手伝]{てつだ}ってさしあげました。", why:"さしあげる is humble “give”, going away from Mariya: wrong direction."}
    ]},
    {id:"e3u6-q34", lesson:"e3u6-l4", level:2, q:"You are lost and want to ask a stranger, very politely, to tell you the way. Which do you say?", options:[
      {t:"すみません、[道]{みち}を[教]{おし}えていただけませんか。", ok:true, why:"～ていただけませんか is a very polite request, right for a stranger."},
      {t:"すみません、[道]{みち}を[教]{おし}えてくれない？", why:"～てくれない？ is casual, for friends and family."},
-     {t:"すみません、[道]{みち}を[教]{おし}えてあげませんか。", why:"～てあげる is a favour going away from you, so this asks the stranger to teach someone else."},
+     {t:"すみません、[道]{みち}を[教]{おし}えてあげませんか。", why:"～てあげる is a favor going away from you, so this asks the stranger to teach someone else."},
      {t:"すみません、[道]{みち}を[教]{おし}えてもらいますか。", why:"This asks whether the stranger will have someone teach them. Requests use ～てもらえませんか or ～ていただけませんか."}
    ]},
-   {id:"e3u6-q35", lesson:"e3u6-l4", level:3, q:"Your neighbour brought vegetables for you and your mother. Telling a friend, which verb do you use? [隣]{となり}の[人]{ひと}が[母]{はは}と[私]{わたし}に[野菜]{やさい}を___。", options:[
+   {id:"e3u6-q35", lesson:"e3u6-l4", level:3, q:"Your neighbor brought vegetables for you and your mother. Telling a friend, which verb do you use? [隣]{となり}の[人]{ひと}が[母]{はは}と[私]{わたし}に[野菜]{やさい}を___。", options:[
      {t:"くれました", ok:true, why:"The vegetables came to you and to your mother, who is on your side (ウチ). A gift coming to your side from an outsider takes くれる."},
      {t:"あげました", why:"あげる can’t describe a gift coming to you. Use くれました."},
      {t:"もらいました", why:"With もらう the receiver is the subject; this would need 母と[私]{わたし}は[隣]{となり}の人に[野菜]{やさい}をもらいました."},
      {t:"いただきました", why:"いただく is humble “receive”, with the receiver as the subject, so the sentence doesn’t fit."}
    ]},
    {id:"e3u6-q36", lesson:"e3u6-l4", level:2, q:"Cheska lent Rodrigo a dictionary. Neither is your family. Which sentence describes this?", options:[
-     {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}してあげました。", ok:true, why:"A favour between two other people: ～てあげる."},
+     {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}してあげました。", ok:true, why:"A favor between two other people: ～てあげる."},
      {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}してくれました。", why:"～てくれる needs the receiver to be you or your side. Rodrigo is neither."},
      {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}してもらいました。", why:"This means Cheska had Rodrigo lend her a dictionary: the opposite direction."},
-     {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}していただきました。", why:"いただく is humble “receive”: it would mean Cheska received the favour, the opposite direction."}
+     {t:"チェスカさんはロドリゴさんに[辞書]{じしょ}を[貸]{か}していただきました。", why:"いただく is humble “receive”: it would mean Cheska received the favor, the opposite direction."}
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e3u6-q37", lesson:"e3u6-l5", level:1, q:"How do you say “I must write (it)” politely, with [書]{か}く?", options:[

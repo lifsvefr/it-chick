@@ -103,7 +103,7 @@ function loadGIS(){
 function signIn(consent){
   return loadGIS().then(function(){ return new Promise(function(res, rej){
     var tc = google.accounts.oauth2.initTokenClient({client_id:ICA.GCID, scope:GSCOPE,
-      callback:function(r){ if (r.error) return rej(new Error(r.error === "access_denied" ? "Google sign-in was cancelled." : r.error));
+      callback:function(r){ if (r.error) return rej(new Error(r.error === "access_denied" ? "Google sign-in was canceled." : r.error));
         try { sessionStorage.setItem("itchick-gtok", JSON.stringify({tok:r.access_token, exp:Date.now() + (+r.expires_in || 3600)*1000})); } catch(e){}
         res(r.access_token); },
       error_callback:function(e){ rej(new Error(e && e.type === "popup_closed" ? "The Google window was closed." : "Google sign-in didn’t open. Allow pop-ups for this site and try again.")); }});
@@ -266,11 +266,11 @@ ICA.blocks = function(list){
     if (b.fix) return '<div class="callout fix"><b class="h">Textbook check</b>'+ICA.md(b.fix)+'</div>';
     if (b.code !== undefined){ var cid = "cb" + Math.random().toString(36).slice(2, 8); ICA.codes = ICA.codes || {}; ICA.codes[cid] = b.code;
       return '<figure class="codeblk"><figcaption><span>'+ICA.esc(b.label || ({html:"HTML", css:"CSS", js:"JavaScript", sh:"Command line", py:"Python", r:"R", sql:"SQL", txt:"Text"}[b.lang] || "Code"))+'</span><span class="cbtns">'+(b.weblab ? '<a href="'+ICA.base+'labs/web.html#'+ICA.esc(b.weblab)+'">Try in Web Lab</a>' : '')+(b.pylab ? '<a href="'+ICA.base+'labs/python.html#'+ICA.esc(b.pylab)+'">Try in Python Lab</a>' : '')+'<button type="button" data-copycode="'+cid+'">Copy</button></span></figcaption><pre><code class="lang-'+ICA.esc(b.lang || "txt")+'">'+ICA.esc(b.code)+'</code></pre>'+(b.cap ? '<p class="small muted">'+ICA.md(b.cap)+'</p>' : '')+'</figure>'; }
-    if (b.lab && /^kl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/kanji.html#'+ICA.esc(b.lab)+'"><b class="h">🀄 Practise in the Kanji Lab</b><span>'+ICA.md(b.t || "Daily spaced review")+' →</span></a>';
-    if (b.lab && /^dl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/data.html#'+ICA.esc(b.lab)+'"><b class="h">📈 Practise in the Data Lab</b><span>'+ICA.md(b.t || "Try it with real data")+' →</span></a>';
-    if (b.lab && /^cl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/cite.html#'+ICA.esc(b.lab)+'"><b class="h">📚 Practise in the Citation Lab</b><span>'+ICA.md(b.t || "Build a real reference")+' →</span></a>';
-    if (b.lab && /^pl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/python.html#'+ICA.esc(b.lab)+'"><b class="h">🐍 Practise in the Python Lab</b><span>'+ICA.md(b.t || "Try it for real")+' →</span></a>';
-    if (b.lab) return /^wl-/.test(b.lab) ? '<a class="callout labcall" href="'+ICA.base+'labs/web.html#'+ICA.esc(b.lab)+'"><b class="h">🌐 Practise in the Web Lab</b><span>'+ICA.md(b.t || "Try it live")+' →</span></a>' : '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practise in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
+    if (b.lab && /^kl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/kanji.html#'+ICA.esc(b.lab)+'"><b class="h">🀄 Practice in the Kanji Lab</b><span>'+ICA.md(b.t || "Daily spaced review")+' →</span></a>';
+    if (b.lab && /^dl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/data.html#'+ICA.esc(b.lab)+'"><b class="h">📈 Practice in the Data Lab</b><span>'+ICA.md(b.t || "Try it with real data")+' →</span></a>';
+    if (b.lab && /^cl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/cite.html#'+ICA.esc(b.lab)+'"><b class="h">📚 Practice in the Citation Lab</b><span>'+ICA.md(b.t || "Build a real reference")+' →</span></a>';
+    if (b.lab && /^pl-/.test(b.lab)) return '<a class="callout labcall" href="'+ICA.base+'labs/python.html#'+ICA.esc(b.lab)+'"><b class="h">🐍 Practice in the Python Lab</b><span>'+ICA.md(b.t || "Try it for real")+' →</span></a>';
+    if (b.lab) return /^wl-/.test(b.lab) ? '<a class="callout labcall" href="'+ICA.base+'labs/web.html#'+ICA.esc(b.lab)+'"><b class="h">🌐 Practice in the Web Lab</b><span>'+ICA.md(b.t || "Try it live")+' →</span></a>' : '<a class="callout labcall" href="'+ICA.base+'labs/formula.html#'+ICA.esc(b.lab)+'"><b class="h">🧮 Practice in the Formula Lab</b><span>'+ICA.md(b.t || "Try it on a real practice sheet")+' →</span></a>';
     if (b.fig){
       var vb = /viewBox="\s*[\d.-]+\s+[\d.-]+\s+([\d.]+)/.exec(b.fig), w = vb ? Math.round(+vb[1]*0.86) : 420;
       var fid = ICA.figs.push(b) - 1;

@@ -39,7 +39,7 @@ ICA.addUnit({
       {key:"Fixing the symptom without finding the cause is guessing. A method turns guessing into a short, orderly search."}
     ]},
     {h:"The six steps professionals use", body:[
-      "IT support staff around the world learn a standard method. CompTIA, an organisation that writes widely used IT certifications, includes it in its exam objectives. The current **CompTIA Tech+ (FC0-U71)** objectives list it as objective 1.4, “Explain the troubleshooting methodology”, in six steps (CompTIA’s A+ objectives use almost the same six steps):",
+      "IT support staff around the world learn a standard method. CompTIA, an organization that writes widely used IT certifications, includes it in its exam objectives. The current **CompTIA Tech+ (FC0-U71)** objectives list it as objective 1.4, “Explain the troubleshooting methodology”, in six steps (CompTIA’s A+ objectives use almost the same six steps):",
       {ol:[
         "**Identify the problem.**",
         "**Establish a theory of probable cause** (question the obvious). If applicable, research a knowledge base or the internet.",
@@ -48,7 +48,7 @@ ICA.addUnit({
         "**Verify full system functionality** and, if applicable, implement preventive measures.",
         "**Document** findings, lessons learned, actions and outcomes."
       ]},
-      {fig:'<svg viewBox="0 0 340 412"><defs><marker id="m71" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="10" y="10" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="29" text-anchor="middle">1 · Identify the problem</text><text class="s" x="123" y="46" text-anchor="middle">symptoms, what changed, reproduce</text><path class="d-ink" d="M123,57 L123,76" stroke-width="2" marker-end="url(#m71)"/><rect class="d-rose" x="10" y="78" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="97" text-anchor="middle">2 · Theory of probable cause</text><text class="s" x="123" y="114" text-anchor="middle">question the obvious, research</text><path class="d-ink" d="M123,125 L123,144" stroke-width="2" marker-end="url(#m71)"/><rect class="d-gold" x="10" y="146" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="165" text-anchor="middle">3 · Test the theory</text><text class="s" x="123" y="182" text-anchor="middle">one change at a time</text><path class="d-ink" d="M123,193 L123,212" stroke-width="2" marker-end="url(#m71)"/><rect class="d-sage" x="10" y="214" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="233" text-anchor="middle">4 · Plan and fix</text><text class="s" x="123" y="250" text-anchor="middle">check side effects, or escalate</text><path class="d-ink" d="M123,261 L123,280" stroke-width="2" marker-end="url(#m71)"/><rect class="d-lup" x="10" y="282" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="301" text-anchor="middle">5 · Verify, then prevent</text><text class="s" x="123" y="318" text-anchor="middle">does everything work now?</text><path class="d-ink" d="M123,329 L123,348" stroke-width="2" marker-end="url(#m71)"/><rect class="d-panel" x="10" y="350" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="369" text-anchor="middle">6 · Document</text><text class="s" x="123" y="386" text-anchor="middle">what you found, did, learned</text><path class="d-ink" d="M237,171 L316,171 L316,103 L240,103" stroke-width="2" fill="none" marker-end="url(#m71)"/><text class="s" x="276" y="124" text-anchor="middle">not</text><text class="s" x="276" y="139" text-anchor="middle">confirmed?</text><text class="s" x="276" y="154" text-anchor="middle">new theory</text></svg>', alt:"Six boxes stacked from top to bottom with arrows: 1 Identify the problem (symptoms, what changed, reproduce); 2 Theory of probable cause (question the obvious, research); 3 Test the theory (one change at a time); 4 Plan and fix (check side effects, or escalate); 5 Verify, then prevent; 6 Document. An arrow loops from step 3 back to step 2, labelled: not confirmed? new theory.", cap:"The six-step method. If a test doesn’t confirm your theory, go back to step 2 with a new one."},
+      {fig:'<svg viewBox="0 0 340 412"><defs><marker id="m71" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="10" y="10" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="29" text-anchor="middle">1 · Identify the problem</text><text class="s" x="123" y="46" text-anchor="middle">symptoms, what changed, reproduce</text><path class="d-ink" d="M123,57 L123,76" stroke-width="2" marker-end="url(#m71)"/><rect class="d-rose" x="10" y="78" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="97" text-anchor="middle">2 · Theory of probable cause</text><text class="s" x="123" y="114" text-anchor="middle">question the obvious, research</text><path class="d-ink" d="M123,125 L123,144" stroke-width="2" marker-end="url(#m71)"/><rect class="d-gold" x="10" y="146" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="165" text-anchor="middle">3 · Test the theory</text><text class="s" x="123" y="182" text-anchor="middle">one change at a time</text><path class="d-ink" d="M123,193 L123,212" stroke-width="2" marker-end="url(#m71)"/><rect class="d-sage" x="10" y="214" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="233" text-anchor="middle">4 · Plan and fix</text><text class="s" x="123" y="250" text-anchor="middle">check side effects, or escalate</text><path class="d-ink" d="M123,261 L123,280" stroke-width="2" marker-end="url(#m71)"/><rect class="d-lup" x="10" y="282" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="301" text-anchor="middle">5 · Verify, then prevent</text><text class="s" x="123" y="318" text-anchor="middle">does everything work now?</text><path class="d-ink" d="M123,329 L123,348" stroke-width="2" marker-end="url(#m71)"/><rect class="d-panel" x="10" y="350" width="226" height="46" rx="9" stroke-width="2"/><text x="123" y="369" text-anchor="middle">6 · Document</text><text class="s" x="123" y="386" text-anchor="middle">what you found, did, learned</text><path class="d-ink" d="M237,171 L316,171 L316,103 L240,103" stroke-width="2" fill="none" marker-end="url(#m71)"/><text class="s" x="276" y="124" text-anchor="middle">not</text><text class="s" x="276" y="139" text-anchor="middle">confirmed?</text><text class="s" x="276" y="154" text-anchor="middle">new theory</text></svg>', alt:"Six boxes stacked from top to bottom with arrows: 1 Identify the problem (symptoms, what changed, reproduce); 2 Theory of probable cause (question the obvious, research); 3 Test the theory (one change at a time); 4 Plan and fix (check side effects, or escalate); 5 Verify, then prevent; 6 Document. An arrow loops from step 3 back to step 2, labeled: not confirmed? new theory.", cap:"The six-step method. If a test doesn’t confirm your theory, go back to step 2 with a new one."},
       "In everyday words:",
       {table:[
         ["Step","In everyday words"],
@@ -122,7 +122,7 @@ ICA.addUnit({
       {t:"“My phone dies by lunchtime.”", b:0, why:"This is what the person notices. The cause could be an old battery, an app running constantly, or poor signal making the phone search for a network."},
       {t:"A video app is stuck running in the background and using the processor constantly.", b:1, why:"This explains why the battery drains and the phone feels warm. It’s a cause you can fix."},
       {t:"“The printer says it’s offline.”", b:0, why:"A message the user sees. Causes include the printer being on a different Wi-Fi network, being switched off, or a stuck queue."},
-      {t:"The printer joined the neighbour’s guest Wi-Fi instead of the home network.", b:1, why:"This explains the “offline” message: the laptop and printer are on different networks."},
+      {t:"The printer joined the neighbor’s guest Wi-Fi instead of the home network.", b:1, why:"This explains the “offline” message: the laptop and printer are on different networks."},
       {t:"“Everything is really slow today.”", b:0, why:"A symptom with many possible causes, from a big update downloading to a nearly full drive."},
       {t:"The USB-C cable only supports slow charging, so the laptop drains faster than it charges.", b:1, why:"A specific, testable cause: swapping the cable would confirm it."}
     ]},
@@ -167,7 +167,7 @@ ICA.addUnit({
        chromeos:["Open **Settings → About ChromeOS**.","Note the ChromeOS version. Select **Additional details** for the model and update channel.","Optional: search your apps for **Diagnostics**, which tests battery, CPU and memory."],
        phone:["iPhone: **Settings → General → About** shows the model name and iOS version.","Android: **Settings → About phone** shows the model and the Android version (sometimes under **Software information**). Menu names vary by maker."]
      }},
-     {t:"Practise capturing evidence", how:{
+     {t:"Practice capturing evidence", how:{
        win:["Screenshot: press [[kbd:Win]] + [[kbd:Shift]] + [[kbd:S]] and drag over the area.","Screen recording: open the **Snipping Tool** app and switch it to video recording mode."],
        mac:["Press [[kbd:Shift]] + [[kbd:Cmd]] + [[kbd:5]]. The toolbar lets you take a screenshot or record the screen."],
        chromeos:["Press [[kbd:Ctrl]] + Show windows key for a full screenshot.","For more options, including screen recording, press [[kbd:Shift]] + [[kbd:Ctrl]] + Show windows key."],
@@ -224,7 +224,7 @@ ICA.addUnit({
       "On Windows, the recovery environment offers more than safe mode: **Startup Repair**, **Uninstall updates** (useful when problems began straight after an update), **System Restore** and **Reset this PC** (Lesson 5). Microsoft says that if Windows fails to start properly several times in a row, it opens the recovery environment by itself. If your drive is encrypted with BitLocker, some tools ask for the BitLocker recovery key, so know where yours is saved (often in your Microsoft account)."
     ]},
     {h:"Why is it slow? Diagnose before you fix", body:[
-      "“Slow” is a symptom with many causes. Buying a new device without diagnosing first is like buying new tyres when the handbrake is on. Look for clues:",
+      "“Slow” is a symptom with many causes. Buying a new device without diagnosing first is like buying new tires when the handbrake is on. Look for clues:",
       {table:[
         ["Clue","Likely cause","How to check"],
         ["Slow for the first few minutes after turning on","Too many [[startup-apps|startup apps]]","Windows: **Settings → Apps → Startup**. Mac: **System Settings → General → Login Items & Extensions**"],
@@ -301,7 +301,7 @@ ICA.addUnit({
       ["Fan roaring, bottom of the laptop hot, slows during long video exports","Heat: the device is slowing itself down to cool off","Devices reduce speed when they get too hot. Check the vents and use a hard surface."],
       ["Only web pages are slow; offline apps are quick","The network, not the computer","If the device is fast offline, the bottleneck is the connection."],
       ["Storage shows 1 GB free; updates keep failing","Storage almost full","With no free space, temporary files and updates have nowhere to go."],
-      ["Slow for an afternoon right after a major update","Normal background work, such as file indexing","Systems often re-index and optimise after a big update. Waiting is usually the fix."]
+      ["Slow for an afternoon right after a major update","Normal background work, such as file indexing","Systems often re-index and optimize after a big update. Waiting is usually the fix."]
     ]},
     {id:"t1u7-l2-x5", type:"mcq", q:"Every device in Fatima’s flat shows “connected, no internet”. What does “connected” tell her?", options:[
       {t:"The devices reached the router; the problem is further along", ok:true, why:"Right. “Connected” describes the Wi-Fi link to the router. “No internet” means the router isn’t getting through, so the problem is the router, modem or provider. She should power-cycle the router and modem, then check for an outage."},
@@ -326,7 +326,7 @@ ICA.addUnit({
    ],
    apply:{intro:"Get familiar with these tools while everything works, so you aren’t learning them in a panic. You don’t need to restart into safe mode unless you want to.", tasks:[
      {t:"Review your startup apps", how:{
-       win:["Open **Start → Settings → Apps → Startup** (or open Task Manager with [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:Esc]] and choose **Startup apps**).","Look at each app set to **On**. Turn off any you don’t need the moment you sign in. This doesn’t uninstall them.","Leave security software and anything you don’t recognise alone; look up unfamiliar names on official sites first."],
+       win:["Open **Start → Settings → Apps → Startup** (or open Task Manager with [[kbd:Ctrl]] + [[kbd:Shift]] + [[kbd:Esc]] and choose **Startup apps**).","Look at each app set to **On**. Turn off any you don’t need the moment you sign in. This doesn’t uninstall them.","Leave security software and anything you don’t recognize alone; look up unfamiliar names on official sites first."],
        mac:["Open **Apple menu → System Settings → General → Login Items & Extensions**.","Under the list of items that open at login, select any you don’t need and click the **Remove** button. This only stops them opening automatically."],
        chromeos:["Chromebooks start few apps automatically. Instead, open Chrome’s **⋮ menu → Extensions → Manage Extensions** and turn off any extensions you don’t use."],
        phone:["Phones manage startup themselves. Instead, check **Settings → Battery** (iPhone and Android) for apps using a lot of battery in the background, and consider removing ones you don’t use."]
@@ -335,7 +335,7 @@ ICA.addUnit({
        win:["Open **Settings → System → Recovery** and find **Advanced startup**. Don’t press Restart now unless you’ve saved your work.","Find your BitLocker recovery key if your device is encrypted: Microsoft accounts usually store it online. Note where it is."],
        mac:["Choose **Apple menu → About This Mac** and note whether it lists a **Chip** (Apple silicon) or a **Processor** (Intel). Write down the matching safe-mode steps from this lesson."],
        chromeos:["Write down the hard reset steps: turn off, hold Refresh, tap Power. Note that it can delete some Downloads files."],
-       phone:["iPhone: practise the force-restart sequence only if your phone is backed up; otherwise just note the steps.","Android: search your phone maker’s support site for “safe mode” plus your model, and note the steps."]
+       phone:["iPhone: practice the force-restart sequence only if your phone is backed up; otherwise just note the steps.","Android: search your phone maker’s support site for “safe mode” plus your model, and note the steps."]
      }},
      {t:"Prepare for an internet outage", how:["Find your router and modem (they may be one box). Note which cables go where; a photo helps.","Find your provider’s outage or status page and app, and bookmark it on your phone so you can check it on mobile data.","Write the power-cycle order in your troubleshooting log: router off, modem off, wait 30 seconds, modem on, wait, router on."]}
    ], proof:"A shorter list of startup apps, your device’s safe-mode or recovery route written in your log, and your provider’s status page saved on your phone."},
@@ -504,7 +504,7 @@ ICA.addUnit({
    apply:{intro:"Find the repair tools before you need them. Look, but don’t press reset or clear storage unless you’ve checked what you’d lose.", tasks:[
      {t:"Find the repair and reset options for one app", how:{
        win:["Open **Start → Settings → Apps → Installed apps**.","Find an app from the Microsoft Store (such as Calculator or Photos), select **⋯ → Advanced options**.","Note the **Repair** and **Reset** buttons and what Windows says each one does. Close without pressing them."],
-       mac:["Open **Finder → Applications**. Note which apps came from the App Store (you can reinstall them from your App Store purchases) and which from a developer’s site.","For a stuck app, practise the Force Quit window: [[kbd:Option]] + [[kbd:Cmd]] + [[kbd:Esc]], then close it without quitting anything."],
+       mac:["Open **Finder → Applications**. Note which apps came from the App Store (you can reinstall them from your App Store purchases) and which from a developer’s site.","For a stuck app, practice the Force Quit window: [[kbd:Option]] + [[kbd:Cmd]] + [[kbd:Esc]], then close it without quitting anything."],
        chromeos:["Open **Settings → Apps → Manage your apps**, pick an app and see its options (some Android apps on Chromebooks show **More settings and permissions**, with storage controls)."],
        phone:["iPhone: open **Settings → General → iPhone Storage**, tap an app, and note **Offload App** (keeps data) and **Delete App** (removes data). Don’t tap either now.","Android: open **Settings → Apps**, pick an app, tap **Storage & cache** (names vary), and note **Clear cache** and **Clear storage**."]
      }},
@@ -557,7 +557,7 @@ ICA.addUnit({
       ]},
       "To remove a device: on Windows, **Settings → Bluetooth & devices → Devices**, then the device’s **More options → Remove device**. On a Mac, **System Settings → Bluetooth**, then the info button next to the device and **Forget This Device**. On an iPhone, **Settings → Bluetooth**, the info button, **Forget This Device**. On Android, **Settings → Connected devices** (names vary), the settings icon next to the device, then **Forget** or **Unpair**.",
       {tip:"Apple notes that when you forget an accessory on one Apple device, it’s unpaired on all your devices signed in to the same Apple Account. Re-pair it on the one you want to use."},
-      "Also check the basics: Bluetooth switched on, airplane mode off, and on Windows laptops any physical wireless switch. If Bluetooth itself is missing or greyed out on Windows, the Bluetooth adapter’s [[driver]] may need updating (see the last section)."
+      "Also check the basics: Bluetooth switched on, airplane mode off, and on Windows laptops any physical wireless switch. If Bluetooth itself is missing or grayed out on Windows, the Bluetooth adapter’s [[driver]] may need updating (see the last section)."
     ]},
     {h:"Microphone and camera in video calls", body:[
       "When people can’t hear or see you, work down the chain in the diagram. The most common causes, roughly in order of how often they catch people out:",
@@ -600,7 +600,7 @@ ICA.addUnit({
         ["Video","Only if the port, cable and any adapter support DisplayPort Alt Mode or Thunderbolt"],
         ["Thunderbolt","Uses the same connector, with its own cables and ports for the highest speeds"]
       ]},
-      "The USB Implementers Forum (USB-IF), which manages the USB standards, requires every certified USB-C to USB-C cable to be labelled with its power rating, 60 W or 240 W, and every cable faster than USB 2.0 to show its data rate. Cheap or unbranded cables may not be certified at all.",
+      "The USB Implementers Forum (USB-IF), which manages the USB standards, requires every certified USB-C to USB-C cable to be labeled with its power rating, 60 W or 240 W, and every cable faster than USB 2.0 to show its data rate. Cheap or unbranded cables may not be certified at all.",
       {table:[
         ["Symptom","Likely cable or charger cause"],
         ["Laptop charges slowly or says “slow charger”","A charger with too few watts, or a cable not rated for the power"],
@@ -611,7 +611,7 @@ ICA.addUnit({
       {key:"When a USB-C accessory misbehaves, swap the cable first. Use the cable that came with the device, or one whose label or packaging lists the speed and wattage you need."}
     ]},
     {h:"Keyboards, mice and drivers", body:[
-      "For wireless keyboards and mice, check batteries first, then the connection: a Bluetooth link (previous section) or a small USB receiver (try another port, and plug it in directly rather than through a hub). For a mouse that skips, try another surface. For a keyboard that types the wrong symbols (such as `@` where you expect `\"`), the **keyboard layout or language** setting has usually changed: on Windows look for the language abbreviation near the clock, on a Mac the input source menu in the menu bar. Also check keys that change behaviour, such as Num Lock and Fn Lock.",
+      "For wireless keyboards and mice, check batteries first, then the connection: a Bluetooth link (previous section) or a small USB receiver (try another port, and plug it in directly rather than through a hub). For a mouse that skips, try another surface. For a keyboard that types the wrong symbols (such as `@` where you expect `\"`), the **keyboard layout or language** setting has usually changed: on Windows look for the language abbreviation near the clock, on a Mac the input source menu in the menu bar. Also check keys that change behavior, such as Num Lock and Fn Lock.",
       "A [[driver]] is the small piece of software that lets the operating system talk to a particular piece of hardware. A [[driver-update|driver update]] can fix a problem, and occasionally cause one:",
       {list:[
         "**Windows:** Windows Update installs most drivers automatically. Extra driver updates appear in **Settings → Windows Update → Advanced options → Optional updates**. If Windows Update has none, Microsoft says to check the device maker’s website. If a problem began right after a driver update, **Device Manager** can roll it back (Microsoft gives this step for display problems).",
@@ -684,7 +684,7 @@ ICA.addUnit({
        phone:["iPhone: **Settings → Bluetooth**, info button, **Forget This Device**.","Android: **Settings → Connected devices** (names vary), settings icon next to a device, **Forget** or **Unpair**."]
      }},
      {t:"Sort your cables", how:["Gather your USB-C cables and chargers. Look for printed ratings (such as 60W or 240W, or a speed such as 10Gbps or 40Gbps) on the cable, plug or packaging.","Note each charger’s wattage, printed in small text on it.","Label the cable that came with each device, and set aside any that only charge slowly or don’t carry data."]}
-   ], proof:"You’ve checked microphone and camera permissions and tested your microphone, removed old Bluetooth devices, and labelled your cables by what they can do."},
+   ], proof:"You’ve checked microphone and camera permissions and tested your microphone, removed old Bluetooth devices, and labeled your cables by what they can do."},
    read:[
      {book:"wss", where:"Chapter 1, Section 1.2 “Computer Hardware and Networks”: “Personal Computers and Devices” (peripherals)"},
      {book:"ics", where:"Background reading: Chapter 6, Section 6.1 “What Is an Operating System?” (how the operating system manages hardware such as accessories)"}
@@ -788,7 +788,7 @@ ICA.addUnit({
         "**Your legal rights:** many countries give buyers rights over faulty goods regardless of any warranty. In the EU, for example, you always have a minimum **2-year legal guarantee** from the seller, and a shop’s or maker’s extra guarantee can’t reduce it. Check your own country’s consumer rights agency.",
         "**Extended warranties and insurance:** read what they cover (accidental damage? batteries?) before paying."
       ]},
-      "Go to a repair shop (the maker’s, an authorised one, or an independent one with good reviews) for physical damage, a swollen battery, liquid, a failing drive, or when the method has run out of theories.",
+      "Go to a repair shop (the maker’s, an authorized one, or an independent one with good reviews) for physical damage, a swollen battery, liquid, a failing drive, or when the method has run out of theories.",
       "A [[factory-reset|factory reset]] erases your data, settings and apps and returns the device to how it left the factory. It fixes stubborn software problems and is essential before selling a device, but it’s the **last resort**:",
       {table:[
         ["Device","Where it is"],
@@ -810,7 +810,7 @@ ICA.addUnit({
       "\n", {t:"Error code: 0x80070005", flag:false, why:"Real error codes look like this, and scammers copy them to seem convincing. A code alone isn’t a sign either way."},
       "\n", {t:"A technician will guide you through the payment of the unlock fee.", flag:true, why:"Payment to “unlock” a device is the scammer’s goal."}
     ], why:"Close the browser (force quit it if needed), don’t restore the session, and run a scan with her built-in security app if she’s worried."},
-    {id:"t1u7-l5-x2", type:"spot", q:"Oluwaseun receives this email. He doesn’t recognise the company and doesn’t remember buying any protection plan. Tap the warning signs.", ask:"is a warning sign", parts:[
+    {id:"t1u7-l5-x2", type:"spot", q:"Oluwaseun receives this email. He doesn’t recognize the company and doesn’t remember buying any protection plan. Tap the warning signs.", ask:"is a warning sign", parts:[
       "From: ", {t:"Tech Support Billing <billing@pc-careplus-renew.com>", flag:true, why:"A company he’s never heard of, on a domain unrelated to any service he uses."},
       "\nSubject: ", {t:"Your 3-year protection plan has renewed: $399.99", flag:true, why:"A large, surprise charge is designed to alarm him into calling. If he never bought it, it’s bait."},
       "\n\nDear customer, ", {t:"thank you for being a valued member.", flag:false, why:"Polite filler appears in real and fake emails alike. It isn’t a sign by itself."},
@@ -915,7 +915,7 @@ ICA.addUnit({
     ]},
     {id:"t1u7-cp07", lesson:"t1u7-l5", level:2, q:"Bea writes to her help desk: “Laptop problem. Spreadsheet app crashes when I open a big file. I restarted.” What would help the helper most if she added it?", options:[
       {t:"Her account password, so they can sign in and look for themselves", why:"Never put passwords in a help request. Real support staff don’t need them in writing."},
-      {t:"The exact error, the app and system versions, and what changed recently", ok:true, why:"These are the Lesson 1 notes a helper needs. Exact messages, versions and recent changes point towards the cause."},
+      {t:"The exact error, the app and system versions, and what changed recently", ok:true, why:"These are the Lesson 1 notes a helper needs. Exact messages, versions and recent changes point toward the cause."},
       {t:"A sentence saying it is very urgent", why:"Urgency doesn’t help them find the cause. Specific details do."},
       {t:"The names of everyone in her team", why:"That doesn’t help diagnose the problem, and it shares personal details for no reason."}
     ]},
@@ -952,7 +952,7 @@ ICA.addUnit({
   ],
   codex:[
    {id:"troubleshooting-method", title:"The troubleshooting method", aka:["CompTIA troubleshooting methodology","six steps","problem solving"], tags:["troubleshooting","basics"],
-    summary:"Six steps for finding the real cause of a problem and fixing it for good: identify, theorise, test, plan and fix, verify, document.",
+    summary:"Six steps for finding the real cause of a problem and fixing it for good: identify, theorize, test, plan and fix, verify, document.",
     levels:{
      starter:[
       "When something goes wrong with a device, it’s tempting to try random fixes. A method is faster and safer. IT professionals learn six steps:",
@@ -968,7 +968,7 @@ ICA.addUnit({
      ],
      pro:[
       "Professionals add structure to step 1. They separate **multiple problems** and tackle them one at a time, define the **scope** (one user or many, one device or all), and look for **recent changes**: updates, new software, configuration changes, moved equipment. A CompTIA article on the method also lists gathering information from log files and error messages, questioning users and duplicating the problem.",
-      {list:["**Bisection:** when many things could be at fault, test half of them at once (for example, disable half the browser extensions). Whichever half contains the fault gets halved again. This finds one culprit among many in very few tests.","**Layered approaches:** for networks, work from the bottom up (cable, Wi-Fi link, address, router, DNS, website) or from the top down. Either way, test layers in order rather than jumping around.","**Backups before changes:** any change that might lose data comes after a confirmed backup.","**Change control:** in organisations, fixes that affect many people are planned, approved and scheduled, with a way to roll back.","**Root-cause analysis:** after an incident, ask “why?” repeatedly until you reach a cause you can prevent (the update failed → the disk was full → a log file grew without limit)."]},
+      {list:["**Bisection:** when many things could be at fault, test half of them at once (for example, disable half the browser extensions). Whichever half contains the fault gets halved again. This finds one culprit among many in very few tests.","**Layered approaches:** for networks, work from the bottom up (cable, Wi-Fi link, address, router, DNS, website) or from the top down. Either way, test layers in order rather than jumping around.","**Backups before changes:** any change that might lose data comes after a confirmed backup.","**Change control:** in organizations, fixes that affect many people are planned, approved and scheduled, with a way to roll back.","**Root-cause analysis:** after an incident, ask “why?” repeatedly until you reach a cause you can prevent (the update failed → the disk was full → a log file grew without limit)."]},
       "Documentation is what makes a team better over time: a searchable knowledge base of past problems and fixes means the next person solves it in minutes.",
       {tip:"Keep notes even for problems you solve alone. Your own past notes are often the fastest search you can do."}
      ]
@@ -1045,7 +1045,7 @@ ICA.addUnit({
       {ex:"Clue: the laptop is fine for ten minutes, then crawls while exporting a video, and the fan roars.\nTheory: heat. Test: use it on a desk, not a duvet, with the vents clear.\nResult: the export runs at full speed. Prevention: keep it on hard surfaces and clean the vents.", label:"Worked example"}
      ],
      pro:[
-      {list:["**Thermal throttling:** processors reduce their speed when they get too hot. Laptops on beds, dusty fans and very hot rooms cause it. A device that is fast for a minute and then slows during a long task is the classic pattern.","**Memory pressure:** when RAM is full, the system moves data to storage (swapping or paging), which is far slower. macOS’s Memory Pressure graph and Windows’ committed memory figures show this better than raw usage.","**Storage health:** an old hard disk at 100% “Disk” in Task Manager makes everything wait. A failing drive can also be slow; back up before investigating.","**Battery ageing on phones:** some phones manage performance when an ageing battery can’t supply peak power. iPhone shows battery health in **Settings → Battery**.","**Malware:** possible but rarer than the causes above. A full scan with the built-in security tool rules it out.","**Measure before and after:** time the startup or a task before a change and after it. Otherwise “it feels faster” may just be a fresh restart."]},
+      {list:["**Thermal throttling:** processors reduce their speed when they get too hot. Laptops on beds, dusty fans and very hot rooms cause it. A device that is fast for a minute and then slows during a long task is the classic pattern.","**Memory pressure:** when RAM is full, the system moves data to storage (swapping or paging), which is far slower. macOS’s Memory Pressure graph and Windows’ committed memory figures show this better than raw usage.","**Storage health:** an old hard disk at 100% “Disk” in Task Manager makes everything wait. A failing drive can also be slow; back up before investigating.","**Battery aging on phones:** some phones manage performance when an aging battery can’t supply peak power. iPhone shows battery health in **Settings → Battery**.","**Malware:** possible but rarer than the causes above. A full scan with the built-in security tool rules it out.","**Measure before and after:** time the startup or a task before a change and after it. Otherwise “it feels faster” may just be a fresh restart."]},
       "When nothing is wrong and the device is simply old, the honest answer may be that today’s apps need more memory or a faster drive than it has. Upgrading RAM or storage (where possible) or replacing the device can then be the right call."
      ]
     },
@@ -1119,7 +1119,7 @@ ICA.addUnit({
       "If no app on your device can open a format, a web app from the same maker often can, or the sender can export a copy in a common format."
      ],
      pro:[
-      {list:["**Check the real type:** the extension is only a hint. Apps can look at the file’s first bytes (its signature) to see what it really is. If a “PDF” opens in a text editor as gibberish starting with `PK`, it’s actually a ZIP-based file such as a `.docx`.","**Version mismatches:** files made in newer app versions may use features older versions can’t read. Ask the sender to save in an older or open format.","**Damaged files:** the cause can be an interrupted save, a crash mid-write (the ICS textbook’s Section 6.6 explains why file systems use journaling to limit this), a failing drive or an incomplete transfer. Try the app’s own repair option (many office apps have **Open and Repair**), then version history or a backup.","**Encryption and rights management:** some workplace files can only be opened by signed-in members of the organisation.","**Blocked by the system:** Windows may block files downloaded from the internet, and macOS may block apps from unidentified developers. These are security features; only override them for files you trust."]},
+      {list:["**Check the real type:** the extension is only a hint. Apps can look at the file’s first bytes (its signature) to see what it really is. If a “PDF” opens in a text editor as gibberish starting with `PK`, it’s actually a ZIP-based file such as a `.docx`.","**Version mismatches:** files made in newer app versions may use features older versions can’t read. Ask the sender to save in an older or open format.","**Damaged files:** the cause can be an interrupted save, a crash mid-write (the ICS textbook’s Section 6.6 explains why file systems use journaling to limit this), a failing drive or an incomplete transfer. Try the app’s own repair option (many office apps have **Open and Repair**), then version history or a backup.","**Encryption and rights management:** some workplace files can only be opened by signed-in members of the organization.","**Blocked by the system:** Windows may block files downloaded from the internet, and macOS may block apps from unidentified developers. These are security features; only override them for files you trust."]},
       {tip:"If a file won’t open for you but opens for the sender, ask them to export a PDF. It’s the most widely readable format for documents you only need to read."}
      ]
     },
@@ -1135,7 +1135,7 @@ ICA.addUnit({
       "Read the message: it tells you which one. Deleting apps won’t help a full cloud account, and buying cloud storage won’t help a full phone.",
       "Unit 1 showed where to see device storage and what is safe to remove. Before deleting photos or videos, make sure they’re backed up somewhere else.",
       "If a cloud account is full, the fix is in that account: delete or move files there, empty its own trash, or upgrade the plan.",
-      {warn:"Never delete system files or folders you don’t recognise to make space."}
+      {warn:"Never delete system files or folders you don’t recognize to make space."}
      ],
      builder:[
       "Common hidden space users on a device:",
@@ -1145,7 +1145,7 @@ ICA.addUnit({
       "Clean up in order of size and safety: empty the trash, remove big videos you’ve backed up, clear offline downloads you’ve finished with, then uninstall apps you don’t use. Check the storage screen after each step so you can see what made the difference."
      ],
      pro:[
-      {list:["**System data / Other:** caches, logs, temporary files and app data appear under labels like “System Data”. Some of it shrinks on its own when space runs low; a restart can also release temporary files.","**Free-space headroom:** systems need working space for updates, virtual memory and temporary files. Updates can need several gigabytes free, so keep a comfortable margin rather than running to zero.","**Files-on-demand:** cloud apps can keep files online-only to save space ({{files-on-demand}}). Freeing up space this way doesn’t delete the cloud copy.","**Large-file hunts:** sort a folder by size in File Explorer or Finder to find the biggest files fast.","**Phone photo optimisation:** settings such as storing full-resolution originals only in the cloud save device space but depend on the cloud copy, so the cloud quota and backups matter more."]},
+      {list:["**System data / Other:** caches, logs, temporary files and app data appear under labels like “System Data”. Some of it shrinks on its own when space runs low; a restart can also release temporary files.","**Free-space headroom:** systems need working space for updates, virtual memory and temporary files. Updates can need several gigabytes free, so keep a comfortable margin rather than running to zero.","**Files-on-demand:** cloud apps can keep files online-only to save space ({{files-on-demand}}). Freeing up space this way doesn’t delete the cloud copy.","**Large-file hunts:** sort a folder by size in File Explorer or Finder to find the biggest files fast.","**Phone photo optimization:** settings such as storing full-resolution originals only in the cloud save device space but depend on the cloud copy, so the cloud quota and backups matter more."]},
       "**Mailboxes:** large attachments in old email are a common cause of a full mailbox or account. Search for messages with big attachments and delete or save them elsewhere.",
       "Shared family or team plans pool one quota between several people, so one person’s large backup can fill everyone’s space; the plan’s storage page usually shows who uses what.",
       {tip:"If a device fills up again quickly after cleaning, look for a cause: a messaging app saving every video, an app writing logs, or a backup that keeps growing."}
@@ -1218,7 +1218,7 @@ ICA.addUnit({
       "For calls in a browser, the site’s permission is separate from the system one. Select the site information icon at the left of the address bar, set **Microphone** and **Camera** to **Allow**, then reload the page. If you once clicked **Block** on the browser’s prompt, it won’t ask again until you change this."
      ],
      pro:[
-      {list:["**Exclusive or competing use:** two call apps open at once can fight over the same device. Close the other one.","**Bluetooth headsets:** using the headset’s microphone switches many headsets to a lower-quality call mode. If audio quality drops when the mic is on, that’s expected behaviour, not a fault; a wired or USB headset avoids it.","**Echo and feedback:** speakers too close to the microphone feed the other person’s voice back. Headphones fix it.","**Drivers:** if Windows doesn’t detect a microphone at all, Microsoft suggests uninstalling the audio device in Device Manager (with **Attempt to remove the driver for this device**), restarting, and using **Scan for hardware changes**.","**Work and school devices:** organisations can block microphones or cameras by policy. If a permission is greyed out, ask IT.","**Privacy:** the permission system exists to protect you. Grant access only to apps that need it, and review the list now and then ({{app-permissions}})."]},
+      {list:["**Exclusive or competing use:** two call apps open at once can fight over the same device. Close the other one.","**Bluetooth headsets:** using the headset’s microphone switches many headsets to a lower-quality call mode. If audio quality drops when the mic is on, that’s expected behavior, not a fault; a wired or USB headset avoids it.","**Echo and feedback:** speakers too close to the microphone feed the other person’s voice back. Headphones fix it.","**Drivers:** if Windows doesn’t detect a microphone at all, Microsoft suggests uninstalling the audio device in Device Manager (with **Attempt to remove the driver for this device**), restarting, and using **Scan for hardware changes**.","**Work and school devices:** organizations can block microphones or cameras by policy. If a permission is grayed out, ask IT.","**Privacy:** the permission system exists to protect you. Grant access only to apps that need it, and review the list now and then ({{app-permissions}})."]},
       "**Hardware switches and keys:** some laptops have a microphone mute key with its own light, and some webcams have a physical shutter or switch that no setting can override.",
       {tip:"If others hear you faintly or robotically, check the input volume and move closer to the microphone before suspecting the network. If they hear you breaking up while video freezes too, the network is the more likely cause."}
      ]
@@ -1237,7 +1237,7 @@ ICA.addUnit({
       {tip:"Label your cables. A strip of tape saying “fast data” or “charge only” saves a lot of guessing."}
      ],
      builder:[
-      {table:[["Capability","What to look for"],["Data speed","USB 2.0 is 480 Mbit/s. Faster cables are labelled 5, 10, 20, 40 or 80 Gbps"],["Power","Certified USB-C to USB-C cables are labelled **60W** or **240W**. The charger must also supply enough watts"],["Video","DisplayPort Alt Mode or Thunderbolt support in the port, cable and adapter"],["Thunderbolt","Thunderbolt 3, 4 and 5 use the USB-C shape; look for the lightning symbol on ports and cables"]]},
+      {table:[["Capability","What to look for"],["Data speed","USB 2.0 is 480 Mbit/s. Faster cables are labeled 5, 10, 20, 40 or 80 Gbps"],["Power","Certified USB-C to USB-C cables are labeled **60W** or **240W**. The charger must also supply enough watts"],["Video","DisplayPort Alt Mode or Thunderbolt support in the port, cable and adapter"],["Thunderbolt","Thunderbolt 3, 4 and 5 use the USB-C shape; look for the lightning symbol on ports and cables"]]},
       "The USB Implementers Forum (USB-IF) certifies cables. Its rules require every certified USB-C to USB-C cable to carry a power label (60 W or 240 W), and every cable faster than USB 2.0 to show its data rate. Uncertified cables may have no reliable labels at all.",
       "Apple notes that a USB-C or Thunderbolt adapter for a display must be compliant with DisplayPort Alt Mode, Thunderbolt 3 or Thunderbolt 4, and must support the display’s resolution and refresh rate.",
       "Ports can be marked too: a lightning symbol for Thunderbolt, a battery or plug symbol for charging, a display symbol for video. Not every maker marks them, so the specification sheet is the reliable check.",
@@ -1271,7 +1271,7 @@ ICA.addUnit({
       "Answer support staff’s questions directly, even the obvious ones (“have you restarted?”). They follow the same method you do, and each answer rules something out."
      ],
      pro:[
-      {list:["**Warranties:** the maker’s warranty is checked on its official site, usually with the serial number. Many countries also give legal rights: in the EU, buyers always have a minimum 2-year legal guarantee from the seller, which extra commercial guarantees can’t reduce, and if a fault appears in the first year the seller must prove it wasn’t there at delivery.","**Choosing a repairer:** the maker’s service, an authorised provider, or a reputable independent shop. Ask for a quote and an estimate of the time, and whether data is likely to survive.","**Before handing over a device:** back up and test the restore; note what you’ve tried; follow the repairer’s instructions about passcodes and tracking features rather than sharing account passwords.","**Escalating at work:** use the organisation’s ticket system, include your notes, and give a business impact (“can’t take payments”) so it’s prioritised correctly.","**Remote support:** legitimate when you started the contact through a channel you found yourself, you can watch, and you can end the session ({{tech-support-scams}})."]},
+      {list:["**Warranties:** the maker’s warranty is checked on its official site, usually with the serial number. Many countries also give legal rights: in the EU, buyers always have a minimum 2-year legal guarantee from the seller, which extra commercial guarantees can’t reduce, and if a fault appears in the first year the seller must prove it wasn’t there at delivery.","**Choosing a repairer:** the maker’s service, an authorized provider, or a reputable independent shop. Ask for a quote and an estimate of the time, and whether data is likely to survive.","**Before handing over a device:** back up and test the restore; note what you’ve tried; follow the repairer’s instructions about passcodes and tracking features rather than sharing account passwords.","**Escalating at work:** use the organization’s ticket system, include your notes, and give a business impact (“can’t take payments”) so it’s prioritized correctly.","**Remote support:** legitimate when you started the contact through a channel you found yourself, you can watch, and you can end the session ({{tech-support-scams}})."]},
       {tip:"Keep a short list of official support links and phone numbers for your devices and accounts, saved before you need them. Then you never have to search for “support number” in a panic, which is exactly where fake support adverts wait."}
      ]
     },
@@ -1319,7 +1319,7 @@ ICA.addUnit({
       "Apple says erasing a Mac removes your data, settings and apps but keeps the installed macOS, and asks for your Mac login password and Apple Account password during the process."
      ],
      pro:[
-      {list:["**Account locks:** Android phones ask for the Google Account that was on them after a reset; Google suggests confirming you know the username and password and waiting 24 hours after changing it. Apple devices use Activation Lock tied to the Apple Account. Without the right credentials, a reset device may not be usable.","**Encryption keys:** an encrypted Windows PC may ask for its BitLocker recovery key during recovery or reset; know where it’s stored.","**Mac before macOS Monterey, or without T2/Apple silicon:** erasing uses macOS Recovery and Disk Utility instead.","**Data erasure for disposal:** Microsoft notes that **Remove everything** with **Clean data** makes recovery harder but doesn’t meet government or industry data-erasure standards. For sensitive data, follow your organisation’s rules.","**After a reset:** restore files from your backup, but reinstall apps one at a time rather than restoring everything at once, or you may restore the problem too.","**Apple silicon and repairs:** Apple mentions a **Repair Assistant** check for previously repaired Macs before erasing on recent macOS versions."]},
+      {list:["**Account locks:** Android phones ask for the Google Account that was on them after a reset; Google suggests confirming you know the username and password and waiting 24 hours after changing it. Apple devices use Activation Lock tied to the Apple Account. Without the right credentials, a reset device may not be usable.","**Encryption keys:** an encrypted Windows PC may ask for its BitLocker recovery key during recovery or reset; know where it’s stored.","**Mac before macOS Monterey, or without T2/Apple silicon:** erasing uses macOS Recovery and Disk Utility instead.","**Data erasure for disposal:** Microsoft notes that **Remove everything** with **Clean data** makes recovery harder but doesn’t meet government or industry data-erasure standards. For sensitive data, follow your organization’s rules.","**After a reset:** restore files from your backup, but reinstall apps one at a time rather than restoring everything at once, or you may restore the problem too.","**Apple silicon and repairs:** Apple mentions a **Repair Assistant** check for previously repaired Macs before erasing on recent macOS versions."]},
       "Charge or plug in the device first: Google suggests at least 70% battery for an Android reset.",
       {tip:"If a reset is to fix a problem rather than to sell, try a reset that keeps files (Windows) or a reinstall of the system first, where available."}
      ]
@@ -1412,8 +1412,8 @@ ICA.addUnit({
    ]},
    {id:"t1u7-q09", lesson:"t1u7-l1", level:3, q:"Priya’s printing stopped working on Tuesday. Which piece of information is the most valuable clue to note first?", options:[
      {t:"That a new router was installed on Monday", ok:true, why:"Problems very often follow changes. A new router can put the printer on a different network, which explains “offline”."},
-     {t:"That the printer is grey", why:"Its colour has nothing to do with the problem."},
-     {t:"That she prefers printing in colour", why:"Personal preferences don’t help identify the cause."},
+     {t:"That the printer is gray", why:"Its color has nothing to do with the problem."},
+     {t:"That she prefers printing in color", why:"Personal preferences don’t help identify the cause."},
      {t:"That printers are generally unreliable", why:"A general opinion doesn’t point to a cause you can test."}
    ]},
    /* ---- Lesson 2 ---- */
@@ -1474,7 +1474,7 @@ ICA.addUnit({
    /* ---- Lesson 3 ---- */
    {id:"t1u7-q19", lesson:"t1u7-l3", level:1, q:"What’s the difference between a crash and a freeze?", options:[
      {t:"A crash closes the app; a freeze leaves it stuck on screen", ok:true, why:"With a freeze, the app stays on screen but doesn’t respond, so waiting a minute is worth it in case it recovers. With a crash, the app has already closed by itself."},
-     {t:"A crash affects the hardware; a freeze affects the software", why:"Both describe app or system behaviour, and both can have hardware or software causes."},
+     {t:"A crash affects the hardware; a freeze affects the software", why:"Both describe app or system behavior, and both can have hardware or software causes."},
      {t:"They are the same thing", why:"They look different and suggest different first steps."},
      {t:"A freeze always deletes your files", why:"A freeze can lose unsaved work if you force quit, but it doesn’t delete saved files."}
    ]},

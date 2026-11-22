@@ -3,11 +3,11 @@ ICA.addUnit({
   id:"e1u7", track:"e1", n:7, title:"Writing reports and theses in Japanese", icon:"✍️",
   blurb:"From the task to the finished file: kinds of レポート, questions and claims, structure and outlines, paragraphs, quoting and reporting sources, reference lists, punctuation and full-width/half-width characters, 原稿用紙 rules, and writing honestly when plagiarism rules and AI tools are involved.",
   goals:[
-    "Tell a レポート from a 感想文, recognise explanatory, argumentative and reporting tasks, and turn a topic into a question (問い) and a claim (主張)",
+    "Tell a レポート from a 感想文, recognize explanatory, argumentative and reporting tasks, and turn a topic into a question (問い) and a claim (主張)",
     "Plan a report in 序論・本論・結論 with an outline, and write paragraphs with a 中心文, supporting sentences and a one-character indent",
     "Quote directly with 「」 and report indirectly with ～によると or ～と指摘している, choose reporting verbs and avoid 孫引き",
     "Write reference entries in a common Japanese pattern, order them by 五十音順 when asked, and keep punctuation, numbers and full-width/half-width characters consistent",
-    "Follow the main 原稿用紙 rules, recognise 剽窃 in its Japanese forms, use AI and translation tools only as your course allows, and check a draft with a checklist"
+    "Follow the main 原稿用紙 rules, recognize 剽窃 in its Japanese forms, use AI and translation tools only as your course allows, and check a draft with a checklist"
   ],
   read:[
     {book:"koyobun", where:"Part Ⅰ「表記の原則」, item 4「数字の使い方」 and item 5「符号の使い方」(1)「句読点や括弧の使い方」", note:"The Japanese government’s 2022 guidance on official writing. It is not a rulebook for university reports, but it is the clearest official statement on 「、」 vs 「，」, brackets and full-width/half-width numbers. In Japanese."},
@@ -36,7 +36,7 @@ ICA.addUnit({
     ]},
     {h:"Three kinds of report", body:[
       "Japanese writing guides often sort reports into three kinds. The names vary a little between guides, but the ideas are stable, and the task wording usually tells you which kind you have.",
-      {table:[["Kind","What you do","Typical task wording"],["**説明型** (explanatory)","Explain or summarise something accurately and clearly","～について説明しなさい。～をまとめなさい。"],["**論証型** (argumentative)","Take a position on a question and support it with evidence","～について論じなさい。～の[是非]{ぜひ}を論じよ。"],["**報告型** (reporting)","Report what you did and found: an experiment, a survey, fieldwork, a visit","実験の方法と結果を報告しなさい。"]]},
+      {table:[["Kind","What you do","Typical task wording"],["**説明型** (explanatory)","Explain or summarize something accurately and clearly","～について説明しなさい。～をまとめなさい。"],["**論証型** (argumentative)","Take a position on a question and support it with evidence","～について論じなさい。～の[是非]{ぜひ}を論じよ。"],["**報告型** (reporting)","Report what you did and found: an experiment, a survey, fieldwork, a visit","実験の方法と結果を報告しなさい。"]]},
       "**説明型** reports test understanding: can you explain a theory, a system or a debate in your own words, with sources? **論証型** reports test thinking: can you reach a defensible answer and show why? **報告型** reports test method and accuracy: what exactly did you do, what did you observe, and what does it mean? Science lab reports (実験レポート) follow a fixed pattern close to the structure of a paper (目的・方法・結果・[[kousatsu|考察]]); Unit 6 describes that structure in {{japanese-paper-structure}}.",
       "Many real tasks mix kinds. 「AとBを比較し、あなたの考えを述べなさい」 asks you to explain both, then argue. When the wording is unclear, ask the teacher. Japanese students ask this too; it is not a sign of weakness.",
       {tip:"The ending 「～せよ」 (as in 論じよ, 説明せよ) is a formal written imperative used in exam and task wording. It is not rude; it simply means “do ～”."}
@@ -167,7 +167,7 @@ ICA.addUnit({
       {table:[["Job","Typical phrase"],["Background (背景)","近年、～が注目されている。"],["Question (問い)","では、～はなぜ～のだろうか。"],["Aim (目的)","本レポートの目的は、～を明らかにすることである。"],["Preview (構成の予告)","以下、まず～を整理し、次に～を検討する。"],["Point in the body","第一に、～。第二に、～。"],["Summary (まとめ)","以上、本レポートでは～について検討した。"],["Remaining issues (今後の課題)","今後の課題として、～が挙げられる。"]]},
       "A question in the introduction can end in 「～のだろうか」: it is a rhetorical question that sets up what the report will answer, and it is normal in Japanese academic writing. The answer must come later, in the body and conclusion.",
       {ex:"　近年、大学生のアルバイト時間が長くなっているといわれる。では、長時間のアルバイトは学業にどのような影響を与えるのだろうか。本レポートの目的は、アルバイト時間と学業成績の関係を明らかにすることである。以下、第2節で先行研究を整理し、第3節で公開されている調査データを分析する。", label:"A short はじめに: background, question, aim, preview"},
-      {warn:"The conclusion summarises and answers; it does not open a new topic. A sentence like 「また、留学生の問題も重要である」 at the end raises something the report never discussed. If it matters, it belongs in the body, or under 今後の課題 as a clearly labelled limitation."}
+      {warn:"The conclusion summarizes and answers; it does not open a new topic. A sentence like 「また、留学生の問題も重要である」 at the end raises something the report never discussed. If it matters, it belongs in the body, or under 今後の課題 as a clearly labeled limitation."}
     ]},
     {h:"Outlines: plan before you write", body:[
       "An **アウトライン** (outline) is the skeleton of your report: numbered headings, each with a note of its point. Writing guides in Japan recommend it for the same reason everywhere: it is much easier to move a heading than to move five paragraphs.",
@@ -288,7 +288,7 @@ ICA.addUnit({
    learn:[
     {h:"Why reports quote, and the ground rules", body:[
       {lead:"A report is a conversation with other writers. Quoting is how you let them speak; citing is how you tell the reader who said what."},
-      "In Japanese, **[引用]{いんよう}** (*in’yō*) means using someone else’s words or ideas in your writing with the source shown. It covers both quoting word for word and reporting an idea in your own words. Research Skills explains why and when to quote, paraphrase or summarise in any language: {{quote-paraphrase-summary}}. This lesson is about the Japanese forms.",
+      "In Japanese, **[引用]{いんよう}** (*in’yō*) means using someone else’s words or ideas in your writing with the source shown. It covers both quoting word for word and reporting an idea in your own words. Research Skills explains why and when to quote, paraphrase or summarize in any language: {{quote-paraphrase-summary}}. This lesson is about the Japanese forms.",
       "Japan’s Copyright Act ([著作権法]{ちょさくけんほう}) allows quotation in Article 32, as long as it fits fair practice and stays within what the purpose justifies. The Agency for Cultural Affairs’ explanation of the law, and many Japanese writing guides, sum up the conditions like this:",
       {list:["**The quotation is necessary** for your point.","**The quoted part is clearly marked** (with 「」 or as a block), so readers can tell it from your words.","**Your text is the main part**, and the quotation supports it, not the other way round.","**The source is shown** ([出所]{しゅっしょ}の[明示]{めいじ}, required by Article 48)."]},
       "Universities add their own rule on top: anything you take from a source, words or ideas, must be cited, or it counts as [[hyousetsu|剽窃]] (plagiarism; Lesson 5).",
@@ -300,7 +300,7 @@ ICA.addUnit({
       "The conventions most Japanese guides agree on:",
       {list:["**Copy exactly**: the same kanji, kana, punctuation and even mistakes. If the original has an error, keep it and add （ママ） (“as in the original”) after it.","**Drop the final 「。」 of the original** when the quotation sits inside your sentence before と: 「～始まる」と述べている, not 「～始まる。」と述べている.","**「」 inside a quotation becomes 『』.** If the original says 学生は「正解」を探しすぎている, you write 「学生は『正解』を探しすぎている」.","**Show omissions** with （中略） or with 「……」. Don’t change the meaning by what you leave out.","**Give the page** for a direct quotation. Common forms are （p. 15）, （15頁） or, inside the citation, （山田 2020: 15）. Your field’s style decides which."]},
       "If you add emphasis that isn’t in the original, say so, for example （[傍点]{ぼうてん}は[引用者]{いんようしゃ}による） (“dots for emphasis added by the quoter”). 引用者 means you, the person quoting.",
-      {tip:"Quote only when the exact words matter: a definition, a striking phrase, words you will analyse. Otherwise report the idea in your own words. A report that is mostly quotations has no room for your argument."}
+      {tip:"Quote only when the exact words matter: a definition, a striking phrase, words you will analyze. Otherwise report the idea in your own words. A report that is mostly quotations has no room for your argument."}
     ]},
     {h:"Long quotations: the block", body:[
       "When a quotation is long, guides recommend setting it apart as a **block quotation** ([[block-quotation]]; ブロック引用 or 独立引用). Guides differ on the exact threshold (often “more than two or three lines”) and on the indent, but the usual shape is:",
@@ -316,7 +316,7 @@ ICA.addUnit({
     ]},
     {h:"Reporting verbs and their tense", body:[
       "Like English [[reporting-verb|reporting verbs]], Japanese ones carry meaning. Choosing one tells the reader what the source did and, sometimes, what you think of it.",
-      {table:[["Verb","Meaning","Typical use"],["[述]{の}べる","state","Neutral: the safest default"],["[指摘]{してき}する","point out","A problem or a fact others missed; you treat it as worth noting"],["[主張]{しゅちょう}する","argue, claim","A position others might dispute"],["[論]{ろん}じる","discuss, argue at length","A developed argument"],["[報告]{ほうこく}する","report","Findings of a study or survey"],["[示]{しめ}す","show","Data or results: 調査の結果は～ことを示している"],["[明]{あき}らかにする","make clear, establish","A finding you accept as shown"],["[提唱]{ていしょう}する","propose","A new theory, concept or term"],["[批判]{ひはん}する","criticise","An objection to someone else’s view"]]},
+      {table:[["Verb","Meaning","Typical use"],["[述]{の}べる","state","Neutral: the safest default"],["[指摘]{してき}する","point out","A problem or a fact others missed; you treat it as worth noting"],["[主張]{しゅちょう}する","argue, claim","A position others might dispute"],["[論]{ろん}じる","discuss, argue at length","A developed argument"],["[報告]{ほうこく}する","report","Findings of a study or survey"],["[示]{しめ}す","show","Data or results: 調査の結果は～ことを示している"],["[明]{あき}らかにする","make clear, establish","A finding you accept as shown"],["[提唱]{ていしょう}する","propose","A new theory, concept or term"],["[批判]{ひはん}する","criticize","An objection to someone else’s view"]]},
       "Choose carefully. 「山田は～と主張している」 presents a position that could be debated; 「山田は～を明らかにした」 tells the reader you accept the finding. Don’t use 明らかにする for a claim you are about to reject.",
       "**Tense.** The ている form (述べている, 指摘している) is the most common choice for published work: the view is in the text and still stands. The past form (述べた, 明らかにした) is also correct. Writers use it for something done at a particular time, such as a statement in a speech, a finding of a past study, or an earlier view that has since changed. Both forms are grammatical; ている is the safe default for citing literature.",
       {tip:"Never use 言っている or 言った for written sources in a report. 言う sounds like speech; 述べる is the written equivalent."}
@@ -443,7 +443,7 @@ ICA.addUnit({
     {h:"Ordering the list: 五十音順 or alphabetical", body:[
       "How are the entries ordered? Three systems are common, and your guidelines say which:",
       {list:["**Japanese works in [五十音]{ごじゅうおん}[順]{じゅん}** (the あいうえお order of the authors’ names, by *reading*), followed by works in other languages in alphabetical order. Common in the humanities and social sciences.","**Everything in alphabetical order**, with Japanese names placed by their romanised spelling.","**In order of citation**, numbered, in many science and engineering fields."]},
-      "五十音順 goes by how a name is **read**, not how it is written: [伊藤]{いとう} (い) comes before [小川]{おがわ} (お), and [長谷川]{はせがわ} (は) comes after [中村]{なかむら} (な), even though 長 can also be read ちょう. Names with the same kanji can be read differently (角田, for example, is read かくた by some families and つのだ by others), so check the reading in the book’s colophon ([奥付]{おくづけ}), on the journal’s site, or in a library catalogue such as NDL Search ({{finding-japanese-research}}).",
+      "五十音順 goes by how a name is **read**, not how it is written: [伊藤]{いとう} (い) comes before [小川]{おがわ} (お), and [長谷川]{はせがわ} (は) comes after [中村]{なかむら} (な), even though 長 can also be read ちょう. Names with the same kanji can be read differently (角田, for example, is read かくた by some families and つのだ by others), so check the reading in the book’s colophon ([奥付]{おくづけ}), on the journal’s site, or in a library catalog such as NDL Search ({{finding-japanese-research}}).",
       {fig:'<svg viewBox="0 0 340 300"><text x="170" y="20" text-anchor="middle">五十音順 sorts by reading</text><rect class="d-panel" x="20" y="34" width="300" height="250" rx="8"/><text class="s" x="40" y="58">あ い う え お</text><text class="s" x="40" y="76">か き く け こ ……</text><rect class="d-lup" x="36" y="92" width="268" height="30" rx="4"/><text x="50" y="112">伊藤（いとう）</text><text class="s" x="290" y="112" text-anchor="end">い</text><rect class="d-lup" x="36" y="128" width="268" height="30" rx="4"/><text x="50" y="148">小川（おがわ）</text><text class="s" x="290" y="148" text-anchor="end">お</text><rect class="d-lup" x="36" y="164" width="268" height="30" rx="4"/><text x="50" y="184">中村（なかむら）</text><text class="s" x="290" y="184" text-anchor="end">な</text><rect class="d-gold" x="36" y="200" width="268" height="30" rx="4" stroke-width="2"/><text x="50" y="220">長谷川（はせがわ）</text><text class="s" x="290" y="220" text-anchor="end">は</text><rect class="d-lup" x="36" y="236" width="268" height="30" rx="4"/><text x="50" y="256">渡辺（わたなべ）</text><text class="s" x="290" y="256" text-anchor="end">わ</text></svg>', alt:"A list sorted in 五十音順: 伊藤 (いとう), 小川 (おがわ), 中村 (なかむら), 長谷川 (はせがわ), 渡辺 (わたなべ), with the first kana of each reading shown on the right. 長谷川 is highlighted: it sorts under は by its reading.", cap:"Sort by the kana reading of the family name, then the given name."}
     ]},
     {h:"Punctuation: 、。 ，． and ，。", body:[
@@ -521,7 +521,7 @@ ICA.addUnit({
     ]}
    ],
    apply:{
-    intro:"Find the rules that apply to you, then practise them on real sources.",
+    intro:"Find the rules that apply to you, then practice them on real sources.",
     tasks:[
      {t:"Find your rules", how:[
        "Look for your course’s or department’s guidelines on reports or theses (often in a 履修の手引き, a writing guide on the university site, or a thesis template).",
@@ -531,7 +531,7 @@ ICA.addUnit({
      {t:"Write five reference entries", how:[
        "Choose five real sources you might use: at least one book, one journal article and one web page in Japanese.",
        "Write each one in your rules’ format (or the common pattern in this lesson).",
-       "Check each author’s reading in the 奥付 or a library catalogue, then put the list in 五十音順."
+       "Check each author’s reading in the 奥付 or a library catalog, then put the list in 五十音順."
      ], write:"Entry 1… Entry 2… Entry 3… Entry 4… Entry 5… order…"},
      {t:"Set up your keyboard and check a draft", how:[
        "In your Japanese input settings, find the 句読点 option and set the pair you need.",
@@ -615,7 +615,7 @@ ICA.addUnit({
       {t:"Asking an AI tool to write the 考察 section and submitting it as written", b:1, why:"Submitting generated text as your own writing is dishonest, especially when the course hasn’t allowed it."}
     ]},
     {id:"e1u7-l5-x4", type:"mcq", q:"Sione’s course policy says: “AI tools may be used to check language, not to write content. Say how you used them.” Which plan fits the policy?", options:[
-      {t:"Write the report himself, ask AI to flag 話し言葉, check each one, and disclose it", ok:true, why:"Language checking only, with his own judgement on each suggestion (checked in a dictionary) and a short note giving the disclosure the policy asks for."},
+      {t:"Write the report himself, ask AI to flag 話し言葉, check each one, and disclose it", ok:true, why:"Language checking only, with his own judgment on each suggestion (checked in a dictionary) and a short note giving the disclosure the policy asks for."},
       {t:"Ask the tool to write the report in English, then translate it into Japanese himself", why:"The content was written by the tool. Translating it doesn’t make it his work, and the policy forbids AI-written content."},
       {t:"Use the tool to check language, but leave out the note because the changes were small", why:"The policy asks for disclosure. Small or not, the use should be stated."},
       {t:"Ask the tool for a reference list on his topic and copy it into his report", why:"That is content, not language checking, and AI tools often invent references that don’t exist. Find and read real sources."}
@@ -670,7 +670,7 @@ ICA.addUnit({
   ],
   checkpoint:["e1u7-q02","e1u7-q05","e1u7-q11","e1u7-q14","e1u7-q19","e1u7-q22","e1u7-q25","e1u7-q29","e1u7-q32","e1u7-q37","e1u7-q40","e1u7-q44"],
   cpBank:[
-   {id:"e1u7-cp01", lesson:"e1u7-l1", level:2, q:"Aya’s task says 「次の文章を要約しなさい。」 She plans to summarise the text and then add a paragraph giving her own opinion. What is the best advice?", options:[
+   {id:"e1u7-cp01", lesson:"e1u7-l1", level:2, q:"Aya’s task says 「次の文章を要約しなさい。」 She plans to summarize the text and then add a paragraph giving her own opinion. What is the best advice?", options:[
      {t:"Keep to a summary: 要約する asks for the main points in fewer words, not her view", ok:true, why:"The task verb decides the job. If the teacher wanted an opinion as well, the task would ask for it (for example あなたの考えを述べなさい)."},
      {t:"Add the opinion, because every レポート must contain the writer’s 主張", why:"Many reports do argue, but this task verb asks for a summary only. Follow the task."},
      {t:"Write mainly her opinion, with a short summary at the end", why:"That answers a different task. 要約する asks for the main points of the text."},
@@ -713,7 +713,7 @@ ICA.addUnit({
    {id:"e1u7-cp09", lesson:"e1u7-l4", level:2, q:"Ravi must place 角田（2017） in a reference list ordered by 五十音順. He knows that 角田 can be read かくた or つのだ. What should he do?", options:[
      {t:"Choose the more common reading, since either one is accepted", why:"五十音順 follows how this author’s name is actually read, and families differ."},
      {t:"Order it by the number of strokes in the kanji instead", why:"五十音順 goes by reading (あいうえお order), not by how the name is written."},
-     {t:"Check its reading in the 奥付 or a library catalogue", ok:true, why:"The order goes by reading, and names with the same kanji can be read differently, so check a reliable source."},
+     {t:"Check its reading in the 奥付 or a library catalog", ok:true, why:"The order goes by reading, and names with the same kanji can be read differently, so check a reliable source."},
      {t:"Put it at the end of the list, after all the English sources", why:"Japanese works go in 五十音順, then works in other languages. A Japanese author belongs in the Japanese part, by reading."}]},
    {id:"e1u7-cp10", lesson:"e1u7-l4", level:3, q:"Sun-hee is handwriting an exam essay on 縦書き 原稿用紙. She plans to write 「2025年の調査では、45%の学生が回答した。」 What should she change?", options:[
      {t:"Nothing: Arabic digits turn vertical by themselves in 縦書き", why:"Even word processors don’t convert digits, and on handwritten 原稿用紙 nobody does. In 縦書き, write kanji numerals."},
@@ -748,9 +748,9 @@ ICA.addUnit({
       "Common slips: a list of quotations with no argument of your own; a topic but no question; a claim that appears only at the end; personal feelings used as evidence; a conclusion that opens a new topic; ignoring the 字数 or format. Each is easy to catch if you reread with the 問い in front of you."
      ],
      pro:[
-      "The 説明型・論証型・報告型 classification is a teaching tool used in many Japanese writing guides and first-year writing courses; the names vary (for example 調査報告型 or 意見論述型), and real tasks often combine types. Lab reports (実験レポート) follow a fixed order close to a paper: 目的・方法・結果・考察, sometimes with 原理 or 結論. Longer theses (卒業論文, 修士論文) add a literature review (先行研究) and a methods section, and are usually organised into chapters (章) and sections (節); see {{japanese-paper-structure}}.",
-      "Proportions are a matter of judgement. A common rule of thumb gives the introduction and conclusion about a tenth each in a short report, with the rest in the body; it is not a fixed rule. What is consistently taught is that the conclusion introduces nothing new except clearly labelled limitations (今後の課題).",
-      "Japanese essays and columns sometimes delay the main point (起承転結 is often cited as a traditional pattern for essays and stories). Academic writing guides in Japan generally advise against it for reports: state the question and the aim in the introduction, and the answer clearly in the conclusion. Learners from writing traditions that build slowly towards a point, and learners from English-medium traditions that state a thesis early, both find this familiar in parts.",
+      "The 説明型・論証型・報告型 classification is a teaching tool used in many Japanese writing guides and first-year writing courses; the names vary (for example 調査報告型 or 意見論述型), and real tasks often combine types. Lab reports (実験レポート) follow a fixed order close to a paper: 目的・方法・結果・考察, sometimes with 原理 or 結論. Longer theses (卒業論文, 修士論文) add a literature review (先行研究) and a methods section, and are usually organized into chapters (章) and sections (節); see {{japanese-paper-structure}}.",
+      "Proportions are a matter of judgment. A common rule of thumb gives the introduction and conclusion about a tenth each in a short report, with the rest in the body; it is not a fixed rule. What is consistently taught is that the conclusion introduces nothing new except clearly labeled limitations (今後の課題).",
+      "Japanese essays and columns sometimes delay the main point (起承転結 is often cited as a traditional pattern for essays and stories). Academic writing guides in Japan generally advise against it for reports: state the question and the aim in the introduction, and the answer clearly in the conclusion. Learners from writing traditions that build slowly toward a point, and learners from English-medium traditions that state a thesis early, both find this familiar in parts.",
       "Length rules use characters (字), not words. 「～字以内」 is a maximum; 「～字程度」 is approximate, and teachers differ on how much variation they accept; 「～字以上」 is a minimum. Word processors count spaces and half-width characters in their own ways, so ask what counts if the limit is tight."
      ]},
     related:["japanese-paragraphs","quoting-in-japanese","japanese-paper-structure","academic-writing"],
@@ -825,7 +825,7 @@ ICA.addUnit({
      pro:[
       "**SIST 02** (参照文献の書き方), one of the SIST standards issued by the Japan Science and Technology Agency (JST) for science and technology information, was last revised in 2007. JST states that the SIST project ended at the end of fiscal year 2011 and that the documents will not be updated. Many university libraries still cite it in guides, and some journals’ rules derive from it, but it is no longer maintained; refer to it only when your rules point to it.",
       "Japanese journals publish their own 執筆要領 or 投稿規定, which often differ in small details: year in brackets after the author or at the end; commas, full stops or 、。 between elements; 頁 or pp.; whether 『』 and 「」 are used. Many fields use an international style (APA in psychology, for example), sometimes with a Japanese adaptation. A reference manager with the right citation style file (CSL) helps, but Japanese metadata often comes out with errors: missing readings, wrong name order, wrong brackets.",
-      "Mixed-language lists: one common practice lists Japanese works first in 五十音順 and then other-language works alphabetically; another sorts everything alphabetically by romanised name. Romanisation itself varies (Hepburn and other systems; long vowels marked or not), which is one reason guides prefer 五十音順 for Japanese works.",
+      "Mixed-language lists: one common practice lists Japanese works first in 五十音順 and then other-language works alphabetically; another sorts everything alphabetically by romanized name. Romanisation itself varies (Hepburn and other systems; long vowels marked or not), which is one reason guides prefer 五十音順 for Japanese works.",
       "Web sources need a date of access (閲覧日 or 参照日) in most Japanese styles, because pages change. Where a DOI exists (J-STAGE articles often have one), many styles prefer it to a URL."
      ]},
     related:["quoting-in-japanese","japanese-punctuation-numbers","citation-styles","finding-japanese-research"],
@@ -865,13 +865,13 @@ ICA.addUnit({
      builder:[
       {table:[["Item","Rule"],["Paragraph start","Leave one square blank"],["Small kana (っ ゃ ゅ ょ)","One square; lower left in 横書き, upper right in 縦書き"],["、。 and closing brackets","One square; never the first square of a line"],["。 before 」","Many guides write them together in one square (。」)"],["…… and ――","Two squares each"],["Numbers","縦書き: kanji numerals; 横書き: Arabic digits, often two per square"]]},
       "Counting is exact: a sentence of 32 characters, plus an indent, uses 33 squares, whatever the characters are. Exam limits such as 「400字以内」 usually mean the squares used, including punctuation and indents.",
-      "A new paragraph leaves the rest of the previous line empty. Because many exams read the limit straight off the grid, those empty squares often count towards the space you have used, so very short paragraphs cost space in a tight limit.",
+      "A new paragraph leaves the rest of the previous line empty. Because many exams read the limit straight off the grid, those empty squares often count toward the space you have used, so very short paragraphs cost space in a tight limit.",
       "Title and name: a common layout puts the title on line 1 a few squares in and the name on line 2 ending one square from the bottom, but exam sheets often provide separate boxes. The sheet’s instructions come first."
      ],
      pro:[
       "Japanese pupils learn 原稿用紙 conventions in primary school 国語, so markers at every level notice errors quickly. The rules above are those standard guides agree on. Details vary: where exactly the title starts, whether a 「。」 at the end of a line is written inside the last square with the character or just outside the grid (ぶら下げ), how digits and Latin letters are fitted in 横書き, and how dialogue is laid out in creative writing.",
       "Rules about opening brackets at the end of a line, about 「ー」 orientation in vertical writing (it is drawn vertically), and about correcting mistakes in exams (erase cleanly; insertion marks vary) are taught differently in different guides; follow your teacher or the exam’s instructions.",
-      "Word processors can emulate 原稿用紙 (for example a manuscript-paper layout in Japanese versions of Word), which helps practise counting, but typed reports follow typed conventions: no rule against punctuation at line starts is needed, because the software handles line-breaking rules (禁則処理) automatically.",
+      "Word processors can emulate 原稿用紙 (for example a manuscript-paper layout in Japanese versions of Word), which helps practice counting, but typed reports follow typed conventions: no rule against punctuation at line starts is needed, because the software handles line-breaking rules (禁則処理) automatically.",
       "For exam practice: many guides advise filling most of the allowed space (often at least about eight tenths) and never exceeding the last square. Teachers vary, so check their advice."
      ]},
     related:["japanese-punctuation-numbers","japanese-paragraphs"],
@@ -886,7 +886,7 @@ ICA.addUnit({
      ],
      builder:[
       {table:[["Form","Why it counts"],["コピペ without 「」 and source","Someone else’s words presented as yours"],["Translation without citation","Someone else’s ideas, structure and evidence"],["Changing only endings","The original’s wording and structure remain (patchwriting)"],["自己剽窃","Earlier work presented as new, without permission"],["代筆 (ghost-writing), including AI-written text","The writing is not yours"]]},
-      "Honest uses of tools, where a course allows them, usually involve your judgement at every step: looking up a word, checking whether a phrase is 話し言葉, asking for example sentences and confirming them in a dictionary. Check every output: AI tools invent references and mix registers.",
+      "Honest uses of tools, where a course allows them, usually involve your judgment at every step: looking up a word, checking whether a phrase is 話し言葉, asking for example sentences and confirming them in a dictionary. Check every output: AI tools invent references and mix registers.",
       "When disclosure is required, a short note is common: 本レポートの作成にあたり、表現の確認に生成AI（ツール名）を使用した。 Follow the exact form your course asks for.",
       "Translation needs special care. A passage translated from an English source needs a citation like any paraphrase, and a report written in another language and machine-translated is not your Japanese writing. When the rules are unclear, ask before you submit, not after."
      ],
@@ -1055,7 +1055,7 @@ ICA.addUnit({
      {t:"Change a few words so it doesn’t need a citation", why:"That would be patchwriting and still plagiarism."}
    ]},
    {id:"e1u7-q23", lesson:"e1u7-l3", level:2, q:"A study showed, with clear data, that a policy reduced waiting times, and you accept its finding. Which verb fits best?", options:[
-     {t:"明らかにした", ok:true, why:"明らかにする presents a finding as established, signalling that you accept it."},
+     {t:"明らかにした", ok:true, why:"明らかにする presents a finding as established, signaling that you accept it."},
      {t:"主張している", why:"主張 frames the result as a position others might dispute, which undersells a finding you accept."},
      {t:"感じている", why:"Studies don’t “feel”; the verb reports emotion."},
      {t:"言っている", why:"Spoken style; not used for written sources in reports."}
@@ -1080,7 +1080,7 @@ ICA.addUnit({
    ]},
    {id:"e1u7-q27", lesson:"e1u7-l3", level:2, q:"Which ending is best for reporting a cited idea in a report?", options:[
      {t:"～とされる", ok:true, why:"A written, neutral way to report a view, used with a source."},
-     {t:"～らしい", why:"Spoken hearsay; it sounds like passing on rumours."},
+     {t:"～らしい", why:"Spoken hearsay; it sounds like passing on rumors."},
      {t:"～とのことだ", why:"Conversational, typical of passing on a message."},
      {t:"～って言われてる", why:"Very colloquial (って, contracted ている)."}
    ]},
@@ -1134,7 +1134,7 @@ ICA.addUnit({
      {t:"Under な, because 長 can be read なが", why:"The family name is read はせがわ, so it goes under は."}
    ]},
    {id:"e1u7-q36", lesson:"e1u7-l4", level:2, q:"What should a reference to a web page include in most Japanese styles?", options:[
-     {t:"Author or organisation, year, page title, URL and the date you viewed it", ok:true, why:"Pages change, so the viewing date (閲覧日) matters, along with who published it and where."},
+     {t:"Author or organization, year, page title, URL and the date you viewed it", ok:true, why:"Pages change, so the viewing date (閲覧日) matters, along with who published it and where."},
      {t:"Only the URL", why:"A bare URL doesn’t tell the reader who wrote it or when you saw it."},
      {t:"Only the search words you used", why:"Search words don’t identify a source."},
      {t:"The name of your browser", why:"Not part of a citation."}
@@ -1159,7 +1159,7 @@ ICA.addUnit({
      {t:"Stating that Tokyo is Japan’s capital without a source", why:"General knowledge needs no citation."}
    ]},
    {id:"e1u7-q40", lesson:"e1u7-l5", level:3, q:"Priya’s course allows AI for checking language if students disclose it. She used an AI tool to flag spoken expressions in her own draft. What should she do?", options:[
-     {t:"Check each suggestion herself and say how she used the tool", ok:true, why:"That follows the policy: language checking only, her own judgement on each suggestion, and a short note disclosing the use."},
+     {t:"Check each suggestion herself and say how she used the tool", ok:true, why:"That follows the policy: language checking only, her own judgment on each suggestion, and a short note disclosing the use."},
      {t:"Nothing: small language checks never need disclosure", why:"This course asks for disclosure, so she should give it."},
      {t:"Let the tool rewrite every paragraph, since language checking is allowed", why:"Rewriting paragraphs goes beyond checking; the text would no longer be hers."},
      {t:"Delete her draft and start again without any tools", why:"Not necessary: her use was allowed. She just needs to check and disclose."}
@@ -1189,7 +1189,7 @@ ICA.addUnit({
      {t:"Reading the report aloud slowly to catch conversion errors", why:"A good habit for finding wrong kanji and spoken expressions."}
    ]},
    {id:"e1u7-q45", lesson:"e1u7-l5", level:1, q:"What does 自己剽窃 mean?", options:[
-     {t:"Reusing your own earlier work as new, without acknowledgement", ok:true, why:"Submitting a report written for one course in another, without permission or acknowledgement, counts as self-plagiarism."},
+     {t:"Reusing your own earlier work as new, without acknowledgment", ok:true, why:"Submitting a report written for one course in another, without permission or acknowledgment, counts as self-plagiarism."},
      {t:"Quoting yourself in a presentation", why:"Referring openly to your earlier work, with a citation, is fine."},
      {t:"Writing about yourself in a report", why:"That is a style question, not plagiarism."},
      {t:"Checking your own report for plagiarism with a detection tool before submitting", why:"That is responsible practice, not misconduct."}

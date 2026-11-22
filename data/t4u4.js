@@ -2,13 +2,13 @@
 ICA.addUnit({
   id:"t4u4", track:"t4", n:4, title:"Citing and managing references", icon:"🔖",
   apps:{ms:"Word", google:"Google Docs", libre:"LibreOffice Writer", apple:"Pages"},
-  blurb:"Give credit the way researchers do: in-text citations and reference lists in APA 7th, MLA 9th and Chicago 18th, DOIs, quoting, paraphrasing and summarising honestly, and a free reference manager (Zotero) that collects your sources and builds bibliographies for you, which you then check.",
+  blurb:"Give credit the way researchers do: in-text citations and reference lists in APA 7th, MLA 9th and Chicago 18th, DOIs, quoting, paraphrasing and summarizing honestly, and a free reference manager (Zotero) that collects your sources and builds bibliographies for you, which you then check.",
   goals:[
     "Explain why we cite and how an in-text citation points to a full entry in a reference list, works-cited list or bibliography",
     "Write journal articles, books, chapters, web pages and reports in APA 7th, with correct in-text citations, et al., page numbers and missing-information cases",
     "Write the same sources in MLA 9th and Chicago 18th (notes-bibliography and author-date), and spot which style a citation is in",
-    "Quote, paraphrase and summarise without patchwriting, recognise common knowledge, and handle self-plagiarism and AI-generated text according to the policy you’re under",
-    "Collect sources with Zotero and its Connector, add items by DOI or ISBN, organise them, cite in Word, LibreOffice or Google Docs, and check every generated citation"
+    "Quote, paraphrase and summarize without patchwriting, recognize common knowledge, and handle self-plagiarism and AI-generated text according to the policy you’re under",
+    "Collect sources with Zotero and its Connector, add items by DOI or ISBN, organize them, cite in Word, LibreOffice or Google Docs, and check every generated citation"
   ],
   read:[
     {book:"owg", where:"Handbook, “Index and Guide to Documentation”, then “APA Documentation and Format” and “MLA Documentation and Format”", note:"Free model citations. The APA part follows the 7th edition. The MLA part follows the 8th edition (2016): one visible change in the 9th is that a DOI is written as a full link (https://doi.org/…), which this unit teaches. The book has no Chicago section."},
@@ -47,34 +47,34 @@ ICA.addUnit({
     {h:"Three families of styles", body:[
       "There are hundreds of [[citation-style|citation styles]], but most belong to a few families. Once you know the family, a new style is just new punctuation.",
       {table:[["Family","How the pointer works","Examples"],["Author-date","Surname and year in brackets","APA, Chicago author-date, the Harvard family"],["Author-page","Surname and page, no year","MLA"],["Notes","A number leads to a footnote or endnote","Chicago notes-bibliography"],["Numbered","[1] or ¹ leads to a numbered list","IEEE, Vancouver"]]},
-      "Fields tend to have favourites. Psychology, education, nursing and many social sciences use APA. Literature and languages often use MLA. History and the arts often use Chicago notes. Engineering and computing often use IEEE, and medicine often uses Vancouver-style numbered references. These are tendencies, not rules: **the style you use is the one your instructor, department or publisher asks for.**",
+      "Fields tend to have favorites. Psychology, education, nursing and many social sciences use APA. Literature and languages often use MLA. History and the arts often use Chicago notes. Engineering and computing often use IEEE, and medicine often uses Vancouver-style numbered references. These are tendencies, not rules: **the style you use is the one your instructor, department or publisher asks for.**",
       "This unit teaches the current editions: **APA 7th** (2020), **MLA 9th** (2021) and **Chicago 18th** (2024). Older editions still float around online, so check which edition a guide follows.",
       {tip:"“Harvard” isn’t one style. It’s a family of similar author-date styles with no single official version. Universities publish their own, and one widely used version is *Cite Them Right*. If you’re asked for Harvard, ask which guide to follow."}
     ]},
     {h:"What every full entry records", body:[
       "Every style answers the same four questions about a source; they just put the answers in different orders with different punctuation.",
-      {table:[["Question","What it means","Example"],["Who?","Author(s), or an organisation","Okafor, Ramírez and Watanabe"],["When?","Date of publication","2023"],["What?","Title of the work","Shade trees and classroom temperatures"],["Where?","Where it lives, and how to get there","Journal of Schoolyard Ecology, volume 14, issue 2, pages 45–62, a DOI"]]},
-      "So the most useful habit isn’t memorising styles. It’s **recording the details while you read**: author names exactly as printed, the year, the full title and subtitle, the journal or publisher, volume, issue, pages and the DOI or web address. Missing details are what make citing slow, because you have to find the source again.",
-      {ex:"Practice sources in this unit are invented.\nThe people, journals, publishers and DOIs don’t exist,\nso you can practise without worrying about a real paper.\nTheir DOIs start with 10.5555, a prefix Crossref uses\nfor examples. They won’t open a real article.", label:"About the examples", mono:true}
+      {table:[["Question","What it means","Example"],["Who?","Author(s), or an organization","Okafor, Ramírez and Watanabe"],["When?","Date of publication","2023"],["What?","Title of the work","Shade trees and classroom temperatures"],["Where?","Where it lives, and how to get there","Journal of Schoolyard Ecology, volume 14, issue 2, pages 45–62, a DOI"]]},
+      "So the most useful habit isn’t memorizing styles. It’s **recording the details while you read**: author names exactly as printed, the year, the full title and subtitle, the journal or publisher, volume, issue, pages and the DOI or web address. Missing details are what make citing slow, because you have to find the source again.",
+      {ex:"Practice sources in this unit are invented.\nThe people, journals, publishers and DOIs don’t exist,\nso you can practice without worrying about a real paper.\nTheir DOIs start with 10.5555, a prefix Crossref uses\nfor examples. They won’t open a real article.", label:"About the examples", mono:true}
     ]},
     {h:"Italics, quotation marks and capitals", body:[
-      "Styles mark titles so readers can tell a whole work from a part of one. The general idea: a **whole work that stands alone** (a book, a journal, a report) goes in *italics*. A **part inside something bigger** (an article in a journal, a chapter in a book, a page on a website) goes in quotation marks in MLA and Chicago. Website names are a special case: MLA italicises them, but Chicago and APA write them in plain type.",
+      "Styles mark titles so readers can tell a whole work from a part of one. The general idea: a **whole work that stands alone** (a book, a journal, a report) goes in *italics*. A **part inside something bigger** (an article in a journal, a chapter in a book, a page on a website) goes in quotation marks in MLA and Chicago. Website names are a special case: MLA italicizes them, but Chicago and APA write them in plain type.",
       {table:[["Title","APA 7th","MLA 9th and Chicago 18th"],["Book or report","*Italics*, sentence case","*Italics*, Title Case"],["Journal name","*Italics*, Title Case","*Italics*, Title Case"],["Article or chapter","Plain, sentence case","“Quotation Marks,” Title Case"],["Web page","*Italics*, sentence case","“Quotation Marks,” Title Case"]]},
-      "**[[sentence-case|Sentence case]]** capitalises only the first word, the first word after a colon, and proper nouns (names, places, organisations). **[[title-case|Title case]]** capitalises the major words. APA uses sentence case for the titles of articles, books, chapters, reports and web pages, but title case for journal names. MLA and Chicago use title case for everything (their rules for small words differ a little).",
+      "**[[sentence-case|Sentence case]]** capitalizes only the first word, the first word after a colon, and proper nouns (names, places, organizations). **[[title-case|Title case]]** capitalizes the major words. APA uses sentence case for the titles of articles, books, chapters, reports and web pages, but title case for journal names. MLA and Chicago use title case for everything (their rules for small words differ a little).",
       {ex:"Sentence case: Shade trees and classroom temperatures: Evidence from twelve schools\nTitle case:    Shade Trees and Classroom Temperatures: Evidence from Twelve Schools", label:"The same title, two ways", mono:true},
       {tip:"In plain text, and in this app’s Citation Lab, italics are shown with *asterisks* around the italic part, like `*Journal of Schoolyard Ecology*`. In your own document you’d simply make that part italic."}
     ]},
     {h:"DOIs: a permanent address for a paper", body:[
-      "Web addresses break when sites are reorganised. A **[[doi|DOI]]** (Digital Object Identifier) is a permanent ID given to an article, chapter, book or dataset. The publisher keeps it pointing to the right place even if the site changes.",
-      "A DOI always starts with `10.`, then a **prefix** (which identifies the organisation that registered it), a slash, and a **suffix** chosen by that organisation.",
+      "Web addresses break when sites are reorganized. A **[[doi|DOI]]** (Digital Object Identifier) is a permanent ID given to an article, chapter, book or dataset. The publisher keeps it pointing to the right place even if the site changes.",
+      "A DOI always starts with `10.`, then a **prefix** (which identifies the organization that registered it), a slash, and a **suffix** chosen by that organization.",
       {ex:"DOI on its own:     10.5555/jse.142\nAs a link (use this): https://doi.org/10.5555/jse.142", label:"Writing a DOI", mono:true},
       "**APA 7th, MLA 9th and Chicago 18th all write a DOI as a full link beginning `https://doi.org/`.** Older forms such as `doi:10.…` or `DOI: 10.…` and `http://dx.doi.org/…` come from earlier editions; convert them. Copy the DOI exactly: a single wrong character leads nowhere.",
       "Where do you find one? On the article’s web page, on the first page of the PDF, or in a database record. If an article has a DOI, use it instead of a database or website address.",
       {warn:"A DOI shows a work was formally registered, usually by a publisher. It doesn’t prove the work is good, peer reviewed or still valid: retracted papers keep their DOIs. Judge quality separately."},
-      {lab:"cl-doi", t:"Practise: write DOIs as links"}
+      {lab:"cl-doi", t:"Practice: write DOIs as links"}
     ]},
-    {h:"Getting it right without memorising everything", body:[
-      "Nobody memorises every rule. Professionals keep a guide open and check. A sensible routine:",
+    {h:"Getting it right without memorizing everything", body:[
+      "Nobody memorizes every rule. Professionals keep a guide open and check. A sensible routine:",
       {ol:[
         "Find out which style and edition you need (assignment brief, course handbook or a journal’s “guide for authors”).",
         "Record full details of each source as you read, or save it to a reference manager such as {{zotero-basics|Zotero}} (Lesson 5).",
@@ -90,7 +90,7 @@ ICA.addUnit({
       {t:"Letting readers find the report and check the statistic", ok:true, why:"Right. Citations exist so readers can trace and check your evidence; credit and honesty come with that."},
       {t:"Making the sentence sound more formal", why:"Formality isn’t the point. A citation in an informal blog post does the same job: it shows where the claim came from."},
       {t:"Proving Ana read a lot", why:"The number of sources doesn’t matter to a reader. What matters is that each claim can be traced."},
-      {t:"Protecting the report’s copyright", why:"Citing gives credit, but it isn’t a copyright licence. Copyright is a separate question about copying, not about naming sources."}
+      {t:"Protecting the report’s copyright", why:"Citing gives credit, but it isn’t a copyright license. Copyright is a separate question about copying, not about naming sources."}
     ]},
     {id:"t4u4-l1-x2", type:"match", q:"Match each style to what its list at the end is called.", pairs:[
       ["APA 7th","References","APA calls its list “References”, with the heading in bold."],
@@ -104,7 +104,7 @@ ICA.addUnit({
       {t:"An article in that journal", b:1, why:"An article is a part of the journal, so it goes in quotation marks."},
       {t:"A chapter in an edited book", b:1, why:"A chapter is part of the book, so it goes in quotation marks; the book title is italic."},
       {t:"A report: Clinic Waiting Times in Rural Districts", b:0, why:"A report stands alone, like a book, so it’s italic."},
-      {t:"One page on a website", b:1, why:"A single page is part of the site, so it goes in quotation marks in MLA and Chicago. (APA italicises web page titles: that’s one of its differences.)"}
+      {t:"One page on a website", b:1, why:"A single page is part of the site, so it goes in quotation marks in MLA and Chicago. (APA italicizes web page titles: that’s one of its differences.)"}
     ]},
     {id:"t4u4-l1-x4", type:"order", q:"Put the parts of an APA journal-article reference in order (the four questions).", items:[
       {t:"Who: Okafor, A. N., Ramírez, L., & Watanabe, K.", why:"APA starts with the authors."},
@@ -128,7 +128,7 @@ ICA.addUnit({
     {id:"t4u4-l1-x7", type:"explain", q:"A classmate worries: “If I cite lots of sources, my essay will look as if none of it is my own work.” Explain why citing actually helps show their own contribution.", size:"2–4 sentences", hint:"Think about what becomes visible once borrowed material is clearly marked.", model:"Citations mark exactly which words, data and ideas came from other people. Once those are clearly marked, everything else is visibly the writer’s own: their argument, the connections they draw between sources and their analysis. Citing also lets readers check the sources and follow them up, which makes the essay more convincing. Leaving citations out doesn’t make work more original; it hides where the writer’s thinking starts and risks plagiarism.", points:["Says citations mark what was borrowed", "Explains that this makes the writer’s own argument or analysis visible", "Mentions another job of citing (credit, checking or following up)"]}
    ],
    apply:{intro:"Start a source record you’ll use for the rest of this unit. You don’t need a library login: open-access articles, free books and public reports all work.", tasks:[
-     {t:"Collect full details for three sources you might really use", how:["Pick a topic you care about: your work, a hobby, a community issue, a course.","Find three different kinds of source: a journal article (try an open-access one from a journal website or from DOAJ), a book (a library catalogue record or a free textbook), and a web page or report from an organisation.","For each, write down who, when, what and where: every author exactly as printed (or the organisation), the date, the full title and subtitle, the journal or publisher or website, volume, issue and pages if any, and the DOI or web address."], write:"Source 1 (article): authors, year, title, journal, volume(issue), pages, DOI\nSource 2 (book): …\nSource 3 (web page or report): …"},
+     {t:"Collect full details for three sources you might really use", how:["Pick a topic you care about: your work, a hobby, a community issue, a course.","Find three different kinds of source: a journal article (try an open-access one from a journal website or from DOAJ), a book (a library catalog record or a free textbook), and a web page or report from an organization.","For each, write down who, when, what and where: every author exactly as printed (or the organization), the date, the full title and subtitle, the journal or publisher or website, volume, issue and pages if any, and the DOI or web address."], write:"Source 1 (article): authors, year, title, journal, volume(issue), pages, DOI\nSource 2 (book): …\nSource 3 (web page or report): …"},
      {t:"Follow a DOI to its home", how:["Find a DOI on the article you chose (look near the title or on the first page of the PDF). If it has none, find any article that does.","Type `https://doi.org/` followed by the DOI into your browser’s address bar and open it.","Notice where it lands: usually the article’s page at the publisher. Compare it with the address you started from."], write:"The DOI, written as a link, and where it took me"},
      {t:"Find out which style you’re expected to use", how:["Look in your assignment brief, course handbook or, for a journal, its “guide for authors” or “instructions for authors”.","Note the style and edition. If none is given, note which style your field tends to use, and ask."], write:"Style and edition I need, and where it says so"}
    ], proof:"A notes box with full details for three different kinds of source, one DOI written as a working https://doi.org/ link, and the style and edition you need."},
@@ -142,13 +142,13 @@ ICA.addUnit({
     {h:"Author, date, title, source", body:[
       {lead:"An APA reference answers the four questions in a fixed order: Who. (When). What. Where."},
       {fig:'<svg viewBox="0 0 340 330"><rect class="d-rose" x="10" y="10" width="320" height="64" rx="8" stroke-width="2"/><text x="22" y="32" class="s">1 · Author (who)</text><text x="22" y="56">Okafor, A. N., Ramírez, L., &amp; Watanabe, K.</text><rect class="d-gold" x="10" y="84" width="320" height="56" rx="8" stroke-width="2"/><text x="22" y="106" class="s">2 · Date (when), in brackets</text><text x="22" y="128">(2023).</text><rect class="d-lup" x="10" y="150" width="320" height="76" rx="8" stroke-width="2"/><text x="22" y="172" class="s">3 · Title (what), sentence case</text><text x="22" y="194">Shade trees and classroom temperatures:</text><text x="22" y="214">Evidence from twelve schools.</text><rect class="d-sage" x="10" y="236" width="320" height="84" rx="8" stroke-width="2"/><text x="22" y="258" class="s">4 · Source (where): journal italic, volume italic</text><text x="22" y="280">Journal of Schoolyard Ecology, 14(2), 45–62.</text><text x="22" y="304">https://doi.org/10.5555/jse.142</text></svg>', alt:"An APA journal article reference split into four stacked boxes: author names with initials, the year in brackets, the article title in sentence case, and the source (journal name, volume, issue, pages and DOI link).", cap:"Each element ends with a full stop, except the DOI or URL at the very end."},
-      "The list is titled **References** (bold, centred), sorted alphabetically by the first author’s surname, double-spaced, and each entry has a [[hanging-indent|hanging indent]]: the first line starts at the margin and the following lines are indented 0.5 inch (1.27 cm), so surnames stand out.",
+      "The list is titled **References** (bold, centered), sorted alphabetically by the first author’s surname, double-spaced, and each entry has a [[hanging-indent|hanging indent]]: the first line starts at the margin and the following lines are indented 0.5 inch (1.27 cm), so surnames stand out.",
       {h:"Authors"},
       {list:[
         "Surname, then initials with full stops and spaces: `Okafor, A. N.`",
         "Separate authors with commas and put `&` before the last one, even with two authors: `Okafor, A. N., & Ramírez, L.`",
         "List **up to 20** authors. With 21 or more, list the first 19, then an ellipsis (`. . .`), then the final author.",
-        "An organisation can be the author: `World Health Organization.` Write its full name.",
+        "An organization can be the author: `World Health Organization.` Write its full name.",
         "Editors of a whole edited book get `(Ed.)` or `(Eds.)` after their names."
       ]},
       {h:"Dates"},
@@ -161,29 +161,29 @@ ICA.addUnit({
         "**Names of periodicals** (journals, magazines, newspapers) keep **title case**: *Journal of Schoolyard Ecology*."
       ]},
       "Italics mark the part a reader would look for on a shelf or a website: the book, report or web page title when it stands alone, and for articles the **journal name and volume number**. The issue number in brackets is not italic, and article and chapter titles are never italic or in quotation marks.",
-      {ex:"Wrong: Shade Trees And Classroom Temperatures\nRight: Shade trees and classroom temperatures\n\nWrong: Radio, rumour and public health in kenya\nRight: Radio, rumour and public health in Kenya   (proper noun)", label:"Sentence case, done right", mono:true},
+      {ex:"Wrong: Shade Trees And Classroom Temperatures\nRight: Shade trees and classroom temperatures\n\nWrong: Radio, rumor and public health in kenya\nRight: Radio, rumor and public health in Kenya   (proper noun)", label:"Sentence case, done right", mono:true},
       {warn:"Many databases and some reference managers store titles in Title Case. APA styles in reference managers usually print a title exactly as stored, so a title stored in Title Case comes out wrong. You’ll fix this in Lesson 5."}
     ]},
     {h:"The five patterns you’ll use most", body:[
       "Here are APA 7th patterns for the most common sources, using invented practice sources. *Asterisks* mark italics.",
       {ex:"Okafor, A. N., Ramírez, L., & Watanabe, K. (2023). Shade trees and classroom temperatures: Evidence from twelve schools. *Journal of Schoolyard Ecology, 14*(2), 45–62. https://doi.org/10.5555/jse.142", label:"Journal article with a DOI", mono:true},
       "The volume (14) is italic with the journal name; the issue (2) is in plain brackets right after it, with no space. Always include the issue number when there is one. If the journal numbers articles instead of pages, write `Article 104` instead of the page range. If there’s no DOI and you found the article in an academic database, just end after the pages.",
-      {lab:"cl-apa-article", t:"Practise: an APA journal article"},
+      {lab:"cl-apa-article", t:"Practice: an APA journal article"},
       {ex:"Haddad, S. (2021). *Repairing things: A practical history of mending*. Riverbend Press.", label:"Book", mono:true},
       "No city or country for the publisher (that was dropped in the 7th edition), and no “Kindle edition” or other format for ebooks. Add a DOI at the end if the book has one. A later edition goes in brackets straight after the title, not in italics: `*Repairing things: A practical history of mending* (2nd ed.). Riverbend Press.`",
-      {lab:"cl-apa-book", t:"Practise: an APA book"},
-      {ex:"Mensah, A. K. (2022). Radio, rumour and public health. In T. Ortega & M. Lin (Eds.), *Communicating health in a crisis* (pp. 33–51). Northgate University Press. https://doi.org/10.5555/chc.3", label:"Chapter in an edited book", mono:true},
+      {lab:"cl-apa-book", t:"Practice: an APA book"},
+      {ex:"Mensah, A. K. (2022). Radio, rumor and public health. In T. Ortega & M. Lin (Eds.), *Communicating health in a crisis* (pp. 33–51). Northgate University Press. https://doi.org/10.5555/chc.3", label:"Chapter in an edited book", mono:true},
       "The chapter author comes first. Editors’ initials come **before** their surnames here, followed by `(Eds.)`. The chapter’s page range goes in brackets after the book title, with `pp.`",
-      {lab:"cl-apa-chapter", t:"Practise: an APA chapter in an edited book"}
+      {lab:"cl-apa-chapter", t:"Practice: an APA chapter in an edited book"}
     ]},
-    {h:"Web pages and reports from organisations", body:[
-      {ex:"Coastal Water Trust. (2024, March 5). *Well water testing at home*. https://example.org/wells", label:"Web page, organisation as author", mono:true},
-      "When the organisation is both the author and the website’s owner, don’t repeat its name as the site name. If an individual wrote the page, put them first and the site name before the URL: `Mensah, A. K. (2024, May 2). *Title of page*. Coastal Water Trust. https://…`",
+    {h:"Web pages and reports from organizations", body:[
+      {ex:"Coastal Water Trust. (2024, March 5). *Well water testing at home*. https://example.org/wells", label:"Web page, organization as author", mono:true},
+      "When the organization is both the author and the website’s owner, don’t repeat its name as the site name. If an individual wrote the page, put them first and the site name before the URL: `Mensah, A. K. (2024, May 2). *Title of page*. Coastal Water Trust. https://…`",
       "Add a retrieval date only for pages designed to change and not archived, such as a live data dashboard: `Retrieved October 2, 2026, from https://…`. Otherwise, no “Retrieved from”.",
-      {lab:"cl-apa-web", t:"Practise: an APA web page by an organisation"},
-      {ex:"Regional Health Observatory. (2025). *Clinic waiting times in rural districts* (Report No. 7). https://example.org/report7", label:"Report by an organisation", mono:true},
-      "A report number goes in brackets after the title, not in italics. When the author and publisher are the same organisation, the publisher is left out. If a government department published a report written by a named agency within it, the agency is the author and the department is the publisher.",
-      {lab:"cl-apa-report", t:"Practise: an APA report"},
+      {lab:"cl-apa-web", t:"Practice: an APA web page by an organization"},
+      {ex:"Regional Health Observatory. (2025). *Clinic waiting times in rural districts* (Report No. 7). https://example.org/report7", label:"Report by an organization", mono:true},
+      "A report number goes in brackets after the title, not in italics. When the author and publisher are the same organization, the publisher is left out. If a government department published a report written by a named agency within it, the agency is the author and the department is the publisher.",
+      {lab:"cl-apa-report", t:"Practice: an APA report"},
       {tip:"No URL protocol rules to remember: copy the address exactly as it appears in the browser, including https://, and don’t add a full stop after it."}
     ]},
     {h:"In-text citations", body:[
@@ -200,8 +200,8 @@ ICA.addUnit({
         "**No author**: the title moves into the author position in the reference, and the in-text citation uses the title in title case, italic if it’s italic in the reference, or in quotation marks if not: `(*Well Water Testing at Home*, 2024)`. Use “Anonymous” only if the work is actually signed that way.",
         "**Several works at once**: alphabetical, separated by semicolons: `(Haddad, 2021; Mensah, 2022)`."
       ]},
-      {lab:"cl-apa-intext", t:"Practise: APA in-text citations with page numbers"},
-      {lab:"cl-apa-etal", t:"Practise: three or more authors (et al.)"}
+      {lab:"cl-apa-intext", t:"Practice: APA in-text citations with page numbers"},
+      {lab:"cl-apa-etal", t:"Practice: three or more authors (et al.)"}
     ]},
     {h:"Sources you found inside other sources, and AI tools", body:[
       "Sometimes you read about a work in someone else’s writing and can’t get the original. APA calls this a **[[secondary-citation|secondary source]]**. Cite it sparingly; find the original if you can.",
@@ -211,20 +211,20 @@ ICA.addUnit({
       "APA’s current guidance (published in September 2025 and now on its AI references page, last updated April 2026) treats the **company** as the author, because AI can’t be an author. You can cite the tool in general (the year is when the tool was last updated) or, when it helps readers, a specific shared chat (with the date of the chat):",
       {ex:"OpenAI. (2025). *ChatGPT* [Large language model]. https://chatgpt.com\n\nOpenAI. (2026, February 10). *Title of the chat in sentence case* [Generative AI chat]. ChatGPT. https://chatgpt.com/share/…\n\nIn text: (OpenAI, 2025)", label:"APA references for AI (patterns from apastyle.apa.org)", mono:true},
       "APA no longer asks for a version number by default; use the model name if it’s available, or just the tool’s name. Prompts aren’t part of the reference: describe how you used the tool in your text (for example in your method or a note), and include prompts in an appendix if your instructor or publisher wants them. Most importantly, citing is not the same as permission: whether you may use AI, and how you must disclose it, depends on your instructor’s or publisher’s policy (Lesson 4).",
-      {lab:"cl-apa-ai", t:"Practise: cite a generative AI tool"}
+      {lab:"cl-apa-ai", t:"Practice: cite a generative AI tool"}
     ]},
     {h:"Checking an APA reference", body:[
       "Run this quick check over each entry:",
       {ol:[
         "Authors: surname, initials, commas, `&` before the last; all of them up to 20.",
         "Date in brackets, followed by a full stop.",
-        "Title in sentence case; proper nouns still capitalised; italic only if it stands alone.",
+        "Title in sentence case; proper nouns still capitalized; italic only if it stands alone.",
         "Journal in title case and italic, volume italic, issue in plain brackets, page range with an en dash.",
         "DOI as `https://doi.org/…`, no full stop after it, no “Retrieved from”, no “DOI:” label.",
         "No publisher city; publisher left out if it’s the same as the author.",
         "Every in-text citation matches an entry with the same spelling and year."
       ]},
-      {lab:"cl-apa-fix", t:"Practise: fix a flawed APA reference"}
+      {lab:"cl-apa-fix", t:"Practice: fix a flawed APA reference"}
     ]}
    ],
    try:[
@@ -256,7 +256,7 @@ ICA.addUnit({
     ]},
     {id:"t4u4-l2-x4", type:"order", q:"Put the pieces of this APA chapter reference in order.", items:[
       {t:"Mensah, A. K. (2022).", why:"The chapter’s author and year come first."},
-      {t:"Radio, rumour and public health.", why:"Then the chapter title, in sentence case, not italic."},
+      {t:"Radio, rumor and public health.", why:"Then the chapter title, in sentence case, not italic."},
       {t:"In T. Ortega & M. Lin (Eds.),", why:"Then “In”, the editors with initials first, and (Eds.)."},
       {t:"*Communicating health in a crisis* (pp. 33–51).", why:"Then the book title in italics and the chapter’s pages."},
       {t:"Northgate University Press.", why:"Then the publisher, with no city."},
@@ -268,8 +268,8 @@ ICA.addUnit({
       {t:"Both Ferreira (1998) and Mensah (2022)", why:"APA lists only the secondary source you used; the original is named in the text with “as cited in”."},
       {t:"Neither; secondary sources aren’t cited", why:"They are cited, just through the work where you found them."}
     ]},
-    {id:"t4u4-l2-x6", type:"mcq", q:"An organisation’s web page has no author named and no date. It’s from Coastal Water Trust, which also runs the site. How does APA handle it?", options:[
-      {t:"The organisation is the author; the date is n.d.: (Coastal Water Trust, n.d.)", ok:true, why:"An organisation counts as an author. Only when there’s truly no person or organisation does the title move to the author position."},
+    {id:"t4u4-l2-x6", type:"mcq", q:"An organization’s web page has no author named and no date. It’s from Coastal Water Trust, which also runs the site. How does APA handle it?", options:[
+      {t:"The organization is the author; the date is n.d.: (Coastal Water Trust, n.d.)", ok:true, why:"An organization counts as an author. Only when there’s truly no person or organization does the title move to the author position."},
       {t:"Author: Anonymous; (Anonymous, n.d.)", why:"APA uses “Anonymous” only when a work is actually signed “Anonymous”."},
       {t:"Leave it out; undated pages can’t be cited", why:"Undated pages can be cited: “n.d.” means no date."},
       {t:"Use today’s date as the publication date", why:"That would be false information. Use n.d., and add a retrieval date only if the page is designed to change."}
@@ -316,13 +316,13 @@ ICA.addUnit({
         "**Organisation that is both author and publisher**: skip the author and start with the title."
       ]},
       {ex:"Okafor, Adaeze N., et al. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology*, vol. 14, no. 2, 2023, pp. 45–62, https://doi.org/10.5555/jse.142.", label:"MLA: journal article", mono:true},
-      {lab:"cl-mla-article", t:"Practise: an MLA journal article"},
+      {lab:"cl-mla-article", t:"Practice: an MLA journal article"},
       {ex:"Haddad, Samir. *Repairing Things: A Practical History of Mending*. Riverbend Press, 2021.", label:"MLA: book", mono:true},
-      {lab:"cl-mla-book", t:"Practise: an MLA book"},
-      {ex:"Mensah, Ama K. “Radio, Rumour and Public Health.” *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin, Northgate University Press, 2022, pp. 33–51, https://doi.org/10.5555/chc.3.", label:"MLA: chapter in an edited book", mono:true},
-      {ex:"“Well Water Testing at Home.” *Coastal Water Trust*, 5 Mar. 2024, example.org/wells.", label:"MLA: web page by an organisation that runs the site", mono:true},
-      "In that last entry the organisation is the author, the website and the publisher, so MLA starts with the page title and doesn’t repeat the name. If a person wrote the page, start with them: `Mensah, Ama K. “Title.” *Website Name*, …`",
-      {lab:"cl-mla-web", t:"Practise: an MLA web page"}
+      {lab:"cl-mla-book", t:"Practice: an MLA book"},
+      {ex:"Mensah, Ama K. “Radio, Rumor and Public Health.” *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin, Northgate University Press, 2022, pp. 33–51, https://doi.org/10.5555/chc.3.", label:"MLA: chapter in an edited book", mono:true},
+      {ex:"“Well Water Testing at Home.” *Coastal Water Trust*, 5 Mar. 2024, example.org/wells.", label:"MLA: web page by an organization that runs the site", mono:true},
+      "In that last entry the organization is the author, the website and the publisher, so MLA starts with the page title and doesn’t repeat the name. If a person wrote the page, start with them: `Mensah, Ama K. “Title.” *Website Name*, …`",
+      {lab:"cl-mla-web", t:"Practice: an MLA web page"}
     ]},
     {h:"MLA in-text citations", body:[
       "MLA’s pointer is the first element of the entry (usually the surname) and a page number, with **no comma** and no “p.”:",
@@ -330,8 +330,8 @@ ICA.addUnit({
       "When the entry starts with a title, use the title (shortened to its first noun phrase) in the citation, with the same quotation marks or italics. If a source has no page numbers, cite just the author; use section or paragraph numbers only if the source itself numbers them.",
       "In your own sentences MLA prefers words to “et al.”: write “Okafor and others found…” and keep “et al.” for brackets and the works-cited list.",
       {ex:"Indirect source (you read Mensah, who quotes Ferreira):\nFerreira called radio “the village’s second well” (qtd. in Mensah 40).\nWorks Cited lists only Mensah.", label:"MLA: “qtd. in”", mono:true},
-      {lab:"cl-mla-intext", t:"Practise: MLA in-text citations"},
-      {lab:"cl-mla-fix", t:"Practise: fix a flawed MLA entry"}
+      {lab:"cl-mla-intext", t:"Practice: MLA in-text citations"},
+      {lab:"cl-mla-fix", t:"Practice: fix a flawed MLA entry"}
     ]},
     {h:"Chicago: two systems in one manual", body:[
       "*The Chicago Manual of Style* (18th edition, 2024) offers two systems. Choose one per piece of writing:",
@@ -347,9 +347,9 @@ ICA.addUnit({
       {ex:"1. Adaeze N. Okafor et al., “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools,” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 50, https://doi.org/10.5555/jse.142.\n\n2. Okafor et al., “Shade Trees,” 51.\n\nBibliography:\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14, no. 2 (2023): 45–62. https://doi.org/10.5555/jse.142.", label:"Chicago notes: a journal article", mono:true},
       "Notice: in the note, three authors become “Okafor et al.”, but the bibliography lists all three. The bibliography lists **up to six** authors; with seven or more, list the first three followed by “et al.” The note cites the exact page (50); the bibliography gives the article’s full page range.",
       "A later edition of a book goes after the title, with a full stop in the bibliography: `Raman, Priya. *Salt and Stone*. 2nd ed. Harbour Light Press, 2021.`",
-      {lab:"cl-chi-note", t:"Practise: a Chicago footnote for a journal article"},
-      {lab:"cl-chi-bib", t:"Practise: a Chicago bibliography entry for a book"},
-      {ex:"Mensah, Ama K. “Radio, Rumour and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press, 2022. https://doi.org/10.5555/chc.3.", label:"Chicago bibliography: a chapter", mono:true},
+      {lab:"cl-chi-note", t:"Practice: a Chicago footnote for a journal article"},
+      {lab:"cl-chi-bib", t:"Practice: a Chicago bibliography entry for a book"},
+      {ex:"Mensah, Ama K. “Radio, Rumor and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press, 2022. https://doi.org/10.5555/chc.3.", label:"Chicago bibliography: a chapter", mono:true},
       "Chicago 18th makes the chapter’s page range optional in the bibliography; older guides, and many instructors, include it after the editors’ names (`edited by Tomás Ortega and Mei Lin, 33–51.`). Both are acceptable.",
       {tip:"“Ibid.” (“in the same place”) was once used for a note citing the same source as the note before. Chicago now prefers a shortened note instead, though ibid. is still allowed. Follow your instructor’s preference."}
     ]},
@@ -357,8 +357,8 @@ ICA.addUnit({
       "Author-date looks like the notes bibliography, except that the **year moves to right after the author** and the in-text citation has no comma between author and year:",
       {ex:"In text: (Okafor et al. 2023, 50)\n\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. 2023. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14 (2): 45–62. https://doi.org/10.5555/jse.142.\n\nHaddad, Samir. 2021. *Repairing Things: A Practical History of Mending*. Riverbend Press.", label:"Chicago author-date: citation and references", mono:true},
       "Volume and issue are written `14 (2): 45–62` in author-date, compared with `14, no. 2 (2023): 45–62` in notes-bibliography.",
-      {lab:"cl-chi-ad", t:"Practise: a Chicago author-date reference"},
-      {lab:"cl-chi-fix", t:"Practise: fix a flawed Chicago entry"}
+      {lab:"cl-chi-ad", t:"Practice: a Chicago author-date reference"},
+      {lab:"cl-chi-fix", t:"Practice: fix a flawed Chicago entry"}
     ]},
     {h:"Side by side", body:[
       "The same decisions, made differently by each style:",
@@ -397,7 +397,7 @@ ICA.addUnit({
     ]},
     {id:"t4u4-l3-x4", type:"mcq", q:"Mei cites the Coastal Water Trust page “Well Water Testing at Home” in MLA. Its entry starts with the title, because the Trust is author and publisher. What’s her in-text citation?", options:[
       {t:"(“Well Water Testing”)", ok:true, why:"The citation uses the first element of the entry, here the title, shortened and in the same quotation marks. A web page usually has no page number."},
-      {t:"(Coastal Water Trust 2024)", why:"MLA in-text citations don’t include the year, and this entry starts with the title, not the organisation."},
+      {t:"(Coastal Water Trust 2024)", why:"MLA in-text citations don’t include the year, and this entry starts with the title, not the organization."},
       {t:"(Anonymous)", why:"MLA says not to use “Anonymous” in place of an author."},
       {t:"(Well Water Testing at Home, n.d.)", why:"That mixes in APA habits. MLA has no “n.d.” in citations and keeps the title’s quotation marks."}
     ]},
@@ -435,14 +435,14 @@ ICA.addUnit({
    read:[{book:"owg", where:"Handbook, “MLA Documentation and Format”: “MLA In-Text Citations” and “MLA Works Cited”", note:"This part follows the MLA 8th edition. Write DOIs as https://doi.org/ links, as the 9th edition does."}]
   },
   /* ===================== LESSON 4 ===================== */
-  {id:"t4u4-l4", title:"Quoting, paraphrasing, summarising and plagiarism", minutes:50,
-   goals:["Choose between quoting, paraphrasing and summarising","Quote accurately, with page numbers and signal phrases","Paraphrase without patchwriting","Recognise plagiarism, self-plagiarism and common knowledge","Handle AI-generated text according to the policy you’re under"],
+  {id:"t4u4-l4", title:"Quoting, paraphrasing, summarizing and plagiarism", minutes:50,
+   goals:["Choose between quoting, paraphrasing and summarizing","Quote accurately, with page numbers and signal phrases","Paraphrase without patchwriting","Recognise plagiarism, self-plagiarism and common knowledge","Handle AI-generated text according to the policy you’re under"],
    hook:{q:"You rewrite a paragraph from a book completely in your own words. Do you still need a citation?", options:["No: new words make it yours","Yes: the ideas and information still came from the book","Only if you kept some of the original words","Only if you’re writing for a journal"], answer:1, reveal:"**Yes.** A citation credits ideas and information, not just words. Changing every word is a good paraphrase, but the thinking is still the author’s. This lesson shows how to use sources in three ways, and where honest mistakes most often creep in."},
    learn:[
     {h:"Three ways to use a source", body:[
-      {lead:"You can bring a source into your writing by quoting it, paraphrasing it or summarising it. All three need a citation."},
+      {lead:"You can bring a source into your writing by quoting it, paraphrasing it or summarizing it. All three need a citation."},
       {fig:'<svg viewBox="0 0 340 280"><text x="170" y="22" text-anchor="middle" class="s">How closely you follow the source</text><path class="d-ink" d="M20,40 L320,40" stroke-width="2"/><text x="20" y="58" class="s">exact words</text><text x="320" y="58" text-anchor="end" class="s">only the main point</text><rect class="d-rose" x="10" y="74" width="100" height="120" rx="8" stroke-width="2"/><text x="60" y="98" text-anchor="middle">Quote</text><text x="60" y="122" text-anchor="middle" class="s">exact words</text><text x="60" y="140" text-anchor="middle" class="s">in quotation</text><text x="60" y="158" text-anchor="middle" class="s">marks + page</text><rect class="d-lup" x="120" y="74" width="100" height="120" rx="8" stroke-width="2"/><text x="170" y="98" text-anchor="middle">Paraphrase</text><text x="170" y="122" text-anchor="middle" class="s">one passage,</text><text x="170" y="140" text-anchor="middle" class="s">your words and</text><text x="170" y="158" text-anchor="middle" class="s">structure</text><rect class="d-sage" x="230" y="74" width="100" height="120" rx="8" stroke-width="2"/><text x="280" y="98" text-anchor="middle">Summary</text><text x="280" y="122" text-anchor="middle" class="s">much shorter,</text><text x="280" y="140" text-anchor="middle" class="s">main ideas</text><text x="280" y="158" text-anchor="middle" class="s">only</text><rect class="d-gold" x="60" y="214" width="220" height="54" rx="8" stroke-width="2"/><text x="170" y="236" text-anchor="middle">All three need a citation</text><text x="170" y="256" text-anchor="middle" class="s">the ideas are still the author’s</text></svg>', alt:"A line from “exact words” to “only the main point”. Along it sit three boxes: Quote (exact words in quotation marks with a page number), Paraphrase (one passage in your own words and structure) and Summary (much shorter, main ideas only). Below: all three need a citation.", cap:"Quote, paraphrase and summary differ in how closely they follow the source, not in whether they need a citation."},
-      {table:[["Use","When it’s the best choice"],["Quote","The exact wording matters: a definition, a memorable or controversial phrase, words you’re going to analyse"],["Paraphrase","You need the detail of one passage, but the wording itself isn’t the point"],["Summary","You need the gist of a long passage, chapter or whole study"]]},
+      {table:[["Use","When it’s the best choice"],["Quote","The exact wording matters: a definition, a memorable or controversial phrase, words you’re going to analyze"],["Paraphrase","You need the detail of one passage, but the wording itself isn’t the point"],["Summary","You need the gist of a long passage, chapter or whole study"]]},
       "Most academic writing leans on paraphrase and summary, with quotations used sparingly. APA, for example, notes that published authors paraphrase their sources most of the time rather than quoting them, and encourages students to do the same. Some instructors and publishers also limit how much you may quote."
     ]},
     {h:"Quoting well", body:[
@@ -472,13 +472,13 @@ ICA.addUnit({
     {h:"Summarising", body:[
       "A summary condenses a longer passage, chapter or whole work into its main ideas, in your own words. It’s much shorter than the original and leaves out examples and detail.",
       {ex:"Haddad (2021) argues that repair declined as a household skill when mass-produced goods became cheap, and that community repair projects are reviving it as a social activity.", label:"A one-sentence summary of a whole (invented) book", mono:true},
-      "When summarising a whole work, no page number is needed. Summaries are the raw material of literature reviews; Unit 5 shows how to move from summarising sources one by one to [[synthesis|synthesising]] them ({{synthesis-writing}})."
+      "When summarizing a whole work, no page number is needed. Summaries are the raw material of literature reviews; Unit 5 shows how to move from summarizing sources one by one to [[synthesis|synthesizing]] them ({{synthesis-writing}})."
     ]},
     {h:"What counts as plagiarism, and what doesn’t", body:[
       "[[plagiarism-term|Plagiarism]] is presenting someone else’s words, ideas, data or images as your own, whether deliberately or by accident. Common forms:",
       {list:[
         "Copying text without quotation marks and a citation (even a sentence or a phrase).",
-        "Paraphrasing or summarising without a citation, or patchwriting.",
+        "Paraphrasing or summarizing without a citation, or patchwriting.",
         "Using someone’s data, images, charts or code without credit.",
         "Submitting work written by someone else, whether a friend, a paid service, or (where it’s not allowed) an AI tool.",
         "**[[self-plagiarism|Self-plagiarism]]** (sometimes called text recycling): reusing your own previously submitted or published work as if it were new. Courses usually forbid resubmitting old work without permission, and journals require you to disclose and cite your earlier publications. Rules vary, so ask."
@@ -501,8 +501,8 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t4u4-l4-x1", type:"sort", q:"Should each writer quote, paraphrase or summarise?", buckets:["Quote","Paraphrase","Summarise"], items:[
-      {t:"Fatima is analysing the exact wording of a law’s definition", b:0, why:"When the exact words are what you’re analysing, quote them."},
+    {id:"t4u4-l4-x1", type:"sort", q:"Should each writer quote, paraphrase or summarize?", buckets:["Quote","Paraphrase","Summarise"], items:[
+      {t:"Fatima is analyzing the exact wording of a law’s definition", b:0, why:"When the exact words are what you’re analyzing, quote them."},
       {t:"Kenji needs the main finding of a 30-page report in one sentence", b:2, why:"Condensing a long work to its main point is a summary."},
       {t:"Ana needs the details of one paragraph explaining a method, but the wording isn’t special", b:1, why:"One passage, full detail, ordinary wording: paraphrase it."},
       {t:"Tomás wants a politician’s memorable phrase from a speech", b:0, why:"A memorable or controversial phrase is a good reason to quote."},
@@ -532,7 +532,7 @@ ICA.addUnit({
     ]},
     {id:"t4u4-l4-x4", type:"mcq", q:"Priya wrote a strong essay for a course last year. She wants to hand in large parts of it for a new course. What should she do?", options:[
       {t:"Ask the new instructor first, and disclose the earlier work", ok:true, why:"Reusing your own submitted work without permission is self-plagiarism under most policies. Asking and disclosing makes it honest."},
-      {t:"Just submit it: you can’t plagiarise yourself", why:"Most policies say you can, because each assignment is meant to be new work. Rules vary, so ask."},
+      {t:"Just submit it: you can’t plagiarize yourself", why:"Most policies say you can, because each assignment is meant to be new work. Rules vary, so ask."},
       {t:"Run it through a paraphrasing tool first so that it looks like new work", why:"Disguising reuse makes it worse, not better, and may count as misconduct."},
       {t:"Cite it as if a different author wrote it", why:"That would be false. If reuse is allowed, cite it honestly as your own earlier work."}
     ]},
@@ -550,8 +550,8 @@ ICA.addUnit({
     ]},
     {id:"t4u4-l4-x7", type:"explain", q:"Rania cites her source but keeps its sentence order and most of its phrases, swapping a few words for synonyms. Explain why this can still count as plagiarism, and how she could fix it.", size:"3–4 sentences", hint:"What does the citation credit, and what does it not mark?", model:"This is patchwriting. Her citation credits the source’s idea, but the borrowed wording and structure are presented as if they were her own sentences, and most policies treat unmarked borrowed phrasing as plagiarism even when the writer didn’t mean to cheat. She could put any exact phrases she wants to keep in quotation marks, or close the source, write the idea from memory in her own words and structure, then compare and cite it.", points:["Names it as patchwriting", "Explains that the citation credits the idea but not the borrowed wording", "Gives the quotation-mark fix", "Gives the cover-the-source rewrite fix"]}
    ],
-   apply:{intro:"Practise with real text. Any open-access source works, including the free OpenStax books in this app’s reading list.", tasks:[
-     {t:"Quote, paraphrase and summarise the same source", how:["Choose a paragraph from an open-access article or textbook section.","Write a sentence that quotes a short phrase from it, with a signal phrase and page or paragraph number.","Paraphrase the whole paragraph using the cover-and-rewrite method, then compare with the original and fix any copied phrases.","Summarise the whole article or section in one or two sentences."], write:"Original (copied with source details):\nQuotation:\nParaphrase:\nSummary:\nPhrases I caught and fixed:"},
+   apply:{intro:"Practice with real text. Any open-access source works, including the free OpenStax books in this app’s reading list.", tasks:[
+     {t:"Quote, paraphrase and summarize the same source", how:["Choose a paragraph from an open-access article or textbook section.","Write a sentence that quotes a short phrase from it, with a signal phrase and page or paragraph number.","Paraphrase the whole paragraph using the cover-and-rewrite method, then compare with the original and fix any copied phrases.","Summarise the whole article or section in one or two sentences."], write:"Original (copied with source details):\nQuotation:\nParaphrase:\nSummary:\nPhrases I caught and fixed:"},
      {t:"Find the policies that apply to you", how:["Look up the academic integrity or plagiarism policy of your course, institution or a journal you might write for (journals usually have it in their “guide for authors” or “editorial policies”).","Look for what it says about generative AI: is it allowed, for what, and how must you disclose it?","If you’re not studying or publishing, choose any university’s public policy and read it as an example."], write:"Whose policy, what it says about self-plagiarism and AI, and how to disclose"}
    ], proof:"Your notes contain one source used three ways (quote, paraphrase, summary) with citations, the phrases you fixed, and a short summary of the policy that applies to you."},
    read:[{book:"owg", where:"Chapter 12, Section 12.6 “Editing Focus: Integrating Sources and Quotations”"},{book:"owg", where:"Chapter 13, Section 13.6 “Spotlight on … Ethical Research” (“Plagiarism”, “What Plagiarism Is Not”, “Avoiding Plagiarism”)"}]
@@ -559,11 +559,11 @@ ICA.addUnit({
   /* ===================== LESSON 5 ===================== */
   {id:"t4u4-l5", title:"Managing references with Zotero", minutes:60,
    goals:["Explain what a reference manager does and name several neutrally","Install Zotero and the Zotero Connector on your devices","Add items from web pages and by DOI or ISBN, and fix their details","Organise with collections and tags","Cite and build a bibliography in Word, LibreOffice or Google Docs, then check the output"],
-   hook:{q:"A free reference manager will format your citations in APA, MLA or Chicago. What do you still need to do?", options:["Nothing: the software follows the style rules","Check each citation against the source and the style rules","Retype every citation by hand","Only check that the bibliography is in alphabetical order"], answer:1, reveal:"**Check them.** The software formats whatever details it has. If a title was saved in the wrong case, an organisation’s name was split into a fake first and last name, or a web page was saved as the wrong kind of item, the citation comes out wrong, neatly formatted. This lesson shows how to collect, cite and check."},
+   hook:{q:"A free reference manager will format your citations in APA, MLA or Chicago. What do you still need to do?", options:["Nothing: the software follows the style rules","Check each citation against the source and the style rules","Retype every citation by hand","Only check that the bibliography is in alphabetical order"], answer:1, reveal:"**Check them.** The software formats whatever details it has. If a title was saved in the wrong case, an organization’s name was split into a fake first and last name, or a web page was saved as the wrong kind of item, the citation comes out wrong, neatly formatted. This lesson shows how to collect, cite and check."},
    learn:[
     {h:"What a reference manager does", body:[
       {lead:"A [[reference-manager|reference manager]] is a personal library for your sources: it stores their details, PDFs and notes, and writes citations for you in hundreds of styles."},
-      "Think of it as a music app for your reading. You add items once, organise them into playlists, and the app takes care of formatting whenever you “play” one into a document. Change the style from APA to Chicago, and every citation and the bibliography update together.",
+      "Think of it as a music app for your reading. You add items once, organize them into playlists, and the app takes care of formatting whenever you “play” one into a document. Change the style from APA to Chicago, and every citation and the bibliography update together.",
       "This lesson uses **[[zotero|Zotero]]**, because it’s free, open source and run by a nonprofit (the Corporation for Digital Scholarship), and it works on Windows, macOS and Linux. Other well-known options:",
       {list:[
         "**Mendeley** (from Elsevier) and **EndNote** (from Clarivate; paid, though many universities provide it).",
@@ -585,7 +585,7 @@ ICA.addUnit({
       {tip:"No account is needed to use Zotero on one computer. Create one when you want a backup or a second device."}
     ]},
     {h:"Collecting with the Connector", body:[
-      "The **[[zotero-connector|Zotero Connector]]** is a [[browser-extension|browser extension]]. On a journal article, a library catalogue record, a news story or almost any web page, its toolbar button changes to show what it has recognised (an article, a book, a web page). One click saves the item with its details and, where the PDF is freely available, often the PDF too.",
+      "The **[[zotero-connector|Zotero Connector]]** is a [[browser-extension|browser extension]]. On a journal article, a library catalog record, a news story or almost any web page, its toolbar button changes to show what it has recognized (an article, a book, a web page). One click saves the item with its details and, where the PDF is freely available, often the PDF too.",
       {fig:'<svg viewBox="0 0 340 340"><defs><marker id="a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="10" y="10" width="150" height="66" rx="8" stroke-width="2"/><text x="85" y="36" text-anchor="middle">Web page</text><text x="85" y="58" text-anchor="middle" class="s">+ Connector</text><rect class="d-lup" x="180" y="10" width="150" height="66" rx="8" stroke-width="2"/><text x="255" y="36" text-anchor="middle">DOI or ISBN</text><text x="255" y="58" text-anchor="middle" class="s">Add by Identifier</text><path class="d-ink" d="M85,78 L150,118" stroke-width="2" marker-end="url(#a5)"/><path class="d-ink" d="M255,78 L190,118" stroke-width="2" marker-end="url(#a5)"/><rect class="d-gold" x="60" y="122" width="220" height="80" rx="10" stroke-width="2"/><text x="170" y="146" text-anchor="middle">Your Zotero library</text><text x="170" y="168" text-anchor="middle" class="s">items, PDFs, notes</text><text x="170" y="188" text-anchor="middle" class="s">collections and tags</text><path class="d-ink" d="M300,162 L326,162 L326,40" stroke-width="2" stroke-dasharray="4 4"/><text x="318" y="110" text-anchor="end" class="s">sync</text><path class="d-ink" d="M170,204 L170,242" stroke-width="2" marker-end="url(#a5)"/><rect class="d-sage" x="30" y="246" width="280" height="84" rx="10" stroke-width="2"/><text x="170" y="270" text-anchor="middle">Word · LibreOffice · Google Docs</text><text x="170" y="292" text-anchor="middle" class="s">citations + bibliography in your style</text><text x="170" y="314" text-anchor="middle" class="s">then you check them</text></svg>', alt:"Two inputs, a web page saved with the Connector and a DOI or ISBN added by identifier, flow into your Zotero library (items, PDFs, notes, collections, tags), which can sync online. From the library, citations and a bibliography flow into Word, LibreOffice or Google Docs, where you check them.", cap:"Collect once, cite many times, in any style, and check at the end."},
       "The Connector works best with the Zotero desktop app open. Without it, the Connector can still save many pages straight to your online library if you’re signed in.",
       {warn:"The Connector reads whatever details the web page offers. Publisher and library pages are usually good; general web pages and some databases are often incomplete. Always glance at what was saved."}
@@ -595,8 +595,8 @@ ICA.addUnit({
       "Then check the item’s details in the right-hand pane against the source itself:",
       {list:[
         "**Item type**: a journal article saved as a web page will cite wrongly in every style.",
-        "**Authors**: each person as last name + first name. An organisation should be a single-field name (click the small button beside the name to switch to one field); otherwise “World Health Organization” becomes “Organization, W. H.”.",
-        "**Title case**: store titles in **sentence case** (capitalise the first word, the first word after a colon, and proper nouns).",
+        "**Authors**: each person as last name + first name. An organization should be a single-field name (click the small button beside the name to switch to one field); otherwise “World Health Organization” becomes “Organization, W. H.”.",
+        "**Title case**: store titles in **sentence case** (capitalize the first word, the first word after a colon, and proper nouns).",
         "**Date, volume, issue, pages, DOI**: present and correct."
       ]},
       "Why sentence case? Styles like MLA and Chicago can turn a sentence-case title into title case automatically, but APA styles can’t reliably do the reverse, so a title stored as “Shade Trees And Classroom Temperatures” comes out exactly like that in APA. Zotero can help: right-click the title field and choose **Sentence case**, then fix any proper nouns it lowercased.",
@@ -631,13 +631,13 @@ ICA.addUnit({
         "Repeated names, such as a website name that duplicates the author."
       ]},
       "Check every entry against the source and against the patterns in Lessons 2 and 3. Fix the item in your library, then refresh, so the fix sticks everywhere.",
-      {lab:"cl-generated", t:"Practise: fix what a citation generator got wrong"},
+      {lab:"cl-generated", t:"Practice: fix what a citation generator got wrong"},
       {key:"Software saves hours of typing. You still own the accuracy."}
     ]}
    ],
    try:[
     {id:"t4u4-l5-x1", type:"match", q:"Match each Zotero part or feature to what it does.", pairs:[
-      ["Zotero Connector","Saves a source from the web page you’re on","It’s the browser extension that recognises articles, books and pages."],
+      ["Zotero Connector","Saves a source from the web page you’re on","It’s the browser extension that recognizes articles, books and pages."],
       ["Add Item(s) by Identifier (magic wand)","Creates an item from a DOI, ISBN, PMID or arXiv ID","Paste the identifier and Zotero looks up the details."],
       ["Collection","Groups items for a project, like a playlist","An item can be in several collections at once."],
       ["Document Preferences","Chooses the citation style for a document","Changing it reformats every citation and the bibliography."],
@@ -647,16 +647,16 @@ ICA.addUnit({
       {t:"Change the title in her Zotero library to sentence case, then refresh", ok:true, why:"APA styles print titles as stored, so fix the source data once and every document improves."},
       {t:"Edit the citation text directly in the document", why:"Hand edits break Zotero’s link and can be overwritten on refresh. Fix the library item instead."},
       {t:"Switch to MLA, because Zotero can’t do APA", why:"Zotero includes APA 7th; the problem is the stored title, not the style."},
-      {t:"Leave it: capitalisation isn’t part of APA style", why:"It is: APA uses sentence case for article titles."}
+      {t:"Leave it: capitalization isn’t part of APA style", why:"It is: APA uses sentence case for article titles."}
     ]},
     {id:"t4u4-l5-x3", type:"spot", q:"A reference manager produced this APA 7th reference for a WHO report. Tap the parts a careful writer must fix.", ask:"needs fixing", mono:true, parts:[
-      {t:"Organization, W. H.", flag:true, why:"The organisation was saved as a person’s name. Store it as one field: “World Health Organization.”"},
+      {t:"Organization, W. H.", flag:true, why:"The organization was saved as a person’s name. Store it as one field: “World Health Organization.”"},
       " ",
       {t:"(2025).", flag:false, why:"Fine: year in brackets."},
       " ",
       {t:"*GLOBAL REPORT ON WATER SAFETY*.", flag:true, why:"ALL CAPS from the database. APA needs sentence case: *Global report on water safety*."},
       " ",
-      {t:"World Health Organization.", flag:true, why:"When the author and publisher are the same organisation, APA leaves the publisher out. (Here the author was also wrong, which hid the duplication.)"},
+      {t:"World Health Organization.", flag:true, why:"When the author and publisher are the same organization, APA leaves the publisher out. (Here the author was also wrong, which hid the duplication.)"},
       " ",
       {t:"https://example.org/report", flag:false, why:"Fine: a URL with no full stop after it."}
     ]},
@@ -688,7 +688,7 @@ ICA.addUnit({
        chromeos:["If your Chromebook allows Linux: turn it on in **Settings → About ChromeOS → Developers → Linux development environment**, then download the Linux version from **zotero.org/download** and follow Zotero’s Linux installation instructions.","Install the **Zotero Connector** from the Chrome Web Store (link on zotero.org/download).","If Linux isn’t available: create a free zotero.org account, sign in to the Connector, and use the web library at zotero.org."],
        phone:["iPhone or iPad: install **Zotero** from the App Store and sign in with a free zotero.org account to see your synced library.","In Safari on iPhone, open an article page, tap **Share** and choose the Zotero option (if you don’t see it, scroll the row of apps and tap **More**).","Android: check zotero.org/download or Google Play for Zotero’s official Android app; or open your library at zotero.org in your phone’s browser."]
      }},
-     {t:"Add three items three ways, in a new collection", how:["Create a collection for your topic: **File → New Collection…**","Save your Lesson 1 article from its web page with the Connector.","Add a book by ISBN (from the back cover or a catalogue record) with the magic wand **Add Item(s) by Identifier**; add a second article by DOI the same way.","Open each item and check the item type, authors (organisations in one field), sentence-case titles, date, volume, issue, pages and DOI. Fix what’s wrong."], write:"What Zotero got right, and what I had to fix"},
+     {t:"Add three items three ways, in a new collection", how:["Create a collection for your topic: **File → New Collection…**","Save your Lesson 1 article from its web page with the Connector.","Add a book by ISBN (from the back cover or a catalog record) with the magic wand **Add Item(s) by Identifier**; add a second article by DOI the same way.","Open each item and check the item type, authors (organizations in one field), sentence-case titles, date, volume, issue, pages and DOI. Fix what’s wrong."], write:"What Zotero got right, and what I had to fix"},
      {t:"Cite and build a bibliography, then switch style", app:{
        ms:["Open Word (the desktop app) and a new document; make sure Zotero is open.","On the **Zotero** tab, click **Add/Edit Citation**. Choose **APA Style 7th edition** in Document Preferences.","Search for an item, add a page number, press [[kbd:Enter]]. Add two more citations.","Click **Add/Edit Bibliography** at the end.","Click **Document Preferences**, choose **Chicago Manual of Style 18th edition (notes and bibliography)**, and watch the citations become footnotes."],
        google:["Make sure Zotero desktop is open and the Connector is installed, then open a Google Doc (in Editing mode, not Suggesting).","Open the **Zotero** menu and choose **Add/edit citation…**. Allow Zotero access to your Google account when asked, then choose **APA Style 7th edition**.","Search for an item, add a page number, press [[kbd:Enter]]. Add two more citations.","Choose **Zotero → Add/edit bibliography**.","Choose **Zotero → Document preferences…**, pick **MLA Handbook 9th edition (in-text citations)**, and watch everything reformat."],
@@ -709,22 +709,22 @@ ICA.addUnit({
    {id:"t4u4-cp02", lesson:"t4u4-l1", level:1, q:"Kwame read 15 sources for an essay in APA 7th, but cited only 9 of them in his text. How many sources go in his References list?", options:[
      {t:"9: a reference list contains only the works you actually cited", ok:true, why:"Every in-text citation needs a matching entry, and every entry must be cited somewhere. Works you only consulted stay out."},
      {t:"15, because he read all of them", why:"Listing works you consulted belongs to a Chicago bibliography, not an APA reference list."},
-     {t:"Only the sources he quoted word for word", why:"Paraphrased and summarised sources are cited too, so they need entries as well."},
+     {t:"Only the sources he quoted word for word", why:"Paraphrased and summarized sources are cited too, so they need entries as well."},
      {t:"9, plus the other 6 under the heading “Further reading”", why:"APA has no such requirement. The References list holds exactly the works cited in the text."}]},
    {id:"t4u4-cp03", lesson:"t4u4-l2", level:2, q:"Teresa Valdivia and Rohan Mehta wrote “Market gardens and household diets in Lima: A two-year study” (2024), in the *Journal of Urban Food Systems*, volume 9, issue 3, pages 112–130, DOI 10.5555/jufs.93. Which APA 7th reference is correct? (Asterisks mark italics.)", options:[
      {t:"`Valdivia, T., & Mehta, R. (2024). “Market Gardens and Household Diets in Lima: A Two-Year Study.” *Journal of Urban Food Systems, 9*(3), 112–130. https://doi.org/10.5555/jufs.93`", why:"Quotation marks and title case for an article title are MLA and Chicago habits. APA writes article titles plain, in sentence case: Market gardens and household diets in Lima: A two-year study."},
      {t:"`Valdivia, T., and Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of Urban Food Systems, 9*(3), 112–130. doi:10.5555/jufs.93`", why:"APA uses `&` before the last author in the list, and writes a DOI as a link beginning `https://doi.org/`, not `doi:`."},
      {t:"`Valdivia, T., & Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of urban food systems*, 9(3), 112–130. https://doi.org/10.5555/jufs.93`", why:"Journal names keep title case in APA, and the volume number is italic together with the journal name."},
      {t:"`Valdivia, T., & Mehta, R. (2024). Market gardens and household diets in Lima: A two-year study. *Journal of Urban Food Systems, 9*(3), 112–130. https://doi.org/10.5555/jufs.93`", ok:true, why:"Initials, `&`, year in brackets, sentence-case article title (Lima kept as a proper noun), italic journal and volume, plain issue in brackets, en dash in the pages, DOI link with no full stop."}]},
-   {id:"t4u4-cp04", lesson:"t4u4-l2", level:2, q:"A 2025 web page titled “Keeping chickens in small yards” names no author and no responsible organisation. Which APA 7th in-text citation is correct? (Asterisks mark italics.)", options:[
+   {id:"t4u4-cp04", lesson:"t4u4-l2", level:2, q:"A 2025 web page titled “Keeping chickens in small yards” names no author and no responsible organization. Which APA 7th in-text citation is correct? (Asterisks mark italics.)", options:[
      {t:"`(Anonymous, 2025)`", why:"APA uses “Anonymous” only when a work is actually signed that way. Otherwise the title moves into the author position."},
      {t:"`(*Keeping Chickens in Small Yards*, 2025)`", ok:true, why:"With no author, the in-text citation uses the title in title case, italic because a web page title is italic in the APA reference."},
      {t:"`(Keeping chickens in small yards, 2025)`", why:"Two slips: a title in an in-text citation is written in title case, and a web page title stays italic, as it is in the reference."},
-     {t:"`(“Keeping Chickens in Small Yards,” 2025)`", why:"Quotation marks are for titles that are plain in the reference, such as an article. APA italicises a web page title, so the in-text title is italic."}]},
+     {t:"`(“Keeping Chickens in Small Yards,” 2025)`", why:"Quotation marks are for titles that are plain in the reference, such as an article. APA italicizes a web page title, so the in-text title is italic."}]},
    {id:"t4u4-cp05", lesson:"t4u4-l3", level:2, q:"Imani Okoth’s book *Rivers of Salt: A History of Coastal Trade* is in its 3rd edition, published by Harbourline Press in 2019. Which is the correct MLA 9th works-cited entry? (Asterisks mark italics.)", options:[
      {t:"`Okoth, Imani. “Rivers of Salt: A History of Coastal Trade.” 3rd ed., Harbourline Press, 2019.`", why:"A book stands alone, so its title goes in italics. Quotation marks are for a part of something bigger, such as an article or chapter."},
      {t:"`Okoth, I. (2019). *Rivers of salt: A history of coastal trade* (3rd ed.). Harbourline Press.`", why:"That is APA 7th: initials, year after the author, sentence case and the edition in brackets. MLA uses the full first name and title case."},
-     {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed., Harbourline Press, 2019.`", ok:true, why:"MLA reverses the name with the full first name, italicises the book in title case, then gives the shortened edition followed by a comma, the publisher and the year."},
+     {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed., Harbourline Press, 2019.`", ok:true, why:"MLA reverses the name with the full first name, italicizes the book in title case, then gives the shortened edition followed by a comma, the publisher and the year."},
      {t:"`Okoth, Imani. *Rivers of Salt: A History of Coastal Trade*. 3rd ed. Harbourline Press, 2019.`", why:"A full stop after “3rd ed.” is Chicago’s bibliography punctuation. MLA puts a comma after the edition."}]},
    {id:"t4u4-cp06", lesson:"t4u4-l3", level:3, q:"Ines’s first Chicago note for an article reads: `1. Lucas Moreau, “Bread Riots and Market Towns, 1780–1800,” *Journal of Rural History* 22, no. 1 (2020): 70, https://doi.org/10.5555/jrh.221.` Several notes later, after citing other sources, she cites page 77 again. What should that note say?", options:[
      {t:"`Ibid., 77.`", why:"Ibid. only ever refers to the note immediately before, and other sources came in between. Chicago now prefers a shortened note anyway."},
@@ -744,7 +744,7 @@ ICA.addUnit({
    {id:"t4u4-cp09", lesson:"t4u4-l4", level:3, q:"Bilal ran a paragraph from a government report through an AI paraphrasing tool. His similarity report now shows no matching text, so he thinks he doesn’t need a citation. What is accurate?", options:[
      {t:"He’s right: no matching text proves the paragraph is now his own work", why:"A similarity checker only shows matching text. The ideas still come from the report, and a person decides whether there is a problem."},
      {t:"He should cite the AI tool instead of the report", why:"The ideas belong to the report’s authors, so the report must be cited. Any AI use is disclosed according to the policy, as well."},
-     {t:"He needs a citation only if he kept some of the exact phrases", why:"Paraphrasing or summarising without a citation is plagiarism too. New words don’t remove the need to credit the source."},
+     {t:"He needs a citation only if he kept some of the exact phrases", why:"Paraphrasing or summarizing without a citation is plagiarism too. New words don’t remove the need to credit the source."},
      {t:"He must still cite the report and follow his course’s AI policy", ok:true, why:"An AI paraphraser doesn’t remove the need to cite, and it often produces patchwriting. Policies on using and disclosing AI also apply."}]},
    {id:"t4u4-cp10", lesson:"t4u4-l5", level:2, q:"In Natasha’s APA bibliography, one journal article appears with its title in italics and no journal name, volume or pages. In Zotero, the item type is “Web Page”. What is the best fix?", options:[
      {t:"Retype the entry correctly by hand in her Word document", why:"Hand edits break the link with Zotero and may be overwritten when the bibliography refreshes. Fix the item in the library."},
@@ -754,7 +754,7 @@ ICA.addUnit({
    {id:"t4u4-cp11", lesson:"t4u4-l5", level:3, q:"A citation generator produced: `Boateng, R. (2023). *Small Boats, Big Seas: Fishing Lives in Ghana* [Kindle edition]. Accra: Seabright Books.` Which corrected version follows APA 7th? (Asterisks mark italics.)", options:[
      {t:"`Boateng, R. (2023). *Small boats, big seas: Fishing lives in Ghana*. Accra: Seabright Books.`", why:"The title is fixed, but APA 7th no longer gives the publisher’s city."},
      {t:"`Boateng, R. (2023). Small boats, big seas: Fishing lives in Ghana. Seabright Books.`", why:"The case, format and city are fixed, but a book title stands alone, so APA puts it in italics."},
-     {t:"`Boateng, R. (2023). *Small boats, big seas: Fishing lives in Ghana*. Seabright Books.`", ok:true, why:"Sentence case with the word after the colon and the proper noun capitalised, no ebook format, and no publisher city. Then fix the item in the library so the change sticks."},
+     {t:"`Boateng, R. (2023). *Small boats, big seas: Fishing lives in Ghana*. Seabright Books.`", ok:true, why:"Sentence case with the word after the colon and the proper noun capitalized, no ebook format, and no publisher city. Then fix the item in the library so the change sticks."},
      {t:"`Boateng, R. (2023). *Small boats, big seas: Fishing lives in Ghana* [Kindle edition]. Seabright Books.`", why:"APA 7th doesn’t name an ebook format such as “Kindle edition”. Leave it out."}]},
    {id:"t4u4-cp12", lesson:"t4u4-l5", level:1, q:"Mira removes an article from her Zotero collection “Chapter 2”. The same article is also in her collection “Methods”. What happens to it?", options:[
      {t:"It is deleted from her whole library", why:"Removing an item from a collection doesn’t delete it from the library. Collections are like playlists."},
@@ -782,7 +782,7 @@ ICA.addUnit({
       "What to cite: direct quotations, paraphrases, summaries, statistics and data, images, charts, tables and code, and distinctive ideas or arguments, even when you reach the same conclusion yourself after reading them."
      ],
      pro:[
-      "Citation practices carry professional weight. Citation counts feed into metrics used (and criticised) in hiring and funding, which is one reason accurate attribution matters to authors. The ACRL Framework describes this as “Scholarship as Conversation” and “Information Has Value”: credit is part of how knowledge is valued.",
+      "Citation practices carry professional weight. Citation counts feed into metrics used (and criticized) in hiring and funding, which is one reason accurate attribution matters to authors. The ACRL Framework describes this as “Scholarship as Conversation” and “Information Has Value”: credit is part of how knowledge is valued.",
       "Accuracy matters as much as presence. Studies of citation errors find that references are sometimes mis-transcribed, cite the wrong page, or don’t support the claim they’re attached to; readers who follow them are misled. Good practice is to cite what you read (or say “as cited in” when you couldn’t), and to check that the source really supports the specific claim.",
       "Citation is distinct from permission. Citing a figure doesn’t give you the right to reproduce it in a publication; that’s a copyright question (see {{copyright-basics}}). And citing an AI tool doesn’t make it a reliable source: generative AI can produce references that don’t exist, so only cite works you have found and read.",
       "Different fields cite at different densities. A history article may carry hundreds of footnotes that comment on sources as well as naming them; a short medical research letter may have a dozen numbered references. Neither is “better”: each follows its field’s conventions and readers’ needs. When moving into a new field, read a few recent papers in your target journal and notice how and how often they cite.",
@@ -801,14 +801,14 @@ ICA.addUnit({
       "Every style answers the same four questions about a source: who made it, when, what it’s called and where to find it. What changes from style to style is the order and the punctuation. So once you have understood one style properly, learning another is mostly a matter of noticing differences."
      ],
      builder:[
-      "The current editions of the three big general styles are **APA 7th** (2020), **MLA 9th** (2021) and **Chicago 18th** (2024). Fields lean towards different families: psychology, education, nursing and many social sciences use APA; literature and languages use MLA; history and the arts often use Chicago notes; engineering often uses IEEE; medicine often uses Vancouver-style numbering. These are tendencies, and journals often have their own “house” versions.",
+      "The current editions of the three big general styles are **APA 7th** (2020), **MLA 9th** (2021) and **Chicago 18th** (2024). Fields lean toward different families: psychology, education, nursing and many social sciences use APA; literature and languages use MLA; history and the arts often use Chicago notes; engineering often uses IEEE; medicine often uses Vancouver-style numbering. These are tendencies, and journals often have their own “house” versions.",
       "Every style records the same things: who, when, what and where. What changes is order and format. In APA the year comes right after the author; in MLA it comes near the end; in Chicago notes it’s inside brackets in the note.",
       "**Harvard** is a family of author-date styles with no single official version; universities publish their own, and *Cite Them Right* is one widely used version. When someone asks for Harvard, ask which guide.",
       "A useful way to learn a new style quickly is to take two sources you already know well (a journal article and a book) and write them in the new style, then compare with the old. The differences tell you most of what you need: where the year goes, how names appear, whether article titles are in quotation marks, and how the list at the end is named and ordered.",
       "Numbered styles work differently from the rest: sources are numbered in the order they’re first cited (Vancouver, IEEE), and the list at the end follows that order rather than the alphabet. Reusing a source means reusing its number."
      ],
      pro:[
-      "Styles are maintained by organisations: the American Psychological Association (*Publication Manual*), the Modern Language Association (*MLA Handbook*), and the University of Chicago Press (*The Chicago Manual of Style*). Their official sites (apastyle.apa.org, style.mla.org, chicagomanualofstyle.org) publish examples and answer questions; library guides and the Purdue OWL are useful secondary sources, but check which edition they follow.",
+      "Styles are maintained by organizations: the American Psychological Association (*Publication Manual*), the Modern Language Association (*MLA Handbook*), and the University of Chicago Press (*The Chicago Manual of Style*). Their official sites (apastyle.apa.org, style.mla.org, chicagomanualofstyle.org) publish examples and answer questions; library guides and the Purdue OWL are useful secondary sources, but check which edition they follow.",
       "Reference managers implement styles in **CSL** (Citation Style Language), an open format with thousands of styles in a shared repository. A CSL file is someone’s careful reading of a manual, not the manual itself, and software can only format the data it has, so generated citations still need checking.",
       "Editions change real details. APA 7th dropped publisher locations and moved et al. to the first citation for three or more authors; MLA 9th writes DOIs as https://doi.org/ links; Chicago 18th uses et al. in notes from three authors and makes the place of publication optional. Old guides online can therefore be confidently wrong.",
       "Journals frequently modify a general style (“APA with these changes”) or have entirely their own house style, set out in their instructions for authors. Many publishers ask authors to submit in any consistent style and then restyle accepted papers themselves, but students rarely have that option, so follow the brief exactly.",
@@ -824,10 +824,10 @@ ICA.addUnit({
       "APA Style is the citation style of the American Psychological Association, used across psychology, education, nursing, business and many social sciences. The current edition is the 7th (2020).",
       "In your writing, you cite with the surname and year: `(Haddad, 2021)` or `Haddad (2021)`. If you quote, add the page: `(Haddad, 2021, p. 50)`. For three or more authors, write the first surname and “et al.”: `(Okafor et al., 2023)`.",
       "At the end, a list called **References** gives the full details, in the order Author. (Date). Title. Source. Titles of works are in sentence case, and the standalone work (a book, or the journal name and volume) is in italics.",
-      "APA’s list is in alphabetical order by the first author’s surname, double-spaced, with a hanging indent so each surname stands out. The heading **References** is bold and centred."
+      "APA’s list is in alphabetical order by the first author’s surname, double-spaced, with a hanging indent so each surname stands out. The heading **References** is bold and centered."
      ],
      builder:[
-      {ex:"Okafor, A. N., Ramírez, L., & Watanabe, K. (2023). Shade trees and classroom temperatures: Evidence from twelve schools. *Journal of Schoolyard Ecology, 14*(2), 45–62. https://doi.org/10.5555/jse.142\n\nHaddad, S. (2021). *Repairing things: A practical history of mending*. Riverbend Press.\n\nMensah, A. K. (2022). Radio, rumour and public health. In T. Ortega & M. Lin (Eds.), *Communicating health in a crisis* (pp. 33–51). Northgate University Press. https://doi.org/10.5555/chc.3\n\nCoastal Water Trust. (2024, March 5). *Well water testing at home*. https://example.org/wells", label:"Core patterns (invented sources; *asterisks* = italics)", mono:true},
+      {ex:"Okafor, A. N., Ramírez, L., & Watanabe, K. (2023). Shade trees and classroom temperatures: Evidence from twelve schools. *Journal of Schoolyard Ecology, 14*(2), 45–62. https://doi.org/10.5555/jse.142\n\nHaddad, S. (2021). *Repairing things: A practical history of mending*. Riverbend Press.\n\nMensah, A. K. (2022). Radio, rumor and public health. In T. Ortega & M. Lin (Eds.), *Communicating health in a crisis* (pp. 33–51). Northgate University Press. https://doi.org/10.5555/chc.3\n\nCoastal Water Trust. (2024, March 5). *Well water testing at home*. https://example.org/wells", label:"Core patterns (invented sources; *asterisks* = italics)", mono:true},
       "Authors: surname and initials, `&` before the last, up to 20 names. Dates in brackets; `n.d.` when there’s none. Article and book titles in sentence case; journal names in title case and italics with the volume; the issue in plain brackets. DOIs as `https://doi.org/…` links with no full stop after. No publisher location, and no publisher when it’s the same as the author.",
       "In text: `&` inside brackets, `and` in a sentence; et al. for three or more authors from the first citation; a page (p./pp.) or paragraph (para.) for every direct quotation.",
       "**Reference list setup.** Order entries alphabetically by the first author’s surname, letter by letter. Two works by the same author are ordered by year, oldest first. Each entry has a hanging indent of 0.5 inch (1.27 cm).",
@@ -857,14 +857,14 @@ ICA.addUnit({
      ],
      builder:[
       "MLA builds every entry from **core elements**: Author. Title of source. Title of container, Other contributors, Version, Number, Publisher, Publication date, Location. A [[mla-container|container]] is the larger work holding your source (a journal, an edited book, a website); there can be a second one, such as a database.",
-      {ex:"Okafor, Adaeze N., et al. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology*, vol. 14, no. 2, 2023, pp. 45–62, https://doi.org/10.5555/jse.142.\n\nHaddad, Samir. *Repairing Things: A Practical History of Mending*. Riverbend Press, 2021.\n\nMensah, Ama K. “Radio, Rumour and Public Health.” *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin, Northgate University Press, 2022, pp. 33–51, https://doi.org/10.5555/chc.3.\n\n“Well Water Testing at Home.” *Coastal Water Trust*, 5 Mar. 2024, example.org/wells.", label:"Core patterns (invented sources; *asterisks* = italics)", mono:true},
+      {ex:"Okafor, Adaeze N., et al. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology*, vol. 14, no. 2, 2023, pp. 45–62, https://doi.org/10.5555/jse.142.\n\nHaddad, Samir. *Repairing Things: A Practical History of Mending*. Riverbend Press, 2021.\n\nMensah, Ama K. “Radio, Rumor and Public Health.” *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin, Northgate University Press, 2022, pp. 33–51, https://doi.org/10.5555/chc.3.\n\n“Well Water Testing at Home.” *Coastal Water Trust*, 5 Mar. 2024, example.org/wells.", label:"Core patterns (invented sources; *asterisks* = italics)", mono:true},
       "Two authors: `Okafor, Adaeze N., and Lucía Ramírez.` Three or more: first author, then `et al.`. Months longer than four letters are abbreviated (Jan., Feb., Mar., Apr., Aug., Sept., Oct., Nov., Dec.).",
       "Because MLA builds entries from elements rather than fixed patterns, you can cite almost anything by asking which elements it has. A podcast episode, a museum label or a social media post all fit the same template: who made it, what it’s called, what holds it, and where to find it.",
       "MLA’s in-text citations use whatever comes first in the works-cited entry. Usually that’s the author’s surname, but for a work that begins with its title, use the title (shortened to its first noun phrase), keeping its quotation marks or italics: (“Well Water Testing”). In prose you can name the author in your sentence and put only the page in brackets: Haddad argues that mending is attentive work (50)."
      ],
      pro:[
       "**Location**: MLA prefers a DOI, then a permalink, then a URL. DOIs are written with `https://doi.org/`; for other URLs MLA recommends leaving out `http://` or `https://`. Entries end with a full stop, even after a DOI or URL. A page range may be given as well as the DOI for paginated works.",
-      "**Organisations**: when an organisation is both author and publisher, skip the author and begin with the title; the in-text citation then uses the (shortened) title: `(“Well Water Testing”)`. Don’t use “Anonymous”; works with no named author also begin with the title.",
+      "**Organisations**: when an organization is both author and publisher, skip the author and begin with the title; the in-text citation then uses the (shortened) title: `(“Well Water Testing”)`. Don’t use “Anonymous”; works with no named author also begin with the title.",
       "**In prose**, MLA prefers spelling out (“Okafor and others”) and keeps et al. for parentheses and the list. **Indirect sources**: `(qtd. in Mensah 40)`, with only Mensah in Works Cited. Sources without page numbers are cited by author alone; use section or paragraph numbers only if the source numbers them.",
       "The MLA’s own advice on citation generators: their quality varies and they don’t always say which edition they follow, so treat their output as a starting point. Many older guides still show MLA 8th’s `doi:` prefix.",
       "When you cite two works by the same author, add a short title to each in-text citation: (Haddad, *Repairing Things* 50). In the list, MLA replaces the repeated name with three hyphens (---) in later entries.",
@@ -891,7 +891,7 @@ ICA.addUnit({
      ],
      pro:[
       "**18th-edition changes worth knowing**: in notes and author-date citations, use the first author plus et al. for **three or more** authors (the 17th used four). Bibliographies and reference lists list **up to six** authors; for seven or more, the first three followed by et al. The **place of publication** for books is no longer required, and a **chapter’s page range** in a bibliography entry is optional (both older forms are still acceptable).",
-      {ex:"(Okafor et al. 2023, 50)\n\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. 2023. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14 (2): 45–62. https://doi.org/10.5555/jse.142.\n\nMensah, Ama K. 2022. “Radio, Rumour and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press. https://doi.org/10.5555/chc.3.", label:"Author-date", mono:true},
+      {ex:"(Okafor et al. 2023, 50)\n\nOkafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe. 2023. “Shade Trees and Classroom Temperatures: Evidence from Twelve Schools.” *Journal of Schoolyard Ecology* 14 (2): 45–62. https://doi.org/10.5555/jse.142.\n\nMensah, Ama K. 2022. “Radio, Rumor and Public Health.” In *Communicating Health in a Crisis*, edited by Tomás Ortega and Mei Lin. Northgate University Press. https://doi.org/10.5555/chc.3.", label:"Author-date", mono:true},
       "DOIs are written as `https://doi.org/` links. Access dates are needed only when a source has no publication or revision date. The full manual is a subscription product; the free Citation Quick Guide on chicagomanualofstyle.org covers the common cases.",
       "Notes can also carry commentary (“For a different view, see…”), which is one reason historians like them. If a work has no bibliography, the full first note must carry all the details. When there is a full bibliography, Chicago 18th allows shortened notes even for the first citation of a source, and it prefers shortened notes to “ibid.” (CMOS 18, 13.37, “Shortened citations versus ‘ibid.’”).",
       "The full manual is behind a subscription, so this app’s Chicago patterns were cross-checked against the free Citation Quick Guide, university library guides to the 18th edition, and the Citation Style Language styles for the 18th edition (the ones Zotero uses). If your instructor follows an older edition, expect place of publication and chapter page ranges to be required (CMOS 18 discusses place of publication in 14.30)."
@@ -927,13 +927,13 @@ ICA.addUnit({
     related:["apa-style","mla-style","chicago-style","zotero-basics"],
     sources:[{t:"APA Style: What’s new in the 7th edition (DOIs as URLs)", url:"https://apastyle.apa.org/instructional-aids/whats-new-7e-guide.pdf"},{t:"MLA Style Center: page range and DOI", url:"https://style.mla.org/page-range-and-doi/"},{t:"Crossref REST API documentation (sample DOI 10.5555/12345678)", url:"https://github.com/crossref/rest-api-doc"}], checked:"2026-11"},
 
-   {id:"quote-paraphrase-summary", title:"Quoting, paraphrasing and summarising", aka:["paraphrase","summary","direct quotation","signal phrase","patchwriting"], tags:["writing","citation","integrity"],
+   {id:"quote-paraphrase-summary", title:"Quoting, paraphrasing and summarizing", aka:["paraphrase","summary","direct quotation","signal phrase","patchwriting"], tags:["writing","citation","integrity"],
     summary:"Three ways to use a source (exact words, one passage restated, main ideas condensed); all three need a citation.",
     levels:{
      starter:[
       "A **quotation** uses the author’s exact words in quotation marks, with a page number. A **[[paraphrase]]** restates one passage in your own words and sentence structure. A **[[summary-writing|summary]]** condenses a longer piece into its main ideas.",
       "All three need a citation, because the ideas still belong to the author.",
-      "Quote when the exact wording matters (a definition, a striking phrase, words you’re analysing). Paraphrase when you need a passage’s detail. Summarise when you need the gist. Most academic writing uses more paraphrase and summary than quotation.",
+      "Quote when the exact wording matters (a definition, a striking phrase, words you’re analyzing). Paraphrase when you need a passage’s detail. Summarise when you need the gist. Most academic writing uses more paraphrase and summary than quotation.",
       "A signal phrase such as “Haddad argues…” or “According to Mensah…” introduces the source, shows readers where borrowed material begins, and lets you show your stance (argues, claims, shows, admits).",
       "Patchwriting, a “paraphrase” that keeps much of the original’s wording, is the most common honest mistake. Rebuilding the idea from memory avoids it."
      ],
@@ -948,7 +948,7 @@ ICA.addUnit({
      pro:[
       "Page numbers: APA requires a location for direct quotations and encourages one for paraphrases; MLA gives a page whenever the source has one; Chicago notes cite the specific page.",
       "Quotations must not change meaning. An ellipsis that removes a “not”, or a quotation stripped of context, misrepresents the author even if the words are exact.",
-      "[[synthesis|Synthesis]] is the next step: rather than summarising sources one at a time, you group them by idea and show agreement, disagreement and gaps (Unit 5: {{synthesis-writing}}).",
+      "[[synthesis|Synthesis]] is the next step: rather than summarizing sources one at a time, you group them by idea and show agreement, disagreement and gaps (Unit 5: {{synthesis-writing}}).",
       "AI paraphrasing tools don’t change who the ideas belong to; output still needs citing, often still patchwrites, and may be restricted by your course or publisher policy.",
       "Writers working in an additional language often rely on borrowed phrases while learning a field’s vocabulary, and patchwriting is a normal stage in that learning. Good teaching treats it as a skill gap, but formally it’s still unmarked borrowing, so the fix is practice: write from understanding, keep a list of useful general academic phrases (which are fine to reuse), and put distinctive phrases in quotation marks.",
       "Quoting translations: say whose translation you used, or mark your own (“my translation”) as your style requires."
@@ -967,22 +967,22 @@ ICA.addUnit({
       "If you’re unsure whether something needs a citation, cite it, or ask."
      ],
      builder:[
-      "Forms of plagiarism: copying without quotation marks; paraphrasing or summarising without citation; [[patchwriting]]; using data, images or code without credit; submitting work written by someone else (a friend, a paid service, or an AI tool where that isn’t allowed).",
+      "Forms of plagiarism: copying without quotation marks; paraphrasing or summarizing without citation; [[patchwriting]]; using data, images or code without credit; submitting work written by someone else (a friend, a paid service, or an AI tool where that isn’t allowed).",
       "**[[self-plagiarism|Self-plagiarism]]** (or text recycling) is reusing your own earlier work as if new. Courses usually require permission to reuse work submitted elsewhere; journals require you to cite and disclose your earlier publications. Practices differ, so ask.",
       "Common knowledge depends on audience and field: “Nairobi is the capital of Kenya” is common knowledge almost anywhere; a specific statistic or a recent finding never is.",
       "Similarity-checking software shows matching text; people decide what it means. Properly quoted and cited text will match, and that’s fine.",
       "Good habits that prevent accidental plagiarism:",
-      "• In your notes, put copied text in quotation marks with the page, and keep your own thoughts visibly separate (for example, in a different colour or after “ME:”).\n• Save each source to a reference manager when you first use it.\n• Paraphrase from understanding, not from the page.\n• Check your draft against your notes before submitting.",
+      "• In your notes, put copied text in quotation marks with the page, and keep your own thoughts visibly separate (for example, in a different color or after “ME:”).\n• Save each source to a reference manager when you first use it.\n• Paraphrase from understanding, not from the page.\n• Check your draft against your notes before submitting.",
       "Institutions differ in how they handle cases, from teaching conversations for first, minor issues to formal procedures for deliberate cheating. Read your own policy so you know what applies."
      ],
      pro:[
-      "Generative AI: policies vary by course, institution and publisher, and change often. APA’s style team summarises AI permission as “yes, for some AI tools, for some purposes, and no, for others”. Where use is allowed, policies typically require disclosure (what tool, for what), and APA asks for the tool to be cited. AI can’t be an author, because it can’t take responsibility for the work.",
+      "Generative AI: policies vary by course, institution and publisher, and change often. APA’s style team summarizes AI permission as “yes, for some AI tools, for some purposes, and no, for others”. Where use is allowed, policies typically require disclosure (what tool, for what), and APA asks for the tool to be cited. AI can’t be an author, because it can’t take responsibility for the work.",
       "AI tools can fabricate references or attach real ones to claims they don’t support ([[hallucinated-citation|hallucinated citations]]). Citing such references can be treated as fabrication, so verify every source yourself. Unit 9 covers AI policies in research: {{ai-research-policies}}.",
       "In research, plagiarism is one of the three classic forms of [[research-misconduct|research misconduct]] alongside fabrication and falsification (Unit 9: {{research-integrity}}).",
       "If you discover a mistake in submitted work, raising it early is usually treated far more kindly than having it discovered.",
       "Contract cheating, where someone else (a paid service, a friend, or an AI tool used against the rules) produces work you submit, is treated as serious misconduct in most institutions, and in some countries commercial cheating services are illegal.",
       "Journals check submissions for overlap with published work and treat undisclosed duplicate publication (publishing the same study twice) as misconduct. Reusing your own methods description may be acceptable with citation in some fields; check the journal’s policy.",
-      "Copyright is a separate question from plagiarism: you can plagiarise public-domain text, and you can infringe copyright while citing correctly."
+      "Copyright is a separate question from plagiarism: you can plagiarize public-domain text, and you can infringe copyright while citing correctly."
      ]},
     related:["quote-paraphrase-summary","why-cite"], read:[{book:"owg", where:"Chapter 13, Section 13.6 “Spotlight on … Ethical Research”"}],
     sources:[{t:"APA Style: Citing generative AI, Part 3: Is AI “allowed”?", url:"https://apastyle.apa.org/blog/cite-generative-ai-allowed"},{t:"MLA Style Center: Beyond Citation: Describing AI Use in Your Work", url:"https://style.mla.org/describing-ai-use/"}], checked:"2026-11"},
@@ -998,7 +998,7 @@ ICA.addUnit({
       "Whichever you choose, check its output: software formats whatever details it has."
      ],
      builder:[
-      "Reference managers do four things: **collect** (browser extensions, import from databases, add by DOI/ISBN), **organise** (folders or collections, tags, duplicates), **read and annotate** (built-in PDF readers), and **cite** (plugins for word processors, or export to BibTeX for LaTeX).",
+      "Reference managers do four things: **collect** (browser extensions, import from databases, add by DOI/ISBN), **organize** (folders or collections, tags, duplicates), **read and annotate** (built-in PDF readers), and **cite** (plugins for word processors, or export to BibTeX for LaTeX).",
       "Most use **[[csl|CSL]]**, an open style language, so the same styles are available in several tools. Because a style formats the data it receives, the quality of your library decides the quality of your citations.",
       "Choose based on: cost now and after you leave your institution, platforms you use, word processor support, export options (so you’re not locked in), and storage limits.",
       "**Cost and continuity.** Free tools such as Zotero and JabRef keep working after you leave a university. Paid tools provided by an institution may stop when your access ends, so check export options early.",
@@ -1008,16 +1008,16 @@ ICA.addUnit({
      ],
      pro:[
       "Moving between managers is usually possible through RIS, BibTeX or CSL-JSON exports, though notes and annotations may not transfer cleanly. Moving a document with live citations between word processors needs care; Zotero documents a procedure for it.",
-      "Generated output fails in predictable ways: titles stored in title case (APA needs sentence case and can’t reliably convert), organisations parsed as personal names, wrong item types, missing DOIs, and outdated style versions. The MLA advises treating generator output as a starting point, not a final product.",
+      "Generated output fails in predictable ways: titles stored in title case (APA needs sentence case and can’t reliably convert), organizations parsed as personal names, wrong item types, missing DOIs, and outdated style versions. The MLA advises treating generator output as a starting point, not a final product.",
       "For LaTeX users, BibTeX/BibLaTeX workflows (JabRef, or Zotero with an export add-on) keep a .bib file in sync with the library.",
-      "Data quality is the hidden work. Imported records often have problems: titles in Title Case or ALL CAPS, missing issue numbers, abbreviations for journal names, organisation names split into personal names, and wrong item types. Fixing these once in the library fixes every future document.",
+      "Data quality is the hidden work. Imported records often have problems: titles in Title Case or ALL CAPS, missing issue numbers, abbreviations for journal names, organization names split into personal names, and wrong item types. Fixing these once in the library fixes every future document.",
       "CSL styles describe how to format data; they can’t correct it. A style can apply title case, but sentence case can’t be produced reliably by software because it can’t know which words are proper nouns. That’s why it’s best to store titles in sentence case."
      ]},
     related:["zotero-basics","zotero-citing","citation-styles"],
     sources:[{t:"MLA Style Center: Citation Generators and MLA Style", url:"https://style.mla.org/citation-generators-and-mla-style/"},{t:"Citation Style Language styles repository", url:"https://github.com/citation-style-language/styles"}], checked:"2026-11"},
 
-   {id:"zotero-basics", title:"Zotero: collecting and organising", aka:["Zotero","Zotero Connector","add by identifier","collections"], tags:["tools","Zotero"],
-    summary:"Install Zotero and its Connector, save sources from the web or by DOI/ISBN, check their details, and organise them in collections.",
+   {id:"zotero-basics", title:"Zotero: collecting and organizing", aka:["Zotero","Zotero Connector","add by identifier","collections"], tags:["tools","Zotero"],
+    summary:"Install Zotero and its Connector, save sources from the web or by DOI/ISBN, check their details, and organize them in collections.",
     levels:{
      starter:[
       "[[zotero|Zotero]] is a free, open-source reference manager from the nonprofit Corporation for Digital Scholarship. The desktop app runs on Windows, macOS and Linux (current version in November 2026: Zotero 10). There’s an iPhone/iPad app, an online library at zotero.org, and an official Android app in development (check its current status).",
@@ -1027,7 +1027,7 @@ ICA.addUnit({
       "After saving a source, always glance at its details and fix anything wrong."
      ],
      builder:[
-      "After saving, check each item: the right item type; each person as last name + first name and organisations in a single field; titles in sentence case (right-click the title field for **Sentence case**, then restore proper nouns); date, volume, issue, pages and DOI.",
+      "After saving, check each item: the right item type; each person as last name + first name and organizations in a single field; titles in sentence case (right-click the title field for **Sentence case**, then restore proper nouns); date, volume, issue, pages and DOI.",
       "Organise with **collections** (File → New Collection…), which work like playlists: an item can be in several, and removing it from one doesn’t delete it. Add **tags** and **notes**; use **Duplicate Items** to merge duplicates.",
       "A free zotero.org account syncs your library. Item data and notes sync freely; attached files use file storage, with 300 MB free. If that fills, other data keeps syncing; you can buy more or use WebDAV.",
       "**Groups.** A free group library lets a team share sources; group files count against the group owner’s storage.",
@@ -1036,8 +1036,8 @@ ICA.addUnit({
      ],
      pro:[
       "On a Chromebook, run the Linux version in the Linux development environment if your device allows it; otherwise use the Connector with the online library. The Connector works best with the desktop app open, but can save directly to your online library when signed in.",
-      "Add-by-identifier accepts DOIs, ISBNs, PubMed IDs and arXiv IDs (and can take several at once). Metadata from book ISBNs comes from library catalogues and is sometimes incomplete; journal DOIs are usually good.",
-      "Store titles in sentence case: MLA and Chicago styles convert to title case automatically, but APA styles print titles as stored, and title-case conversion doesn’t lowercase words that are already capitalised.",
+      "Add-by-identifier accepts DOIs, ISBNs, PubMed IDs and arXiv IDs (and can take several at once). Metadata from book ISBNs comes from library catalogs and is sometimes incomplete; journal DOIs are usually good.",
+      "Store titles in sentence case: MLA and Chicago styles convert to title case automatically, but APA styles print titles as stored, and title-case conversion doesn’t lowercase words that are already capitalized.",
       "Zotero’s version numbers have risen quickly: Zotero 7 was released in 2024, and by November 2026 the current release was Zotero 10. Menu names in this unit were checked against Zotero 10’s interface text; if yours differ, check the current Zotero documentation.",
       "Troubleshooting: if the Connector can’t reach the desktop app, check that Zotero is running; the Connector can save to your online library if you’re signed in. If an item has messy data, re-adding it by DOI often gives cleaner details than a web page. Use Duplicate Items before final citing so one source doesn’t appear twice."
      ]},
@@ -1107,8 +1107,8 @@ ICA.addUnit({
   bank:[
    {id:"t4u4-q01", lesson:"t4u4-l1", level:1, q:"What are the two parts of almost every citation system?", options:[{t:"A short in-text pointer and a full entry in a list", ok:true, why:"The pointer leads to the full entry, which gives everything needed to find the source."},{t:"A title page and an abstract", why:"Those are parts of a paper, not of citing."},{t:"A quotation and a translation", why:"Quotations are one way to use a source; they aren’t the citation system."},{t:"A footnote at the bottom of the page and a page number only", why:"Footnotes are one kind of pointer (Chicago); systems also need full entries."}]},
    {id:"t4u4-q02", lesson:"t4u4-l1", level:2, q:"How should a DOI be written in APA 7th, MLA 9th and Chicago 18th?", options:[{t:"https://doi.org/10.5555/jse.142", ok:true, why:"All three current editions write the DOI as a full link."},{t:"doi:10.5555/jse.142", why:"That’s an older form (MLA 8th, APA 6th)."},{t:"DOI 10.5555/jse.142", why:"A label instead of a link is outdated."},{t:"www.doi.10.5555.com", why:"That isn’t a valid address."}]},
-   {id:"t4u4-q03", lesson:"t4u4-l1", level:1, q:"In MLA and Chicago, which title goes in quotation marks?", options:[{t:"An article in a journal", ok:true, why:"Parts of a larger work go in quotation marks."},{t:"A book", why:"Standalone works are italic."},{t:"A journal’s name", why:"The journal is the container: italic."},{t:"A website’s name", why:"A website’s name is never in quotation marks: MLA italicises it, and Chicago writes it in plain type."}]},
-   {id:"t4u4-q04", lesson:"t4u4-l1", level:2, q:"In APA sentence case, which words of this title get capitals? “shade trees and classroom temperatures: evidence from twelve schools”", options:[{t:"Only “Shade” and “Evidence”", ok:true, why:"Sentence case capitalises the first word and the first word after a colon (plus any proper nouns; there are none here)."},{t:"Every major word, such as Trees, Classroom and Schools", why:"That’s title case, used by MLA and Chicago (and by APA only for journal names)."},{t:"Only “Shade”", why:"The first word after a colon is also capitalised: “Evidence”."},{t:"No words: APA titles are all lower case", why:"APA always capitalises the first word, the first word after a colon and proper nouns."}]},
+   {id:"t4u4-q03", lesson:"t4u4-l1", level:1, q:"In MLA and Chicago, which title goes in quotation marks?", options:[{t:"An article in a journal", ok:true, why:"Parts of a larger work go in quotation marks."},{t:"A book", why:"Standalone works are italic."},{t:"A journal’s name", why:"The journal is the container: italic."},{t:"A website’s name", why:"A website’s name is never in quotation marks: MLA italicizes it, and Chicago writes it in plain type."}]},
+   {id:"t4u4-q04", lesson:"t4u4-l1", level:2, q:"In APA sentence case, which words of this title get capitals? “shade trees and classroom temperatures: evidence from twelve schools”", options:[{t:"Only “Shade” and “Evidence”", ok:true, why:"Sentence case capitalizes the first word and the first word after a colon (plus any proper nouns; there are none here)."},{t:"Every major word, such as Trees, Classroom and Schools", why:"That’s title case, used by MLA and Chicago (and by APA only for journal names)."},{t:"Only “Shade”", why:"The first word after a colon is also capitalized: “Evidence”."},{t:"No words: APA titles are all lower case", why:"APA always capitalizes the first word, the first word after a colon and proper nouns."}]},
    {id:"t4u4-q05", lesson:"t4u4-l1", level:3, q:"Hana’s teacher asks for “Harvard referencing”. Hana finds four online guides that disagree on punctuation. Why?", options:[{t:"Harvard is a family of similar styles with no single official version", ok:true, why:"Institutions publish their own Harvard guides; ask which one to follow."},{t:"Three of the guides must be fake", why:"They’re likely real; Harvard simply has many versions."},{t:"Harvard changed to a numbered style in 2024", why:"Harvard styles are author-date styles."},{t:"Harvard is just another name for MLA style, so any MLA guide will work for her", why:"MLA is an author-page style with its own rules."}]},
    {id:"t4u4-q06", lesson:"t4u4-l1", level:2, q:"Which detail is most important to record while reading, so citing later is easy?", options:[{t:"The DOI (or URL), plus authors, year, title and where it was published", ok:true, why:"Who, when, what and where are what every style needs; missing them means hunting the source down again."},{t:"Only the title, since a search engine can always find the authors, year and rest", why:"Titles can be shared or changed; you’ll waste time and may cite the wrong version."},{t:"Only the website you found it on", why:"The site address alone often isn’t stable or complete."},{t:"The number of times it has been cited", why:"Useful for judging influence, but not part of a citation."}]},
    {id:"t4u4-q07", lesson:"t4u4-l1", level:3, q:"Dmitri opens a DOI link and finds the article has been retracted. What does that tell him about DOIs?", options:[{t:"A DOI identifies a work; it doesn’t guarantee the work is reliable", ok:true, why:"Retracted papers keep their DOIs. Quality has to be judged separately."},{t:"The DOI must be fake", why:"Retracted papers keep valid DOIs."},{t:"DOIs expire after five years, so this one now points to an old version", why:"DOIs are designed to be permanent."},{t:"He should cite it without mentioning the retraction", why:"Citing a retracted paper as valid would mislead readers."}]},
@@ -1119,7 +1119,7 @@ ICA.addUnit({
    {id:"t4u4-q11", lesson:"t4u4-l2", level:2, q:"Which APA 7th book reference is correct?", options:[{t:"Haddad, S. (2021). *Repairing things: A practical history of mending*. Riverbend Press.", ok:true, why:"Initials, year in brackets, sentence-case italic title, publisher without city."},{t:"Haddad, Samir. (2021). *Repairing Things*. Lisbon: Riverbend Press.", why:"APA uses initials, sentence case and no publisher location."},{t:"Haddad, S. 2021. Repairing things. Riverbend Press, Lisbon.", why:"The year needs brackets, the title needs italics, and no city."},{t:"Haddad, S. (2021). “Repairing things.” Riverbend Press.", why:"APA doesn’t use quotation marks for titles; books are italic."}]},
    {id:"t4u4-q12", lesson:"t4u4-l2", level:2, q:"Kenji quotes paragraph 3 of a web page with no page numbers (Coastal Water Trust, 2024). How does APA locate it?", options:[{t:"(Coastal Water Trust, 2024, para. 3)", ok:true, why:"Without pages, use a paragraph number, section name or timestamp."},{t:"(Coastal Water Trust, 2024, p. 3)", why:"There’s no page 3; “p.” would mislead."},{t:"(Coastal Water Trust, 2024)", why:"Direct quotations need a location."},{t:"(Coastal Water Trust 3)", why:"That’s MLA-like and lacks the year."}]},
    {id:"t4u4-q13", lesson:"t4u4-l2", level:1, q:"In APA 7th, which parts of a journal reference are italic?", options:[{t:"The journal name and the volume number", ok:true, why:"The issue number in brackets and the article title are not italic."},{t:"The article title and the issue number only", why:"Article titles and issue numbers are plain in APA."},{t:"The whole reference", why:"Only the journal name and volume."},{t:"The authors’ names", why:"Names are never italic."}]},
-   {id:"t4u4-q14", lesson:"t4u4-l2", level:3, q:"Fatima cites a WHO report several times. Which pair of APA citations is right?", options:[{t:"First (World Health Organization [WHO], 2025), then (WHO, 2025)", ok:true, why:"Define the abbreviation at first citation, then use it."},{t:"(WHO, 2025) every time, with the full name given only in the reference list", why:"Readers need the full name in the text the first time it appears."},{t:"(Organization, 2025)", why:"That treats the organisation as a person’s surname."},{t:"(Anonymous, 2025)", why:"An organisation is the author; “Anonymous” is only for works signed that way."}]},
+   {id:"t4u4-q14", lesson:"t4u4-l2", level:3, q:"Fatima cites a WHO report several times. Which pair of APA citations is right?", options:[{t:"First (World Health Organization [WHO], 2025), then (WHO, 2025)", ok:true, why:"Define the abbreviation at first citation, then use it."},{t:"(WHO, 2025) every time, with the full name given only in the reference list", why:"Readers need the full name in the text the first time it appears."},{t:"(Organization, 2025)", why:"That treats the organization as a person’s surname."},{t:"(Anonymous, 2025)", why:"An organization is the author; “Anonymous” is only for works signed that way."}]},
    {id:"t4u4-q15", lesson:"t4u4-l2", level:2, q:"Where do the editors go in an APA chapter reference?", options:[{t:"After “In”, initials first, then (Eds.): In T. Ortega & M. Lin (Eds.),", ok:true, why:"That’s APA’s pattern for editors of the book."},{t:"Before the chapter author, surnames first: Ortega, T., & Lin, M. (Eds.).", why:"The chapter author comes first."},{t:"At the end, after the DOI", why:"The DOI comes last."},{t:"They’re left out", why:"Editors help readers find the book."}]},
    {id:"t4u4-q16", lesson:"t4u4-l2", level:2, q:"According to APA’s current AI guidance, who is the author of a reference to ChatGPT?", options:[{t:"OpenAI, the company that made it", ok:true, why:"APA names the company responsible for the tool; AI can’t be an author."},{t:"ChatGPT itself", why:"APA says AI can’t be an author."},{t:"The person who typed the prompts", why:"The user isn’t the author of the tool’s output in APA’s guidance."},{t:"No author: start with the title", why:"The company is treated as the author."}]},
    {id:"t4u4-q17", lesson:"t4u4-l2", level:3, q:"Tomás read Mensah (2022), who quotes a 1998 Ferreira survey that Tomás couldn’t access. Which APA citation is right?", options:[{t:"(Ferreira, 1998, as cited in Mensah, 2022), with only Mensah in References", ok:true, why:"Name the original, cite what you read, list only what you read."},{t:"(Ferreira, 1998, as cited in Mensah, 2022), with Ferreira and Mensah in References", why:"That implies Tomás read the survey."},{t:"(Mensah, 2022), without mentioning Ferreira", why:"It credits the idea to Mensah instead of Ferreira."},{t:"(Ferreira qtd. in Mensah 40)", why:"That’s MLA wording."}]},
@@ -1127,7 +1127,7 @@ ICA.addUnit({
 
    {id:"t4u4-q19", lesson:"t4u4-l3", level:1, q:"Which is a correct MLA 9th in-text citation for page 50 of Haddad’s book?", options:[{t:"(Haddad 50)", ok:true, why:"Surname and page, no comma, no “p.”, no year."},{t:"(Haddad, 2021, p. 50)", why:"That’s APA style: comma, year and “p.”."},{t:"(Haddad 2021, 50)", why:"That’s Chicago author-date."},{t:"(Haddad, p. 50)", why:"MLA uses no comma and no “p.”"}]},
    {id:"t4u4-q20", lesson:"t4u4-l3", level:2, q:"How does MLA 9th start a works-cited entry for an article by three authors?", options:[{t:"Okafor, Adaeze N., et al.", ok:true, why:"First author reversed, comma, et al."},{t:"Okafor, A. N., Ramírez, L., & Watanabe, K.", why:"That’s APA style, with initials and an ampersand."},{t:"Okafor, Adaeze N., Lucía Ramírez, and Kenji Watanabe.", why:"That’s Chicago’s bibliography form; MLA uses et al. from three authors."},{t:"Okafor et al.", why:"The works-cited entry needs the first author’s full name."}]},
-   {id:"t4u4-q21", lesson:"t4u4-l3", level:3, q:"A Coastal Water Trust web page has no named author, and the Trust runs the website. How does Ana’s MLA entry begin?", options:[{t:"With the page title: “Well Water Testing at Home.”", ok:true, why:"When an organisation is both author and publisher, MLA skips the author and begins with the title."},{t:"Coastal Water Trust.", why:"MLA avoids repeating the organisation as author when it’s also the publisher."},{t:"Anonymous.", why:"MLA says not to use Anonymous."},{t:"n.d.", why:"MLA doesn’t use n.d. as an entry’s first element."}]},
+   {id:"t4u4-q21", lesson:"t4u4-l3", level:3, q:"A Coastal Water Trust web page has no named author, and the Trust runs the website. How does Ana’s MLA entry begin?", options:[{t:"With the page title: “Well Water Testing at Home.”", ok:true, why:"When an organization is both author and publisher, MLA skips the author and begins with the title."},{t:"Coastal Water Trust.", why:"MLA avoids repeating the organization as author when it’s also the publisher."},{t:"Anonymous.", why:"MLA says not to use Anonymous."},{t:"n.d.", why:"MLA doesn’t use n.d. as an entry’s first element."}]},
    {id:"t4u4-q22", lesson:"t4u4-l3", level:2, q:"In Chicago 18th notes, how do you cite a work by three authors?", options:[{t:"First author’s name followed by et al.", ok:true, why:"The 18th edition uses et al. in notes from three authors."},{t:"All three names", why:"That was the 17th edition’s practice for three authors."},{t:"The first two names and et al.", why:"Chicago uses just the first."},{t:"No names, just the title", why:"Notes give authors."}]},
    {id:"t4u4-q23", lesson:"t4u4-l3", level:2, q:"What is a Chicago shortened note?", options:[{t:"A later note for a source already cited in full: surname, short title, page", ok:true, why:"Shortened notes save space after the first full note."},{t:"A note with no page number", why:"Shortened notes still give the page."},{t:"A bibliography entry that leaves out the publisher and the place of publication", why:"Bibliography entries are separate from notes."},{t:"An abbreviation for a journal name", why:"That’s not what the term means."}]},
    {id:"t4u4-q24", lesson:"t4u4-l3", level:3, q:"Which citation is in Chicago author-date style?", options:[{t:"(Okafor et al. 2023, 50)", ok:true, why:"No comma between author and year, then a comma and the page."},{t:"(Okafor et al., 2023, p. 50)", why:"That’s APA style: comma before the year and “p.”."},{t:"(Okafor et al. 50)", why:"That’s MLA style: no year at all."},{t:"¹ Okafor et al., “Shade Trees,” 50.", why:"That’s a Chicago shortened footnote, not author-date."}]},
@@ -1141,12 +1141,12 @@ ICA.addUnit({
    {id:"t4u4-q31", lesson:"t4u4-l4", level:2, q:"What is the best first step to paraphrase a passage well?", options:[{t:"Understand it, then write it from memory without looking", ok:true, why:"Writing from understanding avoids copying the structure."},{t:"Replace every third word with a synonym", why:"That produces patchwriting."},{t:"Run it through an AI paraphrasing tool", why:"That often patchwrites and may break your course’s rules."},{t:"Translate it into another language and then back into English", why:"That distorts meaning and isn’t paraphrasing."}]},
    {id:"t4u4-q32", lesson:"t4u4-l4", level:3, q:"Amara’s course allows AI for brainstorming with disclosure. She used it to suggest topics. What should she do?", options:[{t:"Describe that use as the course asks, and cite the tool if required", ok:true, why:"Allowed use still needs the disclosure the policy requires."},{t:"Nothing, because brainstorming leaves no trace", why:"The policy asks for disclosure."},{t:"List the AI tool as a co-author", why:"AI can’t be an author."},{t:"Cite the AI’s topic suggestions as peer-reviewed sources in her list", why:"AI output isn’t a peer-reviewed source."}]},
    {id:"t4u4-q33", lesson:"t4u4-l4", level:2, q:"What does a similarity checker’s report show?", options:[{t:"Where text matches other text", ok:true, why:"A person still decides whether a match is a problem. Correctly quoted and cited text will also match."},{t:"Whether the writer intended to cheat", why:"Software can’t judge intent."},{t:"Whether the ideas are original", why:"It compares text, not ideas."},{t:"The writer’s final grade", why:"It doesn’t grade work."}]},
-   {id:"t4u4-q34", lesson:"t4u4-l4", level:3, q:"Oluwaseun realises after submitting that one paragraph in his essay lacks a citation. What’s the wisest move?", options:[{t:"Tell the instructor promptly and offer a corrected version", ok:true, why:"Raising a mistake early is usually treated far more kindly than having it discovered."},{t:"Hope nobody notices", why:"If found later, it looks worse."},{t:"Delete the essay from the course site and submit it again later", why:"That doesn’t fix anything and may break rules."},{t:"Add a fake citation to cover it", why:"Fabricating a citation is misconduct."}]},
+   {id:"t4u4-q34", lesson:"t4u4-l4", level:3, q:"Oluwaseun realizes after submitting that one paragraph in his essay lacks a citation. What’s the wisest move?", options:[{t:"Tell the instructor promptly and offer a corrected version", ok:true, why:"Raising a mistake early is usually treated far more kindly than having it discovered."},{t:"Hope nobody notices", why:"If found later, it looks worse."},{t:"Delete the essay from the course site and submit it again later", why:"That doesn’t fix anything and may break rules."},{t:"Add a fake citation to cover it", why:"Fabricating a citation is misconduct."}]},
    {id:"t4u4-q35", lesson:"t4u4-l4", level:1, q:"What is self-plagiarism?", options:[{t:"Reusing your own earlier work as new without permission or disclosure", ok:true, why:"Also called text recycling; rules vary."},{t:"Quoting yourself in a diary", why:"Private writing isn’t submitted work."},{t:"Citing your own earlier published paper correctly in a new piece of work", why:"Correctly citing your work is fine."},{t:"Writing in the first person", why:"That’s a style choice."}]},
-   {id:"t4u4-q36", lesson:"t4u4-l4", level:2, q:"Which is the best reason to quote rather than paraphrase?", options:[{t:"The exact wording is what you’re analysing", ok:true, why:"When the words themselves matter, quote them."},{t:"Quoting is always safer", why:"Overquoting weakens writing, and some instructors limit it."},{t:"You didn’t understand the passage", why:"Then you need to read more before using it."},{t:"It saves you from citing", why:"Quotations need citations too."}]},
+   {id:"t4u4-q36", lesson:"t4u4-l4", level:2, q:"Which is the best reason to quote rather than paraphrase?", options:[{t:"The exact wording is what you’re analyzing", ok:true, why:"When the words themselves matter, quote them."},{t:"Quoting is always safer", why:"Overquoting weakens writing, and some instructors limit it."},{t:"You didn’t understand the passage", why:"Then you need to read more before using it."},{t:"It saves you from citing", why:"Quotations need citations too."}]},
 
    {id:"t4u4-q37", lesson:"t4u4-l5", level:1, q:"What does the Zotero Connector do?", options:[{t:"Saves the source you’re viewing to your Zotero library", ok:true, why:"It’s Zotero’s browser extension."},{t:"Connects Zotero to your printer", why:"Not its job."},{t:"Writes your essay", why:"It saves sources."},{t:"Checks your essay for plagiarism against your Zotero library", why:"Zotero isn’t a similarity checker."}]},
-   {id:"t4u4-q38", lesson:"t4u4-l5", level:3, q:"Zotero’s APA bibliography shows “Organization, W. H. (2025)”. What went wrong?", options:[{t:"It was stored as a person’s name; switch to a single field", ok:true, why:"Organisations must be single-field names in the library."},{t:"APA abbreviates organisation names this way when they are long", why:"APA writes the full organisation name."},{t:"Zotero can’t cite reports", why:"It can; the data is wrong."},{t:"The style needs updating to APA 8th", why:"There’s no such edition; the data is the problem."}]},
+   {id:"t4u4-q38", lesson:"t4u4-l5", level:3, q:"Zotero’s APA bibliography shows “Organization, W. H. (2025)”. What went wrong?", options:[{t:"It was stored as a person’s name; switch to a single field", ok:true, why:"Organisations must be single-field names in the library."},{t:"APA abbreviates organization names this way when they are long", why:"APA writes the full organization name."},{t:"Zotero can’t cite reports", why:"It can; the data is wrong."},{t:"The style needs updating to APA 8th", why:"There’s no such edition; the data is the problem."}]},
    {id:"t4u4-q39", lesson:"t4u4-l5", level:2, q:"Why should titles be stored in sentence case in Zotero?", options:[{t:"APA prints titles as stored; MLA and Chicago can convert them to title case", ok:true, why:"Sentence case works for both directions; title case can’t be reliably turned into sentence case."},{t:"Zotero refuses to save titles in title case and changes them automatically", why:"It saves whatever you type."},{t:"All styles require sentence case", why:"MLA and Chicago use title case."},{t:"It makes searching faster", why:"Case doesn’t affect searching."}]},
    {id:"t4u4-q40", lesson:"t4u4-l5", level:2, q:"How do you add a book to Zotero using its ISBN?", options:[{t:"Click the magic wand (Add Item(s) by Identifier) and paste the ISBN", ok:true, why:"Zotero looks up the details from the identifier."},{t:"Type the ISBN into the title field", why:"That creates a wrongly titled item."},{t:"Email the ISBN to zotero.org", why:"Not a feature."},{t:"Only possible on the iPhone app", why:"Desktop and mobile both support identifiers."}]},
    {id:"t4u4-q41", lesson:"t4u4-l5", level:2, q:"What does the free zotero.org file storage limit (300 MB) apply to?", options:[{t:"Attached files such as PDFs", ok:true, why:"Item details and notes keep syncing when file storage is full."},{t:"Everything, including item details", why:"Other data continues to sync."},{t:"The number of citations in Word", why:"Citing isn’t limited by storage."},{t:"Only the iPhone app", why:"It applies to your online file storage."}]},

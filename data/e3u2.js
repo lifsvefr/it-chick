@@ -26,7 +26,7 @@ ICA.addUnit({
       {lead:"In Unit 1 you learned the [[kana]]. From now on, Japanese is written the way Japanese people write it: hiragana, katakana and kanji, without romaji."},
       "Every kanji in this unit has small kana over it, called [[furigana]], so you can always read it: [学生]{がくせい} is read がくせい and means “student”. You don’t need to learn the kanji yet. Unit 4 teaches the N5 kanji, and the Kanji Lab has daily review decks.",
       "If reading kana still feels slow, that is normal. Go back to {{hiragana}} and {{katakana}} whenever you need to, and keep a few minutes of kana review in the Kanji Lab each day. Speed comes from short, regular practice, not from one long session.",
-      "This unit teaches the polite style that ends in です and ます ([[desu-masu-tai]]). It is the safe choice with anyone you don’t know well: shop staff, teachers, colleagues, new neighbours. The casual style comes in Units 3 and 5.",
+      "This unit teaches the polite style that ends in です and ます ([[desu-masu-tai]]). It is the safe choice with anyone you don’t know well: shop staff, teachers, colleagues, new neighbors. The casual style comes in Units 3 and 5.",
       {tip:"Forgetting is part of learning. You will meet every pattern in this unit again in exercises, in the Check questions and in later units. Each time you meet it again, it sticks a little better."}
     ]},
     {h:"The basic sentence: X は Y です", body:[
@@ -305,13 +305,13 @@ ICA.addUnit({
        "Write three questions with X は どこですか about places you know: a station, a shop, the toilet.",
        "Write an answer for each with ここ, そこ or あそこ, or a short description."
      ], write:"…はどこですか。—…です。"},
-     {t:"Practise は and が with a photo", how:[
+     {t:"Practice は and が with a photo", how:[
        "Choose a photo with several people or things in it.",
        "Write one question with どれが or どの[人]{ひと}が, and answer it with が.",
        "Then write one sentence with は about the same person or thing."
      ], write:"どの…が…ですか。—…が…です。…は…です。"}
     ],
-    proof:"Five labelled things (three with これ・それ・あれ and two with この・その・あの + noun), three where-questions with answers, and one question and answer with が plus a sentence with は."
+    proof:"Five labeled things (three with これ・それ・あれ and two with この・その・あの + noun), three where-questions with answers, and one question and answer with が plus a sentence with は."
    },
    read:[
     {book:"taekim", where:"Basic Grammar, “Introduction to Particles”", note:"は, も and が, including が after question words."},
@@ -483,8 +483,8 @@ ICA.addUnit({
    learn:[
     {h:"Particles: the job labels of Japanese", body:[
       {lead:"English shows each word’s job mostly by word order and small words like “at”, “to” and “with”. Japanese puts a [[particle]] after the noun instead, like a label that says what the noun is doing."},
-      "Because the labels travel with the nouns, Japanese word order is fairly free. The verb stays at the end, but the labelled pieces before it can move. A common, neutral order is: topic → time → place → people → object → verb.",
-      {table:[["Particle","Core job","Example"],["を","object (Lesson 3)","パンを[食]{た}べます。"],["に","point in time; destination; where something is","[六時]{ろくじ}に[起]{お}きます。"],["へ","direction: towards","[駅]{えき}へ[行]{い}きます。"],["で","place of an action; means","[図書館]{としょかん}で[勉強]{べんきょう}します。"],["と","with (a person); and (between nouns)","[友]{とも}だちと[行]{い}きます。"],["も","also, too","[私]{わたし}も[行]{い}きます。"],["から","from (time or place)","[九時]{くじ}から"],["まで","until, as far as","[五時]{ごじ}まで"]]},
+      "Because the labels travel with the nouns, Japanese word order is fairly free. The verb stays at the end, but the labeled pieces before it can move. A common, neutral order is: topic → time → place → people → object → verb.",
+      {table:[["Particle","Core job","Example"],["を","object (Lesson 3)","パンを[食]{た}べます。"],["に","point in time; destination; where something is","[六時]{ろくじ}に[起]{お}きます。"],["へ","direction: toward","[駅]{えき}へ[行]{い}きます。"],["で","place of an action; means","[図書館]{としょかん}で[勉強]{べんきょう}します。"],["と","with (a person); and (between nouns)","[友]{とも}だちと[行]{い}きます。"],["も","also, too","[私]{わたし}も[行]{い}きます。"],["から","from (time or place)","[九時]{くじ}から"],["まで","until, as far as","[五時]{ごじ}まで"]]},
       {ex:"[私]{わたし}は[土曜日]{どようび}に[友]{とも}だちとバスで[公園]{こうえん}へ[行]{い}きます。\nOn Saturday I’m going to the park by bus with a friend.", label:"Five particles in one sentence"},
       "In that sentence は marks the topic, に the time, と the person, で the means and へ the direction. Read it again and point to each label."
     ]},
@@ -497,8 +497,8 @@ ICA.addUnit({
       "**Destination.** With verbs of movement, に marks where you arrive: 「[学校]{がっこう}に[行]{い}きます。」「[日本]{にほん}に[来]{き}ました。」「うちに[帰]{かえ}ります。」",
       "に has a third job, marking where something is, which you will meet with あります and います at the end of this lesson."
     ]},
-    {h:"へ: towards", body:[
-      "The particle へ is pronounced **え**, another particle spelled in the old way (like は read わ and を read お). It marks the direction of movement: towards.",
+    {h:"へ: toward", body:[
+      "The particle へ is pronounced **え**, another particle spelled in the old way (like は read わ and を read お). It marks the direction of movement: toward.",
       {ex:"[駅]{えき}へ[行]{い}きます。 I’m going to the station.\n[国]{くに}へ[帰]{かえ}ります。 I’m going back to my country.", label:"へ with movement"},
       "With [行]{い}きます, [来]{き}ます and [帰]{かえ}ります, に and へ are both correct, and in everyday speech the difference is small: へ stresses the direction, に the arrival point.",
       "But へ can only replace に when に shows direction. It can’t mark time or where something is:",
@@ -540,7 +540,7 @@ ICA.addUnit({
     ]},
     {h:"Common mistakes", body:[
       {table:[["Mistake","Better","Why"],["✗ [図書館]{としょかん}に[勉強]{べんきょう}します。","[図書館]{としょかん}で[勉強]{べんきょう}します。","Studying is an action: で."],["✗ [部屋]{へや}でねこがいます。","[部屋]{へや}にねこがいます。","Being somewhere: に."],["✗ [明日]{あした}に[行]{い}きます。","[明日]{あした}[行]{い}きます。","Time words relative to now take no particle."],["✗ [六時]{ろくじ}へ[起]{お}きます。","[六時]{ろくじ}に[起]{お}きます。","Time takes に; へ is only for direction."],["✗ [私]{わたし}はも[行]{い}きます。","[私]{わたし}も[行]{い}きます。","も replaces は."],["✗ [犬]{いぬ}があります。","[犬]{いぬ}がいます。","Animals take います."]]},
-      "All of these particles are summarised in {{particles-o-ni-de}}.",
+      "All of these particles are summarized in {{particles-o-ni-de}}.",
       {terms:["particle","object-marker","particle-mo","particle-kara-made","aru-iru"]}
     ]}
    ],
@@ -672,7 +672,7 @@ ICA.addUnit({
       "There is no rule you can see from the outside, so learn these few by heart. When in doubt, look the word up: a dictionary will say “na-adjective”.",
       {h:"[好]{す}き and きらい: likes and dislikes"},
       "[好]{す}き (liked) and きらい (disliked) are な-adjectives, and the thing you like or dislike takes **が**, not を:",
-      {ex:"[私]{わたし}はねこが[好]{す}きです。 I like cats.\nチェスカさんは[料理]{りょうり}がきらいです。 Cheska doesn’t like cooking.\n[好]{す}きな[食]{た}べ[物]{もの}は[何]{なん}ですか。 What’s your favourite food?", label:"が with すき and きらい"},
+      {ex:"[私]{わたし}はねこが[好]{す}きです。 I like cats.\nチェスカさんは[料理]{りょうり}がきらいです。 Cheska doesn’t like cooking.\n[好]{す}きな[食]{た}べ[物]{もの}は[何]{なん}ですか。 What’s your favorite food?", label:"が with すき and きらい"},
       "きらい is a strong word, like “hate” in some contexts. To be gentle, many people say あまり[好]{す}きじゃありません (“I don’t like it much”) instead.",
       {h:"[大]{おお}きな and [小]{ちい}さな"},
       "[大]{おお}きい and [小]{ちい}さい are い-adjectives, but you will also see [大]{おお}きな and [小]{ちい}さな before nouns: [大]{おお}きな[家]{いえ} (a big house). These are special pre-noun forms, not な-adjectives: you can’t say 「✗ [大]{おお}きです」. At the end of a sentence, always use [大]{おお}きいです."
@@ -697,8 +697,8 @@ ICA.addUnit({
       "You have now met the core of N5 grammar for polite sentences: nouns with です, questions, pointing words, verbs with ます, eight particles, あります and います, and two kinds of adjectives. The full tables are in {{i-and-na-adjectives}} and the other Codex entries for this unit.",
       "Unit 3 builds on all of this: the て-form, requests and permission, ～ています, plain forms, counters, numbers and dates. Unit 4 teaches the N5 kanji and vocabulary you have been reading with furigana.",
       "The words in these lessons will come back again and again. A few minutes of daily review in the Kanji Lab keeps them fresh, and it is normal to need several reviews before a word sticks.",
-      {lab:"kl-n5-vocab", t:"Practise: N5 vocabulary, a few minutes a day"},
-      {lab:"kl-n5", t:"Practise: the N5 kanji you have been reading with furigana"},
+      {lab:"kl-n5-vocab", t:"Practice: N5 vocabulary, a few minutes a day"},
+      {lab:"kl-n5", t:"Practice: the N5 kanji you have been reading with furigana"},
       {terms:["i-adjective","na-adjective"]}
     ]}
    ],
@@ -782,7 +782,7 @@ ICA.addUnit({
      ], write:"…が[好]{す}きです。…はあまり[好]{す}きじゃありません。"},
      {t:"Start a daily review habit", how:[
        "Open the Kanji Lab and try the N5 vocabulary deck for five minutes.",
-       "Do the same tomorrow and the day after. Notice which words from this unit you already recognise.",
+       "Do the same tomorrow and the day after. Notice which words from this unit you already recognize.",
        "Note any word you keep forgetting; it will come back in the review until it sticks."
      ], write:"Day 1… Day 2… Day 3… Words I keep forgetting…"}
     ],
@@ -959,7 +959,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "A particle is a small word that comes **after** a noun and labels its job, like a sticker. English uses word order and words like “at”, “to” and “with”; Japanese uses particles.",
-      {table:[["Particle","Job"],["を (read お)","the object: パンを[食]{た}べます"],["に","a point in time, a destination, where something is"],["へ (read え)","direction: towards"],["で","where an action happens; the means"],["と","with (a person); and (nouns)"],["も","also, too"],["から / まで","from / until"]]},
+      {table:[["Particle","Job"],["を (read お)","the object: パンを[食]{た}べます"],["に","a point in time, a destination, where something is"],["へ (read え)","direction: toward"],["で","where an action happens; the means"],["と","with (a person); and (nouns)"],["も","also, too"],["から / まで","from / until"]]},
       "Three particles keep an old spelling: は is read わ, へ is read え and を is read お. Because the particles carry the meaning, Japanese word order is fairly free, as long as the verb comes last.",
       "The trickiest pair is に and で, because both can mean “at”. Ask: is something **happening** there, or is something just **there**? Action → で (「[図書館]{としょかん}で[勉強]{べんきょう}します。」). Being there → に (「[図書館]{としょかん}にいます。」).",
       {key:"Particles follow nouns. Action happens で; things exist に."}
@@ -1043,7 +1043,7 @@ ICA.addUnit({
       "**Word order.** A neutral order is topic → time → place → object → verb: 「[私]{わたし}は[毎朝]{まいあさ}うちでコーヒーを[飲]{の}みます。」 (“I drink coffee at home every morning.”). The particles show each word’s job, so the middle pieces can move, but the verb stays last.",
       "**Telling a story.** A string of short ました sentences is a natural way to describe your day: 「[七時]{しちじ}に[起]{お}きました。[朝]{あさ}ごはんを[食]{た}べました。[九時]{くじ}に[会社]{かいしゃ}に[行]{い}きました。」 Unit 3 shows how to join them with the て-form.",
       {table:[["Ending","Use","Example"],["～ませんか","polite invitation","いっしょに[昼]{ひる}ごはんを[食]{た}べませんか。"],["～ましょう","let’s (after agreeing, or with friends)","ええ、[食]{た}べましょう。"],["～ましょうか","shall we / shall I (suggestion, offer)","[何時]{なんじ}に[会]{あ}いましょうか。"]]},
-      "～ませんか leaves room to refuse, so it is the polite way to invite. To decline, Japanese speakers often apologise and trail off: 「すみません、[今日]{きょう}はちょっと…。」"
+      "～ませんか leaves room to refuse, so it is the polite way to invite. To decline, Japanese speakers often apologize and trail off: 「すみません、[今日]{きょう}はちょっと…。」"
      ],
      pro:[
       "**Stem + に + movement verb (purpose).** The ます stem plus に before [行]{い}く, [来]{く}る or [帰]{かえ}る means “go to do”: 「[映画]{えいが}を[見]{み}に[行]{い}きます。」 (I’m going to see a film), 「[昼]{ひる}ごはんを[食]{た}べに[帰]{かえ}ります。」 This is an N5 pattern built straight on the stem.",

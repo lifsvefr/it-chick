@@ -1,9 +1,9 @@
 /* International Studies · Unit 14 · Economics for international affairs */
 ICA.addUnit({
   id:"e4u23", track:"e4", n:14, title:"Economics for international affairs", icon:"📈",
-  blurb:"The economics toolkit that graduate programmes in international affairs assume, built from zero with no equations. Learn how markets set prices, and what taxes, subsidies and price controls do. See how GDP, growth, inflation and jobs are measured, and why PPP and market exchange rates tell different stories. Then work out who gains and loses from trade and tariffs. Read the balance of payments and exchange rates, with the Asian crisis of 1997–98 as a case. Finally, read IMF and World Bank data like an analyst, with a dated comparison of two real economies.",
+  blurb:"The economics toolkit that graduate programs in international affairs assume, built from zero with no equations. Learn how markets set prices, and what taxes, subsidies and price controls do. See how GDP, growth, inflation and jobs are measured, and why PPP and market exchange rates tell different stories. Then work out who gains and loses from trade and tariffs. Read the balance of payments and exchange rates, with the Asian crisis of 1997–98 as a case. Finally, read IMF and World Bank data like an analyst, with a dated comparison of two real economies.",
   goals:[
-    "Use supply, demand and elasticity to predict what happens to prices and quantities when conditions change, and when governments tax, subsidise or cap prices",
+    "Use supply, demand and elasticity to predict what happens to prices and quantities when conditions change, and when governments tax, subsidize or cap prices",
     "Explain how GDP is measured, convert nominal figures into real ones, and read inflation and unemployment rates correctly",
     "Choose between market exchange rates and purchasing power parity for a comparison, and say why the answer changes the ranking of economies",
     "Explain the gains from trade and the losers inside each country, and work out what a tariff or quota does to prices, imports, revenue and efficiency",
@@ -29,8 +29,8 @@ ICA.addUnit({
    learn:[
     {h:"Why prices matter in world politics", body:[
       {lead:"A drought in a rice-growing region. A war that closes a shipping lane. A government that caps the price of bread. Each one moves prices, and prices move politics."},
-      "Graduate programmes in international affairs expect you to follow arguments that start from a price. Why did a fuel subsidy reform bring people into the streets? Why does an export ban in one country raise food bills in another? Why do sanctions on an oil exporter change petrol prices on the other side of the world? This lesson builds the tool behind all of these: a model of how buyers and sellers meet in a market.",
-      "A [[market-economics|market]] is any arrangement in which buyers and sellers trade a good or service, from a village fish market to the global oil market. The Austrian economist Friedrich Hayek argued in “The Use of Knowledge in Society” (1945) that prices act as signals. A rising price tells millions of people, who never meet, that something has become scarcer. They should use it carefully or produce more of it. Economists of many schools accept the signalling idea. They disagree about how well markets work without help, which we come back to at the end.",
+      "Graduate programs in international affairs expect you to follow arguments that start from a price. Why did a fuel subsidy reform bring people into the streets? Why does an export ban in one country raise food bills in another? Why do sanctions on an oil exporter change petrol prices on the other side of the world? This lesson builds the tool behind all of these: a model of how buyers and sellers meet in a market.",
+      "A [[market-economics|market]] is any arrangement in which buyers and sellers trade a good or service, from a village fish market to the global oil market. The Austrian economist Friedrich Hayek argued in “The Use of Knowledge in Society” (1945) that prices act as signals. A rising price tells millions of people, who never meet, that something has become scarcer. They should use it carefully or produce more of it. Economists of many schools accept the signaling idea. They disagree about how well markets work without help, which we come back to at the end.",
       {key:"A price is a signal of scarcity. When something stops a price from moving, the scarcity does not disappear; it shows up somewhere else."}
     ]},
     {h:"Demand, supply and equilibrium", body:[
@@ -43,8 +43,8 @@ ICA.addUnit({
         ["1.40","80","120","Surplus of 40"],
         ["1.60","60","140","Surplus of 80"]
       ]},
-      "In this invented weekly rice market, only one price clears the market: at 1.20 a kilogram, buyers want exactly what sellers offer. That is the [[market-equilibrium|equilibrium]]. Below it there is a [[shortage|shortage]]: queues form and sellers find they can charge more. Above it there is a [[market-surplus|surplus]]: unsold rice piles up and sellers cut prices. Either way the price is pushed towards 1.20.",
-      {fig:'<svg viewBox="0 0 340 384"><path class="d-ink" d="M50 20 V290 H326" fill="none" stroke-width="2"/><path class="d-rose" d="M70 50 L300 260" fill="none" stroke-width="3"/><path class="d-sage" d="M70 260 L300 50" fill="none" stroke-width="3"/><path class="d-soft" d="M50 155 H185" fill="none" stroke-width="1.5" stroke-dasharray="4 4"/><path class="d-ink" d="M50 210 H322" fill="none" stroke-width="2" stroke-dasharray="7 4"/><circle class="d-inkf" cx="185" cy="155" r="5"/><text x="180" y="138">E</text><text x="56" y="16">Price</text><text x="326" y="310" text-anchor="end">Quantity</text><text x="306" y="272">D</text><text x="306" y="50">S</text><text class="s" x="8" y="160">1.20</text><text class="s" x="8" y="215">1.00</text><text class="s" x="262" y="204">Ceiling</text><path class="d-ink" d="M125 226 V234 H245 V226" fill="none" stroke-width="1.5"/><text class="s" x="185" y="252" text-anchor="middle">Shortage: 40 t</text><text class="s" x="10" y="334">E: equilibrium, 1.20 a kg and 100 tonnes.</text><text class="s" x="10" y="352">At a ceiling of 1.00, buyers want 120 t</text><text class="s" x="10" y="370">but sellers offer only 80 t.</text></svg>', alt:"A supply and demand graph. Price is on the vertical axis and quantity on the horizontal axis. The demand line D slopes down from top left to bottom right; the supply line S slopes up from bottom left to top right. They cross at point E, the equilibrium, at a price of 1.20. A dashed horizontal line marks a price ceiling at 1.00, below E. At that price the demand line is far to the right of the supply line; a bracket between them is labelled shortage of 40 tonnes.", cap:"The rice market from the table. A ceiling below the equilibrium price creates a shortage, because buyers want more and sellers offer less."}
+      "In this invented weekly rice market, only one price clears the market: at 1.20 a kilogram, buyers want exactly what sellers offer. That is the [[market-equilibrium|equilibrium]]. Below it there is a [[shortage|shortage]]: queues form and sellers find they can charge more. Above it there is a [[market-surplus|surplus]]: unsold rice piles up and sellers cut prices. Either way the price is pushed toward 1.20.",
+      {fig:'<svg viewBox="0 0 340 384"><path class="d-ink" d="M50 20 V290 H326" fill="none" stroke-width="2"/><path class="d-rose" d="M70 50 L300 260" fill="none" stroke-width="3"/><path class="d-sage" d="M70 260 L300 50" fill="none" stroke-width="3"/><path class="d-soft" d="M50 155 H185" fill="none" stroke-width="1.5" stroke-dasharray="4 4"/><path class="d-ink" d="M50 210 H322" fill="none" stroke-width="2" stroke-dasharray="7 4"/><circle class="d-inkf" cx="185" cy="155" r="5"/><text x="180" y="138">E</text><text x="56" y="16">Price</text><text x="326" y="310" text-anchor="end">Quantity</text><text x="306" y="272">D</text><text x="306" y="50">S</text><text class="s" x="8" y="160">1.20</text><text class="s" x="8" y="215">1.00</text><text class="s" x="262" y="204">Ceiling</text><path class="d-ink" d="M125 226 V234 H245 V226" fill="none" stroke-width="1.5"/><text class="s" x="185" y="252" text-anchor="middle">Shortage: 40 t</text><text class="s" x="10" y="334">E: equilibrium, 1.20 a kg and 100 tonnes.</text><text class="s" x="10" y="352">At a ceiling of 1.00, buyers want 120 t</text><text class="s" x="10" y="370">but sellers offer only 80 t.</text></svg>', alt:"A supply and demand graph. Price is on the vertical axis and quantity on the horizontal axis. The demand line D slopes down from top left to bottom right; the supply line S slopes up from bottom left to top right. They cross at point E, the equilibrium, at a price of 1.20. A dashed horizontal line marks a price ceiling at 1.00, below E. At that price the demand line is far to the right of the supply line; a bracket between them is labeled shortage of 40 tonnes.", cap:"The rice market from the table. A ceiling below the equilibrium price creates a shortage, because buyers want more and sellers offer less."}
     ]},
     {h:"Shifts and movements: four steps", body:[
       "The most common beginner’s mistake is to confuse a **movement along** a curve with a **shift of** the curve. A change in the good’s own price moves you along the demand curve. A change in anything else that affects buyers (income, tastes, the price of a substitute, population, expectations) shifts the whole curve. The same goes for supply: costs, technology, weather, the number of sellers and taxes shift it.",
@@ -54,7 +54,7 @@ ICA.addUnit({
         ["Drought cuts the rice harvest","Supply, to the left","Up","Down"],
         ["Incomes rise and people buy more meat","Demand for meat, to the right","Up","Up"],
         ["A new solar panel technology cuts costs","Supply, to the right","Down","Up"],
-        ["A rumour that coffee causes illness","Demand, to the left","Down","Down"]
+        ["A rumor that coffee causes illness","Demand, to the left","Down","Down"]
       ]},
       {warn:"“Higher prices reduce demand” is sloppy. Higher prices reduce the **quantity demanded**, a movement along the curve. “Demand fell” means the whole curve moved, for a reason other than the price."}
     ]},
@@ -66,8 +66,8 @@ ICA.addUnit({
     ]},
     {h:"Taxes and subsidies: who really pays?", body:[
       "A tax on a good drives a wedge between what buyers pay and what sellers keep. Who bears the burden, the [[tax-incidence|tax incidence]], does not depend on who hands the money to the government. It depends on elasticities: **the side of the market that is less able to walk away pays more**.",
-      {ex:"Before a tax, fuel sells at 1.00 a litre and 100 million litres are sold. The government adds a tax of 0.30 a litre. Buyers, who have few alternatives, now pay 1.24; sellers keep 0.94. Buyers bear 0.24 of the 0.30 (80%) and sellers 0.06 (20%). Sales fall to 90.4 million litres, and the tax raises 0.30 × 90.4 = 27.1 million.", label:"Worked example: tax incidence (invented figures)"},
-      "The trades that no longer happen are a loss to both sides that nobody collects as revenue: economists call it the [[deadweight-loss|deadweight loss]]. In the example, the 9.6 million litres no longer sold were worth more to buyers than they cost to produce.",
+      {ex:"Before a tax, fuel sells at 1.00 a liter and 100 million liters are sold. The government adds a tax of 0.30 a liter. Buyers, who have few alternatives, now pay 1.24; sellers keep 0.94. Buyers bear 0.24 of the 0.30 (80%) and sellers 0.06 (20%). Sales fall to 90.4 million liters, and the tax raises 0.30 × 90.4 = 27.1 million.", label:"Worked example: tax incidence (invented figures)"},
+      "The trades that no longer happen are a loss to both sides that nobody collects as revenue: economists call it the [[deadweight-loss|deadweight loss]]. In the example, the 9.6 million liters no longer sold were worth more to buyers than they cost to produce.",
       "A [[subsidy-economics|subsidy]] is a tax in reverse: the government pays part of the price, so buyers pay less, sellers receive more and more is traded. Subsidies can serve real goals, such as cheap food for the poor or support for new clean-energy industries. Their costs are budgetary: money not spent on schools or clinics. They are also distributive. The IMF notes that fuel subsidies benefit rich households more than poor ones, because the rich use more fuel. That is why removing a subsidy is so politically hard, and why governments that do it often pair it with cash transfers to poorer households."
     ]},
     {h:"Price ceilings and floors", body:[
@@ -83,7 +83,7 @@ ICA.addUnit({
         ["Austrian","Prices carry knowledge no planner has","Hayek 1945"],
         ["Keynesian","Whole economies can get stuck with idle workers","Keynes, *General Theory* (1936)"],
         ["Institutional and Polanyian","Markets are built by states and embedded in society","Polanyi, *The Great Transformation* (1944)"],
-        ["Behavioural","People don’t always choose as the model assumes","Kahneman; Thaler (Nobel 2017)"]
+        ["Behavioral","People don’t always choose as the model assumes","Kahneman; Thaler (Nobel 2017)"]
       ]},
       "Karl Polanyi’s idea of the [[double-movement|double movement]], society pushing back against unregulated markets, returns in Unit 16 on political economy. In a seminar, use supply and demand as a tool for predicting effects. When you judge whether an intervention is wise, say which school’s assumptions you rely on.",
       {terms:["market-economics","demand-economics","supply-economics","ceteris-paribus","market-equilibrium","shortage","market-surplus","price-elasticity-of-demand","tax-incidence","deadweight-loss","subsidy-economics","price-ceiling","price-floor","market-failure","public-good"]}
@@ -100,7 +100,7 @@ ICA.addUnit({
       {t:"Incomes rise in a large country that eats more meat as it gets richer (market: meat)", b:0, why:"Income changes how much buyers want at each price."},
       {t:"A cheaper way to make batteries is invented (market: batteries)", b:1, why:"Lower production costs let sellers offer more at each price."},
       {t:"The price of tea rises (market: coffee, a substitute)", b:0, why:"A dearer substitute makes buyers want more coffee at every coffee price."},
-      {t:"A new tax is charged to every seller per litre of fuel (market: fuel)", b:1, why:"A tax on sellers raises their cost of supplying each litre, shifting supply."},
+      {t:"A new tax is charged to every seller per liter of fuel (market: fuel)", b:1, why:"A tax on sellers raises their cost of supplying each liter, shifting supply."},
       {t:"Tourists stop visiting after a travel warning (market: hotel rooms)", b:0, why:"Fewer would-be buyers shift demand for rooms to the left."}
     ]},
     {id:"e4u23-l1-x3", type:"mcq", q:"A country’s newspapers write: “Higher bread prices reduced demand for bread.” What is the most precise correction?", options:[
@@ -109,7 +109,7 @@ ICA.addUnit({
       {t:"Prices cannot affect demand at all; only incomes can", why:"Prices do affect how much people buy. The point is the vocabulary: a price change moves you along the curve."},
       {t:"The sentence is correct as written", why:"It mixes up a movement along the curve with a shift of the curve, the most common mistake in reading markets."}
     ]},
-    {id:"e4u23-l1-x4", type:"number", q:"Invented figures: a government raises the price of subsidised cooking gas by 25%. Households cut their use by 5%. What is the **price elasticity of demand**? (Ignore the minus sign.)", answer:0.2, tol:0.005, unit:"", why:"Elasticity = percentage change in quantity ÷ percentage change in price = 5 ÷ 25 = **0.2**. Demand is very inelastic: households keep cooking, so the price rise mostly raises their spending rather than cutting their use.", wrongs:[
+    {id:"e4u23-l1-x4", type:"number", q:"Invented figures: a government raises the price of subsidized cooking gas by 25%. Households cut their use by 5%. What is the **price elasticity of demand**? (Ignore the minus sign.)", answer:0.2, tol:0.005, unit:"", why:"Elasticity = percentage change in quantity ÷ percentage change in price = 5 ÷ 25 = **0.2**. Demand is very inelastic: households keep cooking, so the price rise mostly raises their spending rather than cutting their use.", wrongs:[
       {v:5, tol:0, why:"You divided the price change by the quantity change (25 ÷ 5). Put the quantity change on top."},
       {v:20, tol:0, why:"20 is the difference between the two percentages, not their ratio."},
       {v:0.05, tol:0.001, why:"0.05 is the 5% change in quantity written as a decimal. Divide it by the 25% change in price."}
@@ -123,8 +123,8 @@ ICA.addUnit({
     {id:"e4u23-l1-x6", type:"match", q:"Match each policy with its most likely side effect in the simple supply-and-demand model.", pairs:[
       ["A rent cap set below the market rent","A shortage of rental housing","Buyers want more, sellers offer less at the capped price."],
       ["A guaranteed grain price set above the market price","A surplus that the state must buy or store","Farmers grow more and buyers buy less at the floor."],
-      ["A per-unit tax on fuel","Higher prices paid, lower prices kept, fewer litres sold","The tax drives a wedge between buyers and sellers."],
-      ["A per-unit subsidy on fertiliser","Lower prices paid, more fertiliser used, a budget cost","The subsidy is a tax in reverse."]
+      ["A per-unit tax on fuel","Higher prices paid, lower prices kept, fewer liters sold","The tax drives a wedge between buyers and sellers."],
+      ["A per-unit subsidy on fertilizer","Lower prices paid, more fertilizer used, a budget cost","The subsidy is a tax in reverse."]
     ]},
     {id:"e4u23-l1-x7", type:"spot", q:"A student’s summary of the debates. Tap each sentence that **gets it wrong**.", ask:"gets it wrong", parts:[
       {t:"Hayek argued in 1945 that prices pass on information that no single planner could gather.", flag:false, why:"Correct: that is the argument of “The Use of Knowledge in Society”."},
@@ -133,7 +133,7 @@ ICA.addUnit({
       " ",
       {t:"Polanyi argued that markets are embedded in society and provoke a protective counter-movement.", flag:false, why:"Correct: the double movement, in *The Great Transformation* (1944)."},
       " ",
-      {t:"Because prices are signals, economists of all schools agree that governments should never set prices.", flag:true, why:"Wrong. Economists accept the signalling idea but disagree, by school and by case, about when interventions help."},
+      {t:"Because prices are signals, economists of all schools agree that governments should never set prices.", flag:true, why:"Wrong. Economists accept the signaling idea but disagree, by school and by case, about when interventions help."},
       " ",
       {t:"Externalities such as pollution are an example of market failure.", flag:false, why:"Correct: the price leaves out a cost that falls on others."}
     ]},
@@ -159,7 +159,7 @@ ICA.addUnit({
        "3. Is “the market” a natural thing that governments interfere with, or something that states create? Use Hayek and Polanyi."
      ], write:"My question… My position… Evidence… Counter-argument…"}
     ],
-    proof:"A news story analysed in four steps, one policy with its winners and losers, and a seminar paragraph with a counter-argument."
+    proof:"A news story analyzed in four steps, one policy with its winners and losers, and a seminar paragraph with a counter-argument."
    },
    read:[
     {book:"osecon", where:"Chapter 3 “Demand and Supply”, sections 3.1 “Demand, Supply, and Equilibrium in Markets for Goods and Services” to 3.4 “Price Ceilings and Price Floors”", note:"The model step by step, including the four-step process and rent control."},
@@ -201,7 +201,7 @@ ICA.addUnit({
         ["**GDP**","**1,000**"]
       ]},
       "Imports are subtracted not because they are bad. They were produced elsewhere, and they are already counted inside the other spending items. A tariff that cuts imports does not automatically raise GDP; Lesson 3 explains why.",
-      "Two neighbours of GDP appear in development reports. [[gni|Gross national income]] (GNI) adds income that residents earn abroad and subtracts income paid to non-residents. It matters for countries with many workers or investors overseas. The World Bank uses GNI per person for its income groups (Unit 15). **GDP per person** ([[per-capita|per capita]]) divides by population and is the usual first measure of living standards."
+      "Two neighbors of GDP appear in development reports. [[gni|Gross national income]] (GNI) adds income that residents earn abroad and subtracts income paid to non-residents. It matters for countries with many workers or investors overseas. The World Bank uses GNI per person for its income groups (Unit 15). **GDP per person** ([[per-capita|per capita]]) divides by population and is the usual first measure of living standards."
     ]},
     {h:"Nominal and real: taking out inflation", body:[
       "GDP measured at the prices of the day is [[nominal-gdp|nominal GDP]]. It can rise just because prices rose. [[real-gdp|Real GDP]] values output at the prices of a fixed base year, so it moves only when the quantity of goods and services changes (see [[nominal-vs-real]]). The ratio of the two is the [[gdp-deflator|GDP deflator]], a broad price index.",
@@ -215,10 +215,10 @@ ICA.addUnit({
       "Why does inflation matter for international affairs? It erodes wages and savings, hits people on fixed incomes, and has toppled governments. Most central banks today aim for low, stable inflation. Many follow [[inflation-targeting|inflation targeting]], which New Zealand pioneered in 1990. The bank announces a numerical target and adjusts interest rates to meet it. Raising interest rates cools spending and usually strengthens the currency (Lesson 4).",
       {tip:"A CPI basket reflects average spending. Poorer households spend more of their budget on food and fuel. So when food prices jump, their own inflation rate can be far higher than the headline figure."}
     ]},
-    {h:"Unemployment and the labour market", body:[
-      "Under the International Labour Organization’s standard definition, a person is **unemployed** if they are of working age, without work, available to work and actively looking. The [[labour-force|labour force]] is the employed plus the unemployed. The [[unemployment-rate|unemployment rate]] is the unemployed as a share of the labour force, not of the whole population.",
-      {ex:"Of 1,000 working-age adults, 570 have jobs, 30 are looking for work and 400 are neither (students, carers, retirees, people who have given up). Labour force = 570 + 30 = 600. Unemployment rate = 30 ÷ 600 = **5%**. Participation rate = 600 ÷ 1,000 = **60%**.", label:"Worked example (invented figures)"},
-      "The rate can mislead in two directions. In many low-income economies measured unemployment is low, because few people can afford to have no work at all. They take whatever informal work exists (see [[informal-economy]]), often part-time or poorly paid. And people who give up looking drop out of the labour force, which **lowers** the unemployment rate. So analysts read it alongside the [[labour-force-participation-rate|participation rate]] and measures of underemployment."
+    {h:"Unemployment and the labor market", body:[
+      "Under the International Labour Organization’s standard definition, a person is **unemployed** if they are of working age, without work, available to work and actively looking. The [[labour-force|labor force]] is the employed plus the unemployed. The [[unemployment-rate|unemployment rate]] is the unemployed as a share of the labor force, not of the whole population.",
+      {ex:"Of 1,000 working-age adults, 570 have jobs, 30 are looking for work and 400 are neither (students, carers, retirees, people who have given up). Labor force = 570 + 30 = 600. Unemployment rate = 30 ÷ 600 = **5%**. Participation rate = 600 ÷ 1,000 = **60%**.", label:"Worked example (invented figures)"},
+      "The rate can mislead in two directions. In many low-income economies measured unemployment is low, because few people can afford to have no work at all. They take whatever informal work exists (see [[informal-economy]]), often part-time or poorly paid. And people who give up looking drop out of the labor force, which **lowers** the unemployment rate. So analysts read it alongside the [[labour-force-participation-rate|participation rate]] and measures of underemployment."
     ]},
     {h:"Comparing countries: market rates or PPP?", body:[
       "To compare GDP across countries you must put it in one currency. The obvious method uses the [[market-exchange-rate|market exchange rate]]. But prices of haircuts, rent and street food are much lower in poorer countries, so a dollar converted at market rates buys far more there. [[purchasing-power-parity|Purchasing power parity]] (PPP) rates correct for this. They come from the World Bank’s [[international-comparison-program|International Comparison Program]] (ICP), which priced comparable goods in 176 economies for 2021.",
@@ -251,9 +251,9 @@ ICA.addUnit({
       {v:1.5, tol:0.1, why:"1.5 is 15 ÷ 10, a ratio of the two rates, not real growth."}
     ]},
     {id:"e4u23-l2-x4", type:"mcq", q:"Country K’s unemployment rate falls from 8% to 6% in a year in which almost no new jobs were created. What is the most likely explanation?", options:[
-      {t:"Discouraged job-seekers stopped looking and left the labour force", ok:true, why:"Right. People who stop looking are no longer counted as unemployed, so the rate falls even though no one found work. Check the participation rate."},
+      {t:"Discouraged job-seekers stopped looking and left the labor force", ok:true, why:"Right. People who stop looking are no longer counted as unemployed, so the rate falls even though no one found work. Check the participation rate."},
       {t:"The country’s GDP must have risen sharply", why:"Without new jobs, nothing in the scenario points to strong growth."},
-      {t:"The unemployment rate is measured as a share of the whole population, which grew", why:"It is a share of the labour force, not of the whole population."},
+      {t:"The unemployment rate is measured as a share of the whole population, which grew", why:"It is a share of the labor force, not of the whole population."},
       {t:"Inflation fell, which lowers unemployment automatically", why:"Inflation and unemployment are measured separately; a fall in one does not mechanically change the other."}
     ]},
     {id:"e4u23-l2-x5", type:"match", q:"Match each question with the better measure.", pairs:[
@@ -329,8 +329,8 @@ ICA.addUnit({
         ["Selu","4 sacks","2 bicycles","2 sacks"],
         ["Varn","1 sack","1 bicycle","1 sack"]
       ]},
-      "In this invented example Selu is better at both goods: an [[absolute-advantage|absolute advantage]]. But a bicycle costs Varn only one sack of rice in lost output, against two sacks in Selu. So Varn has the [[comparative-advantage|comparative advantage]] in bicycles and Selu in rice. Suppose each specialises in its low-cost good, and they trade at a price between one and two sacks per bicycle. Then both can consume more than they could make alone. David Ricardo set out the idea in 1817. Unit 16 works through a full numerical version, with output before and after.",
-      "Why do opportunity costs differ? The **Heckscher–Ohlin** model (Eli Heckscher, 1919; Bertil Ohlin, 1933) says countries export goods that use their abundant factors intensively. Labour-abundant countries export labour-intensive goods such as garments. Capital-rich or land-rich countries export machinery or grain. Paul Krugman’s “new trade theory” (Nobel 2008) adds that much trade is between similar countries in similar goods. Economies of scale and consumers’ taste for variety drive it."
+      "In this invented example Selu is better at both goods: an [[absolute-advantage|absolute advantage]]. But a bicycle costs Varn only one sack of rice in lost output, against two sacks in Selu. So Varn has the [[comparative-advantage|comparative advantage]] in bicycles and Selu in rice. Suppose each specializes in its low-cost good, and they trade at a price between one and two sacks per bicycle. Then both can consume more than they could make alone. David Ricardo set out the idea in 1817. Unit 16 works through a full numerical version, with output before and after.",
+      "Why do opportunity costs differ? The **Heckscher–Ohlin** model (Eli Heckscher, 1919; Bertil Ohlin, 1933) says countries export goods that use their abundant factors intensively. Labor-abundant countries export labor-intensive goods such as garments. Capital-rich or land-rich countries export machinery or grain. Paul Krugman’s “new trade theory” (Nobel 2008) adds that much trade is between similar countries in similar goods. Economies of scale and consumers’ taste for variety drive it."
     ]},
     {h:"Winners and losers inside a country", body:[
       "Supply and demand show who gains. [[consumer-surplus|Consumer surplus]] is the difference between what buyers would have been willing to pay and what they actually pay. [[producer-surplus|Producer surplus]] is the difference between the price sellers receive and the lowest price they would have accepted. Together they measure the gains from a market.",
@@ -352,19 +352,19 @@ ICA.addUnit({
       "Two refinements matter in practice. A **large** country can push the world price down by buying less, so foreign sellers pay part of its tariff. Economists call the tariff that best exploits this an [[optimal-tariff|optimal tariff]], and note that it invites retaliation. Also, the revenue and protection go to a few groups, while the cost is spread across all buyers. That helps explain why tariffs survive politically (Unit 16)."
     ]},
     {h:"Quotas, subsidies and other barriers", body:[
-      "An [[import-quota|import quota]] limits the quantity of imports instead of taxing them. With a quota the domestic price also rises. But the gap between the domestic and world price goes to whoever holds the right to import: the [[quota-rent|quota rent]]. If licences are handed out free, or if the exporter agrees to “voluntary” limits, those rents go to traders or foreign firms instead of the treasury. OpenStax’s chapter on protectionism traces the costs of US sugar quotas to buyers.",
+      "An [[import-quota|import quota]] limits the quantity of imports instead of taxing them. With a quota the domestic price also rises. But the gap between the domestic and world price goes to whoever holds the right to import: the [[quota-rent|quota rent]]. If licenses are handed out free, or if the exporter agrees to “voluntary” limits, those rents go to traders or foreign firms instead of the treasury. OpenStax’s chapter on protectionism traces the costs of US sugar quotas to buyers.",
       {list:[
         "**Subsidies** to domestic producers raise their output without raising the price buyers pay, but cost the budget; export subsidies are restricted by WTO rules.",
         "**[[non-tariff-measure|Non-tariff measures]]** include product standards, food-safety rules, licensing and customs procedures. Many protect health or the environment; some are protection in disguise. Telling them apart is a frequent subject of trade disputes.",
         "**[[export-restriction|Export restrictions]]** keep goods at home to hold domestic prices down. India’s ban on exports of non-basmati white rice, from July 2023 until it was lifted in late 2024, is an example. Demand for staple food is inelastic. So such restrictions by large exporters can push world prices up sharply for importing countries."
       ]},
-      {tip:"A tariff raises revenue; a quota with free licences gives that money away. That is one reason why economists who accept some protection still usually prefer tariffs to quotas."},
-      {ex:"**Task:** use the bicycle market from the tariff section (world price 100). Instead of a tariff of 20, the government allows only 240 imported bicycles a year. Who gains and who loses?\n1. First I find the new **domestic price**, because a quota works through price too. With only 240 imports, the price rises until home buyers want exactly 240 more bicycles than home makers supply. From the tariff table, that happens at **120**: residents buy 400, home makers sell 160, imports are 240.\n2. Next I note what is **the same** as under the tariff. Buyers still lose 9,000 in consumer surplus; home makers still gain 2,600; the deadweight loss is still 1,600.\n3. Then I find **what is different**: the gap between the domestic price (120) and the world price (100) on each imported bicycle. 20 × 240 = **4,800**. Under the tariff this was government revenue. Under a quota it is the [[quota-rent|quota rent]], and it goes to whoever holds the import licences.\n4. Then I compare three ways of handing out licences.\n• Auctioned by the government: the treasury gets about 4,800, as with a tariff.\n• Given free to local importers: they keep 4,800.\n• A “voluntary” export restraint run by the exporting country: foreign firms keep 4,800, so the importing country loses 1,600 + 4,800 = **6,400** in all.\n**Result:** a short table of the three cases, and one sentence: “A quota that produces the same price as a tariff has the same effects on buyers and home makers, but the 4,800 that a tariff would raise goes to licence holders, and under a voluntary export restraint it leaves the country.”\n**Common mistake:** assuming a quota “costs nothing” because no tax is collected. Buyers pay the same higher price; the only question is who receives the difference.", label:"Worked example: a quota instead of a tariff (invented figures)"}
+      {tip:"A tariff raises revenue; a quota with free licenses gives that money away. That is one reason why economists who accept some protection still usually prefer tariffs to quotas."},
+      {ex:"**Task:** use the bicycle market from the tariff section (world price 100). Instead of a tariff of 20, the government allows only 240 imported bicycles a year. Who gains and who loses?\n1. First I find the new **domestic price**, because a quota works through price too. With only 240 imports, the price rises until home buyers want exactly 240 more bicycles than home makers supply. From the tariff table, that happens at **120**: residents buy 400, home makers sell 160, imports are 240.\n2. Next I note what is **the same** as under the tariff. Buyers still lose 9,000 in consumer surplus; home makers still gain 2,600; the deadweight loss is still 1,600.\n3. Then I find **what is different**: the gap between the domestic price (120) and the world price (100) on each imported bicycle. 20 × 240 = **4,800**. Under the tariff this was government revenue. Under a quota it is the [[quota-rent|quota rent]], and it goes to whoever holds the import licenses.\n4. Then I compare three ways of handing out licenses.\n• Auctioned by the government: the treasury gets about 4,800, as with a tariff.\n• Given free to local importers: they keep 4,800.\n• A “voluntary” export restraint run by the exporting country: foreign firms keep 4,800, so the importing country loses 1,600 + 4,800 = **6,400** in all.\n**Result:** a short table of the three cases, and one sentence: “A quota that produces the same price as a tariff has the same effects on buyers and home makers, but the 4,800 that a tariff would raise goes to license holders, and under a voluntary export restraint it leaves the country.”\n**Common mistake:** assuming a quota “costs nothing” because no tax is collected. Buyers pay the same higher price; the only question is who receives the difference.", label:"Worked example: a quota instead of a tariff (invented figures)"}
     ]},
     {h:"Trade in value chains", body:[
       "Much of today’s trade is in parts and tasks, not finished goods. A phone or a car crosses many borders as components before it is sold. The World Bank’s *World Development Report 2020* estimates that global value chains account for almost half of world trade (see {{global-value-chains}}).",
       "This changes how to read trade numbers and policies. Gross exports count the full value of a good each time it crosses a border. So a country that assembles imported parts can show large exports while adding little value. Measures of [[trade-in-value-added|trade in value added]], such as the OECD–WTO TiVA database, trace where value is actually created. And a tariff on imported inputs is a tax on one’s own exporters, who now pay more for parts. Unit 16 takes up who captures the value and the politics of “de-risking”.",
-      {ex:"**Task:** a factory in the fictional country of Selu assembles phones from imported parts. Parts cost 80 at world prices; the finished phone sells for 100 on the world market. Selu puts a 10% tariff on imported parts. What happens to the factory?\n1. First I find the factory’s **value added**, because that is what pays its workers and owners: 100 − 80 = **20** per phone.\n2. Next I apply the tariff to the parts: 80 × 1.10 = **88**. The phone still sells for 100, because Selu’s factory is too small to change the world price.\n3. Then I recompute value added: 100 − 88 = **12**. It falls from 20 to 12, a cut of **40%**, although the tariff is only 10%. The tariff on inputs works like a heavy tax on assembly.\n4. Then I compare with the opposite policy: a 10% tariff on finished phones, parts duty-free. For phones sold at home, the price rises to 110, and value added rises from 20 to 30, a gain of **50%**. Economists call this kind of calculation the **effective rate of protection**: protection measured on value added, not on the product’s price.\n5. Finally I connect it to the trade data. Selu’s gross exports count 100 per phone, but only 20 is created in Selu. [[trade-in-value-added|Trade in value added]] measures would record 20.\n**Result:** “A 10% tariff on imported parts cuts the assembler’s value added by 40%, because the tariff falls on 80% of its costs while its selling price cannot rise. In value chains, protecting inputs can mean penalising exporters.”\n**Common mistake:** judging a tariff by its headline rate. In value chains, the same rate can mean a large tax on one industry and large protection for another.", label:"Worked example: when a tariff hits your own exporters (invented figures)"}
+      {ex:"**Task:** a factory in the fictional country of Selu assembles phones from imported parts. Parts cost 80 at world prices; the finished phone sells for 100 on the world market. Selu puts a 10% tariff on imported parts. What happens to the factory?\n1. First I find the factory’s **value added**, because that is what pays its workers and owners: 100 − 80 = **20** per phone.\n2. Next I apply the tariff to the parts: 80 × 1.10 = **88**. The phone still sells for 100, because Selu’s factory is too small to change the world price.\n3. Then I recompute value added: 100 − 88 = **12**. It falls from 20 to 12, a cut of **40%**, although the tariff is only 10%. The tariff on inputs works like a heavy tax on assembly.\n4. Then I compare with the opposite policy: a 10% tariff on finished phones, parts duty-free. For phones sold at home, the price rises to 110, and value added rises from 20 to 30, a gain of **50%**. Economists call this kind of calculation the **effective rate of protection**: protection measured on value added, not on the product’s price.\n5. Finally I connect it to the trade data. Selu’s gross exports count 100 per phone, but only 20 is created in Selu. [[trade-in-value-added|Trade in value added]] measures would record 20.\n**Result:** “A 10% tariff on imported parts cuts the assembler’s value added by 40%, because the tariff falls on 80% of its costs while its selling price cannot rise. In value chains, protecting inputs can mean penalizing exporters.”\n**Common mistake:** judging a tariff by its headline rate. In value chains, the same rate can mean a large tax on one industry and large protection for another.", label:"Worked example: when a tariff hits your own exporters (invented figures)"}
     ]},
     {h:"Schools of thought on trade", body:[
       "The case for trade is one of the strongest results in mainstream economics, but its policy conclusions are contested. Present each view with its names:",
@@ -373,7 +373,7 @@ ICA.addUnit({
         ["Mainstream (Ricardian and neoclassical)","Trade raises national income; help losers directly rather than block trade","Ricardo 1817; Heckscher–Ohlin; Krugman"],
         ["Developmentalist","New industries need temporary protection to catch up","Hamilton 1791; List 1841; Chang, *Kicking Away the Ladder* (2002)"],
         ["Structuralist","Commodity exporters face falling terms of trade","Prebisch and Singer (1950; Unit 15)"],
-        ["Critics of hyperglobalisation","Deep integration can clash with democracy and social bargains","Rodrik, *The Globalization Paradox* (2011)"]
+        ["Critics of hyperglobalization","Deep integration can clash with democracy and social bargains","Rodrik, *The Globalization Paradox* (2011)"]
       ]},
       "Many mainstream economists accept the developmentalist [[infant-industry-argument|infant-industry argument]] in principle. The dispute is over whether governments can pick the right industries and remove protection later. Ha-Joon Chang argues that today’s rich countries, from Britain to the United States, protected their industries while developing. Now, he says, they “kick away the ladder” by urging free trade on others. Critics reply that protection also produced many failures, and that East Asia’s successes relied on export competition (Unit 15 covers the developmental state debate).",
       {terms:["production-possibilities-frontier","consumer-surplus","producer-surplus","world-price","trade-adjustment-assistance","optimal-tariff","import-quota","quota-rent","non-tariff-measure","export-restriction","trade-in-value-added","infant-industry-argument"]}
@@ -398,7 +398,7 @@ ICA.addUnit({
       {t:"Bicycles made at home that cost more than imports", b:1, why:"Area b, part of the deadweight loss."},
       {t:"100 bicycles that are no longer bought at all", b:1, why:"Area d, the other part of the deadweight loss."}
     ]},
-    {id:"e4u23-l3-x4", type:"number", q:"Invented figures: world price 100. At 100, residents buy 400 tablets and local firms make 100. At 130 they buy 280 and local firms make 160. A quota allows only **120** imports, so the domestic price rises to 130. Licences are given free to importers. How large is the **quota rent**?", answer:3600, tol:0, unit:"", why:"Each licensed tablet is bought abroad at 100 and sold at home at 130, a gain of 30. Quota rent = 30 × 120 = **3,600**, kept by the licence holders. A tariff of 30 would have given the same price and sent 3,600 to the treasury instead.", wrongs:[
+    {id:"e4u23-l3-x4", type:"number", q:"Invented figures: world price 100. At 100, residents buy 400 tablets and local firms make 100. At 130 they buy 280 and local firms make 160. A quota allows only **120** imports, so the domestic price rises to 130. Licenses are given free to importers. How large is the **quota rent**?", answer:3600, tol:0, unit:"", why:"Each licensed tablet is bought abroad at 100 and sold at home at 130, a gain of 30. Quota rent = 30 × 120 = **3,600**, kept by the license holders. A tariff of 30 would have given the same price and sent 3,600 to the treasury instead.", wrongs:[
       {v:9000, tol:0, why:"9,000 is 30 × 300, using imports under free trade (400 − 100). Under the quota only 120 come in."},
       {v:30, tol:0, why:"30 is the gap per tablet. Multiply by the 120 tablets imported."},
       {v:15600, tol:0, why:"15,600 is 130 × 120, the full value of imports at the home price, not the rent."}
@@ -407,7 +407,7 @@ ICA.addUnit({
       ["Tariff","A tax on imports, collected at the border","Raises the home price and earns revenue."],
       ["Import quota","A limit on the quantity that may be imported","The price gap becomes a quota rent."],
       ["Export restriction","Keeping a good at home to hold its domestic price down","Can raise world prices for importing countries."],
-      ["Non-tariff measure","A standard, licence or procedure that affects trade","May protect health or be hidden protection."],
+      ["Non-tariff measure","A standard, license or procedure that affects trade","May protect health or be hidden protection."],
       ["Production subsidy","A payment to home producers that does not raise the price buyers pay","It costs the budget instead."]
     ]},
     {id:"e4u23-l3-x6", type:"mcq", q:"A country assembles laptops from imported parts and exports them. It raises tariffs on imported parts “to protect national industry”. What is the most likely first effect on its laptop exporters?", options:[
@@ -416,10 +416,10 @@ ICA.addUnit({
       {t:"Nothing changes, because tariffs are paid by foreign suppliers", why:"Importers pay tariffs at the border; much of the cost usually reaches the buyers of the parts."},
       {t:"The country’s gross exports fall, but its value added rises automatically", why:"Nothing makes value added rise automatically; higher input costs usually cut both."}
     ]},
-    {id:"e4u23-l3-x7", type:"sort", q:"Which school of thought does each claim belong to?", buckets:["Mainstream","Developmentalist","Critics of hyperglobalisation"], items:[
+    {id:"e4u23-l3-x7", type:"sort", q:"Which school of thought does each claim belong to?", buckets:["Mainstream","Developmentalist","Critics of hyperglobalization"], items:[
       {t:"Help displaced workers directly instead of blocking imports", b:0, why:"The compensation principle, the mainstream answer to trade’s losers."},
       {t:"Rich countries protected their own industries, then urged free trade on others", b:1, why:"Chang’s “kicking away the ladder” argument."},
-      {t:"Deep integration can conflict with democratic choices and national social bargains", b:2, why:"Rodrik’s globalisation paradox."},
+      {t:"Deep integration can conflict with democratic choices and national social bargains", b:2, why:"Rodrik’s globalization paradox."},
       {t:"New industries may need temporary protection before they can compete", b:1, why:"The infant-industry argument of Hamilton and List."},
       {t:"Comparative advantage means both countries can gain even if one is better at everything", b:0, why:"Ricardo’s result, the core of the mainstream case."}
     ]},
@@ -434,7 +434,7 @@ ICA.addUnit({
        "Using the lesson, say who in that country gains and who loses from this tariff, and roughly how."
      ], write:"Country, product and year… Tariff… Who gains… Who loses… What else I would want to know…"},
      {t:"An export restriction", how:[
-       "Find a news report about one country restricting exports of a food, fertiliser or mineral.",
+       "Find a news report about one country restricting exports of a food, fertilizer or mineral.",
        "Note why the government said it acted, and what happened to prices at home and abroad.",
        "Explain the effect with supply, demand and elasticity."
      ], write:"Country, good and date… Stated reason… Prices at home… Prices abroad… My explanation…"},
@@ -473,7 +473,7 @@ ICA.addUnit({
     ]},
     {h:"Deficits, surpluses and the saving–investment identity", body:[
       "Is a current account deficit bad? Not in itself. A useful identity, the [[saving-investment-identity|saving–investment identity]], says that a country’s current account balance equals its national saving minus its domestic investment. Say a country invests 26% of GDP but saves only 22%. It must borrow the other 4% from abroad, so it runs a current account deficit of about 4% of GDP.",
-      "So the question is **what the borrowing pays for**. Borrowing to build ports and factories that will raise future exports can be sensible; many fast-growing economies ran deficits. Borrowing to fund consumption, a property bubble or a government that can’t raise taxes is riskier, especially if the debt is short-term and in foreign currency. Surpluses aren’t simply “good” either: a large surplus means a country saves more than it invests at home and lends the rest abroad. Germany, China and Japan have been criticised for large surpluses, and the United States for large deficits; economists disagree about how much this matters.",
+      "So the question is **what the borrowing pays for**. Borrowing to build ports and factories that will raise future exports can be sensible; many fast-growing economies ran deficits. Borrowing to fund consumption, a property bubble or a government that can’t raise taxes is riskier, especially if the debt is short-term and in foreign currency. Surpluses aren’t simply “good” either: a large surplus means a country saves more than it invests at home and lends the rest abroad. Germany, China and Japan have been criticized for large surpluses, and the United States for large deficits; economists disagree about how much this matters.",
       {warn:"A bilateral trade deficit with one partner tells you little. Overall balances reflect saving and investment across the whole economy, not unfair dealing by any single partner."}
     ]},
     {h:"Exchange rates: the price of a currency", body:[
@@ -487,7 +487,7 @@ ICA.addUnit({
         ["Fall in the price of a main export","Less foreign demand: tends to depreciate","Months"],
         ["Political or financial risk","Investors leave: tends to depreciate","Can be sudden"]
       ]},
-      "Over long periods, currencies tend to move towards what relative inflation rates imply, a version of PPP. In the short run, capital flows and expectations dominate. Economists distinguish the nominal rate from the [[real-exchange-rate|real exchange rate]], which adjusts for price levels and measures competitiveness. A depreciation makes exports cheaper abroad and imports dearer at home. It can boost exporters, but it also raises inflation and the burden of debts owed in foreign currency (see [[original-sin-debt]])."
+      "Over long periods, currencies tend to move toward what relative inflation rates imply, a version of PPP. In the short run, capital flows and expectations dominate. Economists distinguish the nominal rate from the [[real-exchange-rate|real exchange rate]], which adjusts for price levels and measures competitiveness. A depreciation makes exports cheaper abroad and imports dearer at home. It can boost exporters, but it also raises inflation and the burden of debts owed in foreign currency (see [[original-sin-debt]])."
     ]},
     {h:"Fixed, floating and in between", body:[
       "Governments choose an exchange-rate regime. The IMF classifies every member’s regime each year in its *Annual Report on Exchange Arrangements and Exchange Restrictions*. The range runs from free floats to giving up a national currency altogether:",
@@ -496,7 +496,7 @@ ICA.addUnit({
       "To hold a peg, a central bank needs [[foreign-exchange-reserves|foreign-exchange reserves]]. When people sell its currency, it [[foreign-exchange-intervention|intervenes]] by buying its own currency with dollars. It may also raise interest rates. Markets may come to believe the reserves will run out. Then a [[speculative-attack|speculative attack]] can become self-fulfilling: everyone sells before the devaluation, which makes the devaluation happen."
     ]},
     {h:"Case: the Asian crisis of 1997–98", body:[
-      "Unit 2 read the 1997–98 crisis through rival IR theories, and Unit 16 compares it with other crises. Here are the economic mechanics. In the early 1990s Thailand, Indonesia, Korea and their neighbours grew fast. They kept their currencies pegged or tightly managed against the dollar. Banks and firms borrowed heavily abroad to fund property and investment. Much of it was **short-term and in dollars**, and much of it was unhedged. Thailand ran a large current account deficit.",
+      "Unit 2 read the 1997–98 crisis through rival IR theories, and Unit 16 compares it with other crises. Here are the economic mechanics. In the early 1990s Thailand, Indonesia, Korea and their neighbors grew fast. They kept their currencies pegged or tightly managed against the dollar. Banks and firms borrowed heavily abroad to fund property and investment. Much of it was **short-term and in dollars**, and much of it was unhedged. Thailand ran a large current account deficit.",
       {ol:[
         "**Mid-1997**: speculative attacks on the baht. Thailand’s reserves ran low, and on 2 July it let the baht float. It fell sharply.",
         "**Contagion**: investors pulled money from economies with similar weaknesses: Indonesia, Malaysia, the Philippines and Korea (see [[financial-contagion]] and [[sudden-stop]]). By early October the rupiah had lost about 30% of its value.",
@@ -504,7 +504,7 @@ ICA.addUnit({
         "**Balance sheets**: as currencies fell, dollar debts swelled in local currency; firms and banks failed. In 1998 Indonesia’s GDP fell by about 14% and Korea’s by about 7%, by the IMF’s figures.",
         "**Adjustment**: imports collapsed and current accounts swung into surplus within a year. Afterwards, the region built large reserves and the Chiang Mai swap network (Unit 13)."
       ]},
-      "The debate is still alive. The IMF later judged that its programmes’ first fiscal targets had been “too tight”. In November 1997 sixteen Indonesian banks were closed with no clear guarantee for depositors. The IMF accepted that this uncertainty helped speed up bank runs. Joseph Stiglitz (*Globalization and Its Discontents*, 2002) argued that high interest rates and austerity deepened the slump. Steven Radelet and Jeffrey Sachs (1998) called it a financial panic that better crisis management could have stopped. Others stressed **moral hazard** (see [[moral-hazard]]): lenders and borrowers had expected to be rescued. Defenders of the IMF argued that high interest rates were needed to stop currencies falling further. Malaysia’s capital controls of September 1998 remain a test case for both sides (Unit 16).",
+      "The debate is still alive. The IMF later judged that its programs’ first fiscal targets had been “too tight”. In November 1997 sixteen Indonesian banks were closed with no clear guarantee for depositors. The IMF accepted that this uncertainty helped speed up bank runs. Joseph Stiglitz (*Globalization and Its Discontents*, 2002) argued that high interest rates and austerity deepened the slump. Steven Radelet and Jeffrey Sachs (1998) called it a financial panic that better crisis management could have stopped. Others stressed **moral hazard** (see [[moral-hazard]]): lenders and borrowers had expected to be rescued. Defenders of the IMF argued that high interest rates were needed to stop currencies falling further. Malaysia’s capital controls of September 1998 remain a test case for both sides (Unit 16).",
       {terms:["balance-of-payments","current-account","trade-balance","primary-income","financial-account","foreign-direct-investment","saving-investment-identity","exchange-rate","currency-depreciation","currency-appreciation","real-exchange-rate","fixed-exchange-rate","foreign-exchange-reserves","foreign-exchange-intervention","speculative-attack"]}
     ]}
    ],
@@ -537,7 +537,7 @@ ICA.addUnit({
       {t:"Markets start to doubt that the central bank has enough reserves", why:"Doubts come first: a large deficit, short-term foreign debt or falling reserves."},
       {t:"Investors and firms sell the currency before it can be devalued", why:"If a devaluation is expected, selling now avoids a loss."},
       {t:"The central bank sells reserves and raises interest rates to defend the peg", why:"Intervention and higher rates try to stop the selling."},
-      {t:"Reserves run low and the peg is abandoned", why:"The selling uses up reserves, which makes devaluation happen: the attack fulfils itself."},
+      {t:"Reserves run low and the peg is abandoned", why:"The selling uses up reserves, which makes devaluation happen: the attack fulfills itself."},
       {t:"The currency falls and foreign-currency debts swell in local terms", why:"The balance-sheet damage that turns a currency crisis into a wider crisis."}
     ]},
     {id:"e4u23-l4-x6", type:"match", q:"Match each regime with an example from the lesson.", pairs:[
@@ -553,7 +553,7 @@ ICA.addUnit({
       " ",
       {t:"As local currencies fell, dollar debts became smaller in local currency, easing the crisis.", flag:true, why:"Wrong. A falling currency makes dollar debts larger in local currency. That balance-sheet effect deepened the crisis."},
       " ",
-      {t:"The IMF later accepted that its programmes’ initial fiscal targets had been too tight.", flag:false, why:"Correct: the IMF said so in its own review."},
+      {t:"The IMF later accepted that its programs’ initial fiscal targets had been too tight.", flag:false, why:"Correct: the IMF said so in its own review."},
       " ",
       {t:"Current account deficits in the crisis countries grew larger in 1998.", flag:true, why:"Wrong. Imports collapsed and current accounts swung into surplus."}
     ]},
@@ -599,11 +599,11 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Where the numbers come from", body:[
-      {lead:"Almost every economic figure you quote in a seminar starts with a national statistics office or central bank. An international organisation then collects it, checks it and sometimes adjusts it."},
+      {lead:"Almost every economic figure you quote in a seminar starts with a national statistics office or central bank. An international organization then collects it, checks it and sometimes adjusts it."},
       "Two databases cover most needs:",
       {list:[
         "The IMF’s **[[world-economic-outlook|World Economic Outlook]]** (WEO) database is updated twice a year, in April and October, with the report of the same name. It covers GDP, inflation, unemployment, the current account and public finances from 1980. It adds **projections** for about five years ahead. The October 2026 edition was published on 13 October 2026.",
-        "The World Bank’s **[[world-development-indicators|World Development Indicators]]** (WDI) hold about 1,600 indicators for 217 economies, from GDP to school enrolment and emissions (see {{political-economic-datasets}}). WDI reports past values, not projections.",
+        "The World Bank’s **[[world-development-indicators|World Development Indicators]]** (WDI) hold about 1,600 indicators for 217 economies, from GDP to school enrollment and emissions (see {{political-economic-datasets}}). WDI reports past values, not projections.",
         "For one country in depth, read the IMF’s [[article-iv-consultation|Article IV]] report, the regular check-up the Fund carries out with each member, usually every year. It contains tables, projections and the staff’s view of risks."
       ]},
       "The same indicator can differ between sources, for three reasons. Figures are revised as better data arrive, so each release is a [[data-vintage|vintage]]. Databases convert currencies at slightly different rates and handle fiscal years differently. And countries now and then [[gdp-rebasing|rebase]] their accounts, updating the base year and adding new industries. In April 2014 Nigeria moved its base year from 1990 to 2010. Its measured GDP for 2013 rose by about 89%, with no change in what anyone produced. Morten Jerven’s *Poor Numbers* (2013) shows how thin the statistical foundations are in many African countries. Users should always ask how a number was made.",
@@ -641,7 +641,7 @@ ICA.addUnit({
       {warn:"Never mix vintages in one table. A 2025 figure from the April edition and a 2026 figure from the October edition can show a change that is really a revision."}
     ]},
     {h:"Worked comparison: Bangladesh and India", body:[
-      "Bangladesh (about 174 million people in 2024) and India are neighbours. Their sizes are very different, but their income levels are similar. Here is what the World Bank’s WDI (July 2026 update) shows for GDP per person:",
+      "Bangladesh (about 174 million people in 2024) and India are neighbors. Their sizes are very different, but their income levels are similar. Here is what the World Bank’s WDI (July 2026 update) shows for GDP per person:",
       {table:[
         ["Year","Bangladesh (current US$)","India (current US$)"],
         ["2019","2,130","2,041"],
@@ -830,7 +830,7 @@ ICA.addUnit({
       "In international affairs the same tools explain food price spikes after poor harvests and the effect of sanctions on an oil exporter. They also explain currency markets (Lesson 4 of Unit 14)."
      ],
      pro:[
-      "**What the model assumes.** The textbook model describes a competitive market: many buyers and sellers, a standard product, good information and no single participant able to set the price. Where firms have market power (monopoly), where buyers have power over sellers (monopsony, as in some labour markets), or where information is lopsided, outcomes differ.",
+      "**What the model assumes.** The textbook model describes a competitive market: many buyers and sellers, a standard product, good information and no single participant able to set the price. Where firms have market power (monopoly), where buyers have power over sellers (monopsony, as in some labor markets), or where information is lopsided, outcomes differ.",
       "**Ceteris paribus.** Each curve holds everything else constant. In real data, many things change at once, so economists use statistical methods to separate demand from supply effects. Simply plotting prices against quantities over time does not trace out either curve.",
       "**Markets as institutions.** Hayek (1945) stressed prices as a way of using knowledge no one holds in full. Polanyi (1944) stressed that markets are built and regulated by states, laws and norms. Both views are useful: the first for predicting how prices respond, the second for asking who designed the market and for whom.",
       "**Seminar use.** State your shock, the curve it shifts and your assumption about elasticities. If your conclusion depends on the market being competitive, say so."
@@ -880,7 +880,7 @@ ICA.addUnit({
      builder:[
       "**Tax incidence.** Who bears a tax depends on elasticities, not on who pays it to the government. In Unit 14’s example, a 0.30 tax on fuel raised the buyers’ price from 1.00 to 1.24 and cut sellers’ price to 0.94: buyers bore 80%.",
       "**Deadweight loss.** Taxes and controls stop some trades that would have benefited both sides. The value of those lost trades is the deadweight loss: a cost to the economy that nobody collects.",
-      "**Ceilings** below equilibrium cause shortages and rationing by queue, connections or black markets. **Floors** above equilibrium cause surpluses: unsold produce, or in the simple labour-market model, unemployment.",
+      "**Ceilings** below equilibrium cause shortages and rationing by queue, connections or black markets. **Floors** above equilibrium cause surpluses: unsold produce, or in the simple labor-market model, unemployment.",
       "**Subsidies at scale.** The IMF estimated explicit fossil-fuel subsidies at about 1.3 trillion dollars in 2022, and 7 trillion (7.1% of world GDP) including unpriced environmental costs. It notes that fuel subsidies benefit richer households more than poorer ones."
      ],
      pro:[
@@ -909,7 +909,7 @@ ICA.addUnit({
       "**Recession** is a broad fall in activity; two consecutive quarters of falling real GDP is a common rule of thumb, not a universal official definition."
      ],
      pro:[
-      "**Hard cases.** Services, housing (owners are imputed a rent), the informal economy, financial services and digital products are hard to measure; statisticians use surveys, tax data and models. Updates to the SNA try to keep up, for example with digitalisation.",
+      "**Hard cases.** Services, housing (owners are imputed a rent), the informal economy, financial services and digital products are hard to measure; statisticians use surveys, tax data and models. Updates to the SNA try to keep up, for example with digitalization.",
       "**Base years and rebasing.** Real series are tied to a base year whose price structure ages. Rebasing to a newer year, and adding new industries, can change the level of GDP sharply (Lesson 5 of Unit 14).",
       "**Critiques.** GDP leaves out unpaid household work (Waring, 1988), inequality and environmental depletion. Unit 15 covers the beyond-GDP debate; national accountants also build satellite accounts for the environment and for unpaid work alongside the core SNA."
      ]
@@ -918,30 +918,30 @@ ICA.addUnit({
     read:[{book:"osecon", where:"Chapter 19 “The Macroeconomic Perspective”, sections 19.1–19.3"}],
     sources:[{t:"IMF Press Release 25/072: IMF and the Statistical Community Release New Global Standards for Macroeconomic Statistics (20 March 2025)", url:"https://www.imf.org/en/News/Articles/2025/03/20/pr25072-imf-and-statistical-community-release-new-global-standards-for-macroeconomic-stats"},{t:"UN Statistics Division: 2025 System of National Accounts", url:"https://unstats.un.org/unsd/nationalaccount/sna2025.asp"}],
     checked:"2026-11"},
-   {id:"inflation-and-unemployment", title:"Inflation and unemployment", aka:["consumer price index","CPI","deflation","hyperinflation","inflation targeting","unemployment rate","labour force","participation rate","ILO definition"], tags:["economics","measurement"],
+   {id:"inflation-and-unemployment", title:"Inflation and unemployment", aka:["consumer price index","CPI","deflation","hyperinflation","inflation targeting","unemployment rate","labor force","participation rate","ILO definition"], tags:["economics","measurement"],
     summary:"How inflation and unemployment are measured, what the figures hide, and why governments and central banks watch them.",
     levels:{
      starter:[
       "**Inflation** is a general rise in prices. Statistics offices price a fixed basket of what households buy; the percentage rise in its cost over a year is the inflation rate.",
-      "**Unemployment** counts people who have no work but are available and looking. The unemployment rate is their share of the **labour force** (the employed plus the unemployed), not of the whole population.",
+      "**Unemployment** counts people who have no work but are available and looking. The unemployment rate is their share of the **labor force** (the employed plus the unemployed), not of the whole population.",
       "Both numbers shape politics. High inflation erodes wages and savings; high unemployment wastes lives and skills. Governments have fallen over each.",
-      {key:"Inflation: change in the cost of a basket ÷ its starting cost. Unemployment rate: unemployed ÷ labour force."}
+      {key:"Inflation: change in the cost of a basket ÷ its starting cost. Unemployment rate: unemployed ÷ labor force."}
      ],
      builder:[
       "**Inflation’s extremes.** Deflation (falling prices) can trap an economy as people delay spending; Japan lived with flat or falling prices for long periods (Unit 4). Hyperinflation, often defined after Phillip Cagan (1956) as more than 50% a month, destroys money’s usefulness, as in Germany in 1923 and Zimbabwe in 2008.",
       "**Central banks.** Many target low, stable inflation. New Zealand pioneered formal inflation targeting in 1990; many central banks now announce a target and adjust interest rates to meet it.",
-      "**The ILO definition.** The 19th International Conference of Labour Statisticians (2013) set the current standard. The unemployed are working-age people without a job who looked for work in a recent period and were available to start. The labour force is everyone of working age who supplies labour: the employed and the unemployed.",
-      "**Reading them together.** The **participation rate** (labour force ÷ working-age population) shows whether a falling unemployment rate reflects new jobs or people giving up."
+      "**The ILO definition.** The 19th International Conference of Labour Statisticians (2013) set the current standard. The unemployed are working-age people without a job who looked for work in a recent period and were available to start. The labor force is everyone of working age who supplies labor: the employed and the unemployed.",
+      "**Reading them together.** The **participation rate** (labor force ÷ working-age population) shows whether a falling unemployment rate reflects new jobs or people giving up."
      ],
      pro:[
       "**What the CPI misses.** A national basket reflects average spending; poorer households spend more on food and fuel, so their inflation can differ from the headline. Baskets are updated with a lag, and quality change is hard to price.",
-      "**Unemployment in low-income economies.** Where there is little social protection, few people can afford to have no work at all. So measured unemployment is low, while informal work and underemployment are high. The ILO’s wider measures of labour underutilisation, and data on informal employment, matter more than the headline rate in such cases.",
+      "**Unemployment in low-income economies.** Where there is little social protection, few people can afford to have no work at all. So measured unemployment is low, while informal work and underemployment are high. The ILO’s wider measures of labor underutilization, and data on informal employment, matter more than the headline rate in such cases.",
       "**Debates.** Economists disagree about three things: the short-run trade-off between inflation and unemployment, the costs of moderate inflation, and how central banks should weigh jobs against prices. Name the school (Keynesian, monetarist, newer approaches) when a seminar argument depends on it."
      ]
     },
     related:["national-accounts-gdp","growth-arithmetic"],
     read:[{book:"osecon", where:"Chapter 21, section 21.1, and Chapter 22, sections 22.1–22.2"}],
-    sources:[{t:"ILOSTAT: Statistics on work, employment and labour underutilization (19th ICLS resolution, 2013)", url:"https://ilostat.ilo.org/methods/concepts-and-definitions/description-work-statistics-icls19"},{t:"OpenStax, Principles of Economics 3e (2022)", url:"https://openstax.org/details/books/principles-economics-3e"}],
+    sources:[{t:"ILOSTAT: Statistics on work, employment and labor underutilization (19th ICLS resolution, 2013)", url:"https://ilostat.ilo.org/methods/concepts-and-definitions/description-work-statistics-icls19"},{t:"OpenStax, Principles of Economics 3e (2022)", url:"https://openstax.org/details/books/principles-economics-3e"}],
     checked:"2026-11"},
    {id:"ppp-vs-market-rates", title:"PPP and market exchange rates", aka:["purchasing power parity","International Comparison Program","ICP","international dollars","price level index","Big Mac index"], tags:["economics","measurement","development"],
     summary:"Two ways of converting GDP into one currency, why they rank economies differently, and when to use each.",
@@ -974,10 +974,10 @@ ICA.addUnit({
     sources:[{t:"World Bank press release: Global Purchasing Power Parities Data Released for 2021 (30 May 2024)", url:"https://www.worldbank.org/en/news/press-release/2024/05/30/global-purchasing-power-parities-data-released-for-2021"},{t:"World Bank ICP 2021: Size of economies", url:"https://www.worldbank.org/en/programs/icp/brief/ICP2021_DataViz_1"},{t:"FRED: Gross Domestic Product for China (World Bank WDI series, current US dollars)", url:"https://fred.stlouisfed.org/data/MKTGDPCNA646NWDB"}],
     checked:"2026-11"},
    {id:"gains-from-trade", title:"Gains from trade", aka:["comparative advantage","opportunity cost","Heckscher–Ohlin","production possibilities frontier","consumer surplus","producer surplus","compensation principle"], tags:["economics","trade"],
-    summary:"Why specialisation and trade raise total income, which theories explain trade patterns, and who loses inside each country.",
+    summary:"Why specialization and trade raise total income, which theories explain trade patterns, and who loses inside each country.",
     levels:{
      starter:[
-      "Trade lets each country do more of what it does at relatively low cost and buy the rest. Even a country that is better at making everything gains by specialising where its advantage is greatest. That is **comparative advantage**, set out by David Ricardo in 1817.",
+      "Trade lets each country do more of what it does at relatively low cost and buy the rest. Even a country that is better at making everything gains by specializing where its advantage is greatest. That is **comparative advantage**, set out by David Ricardo in 1817.",
       "A household analogy: one partner may be faster at both cooking and accounts. But if each does what they are relatively best at, the household gets more done.",
       "But trade has losers too. Cheaper imports help buyers and hurt the firms and workers who competed with them.",
       {key:"Trade usually raises total income and usually creates concentrated losers."}
@@ -993,7 +993,7 @@ ICA.addUnit({
       "**Winners and losers.** Opening to imports raises consumer surplus by more than it lowers producer surplus, so the country gains. Stolper–Samuelson predicts losses for the scarce factor; the “China shock” studies found long-lasting regional job losses."
      ],
      pro:[
-      "**Compensation.** The compensation principle says winners could compensate losers and still gain. Whether they do is political. Trade adjustment assistance, regional policy and social insurance vary widely between countries. Many scholars link weak compensation to the backlash against globalisation.",
+      "**Compensation.** The compensation principle says winners could compensate losers and still gain. Whether they do is political. Trade adjustment assistance, regional policy and social insurance vary widely between countries. Many scholars link weak compensation to the backlash against globalization.",
       "**Dynamic gains and costs.** Trade can spread technology and raise productivity, but also lock countries into low-value activities. These dynamic effects are harder to measure and are where the schools of thought disagree most (see the trade schools entry).",
       "**Seminar use.** Separate the efficiency claim (total income rises) from the distribution claim (who gains) and the policy claim (what governments should do). Most real disagreement is about the last two."
      ]
@@ -1012,7 +1012,7 @@ ICA.addUnit({
      ],
      builder:[
       "**Worked numbers (Unit 14, Lesson 3).** A 20 tariff on bicycles in a small country raised the price from 100 to 120. Buyers lost 9,000; home producers gained 2,600; revenue was 4,800; the deadweight loss was 1,600.",
-      "**Quotas** create the same price rise without revenue unless licences are auctioned; the price gap becomes a **quota rent** for licence holders or foreign exporters.",
+      "**Quotas** create the same price rise without revenue unless licenses are auctioned; the price gap becomes a **quota rent** for license holders or foreign exporters.",
       "**Other measures.** Production subsidies cost the budget instead of raising prices. Non-tariff measures (standards, licensing, procedures) may protect health or hide protection. Export restrictions lower prices at home and raise them abroad. An example is India’s ban on non-basmati white rice exports, from July 2023 until late 2024.",
       "**Large countries** can push down world prices, shifting part of a tariff onto foreign sellers (the optimal-tariff argument), but invite retaliation."
      ],
@@ -1026,7 +1026,7 @@ ICA.addUnit({
     read:[{book:"osecon", where:"Chapter 34 “Globalization and Protectionism”, section 34.1"}],
     sources:[{t:"World Bank: World Development Report 2020, Trading for Development in the Age of Global Value Chains", url:"https://www.worldbank.org/en/publication/wdr2020"},{t:"OpenStax, Principles of Economics 3e (2022)", url:"https://openstax.org/details/books/principles-economics-3e"},{t:"IFPRI blog: India lifts export restrictions on rice (2024)", url:"https://www.ifpri.org/blog/india-lifts-export-restrictions-on-rice/"}],
     checked:"2026-11"},
-   {id:"trade-schools-of-thought", title:"Schools of thought on trade", aka:["free trade debate","infant-industry argument","developmentalism","structuralism","hyperglobalisation","Kicking Away the Ladder"], tags:["economics","trade","theory"],
+   {id:"trade-schools-of-thought", title:"Schools of thought on trade", aka:["free trade debate","infant-industry argument","developmentalism","structuralism","hyperglobalization","Kicking Away the Ladder"], tags:["economics","trade","theory"],
     summary:"The mainstream case for trade and the developmentalist, structuralist and critical replies, with the works to cite.",
     levels:{
      starter:[
@@ -1040,7 +1040,7 @@ ICA.addUnit({
         ["Mainstream","Trade raises income; help losers directly","Ricardo 1817; Krugman"],
         ["Developmentalist","Temporary protection helps new industries catch up","Hamilton 1791; List 1841; Chang 2002"],
         ["Structuralist","Commodity exporters face falling terms of trade","Prebisch and Singer, 1950"],
-        ["Critics of hyperglobalisation","Deep integration can clash with democracy","Rodrik 2011"]
+        ["Critics of hyperglobalization","Deep integration can clash with democracy","Rodrik 2011"]
       ]},
       "Alexander Hamilton’s *Report on Manufactures* (1791) and Friedrich List’s *The National System of Political Economy* (1841) argued for protecting young industries. Ha-Joon Chang’s *Kicking Away the Ladder* (2002) argued that today’s rich countries protected their industries while developing. Dani Rodrik’s *The Globalization Paradox* (2011) argued that countries cannot have deep economic integration, full national sovereignty and democracy all at once."
      ],
@@ -1087,7 +1087,7 @@ ICA.addUnit({
      ],
      builder:[
       "**What moves floating rates.** Supply and demand in the foreign-exchange market: foreigners buy a currency to pay for exports and assets; residents sell it to buy imports and foreign assets. Higher interest rates and lower risk attract inflows (appreciation); higher inflation, falling export prices and political risk push the other way.",
-      "**Long run and short run.** Over long periods currencies tend towards what relative inflation implies (relative PPP); in the short run capital flows and expectations dominate, and rates can overshoot.",
+      "**Long run and short run.** Over long periods currencies tend toward what relative inflation implies (relative PPP); in the short run capital flows and expectations dominate, and rates can overshoot.",
       "**Real exchange rate.** The nominal rate adjusted for price levels; it measures competitiveness.",
       "**Effects.** Depreciation helps exporters and import-competing firms, raises import prices and inflation, and swells debts in foreign currency."
      ],
@@ -1101,7 +1101,7 @@ ICA.addUnit({
     read:[{book:"osecon", where:"Chapter 29 “Exchange Rates and International Capital Flows”, sections 29.1–29.3"}],
     sources:[{t:"OpenStax, Principles of Economics 3e (2022)", url:"https://openstax.org/details/books/principles-economics-3e"}],
     checked:"2026-11"},
-   {id:"exchange-rate-regimes", title:"Exchange-rate regimes and reserves", aka:["fixed exchange rate","peg","currency board","managed float","dollarisation","monetary union","foreign-exchange reserves","intervention","speculative attack","AREAER"], tags:["economics","international finance"],
+   {id:"exchange-rate-regimes", title:"Exchange-rate regimes and reserves", aka:["fixed exchange rate","peg","currency board","managed float","dollarization","monetary union","foreign-exchange reserves","intervention","speculative attack","AREAER"], tags:["economics","international finance"],
     summary:"The spectrum from free floats to shared currencies, the trade-offs of each, and how reserves and attacks work.",
     levels:{
      starter:[
@@ -1110,14 +1110,14 @@ ICA.addUnit({
       {key:"Fixing a rate buys certainty and costs flexibility; floating does the reverse."}
      ],
      builder:[
-      "**The spectrum.** Free float; managed float; soft peg or crawl; hard peg (currency board); no national currency (dollarisation or monetary union). The IMF classifies every member each year in its *Annual Report on Exchange Arrangements and Exchange Restrictions* (AREAER).",
+      "**The spectrum.** Free float; managed float; soft peg or crawl; hard peg (currency board); no national currency (dollarization or monetary union). The IMF classifies every member each year in its *Annual Report on Exchange Arrangements and Exchange Restrictions* (AREAER).",
       "**Defending a peg.** The central bank buys its own currency with reserves and may raise interest rates. If markets expect reserves to run out, a **speculative attack** can become self-fulfilling.",
       "**The trilemma.** With free capital flows, a fixed rate means giving up independent monetary policy (Unit 16, the impossible trinity).",
       "**Arguments.** Friedman’s “The Case for Flexible Exchange Rates” (1953) is the classic case for floating; Calvo and Reinhart’s “Fear of Floating” (2002) showed many floaters intervene heavily."
      ],
      pro:[
       "**Why hold reserves?** As insurance against sudden stops, to smooth volatility and, for some, to keep a currency competitive. After 1997–98 many Asian economies built large reserves; critics note the cost of holding low-yield assets and the global imbalances this can feed.",
-      "**De jure versus de facto.** Declared regimes often differ from behaviour, which is why researchers built de facto classifications; the IMF now classifies on observed behaviour.",
+      "**De jure versus de facto.** Declared regimes often differ from behavior, which is why researchers built de facto classifications; the IMF now classifies on observed behavior.",
       "**Monetary unions.** Sharing a currency removes exchange-rate risk among members, but it also removes a shock absorber. The euro area crisis of 2010–12 (Unit 16) showed the need for common crisis tools."
      ]
     },
@@ -1126,7 +1126,7 @@ ICA.addUnit({
     sources:[{t:"OpenStax, Principles of Economics 3e (2022), section 29.4", url:"https://openstax.org/details/books/principles-economics-3e"},{t:"IMF: Recovery from the Asian Crisis and the Role of the IMF (Issues Brief, June 2000)", url:"https://www.imf.org/external/np/exr/ib/2000/062300.HTM"}],
     checked:"2026-11"},
    {id:"asian-financial-crisis", title:"The Asian financial crisis, 1997–98: the economics", aka:["Asian crisis","baht crisis","IMF crisis (Korea)","1997 crisis"], tags:["economics","international finance","Asia","history"],
-    summary:"The economic mechanics of the 1997–98 crisis in Thailand, Indonesia and Korea, the IMF programmes, and the debates about them.",
+    summary:"The economic mechanics of the 1997–98 crisis in Thailand, Indonesia and Korea, the IMF programs, and the debates about them.",
     levels:{
      starter:[
       "In 1997 fast-growing economies in East and Southeast Asia were hit by a sudden flight of money. It began in Thailand, which let its currency, the baht, float on 2 July 1997 after its reserves ran low. The baht fell sharply, and panic spread to Indonesia, Malaysia, the Philippines and South Korea.",
@@ -1225,7 +1225,7 @@ ICA.addUnit({
    {id:"price-ceiling", term:"Price ceiling", def:"A legal maximum price, such as a rent cap. Set below equilibrium, it creates a shortage.", codex:"price-interventions"},
    {id:"price-floor", term:"Price floor", def:"A legal minimum price, such as a guaranteed crop price or a minimum wage. Set above equilibrium, it creates a surplus in the simple model.", codex:"price-interventions"},
    {id:"market-failure", term:"Market failure", def:"A situation in which a market left to itself does not use resources efficiently, for example because of pollution, public goods, market power or missing information.", codex:"price-interventions"},
-   {id:"public-good", term:"Public good", def:"A good that people cannot easily be stopped from using and that one person’s use does not use up, such as street lighting or national defence. Markets tend to under-supply it.", codex:"price-interventions"},
+   {id:"public-good", term:"Public good", def:"A good that people cannot easily be stopped from using and that one person’s use does not use up, such as street lighting or national defense. Markets tend to under-supply it.", codex:"price-interventions"},
    {id:"national-accounts", term:"National accounts", def:"The system of statistics that measures a country’s production, income and spending, including GDP.", codex:"national-accounts-gdp"},
    {id:"system-of-national-accounts", term:"System of National Accounts (SNA)", def:"The UN’s international manual for national accounts. The 2025 SNA was adopted by the UN Statistical Commission on 5 March 2025.", codex:"national-accounts-gdp"},
    {id:"value-added", term:"Value added", def:"What a producer sells minus what it bought from other producers; GDP is the sum of value added across the economy.", codex:"national-accounts-gdp"},
@@ -1237,11 +1237,11 @@ ICA.addUnit({
    {id:"deflation", term:"Deflation", def:"A general fall in prices, which can lead people to delay spending and make debts harder to repay.", codex:"inflation-and-unemployment"},
    {id:"hyperinflation", term:"Hyperinflation", def:"Extremely rapid inflation, often defined (after Cagan, 1956) as prices rising more than 50% a month.", codex:"inflation-and-unemployment"},
    {id:"inflation-targeting", term:"Inflation targeting", def:"A monetary policy framework in which the central bank announces a numerical inflation target and sets interest rates to meet it; New Zealand pioneered it in 1990.", codex:"inflation-and-unemployment"},
-   {id:"labour-force", term:"Labour force", def:"All working-age people who are employed or unemployed (without work, available and looking). People neither working nor looking are outside it.", codex:"inflation-and-unemployment"},
-   {id:"unemployment-rate", term:"Unemployment rate", def:"The unemployed as a percentage of the labour force, using the ILO definition: without work, available and actively looking.", codex:"inflation-and-unemployment"},
-   {id:"labour-force-participation-rate", term:"Labour force participation rate", def:"The labour force as a percentage of the working-age population.", codex:"inflation-and-unemployment"},
+   {id:"labour-force", term:"Labor force", def:"All working-age people who are employed or unemployed (without work, available and looking). People neither working nor looking are outside it.", codex:"inflation-and-unemployment"},
+   {id:"unemployment-rate", term:"Unemployment rate", def:"The unemployed as a percentage of the labor force, using the ILO definition: without work, available and actively looking.", codex:"inflation-and-unemployment"},
+   {id:"labour-force-participation-rate", term:"Labor force participation rate", def:"The labor force as a percentage of the working-age population.", codex:"inflation-and-unemployment"},
    {id:"market-exchange-rate", term:"Market exchange rate", def:"The rate at which one currency trades for another in currency markets; used to convert GDP for anything paid across borders.", codex:"ppp-vs-market-rates"},
-   {id:"international-comparison-program", term:"International Comparison Program (ICP)", def:"The World Bank-led programme that compares prices across countries to estimate purchasing power parities; its 2021 round covered 176 economies.", codex:"ppp-vs-market-rates"},
+   {id:"international-comparison-program", term:"International Comparison Program (ICP)", def:"The World Bank-led program that compares prices across countries to estimate purchasing power parities; its 2021 round covered 176 economies.", codex:"ppp-vs-market-rates"},
    {id:"production-possibilities-frontier", term:"Production possibilities frontier", def:"The combinations of goods an economy could make with all its resources; moving along it shows the opportunity cost of one good in terms of another.", codex:"gains-from-trade"},
    {id:"consumer-surplus", term:"Consumer surplus", def:"The difference between what buyers would have been willing to pay and what they actually pay, added up over all buyers.", codex:"gains-from-trade"},
    {id:"producer-surplus", term:"Producer surplus", def:"The difference between the price sellers receive and the lowest price they would have accepted, added up over all sellers.", codex:"gains-from-trade"},
@@ -1250,7 +1250,7 @@ ICA.addUnit({
    {id:"optimal-tariff", term:"Optimal tariff", def:"The tariff that best exploits a large country’s power to push down the world price of its imports; it invites retaliation.", codex:"tariffs-and-quotas"},
    {id:"import-quota", term:"Import quota", def:"A limit on the quantity of a good that may be imported.", codex:"tariffs-and-quotas"},
    {id:"quota-rent", term:"Quota rent", def:"The gain to whoever holds the right to import under a quota: the gap between the higher domestic price and the world price, times the quantity imported.", codex:"tariffs-and-quotas"},
-   {id:"non-tariff-measure", term:"Non-tariff measure", def:"A rule other than a tariff that affects trade, such as a product standard, food-safety rule, licence or customs procedure.", codex:"tariffs-and-quotas"},
+   {id:"non-tariff-measure", term:"Non-tariff measure", def:"A rule other than a tariff that affects trade, such as a product standard, food-safety rule, license or customs procedure.", codex:"tariffs-and-quotas"},
    {id:"export-restriction", term:"Export restriction", def:"A ban, quota or tax on exports, often used to hold domestic prices down; it can raise prices abroad.", codex:"tariffs-and-quotas"},
    {id:"trade-in-value-added", term:"Trade in value added", def:"Trade measured by where value is actually created along a value chain, rather than by the full value of goods each time they cross a border.", codex:"tariffs-and-quotas"},
    {id:"infant-industry-argument", term:"Infant-industry argument", def:"The case, made by Hamilton (1791) and List (1841), for temporary protection of new industries until they can compete.", codex:"trade-schools-of-thought"},
@@ -1320,13 +1320,13 @@ ICA.addUnit({
      {t:"The value of trades lost because of a tax or price control", ok:true, why:"Right: trades that no longer happen are lost to everyone. Buyers would have valued those units above their cost, but the wedge stopped them being traded."},
      {t:"The cost of storing unsold goods", why:"Storage costs can follow a price floor, but the deadweight loss is a broader idea."}]},
    {id:"e4u23-q08", lesson:"e4u23-l1", level:3, q:"Oluwaseun argues that a minimum-wage rise must always cut jobs, “because the supply-and-demand diagram says so”. What is the strongest reply from this lesson?", options:[
-     {t:"The diagram says the opposite: price floors always raise employment for everyone", why:"In the simple model a floor above equilibrium reduces the quantity of labour hired."},
+     {t:"The diagram says the opposite: price floors always raise employment for everyone", why:"In the simple model a floor above equilibrium reduces the quantity of labor hired."},
      {t:"Card and Krueger found no job losses after one rise, so the model can fail", ok:true, why:"Right. Card and Krueger (1994) found no fall in fast-food jobs after a rise. Evidence tests the model; where employers have power over wages, the textbook prediction can fail. Other studies, such as Neumark and Wascher (2000), found job losses, so the effect is an empirical question."},
-     {t:"Minimum wages are not price floors, so the model doesn’t apply", why:"A minimum wage is a price floor in the labour market; the question is whether the model’s assumptions fit."},
-     {t:"Economists agree that minimum wages never affect jobs", why:"They don’t agree; effects depend on the size of the rise and the labour market."}]},
+     {t:"Minimum wages are not price floors, so the model doesn’t apply", why:"A minimum wage is a price floor in the labor market; the question is whether the model’s assumptions fit."},
+     {t:"Economists agree that minimum wages never affect jobs", why:"They don’t agree; effects depend on the size of the rise and the labor market."}]},
    {id:"e4u23-q09", lesson:"e4u23-l1", level:2, q:"Which statement would Karl Polanyi most likely make?", options:[
      {t:"Prices carry information no planner could gather", why:"That is Hayek’s argument."},
-     {t:"People often choose in ways the standard model doesn’t predict", why:"That is the behavioural economists’ argument."},
+     {t:"People often choose in ways the standard model doesn’t predict", why:"That is the behavioral economists’ argument."},
      {t:"Whole economies can get stuck with idle workers unless demand is supported", why:"That is Keynes’s argument."},
      {t:"Markets are embedded in society and provoke counter-movements", ok:true, why:"Right: markets are created and embedded in society, and their spread provokes protective counter-movements. This is the double movement, in *The Great Transformation* (1944)."}]},
    /* ---- Lesson 2 ---- */
@@ -1348,8 +1348,8 @@ ICA.addUnit({
    {id:"e4u23-q13", lesson:"e4u23-l2", level:1, q:"How is the **unemployment rate** calculated under the ILO definition?", options:[
      {t:"People without a job as a share of the whole population", why:"Children, retirees and people not looking are not counted as unemployed."},
      {t:"People receiving unemployment benefits as a share of all workers", why:"Benefit rules vary by country; the ILO measure comes from surveys of who is looking and available."},
-     {t:"People without a job as a share of all working-age adults", why:"The denominator is the labour force, not all working-age adults."},
-     {t:"Jobless people looking for work, as a share of the labour force", ok:true, why:"Right: people without work who are available and looking. The labour force is the employed plus the unemployed."}]},
+     {t:"People without a job as a share of all working-age adults", why:"The denominator is the labor force, not all working-age adults."},
+     {t:"Jobless people looking for work, as a share of the labor force", ok:true, why:"Right: people without work who are available and looking. The labor force is the employed plus the unemployed."}]},
    {id:"e4u23-q14", lesson:"e4u23-l2", level:2, q:"Invented figures: a basket of goods cost 400 last year and 430 this year. What is the inflation rate?", options:[
      {t:"7.5%", ok:true, why:"Right. 30 ÷ 400 = 0.075."},
      {t:"30%", why:"30 is the change in cost, not a percentage."},
@@ -1366,10 +1366,10 @@ ICA.addUnit({
      {t:"India, with 7.2% of world GDP", why:"India was third at PPP."},
      {t:"The European Union as a single country", why:"The ICP ranks economies, and the EU is not one country; China ranked first."}]},
    {id:"e4u23-q17", lesson:"e4u23-l2", level:3, q:"A minister says: “Our unemployment rate is only 3%, lower than in many rich countries. So our labour market is healthier.” Hana, a policy adviser, is unsure. What is the best question to ask next?", options:[
-     {t:"What is the GDP deflator, and how fast did it rise?", why:"The deflator measures prices, not labour-market health."},
+     {t:"What is the GDP deflator, and how fast did it rise?", why:"The deflator measures prices, not labor-market health."},
      {t:"How many work informally, and what is the participation rate?", ok:true, why:"Right. In many economies low measured unemployment hides informal work and underemployment, and people who stop looking drop out of the count."},
-     {t:"Is the rate measured in PPP dollars or at market rates?", why:"Unemployment rates are percentages of the labour force, not money."},
-     {t:"How large is the current account deficit, as a share of GDP?", why:"That concerns external accounts, not whether the labour market is healthy."}]},
+     {t:"Is the rate measured in PPP dollars or at market rates?", why:"Unemployment rates are percentages of the labor force, not money."},
+     {t:"How large is the current account deficit, as a share of GDP?", why:"That concerns external accounts, not whether the labor market is healthy."}]},
    {id:"e4u23-q18", lesson:"e4u23-l2", level:2, q:"Which of these is **not** counted in GDP?", options:[
      {t:"A hospital’s paid nursing services", why:"Paid services are counted."},
      {t:"New houses built this year", why:"New construction is investment, counted in GDP."},
@@ -1380,14 +1380,14 @@ ICA.addUnit({
      {t:"it can make more of the good than any other country", why:"That is absolute advantage."},
      {t:"its opportunity cost is lower than its partner’s", ok:true, why:"Right: its opportunity cost of making the good is lower than its trading partner’s. Trade based on comparative advantage can benefit both partners."},
      {t:"it exports more of the good than it imports", why:"Trade flows can reflect comparative advantage, but the definition is about opportunity cost."},
-     {t:"its government subsidises the good", why:"Subsidies can make a good cheap, but comparative advantage is about real costs of production."}]},
+     {t:"its government subsidizes the good", why:"Subsidies can make a good cheap, but comparative advantage is about real costs of production."}]},
    {id:"e4u23-q20", lesson:"e4u23-l3", level:2, q:"Mei says: “Country X is better than Country Y at making both cloth and computers. So X can’t gain from trading with Y.” What is the correction?", options:[
      {t:"She is right; trade only helps when each country is better at one good", why:"Ricardo showed the opposite: what matters is relative cost, not absolute ability."},
      {t:"X should stop making both goods", why:"Specialising means making more of one good, not stopping production altogether."},
-     {t:"Y will refuse to trade, because it is worse at both", why:"Y also gains by specialising where its opportunity cost is lower."},
-     {t:"X can still gain by specialising where its advantage is greatest", ok:true, why:"Right. X should make the good where its advantage is greatest and import the other. Opportunity costs differ, so both can gain at a price between them."}]},
-   {id:"e4u23-q21", lesson:"e4u23-l3", level:1, q:"The Heckscher–Ohlin model predicts that a labour-abundant country will export…", options:[
-     {t:"goods that use a lot of labour, such as garments", ok:true, why:"Right. Countries export goods that use their abundant factors intensively."},
+     {t:"Y will refuse to trade, because it is worse at both", why:"Y also gains by specializing where its opportunity cost is lower."},
+     {t:"X can still gain by specializing where its advantage is greatest", ok:true, why:"Right. X should make the good where its advantage is greatest and import the other. Opportunity costs differ, so both can gain at a price between them."}]},
+   {id:"e4u23-q21", lesson:"e4u23-l3", level:1, q:"The Heckscher–Ohlin model predicts that a labor-abundant country will export…", options:[
+     {t:"goods that use a lot of labor, such as garments", ok:true, why:"Right. Countries export goods that use their abundant factors intensively."},
      {t:"goods that use a lot of capital, such as aircraft", why:"That is what a capital-abundant country would export."},
      {t:"only raw materials", why:"The model is about factor intensity, not raw versus processed goods."},
      {t:"the same goods it imports", why:"Intra-industry trade is explained by Krugman’s new trade theory, not Heckscher–Ohlin."}]},
@@ -1396,10 +1396,10 @@ ICA.addUnit({
      {t:"Buyers gain more than producers and the treasury lose", ok:true, why:"Right, so the country gains overall. The deadweight loss of the tariff disappears; the losers are concentrated among shoemakers."},
      {t:"Nobody gains, because the money just moves abroad to foreign firms", why:"Buyers pay less for shoes; the national gain is the deadweight loss recovered."},
      {t:"The world price of shoes rises", why:"A small country can’t move the world price."}]},
-   {id:"e4u23-q23", lesson:"e4u23-l3", level:3, q:"Tomás compares a 25% tariff on imported cars with a quota that produces the same rise in car prices. Licences for the quota are given free to a few importers. What is the main difference?", options:[
+   {id:"e4u23-q23", lesson:"e4u23-l3", level:3, q:"Tomás compares a 25% tariff on imported cars with a quota that produces the same rise in car prices. Licenses for the quota are given free to a few importers. What is the main difference?", options:[
      {t:"The quota raises car prices more than the tariff does", why:"By assumption both raise prices by the same amount."},
      {t:"The tariff protects domestic carmakers; the quota does not", why:"Both raise the domestic price, so both protect domestic carmakers."},
-     {t:"The tariff earns revenue for the state; the quota gives that gap to licence holders", ok:true, why:"Right. With free licences the treasury gives the money away as a quota rent."},
+     {t:"The tariff earns revenue for the state; the quota gives that gap to license holders", ok:true, why:"Right. With free licenses the treasury gives the money away as a quota rent."},
      {t:"The quota has no deadweight loss, because no tax is collected", why:"Both create deadweight losses, because both raise the price and cut trade."}]},
    {id:"e4u23-q24", lesson:"e4u23-l3", level:2, q:"A large rice exporter bans exports. What is the most likely effect on importing countries?", options:[
      {t:"Lower world rice prices, because more rice stays in the market", why:"Rice that stays at home is removed from the world market, so world supply falls."},
@@ -1412,7 +1412,7 @@ ICA.addUnit({
      {t:"The tariff will be paid entirely by foreign steelmakers, not buyers", why:"Importers pay the tariff, and much of the cost usually reaches domestic buyers."},
      {t:"Tariffs on inputs have no effect on exports", why:"Higher input costs make exports less competitive."}]},
    {id:"e4u23-q26", lesson:"e4u23-l3", level:1, q:"Which work argues that rich countries protected their own industries while developing, then urged free trade on others?", options:[
-     {t:"Rodrik, *The Globalization Paradox* (2011)", why:"Rodrik argues that hyperglobalisation clashes with democracy and national sovereignty."},
+     {t:"Rodrik, *The Globalization Paradox* (2011)", why:"Rodrik argues that hyperglobalization clashes with democracy and national sovereignty."},
      {t:"Ricardo, *On the Principles of Political Economy and Taxation* (1817)", why:"Ricardo set out comparative advantage, the core of the case for trade."},
      {t:"Waring, *If Women Counted* (1988)", why:"Waring wrote about unpaid work left out of national accounts."},
      {t:"Chang, *Kicking Away the Ladder* (2002)", ok:true, why:"Right. Chang’s title names the argument."}]},
@@ -1454,14 +1454,14 @@ ICA.addUnit({
      {t:"It asks the IMF to set a new rate", why:"The IMF lends and advises, but it does not set members’ exchange rates."}]},
    {id:"e4u23-q34", lesson:"e4u23-l4", level:3, q:"Fatima studies a country in the mid-1990s. It has a fixed exchange rate and a current account deficit of 8% of GDP. Its banks borrow short-term in dollars to lend for property. Which risk should she highlight?", options:[
      {t:"Deflation caused by households saving too much", why:"The country is saving too little relative to investment, not too much."},
-     {t:"A trade war with its neighbours over its exports", why:"Nothing in the profile points to trade disputes."},
+     {t:"A trade war with its neighbors over its exports", why:"Nothing in the profile points to trade disputes."},
      {t:"A speculative attack, then dollar debts swelling as the currency falls", ok:true, why:"Right. This is close to Thailand’s position before July 1997: short-term foreign-currency debt plus a peg and a large deficit."},
      {t:"A lasting rise in the currency’s value as capital flows in", why:"Large deficits funded by short-term debt usually lead to pressure for a fall, not a rise."}]},
    {id:"e4u23-q35", lesson:"e4u23-l4", level:2, q:"Which statement about the 1997–98 Asian crisis is supported by the IMF’s own later review?", options:[
      {t:"The crisis was caused only by speculators, not by any weakness in the countries", why:"The IMF pointed to domestic weaknesses such as unhedged short-term foreign borrowing."},
-     {t:"The IMF’s programmes were flawless", why:"The IMF said its advice “was not flawless”."},
-     {t:"Capital controls were the IMF’s main recommendation", why:"Malaysia imposed controls outside an IMF programme."},
-     {t:"The programmes’ initial fiscal targets were, in hindsight, too tight", ok:true, why:"Right. The IMF accepted that fiscal easing should have come earlier."}]},
+     {t:"The IMF’s programs were flawless", why:"The IMF said its advice “was not flawless”."},
+     {t:"Capital controls were the IMF’s main recommendation", why:"Malaysia imposed controls outside an IMF program."},
+     {t:"The programs’ initial fiscal targets were, in hindsight, too tight", ok:true, why:"Right. The IMF accepted that fiscal easing should have come earlier."}]},
    {id:"e4u23-q36", lesson:"e4u23-l4", level:3, q:"Dmitri argues: “Country S’s large current account surplus proves it is economically stronger than Country D, which runs a deficit.” What is the best critique?", options:[
      {t:"A surplus shows S saves more than it invests, not that it is stronger", ok:true, why:"Right: D may be borrowing to finance productive investment. By the saving–investment identity, balances reflect saving and investment choices, not strength as such."},
      {t:"Surpluses are always a sign of weakness", why:"Neither surpluses nor deficits are good or bad in themselves."},
@@ -1498,7 +1498,7 @@ ICA.addUnit({
      {t:"The fall was caused by unusually fast population growth in 2023", why:"Both series are per person, so population can’t explain the gap between them."},
      {t:"The taka strengthened against the dollar", why:"A stronger taka would have raised the dollar value."},
      {t:"The taka depreciated, so output was worth fewer dollars", ok:true, why:"Right: the fall in dollar terms mostly reflects the taka’s depreciation, not lower output. Converting the same output at a weaker exchange rate gives fewer dollars."}]},
-   {id:"e4u23-q43", lesson:"e4u23-l5", level:3, q:"A headline says: “Bangladesh is now richer than India.” Using the lesson’s figures, what is the most careful judgement?", options:[
+   {id:"e4u23-q43", lesson:"e4u23-l5", level:3, q:"A headline says: “Bangladesh is now richer than India.” Using the lesson’s figures, what is the most careful judgment?", options:[
      {t:"True for one measure and edition; India leads at PPP", ok:true, why:"Right: true only for one measure, one edition and a projected year. It holds for IMF market-rate projections for 2026, but India is about a fifth ahead at PPP. Name the measure, the source, the vintage and the year, and note that averages say nothing about typical households."},
      {t:"True by every measure and in every source", why:"At PPP India is ahead; at market rates the two have swapped places more than once."},
      {t:"False by every measure and in every source", why:"At market rates, in the IMF’s October 2026 projections, Bangladesh edges ahead in 2026."},

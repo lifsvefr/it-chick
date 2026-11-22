@@ -102,11 +102,11 @@ ICA.addUnit({
       "Forwarding needs care: the whole thread below goes too, which may include earlier comments, phone numbers or someone’s health details. Before forwarding:",
       {list:[
         "Scroll down and read the **whole thread** you’re about to send.",
-        "Delete anything the new reader doesn’t need, or summarise instead of forwarding.",
+        "Delete anything the new reader doesn’t need, or summarize instead of forwarding.",
         "Add one line at the top saying **why** you’re forwarding and what you need: “Priya, see the dates below. Can you book the room?”",
         "Don’t forward something sent to you in confidence without asking first."
       ]},
-      {tip:"Forwarding a suspicious email to colleagues to ask “is this real?” can spread a phishing link. Use the Report button in your email app instead, or ask your IT team how they want it reported. Unit 3 covers how to recognise it: {{phishing}}."}
+      {tip:"Forwarding a suspicious email to colleagues to ask “is this real?” can spread a phishing link. Use the Report button in your email app instead, or ask your IT team how they want it reported. Unit 3 covers how to recognize it: {{phishing}}."}
     ]},
     {h:"Attachments or links?", body:[
       "An [[attachment]] is a file sent inside the email. Each recipient gets their **own copy**. A share link points everyone to **one copy** stored in cloud storage, and the owner decides who can open it and whether they can view, comment or edit. Unit 2 explains those settings: {{sharing-permissions}}.",
@@ -130,7 +130,7 @@ ICA.addUnit({
       ]},
       "A useful trick: **add the recipients last**. Then a half-written email can’t be sent by accident.",
       "Many apps also offer [[undo-send]]: a short delay before the email really leaves, with an Undo button. Gmail lets you choose 5 to 30 seconds; Outlook on the web and the new Outlook for Windows offer up to 10; Apple Mail offers 10, 20 or 30. Thunderbird has no built-in Undo Send. Once the delay is over, the email has gone.",
-      "Outlook’s **recall** works only between Microsoft 365 work or school accounts in the same organisation, and only before the email is opened; personal accounts can’t use it. Don’t rely on it.",
+      "Outlook’s **recall** works only between Microsoft 365 work or school accounts in the same organization, and only before the email is opened; personal accounts can’t use it. Don’t rely on it.",
       {h:"Common misconceptions"},
       {list:[
         "**“Longer emails look more professional.”** Clear, short emails are easier to act on.",
@@ -145,7 +145,7 @@ ICA.addUnit({
       "\nSubject: ",{t:"Hi", flag:true, why:"“Hi” says nothing about the topic or the action. Something like “Saturday hike moved to 10:00, reply if you need a lift” works far better."},
       "\n\n",{t:"Hello everyone,", flag:false, why:"A friendly greeting for a club is fine."},
       "\n\n",{t:"Saturday’s hike now starts at 10:00, not 9:00, because the car park opens later.", flag:false, why:"Clear and specific: the change, the new time and the reason, in one sentence."},
-      " ",{t:"Also, can someone bring a first-aid kit, who wants to organise December, and has anyone seen my blue flask?", flag:true, why:"Three unrelated asks in one sentence. People will answer the easiest one. The December question deserves its own email."},
+      " ",{t:"Also, can someone bring a first-aid kit, who wants to organize December, and has anyone seen my blue flask?", flag:true, why:"Three unrelated asks in one sentence. People will answer the easiest one. The December question deserves its own email."},
       "\n\nPlease reply ",{t:"by 11/12", flag:true, why:"11/12 means 11 December in many countries and November 12 in others. “by Thursday 12 November” can’t be misread."},
       " if you need a lift.\n\n",{t:"See you there,\nTomás", flag:false, why:"A normal, friendly close with his name."}
     ]},
@@ -186,7 +186,7 @@ ICA.addUnit({
     {id:"t1u11-l1-x7", type:"mcq", q:"Oluwaseun is writing to a supplier contact in another country for the first time. He doesn’t know their workplace’s habits. What’s the best approach to tone?", options:[
       {t:"Start a little formally, then mirror their style once they reply", ok:true, why:"Be polite, use the name as they write it and keep sentences plain. This works across cultures without guessing: start slightly formal, follow the reader’s lead, and avoid idioms that don’t translate."},
       {t:"Look up what people from that country are “like” and write in that style", why:"National stereotypes are unreliable; individuals and workplaces vary hugely. Mirroring the actual person is safer and more respectful."},
-      {t:"Be very casual with jokes and emoji to seem friendly", why:"Humour and emoji often don’t survive translation or a first contact; they can read as unprofessional."},
+      {t:"Be very casual with jokes and emoji to seem friendly", why:"Humor and emoji often don’t survive translation or a first contact; they can read as unprofessional."},
       {t:"Write “Dear Sir” because most suppliers are men", why:"Guessing gender is risky and can offend. Use their full name or role instead."}
     ]},
       {id:"t1u11-l1-x8", type:"explain", q:"Kofi sends an email with the subject “Hi” that ends “Any thoughts?” after mentioning three unrelated topics. Nobody replies. Explain why, and how he could rewrite it so it gets answered.", hint:"What does a busy reader see first? How many asks should one email carry?", model:"Busy readers skim: they see the sender, the subject and the first line or two, and if those don’t say what is needed, they move on. “Hi” and “Any thoughts?” give them nothing to act on, and with three topics people tend to answer the easiest one or none. Kofi should send one email per topic, with a subject that names the topic and what he needs, and put a specific ask near the top: what, from whom and by when, for example “Could you confirm the hall booking by Wednesday?”", points:["Says readers skim the subject and first lines", "Says one ask per email (separate topics get separate emails)", "Says the subject should name the topic and what is needed", "Says the ask should be specific, with a deadline"]}
@@ -236,9 +236,9 @@ ICA.addUnit({
       "**Deleting** moves an email to the Trash (or Deleted Items), which is emptied automatically after a while or when you empty it. Once that happens, the email is gone.",
       "**[[archive|Archiving]]** takes an email out of the inbox but keeps it. It stays searchable, forever or until you delete it. Archiving is the safe default for anything you’ve dealt with: receipts, finished conversations, confirmations. Most people delete far less than they think they should.",
       {table:[
-        ["App","Archive button puts mail in…","Ways to organise"],
+        ["App","Archive button puts mail in…","Ways to organize"],
         ["Gmail","**All Mail** (search `in:archive` to see only archived mail)","**Labels**: one email can have several"],
-        ["Outlook","The **Archive** folder","**Folders**, plus colour **categories** that work like labels"],
+        ["Outlook","The **Archive** folder","**Folders**, plus color **categories** that work like labels"],
         ["Thunderbird","An **Archives** folder (press [[kbd:A]]), split by year or month if you like","**Folders**, plus **tags**"],
         ["Apple Mail","The **Archive** mailbox","**Mailboxes** (folders) and flags"]
       ]},
@@ -297,9 +297,9 @@ ICA.addUnit({
     {h:"Out-of-office replies", body:[
       "An [[out-of-office]] reply (Gmail calls it a **vacation responder**, Outlook calls it **automatic replies**) answers incoming emails for you while you’re away. Gmail, for example, sends it to each sender the first time they write, and again only if they write after four days or you edit the message.",
       "A good out-of-office message says:",
-      {ol:["When you’re back.","Who to contact for urgent matters (with their permission).","That replies will be slower, without apologising at length."]},
+      {ol:["When you’re back.","Who to contact for urgent matters (with their permission).","That replies will be slower, without apologizing at length."]},
       {ex:"Subject: Away until Monday 30 November\n\nThanks for your email. I’m away until Monday 30 November and will reply after that.\nFor urgent rota questions, please contact Mei Chen at rota@example.org.\n\nAna", label:"A short out-of-office reply"},
-      "Leave out where you are and why. An automatic reply goes to anyone who writes, including strangers and scammers, and “I’m on holiday abroad for three weeks” tells them your home may be empty. Work accounts often let you send a fuller message inside your organisation and a shorter one to outsiders.",
+      "Leave out where you are and why. An automatic reply goes to anyone who writes, including strangers and scammers, and “I’m on holiday abroad for three weeks” tells them your home may be empty. Work accounts often let you send a fuller message inside your organization and a shorter one to outsiders.",
       "Not every app can do this on its own. Thunderbird’s help pages recommend setting it in your email provider’s website, because a Thunderbird-based auto-reply works only while your computer is on and Thunderbird is running. Apple Mail on a Mac can auto-reply only through a rule while Mail is open; iCloud Mail users can set an **Auto-Reply** at icloud.com instead."
     ]},
     {h:"A routine you can keep", body:[
@@ -319,7 +319,7 @@ ICA.addUnit({
         "**“Archiving is the same as deleting.”** Archived mail is kept and searchable; deleted mail is removed for good once the Trash is emptied.",
         "**“Marking newsletters as spam is the fastest way to unsubscribe.”** It hides the mail from you but doesn’t ask the sender to stop, and it trains the spam filter on mail that isn’t spam.",
         "**“I need a folder for everything.”** Search finds most emails faster than browsing folders.",
-        "**“An empty inbox means I’m organised.”** What matters is that you don’t miss what’s important, however many emails remain."
+        "**“An empty inbox means I’m organized.”** What matters is that you don’t miss what’s important, however many emails remain."
       ]}
     ]}
    ],
@@ -336,7 +336,7 @@ ICA.addUnit({
       ["`from:school has:attachment`","Emails from the school that have attachments","`from:` matches the sender and `has:attachment` keeps only messages with files."],
       ["`larger:10M`","Emails bigger than 10 MB","Useful for freeing storage: the big ones are usually old attachments."],
       ["`older_than:2y`","Emails more than two years old","`older_than:` counts back from today in days (d), months (m) or years (y)."],
-      ["`\"choir rehearsal\" -cancelled`","Emails with that exact phrase but without “cancelled”","Quotes match an exact phrase; a minus sign excludes a word."],
+      ["`\"choir rehearsal\" -canceled`","Emails with that exact phrase but without “canceled”","Quotes match an exact phrase; a minus sign excludes a word."],
       ["`in:anywhere invoice`","“Invoice” emails anywhere, including Spam and Trash","Normal searches skip Spam and Trash; `in:anywhere` includes them."]
     ]},
     {id:"t1u11-l2-x3", type:"mcq", q:"Hana gets an email about the school concert that is also a receipt for tickets. In Gmail, how can she find it under both “School” and “Receipts”?", options:[
@@ -349,7 +349,7 @@ ICA.addUnit({
       {t:"In the search box, open Show search options", why:"Gmail builds filters from a search, so you start with the search options."},
       {t:"Type the newsletter’s address in From", why:"This is the condition: which emails the filter should match."},
       {t:"Select Create filter at the bottom of the search window", why:"Once the condition is set, you move on to choosing the actions."},
-      {t:"Tick Skip the Inbox and Apply the label “Newsletters”", why:"These are the actions: keep the email, but out of the inbox and labelled."},
+      {t:"Tick Skip the Inbox and Apply the label “Newsletters”", why:"These are the actions: keep the email, but out of the inbox and labeled."},
       {t:"Select Create filter to save it", why:"The filter now applies to new matching emails (tick the option for existing ones if you want those sorted too)."}
     ]},
     {id:"t1u11-l2-x5", type:"spot", q:"Kenji is setting up an out-of-office reply that goes to anyone who emails him. Tap the parts he should change.", ask:"should change", parts:[
@@ -366,7 +366,7 @@ ICA.addUnit({
       {t:"Read every email from oldest to newest this weekend", why:"That could take days and most of the mail no longer needs anything. A fresh start plus search is far more realistic."},
       {t:"Create 30 folders and sort every email into one", why:"Sorting 9,000 emails by hand is slow, and most will never be opened again. Search can find them if needed."}
     ]},
-    {id:"t1u11-l2-x7", type:"mcq", q:"Sione finds a rule in his email settings, created last week, that forwards every message to an address he doesn’t recognise. He didn’t make it. What should he do?", options:[
+    {id:"t1u11-l2-x7", type:"mcq", q:"Sione finds a rule in his email settings, created last week, that forwards every message to an address he doesn’t recognize. He didn’t make it. What should he do?", options:[
       {t:"Delete the rule and secure his account", ok:true, why:"He should delete it, change his email password, turn on two-step verification and check other settings such as forwarding and recovery details. An unknown forwarding rule is a common sign someone else got into the account. Removing it isn’t enough; he must lock them out and check what else they changed."},
       {t:"Leave it: email apps sometimes create rules automatically", why:"Apps don’t silently create forwarding rules to unknown addresses. This is a warning sign of account takeover."},
       {t:"Just delete the rule", why:"If someone made it, they may still have his password and can add it back. He needs to change the password and secure the account too."},
@@ -388,11 +388,11 @@ ICA.addUnit({
        apple:["On a Mac: choose **Mail → Settings**, click **Rules**, then **Add Rule**.","Give it a description. Set the condition to **From** · **Contains** · the sender’s address.","Set the action to **Move Message** to a mailbox you choose, then click **OK**. Mail asks whether to apply it to existing messages.","Apple Mail rules run only while Mail is open on that Mac."]
      }},
      {t:"Prepare (and switch off) an out-of-office reply", app:{
-       ms:["Select **Settings** (gear) → **Account** (called **Accounts** in some versions) → **Automatic replies**.","Switch on the **Turn on automatic replies** toggle, type a short message, and tick **Send replies only during a time period** with start and end dates.","Select **Save**. If you’re only practising, turn the toggle off again and save."],
-       google:["Select **Settings** (gear) → **See all settings**.","On the **General** tab, find **Vacation responder** and select **Vacation responder on**.","Fill in the dates, subject and message. Optionally tick the box to reply only to people in your contacts.","Select **Save Changes**. If you’re only practising, switch it off again and save."],
+       ms:["Select **Settings** (gear) → **Account** (called **Accounts** in some versions) → **Automatic replies**.","Switch on the **Turn on automatic replies** toggle, type a short message, and tick **Send replies only during a time period** with start and end dates.","Select **Save**. If you’re only practicing, turn the toggle off again and save."],
+       google:["Select **Settings** (gear) → **See all settings**.","On the **General** tab, find **Vacation responder** and select **Vacation responder on**.","Fill in the dates, subject and message. Optionally tick the box to reply only to people in your contacts.","Select **Save Changes**. If you’re only practicing, switch it off again and save."],
        apple:["For an iCloud Mail address: go to icloud.com/mail, click the **Settings** button at the top of the Mailboxes list, choose **Settings**, then **Auto-Reply**.","Tick **Automatically reply to messages when they are received**, type your message and optionally set a date range.","For other email accounts used in Apple Mail, set the auto-reply on your email provider’s website, because a Mail rule only replies while the Mac is on and Mail is open."]
      }, appNote:"Thunderbird’s help pages recommend setting an out-of-office reply on your email provider’s website (for example Gmail’s or Outlook’s settings on the web). A Thunderbird filter that replies with a template works only while your computer is on and Thunderbird is running, and Mozilla advises against it."},
-     {t:"Unsubscribe from one list you no longer read", how:["Open a recent email from a mailing list you joined but don’t want.","Look for the app’s own **Unsubscribe** button near the sender’s name. In Gmail you can also open **More → Manage subscriptions** on the left (still rolling out). If there’s no button, use the unsubscribe link at the bottom of the email, but only for senders you recognise.","Don’t use unsubscribe links in suspicious emails; report those as spam or phishing instead.","Then archive the old emails from that sender if you don’t need them in the inbox."]}
+     {t:"Unsubscribe from one list you no longer read", how:["Open a recent email from a mailing list you joined but don’t want.","Look for the app’s own **Unsubscribe** button near the sender’s name. In Gmail you can also open **More → Manage subscriptions** on the left (still rolling out). If there’s no button, use the unsubscribe link at the bottom of the email, but only for senders you recognize.","Don’t use unsubscribe links in suspicious emails; report those as spam or phishing instead.","Then archive the old emails from that sender if you don’t need them in the inbox."]}
    ], proof:"You found an old email with a search that combined at least two conditions, created one filter or rule that keeps routine mail out of your inbox without deleting it, have an out-of-office message ready to switch on, and unsubscribed from at least one list."},
    read:[
      {book:"wss", where:"Chapter 2, Section 2.3 “Communication and Calendar Applications”: “Microsoft Outlook” and “Gmail” (folders, junk mail and spam)", note:"The book shows classic Outlook’s ribbon (Message tab, Respond and Tags groups). Outlook on the web and the new Outlook for Windows put these commands in a simpler toolbar."}
@@ -403,7 +403,7 @@ ICA.addUnit({
    hook:{q:"Someone who uses Google Calendar invites you to a meeting, and it appears in your Outlook calendar. How is that possible?", options:["Google and Microsoft share one calendar server","An invitation is an email carrying the event in a standard format both apps understand","Outlook checks Google’s website for new events every hour","Outlook copies your whole Google account each night"], answer:1, reveal:"**An invitation is really an email** with the event attached in a standard format called iCalendar (`.ics` files). Any calendar app that reads it can offer buttons such as Yes, No and Maybe. This lesson covers invitations, then time zones, daylight saving and meetings that are worth everyone’s time."},
    apps:{ms:"Outlook calendar", google:"Google Calendar", libre:"Thunderbird calendar", apple:"Apple Calendar"},
    goals:[
-     "Send and answer calendar invitations, and know what the organiser sees",
+     "Send and answer calendar invitations, and know what the organizer sees",
      "Convert times using UTC and offsets, including daylight-saving changes",
      "Schedule fairly across time zones and decide whether a meeting is needed at all",
      "Run a video call people can follow: mute, camera, screen sharing, captions and recording consent"
@@ -411,12 +411,12 @@ ICA.addUnit({
    learn:[
     {h:"What a calendar invite really is", body:[
       {lead:"A calendar invitation is an email with an event attached. That’s why an invite from Google Calendar can land in an Outlook calendar, or the other way round."},
-      "When you invite people to an event, your calendar sends each of them a [[calendar-invite]]: an email carrying the event details in a standard format called iCalendar (files ending in `.ics`). Their email or calendar app reads it and offers buttons to respond. Each answer, an [[rsvp]], goes back to the organiser’s calendar, which keeps count.",
+      "When you invite people to an event, your calendar sends each of them a [[calendar-invite]]: an email carrying the event details in a standard format called iCalendar (files ending in `.ics`). Their email or calendar app reads it and offers buttons to respond. Each answer, an [[rsvp]], goes back to the organizer’s calendar, which keeps count.",
       {table:[
         ["App","Response buttons","Extras"],
         ["Google Calendar","Yes · No · Maybe","Propose a new time (from the arrow next to Maybe)"],
         ["Outlook","Accept · Tentative · Decline","Propose new time; choose whether to send a response"],
-        ["Thunderbird","Accept · Tentative · Decline","Responds by email to the organiser"],
+        ["Thunderbird","Accept · Tentative · Decline","Responds by email to the organizer"],
         ["Apple Calendar","Accept · Maybe · Decline","Respond from the invitation or the event"]
       ]},
       "Good invitation habits:",
@@ -434,7 +434,7 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 404"><rect class="d-lup" x="10" y="10" width="320" height="50" rx="9" stroke-width="2"/><text x="170" y="31" text-anchor="middle">One call at 14:00 UTC</text><text class="s" x="170" y="50" text-anchor="middle">Tuesday 17 November 2026</text><text class="s" x="18" y="80">City</text><text class="s" x="200" y="80" text-anchor="middle">Offset</text><text class="s" x="322" y="80" text-anchor="end">Local time</text><rect class="d-panel" x="10" y="88" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="110">Los Angeles</text><text class="s" x="200" y="110" text-anchor="middle">UTC−8</text><text x="322" y="110" text-anchor="end">Tue 06:00</text><rect class="d-panel" x="10" y="126" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="148">New York</text><text class="s" x="200" y="148" text-anchor="middle">UTC−5</text><text x="322" y="148" text-anchor="end">Tue 09:00</text><rect class="d-gold" x="10" y="164" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="186">London</text><text class="s" x="200" y="186" text-anchor="middle">UTC+0</text><text x="322" y="186" text-anchor="end">Tue 14:00</text><rect class="d-panel" x="10" y="202" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="224">Lagos</text><text class="s" x="200" y="224" text-anchor="middle">UTC+1</text><text x="322" y="224" text-anchor="end">Tue 15:00</text><rect class="d-panel" x="10" y="240" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="262">Mumbai</text><text class="s" x="200" y="262" text-anchor="middle">UTC+5:30</text><text x="322" y="262" text-anchor="end">Tue 19:30</text><rect class="d-panel" x="10" y="278" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="300">Tokyo</text><text class="s" x="200" y="300" text-anchor="middle">UTC+9</text><text x="322" y="300" text-anchor="end">Tue 23:00</text><rect class="d-rose" x="10" y="316" width="320" height="34" rx="6" stroke-width="1.5"/><text x="18" y="338">Auckland</text><text class="s" x="200" y="338" text-anchor="middle">UTC+13</text><text x="322" y="338" text-anchor="end">Wed 03:00</text><text class="s" x="170" y="374" text-anchor="middle">Offsets shown are for this date. They change</text><text class="s" x="170" y="392" text-anchor="middle">where clocks move for daylight saving.</text></svg>', alt:"One call at 14:00 UTC on Tuesday 17 November 2026, shown in seven cities: Los Angeles UTC−8, Tuesday 06:00; New York UTC−5, Tuesday 09:00; London UTC+0, Tuesday 14:00 (highlighted); Lagos UTC+1, Tuesday 15:00; Mumbai UTC+5:30, Tuesday 19:30; Tokyo UTC+9, Tuesday 23:00; Auckland UTC+13, Wednesday 03:00 (highlighted: the next day). Offsets are for this date and change where clocks move for daylight saving.", cap:"The same moment in seven places. Local time = UTC + offset, and the date can change too."},
       "To convert, go through UTC: **local time − offset = UTC**, then **UTC + the other offset = their local time**.",
       {ex:"Priya is in Mumbai (UTC+5:30). A webinar is at 09:00 in New York (UTC−5) on 17 November.\n\nStep 1, New York to UTC: 09:00 − (−5) = 09:00 + 5 h = 14:00 UTC.\nStep 2, UTC to Mumbai: 14:00 + 5:30 = 19:30.\n\nThe webinar starts at 19:30 Priya’s time, the same evening.", label:"Worked example: converting through UTC"},
-      "Your calendar does this for you. Google Calendar and Outlook store each event’s moment in UTC and show it in each person’s own time zone. So a guest in Tokyo sees the call at 23:00, not 14:00. The calendar can only get it right if **your device and calendar are set to the right time zone**, and the organiser created the event in the right zone."
+      "Your calendar does this for you. Google Calendar and Outlook store each event’s moment in UTC and show it in each person’s own time zone. So a guest in Tokyo sees the call at 23:00, not 14:00. The calendar can only get it right if **your device and calendar are set to the right time zone**, and the organizer created the event in the right zone."
     ]},
     {h:"Daylight saving: the clocks that move", body:[
       "[[daylight-saving|Daylight saving time]] (also called summer time) moves clocks forward an hour in spring and back in autumn. That changes a place’s UTC offset twice a year. London is UTC+0 in winter and UTC+1 in summer; New York is UTC−5 in winter and UTC−4 in summer.",
@@ -454,7 +454,7 @@ ICA.addUnit({
         "**Name the zone with a city or UTC, not an abbreviation.** “CST” can mean US Central Standard Time or China Standard Time, which are 14 hours apart. “16:00 UTC” or “10:00 Mexico City time” can’t be misread.",
         "**Let the calendar convert.** Create the event in the right time zone and send an invitation, rather than typing times into an email.",
         "**Show a second time zone** in your calendar if you often work with one other place, or use a world clock.",
-        "**Check [[free-busy|free/busy]] information** where you can. In many workplaces you can see when colleagues are busy (not what they’re doing); Google Calendar calls the tool **Find a time** and Outlook has a **Scheduling Assistant**. Outside an organisation, a simple poll of a few options works.",
+        "**Check [[free-busy|free/busy]] information** where you can. In many workplaces you can see when colleagues are busy (not what they’re doing); Google Calendar calls the tool **Find a time** and Outlook has a **Scheduling Assistant**. Outside an organization, a simple poll of a few options works.",
         "**Share the pain.** If there’s no comfortable time for everyone, rotate who gets the early or late slot."
       ]},
       {ex:"Mei (Singapore, UTC+8), Tomás (Mexico City, UTC−6, no daylight saving) and Fatima (Berlin, UTC+1 in November) need a monthly call.\n\nTry 14:00 UTC: Tomás 08:00 · Fatima 15:00 · Mei 22:00.\nTry 13:00 UTC: Tomás 07:00 · Fatima 14:00 · Mei 21:00.\n\nNo slot is perfect: 13:00 UTC is early for Tomás and evening for Mei, but nobody has to join in the middle of the night. They pick it and agree to check after a few months whether it still works for both of them.", label:"Worked example: a fair time across three zones"}
@@ -484,7 +484,7 @@ ICA.addUnit({
       ]},
       {list:[
         "**Mute when you’re not speaking**, especially in larger calls, and unmute before you talk. Background noise travels.",
-        "**Camera expectations vary.** Some teams expect cameras on; in big presentations the organiser may ask you to switch them off. Follow the organiser’s lead, and it’s fine to say if you need it off for a while.",
+        "**Camera expectations vary.** Some teams expect cameras on; in big presentations the organizer may ask you to switch them off. Follow the organizer’s lead, and it’s fine to say if you need it off for a while.",
         "**[[screen-share|Share a window, not your whole screen]]** when you can. Close private tabs, and turn on Do Not Disturb so notifications don’t pop up for everyone. Teams turns on Do not disturb by default while you share.",
         "**Turn on captions.** Most video apps can show live captions: in Google Meet press [[kbd:C]]; in Teams and Zoom look for a captions or CC button (sometimes under **More**). Captions help people who are Deaf or hard of hearing, people listening in a second language, and anyone on a bad connection.",
         "**Use the chat and the raise-hand button** to take turns in larger calls, and say your name before speaking if you’re on audio only."
@@ -496,7 +496,7 @@ ICA.addUnit({
         "**Ask before you start**, ideally in the invitation (“I’d like to record this for people who can’t attend”).",
         "**Say what happens to it:** where it’s stored, who can see it, and when it will be deleted.",
         "**Give people a real choice.** They can switch off their camera, leave for that part, or ask for it not to be recorded.",
-        "**Check your organisation’s policy** before recording anything with customers, patients, pupils or members of the public."
+        "**Check your organization’s policy** before recording anything with customers, patients, pupils or members of the public."
       ]},
       "Most video apps show a notice or play a message when recording starts, and some ask participants to accept it. That notice is not the same as asking first.",
       {h:"Common misconceptions"},
@@ -567,7 +567,7 @@ ICA.addUnit({
      }},
      {t:"Add a world clock for people you work with", how:["Windows: open the **Clock** app and select **World clock**, then **Add a new city**.","Mac: add the **World Clock** widget (Control-click the desktop → **Edit Widgets** → **Clock**).","ChromeOS: search Google for “time in” plus the city, or add the zone in Google Calendar (task above).","On a phone: open the **Clock** app and use **World Clock** (iPhone) or **World clock** / the globe icon (Android; names vary by maker)."]},
      {t:"Test your call setup and find the controls", how:["Open the video app you use most (Zoom, Microsoft Teams, Google Meet or another) and start a test or a meeting with only yourself.","Check the microphone and camera in the app’s preview or device settings.","Find the mute and camera buttons and try their keyboard shortcuts from the lesson.","Turn on captions (in Google Meet press [[kbd:C]]; elsewhere look for a CC or captions button, sometimes under **More**).","Try sharing a single window rather than the whole screen."]},
-     {t:"Write an agenda for your next meeting", write:"Title (topic + length): …\nPurpose (one sentence): …\nTopics with rough times and who leads: …\nDecisions needed: …\nRead before the meeting: …", how:["Pick a real meeting you’ll run or attend, or one you’d like to propose.","Fill in the boxes below.","If you’re the organiser, paste the agenda into the invitation."]}
+     {t:"Write an agenda for your next meeting", write:"Title (topic + length): …\nPurpose (one sentence): …\nTopics with rough times and who leads: …\nDecisions needed: …\nRead before the meeting: …", how:["Pick a real meeting you’ll run or attend, or one you’d like to propose.","Fill in the boxes below.","If you’re the organizer, paste the agenda into the invitation."]}
    ], proof:"Your calendar shows a second time zone (or a world clock), you’ve sent and answered a test invitation, your call controls and captions are tested, and you have a written agenda with a purpose, timings and decisions."},
    read:[
      {book:"wss", where:"Chapter 2, Section 2.3 “Communication and Calendar Applications”: “Challenges of Digitized Collaboration” and “Calendar Applications”"},
@@ -617,10 +617,10 @@ ICA.addUnit({
       "Editing together works best when people can see what others changed and discuss it. Two tools do this, and Unit 8 covers them in depth ({{track-changes-comments}}):",
       {list:[
         "**Comments** are notes attached to a piece of text: “Is this the right date?” In Google Docs and Word you can type @ and a person’s name or email in a comment to mention them, which notifies them (Google Docs can also assign the comment to that person). When the point is dealt with, **resolve** the comment rather than deleting it, so the history stays.",
-        "**Suggestions** are proposed edits that appear in colour until the owner accepts or rejects them. Google Docs calls it **Suggesting** mode (anyone with comment or edit access can suggest); Word for the web calls it **Reviewing**; LibreOffice Writer and Pages call it **Track Changes**."
+        "**Suggestions** are proposed edits that appear in color until the owner accepts or rejects them. Google Docs calls it **Suggesting** mode (anyone with comment or edit access can suggest); Word for the web calls it **Reviewing**; LibreOffice Writer and Pages call it **Track Changes**."
       ]},
       "Use suggestions whenever you change someone else’s text, especially wording that matters (a policy, a letter, a job advert). The author can see exactly what you propose, accept it in one click, or reject it without having to work out what you changed.",
-      {ex:"Hana shares the draft newsletter with Dmitri as a Commenter. Dmitri switches to Suggesting, rewrites one sentence and adds a comment: “Shorter? @hana”.\nHana sees the change in colour, accepts it, replies “Thanks!” and resolves the comment. Nothing was emailed, and the document history shows who did what.", label:"Worked example: suggest, accept, resolve"}
+      {ex:"Hana shares the draft newsletter with Dmitri as a Commenter. Dmitri switches to Suggesting, rewrites one sentence and adds a comment: “Shorter? @hana”.\nHana sees the change in color, accepts it, replies “Thanks!” and resolves the comment. Nothing was emailed, and the document history shows who did what.", label:"Worked example: suggest, accept, resolve"}
     ]},
     {h:"Version history: your safety net", body:[
       "Because cloud editors save automatically, every few minutes of work becomes a version you can go back to. Unit 2’s {{version-history}} entry explains how long versions are kept in each service. In shared work, version history answers three questions:",
@@ -636,19 +636,19 @@ ICA.addUnit({
       {table:[
         ["Situation","What happens"],
         ["Personal Google account","The owner can transfer ownership only to someone the file is already shared with, who must accept. A personal account can’t transfer a file to a work or school account."],
-        ["Work or school Google account","Ownership can be transferred within the organisation. When someone leaves, an administrator can transfer their files before deleting the account."],
-        ["Microsoft 365 work or school (OneDrive)","When a user is deleted, their manager gets access to their OneDrive by default. After the retention period (30 days unless the organisation changes it) it is deleted, and shared links stop working."],
-        ["Shared drives (Google) and team sites (Microsoft Teams, SharePoint)","Files belong to the organisation or team, not one person, so they stay when someone leaves."]
+        ["Work or school Google account","Ownership can be transferred within the organization. When someone leaves, an administrator can transfer their files before deleting the account."],
+        ["Microsoft 365 work or school (OneDrive)","When a user is deleted, their manager gets access to their OneDrive by default. After the retention period (30 days unless the organization changes it) it is deleted, and shared links stop working."],
+        ["Shared drives (Google) and team sites (Microsoft Teams, SharePoint)","Files belong to the organization or team, not one person, so they stay when someone leaves."]
       ]},
-      {ex:"A neighbourhood group keeps its member list, accounts and grant forms in the treasurer’s personal Google Drive. The treasurer moves away and, months later, closes the account. The files, and every link to them, disappear.\n\nBetter: before handover, the treasurer transfers ownership of each file to the new treasurer (who accepts), or the group keeps its files in an account or shared drive that belongs to the group, with at least two people able to manage it.", label:"Worked example: when the owner leaves"},
-      "So for anything a group depends on, ask early: **whose account is this in, and what happens if they leave?** Work files should live in your organisation’s shared spaces, not a personal account."
+      {ex:"A neighborhood group keeps its member list, accounts and grant forms in the treasurer’s personal Google Drive. The treasurer moves away and, months later, closes the account. The files, and every link to them, disappear.\n\nBetter: before handover, the treasurer transfers ownership of each file to the new treasurer (who accepts), or the group keeps its files in an account or shared drive that belongs to the group, with at least two people able to manage it.", label:"Worked example: when the owner leaves"},
+      "So for anything a group depends on, ask early: **whose account is this in, and what happens if they leave?** Work files should live in your organization’s shared spaces, not a personal account."
     ]},
     {h:"Editing together politely", body:[
       "Simultaneous editing can feel like several people writing on one whiteboard. A few shared habits keep it calm:",
       {list:[
         "**Look for other people’s cursors** before you rearrange a section someone is typing in.",
         "**Suggest, don’t overwrite**, when it’s someone else’s text, and don’t delete other people’s comments.",
-        "**Say what you changed** for big edits: a comment or a short message (“I reorganised section 3 and moved the budget to the end”).",
+        "**Say what you changed** for big edits: a comment or a short message (“I reorganized section 3 and moved the budget to the end”).",
         "**Keep one copy.** If you must work offline, tell the others, and be ready to resolve conflicts if two people changed the same part.",
         "**Tidy up access** when a project ends: remove people who no longer need it and switch “anyone with the link” back to restricted."
       ]},
@@ -656,7 +656,7 @@ ICA.addUnit({
       {list:[
         "**“Version history is a backup.”** It lives in the same account as the file. If the account or file is deleted, it goes too. Keep real backups (Unit 2: {{backup}}).",
         "**“Editors can only change the text.”** In many services they can also reshare the file or change its settings, unless the owner prevents it.",
-        "**“If I made the file at work, it’s mine.”** Files in a work account usually belong to the organisation and can be transferred or deleted when you leave.",
+        "**“If I made the file at work, it’s mine.”** Files in a work account usually belong to the organization and can be transferred or deleted when you leave.",
         "**“Commenters can’t propose changes.”** In Google Docs, commenters can make suggestions, which the owner accepts or rejects."
       ]}
     ]}
@@ -719,7 +719,7 @@ ICA.addUnit({
      {t:"Turn on suggestions or tracked changes and make one change", app:{
        ms:["In Word for the web, open the mode menu at the top right of the ribbon (it usually says **Editing**) and choose **Reviewing**.","Change one sentence. Your edit appears as a tracked change.","Switch back to **Editing** and accept or reject the change from the **Review** tab."],
        google:["At the top right, select **Editing** and choose **Suggesting**.","Change one sentence and add a comment explaining why.","Switch back to **Editing**, then accept or reject the suggestion with the ✓ or ✕ next to it (or **Tools → Review suggested edits**)."],
-       libre:["Choose **Edit → Track Changes → Record** (in the tabbed interface: **Review → Record**).","Change one sentence. The change is marked in colour.","Use **Edit → Track Changes → Manage** to accept or reject it."],
+       libre:["Choose **Edit → Track Changes → Record** (in the tabbed interface: **Review → Record**).","Change one sentence. The change is marked in color.","Use **Edit → Track Changes → Manage** to accept or reject it."],
        apple:["In Pages on a Mac, choose **Edit → Track Changes**.","Change one sentence; it appears as a tracked change with your name.","Use the review toolbar at the top of the document to accept or reject it."]
      }},
      {t:"Open version history and mark a milestone", app:{
@@ -757,17 +757,17 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 352"><defs><marker id="m115" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-gold" x="10" y="10" width="188" height="58" rx="9" stroke-width="2"/><text class="s" x="104" y="34" text-anchor="middle">Urgent, or needs live</text><text class="s" x="104" y="52" text-anchor="middle">back-and-forth?</text><path class="d-ink" d="M199,39 L240,39" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="219" y="31" text-anchor="middle">yes</text><rect class="d-rose" x="244" y="14" width="86" height="50" rx="9" stroke-width="2"/><text class="s" x="287" y="35" text-anchor="middle">Call or</text><text class="s" x="287" y="52" text-anchor="middle">meeting</text><path class="d-ink" d="M104,69 L104,92" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="118" y="85">no</text><rect class="d-gold" x="10" y="94" width="188" height="58" rx="9" stroke-width="2"/><text class="s" x="104" y="118" text-anchor="middle">Quick question or update</text><text class="s" x="104" y="136" text-anchor="middle">for your team?</text><path class="d-ink" d="M199,123 L240,123" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="219" y="115" text-anchor="middle">yes</text><rect class="d-lup" x="244" y="98" width="86" height="50" rx="9" stroke-width="2"/><text class="s" x="287" y="119" text-anchor="middle">Chat, in</text><text class="s" x="287" y="136" text-anchor="middle">a thread</text><path class="d-ink" d="M104,153 L104,176" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="118" y="169">no</text><rect class="d-gold" x="10" y="178" width="188" height="58" rx="9" stroke-width="2"/><text class="s" x="104" y="202" text-anchor="middle">Needs a record, or goes</text><text class="s" x="104" y="220" text-anchor="middle">outside your group?</text><path class="d-ink" d="M199,207 L240,207" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="219" y="199" text-anchor="middle">yes</text><rect class="d-panel" x="244" y="182" width="86" height="50" rx="9" stroke-width="2"/><text class="s" x="287" y="211" text-anchor="middle">Email</text><path class="d-ink" d="M104,237 L104,260" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="118" y="253">no</text><rect class="d-gold" x="10" y="262" width="188" height="58" rx="9" stroke-width="2"/><text class="s" x="104" y="286" text-anchor="middle">Will many people build</text><text class="s" x="104" y="304" text-anchor="middle">or keep it?</text><path class="d-ink" d="M199,291 L240,291" stroke-width="2" marker-end="url(#m115)"/><text class="s" x="219" y="283" text-anchor="middle">yes</text><rect class="d-sage" x="244" y="266" width="86" height="50" rx="9" stroke-width="2"/><text class="s" x="287" y="287" text-anchor="middle">Shared</text><text class="s" x="287" y="304" text-anchor="middle">document</text><text class="s" x="170" y="344" text-anchor="middle">A rule of thumb, not a law: teams agree their own.</text></svg>', alt:"A decision ladder. Is it urgent, or does it need live back-and-forth? Yes: call or meeting. No: is it a quick question or update for your team? Yes: chat, in a thread. No: does it need a record, or go outside your group? Yes: email. No: will many people build or keep it? Yes: shared document. A note says this is a rule of thumb, not a law; teams agree their own.", cap:"Ask the questions in order. Many messages move between tools: a chat question can end in a decision recorded in a document."},
       "Often the answer is a combination. A chat discussion reaches a decision; someone records it in the shared plan; an email tells the funder. Moving information to the right place is part of the job."
     ]},
-    {h:"How chat tools are organised", body:[
+    {h:"How chat tools are organized", body:[
       "Team chat tools, such as Microsoft Teams, Slack, Google Chat and Zoom’s team chat, share the same building blocks even though they use different names:",
       {table:[
         ["Building block","What it is","Names you’ll see"],
-        ["Workspace or team","Everyone in an organisation or group","Workspace (Slack), team (Teams)"],
+        ["Workspace or team","Everyone in an organization or group","Workspace (Slack), team (Teams)"],
         ["[[chat-channel|Channel]]","A shared room for one topic, project or group, which people join","Channel (Slack, Teams), space (Google Chat)"],
         ["[[direct-message|Direct message]]","A private conversation with one person or a small group","DM (Slack), chat (Teams), direct message (Google Chat)"],
         ["[[thread|Thread]]","Replies attached to one message, kept together","Thread, reply in thread"]
       ]},
       "Channels make information findable: a new volunteer can read the history of #rota and catch up, which they can’t do with a pile of private messages. As a rule, put work conversations in the relevant channel and keep direct messages for personal or sensitive matters.",
-      "Small, informal groups (a family, a sports team, a few volunteers) often use messaging apps such as Signal or WhatsApp instead. They’re simpler but have no channels to organise topics, and in some of them other group members can see your phone number (in WhatsApp groups this is usually the case at the time of writing, late 2026, though WhatsApp has been testing usernames). Signal hides your number by default from people who don’t already have it saved, and lets people contact you by username instead.",
+      "Small, informal groups (a family, a sports team, a few volunteers) often use messaging apps such as Signal or WhatsApp instead. They’re simpler but have no channels to organize topics, and in some of them other group members can see your phone number (in WhatsApp groups this is usually the case at the time of writing, late 2026, though WhatsApp has been testing usernames). Signal hides your number by default from people who don’t already have it saved, and lets people contact you by username instead.",
       {tip:"Free plans have limits. OpenStax’s book (2023) says Slack’s free plan keeps the most recent 10,000 messages; Slack now shows only the last 90 days of messages and files on free workspaces. Don’t rely on a free chat tool as your only record of decisions."}
     ]},
     {h:"Threads and @mentions", body:[
@@ -793,7 +793,7 @@ ICA.addUnit({
       "Many tools can **schedule a message** to arrive at a better time for the reader, for example during their morning rather than at midnight. If you work late, scheduling is a kind way to avoid sending a notification into someone’s evening."
     ]},
     {h:"Status, notifications and boundaries", body:[
-      "Chat tools show an [[availability-status]]: a coloured dot or label such as Available, Busy, Away or Do not disturb. It helps others guess whether you’ll reply soon. Microsoft Teams, for example, offers Available, Busy, Do not disturb, Be right back, Appear away and Appear offline, and lets you set how long a status lasts. Teams also sets some statuses automatically, such as Busy during a call.",
+      "Chat tools show an [[availability-status]]: a colored dot or label such as Available, Busy, Away or Do not disturb. It helps others guess whether you’ll reply soon. Microsoft Teams, for example, offers Available, Busy, Do not disturb, Be right back, Appear away and Appear offline, and lets you set how long a status lasts. Teams also sets some statuses automatically, such as Busy during a call.",
       "[[do-not-disturb|Do not disturb]] silences notifications while you focus, present or rest. Slack calls the same idea **pausing notifications** and also lets you set a **notification schedule** so alerts arrive only during your working hours. Your phone has its own version too (Focus on iPhone, Do Not Disturb on Android), covered in Unit 5’s {{digital-wellbeing}} entry.",
       {list:[
         "**Put your working hours and time zone in your profile** if your team spans places.",
@@ -803,7 +803,7 @@ ICA.addUnit({
       {tip:"If someone keeps messaging you outside working hours, it’s reasonable to say so kindly: “I’ve turned on a notification schedule, so I’ll see messages after 8:00. For emergencies, please call.”"}
     ]},
     {h:"Professional norms in chat", body:[
-      "Chat is informal, but in a work or school account it is still a record. OpenStax’s book reminds readers that communication on company equipment and accounts may be recorded and can be accessed by the organisation. Messages can be searched, exported, screenshotted and forwarded, sometimes long after you’ve forgotten them.",
+      "Chat is informal, but in a work or school account it is still a record. OpenStax’s book reminds readers that communication on company equipment and accounts may be recorded and can be accessed by the organization. Messages can be searched, exported, screenshotted and forwarded, sometimes long after you’ve forgotten them.",
       {list:[
         "**Write as if your manager, or the person you’re discussing, could read it.**",
         "**Keep sensitive things out of channels**: passwords, health details, performance problems, other people’s personal data. Use a direct conversation, a call, or the proper system.",
@@ -977,8 +977,8 @@ ICA.addUnit({
       "**Undo Send** settings differ: Gmail offers 5, 10, 20 or 30 seconds (Settings → See all settings → General); Outlook on the web and the new Outlook for Windows up to 10 seconds (Settings → Mail → Compose and reply); Apple Mail 10, 20 or 30 seconds (Mail → Settings → Composing, or Settings → Apps → Mail on iPhone). Thunderbird has no built-in Undo Send; **Send Later** holds a message in the Outbox."
      ],
      pro:[
-      "Undo Send is a **delay**, not a recall: the message is held by your provider and only sent when the timer ends. Once delivered, it can’t be pulled back from another provider’s server. Outlook’s **recall** works only when sender and recipient are both on Microsoft 365 work or school accounts in the same organisation, and only if the message hasn’t been opened; Microsoft states personal accounts (Outlook.com, Gmail, Hotmail) can’t use it.",
-      "Data-protection regulators treat misdirected email as a common cause of personal-data breaches. The UK ICO suggests organisations consider technical measures such as turning off address autocomplete, alerts that warn senders when they use the Cc field, and a send delay to catch errors. Individuals can copy the cheapest one: **add recipients last**.",
+      "Undo Send is a **delay**, not a recall: the message is held by your provider and only sent when the timer ends. Once delivered, it can’t be pulled back from another provider’s server. Outlook’s **recall** works only when sender and recipient are both on Microsoft 365 work or school accounts in the same organization, and only if the message hasn’t been opened; Microsoft states personal accounts (Outlook.com, Gmail, Hotmail) can’t use it.",
+      "Data-protection regulators treat misdirected email as a common cause of personal-data breaches. The UK ICO suggests organizations consider technical measures such as turning off address autocomplete, alerts that warn senders when they use the Cc field, and a send delay to catch errors. Individuals can copy the cheapest one: **add recipients last**.",
       "For readers using a second language or translation tools, plain-language practice helps everyone: one idea per sentence, active voice, concrete verbs, and numbers and dates in unambiguous formats (ISO 8601 such as 2026-11-12, or the month written out). Avoid ALL CAPS, which reads as shouting and is harder to read.",
       "Emails at work are records. They can be disclosed in disputes or data-access requests (Unit 5: {{data-protection-laws}}), forwarded without your knowledge, and archived for years. Write as if the person discussed might one day read it.",
       {tip:"For anything heated, write the draft, don’t send it, and suggest a call. Text strips out tone; a five-minute conversation often resolves what ten emails escalate."}
@@ -1009,7 +1009,7 @@ ICA.addUnit({
       "Bcc is a client-side convenience: the sending app delivers separate copies and leaves Bcc addresses out of the visible headers. It depends on the sender remembering it every time, which is why the UK ICO says Bcc “is not enough on its own” to protect people’s personal information when bulk emails involve sensitive data, and that forgetting it frequently leads to disclosures. For sensitive groups (patients, service users, survivors), use a bulk-email or mailing-list service that sends individual messages, or a mail merge, and test with internal addresses first.",
       "Reply All storms happen when a large distribution list allows replies to everyone: each “please remove me” triggers more. Administrators prevent them by restricting who can post to big lists. If you’re caught in one, the kindest thing is not to reply at all, not even to ask to be removed.",
       "Cc carries social meaning. Copying a manager can read as escalation; copying many people can diffuse responsibility (“someone else will answer”). Put each person who must act in To and name the action for each one in the body.",
-      "Forwarding changes context and control. The original sender didn’t choose the new reader; a forwarded thread may include personal data covered by data-protection law. In regulated work (health, education, social care) follow your organisation’s rules on what may be forwarded outside the organisation.",
+      "Forwarding changes context and control. The original sender didn’t choose the new reader; a forwarded thread may include personal data covered by data-protection law. In regulated work (health, education, social care) follow your organization’s rules on what may be forwarded outside the organization.",
       {tip:"A safe group-announcement pattern: your own address in To, everyone else in Bcc, and a first line that says why they’re receiving it and how to stop."}
      ]
     },
@@ -1031,13 +1031,13 @@ ICA.addUnit({
      builder:[
       {table:[["Choose","When","Watch out for"],["Attachment","Final documents; the reader must keep their own copy; the reader can’t use your cloud service","Copies drift apart if anyone edits; size limits; old versions circulating"],["PDF attachment","You want it to look the same everywhere and not be edited easily","Not suitable for collaboration"],["Share link (specific people)","Work in progress; private material","People you forgot to add can’t open it; they may need an account"],["Share link (anyone with the link)","Public, non-sensitive material such as a flyer","Works for anyone it is forwarded to"]]},
       "Mention attachments in the text (“I’ve attached…”); many apps warn you if you mention one and forget to attach it. Name files so the reader understands them (`2026-11-05_garden-rota.pdf`). If you send a link, say what it is and what you need (“Comment on section 2 by Friday”).",
-      "Email providers limit attachment sizes, and some apps offer to upload a large file and send a link instead. When a reader outside your organisation can’t open your link, a PDF export is often the simplest fallback.",
+      "Email providers limit attachment sizes, and some apps offer to upload a large file and send a link instead. When a reader outside your organization can’t open your link, a PDF export is often the simplest fallback.",
       "**A quick decision test:** Will anyone change this file after today? If yes, share a link. Does the reader need to keep their own copy, whatever happens to your account? If yes, attach it (often as a PDF). Is anything in it private? Then share with named people only, never an anyone-link."
      ],
      pro:[
-      "Attachments are the most common way malware arrives by email, which is why many organisations block certain file types and why unexpected attachments, even from known senders, deserve suspicion (Unit 3: {{phishing}}). Links have the mirror risk: a fake “shared document” notification leading to a look-alike sign-in page is a common phishing pattern. If a share notification is unexpected, open the service directly rather than clicking.",
+      "Attachments are the most common way malware arrives by email, which is why many organizations block certain file types and why unexpected attachments, even from known senders, deserve suspicion (Unit 3: {{phishing}}). Links have the mirror risk: a fake “shared document” notification leading to a look-alike sign-in page is a common phishing pattern. If a share notification is unexpected, open the service directly rather than clicking.",
       "Links keep control with the owner: you can change permissions, revoke access, and see the current version. Attachments give up control permanently once sent. A sent attachment can be forwarded, edited and kept indefinitely, and there is no way to withdraw it. For confidential material, a named-people link (with expiry, where your plan supports it) is usually safer than an attachment, because access can be withdrawn and is tied to the recipient’s sign-in.",
-      "A link also depends on the owner’s account. If the owner leaves an organisation or deletes their account, links can break (see {{shared-file-workflow}}). For records that must survive, such as signed agreements, store a final copy (often PDF, or PDF/A for archiving) in the recipient’s own system.",
+      "A link also depends on the owner’s account. If the owner leaves an organization or deletes their account, links can break (see {{shared-file-workflow}}). For records that must survive, such as signed agreements, store a final copy (often PDF, or PDF/A for archiving) in the recipient’s own system.",
       {tip:"For external partners, agree once how you’ll exchange files (a shared folder both sides can reach, or PDFs by email) rather than deciding per email."}
      ]
     },
@@ -1089,8 +1089,8 @@ ICA.addUnit({
      builder:[
       {table:[["App","Create a filter or rule","Out-of-office"],["Gmail","Search options → From (etc.) → **Create filter** → choose actions","Settings → See all settings → General → **Vacation responder**"],["Outlook (web, new Windows app)","Right-click an email → **Rules → Create rule**; manage in Settings → Mail → Rules","Settings → Account(s) → **Automatic replies**"],["Thunderbird","Right-click the sender → **Create Filter From…**, or Tools → Message Filters","Set it on your provider’s website"],["Apple Mail (Mac)","Mail → Settings → **Rules** → Add Rule","Provider’s website (iCloud Mail: icloud.com → Settings → Auto-Reply)"]]},
       "**When filters run:** Gmail filters apply to new mail unless you tick the option to apply them to matching conversations; Thunderbird filters run when mail is checked, with **Run Now** for existing mail; Apple Mail rules run only while Mail is open on that Mac.",
-      "**Out-of-office details:** Gmail replies to a sender the first time they write, then again only after four days or if you edit the message, and doesn’t reply to mail in Spam or from mailing lists. Outlook can limit replies to a time period and, for work accounts, send a different message outside the organisation.",
-      "**Practise safely:** create one filter for a newsletter you receive, check after a week that it caught the right emails and nothing else, then add more. Name each filter by purpose, and look through your rules list a few times a year: delete the ones you no longer need and any you don’t recognise."
+      "**Out-of-office details:** Gmail replies to a sender the first time they write, then again only after four days or if you edit the message, and doesn’t reply to mail in Spam or from mailing lists. Outlook can limit replies to a time period and, for work accounts, send a different message outside the organization.",
+      "**Practice safely:** create one filter for a newsletter you receive, check after a week that it caught the right emails and nothing else, then add more. Name each filter by purpose, and look through your rules list a few times a year: delete the ones you no longer need and any you don’t recognize."
      ],
      pro:[
       "Server-side versus client-side matters. Rules stored by the provider (Gmail filters, Outlook mailbox rules) run even when your devices are off. Rules that live in a desktop app (Apple Mail rules, Thunderbird filters on most setups) run only when that app is open and checking mail, so they’re unsuitable for out-of-office replies. Mozilla’s help article advises against Thunderbird template-reply filters for vacations for that reason and for safety concerns, and recommends the provider’s own auto-reply.",
@@ -1108,25 +1108,25 @@ ICA.addUnit({
     summary:"Invitations are emails carrying an event; good ones have a clear title, the link or place, and an agenda, and every guest answers.",
     levels:{
      starter:[
-      "A calendar invitation is an email with an event attached. Guests answer **Yes, No or Maybe** (Google) or **Accept, Tentative or Decline** (Outlook, Thunderbird), and the organiser’s calendar counts the replies.",
+      "A calendar invitation is an email with an event attached. Guests answer **Yes, No or Maybe** (Google) or **Accept, Tentative or Decline** (Outlook, Thunderbird), and the organizer’s calendar counts the replies.",
       {list:["Give the event a **clear title** and put the **video link or address** in it.","Add a short **agenda**: purpose, topics, decisions needed, what to read first.","**Answer every invitation**, even with No.","Before sending, ask whether it needs to be a meeting at all: information can go by email, comments in a shared document, quick questions in chat."]},
       "For a recurring event, check whether a change applies to one event or the whole series before you answer.",
       {key:"A meeting is worth everyone’s time only when people need to discuss or decide something together."}
      ],
      builder:[
       "Invitations use the iCalendar standard (`.ics`), so they work between Google Calendar, Outlook, Thunderbird and Apple Calendar. You can invite anyone with an email address, even if they don’t use Google Calendar; they can answer from the invitation email.",
-      {table:[["Task","Google Calendar","Outlook (web / new Windows)"],["Invite","Edit the event → add people under **Guests** → Save → Send","New event → add attendees → Send"],["Find a time","**Find a time** (needs shared calendars or the same organisation)","**Scheduling Assistant**"],["Propose another time","Arrow next to **Maybe** → propose a new time","**Propose new time**"]]},
+      {table:[["Task","Google Calendar","Outlook (web / new Windows)"],["Invite","Edit the event → add people under **Guests** → Save → Send","New event → add attendees → Send"],["Find a time","**Find a time** (needs shared calendars or the same organization)","**Scheduling Assistant**"],["Propose another time","Arrow next to **Maybe** → propose a new time","**Propose new time**"]]},
       "Thunderbird’s calendar (built in since Thunderbird 38): New Event → **Invite Attendees** → tick **Notify attendees**. Apple Calendar: open the event → **Add Invitees**.",
       "**Recurring events:** responding or editing asks whether the change applies to this event or all events. **Free/busy** sharing lets colleagues see when you’re busy without seeing details; mark private events as private.",
       "End meetings with **decisions and actions** (who, what, by when) and share brief notes.",
       {ex:"Title: Food bank volunteers: December rota (30 min)\nPurpose: agree the December rota and Saturday leads\n1. Changes since November (5 min)\n2. Saturday leads (15 min)\n3. Holiday hours: decision (10 min)\nBefore: add your availability to the rota sheet", label:"An agenda inside an invitation", mono:true}
      ],
      pro:[
-      "Calendars store events with a time zone (internally in UTC) and display them in each viewer’s zone, so the organiser’s zone setting matters: an event created in the wrong zone shows at the wrong time for everyone. Google notes that events far in the past or future may not reflect daylight-saving rule changes. See {{time-zones}}.",
+      "Calendars store events with a time zone (internally in UTC) and display them in each viewer’s zone, so the organizer’s zone setting matters: an event created in the wrong zone shows at the wrong time for everyone. Google notes that events far in the past or future may not reflect daylight-saving rule changes. See {{time-zones}}.",
       "Calendar spam is a real attack: some calendars add invitations automatically, so scammers send events with links (“Invoice overdue”). Most calendars let you limit automatic adding to known senders; don’t click links in unexpected invitations.",
       "Privacy: shared calendars can reveal more than intended (patient names in titles, home addresses, travel). OpenStax’s *Workplace Software and Skills* recommends adjusting calendar privacy so others see only your availability where appropriate. Use private events for personal appointments on a work calendar.",
       "Meeting cost is real: a one-hour meeting with eight people consumes eight hours of work. Practices that help: default to shorter meetings, publish an agenda with the invitation, invite only decision-makers and contributors (others get notes), and cancel recurring meetings that no longer earn their place. The agenda doubles as a test: if you can’t write one, the meeting probably isn’t ready.",
-      {tip:"For groups outside one organisation, a simple poll of three or four options is often faster than everyone sharing calendars."}
+      {tip:"For groups outside one organization, a simple poll of three or four options is often faster than everyone sharing calendars."}
      ]
     },
     related:["time-zones","video-meetings","collaboration-norms"],
@@ -1152,7 +1152,7 @@ ICA.addUnit({
       "Google Calendar: Settings → General → Time zone → Show additional time zones. Outlook (web and new Windows app): Settings → Calendar → View → Add time zone. Apple Calendar on Mac: Calendar → Settings → Advanced → Turn on time zone support."
      ],
      pro:[
-      "UTC is computed by the BIPM (International Bureau of Weights and Measures) from atomic clocks in more than 80 laboratories worldwide; national labs such as NIST maintain local realisations like UTC(NIST). GMT is often used loosely for UTC+0, but it is the name of a time zone (the UK’s winter time), not the scientific standard; UTC itself never shifts for summer.",
+      "UTC is computed by the BIPM (International Bureau of Weights and Measures) from atomic clocks in more than 80 laboratories worldwide; national labs such as NIST maintain local realizations like UTC(NIST). GMT is often used loosely for UTC+0, but it is the name of a time zone (the UK’s winter time), not the scientific standard; UTC itself never shifts for summer.",
       "Time-zone rules are set by governments and change: countries have abolished, adopted or moved daylight saving, sometimes at short notice. Software uses the IANA time zone database (zone names such as `America/Mexico_City`, `Asia/Kolkata`), updated several times a year; device and app updates carry these changes. Events created before a rule change may display at the wrong time, which Google Calendar’s help warns about.",
       "For data and logs, store timestamps in UTC with an explicit offset (ISO 8601, e.g. `2026-11-17T14:00:00Z` or `2026-11-17T09:00:00-05:00`) and convert only for display. For recurring meetings, decide which zone “owns” the time: a 10:00 New York meeting shifts by an hour for London participants for a few weeks each spring and autumn, while an event fixed in UTC moves for everyone who observes daylight saving.",
       "Ambiguous local times exist: when clocks go back, a time such as 01:30 happens twice; when they go forward, some times don’t exist at all. Avoid scheduling in those hours on change days.",
@@ -1168,7 +1168,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Before a call, test your microphone and camera in the app’s preview, and find the **mute**, **camera**, **share** and **captions** buttons.",
-      {list:["**Mute** when you’re not speaking; unmute before you talk.","**Camera:** follow the organiser’s expectations; it’s fine to say if you need it off.","**Share one window**, not your whole screen, and turn on Do Not Disturb first.","**Turn on captions**: they help people who are Deaf or hard of hearing, people listening in a second language, and anyone on a poor connection.","**Ask before recording**, and say where the recording will go."]},
+      {list:["**Mute** when you’re not speaking; unmute before you talk.","**Camera:** follow the organizer’s expectations; it’s fine to say if you need it off.","**Share one window**, not your whole screen, and turn on Do Not Disturb first.","**Turn on captions**: they help people who are Deaf or hard of hearing, people listening in a second language, and anyone on a poor connection.","**Ask before recording**, and say where the recording will go."]},
       "If something doesn’t work, Unit 7 has a checklist: {{audio-video-calls}}.",
       {key:"Everyone in a call should be able to hear, follow and take part, and nobody should be recorded without agreeing."}
      ],
@@ -1203,7 +1203,7 @@ ICA.addUnit({
      builder:[
       {table:[["App","Read","Comment/suggest","Edit"],["Google Docs, Sheets, Slides","Viewer","Commenter","Editor"],["Word, Excel, PowerPoint (OneDrive)","Can view","Can review (Word; work or school OneDrive)","Can edit"],["Pages, Numbers, Keynote (iCloud)","View only","(no separate role)","Can make changes"]]},
       "LibreOffice Writer has no built-in sharing; share the file from a cloud service and agree that one person edits at a time, or exchange copies with **Edit → Track Changes → Record** turned on.",
-      "**Ownership rules (Google):** personal accounts can transfer ownership only to someone the file is already shared with, who must accept, and not to a work or school account; after transfer the old owner becomes an Editor. Work and school accounts transfer within the organisation, and admins can transfer a departing user’s files. **Shared drives** belong to the organisation: files people added stay when they leave.",
+      "**Ownership rules (Google):** personal accounts can transfer ownership only to someone the file is already shared with, who must accept, and not to a work or school account; after transfer the old owner becomes an Editor. Work and school accounts transfer within the organization, and admins can transfer a departing user’s files. **Shared drives** belong to the organization: files people added stay when they leave.",
       "**Microsoft 365:** when a user is deleted, their manager gets access to the OneDrive by default; after the retention period (30 days by default) it is deleted, and shared content stops being available. Team files belong in Teams or SharePoint sites, not a personal OneDrive.",
       "**Suggesting in each app:** Google Docs: Editing menu (top right) → Suggesting. Word for the web: mode menu → Reviewing. LibreOffice Writer: Edit → Track Changes → Record. Pages on Mac: Edit → Track Changes. Unit 8 explains reviewing in depth: {{track-changes-comments}}."
      ],
@@ -1211,7 +1211,7 @@ ICA.addUnit({
       "Ownership determines lifecycle. In consumer services a file’s survival is tied to one person’s account: their storage quota, their account security, their decision to delete. Groups that depend on files (charities, clubs, families) should hold them in a group-controlled location, with at least two people able to administer it and the credentials kept in a password manager with two-step verification.",
       "Version history is not a backup: it lives in the same account and service as the file, and retention is limited. It also preserves deleted content: earlier drafts, removed names or figures remain visible to anyone with edit access. Before sharing externally, share a fresh copy or a PDF.",
       "Concurrency: cloud editors merge simultaneous edits in near real time, but files synced to a desktop folder and opened in desktop apps can produce conflict copies when two people edit offline. Office desktop apps support co-authoring on OneDrive or SharePoint files; LibreOffice does not co-author files stored this way, so agree on locking or turn-taking.",
-      "Governance in organisations: apply least privilege, review external sharing regularly, prefer named-person sharing over anyone-links for personal data, and include “transfer files and links” in every leaver checklist.",
+      "Governance in organizations: apply least privilege, review external sharing regularly, prefer named-person sharing over anyone-links for personal data, and include “transfer files and links” in every leaver checklist.",
       {tip:"When a project ends, tidy up: remove people who no longer need access, set links back to restricted, and move the final version to its long-term home."}
      ]
     },
@@ -1229,16 +1229,16 @@ ICA.addUnit({
       {key:"Put work talk in the right channel, reply in threads, and mention only the people who need to act."}
      ],
      builder:[
-      {table:[["Concept","Teams","Slack","Google Chat"],["Group","Team","Workspace","(organisation)"],["Topic room","Channel","Channel","Space"],["Private conversation","Chat","Direct message","Direct message"],["Notify everyone","@team, @channel","@channel, @here, @everyone","@all"]]},
+      {table:[["Concept","Teams","Slack","Google Chat"],["Group","Team","Workspace","(organization)"],["Topic room","Channel","Channel","Space"],["Private conversation","Chat","Direct message","Direct message"],["Notify everyone","@team, @channel","@channel, @here, @everyone","@all"]]},
       "**Status:** Teams offers Available, Busy, Do not disturb, Be right back, Appear away and Appear offline, with a **Duration** option; it sets some statuses automatically (Busy in a call, Do not disturb while presenting). Google Chat offers Automatic, Do not disturb and Set as away. Slack lets you set a status message and **pause notifications** or set a **notification schedule**.",
       "**Free plans:** Slack’s free workspaces show only the last 90 days of messages and files (OpenStax’s 2023 description of a 10,000-message limit is out of date), and items older than a year are deleted. Don’t keep decisions only in chat.",
       "**Using threads and mentions well:** reply in the thread under the message you’re answering; mention one person when you need them to see or do something, and say what (“@Priya can you confirm the room by Thursday?”); keep broadcast mentions for news everyone needs soon. Use emoji reactions (👍, ✅) to acknowledge without adding a message.",
       "**Channels or direct messages?** Put work conversations in the relevant channel so others can find and learn from them; keep direct messages for personal or sensitive matters."
      ],
      pro:[
-      "Chat in organisational accounts is a business record. Administrators can typically retain, search and export messages for legal or compliance reasons, and OpenStax reminds readers that communication on company equipment may be recorded and accessed by the organisation. Treat channels as semi-public: no passwords, health information or performance issues.",
+      "Chat in organizational accounts is a business record. Administrators can typically retain, search and export messages for legal or compliance reasons, and OpenStax reminds readers that communication on company equipment may be recorded and accessed by the organization. Treat channels as semi-public: no passwords, health information or performance issues.",
       "Information architecture matters as teams grow: name channels consistently (`#proj-garden`, `#team-volunteers`, `#announce-…`), make announcement channels post-only for most members, archive dead channels, and pin key links (the team agreement, the rota). Default to public channels over private ones so knowledge stays discoverable, except where confidentiality requires otherwise.",
-      "Mentions are the main interrupt mechanism. Broadcast mentions in large channels cost many people’s attention; many organisations restrict who may use them. Encourage emoji reactions as lightweight acknowledgement instead of “thanks” replies.",
+      "Mentions are the main interrupt mechanism. Broadcast mentions in large channels cost many people’s attention; many organizations restrict who may use them. Encourage emoji reactions as lightweight acknowledgment instead of “thanks” replies.",
       "Consumer messengers for groups carry different privacy trade-offs: phone-number visibility, cloud backups of chats outside end-to-end encryption in some configurations, and admin powers. Signal hides your number by default from people who don’t already have it saved, and offers optional usernames for making contact. Before creating a group on a consumer messenger, ask whether members are comfortable sharing their numbers with each other.",
       {tip:"When a chat discussion reaches a decision, write it in the shared document or plan, and post a link back in the thread."}
      ]
@@ -1267,8 +1267,8 @@ ICA.addUnit({
       "When a chat conversation goes round in circles, move it: a short call for the disagreement, then a line in the shared document recording the decision."
      ],
      pro:[
-      "Synchronous tools (calls, meetings, instant chat) favour people in the same time zone and with uninterrupted schedules. Asynchronous defaults widen participation: across zones, for carers and part-time staff, and for people who process information better in writing or in a second language. The cost is latency, which good message design minimises.",
-      "Status indicators are weak signals. Presence based on activity (keyboard, calendar) can mislead in both directions, and treating a green dot as availability on demand undermines focus time. Some organisations and jurisdictions have adopted “right to disconnect” policies or laws limiting expectations of out-of-hours contact; check what applies to your workplace.",
+      "Synchronous tools (calls, meetings, instant chat) favor people in the same time zone and with uninterrupted schedules. Asynchronous defaults widen participation: across zones, for carers and part-time staff, and for people who process information better in writing or in a second language. The cost is latency, which good message design minimizes.",
+      "Status indicators are weak signals. Presence based on activity (keyboard, calendar) can mislead in both directions, and treating a green dot as availability on demand undermines focus time. Some organizations and jurisdictions have adopted “right to disconnect” policies or laws limiting expectations of out-of-hours contact; check what applies to your workplace.",
       "Decision records prevent re-litigation: record decisions with date, owner and rationale in a durable place (a decisions log in the shared drive), and link to it from chat. Free chat plans with limited history make this essential.",
       "Measure what matters: if people regularly miss information, ask where they expected to find it, and move it there, rather than adding more notifications.",
       "Inclusive norms: write in plain language, avoid culture-specific idioms, rotate meeting times across zones, caption calls, and share agendas and materials in advance so people can prepare in their own time.",
@@ -1291,7 +1291,7 @@ ICA.addUnit({
    {id:"mailing-list", term:"Mailing list", def:"A service or group address that sends one message to many subscribers, each getting their own copy, often with an unsubscribe link. Safer than a long Bcc list for large or sensitive groups.", codex:"to-cc-bcc"},
    {id:"attachment", term:"Attachment", def:"A file sent inside an email. Every recipient gets their own separate copy, unlike a share link, which points everyone to one copy.", codex:"email-attachments-links"},
    {id:"archive", term:"Archive (email)", def:"Moving an email out of the inbox while keeping it, so it stays searchable. Safer than deleting for anything you might need again.", codex:"inbox-management"},
-   {id:"label-folder", term:"Label or folder", def:"Two ways to organise email. A folder holds an email in one place, like a drawer; a label is a tag, so one email can carry several (Gmail uses labels).", codex:"inbox-management"},
+   {id:"label-folder", term:"Label or folder", def:"Two ways to organize email. A folder holds an email in one place, like a drawer; a label is a tag, so one email can carry several (Gmail uses labels).", codex:"inbox-management"},
    {id:"spam", term:"Spam", def:"Unwanted bulk email you never asked for. Reporting it moves it to the Spam folder and helps your provider catch similar mail.", codex:"inbox-management"},
    {id:"unsubscribe", term:"Unsubscribe", def:"Asking a mailing list you joined to stop sending to you, using the app’s Unsubscribe button or the link in the email’s footer (only for senders you trust).", codex:"inbox-management"},
    {id:"email-filter", term:"Email filter (rule)", def:"An if-then instruction your email app follows automatically for new mail, such as “if it’s from this newsletter, label it and skip the inbox”. Outlook and Apple Mail call them rules.", codex:"email-rules-filters"},
@@ -1309,12 +1309,12 @@ ICA.addUnit({
    {id:"screen-share", term:"Screen sharing", def:"Showing your screen, or one window, to others in a call. Sharing a single window keeps notifications and other files private.", codex:"video-meetings"},
    {id:"recording-consent", term:"Recording consent", def:"Agreement from the people in a call before it is recorded or transcribed. Laws and workplace policies on recording differ between places.", codex:"video-meetings"},
    {id:"file-owner", term:"File owner", def:"The account a cloud file belongs to, usually whoever created it. The owner controls access and can delete it; if their account is deleted, the file may go too.", codex:"shared-file-workflow"},
-   {id:"shared-drive", term:"Shared drive", def:"A storage space that belongs to an organisation or team rather than one person (Google’s shared drives; in Microsoft 365, team and SharePoint sites). Files stay when people leave.", codex:"shared-file-workflow"},
+   {id:"shared-drive", term:"Shared drive", def:"A storage space that belongs to an organization or team rather than one person (Google’s shared drives; in Microsoft 365, team and SharePoint sites). Files stay when people leave.", codex:"shared-file-workflow"},
    {id:"chat-channel", term:"Channel", def:"A shared chat room for one topic, project or group, with a history that members can read back. Google Chat calls them spaces.", codex:"chat-tools"},
    {id:"direct-message", term:"Direct message", def:"A private chat with one person or a small group, outside the shared channels. Called a DM in Slack and a chat in Teams.", codex:"chat-tools"},
    {id:"thread", term:"Thread", def:"A set of replies attached to one message, kept together so separate conversations in a channel don’t get tangled.", codex:"chat-tools"},
    {id:"mention", term:"@mention", def:"Typing @ and a name to notify that person in a chat, comment or document. Mentions for everyone (such as @channel) interrupt every member.", codex:"chat-tools"},
-   {id:"availability-status", term:"Availability status", def:"A label or coloured dot in chat tools, such as Available, Busy, Away or Do not disturb, that hints whether someone is likely to reply soon.", codex:"chat-tools"},
+   {id:"availability-status", term:"Availability status", def:"A label or colored dot in chat tools, such as Available, Busy, Away or Do not disturb, that hints whether someone is likely to reply soon.", codex:"chat-tools"},
    {id:"do-not-disturb", term:"Do not disturb", def:"A setting that silences notifications while you focus, present or rest. Messages still arrive; you see them when you’re ready.", codex:"collaboration-norms"},
    {id:"async-communication", term:"Asynchronous communication", def:"Communication where people read and reply when they can, not at the same moment, like email, chat threads and document comments. Normal across time zones.", codex:"collaboration-norms"}
   ],
@@ -1335,7 +1335,7 @@ ICA.addUnit({
    {id:"t1u11-q03", lesson:"t1u11-l1", level:1, q:"What does Undo Send actually do?", options:[
      {t:"Holds the email for a few seconds so you can cancel it", ok:true, why:"It’s a short delay after you press Send. Once the time is up, the email has gone and can’t be called back."},
      {t:"Deletes an email from the recipient’s inbox at any time", why:"No standard email feature can remove a delivered email from someone else’s inbox."},
-     {t:"Recalls an email that has been opened", why:"Even Outlook’s recall (work accounts in one organisation only) fails once the email has been opened."},
+     {t:"Recalls an email that has been opened", why:"Even Outlook’s recall (work accounts in one organization only) fails once the email has been opened."},
      {t:"Saves the email as a draft automatically", why:"Drafts are saved separately; Undo Send is about the moments after pressing Send."}
    ]},
    {id:"t1u11-q04", lesson:"t1u11-l1", level:2, q:"Which date is clearest in an email to people in several countries?", options:[
@@ -1362,9 +1362,9 @@ ICA.addUnit({
      {t:"Attach a PDF", why:"A PDF is good for final versions but awkward to edit and comment on together."},
      {t:"Paste the whole draft into the email body", why:"Each reply becomes another separate version, with the same merging problem."}
    ]},
-   {id:"t1u11-q08", lesson:"t1u11-l1", level:3, q:"Tomás is writing for the first time to a contact at a partner organisation abroad. He isn’t sure how formal to be. What should he do?", options:[
+   {id:"t1u11-q08", lesson:"t1u11-l1", level:3, q:"Tomás is writing for the first time to a contact at a partner organization abroad. He isn’t sure how formal to be. What should he do?", options:[
      {t:"Start a little formally, then match their style once they reply", ok:true, why:"Being polite, using the name as they sign it and writing plainly respects the reader without relying on stereotypes; matching their style adjusts to the real person."},
-     {t:"Use the writing style he’s read is typical for people in that country", why:"National generalisations are unreliable; workplaces and people vary widely. Mirroring the actual reader is safer."},
+     {t:"Use the writing style he’s read is typical for people in that country", why:"National generalizations are unreliable; workplaces and people vary widely. Mirroring the actual reader is safer."},
      {t:"Be very informal so they feel relaxed", why:"Very informal first contacts, jokes and emoji can read as unprofessional, and may not translate."},
      {t:"Avoid greetings entirely to save time", why:"A short greeting is expected almost everywhere and helps the tone."}
    ]},
@@ -1452,7 +1452,7 @@ ICA.addUnit({
      {t:"14:00, because US and UK clocks change on different dates", ok:true, why:"US clocks went forward on 8 March but UK clocks don’t change until 29 March. For those weeks New York is UTC−4 and London still UTC+0, so the gap is 4 hours."},
      {t:"15:00, because the time difference never changes", why:"The two countries change clocks on different Sundays, so the gap changes for a few weeks."},
      {t:"16:00, because daylight saving adds an extra hour for everyone", why:"Only places that observe it change, and here the US change narrows the gap."},
-     {t:"10:00, because calendars show the organiser’s time", why:"Calendars show each person’s local time, so Ana sees London time."}
+     {t:"10:00, because calendars show the organizer’s time", why:"Calendars show each person’s local time, so Ana sees London time."}
    ]},
    {id:"t1u11-q23", lesson:"t1u11-l3", level:2, q:"Why is “3 pm CST” a risky way to write a meeting time?", options:[
      {t:"CST can mean more than one time zone", ok:true, why:"For example, US Central Standard Time or China Standard Time. Abbreviations aren’t unique. A city name, UTC, or a calendar invitation avoids the confusion."},
@@ -1504,7 +1504,7 @@ ICA.addUnit({
      {t:"Set the link to “anyone with the link can edit”", why:"That widens access dangerously and doesn’t change who owns the file."}
    ]},
    {id:"t1u11-q31", lesson:"t1u11-l4", level:1, q:"In Google Docs, what is Suggesting mode for?", options:[
-     {t:"Proposing edits for the owner to accept or reject", ok:true, why:"Suggested edits show in colour until they are accepted or rejected, so the author sees exactly what changed and decides."},
+     {t:"Proposing edits for the owner to accept or reject", ok:true, why:"Suggested edits show in color until they are accepted or rejected, so the author sees exactly what changed and decides."},
      {t:"Letting Google suggest words as you type", why:"That’s a different feature; Suggesting mode is about tracking your proposed edits."},
      {t:"Suggesting new people that you could share the file with", why:"Sharing is managed in the Share dialog, not Suggesting mode."},
      {t:"Locking the document so nobody else can edit", why:"Suggesting mode doesn’t lock anything; others can keep working."}
@@ -1562,7 +1562,7 @@ ICA.addUnit({
      {t:"The decisions from this month’s planning meeting", ok:true, why:"Decisions need to be found later; chat scrolls away and free plans may hide old messages."},
      {t:"“Running 5 minutes late”", why:"A quick update like this suits chat."},
      {t:"“Is the hall open yet?”", why:"A quick question for someone on site suits chat."},
-     {t:"A 👍 reaction to say you’ve seen a message", why:"Reactions are a chat feature, perfect for acknowledgement."}
+     {t:"A 👍 reaction to say you’ve seen a message", why:"Reactions are a chat feature, perfect for acknowledgment."}
    ]},
    {id:"t1u11-q41", lesson:"t1u11-l5", level:2, q:"What does setting your status to Do not disturb do?", options:[
      {t:"Silences notifications; messages still arrive", ok:true, why:"You see the messages later. It protects focus or rest without blocking people from writing."},
@@ -1583,12 +1583,12 @@ ICA.addUnit({
      {t:"Ask members to leave the channel at night and rejoin each morning", why:"Clumsy and easy to forget; notification schedules do the same job automatically."}
    ]},
    {id:"t1u11-q44", lesson:"t1u11-l5", level:2, q:"Why should work chat be written as if others might read it later?", options:[
-     {t:"Work messages are records that can be searched or exported", ok:true, why:"In work and school accounts, organisations can usually access and export messages, and anyone in a channel can screenshot them."},
+     {t:"Work messages are records that can be searched or exported", ok:true, why:"In work and school accounts, organizations can usually access and export messages, and anyone in a channel can screenshot them."},
      {t:"Chat messages are often printed out and posted on noticeboards", why:"Not usually; the point is that they’re stored and shareable."},
      {t:"Chat messages disappear after a minute", why:"Most work chat is stored, often for a long time."},
      {t:"Only managers can read chat", why:"Everyone in a channel can read it, and administrators may have access to more."}
    ]},
-   {id:"t1u11-q45", lesson:"t1u11-l5", level:1, q:"Which tool is usually best for a formal message to someone outside your organisation?", options:[
+   {id:"t1u11-q45", lesson:"t1u11-l5", level:1, q:"Which tool is usually best for a formal message to someone outside your organization?", options:[
      {t:"Email", ok:true, why:"Email suits formal and external communication and leaves a clear record."},
      {t:"Your team’s internal chat channel", why:"Outsiders usually aren’t in your chat workspace, and chat is informal."},
      {t:"A comment in a private document", why:"They may not have access, and a comment isn’t a message."},

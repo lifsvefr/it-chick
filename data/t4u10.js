@@ -7,7 +7,7 @@ ICA.addUnit({
     "Outline, draft, reverse-outline and revise a text, and ask for and use feedback well",
     "Plan a research talk and a poster that support your message, fit the time and space, and work for everyone in the audience",
     "Choose a trustworthy journal, submit a manuscript, understand peer review and respond to reviewers, and share work through preprints, open access and an ORCID iD",
-    "Compare how graduate study is organised in different systems, from taught and research master’s to different doctoral models, examinations, funding and support"
+    "Compare how graduate study is organized in different systems, from taught and research master’s to different doctoral models, examinations, funding and support"
   ],
   read:[
     {book:"owg", where:"Section 10.3 “Glance at Genre: Thesis, Reasoning, and Evidence” and Section 10.6 “Editing Focus: Paragraphs and Transitions”", note:"Thesis statements, reasoning, evidence, paragraphs and transitions."},
@@ -47,7 +47,7 @@ ICA.addUnit({
         "**Analysis**: what the evidence means and how it supports the point. This is the part writers most often skip.",
         "**Link**: a sentence connecting the point back to the thesis or forward to the next paragraph."
       ]},
-      {fig:'<svg viewBox="0 0 340 330"><rect class="d-rose" x="20" y="10" width="300" height="52" rx="8" stroke-width="2"/><text x="170" y="32" text-anchor="middle">Thesis: the main claim</text><text class="s" x="170" y="50" text-anchor="middle">stated early; every paragraph serves it</text><path class="d-ink" d="M170,62 L60,92 M170,62 L170,92 M170,62 L280,92" stroke-width="2" fill="none"/><rect class="d-lup" x="12" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="60" y="112" text-anchor="middle">Topic</text><text x="60" y="129" text-anchor="middle">sentence</text><rect class="d-lup" x="122" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="170" y="112" text-anchor="middle">Topic</text><text x="170" y="129" text-anchor="middle">sentence</text><rect class="d-lup" x="232" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="280" y="112" text-anchor="middle">Topic</text><text x="280" y="129" text-anchor="middle">sentence</text><rect class="d-sage" x="12" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="60" y="179" text-anchor="middle">Evidence</text><rect class="d-sage" x="122" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="170" y="179" text-anchor="middle">Evidence</text><rect class="d-sage" x="232" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="280" y="179" text-anchor="middle">Evidence</text><rect class="d-gold" x="12" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="60" y="235" text-anchor="middle">So what?</text><rect class="d-gold" x="122" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="170" y="235" text-anchor="middle">So what?</text><rect class="d-gold" x="232" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="280" y="235" text-anchor="middle">So what?</text><text class="s" x="60" y="274" text-anchor="middle">Paragraph 1</text><text class="s" x="170" y="274" text-anchor="middle">Paragraph 2</text><text class="s" x="280" y="274" text-anchor="middle">Paragraph 3</text><text class="s" x="170" y="302" text-anchor="middle">Each paragraph makes one point, backs it</text><text class="s" x="170" y="320" text-anchor="middle">with evidence and explains why it matters.</text></svg>', alt:"A box at the top labelled Thesis: the main claim, stated early; every paragraph serves it. Lines lead down to three columns labelled Paragraph 1, 2 and 3. Each column has three stacked boxes: Topic sentence, Evidence, and So what?. Caption: each paragraph makes one point, backs it with evidence and explains why it matters.", cap:"An argument as a tree: one thesis, and paragraphs that each support it."},
+      {fig:'<svg viewBox="0 0 340 330"><rect class="d-rose" x="20" y="10" width="300" height="52" rx="8" stroke-width="2"/><text x="170" y="32" text-anchor="middle">Thesis: the main claim</text><text class="s" x="170" y="50" text-anchor="middle">stated early; every paragraph serves it</text><path class="d-ink" d="M170,62 L60,92 M170,62 L170,92 M170,62 L280,92" stroke-width="2" fill="none"/><rect class="d-lup" x="12" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="60" y="112" text-anchor="middle">Topic</text><text x="60" y="129" text-anchor="middle">sentence</text><rect class="d-lup" x="122" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="170" y="112" text-anchor="middle">Topic</text><text x="170" y="129" text-anchor="middle">sentence</text><rect class="d-lup" x="232" y="92" width="96" height="48" rx="6" stroke-width="2"/><text x="280" y="112" text-anchor="middle">Topic</text><text x="280" y="129" text-anchor="middle">sentence</text><rect class="d-sage" x="12" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="60" y="179" text-anchor="middle">Evidence</text><rect class="d-sage" x="122" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="170" y="179" text-anchor="middle">Evidence</text><rect class="d-sage" x="232" y="152" width="96" height="44" rx="6" stroke-width="2"/><text x="280" y="179" text-anchor="middle">Evidence</text><rect class="d-gold" x="12" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="60" y="235" text-anchor="middle">So what?</text><rect class="d-gold" x="122" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="170" y="235" text-anchor="middle">So what?</text><rect class="d-gold" x="232" y="208" width="96" height="44" rx="6" stroke-width="2"/><text x="280" y="235" text-anchor="middle">So what?</text><text class="s" x="60" y="274" text-anchor="middle">Paragraph 1</text><text class="s" x="170" y="274" text-anchor="middle">Paragraph 2</text><text class="s" x="280" y="274" text-anchor="middle">Paragraph 3</text><text class="s" x="170" y="302" text-anchor="middle">Each paragraph makes one point, backs it</text><text class="s" x="170" y="320" text-anchor="middle">with evidence and explains why it matters.</text></svg>', alt:"A box at the top labeled Thesis: the main claim, stated early; every paragraph serves it. Lines lead down to three columns labeled Paragraph 1, 2 and 3. Each column has three stacked boxes: Topic sentence, Evidence, and So what?. Caption: each paragraph makes one point, backs it with evidence and explains why it matters.", cap:"An argument as a tree: one thesis, and paragraphs that each support it."},
       {ex:"[Topic sentence] Shaded bus stops were noticeably cooler than unshaded ones in our measurements.\n[Evidence] Across 12 afternoons, the air under street trees averaged 3 °C below nearby open stops (Table 2).\n[Analysis] Because people often wait 10 minutes or more, that difference matters most for older riders and young children, who are more sensitive to heat.\n[Link] Shade, then, has a measurable benefit; the next question is whether trees or built shelters provide it more cheaply.", label:"Worked example: one paragraph, four moves (invented data)"},
       "The pattern is a tool, not a law. Some paragraphs open with a question, or build up to their point. But if you can’t say a paragraph’s point in one sentence, it is probably trying to do two jobs."
     ]},
@@ -70,9 +70,9 @@ ICA.addUnit({
       "The OpenStax *Writing Guide* (Section 10.6) treats paragraphs and transitions together for this reason: transitions are where your reasoning becomes visible."
     ]},
     {h:"Hedging: claims as strong as the evidence", body:[
-      "[[hedging|Hedging]] means using cautious language so a claim is no stronger than the evidence allows. The University of Manchester’s free *Academic Phrasebank* explains it as avoiding absolute certainty where there may be some uncertainty, and avoiding over-generalisation. It notes that hedges are especially common in discussion sections, where writers explain what their findings might mean.",
+      "[[hedging|Hedging]] means using cautious language so a claim is no stronger than the evidence allows. The University of Manchester’s free *Academic Phrasebank* explains it as avoiding absolute certainty where there may be some uncertainty, and avoiding over-generalization. It notes that hedges are especially common in discussion sections, where writers explain what their findings might mean.",
       "Hedging tools include **modal verbs** (may, might, could), **adverbs** (probably, possibly, often, generally), **quantifiers** (many, most, some) and **tentative phrases** (“there is some evidence to suggest that…”, “one possible explanation is…”).",
-      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">Stronger claim (needs stronger evidence)</text><rect class="d-rose" x="10" y="30" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="50">X proves Y</text><text class="s" x="20" y="68">rarely justified outside maths and logic</text><rect class="d-gold" x="10" y="86" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="106">X shows / demonstrates Y</text><text class="s" x="20" y="124">strong, consistent, well-designed evidence</text><rect class="d-sage" x="10" y="142" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="162">X suggests / indicates Y</text><text class="s" x="20" y="180">good evidence with some limits</text><rect class="d-lup" x="10" y="198" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="218">X may contribute to Y</text><text class="s" x="20" y="236">early, small or indirect evidence</text><rect class="d-panel" x="10" y="254" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="274">One possible explanation is…</text><text class="s" x="20" y="292">a reasoned guess, clearly flagged</text><text x="170" y="322" text-anchor="middle">Weaker claim (fits weaker evidence)</text></svg>', alt:"A vertical scale of five claim strengths from strongest at the top to weakest at the bottom: X proves Y, rarely justified outside maths and logic; X shows or demonstrates Y, strong consistent well-designed evidence; X suggests or indicates Y, good evidence with some limits; X may contribute to Y, early, small or indirect evidence; One possible explanation is, a reasoned guess clearly flagged.", cap:"Choose the verb that matches your evidence. These pairings are guides, not fixed rules."},
+      {fig:'<svg viewBox="0 0 340 330"><text x="170" y="18" text-anchor="middle">Stronger claim (needs stronger evidence)</text><rect class="d-rose" x="10" y="30" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="50">X proves Y</text><text class="s" x="20" y="68">rarely justified outside math and logic</text><rect class="d-gold" x="10" y="86" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="106">X shows / demonstrates Y</text><text class="s" x="20" y="124">strong, consistent, well-designed evidence</text><rect class="d-sage" x="10" y="142" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="162">X suggests / indicates Y</text><text class="s" x="20" y="180">good evidence with some limits</text><rect class="d-lup" x="10" y="198" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="218">X may contribute to Y</text><text class="s" x="20" y="236">early, small or indirect evidence</text><rect class="d-panel" x="10" y="254" width="320" height="46" rx="6" stroke-width="2"/><text x="20" y="274">One possible explanation is…</text><text class="s" x="20" y="292">a reasoned guess, clearly flagged</text><text x="170" y="322" text-anchor="middle">Weaker claim (fits weaker evidence)</text></svg>', alt:"A vertical scale of five claim strengths from strongest at the top to weakest at the bottom: X proves Y, rarely justified outside math and logic; X shows or demonstrates Y, strong consistent well-designed evidence; X suggests or indicates Y, good evidence with some limits; X may contribute to Y, early, small or indirect evidence; One possible explanation is, a reasoned guess clearly flagged.", cap:"Choose the verb that matches your evidence. These pairings are guides, not fixed rules."},
       {table:[
         ["Before","After"],
         ["This study proves that the app improves reading.","In this study, children who used the app made larger reading gains than the comparison group, which suggests it may help."],
@@ -105,9 +105,9 @@ ICA.addUnit({
       "A great deal of research is written by people using a second or third language, most often English. Writing well in an additional language is a skill you build, not a test you pass or fail. Many scholars also publish in Spanish, Portuguese, French, Chinese and other languages, and research written in those languages is real scholarship too.",
       "Useful, free help:",
       {list:[
-        "The **[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/)** from the University of Manchester, created by John Morley. It organises phrases by section of a paper (introducing work, referring to sources, describing methods, reporting results, discussing findings, writing conclusions) and by job (being cautious, being critical, comparing, defining, giving examples, signalling transition). Its homepage says it was designed primarily for writers whose first language is not English, but that native speakers use it too.",
+        "The **[Academic Phrasebank](https://www.phrasebank.manchester.ac.uk/)** from the University of Manchester, created by John Morley. It organizes phrases by section of a paper (introducing work, referring to sources, describing methods, reporting results, discussing findings, writing conclusions) and by job (being cautious, being critical, comparing, defining, giving examples, signaling transition). Its homepage says it was designed primarily for writers whose first language is not English, but that native speakers use it too.",
         "**Reading in your field** with a notebook: collect the phrases good papers use to introduce a gap, report a result or admit a limitation.",
-        "**Writing centres and language support** at universities, and peer writing groups, which give feedback a tool can’t.",
+        "**Writing centers and language support** at universities, and peer writing groups, which give feedback a tool can’t.",
         "**Grammar and spelling checkers** built into word processors, and standalone tools (some free, some paid). They catch surface errors, not weak arguments."
       ]},
       {tip:"The Phrasebank itself says that reusing its general phrases is not stealing other people’s ideas and is not plagiarism. Copying a sentence that carries someone else’s **content** (their finding, idea or wording of an argument) is, unless you quote and cite it."},
@@ -136,21 +136,21 @@ ICA.addUnit({
       ["Taken together,","Summing up","It signals a summary of several points."]
     ]},
     {id:"t4u10-l1-x4", type:"spot", q:"Ana is checking her draft abstract for **overclaiming**. Tap every phrase that claims more than the study could show.", ask:"overclaims", parts:[
-      "We surveyed ",{t:"112 first-year students at one university", flag:false, why:"This is a plain description of the sample. Being specific is good practice, not an overclaim."}," about study habits. Students who used spaced practice ",{t:"reported higher exam confidence", flag:false, why:"This accurately describes what a survey measures: what students reported."},". This ",{t:"proves", flag:true, why:"A one-off survey at one university can show an association, not proof. “Suggests” or “is consistent with” fits the evidence."}," that spaced practice ",{t:"causes better grades in all students", flag:true, why:"Two overclaims: a survey of confidence can’t show cause, and it didn’t measure grades at all. “All students” also generalises far beyond one university."},". ",{t:"These findings may not apply to other institutions", flag:false, why:"This is an honest limitation: an appropriate hedge."},", and ",{t:"universities must immediately redesign every course", flag:true, why:"A sweeping recommendation that the data can’t support. A cautious version: “universities could consider testing spaced practice in their own courses.”"},"."
+      "We surveyed ",{t:"112 first-year students at one university", flag:false, why:"This is a plain description of the sample. Being specific is good practice, not an overclaim."}," about study habits. Students who used spaced practice ",{t:"reported higher exam confidence", flag:false, why:"This accurately describes what a survey measures: what students reported."},". This ",{t:"proves", flag:true, why:"A one-off survey at one university can show an association, not proof. “Suggests” or “is consistent with” fits the evidence."}," that spaced practice ",{t:"causes better grades in all students", flag:true, why:"Two overclaims: a survey of confidence can’t show cause, and it didn’t measure grades at all. “All students” also generalizes far beyond one university."},". ",{t:"These findings may not apply to other institutions", flag:false, why:"This is an honest limitation: an appropriate hedge."},", and ",{t:"universities must immediately redesign every course", flag:true, why:"A sweeping recommendation that the data can’t support. A cautious version: “universities could consider testing spaced practice in their own courses.”"},"."
     ]},
     {id:"t4u10-l1-x5", type:"sort", q:"Sort each sentence: is the strength of the claim about right, overclaimed or over-hedged?", buckets:["About right","Overclaimed","Over-hedged"], items:[
       {t:"In our sample, tutoring was associated with higher attendance.", b:0, why:"It reports what was found, in the sample where it was found, without claiming cause."},
       {t:"Tutoring eliminates absenteeism.", b:1, why:"“Eliminates” is absolute, and no single study could show that for everyone."},
       {t:"It could perhaps possibly be the case that tutoring might help.", b:2, why:"Four hedges in one sentence. One well-placed hedge (“tutoring may help”) says the same thing more clearly."},
-      {t:"These results suggest that tutoring may improve attendance, although the study was not randomised.", b:0, why:"A reasonable hedge plus an honest limitation: the strength matches the design."},
-      {t:"Everyone agrees that tutoring is the best intervention.", b:1, why:"“Everyone agrees” and “the best” are over-generalisations that need evidence most papers can’t provide."},
+      {t:"These results suggest that tutoring may improve attendance, although the study was not randomized.", b:0, why:"A reasonable hedge plus an honest limitation: the strength matches the design."},
+      {t:"Everyone agrees that tutoring is the best intervention.", b:1, why:"“Everyone agrees” and “the best” are over-generalizations that need evidence most papers can’t provide."},
       {t:"Attendance was maybe somewhat slightly higher, possibly.", b:2, why:"If the data show a difference, report it with its size; piling up vague words hides the finding."}
     ]},
     {id:"t4u10-l1-x6", type:"mcq", q:"Which rewrite of this sentence is the most concise **without losing meaning**? “It is important to note that, due to the fact that the survey was conducted online, a total of 12 older residents did not take part in the study.”", options:[
       {t:"Because the survey was online, 12 older residents did not take part.", ok:true, why:"It removes the empty opener (“It is important to note that”), replaces “due to the fact that” with “because”, and drops “a total of”, while keeping every piece of meaning."},
       {t:"The survey was online.", why:"This is shorter but loses the important point: 12 older residents were left out because of it. Concision keeps the meaning."},
       {t:"Notably, owing to the online nature of the survey methodology, 12 older residents did not participate.", why:"This swaps one set of wordy phrases for another (“owing to the online nature of the survey methodology”)."},
-      {t:"Older people don’t use the internet, so they didn’t take part.", why:"This adds an over-generalised claim about all older people that the data don’t support, and uses an informal register."}
+      {t:"Older people don’t use the internet, so they didn’t take part.", why:"This adds an over-generalized claim about all older people that the data don’t support, and uses an informal register."}
     ]},
     {id:"t4u10-l1-x7", type:"mcq", q:"Lucía, writing in her second language, copies the phrase “There is some evidence to suggest that…” from the Academic Phrasebank into her discussion section. Is that plagiarism?", options:[
       {t:"No. It is a general phrase that carries no one’s ideas.", ok:true, why:"The Phrasebank says reusing such phrases is not plagiarism. Plagiarism is presenting someone else’s ideas or words as your own. Stock academic phrases are shared tools of the language, which is exactly why the Phrasebank collects them."},
@@ -158,14 +158,14 @@ ICA.addUnit({
       {t:"Yes, unless she changes every word to avoid matching software.", why:"Similarity software would flag lots of common phrases in every paper. Tutors and editors look at whether ideas and content are copied, not whether stock phrases appear."},
       {t:"Only if her paper is in English; other languages have different rules.", why:"The principle (credit others’ ideas and words; shared stock phrases are fine) applies in any language."}
     ]},
-    {id:"t4u10-l1-x8", type:"explain", q:"A student writes: “This study proves that the reading app improves children’s reading.” Explain why you would hedge this claim, how you would rewrite it, and how you would avoid over-hedging.", size:"3–4 sentences", hint:"Match the strength of the words to the strength of the evidence.", model:"“Proves” is almost never justified outside maths and logic, and one study can’t show that an app improves reading everywhere, so the claim is stronger than the evidence. I’d say what was found and then hedge once: “In this study, children who used the app made larger reading gains than the comparison group, which suggests it may help.” But I wouldn’t stack hedges like “might possibly perhaps”, because that makes solid findings sound unsure. Hedging is precision about how sure you are.", points:["Says “proves” overstates what one study can show", "Rewrites with a suitable hedge (suggests, may, indicates)", "States the actual finding plainly in the rewrite", "Warns against over-hedging"]}
+    {id:"t4u10-l1-x8", type:"explain", q:"A student writes: “This study proves that the reading app improves children’s reading.” Explain why you would hedge this claim, how you would rewrite it, and how you would avoid over-hedging.", size:"3–4 sentences", hint:"Match the strength of the words to the strength of the evidence.", model:"“Proves” is almost never justified outside math and logic, and one study can’t show that an app improves reading everywhere, so the claim is stronger than the evidence. I’d say what was found and then hedge once: “In this study, children who used the app made larger reading gains than the comparison group, which suggests it may help.” But I wouldn’t stack hedges like “might possibly perhaps”, because that makes solid findings sound unsure. Hedging is precision about how sure you are.", points:["Says “proves” overstates what one study can show", "Rewrites with a suitable hedge (suggests, may, indicates)", "States the actual finding plainly in the rewrite", "Warns against over-hedging"]}
    ],
-   apply:{intro:"Practise on your own writing, or on a topic you care about. Everything here is free and works on a phone.", tasks:[
+   apply:{intro:"Practice on your own writing, or on a topic you care about. Everything here is free and works on a phone.", tasks:[
     {t:"Turn a topic into a thesis", how:["Choose a topic from your work, studies or community (for example: bus routes, school lunches, a local river, how your team handles handovers).","Write it as a topic (two or three words), then as an announcement (“This report will…”).","Now write an arguable thesis: a specific claim someone could question, which you could support with evidence.","Check it against three questions: is it specific? arguable? supportable with evidence you have or could get?"], write:"Topic… Announcement… My thesis… Specific? Arguable? Supportable?"},
     {t:"Label a paragraph’s moves", how:["Pick a paragraph you’ve written, or one from a free report or open-access article.","Label each sentence: topic sentence, evidence, analysis, link (or ‘other’).","If there’s no analysis sentence, write one that explains why the evidence matters.","If the paragraph makes two points, note where you would split it."], write:"The paragraph’s point in one sentence… Labels… The analysis sentence I added…"},
     {t:"Do a hedge audit", how:["Find a news article that reports a research study, then find the study’s abstract (often free even when the full paper isn’t).","List the verbs each uses for the main finding (proves, shows, finds, suggests, may…).","Compare: did the news story make the claim stronger than the study did?","Rewrite the news headline so its strength matches the abstract."], write:"News verb… Abstract verb… Was it stronger, weaker or the same?… My rewritten headline…"},
     {t:"Start your own phrase bank", how:["Open the Academic Phrasebank (phrasebank.manchester.ac.uk) in your browser.","Visit “Being cautious” and one section that matches what you write most (for example “Reporting results” or “Referring to sources”).","Copy five phrases you would really use into your notes, under a heading for each job they do.","Add two phrases you noticed in papers from your own field."], write:"Being cautious: … Reporting results: … From my field: …"}
-   ], proof:"A thesis statement you could defend, one labelled paragraph, a hedge audit of a real news story, and a short personal phrase bank."},
+   ], proof:"A thesis statement you could defend, one labeled paragraph, a hedge audit of a real news story, and a short personal phrase bank."},
    read:[
      {book:"owg", where:"Section 10.3 “Glance at Genre: Thesis, Reasoning, and Evidence”"},
      {book:"owg", where:"Section 10.6 “Editing Focus: Paragraphs and Transitions”"},
@@ -174,7 +174,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t4u10-l2", title:"Drafting, feedback and revision", minutes:50,
-   hook:{q:"Writing guides say the biggest improvements to a paper usually come at which stage?", options:["Typing the first draft in one perfect pass","Choosing fonts and formatting","Revising: rethinking, reorganising and rewriting drafts","Proofreading for typos"], answer:2, reveal:"Writing guides such as the OpenStax *Writing Guide* put **revision** at the centre: rethinking the argument, moving and cutting sections and rewriting paragraphs, long before polishing sentences. (No one has a precise figure for how writers split their time, so treat this as a strong pattern, not a measured rule.) This lesson gives you tools for each stage: outlines, rough drafts, reverse outlines, feedback and three kinds of revision."},
+   hook:{q:"Writing guides say the biggest improvements to a paper usually come at which stage?", options:["Typing the first draft in one perfect pass","Choosing fonts and formatting","Revising: rethinking, reorganizing and rewriting drafts","Proofreading for typos"], answer:2, reveal:"Writing guides such as the OpenStax *Writing Guide* put **revision** at the center: rethinking the argument, moving and cutting sections and rewriting paragraphs, long before polishing sentences. (No one has a precise figure for how writers split their time, so treat this as a strong pattern, not a measured rule.) This lesson gives you tools for each stage: outlines, rough drafts, reverse outlines, feedback and three kinds of revision."},
    goals:[
      "Describe writing as a cycle of planning, drafting, feedback and revision rather than one perfect pass",
      "Build an outline from a thesis, and draft without stopping to polish",
@@ -185,7 +185,7 @@ ICA.addUnit({
     {h:"Writing is a cycle, not a performance", body:[
       {lead:"Almost no one writes a good paper from top to bottom in one go. Good writing comes from a cycle: plan, draft, look again, get feedback, rethink, and only then polish."},
       "The OpenStax *Writing Guide* calls writing **recursive**: you loop back to earlier stages as your thinking develops. Drafting often shows you what you really think, which can change your thesis, which changes your outline.",
-      {fig:'<svg viewBox="0 0 340 420"><defs><marker id="m4u10a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="30" y="10" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="35" text-anchor="middle">Plan and outline</text><rect class="d-sage" x="30" y="66" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="91" text-anchor="middle">Rough draft</text><rect class="d-gold" x="30" y="122" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="147" text-anchor="middle">Reverse outline</text><rect class="d-gold" x="30" y="178" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="203" text-anchor="middle">Feedback from others</text><rect class="d-rose" x="30" y="234" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="252" text-anchor="middle">Revise</text><text class="s" x="145" y="267" text-anchor="middle">argument, structure</text><rect class="d-panel" x="30" y="290" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="308" text-anchor="middle">Edit</text><text class="s" x="145" y="323" text-anchor="middle">paragraphs, sentences</text><rect class="d-panel" x="30" y="346" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="364" text-anchor="middle">Proofread</text><text class="s" x="145" y="379" text-anchor="middle">typos, references</text><path class="d-ink" d="M145,50 L145,64 M145,106 L145,120 M145,162 L145,176 M145,218 L145,232 M145,274 L145,288 M145,330 L145,344" stroke-width="2" fill="none"/><path class="d-ink" d="M260,254 L300,254 L300,86 L264,86" stroke-width="2" fill="none" marker-end="url(#m4u10a)"/><text class="s" x="304" y="160">loop</text><text class="s" x="304" y="176">back</text><text class="s" x="170" y="410" text-anchor="middle">Big changes first; polish last.</text></svg>', alt:"A vertical flow of seven boxes: Plan and outline, Rough draft, Reverse outline, Feedback from others, Revise (argument, structure), Edit (paragraphs, sentences), Proofread (typos, references). An arrow loops from Revise back up to Rough draft, labelled loop back. Caption: big changes first; polish last.", cap:"The writing cycle. Revision often sends you back to drafting, and that is normal."},
+      {fig:'<svg viewBox="0 0 340 420"><defs><marker id="m4u10a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="30" y="10" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="35" text-anchor="middle">Plan and outline</text><rect class="d-sage" x="30" y="66" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="91" text-anchor="middle">Rough draft</text><rect class="d-gold" x="30" y="122" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="147" text-anchor="middle">Reverse outline</text><rect class="d-gold" x="30" y="178" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="203" text-anchor="middle">Feedback from others</text><rect class="d-rose" x="30" y="234" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="252" text-anchor="middle">Revise</text><text class="s" x="145" y="267" text-anchor="middle">argument, structure</text><rect class="d-panel" x="30" y="290" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="308" text-anchor="middle">Edit</text><text class="s" x="145" y="323" text-anchor="middle">paragraphs, sentences</text><rect class="d-panel" x="30" y="346" width="230" height="40" rx="8" stroke-width="2"/><text x="145" y="364" text-anchor="middle">Proofread</text><text class="s" x="145" y="379" text-anchor="middle">typos, references</text><path class="d-ink" d="M145,50 L145,64 M145,106 L145,120 M145,162 L145,176 M145,218 L145,232 M145,274 L145,288 M145,330 L145,344" stroke-width="2" fill="none"/><path class="d-ink" d="M260,254 L300,254 L300,86 L264,86" stroke-width="2" fill="none" marker-end="url(#m4u10a)"/><text class="s" x="304" y="160">loop</text><text class="s" x="304" y="176">back</text><text class="s" x="170" y="410" text-anchor="middle">Big changes first; polish last.</text></svg>', alt:"A vertical flow of seven boxes: Plan and outline, Rough draft, Reverse outline, Feedback from others, Revise (argument, structure), Edit (paragraphs, sentences), Proofread (typos, references). An arrow loops from Revise back up to Rough draft, labeled loop back. Caption: big changes first; polish last.", cap:"The writing cycle. Revision often sends you back to drafting, and that is normal."},
       "Two rules follow from the cycle. **Separate drafting from polishing**, because fixing commas in a paragraph you later delete wastes time. And **make big changes before small ones**: argument and structure first, sentences next, typos last."
     ]},
     {h:"Outlining: plan the argument before the sentences", body:[
@@ -226,7 +226,7 @@ ICA.addUnit({
       {key:"A reverse outline turns a messy draft into a short list you can see all at once. Structural problems that hide across ten pages become obvious in ten lines."}
     ]},
     {h:"Asking for, and using, feedback", body:[
-      "Other readers see what you can’t, because you know what you meant. Useful readers include classmates or colleagues, a supervisor, a university writing centre, and someone **outside** your field, who will spot every undefined term.",
+      "Other readers see what you can’t, because you know what you meant. Useful readers include classmates or colleagues, a supervisor, a university writing center, and someone **outside** your field, who will spot every undefined term.",
       "**Ask for the feedback you need.** “Any thoughts?” gets vague answers. Specific questions get useful ones:",
       {list:[
         "“Can you find my main argument? Write it in one sentence.”",
@@ -234,11 +234,11 @@ ICA.addUnit({
         "“Which claim did you find least convincing?”",
         "“At this stage, please ignore typos; I’m checking structure.”"
       ]},
-      "Writing centres often sort comments into **global** concerns (argument, structure, evidence, audience) and **local** ones (sentences, grammar, spelling, formatting). Ask for global feedback on early drafts and local feedback on late ones.",
+      "Writing centers often sort comments into **global** concerns (argument, structure, evidence, audience) and **local** ones (sentences, grammar, spelling, formatting). Ask for global feedback on early drafts and local feedback on late ones.",
       "To collect feedback in a shared file, use [[comment|comments]] and [[track-changes]] or [[suggesting-mode]] (see {{track-changes-comments}}), so every change can be accepted or rejected.",
       {h:"Receiving feedback well"},
       {list:[
-        "**Read it all, then wait.** Criticism stings, even when it’s fair. A day’s distance helps you read it as information about the text, not a judgement of you.",
+        "**Read it all, then wait.** Criticism stings, even when it’s fair. A day’s distance helps you read it as information about the text, not a judgment of you.",
         "**Sort it**: things to do, things to consider, things you’ll decline (with a reason).",
         "**Look for patterns.** If two readers stumble at the same place, the problem is real even if their suggested fixes differ.",
         "**You’re still the author.** You don’t have to accept every suggestion, but you should understand why it was made."
@@ -249,7 +249,7 @@ ICA.addUnit({
       "These words are often used interchangeably, but they are different jobs, done best in this order:",
       {table:[
         ["Pass","Question","Examples"],
-        ["Revise","Is the argument right and well organised?","Sharpen the thesis; move, merge or cut sections; add missing evidence"],
+        ["Revise","Is the argument right and well organized?","Sharpen the thesis; move, merge or cut sections; add missing evidence"],
         ["Edit","Is each paragraph and sentence clear?","Topic sentences, transitions, hedging, concision, register"],
         ["Proofread","Is it correct?","Spelling, numbers, figure labels, every citation matches the reference list"]
       ]},
@@ -261,7 +261,7 @@ ICA.addUnit({
         "**Check one thing at a time**: one pass just for numbers, one just for citations.",
         "**Check references last**, against the sources themselves. Reference managers save time, but what they produce still needs checking (the citing unit of this track shows how)."
       ]},
-      {lab:"cl-apa-fix", t:"Practise: proofread a flawed APA reference"}
+      {lab:"cl-apa-fix", t:"Practice: proofread a flawed APA reference"}
     ]}
    ],
    try:[
@@ -280,10 +280,10 @@ ICA.addUnit({
       {t:"“Data” is used as singular and plural inconsistently.", b:1, why:"Word-level consistency: local."},
       {t:"The reference list uses two different date formats.", b:1, why:"Formatting of references: local, fixed during proofreading."}
     ]},
-    {id:"t4u10-l2-x3", type:"spot", q:"Here is Mei’s reverse outline of an essay whose thesis is “Free bus passes increased older residents’ attendance at community centres.” Tap the paragraphs that show a **problem**.", ask:"shows a problem", parts:[
+    {id:"t4u10-l2-x3", type:"spot", q:"Here is Mei’s reverse outline of an essay whose thesis is “Free bus passes increased older residents’ attendance at community centers.” Tap the paragraphs that show a **problem**.", ask:"shows a problem", parts:[
       {t:"¶1 Older residents can feel isolated without transport.", flag:false, why:"Background that sets up the thesis. Fine."},"\n",
-      {t:"¶2 Centre attendance by over-65s rose after passes began.", flag:false, why:"The main evidence for the thesis. Fine."},"\n",
-      {t:"¶3 Attendance rose; also, the centres’ heating was replaced.", flag:true, why:"Two points in one paragraph. And the heating change is a possible alternative explanation that deserves its own paragraph."},"\n",
+      {t:"¶2 Center attendance by over-65s rose after passes began.", flag:false, why:"The main evidence for the thesis. Fine."},"\n",
+      {t:"¶3 Attendance rose; also, the centers’ heating was replaced.", flag:true, why:"Two points in one paragraph. And the heating change is a possible alternative explanation that deserves its own paragraph."},"\n",
       {t:"¶4 The history of the city’s tram network.", flag:true, why:"Interesting, but it doesn’t support the thesis about bus passes and attendance. Cut or move it."},"\n",
       {t:"¶5 Attendance by over-65s rose after passes began (again).", flag:true, why:"This repeats ¶2. Merge the two."},"\n",
       {t:"¶6 Limits: one city, no comparison group.", flag:false, why:"An honest limitations paragraph strengthens an argument. Fine."}
@@ -327,7 +327,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t4u10-l3", title:"Presenting research: talks and posters", minutes:55,
-   hook:{q:"A conference gives Sione a “15-minute slot”. How long should his talk be?", options:["15 minutes: use every second","Noticeably less than 15 minutes, because the slot usually includes questions and changing speakers","About 20 minutes; chairs always allow extra time","It doesn’t matter, as long as the slides are good"], answer:1, reveal:"**Less than the slot.** At most conferences a slot includes questions and the changeover to the next speaker, and chairs keep sessions on time, often by stopping speakers who run over. The programme or the chair can tell you the split. This lesson covers planning research talks that fit their time, slides that support your message, posters and poster sessions, and making both work for everyone in the audience."},
+   hook:{q:"A conference gives Sione a “15-minute slot”. How long should his talk be?", options:["15 minutes: use every second","Noticeably less than 15 minutes, because the slot usually includes questions and changing speakers","About 20 minutes; chairs always allow extra time","It doesn’t matter, as long as the slides are good"], answer:1, reveal:"**Less than the slot.** At most conferences a slot includes questions and the changeover to the next speaker, and chairs keep sessions on time, often by stopping speakers who run over. The program or the chair can tell you the split. This lesson covers planning research talks that fit their time, slides that support your message, posters and poster sessions, and making both work for everyone in the audience."},
    goals:[
      "Plan a research talk around one message that fits its time slot, including questions",
      "Design slides where each headline makes a claim and the visual shows the evidence",
@@ -344,14 +344,14 @@ ICA.addUnit({
         ["Seminar or colloquium","Often 45–60 minutes, with a long discussion","A body of work, for a department or research group"],
         ["Lightning talk","A few minutes","A teaser that sends people to your poster or paper"],
         ["Three-minute thesis","3 minutes, one static slide","Explaining your research to non-specialists"],
-        ["Defence or progress talk","Set by your institution","Showing examiners or a committee what you did"]
+        ["Defense or progress talk","Set by your institution","Showing examiners or a committee what you did"]
       ]},
-      "Lengths vary a lot, so these are only common patterns: always check the programme. The three-minute format comes from the **Three Minute Thesis (3MT®)** competition, first held at the University of Queensland in 2008 and now run by many universities, which is excellent practice in explaining research plainly.",
+      "Lengths vary a lot, so these are only common patterns: always check the program. The three-minute format comes from the **Three Minute Thesis (3MT®)** competition, first held at the University of Queensland in 2008 and now run by many universities, which is excellent practice in explaining research plainly.",
       {tip:"Ask who will be in the room. A talk to your own sub-field can skip basics; a talk to a mixed department needs a slide on why the question matters and plain definitions of key terms."}
     ]},
     {h:"Fit the time you have", body:[
       "Running over is the most common, and most avoidable, problem in research talks. It takes time from other speakers and from your own questions, which are often the most useful part.",
-      {fig:'<svg viewBox="0 0 340 200"><text x="170" y="20" text-anchor="middle">Example: a 15-minute slot</text><rect class="d-sage" x="10" y="36" width="220" height="50" rx="4" stroke-width="2"/><text x="120" y="58" text-anchor="middle">Talk</text><text class="s" x="120" y="76" text-anchor="middle">10 min</text><rect class="d-gold" x="230" y="36" width="88" height="50" rx="4" stroke-width="2"/><text x="274" y="58" text-anchor="middle">Q&amp;A</text><text class="s" x="274" y="76" text-anchor="middle">4 min</text><rect class="d-rose" x="318" y="36" width="12" height="50" rx="2" stroke-width="2"/><path class="d-ink" d="M324,92 L324,112 L286,112" stroke-width="1.5" fill="none"/><text class="s" x="282" y="116" text-anchor="end">1 min changeover</text><text x="10" y="150">Rehearse to about 9 minutes:</text><text class="s" x="10" y="170">nerves, a slow laptop and a late start</text><text class="s" x="10" y="188">all eat into the time on the day.</text></svg>', alt:"A horizontal bar for an example 15-minute slot: a long section labelled Talk, 10 minutes; a shorter section labelled Q and A, 4 minutes; and a thin end section labelled 1 minute changeover. Below: rehearse to about 9 minutes, because nerves, a slow laptop and a late start all eat into the time on the day.", cap:"An invented example. Your programme or chair tells you the real split."},
+      {fig:'<svg viewBox="0 0 340 200"><text x="170" y="20" text-anchor="middle">Example: a 15-minute slot</text><rect class="d-sage" x="10" y="36" width="220" height="50" rx="4" stroke-width="2"/><text x="120" y="58" text-anchor="middle">Talk</text><text class="s" x="120" y="76" text-anchor="middle">10 min</text><rect class="d-gold" x="230" y="36" width="88" height="50" rx="4" stroke-width="2"/><text x="274" y="58" text-anchor="middle">Q&amp;A</text><text class="s" x="274" y="76" text-anchor="middle">4 min</text><rect class="d-rose" x="318" y="36" width="12" height="50" rx="2" stroke-width="2"/><path class="d-ink" d="M324,92 L324,112 L286,112" stroke-width="1.5" fill="none"/><text class="s" x="282" y="116" text-anchor="end">1 min changeover</text><text x="10" y="150">Rehearse to about 9 minutes:</text><text class="s" x="10" y="170">nerves, a slow laptop and a late start</text><text class="s" x="10" y="188">all eat into the time on the day.</text></svg>', alt:"A horizontal bar for an example 15-minute slot: a long section labeled Talk, 10 minutes; a shorter section labeled Q and A, 4 minutes; and a thin end section labeled 1 minute changeover. Below: rehearse to about 9 minutes, because nerves, a slow laptop and a late start all eat into the time on the day.", cap:"An invented example. Your program or chair tells you the real split."},
       {list:[
         "**Find out the real split**: how much of the slot is for questions, and whether the chair will hold up time cards.",
         "**Cut to one message.** A 10-minute talk can explain one study well. Methods get just enough detail for the audience to trust the result; the rest goes in the paper.",
@@ -373,7 +373,7 @@ ICA.addUnit({
         ["Results 2","Shaded stops were about 3 °C cooler than open ones"],
         ["Limitations","One summer in one city: other climates may differ"]
       ]},
-      "Redraw figures for the screen instead of pasting them from the paper: one message per chart, large axis labels, a title that states the finding, and highlight colour only on what matters. The Digital Foundations unit covers charts and pictures in {{slide-visuals}} and design in {{slide-design}}.",
+      "Redraw figures for the screen instead of pasting them from the paper: one message per chart, large axis labels, a title that states the finding, and highlight color only on what matters. The Digital Foundations unit covers charts and pictures in {{slide-visuals}} and design in {{slide-design}}.",
       {list:[
         "**Credit sources** briefly on the slide where you use them (author and year is often enough), with full references on a final slide or handout.",
         "**Acknowledge** co-authors, participants (in general terms) and funders.",
@@ -410,7 +410,7 @@ ICA.addUnit({
       "Accessibility means people with different senses, bodies, languages and devices can all follow your work. Most of it is just good communication done carefully:",
       {list:[
         "**Contrast and size.** Dark text on a light background (or the reverse) with strong [[contrast]]; large, plain fonts. See {{accessible-slides}}.",
-        "**Never rely on colour alone.** Label lines directly, use patterns or shapes as well as colours, and choose colour-blind-friendly palettes.",
+        "**Never rely on color alone.** Label lines directly, use patterns or shapes as well as colors, and choose color-blind-friendly palettes.",
         "**Describe visuals aloud.** “This chart shows temperature over the day: the shaded stops, in blue, stay about three degrees cooler all afternoon.” People who can’t see the screen, or are listening online, get the point too.",
         "**Always use the microphone**, even if you have a loud voice. Hearing systems and recordings depend on it.",
         "**Captions online.** Turn on [[live-captions]] where the platform offers them, and speak at a steady pace.",
@@ -430,7 +430,7 @@ ICA.addUnit({
     ]},
     {id:"t4u10-l3-x3", type:"sort", q:"Amara is designing her poster. Sort each item: put it **on the poster**, or **in the linked PDF or handout**?", buckets:["On the poster","In the linked PDF or handout"], items:[
       {t:"A title that states the main finding", b:0, why:"The title is the first, and sometimes only, thing passers-by read. It belongs on the poster, big."},
-      {t:"One large, clearly labelled chart of the main result", b:0, why:"The main evidence, shown visually, is the heart of a poster."},
+      {t:"One large, clearly labeled chart of the main result", b:0, why:"The main evidence, shown visually, is the heart of a poster."},
       {t:"The full 40-item questionnaire", b:1, why:"Far too detailed to read standing up. Link it for people who want to check the method."},
       {t:"A table of every regression coefficient", b:1, why:"Detail for specialists who will read it later. The poster can show the key effect visually."},
       {t:"A QR code and an email address", b:0, why:"These are how interested people follow up after the session."},
@@ -446,7 +446,7 @@ ICA.addUnit({
       {t:"Describing what each chart shows out loud", ok:true, why:"People who can’t see the screen well, or are listening online or later, still get the evidence."},
       {t:"Using the microphone, even in a small room", ok:true, why:"Hearing systems, interpreters and recordings depend on the microphone. Asking “can everyone hear me?” doesn’t work: people who can’t hear may not want to say so."},
       {t:"Sharing the slides with alt text before or during the talk", ok:true, why:"People can follow on their own device, zoom in, and use screen readers."},
-      {t:"Showing lines on a chart only by red and green colour", why:"Red and green are the colours most often confused by people with common forms of colour vision deficiency. Label lines directly or add patterns."},
+      {t:"Showing lines on a chart only by red and green color", why:"Red and green are the colors most often confused by people with common forms of color vision deficiency. Label lines directly or add patterns."},
       {t:"Speaking faster so there’s time for more slides", why:"Speed makes talks harder for everyone, especially listeners using captions, interpreters or a second language."}
     ]},
     {id:"t4u10-l3-x6", type:"order", q:"Put these steps for preparing a conference poster in a sensible order.", items:[
@@ -473,7 +473,7 @@ ICA.addUnit({
       chromeos:["Open Google Slides in the browser and choose **File → Page setup → Custom**; enter 21 × 29.7 cm (A4 portrait).","Block out the title, question, methods, main result, conclusion and a box for a QR code.","Zoom out until the page is about the size of your hand and check the main finding is still readable."],
       phone:["Easiest on paper: fold an A4 or Letter sheet into a grid and sketch the boxes by hand.","Or use the Google Slides, PowerPoint or Keynote app; page-size options are more limited on phones, so set the size later on a computer if needed.","Take a photo of your sketch and look at it at thumbnail size: is the main finding the first thing you see?"]
     }},
-    {t:"Do an accessibility pass", how:["Take your slide or poster sketch.","Check contrast and font sizes; make sure nothing relies on colour alone.","Write alt text for each image or chart.","Write the sentence you would say aloud to describe the main visual."], write:"Problems found… Alt text I wrote… My spoken description…"}
+    {t:"Do an accessibility pass", how:["Take your slide or poster sketch.","Check contrast and font sizes; make sure nothing relies on color alone.","Write alt text for each image or chart.","Write the sentence you would say aloud to describe the main visual."], write:"Problems found… Alt text I wrote… My spoken description…"}
    ], proof:"A one-sentence finding with timed 30-second and longer pitches, an assertion–evidence slide, an A4 poster sketch, and an accessibility checklist you used on them."},
    read:[
      {book:"owg", where:"Section 19.5 “Writing Process: Writing to Speak”", note:"Outlining a talk, signpost language, visuals and accessibility, peer review with symbols, and a revision checklist."},
@@ -504,7 +504,7 @@ ICA.addUnit({
         "**Where the conversation is.** Which journals published the papers you cite most? That’s often where your readers are.",
         "**Practicalities.** Word limits, reference style, open access options and fees, and language. To estimate speed, look at the received and accepted dates printed on recent articles."
       ]},
-      "Then check the journal is genuine. **[Think. Check. Submit.](https://thinkchecksubmit.org/journals/)** is a free checklist from a cross-industry group of publishing and library organisations, available in more than 50 languages. Its questions include:",
+      "Then check the journal is genuine. **[Think. Check. Submit.](https://thinkchecksubmit.org/journals/)** is a free checklist from a cross-industry group of publishing and library organizations, available in more than 50 languages. Its questions include:",
       {table:[
         ["Check","What to look for"],
         ["Do you or colleagues know it?","You’ve read articles in it; the name isn’t a copy of another journal; the ISSN checks out in the ISSN Portal"],
@@ -512,7 +512,7 @@ ICA.addUnit({
         ["Is peer review clear?","It says how review works; it doesn’t guarantee acceptance or very fast review"],
         ["Indexed and archived?","Discoverable in databases; long-term preservation; persistent identifiers such as DOIs"],
         ["Clear fees?","What fees are for, when charged, the amount and currency, and whether waivers exist"],
-        ["Member of recognised initiatives?","For example COPE membership; DOAJ listing for open access journals; regional platforms such as African Journals Online, SciELO, Latindex or Redalyc"]
+        ["Member of recognized initiatives?","For example COPE membership; DOAJ listing for open access journals; regional platforms such as African Journals Online, SciELO, Latindex or Redalyc"]
       ]},
       "The checklist’s advice is to submit only if you can answer “yes” to most or all of the questions. The unit on how research works earlier in this track explains [[predatory-journal|predatory journals]] ({{predatory-journals}}): outlets that take fees without providing real peer review or editing.",
       {warn:"Flattering emails inviting you to submit (“Dear Esteemed Researcher… publication in 7 days…”) are a classic sign of a predatory outlet. Treat them like [[phishing]]: don’t click through; look the journal up independently."}
@@ -562,7 +562,7 @@ ICA.addUnit({
       ]},
       {table:[
         ["Reviewer 2, comment 3","Response"],
-        ["“The sample is limited to urban schools, so the conclusions may not generalise.”","Thank you; we agree. We now state this limitation in the Discussion (p. 14, lines 302–309) and have narrowed the conclusion to urban schools (p. 16, line 351)."],
+        ["“The sample is limited to urban schools, so the conclusions may not generalize.”","Thank you; we agree. We now state this limitation in the Discussion (p. 14, lines 302–309) and have narrowed the conclusion to urban schools (p. 16, line 351)."],
         ["“Please add a control for household income.”","Income data were not collected, so we cannot add this control. We now acknowledge it as a limitation (p. 14, lines 310–313) and suggest it for future studies."]
       ]},
       "**If the paper is rejected**, read the reports for what you can fix, revise, and choose the next journal (rechecking its scope). Rejection is a normal part of research careers. If you decide not to resubmit to a journal, withdraw the paper formally before sending it anywhere else."
@@ -573,7 +573,7 @@ ICA.addUnit({
         "In many fields, most journals allow you to submit work that is already a preprint, but policies vary, so check the journal’s policy before posting.",
         "Most servers give each preprint a DOI or another permanent identifier, so it can be cited (say in the citation that it is a preprint). arXiv, for example, has given new papers DOIs since 2022.",
         "Most servers keep every version: you can post updates, but earlier versions usually can’t be removed.",
-        "Readers, including journalists, may not realise a preprint hasn’t been reviewed, so state its status clearly when you share it."
+        "Readers, including journalists, may not realize a preprint hasn’t been reviewed, so state its status clearly when you share it."
       ]},
       "Servers exist for many fields, for example arXiv (physics, mathematics, computer science and more), bioRxiv and medRxiv (biology, health), SSRN (which began in the social sciences and law and now covers many fields), and regional servers such as SciELO Preprints.",
       {h:"Open access routes"},
@@ -585,10 +585,10 @@ ICA.addUnit({
         ["Green","You deposit a version (often the accepted manuscript) in a repository","Free to deposit; publishers may set an [[embargo-period|embargo]]"],
         ["Hybrid","A subscription journal makes individual articles open","An APC for that article"]
       ]},
-      "APCs vary widely. Many publishers offer **waivers or discounts**, especially for authors in lower- and middle-income countries, but policies differ by publisher and even by journal, so check **before** you submit. Some universities have agreements with publishers that cover fees for their authors. To see what a journal lets you share and where, use Jisc’s free **open policy finder** (which replaced Sherpa Romeo). Open articles usually carry a [[creative-commons]] licence such as CC BY.",
+      "APCs vary widely. Many publishers offer **waivers or discounts**, especially for authors in lower- and middle-income countries, but policies differ by publisher and even by journal, so check **before** you submit. Some universities have agreements with publishers that cover fees for their authors. To see what a journal lets you share and where, use Jisc’s free **open policy finder** (which replaced Sherpa Romeo). Open articles usually carry a [[creative-commons]] license such as CC BY.",
       {h:"ORCID"},
-      "An [[orcid-id]] is a free, permanent identifier for researchers, run by ORCID, a not-for-profit organisation. It is a 16-character number in four blocks, shown as a web address such as `https://orcid.org/0000-0002-1825-0097` (the last character is a check digit and can be X). It stays with you when you change institution, country or name, and journals and funders use it to link your work to you correctly. Registration is free and needs no university affiliation; you control what is public.",
-      {lab:"cl-doi", t:"Practise: write a DOI as a link"}
+      "An [[orcid-id]] is a free, permanent identifier for researchers, run by ORCID, a not-for-profit organization. It is a 16-character number in four blocks, shown as a web address such as `https://orcid.org/0000-0002-1825-0097` (the last character is a check digit and can be X). It stays with you when you change institution, country or name, and journals and funders use it to link your work to you correctly. Registration is free and needs no university affiliation; you control what is public.",
+      {lab:"cl-doi", t:"Practice: write a DOI as a link"}
     ]}
    ],
    try:[
@@ -597,7 +597,7 @@ ICA.addUnit({
     ]},
     {id:"t4u10-l4-x2", type:"match", q:"Match each peer review model or format to how it works.", pairs:[
       ["Single-anonymous","Reviewers know the authors; authors don’t know the reviewers","This model hides only the reviewers’ names."],
-      ["Double-anonymous","Neither authors nor reviewers know each other’s identity","Both sides are anonymised."],
+      ["Double-anonymous","Neither authors nor reviewers know each other’s identity","Both sides are anonymized."],
       ["Open peer review","Reviewer names and/or reports may be made public","Definitions vary, but openness about reviewers or reports is the common thread."],
       ["Registered Report","The study plan is reviewed before data are collected","Review of the plan can lead to in-principle acceptance."]
     ]},
@@ -609,7 +609,7 @@ ICA.addUnit({
       {t:"Tomás revises and sends a point-by-point response letter", why:"Fifth: a request for revisions is very common, and the response letter explains every change."},
       {t:"The paper is accepted and goes into production", why:"Last: after acceptance come copyediting, proofs and publication."}
     ]},
-    {id:"t4u10-l4-x4", type:"mcq", q:"Reviewer 1 asks Oluwaseun to analyse a variable that his study didn’t collect. Which response is best?", options:[
+    {id:"t4u10-l4-x4", type:"mcq", q:"Reviewer 1 asks Oluwaseun to analyze a variable that his study didn’t collect. Which response is best?", options:[
       {t:"“Thank you. We did not collect this variable; we now discuss it as a limitation (p. 12).”", ok:true, why:"Polite, honest and specific: it explains why the change isn’t possible, shows what was done instead and says exactly where."},
       {t:"“This comment shows the reviewer did not read our paper carefully.”", why:"Defensive and personal. Even if the reviewer missed something, editors respond better to a calm explanation."},
       {t:"Leave the comment unanswered and hope the editor doesn’t notice.", why:"Every comment should be answered. Unanswered comments are a common reason for another round of revisions, or rejection."},
@@ -633,7 +633,7 @@ ICA.addUnit({
       {t:"It is free, stays with you if you change job or name, and is shown as an https://orcid.org/ address.", ok:true, why:"ORCID’s own support pages confirm all three: free for researchers, yours throughout your career, and displayed as a full https address."},
       {t:"Only researchers at member universities can get one.", why:"Anyone can register free; no institutional affiliation is needed."},
       {t:"It replaces the DOI of each of your papers.", why:"A DOI identifies a work; an ORCID iD identifies a person. They work together."},
-      {t:"It costs a yearly fee, which your publisher or your university will usually pay on your behalf.", why:"ORCID is funded by member organisations, but individuals register and use it free."}
+      {t:"It costs a yearly fee, which your publisher or your university will usually pay on your behalf.", why:"ORCID is funded by member organizations, but individuals register and use it free."}
     ]},
     {id:"t4u10-l4-x8", type:"explain", q:"A reviewer asks you to add a control for household income, but you never collected income data. Explain how you would respond in your response letter, and why that approach works.", size:"3–4 sentences", hint:"You may disagree or decline, with reasons; say exactly what you changed and where.", model:"I’d answer the comment point by point, politely and without being defensive: thank the reviewer, explain that income data weren’t collected so the control can’t be added, and say what I did instead, for example adding it as a limitation in the Discussion, with the page and line numbers, and suggesting it for future studies. Editors accept a well-argued “we did not make this change because…”, and saying exactly what changed and where makes the revision easy to check.", points:["Responds politely and specifically to the comment", "Explains honestly why the change can’t be made", "Describes an alternative change, such as adding a limitation", "Says exactly where the change appears (page, line or section)"]}
    ],
@@ -655,11 +655,11 @@ ICA.addUnit({
      "Tell apart taught, research and professional master’s degrees",
      "Compare doctoral models: research from the start, coursework first, and other variations",
      "Explain the roles of supervisors, advisors and committees, and the usual milestones from proposal to examination",
-     "Describe vivas and defences, funding in general terms, and where to find support for wellbeing"
+     "Describe vivas and defenses, funding in general terms, and where to find support for wellbeing"
    ],
    learn:[
     {h:"Same words, different systems", body:[
-      {lead:"Graduate study (called **postgraduate** study in the UK, Australia and many other places) means study after a first degree. The main levels are the [[masters-degree]] and the [[doctorate]], but how they are organised, named and examined differs a lot between countries, universities and even subjects."},
+      {lead:"Graduate study (called **postgraduate** study in the UK, Australia and many other places) means study after a first degree. The main levels are the [[masters-degree]] and the [[doctorate]], but how they are organized, named and examined differs a lot between countries, universities and even subjects."},
       "This lesson compares common patterns, using examples from systems whose rules are well documented. None of them is “normal”, and the details of your own university always win. Read its regulations (often called a code of practice, handbook or policy for graduate research) as soon as you start, or before you apply.",
       {table:[
         ["Word","Often means","But watch for"],
@@ -674,19 +674,19 @@ ICA.addUnit({
       "The UK’s higher education quality body (QAA) describes three broad kinds of master’s. Other countries use similar ideas, with different names:",
       {table:[
         ["Kind","What it’s mostly for","Examples"],
-        ["Taught (specialised or advanced study)","Deeper knowledge for a career or further study; modules, often plus a research project","MA, MSc (called MS in the US)"],
+        ["Taught (specialized or advanced study)","Deeper knowledge for a career or further study; modules, often plus a research project","MA, MSc (called MS in the US)"],
         ["Research","Preparing for a research career; mostly an individual research project","MRes, MPhil, MLitt"],
         ["Professional or practice","Entry to, or advancement in, a profession; may include placements","e.g. MBA, LLM, MSW"]
       ]},
       "In a [[taught-masters|taught master’s]], at least a third of the course is often a research project, leading to a dissertation or similar output. A [[research-masters|research master’s]] is assessed mainly on a thesis, which is commonly defended in an oral examination. An MPhil may also be linked to a doctorate, as a first stage or as an exit award.",
-      "Length varies. In the UK a full-time taught master’s usually takes one year (QAA gives a typical minimum of 180 UK credits). In the European Higher Education Area, the Bologna Process organises degrees into three cycles (bachelor’s, master’s, doctorate) measured in ECTS credits, where 60 credits is about one year of full-time study: a first-cycle degree usually carries 180–240 credits and a master’s usually 90–120 (at least 60), so many European master’s take one and a half to two years. Many North American master’s take two years. Part-time and online options are common in many countries."
+      "Length varies. In the UK a full-time taught master’s usually takes one year (QAA gives a typical minimum of 180 UK credits). In the European Higher Education Area, the Bologna Process organizes degrees into three cycles (bachelor’s, master’s, doctorate) measured in ECTS credits, where 60 credits is about one year of full-time study: a first-cycle degree usually carries 180–240 credits and a master’s usually 90–120 (at least 60), so many European master’s take one and a half to two years. Many North American master’s take two years. Part-time and online options are common in many countries."
     ]},
     {h:"Doctoral models: research first or coursework first", body:[
       "Two broad patterns are widely described. Many countries and universities use one, the other, or a mix.",
-      {fig:'<svg viewBox="0 0 340 420"><defs><marker id="m4u10c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="87" y="18" text-anchor="middle">Research first</text><text x="253" y="18" text-anchor="middle">Coursework first</text><rect class="d-lup" x="8" y="30" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="50" text-anchor="middle">Admitted with</text><text class="s" x="87" y="67" text-anchor="middle">a project + supervisor(s)</text><rect class="d-gold" x="8" y="96" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="116" text-anchor="middle">Early review</text><text class="s" x="87" y="133" text-anchor="middle">confirmation or transfer</text><rect class="d-sage" x="8" y="162" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="182" text-anchor="middle">Research</text><text class="s" x="87" y="199" text-anchor="middle">+ annual progress reviews</text><rect class="d-sage" x="8" y="228" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="256" text-anchor="middle">Thesis submitted</text><rect class="d-rose" x="8" y="294" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="314" text-anchor="middle">Examination</text><text class="s" x="87" y="331" text-anchor="middle">e.g. a viva</text><rect class="d-lup" x="174" y="30" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="50" text-anchor="middle">Coursework</text><text class="s" x="253" y="67" text-anchor="middle">often 1–2 years</text><rect class="d-gold" x="174" y="96" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="116" text-anchor="middle">Qualifying or</text><text class="s" x="253" y="133" text-anchor="middle">comprehensive exam</text><rect class="d-gold" x="174" y="162" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="182" text-anchor="middle">Proposal approved</text><text class="s" x="253" y="199" text-anchor="middle">→ candidacy</text><rect class="d-sage" x="174" y="228" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="248" text-anchor="middle">Research +</text><text class="s" x="253" y="265" text-anchor="middle">dissertation</text><rect class="d-rose" x="174" y="294" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="314" text-anchor="middle">Defence</text><text class="s" x="253" y="331" text-anchor="middle">before a committee</text><path class="d-ink" d="M87,76 L87,94 M87,142 L87,160 M87,208 L87,226 M87,274 L87,292 M253,76 L253,94 M253,142 L253,160 M253,208 L253,226 M253,274 L253,292" stroke-width="2" fill="none"/><text class="s" x="170" y="368" text-anchor="middle">Many systems mix the two, and names differ.</text><text class="s" x="170" y="386" text-anchor="middle">Training courses exist in both; neither</text><text class="s" x="170" y="404" text-anchor="middle">model is the “standard” one.</text></svg>', alt:"Two columns compared. Research first: admitted with a project and supervisor or supervisors; early review (confirmation or transfer); research plus annual progress reviews; thesis submitted; examination, for example a viva. Coursework first: coursework, often 1 to 2 years; qualifying or comprehensive exam; proposal approved, leading to candidacy; research plus dissertation; defence before a committee. Note: many systems mix the two and names differ; training courses exist in both; neither model is the standard one.", cap:"Two broad doctoral patterns, simplified. Real programmes vary."},
+      {fig:'<svg viewBox="0 0 340 420"><defs><marker id="m4u10c" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="87" y="18" text-anchor="middle">Research first</text><text x="253" y="18" text-anchor="middle">Coursework first</text><rect class="d-lup" x="8" y="30" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="50" text-anchor="middle">Admitted with</text><text class="s" x="87" y="67" text-anchor="middle">a project + supervisor(s)</text><rect class="d-gold" x="8" y="96" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="116" text-anchor="middle">Early review</text><text class="s" x="87" y="133" text-anchor="middle">confirmation or transfer</text><rect class="d-sage" x="8" y="162" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="182" text-anchor="middle">Research</text><text class="s" x="87" y="199" text-anchor="middle">+ annual progress reviews</text><rect class="d-sage" x="8" y="228" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="256" text-anchor="middle">Thesis submitted</text><rect class="d-rose" x="8" y="294" width="158" height="46" rx="6" stroke-width="2"/><text x="87" y="314" text-anchor="middle">Examination</text><text class="s" x="87" y="331" text-anchor="middle">e.g. a viva</text><rect class="d-lup" x="174" y="30" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="50" text-anchor="middle">Coursework</text><text class="s" x="253" y="67" text-anchor="middle">often 1–2 years</text><rect class="d-gold" x="174" y="96" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="116" text-anchor="middle">Qualifying or</text><text class="s" x="253" y="133" text-anchor="middle">comprehensive exam</text><rect class="d-gold" x="174" y="162" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="182" text-anchor="middle">Proposal approved</text><text class="s" x="253" y="199" text-anchor="middle">→ candidacy</text><rect class="d-sage" x="174" y="228" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="248" text-anchor="middle">Research +</text><text class="s" x="253" y="265" text-anchor="middle">dissertation</text><rect class="d-rose" x="174" y="294" width="158" height="46" rx="6" stroke-width="2"/><text x="253" y="314" text-anchor="middle">Defense</text><text class="s" x="253" y="331" text-anchor="middle">before a committee</text><path class="d-ink" d="M87,76 L87,94 M87,142 L87,160 M87,208 L87,226 M87,274 L87,292 M253,76 L253,94 M253,142 L253,160 M253,208 L253,226 M253,274 L253,292" stroke-width="2" fill="none"/><text class="s" x="170" y="368" text-anchor="middle">Many systems mix the two, and names differ.</text><text class="s" x="170" y="386" text-anchor="middle">Training courses exist in both; neither</text><text class="s" x="170" y="404" text-anchor="middle">model is the “standard” one.</text></svg>', alt:"Two columns compared. Research first: admitted with a project and supervisor or supervisors; early review (confirmation or transfer); research plus annual progress reviews; thesis submitted; examination, for example a viva. Coursework first: coursework, often 1 to 2 years; qualifying or comprehensive exam; proposal approved, leading to candidacy; research plus dissertation; defense before a committee. Note: many systems mix the two and names differ; training courses exist in both; neither model is the standard one.", cap:"Two broad doctoral patterns, simplified. Real programs vary."},
       "**Research first.** You apply with a research area or project, often to a particular supervisor, and research from the start. There may be training courses, but usually no large block of required coursework. The UK, Ireland, Australia and New Zealand are well-known examples, and many universities elsewhere, including in continental Europe and parts of Africa and Asia, also admit doctoral candidates straight to a research project, often with structured training alongside. Progress is checked at formal points: in the UK, QAA describes candidates either confirming their doctoral status at the first annual review or transferring from master’s registration around the end of year one.",
-      "**Coursework first.** Common in the United States and Canada. The US Council of Graduate Schools describes a first year or two of courses and seminars, then a general, comprehensive or qualifying exam (a [[qualifying-exam]]), approval of a dissertation proposal and **admission to candidacy**, usually by the end of the second year or early in the third. Many programmes admit students straight from a bachelor’s degree, so the whole programme is longer: the Council notes that science programmes are usually designed so that well-prepared students finish in five to six years of full-time study after the bachelor’s, and that completion times vary more in other fields, particularly the humanities and social sciences.",
-      "**Other variations** include structured doctoral programmes and graduate schools in many European countries (in the Netherlands and the Nordic countries, for example, many doctoral candidates are employed by the university on a contract), **professional doctorates** (QAA describes them as often chosen by mid-career professionals, with taught elements plus a research project), and the **PhD by publication**, based on peer-reviewed papers plus a linking commentary. Systems in East Asia, Latin America and Africa also combine coursework, research and examination in their own ways, varying by country and university: check the rules of the programme you are considering."
+      "**Coursework first.** Common in the United States and Canada. The US Council of Graduate Schools describes a first year or two of courses and seminars, then a general, comprehensive or qualifying exam (a [[qualifying-exam]]), approval of a dissertation proposal and **admission to candidacy**, usually by the end of the second year or early in the third. Many programs admit students straight from a bachelor’s degree, so the whole program is longer: the Council notes that science programs are usually designed so that well-prepared students finish in five to six years of full-time study after the bachelor’s, and that completion times vary more in other fields, particularly the humanities and social sciences.",
+      "**Other variations** include structured doctoral programs and graduate schools in many European countries (in the Netherlands and the Nordic countries, for example, many doctoral candidates are employed by the university on a contract), **professional doctorates** (QAA describes them as often chosen by mid-career professionals, with taught elements plus a research project), and the **PhD by publication**, based on peer-reviewed papers plus a linking commentary. Systems in East Asia, Latin America and Africa also combine coursework, research and examination in their own ways, varying by country and university: check the rules of the program you are considering."
     ]},
     {h:"Supervisors, advisors and committees", body:[
       "Your [[supervisor]] (often called an **advisor** in North America) guides your research, reads your drafts and helps you meet milestones. Arrangements differ:",
@@ -716,17 +716,17 @@ ICA.addUnit({
       "The [[thesis]] (or [[dissertation]]) itself comes in two main formats. A **monograph** is one continuous book-like argument. A **thesis by publication** (also called article-based or compilation thesis) gathers several papers with an introduction and conclusion that link them. Length varies by subject: QAA notes that in more discursive subjects a doctoral thesis may be as long as 100,000 words, while mathematics theses may be much shorter without being any less of an achievement. Your regulations set the limits.",
       {key:"Everything in this track feeds into the thesis: searching, reading, citing, {{literature-review|reviewing literature}}, choosing methods, ethics, and the writing and revision skills from this unit."}
     ]},
-    {h:"Examination: vivas and defences", body:[
+    {h:"Examination: vivas and defenses", body:[
       "How a doctorate is examined differs strikingly between systems:",
       {table:[
         ["Format","How it works","Examples"],
         ["Closed oral exam ([[viva]])","Examiners read the thesis, then question the candidate in private. QAA notes at least two examiners are usually present, typically one internal and at least one external","UK and many systems influenced by it"],
-        ["Committee defence","The candidate presents and defends the dissertation before the committee; some institutions open it to the public","United States, Canada"],
-        ["Public defence","After the thesis is approved, a public event where the outcome is usually already known","Several continental European countries"],
+        ["Committee defense","The candidate presents and defends the dissertation before the committee; some institutions open it to the public","United States, Canada"],
+        ["Public defense","After the thesis is approved, a public event where the outcome is usually already known","Several continental European countries"],
         ["Examination by written reports","Examiners, usually mostly from outside the university, send written reports; an oral is uncommon or optional","Most Australian universities, and some other systems"]
       ]},
       "In the UK, QAA lists the possible outcomes: a pass, a pass with **minor** or **major amendments** (often three to six months for minor changes, six to twelve for major), resubmission, the award of a different degree such as an MPhil, or, for a minority, an outright fail. Most UK doctorates aren’t graded: they are pass or fail.",
-      {tip:"A **mock viva** or practice defence with your supervisors or peers is common and very helpful. Prepare to explain, in plain words, what you found, why it matters, what you would do differently and what comes next."}
+      {tip:"A **mock viva** or practice defense with your supervisors or peers is common and very helpful. Prepare to explain, in plain words, what you found, why it matters, what you would do differently and what comes next."}
     ]},
     {h:"Funding, wellbeing and support", body:[
       "**Funding** varies more than anything else. In general terms, it can come from:",
@@ -740,8 +740,8 @@ ICA.addUnit({
       "For any offer, check what is covered (fees, living costs, health insurance, research costs), for how long, and what happens if you need more time. Be wary of agents who charge fees to “guarantee” a scholarship: genuine funders say on their own websites how to apply.",
       "**Wellbeing.** Graduate research is long, often solitary and full of uncertainty, and struggling at times is common, not a sign that you don’t belong. Support usually exists, though names differ:",
       {list:[
-        "Your supervisor or a second supervisor, and peers in your programme or a writing group.",
-        "The university’s counselling, health or wellbeing service, disability service and international student office.",
+        "Your supervisor or a second supervisor, and peers in your program or a writing group.",
+        "The university’s counseling, health or wellbeing service, disability service and international student office.",
         "A graduate students’ association or student union, which can advise on problems with supervision or funding.",
         "Outside the university: your doctor or local health service, and national helplines. If you or someone else is in immediate danger, contact local emergency services."
       ]},
@@ -752,9 +752,9 @@ ICA.addUnit({
       "You don’t need to be in a university to use any of it. A nurse checking the evidence for a new procedure, a teacher planning a small classroom study, a journalist reading a preprint, a community group running a survey, a retiree writing a local history: all of them are doing research, and doing it well is a skill anyone can build.",
       "If you want to keep going, the app has more for you:",
       {list:[
-        "**Digital Foundations**: how computers, files, the internet and everyday software work, including documents, spreadsheets and presentations, with the **Formula Lab** for practising spreadsheet formulas.",
+        "**Digital Foundations**: how computers, files, the internet and everyday software work, including documents, spreadsheets and presentations, with the **Formula Lab** for practicing spreadsheet formulas.",
         "**Making with Code**: the web, HTML, CSS, JavaScript, the command line, Git and Python, from zero, with the **Web Lab** and the **Python Lab** for practice.",
-        "**The Citation Lab**: keep practising references in APA, MLA and Chicago styles whenever you need a refresher.",
+        "**The Citation Lab**: keep practicing references in APA, MLA and Chicago styles whenever you need a refresher.",
         "**Social Science Primers**: the Sociology primer, with more research methods in action.",
         "**Data Literacy** comes next: reading charts critically, tidy data, statistics without fear, R and SQL."
       ]},
@@ -763,14 +763,14 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u10-l5-x1", type:"mcq", q:"Sione reads an online forum saying “every PhD starts with two years of courses and a qualifying exam”. What’s the most accurate response?", options:[
-      {t:"That’s common in the US and Canada; many other systems start with research from day one.", ok:true, why:"It depends on the programme. Coursework-first doctorates are common in North America, but research-first models (for example in the UK, Australia and many other places) usually have little or no required coursework. Advice must be matched to the system."},
+      {t:"That’s common in the US and Canada; many other systems start with research from day one.", ok:true, why:"It depends on the program. Coursework-first doctorates are common in North America, but research-first models (for example in the UK, Australia and many other places) usually have little or no required coursework. Advice must be matched to the system."},
       {t:"It’s true everywhere, because all doctorates follow the same international rules and stages.", why:"There are no single international rules. Structure, names, length and examination all vary by country and university."},
-      {t:"It’s false everywhere: no doctorate includes coursework.", why:"Many do, especially in North America, and research-first programmes often include training courses too."},
-      {t:"Only professional doctorates have coursework.", why:"Professional doctorates often include taught elements, but so do many PhD programmes."}
+      {t:"It’s false everywhere: no doctorate includes coursework.", why:"Many do, especially in North America, and research-first programs often include training courses too."},
+      {t:"Only professional doctorates have coursework.", why:"Professional doctorates often include taught elements, but so do many PhD programs."}
     ]},
-    {id:"t4u10-l5-x2", type:"sort", q:"Sort each feature: is it typical of the **research-first** model or the **coursework-first** model? (Real programmes can mix them.)", buckets:["Research first","Coursework first"], items:[
+    {id:"t4u10-l5-x2", type:"sort", q:"Sort each feature: is it typical of the **research-first** model or the **coursework-first** model? (Real programs can mix them.)", buckets:["Research first","Coursework first"], items:[
       {t:"Applying with a specific project, often to a named supervisor", b:0, why:"In research-first systems you usually apply to do a particular project with particular supervisors."},
-      {t:"A comprehensive or qualifying exam after one or two years of courses", b:1, why:"The US Council of Graduate Schools describes this exam as the gateway to candidacy in North American programmes."},
+      {t:"A comprehensive or qualifying exam after one or two years of courses", b:1, why:"The US Council of Graduate Schools describes this exam as the gateway to candidacy in North American programs."},
       {t:"Confirmation of doctoral status at the first annual review", b:0, why:"QAA describes this early review in UK doctorates; similar confirmation milestones exist in other research-first systems."},
       {t:"Admission to candidacy, often around the end of the second year", b:1, why:"Candidacy follows coursework and the qualifying exam in the North American model."},
       {t:"A dissertation committee of three to five faculty", b:1, why:"The CGS describes committees of this size, chaired by the main advisor."},
@@ -809,12 +809,12 @@ ICA.addUnit({
     ]},
     {id:"t4u10-l5-x8", type:"explain", q:"Compare the “research first” and “coursework first” models of a doctorate. What would a new doctoral student experience in the first two years of each?", size:"3–4 sentences", hint:"Think about admission, early milestones and when the research project starts.", model:"In a research-first doctorate, common in the UK, Australia and many other places, you are admitted with a project and a supervisor or team and start researching straight away, with some training and an early formal review such as confirmation or transfer around the end of year one. In a coursework-first doctorate, common in the US and Canada, you spend a year or two on courses and seminars, then pass a qualifying exam and get a proposal approved before admission to candidacy. Many systems mix the two.", points:["Describes research first: project and supervisor from the start", "Names an early milestone for research first (confirmation, transfer or review)", "Describes coursework first: courses, then a qualifying exam", "Mentions proposal approval or candidacy in the coursework-first model"]}
    ],
-   apply:{intro:"These tasks help you understand a real programme, whether you’re planning to apply or just curious. All you need is a browser.", tasks:[
-    {t:"Map one real programme", how:["Choose a master’s or doctoral programme at any university (in any country) that interests you.","Find its official page and its regulations or handbook.","Note: taught or research? coursework required? milestones? how is it examined? how long, full and part time?","Compare it with the two models in this lesson: which is it closest to?"], write:"University and programme… Taught or research… Coursework… Milestones… Examination… Length… Closest model…"},
-    {t:"Translate the vocabulary", how:["On the same university’s pages, find the words it uses for: the long piece of writing, the person who guides you, the early review, and the final examination.","Write each next to the terms from this lesson (thesis/dissertation, supervisor/advisor, confirmation/qualifying exam, viva/defence).","Note anything that surprised you."], write:"Their word for the thesis… the supervisor… the early review… the final exam… Surprises…"},
-    {t:"Draft questions for current students or staff", how:["Write five questions you would want answered before accepting a place, covering supervision, funding, milestones, workload and support.","If you can, ask them of a current student or the programme contact (by email or at an open day). Otherwise, look for answers on the programme’s pages."], write:"My five questions… Answers I found…"},
-    {t:"Find the support routes", how:["For one university you’re interested in (or your own), find: the graduate school or equivalent, the counselling or wellbeing service, the students’ union or graduate association, and the disability and international student services.","Note how to contact each.","Add one support option outside the university that applies where you live."], write:"Graduate school… Wellbeing service… Students’ union / association… Disability / international services… Outside the university…"}
-   ], proof:"A one-page profile of a real programme in your own words, a vocabulary map, five questions for current students, and a list of support routes with contacts."},
+   apply:{intro:"These tasks help you understand a real program, whether you’re planning to apply or just curious. All you need is a browser.", tasks:[
+    {t:"Map one real program", how:["Choose a master’s or doctoral program at any university (in any country) that interests you.","Find its official page and its regulations or handbook.","Note: taught or research? coursework required? milestones? how is it examined? how long, full and part time?","Compare it with the two models in this lesson: which is it closest to?"], write:"University and program… Taught or research… Coursework… Milestones… Examination… Length… Closest model…"},
+    {t:"Translate the vocabulary", how:["On the same university’s pages, find the words it uses for: the long piece of writing, the person who guides you, the early review, and the final examination.","Write each next to the terms from this lesson (thesis/dissertation, supervisor/advisor, confirmation/qualifying exam, viva/defense).","Note anything that surprised you."], write:"Their word for the thesis… the supervisor… the early review… the final exam… Surprises…"},
+    {t:"Draft questions for current students or staff", how:["Write five questions you would want answered before accepting a place, covering supervision, funding, milestones, workload and support.","If you can, ask them of a current student or the program contact (by email or at an open day). Otherwise, look for answers on the program’s pages."], write:"My five questions… Answers I found…"},
+    {t:"Find the support routes", how:["For one university you’re interested in (or your own), find: the graduate school or equivalent, the counseling or wellbeing service, the students’ union or graduate association, and the disability and international student services.","Note how to contact each.","Add one support option outside the university that applies where you live."], write:"Graduate school… Wellbeing service… Students’ union / association… Disability / international services… Outside the university…"}
+   ], proof:"A one-page profile of a real program in your own words, a vocabulary map, five questions for current students, and a list of support routes with contacts."},
    read:[
      {book:"owg", where:"Section 6.5 “Writing Process: Creating a Proposal”", note:"Background reading: a general proposal, with planning and revision habits that carry over to research proposals."},
      {book:"acrl", where:"Frame “Scholarship as Conversation”", note:"Graduate research is joining this conversation in a sustained way."}
@@ -858,22 +858,22 @@ ICA.addUnit({
      {t:"Remove the quotes quietly to keep the reviewer happy", why:"She is still the author. She doesn’t have to accept a change that would remove her evidence."},
      {t:"Point out that the reviewer clearly doesn’t understand qualitative research", why:"Responses should be polite and specific, not defensive. Criticising the reviewer won’t persuade the editor."},
      {t:"Thank the reviewer and explain, politely, why the quotes are needed", ok:true, why:"Authors may disagree, with reasons. A polite, well-argued reply, plus any compromise (such as shortening some quotes), is what editors accept."}]},
-   {id:"t4u10-cp08", lesson:"t4u10-l5", level:2, q:"Diego is doing a PhD in the UK. He finds a long blog post about preparing for a public defence “where the result is already decided”. How useful is it for him?", options:[
+   {id:"t4u10-cp08", lesson:"t4u10-l5", level:2, q:"Diego is doing a PhD in the UK. He finds a long blog post about preparing for a public defense “where the result is already decided”. How useful is it for him?", options:[
      {t:"Very useful: doctoral exams work the same way everywhere", why:"Examination differs strikingly between systems. Advice must be checked against the system it was written for."},
-     {t:"Not very: a UK viva is a private oral exam, not a public defence", ok:true, why:"Public defences after approval are common in several continental European countries. In the UK, examiners question the candidate in private in a viva."},
-     {t:"Very useful: UK vivas are public ceremonies after the thesis is approved", why:"That describes a public defence. A UK viva is a closed oral exam."},
+     {t:"Not very: a UK viva is a private oral exam, not a public defense", ok:true, why:"Public defenses after approval are common in several continental European countries. In the UK, examiners question the candidate in private in a viva."},
+     {t:"Very useful: UK vivas are public ceremonies after the thesis is approved", why:"That describes a public defense. A UK viva is a closed oral exam."},
      {t:"Not at all, because UK doctorates are examined only by written reports", why:"Examination mainly by written reports is typical of most Australian universities, not the UK."}]},
    {id:"t4u10-cp09", lesson:"t4u10-l3", level:3, q:"Femi is presenting a small pilot of a tutoring scheme in one school. Which slide headline is best?", options:[
      {t:"“Results”", why:"A topic label tells the audience nothing. The assertion–evidence approach uses a full-sentence claim as the headline."},
-     {t:"“Tutoring transforms children’s reading”", why:"This is a claim, but far stronger than one small pilot can support, and it generalises beyond one school."},
+     {t:"“Tutoring transforms children’s reading”", why:"This is a claim, but far stronger than one small pilot can support, and it generalizes beyond one school."},
      {t:"“In one pilot school, tutored pupils read slightly more fluently”", ok:true, why:"A full-sentence assertion that matches the evidence: specific about where, and hedged to its size."},
      {t:"“Tutoring might possibly perhaps help some reading a little”", why:"This is over-hedged. One clear, honest claim works better than stacked doubts."}]},
    {id:"t4u10-cp10", lesson:"t4u10-l4", level:3, q:"Oscar’s preprint reports a survey of 900 workers: those working remotely reported higher wellbeing. His draft social media post says: “Our new study proves remote work makes people happier!” Which version is best?", options:[
-     {t:"The same post, with a link to the preprint added", why:"A link doesn’t fix the claim. “Proves” overclaims, and readers may not realise a preprint hasn’t been reviewed."},
+     {t:"The same post, with a link to the preprint added", why:"A link doesn’t fix the claim. “Proves” overclaims, and readers may not realize a preprint hasn’t been reviewed."},
      {t:"“Peer-reviewed research proves remote work makes people happier!”", why:"A preprint hasn’t been peer reviewed, so this is false as well as overclaimed."},
      {t:"“Remote work might possibly perhaps make some people slightly happier, maybe.”", why:"Over-hedged, and it still doesn’t say the work is an unreviewed preprint."},
      {t:"“Our preprint (not yet reviewed): remote workers reported higher wellbeing.”", ok:true, why:"It states the preprint status clearly and reports the finding at its real strength: a survey association, not proof."}]},
-   {id:"t4u10-cp11", lesson:"t4u10-l5", level:3, q:"Lina is comparing two master’s offers: a Dutch programme worth 120 ECTS credits and a UK taught MSc worth 180 UK credits. Which statement is accurate?", options:[
+   {id:"t4u10-cp11", lesson:"t4u10-l5", level:3, q:"Lina is comparing two master’s offers: a Dutch program worth 120 ECTS credits and a UK taught MSc worth 180 UK credits. Which statement is accurate?", options:[
      {t:"120 ECTS is about two years full time; the UK MSc usually takes one", ok:true, why:"In the Bologna system, 60 ECTS is about one year full time, so 120 is about two. QAA gives 180 UK credits as the typical minimum for a one-year taught master’s."},
      {t:"The UK course is longer, because 180 is more than 120", why:"UK credits and ECTS credits are different units. The UK taught master’s usually takes one year; 120 ECTS is about two."},
      {t:"120 ECTS means 120 weeks of study", why:"An ECTS credit isn’t a week. About 60 credits make one year of full-time study."},
@@ -889,8 +889,8 @@ ICA.addUnit({
     summary:"Writing that makes a supported argument for readers who can check and challenge it.",
     levels:{
      starter:[
-      "Academic writing is how researchers, students and professionals share what they have found and why they believe it. Think of it as talking to a careful, slightly sceptical colleague: you say what you think, why, and how they can check it.",
-      "It isn’t about long words. Good academic writing is **clear**, **organised** around one main claim (the [[thesis-statement]]), **honest** about how sure you are, and **fair** to the people whose work you build on, which is why you cite them.",
+      "Academic writing is how researchers, students and professionals share what they have found and why they believe it. Think of it as talking to a careful, slightly skeptical colleague: you say what you think, why, and how they can check it.",
+      "It isn’t about long words. Good academic writing is **clear**, **organized** around one main claim (the [[thesis-statement]]), **honest** about how sure you are, and **fair** to the people whose work you build on, which is why you cite them.",
       "You’ll find it in essays, reports, journal articles, theses, grant proposals and policy briefs. The shapes differ, but the core is the same: a claim, reasons, evidence and links to other work.",
       {tip:"If you can’t say what your piece argues in one or two sentences, sort that out before polishing any sentences."}
      ],
@@ -904,12 +904,12 @@ ICA.addUnit({
         "**Contribution**: what the reader should now think or do differently."
       ]},
       "Genres differ in where these moves go. Many empirical papers use the Introduction–Methods–Results–Discussion ([[imrad|IMRaD]]) shape; humanities essays usually weave argument and evidence together throughout; reports for practitioners may put recommendations first.",
-      "Free help includes the University of Manchester’s Academic Phrasebank (phrases organised by section and function), the OpenStax *Writing Guide with Handbook*, university writing centres, and reading widely in your target venue. Treat writing as a process of drafts and revision ({{revision-feedback}}) rather than one perfect attempt.",
-      "A useful habit is to write a **one-sentence summary** of your piece before drafting and again after: if the two differ, decide which one you now believe, and revise towards it.",
+      "Free help includes the University of Manchester’s Academic Phrasebank (phrases organized by section and function), the OpenStax *Writing Guide with Handbook*, university writing centers, and reading widely in your target venue. Treat writing as a process of drafts and revision ({{revision-feedback}}) rather than one perfect attempt.",
+      "A useful habit is to write a **one-sentence summary** of your piece before drafting and again after: if the two differ, decide which one you now believe, and revise toward it.",
       "**Audience** decides a lot. A journal article for specialists can use field terms without definition; a report for a community group, a funder or policymakers needs plain language, a short summary up front and clear recommendations. Many researchers write both kinds about the same study."
      ],
      pro:[
-      "Expert writers adapt to **discourse communities**: each field, journal and language has conventions for structure, citation density, use of “I” or “we”, hedging and even paragraph length. The fastest way to learn them is to analyse a handful of recent, well-regarded papers in your target venue: how long is the introduction, how is the gap stated, how are limitations phrased?",
+      "Expert writers adapt to **discourse communities**: each field, journal and language has conventions for structure, citation density, use of “I” or “we”, hedging and even paragraph length. The fastest way to learn them is to analyze a handful of recent, well-regarded papers in your target venue: how long is the introduction, how is the gap stated, how are limitations phrased?",
       "Several points are often misunderstood:",
       {list:[
         "**Formal isn’t the same as complicated.** Long noun phrases and passive constructions can hide who did what. Many style guides now recommend active voice and first person for the authors’ own actions.",
@@ -942,7 +942,7 @@ ICA.addUnit({
       ]},
       "**Analysis** is the most often missing move. Evidence doesn’t speak for itself: tell the reader what it shows and how it supports your claim. A paragraph that is all quotation or all data is a summary, not an argument.",
             "**Paragraph length** follows the point, not a rule. In academic prose, a paragraph often runs from about three to eight sentences, but a short paragraph that makes one sharp point is fine, and a long one is fine if it stays on one idea.",
-      "A quick self-check: highlight every topic sentence in one colour and the thesis in another, and see whether each highlighted sentence clearly serves the thesis."
+      "A quick self-check: highlight every topic sentence in one color and the thesis in another, and see whether each highlighted sentence clearly serves the thesis."
      ],
      pro:[
       "Real arguments are rarely a straight line. Strong academic writing also:",
@@ -969,7 +969,7 @@ ICA.addUnit({
       {tip:"Hedging isn’t being vague. “Attendance rose by 12% in the three schools studied” is precise and needs no hedge; “this may apply to other schools” hedges only the part you’re unsure about."}
      ],
      builder:[
-      "The University of Manchester’s Academic Phrasebank explains hedging as avoiding absolute certainty where there may be some uncertainty, and avoiding over-generalisation. It notes that discussion sections are especially rich in hedges. Common hedging devices include:",
+      "The University of Manchester’s Academic Phrasebank explains hedging as avoiding absolute certainty where there may be some uncertainty, and avoiding over-generalization. It notes that discussion sections are especially rich in hedges. Common hedging devices include:",
       {list:[
         "**Modal verbs**: may, might, could.",
         "**Adverbs**: probably, possibly, generally, often.",
@@ -979,12 +979,12 @@ ICA.addUnit({
       ]},
       "The opposite of a hedge is a **booster** (clearly, certainly, undoubtedly). Use boosters only for what is genuinely well established.",
       "Two common errors are **overclaiming** (proof or [[causation]] from a small or [[correlation|correlational]] study) and **over-hedging** (“might possibly perhaps”), which hides real findings.",
-      "For concision, watch for nominalisations (“conducted an investigation” → “investigated”), empty openers (“It should be noted that”) and redundant pairs (“each and every”).",
+      "For concision, watch for nominalizations (“conducted an investigation” → “investigated”), empty openers (“It should be noted that”) and redundant pairs (“each and every”).",
       "**Register** checks: avoid contractions and slang in formal papers; define technical terms the first time; describe people precisely and respectfully (“adults aged 65 and over” rather than “the elderly”); and use the person (“I”, “we” or impersonal forms) your field and style guide expect.",
       {tip:"Read your discussion section and underline every verb that reports a finding (shows, suggests, proves…). Check each one against the strength of the evidence behind it."}
      ],
      pro:[
-      "Hedging is about **epistemic stance**: signalling how strong your knowledge is. Linguists who study academic writing describe it as part of how writers negotiate claims with a critical expert audience. Too few hedges looks careless or arrogant to reviewers; too many looks unsure or evasive.",
+      "Hedging is about **epistemic stance**: signaling how strong your knowledge is. Linguists who study academic writing describe it as part of how writers negotiate claims with a critical expert audience. Too few hedges looks careless or arrogant to reviewers; too many looks unsure or evasive.",
       "Where to hedge:",
       {list:[
         "**Interpretations and explanations** (why something happened), rather than descriptions of what you observed.",
@@ -992,9 +992,9 @@ ICA.addUnit({
         "**Causal claims** from non-experimental designs (“was associated with” rather than “caused”).",
         "**Implications and recommendations**, especially for policy."
       ]},
-      "Conventions vary by field and by language. Some disciplines prefer impersonal constructions; many (and APA Style, for example) recommend first person for the authors’ own actions. Research writing traditions in different languages also differ in how directly claims are made, which matters for anyone writing in an additional language: following the norms of the target journal is a convention, not a judgement on other traditions.",
+      "Conventions vary by field and by language. Some disciplines prefer impersonal constructions; many (and APA Style, for example) recommend first person for the authors’ own actions. Research writing traditions in different languages also differ in how directly claims are made, which matters for anyone writing in an additional language: following the norms of the target journal is a convention, not a judgment on other traditions.",
       "Concision has limits. Cutting a necessary definition, a limitation or a hedge to save words makes writing shorter but less accurate. Edit for **clarity first**, length second.",
-      "A practical method for writers in an additional language is to build a personal **phrase bank** from papers in your field, organised by job (introducing a gap, reporting a result, admitting a limitation), alongside general resources such as the Academic Phrasebank."
+      "A practical method for writers in an additional language is to build a personal **phrase bank** from papers in your field, organized by job (introducing a gap, reporting a result, admitting a limitation), alongside general resources such as the Academic Phrasebank."
      ]},
     related:["academic-writing","argument-structure","revision-feedback"],
     sources:[{t:"Academic Phrasebank: Being cautious", url:"https://www.phrasebank.manchester.ac.uk/using-cautious-language/"},{t:"About Academic Phrasebank", url:"https://www.phrasebank.manchester.ac.uk/about-academic-phrasebank/"}], checked:"2026-11"},
@@ -1020,7 +1020,7 @@ ICA.addUnit({
       "**Receiving feedback**: read it all, wait a day, then sort comments into do, consider, and decline (with a reason). If two readers stumble at the same place, there’s a real problem, even if their suggested fixes differ.",
       "**Giving feedback**: be specific and kind, comment on the text not the person, and say what works as well as what doesn’t.",
       "Practical habits: leave [CITE] markers instead of stopping to search; keep a file of cut paragraphs; save versions with the date in year-month-day form (for example `essay-2026-03-14.docx`) or rely on version history, so a bold revision is never a risk; read aloud on late passes; check references against the original sources at the end.",
-      "**Reverse outlining step by step**: number the paragraphs; write each one’s point in a line; read the list alone; mark repeats, gaps, paragraphs with two points and anything off the thesis; then reorganise before editing sentences."
+      "**Reverse outlining step by step**: number the paragraphs; write each one’s point in a line; read the list alone; mark repeats, gaps, paragraphs with two points and anything off the thesis; then reorganize before editing sentences."
      ],
      pro:[
       "Writing research describes composing as **recursive**: drafting changes your understanding, which sends you back to planning. Experienced writers build this in by drafting early, outlining loosely and expecting large revisions, rather than trying to perfect each section in turn.",
@@ -1050,12 +1050,12 @@ ICA.addUnit({
       "Questions at the end are often the most useful part: they show what interested or puzzled people. Leave time for them, and it’s fine to say “I don’t know, but I can find out.”"
      ],
      builder:[
-      "**Timing and rehearsal**: rehearse aloud with a timer at least twice; real talks run longer than silent read-throughs. Mark slides you can skip if you start late. Practise the opening and closing until you can say them without notes; if you present in an additional language, short notes are fine.",
+      "**Timing and rehearsal**: rehearse aloud with a timer at least twice; real talks run longer than silent read-throughs. Mark slides you can skip if you start late. Practice the opening and closing until you can say them without notes; if you present in an additional language, short notes are fine.",
       "**Slides**: one idea per slide. The assertion–evidence approach (associated with Michael Alley) uses a full-sentence claim as the headline and visual evidence underneath, instead of bullet lists. Redraw paper figures for the screen with large labels and one message each. Number your slides and keep backup slides for likely questions.",
-      "**Credit and acknowledgement**: short citations on slides, full references at the end or in a handout; acknowledge co-authors and funders.",
+      "**Credit and acknowledgment**: short citations on slides, full references at the end or in a handout; acknowledge co-authors and funders.",
       "**Questions**: repeat each question so everyone hears it; answer briefly; say “I don’t know” when you don’t, and offer to follow up.",
-      "**Accessibility**: high contrast, large text, no meaning carried by colour alone, visuals described aloud, the microphone always on, captions online, and slides shared in advance (see {{accessible-slides}}).",
-      "**Before the day**: send slides in the format the organisers ask for, test them on the venue’s equipment or platform if you can, bring a PDF copy as a backup, and check how the chair will signal time."
+      "**Accessibility**: high contrast, large text, no meaning carried by color alone, visuals described aloud, the microphone always on, captions online, and slides shared in advance (see {{accessible-slides}}).",
+      "**Before the day**: send slides in the format the organizers ask for, test them on the venue’s equipment or platform if you can, bring a PDF copy as a backup, and check how the chair will signal time."
      ],
      pro:[
       "Different formats reward different skills. Conference talks reward ruthless focus on one result; seminars reward a coherent story across several studies and the ability to handle long, probing discussion; job talks add a vision of future work; three-minute formats, such as the Three Minute Thesis competition that began at the University of Queensland in 2008, reward plain-language explanation.",
@@ -1066,7 +1066,7 @@ ICA.addUnit({
         "**Plan for hybrid audiences**: repeat questions from the room, check the online chat, and avoid pointing at the screen with “this here”.",
         "**Treat critical questions as data.** Questions show where the argument or presentation is weak; note them down straight after the session, because they often improve the paper."
       ]},
-      "Be aware that the conventions of “good” presenting are culturally variable: how much humour, how direct to be, how to address senior colleagues. Clear structure, honest limits and respect for time travel well across settings.",
+      "Be aware that the conventions of “good” presenting are culturally variable: how much humor, how direct to be, how to address senior colleagues. Clear structure, honest limits and respect for time travel well across settings.",
       "Recording and sharing talks raises consent questions: check whether the event records sessions, and never show identifiable participant data, faces or voices without the consent your ethics approval covers."
      ]},
     related:["academic-posters","presentation-planning","presenting-skills","accessible-slides","slide-visuals"],
@@ -1080,7 +1080,7 @@ ICA.addUnit({
       "A research poster is a large, visual summary of a study, displayed at a [[poster-session]] where presenters stand by their posters and chat with people who stop.",
       "A good poster is **mostly pictures and white space**: a title that states the finding, a short question, a brief visual method, one big clear result, a conclusion and a QR code or link to more detail.",
       "The session is a conversation. Prepare a 30-second explanation and a longer two- or three-minute one, and ask visitors what they work on.",
-      {tip:"Always read the conference’s poster instructions first: size and orientation are set by the organisers, and mistakes are hard to fix on the day."}
+      {tip:"Always read the conference’s poster instructions first: size and orientation are set by the organizers, and mistakes are hard to fix on the day."}
      ],
      builder:[
       "**Design**:",
@@ -1091,12 +1091,12 @@ ICA.addUnit({
         "All ISO A-series sizes share the same proportions, so a layout designed at A4 scales to A0 (841 × 1189 mm), one common poster size. Many conferences specify sizes in inches instead."
       ]},
       "**Production**: allow several days for printing; use high-resolution images; export to PDF for the printer. Fabric posters fold for travel. Some conferences use digital e-posters on screens, sometimes with a short recorded talk.",
-      "**Accessibility**: strong contrast, large plain fonts, no meaning by colour alone, alt text in the digital version, and a spoken description of your main figure when you present it.",
+      "**Accessibility**: strong contrast, large plain fonts, no meaning by color alone, alt text in the digital version, and a spoken description of your main figure when you present it.",
       "**At the session**: stand beside, not in front of, your poster; greet people without pressuring them; and offer the 30-second version first, then more if they ask."
      ],
      pro:[
       "Posters are often underrated. At large conferences, poster sessions can produce more substantive conversations than talks, because people who stop are interested in your exact topic and can ask detailed questions.",
-      "Approaches vary. Some fields favour a traditional layout mirroring the paper (introduction, methods, results, conclusion); others favour designs where a single, large plain-language statement of the main finding dominates the poster, with details at the sides. Choose what suits your field’s expectations and the venue.",
+      "Approaches vary. Some fields favor a traditional layout mirroring the paper (introduction, methods, results, conclusion); others favor designs where a single, large plain-language statement of the main finding dominates the poster, with details at the sides. Choose what suits your field’s expectations and the venue.",
       "Practical points experienced presenters use:",
       {list:[
         "**A takeaway handout or QR code** to the preprint, paper or poster PDF, so interest outlasts the session.",
@@ -1130,11 +1130,11 @@ ICA.addUnit({
       "**Language**: if the journal publishes in a language you are still learning, ask a colleague to read the manuscript before submitting. Editors judge clarity, and genuine language editing is legitimate; buying authorship or “guaranteed acceptance” is not."
      ],
      pro:[
-      "Journal choice involves trade-offs: readership versus selectivity, speed versus prestige, open access fees versus reach. Metrics such as [[impact-factor|impact factors]] are widely used but widely criticised as measures of individual articles; many research organisations now emphasise assessing the work itself.",
+      "Journal choice involves trade-offs: readership versus selectivity, speed versus prestige, open access fees versus reach. Metrics such as [[impact-factor|impact factors]] are widely used but widely criticized as measures of individual articles; many research organizations now emphasize assessing the work itself.",
       "Estimating timelines: look at the received, revised and accepted dates printed on recent articles. Many journals publish median times on their websites; treat these as averages, not promises.",
       "Things experienced authors check before submitting:",
       {list:[
-        "The journal’s **preprint policy** and what version you may later share (Jisc’s open policy finder summarises many journals’ policies).",
+        "The journal’s **preprint policy** and what version you may later share (Jisc’s open policy finder summarizes many journals’ policies).",
         "**APC amounts and waiver policies**, which can differ between journals of the same publisher, and whether your institution has an agreement covering fees.",
         "Whether the journal is **genuinely indexed** where it claims; some [[predatory-journal|predatory outlets]] list misleading indexes or metrics.",
         "Whether suggested reviewers are allowed and how conflicts are defined."
@@ -1186,7 +1186,7 @@ ICA.addUnit({
       ]},
       "COPE notes that no review model fully prevents bias or fraud, and that in small fields anonymity is hard to maintain. Peer review is a filter, not a guarantee, which is why post-publication discussion, corrections and [[retraction|retractions]] exist.",
       "If rejected, use the reports to improve the paper before submitting elsewhere. Don’t simply resubmit unchanged: the same reviewers may be invited again.",
-      "Keep the tone professional throughout. Editors and reviewers are colleagues you may meet again, and a calm, well-organised response is far more persuasive than a long defence. Start with one short sentence of thanks, then go straight to the point-by-point replies."
+      "Keep the tone professional throughout. Editors and reviewers are colleagues you may meet again, and a calm, well-organized response is far more persuasive than a long defense. Start with one short sentence of thanks, then go straight to the point-by-point replies."
      ]},
     related:["journal-submission","revision-feedback","peer-review","scholarly-publishing"],
     sources:[{t:"Taylor & Francis: Understanding peer review", url:"https://authorservices.taylorandfrancis.com/publishing-your-research/peer-review/"},{t:"COPE: Peer review models", url:"https://publicationethics.org/topic-discussions/peer-review-models"}], checked:"2026-11"},
@@ -1197,12 +1197,12 @@ ICA.addUnit({
      starter:[
       "Many researchers share names, and people change names, institutions and countries. An [[orcid-id]] solves the mix-ups: it’s a unique number that belongs to you for your whole career.",
       "It looks like a web address with 16 characters in four blocks, for example `https://orcid.org/0000-0002-1825-0097` (ORCID’s own sample record). The last character is a check digit and can be the letter X.",
-      "It’s **free** for researchers, run by ORCID, a not-for-profit organisation, and you don’t need to belong to a university to register.",
+      "It’s **free** for researchers, run by ORCID, a not-for-profit organization, and you don’t need to belong to a university to register.",
       {tip:"Journals and funders often ask for your ORCID iD when you submit. Registering takes a few minutes at orcid.org."},
       "Your ORCID record can list your education, jobs, publications and funding, and you decide what is public."
      ],
      builder:[
-      "**What it does**: your ORCID record can list your education, employment, publications, peer review and funding. Organisations you authorise (publishers, funders, universities) can add trusted information to it, so you “enter once, reuse often”, as ORCID puts it.",
+      "**What it does**: your ORCID record can list your education, employment, publications, peer review and funding. Organisations you authorize (publishers, funders, universities) can add trusted information to it, so you “enter once, reuse often”, as ORCID puts it.",
       "**Privacy**: you set visibility for each item: everyone, trusted parties, or only you. ORCID’s support pages note that most information is public by default, while email addresses are private by default, so check your settings.",
       "**Keeping access**: add more than one email address (personal as well as work), so you can still sign in after you change jobs.",
       "**Who uses it**: many publishers, funders and universities ask for ORCID iDs during submission, grant applications and staff profiles. ORCID members can read from or write to your record with your permission.",
@@ -1211,7 +1211,7 @@ ICA.addUnit({
      ],
      pro:[
       "Technical details: the identifier is a 16-character number compatible with ISO 27729 (ISNI). The final character is a checksum calculated with ISO/IEC 7064 MOD 11-2, which is why it can be X (representing 10). All 16 characters, including leading zeros, are required, and ORCID recommends storing the iD as a full https URI.",
-      "ORCID works alongside other persistent identifiers: DOIs for works, and identifiers for organisations and grants. Together they let systems connect who did what, where, with which funding, without relying on name matching.",
+      "ORCID works alongside other persistent identifiers: DOIs for works, and identifiers for organizations and grants. Together they let systems connect who did what, where, with which funding, without relying on name matching.",
       "Good practice:",
       {list:[
         "**Sign in through the system** (publisher, funder) when asked to connect your record, rather than typing your iD; this verifies the link.",
@@ -1228,36 +1228,36 @@ ICA.addUnit({
     summary:"How taught and research master’s degrees and different doctoral models compare.",
     levels:{
      starter:[
-      "After a first degree, you can study for a [[masters-degree]] and then a [[doctorate]] such as a PhD. Different countries organise these differently, and none is the standard.",
+      "After a first degree, you can study for a [[masters-degree]] and then a [[doctorate]] such as a PhD. Different countries organize these differently, and none is the standard.",
       "Master’s degrees can be **taught** (mostly courses, often with a research project), **research** (mostly one project and a thesis) or **professional** (preparing for a profession).",
-      "Doctorates follow two broad patterns: **research from the start**, with an early review and a thesis examined at the end, or **coursework first**, with exams before candidacy and a dissertation defended before a committee. Many programmes mix the two.",
-      {tip:"Read the regulations of the specific programme. They decide everything from length to how you are examined."},
+      "Doctorates follow two broad patterns: **research from the start**, with an early review and a thesis examined at the end, or **coursework first**, with exams before candidacy and a dissertation defended before a committee. Many programs mix the two.",
+      {tip:"Read the regulations of the specific program. They decide everything from length to how you are examined."},
       "Names differ too: “graduate study” in North America is usually “postgraduate study” in the UK, Australia and many other places, and a US “MS” is a UK “MSc”."
      ],
      builder:[
-      "**Master’s (UK QAA categories, which QAA calls indicative)**: research (e.g. MPhil, MLitt, MRes), specialised or advanced study (taught; e.g. MA, MSc; frequently at least a third is a research project), and professional or practice (e.g. MBA, LLM, MSW). A UK taught master’s is usually one year full time; under the Bologna system a master’s usually carries 90–120 ECTS credits (60 credits is about a year full time), and many North American master’s take two years.",
+      "**Master’s (UK QAA categories, which QAA calls indicative)**: research (e.g. MPhil, MLitt, MRes), specialized or advanced study (taught; e.g. MA, MSc; frequently at least a third is a research project), and professional or practice (e.g. MBA, LLM, MSW). A UK taught master’s is usually one year full time; under the Bologna system a master’s usually carries 90–120 ECTS credits (60 credits is about a year full time), and many North American master’s take two years.",
       "**Doctorates**:",
       {list:[
         "**Research first** (e.g. UK, Ireland, Australia, New Zealand and many other systems): research begins at once; progress reviews, often a confirmation or transfer around the end of year one; thesis and examination.",
-        "**Coursework first** (common in the US and Canada): one to two years of courses, a qualifying or comprehensive exam, proposal and admission to candidacy, then dissertation research and a defence. Often entered directly after a bachelor’s.",
+        "**Coursework first** (common in the US and Canada): one to two years of courses, a qualifying or comprehensive exam, proposal and admission to candidacy, then dissertation research and a defense. Often entered directly after a bachelor’s.",
         "**Professional doctorates**: taught elements plus a research project or portfolio, often for mid-career professionals.",
         "**PhD by publication**: peer-reviewed papers plus a linking commentary."
       ]},
-      "In Europe, the Bologna Process organises degrees into three cycles (bachelor’s, usually 180–240 ECTS credits; master’s; doctorate). Systems elsewhere, including in East Asia, Latin America and Africa, combine coursework, research and examination in their own ways.",
-      "**Practical differences** to compare when choosing: whether you apply to a project or a programme, whether teaching is required or paid, how long funding lasts compared with typical completion times, and whether part-time study is possible. Programme handbooks and current students are the best sources."
+      "In Europe, the Bologna Process organizes degrees into three cycles (bachelor’s, usually 180–240 ECTS credits; master’s; doctorate). Systems elsewhere, including in East Asia, Latin America and Africa, combine coursework, research and examination in their own ways.",
+      "**Practical differences** to compare when choosing: whether you apply to a project or a program, whether teaching is required or paid, how long funding lasts compared with typical completion times, and whether part-time study is possible. Program handbooks and current students are the best sources."
      ],
      pro:[
-      "Comparing systems needs care, because the same words mean different things. Length is a good example: a US PhD entered from a bachelor’s often includes work that elsewhere would be a separate master’s, so headline durations aren’t directly comparable. The US Council of Graduate Schools notes that science programmes are usually designed so that well-prepared students finish in five to six years after the bachelor’s, and that completion times vary more in other fields, particularly the humanities and social sciences.",
+      "Comparing systems needs care, because the same words mean different things. Length is a good example: a US PhD entered from a bachelor’s often includes work that elsewhere would be a separate master’s, so headline durations aren’t directly comparable. The US Council of Graduate Schools notes that science programs are usually designed so that well-prepared students finish in five to six years after the bachelor’s, and that completion times vary more in other fields, particularly the humanities and social sciences.",
       "Other differences that matter when choosing:",
       {list:[
         "**Status**: in some systems doctoral candidates are students; in others (the Netherlands and the Nordic countries, for example) many are employees on contracts.",
-        "**Admission**: to a specific project and supervisor, or to a programme, choosing a supervisor later.",
+        "**Admission**: to a specific project and supervisor, or to a program, choosing a supervisor later.",
         "**Teaching**: required, optional or paid as an assistantship.",
-        "**Examination**: closed viva, committee defence, public defence, or written reports (see {{thesis-defence}}).",
+        "**Examination**: closed viva, committee defense, public defense, or written reports (see {{thesis-defence}}).",
         "**Recognition**: qualifications frameworks (national ones and, in Europe, the European Qualifications Framework) help compare levels, but professional recognition can still differ."
       ]},
       "Funding information is best taken from official university and funder websites, never from paid agents.",
-      "When reading rankings, forums or advice, check which system they assume. Practical questions often reveal the most: Are you admitted to a project or a programme? Who funds you, and for how long? What are the milestones? How is the final work examined? What do recent graduates go on to do?"
+      "When reading rankings, forums or advice, check which system they assume. Practical questions often reveal the most: Are you admitted to a project or a program? Who funds you, and for how long? What are the milestones? How is the final work examined? What do recent graduates go on to do?"
      ]},
     related:["supervision","thesis-defence"],
     sources:[{t:"QAA Characteristics Statement: Master’s Degree (2020)", url:"https://www.qaa.ac.uk/docs/qaa/quality-code/master's-degree-characteristics-statement.pdf"},{t:"QAA Characteristics Statement: Doctoral Degree (2020)", url:"https://www.qaa.ac.uk/docs/qaa/quality-code/doctoral-degree-characteristics-statement-2020.pdf"},{t:"Council of Graduate Schools: The Doctor of Philosophy Degree", url:"https://cgsnet.org/wp-content/uploads/2022/01/doctor_of_philosophy_degree.pdf"}], checked:"2026-11"},
@@ -1281,7 +1281,7 @@ ICA.addUnit({
       ]},
       "**Agreeing expectations**: many universities provide templates for a supervision agreement covering meetings, feedback, authorship, training and leave. If yours doesn’t, write a short shared note after your first meeting.",
       "**When it goes wrong**: talk to a second supervisor, the graduate school, a director of graduate studies or postgraduate tutor, or an ombudsperson. Changing supervisor is possible in most systems.",
-      "**Milestones** vary in name and timing: a proposal or prospectus, an early confirmation, transfer or qualifying exam, annual progress reviews, ethics approval, submission and examination. Your programme’s handbook lists the exact ones and their deadlines.",
+      "**Milestones** vary in name and timing: a proposal or prospectus, an early confirmation, transfer or qualifying exam, annual progress reviews, ethics approval, submission and examination. Your program’s handbook lists the exact ones and their deadlines.",
       "Supervisors are also busy people with many roles. Sending a short agenda before meetings and a summary afterwards makes the most of limited time."
      ],
      pro:[
@@ -1299,30 +1299,30 @@ ICA.addUnit({
     related:["graduate-degrees","thesis-defence","research-presentations"],
     sources:[{t:"QAA Characteristics Statement: Doctoral Degree (2020)", url:"https://www.qaa.ac.uk/docs/qaa/quality-code/doctoral-degree-characteristics-statement-2020.pdf"},{t:"Council of Graduate Schools: The Doctor of Philosophy Degree", url:"https://cgsnet.org/wp-content/uploads/2022/01/doctor_of_philosophy_degree.pdf"},{t:"UBC: Comprehensive Examination and Candidacy", url:"https://www.grad.ubc.ca/policies/comprehensive-examination-candidacy"}], checked:"2026-11"},
 
-   {id:"thesis-defence", title:"Theses, dissertations, vivas and defences", aka:["thesis","dissertation","viva voce","PhD defense","public defence","corrections","thesis by publication"], tags:["graduate study"],
+   {id:"thesis-defence", title:"Theses, dissertations, vivas and defenses", aka:["thesis","dissertation","viva voce","PhD defense","public defense","corrections","thesis by publication"], tags:["graduate study"],
     summary:"What the final written work is called in different systems, and how it is examined.",
     levels:{
      starter:[
       "At the end of a research degree you submit a long piece of original work. In the UK it is usually called a [[thesis]] for a doctorate and a [[dissertation]] for a master’s; in the US it is usually the other way round. Universities within one country can differ too.",
-      "Then it is examined. In the UK the usual format is a [[viva]]: a private oral examination with examiners who have read the thesis. In the US and Canada, candidates defend the dissertation before their committee. In several European countries there is a public defence.",
+      "Then it is examined. In the UK the usual format is a [[viva]]: a private oral examination with examiners who have read the thesis. In the US and Canada, candidates defend the dissertation before their committee. In several European countries there is a public defense.",
       {tip:"In many systems, passing subject to corrections is a common outcome. Corrections are normal, not a failure."},
       "The final work can be one long book-like text or, in many places, a set of published papers with a linking introduction and conclusion."
      ],
      builder:[
       "**Formats of the written work**: a **monograph** (one continuous argument) or a **thesis by publication** (several papers linked by an introduction and conclusion). QAA notes doctoral theses in discursive subjects may run to 100,000 words, while mathematics theses may be much shorter.",
       "**UK viva** (QAA): usually at least two examiners, typically one internal and at least one external; normally closed; many universities let the supervisor observe, but the supervisor takes no active part in the decision, and many add an independent chair. Outcomes: pass; pass with minor amendments (often three to six months) or major amendments (often six to twelve); resubmission; a different award such as an MPhil; or, for a minority, fail. UK doctorates aren’t graded.",
-      "**North American defence** (CGS): a presentation and defence of the dissertation before the committee; some institutions open it to the wider academic community.",
-      "**Public defence** (some continental European systems): QAA notes the outcome is usually already known, and family and friends may attend.",
-      "**Preparation** is similar everywhere: reread the thesis, list likely questions, practise explaining your contribution in plain words, and check the regulations on format and timing.",
+      "**North American defense** (CGS): a presentation and defense of the dissertation before the committee; some institutions open it to the wider academic community.",
+      "**Public defense** (some continental European systems): QAA notes the outcome is usually already known, and family and friends may attend.",
+      "**Preparation** is similar everywhere: reread the thesis, list likely questions, practice explaining your contribution in plain words, and check the regulations on format and timing.",
       "**Who examines** differs too: internal and external examiners in the UK model, a committee in the North American model, and in some systems (most Australian universities, for example) examiners from outside the university, often from other countries, who report in writing, usually without an oral. Your regulations say how examiners are chosen and whether you can comment on the choice."
      ],
      pro:[
-      "Examination design reflects what a system wants to test. A closed viva probes whether the candidate truly authored and understands the work; a public defence celebrates and makes visible a thesis already judged acceptable; written external reports prioritise independent expert judgement and can involve examiners far away.",
+      "Examination design reflects what a system wants to test. A closed viva probes whether the candidate truly authored and understands the work; a public defense celebrates and makes visible a thesis already judged acceptable; written external reports prioritize independent expert judgment and can involve examiners far away.",
       "Preparing well:",
       {list:[
         "**Know your examiners’ work**, and anticipate questions about methods, alternative explanations, limitations and contribution.",
         "**Reread your thesis** shortly before, marking errors you’ve found; listing them yourself shows command of the work.",
-        "**Practise** with a mock viva or practice defence.",
+        "**Practice** with a mock viva or practice defense.",
         "**Check the rules** on who may attend, how long it lasts, and the timeline for corrections."
       ]},
       "Terminology traps: “defence” (UK spelling) and “defense” (US), “viva voce” shortened to viva, “corrections” or “amendments”, “committee” or “jury”. Programmes taught in English in non-English-speaking countries may use either set of terms. Your regulations are the authority.",
@@ -1354,7 +1354,7 @@ ICA.addUnit({
    {id:"research-milestones", term:"Research milestones", def:"Formal checkpoints in a research degree, such as the proposal, an early review or qualifying exam, annual reviews, submission and examination.", codex:"supervision"},
    {id:"taught-masters", term:"Taught master’s", def:"A master’s degree made up mainly of modules or courses, often with a research project or dissertation.", codex:"graduate-degrees"},
    {id:"research-masters", term:"Research master’s", def:"A master’s degree (for example an MRes or MPhil) based mainly on an individual research project and a thesis.", codex:"graduate-degrees"},
-   {id:"qualifying-exam", term:"Qualifying exam", def:"An exam, common in North American doctoral programmes, that tests a student’s grasp of their field before admission to candidacy. Also called a comprehensive or general exam.", codex:"supervision"},
+   {id:"qualifying-exam", term:"Qualifying exam", def:"An exam, common in North American doctoral programs, that tests a student’s grasp of their field before admission to candidacy. Also called a comprehensive or general exam.", codex:"supervision"},
    {id:"thesis-committee", term:"Dissertation committee", def:"A group of faculty, usually three to five in the US model, chaired by the main advisor, that guides and examines a doctoral dissertation.", codex:"supervision"}
   ],
   bank:[
@@ -1363,7 +1363,7 @@ ICA.addUnit({
      {t:"A sentence or two stating the main claim of the piece", ok:true, why:"The thesis is the central claim; every section should serve it."},
      {t:"The title of the paper", why:"A title names the piece; it may hint at the claim but isn’t the argument itself."},
      {t:"A list of the sources used", why:"That’s a reference list or bibliography."},
-     {t:"The final paragraph, which summarises all of the results", why:"A conclusion may restate the thesis, but the thesis is normally stated early."}]},
+     {t:"The final paragraph, which summarizes all of the results", why:"A conclusion may restate the thesis, but the thesis is normally stated early."}]},
    {id:"t4u10-q02", lesson:"t4u10-l1", level:2, q:"Which sentence is the most arguable thesis?", options:[
      {t:"Weekly sharing sessions between night and day shifts reduced medication errors more than written handover notes alone.", ok:true, why:"Specific, debatable and testable: someone could ask for the evidence."},
      {t:"Medication errors are bad.", why:"Nobody disputes this; there’s nothing to argue."},
@@ -1385,15 +1385,15 @@ ICA.addUnit({
      {t:"It could perhaps possibly be that loyalty cards might maybe help some cafés a little, in some way, sometimes.", why:"Over-hedged: stacked hedges hide the actual finding."},
      {t:"Loyalty cards are clearly the best marketing strategy.", why:"“Clearly” and “the best” go far beyond comparing cafés with and without cards."}]},
    {id:"t4u10-q06", lesson:"t4u10-l1", level:2, q:"Which rewrite is most concise while keeping the meaning of “The researchers made a decision to conduct an analysis of the data”?", options:[
-     {t:"The researchers decided to analyse the data.", ok:true, why:"It turns the nouns “decision” and “analysis” back into verbs and keeps every piece of meaning."},
+     {t:"The researchers decided to analyze the data.", ok:true, why:"It turns the nouns “decision” and “analysis” back into verbs and keeps every piece of meaning."},
      {t:"The data.", why:"Too short: it loses who did what."},
      {t:"An analysis of the data was decided upon by the researchers.", why:"Still wordy, and the passive makes it longer."},
-     {t:"The researchers made the decision of analysing the data.", why:"Still uses a noun (“decision”) where a verb is clearer."}]},
+     {t:"The researchers made the decision of analyzing the data.", why:"Still uses a noun (“decision”) where a verb is clearer."}]},
    {id:"t4u10-q07", lesson:"t4u10-l1", level:1, q:"According to its homepage, who was the Academic Phrasebank designed primarily for?", options:[
      {t:"Academic writers whose first language is not English", ok:true, why:"The homepage says this, and adds that many users are native speakers."},
      {t:"Only students and staff at the University of Manchester", why:"It is freely available online to anyone."},
      {t:"Only journal editors", why:"It is a general resource for academic writers."},
-     {t:"People writing fiction", why:"Its phrases are organised around academic papers and functions such as being cautious."}]},
+     {t:"People writing fiction", why:"Its phrases are organized around academic papers and functions such as being cautious."}]},
    {id:"t4u10-q08", lesson:"t4u10-l1", level:3, q:"Tomás uses an AI tool to polish the English of his discussion section. Which is the best practice?", options:[
      {t:"Check every change and add nothing unchecked, keep confidential data out, and disclose as required.", ok:true, why:"Every change must keep his meaning, with no unchecked claims or citations. AI tools can change meaning or invent references, and institutions and journals have rules about data and disclosure."},
      {t:"Accept all changes, because the tool’s English is better.", why:"Smoother wording can still alter meaning, hedging or facts."},
@@ -1418,7 +1418,7 @@ ICA.addUnit({
    {id:"t4u10-q12", lesson:"t4u10-l2", level:3, q:"Mei’s reverse outline shows paragraphs 3 and 7 make the same point, and paragraph 5 is about a topic unrelated to her thesis. What should she do?", options:[
      {t:"Merge 3 and 7, and cut or move paragraph 5", ok:true, why:"Repetition should be merged; material that doesn’t serve the thesis belongs elsewhere."},
      {t:"Fix the spelling in all three paragraphs first", why:"Proofreading paragraphs that will change or go is wasted effort."},
-     {t:"Leave them: repetition helps readers remember", why:"Deliberate summaries can help, but accidental repetition makes the argument look disorganised."},
+     {t:"Leave them: repetition helps readers remember", why:"Deliberate summaries can help, but accidental repetition makes the argument look disorganized."},
      {t:"Add more paragraphs about the unrelated topic", why:"That pulls the piece further away from its thesis."}]},
    {id:"t4u10-q13", lesson:"t4u10-l2", level:2, q:"Which feedback request best suits an **early** draft?", options:[
      {t:"“What do you think my main argument is, and where did you get lost?”", ok:true, why:"Early drafts need global feedback on argument and structure."},
@@ -1431,14 +1431,14 @@ ICA.addUnit({
      {t:"Because reference managers require it", why:"Reference managers don’t need markers; this is a drafting habit."},
      {t:"To hide which ideas came from other people", why:"The opposite: markers remind you to credit sources."}]},
    {id:"t4u10-q15", lesson:"t4u10-l2", level:3, q:"Two readers say Amara’s methods section is confusing, but suggest different fixes. What does this most likely mean?", options:[
-     {t:"There is a real problem there, but the fix still needs her judgement", ok:true, why:"When several readers stumble at the same place, the problem is real; their suggested solutions are only options."},
+     {t:"There is a real problem there, but the fix still needs her judgment", ok:true, why:"When several readers stumble at the same place, the problem is real; their suggested solutions are only options."},
      {t:"The readers are wrong, because they disagree with each other about the fix", why:"They agree on the problem; they differ only on the fix."},
      {t:"She must apply both fixes", why:"Applying contradictory fixes could make it worse. She chooses the best one."},
      {t:"She should delete the methods section", why:"Methods are needed so readers can judge the results."}]},
    {id:"t4u10-q16", lesson:"t4u10-l2", level:1, q:"Which is an example of a **global** concern in feedback?", options:[
      {t:"The conclusion makes a claim the results don’t support", ok:true, why:"It’s about the argument and evidence: a global issue."},
      {t:"A missing apostrophe", why:"A local, surface issue."},
-     {t:"Inconsistent capitalisation of headings", why:"A local formatting issue."},
+     {t:"Inconsistent capitalization of headings", why:"A local formatting issue."},
      {t:"A typo in a reference", why:"A local issue fixed during proofreading."}]},
    {id:"t4u10-q17", lesson:"t4u10-l2", level:2, q:"Kenji wants to cut a long section but worries he may need it later. What’s a good habit?", options:[
      {t:"Paste it into a separate ‘cuttings’ file, or keep dated versions", ok:true, why:"Version history works too. Saving cut text makes bold revision safe and painless."},
@@ -1472,9 +1472,9 @@ ICA.addUnit({
      {t:"Because it is a formal rule at every academic conference", why:"It’s good practice, not a universal rule."},
      {t:"To avoid answering", why:"Repeating comes before answering, not instead of it."}]},
    {id:"t4u10-q23", lesson:"t4u10-l3", level:3, q:"Dmitri’s chart shows two groups only as a red line and a green line. Which change makes it most accessible?", options:[
-     {t:"Label each line directly and use different line styles as well as colours", ok:true, why:"Markers work as well as line styles. Meaning no longer depends on telling red from green, which many people with colour vision deficiency find hard."},
+     {t:"Label each line directly and use different line styles as well as colors", ok:true, why:"Markers work as well as line styles. Meaning no longer depends on telling red from green, which many people with color vision deficiency find hard."},
      {t:"Make both lines brighter", why:"Brighter red and green can still be confused."},
-     {t:"Add a legend in red and green text so readers can match each line to a group", why:"The legend has the same colour problem."},
+     {t:"Add a legend in red and green text so readers can match each line to a group", why:"The legend has the same color problem."},
      {t:"Remove the axis labels to reduce clutter", why:"That makes the chart harder for everyone to read."}]},
    {id:"t4u10-q24", lesson:"t4u10-l3", level:2, q:"Which item belongs in a linked PDF rather than on the poster itself?", options:[
      {t:"The full questionnaire and every statistical table", ok:true, why:"Too detailed to read standing up; link it for those who want it."},
@@ -1482,11 +1482,11 @@ ICA.addUnit({
      {t:"One large chart of the main result", why:"The key evidence belongs on the poster, big and clear."},
      {t:"A QR code and contact details", why:"These help people follow up, so they belong on the poster."}]},
    {id:"t4u10-q25", lesson:"t4u10-l3", level:1, q:"What should you check **first** when preparing a conference poster?", options:[
-     {t:"The conference’s instructions on size and orientation", ok:true, why:"The organisers set these, and a wrong size is hard to fix on the day."},
+     {t:"The conference’s instructions on size and orientation", ok:true, why:"The organizers set these, and a wrong size is hard to fix on the day."},
      {t:"Which font is most fashionable", why:"Readability matters more than fashion, and size comes first."},
-     {t:"How many colours you can fit", why:"Colour choices come later and should be restrained."},
-     {t:"Whether you can include your whole paper", why:"Posters summarise; the paper can be linked."}]},
-   {id:"t4u10-q26", lesson:"t4u10-l3", level:3, q:"Halfway through Lucía’s talk, she realises she will run over by about three minutes. What is the best response?", options:[
+     {t:"How many colors you can fit", why:"Color choices come later and should be restrained."},
+     {t:"Whether you can include your whole paper", why:"Posters summarize; the paper can be linked."}]},
+   {id:"t4u10-q26", lesson:"t4u10-l3", level:3, q:"Halfway through Lucía’s talk, she realizes she will run over by about three minutes. What is the best response?", options:[
      {t:"Skip the slides she marked as optional and finish on time", ok:true, why:"Planned cuts protect the main message and the question time."},
      {t:"Speak much faster to fit everything in", why:"Rushing loses the audience, especially people using captions, interpreters or a second language."},
      {t:"Carry on at the same pace and ignore the chair’s time signals", why:"Overrunning takes time from others and from her own questions."},
@@ -1503,7 +1503,7 @@ ICA.addUnit({
      {t:"A rejection because the paper was submitted from a desk computer", why:"The name refers to the editor’s desk, not the device."},
      {t:"A request for minor revisions", why:"That’s a revise-and-resubmit decision."}]},
    {id:"t4u10-q29", lesson:"t4u10-l4", level:1, q:"In double-anonymous peer review, who knows whose identity?", options:[
-     {t:"Neither the authors nor the reviewers know each other’s identity", ok:true, why:"Both sides are anonymised."},
+     {t:"Neither the authors nor the reviewers know each other’s identity", ok:true, why:"Both sides are anonymized."},
      {t:"Reviewers know the authors, but not the reverse", why:"That’s single-anonymous review."},
      {t:"Everyone’s names are published with the article", why:"That describes some forms of open review."},
      {t:"Only the reader knows", why:"Not a peer review model."}]},
@@ -1545,12 +1545,12 @@ ICA.addUnit({
    /* ---- Lesson 5 ---- */
    {id:"t4u10-q37", lesson:"t4u10-l5", level:1, q:"Which is an example of a research master’s degree, according to the UK’s QAA?", options:[
      {t:"MPhil", ok:true, why:"QAA lists the MPhil, MLitt and MRes as examples of research master’s degrees."},
-     {t:"A bachelor’s degree with honours", why:"That’s an undergraduate degree."},
+     {t:"A bachelor’s degree with honors", why:"That’s an undergraduate degree."},
      {t:"A professional doctorate", why:"That is a doctoral-level degree, not a master’s."},
      {t:"A secondary-school diploma", why:"That’s pre-university."}]},
    {id:"t4u10-q38", lesson:"t4u10-l5", level:2, q:"Tomás starts a coursework-first doctorate in North America. What usually comes before admission to candidacy?", options:[
      {t:"Coursework, a qualifying exam and an approved proposal", ok:true, why:"A qualifying exam is also called a comprehensive exam. The Council of Graduate Schools and UBC both describe these steps before candidacy."},
-     {t:"The final dissertation defence", why:"The defence comes at the end, after candidacy and research."},
+     {t:"The final dissertation defense", why:"The defense comes at the end, after candidacy and research."},
      {t:"Publication of three journal articles in high-ranking journals", why:"Not a general requirement for candidacy."},
      {t:"A UK-style viva", why:"That’s the usual final exam in the UK system, not a North American candidacy step."}]},
    {id:"t4u10-q39", lesson:"t4u10-l5", level:1, q:"How do the UK and the US typically use “thesis” and “dissertation”?", options:[
@@ -1560,16 +1560,16 @@ ICA.addUnit({
      {t:"“Dissertation” always means a short undergraduate essay, in every country", why:"Usage varies by country and university."}]},
    {id:"t4u10-q40", lesson:"t4u10-l5", level:2, q:"In a UK viva, who is usually present, according to QAA?", options:[
      {t:"At least two examiners, usually one internal and one external", ok:true, why:"The candidate attends too. That’s QAA’s description; an independent chair, or the supervisor as observer, may also attend."},
-     {t:"A public audience of family, friends and other doctoral students", why:"That describes public defences in some other European systems; UK vivas are normally closed."},
+     {t:"A public audience of family, friends and other doctoral students", why:"That describes public defenses in some other European systems; UK vivas are normally closed."},
      {t:"Only the supervisor", why:"Supervisors don’t examine their own students."},
      {t:"A committee of ten professors", why:"Not the usual UK format."}]},
    {id:"t4u10-q41", lesson:"t4u10-l5", level:1, q:"Which outcome does QAA describe as happening for only a minority of UK doctoral candidates?", options:[
      {t:"Failing the doctoral assessment outright", ok:true, why:"Most candidates pass, often with amendments."},
      {t:"Passing with minor amendments", why:"A common outcome."},
-     {t:"Passing with major amendments", why:"Also a recognised and fairly common outcome."},
+     {t:"Passing with major amendments", why:"Also a recognized and fairly common outcome."},
      {t:"Having examiners read the thesis", why:"Examiners always read the thesis."}]},
    {id:"t4u10-q42", lesson:"t4u10-l5", level:3, q:"Fatima is comparing two offers: a three-year research-first PhD and a coursework-first PhD that typically takes five to six years after a bachelor’s. What is the fairest conclusion?", options:[
-     {t:"The lengths aren’t directly comparable; she should compare structure, funding and fit", ok:true, why:"The longer programme includes coursework that elsewhere might be a separate master’s. Headline durations hide different structures; neither model is better in itself."},
+     {t:"The lengths aren’t directly comparable; she should compare structure, funding and fit", ok:true, why:"The longer program includes coursework that elsewhere might be a separate master’s. Headline durations hide different structures; neither model is better in itself."},
      {t:"The shorter one is obviously a lower-quality degree", why:"Length reflects structure, not quality."},
      {t:"The longer one is obviously better, because more years means more training and research skill", why:"More time doesn’t mean higher quality; it reflects a different design."},
      {t:"All doctorates are identical, so length doesn’t matter", why:"Structure, funding and examination differ a lot."}]},
@@ -1584,7 +1584,7 @@ ICA.addUnit({
      {t:"Nothing: all funding is the same", why:"Funding differs a lot between countries and universities."},
      {t:"Whether he can pay an agent a fee to increase the amount he receives", why:"Genuine funding isn’t increased through paid agents; this is a scam pattern."}]},
    {id:"t4u10-q45", lesson:"t4u10-l5", level:2, q:"Which is a good first source of support for a graduate student who is struggling with wellbeing?", options:[
-     {t:"The university’s counselling or wellbeing service, or a doctor", ok:true, why:"A local health service is another option. These services exist for exactly this; talking early helps."},
+     {t:"The university’s counseling or wellbeing service, or a doctor", ok:true, why:"A local health service is another option. These services exist for exactly this; talking early helps."},
      {t:"Nobody: struggling means they don’t belong in graduate study at all", why:"Struggling at times is common, not a sign of not belonging."},
      {t:"Working longer hours until it passes", why:"Overwork usually makes things worse."},
      {t:"Only an anonymous online forum", why:"Peers online can help, but they can’t replace professional support."}]}

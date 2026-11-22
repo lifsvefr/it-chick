@@ -18,7 +18,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"t3u2-l1", title:"Variables, observations and one rectangle", minutes:55,
-   hook:{q:"A researcher summarised 13 audits of real-world spreadsheets. On average, what share of the audited spreadsheets contained errors?", options:["About 8%","About 28%","About 58%","About 88%"], answer:3, reveal:"**About 88%**, in Raymond Panko’s 2008 summary, as reported by Karl Broman and Kara Woo in their paper on organising spreadsheet data. Spreadsheets aren’t bad tools, but they make some mistakes very easy. This unit is about the layout and habits that make mistakes harder, starting with the most basic question: what goes in a row, and what goes in a column?"},
+   hook:{q:"A researcher summarized 13 audits of real-world spreadsheets. On average, what share of the audited spreadsheets contained errors?", options:["About 8%","About 28%","About 58%","About 88%"], answer:3, reveal:"**About 88%**, in Raymond Panko’s 2008 summary, as reported by Karl Broman and Kara Woo in their paper on organizing spreadsheet data. Spreadsheets aren’t bad tools, but they make some mistakes very easy. This unit is about the layout and habits that make mistakes harder, starting with the most basic question: what goes in a row, and what goes in a column?"},
    goals:[
      "Explain Data Carpentry’s tidy-data principles and why they make data machine-readable",
      "Decide what the variables and observations are, even when the answer isn’t obvious",
@@ -28,7 +28,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Beyond the three rules", body:[
-      {lead:"A spreadsheet can be read by people, who use context, colour and position, and by programs, which read only values in cells. Good data organisation serves both."},
+      {lead:"A spreadsheet can be read by people, who use context, color and position, and by programs, which read only values in cells. Good data organization serves both."},
       "Track 1 introduced [[tidy-data|tidy data]]: one row per record, one column per variable, one value per cell ({{tidy-data}}). This unit goes deeper, following the Data Carpentry lesson *Data Organization in Spreadsheets for Social Scientists* and the paper “Data Organization in Spreadsheets” by Karl Broman and Kara Woo (*The American Statistician*, 2018). Data Carpentry lists five principles:",
       {ol:[
         "Put all your variables in columns: the things you measure, such as weight or number of household members.",
@@ -39,7 +39,7 @@ ICA.addUnit({
       ]},
       "Broman and Woo add a point of view worth keeping: spreadsheets are best for **entering and storing** data. Analysis and charts are safer in a separate copy, or in another program, so the original can’t be damaged by accident.",
       "Our running example is invented, but shaped like the interview data Data Carpentry uses: researchers visit farming households and record who lives there, what they own and what they grow.",
-      {tip:"The best layout for **typing** data and the best layout for **analysing** it can differ. Data Carpentry’s advice: know both, and convert from one to the other in a repeatable way rather than retyping."}
+      {tip:"The best layout for **typing** data and the best layout for **analyzing** it can differ. Data Carpentry’s advice: know both, and convert from one to the other in a repeatable way rather than retyping."}
     ]},
     {h:"What counts as a variable?", body:[
       "A [[variable-column|variable]] is one property you record for every unit you study: a household’s village, its number of members, the material of its walls. The entries in that column are its **values**. Every value in a column should be the same kind of thing, in the same unit.",
@@ -56,7 +56,7 @@ ICA.addUnit({
     {h:"What counts as an observation?", body:[
       "An [[observation-row|observation]] is one unit you studied, at one time: one household interview, one plot, one blood sample, one shop sale. The question to ask is “**one row = one what?**” and to write the answer down.",
       "Real projects often record things at two levels. A household has one village and one number of members, but it may farm several plots, each with its own crop and area. If you force both into one table, you either repeat household facts on every plot row or spread plots across columns (plot1_crop, plot2_crop …). Broman and Woo’s answer is a **set of rectangles**: one table per kind of observation, linked by an identifier.",
-      {fig:'<svg viewBox="0 0 340 318"><defs><marker id="m321" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">households: one row = one household</text><rect class="d-panel" x="10" y="30" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="54" width="320" height="48" stroke-width="1"/><rect class="d-gold" x="10" y="30" width="90" height="72" stroke-width="2"/><path class="d-soft" d="M10,78 L330,78 M210,30 L210,102" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="108" y="47">village</text><text x="218" y="47">members</text><text x="18" y="71">H01</text><text x="108" y="71">Kibo</text><text x="322" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="108" y="95">Mto</text><text x="322" y="95" text-anchor="end">4</text><path class="d-ink" d="M55,108 C55,140 135,135 135,166" stroke-width="2" fill="none" marker-end="url(#m321)"/><text x="160" y="140">the same ID links them</text><text x="10" y="186">plots: one row = one plot</text><rect class="d-panel" x="10" y="196" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="220" width="320" height="72" stroke-width="1"/><rect class="d-gold" x="90" y="196" width="80" height="96" stroke-width="2"/><path class="d-soft" d="M10,244 L330,244 M10,268 L330,268 M250,196 L250,292" stroke-width="1"/><text x="18" y="213">plot_id</text><text x="98" y="213">hh_id</text><text x="178" y="213">crop</text><text x="258" y="213">area_ha</text><text x="18" y="237">P1</text><text x="98" y="237">H01</text><text x="178" y="237">maize</text><text x="322" y="237" text-anchor="end">0.5</text><text x="18" y="261">P2</text><text x="98" y="261">H01</text><text x="178" y="261">beans</text><text x="322" y="261" text-anchor="end">0.2</text><text x="18" y="285">P3</text><text x="98" y="285">H02</text><text x="178" y="285">maize</text><text x="322" y="285" text-anchor="end">0.8</text><text class="s" x="10" y="312">hh_id is unique in households, repeated in plots</text></svg>', alt:"Two small tables. The top table, households, has one row per household with columns hh_id, village and members: H01 Kibo 7, H02 Mto 4. The bottom table, plots, has one row per plot with columns plot_id, hh_id, crop and area in hectares: P1 H01 maize 0.5, P2 H01 beans 0.2, P3 H02 maize 0.8. The hh_id column is highlighted in both tables and an arrow joins them, labelled the same ID links them. A note says hh_id is unique in households and repeated in plots.", cap:"Two kinds of observation, two rectangles. Each household fact is written once; each plot fact is written once."},
+      {fig:'<svg viewBox="0 0 340 318"><defs><marker id="m321" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">households: one row = one household</text><rect class="d-panel" x="10" y="30" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="54" width="320" height="48" stroke-width="1"/><rect class="d-gold" x="10" y="30" width="90" height="72" stroke-width="2"/><path class="d-soft" d="M10,78 L330,78 M210,30 L210,102" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="108" y="47">village</text><text x="218" y="47">members</text><text x="18" y="71">H01</text><text x="108" y="71">Kibo</text><text x="322" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="108" y="95">Mto</text><text x="322" y="95" text-anchor="end">4</text><path class="d-ink" d="M55,108 C55,140 135,135 135,166" stroke-width="2" fill="none" marker-end="url(#m321)"/><text x="160" y="140">the same ID links them</text><text x="10" y="186">plots: one row = one plot</text><rect class="d-panel" x="10" y="196" width="320" height="24" stroke-width="1"/><rect class="d-soft" x="10" y="220" width="320" height="72" stroke-width="1"/><rect class="d-gold" x="90" y="196" width="80" height="96" stroke-width="2"/><path class="d-soft" d="M10,244 L330,244 M10,268 L330,268 M250,196 L250,292" stroke-width="1"/><text x="18" y="213">plot_id</text><text x="98" y="213">hh_id</text><text x="178" y="213">crop</text><text x="258" y="213">area_ha</text><text x="18" y="237">P1</text><text x="98" y="237">H01</text><text x="178" y="237">maize</text><text x="322" y="237" text-anchor="end">0.5</text><text x="18" y="261">P2</text><text x="98" y="261">H01</text><text x="178" y="261">beans</text><text x="322" y="261" text-anchor="end">0.2</text><text x="18" y="285">P3</text><text x="98" y="285">H02</text><text x="178" y="285">maize</text><text x="322" y="285" text-anchor="end">0.8</text><text class="s" x="10" y="312">hh_id is unique in households, repeated in plots</text></svg>', alt:"Two small tables. The top table, households, has one row per household with columns hh_id, village and members: H01 Kibo 7, H02 Mto 4. The bottom table, plots, has one row per plot with columns plot_id, hh_id, crop and area in hectares: P1 H01 maize 0.5, P2 H01 beans 0.2, P3 H02 maize 0.8. The hh_id column is highlighted in both tables and an arrow joins them, labeled the same ID links them. A note says hh_id is unique in households and repeated in plots.", cap:"Two kinds of observation, two rectangles. Each household fact is written once; each plot fact is written once."},
       "Now nothing is typed twice, and every question has a home: average household size uses the first table; total maize area uses the second; “maize area per village” joins the two by `hh_id` (with a lookup in a spreadsheet, or a join in a database, as Unit 10 shows).",
       {tip:"Keep each rectangle on its own sheet (or in its own file, which Broman and Woo prefer because each exports neatly to one CSV). Add a separate notes sheet if you like: Data Carpentry recommends a tab for notes about cleaning steps."}
     ]},
@@ -92,7 +92,7 @@ ICA.addUnit({
         "**Desktop Excel:** Power Query can do it in one step. Select the table, choose **Data → From Table/Range**, select the station column, then **Transform → Unpivot Other Columns**. The new columns are called Attribute and Value by default; rename them and choose **Close & Load**."
       ]},
       "Copying by hand is where mistakes creep in, which is why Broman and Woo advise against rearranging existing data by copy and paste when you can avoid it. In Unit 9 you’ll reshape with one line of R ({{reshaping-data}}), which also leaves a record of exactly what was done.",
-      {lab:"fl-sumif", t:"Practise: total one person’s hours from a long table with SUMIF"}
+      {lab:"fl-sumif", t:"Practice: total one person’s hours from a long table with SUMIF"}
     ]},
     {h:"Identifiers hold it all together", body:[
       "Every table needs a column that names each row uniquely: a [[primary-key-sheet|key column]] such as `hh_id`, `plot_id` or `sample_id`. It lets you restore the original order after sorting, link tables, find duplicates and talk about a record without describing it (“H07 has a typo”).",
@@ -104,12 +104,12 @@ ICA.addUnit({
       ]},
       "To check uniqueness, add a [[helper-column|helper column]] next to the IDs. In row 2, `=COUNTIF($A$2:$A$500, A2)` counts how many times that row’s ID appears in the whole column; fill it down. Any result above 1 is a duplicate. Filter or sort that helper column to find them, then delete the helper column.",
       {ex:"A (hh_id)   B  =COUNTIF($A$2:$A$6, A2)\nH01         1\nH02         2   ← appears twice\nH03         1\nH02         2   ← appears twice\nH05         1", label:"Worked example: finding a duplicate ID", mono:true},
-      {lab:"fl-countifcell", t:"Practise: COUNTIF with a criterion taken from a cell"}
+      {lab:"fl-countifcell", t:"Practice: COUNTIF with a criterion taken from a cell"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
         "**“Tidy means long, always.”** Tidy means each variable has a column and each observation a row. Whether that’s long or wide depends on what an observation is.",
-        "**“More tabs make a workbook more organised.”** For data, one table with an extra column is usually better than a tab per day or per site. Tabs are fine for notes, lists and separate kinds of observation.",
+        "**“More tabs make a workbook more organized.”** For data, one table with an extra column is usually better than a tab per day or per site. Tabs are fine for notes, lists and separate kinds of observation.",
         "**“Repeating the household’s village on every plot row is harmless.”** It invites typos (the same household in two villages). Store household facts once and link by ID.",
         "**“Row numbers are good enough as IDs.”** They change whenever you sort or delete. Use a real ID column.",
         "**“A dataset that doesn’t fit one rectangle can’t go in a spreadsheet.”** It may fit a set of rectangles. If it fits none, a spreadsheet may not be the right tool."
@@ -119,7 +119,7 @@ ICA.addUnit({
    try:[
     {id:"t3u2-l1-x1", type:"sort", q:"Kenji is designing a sheet for a community bike-repair café. For each item, does it deserve its own column, or should it be split into several columns?", buckets:["Fine as one column","Split it into several columns"], items:[
       {t:"Visit date", b:0, why:"One fact per row: the date of that repair visit."},
-      {t:"“Flat tyre, fixed in 20 min”", b:1, why:"Two facts: the problem (flat tyre) and the time taken (20). Use a `problem` column and a `minutes` column."},
+      {t:"“Flat tyre, fixed in 20 min”", b:1, why:"Two facts: the problem (flat tire) and the time taken (20). Use a `problem` column and a `minutes` column."},
       {t:"“45 kg”", b:1, why:"A number and a unit. Put `45` in the cell and the unit in the column name (`weight_kg`) or in the data dictionary."},
       {t:"Bike type, chosen from city, mountain, cargo or child", b:0, why:"One categorical value per row. A dropdown (Lesson 5) keeps the spelling consistent."},
       {t:"“Ana Souza, 0412 555 019”", b:1, why:"A name and a phone number are two facts. Separate columns, with the phone stored as text."},
@@ -153,7 +153,7 @@ ICA.addUnit({
     ]},
     {id:"t3u2-l1-x7", type:"explain", q:"A researcher keeps one sheet with a row per plot: each row repeats the household’s village and number of members, then gives the plot’s crop and area. Explain why splitting this into two tables linked by `hh_id` is better.", hint:"Ask “one row = one what?” for each piece of information.", model:"Village and household size describe the household; crop and area describe each plot. They are two kinds of observation. In one plot-level sheet, household facts are typed again on every plot row, which wastes effort and invites contradictions, such as the same household listed in two villages. A households table (one row per household) and a plots table (one row per plot), both carrying `hh_id`, store each fact once, and you can still join them for questions like maize area per village.", points:["Identifies two kinds of observation: households and plots", "Explains the problem of repeating household facts on every row", "Describes two tables linked by the `hh_id` identifier", "Says the tables can be joined again when a question needs both"]}
    ],
-   apply:{intro:"Practise restructuring and checking a small dataset. Everything works in any of the free spreadsheet apps, including Google Sheets on a phone (typing on a phone is slower, so keep the tables small).", tasks:[
+   apply:{intro:"Practice restructuring and checking a small dataset. Everything works in any of the free spreadsheet apps, including Google Sheets on a phone (typing on a phone is slower, so keep the tables small).", tasks:[
      {t:"Split one messy table into two rectangles", app:{
        all:["Start a new spreadsheet. On a sheet called `messy`, type this table (invented data): `hh_id, village, members, plots` with the rows `H01, Kibo, 7, “P1 maize 0.5ha; P2 beans 0.2ha”` and `H02, Mto, 4, “P3 maize 0.8ha”`.","Decide: what is one observation in each part? (A household; a plot.)","Make a sheet called `households` with the columns hh_id, village, members and one row per household.","Make a sheet called `plots` with the columns plot_id, hh_id, crop, area_ha and one row per plot (three rows). Type numbers without units.","Freeze the header row on both sheets (Excel: **View → Freeze Panes → Freeze Top Row**; Google Sheets: **View → Freeze → 1 row**; LibreOffice: **View → Freeze Cells → Freeze First Row**; Numbers: **Format** sidebar → **Table** → the **Headers & Footer** pop-up menus → **Freeze Header Rows**).","Leave the messy sheet as it is: it’s your raw data."]
      }, write:"What is “one row = one what?” for each of your two sheets?"},
@@ -161,7 +161,7 @@ ICA.addUnit({
        ms:["On the plots sheet, add a fourth plot with the ID `P2` again (a deliberate duplicate).","In the first empty column, row 2, type `=COUNTIF($A$2:$A$5, A2)` and press [[kbd:Enter]]. Fill it down to row 5.","Both P2 rows show 2. Sort or filter the helper column to see them, fix the second ID (make it P4), then delete the helper column."],
        google:["On the plots sheet, add a fourth plot with the ID `P2` again (a deliberate duplicate).","In the first empty column, row 2, type `=COUNTIF($A$2:$A$5, A2)` and fill it down to row 5 (on a phone, copy the cell and paste it into the cells below).","Both P2 rows show 2. Fix the second ID (make it P4), then delete the helper column."],
        libre:["On the plots sheet, add a fourth plot with the ID `P2` again (a deliberate duplicate).","In the first empty column, row 2, type `=COUNTIF($A$2:$A$5; A2)` and fill it down to row 5. (LibreOffice accepts semicolons between arguments; in some language settings it shows commas.)","Both P2 rows show 2. Fix the second ID (make it P4), then delete the helper column."],
-       apple:["In the plots table, add a fourth plot with the ID `P2` again (a deliberate duplicate).","Add a column. In its first body cell type `=COUNTIF($A$2:$A$5,A2)` and press [[kbd:Return]] (Numbers shows the references as coloured tokens). Fill it down by dragging the yellow dot.","Both P2 rows show 2. Fix the second ID (make it P4), then delete the helper column."]
+       apple:["In the plots table, add a fourth plot with the ID `P2` again (a deliberate duplicate).","Add a column. In its first body cell type `=COUNTIF($A$2:$A$5,A2)` and press [[kbd:Return]] (Numbers shows the references as colored tokens). Fill it down by dragging the yellow dot.","Both P2 rows show 2. Fix the second ID (make it P4), then delete the helper column."]
      }},
      {t:"Optional: rebuild a wide summary from long data with a pivot table", app:{
        ms:["Make a long table `station, month, rain_mm` with the nine rows from the lesson.","Click inside it and choose **Insert → PivotTable** → **OK**. Drag **station** to Rows, **month** to Columns and **rain_mm** to Values (Sum).","You now have the wide table, built from the long one. (Months appear in alphabetical order unless you sort them yourself.)"],
@@ -182,12 +182,12 @@ ICA.addUnit({
      "Use one code for each category, one form for each identifier and one style for column names",
      "Choose column names that work in analysis software",
      "Keep units, comments and notes out of the value cells",
-     "Replace colour and other formatting that carries meaning with real columns",
+     "Replace color and other formatting that carries meaning with real columns",
      "Avoid invisible characters and stray formatting when pasting text"
    ],
    learn:[
     {h:"The first rule: be consistent", body:[
-      {lead:"Broman and Woo call consistency the first rule of data organisation: whatever you do, do it the same way every time."},
+      {lead:"Broman and Woo call consistency the first rule of data organization: whatever you do, do it the same way every time."},
       "Consistency is cheap at the moment of typing and expensive to fix later. Their list, with everyday examples:",
       {list:[
         "**Categories:** one code for each. Not `M`, `male` and `Male`, but one of them, always.",
@@ -200,7 +200,7 @@ ICA.addUnit({
       ]},
       "The hook showed why “close enough” isn’t enough. Spreadsheet functions such as COUNTIF ignore capitals, and so do the filter lists and pivot tables of Excel and LibreOffice Calc, which can make a messy column look fine. But analysis programs such as R and Python treat `Male` and `male` as different, and every app treats ` male` (with a space) as different.",
       {warn:"Spaces at the start or end of an entry are invisible. In Excel, Google Sheets and LibreOffice Calc, `=TRIM(A2)` gives a cleaned copy. In Excel, TRIM doesn’t remove the **[[non-breaking-space|non-breaking space]]** that web pages often contain (Microsoft’s help says so; LibreOffice’s TRIM doesn’t either): `=TRIM(SUBSTITUTE(A2, CHAR(160), \" \"))` swaps it for an ordinary space first."},
-      {lab:"fx-trim", t:"Practise: fix a lookup that fails because of hidden spaces"}
+      {lab:"fx-trim", t:"Practice: fix a lookup that fails because of hidden spaces"}
     ]},
     {h:"Column names that travel well", body:[
       "Column names (Data Carpentry calls them field names) are read by people and by programs. Programs are fussy: a space can split one name into two, a symbol can mean something in a programming language, and a name starting with a digit isn’t allowed as a plain name in R or Python.",
@@ -214,7 +214,7 @@ ICA.addUnit({
       ]},
       "The table is adapted from Data Carpentry’s examples. The guidance behind it:",
       {list:[
-        "**Short, but meaningful.** `precmm` is too short to understand in six months; `mean_growth_per_year_in_centimetres` is too long to type.",
+        "**Short, but meaningful.** `precmm` is too short to understand in six months; `mean_growth_per_year_in_centimeters` is too long to type.",
         "**No spaces:** use underscores (`wall_type`) or capitals (`WallType`). Broman and Woo suggest picking underscores or hyphens and never mixing them.",
         "**No special characters** other than underscores (and hyphens, if you choose them): avoid `$ @ % # & * ( ) ! /`.",
         "**Don’t start with a number:** `age_18`, not `18years`.",
@@ -235,12 +235,12 @@ ICA.addUnit({
       {ex:"weight  weight_unit  note\n45      g\n0       g            below threshold\n1.2     kg           scale B", label:"Values, units and notes in separate columns", mono:true}
     ]},
     {h:"Formatting is not data", body:[
-      "Highlighting a suspicious value in yellow, colouring rows by group or making excluded rows grey feels natural, but colour is invisible to formulas, lost when you save as CSV, and can’t be seen by everyone. Broman and Woo’s advice: add an **[[indicator-column|indicator column]]** instead.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="m322" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">Meaning stored as colour</text><rect class="d-panel" x="10" y="30" width="220" height="24" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="118" y="47">members</text><rect class="d-soft" x="10" y="54" width="220" height="72" stroke-width="1"/><rect class="d-gold" x="10" y="78" width="220" height="24" stroke-width="2"/><path class="d-soft" d="M110,30 L110,126 M10,78 L230,78 M10,102 L230,102" stroke-width="1"/><text x="18" y="71">H01</text><text x="222" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="222" y="95" text-anchor="end">90</text><text x="18" y="119">H03</text><text x="222" y="119" text-anchor="end">5</text><text class="s" x="240" y="88">yellow =</text><text class="s" x="240" y="103">“check this”</text><path class="d-ink" d="M120,134 L120,166" stroke-width="2" marker-end="url(#m322)"/><text x="132" y="155">make it a column</text><text x="10" y="190">Meaning stored as data</text><rect class="d-panel" x="10" y="200" width="320" height="24" stroke-width="1"/><text x="18" y="217">hh_id</text><text x="118" y="217">members</text><text x="238" y="217">flag</text><rect class="d-soft" x="10" y="224" width="320" height="72" stroke-width="1"/><path class="d-soft" d="M110,200 L110,296 M230,200 L230,296 M10,248 L330,248 M10,272 L330,272" stroke-width="1"/><text x="18" y="241">H01</text><text x="222" y="241" text-anchor="end">7</text><text x="238" y="241">ok</text><text x="18" y="265">H02</text><text x="222" y="265" text-anchor="end">90</text><rect class="d-rose" x="234" y="252" width="90" height="16" rx="3" stroke-width="1.5"/><text x="238" y="265">check</text><text x="18" y="289">H03</text><text x="222" y="289" text-anchor="end">5</text><text x="238" y="289">ok</text></svg>', alt:"Top: a small table of household IDs and member counts in which the row for H02, with 90 members, is shaded yellow, and a note says yellow means check this. An arrow labelled make it a column points down to a second table with an extra column called flag, holding ok, check and ok. The word check is highlighted.", cap:"Colour can be lost or misread; a flag column can be filtered, counted and exported."},
-      "Now you can filter the rows to check, count them with COUNTIF, and the information survives export. Colour can still help people, as long as it’s **derived from the data**: conditional formatting that shades every row where `flag` is “check” is fine, because the meaning lives in the column and the colour just displays it.",
+      "Highlighting a suspicious value in yellow, coloring rows by group or making excluded rows gray feels natural, but color is invisible to formulas, lost when you save as CSV, and can’t be seen by everyone. Broman and Woo’s advice: add an **[[indicator-column|indicator column]]** instead.",
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="m322" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><text x="10" y="20">Meaning stored as color</text><rect class="d-panel" x="10" y="30" width="220" height="24" stroke-width="1"/><text x="18" y="47">hh_id</text><text x="118" y="47">members</text><rect class="d-soft" x="10" y="54" width="220" height="72" stroke-width="1"/><rect class="d-gold" x="10" y="78" width="220" height="24" stroke-width="2"/><path class="d-soft" d="M110,30 L110,126 M10,78 L230,78 M10,102 L230,102" stroke-width="1"/><text x="18" y="71">H01</text><text x="222" y="71" text-anchor="end">7</text><text x="18" y="95">H02</text><text x="222" y="95" text-anchor="end">90</text><text x="18" y="119">H03</text><text x="222" y="119" text-anchor="end">5</text><text class="s" x="240" y="88">yellow =</text><text class="s" x="240" y="103">“check this”</text><path class="d-ink" d="M120,134 L120,166" stroke-width="2" marker-end="url(#m322)"/><text x="132" y="155">make it a column</text><text x="10" y="190">Meaning stored as data</text><rect class="d-panel" x="10" y="200" width="320" height="24" stroke-width="1"/><text x="18" y="217">hh_id</text><text x="118" y="217">members</text><text x="238" y="217">flag</text><rect class="d-soft" x="10" y="224" width="320" height="72" stroke-width="1"/><path class="d-soft" d="M110,200 L110,296 M230,200 L230,296 M10,248 L330,248 M10,272 L330,272" stroke-width="1"/><text x="18" y="241">H01</text><text x="222" y="241" text-anchor="end">7</text><text x="238" y="241">ok</text><text x="18" y="265">H02</text><text x="222" y="265" text-anchor="end">90</text><rect class="d-rose" x="234" y="252" width="90" height="16" rx="3" stroke-width="1.5"/><text x="238" y="265">check</text><text x="18" y="289">H03</text><text x="222" y="289" text-anchor="end">5</text><text x="238" y="289">ok</text></svg>', alt:"Top: a small table of household IDs and member counts in which the row for H02, with 90 members, is shaded yellow, and a note says yellow means check this. An arrow labeled make it a column points down to a second table with an extra column called flag, holding ok, check and ok. The word check is highlighted.", cap:"Color can be lost or misread; a flag column can be filtered, counted and exported."},
+      "Now you can filter the rows to check, count them with COUNTIF, and the information survives export. Color can still help people, as long as it’s **derived from the data**: conditional formatting that shades every row where `flag` is “check” is fine, because the meaning lives in the column and the color just displays it.",
       {table:[
         ["Formatting used as data","Column instead"],
-        ["Grey rows = exclude from analysis","`exclude` = TRUE / FALSE (and an `exclude_reason`)"],
+        ["Gray rows = exclude from analysis","`exclude` = TRUE / FALSE (and an `exclude_reason`)"],
         ["Blue text = interviewed by Priya","`interviewer` = Priya"],
         ["Bold = estimated, not measured","`estimated` = yes / no"],
         ["Merged cell spanning a group of rows","A `group` column filled in on every row"]
@@ -276,14 +276,14 @@ ICA.addUnit({
         "**Count the categories.** A small pivot table, or COUNTIF next to a list of the allowed values, shows whether the counts add up to the number of rows. If they don’t, something is spelled differently."
       ]},
       "Lesson 5 shows how to stop most of these problems at the door with dropdown lists. Track 3’s Unit 3 shows how to clean data that is already messy, with tools such as [[openrefine|OpenRefine]] that can cluster near-identical spellings ({{data-cleaning}}, {{facets-clustering}}).",
-      {lab:"fl-countif", t:"Practise: count entries in a category with COUNTIF"}
+      {lab:"fl-countif", t:"Practice: count entries in a category with COUNTIF"}
     ]},
     {h:"Common misconceptions", body:[
       {list:[
         "**“The computer will know that Male and male are the same.”** Some spreadsheet functions ignore capitals; most analysis programs don’t. Pick one spelling.",
         "**“Spaces in column names are fine; the app shows them.”** The app does; R, Python and SQL make you quote such names every time. Use underscores.",
         "**“A note in the cell keeps the explanation close to the value.”** It turns the value into text that calculations skip. Put notes in their own column.",
-        "**“Highlighting is a quick way to record a decision.”** It’s quick to make and easy to lose. Record the decision in a column; let colour display it.",
+        "**“Highlighting is a quick way to record a decision.”** It’s quick to make and easy to lose. Record the decision in a column; let color display it.",
         "**“Leaving repeated values blank saves typing.”** It saves seconds and can cost the data. Fill every row."
       ]}
     ]}
@@ -295,7 +295,7 @@ ICA.addUnit({
       {t:"COUNTIF can only count up to 47 cells in a range", why:"There is no such limit; COUNTIF can search millions of cells."},
       {t:"The range C2:C200 is too small", why:"If her 50 rows are inside C2:C200, the range is fine. The mismatch comes from the values, not the range."}
     ]},
-    {id:"t3u2-l2-x2", type:"sort", q:"Sione is choosing column names for a volunteer survey that will later be analysed in R. Which names work well, and which should he change?", buckets:["Good name","Change it"], items:[
+    {id:"t3u2-l2-x2", type:"sort", q:"Sione is choosing column names for a volunteer survey that will later be analyzed in R. Which names work well, and which should he change?", buckets:["Good name","Change it"], items:[
       {t:"`hours_per_week`", b:0, why:"Lowercase, underscores, meaningful: works everywhere."},
       {t:"`Hours / week`", b:1, why:"Spaces and a slash. In R he’d need backticks around it every time; `hours_per_week` is easier."},
       {t:"`2nd_language`", b:1, why:"Names starting with a digit aren’t allowed as plain names in R or Python. Try `second_language` or `language_2`."},
@@ -307,7 +307,7 @@ ICA.addUnit({
       "Columns: date | donor_id | weight_kg | note\nRow 1: ", {t:"2026-05-04", flag:false, why:"A real date in year-month-day form: fine."}, " | ", {t:"D-017", flag:false, why:"A consistent text ID: fine."}, " | ", {t:"12.5", flag:false, why:"Just the number; the unit is in the header."}, " | mixed tins\nRow 2: ", {t:"(blank: same date as above)", flag:true, why:"A blank meaning “same as above” is read as missing, and is lost if rows are sorted. Fill in 2026-05-04."}, " | ", {t:"D-021", flag:false, why:"Consistent ID: fine."}, " | ", {t:"8 kg", flag:true, why:"The unit makes this text, so SUM skips it. Type 8; the header already says kg."}, " | ", {t:"tins only", flag:false, why:"A note in the note column: fine."}, "\nRow 3: 2026-05-11 | ", {t:"d17", flag:true, why:"The same donor as D-017 written differently. Use exactly `D-017` so counts per donor work."}, " | ", {t:"20 (approx.)", flag:true, why:"A number with a note is text. Type 20, and add “approximate” to the note column (or use an `estimated` column)."}, " | rice"
     ]},
     {id:"t3u2-l2-x4", type:"match", q:"Match each habit with the better way to record the same information.", pairs:[
-      ["Rows for excluded samples shaded grey","An `exclude` column (TRUE / FALSE) and an `exclude_reason`","Columns can be filtered and counted, and survive export to CSV; shading doesn’t."],
+      ["Rows for excluded samples shaded gray","An `exclude` column (TRUE / FALSE) and an `exclude_reason`","Columns can be filtered and counted, and survive export to CSV; shading doesn’t."],
       ["`0 (below threshold)` in a value cell","`0` in the value cell and “below threshold” in a note column","The value stays a number; the note is kept where people and programs can read it."],
       ["A merged “Site A” cell beside ten rows","A `site` column with “Site A” on each of the ten rows","Every row then carries its own site, and sorting can’t separate rows from their site."],
       ["A cell comment saying “scale B used”","A `scale` column","Most analysis software can’t see cell comments."]
@@ -325,9 +325,9 @@ ICA.addUnit({
       {t:"Fix the variants to one spelling and note what you changed", why:"Fix, and record the change so others know what happened (and you remember)."},
       {t:"Add a dropdown list so new entries stay consistent", why:"Finally, prevent the problem from coming back (Lesson 5)."}
     ]},
-    {id:"t3u2-l2-x7", type:"explain", q:"A colleague marks the rows to leave out of an analysis by shading them grey. Explain why an indicator column is a better way to record this decision.", model:"Colour is formatting, not data. Formulas and analysis programs can’t read it, it disappears when the file is saved as CSV, and some people can’t see it. So the “exclude” decision could be lost or ignored by the analysis. A column such as `exclude` (TRUE or FALSE), with an `exclude_reason`, can be filtered, counted and read by R or Python, and survives export. If people still want the grey, conditional formatting can shade rows from that column, so the colour displays the data rather than being it.", points:["Says formulas and analysis software can’t read colour", "Says colour is lost when saving as CSV (and not everyone can see it)", "Proposes an indicator column such as `exclude`, ideally with a reason", "Mentions that conditional formatting can still show the column as colour"]}
+    {id:"t3u2-l2-x7", type:"explain", q:"A colleague marks the rows to leave out of an analysis by shading them gray. Explain why an indicator column is a better way to record this decision.", model:"Color is formatting, not data. Formulas and analysis programs can’t read it, it disappears when the file is saved as CSV, and some people can’t see it. So the “exclude” decision could be lost or ignored by the analysis. A column such as `exclude` (TRUE or FALSE), with an `exclude_reason`, can be filtered, counted and read by R or Python, and survives export. If people still want the gray, conditional formatting can shade rows from that column, so the color displays the data rather than being it.", points:["Says formulas and analysis software can’t read color", "Says color is lost when saving as CSV (and not everyone can see it)", "Proposes an indicator column such as `exclude`, ideally with a reason", "Mentions that conditional formatting can still show the column as color"]}
    ],
-   apply:{intro:"Practise the habits on a small sheet of your own, such as a reading log, a club’s attendance or household expenses, or use the food-bank example. Google Sheets on a phone works for everything here.", tasks:[
+   apply:{intro:"Practice the habits on a small sheet of your own, such as a reading log, a club’s attendance or household expenses, or use the food-bank example. Google Sheets on a phone works for everything here.", tasks:[
      {t:"Find inconsistent entries with a filter", app:{
        ms:["Type a column called `category` with about 12 entries, deliberately including `Food`, `food`, `Food ` (trailing space) and `Foods`.","Click in the data and choose **Data → Filter**. Open the arrow on the category header and read the list of values.","Note which variants appear separately. (Excel’s filter list treats different capitals as the same value, but the trailing space and the extra letter still show.)"],
        google:["Type a column called `category` with about 12 entries, deliberately including `Food`, `food`, `Food ` (trailing space) and `Foods`.","Select the data and choose **Data → Create a filter** (on a phone: tap the column, then the three-dot menu → **Create a filter**). Tap the filter icon on the header and read the list of values.","Note which variants appear separately."],
@@ -343,7 +343,7 @@ ICA.addUnit({
        libre:["Copy a sentence with formatting from a web page or document.","Click a cell and choose **Edit → Paste Special → Paste Unformatted Text**.","Compare with an ordinary paste in another cell."],
        apple:["Copy a sentence with formatting from a web page or document.","Click a cell and choose **Edit → Paste and Match Style**.","Compare with an ordinary paste in another cell."]
      }}
-   ], proof:"A small sheet whose category column has one spelling per category, short column names without spaces, flag and note columns instead of colour and in-cell notes, and a note of which variants your filter revealed."},
+   ], proof:"A small sheet whose category column has one spelling per category, short column names without spaces, flag and note columns instead of color and in-cell notes, and a note of which variants your filter revealed."},
    read:[
     {book:"dcss", where:"Data Organization in Spreadsheets for Social Scientists → “Formatting Data Tables in Spreadsheets”, section “Common Spreadsheet Errors” (formatting, comments and units, more than one piece of information in a cell, problematic field names, special characters)"}
    ]
@@ -377,8 +377,8 @@ ICA.addUnit({
         ["`-999`","5 / 5","−999, silently"]
       ]},
       "Two things stand out. A blank is skipped by AVERAGE but counts as 0 in direct arithmetic, so a formula like `=B4-B3` can give a confident wrong answer. And a text code such as NA is at least loud: arithmetic on it fails visibly.",
-      "**Outside spreadsheets the rules change.** In R, `mean()` of values that include NA returns NA unless you ask it to remove them (`na.rm = TRUE`), so R makes you decide. R’s `read.csv()` treats `NA` as missing by default, along with empty cells in number columns. Python’s pandas library recognises a longer list, including blank cells, `NA`, `N/A`, `n/a`, `NULL` and `None`. But in a test for this lesson, pandas kept `na` and `-` as text, which turned the whole age column into text.",
-      {lab:"fl-count", t:"Practise: COUNT numbers in a column where blank means “not yet”"}
+      "**Outside spreadsheets the rules change.** In R, `mean()` of values that include NA returns NA unless you ask it to remove them (`na.rm = TRUE`), so R makes you decide. R’s `read.csv()` treats `NA` as missing by default, along with empty cells in number columns. Python’s pandas library recognizes a longer list, including blank cells, `NA`, `N/A`, `n/a`, `NULL` and `None`. But in a test for this lesson, pandas kept `na` and `-` as text, which turned the whole age column into text.",
+      {lab:"fl-count", t:"Practice: COUNT numbers in a column where blank means “not yet”"}
     ]},
     {h:"Choosing a missing-value code", body:[
       "Data Carpentry’s table of common codes (adapted, with its recommendations):",
@@ -387,7 +387,7 @@ ICA.addUnit({
         ["`0`","Can’t be told apart from a real zero","Never use"],
         ["Blank","Hard to tell missing from overlooked; a space looks blank","Best option"],
         ["`NA`","Can also mean something (Namibia’s country code, North America); makes a number column text in a spreadsheet","Good option (R reads it)"],
-        ["`-999`, `999`","Not recognised as missing; ends up in calculations","Avoid"],
+        ["`-999`, `999`","Not recognized as missing; ends up in calculations","Avoid"],
         ["`N/A`, `None`, `missing`, `-`, `.`","Uncommon in some tools, or turns numbers into text","Avoid"],
         ["`NULL`","Can cause problems with data types","Good option for SQL"]
       ]},
@@ -422,7 +422,7 @@ ICA.addUnit({
       "Data Carpentry recommends keeping metadata **out of the data file itself**: legends, notes and explanations in the data sheet confuse programs. Store it next to the data instead:",
       {list:[
         "**The data dictionary**: a separate sheet in the workbook while you work, and a separate file (such as `households_dictionary.csv`) when you share.",
-        "**A [[readme|README]] file**: a plain-text file in the project folder that says who collected the data, when, where and how; what each file contains and how the files relate; which version is current; and any licence or conditions.",
+        "**A [[readme|README]] file**: a plain-text file in the project folder that says who collected the data, when, where and how; what each file contains and how the files relate; which version is current; and any license or conditions.",
         "**Codebooks and standards**: large surveys publish detailed codebooks (Data Carpentry points to the General Social Survey’s online codebook as an example), and the Data Documentation Initiative (DDI) is a standard for describing social-science data."
       ]},
       {ex:"README.txt\n\nHousehold survey, two villages, January–March 2026.\nCollected by: field team of the community water project.\nFiles:\n  households.csv            one row per household\n  plots.csv                 one row per plot (hh_id links)\n  households_dictionary.csv the columns, units and codes\nMissing values: blank cells (see dictionary).\nDates: YYYY-MM-DD. Encoding: UTF-8.\nVersion: 2026-04-02 (replaces 2026-03-20).", label:"A short README (invented project)", mono:true},
@@ -502,7 +502,7 @@ ICA.addUnit({
       "Data Carpentry’s example: in Excel, 2 July 2014 is stored as **41822**. Add 90 to it, and you get 41912, which Excel shows as 30 September 2014. Months of different lengths and the change of year are handled for you, because underneath it’s just counting.",
       {ex:"B2   2014-07-02      (stored as 41822)\nC2   =B2+90          → 41912 → 2014-09-30\nD2   =C2+90          → 42002 → 2014-12-29", label:"Worked example: a follow-up interview every 90 days", mono:true},
       "Because the display is only a format ({{cell-data-types}}), the same stored date can appear as 02/07/2014, 7/2/2014, 2-Jul or Wednesday, 2 July 2014. That flexibility is helpful on screen and dangerous when data moves between people, apps and countries, which is the rest of this lesson.",
-      {lab:"fl-days", t:"Practise: subtract two dates to get the number of days between them"}
+      {lab:"fl-days", t:"Practice: subtract two dates to get the number of days between them"}
     ]},
     {h:"Day first or month first?", body:[
       "Data Carpentry’s example: type `7/12/88`. Someone in the UK reads 7 December 1988; someone in the US reads 12 July 1988. Your spreadsheet decides using its [[locale]], the regional settings of your computer or file (Google Sheets: **File → Settings → Locale**; LibreOffice Calc: **Tools → Options → Language Settings → Languages → Locale setting**; Numbers: **File → Advanced → Language & Region** for each spreadsheet; Excel follows your computer’s region settings).",
@@ -610,7 +610,7 @@ ICA.addUnit({
       {t:"17 November of the current year, which is wrong for these records", ok:true, why:"Right. Data Carpentry’s exercise shows that apps fill in the current year when none is typed. He should type the full date (1987-11-17) or put year, month and day in separate columns."},
       {t:"17 November 1987, because the app can tell the records are old", why:"The app has no way to know; it uses the current year."},
       {t:"An error, because a date needs a year", why:"Apps accept day and month alone and quietly add the current year, which is why the mistake is easy to miss."},
-      {t:"The text “17/11”, left exactly as typed", why:"Most apps recognise 17/11 as a date in a day-first locale and add a year. (In a month-first locale it might stay as text, which is a different problem.)"}
+      {t:"The text “17/11”, left exactly as typed", why:"Most apps recognize 17/11 as a date in a day-first locale and add a year. (In a month-first locale it might stay as text, which is a different problem.)"}
     ]},
     {id:"t3u2-l4-x8", type:"explain", q:"Dates typed day-first, such as `05/07/2026` (5 July) and `13/07/2026` (13 July), are entered into a sheet whose locale reads dates month-first. Explain what happens to the column and why it is dangerous.", model:"The sheet reads the first number as the month. `05/07/2026` becomes 7 May 2026: a real date, but the wrong one. `13/07/2026` can’t be a date, because there’s no month 13, so it stays as text. The column ends up half wrong dates and half text, with no error message, so sorting, charts and date arithmetic quietly mix them. Typing dates as YYYY-MM-DD, or stating the date order when importing, prevents it.", points:["Says the sheet reads the first number as the month", "Explains that days 1 to 12 become different, wrong dates", "Explains that days 13 to 31 stay as text", "Says there is no warning, so later sorting or arithmetic goes wrong", "Gives a fix: ISO dates or stating the order on import"]}
    ],
@@ -645,8 +645,8 @@ ICA.addUnit({
    learn:[
     {h:"Keep raw data raw", body:[
       {lead:"Data Carpentry’s fourth principle is short: leave the raw data raw. Don’t change it. Work on a copy."},
-      "[[raw-data|Raw data]] is the data as it was first recorded: the typed-up interview sheets, the instrument’s export, the form responses. Everything else (cleaned, reshaped, summarised) is **derived** from it. If you clean the only copy and later find a mistake in the cleaning, you can’t tell what the original said.",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="m325" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-gold" x="40" y="10" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="36" text-anchor="middle">Raw: households_raw.xlsx</text><text class="s" x="170" y="56" text-anchor="middle">read-only, backed up, never edited</text><path class="d-ink" d="M170,72 L170,104" stroke-width="2" marker-end="url(#m325)"/><text class="s" x="180" y="93">copy</text><rect class="d-lup" x="40" y="108" width="260" height="78" rx="10" stroke-width="2"/><text x="170" y="134" text-anchor="middle">Working copy</text><text class="s" x="170" y="154" text-anchor="middle">clean, check, validate</text><text class="s" x="170" y="172" text-anchor="middle">+ a notes tab listing each step</text><path class="d-ink" d="M170,186 L170,218" stroke-width="2" marker-end="url(#m325)"/><text class="s" x="180" y="207">export</text><rect class="d-sage" x="40" y="222" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="248" text-anchor="middle">households.csv</text><text class="s" x="170" y="268" text-anchor="middle">+ dictionary + README</text><text class="s" x="170" y="306" text-anchor="middle">Found a mistake? Go back to the raw</text><text class="s" x="170" y="322" text-anchor="middle">file and redo the steps from your notes.</text></svg>', alt:"A flow from top to bottom. A gold box labelled Raw, households_raw.xlsx, read-only, backed up, never edited. An arrow labelled copy leads to a lupine box, Working copy: clean, check, validate, plus a notes tab listing each step. An arrow labelled export leads to a sage box, households.csv plus dictionary plus README. A note says: found a mistake? Go back to the raw file and redo the steps from your notes.", cap:"Raw data flows one way. Every derived file can be rebuilt from the raw file and the notes."},
+      "[[raw-data|Raw data]] is the data as it was first recorded: the typed-up interview sheets, the instrument’s export, the form responses. Everything else (cleaned, reshaped, summarized) is **derived** from it. If you clean the only copy and later find a mistake in the cleaning, you can’t tell what the original said.",
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="m325" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-gold" x="40" y="10" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="36" text-anchor="middle">Raw: households_raw.xlsx</text><text class="s" x="170" y="56" text-anchor="middle">read-only, backed up, never edited</text><path class="d-ink" d="M170,72 L170,104" stroke-width="2" marker-end="url(#m325)"/><text class="s" x="180" y="93">copy</text><rect class="d-lup" x="40" y="108" width="260" height="78" rx="10" stroke-width="2"/><text x="170" y="134" text-anchor="middle">Working copy</text><text class="s" x="170" y="154" text-anchor="middle">clean, check, validate</text><text class="s" x="170" y="172" text-anchor="middle">+ a notes tab listing each step</text><path class="d-ink" d="M170,186 L170,218" stroke-width="2" marker-end="url(#m325)"/><text class="s" x="180" y="207">export</text><rect class="d-sage" x="40" y="222" width="260" height="62" rx="10" stroke-width="2"/><text x="170" y="248" text-anchor="middle">households.csv</text><text class="s" x="170" y="268" text-anchor="middle">+ dictionary + README</text><text class="s" x="170" y="306" text-anchor="middle">Found a mistake? Go back to the raw</text><text class="s" x="170" y="322" text-anchor="middle">file and redo the steps from your notes.</text></svg>', alt:"A flow from top to bottom. A gold box labeled Raw, households_raw.xlsx, read-only, backed up, never edited. An arrow labeled copy leads to a lupine box, Working copy: clean, check, validate, plus a notes tab listing each step. An arrow labeled export leads to a sage box, households.csv plus dictionary plus README. A note says: found a mistake? Go back to the raw file and redo the steps from your notes.", cap:"Raw data flows one way. Every derived file can be rebuilt from the raw file and the notes."},
       "The habits, from Data Carpentry and Broman and Woo:",
       {list:[
         "**Make the raw file read-only.** On Windows, right-click the file → **Properties** → tick **Read-only**. On a Mac, select it in Finder → **File → Get Info** → tick **Locked**. In a shared Google Sheet, **Data → Protect sheets and ranges** can lock the raw tab.",
@@ -680,7 +680,7 @@ ICA.addUnit({
         "**Google Sheets:** cells that break a rule set to “show a warning” are marked in the corner; hover over one to read why.",
         "**Any app:** a check column. For members in C, `=AND(ISNUMBER(C2), C2>=1, C2<=30)` in row 2, filled down, gives FALSE for every row to look at, including blanks and text. (Excel, Google Sheets and LibreOffice Calc all have these functions.)"
       ]},
-      {lab:"fl-countifnum", t:"Practise: count values above a limit with COUNTIF and a comparison"},
+      {lab:"fl-countifnum", t:"Practice: count values above a limit with COUNTIF and a comparison"},
       {key:"Validation is a seatbelt, not a guarantee. Set rules before entry, and check after every paste or import."}
     ]},
     {h:"Why export to plain text", body:[
@@ -760,7 +760,7 @@ ICA.addUnit({
     {id:"t3u2-l5-x4", type:"sort", q:"Mei is about to export her cleaned sheet to CSV for a colleague using R. Which steps are worth doing first, and which make no difference to the CSV?", buckets:["Do it before exporting","Makes no difference to the CSV"], items:[
       {t:"Format the date columns as yyyy-mm-dd", b:0, why:"The CSV gets what cells display, so this writes unambiguous ISO dates."},
       {t:"Show all the decimals that were measured", b:0, why:"Values are written as shown; a one-decimal format would round the file’s numbers."},
-      {t:"Make the header row bold and centred", b:1, why:"CSV keeps no formatting, so this is lost anyway (harmless, but pointless)."},
+      {t:"Make the header row bold and centered", b:1, why:"CSV keeps no formatting, so this is lost anyway (harmless, but pointless)."},
       {t:"Choose the UTF-8 CSV option", b:0, why:"Keeps accented names and other scripts intact."},
       {t:"Delete the chart on the sheet", b:1, why:"Charts aren’t written to a CSV, so deleting it changes nothing in the file. (Keep it in your working copy if it’s useful.)"},
       {t:"Make sure the active sheet is the one with the data", b:0, why:"A CSV holds only the active sheet."}
@@ -818,7 +818,7 @@ ICA.addUnit({
   cpBank:[
    {id:"t3u2-cp01", lesson:"t3u2-l1", level:1, q:"A furniture charity’s sheet has a column `size` with entries such as `120 x 60 cm`. Volunteers want to filter for tables under 100 cm long. What is the best fix?", options:[
      {t:"Make the column wider so the whole entry is easy to read", why:"Width only changes the display. The cell still holds two numbers and a unit as one piece of text, so it can’t be filtered by length."},
-     {t:"Colour the rows of short tables so they stand out", why:"Colour is invisible to formulas and lost in a CSV. The real problem is that one cell holds several facts."},
+     {t:"Color the rows of short tables so they stand out", why:"Color is invisible to formulas and lost in a CSV. The real problem is that one cell holds several facts."},
      {t:"Split it into `length_cm` and `width_cm` columns of plain numbers", ok:true, why:"Each fact gets its own column, and the unit goes in the name. Now “length under 100” is a simple filter."},
      {t:"Retype every entry as `120x60cm` without spaces, so it is consistent", why:"Consistent text is still text holding two numbers. You still can’t filter or average the length on its own."}]},
    {id:"t3u2-cp02", lesson:"t3u2-l1", level:2, q:"A long table has the columns `stall`, `week` and `sales`, and 96 data rows. Every stall has one row for each week of a 12-week season. Reshaped to wide (one row per stall, one column per week), what do you get?", options:[
@@ -826,19 +826,19 @@ ICA.addUnit({
      {t:"8 rows and 12 week columns", ok:true, why:"96 rows ÷ 12 weeks = 8 stalls. Wide puts one row per stall and one column per week: 8 rows, 12 week columns."},
      {t:"96 rows and 12 week columns", why:"Reshaping doesn’t add values; it rearranges them. 96 values fit into 8 rows × 12 columns."},
      {t:"96 rows and 3 columns, because the data doesn’t change", why:"That describes the long table you started with. Going wide moves the weeks into columns, so the row count drops."}]},
-   {id:"t3u2-cp03", lesson:"t3u2-l1", level:3, q:"A youth centre’s workbook has a tab for each month (Jan, Feb, Mar …), each with a “Total” row at the bottom. The manager wants a yearly pivot table of visits by activity. What is the best restructure?", options:[
+   {id:"t3u2-cp03", lesson:"t3u2-l1", level:3, q:"A youth center’s workbook has a tab for each month (Jan, Feb, Mar …), each with a “Total” row at the bottom. The manager wants a yearly pivot table of visits by activity. What is the best restructure?", options:[
      {t:"Keep the monthly tabs and add a 13th tab that adds up the totals", why:"Totals can’t be split by activity, and every tab still drifts out of step. The data needs to be in one rectangle first."},
      {t:"Put the monthly tabs side by side on one sheet, keeping each Total row", why:"Tables side by side make each row hold unrelated records, and Total rows get read as data. Neither suits a pivot table."},
-     {t:"Colour each month’s rows differently on one sheet so months stay visible", why:"Colour isn’t data: a pivot table can’t group by it. The month needs to be a value in its own column."},
+     {t:"Color each month’s rows differently on one sheet so months stay visible", why:"Color isn’t data: a pivot table can’t group by it. The month needs to be a value in its own column."},
      {t:"One table with a `month` column and no Total rows; the pivot makes totals", ok:true, why:"A tab per month hides a variable. One rectangle with a month column fixes that, and totals belong in the summary, not the data."}]},
-   {id:"t3u2-cp04", lesson:"t3u2-l2", level:1, q:"A colleague names a column `Total $` in a sheet that will be analysed in R and Python. Why is it worth renaming?", options:[
+   {id:"t3u2-cp04", lesson:"t3u2-l2", level:1, q:"A colleague names a column `Total $` in a sheet that will be analyzed in R and Python. Why is it worth renaming?", options:[
      {t:"The space and `$` cause trouble in code; `total_usd` works without fuss", ok:true, why:"Spaces split names and symbols can mean something in code, so such names must be quoted every time. Underscores avoid this."},
      {t:"Column names must be written in capital letters to be read by R", why:"R doesn’t need capitals. Lowercase with underscores is a common, safe choice."},
      {t:"It isn’t: R and Python read any name exactly as it appears", why:"The spreadsheet shows any name, but code makes you quote names with spaces and symbols every time you use them."},
      {t:"Names must be at least ten letters long to be meaningful", why:"There is no length rule. Names should be short but meaningful, and free of spaces and special characters."}]},
    {id:"t3u2-cp05", lesson:"t3u2-l2", level:2, q:"A walking club’s `distance` column holds entries such as `5 km`, `3.2 km` and `800 m`. `=SUM()` of the column gives 0. What is the best fix?", options:[
      {t:"Format the cells as Number; the sum will then work", why:"Changing the format doesn’t turn text such as `5 km` into a number, and `800 m` would still be in the wrong unit."},
-     {t:"Delete the letters, leaving 5, 3.2 and 800 in the same column", why:"Now the entries are numbers, but 800 is metres among kilometres. One unit per column must hold, or the sum is wrong."},
+     {t:"Delete the letters, leaving 5, 3.2 and 800 in the same column", why:"Now the entries are numbers, but 800 is meters among kilometers. One unit per column must hold, or the sum is wrong."},
      {t:"One `distance_km` column of plain numbers: 5, 3.2 and 0.8", ok:true, why:"Text like `5 km` is skipped by SUM. Plain numbers in one unit add up correctly; the unit goes in the name and the data dictionary."},
      {t:"Add a comment to each cell explaining its unit", why:"Most analysis software can’t see cell comments, and the values are still text that SUM skips."}]},
    {id:"t3u2-cp06", lesson:"t3u2-l3", level:2, q:"A shop records daily visitors: 14, 0, (blank), 22, 9. The shop was open with no visitors on the day typed 0. The counter broke on the blank day. What does `=AVERAGE()` of the five cells return?", options:[
@@ -863,7 +863,7 @@ ICA.addUnit({
      {t:"Days 1–12 become wrong dates (3 April); she should export dates as yyyy-mm-dd", ok:true, why:"The CSV holds the displayed text, and the other app reads it month first. ISO dates in the file can’t be read the wrong way round."}]},
    {id:"t3u2-cp10", lesson:"t3u2-l5", level:3, q:"Yusuf’s `village` column has a dropdown rule allowing only `Kibo` or `Mto`. After a volunteer pastes 200 rows from another file, the filter list shows `kibo ` and `MTO` too. Why, and what should Yusuf do?", options:[
      {t:"The dropdown rule was deleted by the paste; he should add it again and trust it", why:"Re-adding the rule doesn’t check values already in the cells. He still needs to find and fix what slipped in."},
-     {t:"Validation checks only typing; he should mark the invalid data and fix it", ok:true, why:"Validation doesn’t stop pasted values. Circle Invalid Data, Mark Invalid Data or a check column finds them; then he harmonises the spellings."},
+     {t:"Validation checks only typing; he should mark the invalid data and fix it", ok:true, why:"Validation doesn’t stop pasted values. Circle Invalid Data, Mark Invalid Data or a check column finds them; then he harmonizes the spellings."},
      {t:"Nothing is wrong: COUNTIF ignores capitals, so `MTO` and `Mto` count the same", why:"Some spreadsheet functions ignore capitals, but R and Python don’t, and the trailing space breaks matching everywhere."},
      {t:"The other file used a different encoding; he should save the sheet as UTF-8", why:"Encoding affects letters from other scripts, not capitals or spaces. These are inconsistent entries that bypassed the rule."}]},
    {id:"t3u2-cp11", lesson:"t3u2-l5", level:2, q:"A cell holds 0.4567 and is formatted as a percentage with no decimals, so it shows `46%`. The sheet is exported to CSV with values written as shown. What will a colleague’s R script find in that cell?", options:[
@@ -882,7 +882,7 @@ ICA.addUnit({
     summary:"Decide what one row is, give every variable its own column and every fact its own cell, use one rectangle per kind of observation, and store long when in doubt.",
     levels:{
      starter:[
-      "A spreadsheet is read by two kinds of reader: people, who understand context, colour and position, and programs, which see only the values in cells. Tidy data works for both.",
+      "A spreadsheet is read by two kinds of reader: people, who understand context, color and position, and programs, which see only the values in cells. Tidy data works for both.",
       "Data Carpentry’s spreadsheet lesson lists five principles:",
       {ol:["Variables in columns.","Each observation in its own row.","One piece of information per cell.","Leave the raw data raw.","Export the cleaned data to a text format such as CSV."]},
       "The question that unlocks most layouts is **“one row = one what?”**: one household, one plot, one sale, one reading. If a sheet mixes two answers, it probably needs to be two tables, linked by an ID column.",
@@ -899,7 +899,7 @@ ICA.addUnit({
      ],
      pro:[
       "**Wickham’s framing.** Hadley Wickham’s 2014 paper “Tidy Data” defines tidy data as each variable a column, each observation a row and each type of observational unit a table. Data Carpentry’s spreadsheet rules are the practical version; its lesson cites Wickham, the Lowndes and Horst illustrations, and Broman and Woo (2018).",
-      "**Entry layout versus analysis layout.** Data Carpentry notes the best layouts for entering and analysing data may differ, and recommends automating the conversion. A wide form can be quicker to type; convert it to long with a repeatable method.",
+      "**Entry layout versus analysis layout.** Data Carpentry notes the best layouts for entering and analyzing data may differ, and recommends automating the conversion. A wide form can be quicker to type; convert it to long with a repeatable method.",
       "**Reshaping tools.** Long to wide: pivot tables in every major app. Wide to long: desktop Excel’s Power Query (**Data → From Table/Range**, select the ID column, **Transform → Unpivot Other Columns**; the new columns are named Attribute and Value by default), or code: `pivot_longer()` in R’s tidyr ({{reshaping-data}}), `melt()` in Python’s pandas. Broman and Woo advise against hand copy-and-paste rearrangement of existing data where possible, because it introduces errors and leaves no record.",
       "**Keys.** Each table needs a key column whose values are unique and stable. Check with a helper column `=COUNTIF($A$2:$A$500, A2)` (values above 1 are duplicates) or enforce it with a custom validation rule `=COUNTIF($A$2:$A$500, A2)=1`. Store keys with leading zeros or letters as text. In a database the same idea is a primary key, and the linking column in the second table is a foreign key (Unit 10).",
       "**When it doesn’t fit.** Broman and Woo: some data fit no set of rectangles, and then a spreadsheet may not be the right tool. Nested or hierarchical records may belong in a database or a format such as JSON."
@@ -910,18 +910,18 @@ ICA.addUnit({
     sources:[{t:"Data Carpentry: Data Organization in Spreadsheets for Social Scientists (lesson source on GitHub)", url:"https://github.com/datacarpentry/spreadsheets-socialsci"},{t:"Broman & Woo (2018), Data Organization in Spreadsheets, The American Statistician 72:2–10 (manuscript source on GitHub)", url:"https://github.com/kbroman/Paper_DataOrg"},{t:"Microsoft Support: Unpivot columns (Power Query)", url:"https://support.microsoft.com/en-us/office/unpivot-columns-power-query-0f7bad4b-9ea1-49c1-9d95-f588221c7098"}], checked:"2026-11"},
 
    {id:"spreadsheet-data-entry", title:"Entering data consistently", aka:["consistency","column names","field names","units in cells","comments in cells","formatting as data","highlighting","special characters","non-breaking space","paste values"], tags:["data","spreadsheets"],
-    summary:"One code per category, one form per ID, names without spaces, units and notes in their own columns, meaning in columns rather than colour, and no invisible characters.",
+    summary:"One code per category, one form per ID, names without spaces, units and notes in their own columns, meaning in columns rather than color, and no invisible characters.",
     levels:{
      starter:[
-      "Broman and Woo call it the first rule of data organisation: **be consistent**. Whatever you do, do it the same way every time.",
-      {list:["One spelling for each category: not `M`, `male` and `Male`.","One form for each ID: not `153` and `mouse153`.","Short column names without spaces: `wall_type`, not `wall type`.","Just the value in a cell: `45` in a column called `weight_g`, not `45 g`.","A column, not a colour, for anything that matters: `flag = check`, not a yellow cell."]},
+      "Broman and Woo call it the first rule of data organization: **be consistent**. Whatever you do, do it the same way every time.",
+      {list:["One spelling for each category: not `M`, `male` and `Male`.","One form for each ID: not `153` and `mouse153`.","Short column names without spaces: `wall_type`, not `wall type`.","Just the value in a cell: `45` in a column called `weight_g`, not `45 g`.","A column, not a color, for anything that matters: `flag = check`, not a yellow cell."]},
       "Spreadsheets can hide inconsistencies: COUNTIF ignores capital letters, so `Male` and `male` look the same to it, but a leading or trailing space makes a different value, and analysis programs such as R treat every variant as a separate category.",
       {tip:"Open a column’s filter list: it shows each distinct value once, so variants stand out."}
      ],
      builder:[
       "**Column names.** Data Carpentry: descriptive, but no spaces, numbers at the start, or special characters; underscores are a good alternative to spaces. Broman and Woo: short but meaningful, pick underscores or hyphens and don’t mix them, avoid `$ @ % # & * ( ) ! /`. Put units in the name (`weight_kg`) or the data dictionary.",
       "**Values with extras.** `0 (below threshold)` should be `0` plus a note column; `20 (approx.)` should be `20` plus an `estimated` column. Data Carpentry notes most analysis software can’t see cell comments, so notes belong in a column.",
-      "**Formatting as data.** Highlighting excluded rows, colouring groups or bolding estimates stores meaning where formulas and CSV files can’t reach it. Add an indicator column (`exclude` TRUE/FALSE) instead; conditional formatting can then colour rows *from* the column.",
+      "**Formatting as data.** Highlighting excluded rows, coloring groups or bolding estimates stores meaning where formulas and CSV files can’t reach it. Add an indicator column (`exclude` TRUE/FALSE) instead; conditional formatting can then color rows *from* the column.",
       "**Fill every row.** Leaving a cell blank to mean “same as above” turns it into a missing value, and once sorted the link may be lost. Record zeros as zeros.",
       "**Pasting.** Paste values only: Excel **Paste Values**, Google Sheets **Paste special → Values only**, LibreOffice **Paste Unformatted Text**, Numbers **Paste and Match Style**.",
       "**Finding variants.** Open the column’s filter list (each distinct value appears once), sort the column so odd entries collect at one end, or count each allowed value with COUNTIF and check the counts add up to the number of rows."
@@ -956,7 +956,7 @@ ICA.addUnit({
       "**Broman and Woo’s view:** fill every cell, using NA or a hyphen, so a missing value is visibly intended rather than possibly forgotten.",
       "**Why it’s missing.** Refused, don’t know, not asked, lost: these mean different things. Keep the value cell for the value or the missing code, and put the reason in its own column (`income_missing_reason`), as Broman and Woo recommend for notes.",
       "**Watch for silent blanks.** A blank is skipped by AVERAGE and COUNT, but direct arithmetic such as `=B4-B3` treats it as 0, so a difference calculated from a missing value looks like a real result. Text codes such as NA fail loudly instead (#VALUE!), which is one argument for them.",
-      "**Check before analysing.** `=COUNTBLANK(range)` counts empty cells, and comparing COUNT with COUNTA shows how many entries in a number column are text. A quick filter on the column shows which codes are actually in use; anything not in the dictionary needs fixing."
+      "**Check before analyzing.** `=COUNTBLANK(range)` counts empty cells, and comparing COUNT with COUNTA shows how many entries in a number column are text. A quick filter on the column shows which codes are actually in use; anything not in the dictionary needs fixing."
      ],
      pro:[
       "**What analysis tools assume.** R: `mean()` returns NA if any value is NA, unless `na.rm = TRUE`; `read.csv()` treats `\"NA\"` as missing by default (`na.strings`), and blank fields in number columns too; readr’s `read_csv()` treats `\"\"` and `\"NA\"` as missing. Python’s pandas treats a default list as missing, including blank, `NA`, `N/A`, `n/a`, `NULL`, `null`, `None`, `NaN` and `#N/A`; in a test for this unit, `na` and `-` were kept as text, which turned a whole number column into text. SQL’s AVG ignores NULLs, much like a spreadsheet ignores blanks.",
@@ -987,14 +987,14 @@ ICA.addUnit({
       {ex:"variable,description,type,unit,allowed,missing\nhh_id,Household identifier,text,,H01-H99,never\nmembers,People who slept in the house last night,integer,people,1-30,blank\nwall_type,Main outer wall material,category,,grass;muddaub;burntbricks;sunbricks;cement,blank", label:"A dictionary as a CSV", mono:true},
       "**Keep it separate.** Data Carpentry: metadata should not be in the data file, because legends and notes disrupt how programs read it. Store it as a separate file in the same folder, with a name that ties it to the data (`households_dictionary.csv`).",
       "**What to define.** Data Carpentry’s exercise list: exact question wording, the type of data allowed in each column (range, list, whole or decimal), definitions of categories (what counts as “burntbricks”?), and definitions of units of observation (what counts as a “room” or a “plot”?).",
-      "**The README** describes the files and how they relate, formats (separator, decimal mark, date format, encoding), the missing-value code, the version date, and any licence. Data Carpentry calls a folder-level readme.txt the classic way to account for all the files and folders in a project."
+      "**The README** describes the files and how they relate, formats (separator, decimal mark, date format, encoding), the missing-value code, the version date, and any license. Data Carpentry calls a folder-level readme.txt the classic way to account for all the files and folders in a project."
      ],
      pro:[
-      "**Codebooks and standards.** Survey datasets usually ship with codebooks describing how each variable was constructed, the prompt behind it and the meaning of each value; Data Carpentry points to the General Social Survey’s online codebook. For social, behavioural and health data, the Data Documentation Initiative (DDI) is a widely used metadata standard; research librarians can help choose one. (Note that in qualitative research, a “codebook” means something different: a list of themes used to code text.)",
-      "**Project-level metadata.** A folder-level README accounts for every file, says which files supersede others, and records provenance (how the data was produced). Data repositories add their own metadata, such as a title, creators, dates, a licence and a persistent identifier (Unit 11, {{fair-data}}).",
+      "**Codebooks and standards.** Survey datasets usually ship with codebooks describing how each variable was constructed, the prompt behind it and the meaning of each value; Data Carpentry points to the General Social Survey’s online codebook. For social, behavioral and health data, the Data Documentation Initiative (DDI) is a widely used metadata standard; research librarians can help choose one. (Note that in qualitative research, a “codebook” means something different: a list of themes used to code text.)",
+      "**Project-level metadata.** A folder-level README accounts for every file, says which files supersede others, and records provenance (how the data was produced). Data repositories add their own metadata, such as a title, creators, dates, a license and a persistent identifier (Unit 11, {{fair-data}}).",
       "**Using the dictionary.** The allowed values become validation rules ({{data-validation-rules}}); the missing code becomes the `na` argument when reading the data in R or Python; the readable labels become chart axis titles. A dictionary that is a CSV can be checked against the data automatically: every column documented, every value allowed.",
       "**Keep it current.** Add a row when you add a column, and note changes in the README with dates. An out-of-date dictionary misleads more than a missing one.",
-      "**Sensitive details.** Documentation should explain how data was collected and anonymised without revealing what it protects (Track 4’s {{anonymisation}})."
+      "**Sensitive details.** Documentation should explain how data was collected and anonymized without revealing what it protects (Track 4’s {{anonymisation}})."
      ]
     },
     related:["missing-values","tidy-data-principles","data-validation-rules","raw-data-raw","data-management-plan","fair-data"],
@@ -1046,7 +1046,7 @@ ICA.addUnit({
       "**Versions.** Keep numbered versions (`file_v1.xlsx`, `file_v2.xlsx`) and back them up in several places ({{backup}}); cloud version history helps but isn’t a substitute ({{version-history}}).",
       "**Record steps.** Data Carpentry: create a new file or tab for cleaned data, and keep track of the steps you took, as you would any step of an experiment, in a text file or a notes tab so notes and data stay together.",
       "**Export.** Save the cleaned result as CSV or TSV, with the dictionary and README alongside.",
-      "**A simple folder layout** makes the flow obvious to everyone: `raw/` for originals, `working/` for copies being cleaned, `output/` for exported files, plus the README at the top. Track 1’s file-organisation unit shows naming patterns that sort well ({{file-naming}})."
+      "**A simple folder layout** makes the flow obvious to everyone: `raw/` for originals, `working/` for copies being cleaned, `output/` for exported files, plus the README at the top. Track 1’s file-organization unit shows naming patterns that sort well ({{file-naming}})."
      ],
      pro:[
       "**Reproducibility.** A cleaning process that exists only as edits in a spreadsheet can’t be checked or repeated. Data Carpentry’s introduction notes that the drag-and-drop nature of spreadsheets makes steps very hard to replicate; Broman and Woo advise doing rearrangement with code so “you never lose the record of what you did to the data”. Track 3’s Units 3, 8 and 9 build that up: a cleaning log, OpenRefine’s operation history, and R scripts ({{cleaning-log}}).",
@@ -1098,7 +1098,7 @@ ICA.addUnit({
    {id:"long-format", term:"Long format", def:"A layout where the thing that varies (such as month or test) has its own column and each measurement gets its own row. It grows by adding rows.", codex:"tidy-data-principles"},
    {id:"wide-format", term:"Wide format", def:"A layout where each repeated measurement has its own column (jan_mm, feb_mm …), giving one row per unit. Easy to read; grows by adding columns.", codex:"tidy-data-principles"},
    {id:"primary-key-sheet", term:"Key column (ID)", def:"A column whose value is unique for every row and never changes, such as hh_id, used to identify records and link tables. Databases call it a primary key.", codex:"tidy-data-principles"},
-   {id:"indicator-column", term:"Indicator column", def:"A column that records a yes/no fact about each row, such as exclude = TRUE or flag = check, instead of using colour or formatting.", codex:"spreadsheet-data-entry"},
+   {id:"indicator-column", term:"Indicator column", def:"A column that records a yes/no fact about each row, such as exclude = TRUE or flag = check, instead of using color or formatting.", codex:"spreadsheet-data-entry"},
    {id:"missing-value", term:"Missing value", def:"A value that is unknown: not recorded, refused, lost or not asked. Different from zero, which is a real measurement.", codex:"missing-values"},
    {id:"na-value", term:"NA", def:"A common code for a missing value, short for “not available”. R and pandas read it as missing; a spreadsheet sees it as text.", codex:"missing-values"},
    {id:"data-dictionary", term:"Data dictionary", def:"A table describing each column of a dataset: its name, meaning, type, unit, allowed values and how missing values are recorded.", codex:"data-dictionaries"},
@@ -1120,7 +1120,7 @@ ICA.addUnit({
      {t:"Give each kind of livestock its own count column (oxen, cows, goats …)", ok:true, why:"One fact per cell: each count becomes a number you can sum, average and filter, and the total is just the sum of the row."},
      {t:"Keep it, but use a semicolon instead of a comma", why:"Changing the punctuation still leaves three facts in one text cell that no function can use."},
      {t:"Move the text into a cell comment", why:"Analysis software can’t see cell comments, and the counts still wouldn’t be numbers."},
-     {t:"Colour the cell to show it contains cows", why:"Colour isn’t data that formulas or CSV files can use."}
+     {t:"Color the cell to show it contains cows", why:"Color isn’t data that formulas or CSV files can use."}
    ]},
    {id:"t3u2-q03", lesson:"t3u2-l1", level:1, q:"In a tidy table, what is an observation?", options:[
      {t:"One unit studied at one time, stored as one row", ok:true, why:"An example is one household interview. Each observation gets its own row, and you should be able to say “one row = one what?”."},
@@ -1132,7 +1132,7 @@ ICA.addUnit({
      {t:"A visits table with a visit_id, and an orders table with one row per item, using the same visit_id", ok:true, why:"Two kinds of observation, two rectangles, linked by an ID. Visit facts are written once; each item is its own row."},
      {t:"One row per visit with columns item_1, item_2 … up to item_20", why:"That spreads one variable (item) across many columns and leaves most cells blank. One row per item is easier to count and filter."},
      {t:"Keep the items in one cell but separate them with line breaks", why:"Line breaks inside cells cause trouble in CSV files, and the items still can’t be counted."},
-     {t:"A new tab for every day’s visits", why:"Tabs per day make combining and analysing harder; a date column does the job."}
+     {t:"A new tab for every day’s visits", why:"Tabs per day make combining and analyzing harder; a date column does the job."}
    ]},
    {id:"t3u2-q05", lesson:"t3u2-l1", level:2, q:"A wide table has 25 students as rows and 6 quiz columns, plus a student_id column. Reshaped to long (student_id, quiz, score), how many data rows will it have?", options:[
      {t:"150", ok:true, why:"Each student-and-quiz pair becomes a row: 25 × 6 = 150."},
@@ -1146,10 +1146,10 @@ ICA.addUnit({
      {t:"Long is only for databases, not spreadsheets", why:"Pivot tables, filters and SUMIF work best on long spreadsheet data."},
      {t:"Converting long to wide always loses some of the data for good", why:"A pivot table builds a wide summary while the long data stays untouched underneath."}
    ]},
-   {id:"t3u2-q07", lesson:"t3u2-l1", level:3, q:"Tomás inherits a sheet where the header row is repeated every 40 rows so it stays visible when printed. He’ll analyse the data in R. What should he do?", options:[
+   {id:"t3u2-q07", lesson:"t3u2-l1", level:3, q:"Tomás inherits a sheet where the header row is repeated every 40 rows so it stays visible when printed. He’ll analyze the data in R. What should he do?", options:[
      {t:"Delete the repeated headers and freeze the top row instead", ok:true, why:"Repeated headers become fake records for any program. Freezing panes, and the print setting that repeats title rows, keep headers visible without putting them in the data."},
      {t:"Leave them in; R will skip any row that looks like a header row", why:"R will read them as data rows, often turning number columns into text."},
-     {t:"Colour the repeated headers grey so R ignores them", why:"Colour is invisible to R. The rows are still in the data."},
+     {t:"Color the repeated headers gray so R ignores them", why:"Color is invisible to R. The rows are still in the data."},
      {t:"Merge each repeated header across the columns", why:"Merging makes things worse: it breaks the rectangle and sorting."}
    ]},
    {id:"t3u2-q08", lesson:"t3u2-l1", level:1, q:"What makes a good key (ID) column?", options:[
@@ -1159,16 +1159,16 @@ ICA.addUnit({
      {t:"Any column, as long as it’s the first one", why:"Position doesn’t matter; uniqueness and stability do."}
    ]},
    {id:"t3u2-q09", lesson:"t3u2-l1", level:3, q:"Kenji’s helper column `=COUNTIF($A$2:$A$800, A2)` shows 1 on every row except two, which show 2. Both rows have the ID S-114 but different dates and sites. What should he conclude?", options:[
-     {t:"Two samples got the same ID by mistake; he should check the records", ok:true, why:"Different dates and sites suggest two real samples, not a duplicate entry. Deleting one would lose data; check the paper records or the person who labelled them, then give one a new ID."},
+     {t:"Two samples got the same ID by mistake; he should check the records", ok:true, why:"Different dates and sites suggest two real samples, not a duplicate entry. Deleting one would lose data; check the paper records or the person who labeled them, then give one a new ID."},
      {t:"One row is a duplicate, so he can delete either one", why:"Different dates and sites mean the rows describe different things. Deleting would lose a real sample."},
      {t:"COUNTIF made a mistake because the IDs contain a hyphen", why:"COUNTIF matches text with hyphens perfectly well."},
      {t:"Nothing: an ID that appears twice is quite normal in any key column", why:"In a table where each row is one sample, the key must be unique. (It can repeat in a linked table, such as one listing several tests per sample.)"}
    ]},
    /* ---- Lesson 2 ---- */
-   {id:"t3u2-q10", lesson:"t3u2-l2", level:1, q:"According to Broman and Woo, what is the first rule of data organisation?", options:[
+   {id:"t3u2-q10", lesson:"t3u2-l2", level:1, q:"According to Broman and Woo, what is the first rule of data organization?", options:[
      {t:"Be consistent", ok:true, why:"Whatever you do, do it the same way: codes, IDs, names, layouts, dates and notes."},
      {t:"Use as many tabs as you need", why:"That isn’t their rule, and Data Carpentry warns against spreading data across tabs."},
-     {t:"Colour-code everything", why:"They advise against using colour or highlighting as data."},
+     {t:"Color-code everything", why:"They advise against using color or highlighting as data."},
      {t:"Always use Excel", why:"Their advice applies to any spreadsheet program."}
    ]},
    {id:"t3u2-q11", lesson:"t3u2-l2", level:1, q:"Which column name follows Data Carpentry’s and Broman and Woo’s advice best?", options:[
@@ -1180,19 +1180,19 @@ ICA.addUnit({
    {id:"t3u2-q12", lesson:"t3u2-l2", level:2, q:"In Excel, Google Sheets and LibreOffice Calc, a column holds `Yes`, `yes`, `YES` and `yes ` (with a trailing space). What does `=COUNTIF(B2:B5, \"yes\")` return?", options:[
      {t:"3", ok:true, why:"COUNTIF ignores capitals, so Yes, yes and YES match. The trailing space makes `yes ` a different value."},
      {t:"4", why:"The trailing space makes one entry different; COUNTIF doesn’t trim spaces."},
-     {t:"1", why:"COUNTIF isn’t case-sensitive, so it matches all three capitalisations."},
+     {t:"1", why:"COUNTIF isn’t case-sensitive, so it matches all three capitalizations."},
      {t:"0", why:"There are exact and case-variant matches; only the spaced one is missed."}
    ]},
    {id:"t3u2-q13", lesson:"t3u2-l2", level:2, q:"Where should the note “below detection limit” go for a measurement recorded as 0?", options:[
      {t:"In a separate note column, with 0 in the value cell", ok:true, why:"The value stays a number and the note is kept where people and programs can read it (Broman and Woo’s advice)."},
      {t:"In the value cell: `0 (below detection limit)`", why:"That turns the value into text, which calculations skip."},
      {t:"In a cell comment", why:"Most analysis software can’t see cell comments."},
-     {t:"As red text colour on the 0", why:"Colour is lost in CSV files and invisible to formulas."}
+     {t:"As red text color on the 0", why:"Color is lost in CSV files and invisible to formulas."}
    ]},
    {id:"t3u2-q14", lesson:"t3u2-l2", level:3, q:"Aoi, a master’s student in regional disaster and community studies, has a survey sheet where her supervisor, Prof. Ōnishi, highlighted suspicious rows in yellow. Aoi needs to exclude them in R. What should she do in the spreadsheet first?", options:[
      {t:"Add a `suspect` column marking the highlighted rows TRUE", ok:true, why:"The other rows get FALSE. R can filter on a column; it can’t see highlighting. A conditional format can then keep the yellow for people."},
-     {t:"Save as CSV; the colour will be kept as a code", why:"CSV keeps no formatting, so the information would be lost."},
-     {t:"Nothing; R reads cell colours automatically", why:"Standard ways of reading data in R don’t read cell colours."},
+     {t:"Save as CSV; the color will be kept as a code", why:"CSV keeps no formatting, so the information would be lost."},
+     {t:"Nothing; R reads cell colors automatically", why:"Standard ways of reading data in R don’t read cell colors."},
      {t:"Delete the yellow rows from the original file before sharing it", why:"That loses data and changes the raw file. Flag them in a column and decide in the analysis."}
    ]},
    {id:"t3u2-q15", lesson:"t3u2-l2", level:2, q:"Why is leaving cells blank to mean “same as the row above” risky?", options:[
@@ -1208,14 +1208,14 @@ ICA.addUnit({
      {t:"Use a bigger font", why:"Fonts don’t change cell contents."}
    ]},
    {id:"t3u2-q17", lesson:"t3u2-l2", level:1, q:"Which is the best way to paste text from a word processor into a data sheet?", options:[
-     {t:"Paste values only", ok:true, why:"Apps call it Paste Values, Values only, Paste Unformatted Text, or Paste and Match Style. It brings in the text without fonts, colours and other formatting."},
+     {t:"Paste values only", ok:true, why:"Apps call it Paste Values, Values only, Paste Unformatted Text, or Paste and Match Style. It brings in the text without fonts, colors and other formatting."},
      {t:"An ordinary paste, then delete the formatting cell by cell", why:"Slow and easy to miss something; paste values only does it at once."},
      {t:"Take a screenshot and insert it", why:"An image isn’t data; nothing in it can be sorted or calculated."},
      {t:"Paste into a cell comment", why:"Comments aren’t data that analysis software can read."}
    ]},
    {id:"t3u2-q18", lesson:"t3u2-l2", level:3, q:"Lucía’s team uses the codes `S01`, `s1`, `Site 1` and `site-01` for the same site across four monthly files. What will happen when the files are combined for analysis?", options:[
-     {t:"It will look like four different sites until the codes are harmonised", ok:true, why:"Programs treat each spelling as a separate value. Broman and Woo’s point: consistent identifiers and layouts across files save this work."},
-     {t:"Analysis software will recognise that all four codes mean the same site", why:"Programs compare characters exactly (R and Python even distinguish capitals); they can’t know these mean the same."},
+     {t:"It will look like four different sites until the codes are harmonized", ok:true, why:"Programs treat each spelling as a separate value. Broman and Woo’s point: consistent identifiers and layouts across files save this work."},
+     {t:"Analysis software will recognize that all four codes mean the same site", why:"Programs compare characters exactly (R and Python even distinguish capitals); they can’t know these mean the same."},
      {t:"Only the first file’s code will be kept", why:"Combining files keeps every value as written."},
      {t:"Nothing, as long as the files are CSV", why:"File format doesn’t change the values; the inconsistency travels with them."}
    ]},
@@ -1233,7 +1233,7 @@ ICA.addUnit({
      {t:"#VALUE!", why:"AVERAGE simply skips blanks; it doesn’t give an error."}
    ]},
    {id:"t3u2-q21", lesson:"t3u2-l3", level:2, q:"Which missing-value code do both Data Carpentry and Broman and Woo say to avoid?", options:[
-     {t:"−999", ok:true, why:"Numeric codes aren’t recognised as missing and get included in calculations."},
+     {t:"−999", ok:true, why:"Numeric codes aren’t recognized as missing and get included in calculations."},
      {t:"A blank cell", why:"Data Carpentry calls blanks the best option; Broman and Woo prefer NA but don’t ban blanks."},
      {t:"NA", why:"Data Carpentry calls NA a good option (for R), and Broman and Woo prefer it."},
      {t:"Any code at all, as long as it’s written in the dictionary", why:"Documentation matters, but a numeric code is still risky because programs average it."}
@@ -1251,7 +1251,7 @@ ICA.addUnit({
      {t:"Leave both blank, since the reasons don’t matter for analysis", why:"The reasons mean different things and would be lost."}
    ]},
    {id:"t3u2-q24", lesson:"t3u2-l3", level:2, q:"Ana’s CSV uses `-` for missing ages. Her colleague loads it with Python’s pandas library using the default settings. What is likely to happen?", options:[
-     {t:"The `-` isn’t read as missing, so the ages become text", ok:true, why:"pandas recognises codes such as blank, NA and N/A by default, but not a lone hyphen; one unrecognised code turns the whole column into text."},
+     {t:"The `-` isn’t read as missing, so the ages become text", ok:true, why:"pandas recognizes codes such as blank, NA and N/A by default, but not a lone hyphen; one unrecognized code turns the whole column into text."},
      {t:"pandas replaces each `-` with 0 and keeps the column as numbers", why:"pandas doesn’t invent zeros; it keeps the hyphen as text."},
      {t:"pandas deletes the rows with `-`", why:"Rows are kept; the column’s type is what changes."},
      {t:"Nothing: every program treats `-` as missing", why:"Data Carpentry lists `-` among codes to avoid because many programs don’t."}
@@ -1352,7 +1352,7 @@ ICA.addUnit({
      {t:"Use Circle Invalid Data, or a check column filtered for FALSE", ok:true, why:"Circle Invalid Data is in desktop Excel; LibreOffice calls it Mark Invalid Data. Rules don’t check existing data; these tools mark every cell that breaks the rule."},
      {t:"Nothing is needed: a new rule automatically fixes the old values too", why:"Rules never change existing values, and they don’t check them either."},
      {t:"Delete and retype the whole column", why:"Slow and error-prone; marking invalid cells finds just the ones to check."},
-     {t:"Sort by colour", why:"Invalid values aren’t coloured unless you use a marking tool or a check."}
+     {t:"Sort by color", why:"Invalid values aren’t colored unless you use a marking tool or a check."}
    ]},
    {id:"t3u2-q41", lesson:"t3u2-l5", level:2, q:"Which values can get past Excel’s data validation, according to Microsoft?", options:[
      {t:"Values that are copied or filled in, results of formulas, and values entered by macros", ok:true, why:"Validation acts only on typing; these routes bypass it."},
@@ -1378,11 +1378,11 @@ ICA.addUnit({
      {t:"ASCII", why:"ASCII has no accented letters or non-Latin scripts."},
      {t:"Encoding doesn’t matter for CSV", why:"A CSV is text, so its encoding decides whether names survive."}
    ]},
-   {id:"t3u2-q45", lesson:"t3u2-l5", level:3, q:"Priya will share a cleaned dataset with a partner organisation. Which package best follows this unit’s advice?", options:[
+   {id:"t3u2-q45", lesson:"t3u2-l5", level:3, q:"Priya will share a cleaned dataset with a partner organization. Which package best follows this unit’s advice?", options:[
      {t:"A UTF-8 CSV with ISO dates and one missing code, plus a data dictionary and a README, with the raw file kept safely at her end", ok:true, why:"Plain text that any program reads, documented codes and formats, and an untouched original."},
-     {t:"Her working .xlsx file with colour-coded rows and a notes tab", why:"Colour isn’t data, and the partner may read the file differently; a CSV plus documentation is clearer."},
+     {t:"Her working .xlsx file with color-coded rows and a notes tab", why:"Color isn’t data, and the partner may read the file differently; a CSV plus documentation is clearer."},
      {t:"A CSV only, since tidy data explains itself", why:"Without a dictionary and README, the partner can’t know units, codes, separator or date format."},
-     {t:"Screenshots of the spreadsheet in a PDF", why:"Nobody can analyse data from screenshots."}
+     {t:"Screenshots of the spreadsheet in a PDF", why:"Nobody can analyze data from screenshots."}
    ]}
   ]
 });

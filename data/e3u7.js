@@ -60,7 +60,7 @@ ICA.addUnit({
       "Three things change. Mariya, the person who was praised, becomes the topic with は. The teacher, the doer, takes に. And the verb ほめる (praise) takes its [[passive|passive]] form, ほめられる. The event itself is the same: the teacher still praised Mariya.",
       {
        fig:"<svg viewBox=\"0 0 340 292\"><defs><marker id=\"e3u7a1\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">One event, two viewpoints</text><rect class=\"d-panel\" x=\"6\" y=\"32\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"54\">Active: the doer is the topic</text><rect class=\"d-gold\" x=\"16\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"91\" text-anchor=\"middle\">せんせいが</text><path class=\"d-ink\" d=\"M132 86H206\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-lup\" x=\"212\" y=\"66\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"91\" text-anchor=\"middle\">まりやさんを</text><text class=\"s\" x=\"170\" y=\"128\" text-anchor=\"middle\">ほめました (praised)</text><rect class=\"d-panel\" x=\"6\" y=\"152\" width=\"328\" height=\"108\" rx=\"10\" stroke-width=\"1.5\"/><text x=\"18\" y=\"174\">Passive: the receiver is the topic</text><rect class=\"d-lup\" x=\"16\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"211\" text-anchor=\"middle\">まりやさんは</text><path class=\"d-ink\" d=\"M208 206H134\" stroke-width=\"2\" marker-end=\"url(#e3u7a1)\"/><rect class=\"d-gold\" x=\"212\" y=\"186\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"211\" text-anchor=\"middle\">せんせいに</text><text class=\"s\" x=\"170\" y=\"248\" text-anchor=\"middle\">ほめられました (was praised)</text><text class=\"s\" x=\"170\" y=\"284\" text-anchor=\"middle\">The arrow, who acts on whom, stays the same.</text></svg>",
-       alt:"Two panels. Top, active: せんせいが with an arrow pointing to まりやさんを, labelled ほめました (praised). Bottom, passive: まりやさんは comes first, and the arrow still points from せんせいに to まりやさん, labelled ほめられました (was praised).",
+       alt:"Two panels. Top, active: せんせいが with an arrow pointing to まりやさんを, labeled ほめました (praised). Bottom, passive: まりやさんは comes first, and the arrow still points from せんせいに to まりやさん, labeled ほめられました (was praised).",
        cap:"The passive changes the starting point of the sentence, not the event."
       },
       "English speakers are often taught to avoid the passive. Japanese uses it a lot, and especially with people as the topic: “I was scolded”, “I was asked the way”, “I got rained on”. It lets you tell a story from the point of view of the person it happened to, usually yourself."
@@ -115,7 +115,7 @@ ICA.addUnit({
       {h:"Done to your body or your things"},
       "When someone acts on a part of your body or something you own, Japanese still makes **you** the topic. The body part or the thing keeps を:",
       {
-       ex:"電車で[隣]{となり}の人に[足]{あし}を[踏]{ふ}まれました。\nThe person next to me on the train stepped on my foot.\n\n[旅行中]{りょこうちゅう}に[財布]{さいふ}を[盗]{ぬす}まれました。\nMy wallet was stolen while I was travelling.",
+       ex:"電車で[隣]{となり}の人に[足]{あし}を[踏]{ふ}まれました。\nThe person next to me on the train stepped on my foot.\n\n[旅行中]{りょこうちゅう}に[財布]{さいふ}を[盗]{ぬす}まれました。\nMy wallet was stolen while I was traveling.",
        label:"Your body and your things"
       },
       "Saying [私]{わたし}の[足]{あし}は[踏]{ふ}まれました (“my foot was stepped on”) sounds unnatural: in Japanese, it happened to **you**. With belongings both versions are heard: [財布]{さいふ}を[盗]{ぬす}まれました puts the focus on you, and [財布]{さいふ}が[盗]{ぬす}まれました on the wallet."
@@ -427,7 +427,7 @@ ICA.addUnit({
        ex:"[先生]{せんせい}は[学生]{がくせい}に[作文]{さくぶん}を[書]{か}かせました。\nThe teacher made the students write an essay.\n\n[母]{はは}は[弟]{おとうと}に[部屋]{へや}を[掃除]{そうじ}させました。\nMy mother made my little brother clean his room.\n\n[父]{ちち}は[私]{わたし}に[車]{くるま}を[運転]{うんてん}させてくれました。\nMy father let me drive his car.\n\n子どもたちを[公園]{こうえん}で[自由]{じゆう}に[遊]{あそ}ばせました。\nWe let the children play freely in the park.",
        label:"The causative"
       },
-      "“Make” or “let”? The form is the same, so the context decides. Something people don’t want to do (cleaning, homework) usually means “make”. Something they want to do, or a form with ～てくれる or ～てあげる (a favour, from Unit 6), usually means “let”: [運転]{うんてん}させてくれました is a kindness, so it means “let me drive”.",
+      "“Make” or “let”? The form is the same, so the context decides. Something people don’t want to do (cleaning, homework) usually means “make”. Something they want to do, or a form with ～てくれる or ～てあげる (a favor, from Unit 6), usually means “let”: [運転]{うんてん}させてくれました is a kindness, so it means “let me drive”.",
       {
        fig:"<svg viewBox=\"0 0 340 236\"><defs><marker id=\"e3u7a2\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">Three roles in a causative sentence</text><rect class=\"d-gold\" x=\"12\" y=\"36\" width=\"96\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"60\" y=\"58\" text-anchor=\"middle\">はは は</text><text class=\"s\" x=\"60\" y=\"77\" text-anchor=\"middle\">causer</text><path class=\"d-ink\" d=\"M112 62H130\" stroke-width=\"2\" marker-end=\"url(#e3u7a2)\"/><rect class=\"d-lup\" x=\"134\" y=\"36\" width=\"96\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"182\" y=\"58\" text-anchor=\"middle\">おとうと に</text><text class=\"s\" x=\"182\" y=\"77\" text-anchor=\"middle\">doer</text><path class=\"d-ink\" d=\"M234 62H252\" stroke-width=\"2\" marker-end=\"url(#e3u7a2)\"/><rect class=\"d-sage\" x=\"256\" y=\"36\" width=\"76\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"294\" y=\"58\" text-anchor=\"middle\">へや を</text><text class=\"s\" x=\"294\" y=\"77\" text-anchor=\"middle\">object</text><rect class=\"d-panel\" x=\"12\" y=\"104\" width=\"320\" height=\"44\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"172\" y=\"131\" text-anchor=\"middle\">そうじ させました (made … clean)</text><text class=\"s\" x=\"170\" y=\"176\" text-anchor=\"middle\">The causer is the topic, but the person</text><text class=\"s\" x=\"170\" y=\"194\" text-anchor=\"middle\">marked with に is the one who cleans.</text><text class=\"s\" x=\"170\" y=\"222\" text-anchor=\"middle\">Mother → little brother → cleans the room</text></svg>",
        alt:"Three boxes in a row: はは は (causer), an arrow to おとうと に (doer), an arrow to へや を (object). Below them, そうじ させました (made … clean). A note says the causer is the topic, but the person marked with に (the doer) is the one who cleans: mother, then little brother, who cleans the room.",
@@ -515,16 +515,16 @@ ICA.addUnit({
       },
       "The person who is made to act is the topic, and the person who made them takes に:",
       {
-       ex:"子どものころ、母に[毎日]{まいにち}ピアノを[練習]{れんしゅう}させられました。\nAs a child, I was made to practise the piano every day by my mother.\n\n[駅]{えき}で[一時間]{いちじかん}も[待]{ま}たされました。\nI was kept waiting at the station for a whole hour.\n\n[飲]{の}み[会]{かい}で[歌]{うた}を[歌]{うた}わされました。\nI was made to sing at the drinking party.\n\n[嫌]{きら}いな[野菜]{やさい}を食べさせられました。\nI was made to eat vegetables I don’t like.",
+       ex:"子どものころ、母に[毎日]{まいにち}ピアノを[練習]{れんしゅう}させられました。\nAs a child, I was made to practice the piano every day by my mother.\n\n[駅]{えき}で[一時間]{いちじかん}も[待]{ま}たされました。\nI was kept waiting at the station for a whole hour.\n\n[飲]{の}み[会]{かい}で[歌]{うた}を[歌]{うた}わされました。\nI was made to sing at the drinking party.\n\n[嫌]{きら}いな[野菜]{やさい}を食べさせられました。\nI was made to eat vegetables I don’t like.",
        label:"The causative-passive"
       },
       "も after an amount, as in 一時間も, means “as much as”: it adds to the feeling that the wait was too long.",
       {
        table:[
         ["Sentence", "Who did what"],
-        ["母が[私]{わたし}にピアノを[練習]{れんしゅう}させました。", "My mother made me practise. (causative)"],
-        ["[私]{わたし}は母にピアノを[練習]{れんしゅう}させられました。", "I was made to practise by my mother. (causative-passive)"],
-        ["[私]{わたし}はピアノを[練習]{れんしゅう}しました。", "I practised. (plain)"]
+        ["母が[私]{わたし}にピアノを[練習]{れんしゅう}させました。", "My mother made me practice. (causative)"],
+        ["[私]{わたし}は母にピアノを[練習]{れんしゅう}させられました。", "I was made to practice by my mother. (causative-passive)"],
+        ["[私]{わたし}はピアノを[練習]{れんしゅう}しました。", "I practiced. (plain)"]
        ]
       }
      ]
@@ -691,14 +691,14 @@ ICA.addUnit({
     {
      id:"e3u7-l2-x11",
      type:"type",
-     q:"Yến talks about her childhood: “When I was a child, my mother made me practise the piano every day.” Type the causative-passive in hiragana, polite past: 「子どものころ、母に毎日ピアノを（　）。」 ([練習]{れんしゅう}する, practise)",
+     q:"Yến talks about her childhood: “When I was a child, my mother made me practice the piano every day.” Type the causative-passive in hiragana, polite past: 「子どものころ、母に毎日ピアノを（　）。」 ([練習]{れんしゅう}する, practice)",
      answer:"れんしゅうさせられました",
      wrongs:[
-      {v:"れんしゅうさせました", why:"That is the causative: Yến made someone else practise. She was the one made to practise, so add the passive: させられました."},
-      {v:"れんしゅうされました", why:"される is the passive of する (“was practised”). Being made to do something is させられる."},
+      {v:"れんしゅうさせました", why:"That is the causative: Yến made someone else practice. She was the one made to practice, so add the passive: させられました."},
+      {v:"れんしゅうされました", why:"される is the passive of する (“was practiced”). Being made to do something is させられる."},
       {v:"れんしゅうさされました", why:"The short form ～される is only for godan verbs. する always becomes させられる."}
      ],
-     why:"する → させる (causative) → させられる (causative-passive): [練習]{れんしゅう}させられました, “was made to practise”. The person who made her do it takes に."
+     why:"する → させる (causative) → させられる (causative-passive): [練習]{れんしゅう}させられました, “was made to practice”. The person who made her do it takes に."
     }
    ],
    apply:{
@@ -782,7 +782,7 @@ ICA.addUnit({
        alt:"Three sources of information, each with an arrow to its patterns. I can see it (looks, about to): stem + そう, as in ふりそう and おいしそう. I was told or I read it: plain form + そうだ, as in ふるそうだ, and also らしい. I worked it out from clues: ようだ and みたい, and also らしい. A note says らしい sits between the last two: a conclusion based on what you heard or read, said with some distance. Real use overlaps; the boxes are a guide.",
        cap:"Choose the pattern by how you know, not by how sure you are."
       },
-      "The same sentence about rain can come in four flavours:",
+      "The same sentence about rain can come in four flavors:",
       {
        table:[
         ["Japanese", "How you know", "English"],
@@ -895,7 +895,7 @@ ICA.addUnit({
      h:"～らしい: apparently…; typical of…",
      body:[
       "[[rashii|～らしい]] attaches to the plain form; nouns and な-adjectives take it directly, with no だ: 学生らしい, [静]{しず}からしい. It conjugates like an い-adjective: らしくない, らしかった.",
-      "**Meaning 1: apparently.** You are passing on a conclusion based on what you heard or read, without taking responsibility for it. It is often used for rumours and for news you can’t check:",
+      "**Meaning 1: apparently.** You are passing on a conclusion based on what you heard or read, without taking responsibility for it. It is often used for rumors and for news you can’t check:",
       {
        ex:"[来月]{らいげつ}、[駅前]{えきまえ}に[新]{あたら}しいカフェができるらしいです。\nApparently a new café is opening in front of the station next month.\n\nあおいさんは[今日]{きょう}、[来]{こ}ないらしいです。\nApparently Aoi isn’t coming today.",
        label:"らしい: apparently"
@@ -1160,7 +1160,7 @@ ICA.addUnit({
       "[開]{あ}ける is a [[transitive-verb|transitive verb]]: someone does something **to** something, and that thing takes を. [開]{あ}く is an [[intransitive-verb|intransitive verb]]: something **happens**, with no doer in the sentence, and the thing that changes takes が. ([風]{かぜ}で means “because of the wind”.)",
       {
        fig:"<svg viewBox=\"0 0 340 250\"><defs><marker id=\"e3u7a5\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"20\" text-anchor=\"middle\">Who does it, or what happens?</text><rect class=\"d-panel\" x=\"6\" y=\"32\" width=\"328\" height=\"92\" rx=\"10\" stroke-width=\"1.5\"/><rect class=\"d-gold\" x=\"16\" y=\"44\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"69\" text-anchor=\"middle\">わたしが</text><path class=\"d-ink\" d=\"M132 64H206\" stroke-width=\"2\" marker-end=\"url(#e3u7a5)\"/><rect class=\"d-lup\" x=\"212\" y=\"44\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"69\" text-anchor=\"middle\">まどを</text><text class=\"s\" x=\"170\" y=\"110\" text-anchor=\"middle\">あけました: someone acts (transitive)</text><rect class=\"d-panel\" x=\"6\" y=\"136\" width=\"328\" height=\"92\" rx=\"10\" stroke-width=\"1.5\"/><rect class=\"d-lup\" x=\"16\" y=\"148\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"72\" y=\"173\" text-anchor=\"middle\">まどが</text><path class=\"d-ink\" d=\"M132 168H206\" stroke-width=\"2\" marker-end=\"url(#e3u7a5)\"/><rect class=\"d-sage\" x=\"212\" y=\"148\" width=\"112\" height=\"40\" rx=\"8\" stroke-width=\"2\"/><text x=\"268\" y=\"173\" text-anchor=\"middle\">あきました</text><text class=\"s\" x=\"170\" y=\"214\" text-anchor=\"middle\">it happens, no doer (intransitive)</text><text class=\"s\" x=\"170\" y=\"244\" text-anchor=\"middle\">Same kanji 開, different ending and particle.</text></svg>",
-       alt:"Top panel: わたしが with an arrow to まどを, labelled あけました: someone acts (transitive). Bottom panel: まどが with an arrow to あきました, labelled it happens, no doer (intransitive). A note says: same kanji 開, different ending and particle.",
+       alt:"Top panel: わたしが with an arrow to まどを, labeled あけました: someone acts (transitive). Bottom panel: まどが with an arrow to あきました, labeled it happens, no doer (intransitive). A note says: same kanji 開, different ending and particle.",
        cap:"A transitive verb has a doer and an object with を; an intransitive verb describes a change, with the thing marked by が."
       },
       "Most pairs share a kanji and differ in their endings. Learning them as pairs is the key to this lesson."
@@ -1224,7 +1224,7 @@ ICA.addUnit({
       {h:"What about [部屋]{へや}を[出]{で}る?"},
       "出る is intransitive, yet you say [部屋]{へや}を出る (leave the room) and [道]{みち}を[歩]{ある}く (walk along the road). Here を marks the **place** you move out of or through, not an object that changes. This use of を comes with verbs of movement, so it isn’t an exception to the pairs.",
       {h:"Who broke the plate?"},
-      "The choice between the two verbs can matter socially. お[皿]{さら}が[割]{わ}れました (“the plate broke”) describes the event. お[皿]{さら}を[割]{わ}ってしまいました (“I broke the plate”) says who did it. When you are apologising for something you did, use the transitive verb: すみません、お[皿]{さら}を[割]{わ}ってしまいました。 With only the intransitive version, it can sound as if you are avoiding responsibility. (You met [[te-shimau|～てしまう]] in Unit 6.)"
+      "The choice between the two verbs can matter socially. お[皿]{さら}が[割]{わ}れました (“the plate broke”) describes the event. お[皿]{さら}を[割]{わ}ってしまいました (“I broke the plate”) says who did it. When you are apologizing for something you did, use the transitive verb: すみません、お[皿]{さら}を[割]{わ}ってしまいました。 With only the intransitive version, it can sound as if you are avoiding responsibility. (You met [[te-shimau|～てしまう]] in Unit 6.)"
      ]
     },
     {
@@ -1497,13 +1497,13 @@ ICA.addUnit({
     q:"When you walk into a shop in Japan, the staff call out 「いらっしゃいませ！」. The word comes from the verb いらっしゃる. What does いらっしゃる mean?",
     options:["to buy (said politely)", "to come, go or be (said with respect)", "to thank (said humbly)", "to sell (said politely)"],
     answer:1,
-    reveal:"**To come, go or be, said with respect.** いらっしゃる is the respectful verb for [来]{く}る, [行]{い}く and いる, used for the actions of people you want to honour, such as customers. いらっしゃいませ is a very polite “please come in”: in effect, “welcome”. It is part of [[keigo|[敬語]{けいご}]], Japan’s system of respectful language. This lesson ends with the keigo verbs you will hear most, after three useful ways of joining ideas: ～ながら, ～のに and ～し."
+    reveal:"**To come, go or be, said with respect.** いらっしゃる is the respectful verb for [来]{く}る, [行]{い}く and いる, used for the actions of people you want to honor, such as customers. いらっしゃいませ is a very polite “please come in”: in effect, “welcome”. It is part of [[keigo|[敬語]{けいご}]], Japan’s system of respectful language. This lesson ends with the keigo verbs you will hear most, after three useful ways of joining ideas: ～ながら, ～のに and ～し."
    },
    goals:[
     "Say that one person does two things at once with ～ながら, with the main action last",
     "Express “even though” with ～のに, with its feeling of surprise or disappointment, and know what can’t follow it",
     "List reasons and points with ～し、～し",
-    "Explain what respectful ([尊敬語]{そんけいご}) and humble ([謙譲語]{けんじょうご}) language do, and recognise the most common special verbs",
+    "Explain what respectful ([尊敬語]{そんけいご}) and humble ([謙譲語]{けんじょうご}) language do, and recognize the most common special verbs",
     "Use お～ください, お～になる and お～する safely, and avoid using respectful forms about yourself"
    ],
    learn:[
@@ -1542,7 +1542,7 @@ ICA.addUnit({
        ]
       },
       {
-       ex:"[毎日]{まいにち}[練習]{れんしゅう}しているのに、なかなか[上手]{じょうず}になりません。\nEven though I practise every day, I’m just not getting better.\n\n[約束]{やくそく}したのに、トビーさんは[来]{き}ませんでした。\nToby promised, but he didn’t come.\n\nこの[店]{みせ}は高いのに、あまりおいしくないです。\nThis restaurant is expensive, and yet it isn’t very good.\n\n[日曜日]{にちようび}なのに、[会社]{かいしゃ}に行かなければなりません。\nIt’s Sunday, and I still have to go to work.",
+       ex:"[毎日]{まいにち}[練習]{れんしゅう}しているのに、なかなか[上手]{じょうず}になりません。\nEven though I practice every day, I’m just not getting better.\n\n[約束]{やくそく}したのに、トビーさんは[来]{き}ませんでした。\nToby promised, but he didn’t come.\n\nこの[店]{みせ}は高いのに、あまりおいしくないです。\nThis restaurant is expensive, and yet it isn’t very good.\n\n[日曜日]{にちようび}なのに、[会社]{かいしゃ}に行かなければなりません。\nIt’s Sunday, and I still have to go to work.",
        label:"～のに"
       },
       "Nouns and な-adjectives take **な** before のに, just as they do before ので: [学生]{がくせい}なのに, [静]{しず}かなのに.",
@@ -1594,7 +1594,7 @@ ICA.addUnit({
       {key:"Respectful verbs for what **they** do; humble verbs for what **you** do. Never use a respectful verb about yourself."},
       "The official guidelines of 2007 ([[keigo-no-shishin|[敬語]{けいご}の[指針]{ししん}]]) divide these into five kinds, splitting humble language and polite language into two each. The Academic Japanese track explains them in {{keigo-system}}. At N4, the three kinds above are all you need.",
       {
-       tip:"Keigo is hard for Japanese speakers too: many learn business keigo in their first job. At N4 the aim is to **recognise** the common forms and to use a few safely. Polite です・ます with a handful of keigo verbs is plenty."
+       tip:"Keigo is hard for Japanese speakers too: many learn business keigo in their first job. At N4 the aim is to **recognize** the common forms and to use a few safely. Polite です・ます with a handful of keigo verbs is plenty."
       }
      ]
     },
@@ -1673,8 +1673,8 @@ ICA.addUnit({
       },
       "Inside the family, Aoi says おばあちゃん, and with neighbors she might say [浜田]{はまだ}さん. To an outside caller, the owner is on Aoi's side, so the name goes bare. Schools and universities are looser: there, people usually keep 先生 even when they speak to outsiders. The common traps are collected in {{keigo-mistakes}}.",
       "That completes the N4 grammar in this track. The forms in this unit (passive, causative, transitive and intransitive pairs) use many N4 kanji, so daily review pays off. Forgetting and relearning is normal; short, spaced sessions fix it.",
-      {lab:"kl-n4", t:"Practise: the N4 kanji, many of which appear in this unit’s verbs"},
-      {lab:"kl-n4-vocab", t:"Practise: N4 vocabulary, including verb pairs"},
+      {lab:"kl-n4", t:"Practice: the N4 kanji, many of which appear in this unit’s verbs"},
+      {lab:"kl-n4-vocab", t:"Practice: N4 vocabulary, including verb pairs"},
       "The patterns from this unit are collected in {{n4-grammar-patterns}}, and the keigo basics in {{polite-speech-basics}}.",
       {terms:["nagara", "noni", "shi-listing"]}
      ]
@@ -2413,12 +2413,12 @@ ICA.addUnit({
       {t:"The town opens its doors in August every year", why:"[開]{ひら}かれる here goes with [夏祭]{なつまつ}り: it is the festival that is held."},
       {t:"The summer festival can be held in August", why:"“Can be held” would be a potential form. [開]{ひら}かれます here is the passive of an event: it is held."},
       {t:"Someone opened the festival last August", why:"毎年 (every year) and the non-past ます describe what happens each year, not one past event."}]},
-    {id:"e3u7-cp05", lesson:"e3u7-l3", level:2, q:"Aoi told Cheska that today’s seminar is cancelled ([休講]{きゅうこう}, a noun). How does Cheska pass this on?", options:[
-      {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}だそうです。」", ok:true, why:"Hearsay そうだ follows plain forms, and a noun takes だ: [休講]{きゅうこう}だそうです, “I hear the seminar is cancelled”."},
+    {id:"e3u7-cp05", lesson:"e3u7-l3", level:2, q:"Aoi told Cheska that today’s seminar is canceled ([休講]{きゅうこう}, a noun). How does Cheska pass this on?", options:[
+      {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}だそうです。」", ok:true, why:"Hearsay そうだ follows plain forms, and a noun takes だ: [休講]{きゅうこう}だそうです, “I hear the seminar is canceled”."},
       {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}そうです。」", why:"Appearance そう doesn’t attach to nouns, and hearsay needs だ: [休講]{きゅうこう}だそうです."},
       {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}のそうです。」", why:"そうだ doesn’t take の. After a noun, use だ: [休講]{きゅうこう}だそうです."},
       {t:"「[今日]{きょう}のゼミは[休講]{きゅうこう}でそうです。」", why:"There is no で here. Plain noun + だ + そうです."}]},
-    {id:"e3u7-cp06", lesson:"e3u7-l4", level:2, q:"Fumiko set out chairs in rows for the neighbourhood meeting. When Cheska comes in, which sentence shows it was done on purpose?", options:[
+    {id:"e3u7-cp06", lesson:"e3u7-l4", level:2, q:"Fumiko set out chairs in rows for the neighborhood meeting. When Cheska comes in, which sentence shows it was done on purpose?", options:[
       {t:"「あ、いすが[並]{なら}んでいます。」", why:"Intransitive + ている says only that the chairs are in rows now. It doesn’t say anyone did it on purpose."},
       {t:"「あ、いすが[並]{なら}びました。」", why:"[並]{なら}ぶ is intransitive, “line up”, as people do in a queue. It doesn’t show that someone set the chairs out."},
       {t:"「あ、いすが[並]{なら}べてあります。」", ok:true, why:"Transitive + てある (with が) describes a state that someone created on purpose."},
@@ -2447,7 +2447,7 @@ ICA.addUnit({
       {t:"「トビーさんは[帰]{かえ}っているそうです。」", why:"Hearsay そうだ needs a source: someone told you. Kaito is judging from what he sees."},
       {t:"「トビーさんは[帰]{かえ}りそうです。」", why:"Stem + そう means something looks about to happen: “Toby looks about to go home.”"},
       {t:"「トビーさんは[帰]{かえ}ってくるようです。」", why:"[帰]{かえ}ってくる is about coming back later. The shoes and the light show he is already home."},
-      {t:"「トビーさんは[帰]{かえ}っているようです。」", ok:true, why:"～ようです is a judgement from what you see yourself: the shoes and the light."}]},
+      {t:"「トビーさんは[帰]{かえ}っているようです。」", ok:true, why:"～ようです is a judgment from what you see yourself: the shoes and the light."}]},
     {id:"e3u7-cp12", lesson:"e3u7-l7", level:3, q:"Mariya says 「パン[屋]{や}が[開]{あ}いているかどうか、[見]{み}てくるね。」 What will she do?", options:[
       {t:"Look up the bakery’s opening hours on her phone", why:"見てくる is “go and look, then come back”. She is going there."},
       {t:"Go and check whether the bakery is open, then come back", ok:true, why:"～かどうか is “whether or not”, and ～てくる is “go and do, then come back”."},
@@ -2567,7 +2567,7 @@ ICA.addUnit({
      "**Marking the person.** If the verb has its own object with を, the person takes に: [先生]{せんせい}は[学生]{がくせい}にレポートを書かせました. If it has no object, the person usually takes を: 学生を[帰]{かえ}らせました, みんなを[笑]{わら}わせました.",
      "**Make or let?** Context decides. With ～てくれる or ～てあげる it is usually “let”: [父]{ちち}は[私]{わたし}に[運転]{うんてん}させてくれました (My father let me drive).",
      "**Permission:** ～させてください (please let me), ～させていただけませんか (could you possibly let me), and in formal speech ～させていただきます (allow me to).",
-     "**Causative-passive:** person は causer に ～させられる: [母]{はは}にピアノを[練習]{れんしゅう}させられました (I was made to practise the piano by my mother).",
+     "**Causative-passive:** person は causer に ～させられる: [母]{はは}にピアノを[練習]{れんしゅう}させられました (I was made to practice the piano by my mother).",
      "**Everyday uses.** At home and school: [子]{こ}どもに[野菜]{やさい}を食べさせる, 学生に[発表]{はっぴょう}させる. At work, “let me” requests are very common: [確認]{かくにん}させてください (let me check), [少]{すこ}し[考]{かんが}えさせてください. And feelings: [友達]{ともだち}を[笑]{わら}わせる, [親]{おや}を[心配]{しんぱい}させる.",
      "**Three viewpoints on one event.** 母が[私]{わたし}に[練習]{れんしゅう}させた (causative: the mother is the topic), [私]{わたし}は母に[練習]{れんしゅう}させられた (causative-passive: I am the topic, and I didn’t want to), [私]{わたし}は[練習]{れんしゅう}した (plain: just what I did)."
     ],
@@ -2649,11 +2649,11 @@ ICA.addUnit({
     ],
     pro:[
      "**Negatives of appearance そう.** For adjectives, ～なさそう ([高]{たか}くなさそう). For verbs, textbooks give ～そうにない or ～そうもない ([雨]{あめ}は[降]{ふ}りそうにない, it doesn’t look like it will rain); in speech you will also hear [降]{ふ}らなそう, the form most guides accept, and, more and more, [降]{ふ}らなさそう.",
-     "**ようだ or らしい?** Both can present an inference. ようだ leans on the speaker’s own observation and judgment; らしい leans on information from outside (what people say, what you read) and sounds more detached. So a doctor examining you would say かぜのようですね, while you would pass on a rumour with らしい. Many sentences allow either.",
+     "**ようだ or らしい?** Both can present an inference. ようだ leans on the speaker’s own observation and judgment; らしい leans on information from outside (what people say, what you read) and sounds more detached. So a doctor examining you would say かぜのようですね, while you would pass on a rumor with らしい. Many sentences allow either.",
      "**みたい in casual speech** covers both: it can report a conclusion from clues and pass on something heard (～みたいよ). In writing, use ようだ or a hearsay pattern.",
      "**Written equivalents.** In reports and academic writing, ～ようである and ～と[考]{かんが}えられる present careful conclusions, and ～とのことだ or ～という reports hearsay. See {{hedging-japanese}} in the Academic Japanese track.",
      "**Other ように.** Don’t confuse these with ～ように meaning “so that” ([忘]{わす}れないように[書]{か}きます) or ～ようにする (make an effort to). Nor with ～っぽい, a casual suffix meaning “-ish, seems”.",
-     "**Tests and textbooks.** Learners’ materials mostly practise the forms and the clear cases: appearance against hearsay, よう against みたい after nouns and な-adjectives, and らしい for “typical of”. Where native speakers would accept more than one pattern, a well-made question gives a context that leaves only one."
+     "**Tests and textbooks.** Learners’ materials mostly practice the forms and the clear cases: appearance against hearsay, よう against みたい after nouns and な-adjectives, and らしい for “typical of”. Where native speakers would accept more than one pattern, a well-made question gives a context that leaves only one."
     ]
    },
    related:["n4-grammar-patterns", "plain-form-grammar", "hedging-japanese", "sentence-endings-japanese"],
@@ -2741,10 +2741,10 @@ ICA.addUnit({
    summary:"A first look at keigo for N4: the three traditional kinds, the special verbs you hear most, the regular patterns お～になる, お～ください and お～する, and the mistakes to avoid.",
    levels:{
     starter:[
-     "Besides です and ます, Japanese has **keigo**: special verbs and patterns that show respect. Traditionally there are three kinds. [丁寧語]{ていねいご} (polite language) is です・ます, polite to the listener. [尊敬語]{そんけいご} (respectful language) raises the other person when **they** act: いらっしゃる (come, go, be). [謙譲語]{けんじょうご} (humble language) lowers **your** actions towards them: [参]{まい}る (come, go).",
+     "Besides です and ます, Japanese has **keigo**: special verbs and patterns that show respect. Traditionally there are three kinds. [丁寧語]{ていねいご} (polite language) is です・ます, polite to the listener. [尊敬語]{そんけいご} (respectful language) raises the other person when **they** act: いらっしゃる (come, go, be). [謙譲語]{けんじょうご} (humble language) lowers **your** actions toward them: [参]{まい}る (come, go).",
      "You hear keigo in shops (いらっしゃいませ, [少々]{しょうしょう}お[待]{ま}ちください), at work, on the phone and with teachers.",
      "The golden rule: respectful forms for what others do, humble forms for what you do, and never respectful forms about yourself.",
-     "Keigo is hard for Japanese speakers too, and people forgive mistakes when your respect is clear. At N4, aim to recognise the common forms and use a few safely."
+     "Keigo is hard for Japanese speakers too, and people forgive mistakes when your respect is clear. At N4, aim to recognize the common forms and use a few safely."
     ],
     builder:[
      {
@@ -2826,8 +2826,8 @@ ICA.addUnit({
      "**What they share.** Most of these patterns attach to plain forms or to verb stems, which is why Unit 5’s plain forms matter so much at this level. Nouns and な-adjectives are the usual trouble spots: check whether the pattern wants だ, な, の or nothing."
     ],
     pro:[
-     "**Near neighbours to keep apart.** Passive and potential ([食]{た}べられる), appearance and hearsay (おいしそう / おいしいそう), ～ている and ～てある, ～のに and ～けど, ～ながら (one person) and ～[間]{あいだ} (two people), and respectful and humble verbs. JLPT grammar questions ask you to choose the right form for a gap or to put parts of a sentence in order ({{jlpt-overview}}), so practise choosing between such pairs in context.",
-     "**Form families.** The passive, causative and potential are all built on verb stems in similar ways and all become ichidan verbs: [書]{か}かれる, 書かせる, 書ける. Practising them side by side, verb by verb, is more efficient than learning them one at a time.",
+     "**Near neighbors to keep apart.** Passive and potential ([食]{た}べられる), appearance and hearsay (おいしそう / おいしいそう), ～ている and ～てある, ～のに and ～けど, ～ながら (one person) and ～[間]{あいだ} (two people), and respectful and humble verbs. JLPT grammar questions ask you to choose the right form for a gap or to put parts of a sentence in order ({{jlpt-overview}}), so practice choosing between such pairs in context.",
+     "**Form families.** The passive, causative and potential are all built on verb stems in similar ways and all become ichidan verbs: [書]{か}かれる, 書かせる, 書ける. Practicing them side by side, verb by verb, is more efficient than learning them one at a time.",
      "**Particles before のに and し.** Nouns and な-adjectives take な before のに (and ので) but だ before し (and から). It is a small detail that tests like to check.",
      "**Edges of the list.** Some patterns appear at N4 in one source and at N3 in another, for example the causative-passive, ～らしい meaning “typical of”, and keigo beyond the basic verbs. This track teaches them at N4 at a recognition level. Don’t worry if your textbook draws the line elsewhere.",
      "**Next steps.** Unit 8 covers N4 kanji and reading. For listening practice with these patterns, the Japan Foundation’s free Irodori Elementary 2 and Pre-Intermediate books cover the passive, ～ながら, ～し, the causative, ～らしい, ～のに and keigo, each in an everyday situation."
@@ -3160,17 +3160,17 @@ ICA.addUnit({
    q:"Cheska says: 「[隣]{となり}の[人]{ひと}に[夜]{よる}[遅]{おそ}くまで[騒]{さわ}がれて、[眠]{ねむ}れませんでした。」 ([騒]{さわ}ぐ = make a noise). What happened?",
    options:[
     {
-     t:"Her neighbours were noisy until late, and she couldn’t sleep.",
+     t:"Her neighbors were noisy until late, and she couldn’t sleep.",
      ok:true,
      why:"[騒]{さわ}がれて is the suffering passive of [騒]{さわ}ぐ: the noise affected her."
     },
     {
-     t:"She was noisy until late and her neighbours couldn’t sleep.",
+     t:"She was noisy until late and her neighbors couldn’t sleep.",
      why:"The passive puts Cheska on the receiving end; [隣]{となり}の人に marks the people who made the noise."
     },
-    {t:"Her neighbours told her to be quiet.", why:"That would be [注意]{ちゅうい}されました or [言]{い}われました. [騒]{さわ}ぐ means “make a noise”."},
+    {t:"Her neighbors told her to be quiet.", why:"That would be [注意]{ちゅうい}されました or [言]{い}われました. [騒]{さわ}ぐ means “make a noise”."},
     {
-     t:"She was made to make a noise by her neighbours.",
+     t:"She was made to make a noise by her neighbors.",
      why:"“Made to” is the causative-passive ([騒]{さわ}がされる or [騒]{さわ}がせられる). [騒]{さわ}がれる is the plain passive."
     }
    ]
@@ -3287,7 +3287,7 @@ ICA.addUnit({
     {
      t:"The causative [待]{ま}たせる (make wait) in a humble pattern: “I have made you wait”",
      ok:true,
-     why:"お + [待]{ま}たせ + する is a humble form built on the causative of [待]{ま}つ, so it apologises for keeping you waiting."
+     why:"お + [待]{ま}たせ + する is a humble form built on the causative of [待]{ま}つ, so it apologizes for keeping you waiting."
     },
     {t:"The passive of [待]{ま}つ: “I was kept waiting”", why:"The passive would be [待]{ま}たれる, and the waiter isn’t complaining about waiting."},
     {t:"The potential of [待]{ま}つ: “I could wait”", why:"The potential is [待]{ま}てる; it doesn’t appear here."},
@@ -3346,7 +3346,7 @@ ICA.addUnit({
    id:"e3u7-q23",
    lesson:"e3u7-l3",
    level:2,
-   q:"A heavy bag is sliding towards the edge of a shelf. What do you shout?",
+   q:"A heavy bag is sliding toward the edge of a shelf. What do you shout?",
    options:[
     {t:"あ、[落]{お}ちそう！", ok:true, why:"Verb stem + そう: “it’s about to fall”, a prediction from what you see."},
     {t:"あ、[落]{お}ちるそう！", why:"Dictionary form + そう is hearsay: “I hear it will fall”."},

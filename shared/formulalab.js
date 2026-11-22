@@ -127,7 +127,7 @@ LAB.check = function(ch, text){
     var caseOnly = !allSame(got, want, false);
     var needFn = (ch.must && ch.must.fn) || [];
     var missing = needFn.filter(function(f){ return !f.split("|").some(function(g){ return fns.indexOf(g) > -1; }); }).map(function(f){ return f.split("|").join(" or "); });
-    if (missing.length) return fin(res, "mustfn", "Right answer, different tool", "Your formula works. This challenge is practising **"+missing.join(", ")+"**, so try writing it with "+(missing.length > 1 ? "those functions" : "that function")+". (Knowing two ways is a real skill: you can check one with the other.)");
+    if (missing.length) return fin(res, "mustfn", "Right answer, different tool", "Your formula works. This challenge is practicing **"+missing.join(", ")+"**, so try writing it with "+(missing.length > 1 ? "those functions" : "that function")+". (Knowing two ways is a real skill: you can check one with the other.)");
     if (ch.must && ch.must.noFn && ch.must.noFn.some(function(f){ return fns.indexOf(f) > -1; })) return fin(res, "mustfn", "Right answer, but…", ch.must.noFnWhy || "This challenge asks you to do it without that function.");
     if (ch.must && ch.must.abs && !refs.some(function(r){ return r.node.k === "ref" ? (r.node.ac || r.node.ar) : (r.node.a.ac || r.node.a.ar || r.node.b.ac || r.node.b.ar); })) return fin(res, "mustabs", "Right answer, but not copy-proof", ch.must.absWhy || "This works here, but the challenge is about locking a reference with `$` so the formula still works when copied. Add `$` to the reference that must not move.");
     var accApprox = false, ansExact2 = false;

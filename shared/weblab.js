@@ -193,7 +193,7 @@ WL.lintCSS = function(src, win, doc){
       if (/\n/.test(val) && /^[\s\S]*\n\s*[a-z-]+\s*:/i.test(val)){ var nl = val.split("\n"); out.push({line:line, msg:"The line with “"+prop+": "+nl[0].trim()+"” has no semicolon at the end, so the next line is read as part of its value and both are ignored. Add “;” after "+nl[0].trim()+"."}); return; }
       if (!prop){ out.push({line:line, msg:"A declaration is missing its property name before the colon."}); return; }
       if (/^--/.test(prop)) return;
-      if (!win.CSS.supports(prop, "inherit")){ var near = nearest(prop.toLowerCase(), propList(win), 3); out.push({line:line, msg:"“"+prop+"” isn’t a CSS property."+(prop.toLowerCase() === "colour" ? " CSS uses American spelling: color." : /^(font|text)-colou?r$/i.test(prop) ? " The property for text colour is just  color: …;" : near ? " Did you mean “"+near+"”?" : "")}); return; }
+      if (!win.CSS.supports(prop, "inherit")){ var near = nearest(prop.toLowerCase(), propList(win), 3); out.push({line:line, msg:"“"+prop+"” isn’t a CSS property."+(prop.toLowerCase() === "color" ? " CSS uses American spelling: color." : /^(font|text)-colou?r$/i.test(prop) ? " The property for text color is just  color: …;" : near ? " Did you mean “"+near+"”?" : "")}); return; }
       var v = val.replace(/\s*!important\s*$/i, "");
       if (!v){ out.push({line:line, msg:"“"+prop+"” has no value after the colon."}); return; }
       if (!win.CSS.supports(prop, v)) out.push({line:line, msg:"“"+v+"” isn’t a valid value for "+prop+"."+valueHint(prop, v)});
@@ -212,8 +212,8 @@ function classHint(sel, doc){
 function valueHint(prop, v){
   if (/^\d+(\.\d+)?$/.test(v) && v !== "0" && /(width|height|size|margin|padding|gap|top|left|right|bottom|radius|indent)/.test(prop)) return " Lengths need a unit, like "+v+"px or "+v+"rem (only 0 can go without one).";
   if (/^\d*\.?\d+\s+(px|rem|em|%|vh|vw|fr)$/.test(v)) return " Don’t put a space between the number and the unit: "+v.replace(/\s+/, "")+".";
-  if (/^[0-9a-f]{3,8}$/i.test(v) && /color|background/.test(prop)) return " Hex colours start with #: #"+v+".";
-  if (/^#/.test(v) && !/^#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(v)) return " Hex colours have 3 or 6 digits from 0–9 and a–f, like #c0392b.";
+  if (/^[0-9a-f]{3,8}$/i.test(v) && /color|background/.test(prop)) return " Hex colors start with #: #"+v+".";
+  if (/^#/.test(v) && !/^#([0-9a-f]{3,4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(v)) return " Hex colors have 3 or 6 digits from 0–9 and a–f, like #c0392b.";
   if (/^center$/i.test(v) && /^(align|justify)-content$/.test(prop)) return "";
   if (prop === "display" && /^flexbox$/i.test(v)) return " The value is flex:  display: flex;";
   if (/,/.test(v) && /^(margin|padding)$/.test(prop)) return " Separate the sides with spaces, not commas:  "+prop+": "+v.replace(/\s*,\s*/g, " ")+";";
@@ -328,7 +328,7 @@ function styleMatch(win, el, prop, want){
     return got === w;
   }), got:got};
 }
-var COLOR_NAMES = {"rgb(0, 0, 0)":"black", "rgb(255, 255, 255)":"white", "rgba(0, 0, 0, 0)":"transparent (none)", "rgb(34, 34, 34)":"the default dark grey"};
+var COLOR_NAMES = {"rgb(0, 0, 0)":"black", "rgb(255, 255, 255)":"white", "rgba(0, 0, 0, 0)":"transparent (none)", "rgb(34, 34, 34)":"the default dark gray"};
 function describe(prop, got){ return /color/.test(prop) ? (COLOR_NAMES[got] || got) : got; }
 
 /* evaluate one check; returns {ok, msg} */

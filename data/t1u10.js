@@ -54,7 +54,7 @@ ICA.addUnit({
         ["Persuasive","Convince people to act or decide","Asking a residents’ association to fund a playground repair"],
         ["Inspirational","Motivate or move people","A coach’s end-of-season talk to a youth team"]
       ]},
-      {ex:"Priya chairs a community garden. She has 10 minutes at the residents’ meeting.\n\nAudience: about 40 neighbours, mixed ages, in a hall. Most have walked past the garden; few have worked in it.\nThey care about: their free time, fresh food, a tidy street.\nPurpose (persuasive): at least six people sign up to volunteer on Saturdays.\n\nNotice what is missing: the garden’s whole history, the full budget and the planting calendar. Interesting to Priya, but they don’t serve the purpose.", label:"Worked example: an audience and purpose card"}
+      {ex:"Priya chairs a community garden. She has 10 minutes at the residents’ meeting.\n\nAudience: about 40 neighbors, mixed ages, in a hall. Most have walked past the garden; few have worked in it.\nThey care about: their free time, fresh food, a tidy street.\nPurpose (persuasive): at least six people sign up to volunteer on Saturdays.\n\nNotice what is missing: the garden’s whole history, the full budget and the planting calendar. Interesting to Priya, but they don’t serve the purpose.", label:"Worked example: an audience and purpose card"}
     ]},
     {h:"One main message", body:[
       "Now compress the talk into a single sentence: the one thing you want people to remember if they forget everything else. This is your [[key-message|main message]]. It is not a topic (“volunteering”) but a claim about the topic (“Six more volunteers would keep the garden open on Saturdays”).",
@@ -73,7 +73,7 @@ ICA.addUnit({
       {list:[
         "**Opening (the hook).** Earn attention in the first minute. The textbook suggests a short story, a question, or a compelling statistic, then a sentence that says what the talk will cover.",
         "**Key points.** Usually three to five ideas that support the message, in a sensible order. Each gets a few slides at most.",
-        "**Close.** Repeat the message in different words, summarise the points, and end with a [[call-to-action|call to action]]: exactly what you want people to do next. Don’t end on a slide that just says “Questions?” with nothing else on it."
+        "**Close.** Repeat the message in different words, summarize the points, and end with a [[call-to-action|call to action]]: exactly what you want people to do next. Don’t end on a slide that just says “Questions?” with nothing else on it."
       ]},
       "Pick an order that suits the purpose:",
       {table:[
@@ -99,7 +99,7 @@ ICA.addUnit({
         "**Estimate slides from talking time.** The textbook suggests about **one minute per slide** as a starting estimate, and fifteen to twenty seconds for a slide that is only a picture. Treat this as a rough rule of thumb: some slides take three minutes, some five seconds.",
         "**Rehearse aloud and time it** (Lesson 4). Timing a silent read-through usually underestimates."
       ]},
-      {ex:"Yến, a master’s student in information engineering, has a 20-minute slot at a student society. The organiser wants 5 minutes for questions, and the chair needs 1 minute to introduce her.\n\nTalking time: 20 − 5 − 1 = 14 minutes.\nAt roughly one minute per slide, that is about 14 slides, at most. Her first storyboard had 26 boxes, so she merges or cuts about half before building anything.", label:"Worked example: from time slot to slide count"},
+      {ex:"Yến, a master’s student in information engineering, has a 20-minute slot at a student society. The organizer wants 5 minutes for questions, and the chair needs 1 minute to introduce her.\n\nTalking time: 20 − 5 − 1 = 14 minutes.\nAt roughly one minute per slide, that is about 14 slides, at most. Her first storyboard had 26 boxes, so she merges or cuts about half before building anything.", label:"Worked example: from time slot to slide count"},
       {key:"Plan the message, the structure and the time on paper. Open the app only when the story already works."}
     ]},
     {h:"Common misconceptions", body:[
@@ -159,7 +159,7 @@ ICA.addUnit({
       ". Ending: ",
       {t:"a slide that just says “Questions?”", flag:true, why:"The close should restate the message and give a call to action, such as “Sign up by Friday”. Questions can follow."}
     ]},
-    {id:"t1u10-l1-x7", type:"mcq", q:"Lucía’s manager wants “a deck” summarising a policy change that staff will read on their own, with no meeting. What should she suggest?", options:[
+    {id:"t1u10-l1-x7", type:"mcq", q:"Lucía’s manager wants “a deck” summarizing a policy change that staff will read on their own, with no meeting. What should she suggest?", options:[
       {t:"A short document or PDF written in full sentences", ok:true, why:"Nobody will be there to explain the slides. Slides for a talk rely on the speaker. A reading deck needs complete explanations, which a document does better."},
       {t:"Normal presentation slides with one word per slide, so it looks modern", why:"Without a speaker, single-word slides leave readers guessing what they mean."},
       {t:"Slides with the full text in tiny type", why:"That is a document squeezed onto slides, and tiny type is hard to read, especially on phones."},
@@ -193,15 +193,15 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Design is decided once, not on every slide", body:[
-      {lead:"Good slide design is mostly invisible: every title in the same place, the same fonts and colours throughout, text you can read from the back. The quickest way to get there is to let the app’s design system do the repeating for you."},
-      "Think of a printed letterhead. The organisation’s name, logo and colours are printed once, and every letter written on that paper shares them. Presentation apps work the same way, with four layers:",
+      {lead:"Good slide design is mostly invisible: every title in the same place, the same fonts and colors throughout, text you can read from the back. The quickest way to get there is to let the app’s design system do the repeating for you."},
+      "Think of a printed letterhead. The organization’s name, logo and colors are printed once, and every letter written on that paper shares them. Presentation apps work the same way, with four layers:",
       {list:[
-        "A [[theme]] is a ready-made set of colours, fonts, background and layouts for the whole deck.",
+        "A [[theme]] is a ready-made set of colors, fonts, background and layouts for the whole deck.",
         "The [[slide-master|slide master]] is the top-level slide that holds the theme’s settings. Change the font or logo there, and every slide that uses it changes.",
         "A [[slide-layout|layout]] is one arrangement of boxes for a kind of slide: a title slide, “title and content”, two columns, a section header.",
-        "A [[placeholder]] is one of those labelled boxes (“Click to add title”) waiting for your text or picture."
+        "A [[placeholder]] is one of those labeled boxes (“Click to add title”) waiting for your text or picture."
       ]},
-      {fig:'<svg viewBox="0 0 340 344"><defs><marker id="m1021" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="30" y="10" width="280" height="54" rx="9" stroke-width="2"/><text x="170" y="32" text-anchor="middle">Slide master (theme)</text><text class="s" x="170" y="52" text-anchor="middle">fonts · colours · background · logo</text><path class="d-ink" d="M60,65 L60,96" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M170,65 L170,96" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M280,65 L280,96" stroke-width="2" marker-end="url(#m1021)"/><rect class="d-gold" x="8" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="60" y="118" text-anchor="middle">Title</text><text x="60" y="135" text-anchor="middle">slide</text><text class="s" x="60" y="155" text-anchor="middle">layout</text><rect class="d-gold" x="118" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="170" y="118" text-anchor="middle">Title and</text><text x="170" y="135" text-anchor="middle">content</text><text class="s" x="170" y="155" text-anchor="middle">layout</text><rect class="d-gold" x="228" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="280" y="118" text-anchor="middle">Two</text><text x="280" y="135" text-anchor="middle">columns</text><text class="s" x="280" y="155" text-anchor="middle">layout</text><path class="d-ink" d="M60,165 L60,194" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M170,165 L170,194" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M280,165 L280,194" stroke-width="2" marker-end="url(#m1021)"/><rect class="d-panel" x="8" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="18" y="214" width="84" height="14" rx="2"/><rect class="d-softf" x="33" y="234" width="54" height="8" rx="2"/><rect class="d-panel" x="118" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="128" y="204" width="84" height="12" rx="2"/><rect class="d-softf" x="128" y="222" width="84" height="28" rx="2"/><rect class="d-panel" x="228" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="238" y="204" width="84" height="12" rx="2"/><rect class="d-softf" x="238" y="222" width="40" height="28" rx="2"/><rect class="d-softf" x="282" y="222" width="40" height="28" rx="2"/><text class="s" x="60" y="278" text-anchor="middle">slide 1</text><text class="s" x="170" y="278" text-anchor="middle">slides 2 to 6</text><text class="s" x="280" y="278" text-anchor="middle">slide 7</text><text x="170" y="312" text-anchor="middle">Edit the master once:</text><text class="s" x="170" y="332" text-anchor="middle">every slide that uses it updates</text></svg>', alt:"A diagram in three rows. Top: the slide master, holding fonts, colours, background and logo. Arrows lead down to three layouts: Title slide, Title and content, and Two columns. Arrows lead from each layout to slides built from it: slide 1 uses the title layout, slides 2 to 6 use title and content, slide 7 uses two columns. Each slide shows grey placeholder boxes. Caption at the bottom: edit the master once and every slide that uses it updates.", cap:"The master holds the design, layouts arrange the boxes, and slides fill the placeholders."},
+      {fig:'<svg viewBox="0 0 340 344"><defs><marker id="m1021" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-lup" x="30" y="10" width="280" height="54" rx="9" stroke-width="2"/><text x="170" y="32" text-anchor="middle">Slide master (theme)</text><text class="s" x="170" y="52" text-anchor="middle">fonts · colors · background · logo</text><path class="d-ink" d="M60,65 L60,96" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M170,65 L170,96" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M280,65 L280,96" stroke-width="2" marker-end="url(#m1021)"/><rect class="d-gold" x="8" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="60" y="118" text-anchor="middle">Title</text><text x="60" y="135" text-anchor="middle">slide</text><text class="s" x="60" y="155" text-anchor="middle">layout</text><rect class="d-gold" x="118" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="170" y="118" text-anchor="middle">Title and</text><text x="170" y="135" text-anchor="middle">content</text><text class="s" x="170" y="155" text-anchor="middle">layout</text><rect class="d-gold" x="228" y="98" width="104" height="66" rx="8" stroke-width="2"/><text x="280" y="118" text-anchor="middle">Two</text><text x="280" y="135" text-anchor="middle">columns</text><text class="s" x="280" y="155" text-anchor="middle">layout</text><path class="d-ink" d="M60,165 L60,194" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M170,165 L170,194" stroke-width="2" marker-end="url(#m1021)"/><path class="d-ink" d="M280,165 L280,194" stroke-width="2" marker-end="url(#m1021)"/><rect class="d-panel" x="8" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="18" y="214" width="84" height="14" rx="2"/><rect class="d-softf" x="33" y="234" width="54" height="8" rx="2"/><rect class="d-panel" x="118" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="128" y="204" width="84" height="12" rx="2"/><rect class="d-softf" x="128" y="222" width="84" height="28" rx="2"/><rect class="d-panel" x="228" y="196" width="104" height="62" rx="6" stroke-width="2"/><rect class="d-softf" x="238" y="204" width="84" height="12" rx="2"/><rect class="d-softf" x="238" y="222" width="40" height="28" rx="2"/><rect class="d-softf" x="282" y="222" width="40" height="28" rx="2"/><text class="s" x="60" y="278" text-anchor="middle">slide 1</text><text class="s" x="170" y="278" text-anchor="middle">slides 2 to 6</text><text class="s" x="280" y="278" text-anchor="middle">slide 7</text><text x="170" y="312" text-anchor="middle">Edit the master once:</text><text class="s" x="170" y="332" text-anchor="middle">every slide that uses it updates</text></svg>', alt:"A diagram in three rows. Top: the slide master, holding fonts, colors, background and logo. Arrows lead down to three layouts: Title slide, Title and content, and Two columns. Arrows lead from each layout to slides built from it: slide 1 uses the title layout, slides 2 to 6 use title and content, slide 7 uses two columns. Each slide shows gray placeholder boxes. Caption at the bottom: edit the master once and every slide that uses it updates.", cap:"The master holds the design, layouts arrange the boxes, and slides fill the placeholders."},
       "Every app has this system, with slightly different names:",
       {table:[
         ["App","Where the master and layouts live"],
@@ -221,20 +221,20 @@ ICA.addUnit({
         ["Screen readers","Read in a predictable order","Read in the order you drew them, which may be wrong"]
       ]},
       "That third and fourth row matter more than they look. Screen readers announce each slide by its title, and Microsoft’s accessibility guidance asks for a unique, descriptive title on every slide, even if you choose to hide it. A title typed into a loose box doesn’t count.",
-      {ex:"Kenji built 20 slides by deleting the placeholders and drawing his own text boxes, because he liked placing things by hand. His society then asked everyone to switch to the official theme. The colours changed, but every one of his boxes stayed put, in the old font, overlapping the new logo. He spent an evening fixing slides by hand.\n\nHad he used placeholders, the theme change would have taken seconds. In PowerPoint, **Home → Reset** puts a slide’s placeholders back to the layout’s positions and formatting.", label:"Worked example: why placeholders pay off"},
+      {ex:"Kenji built 20 slides by deleting the placeholders and drawing his own text boxes, because he liked placing things by hand. His society then asked everyone to switch to the official theme. The colors changed, but every one of his boxes stayed put, in the old font, overlapping the new logo. He spent an evening fixing slides by hand.\n\nHad he used placeholders, the theme change would have taken seconds. In PowerPoint, **Home → Reset** puts a slide’s placeholders back to the layout’s positions and formatting.", label:"Worked example: why placeholders pay off"},
       {tip:"If a layout doesn’t suit you, change the layout (once, in the master) rather than fighting it on every slide."}
     ]},
     {h:"Contrast you can measure", body:[
-      "[[contrast|Contrast]] is the difference in brightness between text and its background. It is the single biggest factor in whether people can read a slide, and it can be measured as a **contrast ratio**, from 1:1 (identical colours, invisible) to 21:1 (black on white).",
+      "[[contrast|Contrast]] is the difference in brightness between text and its background. It is the single biggest factor in whether people can read a slide, and it can be measured as a **contrast ratio**, from 1:1 (identical colors, invisible) to 21:1 (black on white).",
       "The Web Content Accessibility Guidelines (WCAG 2.2), the international reference for accessible digital content, set minimum ratios at level AA:",
-      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="20" text-anchor="middle">Contrast ratio: higher is easier to read</text><rect class="d-sage" x="10" y="34" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="61">21:1</text><text x="96" y="53">Black on white</text><text class="s" x="96" y="70">the highest possible</text><rect class="d-sage" x="10" y="86" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="113">7:1</text><text x="96" y="105">Enhanced level (AAA)</text><text class="s" x="96" y="122">normal-size text</text><rect class="d-lup" x="10" y="138" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="165">4.5:1</text><text x="96" y="157">Minimum (AA)</text><text class="s" x="96" y="174">normal-size text</text><rect class="d-gold" x="10" y="190" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="217">3:1</text><text x="96" y="209">Minimum (AA): large text</text><text class="s" x="96" y="226">also chart lines, icons, shapes</text><rect class="d-rose" x="10" y="242" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="269">1:1</text><text x="96" y="261">Same as background</text><text class="s" x="96" y="278">invisible</text><text class="s" x="170" y="304" text-anchor="middle">Large text: at least 18 pt, or 14 pt bold</text></svg>', alt:"A ladder of contrast ratios from highest to lowest. 21 to 1: black on white, the highest possible. 7 to 1: enhanced level AAA for normal-size text. 4.5 to 1: minimum level AA for normal-size text. 3 to 1: minimum AA for large text, and also for chart lines, icons and shapes. 1 to 1: same colour as the background, invisible. Note: large text means at least 18 point, or 14 point bold.", cap:"The WCAG thresholds. Aim well above the minimum for slides: projectors and bright rooms wash colours out."},
+      {fig:'<svg viewBox="0 0 340 310"><text x="170" y="20" text-anchor="middle">Contrast ratio: higher is easier to read</text><rect class="d-sage" x="10" y="34" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="61">21:1</text><text x="96" y="53">Black on white</text><text class="s" x="96" y="70">the highest possible</text><rect class="d-sage" x="10" y="86" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="113">7:1</text><text x="96" y="105">Enhanced level (AAA)</text><text class="s" x="96" y="122">normal-size text</text><rect class="d-lup" x="10" y="138" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="165">4.5:1</text><text x="96" y="157">Minimum (AA)</text><text class="s" x="96" y="174">normal-size text</text><rect class="d-gold" x="10" y="190" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="217">3:1</text><text x="96" y="209">Minimum (AA): large text</text><text class="s" x="96" y="226">also chart lines, icons, shapes</text><rect class="d-rose" x="10" y="242" width="320" height="44" rx="8" stroke-width="2"/><text x="24" y="269">1:1</text><text x="96" y="261">Same as background</text><text class="s" x="96" y="278">invisible</text><text class="s" x="170" y="304" text-anchor="middle">Large text: at least 18 pt, or 14 pt bold</text></svg>', alt:"A ladder of contrast ratios from highest to lowest. 21 to 1: black on white, the highest possible. 7 to 1: enhanced level AAA for normal-size text. 4.5 to 1: minimum level AA for normal-size text. 3 to 1: minimum AA for large text, and also for chart lines, icons and shapes. 1 to 1: same color as the background, invisible. Note: large text means at least 18 point, or 14 point bold.", cap:"The WCAG thresholds. Aim well above the minimum for slides: projectors and bright rooms wash colors out."},
       {list:[
         "**4.5:1** for normal text.",
         "**3:1** for large text, which WCAG defines as at least **18 point**, or **14 point bold**.",
         "**3:1** for the parts of charts, icons and diagrams people need to see (WCAG’s “non-text contrast” rule)."
       ]},
-      "The thresholds are strict: WCAG says not to round, so 4.47:1 fails 4.5:1. You can’t judge ratios by eye, so use a checker: a free web tool such as WebAIM’s contrast checker, or the Colour Contrast Analyser app. You enter the two colours and it reports the ratio and whether it passes.",
-      {warn:"Microsoft says its Accessibility Checker misses some contrast problems, such as text in transparent boxes over a background. Text over a photo is the classic trap: part of the photo may be light and part dark. Put text on a solid band of colour, or darken the photo behind it, and check the worst spot."},
+      "The thresholds are strict: WCAG says not to round, so 4.47:1 fails 4.5:1. You can’t judge ratios by eye, so use a checker: a free web tool such as WebAIM’s contrast checker, or the Colour Contrast Analyser app. You enter the two colors and it reports the ratio and whether it passes.",
+      {warn:"Microsoft says its Accessibility Checker misses some contrast problems, such as text in transparent boxes over a background. Text over a photo is the classic trap: part of the photo may be light and part dark. Put text on a solid band of color, or darken the photo behind it, and check the worst spot."},
       {tip:"WCAG was written for screens like phones and laptops, not projectors. A projector in a sunny room can turn a 4.5:1 pair into something much weaker, so slides need *more* contrast than the minimum, not less. Dark text on a light background, or the reverse, with no mid-tones, is safest."}
     ]},
     {h:"Type size for the room", body:[
@@ -254,8 +254,8 @@ ICA.addUnit({
         ["Principle","What it means on a slide"],
         ["Alignment","Line things up on shared edges. Use the guides and smart guides that appear as you drag; nothing should sit “nearly” in line."],
         ["Proximity","Put related things close together (a photo and its caption) and unrelated things apart."],
-        ["Repetition","Same title position, colours and fonts on every slide, so people know where to look."],
-        ["Contrast","Make important things look different: bigger, bolder, a stronger colour. Unimportant things recede."],
+        ["Repetition","Same title position, colors and fonts on every slide, so people know where to look."],
+        ["Contrast","Make important things look different: bigger, bolder, a stronger color. Unimportant things recede."],
         ["White space","Leave empty space. It isn’t wasted; it lets the important thing stand out."]
       ]},
       "[[white-space|White space]] is the one beginners resist most. A slide doesn’t need to be full. One chart with a one-line headline and generous margins usually communicates more than the same chart squeezed beside four bullet points.",
@@ -270,7 +270,7 @@ ICA.addUnit({
     {h:"Common misconceptions", body:[
       {list:[
         "**“Design means decoration.”** Most good design is consistency, contrast and space. Decoration that doesn’t carry meaning often distracts.",
-        "**“If I can read it on my laptop, everyone can read it.”** You are 50 cm from your laptop. The back row is many metres from the screen, and projectors lower contrast.",
+        "**“If I can read it on my laptop, everyone can read it.”** You are 50 cm from your laptop. The back row is many meters from the screen, and projectors lower contrast.",
         "**“Placeholders limit me, so I delete them.”** They carry titles, reading order and theme changes for you. Change the layout instead.",
         "**“There’s a rule: never more than six bullets.”** That is a tip, not a standard. The standards that do exist are about readability, such as WCAG’s contrast ratios."
       ]}
@@ -283,7 +283,7 @@ ICA.addUnit({
       {t:"A photo of this year’s harvest on slide 4", b:1, why:"Content that belongs to one slide goes on that slide, ideally in a picture placeholder."},
       {t:"Slide numbers on every slide", b:0, why:"Slide numbers are a master-level element. Most apps add them through the master or a header and footer setting."},
       {t:"The chart of last month’s sign-ups", b:1, why:"Specific content for one slide. It doesn’t belong on every slide."},
-      {t:"The background colour of the whole deck", b:0, why:"A deck-wide setting belongs in the theme or master."}
+      {t:"The background color of the whole deck", b:0, why:"A deck-wide setting belongs in the theme or master."}
     ]},
     {id:"t1u10-l2-x2", type:"sort", q:"Using WCAG level AA, does each text pass or fail its contrast minimum? (Large text means at least 18 pt, or 14 pt bold.)", buckets:["Passes AA","Fails AA"], items:[
       {t:"24 pt regular title at 3.4:1", b:0, why:"24 pt is large text, which needs at least 3:1. 3.4:1 passes, though more contrast would be kinder on a projector."},
@@ -293,16 +293,16 @@ ICA.addUnit({
       {t:"20 pt regular text at 2.8:1", b:1, why:"20 pt is large text, but even large text needs at least 3:1. 2.8:1 fails."},
       {t:"18 pt regular text at 7.2:1", b:0, why:"7.2:1 passes every level, including the enhanced AAA level for normal text."}
     ]},
-    {id:"t1u10-l2-x3", type:"mcq", q:"Amara switched her deck to a new theme. The colours changed everywhere, but on some slides the old text stayed in the old font and position. What is the most likely reason?", options:[
+    {id:"t1u10-l2-x3", type:"mcq", q:"Amara switched her deck to a new theme. The colors changed everywhere, but on some slides the old text stayed in the old font and position. What is the most likely reason?", options:[
       {t:"That text was in text boxes she drew, not placeholders", ok:true, why:"Placeholders follow the theme and layout; text boxes you draw yourself keep their own position and formatting."},
       {t:"The new theme is broken and should be downloaded and reinstalled", why:"The theme worked on the other slides. The difference is in how those particular slides were built."},
-      {t:"Themes can only change colours, never fonts", why:"Themes include fonts as well as colours. The text that changed shows the fonts were applied where placeholders were used."},
+      {t:"Themes can only change colors, never fonts", why:"Themes include fonts as well as colors. The text that changed shows the fonts were applied where placeholders were used."},
       {t:"She needs a faster computer to apply themes fully", why:"Applying a theme isn’t limited by speed. The text boxes simply aren’t linked to the theme."}
     ]},
     {id:"t1u10-l2-x4", type:"order", q:"Put these set-up steps for a new deck in the order that saves the most rework.", items:[
       {t:"Choose the slide size (usually 16:9) to match the screen", why:"Changing size later rescales or crops content, so decide first."},
-      {t:"Choose a theme, now that you can see how it looks at that slide size", why:"The theme sets colours, fonts and layouts, so it comes before any content, and after the size so you judge it in the real shape."},
-      {t:"Adjust the slide master: fonts, colours, logo, slide numbers", why:"Deck-wide changes are made once, before slides multiply."},
+      {t:"Choose a theme, now that you can see how it looks at that slide size", why:"The theme sets colors, fonts and layouts, so it comes before any content, and after the size so you judge it in the real shape."},
+      {t:"Adjust the slide master: fonts, colors, logo, slide numbers", why:"Deck-wide changes are made once, before slides multiply."},
       {t:"Add slides using the right layouts", why:"Each new slide starts from a layout with placeholders in place."},
       {t:"Fill the placeholders with your headlines, pictures and charts", why:"Content goes into placeholders so it follows the design."},
       {t:"Check contrast and readability from a distance", why:"A final check on the real content catches anything the theme didn’t."}
@@ -313,7 +313,7 @@ ICA.addUnit({
       " is typed ",
       {t:"in the layout’s title placeholder", flag:false, why:"Right: it becomes the slide’s real title, for screen readers, navigation and theme changes."},
       ". Below it, ",
-      {t:"light grey text on a white background", flag:true, why:"Light grey on white often falls well below 4.5:1. Check it with a contrast checker; dark grey or black would be safer."},
+      {t:"light gray text on a white background", flag:true, why:"Light gray on white often falls well below 4.5:1. Check it with a contrast checker; dark gray or black would be safer."},
       " explains the scheme in ",
       {t:"five full paragraphs, justified to both edges", flag:true, why:"Paragraphs compete with the speaker, and justified text is harder to read. Move the detail to notes or a handout."},
       ", using ",
@@ -337,13 +337,13 @@ ICA.addUnit({
    ],
    apply:{intro:"Use your outline from Lesson 1 (or any short deck). Each task works in the free version of each app unless a note says otherwise.", tasks:[
      {t:"Set the slide size and choose a theme", app:{
-       ms:["Choose **Design → Slide Size** and check **Widescreen (16:9)** is selected (it is the default). This works in desktop PowerPoint and PowerPoint for the web.","On the **Design** tab, pick a theme from the gallery. Try the **Variants** next to it for other colour sets.","Prefer a plain theme with strong contrast between text and background."],
+       ms:["Choose **Design → Slide Size** and check **Widescreen (16:9)** is selected (it is the default). This works in desktop PowerPoint and PowerPoint for the web.","On the **Design** tab, pick a theme from the gallery. Try the **Variants** next to it for other color sets.","Prefer a plain theme with strong contrast between text and background."],
        google:["Choose **File → Page setup** and pick **Widescreen (16:9)**, then confirm.","Choose **Slide → Change theme** and pick a theme from the panel on the right.","Prefer a plain theme with strong contrast between text and background."],
        libre:["Choose **Slide → Slide Properties** and, on the **Slide** tab, set the **Format** to a 16:9 screen size.","To apply a ready-made design, open the **Master Slides** panel in the sidebar (the **Properties** sidebar can be switched with the icons on its right edge) and click a design.","Prefer a plain design with strong contrast between text and background."],
        apple:["When you create a presentation, Keynote shows the theme chooser; pick **Wide** (16:9) at the top if offered, then a theme.","To change later, choose **File → Change Theme**.","To check the size, click **Document** in the toolbar and look at **Slide Size**."]
      }},
      {t:"Make one deck-wide change on the master", app:{
-       ms:["Desktop PowerPoint only: choose **View → Slide Master**.","Click the large thumbnail at the top of the left pane (the master itself, not a layout under it).","Change the title font, or insert a small logo with **Insert → Pictures**. Watch the layouts below update.","Choose **Close Master View**. Every slide using those layouts now shows the change.","PowerPoint for the web can’t open the slide master. There, use **Design → Variants** for another colour or font set, or open the file in a desktop app (or in Google Slides or LibreOffice Impress, which can open PowerPoint files) to edit the master."],
+       ms:["Desktop PowerPoint only: choose **View → Slide Master**.","Click the large thumbnail at the top of the left pane (the master itself, not a layout under it).","Change the title font, or insert a small logo with **Insert → Pictures**. Watch the layouts below update.","Choose **Close Master View**. Every slide using those layouts now shows the change.","PowerPoint for the web can’t open the slide master. There, use **Design → Variants** for another color or font set, or open the file in a desktop app (or in Google Slides or LibreOffice Impress, which can open PowerPoint files) to edit the master."],
        google:["Choose **Slide → Edit theme**. The theme builder opens.","Click the theme at the top of the left pane (not a layout below it).","Change the title font, or add a logo with **Insert → Image**.","Close the theme builder with the **✕** at the top right. Every slide updates."],
        libre:["Choose **View → Master Slide**.","Click the title area and change its font, or add a logo with **Insert → Image**.","Click **Close Master View** on the Master View toolbar (or choose **View → Normal**). Every slide using that master updates."],
        apple:["Click **View** in the toolbar and choose **Edit Slide Layouts**.","Select a layout in the left pane and change its title font, or add a logo.","Click **Done** in the blue bar at the bottom of the window. Slides using that layout update."]
@@ -354,7 +354,7 @@ ICA.addUnit({
        libre:["Select a slide and choose **Slide → Layout** (or use the **Layouts** panel in the Properties sidebar).","Type into the placeholders (“Click to add Title”).","Check every slide has its own title in the title placeholder."],
        apple:["Select a slide, open the **Format** sidebar and click the **Slide Layout** pop-up to choose a different layout.","Type into the placeholders. In the Format sidebar, the **Title** and **Body** checkboxes show or hide them.","Check every slide has its own title."]
      }},
-     {t:"Check your contrast and test from a distance", how:["Find the hex codes of your text and background colours (most apps show them in the colour picker under **More colours** or **Custom**).","Enter both in a contrast checker, such as WebAIM’s free contrast checker on the web. Aim for at least 4.5:1 for normal text and 3:1 for text that is 18 pt or larger (14 pt if bold).","Start the slide show and stand at the far side of the room, or look at a slide on a phone at arm’s length. Note anything you had to squint at."], write:"Colour pair · ratio · pass or fail · what you changed"}
+     {t:"Check your contrast and test from a distance", how:["Find the hex codes of your text and background colors (most apps show them in the color picker under **More colors** or **Custom**).","Enter both in a contrast checker, such as WebAIM’s free contrast checker on the web. Aim for at least 4.5:1 for normal text and 3:1 for text that is 18 pt or larger (14 pt if bold).","Start the slide show and stand at the far side of the room, or look at a slide on a phone at arm’s length. Note anything you had to squint at."], write:"Color pair · ratio · pass or fail · what you changed"}
    ], proof:"A deck with a chosen slide size and theme, one change made on the master (or a note on why your app couldn’t), every slide titled in its placeholder, and a written contrast check."},
    read:[
      {book:"wss", where:"Chapter 6, Section 6.3 “Formatting Microsoft PowerPoint Slides: Layout and Design Principles”: “Formatting Layout”, “Alignment Guides” and “Design Principles”"},
@@ -388,11 +388,11 @@ ICA.addUnit({
       "Unit 5 explained that almost every photo, drawing and video online is protected by copyright the moment it is made, and that being able to download or right-click an image doesn’t give you permission to reuse it (see {{copyright-basics}}). For slides, you have four safe sources:",
       {list:[
         "**Your own photos and drawings.** If they show people, ask before you put identifiable faces, especially children’s, on a slide that will be shared.",
-        "**Openly licensed images**, such as those under a Creative Commons licence ({{creative-commons}}), from sources like Wikimedia Commons or Openverse. Follow the licence: most require a credit, and some forbid commercial use (NC) or changes (ND).",
+        "**Openly licensed images**, such as those under a Creative Commons license ({{creative-commons}}), from sources like Wikimedia Commons or Openverse. Follow the license: most require a credit, and some forbid commercial use (NC) or changes (ND).",
         "**Public domain images**, which have no copyright restrictions, though crediting them is still good practice.",
         "**The stock library built into your app**, used within its terms. Google, for example, says its stock media can be used for personal, educational or commercial purposes inside its apps, but not resold or used in a logo."
       ]},
-      {warn:"An image search inside a slides app is not a licence. Google’s help for Slides says it “has no way of knowing whether your use is permitted” for web images and leaves checking the licence to you. Open the image’s source page and read its licence before using it."},
+      {warn:"An image search inside a slides app is not a license. Google’s help for Slides says it “has no way of knowing whether your use is permitted” for web images and leaves checking the license to you. Open the image’s source page and read its license before using it."},
       "A credit can be one line of small text beside the picture or on a final “Image credits” slide. Unit 5’s TASL method covers what to include: **T**itle, **A**uthor, **S**ource (a link) and **L**icence ({{attribution-tasl}}).",
       {ex:"Photo: “Allotment in spring” by K. Osei, Wikimedia Commons, CC BY 4.0", label:"Worked example: a one-line image credit", mono:true},
       {tip:"If you use an AI-generated image, say so in the credit, and never use one to stand in for real evidence (a “photo” of an event that didn’t happen). Unit 6 explains why: {{ai-generated-content}}."}
@@ -403,11 +403,11 @@ ICA.addUnit({
         "**Decide the one point.** “Sundays sell the most” is a point; “sales by day” is a topic.",
         "**Pick the simplest chart that shows it.** Bars for comparing amounts, a line for change over time. Avoid 3D effects, which distort sizes.",
         "**Remove clutter**: heavy gridlines, a legend for a single series, decimal places nobody needs.",
-        "**Highlight what matters.** One bar in a strong colour, the rest muted. Label it directly rather than making people match colours to a legend.",
+        "**Highlight what matters.** One bar in a strong color, the rest muted. Label it directly rather than making people match colors to a legend.",
         "**Write the point as the headline**, so nobody has to work it out."
       ]},
-      {fig:'<svg viewBox="0 0 340 420"><rect class="d-panel" x="6" y="6" width="328" height="196" rx="8" stroke-width="2"/><text class="s" x="18" y="26">Before</text><text x="150" y="26" text-anchor="middle">Sales data</text><path class="d-soft" d="M30,50 L250,50 M30,80 L250,80 M30,110 L250,110 M30,140 L250,140" stroke-width="1"/><path class="d-ink" d="M30,170 L250,170" stroke-width="2"/><rect class="d-lup" x="36" y="122" width="20" height="48"/><rect class="d-lup" x="66" y="126" width="20" height="44"/><rect class="d-lup" x="96" y="124" width="20" height="46"/><rect class="d-lup" x="126" y="120" width="20" height="50"/><rect class="d-lup" x="156" y="106" width="20" height="64"/><rect class="d-lup" x="186" y="94" width="20" height="76"/><rect class="d-lup" x="216" y="58" width="20" height="112"/><text class="s" x="46" y="188" text-anchor="middle">M</text><text class="s" x="76" y="188" text-anchor="middle">T</text><text class="s" x="106" y="188" text-anchor="middle">W</text><text class="s" x="136" y="188" text-anchor="middle">T</text><text class="s" x="166" y="188" text-anchor="middle">F</text><text class="s" x="196" y="188" text-anchor="middle">S</text><text class="s" x="226" y="188" text-anchor="middle">S</text><rect class="d-lup" x="262" y="98" width="12" height="12"/><text class="s" x="280" y="109">Series 1</text><rect class="d-panel" x="6" y="214" width="328" height="200" rx="8" stroke-width="2"/><text class="s" x="18" y="234">After</text><text x="170" y="254" text-anchor="middle">Sundays now sell the most</text><path class="d-ink" d="M40,380 L304,380" stroke-width="2"/><rect class="d-soft" x="52" y="337" width="24" height="43" stroke-width="2"/><rect class="d-soft" x="88" y="341" width="24" height="39" stroke-width="2"/><rect class="d-soft" x="124" y="339" width="24" height="41" stroke-width="2"/><rect class="d-soft" x="160" y="336" width="24" height="44" stroke-width="2"/><rect class="d-soft" x="196" y="323" width="24" height="57" stroke-width="2"/><rect class="d-soft" x="232" y="312" width="24" height="68" stroke-width="2"/><rect class="d-rose" x="268" y="280" width="24" height="100" stroke-width="3"/><text class="s" x="280" y="273" text-anchor="middle">140</text><text class="s" x="64" y="398" text-anchor="middle">Mon</text><text class="s" x="100" y="398" text-anchor="middle">Tue</text><text class="s" x="136" y="398" text-anchor="middle">Wed</text><text class="s" x="172" y="398" text-anchor="middle">Thu</text><text class="s" x="208" y="398" text-anchor="middle">Fri</text><text class="s" x="244" y="398" text-anchor="middle">Sat</text><text class="s" x="280" y="398" text-anchor="middle">Sun</text></svg>', alt:"Two bar charts of the same daily bread sales. Before: titled Sales data, with gridlines, seven bars all in one colour, single-letter day labels and a legend saying Series 1. After: headlined Sundays now sell the most, with no gridlines or legend, six muted bars for Monday to Saturday and one highlighted bar for Sunday labelled 140.", cap:"The same data twice. The second chart makes its point in a glance: a headline, one highlighted bar, a direct label."},
-      "Keep the honesty rules from Unit 6 ({{misleading-numbers}}): bar charts start at zero, scales are labelled, and you don’t hide the data that would spoil your point. A chart that misleads on a slide misleads a whole room at once.",
+      {fig:'<svg viewBox="0 0 340 420"><rect class="d-panel" x="6" y="6" width="328" height="196" rx="8" stroke-width="2"/><text class="s" x="18" y="26">Before</text><text x="150" y="26" text-anchor="middle">Sales data</text><path class="d-soft" d="M30,50 L250,50 M30,80 L250,80 M30,110 L250,110 M30,140 L250,140" stroke-width="1"/><path class="d-ink" d="M30,170 L250,170" stroke-width="2"/><rect class="d-lup" x="36" y="122" width="20" height="48"/><rect class="d-lup" x="66" y="126" width="20" height="44"/><rect class="d-lup" x="96" y="124" width="20" height="46"/><rect class="d-lup" x="126" y="120" width="20" height="50"/><rect class="d-lup" x="156" y="106" width="20" height="64"/><rect class="d-lup" x="186" y="94" width="20" height="76"/><rect class="d-lup" x="216" y="58" width="20" height="112"/><text class="s" x="46" y="188" text-anchor="middle">M</text><text class="s" x="76" y="188" text-anchor="middle">T</text><text class="s" x="106" y="188" text-anchor="middle">W</text><text class="s" x="136" y="188" text-anchor="middle">T</text><text class="s" x="166" y="188" text-anchor="middle">F</text><text class="s" x="196" y="188" text-anchor="middle">S</text><text class="s" x="226" y="188" text-anchor="middle">S</text><rect class="d-lup" x="262" y="98" width="12" height="12"/><text class="s" x="280" y="109">Series 1</text><rect class="d-panel" x="6" y="214" width="328" height="200" rx="8" stroke-width="2"/><text class="s" x="18" y="234">After</text><text x="170" y="254" text-anchor="middle">Sundays now sell the most</text><path class="d-ink" d="M40,380 L304,380" stroke-width="2"/><rect class="d-soft" x="52" y="337" width="24" height="43" stroke-width="2"/><rect class="d-soft" x="88" y="341" width="24" height="39" stroke-width="2"/><rect class="d-soft" x="124" y="339" width="24" height="41" stroke-width="2"/><rect class="d-soft" x="160" y="336" width="24" height="44" stroke-width="2"/><rect class="d-soft" x="196" y="323" width="24" height="57" stroke-width="2"/><rect class="d-soft" x="232" y="312" width="24" height="68" stroke-width="2"/><rect class="d-rose" x="268" y="280" width="24" height="100" stroke-width="3"/><text class="s" x="280" y="273" text-anchor="middle">140</text><text class="s" x="64" y="398" text-anchor="middle">Mon</text><text class="s" x="100" y="398" text-anchor="middle">Tue</text><text class="s" x="136" y="398" text-anchor="middle">Wed</text><text class="s" x="172" y="398" text-anchor="middle">Thu</text><text class="s" x="208" y="398" text-anchor="middle">Fri</text><text class="s" x="244" y="398" text-anchor="middle">Sat</text><text class="s" x="280" y="398" text-anchor="middle">Sun</text></svg>', alt:"Two bar charts of the same daily bread sales. Before: titled Sales data, with gridlines, seven bars all in one color, single-letter day labels and a legend saying Series 1. After: headlined Sundays now sell the most, with no gridlines or legend, six muted bars for Monday to Saturday and one highlighted bar for Sunday labeled 140.", cap:"The same data twice. The second chart makes its point in a glance: a headline, one highlighted bar, a direct label."},
+      "Keep the honesty rules from Unit 6 ({{misleading-numbers}}): bar charts start at zero, scales are labeled, and you don’t hide the data that would spoil your point. A chart that misleads on a slide misleads a whole room at once.",
       {tip:"If you paste a chart from a spreadsheet, check whether it stays **linked** to the data. In Google Slides, a chart inserted from Sheets shows an **Update** button when the sheet changes. In PowerPoint, pasted Excel charts can be linked or embedded. Linked charts update; embedded ones are a snapshot."}
     ]},
     {h:"Simple diagrams and icons", body:[
@@ -468,9 +468,9 @@ ICA.addUnit({
     {id:"t1u10-l3-x1", type:"sort", q:"Sione is preparing slides for a free community workshop. Can he use each image as it is, or does he need to check or ask first?", buckets:["Fine to use (with credit if required)","Check or ask first"], items:[
       {t:"A photo he took himself of the river path", b:0, why:"He owns the copyright. No permission is needed (people in it are a separate question)."},
       {t:"A Wikimedia Commons photo licensed CC BY 4.0, credited on the slide", b:0, why:"CC BY allows reuse for any purpose as long as he credits it, which he does."},
-      {t:"A photo from a news website’s article", b:1, why:"News photos are usually copyrighted and licensed to the publisher. He needs permission or a licence."},
-      {t:"An image from a web search inside his slides app, licence unknown", b:1, why:"The search doesn’t grant a licence. Google’s help says it can’t know whether a use is permitted. He must open the source and check."},
-      {t:"A close-up photo of a neighbour’s children from a street party", b:1, why:"Even if he took it, he should ask the parents before showing identifiable children, especially in a deck he’ll share."},
+      {t:"A photo from a news website’s article", b:1, why:"News photos are usually copyrighted and licensed to the publisher. He needs permission or a license."},
+      {t:"An image from a web search inside his slides app, license unknown", b:1, why:"The search doesn’t grant a license. Google’s help says it can’t know whether a use is permitted. He must open the source and check."},
+      {t:"A close-up photo of a neighbor’s children from a street party", b:1, why:"Even if he took it, he should ask the parents before showing identifiable children, especially in a deck he’ll share."},
       {t:"An image from the app’s built-in stock library, used within the library’s terms", b:0, why:"Stock libraries built into apps license their images for use in those apps, within their stated terms."}
     ]},
     {id:"t1u10-l3-x2", type:"mcq", q:"Ana wants to open her training session with the slide “People remember 10% of what they read but 90% of what they do”. What should she do?", options:[
@@ -487,16 +487,16 @@ ICA.addUnit({
       ", ",
       {t:"the vertical axis starts at zero", flag:false, why:"Good practice for bar charts: lengths stay proportional to the values."},
       ", with ",
-      {t:"a legend in a separate box at the bottom", flag:true, why:"People must match colours back and forth. Labelling parts directly is quicker to read."},
+      {t:"a legend in a separate box at the bottom", flag:true, why:"People must match colors back and forth. Labeling parts directly is quicker to read."},
       " and ",
       {t:"alt text that states the main finding and key numbers", flag:false, why:"Exactly right for screen reader users."}
     ]},
     {id:"t1u10-l3-x4", type:"match", q:"Match each visual with the best alt text approach.", pairs:[
       ["A decorative swirl along the edge of every slide","Mark it as decorative","It carries no meaning, so screen readers should skip it."],
-      ["A bar chart showing Sunday sales are highest","State the point and the key numbers","Listeners need the finding, not a description of colours and bars."],
+      ["A bar chart showing Sunday sales are highest","State the point and the key numbers","Listeners need the finding, not a description of colors and bars."],
       ["A photo of the team that runs the clinic","Say who is shown and what matters about it","For example: “The four nurses of the evening clinic team.”"],
       ["A screenshot showing where the Share button is","Describe what the screenshot shows the user to do","For example: “The Share button is at the top right, next to the profile picture.”"],
-      ["The organisation’s logo on the title slide","The organisation’s name","The logo’s job is to identify the organisation, so its name is what matters."]
+      ["The organization’s logo on the title slide","The organization’s name","The logo’s job is to identify the organization, so its name is what matters."]
     ]},
     {id:"t1u10-l3-x5", type:"mcq", q:"Tomás inserted a video from his laptop’s Downloads folder as a link, then copied only the deck file to the venue’s computer. The video won’t play. What went wrong?", options:[
       {t:"The deck only linked to the video, which wasn’t copied", ok:true, why:"The deck only pointed to the video’s location on his laptop. A linked video isn’t inside the deck, so on another computer the link points nowhere. Embed it, or copy the video alongside and relink it, and test on the presenting computer."},
@@ -518,14 +518,14 @@ ICA.addUnit({
       {t:"A flashing “Important!” banner that blinks five times a second", why:"Flashing more than three times a second is a seizure risk under WCAG, and it distracts everyone else."},
       {t:"Bouncing clip art on the closing slide", why:"Decoration in motion pulls focus at the moment the call to action should be clearest."}
     ]},
-      {id:"t1u10-l3-x8", type:"explain", q:"A colleague pastes a busy spreadsheet chart onto a slide: seven bars all the same colour, heavy gridlines, a legend saying “Series 1” and the title “Sales data”. Explain how to turn it into a chart that works on a slide.", hint:"A slide chart has a few seconds to make one point. The rule is subtraction.", model:"A spreadsheet chart is for exploring data; a slide chart has a few seconds to make one point. So first decide the point, such as “Sundays sell the most”, and write it as the headline instead of “Sales data”. Then subtract: remove the heavy gridlines and the pointless single-series legend. Highlight the bar that matters in a strong colour, mute the rest, and label it directly. Keep it honest: the bars still start at zero and the scale is labelled.", points:["Says a slide chart should make one point", "Puts the point in the headline", "Removes clutter such as gridlines or a single-series legend", "Highlights the key bar and labels it directly", "Keeps it honest (bars start at zero)"]}
+      {id:"t1u10-l3-x8", type:"explain", q:"A colleague pastes a busy spreadsheet chart onto a slide: seven bars all the same color, heavy gridlines, a legend saying “Series 1” and the title “Sales data”. Explain how to turn it into a chart that works on a slide.", hint:"A slide chart has a few seconds to make one point. The rule is subtraction.", model:"A spreadsheet chart is for exploring data; a slide chart has a few seconds to make one point. So first decide the point, such as “Sundays sell the most”, and write it as the headline instead of “Sales data”. Then subtract: remove the heavy gridlines and the pointless single-series legend. Highlight the bar that matters in a strong color, mute the rest, and label it directly. Keep it honest: the bars still start at zero and the scale is labeled.", points:["Says a slide chart should make one point", "Puts the point in the headline", "Removes clutter such as gridlines or a single-series legend", "Highlights the key bar and labels it directly", "Keeps it honest (bars start at zero)"]}
    ],
    apply:{intro:"Add real visuals to your deck: a picture you are allowed to use, alt text, and one chart slide that makes a single point.", tasks:[
      {t:"Insert a picture you have permission to use, and credit it", app:{
-       ms:["For your own photo: **Insert → Pictures** and choose your device.","Other sources under **Insert → Pictures** (such as stock images or online pictures) vary by version and subscription. For any image found online, open its source page and check the licence before using it.","Add a small credit line under the picture: title, author, source and licence (for example “Photo: K. Osei, Wikimedia Commons, CC BY 4.0”)."],
-       google:["For your own photo: **Insert → Image → Upload from computer**.","For stock or web images: **Insert → Image → Stock & web**. Google says stock media is licensed for use in its apps, but for web images you must check the licence on the source page yourself.","Add a small credit line under the picture: title, author, source and licence."],
-       libre:["Find an openly licensed image (for example on Wikimedia Commons or Openverse) and note its author and licence. Download it.","Choose **Insert → Image** and pick the file.","Add a small credit line with a text box under the picture: title, author, source and licence."],
-       apple:["Drag a photo onto the slide, or choose **Insert → Choose** and pick a file. The **Media** button in the toolbar also opens your Photos library.","For images from the web, check the licence on the source page first.","Add a small credit line under the picture: title, author, source and licence."]
+       ms:["For your own photo: **Insert → Pictures** and choose your device.","Other sources under **Insert → Pictures** (such as stock images or online pictures) vary by version and subscription. For any image found online, open its source page and check the license before using it.","Add a small credit line under the picture: title, author, source and license (for example “Photo: K. Osei, Wikimedia Commons, CC BY 4.0”)."],
+       google:["For your own photo: **Insert → Image → Upload from computer**.","For stock or web images: **Insert → Image → Stock & web**. Google says stock media is licensed for use in its apps, but for web images you must check the license on the source page yourself.","Add a small credit line under the picture: title, author, source and license."],
+       libre:["Find an openly licensed image (for example on Wikimedia Commons or Openverse) and note its author and license. Download it.","Choose **Insert → Image** and pick the file.","Add a small credit line with a text box under the picture: title, author, source and license."],
+       apple:["Drag a photo onto the slide, or choose **Insert → Choose** and pick a file. The **Media** button in the toolbar also opens your Photos library.","For images from the web, check the license on the source page first.","Add a small credit line under the picture: title, author, source and license."]
      }},
      {t:"Write alt text for the picture (or mark decoration as decorative)", app:{
        ms:["Right-click the picture and choose **View Alt Text** (in some versions **Edit Alt Text**).","Type one or two sentences about what matters in the picture. If PowerPoint has written a description for you, check and correct it.","For a purely decorative item, tick **Mark as decorative** instead."],
@@ -534,10 +534,10 @@ ICA.addUnit({
        apple:["Select the picture and open the **Format** sidebar.","On the **Image** tab, find **Description** and type one or two sentences about what matters in the picture."]
      }},
      {t:"Build one chart slide that makes one point", app:{
-       ms:["Choose **Insert → Chart**, pick a **Clustered Column** or **Bar** chart, and type a few real numbers into the data sheet that opens (for example, attendance at five events).","Delete what doesn’t help: click the legend or gridlines and press [[kbd:Delete]].","Click one bar twice to select just that bar, and give it a stronger colour with **Format → Shape Fill**.","Type the point as the slide title, then add alt text to the chart."],
-       google:["Choose **Insert → Chart → Bar** (or **Column**). Google creates a linked chart; click **Open source** on the chart to edit its numbers in Google Sheets.","Back in Slides, click **Update** on the chart to pull in your numbers.","In Sheets, use the chart editor’s **Customize** tab to remove the legend and change one bar’s colour, then update again.","Type the point as the slide title, then add alt text to the chart."],
-       libre:["Choose **Insert → Chart**. A sample column chart appears; choose **View → Data Table** (or right-click → **Data Table**) to type your numbers.","Remove the legend with **Insert → Legend** (untick **Display legend**), and change one bar’s colour by selecting it and choosing **Format Data Point**.","Type the point as the slide title, then add alt text to the chart."],
-       apple:["Click **Chart** in the toolbar and choose a 2D bar or column chart.","Click **Edit Chart Data** and type your numbers.","In the **Format** sidebar, turn off the legend. Keynote colours a whole data series, not a single bar, so make the key bar stand out another way: a value label or a short arrow and note beside it.","Type the point as the slide title. If your version offers a description field for the chart, fill it in; otherwise make sure the title and a short line of text state the point."]
+       ms:["Choose **Insert → Chart**, pick a **Clustered Column** or **Bar** chart, and type a few real numbers into the data sheet that opens (for example, attendance at five events).","Delete what doesn’t help: click the legend or gridlines and press [[kbd:Delete]].","Click one bar twice to select just that bar, and give it a stronger color with **Format → Shape Fill**.","Type the point as the slide title, then add alt text to the chart."],
+       google:["Choose **Insert → Chart → Bar** (or **Column**). Google creates a linked chart; click **Open source** on the chart to edit its numbers in Google Sheets.","Back in Slides, click **Update** on the chart to pull in your numbers.","In Sheets, use the chart editor’s **Customize** tab to remove the legend and change one bar’s color, then update again.","Type the point as the slide title, then add alt text to the chart."],
+       libre:["Choose **Insert → Chart**. A sample column chart appears; choose **View → Data Table** (or right-click → **Data Table**) to type your numbers.","Remove the legend with **Insert → Legend** (untick **Display legend**), and change one bar’s color by selecting it and choosing **Format Data Point**.","Type the point as the slide title, then add alt text to the chart."],
+       apple:["Click **Chart** in the toolbar and choose a 2D bar or column chart.","Click **Edit Chart Data** and type your numbers.","In the **Format** sidebar, turn off the legend. Keynote colors a whole data series, not a single bar, so make the key bar stand out another way: a value label or a short arrow and note beside it.","Type the point as the slide title. If your version offers a description field for the chart, fill it in; otherwise make sure the title and a short line of text state the point."]
      }}
    ], proof:"A slide with a picture you are allowed to use and a credit line, alt text you wrote yourself, and one chart slide whose headline states the point and whose key bar or line stands out."},
    read:[
@@ -564,7 +564,7 @@ ICA.addUnit({
     ]},
     {h:"Presenter view: two screens, two jobs", body:[
       "[[presenter-view|Presenter view]] shows *you* a control screen while the audience sees only the slide. In PowerPoint it shows the current slide, the next slide, your notes, a timer you can pause and reset, and the time of day, plus tools such as a pen, zoom, a slide overview and a button to black out the screen.",
-      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="m1041" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="6" y="6" width="328" height="200" rx="8" stroke-width="2"/><text x="170" y="26" text-anchor="middle">Your screen: presenter view</text><rect class="d-lup" x="18" y="40" width="170" height="96" rx="4" stroke-width="2"/><text x="103" y="92" text-anchor="middle">Current slide</text><rect class="d-gold" x="200" y="40" width="122" height="66" rx="4" stroke-width="2"/><text class="s" x="261" y="77" text-anchor="middle">Next slide</text><rect class="d-sage" x="200" y="114" width="122" height="22" rx="4" stroke-width="2"/><text class="s" x="261" y="130" text-anchor="middle">Timer 07:42</text><rect class="d-panel" x="18" y="146" width="304" height="50" rx="4" stroke-width="2"/><text class="s" x="28" y="166">Notes: story about the locked gate</text><text class="s" x="28" y="186">Tools: pen · zoom · black screen</text><path class="d-ink" d="M170,208 L170,236" stroke-width="2" marker-end="url(#m1041)"/><text class="s" x="180" y="226">audience sees only this</text><rect class="d-panel" x="36" y="240" width="268" height="134" rx="8" stroke-width="2"/><text x="170" y="260" text-anchor="middle">Projector or shared window</text><rect class="d-lup" x="66" y="272" width="208" height="92" rx="4" stroke-width="2"/><text x="170" y="323" text-anchor="middle">Current slide</text></svg>', alt:"Two screens. Top: your screen in presenter view, showing the current slide large, the next slide smaller, a timer reading 7 minutes 42, your notes (story about the locked gate) and tools (pen, zoom, black screen). An arrow points down to the second screen, labelled: audience sees only this. Bottom: the projector or shared window, showing only the current slide.", cap:"Presenter view on your screen; the slide alone on the projector, or in the window you share online."},
+      {fig:'<svg viewBox="0 0 340 380"><defs><marker id="m1041" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="6" y="6" width="328" height="200" rx="8" stroke-width="2"/><text x="170" y="26" text-anchor="middle">Your screen: presenter view</text><rect class="d-lup" x="18" y="40" width="170" height="96" rx="4" stroke-width="2"/><text x="103" y="92" text-anchor="middle">Current slide</text><rect class="d-gold" x="200" y="40" width="122" height="66" rx="4" stroke-width="2"/><text class="s" x="261" y="77" text-anchor="middle">Next slide</text><rect class="d-sage" x="200" y="114" width="122" height="22" rx="4" stroke-width="2"/><text class="s" x="261" y="130" text-anchor="middle">Timer 07:42</text><rect class="d-panel" x="18" y="146" width="304" height="50" rx="4" stroke-width="2"/><text class="s" x="28" y="166">Notes: story about the locked gate</text><text class="s" x="28" y="186">Tools: pen · zoom · black screen</text><path class="d-ink" d="M170,208 L170,236" stroke-width="2" marker-end="url(#m1041)"/><text class="s" x="180" y="226">audience sees only this</text><rect class="d-panel" x="36" y="240" width="268" height="134" rx="8" stroke-width="2"/><text x="170" y="260" text-anchor="middle">Projector or shared window</text><rect class="d-lup" x="66" y="272" width="208" height="92" rx="4" stroke-width="2"/><text x="170" y="323" text-anchor="middle">Current slide</text></svg>', alt:"Two screens. Top: your screen in presenter view, showing the current slide large, the next slide smaller, a timer reading 7 minutes 42, your notes (story about the locked gate) and tools (pen, zoom, black screen). An arrow points down to the second screen, labeled: audience sees only this. Bottom: the projector or shared window, showing only the current slide.", cap:"Presenter view on your screen; the slide alone on the projector, or in the window you share online."},
       "Each app has its own version:",
       {table:[
         ["App","How it works"],
@@ -588,13 +588,13 @@ ICA.addUnit({
     {h:"Nerves: what actually helps", body:[
       "Feeling nervous before speaking is extremely common, including among experienced speakers. Nerves aren’t a sign you’ll do badly. Some things have reasonable evidence behind them:",
       {list:[
-        "**Prepare and rehearse in realistic conditions.** Practice makes the talk familiar, so less of your attention goes on remembering what comes next. Visit the room, or test the call software, beforehand if you can; the textbook advises practising in the same space and with the same technology where possible.",
+        "**Prepare and rehearse in realistic conditions.** Practice makes the talk familiar, so less of your attention goes on remembering what comes next. Visit the room, or test the call software, beforehand if you can; the textbook advises practicing in the same space and with the same technology where possible.",
         "**Know that nerves show less than you think.** Psychologists call this the “illusion of transparency”: we overestimate how visible our feelings are to others. In a 2003 study by Kenneth Savitsky and Thomas Gilovich, speakers who were simply told this gave speeches that observers rated better, and they felt calmer.",
         "**Reframe the feeling.** A racing heart is the same body response as excitement. In a 2014 study by Alison Wood Brooks, people who said “I am excited” before giving a speech were rated by observers as more persuasive and competent than those who said “I am calm”. It’s one line of research, but it is free to try.",
-        "**Learn your first minute well.** Nerves peak at the start; a well-practised opening gets you moving.",
+        "**Learn your first minute well.** Nerves peak at the start; a well-practiced opening gets you moving.",
         "**Pause and breathe.** A pause feels long to you and normal to the audience. It also replaces filler words."
       ]},
-      {tip:"If fear of speaking is severe, stops you doing things you need to do, or comes with panic attacks, it is worth talking to a doctor or counsellor. It is common and there are effective treatments; you don’t have to just push through."}
+      {tip:"If fear of speaking is severe, stops you doing things you need to do, or comes with panic attacks, it is worth talking to a doctor or counselor. It is common and there are effective treatments; you don’t have to just push through."}
     ]},
     {h:"Presenting online", body:[
       "Online, the audience sees exactly what you share and nothing else. The most common problems are sharing too much (your whole screen, with email and messages popping up) or too little (presenter view instead of the slides, or a video with no sound).",
@@ -650,7 +650,7 @@ ICA.addUnit({
       {t:"Telling yourself “I am excited” instead of “calm down”", b:0, why:"In Brooks’s 2014 study, this reframing improved how persuasive and competent speakers seemed to observers."},
       {t:"Memorising every word, so any slip throws you completely", b:1, why:"A word-for-word script is fragile. Prompts let you recover when you lose a sentence."},
       {t:"Speaking faster when running late", b:1, why:"Rushing makes the talk hard to follow and raises the pressure. Cut a point instead."},
-      {t:"Testing the room or the meeting software beforehand", b:0, why:"Fewer surprises means fewer reasons to panic. The textbook advises practising with the same room and technology where possible."}
+      {t:"Testing the room or the meeting software beforehand", b:0, why:"Fewer surprises means fewer reasons to panic. The textbook advises practicing with the same room and technology where possible."}
     ]},
     {id:"t1u10-l4-x4", type:"number", q:"Lucía’s slot is 12 minutes, of which 2 minutes are for questions. Her timed rehearsal took 14 minutes 30 seconds. How many minutes of content must she cut? (Give a decimal, such as 1.5.)", answer:4.5, tol:0.05, unit:"minutes", why:"Talking time is 12 − 2 = 10 minutes. 14 minutes 30 seconds is 14.5 minutes. 14.5 − 10 = 4.5 minutes to cut.", wrongs:[
       {v:2.5, tol:0.05, why:"That compares her run with the whole 12-minute slot and forgets the 2 minutes for questions."},
@@ -679,7 +679,7 @@ ICA.addUnit({
     ]},
       {id:"t1u10-l4-x8", type:"explain", q:"Explain why rehearsing a talk aloud with a timer works better than reading your notes silently, and what to do if the talk runs long.", size:"2–3 sentences", hint:"Is speaking faster or slower than reading in your head? Should you speed up?", model:"Speaking takes longer than reading silently, so a silent read-through usually underestimates the time; the first full run aloud, clicking through the slides with a timer, is usually longer than you expect, and the stumbles show which transitions need work. If the talk is too long, cut content rather than speaking faster: remove a whole point or merge slides. Rushed talks are harder to follow, and nerves on the day will slow you down anyway.", points:["Says silent reading underestimates how long the talk takes", "Says rehearsing aloud reveals stumbles or weak transitions", "Says to cut content, such as a whole point, if it runs long", "Says not to speak faster"]}
    ],
-   apply:{intro:"Get ready to present your deck: notes, presenter view, a timed rehearsal, captions and a practice share. Practise somewhere you can talk aloud.", tasks:[
+   apply:{intro:"Get ready to present your deck: notes, presenter view, a timed rehearsal, captions and a practice share. Practice somewhere you can talk aloud.", tasks:[
      {t:"Add speaker notes and open presenter view", app:{
        ms:["Show the notes area under the slide with **View → Notes**, and type short prompts for each slide.","Desktop PowerPoint: on the **Slide Show** tab, tick **Use Presenter View**, then choose **From Beginning**. With only one screen, start the show, click the **…** button on the control bar at the bottom left and choose **Show Presenter View**.","PowerPoint for the web: recent versions offer **Slide Show → Presenter View**, which opens in a separate browser window. If you don’t see it, rehearse from printed notes or use the desktop app.","Press [[kbd:Esc]] to end the show."],
        google:["Type short prompts for each slide in the speaker notes area under the slide (if it’s hidden, choose **View → Show speaker notes**).","Click the arrow next to **Slideshow** (top right) and choose **Presenter view**. A separate window shows your notes and a timer.","Press [[kbd:Esc]] to end the show."],
@@ -709,7 +709,7 @@ ICA.addUnit({
    goals:[
      "Run your app’s accessibility checker and check by hand what it can’t",
      "Give every slide a unique title and a sensible reading order",
-     "Make sure colour is never the only signal, and caption media",
+     "Make sure color is never the only signal, and caption media",
      "Choose between sharing a link, a file, a PDF or a handout, and keep file sizes manageable",
      "Pick the right aspect ratio (16:9 or 4:3) before you build"
    ],
@@ -721,7 +721,7 @@ ICA.addUnit({
         ["Who","What helps"],
         ["People using screen readers","Slide titles, alt text, a logical reading order, meaningful link text"],
         ["People with low vision","Large text, strong contrast, slides that work when zoomed"],
-        ["People with colour vision deficiency","Colour plus a label, pattern or shape"],
+        ["People with color vision deficiency","Color plus a label, pattern or shape"],
         ["People who are deaf or hard of hearing","Captions on videos, live captions, key words on slides"],
         ["Everyone, later, on a small screen","A PDF or link that opens anywhere, with readable text"]
       ]}
@@ -739,7 +739,7 @@ ICA.addUnit({
       {list:[
         "Does every slide have a **unique title** that says what the slide is about?",
         "Does each piece of **alt text** describe what matters, correctly?",
-        "Is any meaning carried **by colour alone**?",
+        "Is any meaning carried **by color alone**?",
         "Is all text readable: **contrast** at least 4.5:1 (3:1 for large text), and big enough?",
         "Do **videos have captions**, and are they accurate?",
         "Does **link text** say where it goes (“the volunteer rota”) rather than “click here”?",
@@ -752,14 +752,14 @@ ICA.addUnit({
       {fig:'<svg viewBox="0 0 340 386"><text x="170" y="18" text-anchor="middle">In the order they were added</text><rect class="d-panel" x="10" y="28" width="320" height="140" rx="6" stroke-width="2"/><rect class="d-lup" x="24" y="38" width="292" height="28" rx="3"/><text class="s" x="170" y="57" text-anchor="middle">Title</text><rect class="d-panel" x="24" y="74" width="130" height="50" rx="3" stroke-width="2"/><text class="s" x="96" y="103" text-anchor="middle">Photo</text><rect class="d-gold" x="166" y="74" width="150" height="80" rx="3"/><text class="s" x="248" y="118" text-anchor="middle">Body text</text><rect class="d-sage" x="24" y="130" width="130" height="24" rx="3"/><text class="s" x="96" y="147" text-anchor="middle">Caption</text><circle class="d-rose" cx="40" cy="52" r="10" stroke-width="2"/><text class="s" x="40" y="56" text-anchor="middle">4</text><circle class="d-rose" cx="40" cy="88" r="10" stroke-width="2"/><text class="s" x="40" y="92" text-anchor="middle">1</text><circle class="d-rose" cx="182" cy="88" r="10" stroke-width="2"/><text class="s" x="182" y="92" text-anchor="middle">3</text><circle class="d-rose" cx="40" cy="142" r="10" stroke-width="2"/><text class="s" x="40" y="146" text-anchor="middle">2</text><text class="s" x="170" y="186" text-anchor="middle">Heard: photo, caption, body, title</text><text x="170" y="208" text-anchor="middle">After fixing the reading order</text><rect class="d-panel" x="10" y="218" width="320" height="140" rx="6" stroke-width="2"/><rect class="d-lup" x="24" y="228" width="292" height="28" rx="3"/><text class="s" x="170" y="247" text-anchor="middle">Title</text><rect class="d-panel" x="24" y="264" width="130" height="50" rx="3" stroke-width="2"/><text class="s" x="96" y="293" text-anchor="middle">Photo</text><rect class="d-gold" x="166" y="264" width="150" height="80" rx="3"/><text class="s" x="248" y="308" text-anchor="middle">Body text</text><rect class="d-sage" x="24" y="320" width="130" height="24" rx="3"/><text class="s" x="96" y="337" text-anchor="middle">Caption</text><circle class="d-sage" cx="40" cy="242" r="10" stroke-width="2"/><text class="s" x="40" y="246" text-anchor="middle">1</text><circle class="d-sage" cx="182" cy="278" r="10" stroke-width="2"/><text class="s" x="182" y="282" text-anchor="middle">2</text><circle class="d-sage" cx="40" cy="278" r="10" stroke-width="2"/><text class="s" x="40" y="282" text-anchor="middle">3</text><circle class="d-sage" cx="40" cy="332" r="10" stroke-width="2"/><text class="s" x="40" y="336" text-anchor="middle">4</text><text class="s" x="170" y="376" text-anchor="middle">Heard: title, body, photo, caption</text></svg>', alt:"The same slide twice, with a title across the top, a photo on the left, body text on the right and a caption under the photo. Numbers on each object show the order a screen reader reads them. Top, in the order they were added: 1 photo, 2 caption, 3 body text, 4 title, so a listener hears the title last. Bottom, after fixing the reading order: 1 title, 2 body text, 3 photo, 4 caption.", cap:"The slide looks identical both times. Only the reading order changed, and only a listener would notice."},
       "In PowerPoint, fix it in the **Reading Order** pane: **Review → Check Accessibility**, then under **Warnings** choose **Check reading order** and, from a slide’s drop-down arrow, **Verify object order**. Objects are listed in the order they will be read; drag them, or use **Move Up** and **Move Down**. Clearing an item’s check box marks it as decorative, so it is skipped. The other apps have no reading order pane, so the safest habit is to use layouts and placeholders, add objects in a sensible order, and test with a screen reader (Narrator on Windows, VoiceOver on Mac and iPhone, TalkBack on Android, ChromeVox on Chromebooks)."
     ]},
-    {h:"Colour is never the only signal", body:[
-      "Colour vision deficiency (often called colour blindness) is common, especially among men, and most often makes reds and greens hard to tell apart. A chart where “on target” is green and “behind” is red, with no other difference, gives them nothing. Neither does a projector that washes out colours.",
+    {h:"Color is never the only signal", body:[
+      "Color vision deficiency (often called color blindness) is common, especially among men, and most often makes reds and greens hard to tell apart. A chart where “on target” is green and “behind” is red, with no other difference, gives them nothing. Neither does a projector that washes out colors.",
       {list:[
         "**Add a second signal**: a label (“behind”), a symbol (✓ ✗), a pattern, a position or bold text.",
-        "**Label chart lines and bars directly**, rather than relying on a colour legend.",
-        "**Test in greyscale.** Microsoft suggests turning on a colour filter: on Windows, **Settings → Accessibility → Color filters**, choose **Grayscale**, and look through the slides. If something stops making sense, colour was doing all the work."
+        "**Label chart lines and bars directly**, rather than relying on a color legend.",
+        "**Test in greyscale.** Microsoft suggests turning on a color filter: on Windows, **Settings → Accessibility → Color filters**, choose **Grayscale**, and look through the slides. If something stops making sense, color was doing all the work."
       ]},
-      {tip:"Underline links in body text, or make them otherwise obvious. Link text in a different colour alone is a colour-only signal."}
+      {tip:"Underline links in body text, or make them otherwise obvious. Link text in a different color alone is a color-only signal."}
     ]},
     {h:"PDFs, handouts and the HTML view", body:[
       "A **PDF** is the usual way to share a deck for reading: it opens on almost any device, the layout and fonts stay fixed, and it can’t be accidentally edited. But animations, transitions, video and sound don’t survive, and accessibility depends on how it was made. In desktop PowerPoint for Windows, **File → Export → Create PDF/XPS Document → Options** has a **Document structure tags for accessibility** setting, which keeps the titles, reading order and alt text a screen reader needs. LibreOffice’s PDF export has a **Universal Accessibility (PDF/UA)** option.",
@@ -782,7 +782,7 @@ ICA.addUnit({
         ["Control","You choose view, comment or edit, and can remove access later","Once sent, you can’t take it back or update it"],
         ["Needs","Internet, and sometimes an account","Nothing but an app or PDF reader; works offline"],
         ["Size","No attachment limit","Big decks can bounce off email attachment limits"],
-        ["Good for","Working together, decks that will change","A final version, people outside your organisation, archives"]
+        ["Good for","Working together, decks that will change","A final version, people outside your organization, archives"]
       ]},
       "Google Slides, PowerPoint (saved in OneDrive) and Keynote (through iCloud) all share by link, and each lets you choose whether people can view or edit. LibreOffice has no sharing service of its own: save the file to any cloud storage and share it from there. When you share a link, check its setting: “anyone with the link” means exactly that.",
       {tip:"Sharing a **view-only link** to the live deck and attaching a **PDF** for people who prefer a file covers almost everyone."}
@@ -809,7 +809,7 @@ ICA.addUnit({
       {t:"A slide with no title", b:0, why:"Checkers flag slides without a title, because screen reader users navigate by them."},
       {t:"A table with merged cells", b:0, why:"Microsoft says the checker can flag split, merged or nested cells."},
       {t:"Alt text that describes the wrong part of the picture", b:1, why:"The checker sees that alt text exists, but can’t judge whether it’s accurate or useful."},
-      {t:"A chart where red and green are the only difference between two lines", b:1, why:"Whether meaning depends on colour alone needs human judgement; try a greyscale view."},
+      {t:"A chart where red and green are the only difference between two lines", b:1, why:"Whether meaning depends on color alone needs human judgment; try a greyscale view."},
       {t:"Automatic captions that misspell people’s names", b:1, why:"Only a person can check captions are accurate."}
     ]},
     {id:"t1u10-l5-x2", type:"number", q:"Dmitri embeds a 3-minute video that plays at 6 megabits per second. Roughly how many megabytes (MB) does it add to his deck?", answer:135, tol:2, unit:"MB", why:"3 minutes = 180 seconds. 180 × 6 megabits per second = 1,080 megabits. Divide by 8 bits per byte: 1,080 ÷ 8 = 135 MB.", wrongs:[
@@ -823,7 +823,7 @@ ICA.addUnit({
       ["The final version must be archived exactly as presented","A PDF","A PDF fixes the layout and fonts and can’t be accidentally edited."],
       ["People want to take notes on paper during the talk","A printed handout with lines for notes","Handout layouts put several slides on a page with space to write."]
     ]},
-    {id:"t1u10-l5-x4", type:"spot", q:"Hana is about to email her deck to a partner organisation. Tap the problems she should fix first.", ask:"fix first", parts:[
+    {id:"t1u10-l5-x4", type:"spot", q:"Hana is about to email her deck to a partner organization. Tap the problems she should fix first.", ask:"fix first", parts:[
       "Attached: ",
       {t:"the 180 MB deck with two embedded videos", flag:true, why:"Far over most email attachment limits. Share a link, link the videos, or compress them."},
       ". ",
@@ -849,19 +849,19 @@ ICA.addUnit({
       {t:"Delete the caption", why:"That loses information and leaves the title still read after the photo."}
     ]},
     {id:"t1u10-l5-x7", type:"mcq", q:"Kenji’s chart shows “on track” projects in green and “late” projects in red, and nothing else. What is the best fix?", options:[
-      {t:"Add a second signal, such as words or ✓ and ✗", ok:true, why:"Put the words “on track” and “late”, or a ✓ and ✗, next to each bar. Then the meaning survives for people with colour vision deficiency, on washed-out projectors and in greyscale printouts."},
-      {t:"Use brighter red and green", why:"Brightness doesn’t help people who can’t tell red from green; the meaning still depends on colour alone."},
-      {t:"Add a colour legend in the corner of the chart", why:"A legend still relies on matching colours, which is the problem."},
-      {t:"Swap red and green", why:"The two colours are just as hard to tell apart either way round."}
+      {t:"Add a second signal, such as words or ✓ and ✗", ok:true, why:"Put the words “on track” and “late”, or a ✓ and ✗, next to each bar. Then the meaning survives for people with color vision deficiency, on washed-out projectors and in greyscale printouts."},
+      {t:"Use brighter red and green", why:"Brightness doesn’t help people who can’t tell red from green; the meaning still depends on color alone."},
+      {t:"Add a color legend in the corner of the chart", why:"A legend still relies on matching colors, which is the problem."},
+      {t:"Swap red and green", why:"The two colors are just as hard to tell apart either way round."}
     ]},
-      {id:"t1u10-l5-x8", type:"explain", q:"A project slide shows tasks in green when they are on target and in red when they are behind, with no other labels. Explain why that is a problem and how to fix it.", size:"2–3 sentences", hint:"Who can’t tell red from green? What about a black-and-white printout?", model:"Colour vision deficiency is common, and it most often makes reds and greens hard to tell apart, so some people can’t see which tasks are behind; a black-and-white printout or a washed-out projector loses the meaning too. Colour should never be the only signal. Add a second one, such as the word “behind”, a symbol like ✓ or ✗, or a pattern, label items directly, and check the slide in greyscale.", points:["Says some people can’t tell red from green", "Mentions another case where colour is lost, such as printing or projection", "Says colour must not be the only signal", "Adds a second signal such as a label or symbol"]}
+      {id:"t1u10-l5-x8", type:"explain", q:"A project slide shows tasks in green when they are on target and in red when they are behind, with no other labels. Explain why that is a problem and how to fix it.", size:"2–3 sentences", hint:"Who can’t tell red from green? What about a black-and-white printout?", model:"Color vision deficiency is common, and it most often makes reds and greens hard to tell apart, so some people can’t see which tasks are behind; a black-and-white printout or a washed-out projector loses the meaning too. Color should never be the only signal. Add a second one, such as the word “behind”, a symbol like ✓ or ✗, or a pattern, label items directly, and check the slide in greyscale.", points:["Says some people can’t tell red from green", "Mentions another case where color is lost, such as printing or projection", "Says color must not be the only signal", "Adds a second signal such as a label or symbol"]}
    ],
    apply:{intro:"Finish your deck for sharing: an accessibility check, a PDF and a handout, a link with the right permission, and a check of shape and size.", tasks:[
      {t:"Run an accessibility check and fix what it finds", app:{
-       ms:["Choose **Review → Check Accessibility** (desktop PowerPoint or PowerPoint for the web).","Work through the **Errors** and **Warnings** in the pane. Select an item to jump to it; many have a recommended fix.","Then do the human checks: titles that say what each slide is about, correct alt text, nothing shown by colour alone, captions on videos."],
-       google:["Google Slides has no built-in checker, so check by hand.","Click each slide: does it have its own title in the title placeholder?","Right-click each picture and choose **Alt text**: is there a correct description?","Check contrast with a contrast checker, look for anything shown by colour alone, and check that link text says where it goes."],
-       libre:["Impress has no full accessibility checker, so check by hand. (The PDF/UA export in the next task may also warn about some problems, depending on your version.)","Click each slide: does it have its own title in the title placeholder? Select each picture and check its alt text (**Format → Alt Text**, or **Description** in older versions).","Then do the other human checks: titles that say what each slide is about, correct alt text, nothing shown by colour alone, captions on videos."],
-       apple:["Keynote has no built-in checker, so check by hand.","Click each slide: does it have a title?","Select each picture and check its **Description** on the **Image** tab of the **Format** sidebar.","Check contrast with a contrast checker, look for anything shown by colour alone, and check that link text says where it goes."]
+       ms:["Choose **Review → Check Accessibility** (desktop PowerPoint or PowerPoint for the web).","Work through the **Errors** and **Warnings** in the pane. Select an item to jump to it; many have a recommended fix.","Then do the human checks: titles that say what each slide is about, correct alt text, nothing shown by color alone, captions on videos."],
+       google:["Google Slides has no built-in checker, so check by hand.","Click each slide: does it have its own title in the title placeholder?","Right-click each picture and choose **Alt text**: is there a correct description?","Check contrast with a contrast checker, look for anything shown by color alone, and check that link text says where it goes."],
+       libre:["Impress has no full accessibility checker, so check by hand. (The PDF/UA export in the next task may also warn about some problems, depending on your version.)","Click each slide: does it have its own title in the title placeholder? Select each picture and check its alt text (**Format → Alt Text**, or **Description** in older versions).","Then do the other human checks: titles that say what each slide is about, correct alt text, nothing shown by color alone, captions on videos."],
+       apple:["Keynote has no built-in checker, so check by hand.","Click each slide: does it have a title?","Select each picture and check its **Description** on the **Image** tab of the **Format** sidebar.","Check contrast with a contrast checker, look for anything shown by color alone, and check that link text says where it goes."]
      }},
      {t:"Export a PDF and a handout", app:{
        ms:["Desktop PowerPoint for Windows: **File → Export → Create PDF/XPS Document → Create PDF/XPS**. Click **Options**, make sure **Document structure tags for accessibility** is ticked, then **Publish**.","For a handout, repeat with **Options → Publish what → Handouts** and choose the slides per page.","PowerPoint for the web: **File → Print** creates a printable PDF you can save."],
@@ -891,7 +891,7 @@ ICA.addUnit({
       {t:"Informational", why:"Informational talks share facts so people understand. The goal here is for colleagues to be able to do the task."}
     ]},
     {id:"t1u10-cp02", lesson:"t1u10-l2", level:1, q:"On Nuno’s slide, a photo sits in the top-left corner and its caption is in the bottom-right corner. Which design principle does this break?", options:[
-      {t:"Repetition", why:"Repetition is about keeping titles, fonts and colours the same across slides. This problem is about distance."},
+      {t:"Repetition", why:"Repetition is about keeping titles, fonts and colors the same across slides. This problem is about distance."},
       {t:"Contrast", why:"Contrast makes important things look different. The problem here is that related things are far apart."},
       {t:"Proximity", ok:true, why:"Proximity means putting related things close together, such as a photo and its caption."},
       {t:"White space", why:"White space is useful empty space. The issue is that the caption is far from the photo it describes."}
@@ -909,22 +909,22 @@ ICA.addUnit({
       {t:"Turn them into a long handout for the nurses to read during the talk", why:"Reading during the talk competes with listening. And these nurses don’t need the basics at all."}
     ]},
     {id:"t1u10-cp05", lesson:"t1u10-l2", level:2, q:"PowerPoint’s accessibility checker reports no problems. But in rehearsal, Leila’s white title over a photo of a bright sky is hard to read. Why did the checker miss it, and what helps?", options:[
-      {t:"The checker can miss text over photos; put the title on a solid colour band", ok:true, why:"Text over a photo can be light on one part and dark on another. A solid band of colour (or a darkened photo) gives steady contrast you can check."},
+      {t:"The checker can miss text over photos; put the title on a solid color band", ok:true, why:"Text over a photo can be light on one part and dark on another. A solid band of color (or a darkened photo) gives steady contrast you can check."},
       {t:"The checker is always right, so the room’s lights are the only problem", why:"Microsoft says its checker misses some contrast problems. A human check catches them."},
       {t:"Make the title smaller so less of it covers the sky", why:"Smaller text is harder to read, not easier. The contrast is the problem."},
       {t:"Add a spinning animation so the title stands out", why:"Movement distracts and doesn’t fix contrast. The text still needs a steady background."}
     ]},
     {id:"t1u10-cp06", lesson:"t1u10-l3", level:2, q:"Bruno’s slide chart shows loaves sold on each day of the week. His point is that Sunday sells the most. How should he design the chart?", options:[
-      {t:"Use a 3D pie chart in seven colours with a legend", why:"3D effects distort sizes, and matching seven colours to a legend is slow. Bars compare amounts better."},
+      {t:"Use a 3D pie chart in seven colors with a legend", why:"3D effects distort sizes, and matching seven colors to a legend is slow. Bars compare amounts better."},
       {t:"Add a line for every product and every week of the year", why:"A slide chart should make one point. Extra lines turn it into a puzzle."},
       {t:"Keep heavy gridlines and two decimal places so that the chart looks precise", why:"Clutter hides the point. Remove what the audience doesn’t need."},
-      {t:"Use a bar chart, label the Sunday bar, and state the point in the title", ok:true, why:"One point per chart: a simple bar chart, the Sunday bar highlighted with a direct label (not colour alone), and a headline that states the point."}
+      {t:"Use a bar chart, label the Sunday bar, and state the point in the title", ok:true, why:"One point per chart: a simple bar chart, the Sunday bar highlighted with a direct label (not color alone), and a headline that states the point."}
     ]},
     {id:"t1u10-cp07", lesson:"t1u10-l4", level:2, q:"Before her talk, Rosa worries that everyone will see how nervous she is. What does research on the “illusion of transparency” suggest?", options:[
-      {t:"Nerves are obvious to every audience, so she should apologise for them", why:"Research found the opposite: we overestimate how visible our nerves are."},
+      {t:"Nerves are obvious to every audience, so she should apologize for them", why:"Research found the opposite: we overestimate how visible our nerves are."},
       {t:"Her nerves show much less than she thinks, and knowing it helps", ok:true, why:"We overestimate how visible our nerves are. In the study, speakers told this gave speeches that observers rated better, and they felt calmer."},
       {t:"She should skip rehearsal so she feels more relaxed", why:"Rehearsing aloud is one of the things that does help. Skipping it usually makes nerves worse."},
-      {t:"She should memorise every word so nothing can go wrong", why:"A word-for-word script means any slip can throw her. Prompts and a well-practised opening work better."}
+      {t:"She should memorize every word so nothing can go wrong", why:"A word-for-word script means any slip can throw her. Prompts and a well-practiced opening work better."}
     ]},
     {id:"t1u10-cp08", lesson:"t1u10-l5", level:2, q:"Halfway through building a 30-slide deck in 16:9, Leah learns the venue screen is 4:3. She changes the slide size. What should she expect?", options:[
       {t:"Only the slide she is on will change", why:"Changing the aspect ratio changes every slide at once."},
@@ -950,7 +950,7 @@ ICA.addUnit({
       {t:"Sharing one window, with notifications turned off", ok:true, why:"Sharing only the slide-show window shows less. Turning on Do not disturb (or a Focus) and closing chat apps stops messages appearing."},
       {t:"Presenting faster so there is less time for messages to arrive", why:"Speed doesn’t stop notifications. Changing what she shares, and turning notifications off, does."}
     ]},
-    {id:"t1u10-cp12", lesson:"t1u10-l5", level:3, q:"Joel’s deck will keep changing over the next month. Twenty colleagues need the latest version, and two partners outside his organisation can’t open his shared files. How should he share it?", options:[
+    {id:"t1u10-cp12", lesson:"t1u10-l5", level:3, q:"Joel’s deck will keep changing over the next month. Twenty colleagues need the latest version, and two partners outside his organization can’t open his shared files. How should he share it?", options:[
       {t:"Email the deck file to everyone each time it changes", why:"Copies multiply and drift apart, and big decks can bounce off email limits."},
       {t:"Share an edit link with “anyone with the link” for all of them", why:"Anyone holding the link could change the deck. Colleagues who only need to read it should get view access."},
       {t:"Print handouts once and post them", why:"Printed copies go out of date as soon as the deck changes."},
@@ -992,16 +992,16 @@ ICA.addUnit({
     levels:{
      starter:[
       "Good slide design is mostly about being easy to read and easy to follow:",
-      {list:["**Contrast:** dark text on a light background, or the reverse. Light grey on white is hard to read, especially on a projector.","**Size:** text big enough for the back of the room. Microsoft suggests 18 point or larger.","**Plain fonts:** familiar sans serif fonts such as Arial or Calibri, no long runs of capitals.","**Alignment and space:** line things up and leave empty space around them.","**Consistency:** titles in the same place, the same fonts and colours on every slide."]},
+      {list:["**Contrast:** dark text on a light background, or the reverse. Light gray on white is hard to read, especially on a projector.","**Size:** text big enough for the back of the room. Microsoft suggests 18 point or larger.","**Plain fonts:** familiar sans serif fonts such as Arial or Calibri, no long runs of capitals.","**Alignment and space:** line things up and leave empty space around them.","**Consistency:** titles in the same place, the same fonts and colors on every slide."]},
       "Keep words to headlines, labels and key numbers. If a slide is full of sentences, people read instead of listening. Put the detail in your notes or a handout.",
       {tip:"Test from a distance: stand at the back of the room, or look at a slide on a phone at arm’s length."}
      ],
      builder:[
       "**Contrast can be measured.** WCAG 2.2 success criterion 1.4.3 (level AA) requires a contrast ratio of at least **4.5:1** for normal text and **3:1** for large text, defined as at least 18 point or 14 point bold. WCAG also asks for 3:1 for meaningful graphics such as chart lines and icons. Ratios run from 1:1 to 21:1, aren’t rounded (4.499:1 fails), and are checked with a tool such as a contrast checker.",
-      "**Microsoft’s accessibility guidance for PowerPoint** adds: use 18 pt or larger, sans serif fonts and enough white space; avoid all capitals and excessive italics or underlining; don’t rely on colour alone; start from a predesigned theme. It warns that its checker misses some contrast problems, such as text in transparent boxes over a background.",
+      "**Microsoft’s accessibility guidance for PowerPoint** adds: use 18 pt or larger, sans serif fonts and enough white space; avoid all capitals and excessive italics or underlining; don’t rely on color alone; start from a predesigned theme. It warns that its checker misses some contrast problems, such as text in transparent boxes over a background.",
       "**Design principles** from the textbook: proximity (group related items), alignment, repetition (consistent styling), contrast (make important things different) and white space. Google’s accessibility help adds that justified text is harder to read than left-aligned.",
       "**Text-heavy slides** split attention: the audience reads ahead and stops listening. Microsoft’s Speaker Coach flags presenters who read slide text aloud.",
-      "**Consistency** comes from the theme: use its fonts and colour slots rather than formatting each slide by hand (see {{slide-layouts-masters}}). One or two font families and a small palette are plenty for most decks."
+      "**Consistency** comes from the theme: use its fonts and color slots rather than formatting each slide by hand (see {{slide-layouts-masters}}). One or two font families and a small palette are plenty for most decks."
      ],
      pro:[
       "**Projectors and rooms.** WCAG thresholds were written for screens viewed up close. Projectors in lit rooms reduce effective contrast, so treat 4.5:1 as a floor and aim well above it. Avoid mid-tone backgrounds and text over busy photos; use a solid band behind text, or darken the image, and check the worst spot.",
@@ -1018,7 +1018,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "Presentation apps keep the design in one place so you don’t repeat it on every slide, like letterhead paper that already has the logo printed on it.",
-      {list:["A **theme** is a set of colours, fonts, background and layouts.","The **slide master** holds the theme’s settings. Change the font or logo there and every slide updates.","A **layout** is one arrangement of boxes: a title slide, title and content, two columns.","A **placeholder** is one of those boxes, such as “Click to add title”."]},
+      {list:["A **theme** is a set of colors, fonts, background and layouts.","The **slide master** holds the theme’s settings. Change the font or logo there and every slide updates.","A **layout** is one arrangement of boxes: a title slide, title and content, two columns.","A **placeholder** is one of those boxes, such as “Click to add title”."]},
       "Type into placeholders instead of drawing your own text boxes. Placeholder text follows the design when you change theme, becomes the slide’s real title, and is read in a sensible order by screen readers.",
       {tip:"If a layout doesn’t suit you, fix the layout once in the master rather than adjusting every slide."}
      ],
@@ -1030,8 +1030,8 @@ ICA.addUnit({
       "**Getting placeholders back:** if they have been deleted, choosing the layout again from the layout menu restores them in most apps; PowerPoint also has **Home → Reset**."
      ],
      pro:[
-      {list:["**Hidden titles.** Microsoft suggests keeping a title on every slide even when the design shows none: position the title placeholder off the slide, or do it in the master for a whole layout.","**One master or several.** Most decks need one master with a handful of layouts. Multiple masters (or imported slides that bring their own) cause inconsistent fonts and colours; check the master view after pasting slides from another deck.","**Theme fonts and colours.** Use the theme’s font and colour slots rather than picking colours by hand. Then a theme change updates everything, including charts and tables that use theme colours.","**Templates.** An organisation’s template is usually a theme plus master plus layouts, saved for reuse (.potx in PowerPoint, .otp in LibreOffice, a custom theme in Keynote or a copied deck in Google Slides).","**Cross-app files.** Google Slides, Impress and Keynote can open .pptx files, but masters and effects don’t always convert perfectly. Open and check every layout before presenting from a converted file."]},
-      "Google’s help describes a theme as a preset group of colours, fonts, background and layouts, and a layout as the way text and images are arranged on a slide. The LibreOffice Impress Guide lists the master views (including masters for notes and handouts) under the View menu."
+      {list:["**Hidden titles.** Microsoft suggests keeping a title on every slide even when the design shows none: position the title placeholder off the slide, or do it in the master for a whole layout.","**One master or several.** Most decks need one master with a handful of layouts. Multiple masters (or imported slides that bring their own) cause inconsistent fonts and colors; check the master view after pasting slides from another deck.","**Theme fonts and colors.** Use the theme’s font and color slots rather than picking colors by hand. Then a theme change updates everything, including charts and tables that use theme colors.","**Templates.** An organization’s template is usually a theme plus master plus layouts, saved for reuse (.potx in PowerPoint, .otp in LibreOffice, a custom theme in Keynote or a copied deck in Google Slides).","**Cross-app files.** Google Slides, Impress and Keynote can open .pptx files, but masters and effects don’t always convert perfectly. Open and check every layout before presenting from a converted file."]},
+      "Google’s help describes a theme as a preset group of colors, fonts, background and layouts, and a layout as the way text and images are arranged on a slide. The LibreOffice Impress Guide lists the master views (including masters for notes and handouts) under the View menu."
      ]
     },
     related:["slide-design","accessible-slides","sharing-presentations"],
@@ -1043,12 +1043,12 @@ ICA.addUnit({
     levels:{
      starter:[
       "A visual should show something words can’t: what a thing looks like, how numbers compare, how steps connect. Ask: what would the audience lose without it?",
-      {list:["**Permission:** use your own pictures, openly licensed ones (such as Creative Commons) with credit, or your app’s stock library within its terms. An image search is not a licence.","**Charts:** one point per chart, with the point as the headline and the key bar highlighted.","**Video:** test it on the presenting computer, keep it short, and caption it.","**Alt text:** a short description of what matters, for people using screen readers."]},
+      {list:["**Permission:** use your own pictures, openly licensed ones (such as Creative Commons) with credit, or your app’s stock library within its terms. An image search is not a license.","**Charts:** one point per chart, with the point as the headline and the key bar highlighted.","**Video:** test it on the presenting computer, keep it short, and caption it.","**Alt text:** a short description of what matters, for people using screen readers."]},
       {warn:"Claims like “people remember 10% of what they read” have no research behind them. Leave out any statistic you can’t trace to a real source."},
-      "Credit every picture that isn’t yours with its title, author, source and licence."
+      "Credit every picture that isn’t yours with its title, author, source and license."
      ],
      builder:[
-      "**Images.** Google’s help for Slides says stock media may be used for personal, educational or commercial purposes in its apps (not resold or used in logos), but that for web images Google “has no way of knowing whether your use is permitted”: check the licence on the source page. Credit with title, author, source and licence.",
+      "**Images.** Google’s help for Slides says stock media may be used for personal, educational or commercial purposes in its apps (not resold or used in logos), but that for web images Google “has no way of knowing whether your use is permitted”: check the license on the source page. Credit with title, author, source and license.",
       "**Charts on slides:** decide the point; choose the simplest chart (bars to compare, lines for change over time); remove clutter; highlight and label directly; write the point as the headline. Avoid 3D, start bar axes at zero, and don’t hide awkward data.",
       "**Video and audio.** Embedded media lives in the file (big files); linked files break if moved; online video needs internet. Microsoft’s PowerPoint for Windows and Mac can attach caption files (WebVTT or SRT) via the Accessibility tab’s **Insert Captions**; **Compress Media** removes them.",
       "**Alt text.** Microsoft advises a sentence or two, no “image of…”, checking auto-generated descriptions, and marking decoration as decorative. For charts, give the finding and key numbers.",
@@ -1056,7 +1056,7 @@ ICA.addUnit({
       "**Diagrams and icons:** a few boxes and arrows (SmartArt in PowerPoint, **Insert → Diagram** in Google Slides, shapes and connectors anywhere) often beat a paragraph. Use one icon style throughout, and label icons, because an icon alone can be misread."
      ],
      pro:[
-      "**Myths to recognise.** The “learning pyramid” percentages (10% of what we read, 20% of what we hear…) are often credited to Edgar Dale’s 1946 Cone of Experience, which contained no numbers; Subramony, Molenda, Betrus and Thalheimer (2014) traced the figures and found no research basis. “Images are processed 60,000 times faster than text” has no known study behind it. A 2008 review by Pashler and colleagues found little evidence that matching teaching to a learner’s preferred “learning style” improves learning.",
+      "**Myths to recognize.** The “learning pyramid” percentages (10% of what we read, 20% of what we hear…) are often credited to Edgar Dale’s 1946 Cone of Experience, which contained no numbers; Subramony, Molenda, Betrus and Thalheimer (2014) traced the figures and found no research basis. “Images are processed 60,000 times faster than text” has no known study behind it. A 2008 review by Pashler and colleagues found little evidence that matching teaching to a learner’s preferred “learning style” improves learning.",
       "**What evidence supports.** Words plus relevant pictures generally aid understanding more than words alone (Mayer’s multimedia principle), while interesting but irrelevant “seductive details” can reduce learning. The practical rule is the same either way: relevant visuals, little decoration.",
       {list:["**Linked charts.** Google Slides charts inserted from Sheets stay linked and show an Update button; PowerPoint can paste Excel charts linked or embedded. Linked charts update, but break or reveal more data than you meant if the source is shared or moved.","**People in photos.** Copyright isn’t the only permission: identifiable people, and especially children, should consent to appearing in a deck that will be shared.","**AI images.** Label them, and never present a generated image as evidence of a real event."]},
       "**Fallbacks.** For every clip, keep a still image and a one-sentence description ready in case playback fails on the day, and test playback on the presenting computer with the sound on."
@@ -1080,7 +1080,7 @@ ICA.addUnit({
       "**Google Slides.** Click the arrow next to **Slideshow** and choose **Presenter view**; notes and a timer open in a separate window. **Presentation display options** (Chrome, with an extra monitor) lets you choose which screen shows what. In a slideshow, [[kbd:S]] opens notes, [[kbd:B]] and [[kbd:W]] blank the screen black or white.",
       "**LibreOffice Impress.** The Presenter Console shows the current slide, the upcoming slide, notes and a timer. It works only with two displays (one can be the laptop’s). In **Slide Show → Slide Show Settings**, set **Presenter console** to **Full screen** or **Windowed**.",
       "**Keynote.** Notes via **View → Show Presenter Notes**; with a second display the presenter display appears on your screen.",
-      "In Keynote, **Play → Rehearse Slideshow** shows the presenter display on a single screen, which is the easiest way to practise with it before you have a second display."
+      "In Keynote, **Play → Rehearse Slideshow** shows the presenter display on a single screen, which is the easiest way to practice with it before you have a second display."
      ],
      pro:[
       {list:["**One screen online.** Run the slide show in a window and share only that window, while notes sit elsewhere: PowerPoint’s **Set Up Slide Show → Browsed by an individual (window)**, Keynote’s **Play → In Window** (older versions: **Play Slideshow in Window**), or LibreOffice’s windowed modes. Never share the presenter view itself.","**Keys worth knowing.** Number + Enter jumps to a slide (PowerPoint, Google Slides, Impress, Keynote); B blanks the screen in PowerPoint, Google Slides and Impress; in Keynote, press ? during a show to see its keys; Esc ends the show.","**Mirroring vs extending.** If your computer mirrors its display, both screens show the same image and presenter view can’t separate them. Set the second display to extend (Windows: [[kbd:Win]] + [[kbd:P]] → Extend; macOS: Displays settings).","**Changing interfaces.** Presenter view layouts change between versions and updates. If a button has moved, look for the same functions (notes, timer, next slide, black screen, slide overview); they rarely disappear.","**PowerPoint for the web.** Microsoft’s main presenter view article covers the desktop apps. Recent web versions offer a presenter view window, but check your version before relying on it."]},
@@ -1108,7 +1108,7 @@ ICA.addUnit({
       "**A rehearsal routine:** one run to find the real time, one after cutting, and one in conditions close to the real thing (standing, with the clicker, or in the actual meeting software). Record at least one run and watch it back once."
      ],
      pro:[
-      {list:["**Cutting well.** Remove whole points, not words from every sentence. A talk that fits at normal pace survives the slowdown nerves cause.","**Backup slides.** Put detailed tables or maps after the closing slide; jump to them by number during questions.","**Hard questions.** Restate neutrally, answer the part you can, separate facts from opinions, and offer to follow up. A hostile question is still a question about your message.","**Hybrid talks.** Repeat every room question for the remote audience and the recording; ask a colleague to monitor the chat.","**When to get help.** Fear of public speaking is common. If it is severe or comes with panic attacks, a doctor or counsellor can help; cognitive behavioural approaches are widely used and effective for many people."]},
+      {list:["**Cutting well.** Remove whole points, not words from every sentence. A talk that fits at normal pace survives the slowdown nerves cause.","**Backup slides.** Put detailed tables or maps after the closing slide; jump to them by number during questions.","**Hard questions.** Restate neutrally, answer the part you can, separate facts from opinions, and offer to follow up. A hostile question is still a question about your message.","**Hybrid talks.** Repeat every room question for the remote audience and the recording; ask a colleague to monitor the chat.","**When to get help.** Fear of public speaking is common. If it is severe or comes with panic attacks, a doctor or counselor can help; cognitive behavioral approaches are widely used and effective for many people."]},
       "Be careful with the evidence. Single studies, such as the reappraisal research, are promising but not guarantees; the firmest advice is the least glamorous: prepare, rehearse aloud, and test the set-up.",
       "**Voice and body.** The textbook lists open body language, eye contact around the room, varied pace and volume, and avoiding filler words. Online, eye contact means looking at the camera when you make a key point. It also suggests arriving well before the start (it says at least thirty minutes) to test the equipment; treat the exact figure as a rule of thumb."
      ]
@@ -1141,25 +1141,25 @@ ICA.addUnit({
     related:["presenter-view","presenting-skills","accessible-slides","audio-video-calls"],
     sources:[{t:"Google Meet Help: Present during a video meeting", url:"https://support.google.com/meet/answer/9308856?hl=en"},{t:"Microsoft Support: Present with real-time, automatic captions or subtitles in PowerPoint", url:"https://support.microsoft.com/office/present-with-real-time-automatic-captions-or-subtitles-in-powerpoint-68d20e49-aec3-456a-939d-34a79e8ddd5f"},{t:"Google Docs Editors Help: Present slides with captions", url:"https://support.google.com/docs/answer/9109474?hl=en"}], checked:"2026-11"},
 
-   {id:"accessible-slides", title:"Accessible slides", aka:["accessibility checker","reading order","slide titles","colour blindness"], tags:["presentations","accessibility"],
-    summary:"Unique slide titles, alt text, a logical reading order, enough contrast, colour plus another signal, and captions; checked by tool and by hand.",
+   {id:"accessible-slides", title:"Accessible slides", aka:["accessibility checker","reading order","slide titles","color blindness"], tags:["presentations","accessibility"],
+    summary:"Unique slide titles, alt text, a logical reading order, enough contrast, color plus another signal, and captions; checked by tool and by hand.",
     levels:{
      starter:[
-      "An accessible deck works for people using screen readers, people with low vision or colour vision deficiency, and people who are deaf or hard of hearing. The main habits:",
-      {list:["A **unique title** on every slide, in the title placeholder.","**Alt text** for every meaningful picture and chart.","**Strong contrast** and large, plain text.","**Colour plus** a label, symbol or pattern, never colour alone.","**Captions** on videos.","**Link text** that says where it goes."]},
+      "An accessible deck works for people using screen readers, people with low vision or color vision deficiency, and people who are deaf or hard of hearing. The main habits:",
+      {list:["A **unique title** on every slide, in the title placeholder.","**Alt text** for every meaningful picture and chart.","**Strong contrast** and large, plain text.","**Color plus** a label, symbol or pattern, never color alone.","**Captions** on videos.","**Link text** that says where it goes."]},
       "PowerPoint has a checker: **Review → Check Accessibility**. Google Slides, Keynote and LibreOffice Impress don’t have a full one, so check by hand.",
       {key:"A checker finds what is missing. Only a person can tell whether what is there makes sense."},
       "Run the check when the content is final, fix the problems it lists, then do the human checks it can’t: does each title and description actually make sense?"
      ],
      builder:[
-      "**PowerPoint.** Microsoft’s checklist: alt text for visuals; a reading order that matches your intent; meaningful link text; no colour-only meaning; sufficient contrast; a unique title on each slide; simple tables with header rows (or avoid tables); larger sans serif fonts; captions and audio descriptions for video; accessible PDFs. The checker runs in the background and from **Review → Check Accessibility**.",
+      "**PowerPoint.** Microsoft’s checklist: alt text for visuals; a reading order that matches your intent; meaningful link text; no color-only meaning; sufficient contrast; a unique title on each slide; simple tables with header rows (or avoid tables); larger sans serif fonts; captions and audio descriptions for video; accessible PDFs. The checker runs in the background and from **Review → Check Accessibility**.",
       "**Reading order.** Screen readers read objects in the order listed in the **Reading Order** pane, which may differ from how they look. Open it via **Review → Check Accessibility**, **Check reading order**, **Verify object order**. Drag items or use **Move Up**/**Move Down**; clearing a check box marks an item as decorative.",
       "**Google Slides.** Alt text via **Alt text** (or [[kbd:Ctrl]] + [[kbd:Alt]] + [[kbd:Y]]); verify any automatic alt text; use descriptive link text; avoid justified text; screen readers might not announce bold or highlighting, so add words like “Important”. The HTML view shows the whole deck as one scrollable page.",
-      "**Colour test.** Microsoft suggests Windows **Settings → Accessibility → Color filters → Grayscale** to see what depends on colour.",
+      "**Color test.** Microsoft suggests Windows **Settings → Accessibility → Color filters → Grayscale** to see what depends on color.",
       "**Keynote and LibreOffice Impress:** add descriptions to images (Keynote’s **Description** field on the Image tab of the Format sidebar; Impress’s **Format → Alt Text** dialog, called **Description** in older versions) and use layouts with real titles. Impress has no full checker; its PDF export with **Universal Accessibility (PDF/UA)** ticked makes a tagged PDF and may warn about some problems, depending on version."
      ],
      pro:[
-      {list:["**Hidden titles.** Keep a title on visually title-less slides by placing the title placeholder off the slide; do it in the master for whole layouts.","**Tables.** Microsoft advises avoiding tables where possible; otherwise no merged, split or nested cells, and a defined header row.","**Contrast gaps.** PowerPoint’s checker misses text in transparent boxes, placeholders over backgrounds and non-text content; check those with a contrast tool.","**Automatic alt text.** PowerPoint for Microsoft 365 on Windows generates alt text for photos and stock images, and Google says some images in Slides get alt text automatically. Remove phrases like “Description automatically generated” and correct errors.","**WCAG references.** Text contrast 1.4.3 (4.5:1, large text 3:1); non-text contrast 1.4.11 (3:1); use of colour 1.4.1; flashing 2.3.1. A note of caution: Google’s accessibility help recommends higher figures (7:1 for normal text, 4.5:1 for large text), which match WCAG’s enhanced AAA level rather than the AA minimum. Meeting Google’s figures also meets AA; for the standard itself, use W3C’s pages.","**Testing.** Try the deck with a screen reader (Narrator, VoiceOver, TalkBack, ChromeVox) and keyboard only. Check the exported PDF too: an accessible deck can become an inaccessible PDF if tags aren’t exported."]},
+      {list:["**Hidden titles.** Keep a title on visually title-less slides by placing the title placeholder off the slide; do it in the master for whole layouts.","**Tables.** Microsoft advises avoiding tables where possible; otherwise no merged, split or nested cells, and a defined header row.","**Contrast gaps.** PowerPoint’s checker misses text in transparent boxes, placeholders over backgrounds and non-text content; check those with a contrast tool.","**Automatic alt text.** PowerPoint for Microsoft 365 on Windows generates alt text for photos and stock images, and Google says some images in Slides get alt text automatically. Remove phrases like “Description automatically generated” and correct errors.","**WCAG references.** Text contrast 1.4.3 (4.5:1, large text 3:1); non-text contrast 1.4.11 (3:1); use of color 1.4.1; flashing 2.3.1. A note of caution: Google’s accessibility help recommends higher figures (7:1 for normal text, 4.5:1 for large text), which match WCAG’s enhanced AAA level rather than the AA minimum. Meeting Google’s figures also meets AA; for the standard itself, use W3C’s pages.","**Testing.** Try the deck with a screen reader (Narrator, VoiceOver, TalkBack, ChromeVox) and keyboard only. Check the exported PDF too: an accessible deck can become an inaccessible PDF if tags aren’t exported."]},
       "**Captions and descriptions for video.** Microsoft distinguishes subtitles (usually the dialogue), closed captions (dialogue plus important sounds) and video descriptions (narration of what is shown, during natural pauses). A video whose meaning is in the pictures needs a description, not only captions."
      ]
     },
@@ -1199,8 +1199,8 @@ ICA.addUnit({
    {id:"key-message", term:"Main message", def:"The one sentence you want the audience to remember: a claim about the topic, not just its name. Also called the key message.", codex:"presentation-planning"},
    {id:"call-to-action", term:"Call to action", def:"The specific thing you ask the audience to do at the end of a talk, such as “Sign up by Friday”.", codex:"presentation-planning"},
    {id:"storyboard", term:"Storyboard", def:"A sketch of a talk made before building it: one box per slide, each with a headline, a rough visual and what you will say.", codex:"presentation-planning"},
-   {id:"theme", term:"Theme", def:"A ready-made set of colours, fonts, background and layouts applied to a whole presentation.", codex:"slide-layouts-masters"},
-   {id:"slide-master", term:"Slide master", def:"The top-level slide that holds a deck’s design (fonts, colours, background, logo). Changing it updates every slide that uses it. Keynote calls these slide layouts; Impress calls it the master slide.", codex:"slide-layouts-masters"},
+   {id:"theme", term:"Theme", def:"A ready-made set of colors, fonts, background and layouts applied to a whole presentation.", codex:"slide-layouts-masters"},
+   {id:"slide-master", term:"Slide master", def:"The top-level slide that holds a deck’s design (fonts, colors, background, logo). Changing it updates every slide that uses it. Keynote calls these slide layouts; Impress calls it the master slide.", codex:"slide-layouts-masters"},
    {id:"slide-layout", term:"Slide layout", def:"One arrangement of placeholders for a kind of slide, such as a title slide or “title and content”.", codex:"slide-layouts-masters"},
    {id:"placeholder", term:"Placeholder", def:"A box that comes from a slide layout, such as “Click to add title”. Text in it follows the theme and counts as the slide’s real title or content.", codex:"slide-layouts-masters"},
    {id:"contrast", term:"Contrast", def:"The difference in brightness between text (or a graphic) and its background, measured as a ratio from 1:1 to 21:1. WCAG asks for at least 4.5:1 for normal text.", codex:"slide-design"},
@@ -1234,7 +1234,7 @@ ICA.addUnit({
    {id:"t1u10-q03", lesson:"t1u10-l1", level:1, q:"According to the textbook, how should a presentation’s purpose be defined?", options:[
      {t:"As the action you want the audience to take", ok:true, why:"Defining purpose from the audience’s side keeps the talk focused on what should change."},
      {t:"As the number of slides you need", why:"Slide count follows from purpose and time, not the other way round."},
-     {t:"As the theme and colours you choose", why:"Design serves the purpose; it isn’t the purpose."},
+     {t:"As the theme and colors you choose", why:"Design serves the purpose; it isn’t the purpose."},
      {t:"As everything you know about the topic", why:"Including everything usually buries the message."}
    ]},
    {id:"t1u10-q04", lesson:"t1u10-l1", level:2, q:"Why storyboard on paper before opening the app?", options:[
@@ -1261,7 +1261,7 @@ ICA.addUnit({
      {t:"A video of the slides with background music only", why:"Music explains nothing."},
      {t:"Slides with the full text at 10 pt", why:"That is a document squeezed onto slides, and hard to read."}
    ]},
-   {id:"t1u10-q08", lesson:"t1u10-l1", level:2, q:"Which closing is strongest for a persuasive talk asking neighbours to volunteer?", options:[
+   {id:"t1u10-q08", lesson:"t1u10-l1", level:2, q:"Which closing is strongest for a persuasive talk asking neighbors to volunteer?", options:[
      {t:"Restate the message, then ask people to sign up by the door", ok:true, why:"Restating the message and recapping the key points reinforces it, and asking people to sign up on the sheet by the door tonight gives a clear, easy call to action."},
      {t:"A slide that says only “Questions?”", why:"Questions can follow, but the close should end on the message and the action."},
      {t:"A new topic the talk hasn’t covered", why:"New material at the end confuses rather than reinforces."},
@@ -1270,12 +1270,12 @@ ICA.addUnit({
    {id:"t1u10-q09", lesson:"t1u10-l1", level:3, q:"Kenji’s rehearsal of a 10-minute talk takes 15 minutes. What is the best fix?", options:[
      {t:"Cut or merge whole points until it fits at a normal pace", ok:true, why:"Cutting content keeps the talk clear. Nerves often slow you on the day, so a talk that only fits when rushed will overrun."},
      {t:"Speak faster on the day", why:"Rushed talks are hard to follow and still tend to overrun."},
-     {t:"Remove the time for questions", why:"That takes away the audience’s chance to clear up doubts, and the organiser may not allow it."},
+     {t:"Remove the time for questions", why:"That takes away the audience’s chance to clear up doubts, and the organizer may not allow it."},
      {t:"Make the text smaller so each slide holds more information", why:"Smaller text doesn’t shorten the talk and is harder to read."}
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t1u10-q10", lesson:"t1u10-l2", level:1, q:"What does the slide master do?", options:[
-     {t:"Holds the deck’s design, so one change updates every slide", ok:true, why:"Fonts, colours, background and repeated items like a logo live on the master, and a change there updates every slide that uses it."},
+     {t:"Holds the deck’s design, so one change updates every slide", ok:true, why:"Fonts, colors, background and repeated items like a logo live on the master, and a change there updates every slide that uses it."},
      {t:"Stores the speaker’s notes", why:"Notes are attached to each slide, not the master."},
      {t:"Controls the order of the slides", why:"Order is set in the slide sorter or thumbnail pane."},
      {t:"Records how long each slide is shown when you rehearse the talk", why:"That is rehearsal timing, not the master."}
@@ -1295,7 +1295,7 @@ ICA.addUnit({
    {id:"t1u10-q13", lesson:"t1u10-l2", level:2, q:"Why type slide titles into the title placeholder instead of a text box you draw?", options:[
      {t:"It becomes the slide’s real title, used by screen readers", ok:true, why:"Placeholder text becomes the slide’s real title: it follows theme changes and is used by screen readers and navigation. A drawn text box looks the same but isn’t treated as the title and keeps its own formatting."},
      {t:"Text boxes can’t hold bold text", why:"They can. The difference is how the app treats the text."},
-     {t:"Placeholders make the file smaller", why:"File size isn’t the reason; behaviour is."},
+     {t:"Placeholders make the file smaller", why:"File size isn’t the reason; behavior is."},
      {t:"Text boxes you draw yourself can’t be printed or exported to PDF", why:"They print fine. The problems are structure and consistency."}
    ]},
    {id:"t1u10-q14", lesson:"t1u10-l2", level:2, q:"A checker reports white text on a pale yellow band at 4.47:1, for 16 pt regular text. Does it meet WCAG AA?", options:[
@@ -1317,8 +1317,8 @@ ICA.addUnit({
      {t:"It is impossible in any app", why:"The desktop apps, Google Slides, Impress and Keynote can all edit masters or layouts."}
    ]},
    {id:"t1u10-q17", lesson:"t1u10-l2", level:3, q:"Priya’s slides look crisp on her laptop, but in the hall the pale blue text on white is hard to read. What best explains it?", options:[
-     {t:"Projectors in lit rooms make low contrast even weaker", ok:true, why:"Projectors in lit rooms wash out colours. WCAG minimums were written for screens; slides need more contrast, not less, to survive projection."},
-     {t:"The hall’s projector can’t show the colour blue at all", why:"Projectors show blue; the problem is contrast."},
+     {t:"Projectors in lit rooms make low contrast even weaker", ok:true, why:"Projectors in lit rooms wash out colors. WCAG minimums were written for screens; slides need more contrast, not less, to survive projection."},
+     {t:"The hall’s projector can’t show the color blue at all", why:"Projectors show blue; the problem is contrast."},
      {t:"Her font is too modern", why:"Font style matters less than contrast here."},
      {t:"The slide master is broken", why:"The master only sets the design. The design itself has too little contrast for the room."}
    ]},
@@ -1326,11 +1326,11 @@ ICA.addUnit({
      {t:"It splits attention and turns the speaker into a narrator", ok:true, why:"The audience reads the same words ahead and stops listening; the speaker faces the screen. Keep headlines short and explain aloud."},
      {t:"Reading aloud damages the microphone", why:"It doesn’t. The warning is about how people take in information."},
      {t:"Speaker Coach can’t read slide text, so it gets confused by it", why:"It can detect it; that’s why it warns you."},
-     {t:"It is against PowerPoint’s licence terms", why:"Nothing in licences covers this. It is presentation advice."}
+     {t:"It is against PowerPoint’s license terms", why:"Nothing in licenses covers this. It is presentation advice."}
    ]},
    /* ---- Lesson 3 ---- */
    {id:"t1u10-q19", lesson:"t1u10-l3", level:1, q:"Does finding an image through your slides app’s built-in web image search mean you may use it?", options:[
-     {t:"No. You still need to check its licence", ok:true, why:"Check the licence on the image’s source page. Google’s help says it can’t know whether your use is permitted and leaves that check to you."},
+     {t:"No. You still need to check its license", ok:true, why:"Check the license on the image’s source page. Google’s help says it can’t know whether your use is permitted and leaves that check to you."},
      {t:"Yes, anything the app finds is licensed", why:"Search finds images; it doesn’t license them."},
      {t:"Yes, as long as the deck is free to view", why:"Copyright applies whether or not you charge."},
      {t:"Only if you resize it", why:"Changing size doesn’t change permission."}
@@ -1339,12 +1339,12 @@ ICA.addUnit({
      {t:"Make one point, stated in the headline", ok:true, why:"Highlight the key data. The audience sees it for seconds, and one clear point is what they can take in."},
      {t:"Show every value from the spreadsheet it came from", why:"That is a spreadsheet’s job; on a slide it overwhelms."},
      {t:"Use 3D to look more impressive", why:"3D distorts sizes and makes comparisons harder."},
-     {t:"Use as many colours as possible", why:"Too many colours hide what matters; highlight one thing."}
+     {t:"Use as many colors as possible", why:"Too many colors hide what matters; highlight one thing."}
    ]},
    {id:"t1u10-q21", lesson:"t1u10-l3", level:2, q:"Which is the best alt text for a slide chart?", options:[
      {t:"“Bar chart of monthly sign-ups: steady at about 20 until June, then jumping to 55 after the school fair.”", ok:true, why:"It gives the kind of chart, the point and the key numbers."},
      {t:"“Chart”", why:"A screen reader user learns nothing about what it shows."},
-     {t:"“An image of a chart with blue bars”", why:"It starts with “an image of”, which screen readers already announce, and describes colours instead of meaning."},
+     {t:"“An image of a chart with blue bars”", why:"It starts with “an image of”, which screen readers already announce, and describes colors instead of meaning."},
      {t:"“signups_final_v3.png”", why:"A file name means nothing to a listener."}
    ]},
    {id:"t1u10-q22", lesson:"t1u10-l3", level:1, q:"What is the truth about “people remember 10% of what they read, 20% of what they hear…”?", options:[
@@ -1366,10 +1366,10 @@ ICA.addUnit({
      {t:"Nothing: compression never changes media", why:"Compression changes the media files, and Microsoft documents that captions are removed."}
    ]},
    {id:"t1u10-q25", lesson:"t1u10-l3", level:2, q:"Lucía wants to use a photo licensed CC BY-NC in slides for a paid workshop she runs as a business. What is the issue?", options:[
-     {t:"NC means non-commercial, so this use may not be allowed", ok:true, why:"A paid business workshop may fall outside the licence, so she should find another image or ask permission. The NC condition restricts commercial use."},
-     {t:"No issue, because any Creative Commons image can be used for anything", why:"CC licences have conditions; NC limits commercial use."},
-     {t:"No issue if she removes the credit", why:"Removing credit breaks the licence further; BY requires attribution."},
-     {t:"No issue if she crops the photo", why:"Cropping doesn’t change the licence conditions."}
+     {t:"NC means non-commercial, so this use may not be allowed", ok:true, why:"A paid business workshop may fall outside the license, so she should find another image or ask permission. The NC condition restricts commercial use."},
+     {t:"No issue, because any Creative Commons image can be used for anything", why:"CC licenses have conditions; NC limits commercial use."},
+     {t:"No issue if she removes the credit", why:"Removing credit breaks the license further; BY requires attribution."},
+     {t:"No issue if she crops the photo", why:"Cropping doesn’t change the license conditions."}
    ]},
    {id:"t1u10-q26", lesson:"t1u10-l3", level:2, q:"When does an animation most clearly help?", options:[
      {t:"When it reveals steps one at a time as you explain them", ok:true, why:"The movement has a purpose: it keeps the audience with you."},
@@ -1399,7 +1399,7 @@ ICA.addUnit({
    {id:"t1u10-q30", lesson:"t1u10-l4", level:1, q:"What does LibreOffice Impress need before its Presenter Console appears?", options:[
      {t:"Two displays connected (one can be the laptop’s own screen)", ok:true, why:"LibreOffice’s help says the console works only when two displays are connected."},
      {t:"An internet connection", why:"The console runs locally; it doesn’t need the internet."},
-     {t:"A paid licence", why:"LibreOffice is free, including the Presenter Console."},
+     {t:"A paid license", why:"LibreOffice is free, including the Presenter Console."},
      {t:"A Microsoft account", why:"LibreOffice doesn’t use Microsoft accounts."}
    ]},
    {id:"t1u10-q31", lesson:"t1u10-l4", level:2, q:"Sione has one screen and presents online. What should he share?", options:[
@@ -1417,7 +1417,7 @@ ICA.addUnit({
    {id:"t1u10-q33", lesson:"t1u10-l4", level:3, q:"Amara is very nervous before a talk. Which tip has the best evidence behind it?", options:[
      {t:"Rehearse aloud, and remember nerves show less than they feel", ok:true, why:"Rehearsing aloud in realistic conditions builds familiarity, and research on the illusion of transparency found that knowing about it improved speeches."},
      {t:"Avoid rehearsing so she doesn’t overthink it", why:"Skipping rehearsal means discovering problems in front of the audience."},
-     {t:"Memorise every word so she never has to think", why:"Word-for-word memorising is fragile: one slip can derail the whole talk."},
+     {t:"Memorise every word so she never has to think", why:"Word-for-word memorizing is fragile: one slip can derail the whole talk."},
      {t:"Tell herself the audience can see how scared she is, so she tries harder", why:"That belief is the illusion of transparency, and it tends to make anxiety worse."}
    ]},
    {id:"t1u10-q34", lesson:"t1u10-l4", level:3, q:"Halfway through an online talk, Oluwaseun’s audience hears no sound from his video. He is sharing a window in Google Meet. What is the likely fix?", options:[
@@ -1454,7 +1454,7 @@ ICA.addUnit({
    {id:"t1u10-q39", lesson:"t1u10-l5", level:1, q:"What usually decides the order in which a screen reader reads objects on a slide?", options:[
      {t:"The reading order, which usually follows the order objects were added", ok:true, why:"It may not match where objects sit, so check it in PowerPoint’s Reading Order pane, or build with placeholders."},
      {t:"Their position from top to bottom", why:"Position doesn’t set the reading order."},
-     {t:"Their colour", why:"Colour has no effect on reading order."},
+     {t:"Their color", why:"Color has no effect on reading order."},
      {t:"Their size, largest first", why:"Size doesn’t set the order either."}
    ]},
    {id:"t1u10-q40", lesson:"t1u10-l5", level:2, q:"About how big is a 2-minute video that plays at 8 megabits per second?", options:[
@@ -1475,20 +1475,20 @@ ICA.addUnit({
      {t:"The text is stretched vertically", why:"The slide keeps its proportions."},
      {t:"The deck refuses to play", why:"Mismatched ratios still play."}
    ]},
-   {id:"t1u10-q43", lesson:"t1u10-l5", level:3, q:"Kenji’s chart uses only red for “late” and green for “on time”. A colleague with colour vision deficiency can’t tell them apart. What’s the best fix?", options:[
-     {t:"Add labels or symbols, so colour isn’t the only signal", ok:true, why:"For example “late” ✗ and “on time” ✓. A second signal works for everyone, including on washed-out projectors and greyscale printouts."},
-     {t:"Make the red brighter", why:"Brightness doesn’t fix colour-only meaning for someone who can’t distinguish the hues."},
-     {t:"Add a colour legend that explains what red and green mean", why:"A legend still depends on matching colours."},
-     {t:"Use two shades of green", why:"Two similar colours are even harder to tell apart."}
+   {id:"t1u10-q43", lesson:"t1u10-l5", level:3, q:"Kenji’s chart uses only red for “late” and green for “on time”. A colleague with color vision deficiency can’t tell them apart. What’s the best fix?", options:[
+     {t:"Add labels or symbols, so color isn’t the only signal", ok:true, why:"For example “late” ✗ and “on time” ✓. A second signal works for everyone, including on washed-out projectors and greyscale printouts."},
+     {t:"Make the red brighter", why:"Brightness doesn’t fix color-only meaning for someone who can’t distinguish the hues."},
+     {t:"Add a color legend that explains what red and green mean", why:"A legend still depends on matching colors."},
+     {t:"Use two shades of green", why:"Two similar colors are even harder to tell apart."}
    ]},
-   {id:"t1u10-q44", lesson:"t1u10-l5", level:3, q:"Before emailing her deck to another organisation, what should Ana check that people often forget?", options:[
+   {id:"t1u10-q44", lesson:"t1u10-l5", level:3, q:"Before emailing her deck to another organization, what should Ana check that people often forget?", options:[
      {t:"The speaker notes, comments and hidden slides", ok:true, why:"They travel with the file, so private notes or comments can reach the recipients. PowerPoint’s Inspect Document can find and remove them."},
      {t:"Whether the transitions are all the same style", why:"Consistency is nice, but it isn’t a risk when sharing."},
      {t:"Whether the file name is in capitals", why:"File name style isn’t the risk here."},
      {t:"Whether the slide numbers start at 1", why:"Minor, and not a privacy or accessibility risk."}
    ]},
    {id:"t1u10-q45", lesson:"t1u10-l5", level:3, q:"Lucía made her deck in Google Slides and wants a quick accessibility check. What should she know?", options:[
-     {t:"It has no built-in checker, so she must check by hand", ok:true, why:"Google Slides has no built-in accessibility checker, so she should check titles, alt text, contrast, colour use and link text by hand. Google’s help covers alt text, contrast and links but doesn’t offer a checker."},
+     {t:"It has no built-in checker, so she must check by hand", ok:true, why:"Google Slides has no built-in accessibility checker, so she should check titles, alt text, contrast, color use and link text by hand. Google’s help covers alt text, contrast and links but doesn’t offer a checker."},
      {t:"She can run Review → Check Accessibility in Google Slides", why:"That is PowerPoint’s menu, not Google Slides’."},
      {t:"Google Slides decks are automatically accessible", why:"Accessibility depends on how the deck is built."},
      {t:"Accessibility checks only matter for printed handouts", why:"They matter most for people using the deck on screen, such as screen reader users."}

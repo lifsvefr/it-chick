@@ -3,8 +3,8 @@ ICA.addUnit({
   id:"t4u1", track:"t4", n:1, title:"How research works", icon:"🔬",
   blurb:"What research is, the kinds of sources it produces, how journals and peer review work, why some papers are free and others cost money, and how to judge whether a scholarly source deserves your trust.",
   goals:[
-    "Explain what makes research systematic, and recognise research in many fields, not only laboratories",
-    "Classify sources as primary, secondary or tertiary for a given question, and as scholarly, popular, trade or grey literature",
+    "Explain what makes research systematic, and recognize research in many fields, not only laboratories",
+    "Classify sources as primary, secondary or tertiary for a given question, and as scholarly, popular, trade or gray literature",
     "Describe the path of a paper from submission to publication, what peer review checks and what it can’t",
     "Tell the open access routes and the versions of a paper apart, and find legal free copies",
     "Check a journal for warning signs of predatory publishing, and check whether a paper has been corrected or retracted"
@@ -47,14 +47,14 @@ ICA.addUnit({
         "**Sharing for scrutiny.** The work is made public so other people can check, challenge and build on it. Research that nobody can examine is hard to trust, however clever it is."
       ]},
       "Sociology’s version of this, with [[hypothesis|hypotheses]], [[variable|variables]] and [[empirical-evidence|empirical evidence]], is in {{scientific-method-sociology|Thinking sociologically}}. The same pattern works far beyond the social sciences.",
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="t4a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="10" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="37" text-anchor="middle">1 Ask a question</text><rect class="d-lup" x="192" y="10" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="30" text-anchor="middle">2 Learn what’s</text><text x="262" y="46" text-anchor="middle">already known</text><rect class="d-sage" x="192" y="90" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="117" text-anchor="middle">3 Choose a method</text><rect class="d-sage" x="192" y="170" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="197" text-anchor="middle">4 Gather evidence</text><rect class="d-gold" x="8" y="170" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="190" text-anchor="middle">5 Analyse and</text><text x="78" y="206" text-anchor="middle">state limits</text><rect class="d-rose" x="8" y="90" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="110" text-anchor="middle">6 Share it for</text><text x="78" y="126" text-anchor="middle">others to check</text><path class="d-ink" d="M150 32H188" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M262 56V86" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M262 136V166" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M190 192H152" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M78 168V138" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M78 88V58" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><rect class="d-panel" x="8" y="236" width="324" height="56" rx="8" stroke-width="1.5"/><text x="170" y="258" text-anchor="middle">Others test, cite and challenge it,</text><text x="170" y="278" text-anchor="middle">which raises the next questions</text></svg>', alt:"A loop of six steps: 1 ask a question, 2 learn what’s already known, 3 choose a method, 4 gather evidence, 5 analyse and state limits, 6 share it for others to check, then back to 1. Below: others test, cite and challenge it, which raises the next questions.", cap:"The research cycle. Step 6 is what turns private work into research others can rely on, and it feeds the next turn of the loop."},
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="t4a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="10" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="37" text-anchor="middle">1 Ask a question</text><rect class="d-lup" x="192" y="10" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="30" text-anchor="middle">2 Learn what’s</text><text x="262" y="46" text-anchor="middle">already known</text><rect class="d-sage" x="192" y="90" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="117" text-anchor="middle">3 Choose a method</text><rect class="d-sage" x="192" y="170" width="140" height="44" rx="8" stroke-width="2"/><text x="262" y="197" text-anchor="middle">4 Gather evidence</text><rect class="d-gold" x="8" y="170" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="190" text-anchor="middle">5 Analyse and</text><text x="78" y="206" text-anchor="middle">state limits</text><rect class="d-rose" x="8" y="90" width="140" height="44" rx="8" stroke-width="2"/><text x="78" y="110" text-anchor="middle">6 Share it for</text><text x="78" y="126" text-anchor="middle">others to check</text><path class="d-ink" d="M150 32H188" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M262 56V86" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M262 136V166" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M190 192H152" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M78 168V138" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><path class="d-ink" d="M78 88V58" stroke-width="2" fill="none" marker-end="url(#t4a1)"/><rect class="d-panel" x="8" y="236" width="324" height="56" rx="8" stroke-width="1.5"/><text x="170" y="258" text-anchor="middle">Others test, cite and challenge it,</text><text x="170" y="278" text-anchor="middle">which raises the next questions</text></svg>', alt:"A loop of six steps: 1 ask a question, 2 learn what’s already known, 3 choose a method, 4 gather evidence, 5 analyze and state limits, 6 share it for others to check, then back to 1. Below: others test, cite and challenge it, which raises the next questions.", cap:"The research cycle. Step 6 is what turns private work into research others can rely on, and it feeds the next turn of the loop."},
       {tip:"Real projects loop back constantly: a pilot study changes the method, an odd result sends you back to the literature. The ACRL Framework calls this “Research as Inquiry”: research is iterative, and answers lead to new questions."}
     ]},
     {h:"Many kinds of research", body:[
       "Research looks very different across fields, because **the method follows the question**. Two distinctions help you place almost any study.",
       {h:"Empirical or non-empirical?"},
       "[[empirical-research|Empirical research]] collects or analyses observations of the world: measurements, interviews, surveys, experiments, records. Non-empirical research works mainly with ideas: a mathematical proof, a philosophical argument, a new theory, a legal analysis, a close reading of a novel. Both are research; they are judged by different standards (does the evidence support the claim? does the argument hold together?).",
-      "Empirical evidence itself comes in two broad kinds: [[quantitative-data|quantitative data]] (numbers you can count and analyse statistically, such as [[survey]] results or measurements) and [[qualitative-data|qualitative data]] (words, observations and images, such as interview answers or fieldnotes). Many studies use both.",
+      "Empirical evidence itself comes in two broad kinds: [[quantitative-data|quantitative data]] (numbers you can count and analyze statistically, such as [[survey]] results or measurements) and [[qualitative-data|qualitative data]] (words, observations and images, such as interview answers or fieldnotes). Many studies use both.",
       {h:"Basic or applied?"},
       "**Basic research** aims to understand how something works, with no immediate use in mind. [[applied-research|Applied research]] aims to solve a practical problem. Many projects mix both, and basic research often turns out to be useful decades later.",
       {table:[
@@ -74,8 +74,8 @@ ICA.addUnit({
       {list:[
         "**Universities and research institutes**, funded by governments, charities and companies.",
         "**Government agencies and national statistics offices**, which run censuses and surveys, monitor health and the environment, and evaluate policies.",
-        "**International organisations** such as UN agencies, the World Bank and the OECD.",
-        "**Non-governmental organisations and think tanks**, which often research a cause they campaign on.",
+        "**International organizations** such as UN agencies, the World Bank and the OECD.",
+        "**Non-governmental organizations and think tanks**, which often research a cause they campaign on.",
         "**Companies**, from drug trials to user research for apps.",
         "**Communities and volunteers**, through citizen science (for example counting birds or measuring rainfall) and community-led research."
       ]},
@@ -83,7 +83,7 @@ ICA.addUnit({
     ]},
     {h:"Scholarship is a conversation", body:[
       "A single research paper is less like a verdict and more like **one turn in a long conversation**. The ACRL Framework, written by the US-based Association of College and Research Libraries and used by librarians in many countries, calls this “Scholarship as Conversation”: communities of scholars engage in sustained discussion, and new insights emerge over time from varied perspectives and interpretations.",
-      {ex:"An imaginary but typical sequence:\n1. A team reports that a new teaching method raised maths scores in 12 schools.\n2. A second team tries it in 40 schools in another country and finds a smaller effect.\n3. A third paper argues the first study’s schools also got extra teacher training, which may explain part of the effect.\n4. A review combines all the studies and concludes the method helps a little, mainly for younger pupils.\nEach paper cites the earlier ones. The review, not paper 1, is the best summary of what’s known.", label:"Worked example: a conversation in four papers"},
+      {ex:"An imaginary but typical sequence:\n1. A team reports that a new teaching method raised math scores in 12 schools.\n2. A second team tries it in 40 schools in another country and finds a smaller effect.\n3. A third paper argues the first study’s schools also got extra teacher training, which may explain part of the effect.\n4. A review combines all the studies and concludes the method helps a little, mainly for younger pupils.\nEach paper cites the earlier ones. The review, not paper 1, is the best summary of what’s known.", label:"Worked example: a conversation in four papers"},
       "This has practical consequences for you as a reader:",
       {list:[
         "**Find where a paper sits in the conversation.** Who does it respond to? Who has responded to it since? (Unit 2 shows how, with {{citation-chasing|citation chasing}}.)",
@@ -105,7 +105,7 @@ ICA.addUnit({
       {warn:"Be careful with the opposite mistake too. “Scientists keep changing their minds, so I’ll believe what I like” ignores that some conclusions rest on decades of consistent evidence from many independent teams. Uncertainty comes in degrees."}
     ]},
     {h:"Why this matters to you", body:[
-      "You don’t need to become a professional researcher for this to be useful. A nurse deciding whether a new wound dressing is worth trying, a teacher reading about a reading programme, a small-business owner looking at a market report, a voter hearing “studies show…”: all of them are reading the output of research and deciding how much to trust it.",
+      "You don’t need to become a professional researcher for this to be useful. A nurse deciding whether a new wound dressing is worth trying, a teacher reading about a reading program, a small-business owner looking at a market report, a voter hearing “studies show…”: all of them are reading the output of research and deciding how much to trust it.",
       "Knowing how research is made lets you ask the right questions: **What was the question? What was the method? Has anyone checked it? What do other studies say?** The rest of this unit gives you the background to answer them: the kinds of sources (Lesson 2), how journals check work (Lesson 3), why access costs money (Lesson 4), and how to judge authority (Lesson 5)."
     ]}
    ],
@@ -113,10 +113,10 @@ ICA.addUnit({
     {id:"t4u1-l1-x1", type:"sort", q:"Is each activity everyday research (finding out what is known) or systematic research (creating new knowledge others can check)?", buckets:["Everyday research","Systematic research"], items:[
       {t:"Reading reviews of three laptops before buying one", b:0, why:"Useful, but it gathers what others already know; nothing new is created and shared for checking."},
       {t:"A health agency surveying 5,000 households about clean water access and publishing its method and results", b:1, why:"A stated method, new data and public reporting: systematic research."},
-      {t:"Searching a library catalogue to find books about the history of your town", b:0, why:"This is the first step of research (learning what’s known), not yet new knowledge."},
+      {t:"Searching a library catalog to find books about the history of your town", b:0, why:"This is the first step of research (learning what’s known), not yet new knowledge."},
       {t:"A historian reading unpublished letters in an archive and publishing a new account of a strike, with sources cited", b:1, why:"Archival research is systematic: new evidence, a method others can follow, and a public account with citations."},
       {t:"A mathematician publishing a new proof", b:1, why:"Non-empirical, but still research: it creates new knowledge, and other mathematicians can check every step."},
-      {t:"Asking a chatbot to summarise what is known about sleep and memory", b:0, why:"A summary of existing knowledge (which must be checked). Nothing new is created or tested."}
+      {t:"Asking a chatbot to summarize what is known about sleep and memory", b:0, why:"A summary of existing knowledge (which must be checked). Nothing new is created or tested."}
     ]},
     {id:"t4u1-l1-x2", type:"order", q:"Put the steps of a typical research cycle in order.", items:[
       {t:"Ask a focused question", why:"Everything else depends on the question: it decides what evidence and which method you need."},
@@ -171,17 +171,17 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"t4u1-l2", title:"Kinds of sources", minutes:50,
-   hook:{q:"A school hygiene textbook printed in 1955. Is it a primary, secondary or tertiary source?", options:["Always tertiary: textbooks summarise","Always secondary: it explains other work","Always primary: it’s old","It depends on the question you’re asking"], answer:3, reveal:"**It depends on your question.** If you want to learn about hygiene, it’s an out-of-date tertiary source. If you’re a historian studying how schools taught hygiene in the 1950s, it’s a primary source: original evidence of exactly what you’re studying. Source types describe the relationship between a source and your question, which is the main idea of this lesson."},
+   hook:{q:"A school hygiene textbook printed in 1955. Is it a primary, secondary or tertiary source?", options:["Always tertiary: textbooks summarize","Always secondary: it explains other work","Always primary: it’s old","It depends on the question you’re asking"], answer:3, reveal:"**It depends on your question.** If you want to learn about hygiene, it’s an out-of-date tertiary source. If you’re a historian studying how schools taught hygiene in the 1950s, it’s a primary source: original evidence of exactly what you’re studying. Source types describe the relationship between a source and your question, which is the main idea of this lesson."},
    goals:[
      "Classify a source as primary, secondary or tertiary relative to a specific question",
      "Tell scholarly, popular and trade sources apart by their features",
      "Name the main kinds of scholarly output: research and review articles, monographs, edited books, conference papers, theses",
-     "Explain what grey literature is, why researchers value it, and how to judge it"
+     "Explain what gray literature is, why researchers value it, and how to judge it"
    ],
    learn:[
     {h:"Primary, secondary, tertiary: it depends on the question", body:[
       {lead:"In {{evaluating-sources|Judging a source}} you met [[primary-source|primary]] and [[secondary-source|secondary]] sources. Researchers add a twist: the same item can be either, depending on what you are studying."},
-      "A [[tertiary-source|tertiary source]] summarises and organises many secondary sources: encyclopedias, textbooks, handbooks, guides, bibliographies. Use it to get your bearings, then move closer to the evidence.",
+      "A [[tertiary-source|tertiary source]] summarizes and organizes many secondary sources: encyclopedias, textbooks, handbooks, guides, bibliographies. Use it to get your bearings, then move closer to the evidence.",
       "Fields also use “primary” a little differently:",
       {table:[
         ["Field","Usually primary","Usually secondary"],
@@ -189,14 +189,14 @@ ICA.addUnit({
         ["History","Documents from the time: letters, diaries, records, photos","Historians’ books and articles about them"],
         ["Literature, arts","The novel, poem, painting or performance","Criticism and analysis of the work"],
         ["Law","Laws, regulations and court decisions","Commentaries and law journal articles"],
-        ["Social sciences","Interviews, survey data, official statistics","Studies that analyse others’ findings"]
+        ["Social sciences","Interviews, survey data, official statistics","Studies that analyze others’ findings"]
       ]},
       {ex:"Question A: “What did people in Lagos think of the new railway in 1901?”\n→ A 1901 newspaper editorial is PRIMARY.\n\nQuestion B: “How did the railway affect Lagos’s economy?”\n→ The same editorial is weak evidence (one opinion); a modern economic history is the key SECONDARY source.\n\nQuestion C: “How have historians’ views of the railway changed?”\n→ The modern economic histories themselves become PRIMARY: they are now the thing you are studying.", label:"Worked example: one source, three questions"},
-      {key:"Before labelling a source, finish this sentence: “My question is about…”. The label follows from the answer."}
+      {key:"Before labeling a source, finish this sentence: “My question is about…”. The label follows from the answer."}
     ]},
     {h:"How information appears after an event", body:[
       "Different kinds of sources appear at different speeds. Librarians sometimes call this the **information cycle**. Knowing it tells you where to look, and what you **can’t** find yet.",
-      {fig:'<svg viewBox="0 0 340 400"><path class="d-ink" d="M30 46V384" stroke-width="2"/><circle class="d-rose" cx="30" cy="22" r="12" stroke-width="2"/><text x="52" y="27">A major flood happens</text><circle class="d-inkf" cx="30" cy="66" r="6"/><text x="48" y="64">Hours</text><text class="s" x="48" y="81">Social media posts, live news, photos</text><circle class="d-inkf" cx="30" cy="116" r="6"/><text x="48" y="114">Days to weeks</text><text class="s" x="48" y="131">News reports, analysis, opinion pieces</text><circle class="d-inkf" cx="30" cy="166" r="6"/><text x="48" y="164">Weeks to months</text><text class="s" x="48" y="181">Agency and NGO reports, official data</text><text class="s" x="48" y="197">(grey literature), magazines</text><circle class="d-inkf" cx="30" cy="232" r="6"/><text x="48" y="230">Months to years</text><text class="s" x="48" y="247">Preprints, then peer-reviewed journal</text><text class="s" x="48" y="263">articles and conference papers</text><circle class="d-inkf" cx="30" cy="298" r="6"/><text x="48" y="296">Years</text><text class="s" x="48" y="313">Books, review articles, inquiry reports</text><circle class="d-inkf" cx="30" cy="348" r="6"/><text x="48" y="346">Later still</text><text class="s" x="48" y="363">Encyclopedias, textbooks, handbooks</text><text class="s" x="48" y="379">(tertiary sources)</text></svg>', alt:"A vertical timeline after a major flood: hours, social media and live news; days to weeks, news reports and analysis; weeks to months, agency and NGO reports, official data and magazines; months to years, preprints then peer-reviewed articles and conference papers; years, books, review articles and inquiry reports; later still, encyclopedias and textbooks.", cap:"The information cycle. Timings are typical, not fixed: some journals publish urgent research in weeks, and some reports take years."},
+      {fig:'<svg viewBox="0 0 340 400"><path class="d-ink" d="M30 46V384" stroke-width="2"/><circle class="d-rose" cx="30" cy="22" r="12" stroke-width="2"/><text x="52" y="27">A major flood happens</text><circle class="d-inkf" cx="30" cy="66" r="6"/><text x="48" y="64">Hours</text><text class="s" x="48" y="81">Social media posts, live news, photos</text><circle class="d-inkf" cx="30" cy="116" r="6"/><text x="48" y="114">Days to weeks</text><text class="s" x="48" y="131">News reports, analysis, opinion pieces</text><circle class="d-inkf" cx="30" cy="166" r="6"/><text x="48" y="164">Weeks to months</text><text class="s" x="48" y="181">Agency and NGO reports, official data</text><text class="s" x="48" y="197">(gray literature), magazines</text><circle class="d-inkf" cx="30" cy="232" r="6"/><text x="48" y="230">Months to years</text><text class="s" x="48" y="247">Preprints, then peer-reviewed journal</text><text class="s" x="48" y="263">articles and conference papers</text><circle class="d-inkf" cx="30" cy="298" r="6"/><text x="48" y="296">Years</text><text class="s" x="48" y="313">Books, review articles, inquiry reports</text><circle class="d-inkf" cx="30" cy="348" r="6"/><text x="48" y="346">Later still</text><text class="s" x="48" y="363">Encyclopedias, textbooks, handbooks</text><text class="s" x="48" y="379">(tertiary sources)</text></svg>', alt:"A vertical timeline after a major flood: hours, social media and live news; days to weeks, news reports and analysis; weeks to months, agency and NGO reports, official data and magazines; months to years, preprints then peer-reviewed articles and conference papers; years, books, review articles and inquiry reports; later still, encyclopedias and textbooks.", cap:"The information cycle. Timings are typical, not fixed: some journals publish urgent research in weeks, and some reports take years."},
       "Two consequences:",
       {list:[
         "**Early sources are fast but less checked.** The first reports of any event often contain errors that later sources correct.",
@@ -220,7 +220,7 @@ ICA.addUnit({
     {h:"Inside the scholarly family", body:[
       "Scholarly work comes in several formats. Each is useful for different things.",
       {list:[
-        "**[[journal-article|Journal articles]]** are the most common format in most fields. A research article reports original work (new data, a new analysis or a new argument). A [[review-article|review article]] summarises and assesses many earlier studies, which makes it a great starting point. Journals also publish short communications, editorials, commentaries, letters and book reviews; these are not peer-reviewed research in the same way, so check the article type.",
+        "**[[journal-article|Journal articles]]** are the most common format in most fields. A research article reports original work (new data, a new analysis or a new argument). A [[review-article|review article]] summarizes and assesses many earlier studies, which makes it a great starting point. Journals also publish short communications, editorials, commentaries, letters and book reviews; these are not peer-reviewed research in the same way, so check the article type.",
         "**[[monograph|Monographs]]** are scholarly books on one subject, by one author or a small team. In the humanities and many social sciences they are a main form of research output.",
         "**Edited books** collect chapters by different authors on a theme, chosen by one or more editors.",
         "**[[conference-proceedings|Conference proceedings]]** publish papers presented at academic meetings. In computer science and some engineering fields, peer-reviewed conference papers are often the main place new results appear. In many other fields, a conference abstract is a short early report that may never become a full paper.",
@@ -229,8 +229,8 @@ ICA.addUnit({
       "Most scholarly articles start with an [[abstract-paper|abstract]]: a short summary of the question, method, findings and conclusion. It helps you decide whether to read on, but it isn’t the whole story; Unit 3 shows how to read the rest.",
       {tip:"In a database or on a journal page, look for the article type (often a small label such as “Research article”, “Review”, “Editorial” or “Letter”). It tells you what kind of evidence you’re looking at."}
     ]},
-    {h:"Grey literature", body:[
-      "[[grey-literature-term|Grey literature]] is research and information produced outside traditional commercial and academic publishing. A widely cited definition from the international grey literature community (the Luxembourg definition, later extended in Prague in 2010) describes it as material produced by governments, academics, business and industry, **where publishing is not the producer’s main activity**.",
+    {h:"Gray literature", body:[
+      "[[grey-literature-term|Gray literature]] is research and information produced outside traditional commercial and academic publishing. A widely cited definition from the international gray literature community (the Luxembourg definition, later extended in Prague in 2010) describes it as material produced by governments, academics, business and industry, **where publishing is not the producer’s main activity**.",
       {table:[
         ["Kind","Example producer"],
         ["Government and agency reports","A ministry of health, an environment agency"],
@@ -245,11 +245,11 @@ ICA.addUnit({
       {h:"Why researchers value it"},
       {list:[
         "**It’s often faster and more local** than journals: last year’s data, one district’s results.",
-        "**It may be the only source** for policy details, programme evaluations or practical know-how.",
-        "**It can reduce [[publication-bias|publication bias]].** Studies with disappointing or null results are less likely to be published in journals, but they may appear in reports, theses or trial registries. That’s why careful {{systematic-reviews|systematic reviews}} search grey literature too."
+        "**It may be the only source** for policy details, program evaluations or practical know-how.",
+        "**It can reduce [[publication-bias|publication bias]].** Studies with disappointing or null results are less likely to be published in journals, but they may appear in reports, theses or trial registries. That’s why careful {{systematic-reviews|systematic reviews}} search gray literature too."
       ]},
       {h:"How to judge it"},
-      "Grey literature isn’t automatically peer-reviewed, and some is produced to support a cause or sell a product. Ask: Who produced it, and what is their interest? Is the method described? Was it reviewed (some agencies have strong internal review)? Is the data available? Does it agree with other sources?"
+      "Gray literature isn’t automatically peer-reviewed, and some is produced to support a cause or sell a product. Ask: Who produced it, and what is their interest? Is the method described? Was it reviewed (some agencies have strong internal review)? Is the data available? Does it agree with other sources?"
     ]},
     {h:"Matching the source to the job", body:[
       {table:[
@@ -257,7 +257,7 @@ ICA.addUnit({
         ["Your bearings on a new topic","A tertiary source: an encyclopedia, a textbook, a good explainer"],
         ["What the evidence says overall","A recent review article, systematic review or expert body statement"],
         ["The details of one finding","The original research article (primary)"],
-        ["Recent figures for one country or city","Official statistics and agency reports (grey literature)"],
+        ["Recent figures for one country or city","Official statistics and agency reports (gray literature)"],
         ["How practitioners use something","Trade publications and professional guidance"],
         ["How people at the time saw an event","Documents from that time (primary, for a historical question)"]
       ]},
@@ -267,9 +267,9 @@ ICA.addUnit({
    try:[
     {id:"t4u1-l2-x1", type:"sort", q:"Hana’s question is: **“How did newspapers in her country report the 1990s debate about women’s right to vote in local elections?”** Is each source primary or secondary **for her question**?", buckets:["Primary for Hana’s question","Secondary for Hana’s question"], items:[
       {t:"A 1994 newspaper editorial opposing the change", b:0, why:"Her question is about how newspapers reported the debate, so newspaper pieces from the time are the evidence itself."},
-      {t:"A 2019 journal article analysing media coverage of the debate", b:1, why:"It analyses the primary sources. It’s a valuable secondary source (and may point her to more newspapers)."},
+      {t:"A 2019 journal article analyzing media coverage of the debate", b:1, why:"It analyzes the primary sources. It’s a valuable secondary source (and may point her to more newspapers)."},
       {t:"A 1995 newspaper report on a parliamentary vote", b:0, why:"Coverage from the time: exactly what she is studying."},
-      {t:"A history textbook chapter on the period", b:1, why:"It summarises and interprets events. For her question it’s secondary background (some would call a textbook tertiary)."},
+      {t:"A history textbook chapter on the period", b:1, why:"It summarizes and interprets events. For her question it’s secondary background (some would call a textbook tertiary)."},
       {t:"A 1993 letter to the editor from a reader", b:0, why:"Published in a newspaper at the time, it’s part of the coverage she’s studying."}
     ]},
     {id:"t4u1-l2-x2", type:"mcq", q:"A 2020 encyclopedia article on a famous 19th-century novelist would be a primary source for which question?", options:[
@@ -278,31 +278,31 @@ ICA.addUnit({
       {t:"“What themes appear in the novelist’s books?”", why:"Here the novels themselves are primary; the encyclopedia is a tertiary overview."},
       {t:"“When did the novelist die?”", why:"For this fact the encyclopedia is a tertiary source; a death record or contemporary report would be primary."}
     ]},
-    {id:"t4u1-l2-x3", type:"sort", q:"Sort each source into the best category.", buckets:["Scholarly","Popular","Trade","Grey literature"], items:[
+    {id:"t4u1-l2-x3", type:"sort", q:"Sort each source into the best category.", buckets:["Scholarly","Popular","Trade","Gray literature"], items:[
       {t:"A peer-reviewed article in a soil science journal, with 60 references", b:0, why:"Written by researchers for researchers, peer-reviewed and fully referenced."},
       {t:"A newspaper feature about a family farm’s switch to drip irrigation", b:1, why:"Written by a journalist for the general public."},
       {t:"A monthly magazine for farm equipment dealers", b:2, why:"Written for people in one industry: a trade publication."},
-      {t:"A ministry of agriculture report on this year’s harvest, published on its website", b:3, why:"A government report outside commercial and academic publishing: grey literature."},
-      {t:"A working paper from a university economics department", b:3, why:"Working papers are shared before formal publication, without journal peer review: grey literature."},
+      {t:"A ministry of agriculture report on this year’s harvest, published on its website", b:3, why:"A government report outside commercial and academic publishing: gray literature."},
+      {t:"A working paper from a university economics department", b:3, why:"Working papers are shared before formal publication, without journal peer review: gray literature."},
       {t:"A general science magazine’s explainer on soil carbon", b:1, why:"It explains research for a broad audience: popular."}
     ]},
     {id:"t4u1-l2-x4", type:"match", q:"Match each scholarly format to its description.", pairs:[
-      ["Review article","Summarises and assesses many earlier studies on a topic","Reviews synthesise existing work rather than reporting new data."],
+      ["Review article","Summarises and assesses many earlier studies on a topic","Reviews synthesize existing work rather than reporting new data."],
       ["Research article","Reports a new study’s methods and findings","This is the primary report of original work."],
       ["Monograph","A scholarly book on one subject by one author or a small team","Common in the humanities and many social sciences."],
       ["Conference paper","Presented at an academic meeting; a main venue in computer science","Peer-reviewed conference papers are central in computing and some engineering fields."],
       ["Editorial","A journal editor’s short opinion or introduction","Editorials are opinion or commentary, not peer-reviewed research."]
     ]},
-    {id:"t4u1-l2-x5", type:"mcq", q:"Tomás is writing a report on how well a clean-cooking-stove programme worked in his region last year. A database search finds no peer-reviewed articles about it. What should he do next?", options:[
-      {t:"Look for grey literature: the programme’s own evaluation, official reports and data", ok:true, why:"Recent, local programmes are often only documented in grey literature, which appears much sooner than journal articles. Judge each one carefully."},
+    {id:"t4u1-l2-x5", type:"mcq", q:"Tomás is writing a report on how well a clean-cooking-stove program worked in his region last year. A database search finds no peer-reviewed articles about it. What should he do next?", options:[
+      {t:"Look for gray literature: the program’s own evaluation, official reports and data", ok:true, why:"Recent, local programs are often only documented in gray literature, which appears much sooner than journal articles. Judge each one carefully."},
       {t:"Conclude there is no evidence and stop", why:"No journal articles yet doesn’t mean no evidence. The information cycle says reports and data come first."},
-      {t:"Use only news stories, because they’re more recent", why:"News may help, but it usually summarises reports. Go to the reports and data themselves."},
-      {t:"Cite peer-reviewed articles about stove programmes in other countries as if they described his region", why:"They can give context, but presenting them as evidence about his region would be misleading."}
+      {t:"Use only news stories, because they’re more recent", why:"News may help, but it usually summarizes reports. Go to the reports and data themselves."},
+      {t:"Cite peer-reviewed articles about stove programs in other countries as if they described his region", why:"They can give context, but presenting them as evidence about his region would be misleading."}
     ]},
     {id:"t4u1-l2-x6", type:"spot", q:"Amara listed sources for an essay on air pollution and asthma. Tap each description that is **wrong**.", ask:"wrong", parts:[
       {t:"A systematic review in a medical journal: a good summary of many studies.", flag:false, why:"Correct. Reviews that combine many studies are an excellent place to start."},
       " ",
-      {t:"A city’s air-quality monitoring report: not usable because it isn’t peer-reviewed.", flag:true, why:"Grey literature is often the best source of local data. Judge its method and producer instead of rejecting it."},
+      {t:"A city’s air-quality monitoring report: not usable because it isn’t peer-reviewed.", flag:true, why:"Gray literature is often the best source of local data. Judge its method and producer instead of rejecting it."},
       " ",
       {t:"An editorial in a medical journal: peer-reviewed research evidence.", flag:true, why:"Editorials are opinion pieces, usually not peer-reviewed research, even in a scholarly journal. Check the article type."},
       " ",
@@ -312,11 +312,11 @@ ICA.addUnit({
     ]},
     {id:"t4u1-l2-x7", type:"explain", q:"Take a 1985 television advert for cigarettes. Explain how it could be a primary source for one research question and a poor source for another.", size:"3–4 sentences", hint:"Finish the sentence “My question is about…” for two different questions.", model:"Whether a source is primary depends on the question, not the source. If my question is “How did tobacco companies market cigarettes in the 1980s?”, the advert is a primary source: it is original evidence of exactly what I’m studying. If my question is “Does smoking cause lung disease?”, the advert is a poor source, because it tells me what a company wanted people to believe, not what the health evidence shows; I’d need research articles or reviews instead.", points:["States that the label depends on the question", "Gives a question for which the advert is primary, and says why", "Gives a question for which it is weak or irrelevant, and says why", "Names a better kind of source for the second question"]}
    ],
-   apply:{intro:"Practise classifying real sources on a topic you choose. Free sources are fine; you don’t need a library login.", tasks:[
-     {t:"One topic, four kinds of source", how:["Choose a topic you care about (for example, school meals, coral bleaching, remote work).","Find one scholarly article (Google Scholar or a free database), one popular article, one trade or professional publication and one piece of grey literature (a government, UN or NGO report).","For each, note who wrote it, for whom, and how it was checked."], write:"Topic… Scholarly… Popular… Trade… Grey literature… Who checked each…"},
+   apply:{intro:"Practice classifying real sources on a topic you choose. Free sources are fine; you don’t need a library login.", tasks:[
+     {t:"One topic, four kinds of source", how:["Choose a topic you care about (for example, school meals, coral bleaching, remote work).","Find one scholarly article (Google Scholar or a free database), one popular article, one trade or professional publication and one piece of gray literature (a government, UN or NGO report).","For each, note who wrote it, for whom, and how it was checked."], write:"Topic… Scholarly… Popular… Trade… Gray literature… Who checked each…"},
      {t:"Change the question, change the label", how:["Pick one source from the previous task.","Write two different research questions: one for which it is a primary source and one for which it is secondary or tertiary.","Explain the difference in one sentence."], write:"Source… Question where it’s primary… Question where it’s secondary or tertiary… Why…"},
      {t:"Find the article type", how:["Open three items from a journal’s website (any field).","Find the article type label on each page (Research article, Review, Editorial, Letter, Commentary…).","Note which ones are reports of original research."], write:"Journal… Item 1 type… Item 2 type… Item 3 type… Which report original research…"}
-   ], proof:"Notes with four labelled sources on one topic, two questions showing how one source’s label can change, and three article types from a real journal."},
+   ], proof:"Notes with four labeled sources on one topic, two questions showing how one source’s label can change, and three article types from a real journal."},
    read:[
      {book:"owg", where:"Chapter 13, Section 13.1 “The Research Process: Where to Look for Existing Sources” (the parts “Locating Sources” and “Evaluating Sources”)"},
      {book:"acrl", where:"Frame “Information Creation as a Process”"}
@@ -324,7 +324,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t4u1-l3", title:"Peer review and how journals work", minutes:55,
-   hook:{q:"Peer reviewers spend hours checking a paper for a journal. Who usually pays them for it?", options:["The journal, per review","The authors, through a fee","Usually no one: most reviewers are unpaid","A government agency"], answer:2, reveal:"**Usually no one.** At most journals, peer review is unpaid work that researchers do for each other as part of their profession (some journals offer small rewards or discounts). That surprises many people, and it helps explain both the strengths of peer review (experts volunteering their judgement) and its limits (busy people with little time). This lesson follows a paper through the whole system."},
+   hook:{q:"Peer reviewers spend hours checking a paper for a journal. Who usually pays them for it?", options:["The journal, per review","The authors, through a fee","Usually no one: most reviewers are unpaid","A government agency"], answer:2, reveal:"**Usually no one.** At most journals, peer review is unpaid work that researchers do for each other as part of their profession (some journals offer small rewards or discounts). That surprises many people, and it helps explain both the strengths of peer review (experts volunteering their judgment) and its limits (busy people with little time). This lesson follows a paper through the whole system."},
    goals:[
      "Describe who runs a journal and the path of a manuscript from submission to publication",
      "Compare the main kinds of peer review",
@@ -345,7 +345,7 @@ ICA.addUnit({
       ]},
       "Most journals have an **ISSN** (International Standard Serial Number), and each article usually gets a {{doi-identifiers|DOI}}, a permanent identifier that keeps working even if the website changes. Unit 4 uses DOIs heavily for citing.",
       "Editors and reviewers are usually working researchers who do this alongside their own jobs. That’s why the system is often described as self-governing: the research community checks its own work.",
-      {lab:"cl-doi", t:"Practise: write a DOI as a link"}
+      {lab:"cl-doi", t:"Practice: write a DOI as a link"}
     ]},
     {h:"The life of a manuscript", body:[
       "In Track 1 you saw the short version of [[peer-review|peer review]]. Here is the full path, which explains a lot about what you see in published papers.",
@@ -361,7 +361,7 @@ ICA.addUnit({
       "This takes time: months is common, and a year or more is not unusual, especially when a paper is rejected and resubmitted elsewhere. That delay is one reason preprints exist (Lesson 4)."
     ]},
     {h:"Kinds of peer review", body:[
-      "Journals hide or reveal identities in different ways. Older guides say “blind” instead of “anonymous”; many publishers have switched to “anonymous” or “anonymised”.",
+      "Journals hide or reveal identities in different ways. Older guides say “blind” instead of “anonymous”; many publishers have switched to “anonymous” or “anonymized”.",
       {table:[
         ["Model","Who knows whom","Aims to"],
         ["Single-anonymous","Reviewers know the authors; authors don’t know the reviewers","Let reviewers speak freely"],
@@ -476,14 +476,14 @@ ICA.addUnit({
    learn:[
     {h:"Why some research costs money to read", body:[
       {lead:"Most research is paid for by governments, universities and charities. Yet many articles cost money to read. The reason is the subscription model."},
-      "In the traditional model, authors give the publisher the right to publish (often by transferring copyright). The publisher organises peer review, produces the article and sells access, mainly as **subscriptions to libraries**. People without a subscription meet a [[paywall]]: a page offering the article for a fee.",
+      "In the traditional model, authors give the publisher the right to publish (often by transferring copyright). The publisher organizes peer review, produces the article and sells access, mainly as **subscriptions to libraries**. People without a subscription meet a [[paywall]]: a page offering the article for a fee.",
       "Universities often pay large sums for subscriptions, frequently bundled in deals covering many journals at once. If you have a university login, you reach many paywalled articles through those subscriptions without noticing. If you don’t (an independent learner, a small business, a clinic, a researcher in a country with little library funding), you notice immediately.",
       "The ACRL frame **“Information Has Value”** names this tension: information is a commodity, a means of education, a means of influence and a way of understanding the world, and legal and economic interests shape who gets to produce and read it.",
       {tip:"Publishing does cost money (editing, managing review, production, hosting, preservation). The debate is about who should pay, how much, and whether readers should be shut out."}
     ]},
     {h:"What open access means", body:[
       "[[open-access-term|Open access]] (OA) means research that is free to read online, ideally with permission to reuse it. The Budapest Open Access Initiative of 2002, which gave the term its best-known definition, describes it as free availability on the public internet, letting anyone read, download, copy, distribute, print, search or link to full texts, without financial, legal or technical barriers beyond getting online, and with authors keeping control over the integrity of their work and the right to be properly acknowledged and cited.",
-      "In practice, “free to read” and “free to reuse” are different. Reuse depends on the **licence**. Many OA articles use a [[creative-commons|Creative Commons]] licence: CC BY lets anyone reuse the work, even commercially, as long as they credit the authors; licences with NC (non-commercial) or ND (no derivatives) are more restrictive. See {{creative-commons}} for the details.",
+      "In practice, “free to read” and “free to reuse” are different. Reuse depends on the **license**. Many OA articles use a [[creative-commons|Creative Commons]] license: CC BY lets anyone reuse the work, even commercially, as long as they credit the authors; licenses with NC (non-commercial) or ND (no derivatives) are more restrictive. See {{creative-commons}} for the details.",
       {h:"The routes to open access"},
       {table:[
         ["Route","How it works","Who pays"],
@@ -491,7 +491,7 @@ ICA.addUnit({
         ["Green","The author deposits a version in a repository (self-archiving), sometimes after an [[embargo-period|embargo]]","Usually no fee to authors"],
         ["Hybrid","A subscription journal makes single articles OA for a fee","Authors or funders pay an APC"],
         ["Diamond","An OA journal charges neither readers nor authors","Funded by universities, societies, governments or foundations"],
-        ["Bronze","Free to read on the publisher’s site, but with no open licence","The publisher, for now; access can be withdrawn"]
+        ["Bronze","Free to read on the publisher’s site, but with no open license","The publisher, for now; access can be withdrawn"]
       ]},
       "APCs vary widely: from a few hundred US dollars to several thousand at many journals, and more than ten thousand at a few prestigious ones. Many publishers offer waivers or discounts, for example for authors from lower-income countries, and many institutions have agreements that cover the fees.",
       {warn:"“Open access” describes how an article can be read, not how well it was checked. Many excellent journals are fully OA, and many poor or predatory ones are too (Lesson 5). Judge the journal and the article, not the access model."}
@@ -510,7 +510,7 @@ ICA.addUnit({
       "A preprint server is a website where researchers post papers before (or while) they go through peer review. Some long-standing examples:",
       {list:[
         "**arXiv** (started in 1991): physics, mathematics, computer science and related fields. In some of these fields, posting to arXiv is routine.",
-        "**bioRxiv** (2013) and **medRxiv** (2019): biology and health sciences. Since 2025 both are run by a non-profit organisation, openRxiv.",
+        "**bioRxiv** (2013) and **medRxiv** (2019): biology and health sciences. Since 2025 both are run by a non-profit organization, openRxiv.",
         "Others include SSRN and SocArXiv (social sciences), PsyArXiv (psychology), EarthArXiv (earth sciences), Research Square (many fields) and regional servers such as SciELO Preprints and AfricArXiv."
       ]},
       "Servers screen submissions (for example, rejecting non-research or obviously dangerous material), but **screening is not peer review**. medRxiv, for instance, displays a warning on its papers that they have not been certified by peer review and should not guide clinical practice or be reported as established information.",
@@ -528,12 +528,12 @@ ICA.addUnit({
       {list:[
         "**Search the title** in Google Scholar and check “All versions”, or in open repository search engines such as CORE or BASE; browser tools such as Unpaywall look for legal OA copies automatically.",
         "**Check the authors’ pages** and their university repository.",
-        "**Ask a library.** Public libraries may offer some databases with a library card; many university libraries allow visitors to use resources on site; [[interlibrary-loan|interlibrary loan]] can get almost anything (sometimes for a fee). Programmes such as Research4Life provide free or low-cost access to institutions in many lower-income countries.",
+        "**Ask a library.** Public libraries may offer some databases with a library card; many university libraries allow visitors to use resources on site; [[interlibrary-loan|interlibrary loan]] can get almost anything (sometimes for a fee). Programs such as Research4Life provide free or low-cost access to institutions in many lower-income countries.",
         "**Email the author.** Authors are usually allowed to share a copy for personal research and are often pleased to be asked."
       ]},
       {warn:"Websites that offer millions of paywalled papers for free without permission (sometimes called [[shadow-library|shadow libraries]]) infringe copyright in most countries, whatever you think of the subscription system. Use the legal routes above; they work more often than people expect."}
     ]},
-    {h:"Policies are pushing towards open access", body:[
+    {h:"Policies are pushing toward open access", body:[
       "Many research funders now require the work they pay for to be open access. Two examples:",
       {list:[
         "**Plan S**, launched in 2018 by cOAlition S (a group of mainly European national funders and charities), requires funded publications from 2021 onwards to be open access immediately, in OA journals, on OA platforms or in repositories without an embargo.",
@@ -549,7 +549,7 @@ ICA.addUnit({
       ["Green","The author deposits a version in a repository","Green OA is self-archiving, often the accepted manuscript."],
       ["Diamond","Free for readers and authors; costs covered by an institution or society","Diamond journals charge no APC and no subscription."],
       ["Hybrid","A subscription journal makes single articles free for a fee","Hybrid mixes paywalled and paid-OA articles in one journal."],
-      ["Bronze","Free to read on the publisher’s site, with no open licence","Bronze articles can be read but not freely reused, and access may be withdrawn."]
+      ["Bronze","Free to read on the publisher’s site, with no open license","Bronze articles can be read but not freely reused, and access may be withdrawn."]
     ]},
     {id:"t4u1-l4-x2", type:"order", q:"Put these versions of one article in the order they come into existence.", items:[
       {t:"Preprint posted to a server", why:"The author’s original comes first, before or during peer review."},
@@ -558,8 +558,8 @@ ICA.addUnit({
       {t:"Correction notice linked to the article", why:"Corrections can only follow publication, when readers spot an error."}
     ]},
     {id:"t4u1-l4-x3", type:"mcq", q:"Dmitri finds a diagram in an open access article and wants to reuse it in a training booklet his company will sell. What does he need to check first?", options:[
-      {t:"The article’s licence, because it decides whether commercial reuse is allowed", ok:true, why:"Free to read doesn’t automatically mean free to reuse. The licence sets the terms. CC BY allows commercial reuse with credit; a licence with NC, or no open licence, does not."},
-      {t:"Nothing, because open access means anyone can reuse it for any purpose they like", why:"Only some OA licences (such as CC BY) allow commercial reuse, and bronze OA has no open licence at all."},
+      {t:"The article’s license, because it decides whether commercial reuse is allowed", ok:true, why:"Free to read doesn’t automatically mean free to reuse. The license sets the terms. CC BY allows commercial reuse with credit; a license with NC, or no open license, does not."},
+      {t:"Nothing, because open access means anyone can reuse it for any purpose they like", why:"Only some OA licenses (such as CC BY) allow commercial reuse, and bronze OA has no open license at all."},
       {t:"Whether the article has an impact factor", why:"The impact factor is about citations to the journal; it says nothing about reuse rights."},
       {t:"Whether the article was peer-reviewed", why:"Peer review affects how much to trust the content, not whether he may reuse it."}
     ]},
@@ -584,7 +584,7 @@ ICA.addUnit({
     ]},
     {id:"t4u1-l4-x6", type:"sort", q:"Is each statement true or false?", buckets:["True","False"], items:[
       {t:"Open access articles can be peer-reviewed in exactly the same way as subscription articles", b:0, why:"The access model is separate from the review process; many OA journals have rigorous review."},
-      {t:"If an article is free to read, you may reuse it however you like", b:1, why:"Reuse depends on the licence. Bronze OA has no open licence; NC and ND licences restrict reuse."},
+      {t:"If an article is free to read, you may reuse it however you like", b:1, why:"Reuse depends on the license. Bronze OA has no open license; NC and ND licenses restrict reuse."},
       {t:"Diamond open access journals charge authors a fee", b:1, why:"Diamond journals charge neither authors nor readers."},
       {t:"An accepted manuscript has the same content as the peer-reviewed article", b:0, why:"It’s the reviewed text, without the publisher’s copyediting and layout (so small wording differences are possible)."},
       {t:"Preprints have been checked by peer reviewers", b:1, why:"They are posted before or during review; servers only screen them."},
@@ -594,9 +594,9 @@ ICA.addUnit({
    ],
    apply:{intro:"Find out how much research you can reach for free, legally. No university login needed (if you have one, note what it adds).", tasks:[
      {t:"Find a legal free copy", how:["Find a research article on a topic you care about that is behind a paywall on the publisher’s site.","Search its exact title in Google Scholar and open “All versions”, or search it in CORE or BASE.","Note whether you found a free copy, where, and which version it is (preprint, accepted manuscript or version of record)."], write:"Article… Paywalled where… Free copy found at… Which version… How I could tell…"},
-     {t:"Read a licence", how:["Open any open access article (a DOAJ-listed journal is a good place to look).","Find its licence (often near the top, in “Rights”, or at the end).","Write what it lets you do and what it doesn’t, in your own words."], write:"Article… Licence… What I may do… What I may not do…"},
+     {t:"Read a license", how:["Open any open access article (a DOAJ-listed journal is a good place to look).","Find its license (often near the top, in “Rights”, or at the end).","Write what it lets you do and what it doesn’t, in your own words."], write:"Article… License… What I may do… What I may not do…"},
      {t:"Follow a preprint", how:["Open a preprint server in your area of interest (arXiv, bioRxiv, medRxiv, SocArXiv, EarthArXiv…).","Find a preprint at least a year old.","Check whether it was later published (look for a “Now published in” link or search the title). If so, compare the abstracts and note any change."], write:"Preprint… Posted… Published version found? Where… What changed…"}
-   ], proof:"Notes with one paywalled article and the legal free copy you found (or where you looked), one licence explained in your own words, and the history of one preprint."},
+   ], proof:"Notes with one paywalled article and the legal free copy you found (or where you looked), one license explained in your own words, and the history of one preprint."},
    read:[
      {book:"acrl", where:"Frame “Information Has Value”"}
    ]
@@ -613,7 +613,7 @@ ICA.addUnit({
    learn:[
     {h:"Authority is constructed and contextual", body:[
       {lead:"Why trust a source at all? Because someone has authority on the question. But authority isn’t a fixed badge."},
-      "The ACRL Framework puts it this way: information resources reflect their creators’ expertise and credibility, and are evaluated based on the information need and the context in which the information will be used. Authority is **constructed** because different communities recognise different kinds of authority, and **contextual** because the question decides how much authority you need.",
+      "The ACRL Framework puts it this way: information resources reflect their creators’ expertise and credibility, and are evaluated based on the information need and the context in which the information will be used. Authority is **constructed** because different communities recognize different kinds of authority, and **contextual** because the question decides how much authority you need.",
       {list:[
         "**Subject expertise:** a hydrologist on river flows, a historian on an archive.",
         "**Position:** a statistics office on official figures, a court on what the law requires.",
@@ -627,18 +627,18 @@ ICA.addUnit({
       {table:[
         ["Ask","Look for"],
         ["Who wrote it?","Relevant expertise; affiliations; other work on the topic (an author profile or [[orcid-id|ORCID]] record helps)"],
-        ["Where was it published?","A journal recognised in the field; a real publisher; the article type (research, review, editorial)"],
+        ["Where was it published?","A journal recognized in the field; a real publisher; the article type (research, review, editorial)"],
         ["How was it done?","A method suited to the question; enough detail to repeat it; [[sample]] size; stated limitations"],
         ["When?","Date of publication and of the data; whether newer work has changed the picture"],
         ["Who paid, and who gains?","Funding and [[conflict-of-interest|conflict-of-interest]] statements (usually near the end)"],
-        ["How have others responded?","Later studies, reviews, published comments. Note that a high citation count can include citations that criticise it"],
+        ["How have others responded?","Later studies, reviews, published comments. Note that a high citation count can include citations that criticize it"],
         ["Is it still standing?","Corrections, expressions of concern or a retraction (see below)"]
       ]},
       {ex:"Oluwaseun finds an article claiming a herbal extract cures malaria.\n• Who: two authors; one works for a company selling the extract (funding statement).\n• Where: a journal he can’t find in DOAJ, Scopus or PubMed; its site promises review in 72 hours.\n• How: 20 patients, no comparison group.\n• Others: no later studies; national malaria guidelines don’t mention it.\nConclusion: not evidence he should rely on. The weaknesses pile up; any one alone would be a reason to look harder, not proof the claim is false.", label:"Worked example: judging one article"},
       {key:"No single feature proves a source good or bad. Look for a pattern across several questions."}
     ]},
     {h:"Predatory journals", body:[
-      "In 2019, a group that included researchers, publishers, funders and librarians agreed a consensus definition, published in *Nature* (Grudniewicz and colleagues): [[predatory-journal|predatory journals]] and publishers are entities that prioritise self-interest at the expense of scholarship and are characterised by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.",
+      "In 2019, a group that included researchers, publishers, funders and librarians agreed a consensus definition, published in *Nature* (Grudniewicz and colleagues): [[predatory-journal|predatory journals]] and publishers are entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.",
       "In plain words: they take fees from authors and offer little or no real editing or peer review, while pretending otherwise. Common warning signs:",
       {list:[
         "**Unsolicited emails** flattering you and inviting a submission, often outside your field.",
@@ -653,8 +653,8 @@ ICA.addUnit({
       {warn:"Be fair. A journal is not predatory just because it is new, small, charges an APC, publishes in a language other than English, or is based in a lower-income country. Many excellent journals are all of those. Judge the practices, not the label or the location."}
     ]},
     {h:"Checking a journal", body:[
-      "The **Think. Check. Submit.** initiative, launched in 2015 by scholarly communication organisations including DOAJ, OASPA, INASP, STM and the ISSN International Centre, publishes a checklist for authors choosing a journal. It works just as well for readers judging one.",
-      {fig:'<svg viewBox="0 0 340 430"><defs><marker id="t4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="10" y="8" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="28">Do people in the field</text><text x="20" y="46">know and publish in it?</text><rect class="d-lup" x="10" y="78" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="98">Is the publisher named,</text><text x="20" y="116">with real contact details?</text><rect class="d-lup" x="10" y="148" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="168">Is peer review described,</text><text x="20" y="186">with no guaranteed acceptance?</text><rect class="d-lup" x="10" y="218" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="238">Indexed where it claims?</text><text class="s" x="20" y="255">Check the index itself</text><rect class="d-lup" x="10" y="288" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="308">Are fees and licences</text><text x="20" y="326">stated clearly?</text><path class="d-ink" d="M128 58V74" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 128V144" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 198V214" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 268V284" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><text class="s" x="136" y="70">yes</text><text class="s" x="136" y="140">yes</text><text class="s" x="136" y="210">yes</text><text class="s" x="136" y="280">yes</text><rect class="d-rose" x="262" y="78" width="70" height="188" rx="8" stroke-width="2"/><text x="297" y="150" text-anchor="middle" class="s">Any “no”:</text><text x="297" y="166" text-anchor="middle" class="s">warning</text><text x="297" y="182" text-anchor="middle" class="s">sign. Dig</text><text x="297" y="198" text-anchor="middle" class="s">deeper</text><path class="d-ink" d="M248 32H297V74" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 102H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 172H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 242H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 312H297V270" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 338V356" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><rect class="d-sage" x="10" y="360" width="322" height="62" rx="8" stroke-width="2"/><text x="171" y="383" text-anchor="middle">All yes: probably a real journal.</text><text x="171" y="403" text-anchor="middle" class="s">Still judge the article itself:</text><text x="171" y="417" text-anchor="middle" class="s">good journals publish weak papers too</text></svg>', alt:"A checklist flow with five questions in a column: do people in the field know and publish in it; is the publisher named with real contact details; is peer review described with no guaranteed acceptance; is it indexed where it claims (check the index itself); are fees and licences stated clearly. Each yes leads down to the next; any no leads to a box saying warning sign, dig deeper. All yes leads to: probably a real journal, but still judge the article itself.", cap:"A quick journal check based on the Think. Check. Submit. questions. It flags journals to look into; it doesn’t prove anything on its own."},
+      "The **Think. Check. Submit.** initiative, launched in 2015 by scholarly communication organizations including DOAJ, OASPA, INASP, STM and the ISSN International Centre, publishes a checklist for authors choosing a journal. It works just as well for readers judging one.",
+      {fig:'<svg viewBox="0 0 340 430"><defs><marker id="t4a5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="10" y="8" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="28">Do people in the field</text><text x="20" y="46">know and publish in it?</text><rect class="d-lup" x="10" y="78" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="98">Is the publisher named,</text><text x="20" y="116">with real contact details?</text><rect class="d-lup" x="10" y="148" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="168">Is peer review described,</text><text x="20" y="186">with no guaranteed acceptance?</text><rect class="d-lup" x="10" y="218" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="238">Indexed where it claims?</text><text class="s" x="20" y="255">Check the index itself</text><rect class="d-lup" x="10" y="288" width="236" height="48" rx="8" stroke-width="2"/><text x="20" y="308">Are fees and licenses</text><text x="20" y="326">stated clearly?</text><path class="d-ink" d="M128 58V74" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 128V144" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 198V214" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 268V284" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><text class="s" x="136" y="70">yes</text><text class="s" x="136" y="140">yes</text><text class="s" x="136" y="210">yes</text><text class="s" x="136" y="280">yes</text><rect class="d-rose" x="262" y="78" width="70" height="188" rx="8" stroke-width="2"/><text x="297" y="150" text-anchor="middle" class="s">Any “no”:</text><text x="297" y="166" text-anchor="middle" class="s">warning</text><text x="297" y="182" text-anchor="middle" class="s">sign. Dig</text><text x="297" y="198" text-anchor="middle" class="s">deeper</text><path class="d-ink" d="M248 32H297V74" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 102H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 172H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 242H258" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M248 312H297V270" stroke-width="1.5" fill="none" marker-end="url(#t4a5)"/><path class="d-ink" d="M128 338V356" stroke-width="2" fill="none" marker-end="url(#t4a5)"/><rect class="d-sage" x="10" y="360" width="322" height="62" rx="8" stroke-width="2"/><text x="171" y="383" text-anchor="middle">All yes: probably a real journal.</text><text x="171" y="403" text-anchor="middle" class="s">Still judge the article itself:</text><text x="171" y="417" text-anchor="middle" class="s">good journals publish weak papers too</text></svg>', alt:"A checklist flow with five questions in a column: do people in the field know and publish in it; is the publisher named with real contact details; is peer review described with no guaranteed acceptance; is it indexed where it claims (check the index itself); are fees and licenses stated clearly. Each yes leads down to the next; any no leads to a box saying warning sign, dig deeper. All yes leads to: probably a real journal, but still judge the article itself.", cap:"A quick journal check based on the Think. Check. Submit. questions. It flags journals to look into; it doesn’t prove anything on its own."},
       "Other useful checks:",
       {list:[
         "**For an open access journal, is it in the DOAJ?** DOAJ lists OA journals that meet its criteria. Being listed is a good sign; not being listed is not proof of anything (subscription journals aren’t in DOAJ at all, and some good OA journals never apply).",
@@ -673,7 +673,7 @@ ICA.addUnit({
       ]},
       "COPE (the Committee on Publication Ethics) publishes retraction guidelines that many journals follow; it updated them in 2025. They treat retraction as a way to correct the record, not to punish authors. Editors should consider retraction when the findings can’t be relied on, whether because of [[research-misconduct|misconduct]] (such as fabricated data) or **honest error** (such as a major miscalculation), and also for problems such as plagiarism, unethical research and manipulated peer review. The retraction notice should explain clearly why the article is being retracted and be linked to the article.",
       {key:"A retraction for honest error is the system working. Researchers who retract their own flawed work deserve credit, not suspicion."},
-      "Problems also come from organised fraud. **[[paper-mill|Paper mills]]** are businesses that produce fake or low-quality manuscripts and sell authorship on them; publishers have retracted large batches of such papers in recent years. Unit 9 covers research integrity in more depth ({{research-integrity}})."
+      "Problems also come from organized fraud. **[[paper-mill|Paper mills]]** are businesses that produce fake or low-quality manuscripts and sell authorship on them; publishers have retracted large batches of such papers in recent years. Unit 9 covers research integrity in more depth ({{research-integrity}})."
     ]},
     {h:"Checking whether a paper still stands", body:[
       "Retracted papers keep being cited, partly because people find them in old downloads or through other papers’ reference lists. Before relying on a paper, especially an important or older one:",
@@ -706,7 +706,7 @@ ICA.addUnit({
       " ",
       {t:"Our impact factor is 6.8 (Universal Impact Factor).", flag:true, why:"The Journal Impact Factor comes only from Clarivate. Look-alike “impact factors” from unknown companies are a common trick."},
       " ",
-      {t:"Articles are published under a CC BY licence.", flag:false, why:"Many reputable OA journals use CC BY. It isn’t a warning sign by itself."},
+      {t:"Articles are published under a CC BY license.", flag:false, why:"Many reputable OA journals use CC BY. It isn’t a warning sign by itself."},
       " ",
       {t:"The publication fee will be sent after acceptance.", flag:true, why:"Fees should be stated clearly before you submit. Hidden fees revealed after acceptance are a warning sign."}
     ]},
@@ -746,11 +746,11 @@ ICA.addUnit({
     ]},
     {id:"t4u1-l5-x8", type:"explain", q:"Explain what it means to say that authority is “contextual”, using an example of someone who is an authority on one question but not on another.", size:"3–4 sentences", hint:"The question you are asking decides what kind of authority you need.", model:"Authority isn’t a fixed badge a person or source carries everywhere; it depends on the question. For example, a cardiologist is an authority on how a heart drug works, but not on whether a city’s tax plan will raise revenue. Residents of a flooded village have authority on what the flood was like to live through, while a hydrologist’s study is the better source on how often such floods happen. So before trusting a source, ask whether its expertise fits this particular question.", points:["Says authority depends on the question or context", "Gives an example of authority on one question but not another", "Recognises more than one kind of authority (expertise, position or lived experience)", "Draws the practical lesson: match the source’s expertise to the question"]}
    ],
-   apply:{intro:"Practise judging authority and checking status on real sources.", tasks:[
-     {t:"Run the journal check", how:["Pick two journals: one you already trust (a well-known journal in a field you know) and one you know nothing about (for example, from a search result or an email invitation).","For each, answer the five questions from the diagram: known in the field? publisher identifiable? peer review described? indexed where it claims (check the index)? fees and licences clear?","For an OA journal, search for it in the DOAJ; check its ISSN in the ISSN Portal."], write:"Journal 1… answers… Journal 2… answers… What I concluded, and how confident I am…"},
+   apply:{intro:"Practice judging authority and checking status on real sources.", tasks:[
+     {t:"Run the journal check", how:["Pick two journals: one you already trust (a well-known journal in a field you know) and one you know nothing about (for example, from a search result or an email invitation).","For each, answer the five questions from the diagram: known in the field? publisher identifiable? peer review described? indexed where it claims (check the index)? fees and licenses clear?","For an OA journal, search for it in the DOAJ; check its ISSN in the ISSN Portal."], write:"Journal 1… answers… Journal 2… answers… What I concluded, and how confident I am…"},
      {t:"Find a real retraction notice", how:["Search for “Lancet 1998 Wakefield retraction”, or search the Retraction Watch Database for any topic you know.","Open one retraction notice on the publisher’s site.","Note who retracted the article, the reason given, and how the article page shows its status."], write:"Paper… Retracted by… Reason… How the page shows it… Was it easy to find?"},
-     {t:"Map the authority on a question", how:["Choose a question with several sides, such as “Should our town build a seawall?”","List three kinds of people or organisations with authority on parts of it (for example, coastal engineers, residents, an environment agency, economists).","For each, write which part of the question they have authority on, and which part they don’t."], write:"Question… Source 1: authority on… not on… Source 2… Source 3…"}
-   ], proof:"Notes with two journals checked against five questions, one real retraction notice summarised, and an authority map for one question."},
+     {t:"Map the authority on a question", how:["Choose a question with several sides, such as “Should our town build a seawall?”","List three kinds of people or organizations with authority on parts of it (for example, coastal engineers, residents, an environment agency, economists).","For each, write which part of the question they have authority on, and which part they don’t."], write:"Question… Source 1: authority on… not on… Source 2… Source 3…"}
+   ], proof:"Notes with two journals checked against five questions, one real retraction notice summarized, and an authority map for one question."},
    read:[
      {book:"acrl", where:"Frame “Authority Is Constructed and Contextual”"},
      {book:"wlsf", where:"Part IV, Chapter 20 “Stupid Journal Tricks”", note:"Caulfield’s short guide to how weak or predatory journals imitate real ones."}
@@ -766,8 +766,8 @@ ICA.addUnit({
      {t:"It was done by a trained researcher at a university", why:"Research happens in agencies, companies, NGOs and communities too. The setting doesn’t make work research; the way it is done does."}]},
    {id:"t4u1-cp02", lesson:"t4u1-l2", level:1, q:"Rafael’s question is: **“How did teachers in 1970s Nairobi describe their working conditions?”** Which source is primary for this question?", options:[
      {t:"A 2015 history book about schools in Kenya", why:"A modern historian’s book about the period is secondary for this question: it interprets the evidence rather than being it."},
-     {t:"An encyclopedia entry on education in East Africa", why:"An encyclopedia summarises other sources, so it’s tertiary. Use it to get your bearings, not as evidence."},
-     {t:"A review article comparing teacher pay across Africa", why:"A review summarises earlier studies, so it’s secondary. It also answers a different question (pay, not how teachers described their work)."},
+     {t:"An encyclopedia entry on education in East Africa", why:"An encyclopedia summarizes other sources, so it’s tertiary. Use it to get your bearings, not as evidence."},
+     {t:"A review article comparing teacher pay across Africa", why:"A review summarizes earlier studies, so it’s secondary. It also answers a different question (pay, not how teachers described their work)."},
      {t:"Letters that Nairobi teachers wrote to a newspaper in 1974", ok:true, why:"Documents from the time, written by the people the question is about, are the primary evidence for a historical question like this."}]},
    {id:"t4u1-cp03", lesson:"t4u1-l4", level:1, q:"A university repository record for an article says **“Version: accepted manuscript”**. What are you most likely reading?", options:[
      {t:"The peer-reviewed text without the publisher’s layout", ok:true, why:"An accepted manuscript has the peer-reviewed content but not the publisher’s editing, typesetting or page numbers. Repositories often hold it legally (green OA)."},
@@ -786,11 +786,11 @@ ICA.addUnit({
      {t:"Only the mathematics paper can be judged, because its field cites less", why:"Both papers can be judged the same way: by who wrote them, how they were done, and how others have responded."}]},
    {id:"t4u1-cp06", lesson:"t4u1-l4", level:2, q:"A journal run by a university press is free to read online under CC BY. It charges authors nothing, because a national research council pays its costs. Which open access route is this?", options:[
      {t:"Green", why:"Green OA is when an author deposits a version in a repository. Here the journal itself publishes the article openly."},
-     {t:"Bronze", why:"Bronze means free to read with no open licence, and access can be withdrawn. This journal uses CC BY."},
+     {t:"Bronze", why:"Bronze means free to read with no open license, and access can be withdrawn. This journal uses CC BY."},
      {t:"Hybrid", why:"Hybrid is a subscription journal that opens single articles for a fee. This journal is fully open and charges no fee."},
      {t:"Diamond", ok:true, why:"Diamond OA charges neither readers nor authors; costs are covered by universities, societies, governments or foundations."}]},
    {id:"t4u1-cp07", lesson:"t4u1-l5", level:2, q:"After a week-long power cut, a town council asks two questions: (a) how many homes lost power, and for how long, and (b) how older residents coped. Which pairing fits best?", options:[
-     {t:"(a) the electricity company’s records, analysed as numbers; (b) interviews with older residents", ok:true, why:"The method follows the question. Records give quantitative answers on scale; residents have the authority of lived experience on what coping was like."},
+     {t:"(a) the electricity company’s records, analyzed as numbers; (b) interviews with older residents", ok:true, why:"The method follows the question. Records give quantitative answers on scale; residents have the authority of lived experience on what coping was like."},
      {t:"(a) interviews with older residents; (b) the electricity company’s records", why:"This swaps the methods. A few interviews can’t count homes, and company records can’t show how people experienced the cut."},
      {t:"Both from the electricity company, because it is the official source", why:"Authority is contextual. The company has authority on outages, not on what residents lived through."},
      {t:"Both from a survey of engineers, because they are the experts", why:"Engineers have expertise on the network, but the second question asks about residents’ experience, where residents themselves have authority."}]},
@@ -810,14 +810,14 @@ ICA.addUnit({
      {t:"Ten months is suspiciously slow, which suggests the journal is not legitimate", why:"Months to a year is normal for peer review and revision. Very **fast** guaranteed review is the warning sign."},
      {t:"Screening isn’t peer review; cite the journal version and note what changed", ok:true, why:"Preprint servers screen but don’t peer review. The version of record is the one to cite, and differences between versions are worth noticing."}]},
    {id:"t4u1-cp11", lesson:"t4u1-l1", level:3, q:"A 2016 study reported a large effect. Three later teams found little or none, and a 2023 review concludes the effect is small. The 2016 paper has 900 citations. A blogger says, “900 citations prove it’s right.” What is the best reply?", options:[
-     {t:"Citations can be critical; the review of all the studies is a better guide", ok:true, why:"A paper is one turn in a conversation. A high citation count can include citations that challenge it, and a review summarising many studies shows the weight of evidence."},
+     {t:"Citations can be critical; the review of all the studies is a better guide", ok:true, why:"A paper is one turn in a conversation. A high citation count can include citations that challenge it, and a review summarizing many studies shows the weight of evidence."},
      {t:"The blogger is right: so many citations mean experts accept the finding", why:"Being cited means being discussed, not being accepted. Here the later studies and the review point the other way."},
      {t:"The later studies cancel it out, so nothing at all can be known about the effect", why:"Disagreement is normal. The review gives a reasoned answer (a small effect); uncertainty comes in degrees."},
      {t:"Only the 2016 paper really counts, because it was the first to report it", why:"Being first doesn’t make a finding correct. Findings become reliable when different teams reach similar results."}]},
    {id:"t4u1-cp12", lesson:"t4u1-l2", level:3, q:"Chen finds a think-tank report on a fuel tax. It was funded by a car industry association and not peer-reviewed, but it describes its method and lets readers download the data. What is the fairest way to use it?", options:[
-     {t:"Ignore it completely, because work that hasn’t been peer-reviewed isn’t real research", why:"Grey literature is often valuable, fast and local. Lack of peer review is a reason for care, not automatic rejection."},
+     {t:"Ignore it completely, because work that hasn’t been peer-reviewed isn’t real research", why:"Gray literature is often valuable, fast and local. Lack of peer review is a reason for care, not automatic rejection."},
      {t:"Rely on it fully, because its method and data are open for anyone to check", why:"Open data are a good sign, but the funder has an interest in the result. The method and conclusions still need checking against other sources."},
-     {t:"Use it with care: weigh the funder’s interest, check the data, compare sources", ok:true, why:"These are the questions for judging grey literature: who produced it and why, is the method described, is the data available, and does it agree with other sources?"},
+     {t:"Use it with care: weigh the funder’s interest, check the data, compare sources", ok:true, why:"These are the questions for judging gray literature: who produced it and why, is the method described, is the data available, and does it agree with other sources?"},
      {t:"Use only the parts that support the argument you have already chosen", why:"Choosing evidence to fit a conclusion is the bias careful research avoids. Judge the whole report on its method and evidence."}]},
   ],
   codex:[
@@ -838,9 +838,9 @@ ICA.addUnit({
         "**Basic** research aims to understand; **[[applied-research|applied]]** research aims to solve a practical problem. Many projects do both.",
         "Evidence can be [[quantitative-data|quantitative]] (numbers: how many, how much) or [[qualitative-data|qualitative]] (words, observations, images: what it means, how it works); mixed methods combine the two."
       ]},
-      "Research is done by universities, government agencies and statistics offices, international organisations, NGOs and think tanks, companies, and communities (citizen science). It is shared as journal articles, books, conference papers, reports, theses, datasets and more.",
+      "Research is done by universities, government agencies and statistics offices, international organizations, NGOs and think tanks, companies, and communities (citizen science). It is shared as journal articles, books, conference papers, reports, theses, datasets and more.",
       "The ACRL Framework describes two habits of mind that help: **Research as Inquiry** (research is iterative; answers raise new questions) and **Scholarship as Conversation** (communities of scholars discuss and build on each other’s work over time). A single study is one turn in that conversation, so readers look for reviews of many studies and for how later work responded.",
-      "A useful test for any project, including your own: could someone else follow what you did, check your evidence and reach their own judgement? If the answer is yes, it has the core of research, whatever the field or setting. If the method is hidden or the evidence can’t be examined, it may still be interesting, but it can’t be checked in the same way."
+      "A useful test for any project, including your own: could someone else follow what you did, check your evidence and reach their own judgment? If the answer is yes, it has the core of research, whatever the field or setting. If the method is hidden or the evidence can’t be examined, it may still be interesting, but it can’t be checked in the same way."
      ],
      pro:[
       "Fields differ in what counts as a contribution and how it is checked. In experimental sciences, replication by independent teams is the gold standard; in history, other historians re-examine the sources and the interpretation; in mathematics, a proof is checked step by step; in practice-based arts research, the work is assessed together with a written reflection on what it shows.",
@@ -863,7 +863,7 @@ ICA.addUnit({
     summary:"Primary, secondary and tertiary sources relative to a question; scholarly, popular and trade sources; and the formats scholarly work takes.",
     levels:{
      starter:[
-      "Sources sit at different distances from the evidence. A [[primary-source|primary source]] is the evidence itself; a [[secondary-source|secondary source]] analyses primary sources; a [[tertiary-source|tertiary source]] (an encyclopedia, a textbook) summarises many secondary ones.",
+      "Sources sit at different distances from the evidence. A [[primary-source|primary source]] is the evidence itself; a [[secondary-source|secondary source]] analyses primary sources; a [[tertiary-source|tertiary source]] (an encyclopedia, a textbook) summarizes many secondary ones.",
       "The label depends on your question. A 1955 hygiene textbook is an out-of-date tertiary source about hygiene, but a primary source for a historian studying how schools taught hygiene in the 1950s.",
       "Sources also differ by audience. A [[scholarly-source|scholarly source]] is written by experts for experts, with references, and usually peer-reviewed. A [[popular-source|popular source]] explains things for the public. A [[trade-publication|trade publication]] serves one profession.",
       {key:"First say what your question is about. Then label the source."},
@@ -880,11 +880,11 @@ ICA.addUnit({
       "**The information cycle.** After an event, social posts and live news come first (hours), then news reports and analysis (days), agency reports and data (weeks to months), journal articles (months to years), books and reviews (years), and encyclopedias and textbooks (later). Fast sources are less checked; scholarly sources are slower and more checked.",
       "**Scholarly formats:**",
       {list:[
-        "[[journal-article|Journal articles]]: research articles report new work; [[review-article|review articles]] summarise many studies; editorials, letters and commentaries are opinion or discussion.",
+        "[[journal-article|Journal articles]]: research articles report new work; [[review-article|review articles]] summarize many studies; editorials, letters and commentaries are opinion or discussion.",
         "[[monograph|Monographs]] and edited books, central in the humanities and many social sciences.",
         "[[conference-proceedings|Conference proceedings]], central in computer science and some engineering fields.",
         "Theses and dissertations.",
-        "[[grey-literature-term|Grey literature]]: reports, working papers and data from outside commercial and academic publishing (see {{grey-literature}})."
+        "[[grey-literature-term|Gray literature]]: reports, working papers and data from outside commercial and academic publishing (see {{grey-literature}})."
       ]},
       "**Scholarly, popular and trade compared.** Scholarly sources are written by researchers for other experts, cite their evidence in full and are usually peer-reviewed. Popular sources are written by journalists or writers for the public and are checked by editors (to varying degrees). Trade publications are written for one profession and mix news, practical advice and product information. Each is the right choice for some jobs: evidence, understanding, and practice respectively."
      ],
@@ -895,7 +895,7 @@ ICA.addUnit({
         "**Check the article type, not just the venue.** A journal publishes editorials, letters, corrections and news as well as research. Databases often let you filter by publication type.",
         "**Know your field’s main venues.** In computer science, a top conference paper may carry more weight than a journal article; in history, a monograph from a respected press may be the main output of years of work.",
         "**Mind the time lag.** For very recent events, scholarly sources may not exist yet; agency reports, data releases and preprints may be all there is, and each needs judging on its own terms.",
-        "**Treat secondary accounts as claims about primary sources.** When a review or news story summarises a study, check the original for the detail you rely on; summaries often lose caveats."
+        "**Treat secondary accounts as claims about primary sources.** When a review or news story summarizes a study, check the original for the detail you rely on; summaries often lose caveats."
       ]},
       "Some fields, especially history and law, have their own detailed conventions about sources (for example, distinguishing published from archival primary sources, or binding from persuasive legal authority). When writing in a field, follow its conventions."
      ]
@@ -904,13 +904,13 @@ ICA.addUnit({
     read:[{book:"owg", where:"Chapter 13, Section 13.1 “The Research Process: Where to Look for Existing Sources”"}],
     sources:[{t:"OpenStax Writing Guide with Handbook, 13.1 The Research Process: Where to Look for Existing Sources", url:"https://openstax.org/books/writing-guide/pages/13-1-the-research-process-where-to-look-for-existing-sources"}], checked:"2026-11"},
 
-   {id:"grey-literature", title:"Grey literature", aka:["gray literature","reports","working papers","official publications"], tags:["research","sources"],
+   {id:"grey-literature", title:"Gray literature", aka:["gray literature","reports","working papers","official publications"], tags:["research","sources"],
     summary:"Reports, working papers, theses, data and other research produced outside commercial and academic publishing: valuable, fast, and variable in quality.",
     levels:{
      starter:[
-      "[[grey-literature-term|Grey literature]] is research and information published by organisations whose main job isn’t publishing: governments, agencies, universities, charities, companies and international organisations.",
-      "Examples: a ministry’s report on hospital waiting times, a national statistics release, an NGO’s evaluation of a school programme, a university working paper, a thesis, a conference poster, a technical standard.",
-      "It’s called “grey” because it sits outside the usual publishing channels, so it can be harder to find and hasn’t necessarily been peer-reviewed. But it is often the most up-to-date, most local and most practical evidence available.",
+      "[[grey-literature-term|Gray literature]] is research and information published by organisations whose main job isn’t publishing: governments, agencies, universities, charities, companies and international organisations.",
+      "Examples: a ministry’s report on hospital waiting times, a national statistics release, an NGO’s evaluation of a school program, a university working paper, a thesis, a conference poster, a technical standard.",
+      "It’s called “gray” because it sits outside the usual publishing channels, so it can be harder to find and hasn’t necessarily been peer-reviewed. But it is often the most up-to-date, most local and most practical evidence available.",
       {key:"Grey literature isn’t second-rate. Judge each item on who made it, how, and why."},
       "A good habit: when you find a report, note who published it and whether it describes how the information was gathered."
      ],
@@ -919,8 +919,8 @@ ICA.addUnit({
       {h:"Why it matters"},
       {list:[
         "**Speed and locality:** last year’s figures, one city’s evaluation.",
-        "**Unique content:** programme evaluations, technical details and policy documents that never reach journals.",
-        "**Balance:** studies with null or disappointing results are less likely to be published in journals ([[publication-bias|publication bias]]), but may appear in reports, theses or trial registries. Systematic reviews search grey literature for this reason."
+        "**Unique content:** program evaluations, technical details and policy documents that never reach journals.",
+        "**Balance:** studies with null or disappointing results are less likely to be published in journals ([[publication-bias|publication bias]]), but may appear in reports, theses or trial registries. Systematic reviews search gray literature for this reason."
       ]},
       {h:"How to judge it"},
       {list:[
@@ -932,9 +932,9 @@ ICA.addUnit({
       "Spelling varies: “grey” in British English and “gray” in American English; both appear in databases, so search for both."
      ],
      pro:[
-      "**Finding it** takes different tools from finding journal articles. Search government and agency sites directly (a `site:` search in a web search engine helps), national statistics portals, the publication pages of international organisations (UN agencies, the World Bank, the OECD), institutional repositories, thesis collections, and trial registries for health research. Unit 2 covers the techniques.",
-      "**Preserving it** is a real problem: reports disappear when websites are reorganised. Save a copy, note the URL and the date you accessed it, and look for a persistent identifier (some organisations assign DOIs or handles). Web archives can sometimes recover vanished pages.",
-      "**Citing it** follows the style’s rules for reports or web pages with an organisation as author (Unit 4).",
+      "**Finding it** takes different tools from finding journal articles. Search government and agency sites directly (a `site:` search in a web search engine helps), national statistics portals, the publication pages of international organizations (UN agencies, the World Bank, the OECD), institutional repositories, thesis collections, and trial registries for health research. Unit 2 covers the techniques.",
+      "**Preserving it** is a real problem: reports disappear when websites are reorganized. Save a copy, note the URL and the date you accessed it, and look for a persistent identifier (some organizations assign DOIs or handles). Web archives can sometimes recover vanished pages.",
+      "**Citing it** follows the style’s rules for reports or web pages with an organization as author (Unit 4).",
       "**Advocacy and commercial reports** deserve particular care. A report from an industry body or a campaigning NGO may be methodologically sound, but its question, framing and choice of what to publish can reflect its interests. Compare it with independent sources, and read the methodology and funding sections before the executive summary.",
       "In evidence synthesis, grey literature searching is a recognised part of good practice because leaving it out can bias results towards published, positive findings. How much to search depends on the review’s question and resources."
      ]
@@ -948,7 +948,7 @@ ICA.addUnit({
      starter:[
       "An [[academic-journal|academic journal]] publishes scholarly articles in a field. Editors, who are usually working researchers, decide what to publish. They send promising manuscripts to other experts (peer reviewers), who check the methods and reasoning and recommend accepting, revising or rejecting.",
       "Reviewers are usually unpaid. Review often takes months, and most papers are revised at least once before acceptance.",
-      "Peer review is a quality filter. It catches many weak methods and overstated claims, but it rarely catches skilful fraud, and it can’t tell whether a finding will hold up when someone repeats the study. That takes [[replication]] and time.",
+      "Peer review is a quality filter. It catches many weak methods and overstated claims, but it rarely catches skillful fraud, and it can’t tell whether a finding will hold up when someone repeats the study. That takes [[replication]] and time.",
       "For what [[peer-review|peer review]] means for everyday readers, see Track 1’s entry {{peer-review|Peer review and scientific publishing}}.",
       "Journals are run by publishers of several kinds: scholarly societies, university presses, non-profits and commercial companies. Most journals have an ISSN, and each article usually has a DOI that keeps working even if the website changes."
      ],
@@ -969,8 +969,8 @@ ICA.addUnit({
      pro:[
       "**Limits of the impact factor.** It is a journal-level average of a highly skewed distribution, so it says little about any single article. It varies greatly between fields and article types (reviews attract more citations). The numerator counts citations to all items published in the two years, while the denominator counts only articles and reviews, which is why Clarivate calls it an approximation rather than a strict mean. Clarivate also publishes a version without journal self-citations. Other metrics exist (for example CiteScore, based on Scopus data), with similar limits.",
       "**DORA.** The San Francisco Declaration on Research Assessment (developed in December 2012 at the American Society for Cell Biology’s meeting) recommends not using journal-based metrics such as impact factors as a surrogate for the quality of individual articles, or to assess individual scientists in hiring, promotion or funding.",
-      "**Known weaknesses of peer review:** reviewer fatigue and variable quality; bias related to authors’ prestige, gender, country or language (double-anonymous review aims to reduce this); limited access to data and code; [[publication-bias|publication bias]] towards positive results. Large replication projects, such as the Open Science Collaboration’s 2015 attempt to repeat about 100 psychology studies (97% of originals significant, 36% of replications), prompted reforms: data and code sharing, [[registered-report|registered reports]] and [[preregistration]] (Unit 9), and transparent review.",
-      "**Terminology** is shifting from “blind” to “anonymous/anonymised” review, and some journals now publish reviewer reports as standard."
+      "**Known weaknesses of peer review:** reviewer fatigue and variable quality; bias related to authors’ prestige, gender, country or language (double-anonymous review aims to reduce this); limited access to data and code; [[publication-bias|publication bias]] toward positive results. Large replication projects, such as the Open Science Collaboration’s 2015 attempt to repeat about 100 psychology studies (97% of originals significant, 36% of replications), prompted reforms: data and code sharing, [[registered-report|registered reports]] and [[preregistration]] (Unit 9), and transparent review.",
+      "**Terminology** is shifting from “blind” to “anonymous/anonymized” review, and some journals now publish reviewer reports as standard."
      ]
     },
     related:["open-access","evaluating-scholarly-sources","retractions"],
@@ -978,34 +978,34 @@ ICA.addUnit({
     sources:[{t:"Clarivate InCites Indicators Handbook: Journal Impact Factor", url:"https://incites.help.clarivate.com/Content/Indicators-Handbook/ih-journal-impact-factor.htm"},{t:"Wiley: Types of peer review", url:"https://authors.wiley.com/Reviewers/journal-reviewers/what-is-peer-review/types-of-peer-review.html"},{t:"San Francisco Declaration on Research Assessment (DORA)", url:"https://sfdora.org/read/"}], checked:"2026-11"},
 
    {id:"open-access", title:"Open access, preprints and paywalls", aka:["OA","gold open access","green open access","diamond open access","APC","preprint servers","article versions"], tags:["research","publishing"],
-    summary:"Why paywalls exist, the routes to open access, licences, the versions of an article, preprint servers and funder policies.",
+    summary:"Why paywalls exist, the routes to open access, licenses, the versions of an article, preprint servers and funder policies.",
     levels:{
      starter:[
-      "[[open-access-term|Open access]] (OA) research is free for anyone to read online, and often free to reuse under a licence such as Creative Commons CC BY.",
+      "[[open-access-term|Open access]] (OA) research is free for anyone to read online, and often free to reuse under a license such as Creative Commons CC BY.",
       "Articles can be OA in different ways: the publisher makes it free (gold), the author posts a copy in a repository (green), or the journal is free for both readers and authors (diamond).",
       "A **preprint** is a version posted before peer review, on a server such as arXiv, bioRxiv or medRxiv. It’s free and fast, but unchecked.",
       {key:"Free to read isn’t the same as trustworthy, and paywalled isn’t the same as better."},
       "Many research articles sit behind a [[paywall]], because traditional journals earn money by selling subscriptions, mostly to libraries. Authors usually aren’t paid for their articles."
      ],
      builder:[
-      "**Why paywalls exist.** In the subscription model, authors usually transfer copyright or grant a licence to the publisher, which sells access, mostly to libraries. Readers without a subscription hit a paywall. OA models move the cost elsewhere: to authors or funders (APCs), to institutions and societies (diamond), or to repositories run by universities and others (green).",
+      "**Why paywalls exist.** In the subscription model, authors usually transfer copyright or grant a license to the publisher, which sells access, mostly to libraries. Readers without a subscription hit a paywall. OA models move the cost elsewhere: to authors or funders (APCs), to institutions and societies (diamond), or to repositories run by universities and others (green).",
       {table:[
         ["Route","Free where","Typical cost to authors"],
         ["Gold","Publisher’s site, immediately","Often an [[article-processing-charge|APC]]"],
         ["Green","A repository, sometimes after an [[embargo-period|embargo]]","Usually none"],
         ["Hybrid","Single articles in a subscription journal","APC"],
         ["Diamond","Publisher’s site","None"],
-        ["Bronze","Publisher’s site, no open licence","None; access may be withdrawn"]
+        ["Bronze","Publisher’s site, no open license","None; access may be withdrawn"]
       ]},
       "**Versions** (NISO/ALPSP Journal Article Versions, 2008): Author’s Original, Submitted Manuscript Under Review, Accepted Manuscript, Proof, Version of Record, Corrected Version of Record, Enhanced Version of Record. Repositories usually hold preprints or accepted manuscripts; cite the [[version-of-record|version of record]] when you can.",
-      "**Preprint servers:** arXiv (1991; physics, maths, computer science and more), bioRxiv (2013) and medRxiv (2019), run since 2025 by the non-profit openRxiv, plus servers for social sciences, psychology, earth sciences and regional servers. Servers screen submissions but don’t peer-review them.",
+      "**Preprint servers:** arXiv (1991; physics, math, computer science and more), bioRxiv (2013) and medRxiv (2019), run since 2025 by the non-profit openRxiv, plus servers for social sciences, psychology, earth sciences and regional servers. Servers screen submissions but don’t peer-review them.",
       "**Legal free copies:** search the title in Google Scholar (“All versions”), CORE or BASE; check author and repository pages; ask a library or the author. Shadow libraries infringe copyright. More in {{full-text-access}}."
      ],
      pro:[
       "**Definitions.** The Budapest Open Access Initiative (2002) defined OA as free availability on the public internet permitting any users to read, download, copy, distribute, print, search or link to full texts and use them for any lawful purpose, without financial, legal or technical barriers other than internet access, with authors keeping control over the integrity of their work and the right to be acknowledged and cited. That is closer to CC BY than to “free to read”.",
       "**Policy.** Plan S (cOAlition S, announced September 2018) requires funded publications from 2021 to be OA immediately via OA journals, OA platforms or repositories with no embargo. In the US, the 2022 OSTP memo asked federal agencies to make funded publications and supporting data freely available on publication, with updated agency policies due to take effect by 31 December 2025 (NIH’s took effect in July 2025); each agency sets the details, so check the funder’s current policy. Many other countries and funders have their own rules; check the current version for any project.",
-      "**Economics.** APCs shift costs from readers to authors, which can exclude researchers without funding; waivers, institutional agreements and diamond OA respond to that. Hybrid OA has been criticised for letting publishers charge both subscriptions and APCs. These debates are live, and reasonable people disagree on the best model.",
-      "**Licences matter for reuse**, including text and data mining and AI training. Check the specific licence of each article rather than the journal’s general policy.",
+      "**Economics.** APCs shift costs from readers to authors, which can exclude researchers without funding; waivers, institutional agreements and diamond OA respond to that. Hybrid OA has been criticized for letting publishers charge both subscriptions and APCs. These debates are live, and reasonable people disagree on the best model.",
+      "**Licenses matter for reuse**, including text and data mining and AI training. Check the specific license of each article rather than the journal’s general policy.",
       "**Preprints in practice:** look for “now published in” links, compare versions, and note that health preprints in particular should not be treated as established findings."
      ]
     },
@@ -1024,11 +1024,11 @@ ICA.addUnit({
       "Being careful doesn’t mean being cynical. Most published research is done in good faith; the questions help you decide how much weight a source can carry for your purpose."
      ],
      builder:[
-      "The ACRL frame **Authority Is Constructed and Contextual**: information resources reflect their creators’ expertise and credibility, and are evaluated based on the information need and the context of use. Different communities recognise different kinds of authority (subject expertise, official position, lived experience), and the question decides how much you need.",
+      "The ACRL frame **Authority Is Constructed and Contextual**: information resources reflect their creators’ expertise and credibility, and are evaluated based on the information need and the context of use. Different communities recognize different kinds of authority (subject expertise, official position, lived experience), and the question decides how much you need.",
       {table:[
         ["Question","What to check"],
         ["Who?","Expertise in this topic; affiliation; ORCID or profile"],
-        ["Where?","Journal recognised in the field; real publisher; article type"],
+        ["Where?","Journal recognized in the field; real publisher; article type"],
         ["How?","Method fits question; sample; limitations stated"],
         ["When?","Publication and data dates; newer evidence"],
         ["Who paid?","Funding and conflict-of-interest statements"],
@@ -1036,12 +1036,12 @@ ICA.addUnit({
         ["Status?","Corrections, expressions of concern, retraction"]
       ]},
       "Use lateral reading on the journal, the authors and the claim: what do independent sources and the relevant expert community say?",
-      "**Put it together.** A source rarely fails or passes on one question. A small study in a reputable journal with a clear method may be useful but limited; a large, well-funded study with an undeclared conflict of interest needs extra checking; a grey-literature report from a statistics office may be the most authoritative source available for a local figure. Write down your reasons, so you can explain your judgement to others and revisit it if new evidence appears."
+      "**Put it together.** A source rarely fails or passes on one question. A small study in a reputable journal with a clear method may be useful but limited; a large, well-funded study with an undeclared conflict of interest needs extra checking; a gray-literature report from a statistics office may be the most authoritative source available for a local figure. Write down your reasons, so you can explain your judgment to others and revisit it if new evidence appears."
      ],
      pro:[
       "Professionals weigh evidence rather than sources one by one:",
       {list:[
-        "**Hierarchies of evidence** (common in health) rank designs, such as systematic reviews of randomised trials above single observational studies. They are useful defaults, but a well-done observational study can beat a poor trial, and some questions (experiences, meanings) need qualitative evidence that such hierarchies don’t rank well.",
+        "**Hierarchies of evidence** (common in health) rank designs, such as systematic reviews of randomized trials above single observational studies. They are useful defaults, but a well-done observational study can beat a poor trial, and some questions (experiences, meanings) need qualitative evidence that such hierarchies don’t rank well.",
         "**Consistency and independence:** results from different teams, methods and places count for more than many papers from one group.",
         "**Plausibility and mechanism:** an extraordinary claim needs more evidence; ask what would have to be true for it to hold.",
         "**Conflicts of interest** don’t make work wrong, but they justify extra scrutiny of design and reporting.",
@@ -1049,7 +1049,7 @@ ICA.addUnit({
         "**Metrics and prestige** (impact factors, famous universities) are weak proxies; DORA advises against using them to judge individual work."
       ]},
       "When the stakes are high, also check the status of key papers ({{retractions}}) and the journal ({{predatory-journals}}).",
-      "**Reading the reporting itself.** Many fields have [[reporting-guideline|reporting guidelines]] that list what a good paper of a given design should include (for example, guidelines for randomised trials, observational studies or qualitative research). Checking a paper against the relevant guideline is a quick way to spot missing information. Unit 3 covers critical appraisal in depth ({{critical-appraisal}})."
+      "**Reading the reporting itself.** Many fields have [[reporting-guideline|reporting guidelines]] that list what a good paper of a given design should include (for example, guidelines for randomized trials, observational studies or qualitative research). Checking a paper against the relevant guideline is a quick way to spot missing information. Unit 3 covers critical appraisal in depth ({{critical-appraisal}})."
      ]
     },
     related:["evaluating-sources","lateral-reading","predatory-journals","retractions","source-types"],
@@ -1067,7 +1067,7 @@ ICA.addUnit({
       "If you’re unsure about a journal, ask a librarian, or check whether researchers you trust in that field publish there."
      ],
      builder:[
-      "In 2019, a group of researchers, publishers, funders and librarians agreed a consensus definition (Grudniewicz and colleagues, *Nature*, 12 December 2019): predatory journals and publishers are entities that prioritise self-interest at the expense of scholarship and are characterised by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.",
+      "In 2019, a group of researchers, publishers, funders and librarians agreed a consensus definition (Grudniewicz and colleagues, *Nature*, 12 December 2019): predatory journals and publishers are entities that prioritize self-interest at the expense of scholarship and are characterized by false or misleading information, deviation from best editorial and publication practices, a lack of transparency, and/or the use of aggressive and indiscriminate solicitation practices.",
       "**Checking a journal** (based on Think. Check. Submit.):",
       {ol:[
         "Do you or colleagues know it? Is its name easily confused with another? Does the ISSN check out in the ISSN Portal?",
@@ -1075,8 +1075,8 @@ ICA.addUnit({
         "Is peer review described, without guaranteed acceptance or unrealistic speed?",
         "Is it indexed or archived where it claims (check the index itself)? Does it use DOIs?",
         "Are fees stated clearly, with any waivers?",
-        "Are licences, copyright and conflict-of-interest policies clear?",
-        "Is the publisher a member of recognised initiatives (COPE; OASPA for OA publishers; DOAJ for OA journals)?"
+        "Are licenses, copyright and conflict-of-interest policies clear?",
+        "Is the publisher a member of recognized initiatives (COPE; OASPA for OA publishers; DOAJ for OA journals)?"
       ]},
       "Ask a librarian if you are unsure.",
       "**Why it matters to readers, not just authors.** Articles in predatory journals may look like peer-reviewed research and turn up in web searches and some search engines. Treat them as unreviewed: they can still be correct, but the journal’s name gives you no assurance."
@@ -1089,13 +1089,13 @@ ICA.addUnit({
         "**The harm runs both ways.** Authors lose fees and their work’s credibility; readers may be misled by unreviewed claims dressed up as scholarship; and work by honest researchers in such venues is often ignored.",
         "**Hijacked journals** exploit legitimate journals with weak web presence. Reach the journal from its publisher’s or an index’s link rather than from an email or search ad, and compare the ISSN and URL with the index record.",
         "**Paper mills** are a related problem on the supply side: they sell manuscripts and authorship, sometimes into legitimate journals. See {{research-integrity}}.",
-        "**Grey zones exist.** Some journals have weak but not fraudulent practices. The question for a reader is how much weight an article can bear, which the article’s own quality must also answer."
+        "**Gray zones exist.** Some journals have weak but not fraudulent practices. The question for a reader is how much weight an article can bear, which the article’s own quality must also answer."
       ]}
      ]
     },
     related:["evaluating-scholarly-sources","scholarly-publishing","retractions","open-access"],
     read:[{book:"wlsf", where:"Part IV, Chapter 20 “Stupid Journal Tricks”"}],
-    sources:[{t:"Grudniewicz et al., Predatory journals: no definition, no defence, Nature 576, 210–212 (2019)", url:"https://media.nature.com/original/magazine-assets/d41586-019-03759-y/d41586-019-03759-y.pdf"},{t:"EASE: Another step towards defining predatory journals", url:"https://ease.org.uk/2019/12/another-step-towards-defining-predatory-journals/"}], checked:"2026-11"},
+    sources:[{t:"Grudniewicz et al., Predatory journals: no definition, no defense, Nature 576, 210–212 (2019)", url:"https://media.nature.com/original/magazine-assets/d41586-019-03759-y/d41586-019-03759-y.pdf"},{t:"EASE: Another step toward defining predatory journals", url:"https://ease.org.uk/2019/12/another-step-towards-defining-predatory-journals/"}], checked:"2026-11"},
 
    {id:"retractions", title:"Corrections and retractions", aka:["retracted papers","expression of concern","erratum","corrigendum","Retraction Watch"], tags:["research","publishing","integrity"],
     summary:"How published research is corrected or withdrawn, what each notice means, and how to check whether a paper still stands.",
@@ -1126,7 +1126,7 @@ ICA.addUnit({
       "**A well-documented case.** The Lancet published a paper by Wakefield and colleagues in 1998 that was later used to link the MMR vaccine with autism. On 28 January 2010 the UK General Medical Council found that the lead author had acted dishonestly and breached ethics committee approval; days later, in early February 2010, the Lancet retracted the paper, stating that several elements of it were incorrect. The claim had spread widely in the meantime, showing why retraction alone doesn’t undo harm.",
       "**Why retracted work keeps being cited:** old PDFs and reference lists don’t update, notices can be hard to see, and authors may cite from memory. Reference managers that check status help.",
       "**Scale and data.** When Crossref acquired the Retraction Watch Database in 2023, the combined data covered roughly 50,000 retractions. The dataset is downloadable, and retraction information is increasingly included in Crossref metadata.",
-      "**Paper mills and mass retractions:** publishers have retracted large batches of papers linked to organised fraud in recent years. See {{research-integrity}}.",
+      "**Paper mills and mass retractions:** publishers have retracted large batches of papers linked to organized fraud in recent years. See {{research-integrity}}.",
       "**If you cited a retracted paper:** check whether your argument depended on it; remove or replace the citation, or cite it explicitly as retracted when discussing the retraction. Citation styles have rules for marking retracted works (Unit 4).",
       "COPE updated its retraction guidelines in September 2025 (replacing the 2019 version), adding detail on paper mills, batch retractions and information from third parties, and issued separate guidance on expressions of concern. Journals’ own policies vary, so read the specific journal’s policy when it matters."
      ]
@@ -1138,14 +1138,14 @@ ICA.addUnit({
    {id:"research-term", term:"Research", def:"In the academic sense: systematic inquiry that creates new knowledge and shares it so others can check it. In everyday speech it also means finding out what is already known.", codex:"what-is-research"},
    {id:"empirical-research", term:"Empirical research", def:"Research based on observation or measurement of the world, such as experiments, surveys, interviews, fieldwork or records.", codex:"what-is-research"},
    {id:"applied-research", term:"Applied research", def:"Research aimed at solving a practical problem. Basic research, by contrast, aims to understand how something works.", codex:"what-is-research"},
-   {id:"tertiary-source", term:"Tertiary source", def:"A source that summarises and organises many secondary sources, such as an encyclopedia, textbook or handbook. Good for getting your bearings.", codex:"source-types"},
+   {id:"tertiary-source", term:"Tertiary source", def:"A source that summarizes and organizes many secondary sources, such as an encyclopedia, textbook or handbook. Good for getting your bearings.", codex:"source-types"},
    {id:"scholarly-source", term:"Scholarly source", def:"Writing by experts for experts that documents its evidence with references, usually checked by peer review, such as a journal article or academic book.", codex:"source-types"},
    {id:"popular-source", term:"Popular source", def:"Writing for the general public, such as a newspaper, general magazine or blog. Useful for understanding; trace key claims to the original research.", codex:"source-types"},
    {id:"trade-publication", term:"Trade publication", def:"A magazine or journal written for people in one profession or industry, with practical news and advice.", codex:"source-types"},
    {id:"grey-literature-term", term:"Grey literature", def:"Research and information from organisations whose main job isn’t publishing, such as government reports, statistics, working papers and theses. Also spelled gray literature.", codex:"grey-literature"},
    {id:"academic-journal", term:"Academic journal", def:"A regular publication of scholarly articles in a field, run by expert editors, usually with peer review.", codex:"scholarly-publishing"},
-   {id:"journal-article", term:"Journal article", def:"A piece published in an academic journal. A research article reports new work; a review article summarises many studies; editorials and letters are opinion or discussion.", codex:"source-types"},
-   {id:"review-article", term:"Review article", def:"A journal article that summarises and assesses many earlier studies on a topic. A good place to start; systematic reviews follow a strict, documented method.", codex:"source-types"},
+   {id:"journal-article", term:"Journal article", def:"A piece published in an academic journal. A research article reports new work; a review article summarizes many studies; editorials and letters are opinion or discussion.", codex:"source-types"},
+   {id:"review-article", term:"Review article", def:"A journal article that summarizes and assesses many earlier studies on a topic. A good place to start; systematic reviews follow a strict, documented method.", codex:"source-types"},
    {id:"monograph", term:"Monograph", def:"A scholarly book on a single subject, usually by one author or a small team. A main form of research output in the humanities and many social sciences.", codex:"source-types"},
    {id:"conference-proceedings", term:"Conference proceedings", def:"A published collection of papers presented at an academic conference. In computer science and some engineering fields they are often peer-reviewed and a main publication venue.", codex:"source-types"},
    {id:"abstract-paper", term:"Abstract (of a paper)", def:"A short summary at the start of a scholarly article giving its question, method, main findings and conclusion. Useful for deciding whether to read on; not a substitute for the paper.", codex:"source-types"},
@@ -1153,7 +1153,7 @@ ICA.addUnit({
    {id:"publication-bias", term:"Publication bias", def:"The tendency for studies with positive or exciting results to be published more often than studies with null or disappointing results, which can distort the published evidence.", codex:"scholarly-publishing"},
    {id:"replication", term:"Replication", def:"Repeating a study, usually by a different team, to see whether the original result holds up.", codex:"scholarly-publishing"},
    {id:"version-of-record", term:"Version of record", def:"The final, formally published version of an article on the publisher’s site, usually with a DOI. The version you normally cite.", codex:"open-access"},
-   {id:"open-access-term", term:"Open access", def:"Research that is free for anyone to read online, ideally with a licence (such as CC BY) that allows reuse with credit.", codex:"open-access"},
+   {id:"open-access-term", term:"Open access", def:"Research that is free for anyone to read online, ideally with a license (such as CC BY) that allows reuse with credit.", codex:"open-access"},
    {id:"paywall", term:"Paywall", def:"A barrier that asks for payment or a subscription before you can read an article. University logins often get through it silently.", codex:"open-access"},
    {id:"article-processing-charge", term:"Article processing charge (APC)", def:"A fee some open access journals charge, usually to the author, funder or institution, to publish an article. Waivers are often available.", codex:"open-access"},
    {id:"embargo-period", term:"Embargo (open access)", def:"A delay set by a publisher before an author may make a version of an article freely available in a repository.", codex:"open-access"},
@@ -1167,7 +1167,7 @@ ICA.addUnit({
    /* ---- Lesson 1 ---- */
    {id:"t4u1-q01", lesson:"t4u1-l1", level:1, q:"In the academic sense, what makes something research?", options:[
      {t:"Systematic inquiry that creates new knowledge and shares it for checking", ok:true, why:"A clear question, a fitting method, honest evidence and sharing for scrutiny are the defining features."},
-     {t:"Reading many sources on a topic carefully and summarising what they all say", why:"That’s everyday research: learning what is known, not creating something new."},
+     {t:"Reading many sources on a topic carefully and summarizing what they all say", why:"That’s everyday research: learning what is known, not creating something new."},
      {t:"Any work done in a laboratory", why:"Labs are one setting. Archives, interviews, proofs and fieldwork are research too, and lab work isn’t research unless it’s systematic and shared."},
      {t:"Any article with a reference list", why:"References show the writer used sources; they don’t make the work new or systematic."}
    ]},
@@ -1181,7 +1181,7 @@ ICA.addUnit({
      {t:"Applied research", ok:true, why:"It aims to solve a specific practical problem for the utility."},
      {t:"Basic research", why:"Basic research aims at general understanding without an immediate use; this has a clear practical aim."},
      {t:"Not research, because a company is doing it", why:"Companies do research too, if it is systematic. Who does it doesn’t decide whether it counts."},
-     {t:"Tertiary research", why:"“Tertiary” describes sources that summarise others, not a kind of study."}
+     {t:"Tertiary research", why:"“Tertiary” describes sources that summarize others, not a kind of study."}
    ]},
    {id:"t4u1-q04", lesson:"t4u1-l1", level:1, q:"What does the ACRL idea of “Scholarship as Conversation” mean for a reader?", options:[
      {t:"Each paper is one turn in an ongoing discussion, so read it alongside related work", ok:true, why:"Scholars respond to and build on each other’s work over time; a single paper is rarely the last word."},
@@ -1195,11 +1195,11 @@ ICA.addUnit({
      {t:"Real research never changes its conclusions once it is published, so this isn’t research", why:"It does, and should, when new evidence appears."},
      {t:"Only trust the very first study on any topic", why:"Early studies are often the least reliable; later work refines or corrects them."}
    ]},
-   {id:"t4u1-q06", lesson:"t4u1-l1", level:3, q:"Mei wants to know whether a new reading programme helps children. She finds one exciting study from a single school. What should she do before recommending it?", options:[
+   {id:"t4u1-q06", lesson:"t4u1-l1", level:3, q:"Mei wants to know whether a new reading program helps children. She finds one exciting study from a single school. What should she do before recommending it?", options:[
      {t:"Look for other studies and reviews, and see where this one fits among them", ok:true, why:"One study is one turn in the conversation; reviews of many studies give a better picture."},
-     {t:"Recommend it straight away: one positive study from a real school is proof", why:"Research gives evidence, not proof, and results from one school may not generalise."},
+     {t:"Recommend it straight away: one positive study from a real school is proof", why:"Research gives evidence, not proof, and results from one school may not generalize."},
      {t:"Reject it completely, because a study from only one school can’t tell her anything", why:"One study is weak evidence, not no evidence. Look for more before deciding."},
-     {t:"Ask a chatbot whether the programme works and use its answer", why:"A chatbot may summarise or invent; she still needs to check the actual studies."}
+     {t:"Ask a chatbot whether the program works and use its answer", why:"A chatbot may summarize or invent; she still needs to check the actual studies."}
    ]},
    {id:"t4u1-q07", lesson:"t4u1-l1", level:2, q:"Which question would interviews answer best?", options:[
      {t:"How do new teachers describe their first month in the classroom?", ok:true, why:"Experiences and meanings are what qualitative interviews are designed to explore."},
@@ -1215,9 +1215,9 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 2 ---- */
    {id:"t4u1-q09", lesson:"t4u1-l2", level:1, q:"Which is a tertiary source?", options:[
-     {t:"An encyclopedia entry on volcanoes", ok:true, why:"Encyclopedias summarise many secondary sources: tertiary."},
+     {t:"An encyclopedia entry on volcanoes", ok:true, why:"Encyclopedias summarize many secondary sources: tertiary."},
      {t:"A geologist’s report of new measurements at a volcano", why:"Original data: a primary source."},
-     {t:"A review article comparing 40 volcano studies", why:"It analyses primary studies: secondary."},
+     {t:"A review article comparing 40 volcano studies", why:"It analyzes primary studies: secondary."},
      {t:"Photos taken by a witness of an eruption", why:"Original evidence from the time: primary."}
    ]},
    {id:"t4u1-q10", lesson:"t4u1-l2", level:3, q:"Ana is studying **how television news in the 1980s portrayed farmers**. For her, a 1984 TV news report about a drought is…", options:[
@@ -1232,23 +1232,23 @@ ICA.addUnit({
      {t:"Has an impressive title", why:"Titles can imitate scholarly style; look at authors, references and review."},
      {t:"Appears near the top of search results and has many views", why:"Ranking says nothing about whether a source is scholarly."}
    ]},
-   {id:"t4u1-q12", lesson:"t4u1-l2", level:2, q:"Which is grey literature?", options:[
-     {t:"A national statistics office’s annual report on household income", ok:true, why:"Produced by a government body whose main job isn’t publishing: grey literature."},
+   {id:"t4u1-q12", lesson:"t4u1-l2", level:2, q:"Which is gray literature?", options:[
+     {t:"A national statistics office’s annual report on household income", ok:true, why:"Produced by a government body whose main job isn’t publishing: gray literature."},
      {t:"An article in a peer-reviewed economics journal", why:"That’s formal scholarly publishing."},
-     {t:"A book from a commercial publisher", why:"Commercial publishing is the opposite of grey literature."},
+     {t:"A book from a commercial publisher", why:"Commercial publishing is the opposite of gray literature."},
      {t:"A newspaper column", why:"That’s a popular source from a commercial publisher."}
    ]},
    {id:"t4u1-q13", lesson:"t4u1-l2", level:3, q:"Kenji is writing about a flood that happened three weeks ago. He finds no journal articles about it. Why?", options:[
-     {t:"Journal articles take months or years to appear; use reports, data and news for now", ok:true, why:"The information cycle: scholarly sources come later. Grey literature and news come first."},
+     {t:"Journal articles take months or years to appear; use reports, data and news for now", ok:true, why:"The information cycle: scholarly sources come later. Gray literature and news come first."},
      {t:"The flood wasn’t important enough for research", why:"Timing, not importance, explains the gap."},
      {t:"Journals don’t publish research about floods or other natural disasters", why:"They do, once research has been done and reviewed."},
      {t:"He needs a paid database, because free search tools never show any journal articles", why:"Free tools do show journal articles; there just aren’t any yet."}
    ]},
-   {id:"t4u1-q14", lesson:"t4u1-l2", level:2, q:"Why do careful systematic reviews also search grey literature such as reports, theses and trial registries?", options:[
-     {t:"Studies with null results often never reach journals, so leaving them out biases the review", ok:true, why:"This is publication bias; grey literature helps balance the evidence."},
-     {t:"Grey literature is always more reliable than journal articles, so careful reviews should prefer it", why:"It varies in quality; it’s searched for completeness, not because it’s better."},
+   {id:"t4u1-q14", lesson:"t4u1-l2", level:2, q:"Why do careful systematic reviews also search gray literature such as reports, theses and trial registries?", options:[
+     {t:"Studies with null results often never reach journals, so leaving them out biases the review", ok:true, why:"This is publication bias; gray literature helps balance the evidence."},
+     {t:"Gray literature is always more reliable than journal articles, so careful reviews should prefer it", why:"It varies in quality; it’s searched for completeness, not because it’s better."},
      {t:"Journals forbid reviews from citing other journals", why:"They don’t. Reviews cite many journal articles."},
-     {t:"Grey literature goes through stricter peer review than most journal articles do", why:"Much grey literature isn’t peer-reviewed at all."}
+     {t:"Gray literature goes through stricter peer review than most journal articles do", why:"Much gray literature isn’t peer-reviewed at all."}
    ]},
    {id:"t4u1-q15", lesson:"t4u1-l2", level:2, q:"In which field are peer-reviewed conference papers often the main way new results are published?", options:[
      {t:"Computer science", ok:true, why:"In computing (and some engineering fields), major conferences are central, selective, peer-reviewed venues."},
@@ -1288,7 +1288,7 @@ ICA.addUnit({
      {t:"It is a random number the publisher assigns each year", why:"It follows a defined formula; the problem is what it measures, not randomness."}
    ]},
    {id:"t4u1-q21", lesson:"t4u1-l3", level:2, q:"Which problem is ordinary peer review **least** likely to catch?", options:[
-     {t:"Data that was fabricated but looks plausible", ok:true, why:"Reviewers rarely see raw data and aren’t investigators; skilful fabrication often passes."},
+     {t:"Data that was fabricated but looks plausible", ok:true, why:"Reviewers rarely see raw data and aren’t investigators; skillful fabrication often passes."},
      {t:"A conclusion that goes far beyond the results", why:"Overclaiming is exactly what reviewers look for."},
      {t:"A method that can’t answer the question", why:"Judging the design is reviewers’ core job."},
      {t:"Ignoring the most important earlier study", why:"Experts in the field usually notice missing key literature."}
@@ -1315,7 +1315,7 @@ ICA.addUnit({
    {id:"t4u1-q25", lesson:"t4u1-l4", level:1, q:"What is green open access?", options:[
      {t:"The author deposits a version of the article in a repository", ok:true, why:"Green OA is self-archiving, often of the accepted manuscript."},
      {t:"The publisher makes the article free immediately for a fee", why:"That’s gold OA."},
-     {t:"Research about the environment", why:"The colour names describe access routes, not topics."},
+     {t:"Research about the environment", why:"The color names describe access routes, not topics."},
      {t:"A journal that charges neither readers nor authors", why:"That’s diamond OA."}
    ]},
    {id:"t4u1-q26", lesson:"t4u1-l4", level:1, q:"What is a version of record?", options:[
@@ -1324,11 +1324,11 @@ ICA.addUnit({
      {t:"The author’s accepted text after peer review but before copyediting", why:"That’s the accepted manuscript."},
      {t:"A recording of a conference talk", why:"Not a version of a journal article."}
    ]},
-   {id:"t4u1-q27", lesson:"t4u1-l4", level:2, q:"An article is free to read on the publisher’s site but has no open licence. What kind of access is this?", options:[
-     {t:"Bronze", ok:true, why:"Bronze OA is free to read without an open licence; the publisher can withdraw access."},
-     {t:"Diamond", why:"Diamond journals are fully OA, usually with open licences, and charge no APCs."},
+   {id:"t4u1-q27", lesson:"t4u1-l4", level:2, q:"An article is free to read on the publisher’s site but has no open license. What kind of access is this?", options:[
+     {t:"Bronze", ok:true, why:"Bronze OA is free to read without an open license; the publisher can withdraw access."},
+     {t:"Diamond", why:"Diamond journals are fully OA, usually with open licenses, and charge no APCs."},
      {t:"Green", why:"Green OA is in a repository, not on the publisher’s site."},
-     {t:"Hybrid", why:"Hybrid OA articles are paid-for OA in subscription journals, normally with an open licence."}
+     {t:"Hybrid", why:"Hybrid OA articles are paid-for OA in subscription journals, normally with an open license."}
    ]},
    {id:"t4u1-q28", lesson:"t4u1-l4", level:3, q:"Oluwaseun reads a medRxiv paper claiming a common drug halves hospital stays. A friend says, “It’s on a science website, so it’s been checked.” What’s accurate?", options:[
      {t:"medRxiv only screens papers; they haven’t been peer-reviewed", ok:true, why:"Preprint servers do basic screening only; the findings are unchecked by reviewers. medRxiv also warns they shouldn’t guide clinical practice."},
@@ -1339,14 +1339,14 @@ ICA.addUnit({
    {id:"t4u1-q29", lesson:"t4u1-l4", level:2, q:"Which is a legal way to read a paywalled article for free?", options:[
      {t:"Find the accepted manuscript in the author’s university repository", ok:true, why:"Repositories legally hold accepted manuscripts under publisher policies (green OA)."},
      {t:"Download it from a site offering millions of copied paywalled papers", why:"Shadow libraries infringe copyright in most countries."},
-     {t:"Use a friend’s university password", why:"Sharing login credentials usually breaks the university’s licence terms and its rules."},
+     {t:"Use a friend’s university password", why:"Sharing login credentials usually breaks the university’s license terms and its rules."},
      {t:"Screenshot the abstract and assume that’s the paper", why:"The abstract isn’t the paper, and reading only it can mislead."}
    ]},
    {id:"t4u1-q30", lesson:"t4u1-l4", level:3, q:"Hana wants to reuse a chart from an open access article in a workshop handout she will sell. The article uses CC BY-NC. What applies?", options:[
      {t:"Selling isn’t allowed under NC; she needs permission or another source", ok:true, why:"NC means non-commercial. CC BY-NC allows reuse with credit only for non-commercial purposes."},
-     {t:"Open access means any reuse is allowed, including selling it", why:"Reuse depends on the licence; NC rules out commercial use."},
-     {t:"She can sell the handout if she removes the authors’ names and credit line", why:"All CC licences require credit (attribution)."},
-     {t:"Charts are never covered by licences", why:"Figures in articles are covered by the article’s licence and copyright."}
+     {t:"Open access means any reuse is allowed, including selling it", why:"Reuse depends on the license; NC rules out commercial use."},
+     {t:"She can sell the handout if she removes the authors’ names and credit line", why:"All CC licenses require credit (attribution)."},
+     {t:"Charts are never covered by licenses", why:"Figures in articles are covered by the article’s license and copyright."}
    ]},
    {id:"t4u1-q31", lesson:"t4u1-l4", level:2, q:"What does Plan S, launched in 2018 by a group of research funders, require?", options:[
      {t:"Research they fund must be open access immediately, from 2021", ok:true, why:"Plan S requires immediate OA via OA journals, platforms or repositories with no embargo."},
@@ -1362,7 +1362,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 5 ---- */
    {id:"t4u1-q33", lesson:"t4u1-l5", level:1, q:"What does “Authority Is Constructed and Contextual” mean?", options:[
-     {t:"Kinds of authority differ, and the question decides how much you need", ok:true, why:"Communities recognise different kinds of authority. Authority depends on expertise relevant to the question and on the context of use."},
+     {t:"Kinds of authority differ, and the question decides how much you need", ok:true, why:"Communities recognize different kinds of authority. Authority depends on expertise relevant to the question and on the context of use."},
      {t:"Only people with doctorates in the field have real authority on any question", why:"Lived experience and official position can also carry authority, for the right question."},
      {t:"An expert’s authority is the same for every question and in every setting", why:"A specialist in one field isn’t an authority in another."},
      {t:"No one has more authority than anyone else", why:"Authority varies; the frame asks you to judge it in context, not to deny it."}

@@ -6,7 +6,7 @@ ICA.addUnit({
     "Recognise argumentative, compare–contrast, cause–effect and problem–solution essays from the task, and plan each one’s shape with the right signal language",
     "Build a paragraph from claim, evidence and reasoning, and answer a counterargument using correct concession grammar",
     "Bring sources into your sentences with integral and non-integral citations, reporting verbs in the right grammatical pattern, and suitable tenses",
-    "Write an introduction and an abstract in recognisable moves, and write a clear, polite email to a lecturer or supervisor",
+    "Write an introduction and an abstract in recognizable moves, and write a clear, polite email to a lecturer or supervisor",
     "Edit and proofread with a checklist and a personal error list, and use grammar checkers and AI tools in ways your institution allows, keeping your own voice"
   ],
   read:[
@@ -17,7 +17,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u3-l1", title:"Essay types and their shapes", minutes:50,
-   hook:{q:"In most essays written in English for universities, where do markers expect to find your main claim?", options:["Only in the last paragraph, after all the evidence","In the introduction, usually in a thesis statement","Nowhere: good readers should work it out","In the title only"], answer:1, reveal:"**In the introduction.** Most English-medium university essays state the main claim early, in a [[thesis-statement|thesis statement]], and then spend the essay supporting it. Some writing traditions build slowly towards the point instead; that isn’t wrong, it is a different convention. But in an English academic essay, a marker who can’t find your claim on the first page may decide you don’t have one. This lesson shows the usual shapes of four common essay types, and the language that holds each one together."},
+   hook:{q:"In most essays written in English for universities, where do markers expect to find your main claim?", options:["Only in the last paragraph, after all the evidence","In the introduction, usually in a thesis statement","Nowhere: good readers should work it out","In the title only"], answer:1, reveal:"**In the introduction.** Most English-medium university essays state the main claim early, in a [[thesis-statement|thesis statement]], and then spend the essay supporting it. Some writing traditions build slowly toward the point instead; that isn’t wrong, it is a different convention. But in an English academic essay, a marker who can’t find your claim on the first page may decide you don’t have one. This lesson shows the usual shapes of four common essay types, and the language that holds each one together."},
    goals:[
      "Read an essay question and decide which essay type it asks for",
      "Plan the shape of an argumentative, compare–contrast, cause–effect or problem–solution essay",
@@ -28,16 +28,16 @@ ICA.addUnit({
    learn:[
     {h:"The question tells you the shape", body:[
       {lead:"Think of a recipe. “Bake”, “boil” and “fry” use the same kitchen, but each word tells you which steps come next. Essay questions work the same way."},
-      "An **essay** at university is a piece of continuous writing that answers a question with a clear position, supported by evidence. Different questions ask for different kinds of thinking, so essays have a few common shapes. Each shape has a name, a usual order of paragraphs and some typical phrases. Knowing the shapes saves you planning time, and it helps your reader, because they recognise the pattern.",
+      "An **essay** at university is a piece of continuous writing that answers a question with a clear position, supported by evidence. Different questions ask for different kinds of thinking, so essays have a few common shapes. Each shape has a name, a usual order of paragraphs and some typical phrases. Knowing the shapes saves you planning time, and it helps your reader, because they recognize the pattern.",
       "The key is the **task word** (also called the instruction word or directive): the verb or phrase in the question that says what to do. Here are common ones and the shape they usually call for.",
-      {table:[["The question says…","It usually asks for…"],["“To what extent…?”, “Do you agree…?”, “Evaluate…”","An argumentative essay: take a position and defend it"],["“Compare…”, “Contrast…”, “What are the similarities and differences…?”","A compare–contrast essay"],["“Explain the causes of…”, “What are the effects of…?”, “Why did…?”","A cause–effect essay"],["“How can … be solved?”, “Propose…”, “Suggest ways to…”","A problem–solution essay"],["“Discuss…”","Often an argument: weigh the views and reach a judgement. Check your course guidance."]]},
+      {table:[["The question says…","It usually asks for…"],["“To what extent…?”, “Do you agree…?”, “Evaluate…”","An argumentative essay: take a position and defend it"],["“Compare…”, “Contrast…”, “What are the similarities and differences…?”","A compare–contrast essay"],["“Explain the causes of…”, “What are the effects of…?”, “Why did…?”","A cause–effect essay"],["“How can … be solved?”, “Propose…”, “Suggest ways to…”","A problem–solution essay"],["“Discuss…”","Often an argument: weigh the views and reach a judgment. Check your course guidance."]]},
       "The table says “usually” for a reason. Lecturers and fields use task words differently, and many questions combine two shapes. “Compare two policies and decide which is more effective” is a compare–contrast essay that ends in an argument. When you are unsure, read the course handbook or marking criteria, or ask your lecturer. That is a normal question, not a sign of weakness.",
       {tip:"Underline the task word, circle the topic words, and put a box around any limits (a place, a time period, a number of examples). Then write one sentence: “This question asks me to…”. It takes a minute and prevents the most common problem in essays: answering a different question."}
     ]},
     {h:"Four common shapes", body:[
       "Here are the four essay types this lesson covers, side by side. Every one of them still has an introduction with a thesis and a conclusion; what changes is the middle.",
-      {fig:'<svg viewBox="0 0 340 452"><text x="170" y="18" text-anchor="middle">The middle of the essay changes</text><rect class="d-lup" x="8" y="30" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="52">Argumentative</text><rect class="d-panel" x="18" y="62" width="70" height="48" rx="4"/><text class="s" x="53" y="83" text-anchor="middle">Reason 1</text><text class="s" x="53" y="99" text-anchor="middle">+ evidence</text><rect class="d-panel" x="96" y="62" width="70" height="48" rx="4"/><text class="s" x="131" y="83" text-anchor="middle">Reason 2</text><text class="s" x="131" y="99" text-anchor="middle">+ evidence</text><rect class="d-panel" x="174" y="62" width="70" height="48" rx="4"/><text class="s" x="209" y="83" text-anchor="middle">Counter-</text><text class="s" x="209" y="99" text-anchor="middle">argument</text><rect class="d-panel" x="252" y="62" width="70" height="48" rx="4"/><text class="s" x="287" y="83" text-anchor="middle">Rebuttal</text><text class="s" x="287" y="99" text-anchor="middle">(your reply)</text><rect class="d-sage" x="8" y="134" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="156">Compare–contrast</text><rect class="d-panel" x="18" y="166" width="148" height="48" rx="4"/><text class="s" x="92" y="187" text-anchor="middle">Block: all of A,</text><text class="s" x="92" y="203" text-anchor="middle">then all of B</text><rect class="d-panel" x="174" y="166" width="148" height="48" rx="4"/><text class="s" x="248" y="187" text-anchor="middle">Point by point: cost A/B,</text><text class="s" x="248" y="203" text-anchor="middle">access A/B, results A/B</text><rect class="d-gold" x="8" y="238" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="260">Cause–effect</text><rect class="d-panel" x="18" y="270" width="88" height="48" rx="4"/><text class="s" x="62" y="291" text-anchor="middle">Cause</text><text class="s" x="62" y="307" text-anchor="middle">(or causes)</text><path class="d-ink" d="M110 294 H130" stroke-width="2" marker-end="url(#a1)"/><rect class="d-panel" x="134" y="270" width="88" height="48" rx="4"/><text class="s" x="178" y="291" text-anchor="middle">Effect that</text><text class="s" x="178" y="307" text-anchor="middle">causes…</text><path class="d-ink" d="M226 294 H246" stroke-width="2" marker-end="url(#a1)"/><rect class="d-panel" x="250" y="270" width="72" height="48" rx="4"/><text class="s" x="286" y="291" text-anchor="middle">a further</text><text class="s" x="286" y="307" text-anchor="middle">effect</text><rect class="d-rose" x="8" y="342" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="364">Problem–solution</text><rect class="d-panel" x="18" y="374" width="70" height="48" rx="4"/><text class="s" x="53" y="403" text-anchor="middle">Situation</text><rect class="d-panel" x="96" y="374" width="70" height="48" rx="4"/><text class="s" x="131" y="403" text-anchor="middle">Problem</text><rect class="d-panel" x="174" y="374" width="70" height="48" rx="4"/><text class="s" x="209" y="403" text-anchor="middle">Solution(s)</text><rect class="d-panel" x="252" y="374" width="70" height="48" rx="4"/><text class="s" x="287" y="403" text-anchor="middle">Evaluation</text><text class="s" x="170" y="448" text-anchor="middle">Each one sits between an introduction and a conclusion.</text><defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs></svg>', alt:"Four horizontal bands. Argumentative: reason 1 plus evidence, reason 2 plus evidence, counterargument, rebuttal. Compare–contrast: either block (all of A, then all of B) or point by point (cost, access and results for A and B in turn). Cause–effect: a cause leads to an effect, which causes a further effect. Problem–solution: situation, problem, solutions, evaluation.", cap:"The four shapes. The introduction (with your thesis) and the conclusion stay the same; the body is organised differently."},
-      {key:"Same frame, different middle: introduction and thesis, then a body organised by the essay type, then a conclusion that answers the question."}
+      {fig:'<svg viewBox="0 0 340 452"><text x="170" y="18" text-anchor="middle">The middle of the essay changes</text><rect class="d-lup" x="8" y="30" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="52">Argumentative</text><rect class="d-panel" x="18" y="62" width="70" height="48" rx="4"/><text class="s" x="53" y="83" text-anchor="middle">Reason 1</text><text class="s" x="53" y="99" text-anchor="middle">+ evidence</text><rect class="d-panel" x="96" y="62" width="70" height="48" rx="4"/><text class="s" x="131" y="83" text-anchor="middle">Reason 2</text><text class="s" x="131" y="99" text-anchor="middle">+ evidence</text><rect class="d-panel" x="174" y="62" width="70" height="48" rx="4"/><text class="s" x="209" y="83" text-anchor="middle">Counter-</text><text class="s" x="209" y="99" text-anchor="middle">argument</text><rect class="d-panel" x="252" y="62" width="70" height="48" rx="4"/><text class="s" x="287" y="83" text-anchor="middle">Rebuttal</text><text class="s" x="287" y="99" text-anchor="middle">(your reply)</text><rect class="d-sage" x="8" y="134" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="156">Compare–contrast</text><rect class="d-panel" x="18" y="166" width="148" height="48" rx="4"/><text class="s" x="92" y="187" text-anchor="middle">Block: all of A,</text><text class="s" x="92" y="203" text-anchor="middle">then all of B</text><rect class="d-panel" x="174" y="166" width="148" height="48" rx="4"/><text class="s" x="248" y="187" text-anchor="middle">Point by point: cost A/B,</text><text class="s" x="248" y="203" text-anchor="middle">access A/B, results A/B</text><rect class="d-gold" x="8" y="238" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="260">Cause–effect</text><rect class="d-panel" x="18" y="270" width="88" height="48" rx="4"/><text class="s" x="62" y="291" text-anchor="middle">Cause</text><text class="s" x="62" y="307" text-anchor="middle">(or causes)</text><path class="d-ink" d="M110 294 H130" stroke-width="2" marker-end="url(#a1)"/><rect class="d-panel" x="134" y="270" width="88" height="48" rx="4"/><text class="s" x="178" y="291" text-anchor="middle">Effect that</text><text class="s" x="178" y="307" text-anchor="middle">causes…</text><path class="d-ink" d="M226 294 H246" stroke-width="2" marker-end="url(#a1)"/><rect class="d-panel" x="250" y="270" width="72" height="48" rx="4"/><text class="s" x="286" y="291" text-anchor="middle">a further</text><text class="s" x="286" y="307" text-anchor="middle">effect</text><rect class="d-rose" x="8" y="342" width="324" height="92" rx="8" stroke-width="2"/><text x="18" y="364">Problem–solution</text><rect class="d-panel" x="18" y="374" width="70" height="48" rx="4"/><text class="s" x="53" y="403" text-anchor="middle">Situation</text><rect class="d-panel" x="96" y="374" width="70" height="48" rx="4"/><text class="s" x="131" y="403" text-anchor="middle">Problem</text><rect class="d-panel" x="174" y="374" width="70" height="48" rx="4"/><text class="s" x="209" y="403" text-anchor="middle">Solution(s)</text><rect class="d-panel" x="252" y="374" width="70" height="48" rx="4"/><text class="s" x="287" y="403" text-anchor="middle">Evaluation</text><text class="s" x="170" y="448" text-anchor="middle">Each one sits between an introduction and a conclusion.</text><defs><marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs></svg>', alt:"Four horizontal bands. Argumentative: reason 1 plus evidence, reason 2 plus evidence, counterargument, rebuttal. Compare–contrast: either block (all of A, then all of B) or point by point (cost, access and results for A and B in turn). Cause–effect: a cause leads to an effect, which causes a further effect. Problem–solution: situation, problem, solutions, evaluation.", cap:"The four shapes. The introduction (with your thesis) and the conclusion stay the same; the body is organized differently."},
+      {key:"Same frame, different middle: introduction and thesis, then a body organized by the essay type, then a conclusion that answers the question."}
     ]},
     {h:"Argumentative essays", body:[
       "An [[argumentative-essay|argumentative essay]] takes a clear position on a question where reasonable people could disagree, and supports it with reasons and evidence. Its thesis is a claim, not a topic: “This essay argues that small, frequent tests improve long-term learning more than one final exam” is a claim; “This essay is about testing” is only a topic.",
@@ -47,7 +47,7 @@ ICA.addUnit({
     ]},
     {h:"Compare–contrast essays", body:[
       "A [[compare-contrast-essay|compare–contrast essay]] examines the similarities and differences between two or more things in order to make a point about them. The point matters. A list of similarities and differences isn’t yet an essay; a thesis such as “Both cities in this study cut car traffic, but only the one that lowered bus fares also reduced travel costs for low-income residents” is.",
-      "There are two common ways to organise the body:",
+      "There are two common ways to organize the body:",
       {table:[["Pattern","How it works","Good for"],["Block","All about A, then all about B, then a comparison","Short essays; two things with few points"],["Point by point","Point 1 for A and B, then point 2 for A and B…","Longer essays; keeps the comparison in view"]]},
       "The language of comparison is small but precise. Notice the grammar in each example.",
       {list:[
@@ -79,7 +79,7 @@ ICA.addUnit({
     ]},
     {h:"Real essays mix shapes, and fields differ", body:[
       "These four types are teaching models, not laws. Real essays combine them: a cause–effect section inside an argument, a comparison inside a problem–solution essay. Use the shape that answers the question.",
-      "Fields differ too. Many science and engineering courses ask for **reports** organised by section headings (often [[imrad|IMRaD]]: Introduction, Methods, Results and Discussion) rather than essays. Some humanities courses expect longer essays with a more developed argument and fewer headings. Check what your course expects.",
+      "Fields differ too. Many science and engineering courses ask for **reports** organized by section headings (often [[imrad|IMRaD]]: Introduction, Methods, Results and Discussion) rather than essays. Some humanities courses expect longer essays with a more developed argument and fewer headings. Check what your course expects.",
       {table:[["Common belief","Closer to the truth"],["An essay always has five paragraphs.","The five-paragraph essay is a school model. University essays have as many paragraphs as the argument needs."],["Comparing means listing similarities, then differences.","Comparison needs a point: what do the similarities and differences show?"],["A cause–effect essay must prove causes.","It must show the evidence for causes and claim them as strongly as that evidence allows."],["A problem–solution essay needs one perfect solution.","Weighing several solutions fairly is usually stronger."]]},
       "For the wider picture of how thesis, paragraphs and signposting fit together in any academic text, see {{argument-structure}} in Research Skills. The next lesson zooms in on the argument itself.",
       {terms:["argumentative-essay","compare-contrast-essay","cause-effect-essay","problem-solution-essay"]}
@@ -87,16 +87,16 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u3-l1-x1", type:"match", q:"Match each essay question to the essay type it most likely asks for.", pairs:[
-      ["To what extent should cities ban private cars from their centres?","Argumentative","“To what extent” asks you to take and defend a position, usually somewhere between yes and no."],
-      ["Compare the health systems of Costa Rica and Thailand.","Compare–contrast","“Compare” asks for similarities and differences, organised to make a point."],
+      ["To what extent should cities ban private cars from their centers?","Argumentative","“To what extent” asks you to take and defend a position, usually somewhere between yes and no."],
+      ["Compare the health systems of Costa Rica and Thailand.","Compare–contrast","“Compare” asks for similarities and differences, organized to make a point."],
       ["Explain the main causes of the 2008 global financial crisis.","Cause–effect","“Explain the causes” asks why something happened."],
       ["How can small island states reduce their dependence on imported fuel?","Problem–solution","“How can … reduce” asks you to propose and evaluate solutions to a problem."]
     ]},
     {id:"e1u3-l1-x2", type:"mcq", q:"Hana is comparing two water treatment methods on three points: cost, energy use and safety. Which plan is **point by point**?", options:[
       {t:"Paragraph 1: cost of both methods. Paragraph 2: energy use of both. Paragraph 3: safety of both.", ok:true, why:"Right. Each paragraph covers one point for both methods, so the comparison stays in view throughout."},
       {t:"Paragraph 1: everything about method A. Paragraph 2: everything about method B. Paragraph 3: comparison.", why:"That is the **block** pattern: all of A, then all of B. It is fine for short essays, but it isn’t point by point."},
-      {t:"Paragraph 1: the history of water treatment. Paragraph 2: method A. Paragraph 3: method B.", why:"This is a block pattern with a background paragraph added. Point by point organises paragraphs by the points of comparison."},
-      {t:"One long paragraph that mentions both methods in any order.", why:"That has no organising pattern at all. Readers need a clear structure to follow a comparison."}
+      {t:"Paragraph 1: the history of water treatment. Paragraph 2: method A. Paragraph 3: method B.", why:"This is a block pattern with a background paragraph added. Point by point organizes paragraphs by the points of comparison."},
+      {t:"One long paragraph that mentions both methods in any order.", why:"That has no organizing pattern at all. Readers need a clear structure to follow a comparison."}
     ]},
     {id:"e1u3-l1-x3", type:"mcq", q:"Which sentence uses comparison language correctly in formal academic writing?", options:[
       {t:"Rural schools often share teachers between classes, whereas urban schools usually have one teacher per class.", ok:true, why:"Correct. “Whereas” joins two clauses in one sentence and shows a contrast."},
@@ -225,7 +225,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e1u3-l2-x1", type:"sort", q:"Kenji’s paragraph is split into parts. Is each part a claim, evidence or reasoning?", buckets:["Claim","Evidence","Reasoning"], items:[
-      {t:"Shared e-scooters have probably reduced short car trips in the city centre.", b:0, why:"A statement the writer wants us to accept, hedged with “probably”. Someone could question it, so it is a claim."},
+      {t:"Shared e-scooters have probably reduced short car trips in the city center.", b:0, why:"A statement the writer wants us to accept, hedged with “probably”. Someone could question it, so it is a claim."},
       {t:"A council survey found that 30% of scooter users said they would otherwise have driven.", b:1, why:"A specific finding from a source: evidence."},
       {t:"Traffic counts on the main shopping street fell by 8% in the year after scooters arrived.", b:1, why:"Measured data: evidence."},
       {t:"Because both the survey and the traffic counts point the same way, scooters are a likely cause, although the counts could also reflect other changes.", b:2, why:"This explains how the evidence supports the claim, and notes a limit. That is reasoning."},
@@ -277,7 +277,7 @@ ICA.addUnit({
     {id:"e1u3-l2-x8", type:"explain", q:"In your essay, why would you write “Although the scheme is expensive, it saves money over time” rather than “Although the scheme saves money over time, it is expensive”? Also explain one grammar mistake to avoid with “although”.", size:"3–4 sentences", hint:"Which clause carries more weight, and how many linking words does one contrast need?", model:"The idea after the concession, in the main clause, carries more weight and is what the reader remembers. If my argument is that the scheme is worth it, I concede the cost in the “although” clause and put the saving in the main clause. The second version would leave the reader thinking about the cost. The grammar mistake to avoid is using two linking words for one contrast: “Although the scheme is expensive, but it saves money” is wrong; choose “although” or “but”.", points:["Says the main clause carries the point the reader remembers", "Links the choice to the writer’s argument", "Explains the effect of the reversed version", "Names the “although … but” error (one linking word per contrast)"]}
    ],
    apply:{
-    intro:"Write about a topic from your own studies or work, or any question you care about. The goal is to practise the language of argument, so keep it short and check each part.",
+    intro:"Write about a topic from your own studies or work, or any question you care about. The goal is to practice the language of argument, so keep it short and check each part.",
     tasks:[
      {t:"Write one CER paragraph", how:[
        "Choose a claim you can support with evidence you already have (a reading, a dataset, a report).",
@@ -292,7 +292,7 @@ ICA.addUnit({
        "Rewrite your answer as one sentence with “Although…” and once with “Despite…”, and check the grammar against the table."
      ], write:"Counterargument… Rebuttal (strategy: …)… “Although” version… “Despite” version…"}
     ],
-    proof:"One labelled CER paragraph, plus a counterargument with a named rebuttal strategy and two correct concession sentences."
+    proof:"One labeled CER paragraph, plus a counterargument with a named rebuttal strategy and two correct concession sentences."
    },
    read:[
     {book:"owg", where:"Section 10.3 “Glance at Genre: Thesis, Reasoning, and Evidence”", note:"A US college guide to claims, reasons and evidence in position arguments."},
@@ -312,7 +312,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"Two ways to bring in a source", body:[
-      {lead:"Think of a photograph. You can put a person in the centre of the picture, or you can put the scene in the centre with the person small in the corner. Citations work the same way."},
+      {lead:"Think of a photograph. You can put a person in the center of the picture, or you can put the scene in the center with the person small in the corner. Citations work the same way."},
       "An [[integral-citation|integral citation]] puts the author’s name inside your sentence, as part of its grammar: usually as the subject of a reporting verb, but also inside a phrase such as “According to Mensah (2021),…” or “Mensah’s (2021) survey…”. A [[non-integral-citation|non-integral citation]] keeps the name out of the sentence, in brackets or as a number, so the focus stays on the idea. The linguist John Swales described these two types in *Genre Analysis* (1990), and the terms are now widely used.",
       {table:[["Type","Example (APA style)","Focus"],["Integral","**Mensah (2021)** found that rainwater tanks reduced water costs.","The researcher and what they did"],["Non-integral","Rainwater tanks can reduce household water costs **(Mensah, 2021)**.","The finding or idea"]]},
       "Both kinds are correct, and good writers mix them. Use integral citations when the person matters to your point: when you contrast two researchers’ views, when one study is central, or when you want to show that a claim is someone’s position, not an established fact. Use non-integral citations to state well-supported findings, or to group several sources behind one point.",
@@ -327,12 +327,12 @@ ICA.addUnit({
     ]},
     {h:"The grammar of reporting verbs", body:[
       "Reporting verbs don’t all follow the same pattern. This is where many writers, including first-language English speakers, make mistakes. Learn each verb with its pattern, as a [[collocation]].",
-      {table:[["Pattern","Verbs","Example"],["verb + that-clause","argue, claim, suggest, find, show, note, conclude, report, state, observe","Lee (2018) **argues that** prices will fall."],["verb + object","describe, examine, discuss, investigate, analyse, outline, question, challenge","Ruiz (2020) **examines** rural migration."],["verb + object + as","describe, define, regard, characterise, see","Ali (2017) **describes** the reform **as** a turning point."],["verb + object + for","criticise, praise, blame","Wu (2019) **criticises** the study **for** its small sample."],["verb + preposition","focus on, comment on, refer to, object to","Diaz (2022) **focuses on** urban schools."]]},
+      {table:[["Pattern","Verbs","Example"],["verb + that-clause","argue, claim, suggest, find, show, note, conclude, report, state, observe","Lee (2018) **argues that** prices will fall."],["verb + object","describe, examine, discuss, investigate, analyze, outline, question, challenge","Ruiz (2020) **examines** rural migration."],["verb + object + as","describe, define, regard, characterize, see","Ali (2017) **describes** the reform **as** a turning point."],["verb + object + for","criticize, praise, blame","Wu (2019) **criticizes** the study **for** its small sample."],["verb + preposition","focus on, comment on, refer to, object to","Diaz (2022) **focuses on** urban schools."]]},
       "Common errors, and their fixes:",
       {list:[
         "**discuss about** → **discuss**: “Ito (2016) discusses the risks.” (But the noun takes “about”: “a discussion about the risks”.)",
         "**describe that** → **describe how / describe X as**: “Chen describes how farmers share tools.”",
-        "**emphasise on** → **emphasise**: “Rao emphasises the cost.” (But “put emphasis on” and “focus on” are correct.)",
+        "**emphasize on** → **emphasize**: “Rao emphasizes the cost.” (But “put emphasis on” and “focus on” are correct.)",
         "**suggest someone to do** → **suggest that someone (should) do** or **suggest doing**: “Kaya suggests that teachers use shorter tests.”",
         "**According to X, X argues…** → choose one: “According to Diallo (2015), the reform worked.” or “Diallo (2015) argues that the reform worked.”"
       ]},
@@ -345,7 +345,7 @@ ICA.addUnit({
       {key:"Pick the tense that matches your message, follow your field’s or style guide’s habits, and stay consistent within a paragraph."}
     ]},
     {h:"Quotations, paraphrases and several sources in one sentence", body:[
-      "When to quote, paraphrase or summarise, and how to do each honestly, is taught in Research Skills ({{quote-paraphrase-summary}}). Here are the sentence-level skills that go with them.",
+      "When to quote, paraphrase or summarize, and how to do each honestly, is taught in Research Skills ({{quote-paraphrase-summary}}). Here are the sentence-level skills that go with them.",
       "**A quotation must fit your grammar.** The sentence should still be correct if you remove the quotation marks.",
       {ex:"Original sentence by Haddad: “We found the opposite in every district we studied.”\nAwkward: Haddad (2021) says “we found the opposite in every district we studied”. (Whose “we”? And no page number.)\nBetter: Haddad (2021) reports that the team “found the opposite in every district” it studied (p. 50).\nBetter: According to Haddad (2021), the pattern was reversed “in every district” studied (p. 50).", label:"Fitting a quotation into your sentence (invented example)"},
       "**A [[paraphrase]] still needs a citation**, and it must change the structure as well as the words. Swapping a few synonyms into the original sentence is [[patchwriting]], which is usually treated as [[plagiarism-term|plagiarism]].",
@@ -382,11 +382,11 @@ ICA.addUnit({
       {t:"Ruiz (2020) describes the reform as a turning point for rural schools.", ok:true, why:"Correct. “Describe” takes an object and can add “as” + description: “describe X as Y”."},
       {t:"Ruiz (2020) describes that the reform was a turning point for rural schools.", why:"“Describe” doesn’t take a “that” clause. Use “describes the reform as…”, or a verb like “argues that”."},
       {t:"Ruiz (2020) discusses about the reform and its effects on rural schools.", why:"“Discuss” takes a direct object, with no “about”: “discusses the reform”."},
-      {t:"Ruiz (2020) emphasises on the reform’s effects on rural schools.", why:"“Emphasise” takes a direct object, with no “on”: “emphasises the reform’s effects”."}
+      {t:"Ruiz (2020) emphasizes on the reform’s effects on rural schools.", why:"“Emphasise” takes a direct object, with no “on”: “emphasizes the reform’s effects”."}
     ]},
     {id:"e1u3-l3-x3", type:"match", q:"Match each reporting verb to the pattern it is used with here.", pairs:[
       ["Lee (2018) argues…","…that prices will fall.","“Argue” is followed by a that-clause."],
-      ["Wu (2019) criticises the study…","…for its small sample.","“Criticise X for Y” gives the reason for the criticism."],
+      ["Wu (2019) criticizes the study…","…for its small sample.","“Criticise X for Y” gives the reason for the criticism."],
       ["Ali (2017) defines resilience…","…as the ability to recover after a shock.","“Define X as Y” gives the definition."],
       ["Diaz (2022) focuses…","…on urban schools.","“Focus” takes the preposition “on”."]
     ]},
@@ -438,7 +438,7 @@ ICA.addUnit({
        "For one of them, write a sentence that combines it with a second source (agreement or disagreement)."
      ], write:"Finding 1 integral… non-integral… Finding 2… Finding 3… Combined sentence…"}
     ],
-    proof:"A table of up to ten reporting sentences analysed for citation type, verb pattern, tense and stance, plus three findings written both ways and one sentence combining two sources."
+    proof:"A table of up to ten reporting sentences analyzed for citation type, verb pattern, tense and stance, plus three findings written both ways and one sentence combining two sources."
    },
    read:[
     {book:"phrasebank", where:"“Referring to sources”", note:"Includes phrases for referring to a previous study with the researcher, the time, the investigation or the topic prominent, and a short note on verb tenses."},
@@ -457,7 +457,7 @@ ICA.addUnit({
    ],
    learn:[
     {h:"What is a move?", body:[
-      {lead:"Think of a wedding, a job interview or a phone call to a doctor’s surgery. The details change every time, but the steps are recognisable: a greeting, the business, a closing. People expect them, and they notice when one is missing."},
+      {lead:"Think of a wedding, a job interview or a phone call to a doctor’s surgery. The details change every time, but the steps are recognizable: a greeting, the business, a closing. People expect them, and they notice when one is missing."},
       "Written genres work the same way. A [[rhetorical-move|move]] is a section of a text that does one job for the reader, such as “show why this topic matters” or “ask for a meeting”. A move can be one sentence or several. Linguists who study [[genre-academic|academic genres]] describe the typical moves of each genre, and the order they usually come in.",
       "Moves are not a fixed template. Writers skip, repeat or reorder them, and fields differ. But knowing the usual moves gives you a checklist (“Have I shown the gap?”) and a set of phrases for each job. That is especially useful for short texts where every sentence counts: introductions, abstracts and emails."
     ]},
@@ -519,13 +519,13 @@ ICA.addUnit({
    try:[
     {id:"e1u3-l4-x1", type:"order", q:"Put these sentences into the order of the CARS model.", items:[
       {t:"Urban heat is a serious health risk in many fast-growing cities.", why:"Move 1: establishes the territory by claiming the topic matters."},
-      {t:"Previous studies have measured temperatures in city centres and parks.", why:"Move 1 continues: reviews what earlier research has done."},
+      {t:"Previous studies have measured temperatures in city centers and parks.", why:"Move 1 continues: reviews what earlier research has done."},
       {t:"However, little is known about temperatures inside informal housing.", why:"Move 2: “However, little is known” indicates a gap."},
       {t:"This study recorded indoor temperatures in 40 homes over one hot season.", why:"Move 3: occupies the niche by describing the present research."}
     ]},
     {id:"e1u3-l4-x2", type:"mcq", q:"Which sentence most clearly does the job of **Move 2** (establishing a niche)?", options:[
-      {t:"However, it remains unclear whether these programmes work for adult learners.", ok:true, why:"Right. “However” plus “it remains unclear whether” points to a gap: an open question this paper can address."},
-      {t:"Literacy programmes have been studied in many countries.", why:"This reviews previous research, which is Move 1 (establishing the territory)."},
+      {t:"However, it remains unclear whether these programs work for adult learners.", ok:true, why:"Right. “However” plus “it remains unclear whether” points to a gap: an open question this paper can address."},
+      {t:"Literacy programs have been studied in many countries.", why:"This reviews previous research, which is Move 1 (establishing the territory)."},
       {t:"This paper reports a study of 120 adult learners in two cities.", why:"This describes the present research, which is Move 3 (occupying the niche)."},
       {t:"Literacy is essential for full participation in society.", why:"This claims the topic is important, a typical first step of Move 1."}
     ]},
@@ -585,7 +585,7 @@ ICA.addUnit({
        "Check it against the “before you press send” list."
      ], write:"Subject… Greeting… Who I am… Purpose… Details… Request… Closing…"}
     ],
-    proof:"One introduction marked with CARS moves and a gap sentence, one abstract labelled with five moves and tenses, and one email draft that has all seven moves."
+    proof:"One introduction marked with CARS moves and a gap sentence, one abstract labeled with five moves and tenses, and one email draft that has all seven moves."
    },
    read:[
     {book:"phrasebank", where:"“Introducing work”", note:"Phrases for each job in an introduction: establishing importance, reviewing previous work, identifying a gap, stating the purpose and outlining the structure. Its introduction mentions Swales’s CARS model."},
@@ -614,7 +614,7 @@ ICA.addUnit({
       "Everyone makes the same few mistakes again and again. Writers whose first language isn’t English often have patterns linked to their other languages: for example, languages without articles can make “a/an/the” hard; languages that don’t mark plurals on nouns can make “-s” endings easy to forget. These patterns are normal. They are not a sign of poor ability.",
       "The most efficient way to improve is to find **your** patterns and check for them on purpose. Keep a personal **error list**:",
       {table:[["My error","Example from my work","Correct form"],["Missing article","Results show increase in…","Results show **an** increase in…"],["“informations”","The informations were…","The information **was**…"],["“discuss about”","Section 3 discusses about…","Section 3 discusses…"],["Verb agreement after a long subject","The cost of the new machines are…","The cost of the new machines **is**…"]]},
-      "Build the list from feedback: every time a tutor, a writing centre or a checker marks the same type of problem twice, add it. Unit 2 explains the grammar behind the most common ones: [[article-grammar|articles]], [[countable-noun|countable and uncountable nouns]], [[subject-verb-agreement|subject–verb agreement]], [[run-on-sentence|run-on sentences]] and [[sentence-fragment|fragments]] ({{grammar-trouble-spots}}).",
+      "Build the list from feedback: every time a tutor, a writing center or a checker marks the same type of problem twice, add it. Unit 2 explains the grammar behind the most common ones: [[article-grammar|articles]], [[countable-noun|countable and uncountable nouns]], [[subject-verb-agreement|subject–verb agreement]], [[run-on-sentence|run-on sentences]] and [[sentence-fragment|fragments]] ({{grammar-trouble-spots}}).",
       {tip:"Use your word processor’s search (often [[kbd:Ctrl]] + [[kbd:F]], or [[kbd:Cmd]] + [[kbd:F]] on a Mac) to hunt for your own errors: search for “informations”, “discuss about” or “the the”. A search finds every one in seconds."}
     ]},
     {h:"A checklist, one problem at a time", body:[
@@ -640,7 +640,7 @@ ICA.addUnit({
         "**Change how it looks:** print it, change the font size, or read it on a different screen.",
         "**Read backwards, one sentence at a time**, from the last sentence to the first. Each sentence is separated from the flow of the argument, so you see its grammar.",
         "**Check numbers and names separately**, against your notes or sources.",
-        "**Ask a reader:** a classmate, a writing group or your institution’s writing centre or language support. Many universities offer this free."
+        "**Ask a reader:** a classmate, a writing group or your institution’s writing center or language support. Many universities offer this free."
       ]},
       {tip:"If you record yourself reading a paragraph, keep the recording private. Listening back shows where you hesitate, and hesitation often marks a sentence that needs rewriting."}
     ]},
@@ -654,7 +654,7 @@ ICA.addUnit({
       "Rules on AI and language tools **differ between institutions, courses and publishers, and they change**. Some allow grammar checking but not AI rewriting; some allow AI for brainstorming or language feedback if you declare it; some forbid it for certain assessments. So the first step is always to **read your institution’s and your course’s policy**, and ask if it is unclear.",
       "Whatever the policy, some principles hold almost everywhere:",
       {list:[
-        "**Never present AI-generated text as your own work.** Submitting text a tool wrote, without permission and acknowledgement, is treated as academic misconduct in most institutions, much like copying from another person ({{plagiarism}}).",
+        "**Never present AI-generated text as your own work.** Submitting text a tool wrote, without permission and acknowledgment, is treated as academic misconduct in most institutions, much like copying from another person ({{plagiarism}}).",
         "**Disclose what the policy asks you to disclose:** which tool, what for, and how you checked it ([[ai-disclosure]]).",
         "**Keep your drafts and notes.** [[version-history|Version history]] shows how your work developed.",
         "**Check everything a tool gives you**, especially facts and references. Research Skills explains why in {{ai-chatbot-accuracy}} and covers research policies in {{ai-research-policies}}.",
@@ -662,7 +662,7 @@ ICA.addUnit({
       ]},
       "Machine translation (writing in your first language and translating) is a language tool too, and policies often cover it. Even where it is allowed, check the result carefully: translation tools can choose the wrong technical term or lose a hedge.",
       "A good habit is to use tools to **learn**, not just to fix. Ask a tool to *explain* why a sentence is a run-on, then correct it yourself. Accept changes one at a time, never all at once. Add repeated problems to your error list. Over time you need the tool less, and your writing still sounds like you.",
-      {warn:"AI-writing detectors are not reliable proof. A 2023 study by Liang and colleagues in the journal *Patterns* found that seven popular detectors, on average, wrongly labelled more than half of 91 essays that non-native speakers had written for the TOEFL English test as AI-generated, while judging essays by US school students almost perfectly. If you are ever questioned, your drafts, notes and version history are your best evidence."},
+      {warn:"AI-writing detectors are not reliable proof. A 2023 study by Liang and colleagues in the journal *Patterns* found that seven popular detectors, on average, wrongly labeled more than half of 91 essays that non-native speakers had written for the TOEFL English test as AI-generated, while judging essays by US school students almost perfectly. If you are ever questioned, your drafts, notes and version history are your best evidence."},
       {terms:["editing","proofreading","grammar-checker"]}
     ]}
    ],
@@ -705,7 +705,7 @@ ICA.addUnit({
       {t:"Asking a tool to explain why your sentence is a run-on, then fixing it yourself", b:0, why:"You do the writing; the tool helps you learn. Many policies allow this kind of language help, sometimes with disclosure."},
       {t:"Using the built-in spelling checker in your word processor", b:0, why:"Spelling checkers are widely accepted, though check rules for exams or language assessments."},
       {t:"Pasting a paragraph an AI chatbot wrote into your essay without saying so", b:1, why:"The text isn’t yours, and hiding its source presents it as your own work."},
-      {t:"Getting feedback on your draft from your university’s writing centre", b:0, why:"Writing centres are designed for this: they comment, and you make the changes."},
+      {t:"Getting feedback on your draft from your university’s writing center", b:0, why:"Writing centers are designed for this: they comment, and you make the changes."},
       {t:"Running a published article through a paraphrasing tool and submitting the result as your own analysis", b:1, why:"The ideas and structure come from the article and the wording from the tool. Neither is your work, and it isn’t cited."},
       {t:"Asking an AI tool to write the whole essay and changing a few words", b:1, why:"Changing a few words doesn’t make the work yours. This is misconduct under almost any policy."}
     ]},
@@ -713,7 +713,7 @@ ICA.addUnit({
       ["Removes a hedge","Changes “may increase” to “increases”","The grammar stays correct but the claim becomes stronger than the evidence."],
       ["“Corrects” a technical term","Changes “ligand” to “legend” in a chemistry report","Specialist words are often missing from a checker’s dictionary."],
       ["Invents a source","Adds “(Smith, 2018)” to a sentence, but no such study exists","AI tools can produce references that look real but aren’t: a hallucinated citation."],
-      ["Flattens your voice","Rewrites a clear personal argument into generic phrases","Rewrites tend towards common, general wording that sounds like everyone else."]
+      ["Flattens your voice","Rewrites a clear personal argument into generic phrases","Rewrites tend toward common, general wording that sounds like everyone else."]
     ]},
     {id:"e1u3-l5-x7", type:"mcq", q:"Fatima’s course policy says: “You may use AI tools to check grammar, but you must say which tool you used.” She used an AI tool to correct grammar in her essay. What should she do?", options:[
       {t:"Add the disclosure the policy asks for, and keep her drafts.", ok:true, why:"Right. Her use is allowed. Disclosing it as the policy requires (which tool, and that she used it for grammar) keeps her honest and protected. Drafts show how her work developed."},
@@ -733,7 +733,7 @@ ICA.addUnit({
        "Read it aloud (or use read-aloud) and mark any place you hesitated."
      ], write:"My paragraph… Problems found at each checklist point… Places I hesitated…"},
      {t:"Start your personal error list", how:[
-       "Collect feedback on two or three pieces of your writing (tutor comments, writing-centre notes, or a checker’s suggestions you agreed with).",
+       "Collect feedback on two or three pieces of your writing (tutor comments, writing-center notes, or a checker’s suggestions you agreed with).",
        "Group the problems by type and count them.",
        "Write your top five with an example and the correct form, as in the table in this lesson."
      ], write:"Error 1… example… correct form… Error 2… Error 3… Error 4… Error 5…"},
@@ -760,7 +760,7 @@ ICA.addUnit({
      {t:"Problem–solution", ok:true, why:"“Suggest ways to…” asks you to describe a problem, propose solutions and evaluate them."},
      {t:"Argumentative, with no solutions needed", why:"Argumentative questions usually say “To what extent…?” or “Do you agree…?”. Here the task word asks for solutions."}]},
    {id:"e1u3-cp02", lesson:"e1u3-l1", level:2, q:"Joon is comparing the cost of two kinds of transport. Which sentence compares like with like?", options:[
-     {t:"The cost of rail travel is much higher than travelling by bus.", why:"This compares a cost with an activity (travelling by bus). Add *that of* so that cost is compared with cost."},
+     {t:"The cost of rail travel is much higher than traveling by bus.", why:"This compares a cost with an activity (traveling by bus). Add *that of* so that cost is compared with cost."},
      {t:"The cost of rail travel is higher than that of bus travel.", ok:true, why:"*That of* stands for “the cost of”, so the sentence compares one cost with another cost."},
      {t:"The cost of rail travel is higher than the bus.", why:"This compares a cost with a vehicle. Compare the cost with the cost of bus travel."},
      {t:"Rail travel’s cost is higher than bus travel.", why:"Still a cost compared with travel. Write “higher than bus travel’s” or “than that of bus travel”."}]},
@@ -774,13 +774,13 @@ ICA.addUnit({
      {t:"In another city, cyclist injuries fell by 25% in the year after bike lanes were built there.", why:"This adds more evidence, but it doesn’t explain why the first evidence supports the claim. Evidence doesn’t speak for itself."},
      {t:"Therefore, as the figures above show, bike lanes can make cycling safer on city streets.", why:"This only repeats the claim and points at the figures. Reasoning answers “so what?”: why does the evidence show this?"},
      {t:"This proves that bike lanes prevent all cycling injuries, on every kind of street in a city.", why:"This overclaims: two streets can’t prove anything about all injuries. Reasoning should also be honest about limits."}]},
-   {id:"e1u3-cp05", lesson:"e1u3-l2", level:1, q:"Critics say a new library booking app is expensive. Kwame replies: “The licence is costly, but it is cheaper than keeping the library open two extra evenings a week.” Which rebuttal strategy is this?", options:[
-     {t:"Refute: it is wrong, or its evidence is weak", why:"Kwame accepts that the licence is costly. Refuting would mean showing the objection or its evidence is wrong."},
+   {id:"e1u3-cp05", lesson:"e1u3-l2", level:1, q:"Critics say a new library booking app is expensive. Kwame replies: “The license is costly, but it is cheaper than keeping the library open two extra evenings a week.” Which rebuttal strategy is this?", options:[
+     {t:"Refute: it is wrong, or its evidence is weak", why:"Kwame accepts that the license is costly. Refuting would mean showing the objection or its evidence is wrong."},
      {t:"Limit: it is true, but only in some cases", why:"He doesn’t say the cost matters only in some situations. He compares it with a bigger cost."},
      {t:"A straw man: the critics’ view is made weaker than it is", why:"A straw man distorts the other side. Kwame states the objection fairly and accepts it."},
      {t:"Outweigh: it is true, but something else matters more", ok:true, why:"He admits the cost and argues that the alternative would cost more, so the saving outweighs it."}]},
    {id:"e1u3-cp06", lesson:"e1u3-l2", level:2, q:"Esther is writing an essay that supports school uniforms. Which sentence introduces a counterargument **fairly**?", options:[
-     {t:"Some people think students should be allowed to wear anything at all, even pyjamas.", why:"This is a straw man: a silly version of the other side that is easy to knock down. Nobody serious argues it."},
+     {t:"Some people think students should be allowed to wear anything at all, even pajamas.", why:"This is a straw man: a silly version of the other side that is easy to knock down. Nobody serious argues it."},
      {t:"Critics argue that uniforms add costs for low-income families.", ok:true, why:"A reasonable objection that a thoughtful reader might hold, introduced with a reporting verb and some distance."},
      {t:"Opponents of uniforms simply don’t care about discipline.", why:"This attacks the people, not their argument, and distorts their view. Present the strongest version of the objection."},
      {t:"Obviously, no sensible person could object to uniforms.", why:"This dismisses the other side instead of presenting it. A fair counterargument is one your rebuttal must really answer."}]},
@@ -816,24 +816,24 @@ ICA.addUnit({
      {t:"Reject all tool suggestions from now on, since tools are never useful", why:"Tools are often helpful for typos and many grammar errors. Check each suggestion instead of accepting or rejecting everything."}]}
   ],
   codex:[
-   {id:"essay-types", title:"Essay types and their shapes", aka:["essay structure","rhetorical modes","patterns of organisation"], tags:["academic English","writing","essays"], summary:"Argumentative, compare–contrast, cause–effect and problem–solution essays: how to spot each from the question, how each is organised, and the language that holds it together.",
+   {id:"essay-types", title:"Essay types and their shapes", aka:["essay structure","rhetorical modes","patterns of organization"], tags:["academic English","writing","essays"], summary:"Argumentative, compare–contrast, cause–effect and problem–solution essays: how to spot each from the question, how each is organized, and the language that holds it together.",
     levels:{
      starter:[
       "Most university essays answer a question with a clear position, supported by evidence. Different questions ask for different kinds of thinking, so essays have a few common shapes. The **task word** in the question usually tells you which: “To what extent…?” asks for an argument; “Compare…” asks for similarities and differences; “Explain the causes…” asks for causes and effects; “How can … be solved?” asks for problems and solutions.",
-      "Every shape keeps the same frame: an introduction with a [[thesis-statement|thesis]], a body and a conclusion. What changes is how the body is organised. An argument gives reasons and answers objections. A comparison goes block by block or point by point. A cause–effect essay follows causes to effects. A problem–solution essay moves from situation to problem, solution and evaluation.",
+      "Every shape keeps the same frame: an introduction with a [[thesis-statement|thesis]], a body and a conclusion. What changes is how the body is organized. An argument gives reasons and answers objections. A comparison goes block by block or point by point. A cause–effect essay follows causes to effects. A problem–solution essay moves from situation to problem, solution and evaluation.",
       {key:"Read the task word first, choose the shape that answers the question, and keep your main claim near the start."}
      ],
      builder:[
       {table:[["Type","Typical body","Key language"],["Argumentative","Reasons with evidence; counterargument and rebuttal","“This essay argues that…”, “Critics argue…; however,…”"],["Compare–contrast","Block (A, then B) or point by point","whereas, while, in contrast, similarly, likewise, unlike"],["Cause–effect","Causes, effects, or a chain","lead to, result in, result from, because of, as a result"],["Problem–solution","Situation, problem, solution, evaluation","“One possible solution would be…”, “This would…, although…”"]]},
       "Grammar matters in the signal language. “Whereas” and “while” join two clauses in one sentence; “In contrast,” and “Similarly,” begin a new sentence. “Because” is followed by a clause, but “because of” and “due to” by a noun phrase. “Result in” points from cause to effect, “result from” from effect to cause; mixing them reverses your meaning.",
       "Comparisons need a point (what do the differences show?), and causal claims need care: a correlation is not proof of cause, so writers hedge (“may contribute to”). Problem–solution essays are strongest when every solution is evaluated: cost, who benefits, who might be left out.",
-      "Real essays often mix shapes, and lecturers use task words differently. “Discuss” usually wants a judgement, not a neutral list. When in doubt, check the marking criteria or ask.",
+      "Real essays often mix shapes, and lecturers use task words differently. “Discuss” usually wants a judgment, not a neutral list. When in doubt, check the marking criteria or ask.",
       "A quick planning routine: underline the task word, circle the topic words, box any limits, then write “This question asks me to…”. Choose the shape, draft a one-sentence thesis that makes a point, and plan one paragraph per reason, point of comparison, cause or solution."
      ],
      pro:[
       "These shapes overlap with what composition textbooks call **reasoning strategies** or **rhetorical modes** (OpenStax’s *Writing Guide with Handbook* lists analogy, cause and effect, classification and division, comparison and contrast, problem and solution, and definition). In real texts they are usually combined: a classification inside an argument, a comparison inside a proposal.",
       "The problem–solution pattern has a long history in text linguistics. Michael Hoey (1983) described a common **Situation–Problem–Response–Evaluation** sequence across many kinds of text, not only essays. Its evaluation step explains why a strong problem–solution essay doesn’t stop at the proposal: it judges it, and may loop back to a new problem if the response fails.",
-      "Disciplines shape genres. Many science and engineering programmes rarely set essays at all, preferring reports with [[imrad|IMRaD]] headings; many humanities programmes expect longer essays where the argument develops across sections with few headings; professional fields may set reflective writing or case analyses. Expectations about where the thesis appears also vary between writing cultures: English-medium university writing usually states it early, while other traditions may build towards it. Neither is wrong, but markers in English-medium institutions usually expect the early statement.",
+      "Disciplines shape genres. Many science and engineering programs rarely set essays at all, preferring reports with [[imrad|IMRaD]] headings; many humanities programs expect longer essays where the argument develops across sections with few headings; professional fields may set reflective writing or case analyses. Expectations about where the thesis appears also vary between writing cultures: English-medium university writing usually states it early, while other traditions may build toward it. Neither is wrong, but markers in English-medium institutions usually expect the early statement.",
       "The five-paragraph essay is a school teaching model. University essays have as many paragraphs as the argument needs, and paragraph length follows the idea, not a formula."
      ]},
     related:["building-an-argument","argument-structure","hedging-and-boosting"], read:[{book:"owg", where:"Section 11.3 “Glance at Genre: Reasoning Strategies and Signal Words”"}],
@@ -855,7 +855,7 @@ ICA.addUnit({
       "Match the evidence to the claim. One example can illustrate a point but can’t show it is common; a general claim (“most”, “often”) needs data or several studies. Introduce each kind of evidence with suitable language: “Data from… show that…”, “A study of 400 farmers found that…”, “For example,…”, “As the World Health Organization notes,…”."
      ],
      pro:[
-      "The claim–evidence–reasoning (CER) framework is widely used in science education. It simplifies the model of the philosopher Stephen Toulmin, *The Uses of Argument* (1958), whose parts include the **claim**, the **data** (grounds), the **warrant** (the general principle linking data to claim), **backing** for the warrant, a **qualifier** (how certain the claim is) and a **rebuttal** (conditions under which the claim would not hold). In academic English the qualifier is usually realised as hedging, and Toulmin’s rebuttal as the limitations a careful writer admits.",
+      "The claim–evidence–reasoning (CER) framework is widely used in science education. It simplifies the model of the philosopher Stephen Toulmin, *The Uses of Argument* (1958), whose parts include the **claim**, the **data** (grounds), the **warrant** (the general principle linking data to claim), **backing** for the warrant, a **qualifier** (how certain the claim is) and a **rebuttal** (conditions under which the claim would not hold). In academic English the qualifier is usually realized as hedging, and Toulmin’s rebuttal as the limitations a careful writer admits.",
       "Information structure matters in concession. English tends to put new or important information at the end of a sentence, so the main clause after a concessive clause usually carries the writer’s point. Reversing the clauses reverses the emphasis even when the facts stay the same.",
       "Concession and counterargument are also stance devices. Phrases like “It could be argued that…” or “Some researchers maintain that…” attribute a view to others and mark distance from it; “Admittedly” signals that the writer accepts a point in part. Choosing these carefully is part of writing a balanced, credible argument.",
       "Whether to write “I argue” varies: many fields and journals accept first person, others prefer impersonal forms. See [[academic-register]] and follow your field’s guidance.",
@@ -872,31 +872,31 @@ ICA.addUnit({
       {key:"Choose the focus (author or idea), choose the verb for its meaning, and use the verb’s grammar pattern."}
      ],
      builder:[
-      {table:[["Pattern","Verbs"],["+ that-clause","argue, claim, suggest, find, show, note, conclude, report, state"],["+ object","describe, examine, discuss, investigate, analyse, question"],["+ object + as","describe, define, regard, characterise, see"],["+ object + for","criticise, praise, blame"],["+ preposition","focus on, comment on, refer to, object to"]]},
-      "Common errors: “discuss about”, “describe that”, “emphasise on”, “suggest someone to do”, “mention about”, and double subjects such as “According to Rao’s study, it shows…”.",
+      {table:[["Pattern","Verbs"],["+ that-clause","argue, claim, suggest, find, show, note, conclude, report, state"],["+ object","describe, examine, discuss, investigate, analyze, question"],["+ object + as","describe, define, regard, characterize, see"],["+ object + for","criticize, praise, blame"],["+ preposition","focus on, comment on, refer to, object to"]]},
+      "Common errors: “discuss about”, “describe that”, “emphasize on”, “suggest someone to do”, “mention about”, and double subjects such as “According to Rao’s study, it shows…”.",
       "Tense: the **present** for an author’s position or a still-relevant idea (“Rao argues”), the **past** for what a specific study did and found (“Rao surveyed… and found”), and the **present perfect** for research in general (“Several studies have shown”). APA Style recommends past or present perfect for others’ research; many humanities writers use the present for texts and authors. Stay consistent within a paragraph.",
       "Several sources can share a sentence: “Both Ito (2018) and Mwangi (2021) found…”, “While Ito (2018) argues…, Mwangi (2021) suggests…”, or “(Ito, 2018; Mwangi, 2021)”.",
       "Quotations must fit the grammar of your sentence: if you removed the quotation marks, the sentence should still be correct. A paraphrase still needs a citation and must change the structure as well as the words, or it becomes patchwriting.",
       "Your own voice belongs in the paragraph too. After reporting sources, add a sentence that says what they mean together, usually at the start or end of the paragraph, without a citation, because it is your conclusion."
      ],
      pro:[
-      "The integral/non-integral distinction was described by John Swales in *Genre Analysis* (1990) and has been used in many corpus studies since. Swales counted a citation as integral when the author’s name has a grammatical role in the sentence, so “According to Mensah (2021),…” is integral too. Corpus studies, such as Ken Hyland’s work across eight disciplines (1999), report that the balance varies by field: non-integral citations are common everywhere, but writers in many humanities and social science fields use integral citations more often, foregrounding authors and their positions, while writers in many sciences and engineering fields favour non-integral citations, foregrounding findings. Numbered citation styles show the same contrast (“Mensah [4] found…” versus “…costs [4].”).",
+      "The integral/non-integral distinction was described by John Swales in *Genre Analysis* (1990) and has been used in many corpus studies since. Swales counted a citation as integral when the author’s name has a grammatical role in the sentence, so “According to Mensah (2021),…” is integral too. Corpus studies, such as Ken Hyland’s work across eight disciplines (1999), report that the balance varies by field: non-integral citations are common everywhere, but writers in many humanities and social science fields use integral citations more often, foregrounding authors and their positions, while writers in many sciences and engineering fields favor non-integral citations, foregrounding findings. Numbered citation styles show the same contrast (“Mensah [4] found…” versus “…costs [4].”).",
       "Reporting verbs are a major resource for stance. Researchers such as Ken Hyland have classified them by what they report (research acts like “measure”, cognition acts like “believe”, discourse acts like “argue”) and by the attitude they signal (for example accepting, neutral, tentative or critical). Because evaluation is built into the verb, swapping “demonstrates” for “claims” can change your argument without changing a single fact.",
       "The Academic Phrasebank’s “Referring to sources” page includes phrases for referring to a previous investigation with the researcher, the time, the investigation or the topic prominent. It notes that the general tense patterns are “by no means rigid”. Treat tense guidance as a set of options, and follow the style guide your course or journal requires.",
-      "For learners of English, the practical lesson is to learn reporting verbs as whole patterns, not single words: “argue that”, “describe X as Y”, “criticise X for Y”, “focus on”. [[learner-dictionary|Learner dictionaries]] show these patterns with real examples, and collecting them from articles in your own field shows which verbs your field prefers."
+      "For learners of English, the practical lesson is to learn reporting verbs as whole patterns, not single words: “argue that”, “describe X as Y”, “criticize X for Y”, “focus on”. [[learner-dictionary|Learner dictionaries]] show these patterns with real examples, and collecting them from articles in your own field shows which verbs your field prefers."
      ]},
     related:["building-an-argument","quote-paraphrase-summary","citation-styles"], read:[{book:"phrasebank", where:"“Referring to sources”"}],
     sources:[{t:"Academic Phrasebank: Referring to sources", url:"https://www.phrasebank.manchester.ac.uk/referring-to-sources/"},{t:"APA Style: Verb tense", url:"https://apastyle.apa.org/style-grammar-guidelines/grammar/verb-tense"},{t:"OpenStax Writing Guide with Handbook, 12.6 Editing Focus: Integrating Sources and Quotations", url:"https://openstax.org/books/writing-guide/pages/12-6-editing-focus-integrating-sources-and-quotations"}], checked:"2026-11"},
    {id:"introductions-and-abstracts", title:"Introductions and abstracts: moves and language", aka:["CARS model","Create a Research Space","abstract moves","rhetorical moves"], tags:["academic English","writing","genre"], summary:"Swales’s CARS model for introductions, Hyland’s five abstract moves, and the language and tenses that go with each move.",
     levels:{
      starter:[
-      "Short academic texts often follow a recognisable sequence of **moves**: sections that each do one job for the reader.",
+      "Short academic texts often follow a recognizable sequence of **moves**: sections that each do one job for the reader.",
       "Research article introductions often follow the **CARS model** (Create a Research Space), described by John Swales in 1990. **Move 1** shows the topic matters and what is known. **Move 2** shows a gap or problem (“However, little is known about…”). **Move 3** says what this paper does (“This study examines…”). It works like a funnel: from broad to specific.",
       "Abstracts compress a whole paper into one paragraph. A common pattern has five moves: introduction (context), purpose, method, product (findings) and conclusion.",
       {key:"Moves are a map, not a template: use them to check that your introduction shows a gap and your abstract says what you did and found."}
      ],
      builder:[
-      {table:[["CARS move","Typical steps","Language"],["1. Establish a territory","claim importance; generalise; review research","“X has attracted growing attention…”"],["2. Establish a niche","counter-claim; indicate a gap; raise a question; continue a tradition","“However, few studies have…”, “It remains unclear whether…”"],["3. Occupy the niche","state the purpose or present research; announce findings; outline structure","“This paper aims to…”, “Section 3 presents…”"]]},
+      {table:[["CARS move","Typical steps","Language"],["1. Establish a territory","claim importance; generalize; review research","“X has attracted growing attention…”"],["2. Establish a niche","counter-claim; indicate a gap; raise a question; continue a tradition","“However, few studies have…”, “It remains unclear whether…”"],["3. Occupy the niche","state the purpose or present research; announce findings; outline structure","“This paper aims to…”, “Section 3 presents…”"]]},
       "Ken Hyland (2000) described five abstract moves: **Introduction**, **Purpose**, **Method**, **Product** and **Conclusion**. Many abstracts omit the introduction. Structured abstracts (Background, Methods, Results, Conclusions) make the moves into headings.",
       "Tense often follows the moves: present for context and implications, past for method and results, present perfect for the state of research (“Studies have shown…”).",
       "A student essay introduction is usually simpler: context, focus, thesis, and sometimes a short plan.",
@@ -904,7 +904,7 @@ ICA.addUnit({
       "Abstracts have their own checks: does the purpose sentence match the paper’s actual aim, are the main numbers the same as in the results, and does the conclusion claim no more than the findings support?"
      ],
      pro:[
-      "Swales’s 1990 model lists steps under each move: in Move 1, claiming centrality, making topic generalisations and reviewing items of previous research; in Move 2, counter-claiming, indicating a gap, question-raising or continuing a tradition; in Move 3, outlining purposes or announcing present research, announcing principal findings and indicating the article’s structure. Swales revised the model in later work, and genre researchers have shown variation across disciplines and languages, for example in how much literature Move 1 reviews and whether Move 3 announces findings. Introductions in some fields and languages state the gap less directly.",
+      "Swales’s 1990 model lists steps under each move: in Move 1, claiming centrality, making topic generalizations and reviewing items of previous research; in Move 2, counter-claiming, indicating a gap, question-raising or continuing a tradition; in Move 3, outlining purposes or announcing present research, announcing principal findings and indicating the article’s structure. Swales revised the model in later work, and genre researchers have shown variation across disciplines and languages, for example in how much literature Move 1 reviews and whether Move 3 announces findings. Introductions in some fields and languages state the gap less directly.",
       "Move analysis is a method in genre research: analysts label each sentence of many texts by its function and look for patterns. Hyland’s five-move model of abstracts comes from this tradition (*Disciplinary Discourses*, 2000) and has been widely used to compare abstracts across fields.",
       "Practical use: draft your introduction’s Move 2 sentence early, because it defines your contribution; write the abstract last, when your findings are fixed; and check the target journal’s abstract format and word limit before you start. Research Skills covers finding a genuine gap in {{research-gap}}.",
       "Moves also help when reading. Skimming a paper’s introduction for its Move 2 sentence quickly tells you what problem the authors think they solve, and reading an abstract move by move tells you whether the method and findings are relevant to you before you read the whole paper."
@@ -950,7 +950,7 @@ ICA.addUnit({
       "Keep a **personal error list** built from feedback: your top errors, an example of each, and the correct form. Typical items for many learners: articles, plural -s, uncountable nouns (“informations”), subject–verb agreement after long subjects, run-on sentences, and reporting-verb patterns (“discuss about”).",
       {ol:["Task: every paragraph answers the question; the thesis is clear.","Paragraphs: clear topic sentences and transitions.","Claims: hedged to match the evidence.","Sources: every borrowed idea cited; reporting verbs in the right pattern.","Sentences: no run-ons or fragments.","Words: formal, precise, no vague words.","Your error list, item by item.","Details: one spelling variety, numbers, labels, citations matching references."]},
       "Use search ([[kbd:Ctrl]]/[[kbd:Cmd]] + [[kbd:F]]) to hunt for your own typical errors. Proofread the final file in the format you will submit, because conversion can change formatting and symbols.",
-      "Helpful techniques: read aloud or use text-to-speech; take a break before proofreading; print the text or change its font; read sentences in reverse order to see each one’s grammar; check numbers and names against your notes; and ask a classmate, writing group or writing centre to read it.",
+      "Helpful techniques: read aloud or use text-to-speech; take a break before proofreading; print the text or change its font; read sentences in reverse order to see each one’s grammar; check numbers and names against your notes; and ask a classmate, writing group or writing center to read it.",
       "Proofread the final version, in the final format. Converting to PDF or pasting into an online form can change symbols, line breaks and formatting, and a last change made in a hurry often brings a new error with it."
      ],
      pro:[
@@ -979,7 +979,7 @@ ICA.addUnit({
      pro:[
       "AI-writing detectors are not reliable proof of misconduct. Liang and colleagues (2023, *Patterns*) tested seven widely used detectors on 91 essays written by non-native English speakers for the TOEFL test: on average, the detectors wrongly classified more than half (61.3%) as AI-generated, and 97.8% were flagged by at least one detector, while 88 essays by US eighth-grade students were classified almost perfectly. When the researchers used ChatGPT to make the TOEFL essays’ word choices more varied, the average false-positive rate fell to 11.6%. The authors argue this puts non-native writers at particular risk of false accusations.",
       "Policies are changing quickly and differ by institution, course, assessment and publisher. Some distinguish language support (allowed, sometimes with disclosure) from content generation (often not allowed); language assessments may forbid tools entirely. Publishers’ research policies are covered in {{ai-research-policies}}, and the accuracy problems of chatbots in {{ai-chatbot-accuracy}}.",
-      "Voice is also at stake. Fluent rewrites tend towards common phrasing, which can flatten an argument and blur the writer’s stance. Many writers in an additional language find their own, slightly less polished sentence communicates their meaning better than a smooth but generic one.",
+      "Voice is also at stake. Fluent rewrites tend toward common phrasing, which can flatten an argument and blur the writer’s stance. Many writers in an additional language find their own, slightly less polished sentence communicates their meaning better than a smooth but generic one.",
       "If your work is ever questioned, the strongest evidence is a record of your process: dated drafts, notes, outlines, version history in your word processor, and any disclosure you made. Keeping these is a simple habit that protects honest writers."
      ]},
     related:["editing-proofreading","ai-research-policies","ai-chatbot-accuracy"],
@@ -987,7 +987,7 @@ ICA.addUnit({
   ],
   terms:[
    {id:"argumentative-essay", term:"argumentative essay", def:"An essay that takes a clear position on a question where people could disagree, and supports it with reasons, evidence and answers to objections.", codex:"essay-types"},
-   {id:"compare-contrast-essay", term:"compare–contrast essay", def:"An essay that examines similarities and differences between two or more things to make a point about them, organised block by block or point by point.", codex:"essay-types"},
+   {id:"compare-contrast-essay", term:"compare–contrast essay", def:"An essay that examines similarities and differences between two or more things to make a point about them, organized block by block or point by point.", codex:"essay-types"},
    {id:"cause-effect-essay", term:"cause–effect essay", def:"An essay that explains why something happened, what happened because of it, or a chain of causes and effects.", codex:"essay-types"},
    {id:"problem-solution-essay", term:"problem–solution essay", def:"An essay that describes a problem, proposes one or more solutions and evaluates them, often following situation, problem, solution, evaluation.", codex:"essay-types"},
    {id:"counterargument", term:"counterargument", def:"A reasonable objection to your claim: a view that a thoughtful reader might hold, which you present fairly and then answer.", codex:"building-an-argument"},
@@ -1008,8 +1008,8 @@ ICA.addUnit({
    /* ---- Lesson 1 ---- */
    {id:"e1u3-q01", lesson:"e1u3-l1", level:1, q:"An essay question begins “To what extent…”. What kind of essay does it usually ask for?", options:[
      {t:"An argumentative essay that takes and defends a position", ok:true, why:"“To what extent” asks how far you agree, so you need a position supported by reasons and evidence."},
-     {t:"A description with no position", why:"A description without a judgement doesn’t answer “to what extent”."},
-     {t:"A list of all the facts you know about the topic", why:"Listing facts isn’t an answer. The question asks for a judgement."},
+     {t:"A description with no position", why:"A description without a judgment doesn’t answer “to what extent”."},
+     {t:"A list of all the facts you know about the topic", why:"Listing facts isn’t an answer. The question asks for a judgment."},
      {t:"A personal story about the topic", why:"Personal narrative is a different genre; this question asks for an argument."}]},
    {id:"e1u3-q02", lesson:"e1u3-l1", level:2, q:"Which sentence uses “whereas” correctly?", options:[
      {t:"Some species migrate in winter, whereas others hibernate.", ok:true, why:"Correct: “whereas” joins two contrasting clauses within one sentence."},
@@ -1027,10 +1027,10 @@ ICA.addUnit({
      {t:"Similarities in one paragraph and nothing at all about the differences", why:"A comparison can focus on similarities, but that isn’t what “block” means."},
      {t:"A table instead of paragraphs", why:"Essays use paragraphs; a table may help planning, but “block” describes paragraph order."}]},
    {id:"e1u3-q05", lesson:"e1u3-l1", level:2, q:"Which sentence is grammatically correct in formal writing?", options:[
-     {t:"The flight was cancelled because of the storm.", ok:true, why:"Correct: “because of” is followed by a noun phrase (“the storm”)."},
-     {t:"The flight was cancelled due to the storm was severe.", why:"“Due to” can’t be followed by a clause. Use “because the storm was severe”."},
-     {t:"The flight was cancelled because of the storm was severe.", why:"“Because of” needs a noun phrase, not a clause. Use “because the storm was severe”."},
-     {t:"The flight was cancelled because the storm.", why:"“Because” needs a clause with a verb: “because the storm was severe”, or use “because of the storm”."}]},
+     {t:"The flight was canceled because of the storm.", ok:true, why:"Correct: “because of” is followed by a noun phrase (“the storm”)."},
+     {t:"The flight was canceled due to the storm was severe.", why:"“Due to” can’t be followed by a clause. Use “because the storm was severe”."},
+     {t:"The flight was canceled because of the storm was severe.", why:"“Because of” needs a noun phrase, not a clause. Use “because the storm was severe”."},
+     {t:"The flight was canceled because the storm.", why:"“Because” needs a clause with a verb: “because the storm was severe”, or use “because of the storm”."}]},
    {id:"e1u3-q06", lesson:"e1u3-l1", level:3, q:"Oluwaseun’s problem–solution essay describes a problem and proposes a solution, but his tutor says it is “incomplete”. What is most likely missing?", options:[
      {t:"An evaluation of how well the solution would work, including its limits", ok:true, why:"The evaluation step (situation → problem → solution → evaluation) is the one most often forgotten, and markers expect it."},
      {t:"A personal story", why:"Personal stories aren’t a standard part of a problem–solution essay."},
@@ -1050,7 +1050,7 @@ ICA.addUnit({
      {t:"They have as many body paragraphs as the argument needs", ok:true, why:"The five-paragraph essay is a school model; university essays follow the argument."},
      {t:"They must have exactly five paragraphs", why:"That is a school teaching model, not a university requirement."},
      {t:"They never include a thesis", why:"Most university essays in English state a thesis early."},
-     {t:"They are always organised with IMRaD headings", why:"IMRaD is common for reports and research articles in the sciences, not for most essays."}]},
+     {t:"They are always organized with IMRaD headings", why:"IMRaD is common for reports and research articles in the sciences, not for most essays."}]},
    /* ---- Lesson 2 ---- */
    {id:"e1u3-q10", lesson:"e1u3-l2", level:1, q:"In the claim–evidence–reasoning model, what does the reasoning do?", options:[
      {t:"It explains why the evidence supports the claim", ok:true, why:"Reasoning is the bridge between evidence and claim."},
@@ -1091,7 +1091,7 @@ ICA.addUnit({
      {t:"At least one farmer reported that the new seed failed.", ok:true, why:"One interview can show that a problem exists, not how common it is. This claim stays within the evidence."},
      {t:"The new seed fails for most of the farmers who plant it.", why:"One case can’t show what happens to “most” farmers."},
      {t:"The new seed clearly does not work.", why:"“Clearly” is a booster unsupported by one interview."},
-     {t:"Farmers always reject new seeds.", why:"This generalises far beyond the evidence, and to a different claim."}]},
+     {t:"Farmers always reject new seeds.", why:"This generalizes far beyond the evidence, and to a different claim."}]},
    {id:"e1u3-q18", lesson:"e1u3-l2", level:2, q:"What is the difference between “even though” and “even if”?", options:[
      {t:"“Even though” concedes a fact; “even if” gives a possibility", ok:true, why:"“Even though prices rose” says they did; “even if prices rise” says they might, and they may not."},
      {t:"There is no difference", why:"They differ: one is about facts, the other about possibilities."},
@@ -1147,7 +1147,7 @@ ICA.addUnit({
    {id:"e1u3-q28", lesson:"e1u3-l4", level:1, q:"In the CARS model, what does Move 2 (“establish a niche”) do?", options:[
      {t:"Shows a gap, problem or open question in existing research", ok:true, why:"Move 2 creates the space the paper will fill."},
      {t:"Describes the method in detail", why:"Methods belong in the method section; Move 3 may only outline the research."},
-     {t:"Thanks the funders", why:"Acknowledgements are separate from the introduction’s moves."},
+     {t:"Thanks the funders", why:"Acknowledgments are separate from the introduction’s moves."},
      {t:"Summarises the conclusions that the paper will reach at the end", why:"Conclusions come at the end; Move 3 may announce main findings briefly."}]},
    {id:"e1u3-q29", lesson:"e1u3-l4", level:2, q:"Which sentence is most typical of **Move 3** (occupying the niche)?", options:[
      {t:"This paper examines how rent controls affect housing supply in two cities.", ok:true, why:"It announces what the present research does."},
@@ -1226,7 +1226,7 @@ ICA.addUnit({
      {t:"Only the word count", why:"Word count matters, but policy and accuracy matter more."},
      {t:"Whether the translation sounds more formal and academic than her own English", why:"Formality isn’t the first concern; permission and meaning are."}]},
    {id:"e1u3-q44", lesson:"e1u3-l5", level:3, q:"What did Liang and colleagues (2023) find about AI-writing detectors?", options:[
-     {t:"They often wrongly labelled non-native writers’ essays as AI-generated", ok:true, why:"On average, they labelled more than half of a set of essays by non-native English writers as AI-generated. This is why detector results alone are not reliable proof, and why keeping drafts helps."},
+     {t:"They often wrongly labeled non-native writers’ essays as AI-generated", ok:true, why:"On average, they labeled more than half of a set of essays by non-native English writers as AI-generated. This is why detector results alone are not reliable proof, and why keeping drafts helps."},
      {t:"They never make mistakes", why:"The study found many false positives."},
      {t:"They were most accurate for non-native writers", why:"The opposite: non-native writers’ essays were often misclassified."},
      {t:"They can reliably detect any kind of plagiarism, including AI-written text", why:"The study tested AI-text detection, and found serious problems."}]},

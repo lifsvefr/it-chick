@@ -33,7 +33,7 @@ ICA.addUnit({
    title: "In order to, so that, and change: ～ために, ～ように, ～ようにする, ～ようになる",
    minutes: 60,
    hook: {
-    q: "Cheska practises every day. She wants to say: “I practise every day so that I can speak Japanese.” Which word fits? 「日本語が話せる（　）、毎日[練習]{れんしゅう}しています。」",
+    q: "Cheska practices every day. She wants to say: “I practice every day so that I can speak Japanese.” Which word fits? 「日本語が話せる（　）、毎日[練習]{れんしゅう}しています。」",
     options: [
      "ために",
      "ように",
@@ -178,7 +178,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "Compare a minimal pair. 日本語を習うために日本に[来]{き}ました: I came to Japan to learn Japanese (a goal, my own action). 日本語が話せるように毎日[練習]{れんしゅう}しています: I practise every day so that I can speak Japanese (a result I hope for).",
+      "Compare a minimal pair. 日本語を習うために日本に[来]{き}ました: I came to Japan to learn Japanese (a goal, my own action). 日本語が話せるように毎日[練習]{れんしゅう}しています: I practice every day so that I can speak Japanese (a result I hope for).",
       {
        tip: "Real speech is a little looser than the test. You will hear phrases like [上手]{じょうず}になるために, because many people feel that getting better is a goal they work on. The test gives you a safe, natural choice; it doesn’t make every other sentence wrong."
       }
@@ -223,7 +223,7 @@ ICA.addUnit({
     {
      h: "Other ように you will meet",
      body: [
-      "Three more uses of ように are worth recognising now.",
+      "Three more uses of ように are worth recognizing now.",
       "**Reported requests and instructions.** ～ように言う, ～ように[頼]{たの}む and ～ように[伝]{つた}える report what someone told or asked someone to do. They are softer than quoting the command itself.",
       {
        ex: "医者にお[酒]{さけ}を飲まないように言われました。\nThe doctor told me not to drink alcohol.\n\n[部長]{ぶちょう}に[資料]{しりょう}を送るように[頼]{たの}まれました。\nMy manager asked me to send the documents.\n\nトビーさんに、[明日]{あした}電話するように[伝]{つた}えてください。\nPlease tell Toby to call tomorrow.",
@@ -540,7 +540,7 @@ ICA.addUnit({
     {
      id: "e3u9-l1-x10",
      type: "type",
-     q: "Three months ago Rodrigo couldn’t swim. He practised, and now he can. Type the ending that describes the change: 「三か月[練習]{れんしゅう}して、[泳]{およ}げる（　）。」",
+     q: "Three months ago Rodrigo couldn’t swim. He practiced, and now he can. Type the ending that describes the change: 「三か月[練習]{れんしゅう}して、[泳]{およ}げる（　）。」",
      answer: [
       "ようになりました",
       "ようになった"
@@ -760,7 +760,7 @@ ICA.addUnit({
       },
       {
        fig: "<svg viewBox=\"0 0 340 232\"><defs><marker id=\"e3u9a3\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"22\" text-anchor=\"middle\">One action, three moments: たべる</text><path class=\"d-ink\" d=\"M14 112H326\" stroke-width=\"2\" marker-end=\"url(#e3u9a3)\"/><text class=\"s\" x=\"320\" y=\"132\" text-anchor=\"end\">time</text><rect class=\"d-gold\" x=\"118\" y=\"96\" width=\"104\" height=\"32\" rx=\"6\" stroke-width=\"2\"/><text class=\"s\" x=\"170\" y=\"117\" text-anchor=\"middle\">eating</text><path class=\"d-ink\" d=\"M108 88V108\" stroke-width=\"2\" marker-end=\"url(#e3u9a3)\"/><text x=\"108\" y=\"56\" text-anchor=\"middle\">たべる</text><text x=\"108\" y=\"74\" text-anchor=\"middle\">ところ</text><path class=\"d-ink\" d=\"M170 88V94\" stroke-width=\"2\"/><text x=\"170\" y=\"56\" text-anchor=\"middle\">たべている</text><text x=\"170\" y=\"74\" text-anchor=\"middle\">ところ</text><path class=\"d-ink\" d=\"M232 88V108\" stroke-width=\"2\" marker-end=\"url(#e3u9a3)\"/><text x=\"244\" y=\"56\" text-anchor=\"middle\">たべた</text><text x=\"244\" y=\"74\" text-anchor=\"middle\">ところ</text><text class=\"s\" x=\"108\" y=\"160\" text-anchor=\"middle\">about to</text><text class=\"s\" x=\"170\" y=\"178\" text-anchor=\"middle\">in the middle</text><text class=\"s\" x=\"244\" y=\"160\" text-anchor=\"middle\">just finished</text><text class=\"s\" x=\"170\" y=\"214\" text-anchor=\"middle\">いま, ちょうど and これから often come with ところ</text></svg>",
-       alt: "A timeline with a box labelled eating. An arrow before the box: たべるところ, about to. An arrow at the middle of the box: たべているところ, in the middle. An arrow just after the box: たべたところ, just finished. A note: いま, ちょうど and これから often come with ところ.",
+       alt: "A timeline with a box labeled eating. An arrow before the box: たべるところ, about to. An arrow at the middle of the box: たべているところ, in the middle. An arrow just after the box: たべたところ, just finished. A note: いま, ちょうど and これから often come with ところ.",
        cap: "The verb form before ところ moves the moment: before the action (dictionary form), during it (～ている) or just after it (～た)."
       },
       "～ところ is often an answer to “what are you doing?” or “can you talk?”, so it comes with time words: 今 (now), ちょうど (just, exactly), これから (from now). It ends in です or だ: [寝]{ね}るところです, [寝]{ね}ているところだ, [寝]{ね}たところです.",
@@ -934,7 +934,7 @@ ICA.addUnit({
        why: "Decided by the company: ことになった."
       },
       {
-       t: "雨なので、[試合]{しあい}は中止する___。 (The organisers have announced it.)",
+       t: "雨なので、[試合]{しあい}は中止する___。 (The organizers have announced it.)",
        b: 1,
        why: "Decided by other people because of circumstances: ことになった."
       },
@@ -1228,7 +1228,7 @@ ICA.addUnit({
     "Use ～わけだ to draw a conclusion, to say “no wonder”, and to sum up",
     "Tell ～わけがない (no way) from ～わけではない (it’s not that)",
     "Use ～べき and ～べきではない for what ought (not) to be done, and know when it sounds too strong",
-    "Choose between はず, わけ and べき, and recognise where はず and わけ overlap"
+    "Choose between はず, わけ and べき, and recognize where はず and わけ overlap"
    ],
    learn: [
     {
@@ -1268,7 +1268,7 @@ ICA.addUnit({
     {
      h: "～はず: what you have reason to expect",
      body: [
-      "[[hazu|～はず]] says that, from what you know, something should be the case. It is your judgement, based on facts, timetables or memory, but you haven’t checked yet.",
+      "[[hazu|～はず]] says that, from what you know, something should be the case. It is your judgment, based on facts, timetables or memory, but you haven’t checked yet.",
       {
        table: [
         [
@@ -1308,7 +1308,7 @@ ICA.addUnit({
     {
      h: "はずがない and はずだった",
      body: [
-      "**No way.** To say that something can’t be true, put the negative on the whole judgement: ～はずがない (or ～はずはない). It is strong: “there’s no way”, “it can’t be”.",
+      "**No way.** To say that something can’t be true, put the negative on the whole judgment: ～はずがない (or ～はずはない). It is strong: “there’s no way”, “it can’t be”.",
       {
        ex: "あの[優]{やさ}しい人が、そんなことを言うはずがありません。\nThere’s no way someone that kind would say a thing like that.\n\nこんなに[難]{むずか}しい問題が、[一日]{いちにち}でできるはずがない。\nThere’s no way anyone can do such a hard problem in a day.",
        label: "はずがない"
@@ -1385,7 +1385,7 @@ ICA.addUnit({
         ]
        ]
       },
-      "**～わけがない** is close to ～はずがない, and in most sentences both are natural. Some speakers feel わけがない is a little more emotional and conversational, and はずがない a little more like a judgement from facts, but the meanings overlap heavily.",
+      "**～わけがない** is close to ～はずがない, and in most sentences both are natural. Some speakers feel わけがない is a little more emotional and conversational, and はずがない a little more like a judgment from facts, but the meanings overlap heavily.",
       "**～わけではない** is a partial negation: it denies a conclusion the listener might draw, without denying everything. It often comes before an explanation with ただ (it’s just that) or が.",
       {
        ex: "日本料理が[嫌]{きら}いなわけではありません。ただ、生の魚が[苦手]{にがて}なんです。\nIt’s not that I dislike Japanese food. It’s just that I’m not good with raw fish.\n\nいつも[暇]{ひま}なわけではないけど、[今日]{きょう}は時間がある。\nIt’s not as if I’m always free, but today I have time.",
@@ -2244,7 +2244,7 @@ ICA.addUnit({
     {
      id: "e3u9-l4-x4",
      type: "mcq",
-     q: "Fill the gap to say “The more you practise, the better you get.” 「[練習]{れんしゅう}___、[上手]{じょうず}になります。」",
+     q: "Fill the gap to say “The more you practice, the better you get.” 「[練習]{れんしゅう}___、[上手]{じょうず}になります。」",
      options: [
       {
        t: "すればするほど",
@@ -2299,7 +2299,7 @@ ICA.addUnit({
       {
        t: "おかげで",
        flag: true,
-       why: "The result (a cancelled match) is bad, and Cheska is disappointed. Use せいで, or neutral ので: 雨のせいで."
+       why: "The result (a canceled match) is bad, and Cheska is disappointed. Use せいで, or neutral ので: 雨のせいで."
       },
       "、[試合]{しあい}が中止になって[残念]{ざんねん}だった。でも、[友達]{ともだち}が電話をくれた",
       {
@@ -2395,7 +2395,7 @@ ICA.addUnit({
     }
    ],
    apply: {
-    intro: "These patterns are about people and feelings, so they are best practised with your own life. Keep your notes for yourself.",
+    intro: "These patterns are about people and feelings, so they are best practiced with your own life. Keep your notes for yourself.",
     tasks: [
      {
       t: "A thank-you message",
@@ -2457,7 +2457,7 @@ ICA.addUnit({
      "として"
     ],
     answer: 2,
-    reveal: "**にとって.** English uses “for” here, and Japanese has no single word for “for”. にとって means “for, from the point of view of”, and it goes with words that judge or evaluate, like [役]{やく}に立つ (useful), 大切 (important) or [難]{むずか}しい (difficult). について means “about”, に[対]{たい}して “towards”, and として “as (a role)”. This lesson teaches five of these compound particles and gives you a table for choosing between them."
+    reveal: "**にとって.** English uses “for” here, and Japanese has no single word for “for”. にとって means “for, from the point of view of”, and it goes with words that judge or evaluate, like [役]{やく}に立つ (useful), 大切 (important) or [難]{むずか}しい (difficult). について means “about”, に[対]{たい}して “toward”, and として “as (a role)”. This lesson teaches five of these compound particles and gives you a table for choosing between them."
    },
    goals: [
     "Recognise compound particles: に or と + a verb in its て-form, working like one particle",
@@ -2465,7 +2465,7 @@ ICA.addUnit({
     "Use に[対]{たい}して for the target of an attitude or action, and for contrasts",
     "Use として for a role, and としては for “for a…”",
     "Use にとって with evaluations, and know why it can’t go with action verbs",
-    "Use によって for “depending on”, means and causes, and recognise によっては and による",
+    "Use によって for “depending on”, means and causes, and recognize によっては and による",
     "Choose between the five with a contrast table, and use their forms before nouns"
    ],
    learn: [
@@ -2473,7 +2473,7 @@ ICA.addUnit({
      h: "Particles built from verbs",
      body: [
       {
-       lead: "English uses prepositions like “about”, “towards”, “as” and “for”. Japanese often uses compound particles: に or と followed by the て-form of a verb, frozen into one unit."
+       lead: "English uses prepositions like “about”, “toward”, “as” and “for”. Japanese often uses compound particles: に or と followed by the て-form of a verb, frozen into one unit."
       },
       "Linguists call these [[fukugou-joshi|compound particles]] ([複合助詞]{ふくごうじょし}). They feel like single particles: you don’t conjugate the verb inside them, and most are written in kana. Here are the five every N3 learner needs.",
       {
@@ -2491,7 +2491,7 @@ ICA.addUnit({
         [
          "に[対]{たい}して",
          "に + [対]{たい}する (face)",
-         "towards, against; in contrast to"
+         "toward, against; in contrast to"
         ],
         [
          "として",
@@ -2565,7 +2565,7 @@ ICA.addUnit({
      ]
     },
     {
-     h: "に[対]{たい}して: towards, against, in contrast",
+     h: "に[対]{たい}して: toward, against, in contrast",
      body: [
       "[[ni-taishite|に[対]{たい}して]] comes from [対]{たい}する, “to face”. It marks the **target** that an attitude, feeling or action is aimed at, often a person.",
       {
@@ -2609,7 +2609,7 @@ ICA.addUnit({
        ex: "私にとって、家族が[一番]{いちばん}大切です。\nFor me, my family is the most important thing.\n\nこの漢字は[初心者]{しょしんしゃ}にとって[難]{むずか}しい。\nThis kanji is hard for beginners.\n\n[留学生]{りゅうがくせい}にとって、アルバイトの[情報]{じょうほう}は大事だ。\nFor international students, information about part-time jobs is important.",
        label: "にとって"
       },
-      "**The limit.** にとって introduces a judgement, so it can’t go with action verbs or with stating your own opinion. Say 私はその意見に[賛成]{さんせい}です (I agree with that opinion), not ✗ 私にとって、その意見に[賛成]{さんせい}です. And for kindness shown to someone, use に[対]{たい}して.",
+      "**The limit.** にとって introduces a judgment, so it can’t go with action verbs or with stating your own opinion. Say 私はその意見に[賛成]{さんせい}です (I agree with that opinion), not ✗ 私にとって、その意見に[賛成]{さんせい}です. And for kindness shown to someone, use に[対]{たい}して.",
       {
        table: [
         [
@@ -2688,7 +2688,7 @@ ICA.addUnit({
       {
        fig: "<svg viewBox=\"0 0 340 360\"><defs><marker id=\"e3u9a7\" viewBox=\"0 0 10 10\" refX=\"9\" refY=\"5\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path class=\"d-inkf\" d=\"M0 0L10 5L0 10z\"/></marker></defs><text x=\"170\" y=\"22\" text-anchor=\"middle\">Five ways to relate to a noun X</text><circle class=\"d-gold\" cx=\"44\" cy=\"190\" r=\"30\" stroke-width=\"2\"/><text x=\"44\" y=\"195\" text-anchor=\"middle\">X</text><path class=\"d-ink\" d=\"M74 180L126 66\" stroke-width=\"1.5\" marker-end=\"url(#e3u9a7)\"/><path class=\"d-ink\" d=\"M76 184L126 128\" stroke-width=\"1.5\" marker-end=\"url(#e3u9a7)\"/><path class=\"d-ink\" d=\"M76 190H126\" stroke-width=\"1.5\" marker-end=\"url(#e3u9a7)\"/><path class=\"d-ink\" d=\"M76 196L126 252\" stroke-width=\"1.5\" marker-end=\"url(#e3u9a7)\"/><path class=\"d-ink\" d=\"M74 200L126 314\" stroke-width=\"1.5\" marker-end=\"url(#e3u9a7)\"/><rect class=\"d-lup\" x=\"130\" y=\"40\" width=\"200\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"142\" y=\"62\">について</text><text class=\"s\" x=\"142\" y=\"80\">X is what you talk about</text><rect class=\"d-rose\" x=\"130\" y=\"102\" width=\"200\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"142\" y=\"124\">にたいして</text><text class=\"s\" x=\"142\" y=\"142\">X is the target you face</text><rect class=\"d-sage\" x=\"130\" y=\"164\" width=\"200\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"142\" y=\"186\">として</text><text class=\"s\" x=\"142\" y=\"204\">X is the role you play</text><rect class=\"d-panel\" x=\"130\" y=\"226\" width=\"200\" height=\"52\" rx=\"8\" stroke-width=\"1.5\"/><text x=\"142\" y=\"248\">にとって</text><text class=\"s\" x=\"142\" y=\"266\">X is whose view judges</text><rect class=\"d-lup\" x=\"130\" y=\"288\" width=\"200\" height=\"52\" rx=\"8\" stroke-width=\"2\"/><text x=\"142\" y=\"310\">によって</text><text class=\"s\" x=\"142\" y=\"328\">it depends on, or comes from, X</text></svg>",
        alt: "A noun X in a circle with five arrows to five boxes. について: X is what you talk about. にたいして: X is the target you face. として: X is the role you play. にとって: X is whose view judges. によって: it depends on, or comes from, X.",
-       cap: "The same noun can take any of the five, with a different relation each time: 先生について (about the teacher), 先生に[対]{たい}して (towards the teacher), 先生として (as a teacher), 先生にとって (for the teacher), 先生によって (depending on the teacher)."
+       cap: "The same noun can take any of the five, with a different relation each time: 先生について (about the teacher), 先生に[対]{たい}して (toward the teacher), 先生として (as a teacher), 先生にとって (for the teacher), 先生によって (depending on the teacher)."
       },
       {
        table: [
@@ -2765,11 +2765,11 @@ ICA.addUnit({
       "Compound particles are everywhere in news, notices and N3 reading passages, so learning to spot them will make reading much easier. The full table, with more on overlaps, is in {{compound-particles}}, and a map of the whole unit is in {{n3-grammar-patterns-1}}.",
       {
        lab: "kl-n3",
-       t: "Practise: the N3 kanji, including many from this unit such as [対]{たい}, [調]{しら}べる, [違]{ちが}う and [経験]{けいけん}"
+       t: "Practice: the N3 kanji, including many from this unit such as [対]{たい}, [調]{しら}べる, [違]{ちが}う and [経験]{けいけん}"
       },
       {
        lab: "kl-n3-vocab",
-       t: "Practise: N3 vocabulary, with many of the words in this unit’s examples"
+       t: "Practice: N3 vocabulary, with many of the words in this unit’s examples"
       },
       {
        terms: [
@@ -2788,12 +2788,12 @@ ICA.addUnit({
     {
      id: "e3u9-l5-x1",
      type: "mcq",
-     q: "Aoi is writing a report on Japan’s ageing society. Choose the particle: 「日本の[高齢化]{こうれいか}___レポートを書いています。」",
+     q: "Aoi is writing a report on Japan’s aging society. Choose the particle: 「日本の[高齢化]{こうれいか}___レポートを書いています。」",
      options: [
       {
        t: "についての",
        ok: true,
-       why: "Right. The ageing society is the content of the report, and before a noun (レポート) について becomes についての."
+       why: "Right. The aging society is the content of the report, and before a noun (レポート) について becomes についての."
       },
       {
        t: "に[対]{たい}する",
@@ -2801,11 +2801,11 @@ ICA.addUnit({
       },
       {
        t: "にとっての",
-       why: "にとって gives the point of view of a judgement (“for”). The report is not judged from the ageing society’s point of view."
+       why: "にとって gives the point of view of a judgment (“for”). The report is not judged from the aging society’s point of view."
       },
       {
        t: "としての",
-       why: "として gives a role (“as”). The report is not written “as” the ageing society."
+       why: "として gives a role (“as”). The report is not written “as” the aging society."
       }
      ]
     },
@@ -2894,7 +2894,7 @@ ICA.addUnit({
       },
       {
        t: "にとって",
-       why: "にとって gives the point of view of a judgement, and it needs an evaluation such as 大切 or [難]{むずか}しい, not an action like coming."
+       why: "にとって gives the point of view of a judgment, and it needs an evaluation such as 大切 or [難]{むずか}しい, not an action like coming."
       },
       {
        t: "について",
@@ -3018,7 +3018,7 @@ ICA.addUnit({
      wrongs: [
       {
        v: "にたいして",
-       why: "に[対]{たい}して is for actions and attitudes aimed at someone (kind to, strict with). A judgement from someone’s point of view takes にとって."
+       why: "に[対]{たい}して is for actions and attitudes aimed at someone (kind to, strict with). A judgment from someone’s point of view takes にとって."
       },
       {
        v: "について",
@@ -3132,7 +3132,7 @@ ICA.addUnit({
       {t:"It’s a rule his school set for students", why:"A rule made by others is ～ことになっている."},
       {t:"He made the decision just this morning", why:"One decision is ～ことにした. ～ことにしている is a rule that holds."},
       {t:"He is just about to read the paper", why:"That would be 読むところです, the moment just before an action."}]},
-    {id:"e3u9-cp05", lesson:"e3u9-l2", level:3, q:"Mariya has made up her mind to apply for an exchange programme, and she plans to write the essay next week. Which pair fits? 「[交換]{こうかん}[留]{りゅう}学に[申]{もう}し[込]{こ}む（ A ）。来週、作文を書く（ B ）です。」", options:[
+    {id:"e3u9-cp05", lesson:"e3u9-l2", level:3, q:"Mariya has made up her mind to apply for an exchange program, and she plans to write the essay next week. Which pair fits? 「[交換]{こうかん}[留]{りゅう}学に[申]{もう}し[込]{こ}む（ A ）。来週、作文を書く（ B ）です。」", options:[
       {t:"A: ことになりました · B: はず", why:"ことになりました presents the choice as made by others or by circumstances, and はず is an expectation, not a plan."},
       {t:"A: ようにしました · B: つもり", why:"～ようにする is an effort to make something happen. A one-time choice is ～ことにする."},
       {t:"A: ことにしました · B: はず", why:"A is right, but はず about your own action means a schedule you rely on. For a plan you hold, use つもり."},
@@ -3154,7 +3154,7 @@ ICA.addUnit({
       {t:"「家にいるわけだよ。」", why:"～わけだ draws the conclusion that he **is** home: the opposite of what Rodrigo saw."}]},
     {id:"e3u9-cp09", lesson:"e3u9-l5", level:3, q:"A city newsletter says: 「[市]{し}は外国人[住民]{じゅうみん}（ A ）、ごみの出し方（ B ）[説明会]{せつめいかい}を開いた。」 Which pair fits?", options:[
       {t:"A: について · B: に[対]{たい}して", why:"This is the wrong way round. について gives the content (how to put out garbage); に[対]{たい}して the target (the residents)."},
-      {t:"A: にとって · B: について", why:"にとって gives a point of view for a judgement, such as 大切 or [難]{むずか}しい. It can’t mark who an action is aimed at."},
+      {t:"A: にとって · B: について", why:"にとって gives a point of view for a judgment, such as 大切 or [難]{むずか}しい. It can’t mark who an action is aimed at."},
       {t:"A: として · B: について", why:"として gives a role (“as foreign residents”). The residents are the people the meeting is for."},
       {t:"A: に[対]{たい}して · B: について", ok:true, why:"に[対]{たい}して marks the target (the residents); について gives the content (the garbage rules), as written reports do."}]},
     {id:"e3u9-cp10", lesson:"e3u9-l4", level:2, q:"A visitor asks Toby how to get to the city office. Which reply gives friendly, simple advice?", options:[
@@ -3242,7 +3242,7 @@ ICA.addUnit({
        ]
       ]
      },
-     "**Real overlaps.** With なる, both appear: 医者になるために (a goal you work towards) is standard, and [上手]{じょうず}になるように / [上手]{じょうず}になるために are both common. Use ように for negative purposes; a past ～なかったために is usually a cause.",
+     "**Real overlaps.** With なる, both appear: 医者になるために (a goal you work toward) is standard, and [上手]{じょうず}になるように / [上手]{じょうず}になるために are both common. Use ように for negative purposes; a past ～なかったために is usually a cause.",
      "**ために as a cause.** After a past form or a state, ために means “because of” (formal): [事故]{じこ}のために電車が[遅]{おく}れています. Context decides with nouns.",
      "**Other ように.** “Like” (noun + のように, Unit 7), “as follows” ([次]{つぎ}のように), reported requests (～ように言う), and wishes (～ますように).",
      "**～ようにする / ～ようにしている** is a continuing effort or making sure: [遅]{おく}れないようにしてください. Not the same as ～てみる (try and see) or ～ようとする (attempt at one moment).",
@@ -3352,7 +3352,7 @@ ICA.addUnit({
      "**Other uses of ことになる.** It also states a logical consequence, “that means”, “it amounts to”: [三回]{さんかい}休むと、試験を[受]{う}けられないことになる (If you miss three times, that means you can’t take the exam). This is close to ～わけだ ({{hazu-wake-beki}}).",
      "**Other uses of ことにする.** With a past form, ～たことにする means “treat as if”, “pretend”: 聞かなかったことにします (I’ll pretend I didn’t hear that). [今日]{きょう}の話はなかったことにしてください (Please forget we had this conversation).",
      "**ことになっている and [予定]{よてい}.** Both describe arrangements. ～ことになっている stresses that it is the rule or the agreed plan; [予定]{よてい}だ ({{volitional-form}}) simply says it is scheduled.",
-     "**In textbooks.** The Japan Foundation’s free Irodori Pre-Intermediate course practises ～ことになった (Lesson 1) and ～ことにする (Lesson 12) in everyday situations."
+     "**In textbooks.** The Japan Foundation’s free Irodori Pre-Intermediate course practices ～ことになった (Lesson 1) and ～ことにする (Lesson 12) in everyday situations."
     ]
    },
    related: [
@@ -3457,12 +3457,12 @@ ICA.addUnit({
      "**Almost.** The verb before ところだった stays in the dictionary form: もう少しで[忘]{わす}れるところだった (I nearly forgot). ～たところだった would mean “had just done”."
     ],
     pro: [
-     "**Research on ～たばかり.** Nakamura (1999) reviews earlier accounts: ～たところ marks the time just after an action, while ～たばかり adds psychological immediacy, the speaker’s feeling that not enough time has passed to move on. In the examples he collected and had native speakers judge, most ～たばかり examples (102 of 141) came before a noun, as in ～たばかりの + noun, and several of the rest came with のに, けど or が, often with a negative judgement. He notes that textbooks rarely teach these patterns.",
+     "**Research on ～たばかり.** Nakamura (1999) reviews earlier accounts: ～たところ marks the time just after an action, while ～たばかり adds psychological immediacy, the speaker’s feeling that not enough time has passed to move on. In the examples he collected and had native speakers judge, most ～たばかり examples (102 of 141) came before a noun, as in ～たばかりの + noun, and several of the rest came with のに, けど or が, often with a negative judgment. He notes that textbooks rarely teach these patterns.",
      "**ところ + particles.** ～ところに / ～ところへ (just when): 出かけようとしたところに、電話がかかってきた (Just as I was about to go out, the phone rang). ～ているところを (while someone was in the middle of): [寝]{ね}ているところを起こされた (I was woken up while I was sleeping).",
      "**Another ～たところ.** In formal writing, ～たところ also means “when I did X, (I found that)…”, reporting a result: [調]{しら}べたところ、[原因]{げんいん}が分かった (When we investigated, we found the cause). Many textbooks teach it at N2.",
      "**Casual forms.** In speech, ばかり often becomes ばっかり or ばっか: 食べたばっかり, ゲームばっか.",
      "**More ばかり patterns.** ～ばかりでなく (not only… but also) works like ～だけでなく ([[dake-de-naku]], Unit 10). ～たばかりに (just because, with regret) is N2.",
-     "**In textbooks.** Irodori Pre-Intermediate practises ～たところだ in Lesson 16; Tae Kim covers ところ as an abstract place and ～ばかり for recent actions."
+     "**In textbooks.** Irodori Pre-Intermediate practices ～たところだ in Lesson 16; Tae Kim covers ところ as an abstract place and ～ばかり for recent actions."
     ]
    },
    related: [
@@ -3585,7 +3585,7 @@ ICA.addUnit({
      "**べき and politeness.** べき states a duty or a principle. Used about people in general, or in opinions (～べきだと思います), it is fine; aimed at a listener, especially a superior, it can sound preachy."
     ],
     pro: [
-     "**はず and intention.** はず reports a judgement based on facts, so it isn’t used for your own intentions; use つもり. About yourself it signals an external plan: [明日]{あした}は九時に出発するはずだ (we’re supposed to leave at nine).",
+     "**はず and intention.** はず reports a judgment based on facts, so it isn’t used for your own intentions; use つもり. About yourself it signals an external plan: [明日]{あした}は九時に出発するはずだ (we’re supposed to leave at nine).",
      "**Negatives of はず.** Tae Kim notes that the expected negative is ～はずがない or ～はずはない, and that はずじゃない is mainly used when confirming something positively (～はずじゃないか？, “shouldn’t it be…?”). Set phrases such as こんなはずじゃなかった (this isn’t how it was supposed to be) are the main exception.",
      "**More わけ.** Tae Kim defines わけ as “meaning; reason; can be deduced”, used for conclusions anyone could reach from the information given, and distinguishes it from the explanatory の ([[n-desu]]). He also covers ～わけにはいかない (can’t possibly, a stronger and more formal “must not”: 今度は[負]{ま}けるわけにはいかない) and わけない meaning “easy”. Other common phrases: というわけで (and so, that’s how), [申]{もう}し[訳]{わけ}ない (I’m terribly sorry), 言い[訳]{わけ} (an excuse).",
      "**Partial negation.** ～わけではない and ～ことはない are taught together in Unit 10 ({{partial-negation}}).",
@@ -3700,7 +3700,7 @@ ICA.addUnit({
     pro: [
      "**Evaluation in cause expressions.** The Japan Foundation’s teaching column on expressing reasons describes おかげで as used for a benefit, often with gratitude, and also for a disadvantage with criticism or sarcasm, which is milder than せいで. せいで always marks a disadvantage and blame, and can be self-critical: [寝]{ね}る前にコーヒーを飲んだせいで、ゆうべは[眠]{ねむ}れなかった. から and ので are the neutral choices.",
      "**More forms.** ～おかげだ and ～せいだ end a sentence: [合格]{ごうかく}できたのは先生のおかげだ. ～せいか and ～おかげか hedge the cause (“perhaps because”). ～のせいにする means “blame it on”.",
-     "**～てほしい and its neighbours.** ～てもらいたい is close in meaning to ～てほしい, and ～ていただきたい is its humble, more polite form, common in announcements: [列]{れつ}に[並]{なら}んでいただきたいと思います. Both ～ないでほしい and ～てほしくない are used for “I don’t want you to”. Tae Kim notes that ～てほしい is not used very often as a request, and points to request forms instead.",
+     "**～てほしい and its neighbors.** ～てもらいたい is close in meaning to ～てほしい, and ～ていただきたい is its humble, more polite form, common in announcements: [列]{れつ}に[並]{なら}んでいただきたいと思います. Both ～ないでほしい and ～てほしくない are used for “I don’t want you to”. Tae Kim notes that ～てほしい is not used very often as a request, and points to request forms instead.",
      "**～ばいいのに and ～たらいいのに.** Both express a wish against reality. About other people they can sound like criticism, so they are best used with close friends or about situations: 駅がもっと近ければいいのに.",
      "**～ば～ほど details.** Tae Kim describes the pattern with verbs and い-adjectives, notes ～たら～ほど as possible for verbs, and says the な-adjective version with なら is rarely seen, although many textbooks teach it alongside ～であればあるほど. With nouns, ～であればあるほど is used: 有名であればあるほど[忙]{いそが}しくなる. ほど alone, for degree (“to the extent that”), is covered in Unit 10 ({{degree-hodo-kurai}})."
     ]
@@ -3736,7 +3736,7 @@ ICA.addUnit({
     "fukugou joshi",
     "複合助詞",
     "about",
-    "towards",
+    "toward",
     "as",
     "for",
     "depending on",
@@ -3755,14 +3755,14 @@ ICA.addUnit({
     "n3",
     "particles"
    ],
-   summary: "Five particles built from a particle + a verb’s て-form: について (about), に[対]{たい}して (towards, against; whereas), として (as), にとって (for, from the point of view of) and によって (depending on, by, because of), with their noun-modifying forms.",
+   summary: "Five particles built from a particle + a verb’s て-form: について (about), に[対]{たい}して (toward, against; whereas), として (as), にとって (for, from the point of view of) and によって (depending on, by, because of), with their noun-modifying forms.",
    levels: {
     starter: [
      "Some Japanese “particles” are really a particle plus a frozen verb. They work like English prepositions.",
      "**について** (about): the topic of talking, thinking or research. [歴史]{れきし}について[調]{しら}べる (research history).",
-     "**に[対]{たい}して** (towards, against): the target of an attitude or action. 先生に[対]{たい}して[失礼]{しつれい}だ (rude to the teacher). It also means “whereas”.",
+     "**に[対]{たい}して** (toward, against): the target of an attitude or action. 先生に[対]{たい}して[失礼]{しつれい}だ (rude to the teacher). It also means “whereas”.",
      "**として** (as): a role. [通訳]{つうやく}として[働]{はたら}く (work as an interpreter).",
-     "**にとって** (for): the point of view of a judgement. 私にとって大切だ (important to me).",
+     "**にとって** (for): the point of view of a judgment. 私にとって大切だ (important to me).",
      "**によって** (depending on, by means of, because of): 国によって[違]{ちが}う (differs from country to country).",
      "Before a noun they change: についての, に[対]{たい}する, としての, にとっての, による."
     ],
@@ -3947,7 +3947,7 @@ ICA.addUnit({
        ],
        [
         "について, に[対]{たい}して, として, にとって, によって",
-        "about, towards, as, for, depending on",
+        "about, toward, as, for, depending on",
         "国によって[違]{ちが}う"
        ]
       ]
@@ -3956,10 +3956,10 @@ ICA.addUnit({
      "**Using the table.** Cover the example column, read the pattern and its meaning, and make an example of your own. Then check the form in the lesson."
     ],
     pro: [
-     "**Near neighbours.** The pairs that cause most mistakes, and that tests like to check: ために vs ように (deliberate action vs hoped-for result), ようにする vs ようになる (effort vs change), ことにする vs ことになる, たところ vs たばかり (and てばかり), はず vs べき (expectation vs duty), わけがない vs わけではない, おかげで vs せいで, にとって vs に[対]{たい}して, and について vs に[対]{たい}して.",
+     "**Near neighbors.** The pairs that cause most mistakes, and that tests like to check: ために vs ように (deliberate action vs hoped-for result), ようにする vs ようになる (effort vs change), ことにする vs ことになる, たところ vs たばかり (and てばかり), はず vs べき (expectation vs duty), わけがない vs わけではない, おかげで vs せいで, にとって vs に[対]{たい}して, and について vs に[対]{たい}して.",
      "**Real overlaps.** Some choices are genuinely open: [上手]{じょうず}になるために／ように, ～たところ／～たばかり for “this very moment”, どうりで～わけだ／～はずだ, ～はずがない／～わけがない, and a few predicates with について or に[対]{たい}して. When native speakers accept both, the choice is about nuance, not right and wrong.",
      "**Edges of the list.** Because there is no official list, several patterns here (～ように, ～ことにする, ～ことになる, ～ところ, ～はず, ～てほしい) appear at N4 in some textbooks and reference sites, and in the Japan Foundation’s Irodori Pre-Intermediate course. This track teaches them at N3 with fuller contrasts. Don’t worry if your textbook draws the line elsewhere.",
-     "**Practice.** Irodori Pre-Intermediate (free from the Japan Foundation) practises several of these patterns in everyday situations, with audio: ～ことになった (Lesson 1), ～てほしいんですが (Lesson 11), ～ことにする (Lesson 12), にとって (Lesson 14), ～たところだ (Lesson 16) and ～はずだ (Lesson 18). For kanji and vocabulary at this level, the Kanji Lab has N3 decks."
+     "**Practice.** Irodori Pre-Intermediate (free from the Japan Foundation) practices several of these patterns in everyday situations, with audio: ～ことになった (Lesson 1), ～てほしいんですが (Lesson 11), ～ことにする (Lesson 12), にとって (Lesson 14), ～たところだ (Lesson 16) and ～はずだ (Lesson 18). For kanji and vocabulary at this level, the Kanji Lab has N3 decks."
     ]
    },
    related: [
@@ -4103,7 +4103,7 @@ ICA.addUnit({
   },
   {
    id: "ni-taishite",
-   term: "にたいして (towards, against; whereas)",
+   term: "にたいして (toward, against; whereas)",
    def: "Noun + に[対]{たい}して: the target of an attitude, feeling or action (先生に[対]{たい}して[失礼]{しつれい}だ); after ～の, “whereas”. Before a noun: に[対]{たい}する.",
    codex: "compound-particles"
   },
@@ -4306,7 +4306,7 @@ ICA.addUnit({
    id: "e3u9-q08",
    lesson: "e3u9-l1",
    level: 2,
-   q: "A notice at a sports centre says: 「[貴重品]{きちょうひん}は[置]{お}いていかないようにしてください。」 What does it ask?",
+   q: "A notice at a sports center says: 「[貴重品]{きちょうひん}は[置]{お}いていかないようにしてください。」 What does it ask?",
    options: [
     {
      t: "Please don’t leave valuables behind.",
@@ -4656,7 +4656,7 @@ ICA.addUnit({
    id: "e3u9-q22",
    lesson: "e3u9-l3",
    level: 2,
-   q: "Your team has practised hard all year. You say, confidently: “There’s no way we’ll lose.” 「あんなに[練習]{れんしゅう}したんだから、[負]{ま}ける（　）。」",
+   q: "Your team has practiced hard all year. You say, confidently: “There’s no way we’ll lose.” 「あんなに[練習]{れんしゅう}したんだから、[負]{ま}ける（　）。」",
    options: [
     {
      t: "はずがない",
@@ -4931,7 +4931,7 @@ ICA.addUnit({
    id: "e3u9-q33",
    lesson: "e3u9-l4",
    level: 1,
-   q: "A neighbour asks you 「お元気ですか。」 Which reply politely thanks them for their concern?",
+   q: "A neighbor asks you 「お元気ですか。」 Which reply politely thanks them for their concern?",
    options: [
     {
      t: "はい、おかげさまで。",
@@ -5090,7 +5090,7 @@ ICA.addUnit({
     },
     {
      t: "に[対]{たい}して",
-     why: "に[対]{たい}して marks the target of an attitude or action, not the point of view of a judgement."
+     why: "に[対]{たい}して marks the target of an attitude or action, not the point of view of a judgment."
     },
     {
      t: "として",
@@ -5181,7 +5181,7 @@ ICA.addUnit({
    id: "e3u9-q43",
    lesson: "e3u9-l5",
    level: 1,
-   q: "Choose the particle: 「[季節]{きせつ}（　）海の色が[変]{か}わります。」 (The colour of the sea changes with the seasons.)",
+   q: "Choose the particle: 「[季節]{きせつ}（　）海の色が[変]{か}わります。」 (The color of the sea changes with the seasons.)",
    options: [
     {
      t: "によって",
