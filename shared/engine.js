@@ -45,7 +45,7 @@ ICA.capstones = {};
 ICA.addCapstone = function(c){ ICA.capstones[c.track] = c; };
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/reader-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/reader-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.concat(ICA.preview ? (window.ICA_CATALOG||{}).preview || [] : []).map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
