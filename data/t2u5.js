@@ -76,7 +76,7 @@ ICA.addUnit({
         "**Paid hosting.** MDN puts basic paid hosting at about $5–10 a month. You need it for dynamic sites, for commercial uses a free plan forbids, or for more traffic than a free plan allows.",
         "**Extras.** Email at your own domain, form services and analytics often have free tiers with paid upgrades."
       ]},
-      {ex:"Ana wants a site for her community choir at its own domain. Hosting on GitHub Pages: $0. Domain: an offer of $3 for the first year, then $16 a year on renewal. Over three years she pays 3 + 16 + 16 = **$35**, not 3 × 3 = $9. The renewal price is the one to compare.", label:"Worked example"},
+      {ex:"Rodrigo, who pays his own way while he studies, wants a site for his drawings at its own domain. Hosting on GitHub Pages: $0. Domain: an offer of $3 for the first year, then $16 a year on renewal. Over three years he pays 3 + 16 + 16 = **$35**, not 3 × 3 = $9. The renewal price is the one to compare.", label:"Worked example"},
       "There is also a cost in time: a dynamic site needs software updates and security care for as long as it’s online. A static site needs very little, which is one reason many people choose it."
     ]},
     {h:"Choosing a host", body:[

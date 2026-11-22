@@ -103,8 +103,8 @@ ICA.addUnit({
       ["学会誌","A journal published by an academic society","Society journals usually peer-review (査読) the papers they publish."],
       ["レポート","A student’s written assignment","レポート are coursework. You will learn to write them in Unit 7."]
     ]},
-    {id:"e1u6-l1-x2", type:"mcq", q:"Amara is writing a report on Japan’s policies for older workers. She needs official national statistics and the government’s own account of its policy. Which kind of text should she look for first?", options:[
-      {t:"A 白書 from the relevant ministry", ok:true, why:"白書 are government reports on a policy area with official data. They are the right place for statistics and the government’s view, which Amara should present as the government’s view."},
+    {id:"e1u6-l1-x2", type:"mcq", q:"Aoi, a master’s student in regional disaster and community studies, is writing a report on Japan’s policies for older workers. She needs official national statistics and the government’s own account of its policy. Which kind of text should she look for first?", options:[
+      {t:"A 白書 from the relevant ministry", ok:true, why:"白書 are government reports on a policy area with official data. They are the right place for statistics and the government’s view, which Aoi should present as the government’s view."},
       {t:"A 新書 on ageing in Japan", why:"A 新書 is a good overview, but it is one author’s account. For official statistics she should go to the source, often a 白書."},
       {t:"A 紀要 paper by a graduate student", why:"A bulletin paper may discuss the policy, but it is not where official national statistics are published."},
       {t:"A model レポート from last year", why:"A student report is not a source of official data and is rarely cited as evidence."}
@@ -270,11 +270,11 @@ ICA.addUnit({
       {t:"A book the author is quoting", why:"Other people’s works are named with their author and year, not 本稿."},
       {t:"The main body, as opposed to the introduction", why:"The main body of a report is 本論. 本稿 is the whole paper."}
     ]},
-    {id:"e1u6-l2-x6", type:"mcq", q:"Hana has 20 minutes to decide which of six papers to read closely for her report. What should she read in each paper?", options:[
-      {t:"The title and 要旨, then the purpose at the end of はじめに and the conclusion", ok:true, why:"These parts show what each paper asks and concludes, which is exactly what she needs to choose. Detail can wait."},
-      {t:"The first two pages of each paper", why:"The first pages are mostly background. She may never reach the purpose or the conclusion."},
-      {t:"The 方法 section of each paper", why:"The method matters for judging a study she has already chosen, not for choosing which to read."},
-      {t:"The 参考文献 of each paper", why:"References help her find more sources, but don’t show what each paper argues."}
+    {id:"e1u6-l2-x6", type:"mcq", q:"Toby, a master’s student in Japanese linguistics, has 20 minutes to decide which of six papers to read closely for his report. What should he read in each paper?", options:[
+      {t:"The title and 要旨, then the purpose at the end of はじめに and the conclusion", ok:true, why:"These parts show what each paper asks and concludes, which is exactly what he needs to choose. Detail can wait."},
+      {t:"The first two pages of each paper", why:"The first pages are mostly background. He may never reach the purpose or the conclusion."},
+      {t:"The 方法 section of each paper", why:"The method matters for judging a study he has already chosen, not for choosing which to read."},
+      {t:"The 参考文献 of each paper", why:"References help him find more sources, but don’t show what each paper argues."}
     ]},
     {id:"e1u6-l2-x7", type:"sort", q:"Sort these sentences from an invented paper: **結果 (reporting a finding)** or **考察 (interpreting it)**?", buckets:["結果","考察"], items:[
       {t:"図1に示すように、利用者数は2年間で約2倍に増加した。", b:0, why:"A figure and a number: a plain report of what happened."},
@@ -571,7 +571,7 @@ ICA.addUnit({
       {t:"大学", why:"大学 is part of the description of the students (who entered regional universities)."},
       {t:"卒業後", why:"卒業後 (after graduating) says when the problems are faced; it describes, it isn’t the head."}
     ]},
-    {id:"e1u6-l4-x7", type:"mcq", q:"Mei uses a pop-up dictionary while reading. It shows しゅっせいりつ for 出生率, but her lecturer said しゅっしょうりつ. What should she conclude?", options:[
+    {id:"e1u6-l4-x7", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies, uses a pop-up dictionary while reading. It shows しゅっせいりつ for 出生率, but her lecturer said しゅっしょうりつ. What should she conclude?", options:[
       {t:"Both readings are accepted; she can follow her lecturer’s usage", ok:true, why:"Right. Dictionaries list both readings for 出生率. When a word has two accepted readings, follow the usage of your teacher and field."},
       {t:"The pop-up dictionary is broken and shouldn’t be used for reading", why:"The tool isn’t wrong here: it has shown one of two accepted readings. Tools are still very useful; just check readings that matter."},
       {t:"Her lecturer made a mistake", why:"しゅっしょうりつ is an accepted reading, and it is widely used in population statistics."},

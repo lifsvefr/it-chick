@@ -90,7 +90,7 @@ ICA.addUnit({
     ]},
     {id:"e2u9-l1-x2", type:"mcq", q:"Using UN DESA’s 1998 statistical definition, which of these people is an international migrant?", options:[
       {t:"Tomás, who moved from Bolivia to Argentina three years ago and lives and works there", ok:true, why:"Right. He changed his country of usual residence for more than a year, so he is a long-term international migrant."},
-      {t:"Priya, who moved from Chennai to Delhi for a new job", why:"Chennai and Delhi are both in India. Priya is an internal migrant, which the UN’s *international* definition doesn’t cover."},
+      {t:"Kaito, a first-year student, who moved from a small mountain town in Gifu to the harbour town of Shioura for university", why:"Gifu and Shioura are both in Japan. Kaito is an internal migrant, which the UN’s *international* definition doesn’t cover."},
       {t:"Hana, who spent two weeks abroad on holiday", why:"A holiday doesn’t change your country of usual residence, and holidays are explicitly excluded even from short-term migration."},
       {t:"Dmitri, who flies abroad for a three-day business meeting every month", why:"Business trips are excluded. Dmitri’s country of usual residence never changes."}
     ]},

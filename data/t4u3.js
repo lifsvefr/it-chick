@@ -1239,11 +1239,11 @@ ICA.addUnit({
      {t:"Only on paper", why:"They’re digital annotations."},
      {t:"Inside the PDF file, changing it permanently", why:"Zotero stores them separately in its database."},
      {t:"On the journal’s website", why:"They’re in your own Zotero library."}]},
-   {id:"t4u3-q17", lesson:"t4u3-l2", level:3, q:"Kenji reads in his second language and uses a translation tool. The tool renders a sentence as “the result was important (p = 0.04)”. What should he check?", options:[
+   {id:"t4u3-q17", lesson:"t4u3-l2", level:3, q:"Mariya, a student of English interpreting, reads in her second language and uses a translation tool. The tool renders a sentence as “the result was important (p = 0.04)”. What should she check?", options:[
      {t:"Whether the original says ‘statistically significant’, a technical term", ok:true, why:"Translation can blur technical terms; ‘significant’ in statistics only means p fell below a threshold."},
      {t:"Nothing: translation tools never change meaning", why:"They can mistranslate technical terms, especially words with everyday meanings."},
      {t:"Whether 0.04 means the result is 4% important", why:"A p-value isn’t a measure of importance at all."},
-     {t:"Whether the paper is written in the right language for the course he is taking", why:"The issue is the technical term, not the paper’s language."}]},
+     {t:"Whether the paper is written in the right language for the course she is taking", why:"The issue is the technical term, not the paper’s language."}]},
    {id:"t4u3-q18", lesson:"t4u3-l2", level:1, q:"What should you read first when looking at a figure?", options:[
      {t:"The caption (legend)", ok:true, why:"It says what is shown and what the symbols mean. Without the caption you may misread axes, units or error bars."},
      {t:"The colours, which show significance", why:"Colour is a design choice and has no standard meaning."},
@@ -1362,7 +1362,7 @@ ICA.addUnit({
      {t:"A rule that journals use to decide whether a trial’s results are true or false", why:"It covers reporting, not truth."},
      {t:"A citation style", why:"Citation styles format references; reporting guidelines cover content."},
      {t:"A law that applies in every country", why:"It’s a professional standard, adopted by many journals."}]},
-   {id:"t4u3-q41", lesson:"t4u3-l5", level:2, q:"Hana is appraising an interview study of 20 refugees’ experiences of finding work. Which question fits best?", options:[
+   {id:"t4u3-q41", lesson:"t4u3-l5", level:2, q:"Aoi, a master’s student in regional disaster and community studies, is appraising an interview study of 20 refugees’ experiences of finding work. Which question fits best?", options:[
      {t:"Is the analysis transparent, and do the researchers reflect on their own role?", ok:true, why:"Look for quotations that support each theme. Qualitative studies are judged on fit, transparency and reflexivity."},
      {t:"Is a sample of 20 people enough to estimate the national employment rate for refugees?", why:"Interview studies don’t aim to estimate population rates."},
      {t:"Was the p-value below 0.05?", why:"Qualitative studies don’t usually test hypotheses with p-values."},

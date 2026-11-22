@@ -548,10 +548,10 @@ ICA.addUnit({
       {t:"Dear Sir,", why:"This guesses the reader’s gender (wrongly here) and ignores the name and title he already knows."},
       {t:"Dear Teacher,", why:"University lecturers are rarely addressed this way in English-speaking countries. Her title and name are better."}
     ]},
-    {id:"e1u3-l4-x6", type:"spot", q:"Dmitri wrote this email to his supervisor, Professor Okafor. Tap each part that is **unclear or too direct** for an academic email in English. Some parts are fine.", ask:"needs rewriting", parts:[
+    {id:"e1u3-l4-x6", type:"spot", q:"Yến, a master’s student in information engineering, wrote this email to her supervisor, Dr Amoako. Tap each part that is **unclear or too direct** for an academic email in English. Some parts are fine.", ask:"needs rewriting", parts:[
       {t:"Subject: question", flag:true, why:"Too vague: the supervisor can’t tell what it’s about or how urgent it is. Try “Feedback on Chapter 2 draft: deadline question”."},
       " ",
-      {t:"Dear Professor Okafor,", flag:false, why:"Fine: a title and family name is a safe, respectful greeting."},
+      {t:"Dear Dr Amoako,", flag:false, why:"Fine: a title and family name is a safe, respectful greeting."},
       " ",
       {t:"I am writing about the draft of Chapter 2 that I sent on Monday 3 March.", flag:false, why:"Fine: it states the purpose early and gives an unambiguous date."},
       " ",
@@ -559,7 +559,7 @@ ICA.addUnit({
       " ",
       {t:"I have attached the draft again for convenience.", flag:false, why:"Fine: it saves the reader from searching for the earlier email."},
       " ",
-      {t:"Thanks in advance, D.", flag:true, why:"The supervisor may need his full name to find his records. End with a closing and full name, for example “Kind regards, Dmitri Volkov”."}
+      {t:"Thanks in advance, Y.", flag:true, why:"The supervisor may need her full name to find her records. End with a closing and full name, for example “Kind regards, Ngô Hải Yến”."}
     ]},
     {id:"e1u3-l4-x7", type:"mcq", q:"Which request is the clearest and most polite for an email to a lecturer?", options:[
       {t:"Would it be possible to submit my essay on Monday 17 March? I was ill, and I attach a medical note.", ok:true, why:"Right. Indirect (“Would it be possible…”), specific (an exact date in words), with a reason and evidence attached."},

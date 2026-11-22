@@ -1133,8 +1133,8 @@ ICA.addUnit({
      {t:"Two people", why:"Two people is a paired interview, with little group dynamic."},
      {t:"Twenty to thirty people", why:"Too many: most people wouldn’t get to speak."},
      {t:"Exactly twelve people", why:"There’s no fixed number, and twelve is above Hurst’s suggested range."}]},
-   {id:"t4u7-q16", lesson:"t4u7-l2", level:3, q:"Kenji wants to learn how farmers in one district talk among themselves about a new irrigation scheme: the arguments, the jokes, what counts as a sensible view. Which method fits best?", options:[
-     {t:"Focus groups with farmers", ok:true, why:"The interaction between farmers is exactly what he wants to see."},
+   {id:"t4u7-q16", lesson:"t4u7-l2", level:3, q:"Cheska, a master’s student in regional disaster and community studies, wants to learn how farmers in one district talk among themselves about a new irrigation scheme: the arguments, the jokes, what counts as a sensible view. Which method fits best?", options:[
+     {t:"Focus groups with farmers", ok:true, why:"The interaction between farmers is exactly what she wants to see."},
      {t:"One-to-one structured interviews", why:"Structured interviews give comparable individual answers, not group talk."},
      {t:"A national survey", why:"A survey wouldn’t capture how farmers talk to each other."},
      {t:"Reading the scheme’s official brochure", why:"A brochure shows the official view, not farmers’ conversations."}]},
@@ -1274,7 +1274,7 @@ ICA.addUnit({
      {t:"Interviewing the same person twice", why:"That is repeated data collection, not a different investigator."},
      {t:"Using interviews and documents", why:"That is methods or data triangulation."},
      {t:"Sending your themes back to the participants to check whether they agree with them", why:"That is member checking."}]},
-   {id:"t4u7-q43", lesson:"t4u7-l5", level:3, q:"Amara sends her themes to participants. Most agree, but one strongly disagrees with a theme. What does this mean?", options:[
+   {id:"t4u7-q43", lesson:"t4u7-l5", level:3, q:"Aoi, a master’s student in regional disaster and community studies, sends her themes to participants. Most agree, but one strongly disagrees with a theme. What does this mean?", options:[
      {t:"It is more data: she should reflect on it and re-check the theme", ok:true, why:"She should check the theme against the dataset and consider reporting the disagreement. Member checks inform analysis rather than acting as a vote."},
      {t:"The theme is automatically wrong and must be removed from the report", why:"A theme summarises a pattern across people; one person may not see themselves in it."},
      {t:"The participant must be removed from the study", why:"Removing inconvenient data is an integrity problem."},

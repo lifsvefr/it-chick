@@ -994,7 +994,7 @@ ICA.addUnit({
      {t:"0.2 points", why:"That divides by n (20 ÷ 100). The standard error divides by √n."},
      {t:"20 points", why:"20 is the SD of individual scores. Means of 100 vary much less."},
      {t:"10 points", why:"That divides by 2 rather than by √100 = 10."}]},
-   {id:"t3u6-q03", lesson:"t3u6-l1", level:3, q:"Kenji simulates the average price of 5 houses drawn at random from a town where prices are very skewed (a few mansions). His histogram of 5,000 simulated averages is still clearly skewed right. What is the best explanation?", options:[
+   {id:"t3u6-q03", lesson:"t3u6-l1", level:3, q:"Kaito, a first-year information engineering student, simulates the average price of 5 houses drawn at random from a town where prices are very skewed (a few mansions). His histogram of 5,000 simulated averages is still clearly skewed right. What is the best explanation?", options:[
      {t:"Samples of 5 are too small for the CLT to give a bell shape here", ok:true, why:"The CLT is a large-sample result; the more skewed the population, the larger n must be."},
      {t:"He needs to simulate more than 5,000 averages", why:"More simulated samples make a smoother picture of the same skewed sampling distribution. The fix is a larger sample size per average."},
      {t:"The central limit theorem doesn’t apply to prices", why:"It applies to any population with finite spread; it just needs a larger n here."},

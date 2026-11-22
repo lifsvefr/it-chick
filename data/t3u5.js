@@ -282,7 +282,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"t3u5-l3", title:"Percentiles, quartiles and boxplots", minutes:55,
-   hook:{q:"On a growth chart, Mei’s child is at the 90th percentile for height. What does that mean?", options:["The child is taller than about 90% of children of the same age and sex in the chart’s reference group","The child has reached 90% of their expected adult height","The child is 90% likely to be tall as an adult","The child scored 90 out of 100 on a health check"], answer:0, reveal:"**Taller than about 90%** of the children the chart compares them with. A [[percentile]] tells you where a value stands within a group, not a percentage of anything else. This lesson shows how percentiles and quartiles are found (and why apps disagree slightly), and how five of them make a boxplot."},
+   hook:{q:"Megumi, a nurse at the city hospital, looks at a growth chart and sees that her son Sōta, 9, is at the 90th percentile for height. What does that mean?", options:["The child is taller than about 90% of children of the same age and sex in the chart’s reference group","The child has reached 90% of their expected adult height","The child is 90% likely to be tall as an adult","The child scored 90 out of 100 on a health check"], answer:0, reveal:"**Taller than about 90%** of the children the chart compares them with. A [[percentile]] tells you where a value stands within a group, not a percentage of anything else. This lesson shows how percentiles and quartiles are found (and why apps disagree slightly), and how five of them make a boxplot."},
    goals:[
      "Explain what a percentile and a quartile tell you, and what they don’t",
      "Find quartiles by hand with the textbook method",
@@ -1049,7 +1049,7 @@ ICA.addUnit({
      {t:"The range", why:"The range would be set by the cheapest house and the most expensive mansion, which is even more affected by extremes."},
      {t:"The mode price", why:"With prices that are nearly all different, the mode is rarely meaningful."}
    ]},
-   {id:"t3u5-q15", lesson:"t3u5-l2", level:3, q:"Kenji says: “Our survey had 50 people last year and 500 this year, so the standard deviation of ages should be much smaller this year.” Is he right?", options:[
+   {id:"t3u5-q15", lesson:"t3u5-l2", level:3, q:"Aoi, a master’s student in regional disaster and community studies, says: “Our survey had 50 people last year and 500 this year, so the standard deviation of ages should be much smaller this year.” Is she right?", options:[
      {t:"No. The SD measures how varied people are, not sample size.", ok:true, why:"It doesn’t shrink just because more people are measured; the standard error of the mean does. More data estimate the spread more precisely, but the population is just as varied. The uncertainty in the mean, SD ÷ √n, is what gets smaller."},
      {t:"Yes. The SD always falls as the sample size grows.", why:"That confuses the SD with the standard error. The SD of ages stays about the same if the people are similar."},
      {t:"Yes, because dividing by n − 1 makes a bigger difference with large samples.", why:"The n − 1 adjustment matters more for small samples, and it’s a small correction either way."},

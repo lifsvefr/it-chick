@@ -112,7 +112,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t3u8-l1-x1", type:"mcq", q:"Kenji installed the tidyverse on his laptop yesterday. Today he opens R again and `mutate(survey, x = 1)` gives `could not find function \"mutate\"`. What should he do?", options:[
+    {id:"t3u8-l1-x1", type:"mcq", q:"Kaito, a first-year information engineering student, installed the tidyverse on his laptop yesterday. Today he opens R again and `mutate(survey, x = 1)` gives `could not find function \"mutate\"`. What should he do?", options:[
       {t:"Run `library(tidyverse)` at the start of the session", ok:true, why:"Right. (`library(dplyr)` also works.) Installing puts the package on the computer once; loading makes its functions available in each new session. A restart forgets what was loaded."},
       {t:"Run `install.packages(\"tidyverse\")` again to reinstall it", why:"It’s already installed, so reinstalling doesn’t help: he’d still need `library()` afterwards. The missing step is loading, not installing."},
       {t:"Use `Mutate()` with a capital M", why:"R names are case-sensitive, and the function is `mutate()` in lower case. The problem is that dplyr isn’t loaded."},
@@ -608,7 +608,7 @@ ICA.addUnit({
       ["`include: false`","Nothing, though the code runs","Good for setup chunks whose objects are used later."],
       ["`message: false`","Output without R’s messages","Hides notes such as the tidyverse start-up list."]
     ]},
-    {id:"t3u8-l5-x6", type:"mcq", q:"Amara’s Quarto report renders on her laptop but fails on a colleague’s with `could not find function \"read_csv\"`. In RStudio’s Console she had run `library(tidyverse)` before rendering, and the report has no library line. What’s the fix?", options:[
+    {id:"t3u8-l5-x6", type:"mcq", q:"Yến, a master’s student in information engineering, has a Quarto report that renders on her laptop but fails on a colleague’s with `could not find function \"read_csv\"`. In RStudio’s Console she had run `library(tidyverse)` before rendering, and the report has no library line. What’s the fix?", options:[
       {t:"Add `library(tidyverse)` in a chunk at the top of the report", ok:true, why:"Rendering starts a fresh R session that doesn’t see what was loaded in the Console. A report must load its own packages (and the colleague needs them installed)."},
       {t:"Ask the colleague to restart their computer", why:"A restart doesn’t load packages. The report itself needs the library() line."},
       {t:"Switch the format from html to pdf", why:"The format only affects the final conversion; the R code fails before that."},

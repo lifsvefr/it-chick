@@ -99,7 +99,7 @@ ICA.addUnit({
         "**Estimate slides from talking time.** The textbook suggests about **one minute per slide** as a starting estimate, and fifteen to twenty seconds for a slide that is only a picture. Treat this as a rough rule of thumb: some slides take three minutes, some five seconds.",
         "**Rehearse aloud and time it** (Lesson 4). Timing a silent read-through usually underestimates."
       ]},
-      {ex:"Kenji has a 20-minute slot at a student society. The organiser wants 5 minutes for questions, and the chair needs 1 minute to introduce him.\n\nTalking time: 20 − 5 − 1 = 14 minutes.\nAt roughly one minute per slide, that is about 14 slides, at most. His first storyboard had 26 boxes, so he merges or cuts about half before building anything.", label:"Worked example: from time slot to slide count"},
+      {ex:"Yến, a master’s student in information engineering, has a 20-minute slot at a student society. The organiser wants 5 minutes for questions, and the chair needs 1 minute to introduce her.\n\nTalking time: 20 − 5 − 1 = 14 minutes.\nAt roughly one minute per slide, that is about 14 slides, at most. Her first storyboard had 26 boxes, so she merges or cuts about half before building anything.", label:"Worked example: from time slot to slide count"},
       {key:"Plan the message, the structure and the time on paper. Open the app only when the story already works."}
     ]},
     {h:"Common misconceptions", body:[

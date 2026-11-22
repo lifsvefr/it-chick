@@ -253,9 +253,9 @@ ICA.addUnit({
       {t:"At the start of the interview, remind them they can skip questions or stop", why:"Consent is ongoing; reminders keep it real."},
       {t:"After the interview, explain what happens next and how to withdraw", why:"People need to know the deadline and route for withdrawing their data."}
     ]},
-    {id:"t4u9-l2-x5", type:"mcq", q:"Amara, a nurse, wants to interview patients on her own ward about their experience of care. What is the main ethical concern, and the best fix?", options:[
+    {id:"t4u9-l2-x5", type:"mcq", q:"Megumi, a nurse at the city hospital, wants to interview patients on her own ward about their experience of care. What is the main ethical concern, and the best fix?", options:[
       {t:"Patients may feel unable to refuse; someone not involved in their care should recruit.", ok:true, why:"Right. There should also be a clear promise that saying no won’t affect treatment. A dependent relationship threatens voluntariness. Separating recruitment from care, and saying so, protects free choice."},
-      {t:"There’s no concern, because patients like Amara and will want to help her with the study.", why:"Wanting to please a carer is exactly what makes a “yes” less free."},
+      {t:"There’s no concern, because patients like Megumi and will want to help her with the study.", why:"Wanting to please a carer is exactly what makes a “yes” less free."},
       {t:"Patients can’t take part in research at all.", why:"Patients take part in research all the time. The answer is safeguards, not exclusion."},
       {t:"The concern is only that interviews take time from her shifts.", why:"That’s a practical issue. The ethical issue is pressure on patients."}
     ]},

@@ -56,7 +56,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"e2u4-l1-x1", type:"mcq", q:"Kenji says: “My local university is a social institution.” A sociologist would gently correct him. What is the most accurate version?", options:[
+    {id:"e2u4-l1-x1", type:"mcq", q:"Kaito, a first-year student, says: “My local university is a social institution.” A sociologist would gently correct him. What is the most accurate version?", options:[
       {t:"The university is an organization; education is the institution it belongs to.", ok:true, why:"Right. An institution is the society-wide pattern of roles and rules (teachers, students, exams, qualifications). A single university is one organization working inside it."},
       {t:"He’s right: any large building with a public purpose is an institution.", why:"Sociologists don’t define institutions by buildings. Education would still be an institution if every class moved online."},
       {t:"Only governments count as institutions; universities are private bodies.", why:"Family, religion, the economy and education are all institutions, whoever runs the organizations inside them."},

@@ -474,11 +474,11 @@ ICA.addUnit({
       ["Streaming a film on the TV at home","Home Wi-Fi or a cable","Home broadband usually has no tight data cap and is faster and cheaper per gigabyte."],
       ["Following map directions while walking around a city","Mobile data","Mobile data works almost anywhere with coverage. (Downloaded offline maps can also help: Lesson 5.)"]
     ]},
-    {id:"t1u4-l3-x6", type:"mcq", q:"Amara connects her laptop to her phone’s hotspot for an afternoon. Her mobile plan has a small monthly data allowance. What’s the biggest risk, and the best fix?", options:[
-      {t:"Big updates may use up her data; mark the hotspot as metered.", ok:true, why:"The laptop may start large updates or cloud backups over the phone’s data, because laptops assume Wi-Fi is unlimited. Marking the hotspot connection as metered (Windows) or Low Data Mode (Mac) holds back big background downloads."},
+    {id:"t1u4-l3-x6", type:"mcq", q:"Rodrigo, who studies at a Japanese language school and pays his own way, connects his laptop to his phone’s hotspot for an afternoon. His mobile plan has a small monthly data allowance. What’s the biggest risk, and the best fix?", options:[
+      {t:"Big updates may use up his data; mark the hotspot as metered.", ok:true, why:"The laptop may start large updates or cloud backups over the phone’s data, because laptops assume Wi-Fi is unlimited. Marking the hotspot connection as metered (Windows) or Low Data Mode (Mac) holds back big background downloads."},
       {t:"The hotspot will damage the phone’s battery permanently over time.", why:"Hotspots use a lot of battery while on, but they don’t cause permanent damage. Plugging in helps."},
-      {t:"There’s no data risk, because the laptop is on Wi-Fi.", why:"The laptop is on the phone’s Wi-Fi, but the phone sends everything over mobile data, which counts against her plan."},
-      {t:"Anyone nearby can automatically use her data.", why:"Not if she sets a strong hotspot password, which she should."}
+      {t:"There’s no data risk, because the laptop is on Wi-Fi.", why:"The laptop is on the phone’s Wi-Fi, but the phone sends everything over mobile data, which counts against his plan."},
+      {t:"Anyone nearby can automatically use his data.", why:"Not if he sets a strong hotspot password, which he should."}
     ]},
     {id:"t1u4-l3-x7", type:"spot", q:"Here is a summary of Sione’s router settings. Tap every setting that should be changed.", ask:"should be changed", parts:[
       "Network name: ", {t:"Sione-Flat-4B", flag:true, why:"CISA advises against personal information in the network name. It tells everyone nearby whose network it is and where."},
@@ -785,7 +785,7 @@ ICA.addUnit({
         ["Cloud files","Mark files or folders as available offline (see {{cloud-storage}})","Changes sync when you reconnect; watch for conflicts ({{sync}})"],
         ["Documents and email","Turn on offline mode in your office or mail app","Messages wait in the outbox until you’re online"]
       ]},
-      {ex:"Lucía is flying to visit family and then taking a rural bus with no signal. The evening before, on home Wi-Fi, she downloads the town’s map, two podcast episodes and a playlist, and marks her travel documents folder as available offline. On the bus, everything she needs opens without a connection.", label:"Worked example: preparing for a trip"},
+      {ex:"Kaito, a first-year information engineering student from a small mountain town in Gifu, is going home by train to visit family and then taking a rural bus with no signal. The evening before, on Wi-Fi, he downloads the town’s map, two podcast episodes and a playlist, and marks his travel documents folder as available offline. On the bus, everything he needs opens without a connection.", label:"Worked example: preparing for a trip"},
       {warn:"Airplane mode turns off the radios; it doesn’t download anything. Offline content has to be saved before you lose the connection."}
     ]},
     {h:"Video calls on a weak connection", body:[

@@ -129,7 +129,7 @@ ICA.addUnit({
       ["Environment","Lists the objects you have created","Each object you store appears here with a preview of its value."],
       ["Plots","Shows the charts your code draws","Charts appear in the bottom-right pane’s Plots tab, where you can also export them."]
     ]},
-    {id:"t3u7-l1-x4", type:"mcq", q:"Kenji types `mean(c(4, 8, 6)` into the console and presses Enter. Instead of an answer, the console shows `+`. What’s going on?", options:[
+    {id:"t3u7-l1-x4", type:"mcq", q:"Kaito, a first-year information engineering student, types `mean(c(4, 8, 6)` into the console and presses Enter. Instead of an answer, the console shows `+`. What’s going on?", options:[
       {t:"R is waiting for the rest of the command", ok:true, why:"A bracket isn’t closed: there are two `(` but only one `)`. The `+` prompt means “carry on”. Type `)` and press Enter, or press Esc to cancel and retype."},
       {t:"R is adding the numbers together", why:"`+` here is a prompt, not the plus operator. R hasn’t run anything yet."},
       {t:"R has crashed and needs restarting before it can continue", why:"Nothing has gone wrong with R; it just needs a complete command."},
@@ -1360,7 +1360,7 @@ ICA.addUnit({
      {t:"12", why:"12 would be the percentage, not the count."},
      {t:"0.12", why:"That’s the proportion, not the number of rows."},
      {t:"44", why:"That’s the number of FALSE rows."}]},
-   {id:"t3u7-q34", lesson:"t3u7-l4", level:3, q:"Priya counts with `sum(d$income > 30000)` and gets NA. The data has a few missing incomes. What should she do?", options:[
+   {id:"t3u7-q34", lesson:"t3u7-l4", level:3, q:"Cheska, a master’s student in regional disaster and community studies, counts households with `sum(d$income > 30000)` and gets NA. The data has a few missing incomes. What should she do?", options:[
      {t:"Add `na.rm = TRUE` and report the missing count", ok:true, why:"Use `sum(d$income > 30000, na.rm = TRUE)`. Missing values make some comparisons NA; na.rm = TRUE counts the known ones, and reporting the missing count keeps it honest."},
      {t:"Delete the column", why:"That throws away all the information."},
      {t:"Use `mean()` instead, which skips missing values", why:"mean() would also give NA, and gives a proportion rather than a count."},

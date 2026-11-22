@@ -220,7 +220,7 @@ ICA.addUnit({
       {t:"Get a general idea of what a 200-page report covers before choosing a chapter.", b:0, why:"Contents, headings and the executive summary give the shape: skimming."},
       {t:"Understand how a theory explains a result you must discuss in your essay.", b:2, why:"You need to understand the argument step by step: intensive reading."}
     ]},
-    {id:"e1u1-l2-x2", type:"mcq", q:"Amara is scanning a report for information about **older people**. The search for “older people” finds nothing. What should she do next?", options:[
+    {id:"e1u1-l2-x2", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies, is scanning a report for information about **older people**. The search for “older people” finds nothing. What should she do next?", options:[
       {t:"Search for other wordings such as “older adults”, “elderly”, “aged 65” and “later life”.", ok:true, why:"Right. Writers vary their words. Thinking of synonyms and related forms is a key part of scanning."},
       {t:"Conclude that the report says nothing about older people.", why:"Too soon. The report may use different words for the same group."},
       {t:"Read the whole report intensively from the first page.", why:"That would take a long time for one piece of information. Try other search terms first."},
@@ -661,7 +661,7 @@ ICA.addUnit({
       {t:"in neighbourhoods with few green areas", flag:true, why:"Copied exactly. With the same sentence shape and only a few synonyms swapped, the whole note is patchwriting: look away and write it from memory instead."},
       "."
     ]},
-    {id:"e1u1-l5-x4", type:"mcq", q:"Hana is making notes on a well-organised textbook chapter with clear headings and numbered sections. She wants notes that keep the chapter’s structure. Which method fits best?", options:[
+    {id:"e1u1-l5-x4", type:"mcq", q:"Mariya, who studies English interpreting, is making notes on a well-organised textbook chapter with clear headings and numbered sections. She wants notes that keep the chapter’s structure. Which method fits best?", options:[
       {t:"Outline notes", ok:true, why:"Right. Outline notes are built as a hierarchy of main points and sub-points, which matches a chapter with clear headings."},
       {t:"A mind map, because it shows sequence best", why:"Mind maps show connections well but sequence and hierarchy less well. This chapter’s structure suits an outline."},
       {t:"Copying the chapter’s key sentences word for word", why:"That isn’t note-making, and it risks patchwriting later."},

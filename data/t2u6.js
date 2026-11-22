@@ -423,8 +423,8 @@ ICA.addUnit({
       {t:"A new folder `drfats` is created and the file moved into it", why:"`mv` never creates folders. That would need `mkdir` first."},
       {t:"The file is deleted", why:"Nothing is deleted; the file now has the name `drfats`. `ls` will show it."}
     ]},
-    {id:"t2u6-l3-x4", type:"order", q:"Kenji wants to delete every `.log` file in his practice folder, safely. Put the steps in order.", items:[
-      {t:"`pwd`, to confirm he’s in the practice folder", why:"First make sure of the place: the same command in the wrong folder deletes the wrong files."},
+    {id:"t2u6-l3-x4", type:"order", q:"Yến, a master’s student in information engineering who used to work at a software company, wants to delete every `.log` file in her practice folder, safely. Put the steps in order.", items:[
+      {t:"`pwd`, to confirm she’s in the practice folder", why:"First make sure of the place: the same command in the wrong folder deletes the wrong files."},
       {t:"`ls *.log`, to see exactly which files match", why:"The shell expands the pattern the same way for `ls` as for `rm`, so this is a preview."},
       {t:"`rm -i *.log`, answering `y` for each file", why:"`-i` asks about each file, a last chance to keep one."},
       {t:"`ls`, to check what’s left", why:"Confirm the result: the .log files are gone and nothing else is."}

@@ -283,11 +283,11 @@ ICA.addUnit({
       {t:"Garden club", why:"A subfolder she made inside Documents."},
       {t:"minutes.docx", why:"The file itself comes last: it’s the leaf at the end of the route."}
     ]},
-    {id:"t1u2-l2-x2", type:"mcq", q:"Hana drags `thesis.docx` from her laptop’s Documents folder onto her USB stick. What is now true?", options:[
+    {id:"t1u2-l2-x2", type:"mcq", q:"Yến, a master’s student in information engineering, drags `thesis.docx` from her laptop’s Documents folder onto her USB stick. What is now true?", options:[
       {t:"There are two copies: one on the laptop and one on the stick", ok:true, why:"Dragging to a different drive copies by default. The original stays in Documents."},
       {t:"The file has moved; it’s now only on the stick", why:"That’s what happens when you drag within the same drive. Between drives, the default is to copy."},
       {t:"Only a shortcut was put on the stick", why:"Dragging copies the actual file. A shortcut is only made if you ask for one (for example, holding Alt on Windows)."},
-      {t:"The stick now syncs with the laptop automatically", why:"Copying is a one-time action. If Hana edits the laptop copy, the stick copy won’t change."}
+      {t:"The stick now syncs with the laptop automatically", why:"Copying is a one-time action. If Yến edits the laptop copy, the stick copy won’t change."}
     ]},
     {id:"t1u2-l2-x3", type:"sort", q:"Does each action move the file (one copy, new place) or copy it (original stays)?", buckets:["Moves","Copies"], items:[
       {t:"Dragging a file into another folder on the same drive", b:0, why:"Same drive, so the default is move."},

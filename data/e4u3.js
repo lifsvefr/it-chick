@@ -731,7 +731,7 @@ ICA.addUnit({
       ["Analysis chapters","Present and interpret the evidence, tied back to the framework","They do the empirical work."],
       ["Conclusion","Gives the answer, its implications, limits and future research","It closes the loop opened in the introduction."]
     ]},
-    {id:"e4u3-l5-x7", type:"mcq", q:"A local research assistant arranged most of Ana’s interviews, translated them and helped interpret what people meant. What should Ana do when she writes up?", options:[
+    {id:"e4u3-l5-x7", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies from the Philippines, had a local research assistant who arranged most of her fieldwork interviews, translated them and helped interpret what people meant. What should Cheska do when she writes up?", options:[
       {t:"Credit the assistant as agreed with them, protecting them if needed.", ok:true, why:"Right. She should also discuss co-authorship if their intellectual contribution was substantial, and protect their identity if naming them would be risky. Fair credit matters, and so does safety: some assistants want to be named, others must not be."},
       {t:"Leave the assistant out, because only the thesis author did research.", why:"Erasing the work of local collaborators is a long-criticised problem in international research."},
       {t:"Name the assistant in full in every chapter, without asking.", why:"In some settings being named could put the assistant at risk. Ask first."},

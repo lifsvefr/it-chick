@@ -363,9 +363,9 @@ ICA.addUnit({
       {t:"Members who joined after 2022", b:0, why:"Each row has its own joined year."},
       {t:"Crops harvested more than twice", b:1, why:"The number of harvests per crop is an aggregate: HAVING COUNT(*) > 2."}
     ]},
-    {id:"t3u9-l3-x4", type:"mcq", q:"Priya runs `SELECT name FROM members WHERE plot_id != 3;` expecting five names (everyone except Chen). She gets four. Who is missing, and why?", options:[
+    {id:"t3u9-l3-x4", type:"mcq", q:"Kaito, a first-year information engineering student, runs `SELECT name FROM members WHERE plot_id != 3;` expecting five names (everyone except Chen). He gets four. Who is missing, and why?", options:[
       {t:"Eitan, because his plot_id is NULL", ok:true, why:"Right. Comparing NULL with 3 gives “unknown”, and WHERE drops unknowns. Add `OR plot_id IS NULL` if members without a plot should be included."},
-      {t:"Chen, because he’s on plot 3", why:"Chen is meant to be left out; that’s why she expected five, not six. The surprise is the sixth member."},
+      {t:"Chen, because he’s on plot 3", why:"Chen is meant to be left out; that’s why he expected five, not six. The surprise is the sixth member."},
       {t:"Fatou, because `!=` doesn’t work in SQLite", why:"`!=` works in SQLite (as does `<>`), and Fatou (plot 5) is in the result."},
       {t:"Nobody; the database has a bug", why:"It’s standard SQL behaviour: comparisons with NULL are neither true nor false."}
     ]},
@@ -1033,7 +1033,7 @@ ICA.addUnit({
      {t:"`SELECT bed, COUNT(*) FROM plots WHERE COUNT(*) > 1 GROUP BY bed;`", why:"An aggregate can’t go in WHERE: SQLite says “misuse of aggregate”."},
      {t:"`SELECT bed FROM plots WHERE id > 1;`", why:"That tests plot numbers, not how many plots each bed has."},
      {t:"`SELECT bed, COUNT(*) FROM plots HAVING COUNT(*) > 1 GROUP BY bed;`", why:"HAVING must come after GROUP BY."}]},
-   {id:"t3u9-q22", lesson:"t3u9-l3", level:3, q:"Amara’s survey table has 50 people; 10 left the score question blank, stored as NULL. What does `SELECT AVG(score) FROM survey;` give?", options:[
+   {id:"t3u9-q22", lesson:"t3u9-l3", level:3, q:"Cheska, a master’s student in regional disaster and community studies, has a survey table of 50 people; 10 left the score question blank, stored as NULL. What does `SELECT AVG(score) FROM survey;` give?", options:[
      {t:"The average of the 40 scores that were given", ok:true, why:"AVG skips NULLs. Report it as “average of the 40 people who answered”."},
      {t:"The total of the 40 scores divided by 50", why:"That would treat blanks as zeros. AVG divides by the number of non-NULL values."},
      {t:"NULL, because some values are NULL", why:"AVG ignores NULLs; it’s only NULL if every value is NULL."},

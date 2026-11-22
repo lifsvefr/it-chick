@@ -616,7 +616,7 @@ ICA.addUnit({
       {v:0.067, tol:0.001, why:"0.067 is the area above 80 (or below 50). The question asks for the middle."},
       {v:0.95, tol:0.001, why:"95% is the rule for ±2 SDs. 50 and 80 are only ±1.5 SDs from 65."}
     ], hint2:"Find the left area at 80 and at 50, then subtract."},
-    {id:"t3u11-l5-x3", type:"mcq", q:"Kenji types `=NORM.DIST(1000,1010,6,FALSE)` to find the share of rice bags under 1,000 g and gets 0.0166. What went wrong?", options:[
+    {id:"t3u11-l5-x3", type:"mcq", q:"Kaito, a first-year information engineering student, types `=NORM.DIST(1000,1010,6,FALSE)` to find the share of rice bags under 1,000 g and gets 0.0166. What went wrong?", options:[
       {t:"FALSE gives the height of the curve at 1,000 g, not an area; with TRUE he would get 0.0478.", ok:true, why:"The last argument chooses between the density (FALSE) and the cumulative probability (TRUE). Areas need TRUE."},
       {t:"Nothing: 1.66% of bags are under 1,000 g.", why:"0.0166 is a density, not a share. The share under 1,000 g is 4.78%."},
       {t:"He should have typed the z-score, −1.67, instead of 1,000.", why:"NORM.DIST takes the original value with the mean and SD; it works out z itself. With z you would also need mean 0 and SD 1."},

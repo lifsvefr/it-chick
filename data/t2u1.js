@@ -436,7 +436,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t2u1-l3-x1", type:"sort", q:"Hana is tidying her portfolio folder before publishing. Which names are safe as they are, and which should she rename?", buckets:["Safe as it is","Rename it"], items:[
+    {id:"t2u1-l3-x1", type:"sort", q:"Rodrigo, who studied art and is putting his drawings online, is tidying his portfolio folder before publishing. Which names are safe as they are, and which should he rename?", buckets:["Safe as it is","Rename it"], items:[
       {t:"index.html", b:0, why:"The standard home-page name, lowercase, with its extension."},
       {t:"Team Photo.JPG", b:1, why:"A space and capital letters: rename to something like `team-photo.jpg`."},
       {t:"contact-us.html", b:0, why:"Lowercase, words joined by a hyphen, correct extension."},

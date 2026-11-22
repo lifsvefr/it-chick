@@ -402,7 +402,7 @@ ICA.addUnit({
       {t:"Going abroad becomes a normal step into adult life in Riverbend.", why:"A culture of migration develops once many people have gone; it comes late in the process."}
     ]},
     {id:"e2u10-l3-x3", type:"sort", q:"Sort each person into de Haas’s types of mobility and immobility.", buckets:["Voluntary mobility","Involuntary immobility","Voluntary immobility","Acquiescent immobility"], items:[
-      {t:"A student wins a scholarship and chooses to study abroad.", b:0, why:"She wants to move and is able to: voluntary mobility."},
+      {t:"Cheska, a master’s student from the Philippines, wins a scholarship and chooses to study abroad.", b:0, why:"She wants to move and is able to: voluntary mobility."},
       {t:"Lina wanted work abroad, had savings and a contact, and went.", b:0, why:"High aspirations and high capabilities: voluntary mobility."},
       {t:"Omar wants to work abroad but can’t afford the fees or get a visa.", b:1, why:"He wants to move but can’t: involuntary immobility (Carling’s term)."},
       {t:"A young woman longs to join her sister abroad but has no passport and no money for the trip.", b:1, why:"High aspirations, low capabilities: involuntary immobility."},

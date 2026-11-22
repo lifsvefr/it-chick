@@ -330,7 +330,7 @@ ICA.addUnit({
       {t:"2 3", why:"That would be dropping the decimals, which is what `int()` does. `round()` sends 3.5 up to 4, because 4 is the even neighbour."},
       {t:"2.5 3.5", why:"`round()` with one argument always rounds to a whole number."}
     ]},
-    {id:"t2u8-l2-x6", type:"mcq", q:"Tomás’s program asks for two numbers with `input()` and prints `a + b`. He types 3 and 4 and gets `34`. What’s going on?", options:[
+    {id:"t2u8-l2-x6", type:"mcq", q:"Kaito, a first-year information engineering student, writes a program that asks for two numbers with `input()` and prints `a + b`. He types 3 and 4 and gets `34`. What’s going on?", options:[
       {t:"`input()` gave back strings, and `+` joins strings", ok:true, why:"Right. Convert them with `int()` first. `input()` always returns text. `\"3\" + \"4\"` is `\"34\"`. `int(a) + int(b)` gives 7."},
       {t:"`+` is the wrong operator; addition in Python is `add()`", why:"`+` does add numbers. The problem is that these aren’t numbers yet."},
       {t:"He needs `float()` instead of `int()`", why:"He hasn’t converted at all yet. Either `int()` or `float()` would fix it; `int()` suits whole numbers."},

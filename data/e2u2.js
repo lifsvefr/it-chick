@@ -310,7 +310,7 @@ ICA.addUnit({
       {t:"As a teacher, Ana must be both friendly with students and a strict, fair marker.", b:1, why:"Both demands come from the single status of teacher: role strain."},
       {t:"Sione is a police officer called to an incident involving his own cousin.", b:0, why:"Officer and family member are different statuses pulling in opposite directions: role conflict."},
       {t:"A new manager must keep her team happy while cutting their budget.", b:1, why:"Both expectations come from the one status of manager: role strain."},
-      {t:"Hana, a university student with a part-time job, has an exam on the same day as a compulsory staff training.", b:0, why:"Student and employee are two statuses with clashing demands: role conflict."},
+      {t:"Rodrigo, who studies at a language school and works part-time at the town’s seafood plant, has an exam on the same day as a compulsory staff training.", b:0, why:"Student and employee are two statuses with clashing demands: role conflict."},
       {t:"A doctor must spend time listening to each patient and also see thirty patients a day.", b:1, why:"The tension is inside the single status of doctor: role strain."}
     ]},
     {id:"e2u2-l3-x6", type:"mcq", q:"A false rumour spreads that a town’s water supply is unsafe. Shops quickly run out of bottled water, and some families who can’t buy any start using an unsafe well. Which idea best explains how the rumour created a real problem?", options:[

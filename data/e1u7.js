@@ -92,8 +92,8 @@ ICA.addUnit({
       {t:"少子化の主な原因を三つ挙げ、それぞれ説明しなさい。", b:0, why:"List three causes and explain each: an explanatory task. You may still compare them, but the main job is explaining."},
       {t:"地方の公共交通を維持すべきかについて、あなたの考えを論じなさい。", b:1, why:"～すべきか plus あなたの考えを論じなさい: a clear argumentative task."}
     ]},
-    {id:"e1u7-l1-x4", type:"mcq", q:"Amara’s topic for a 2,000-character report is 「大学生とアルバイト」. Which is the best **問い**?", options:[
-      {t:"アルバイトについて", why:"This is a topic or a title, not a question. It doesn’t tell the reader (or Amara) what she will find out."},
+    {id:"e1u7-l1-x4", type:"mcq", q:"Kaito, a first-year student in information engineering, has chosen 「大学生とアルバイト」 as the topic for a 2,000-character report. Which is the best **問い**?", options:[
+      {t:"アルバイトについて", why:"This is a topic or a title, not a question. It doesn’t tell the reader (or Kaito) what he will find out."},
       {t:"アルバイトは楽しいか", why:"“Is part-time work fun?” depends on personal feelings and can’t be answered with evidence in a report."},
       {t:"週20時間を超えるアルバイトは、大学生の学業成績と関係があるのか", ok:true, why:"Narrow, answerable with published surveys or studies, and open enough to need thinking about what the evidence shows."},
       {t:"世界の若者の労働はどのように変化してきたか", why:"A real question, but far too broad for 2,000 characters: it would need a book."}

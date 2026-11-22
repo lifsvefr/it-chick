@@ -660,7 +660,7 @@ ICA.addUnit({
       {t:"Tick “has header row” and choose Amount, largest to smallest", why:"Marking the header keeps it on top; then choose the column and direction."},
       {t:"Check a few rows against the original receipts", why:"Finally, verify. A couple of known records tell you the rows stayed together."}
     ]},
-    {id:"t1u9-l4-x5", type:"mcq", q:"Lucía filters her expense table to show only Category = Food. Below the table, a cell with `=SUM(C2:C40)` still shows the total of all categories. Why?", options:[
+    {id:"t1u9-l4-x5", type:"mcq", q:"Rodrigo, who studies at a language school and pays his own way, keeps track of his money in a sheet. He filters his expense table to show only Category = Food. Below the table, a cell with `=SUM(C2:C40)` still shows the total of all categories. Why?", options:[
       {t:"A filter only hides rows; SUM still includes hidden rows", ok:true, why:"Right. Filters change the view, not the data. For a total of just the visible rows, Excel, Google Sheets and LibreOffice have SUBTOTAL (for example =SUBTOTAL(109, C2:C40) in Excel and Google Sheets). Or use SUMIF on the category."},
       {t:"The filter deleted the other rows, but SUM remembers old values", why:"Filters don’t delete anything; clear the filter and all rows return. SUM is simply adding rows that are hidden."},
       {t:"SUM is broken when a filter is on", why:"SUM is working as designed: it adds every cell in the range, visible or not."},

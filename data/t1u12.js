@@ -158,11 +158,11 @@ ICA.addUnit({
       "\nmember = ", {t:"True", flag:false, why:"`True` without quotation marks is a Boolean in Python."},
       "\nnote = ", {t:"\"7\"", flag:true, why:"Digits inside quotation marks are text. `\"7\" + \"7\"` gives `\"77\"`, not 14."}
     ], why:"In code, quotation marks are what make a value a string, whatever is inside them."},
-    {id:"t1u12-l1-x5", type:"mcq", q:"Amara compiled her program into `budget.exe` on Windows. Her friend’s Mac won’t open the file. What’s the most likely reason?", options:[
+    {id:"t1u12-l1-x5", type:"mcq", q:"Kaito, a first-year information engineering student, compiled his program into `budget.exe` on Windows. His friend’s Mac won’t open the file. What’s the most likely reason?", options:[
       {t:"The file holds machine code built for Windows, so it must be compiled again for macOS", ok:true, why:"Right. A compiler produces instructions for one operating system and processor family. The same source code can be compiled again for the Mac."},
       {t:"Macs can’t run programs written in compiled languages", why:"Macs run compiled programs all the time; most Mac apps are compiled. They just need to be compiled for macOS."},
-      {t:"The file must have been damaged when she sent it", why:"Possible, but the usual reason is simpler: a Windows executable isn’t made for macOS at all."},
-      {t:"Her friend needs to install an interpreter for the file first", why:"Compiled programs don’t need an interpreter, or even the source code. They need to match the operating system and processor."}
+      {t:"The file must have been damaged when he sent it", why:"Possible, but the usual reason is simpler: a Windows executable isn’t made for macOS at all."},
+      {t:"His friend needs to install an interpreter for the file first", why:"Compiled programs don’t need an interpreter, or even the source code. They need to match the operating system and processor."}
     ]},
     {id:"t1u12-l1-x6", type:"number", q:"A program checks a community garden’s 4 beds every day for a week. Its outer loop runs once per day; inside it, an inner loop runs once per bed. How many times does the inner step (“check this bed”) run in total?", answer:28, tol:0, unit:"times", why:"The inner loop runs 4 times on each of the 7 days: 7 × 4 = 28. A loop inside a loop multiplies.", wrongs:[
       {v:11, tol:0, why:"That adds 7 and 4. The inner loop runs completely on every day, so multiply instead."},

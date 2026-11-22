@@ -800,7 +800,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t2u3-l5-x1", type:"mcq", q:"Kenji wants the four `<li>` items of his `<ul class=\"steps\">` side by side in a row. Where does `display: flex` go?", options:[
+    {id:"t2u3-l5-x1", type:"mcq", q:"Kaito, a first-year information engineering student, wants the four `<li>` items of his `<ul class=\"steps\">` side by side in a row. Where does `display: flex` go?", options:[
       {t:"On the `ul`: `.steps { display: flex; }`", ok:true, why:"Flexbox is set on the container. Its direct children, the four `li` elements, become flex items and line up in a row."},
       {t:"On each `li`: `.steps li { display: flex; }`", why:"That makes each `li` a flex container for its own contents. The `li` elements themselves still stack, because their parent isn’t a flex container."},
       {t:"On the `body`", why:"Only direct children of a flex container become flex items. The `li` elements are inside the `ul`, so a flex `body` would lay out the `ul` and its siblings, not the list items."},

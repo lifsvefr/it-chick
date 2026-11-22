@@ -798,7 +798,7 @@ ICA.addUnit({
         " ",{t:"I have already restarted twice.", flag:true, why:"Saying what you’ve tried saves the helper from repeating it."},
         " ",{t:"Please fix it ASAP!!", flag:false, why:"Urgency is fine to mention, but on its own it gives no information about the problem."}
       ], why:"Device and system, the exact message, when it started, and what you’ve tried: that is a description someone can act on."},
-      {id:"t1u1-l5-x6", type:"mcq", q:"While browsing, Lucía sees a full-screen warning: “Your computer is infected! Call Microsoft Support now on this number.” What should she do?", options:[
+      {id:"t1u1-l5-x6", type:"mcq", q:"While browsing, Fumiko Satō, who owns a small apartment house with her husband, sees a full-screen warning: “Your computer is infected! Call Microsoft Support now on this number.” What should she do?", options:[
         {t:"Not call, and close the browser tab or window", ok:true, why:"She can use Task Manager if it won’t close, and run her normal security scan if she’s worried. Microsoft says its error and warning messages never include a phone number. This is a tech support scam page, not a real infection report."},
         {t:"Call the number quickly before the infection spreads", why:"The number connects to scammers who try to get remote access or payment. Real Microsoft warnings don’t include phone numbers."},
         {t:"Download the cleaning tool the page offers", why:"Tools offered by scam pages are often malware themselves."},

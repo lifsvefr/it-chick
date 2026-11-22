@@ -545,7 +545,7 @@ ICA.addUnit({
       {t:"Turn his camera off so the client can’t see his screen", why:"The camera and screen share are separate; switching the camera off doesn’t hide the shared screen."},
       {t:"Mute himself while presenting", why:"He needs to speak while presenting. Muting is for when you’re not talking."}
     ]},
-    {id:"t1u11-l3-x7", type:"mcq", q:"Ana wants to record a parent–teacher committee call for members who can’t attend. What should she do?", options:[
+    {id:"t1u11-l3-x7", type:"mcq", q:"Megumi, a nurse at the city hospital whose son Sōta is 9, is on her son’s school parent–teacher committee. She wants to record a committee call for members who can’t attend. What should she do?", options:[
       {t:"Ask everyone first, and offer an alternative if anyone objects", ok:true, why:"Ask before the call, and explain where the recording will be kept and for how long. Consent comes before recording. People need to know what happens to it, and a real choice. This also respects laws and policies that differ between places."},
       {t:"Just start recording; the app shows a notice", why:"The notice tells people after the fact. Asking first is what makes it consent."},
       {t:"Record secretly so people behave naturally", why:"Secret recording breaks trust and can be illegal in many places."},

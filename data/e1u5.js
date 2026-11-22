@@ -263,10 +263,10 @@ ICA.addUnit({
       ["～でした (after a noun)","～であった","The polite past でした becomes であった (or だった)."],
       ["～ています","～ている","The polite ている form loses ます: ～ている."]
     ]},
-    {id:"e1u5-l2-x6", type:"mcq", q:"Leila’s assignment sheet asks for a 2,000-字 report but says nothing about style. What is the best plan?", options:[
-      {t:"Write in the である style, the usual default for reports, and ask the teacher if she is unsure.", ok:true, why:"Right. である is the normal report style, and the teacher has the final say."},
+    {id:"e1u5-l2-x6", type:"mcq", q:"Toby, a master’s student in Japanese linguistics, has an assignment sheet that asks for a 2,000-字 report but says nothing about style. What is the best plan?", options:[
+      {t:"Write in the である style, the usual default for reports, and ask the teacher if he is unsure.", ok:true, why:"Right. である is the normal report style, and the teacher has the final say."},
       {t:"Write in です・ます, because it is more polite to the teacher who will read it.", why:"A report doesn’t speak to the teacher personally, so politeness isn’t the point. です・ます is only right if the teacher asks for it."},
-      {t:"Use です・ます for her opinions and である for facts, to show the difference.", why:"Mixing styles is an error. Opinions and facts are shown by word choice and endings (Lesson 5), not by switching style."},
+      {t:"Use です・ます for his opinions and である for facts, to show the difference.", why:"Mixing styles is an error. Opinions and facts are shown by word choice and endings (Lesson 5), not by switching style."},
       {t:"Write in casual spoken Japanese, because reports are just homework.", why:"Reports are formal written texts. Casual speech style (～だよね, ～じゃん) has no place in them."}
     ]}
    ],

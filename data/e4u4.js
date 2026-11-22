@@ -1407,7 +1407,7 @@ ICA.addUnit({
      {t:"10.9%", why:"That is the share under 15."},
      {t:"38.7%", why:"That is the projected share for 2070 (IPSS 2023, medium variant)."},
      {t:"59.7%", why:"That is roughly the share aged 15 to 64."}]},
-   {id:"e4u4-q32", lesson:"e4u4-l4", level:2, q:"Ana reads one source saying Japan had 3.84 million foreign residents and another saying 4.28 million. What is the most likely explanation?", options:[
+   {id:"e4u4-q32", lesson:"e4u4-l4", level:2, q:"Aoi, a master’s student in regional disaster and community studies, reads one source saying Japan had 3.84 million foreign residents and another saying 4.28 million. What is the most likely explanation?", options:[
      {t:"They are different counts made on different dates.", ok:true, why:"Right. One is the 2025 census (1 October 2025), the other the Immigration Services Agency’s count of residence-status holders (end of June 2026). Always say which count and date you use."},
      {t:"One of them must be a typing error.", why:"Both are official figures; they measure slightly different things at different dates."},
      {t:"The higher figure also includes short-term tourists.", why:"Neither figure counts short-term tourists."},

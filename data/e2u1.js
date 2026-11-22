@@ -449,7 +449,7 @@ ICA.addUnit({
       {t:"Correlations can never tell researchers anything useful about crime.", why:"Correlations are useful evidence and often the first step. They just don’t prove cause on their own."},
       {t:"Crime and cafés can’t be measured.", why:"Both can be measured, with care. Measurement isn’t the main issue here."}
     ]},
-    {id:"e2u1-l4-x7", type:"mcq", q:"Kenji wants to study whether “social isolation” affects older adults’ health. Which is the best operational definition of social isolation?", options:[
+    {id:"e2u1-l4-x7", type:"mcq", q:"Megumi, a nurse at the city hospital, wants to study whether “social isolation” affects older adults’ health. Which is the best operational definition of social isolation?", options:[
       {t:"The number of times in the past week a person had a conversation, in person or by phone, with family, friends or neighbours", ok:true, why:"Yes. It’s concrete, countable and repeatable, so others can use the same measure and compare results."},
       {t:"Feeling isolated", why:"That just repeats the concept without saying how to measure it."},
       {t:"Being old", why:"Age is a different variable. Many older people are not isolated."},
@@ -535,7 +535,7 @@ ICA.addUnit({
       "\n",
       {t:"7. Is there anything else you would like to tell us about living here?", flag:false, why:"A good open-ended question that invites qualitative answers without steering them."}
     ]},
-    {id:"e2u1-l5-x3", type:"number", q:"Tomás sends a questionnaire to 1,200 randomly chosen households. 300 complete it. What is the **response rate**, as a percentage?", answer:25, tol:0.1, unit:"%", why:"Response rate = completed ÷ invited × 100 = 300 ÷ 1,200 × 100 = 25%. A low response rate is a warning sign: if the 900 who didn’t reply differ from those who did, the results may be biased even though the original sample was random.", wrongs:[
+    {id:"e2u1-l5-x3", type:"number", q:"Aoi, a master’s student in regional disaster and community studies, sends a questionnaire to 1,200 randomly chosen households. 300 complete it. What is the **response rate**, as a percentage?", answer:25, tol:0.1, unit:"%", why:"Response rate = completed ÷ invited × 100 = 300 ÷ 1,200 × 100 = 25%. A low response rate is a warning sign: if the 900 who didn’t reply differ from those who did, the results may be biased even though the original sample was random.", wrongs:[
       {v:0.25, tol:0.001, why:"That’s the proportion (300 ÷ 1,200). Multiply by 100 to get a percentage."},
       {v:400, tol:0.5, why:"You divided 1,200 by 300. The response rate is completed questionnaires divided by questionnaires sent."},
       {v:75, tol:0.1, why:"That’s the non-response rate (900 of 1,200 didn’t reply). The response rate is the share who did."},

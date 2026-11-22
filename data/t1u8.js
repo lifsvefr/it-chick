@@ -75,7 +75,7 @@ ICA.addUnit({
         ["Pages (Mac)","**Insert Table of Contents** at the bottom of the Table of Contents sidebar, or **Insert → Table of Contents**","Updates automatically as you edit"]
       ]},
       "Word and LibreOffice don’t update the TOC on their own: they wait for you, because updating can move pages around. Make it a habit to update the TOC just before you print, export or send.",
-      {ex:"Kenji finishes a 12-page report, inserts a TOC and sends it. Then he adds a two-page introduction.\nIn Word, the TOC still shows the old page numbers until he chooses Update Table. He updates it, checks that every entry now matches the page it points to, and only then exports the PDF.", label:"Worked example: update before you send"},
+      {ex:"Aoi, a master’s student in regional disaster and community studies, finishes a 12-page report, inserts a TOC and sends it. Then she adds a two-page introduction.\nIn Word, the TOC still shows the old page numbers until she chooses Update Table. She updates it, checks that every entry now matches the page it points to, and only then exports the PDF.", label:"Worked example: update before you send"},
       {tip:"Google Docs can’t change the TOC’s format in **pageless** mode (Google’s help says so), because pageless documents have no page numbers. Switch to **Pages** in **File → Page setup** if you need page numbers."}
     ]},
     {h:"Paragraphs, line breaks and the hidden marks", body:[

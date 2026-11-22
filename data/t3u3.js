@@ -339,7 +339,7 @@ ICA.addUnit({
       {t:"She knows the form system adds spaces after every answer", b:1, why:"Trimming on import removes spaces at both ends of every cell in one go."},
       {t:"She wants ages and counts to be numbers straight away, and has no codes like 007 to protect", b:2, why:"Parsing converts number-like text to numbers. Leave it off if leading zeros matter."},
       {t:"Accented place names show odd symbols in the preview", b:0, why:"Another encoding problem: change the encoding until the preview looks right."}]},
-    {id:"t3u3-l3-x6", type:"mcq", q:"Mei runs **Edit cells → Common transforms → To number** on a column of 180 cells. The yellow message says 171 cells were changed. What should she do next?", options:[
+    {id:"t3u3-l3-x6", type:"mcq", q:"Yến, a master’s student in information engineering, runs **Edit cells → Common transforms → To number** on a column of 180 cells. The yellow message says 171 cells were changed. What should she do next?", options:[
       {t:"Open a Numeric facet on the column and look at the non-numeric cells", ok:true, why:"Right. Cells that couldn’t be converted keep their old (text) value. The Numeric facet counts and selects them, so she can see what’s wrong (a unit, a comma, a typo)."},
       {t:"Nothing: 171 out of 180 is close enough", why:"The other 9 cells are still text, so any calculation or numeric facet will skip or mis-handle them. Find out what they are."},
       {t:"Run To number again until it says 180", why:"Running it again gives the same result: the problem is in those cells’ contents."},
@@ -838,7 +838,7 @@ ICA.addUnit({
      {t:"A cell containing 4, formatted to show two decimals", why:"Formatting doesn’t change the type; 4.00 is still the number 4."},
      {t:"A cell containing the formula `=2+2`", why:"The formula produces the number 4."},
      {t:"An empty cell", why:"An empty cell holds nothing, not text."}]},
-   {id:"t3u3-q04", lesson:"t3u3-l1", level:3, q:"Kenji finds an age of 214 in a survey of adults and has no paper forms. What is the most honest treatment?", options:[
+   {id:"t3u3-q04", lesson:"t3u3-l1", level:3, q:"Cheska, a master’s student in regional disaster and community studies, finds an age of 214 in her survey of adults and has no paper forms. What is the most honest treatment?", options:[
      {t:"Set it to missing in the clean copy and note why in the log", ok:true, why:"Right. The value is impossible, but the true age can’t be known. Missing plus a note, with the raw value kept, is honest and checkable."},
      {t:"Change it to 21, since that is the most likely intended value", why:"That is a guess presented as data. It might be 41, or 24."},
      {t:"Replace it with the average age of the other adults", why:"That invents a value and also makes the data look less varied than it is."},

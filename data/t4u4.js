@@ -274,7 +274,7 @@ ICA.addUnit({
       {t:"Leave it out; undated pages can’t be cited", why:"Undated pages can be cited: “n.d.” means no date."},
       {t:"Use today’s date as the publication date", why:"That would be false information. Use n.d., and add a retrieval date only if the page is designed to change."}
     ]},
-    {id:"t4u4-l2-x7", type:"mcq", q:"Priya used ChatGPT to suggest an outline, and her instructor allows that with disclosure. Following APA’s guidance, which statement is right?", options:[
+    {id:"t4u4-l2-x7", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies, used ChatGPT to suggest an outline, and her instructor allows that with disclosure. Following APA’s guidance, which statement is right?", options:[
       {t:"She cites OpenAI as the author and describes how she used the tool where she discloses it", ok:true, why:"APA treats the company as the author (OpenAI, year) and expects the use to be described; the instructor’s policy decides what’s allowed."},
       {t:"She lists ChatGPT as a co-author of her essay", why:"AI can’t be an author: it can’t take responsibility for the work or agree to authorship."},
       {t:"She must give the model’s exact version number in every reference", why:"APA no longer requires a version number by default; the model name or tool name is enough."},
@@ -643,7 +643,7 @@ ICA.addUnit({
       ["Document Preferences","Chooses the citation style for a document","Changing it reformats every citation and the bibliography."],
       ["Unlink Citations","Turns live citations into plain text","Use it only on a final copy; keep a linked version."]
     ]},
-    {id:"t4u4-l5-x2", type:"mcq", q:"Amara’s APA bibliography from Zotero shows “Shade Trees And Classroom Temperatures”. What’s the best fix?", options:[
+    {id:"t4u4-l5-x2", type:"mcq", q:"Aoi, a master’s student in regional disaster and community studies, has an APA bibliography from Zotero that shows “Shade Trees And Classroom Temperatures”. What’s the best fix?", options:[
       {t:"Change the title in her Zotero library to sentence case, then refresh", ok:true, why:"APA styles print titles as stored, so fix the source data once and every document improves."},
       {t:"Edit the citation text directly in the document", why:"Hand edits break Zotero’s link and can be overwritten on refresh. Fix the library item instead."},
       {t:"Switch to MLA, because Zotero can’t do APA", why:"Zotero includes APA 7th; the problem is the stored title, not the style."},

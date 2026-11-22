@@ -601,7 +601,7 @@ ICA.addUnit({
       ]},
       "**Categories matter too.** Every form forces people into boxes. A survey with only “male” and “female” can’t count non-binary people; a single “ethnicity” box can’t record mixed heritage. The 2021 Census in England and Wales was the first there to include voluntary questions on sexual orientation and gender identity for people aged 16 and over, so those groups could be counted in a census there for the first time.",
       "**Being counted isn’t always safe.** Registers of people by ethnicity, religion or immigration status have been used to target people in the past. That’s why good statistics offices keep individual records confidential and why data minimisation matters.",
-      {ex:"Priya plans a city survey on access to parks.\n\nWho’s missing if it’s online only, in one language? People without internet, people who don’t read the main language, many older residents.\n\nFixes: paper and phone options, translations, and working with community groups to reach people the city usually misses.", label:"Worked example"}
+      {ex:"Cheska, a master’s student in regional disaster and community studies, plans a city survey on access to parks.\n\nWho’s missing if it’s online only, in one language? People without internet, people who don’t read the main language, many older residents.\n\nFixes: paper and phone options, translations, and working with community groups to reach people the city usually misses.", label:"Worked example"}
     ]},
     {h:"When algorithms learn from unequal data", body:[
       "**[[algorithmic-bias|Algorithmic bias]]** means an automated system produces systematically unfair results for some groups. Two well-documented ways it happens:",
@@ -1253,8 +1253,8 @@ ICA.addUnit({
      {t:"A licence for the data", why:"Licences are separate from metadata standards."},
      {t:"Encryption for sensitive data", why:"Standards describe data; they don’t protect it."},
      {t:"A way to collect survey answers", why:"They describe data after collection."}]},
-   {id:"t3u10-q34", lesson:"t3u10-l4", level:3, q:"Kenji’s interview participants were told only the research team would see the transcripts. His journal asks for open data. What should he do?", options:[
-     {t:"Keep them closed and explain why in a data availability statement", ok:true, why:"He can still publish a description and documentation. Consent comes first; FAIR can still be met through a findable description and a clear access explanation."},
+   {id:"t3u10-q34", lesson:"t3u10-l4", level:3, q:"Aoi, a master’s student in regional disaster and community studies, told her interview participants that only the research team would see the transcripts. Her journal asks for open data. What should she do?", options:[
+     {t:"Keep them closed and explain why in a data availability statement", ok:true, why:"She can still publish a description and documentation. Consent comes first; FAIR can still be met through a findable description and a clear access explanation."},
      {t:"Share the transcripts openly, because the journal’s policy requires it", why:"A journal policy can’t override promises made to participants."},
      {t:"Remove names and share openly", why:"That would still break the consent terms, and stories can identify people."},
      {t:"Withdraw the paper", why:"Journals routinely accept justified restrictions."}]},

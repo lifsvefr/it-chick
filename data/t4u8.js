@@ -103,7 +103,7 @@ ICA.addUnit({
       ["Asked for monthly spending on transport, Mei guesses rather than adding up dozens of fares","Judge","Turning memories into a number is the judgement step; hard sums lead to guesses."],
       ["Oluwaseun’s true answer is “twice a month”, but the options only offer “weekly” or “never”","Report","He knows his answer but can’t fit it into the options offered."]
     ]},
-    {id:"t4u8-l1-x4", type:"mcq", q:"Priya is planning a survey of older residents in a rural district about access to health services. Many residents don’t use the internet. Which plan is best?", options:[
+    {id:"t4u8-l1-x4", type:"mcq", q:"Cheska, a master’s student in regional disaster and community studies, is planning a survey of older residents in a rural district about access to health services. Many residents don’t use the internet. Which plan is best?", options:[
       {t:"Offer a paper form or a phone option alongside a web form.", ok:true, why:"Mixing modes lets people without internet take part, so the results don’t leave out the very people the topic most concerns."},
       {t:"Use only a web form, because it’s cheapest and the data arrives tidy.", why:"Cheap, but people offline couldn’t answer, so the results would mostly describe residents who are online."},
       {t:"Post the link on social media and use whoever replies.", why:"Social media posts reach a self-selected group, and still miss people offline."},
@@ -631,7 +631,7 @@ ICA.addUnit({
       {t:"Under-35s are 10% more likely to cycle.", why:"The gap is 10 percentage points. In relative terms, 25% is 66.7% higher than 15%. “10% more likely” is wrong on both counts."},
       {t:"Being under 35 causes people to cycle more.", why:"A cross-tab shows association. Where people live and work, or other factors, may explain the difference."}
     ]},
-    {id:"t4u8-l5-x6", type:"spot", q:"Mei is reviewing a draft summary of a community survey. Tap each statement that is misleading or missing something important.", ask:"misleading or incomplete", parts:[
+    {id:"t4u8-l5-x6", type:"spot", q:"Aoi, a master’s student in regional disaster and community studies, is reviewing a draft summary of a community survey. Tap each statement that is misleading or missing something important.", ask:"misleading or incomplete", parts:[
       {t:"“We received 412 responses between 3 and 24 March (response rate 38% of 1,084 invited households).”", flag:false, why:"States n, dates, the number invited and the response rate: exactly what readers need."},
       "\n",
       {t:"“A massive 80% of young people want a skate park!”", flag:true, why:"No n is given. If “young people” were 10 of the 412, 80% is 8 people. Give the subgroup size."},

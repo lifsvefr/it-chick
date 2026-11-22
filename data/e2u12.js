@@ -105,7 +105,7 @@ ICA.addUnit({
     {id:"e2u12-l1-x3", type:"match", q:"Match each of Ager and Strang’s integration levels to an example.", pairs:[
       ["Markers and means","Hana finds a job that uses her nursing qualification","Employment, housing, education and health are both signs of integration and means to it."],
       ["Social connections","Sione joins a local football team and makes friends from many backgrounds","Ties with people from other groups are “bridges”, one of the three kinds of social connection."],
-      ["Facilitators","Dmitri takes free language classes and learns local customs","Language and cultural knowledge, and safety and stability, help people integrate in other domains."],
+      ["Facilitators","Rodrigo studies at a Japanese language school and learns local customs","Language and cultural knowledge, and safety and stability, help people integrate in other domains."],
       ["Foundation","Amara gains permanent residence and the right to vote locally","Rights and citizenship are the foundation the framework places under everything else."]
     ]},
     {id:"e2u12-l1-x4", type:"mcq", q:"After leaders in several European countries said multiculturalism had failed, what did Banting and Kymlicka’s Multiculturalism Policy Index suggest about policies between 1980 and 2010?", options:[

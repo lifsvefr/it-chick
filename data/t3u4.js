@@ -104,7 +104,7 @@ ICA.addUnit({
     ]}
    ],
    try:[
-    {id:"t3u4-l1-x1", type:"mcq", q:"Mei wants readers to compare the recycling rates of 12 towns as precisely as possible. Which encoding should she use?", options:[
+    {id:"t3u4-l1-x1", type:"mcq", q:"Aoi, a master’s student in regional disaster and community studies, wants readers to compare the recycling rates of 12 towns as precisely as possible. Which encoding should she use?", options:[
       {t:"A dot for each town along one shared axis, sorted by rate", ok:true, why:"Position along a shared scale is the most accurately judged encoding, and sorting makes the ranking obvious."},
       {t:"A circle for each town, sized by its rate", why:"People judge areas much less accurately than positions, so small differences between towns would be hard to see."},
       {t:"A map with each town shaded from light to dark", why:"Shading is among the least accurately judged encodings. It shows broad patterns, not precise comparisons."},
@@ -596,7 +596,7 @@ ICA.addUnit({
       {v:48, tol:0.2, why:"That’s mean − 1 SE. A 95% interval reaches about 2 SE each way."},
       {v:26, tol:0.2, why:"That’s mean − 2 SD, which describes individuals, not the precision of the mean."}
     ]},
-    {id:"t3u4-l4-x5", type:"mcq", q:"Kenji compares two independent groups. Their 95% confidence intervals overlap slightly. He writes “no difference between the groups”. What’s the best response?", options:[
+    {id:"t3u4-l4-x5", type:"mcq", q:"Kaito, a first-year information engineering student, compares two independent groups. Their 95% confidence intervals overlap slightly. He writes “no difference between the groups”. What’s the best response?", options:[
       {t:"Overlap doesn’t settle it; check the difference’s interval", ok:true, why:"Calculate a confidence interval for the difference and see whether it includes 0. As the worked example shows, intervals can overlap while the interval for the difference excludes 0. Wilke advises against overlap rules."},
       {t:"He’s right: overlapping intervals always mean no difference", why:"Not always. Two intervals each of ± 1.96 SE can overlap even when the difference is statistically clear."},
       {t:"He should switch to SD bars, which overlap less", why:"SD bars are longer, not shorter, and they answer a different question."},

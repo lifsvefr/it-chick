@@ -17,8 +17,8 @@ ICA.addUnit({
   lessons:[
   /* ───────────── LESSON 1 ───────────── */
   {id:"t4u5-l1", title:"What a literature review is for", minutes:45,
-   hook:{q:"Kenji has a paragraph of notes on each of 25 articles, in the order he read them. His supervisor says: “Good work, but this isn’t a literature review yet.” What is most likely missing?", options:["More articles: 25 is too few","Connections: what the articles show together, where they disagree and what’s missing","Longer quotations from each article","A more formal tone"], answer:1,
-     reveal:"**Connections.** Kenji has a list of summaries, closer to an annotated bibliography. A literature review groups sources by idea, compares them, weighs how strong the evidence is and shows what’s still unknown. The number of sources and the tone matter much less. This lesson shows what a review is for and how it’s built."},
+   hook:{q:"Cheska, a master’s student in regional disaster and community studies, has a paragraph of notes on each of 25 articles, in the order she read them. Her seminar teacher, Prof. Ōnishi, says: “Good work, but this isn’t a literature review yet.” What is most likely missing?", options:["More articles: 25 is too few","Connections: what the articles show together, where they disagree and what’s missing","Longer quotations from each article","A more formal tone"], answer:1,
+     reveal:"**Connections.** Cheska has a list of summaries, closer to an annotated bibliography. A literature review groups sources by idea, compares them, weighs how strong the evidence is and shows what’s still unknown. The number of sources and the tone matter much less. This lesson shows what a review is for and how it’s built."},
    goals:["Explain what a literature review does and why researchers write one","Tell a literature review apart from an annotated bibliography","Recognise the usual shape of a review and common misconceptions about it"],
    learn:[
     {h:"Joining a conversation", body:[

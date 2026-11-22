@@ -436,7 +436,7 @@ ICA.addUnit({
       {t:"A QR code and an email address", b:0, why:"These are how interested people follow up after the session."},
       {t:"The complete reference list of 35 sources", b:1, why:"Cite the few key sources briefly on the poster; the full list fits better in the linked PDF."}
     ]},
-    {id:"t4u10-l3-x4", type:"mcq", q:"After Priya’s talk, someone asks about a statistical method she didn’t use and doesn’t know well. What is the best response?", options:[
+    {id:"t4u10-l3-x4", type:"mcq", q:"Aoi, a master’s student in regional disaster and community studies, gives a talk at her seminar. Afterwards, someone asks about a statistical method she didn’t use and doesn’t know well. What is the best response?", options:[
       {t:"Say she doesn’t know that method well, explain her own choice, and offer to follow up.", ok:true, why:"Honest and constructive. It keeps her credibility, explains her own choice and leaves room to learn something useful."},
       {t:"Give a confident answer anyway, so that she doesn’t look unprepared in front of everyone.", why:"A confident wrong answer in front of specialists does far more damage than an honest “I don’t know”."},
       {t:"Say the question isn’t relevant to her talk.", why:"It may well be relevant: the questioner may be pointing to a better analysis. Dismissing it closes off useful feedback."},
