@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=80">
+<link rel="stylesheet" href="../shared/style.css?v=81">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=80"></script>
+<script src="../shared/engine.js?v=81"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -50,6 +50,24 @@
 .toc summary{cursor:pointer;font-family:var(--display);font-weight:800} .toc ol{margin:8px 0 2px;padding-left:0;list-style:none;display:grid;gap:4px}
 .toc a{text-decoration:none} .toc .num{display:inline-block;min-width:2.6em;color:var(--soft)}
 .back{display:inline-flex;gap:6px;align-items:center}
+.printrow{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0}
+.chsec{margin-top:2em} .chsec+.chsec{border-top:1px solid var(--line);padding-top:1em}
+@media print{
+  @page{margin:16mm 15mm}
+  body{background:#fff!important;color:#000}
+  .topbar,.rtools,.rnav,.printrow,.noprint,.loadscr{display:none!important}
+  .wrap{padding:0!important;max-width:none}
+  .rd{max-width:none;font-size:11pt;line-height:1.5;color:#000}
+  .rd h1{font-size:18pt} .rd h3{font-size:13pt;break-after:avoid}
+  .rd a{color:#000;text-decoration:none}
+  .rd figure{break-inside:avoid} .rd figure img{max-height:85mm;width:auto;border:0}
+  .rd .note,.rd .sum,.goals,.rd details{background:none;border-color:#999;break-inside:avoid-page}
+  .rd dfn{background:none;font-weight:700}
+  .rd details>summary{list-style:none} .rd details>summary::-webkit-details-marker{display:none}
+  .chsec{margin-top:1.4em} .chsec h2{break-after:avoid}
+  .rd figure{background:none!important;border:0!important;padding:0!important;box-shadow:none!important}
+  .credit{color:#333}
+}
 </style>
 </head>
 <body>
@@ -86,6 +104,19 @@ function contents(id){
       b.toc.map(function(c){ return '<details><summary>'+c.n+'. '+esc(c.title)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
   }).catch(function(){ app.innerHTML = '<p>That book isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
+function printChapter(id, cn){
+  cn = +cn;
+  Promise.all([book(id), chapter(id, cn)]).then(function(a){
+    var b = a[0], secs = a[1], c = b.toc[cn-1]; setTitle(c.title);
+    app.innerHTML = '<article class="rd">'+
+      '<div class="rtools"><a class="back small" href="#'+id+'/'+(secs[0] ? secs[0].n : cn)+'">← Back to reading</a></div>'+
+      '<div class="printrow noprint" style="margin-top:0"><button class="btn primary" data-print>🖨️ Print or save as PDF</button><span class="small muted">Chapter '+cn+', all '+secs.length+' parts on one page. Choose “Save as PDF” in the print window to keep a copy.</span></div>'+
+      '<div class="eyebrow">'+esc(b.title)+'</div><h1>Chapter '+cn+': '+esc(c.title)+'</h1>'+
+      secs.map(function(s){ return '<section class="chsec"><h2>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h2>'+(s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+'<p class="credit">Original: '+esc(s.src)+'</p></section>'; }).join("")+
+      credit(b)+'</article>';
+    window.scrollTo(0, 0);
+  }).catch(function(){ app.innerHTML = '<p>That chapter isn’t available here.</p><p><a href="#">← All books</a></p>'; });
+}
 function page(id, num){
   var cn = parseInt(num, 10);
   Promise.all([book(id), chapter(id, cn)]).then(function(a){
@@ -100,21 +131,26 @@ function page(id, num){
       '<div class="rtools">'+backLink()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div>'+
       '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a> · Chapter '+cn+': '+esc(c.title)+'</div>'+
       '<h1>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
-      (s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+nav+credit(b, s)+'</article>';
+      (s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+
+      '<div class="printrow"><button class="btn small" data-print>🖨️ Print this section</button><a class="btn small" href="#'+id+'/print/'+cn+'">🖨️ Print the whole chapter</a></div>'+nav+credit(b, s)+'</article>';
     window.scrollTo(0, 0);
   }).catch(function(){ app.innerHTML = '<p>That page isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
 document.addEventListener("click", function(e){
+  if (e.target.closest("[data-print]")){ window.print(); return; }
   var t = e.target.closest("[data-sz]"); if (!t) return;
   var s = ICA.load().settings, v = Math.round(((s.readerSize || 1) + 0.1 * +t.getAttribute("data-sz")) * 10) / 10;
   s.readerSize = Math.min(1.6, Math.max(0.8, v)); ICA.save(); applySize();
 });
 function route(){
   var h = decodeURIComponent(location.hash.slice(1)), m;
+  if ((m = h.match(/^([a-z0-9]+)\/print\/(\d+)$/))) printChapter(m[1], m[2]);
   if ((m = h.match(/^([a-z0-9]+)\/(\d+(?:\.\d+)?)$/))) page(m[1], m[2]);
   else if (/^[a-z0-9]+$/.test(h)) contents(h);
   else shelf();
 }
+window.addEventListener("beforeprint", function(){ ICA.$$(".rd details").forEach(function(d){ d.setAttribute("data-was", d.open ? 1 : 0); d.open = true; }); });
+window.addEventListener("afterprint", function(){ ICA.$$(".rd details").forEach(function(d){ d.open = d.getAttribute("data-was") === "1"; }); });
 bar = ICA.topbar("Reader");
 applySize();
 ICA.loadAll("../", function(){ window.addEventListener("hashchange", route); route(); });
