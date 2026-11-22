@@ -36,7 +36,7 @@ ICA.capstones = {};
 ICA.addCapstone = function(c){ ICA.capstones[c.track] = c; };
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/reader-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
@@ -364,7 +364,7 @@ ICA.offline = (function(){
   function list(){ return fetch(ICA.base + "offline.json", {cache:"no-store"}).then(function(r){ if (!r.ok) throw new Error("list"); return r.json(); }); }
   function emit(s){ busy = s; listeners.forEach(function(f){ try { f(s); } catch(e){} }); }
   function mb(n){ return n >= 1e9 ? (n/1e9).toFixed(1) + " GB" : Math.max(1, Math.round(n/1e6)) + " MB"; }
-  function want(p){ return ["core"].concat(p.audio ? ["audio"] : [], p.labs ? ["labs"] : []); }
+  function want(p){ return ["core"].concat(p.audio ? ["audio"] : [], p.labs ? ["labs"] : [], p.reader ? ["reader"] : []); }
   // Download every file in the chosen groups whose hash changed; drop files from groups no longer chosen.
   function sync(quiet){
     if (!ok) return Promise.reject(new Error("unsupported"));
@@ -425,17 +425,19 @@ ICA.offline = (function(){
         : 'Not saved yet. Pages you’ve opened before may still work without a signal.';
       box.innerHTML = '<p class="small muted">Save IT CHICK Academy on this device so lessons, the story and the labs work with no signal. Your progress is always kept on the device; Drive sync catches up when you’re back online.</p>' +
         '<div class="stack offpick">' +
-        '<label class="chk"><input type="checkbox" checked disabled> Lessons, story, pictures <span class="small muted">· about 31 MB</span></label>' +
-        '<label class="chk"><input type="checkbox" id="off-audio"' + (p.audio ? ' checked' : '') + (run ? ' disabled' : '') + '> Voice audio <span class="small muted">· about 116 MB</span></label>' +
-        '<label class="chk"><input type="checkbox" id="off-labs"' + (p.labs ? ' checked' : '') + (run ? ' disabled' : '') + '> Coding labs: Python, SQL and R <span class="small muted">· about 62 MB</span></label></div>' +
+        '<label class="chk"><input type="checkbox" checked disabled> Lessons, story, pictures <span class="small muted">· about 37 MB</span></label>' +
+        '<label class="chk"><input type="checkbox" id="off-audio"' + (p.audio ? ' checked' : '') + (run ? ' disabled' : '') + '> Voice audio <span class="small muted">· about 173 MB</span></label>' +
+        '<label class="chk"><input type="checkbox" id="off-labs"' + (p.labs ? ' checked' : '') + (run ? ' disabled' : '') + '> Coding labs: Python, SQL and R <span class="small muted">· about 62 MB</span></label>' +
+        '<label class="chk"><input type="checkbox" id="off-reader"' + (p.reader ? ' checked' : '') + (run ? ' disabled' : '') + '> Books in the Reader <span class="small muted">· about 15 MB</span></label></div>' +
         (run ? '<progress max="100" value="' + pct + '" aria-label="Saving for offline use"></progress>' : '') +
         '<p class="small" role="status">' + status + '</p>' +
         '<div class="row"><button class="btn small" id="off-go"' + (run ? ' disabled' : '') + '>' + (on ? 'Update offline copy' : 'Save for offline use') + '</button>' + (on && !run ? '<button class="btn small ghost" id="off-rm">Remove offline copy</button>' : '') + '</div>' +
         '<p class="small muted">On iPhone and iPad, add the app to your Home Screen (Share → Add to Home Screen) and open it from there: Safari can clear saved website data after about a week without a visit.</p>';
-      var go = box.querySelector("#off-go"), rm = box.querySelector("#off-rm"), A = box.querySelector("#off-audio"), B = box.querySelector("#off-labs");
+      var go = box.querySelector("#off-go"), rm = box.querySelector("#off-rm"), A = box.querySelector("#off-audio"), B = box.querySelector("#off-labs"), RB = box.querySelector("#off-reader");
+      if (RB) RB.onchange = function(){ p.reader = RB.checked; pref(p); };
       if (A) A.onchange = function(){ p.audio = A.checked; pref(p); };
       if (B) B.onchange = function(){ p.labs = B.checked; pref(p); };
-      if (go) go.onclick = function(){ p.audio = A.checked; p.labs = B.checked; pref(p); sync(false).then(function(){ p = pref(); ICA.toast(p.fails ? "Saved, but some files didn’t download. Tap Update to try again." : "Saved for offline use."); }).catch(function(){}); };
+      if (go) go.onclick = function(){ p.audio = A.checked; p.labs = B.checked; p.reader = RB && RB.checked; pref(p); sync(false).then(function(){ p = pref(); ICA.toast(p.fails ? "Saved, but some files didn’t download. Tap Update to try again." : "Saved for offline use."); }).catch(function(){}); };
       if (rm) rm.onclick = function(){ remove().then(function(){ p = {}; render({}); ICA.toast("Offline copy removed."); }); };
     }
     listeners = [function(s){ if (document.body.contains(box)) { p = pref(); render(s); } }];

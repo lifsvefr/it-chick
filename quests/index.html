@@ -14,13 +14,13 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Klee+One:wght@600&family=Zen+Kurenaido&family=Shippori+Mincho:wght@600;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=79">
+<link rel="stylesheet" href="../shared/style.css?v=80">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=79"></script>
+<script src="../shared/engine.js?v=80"></script>
 <script src="../shared/theme.js?v=2"></script>
-<script src="props.js?v=79"></script>
-<script src="../data/story.js?v=79"></script>
-<script src="../data/story-audio.js?v=79"></script>
+<script src="props.js?v=80"></script>
+<script src="../data/story.js?v=80"></script>
+<script src="../data/story-audio.js?v=80"></script>
 <style>
 .lhead{display:grid;gap:8px}
 .goals{margin:0;padding-left:20px;color:var(--soft);font-size:.94em}
@@ -242,10 +242,25 @@ function readChip(l){
   var s = ICA.lessonState(l.id), gs = readGroups(l), n = l.read.length;
   return '<button class="readchip" data-readinfo="'+l.id+'"><span aria-hidden="true">📖</span><span>'+(s.readDone ? "Reading done ✓" : "Reading")+': '+esc(gs[0].b.short || gs[0].b.title || "")+(n > 1 ? " + "+(n-1)+" more" : "")+'</span><span class="small" aria-hidden="true">›</span></button>';
 }
+/* Sections of this reading that the built-in reader has (site/data/reader-index.js) -> "Read it here" buttons. */
+function readSecs(r){
+  var ix = (window.ICA_READIDX || {})[r.book]; if (!ix) return [];
+  var w = String(r.where).replace(/\(on LibreTexts[^)]*\)/g, "").replace(/“[^”]*”/g, ""), out = [];
+  w = w.replace(/(\d+)\.(\d+)\s*[–-]\s*(\d+)\.(\d+)/g, function(m, a, b, c, d){ if (a === c) for (var k = +b; k <= +d; k++) out.push(a + "." + k); return " "; });
+  w.replace(/\b(\d+\.\d+)\b/g, function(m, n){ out.push(n); return m; });
+  if (!out.length) w.replace(/Chapter\s+(\d+)/g, function(m, n){ out.push(n); return m; });
+  return out.filter(function(n, i){ return ix.secs[n] && out.indexOf(n) === i; });
+}
+function readHere(r, l){
+  var ix = (window.ICA_READIDX || {})[r.book], ns = readSecs(r); if (!ns.length) return "";
+  return '<div class="row readhere">' + ns.map(function(n){ var t = ix.secs[n][0]; return '<a class="btn small" href="../reader/index.html#' + esc(r.book) + '/' + n + '" data-readfrom="' + esc(l.id) + '">📖 Read ' + (n.indexOf(".") > 0 ? n + ' ' + esc(t) : 'Chapter ' + n) + ' here</a>'; }).join("") +
+    '<a class="small" href="' + esc(ix.secs[ns[0]][1]) + '" target="_blank" rel="noopener">Original ↗</a></div>';
+}
+document.addEventListener("click", function(e){ var t = e.target.closest && e.target.closest("[data-readfrom]"); if (t){ try { sessionStorage.setItem("itchick-reader-from", t.getAttribute("data-readfrom")); } catch(x){} } });
 function readingSheet(l, first){
   var s = ICA.lessonState(l.id), gs = readGroups(l);
   ICA.sheet('<div class="eyebrow">'+(first ? "Before you start" : "Reading")+'</div><h2>Read this for “'+esc(l.title)+'”</h2>'+
-    gs.map(function(g){ var b = g.b; return '<div class="card stack"><b>'+esc(b.title||"")+'</b><span class="small muted">'+esc(b.by||"")+' · '+esc(b.ed||"")+' · '+esc(b.fmt||"")+'</span><ol class="readlist">'+g.items.map(function(r){ return "<li>"+md(r.where)+(r.note ? '<br><span class="small muted">'+md(r.note)+"</span>" : "")+"</li>"; }).join("")+'</ol>'+(b.url ? '<a class="small" href="'+esc(b.url)+'" target="_blank" rel="noopener">Open the book’s official page</a>' : '')+'</div>'; }).join("")+
+    gs.map(function(g){ var b = g.b; return '<div class="card stack"><b>'+esc(b.title||"")+'</b><span class="small muted">'+esc(b.by||"")+' · '+esc(b.ed||"")+' · '+esc(b.fmt||"")+'</span><ol class="readlist">'+g.items.map(function(r){ return "<li>"+md(r.where)+(r.note ? '<br><span class="small muted">'+md(r.note)+"</span>" : "")+readHere(r, l)+"</li>"; }).join("")+'</ol>'+(b.url ? '<a class="small" href="'+esc(b.url)+'" target="_blank" rel="noopener">Open the book’s official page</a>' : '')+'</div>'; }).join("")+
     '<div class="howfind"><b>How to find it</b><ul style="margin:6px 0 0;padding-left:18px"><li>In the PDF, use the contents page, or search (Ctrl+F, or the search button in your reader) for the section title.</li><li>Audiobook narrations usually follow the same chapter numbers.</li>'+(l.read.some(function(r){ return /Background reading/i.test(r.where); }) ? '<li>“Background reading” means the book only touches on this topic: useful context, but the lesson doesn’t depend on it.</li>' : '')+'</ul></div>'+
     (l.guide ? '<p class="small muted">The lesson here is a study guide written to go with this reading: the same ideas in plain words, plus practice. Reading the book gives you the full version.</p>' : '<p class="small muted">The lesson here teaches everything you need. The reading is the textbook’s version of the same topic: a second explanation, and a stable reference to come back to.</p>')+
     '<div class="row"><button class="btn primary" data-readmark="'+l.id+'">'+(s.readDone ? "Read ✓" : "I’ve done the reading")+'</button><button class="btn" data-close>'+(first ? "Start the lesson" : "Close")+'</button></div>'+

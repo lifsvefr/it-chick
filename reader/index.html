@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#3b2419">
+<title>Reader · IT CHICK Academy</title>
+<link rel="manifest" href="../manifest.webmanifest">
+<link rel="icon" type="image/png" href="../shared/icons/favicon.png">
+<link rel="apple-touch-icon" href="../shared/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="IT CHICK">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/style.css?v=80">
+<script src="../shared/catalog.js"></script>
+<script src="../shared/engine.js?v=80"></script>
+<style>
+/* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
+.rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
+.rd h1{font-size:1.7em;line-height:1.2;margin:.2em 0 .1em;text-wrap:balance}
+.rd h3{font-family:var(--display);font-size:1.18em;margin:1.6em 0 .4em;text-wrap:balance}
+.rd p{margin:0 0 1em}
+.rd dfn{font-style:normal;font-weight:700;background:var(--goldTint);border-radius:3px;padding:0 2px}
+.rd figure{margin:1.4em 0;display:grid;gap:6px}
+.rd figure img{border-radius:10px;border:1px solid var(--line);background:#fff;max-width:100%;height:auto}
+.rd figcaption{font-size:.86em;color:var(--soft);line-height:1.5}
+.rd ul,.rd ol{padding-left:1.4em;margin:0 0 1em} .rd li{margin:.25em 0}
+.rd .lt{font-weight:700;margin-bottom:.3em}
+.rd .note{background:var(--panel);border:1px solid var(--line);border-left:4px solid var(--lupine);border-radius:10px;padding:12px 16px;margin:1.4em 0}
+.rd .note .nt{font-family:var(--display);font-weight:800;margin:0 0 .4em}
+.rd .sum{background:var(--panel2);border-radius:12px;padding:4px 16px 8px;margin:1.6em 0}
+.rd .tw{overflow-x:auto;margin:1.2em 0} .rd table{border-collapse:collapse;font-size:.9em;min-width:100%}
+.rd th,.rd td{border:1px solid var(--line);padding:6px 9px;text-align:left;vertical-align:top} .rd th{background:var(--panel2)}
+.rd caption{text-align:left;font-weight:700;padding-bottom:6px}
+.rd details{margin:1em 0;border:1px solid var(--line);border-radius:10px;padding:8px 14px;background:var(--panel)}
+.rd summary{cursor:pointer;font-weight:700} .rd dt{font-weight:700;margin-top:.6em} .rd dd{margin:0 0 .3em}
+.rd blockquote{margin:1em 0;padding-left:14px;border-left:3px solid var(--line);color:var(--soft)}
+.goals{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 16px;margin:1em 0 1.4em;font-size:.95em}
+.goals p{margin:0 0 .3em}
+.rtools{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:space-between;margin:6px 0 2px}
+.rtools .sz{display:flex;gap:6px}
+.credit{font-size:.82em;color:var(--soft);border-top:1px solid var(--line);padding-top:12px;margin-top:2em;line-height:1.55}
+.rnav{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:1.4em}
+.rnav a{display:grid;gap:2px;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px;text-decoration:none;color:var(--ink);min-width:0}
+.rnav a span{font-size:.82em;color:var(--soft)} .rnav a.nx{text-align:right}
+.toc{display:grid;gap:10px} .toc details{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:10px 14px}
+.toc summary{cursor:pointer;font-family:var(--display);font-weight:800} .toc ol{margin:8px 0 2px;padding-left:0;list-style:none;display:grid;gap:4px}
+.toc a{text-decoration:none} .toc .num{display:inline-block;min-width:2.6em;color:var(--soft)}
+.back{display:inline-flex;gap:6px;align-items:center}
+</style>
+</head>
+<body>
+<main class="wrap" id="app" aria-live="polite"><p class="muted">Loading…</p></main>
+<script>
+/* Book files register themselves here (site/reader/books/<id>/index.js and ch<N>.js, from tools/reader_openstax.py). */
+window.ICA_READER = {books:{}, ch:{}, addBook:function(b){ this.books[b.id] = b; }, addChapter:function(id, n, secs){ this.ch[id+"/"+n] = secs; }};
+(function(){
+var esc = ICA.esc, app = document.getElementById("app"), bar, R = window.ICA_READER;
+function setTitle(t){ document.title = t + " · Reader"; bar.querySelector(".title").textContent = "Reader"; }
+function load(src){ return new Promise(function(ok, no){ var s = document.createElement("script"); s.src = src + "?v=" + ICA.version; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
+function book(id){ return R.books[id] ? Promise.resolve(R.books[id]) : load("books/"+id+"/index.js").then(function(){ return R.books[id]; }); }
+function chapter(id, n){ return R.ch[id+"/"+n] ? Promise.resolve(R.ch[id+"/"+n]) : load("books/"+id+"/ch"+n+".js").then(function(){ return R.ch[id+"/"+n]; }); }
+function size(){ var s = ICA.load().settings; return s.readerSize || 1; }
+function applySize(){ document.documentElement.style.setProperty("--rz", size()); }
+function backLink(){ var from = null; try { from = sessionStorage.getItem("itchick-reader-from"); } catch(e){} var l = from && ICA.lessons[from];
+  return l ? '<a class="back small" href="../quests/index.html#'+esc(l.id)+'">← Back to “'+esc(l.title)+'”</a>' : '<a class="back small" href="#">← All books</a>'; }
+function credit(b, s){
+  return '<p class="credit">From <a href="'+esc(b.home)+'" target="_blank" rel="noopener"><i>'+esc(b.title)+'</i></a> by '+esc(b.by)+', under the <a href="'+esc(b.licUrl)+'" target="_blank" rel="noopener">'+esc(b.lic)+'</a> licence. '+esc(b.changes)+(s ? ' <a href="'+esc(s.src)+'" target="_blank" rel="noopener">Read this page on the original site ↗</a>' : '')+'</p>';
+}
+function shelf(){
+  setTitle("Reader");
+  var idx = window.ICA_READIDX || {}, ids = Object.keys(idx);
+  Promise.all(ids.map(book)).then(function(bs){
+    app.innerHTML = '<div class="stack"><div><div class="eyebrow">Reader</div><h1>Books you can read here</h1><p class="muted">These are free, openly licensed textbooks, reformatted so they’re easy to read on any screen. Lessons link straight to the right section.</p></div>'+
+      '<div class="stack">'+bs.map(function(b){ return '<a class="tile" href="#'+esc(b.id)+'"><span class="ic" aria-hidden="true">📖</span><span class="tx"><span class="tt">'+esc(b.title)+'</span><span class="small muted">'+esc(b.by)+' · '+b.toc.length+' chapters</span></span></a>'; }).join("")+'</div>'+
+      '<p class="small muted">Other books in the course are linked from each lesson’s reading card. Some can’t be copied here because of their licence, so the card links to the right page on the publisher’s site instead.</p></div>';
+  });
+}
+function contents(id){
+  book(id).then(function(b){
+    if (!b){ shelf(); return; } setTitle(b.title);
+    app.innerHTML = '<div class="stack rd">'+backLink()+'<div><div class="eyebrow">'+esc(b.by)+'</div><h1>'+esc(b.title)+'</h1></div><div class="toc">'+
+      b.toc.map(function(c){ return '<details><summary>'+c.n+'. '+esc(c.title)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
+  }).catch(function(){ app.innerHTML = '<p>That book isn’t available here.</p><p><a href="#">← All books</a></p>'; });
+}
+function page(id, num){
+  var cn = parseInt(num, 10);
+  Promise.all([book(id), chapter(id, cn)]).then(function(a){
+    var b = a[0], secs = a[1], i = secs.findIndex(function(s){ return s.n === num; }); if (i < 0) i = 0;
+    var s = secs[i], c = b.toc[cn-1], prev = secs[i-1], next = secs[i+1];
+    var prevC = !prev && cn > 1 ? b.toc[cn-2] : null, nextC = !next && cn < b.toc.length ? b.toc[cn] : null;
+    setTitle(s.title);
+    var nav = '<nav class="rnav" aria-label="Pages">'+
+      (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? prev.n+" "+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+(cn-1)+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
+      (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc(next.n+" "+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+(cn+1)+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
+    app.innerHTML = '<article class="rd">'+
+      '<div class="rtools">'+backLink()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div>'+
+      '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a> · Chapter '+cn+': '+esc(c.title)+'</div>'+
+      '<h1>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
+      (s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+nav+credit(b, s)+'</article>';
+    window.scrollTo(0, 0);
+  }).catch(function(){ app.innerHTML = '<p>That page isn’t available here.</p><p><a href="#">← All books</a></p>'; });
+}
+document.addEventListener("click", function(e){
+  var t = e.target.closest("[data-sz]"); if (!t) return;
+  var s = ICA.load().settings, v = Math.round(((s.readerSize || 1) + 0.1 * +t.getAttribute("data-sz")) * 10) / 10;
+  s.readerSize = Math.min(1.6, Math.max(0.8, v)); ICA.save(); applySize();
+});
+function route(){
+  var h = decodeURIComponent(location.hash.slice(1)), m;
+  if ((m = h.match(/^([a-z0-9]+)\/(\d+(?:\.\d+)?)$/))) page(m[1], m[2]);
+  else if (/^[a-z0-9]+$/.test(h)) contents(h);
+  else shelf();
+}
+bar = ICA.topbar("Reader");
+applySize();
+ICA.loadAll("../", function(){ window.addEventListener("hashchange", route); route(); });
+})();
+</script>
+</body>
+</html>
