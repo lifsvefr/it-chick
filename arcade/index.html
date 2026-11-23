@@ -22,9 +22,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=104">
+<link rel="stylesheet" href="../shared/style.css?v=105">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=104"></script>
+<script src="../shared/engine.js?v=105"></script>
 <script src="../shared/kanjilab.js"></script>
 <script src="../shared/jpgames.js"></script>
 <script src="../shared/theme.js?v=2"></script>
@@ -1193,7 +1193,7 @@ function bossOf(u){
   if (/[^s]s$/.test(w) && !/(is|us|ics|ss)$/.test(w) && w.length > 4) w = w.slice(0, -1);   // "Computers" → "The Computer Gremlin"
   return {h:h, name:"The " + w.charAt(0).toUpperCase() + w.slice(1) + " " + CREATURE[h % CREATURE.length]};
 }
-var TRACK_COL = {t1:"#1f5a5c", t2:"#3d5c3e", t3:"#7d6012", t4:"#7a2d3a", e1:"#a24a28", e2:"#4b3f7a", e3:"#b0476b", e4:"#2d5a8a"};
+var TRACK_COL = {t1:"#1f5a5c", t2:"#3d5c3e", t3:"#7d6012", t4:"#7a2d3a", e1:"#a24a28", e2:"#4b3f7a", e3:"#b0476b", e4:"#2d5a8a", e5:"#5b4a86", e6:"#2a6b5e"};
 function bossSVG(u, mood){
   var b = bossOf(u), h = b.h, col = TRACK_COL[u.track] || "#a24a28", eyes = 1 + (h >> 3) % 3, top = (h >> 5) % 4, body = (h >> 7) % 3;
   var shape = body === 0 ? '<path d="M18 92 Q10 92 10 70 Q10 26 60 26 Q110 26 110 70 Q110 92 102 92 Q96 84 90 92 Q84 84 78 92 Q72 84 66 92 Q60 84 54 92 Q48 84 42 92 Q36 84 30 92 Q24 84 18 92 Z"/>'
