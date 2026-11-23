@@ -1,7 +1,7 @@
 {
  "name": "IT CHICK Academy",
  "short_name": "IT CHICK",
- "description": "A free learning ecosystem for digital, data and research skills, starting from zero.",
+ "description": "A cozy study desk for learning from zero: computers, coding and data, Japanese and English, with hands-on labs, games and a library of textbooks.",
  "start_url": "./",
  "scope": "./",
  "id": "it-chick-academy",
