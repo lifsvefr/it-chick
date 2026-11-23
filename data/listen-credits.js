@@ -1,4 +1,4 @@
-/* Credits for real recordings used in listening clips (key -> credit line, Markdown). Speech Accent Archive: Weinberger, S. (2015), George Mason University, CC BY-NC-SA 4.0. */
+/* Credits for real recordings used in listening clips (key -> credit line, Markdown). Written by tools/install_real_clips.py. */
 window.ICA_LISTEN_CREDIT = {
 "e6u1-l2-a1": "Real speaker: [Speech Accent Archive, english188](https://accent.gmu.edu/samples/english188/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
 "e6u1-l2-a2": "Real speaker: [Speech Accent Archive, english111](https://accent.gmu.edu/samples/english111/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
@@ -13,5 +13,25 @@ window.ICA_LISTEN_CREDIT = {
 "e6u2-l3-a3": "Real speaker: [Speech Accent Archive, english507](https://accent.gmu.edu/samples/english507/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
 "e6u2-l3-a4": "Real speaker: [Speech Accent Archive, english259](https://accent.gmu.edu/samples/english259/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
 "e6u2-l3-a5": "Real speaker: [Speech Accent Archive, tagalog1](https://accent.gmu.edu/samples/tagalog1/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
-"e6u2-l5-a1": "Real speaker: [Speech Accent Archive, japanese1](https://accent.gmu.edu/samples/japanese1/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
+"e6u2-l5-a1": "Real speaker: [Speech Accent Archive, japanese1](https://accent.gmu.edu/samples/japanese1/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l1-a1": "Real speaker: [Speech Accent Archive, english487](https://accent.gmu.edu/samples/english487/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l1-a2": "Real speaker: [Speech Accent Archive, english487](https://accent.gmu.edu/samples/english487/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l2-a1": "Real speaker: [Speech Accent Archive, english413](https://accent.gmu.edu/samples/english413/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l2-a2": "Real speaker: [Speech Accent Archive, english487](https://accent.gmu.edu/samples/english487/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l2-a3": "Real speaker: [Speech Accent Archive, english413](https://accent.gmu.edu/samples/english413/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l3-a1": "Real speaker: [Speech Accent Archive, english188](https://accent.gmu.edu/samples/english188/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l3-a2": "Real speaker: [Speech Accent Archive, english440](https://accent.gmu.edu/samples/english440/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l3-a3": "Real speaker: [Speech Accent Archive, english188](https://accent.gmu.edu/samples/english188/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l4-a1": "Real speaker: [Speech Accent Archive, english417](https://accent.gmu.edu/samples/english417/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l4-a2": "Real speaker: [Speech Accent Archive, english432](https://accent.gmu.edu/samples/english432/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l4-a3": "Real speaker: [Speech Accent Archive, english134](https://accent.gmu.edu/samples/english134/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l4-a4": "Real speaker: [Speech Accent Archive, english432](https://accent.gmu.edu/samples/english432/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a1": "Real speaker: [Speech Accent Archive, english487](https://accent.gmu.edu/samples/english487/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a2": "Real speaker: [Speech Accent Archive, english413](https://accent.gmu.edu/samples/english413/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a3": "Real speaker: [Speech Accent Archive, english188](https://accent.gmu.edu/samples/english188/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a4": "Real speaker: [Speech Accent Archive, english440](https://accent.gmu.edu/samples/english440/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a5": "Real speaker: [Speech Accent Archive, english417](https://accent.gmu.edu/samples/english417/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a6": "Real speaker: [Speech Accent Archive, english432](https://accent.gmu.edu/samples/english432/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a7": "Real speaker: [Speech Accent Archive, english134](https://accent.gmu.edu/samples/english134/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)",
+"e6u3-l5-a8": "Real speaker: [Speech Accent Archive, english440](https://accent.gmu.edu/samples/english440/) (Weinberger, George Mason University), [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)"
 };
