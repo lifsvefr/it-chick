@@ -49,6 +49,7 @@ self.addEventListener("fetch", function(e){
     return;
   }
   if (u.origin !== self.location.origin) return;
+  if (/\.epub$/.test(u.pathname)) return;   // big downloads (Reader EPUBs) go straight to the network and are not cached
   e.respondWith(saved(r).then(function(hit){
     if (hit && self.navigator && self.navigator.onLine === false) return ranged(r, hit);
     var net = fromNetwork(r);

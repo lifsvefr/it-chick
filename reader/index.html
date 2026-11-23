@@ -14,9 +14,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=93">
+<link rel="stylesheet" href="../shared/style.css?v=94">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=93"></script>
+<script src="../shared/engine.js?v=94"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -66,6 +66,61 @@
 .rd p,.rd li,.rd td{overflow-wrap:break-word}
 .printrow{display:flex;flex-wrap:wrap;gap:8px;margin:1.2em 0 0}
 .chsec{margin-top:2em} .chsec+.chsec{border-top:1px solid var(--line);padding-top:1em}
+
+/* E-ink mode (settings.readerEink): pure black on white, no motion or tint, borders instead of panels, page-by-page scrolling. Reader only. */
+.einkrow{display:flex;flex-wrap:wrap;gap:8px 12px;align-items:center}
+.rtools .rbtns{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.shelfitem{display:grid;gap:6px}
+.epubl{justify-self:start;margin-left:4px}
+.epubrow{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+#einkpager,.einkzone{display:none}
+html[data-eink="on"]:not(#_){--bg:#fff;--panel:#fff;--panel2:#fff;--ink:#000;--soft:#000;--line:#000;--espresso:#000;--rose:#000;--lupine:#000;--gold:#000;--sage:#000;
+  --roseTint:#fff;--lupTint:#fff;--goldTint:#fff;--sageTint:#fff;--ok:#000;--okTint:#fff;--bad:#000;--badTint:#fff;--wood1:#000;--wood2:#000;--shadow:none;color-scheme:light;scroll-behavior:auto}
+html[data-eink="on"] *,html[data-eink="on"] *::before,html[data-eink="on"] *::after{transition:none!important;animation:none!important;box-shadow:none!important;text-shadow:none!important;
+  background-image:none!important;scroll-behavior:auto!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important}
+html[data-eink="on"] body{background:#fff;color:#000}
+html[data-eink="on"] .topbar{position:static;background:#fff;border-bottom:2px solid #000}
+html[data-eink="on"] .topbar .home,html[data-eink="on"] .iconbtn{border:2px solid #000;background:#fff;color:#000}
+html[data-eink="on"] .topbar .home .dot{background:#fff;color:#000;border:2px solid #000}
+html[data-eink="on"] .rd a,html[data-eink="on"] .toc a,html[data-eink="on"] .credit a,html[data-eink="on"] .rnav a{color:#000;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.15em}
+html[data-eink="on"] .rd{line-height:1.6}
+html[data-eink="on"] .rd .note,html[data-eink="on"] .rd .sum,html[data-eink="on"] .goals,html[data-eink="on"] .rd details,html[data-eink="on"] .toc details,
+html[data-eink="on"] .rnav a,html[data-eink="on"] .tile,html[data-eink="on"] .rd pre,html[data-eink="on"] .rd .exq{background:#fff;border:2px solid #000;border-radius:0}
+html[data-eink="on"] .rd .note{border-left-width:6px}
+html[data-eink="on"] .rd .sum{border-width:2px 0}
+html[data-eink="on"] .rd .exq{border-style:dashed}
+html[data-eink="on"] .rd dfn{background:none;font-weight:800;text-decoration:underline;text-decoration-thickness:1px}
+html[data-eink="on"] .rd th{background:#fff;font-weight:800}
+html[data-eink="on"] .rd th,html[data-eink="on"] .rd td{border:1px solid #000}
+html[data-eink="on"] .rd blockquote{border-left:4px solid #000;color:#000}
+html[data-eink="on"] .rd figcaption,html[data-eink="on"] .rd .cap,html[data-eink="on"] .credit,html[data-eink="on"] .muted,html[data-eink="on"] .eyebrow{color:#000}
+html[data-eink="on"] .rd code,html[data-eink="on"] .rd kbd{background:#fff;color:#000;border-radius:0}
+html[data-eink="on"] .rd figure{border:0;border-radius:0;background:#fff;padding:0}
+html[data-eink="on"] .rd figure img{filter:grayscale(1) contrast(1.15);border:1px solid #000;border-radius:0;background:#fff}
+html[data-eink="on"] .tile .ic,html[data-eink="on"] .tile .ic{background:#fff;border:2px solid #000;border-radius:0}
+html[data-eink="on"] .btn{background:#fff;color:#000;border:2px solid #000;border-radius:0;min-height:48px;text-decoration:none}
+html[data-eink="on"] .btn.primary{background:#000;color:#fff}
+html[data-eink="on"] .btn[aria-pressed="true"]{background:#000;color:#fff}
+html[data-eink="on"] .seg3{background:#fff;border:2px solid #000;border-radius:0}
+html[data-eink="on"] .seg3 button{border-radius:0;color:#000;min-height:44px}
+html[data-eink="on"] .seg3 button[aria-pressed="true"]{background:#000;color:#fff}
+html[data-eink="on"] .sheetbg{background:#fff}
+html[data-eink="on"] .sheet{border:3px solid #000;border-radius:0;background:#fff}
+html[data-eink="on"] .toast{background:#000;color:#fff;border-radius:0}
+html[data-eink="on"] :focus-visible{outline:3px solid #000;outline-offset:2px}
+html[data-eink="on"] .wrap{padding-bottom:120px}
+html[data-eink="on"] #einkpager{display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:3px solid #000}
+html[data-eink="on"] #einkpager[hidden]{display:none}
+html[data-eink="on"] #einkpager button{font-size:1.25em;font-weight:800;min-height:72px;border:0;background:#fff;color:#000;border-radius:0;cursor:pointer}
+html[data-eink="on"] #einkpager button+button{border-left:3px solid #000}
+html[data-eink="on"] #einkpager button:active{background:#000;color:#fff}
+@media (min-width:820px){
+  html[data-eink="on"] .einkzone{display:block;position:fixed;top:0;bottom:80px;width:12vw;z-index:25;background:transparent;border:0;padding:0;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  html[data-eink="on"] .einkzone.l{left:0} html[data-eink="on"] .einkzone.r{right:0}
+}
+@media print{#einkpager,.einkzone,.einkrow{display:none!important}
+  html[data-eink="on"] .rd figure img{filter:grayscale(1) contrast(1.15)}
+  html[data-eink="on"] .rd pre{background:#fff!important}}
 @media print{
   @page{margin:16mm 15mm}
   body{background:#fff!important;color:#000}
@@ -96,6 +151,10 @@ function setTitle(t){ document.title = t + " · Reader"; bar.querySelector(".tit
 function load(src){ return new Promise(function(ok, no){ var s = document.createElement("script"); s.src = src + "?v=" + ICA.version; s.onload = ok; s.onerror = no; document.head.appendChild(s); }); }
 function book(id){ return R.books[id] ? Promise.resolve(R.books[id]) : load("books/"+id+"/index.js").then(function(){ return R.books[id]; }); }
 function chapter(id, n){ return R.ch[id+"/"+n] ? Promise.resolve(R.ch[id+"/"+n]) : load("books/"+id+"/ch"+n+".js").then(function(){ return R.ch[id+"/"+n]; }); }
+function einkOn(){ return !!ICA.load().settings.readerEink; }
+function einkBtn(){ return '<button class="btn small ghost" type="button" data-eink-toggle aria-pressed="'+einkOn()+'">'+(einkOn() ? '◼ E-ink mode: On' : '◻ E-ink mode: Off')+'</button>'; }
+function einkRow(){ return '<div class="einkrow noprint">'+einkBtn()+'<span class="small muted">For e-ink screens: black on white, no animation, and page buttons.</span></div>'; }
+function epubLink(id, cls){ return '<a class="'+cls+'" href="epub/'+esc(id)+'.epub" download>⬇ EPUB for e-readers</a>'; }
 function size(){ var s = ICA.load().settings; return s.readerSize || 1; }
 function applySize(){ document.documentElement.style.setProperty("--rz", size()); }
 function backLink(){ var from = null; try { from = sessionStorage.getItem("itchick-reader-from"); } catch(e){} var l = from && ICA.lessons[from];
@@ -107,15 +166,15 @@ function shelf(){
   setTitle("Reader");
   var idx = window.ICA_READIDX || {}, ids = Object.keys(idx);
   Promise.all(ids.map(book)).then(function(bs){
-    app.innerHTML = '<div class="stack"><div><div class="eyebrow">Reader</div><h1>Books you can read here</h1><p class="muted">These are free, openly licensed textbooks, reformatted so they’re easy to read on any screen. Lessons link straight to the right section.</p></div>'+
-      '<div class="stack">'+bs.map(function(b){ return '<a class="tile" href="#'+esc(b.id)+'"><span class="ic" aria-hidden="true">📖</span><span class="tx"><span class="tt">'+esc(b.title)+'</span><span class="small muted">'+esc(b.by)+' · '+b.toc.length+' chapters</span></span></a>'; }).join("")+'</div>'+
+    app.innerHTML = '<div class="stack"><div><div class="eyebrow">Reader</div><h1>Books you can read here</h1><p class="muted">These are free, openly licensed textbooks, reformatted so they’re easy to read on any screen. Lessons link straight to the right section.</p>'+einkRow()+'</div>'+
+      '<div class="stack">'+bs.map(function(b){ return '<div class="shelfitem"><a class="tile" href="#'+esc(b.id)+'"><span class="ic" aria-hidden="true">📖</span><span class="tx"><span class="tt">'+esc(b.title)+'</span><span class="small muted">'+esc(b.by)+' · '+b.toc.length+' chapters</span></span></a>'+epubLink(b.id, "epubl small")+'</div>'; }).join("")+'</div>'+
       '<p class="small muted">Other books in the course are linked from each lesson’s reading card. Some can’t be copied here because of their license, so the card links to the right page on the publisher’s site instead.</p></div>';
   });
 }
 function contents(id){
   book(id).then(function(b){
     if (!b){ shelf(); return; } setTitle(b.title);
-    app.innerHTML = '<div class="stack rd">'+backLink()+'<div><div class="eyebrow">'+esc(b.by)+'</div><h1>'+esc(b.title)+'</h1></div><div class="toc">'+
+    app.innerHTML = '<div class="stack rd">'+backLink()+'<div><div class="eyebrow">'+esc(b.by)+'</div><h1>'+esc(b.title)+'</h1></div><div class="epubrow">'+epubLink(id, "btn")+'<span class="small muted">One file for your e-reader app, such as NeoReader on a Boox.</span></div>'+einkRow()+'<div class="toc">'+
       b.toc.map(function(c){ return '<details><summary>'+chName(c)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
   }).catch(function(){ app.innerHTML = '<p>That book isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
@@ -127,7 +186,7 @@ function printChapter(id, cn){
   Promise.all([book(id), chapter(id, cn)]).then(function(a){
     var b = a[0], secs = a[1], c = b.toc[tocIdx(b, cn)]; setTitle(c.title);
     app.innerHTML = '<article class="rd">'+
-      '<div class="rtools"><a class="back small" href="#'+id+'/'+(secs[0] ? secs[0].n : cn)+'">← Back to reading</a></div>'+
+      '<div class="rtools"><a class="back small" href="#'+id+'/'+(secs[0] ? secs[0].n : cn)+'">← Back to reading</a><div class="rbtns">'+einkBtn()+'</div></div>'+
       '<div class="printrow noprint" style="margin-top:0"><button class="btn primary" data-print>🖨️ Print or save as PDF</button><span class="small muted">'+chLabel(c)+(secs.length > 1 ? ', all '+secs.length+' parts on one page' : '')+'. Choose “Save as PDF” in the print window to keep a copy.</span></div>'+
       '<div class="eyebrow">'+esc(b.title)+'</div><h1>'+chLabel(c)+'</h1>'+
       secs.map(function(s){ return '<section class="chsec"><h2>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h2>'+(s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+'<p class="credit">Original: '+esc(s.src)+'</p></section>'; }).join("")+
@@ -147,7 +206,7 @@ function page(id, num){
       (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? prev.n+" "+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+prevC.n+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
       (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc(next.n+" "+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+nextC.n+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
     app.innerHTML = '<article class="rd">'+
-      '<div class="rtools">'+backLink()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div>'+
+      '<div class="rtools">'+backLink()+'<div class="rbtns">'+einkBtn()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div></div>'+
       '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a>'+(s.n.indexOf(".") > 0 ? ' · '+chLabel(c) : c.label === "" ? '' : ' · Chapter '+c.n)+'</div>'+
       '<h1>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
       (s.goals ? (s.goals.indexOf('<p class="by">') === 0 ? s.goals : '<div class="goals">'+s.goals+'</div>') : '')+s.html+
@@ -156,7 +215,37 @@ function page(id, num){
     if (at) setTimeout(function(){ at.scrollIntoView(); }, 50); else window.scrollTo(0, 0);
   }).catch(function(){ app.innerHTML = '<p>That page isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
+/* ---------- e-ink mode ---------- */
+var pager = document.createElement("div"); pager.id = "einkpager"; pager.className = "noprint"; pager.hidden = true;
+pager.innerHTML = '<button type="button" data-page="-1" aria-label="Page up">▲ Page up</button><button type="button" data-page="1" aria-label="Page down">Page down ▼</button>';
+document.body.appendChild(pager);
+["l", "r"].forEach(function(k){ var z = document.createElement("button"); z.type = "button"; z.className = "einkzone noprint " + k; z.setAttribute("data-page", k === "l" ? "-1" : "1"); z.setAttribute("aria-label", k === "l" ? "Page up (left edge)" : "Page down (right edge)"); z.tabIndex = -1; document.body.appendChild(z); });
+function applyEink(){
+  var on = einkOn(), r = document.documentElement;
+  if (on) r.setAttribute("data-eink", "on"); else r.removeAttribute("data-eink");
+  pager.hidden = !on;
+  ICA.$$("[data-eink-toggle]").forEach(function(b){ b.setAttribute("aria-pressed", on ? "true" : "false"); b.textContent = on ? "◼ E-ink mode: On" : "◻ E-ink mode: Off"; });
+}
+function pageBy(dir){
+  var rd = app.querySelector(".rd"), lh = rd ? parseFloat(getComputedStyle(rd).lineHeight) : 0; if (!lh || isNaN(lh)) lh = 28;
+  var step = Math.max(80, window.innerHeight - (pager.offsetHeight || 0) - lh), y = window.pageYOffset, max = document.documentElement.scrollHeight - window.innerHeight, a;
+  if (dir > 0 && y >= max - 2 && (a = app.querySelector(".rnav a.nx"))){ a.click(); return; }
+  if (dir < 0 && y <= 2 && (a = app.querySelector(".rnav a:not(.nx)"))){ a.click(); return; }
+  window.scrollTo({top: Math.max(0, Math.min(max, y + dir * step)), left: 0, behavior: "instant"});
+}
+document.addEventListener("keydown", function(e){
+  if (!einkOn() || e.altKey || e.ctrlKey || e.metaKey || e.target.closest("input,textarea,select") || document.querySelector(".sheetbg")) return;
+  var k = e.key, d = (k === "PageDown" || k === "AudioVolumeDown" || k === "VolumeDown" || e.keyCode === 25) ? 1 : (k === "PageUp" || k === "AudioVolumeUp" || k === "VolumeUp" || e.keyCode === 24) ? -1 : 0;
+  if (d){ e.preventDefault(); pageBy(d); }
+});
+/* the same switch inside the Settings sheet (the shared sheet is built by engine.js, so add it when it appears) */
+new MutationObserver(function(){
+  var sh = document.getElementById("settingspanel"), list = sh && sh.querySelector(".setlist");
+  if (sh && list && !sh.querySelector(".rdeink")) list.insertAdjacentHTML("afterend", '<h3>Reader</h3><div class="stack setlist rdeink"><div class="spread"><span>E-ink mode <span class="small muted">black on white, page buttons</span></span>'+einkBtn()+'</div></div>');
+}).observe(document.body, {childList: true});
 document.addEventListener("click", function(e){
+  var pg = e.target.closest("[data-page]"); if (pg){ pageBy(+pg.getAttribute("data-page")); return; }
+  if (e.target.closest("[data-eink-toggle]")){ var st = ICA.load().settings; st.readerEink = !st.readerEink; ICA.save(); applyEink(); return; }
   if (e.target.closest("[data-print]")){ window.print(); return; }
   var t = e.target.closest("[data-sz]"); if (!t) return;
   var s = ICA.load().settings, v = Math.round(((s.readerSize || 1) + 0.1 * +t.getAttribute("data-sz")) * 10) / 10;
@@ -172,7 +261,7 @@ function route(){
 window.addEventListener("beforeprint", function(){ ICA.$$(".rd details").forEach(function(d){ d.setAttribute("data-was", d.open ? 1 : 0); d.open = true; }); });
 window.addEventListener("afterprint", function(){ ICA.$$(".rd details").forEach(function(d){ d.open = d.getAttribute("data-was") === "1"; }); });
 bar = ICA.topbar("Reader");
-applySize();
+applySize(); applyEink();
 ICA.loadAll("../", function(){ window.addEventListener("hashchange", route); route(); });
 })();
 </script>

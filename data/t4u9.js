@@ -1,13 +1,13 @@
 /* Track 4 · Unit 9 · Ethics, integrity and AI */
 ICA.addUnit({
   id:"t4u9", track:"t4", n:9, title:"Ethics, integrity and AI", icon:"⚖️",
-  blurb:"Why research ethics exists, how consent and ethics review protect people, how to handle personal data and research data responsibly, what honest research looks like, and how to use AI tools without breaking the rules.",
+  blurb:"Why research ethics exists. How consent and ethics review protect people. How to handle personal data and research data with care. What honest research looks like. How to use AI tools without breaking the rules.",
   goals:[
-    "Explain why modern research ethics exists, telling its history accurately and respectfully, and apply the Belmont principles to a study",
-    "Plan informed consent as an ongoing process, name the ethics review body in several countries, and add protections for people in vulnerable situations",
-    "Tell confidentiality from anonymity and anonymization from pseudonymization, handle special category data, and outline a data management plan using the FAIR principles",
-    "Recognize fabrication, falsification and plagiarism, spot questionable research practices such as p-hacking and HARKing, and use preregistration, fair authorship and CRediT",
-    "Use AI tools in research responsibly: disclose them, never list them as authors, verify every citation they produce, keep confidential material out of them, and check the rules that apply to you"
+    "Explain why modern research ethics exists and tell its history accurately and respectfully. Then apply the Belmont principles to a study",
+    "Plan informed consent as a process that continues during the study. Name the ethics review body in several countries. Add protections for people in vulnerable situations",
+    "Tell confidentiality from anonymity, and anonymization from pseudonymization. Handle special category data. Outline a data management plan using the FAIR principles",
+    "Recognize fabrication, falsification and plagiarism. Spot questionable research practices such as p-hacking and HARKing. Use preregistration, fair authorship and CRediT",
+    "Use AI tools in research responsibly. Say that you used them. Never list them as authors. Check every citation they give you. Keep confidential material out of them. Check the rules that apply to you"
   ],
   read:[
     {book:"soc", where:"Chapter 2, “Sociological Research”: Section 2.3 “Ethical Concerns”", note:"On the LibreTexts mirror this is numbered 2.4. Short, and a good first read."},
@@ -20,40 +20,40 @@ ICA.addUnit({
    hook:{q:"The Nuremberg Code of 1947 said a participant’s voluntary consent is “absolutely essential”. In what year did the US Public Health Service end its study at Tuskegee, in which hundreds of Black men were never told they had syphilis and were not given effective treatment?", options:["1947","1956","1972","1990"], answer:2, reveal:"**1972**, a quarter of a century after Nuremberg, and only after a news report made it public. Written principles alone didn’t protect those men. That gap is why research ethics today relies on **independent review** before a study starts. Researchers’ good intentions are not enough. This lesson tells that history carefully and shows the principles that came out of it."},
    goals:[
      "Describe the Nuremberg Code, the Declaration of Helsinki and the Belmont Report: when, why and what each says",
-     "Tell the history of the study at Tuskegee and of Henrietta Lacks accurately and respectfully",
+     "Tell the story of the Tuskegee study and of Henrietta Lacks accurately and with respect",
      "Apply the three Belmont principles (respect for persons, beneficence, justice) to real study plans",
-     "Explain why ethics applies to everyday research such as surveys, interviews and online studies, not only medicine"
+     "Explain why ethics applies to everyday research, such as surveys, interviews and online studies, and not only to medicine"
    ],
    learn:[
     {h:"Research asks something of people", body:[
       {lead:"Every study that involves people asks them for something: their time, their stories, their data, sometimes their bodies."},
       "Think of research participants as people doing researchers a favor. A favor comes with obligations. You tell people honestly what you’re asking. You don’t put them at needless risk. You don’t pick people just because they are easy to pressure. And you keep your promises about what happens to their information.",
       "**Research ethics** is the set of principles and rules that turns those obligations into practice. It covers the people taking part (consent, harm, privacy), and it overlaps with **research integrity**: honesty in how research is done and reported. You’ll meet integrity in Lesson 4.",
-      "Ethics isn’t only for medical trials. A student interviewing nurses about burnout, a council surveying residents, a historian recording older people’s memories, and a data scientist scraping public social media posts all raise the same questions: did people agree, could they be harmed, and who can see what they said?",
+      "Ethics isn’t only for medical trials. Four examples: a student interviews nurses about burnout, a council surveys residents, a historian records older people’s memories, and a data scientist scrapes public social media posts. All four raise the same questions. Did people agree? Could they be harmed? Who can see what they said?",
       {key:"Ethics rules exist because research has seriously harmed people in the past, often people with the least power to say no."}
     ]},
     {h:"Nuremberg, 1947: consent comes first", body:[
-      "After the Second World War, an American military tribunal at Nuremberg tried 23 German physicians and administrators for crimes including experiments on concentration camp prisoners, carried out without consent and often fatal. This is known as the **Doctors’ Trial**. Its verdict, delivered on 19 August 1947, set out ten points now called the **Nuremberg Code**.",
+      "After the Second World War, an American military tribunal at Nuremberg tried 23 German physicians and administrators. The crimes included experiments on concentration camp prisoners. These were done without consent and were often fatal. The trial is known as the **Doctors’ Trial**. Its verdict, delivered on 19 August 1947, set out ten points now called the **Nuremberg Code**.",
       "Its first point says the voluntary consent of the human subject is “absolutely essential”. The person must have the legal capacity to consent, be free of force, fraud or coercion, and understand what the experiment involves and its risks. The other points include:",
       {list:[
         "The research should be expected to produce valuable results that can’t be obtained another way.",
-        "Unnecessary physical and mental suffering must be avoided, and the risk must never exceed the importance of the problem.",
-        "The participant may end their participation if continuing seems impossible to them.",
+        "Avoid unnecessary physical and mental suffering. The risk must never be greater than the importance of the problem.",
+        "The participant may stop taking part if they feel they cannot continue.",
         "The scientist in charge must be ready to stop the experiment if it is likely to cause injury or death."
       ]},
-      "The Code’s legal force was never firmly established, but it became the model for later international ethics statements."
+      "The Code was never clearly given legal force. But later international ethics statements used it as a model."
     ]},
     {h:"Helsinki, 1964 to 2024: doctors set their own standard", body:[
-      "In 1964 the World Medical Association (WMA), an international organization of national medical associations, adopted the **Declaration of Helsinki**: ethical principles for medical research involving people. It was written by doctors for doctors, and its original text distinguished research combined with medical care from research with no direct benefit to the participant. Its later revisions (the first in Tokyo in 1975) added ideas the Nuremberg Code lacked, notably that a research protocol must be reviewed by an independent research ethics committee before the research begins.",
-      "The Declaration has been revised many times. The most recent revision was adopted unanimously at the WMA General Assembly in Helsinki in **October 2024**, 60 years after the original. That revision uses the word **participants** instead of “subjects”, gives more attention to vulnerability, community engagement and fairness, and covers scientific integrity.",
+      "In 1964 the World Medical Association (WMA) adopted the **Declaration of Helsinki**. The WMA is an international group of national medical associations. The Declaration sets out ethical principles for medical research involving people. Doctors wrote it for doctors. Its original text separated research combined with medical care from research with no direct benefit to the participant. Later revisions (the first in Tokyo in 1975) added ideas the Nuremberg Code did not have. The main one is that an independent research ethics committee must review a research protocol before the research begins.",
+      "The Declaration has been revised many times. The most recent revision was adopted unanimously at the WMA General Assembly in Helsinki in **October 2024**, 60 years after the original. It uses the word **participants** instead of “subjects”. It gives more attention to vulnerability, community engagement and fairness. It also covers scientific integrity.",
       {tip:"When you cite the Declaration, give the version (for example, “2024 revision”). Older papers may quote paragraph numbers that have since changed."}
     ]},
     {h:"Tuskegee and Henrietta Lacks: harms closer to home", body:[
       "Abuses didn’t stop in 1947. The **US Public Health Service Untreated Syphilis Study at Tuskegee** ran in Alabama from **1932 to 1972**, with the Tuskegee Institute. It enrolled **600 Black men**: 399 who had syphilis and 201 who did not. The men were not asked for informed consent. They were told they were being treated for “bad blood”, a local term for several conditions, and received free medical exams, meals and burial insurance.",
-      "By **1943** penicillin was the treatment of choice for syphilis, but the men were not offered it. The study continued until a **1972** Associated Press news story led to an advisory panel, which judged it “ethically unjustified”; it ended that year. A class-action lawsuit led to a $10 million settlement in 1974, a health benefit program was set up for the men and, later, their wives, widows and children, and in **1997** President Bill Clinton issued a formal apology.",
-      "**Henrietta Lacks** was a 31-year-old Black woman treated for cervical cancer at Johns Hopkins Hospital in Baltimore in **1951**. Samples of her tumour were taken without her knowledge or consent. Her cells, known as **HeLa** cells, became the first human cells to be grown continuously in a laboratory and have been used in countless studies. Her family learned of this only much later. In 2013 the US National Institutes of Health (NIH) reached an agreement with members of the Lacks family that gives them a voice in who may access the HeLa genome data.",
-      {warn:"These are stories about real people and families, not just case studies. When you write about them, name the institutions responsible, use the people’s own names where families have made them public, and avoid language that blames or exoticizes those who were harmed."},
-      "Abuses happened in many countries and eras, which is why ethics review now exists almost everywhere research is done."
+      "By **1943** penicillin was the usual treatment for syphilis, but the men were not offered it. The study continued until a **1972** Associated Press news story led to an advisory panel. The panel judged the study “ethically unjustified”, and it ended that year. A class-action lawsuit (a case brought by a whole group) led to a $10 million settlement in 1974. A health benefit program was set up for the men and, later, their wives, widows and children. In **1997** President Bill Clinton made a formal apology.",
+      "**Henrietta Lacks** was a 31-year-old Black woman treated for cervical cancer at Johns Hopkins Hospital in Baltimore in **1951**. Samples of her tumor were taken without her knowledge or consent. Her cells, known as **HeLa** cells, were the first human cells to be grown continuously in a laboratory. They have been used in countless studies. Her family learned of this only much later. In 2013 the US National Institutes of Health (NIH) reached an agreement with members of the Lacks family. It gives them a say in who may access the HeLa genome data.",
+      {warn:"These are stories about real people and families. They are more than case studies. When you write about them, name the institutions responsible. Use the people’s own names where families have made them public. Avoid language that blames or exoticizes the people who were harmed."},
+      "Abuses happened in many countries and eras. This is why ethics review now exists almost everywhere that research is done."
     ]},
     {h:"Belmont, 1979: three principles", body:[
       "Public anger over Tuskegee led the US Congress to pass the **National Research Act** in 1974. It created a national commission that published **The Belmont Report** on 18 April 1979. Its three principles are short enough to remember and broad enough to use anywhere:",
@@ -63,7 +63,7 @@ ICA.addUnit({
         ["Beneficence","Do no harm; maximize possible benefits and minimize possible harms","Weighing risks and benefits"],
         ["Justice","Share the burdens and benefits of research fairly","Fair selection of participants"]
       ]},
-      "Justice was a direct lesson from Tuskegee, which the report names: poor, rural Black men bore the burdens of a study, while effective treatment was withheld from them.",
+      "Justice was a direct lesson from Tuskegee, which the report names. Poor, rural Black men carried the burdens of the study, while effective treatment was kept from them.",
       "Other countries frame similar ideas in their own words. Canada’s **TCPS 2** (2022) uses three core principles: respect for persons, concern for welfare, and justice. Australia’s **National Statement on Ethical Conduct in Human Research 2023** is built on research merit and integrity, justice, beneficence and respect.",
       {fig:'<svg viewBox="0 0 340 516"><path class="d-ink" d="M62 18 V 466" stroke-width="2"/><text x="8" y="44">1932</text><circle class="d-rose" cx="62" cy="40" r="6" stroke-width="2"/><rect class="d-rose" x="78" y="14" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="34">PHS study at Tuskegee begins</text><text class="s" x="88" y="52">runs until 1972</text><text x="8" y="100">1947</text><circle class="d-sage" cx="62" cy="96" r="6" stroke-width="2"/><rect class="d-sage" x="78" y="70" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="90">Nuremberg Code</text><text class="s" x="88" y="108">voluntary consent is essential</text><text x="8" y="156">1951</text><circle class="d-rose" cx="62" cy="152" r="6" stroke-width="2"/><rect class="d-rose" x="78" y="126" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="146">Henrietta Lacks’s cells taken</text><text class="s" x="88" y="164">without her knowledge or consent</text><text x="8" y="212">1964</text><circle class="d-sage" cx="62" cy="208" r="6" stroke-width="2"/><rect class="d-sage" x="78" y="182" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="202">Declaration of Helsinki</text><text class="s" x="88" y="220">World Medical Association</text><text x="8" y="268">1972</text><circle class="d-rose" cx="62" cy="264" r="6" stroke-width="2"/><rect class="d-rose" x="78" y="238" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="258">News report; Tuskegee</text><text class="s" x="88" y="276">study finally stopped</text><text x="8" y="324">1974</text><circle class="d-sage" cx="62" cy="320" r="6" stroke-width="2"/><rect class="d-sage" x="78" y="294" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="314">US National Research Act</text><text class="s" x="88" y="332">creates a national commission</text><text x="8" y="380">1979</text><circle class="d-sage" cx="62" cy="376" r="6" stroke-width="2"/><rect class="d-sage" x="78" y="350" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="370">Belmont Report</text><text class="s" x="88" y="388">respect, beneficence, justice</text><text x="8" y="436">2024</text><circle class="d-sage" cx="62" cy="432" r="6" stroke-width="2"/><rect class="d-sage" x="78" y="406" width="256" height="48" rx="8" stroke-width="1.5"/><text x="88" y="426">Helsinki revised again</text><text class="s" x="88" y="444">“participants”, vulnerability</text><rect class="d-rose" x="40" y="482" width="16" height="16" rx="3" stroke-width="1.5"/><text class="s" x="62" y="495">harm</text><rect class="d-sage" x="150" y="482" width="16" height="16" rx="3" stroke-width="1.5"/><text class="s" x="172" y="495">response</text></svg>', alt:"A vertical timeline. 1932: the Public Health Service study at Tuskegee begins and runs until 1972. 1947: the Nuremberg Code says voluntary consent is essential. 1951: Henrietta Lacks’s cells are taken without her knowledge or consent. 1964: the World Medical Association’s Declaration of Helsinki. 1972: a news report; the Tuskegee study is finally stopped. 1974: the US National Research Act creates a national commission. 1979: the Belmont Report sets out respect for persons, beneficence and justice. 2024: Helsinki is revised again, using the word participants and stressing vulnerability. Harms are shaded one color, responses another.", cap:"Harms and responses overlap: the study at Tuskegee kept running for 25 years after the Nuremberg Code. Written principles needed independent review and law behind them."}
     ]},
@@ -91,13 +91,13 @@ ICA.addUnit({
     ]},
     {id:"t4u9-l1-x2", type:"match", q:"Match each document to what it’s best known for.", pairs:[
       ["Nuremberg Code (1947)","Voluntary consent is “absolutely essential”","Its first and longest point is about consent, written after the Doctors’ Trial."],
-      ["Declaration of Helsinki (1964, revised 2024)","Medical associations’ standard, including independent committee review","The World Medical Association wrote it for physicians; its revisions require independent ethics committee review of protocols."],
+      ["Declaration of Helsinki (1964, revised 2024)","Medical associations’ standard, including independent committee review","The World Medical Association wrote it for physicians. Its revisions require an independent ethics committee to review protocols."],
       ["Belmont Report (1979)","Three principles: respect for persons, beneficence, justice","The US national commission’s report is famous for these three principles and their applications."],
       ["TCPS 2 (Canada, 2022)","Respect for persons, concern for welfare, justice","Canada’s policy uses three core principles very close to Belmont’s."]
     ]},
     {id:"t4u9-l1-x3", type:"sort", q:"Which Belmont principle does each safeguard mainly put into practice?", buckets:["Respect for persons","Beneficence","Justice"], items:[
       {t:"Explaining the study in plain words and letting people decide freely", b:0, why:"Treating people as able to decide for themselves is respect for persons, applied through informed consent."},
-      {t:"Asking a parent’s permission and the child’s own agreement", b:0, why:"Respect for persons includes extra protection for people whose ability to decide is reduced or still developing."},
+      {t:"Asking a parent’s permission and the child’s own agreement", b:0, why:"Respect for persons includes extra protection for people who cannot fully decide for themselves, or who are still learning to."},
       {t:"Dropping a distressing question that isn’t needed to answer the research question", b:1, why:"Minimizing possible harm is beneficence."},
       {t:"Having a plan to stop the study if early results show participants are being harmed", b:1, why:"Weighing and limiting harms as the study runs is beneficence."},
       {t:"Not recruiting only from a homeless shelter just because people there are easy to reach", b:2, why:"Choosing participants for convenience, so one group carries the burden, is the injustice Belmont warns about."},
@@ -119,23 +119,23 @@ ICA.addUnit({
     ]},
     {id:"t4u9-l1-x5", type:"mcq", q:"Kenji wants to analyze posts from a public online support forum for people with depression, quoting some posts word for word. The posts are visible to anyone. What is the best view?", options:[
       {t:"It still raises ethical questions, so he should seek ethics review.", ok:true, why:"Right. People didn’t expect to be studied, and exact quotes can be searched to find them. He should also think about consent and paraphrasing. “Public” isn’t the same as “fair to use any way you like”. A quoted sentence can be pasted into a search engine and lead straight to the person, on a sensitive topic."},
-      {t:"No ethics issue: anything that is posted publicly is free to use in research.", why:"This is a common misconception. Visibility doesn’t remove the risk of harm, and many ethics codes treat online communities carefully, especially on health topics."},
-      {t:"It’s fine as long as he removes the usernames.", why:"Removing usernames helps, but exact quotes can still be searched, so the person may be identifiable anyway."},
-      {t:"He can’t study online posts at all.", why:"Online research is common and can be done ethically, with review, care over quotes and attention to the community’s expectations."}
+      {t:"No ethics issue: anything that is posted publicly is free to use in research.", why:"This is a common misconception. Being visible online doesn’t remove the risk of harm. Many ethics codes ask for care with online communities, especially on health topics."},
+      {t:"It’s fine as long as he removes the usernames.", why:"Removing usernames helps. But exact quotes can still be searched, so people may still be identified."},
+      {t:"He can’t study online posts at all.", why:"Online research is common. It can be done ethically if you get review, take care with quotes and respect what the community expects."}
     ]},
     {id:"t4u9-l1-x6", type:"mcq", q:"Which statement about the Declaration of Helsinki is accurate?", options:[
       {t:"It was first adopted by the World Medical Association in 1964 and was most recently revised in October 2024.", ok:true, why:"Correct. The 2024 revision was adopted in Helsinki, 60 years after the original."},
-      {t:"It is a law passed by the Finnish parliament.", why:"It isn’t a law. It is a statement of principles adopted by the World Medical Association, an organization of national medical associations; it is named after the city where it was first adopted."},
+      {t:"It is a law passed by the Finnish parliament.", why:"It isn’t a law. It is a statement of principles adopted by the World Medical Association, an organization of national medical associations. It is named after the city where it was first adopted."},
       {t:"It replaced the Belmont Report in 1979.", why:"Helsinki (1964) is older than Belmont (1979), and neither replaced the other. They are separate documents with different authors."},
       {t:"It has never been changed since 1964.", why:"It has been revised many times, most recently in 2024."}
     ]},
     {id:"t4u9-l1-x7", type:"explain", q:"Amira, a nurse, plans to interview patients on her own ward about the care they receive. Use the three Belmont principles to explain the ethical issues her plan raises, with one fix for each.", size:"3–5 sentences", hint:"Respect for persons, beneficence, justice: who can say no freely, what could harm them, and is the burden fair?", model:"Respect for persons: patients depend on her for care, so a “yes” may not be free; someone without power over them should recruit, and patients must know saying no won’t affect their care. Beneficence: talking about care could cause distress or fear of consequences for complaints, so she should keep answers confidential, ask only what she needs and offer support contacts. Justice: using her own patients just because they’re convenient needs a reason, such as results that benefit this ward, shared with them.", points:["Applies respect for persons (dependent relationship, voluntary consent)", "Applies beneficence (possible harm or distress, and a way to reduce it)", "Applies justice (fair selection, not just convenience)", "Gives a concrete fix for each issue"]}
    ],
    apply:{intro:"These tasks need only a web browser and a notebook. They don’t involve collecting data from anyone.", tasks:[
-     {t:"Read one founding document yourself", how:["Choose the Nuremberg Code (it fits on one page), the Belmont Report, or the 2024 Declaration of Helsinki. All are free online from official sources such as the World Medical Association, the US Department of Health and Human Services or the US Holocaust Memorial Museum.","Read it, or its first section, slowly.","Write down one idea that surprised you and one that still sounds hard to do in practice."], write:"Document I read… One surprising idea… One idea that is hard in practice, and why…"},
+     {t:"Read one founding document yourself", how:["Choose the Nuremberg Code (it fits on one page), the Belmont Report, or the 2024 Declaration of Helsinki. All are free online. Official sources include the World Medical Association, the US Department of Health and Human Services and the US Holocaust Memorial Museum.","Read it, or its first section, slowly.","Write down one idea that surprised you and one that still sounds hard to do in practice."], write:"Document I read… One surprising idea… One idea that is hard in practice, and why…"},
      {t:"Find the ethics rules that apply where you are", how:["Search for your country’s national research ethics guidance, for example “national ethics guidelines human research” plus your country’s name.","If you study or work at an institution, search its website for “research ethics”.","Note the name of the document, who publishes it, its date, and the name of the review body (IRB, REC, HREC, REB, ethics committee…)."], write:"Country or institution… Name of the guidance and its date… Name of the review body…"},
-     {t:"Run a Belmont check on an imaginary study", how:["Invent a small study you might really do: for example, interviewing three small-business owners about how they price their products.","Write one risk under each principle: respect for persons, beneficence, justice.","Write one fix for each risk."], write:"My imaginary study… Respect for persons: risk and fix… Beneficence: risk and fix… Justice: risk and fix…"}
-   ], proof:"Notes on one founding document, the name and date of the ethics guidance and review body that apply to you, and a three-principle check of an imaginary study."},
+     {t:"Run a Belmont check on an imaginary study", how:["Invent a small study that you could really do. For example, interview three small-business owners about how they price their products.","Write one risk under each principle: respect for persons, beneficence, justice.","Write one fix for each risk."], write:"My imaginary study… Respect for persons: risk and fix… Beneficence: risk and fix… Justice: risk and fix…"}
+   ], proof:"Notes on one founding document. The name and date of the ethics guidance and review body that apply to you. A check of an imaginary study against the three principles."},
    read:[
      {book:"soc", where:"Chapter 2, Section 2.3 “Ethical Concerns” (on LibreTexts: 2.4)", note:"A short overview that mentions the study at Tuskegee and Henrietta Lacks."},
      {book:"bhatt", where:"Chapter 16, “Research Ethics”", note:"Covers the core principles from a social science view, with the study at Tuskegee as one example."}
@@ -145,10 +145,10 @@ ICA.addUnit({
   {id:"t4u9-l2", title:"Consent, ethics review and vulnerable participants", minutes:55,
    hook:{q:"Fatima signed a consent form on Monday. On Wednesday, halfway through her interview, she says she would like to stop. What should the researcher do?", options:["Carry on: she signed the form","Stop, thank her, and make clear there is no penalty","Stop only if she gives a good reason","Finish the current section first, then stop"], answer:1, reveal:"**Stop, with no penalty and no reason needed.** A signature records a decision at one moment; it doesn’t lock anyone in. The right to withdraw runs through the whole study. What happens to the answers she has already given depends on what the information sheet promised, which is why that has to be planned in advance. This lesson treats consent as a process, not a form."},
    goals:[
-     "List the information people need before they can give informed consent, and explain information, comprehension and voluntariness",
+     "List the information people need before they can give informed consent. Explain information, comprehension and voluntariness",
      "Treat consent as an ongoing process, including withdrawal, deception and debriefing",
      "Name the ethics review body in several countries and say when research needs review",
-     "Recognize when participants may be in vulnerable situations and add suitable protections"
+     "Recognize when participants may be in vulnerable situations. Add suitable protections"
    ],
    learn:[
     {h:"What “informed” really means", body:[
@@ -159,7 +159,7 @@ ICA.addUnit({
         "**Comprehension:** it is explained in a way they can actually understand, in their language, at their reading level, with time to ask questions.",
         "**Voluntariness:** the choice is free of coercion (threats) and undue influence (pressure or rewards so large they distort judgment)."
       ]},
-      "A long form in legal language can check the “information” box and still fail “comprehension”. That’s why the revised US Common Rule (its “2018 Requirements”, in force since 2019) requires consent documents to begin with a concise summary of the **key information** that helps someone decide whether to take part.",
+      "A long form in legal language can check the “information” box and still fail “comprehension”. For this reason the revised US Common Rule (its “2018 Requirements”, in force since 2019) says that consent documents must begin with a short summary. The summary gives the **key information** that helps someone decide whether to take part.",
       {h:"What people need to be told"},
       "The exact list varies by country and type of study, but most rules cover the same core. The US Common Rule (45 CFR 46.116) is a useful example of a full list:",
       {table:[
@@ -182,7 +182,7 @@ ICA.addUnit({
         "**Withdrawal and data.** Say in advance what happens to data already collected if someone withdraws, and until when. Once data are anonymized or merged into results, they often can’t be pulled out; people must be told that before they agree.",
         "**Recording.** Ask separately before recording audio or video, and say who will hear it and when it will be deleted.",
         "**Verbal and online consent.** For low-risk surveys, checking “I agree” after reading an information page is common. In some communities, signing documents is unfamiliar or risky, and recorded verbal consent may be approved instead.",
-        "**Deception.** Some studies can’t tell people everything in advance (for example, the real hypothesis). Ethics codes allow this only when risk is minimal, there’s no alternative and a committee approves, followed by **[[debriefing]]**: telling people the truth afterwards and offering to withdraw their data."
+        "**Deception.** Some studies can’t tell people everything in advance (for example, the real hypothesis). Ethics codes allow this only when three things are true: the risk is minimal, there is no other way, and a committee approves. Afterward there must be **[[debriefing]]**. This means telling people the truth and offering to withdraw their data."
       ]},
       {h:"Common misconceptions"},
       {list:[
@@ -193,7 +193,7 @@ ICA.addUnit({
       {ex:"Information sheet, in plain words:\n“We are studying how people in our town choose where to shop. You’ll answer 12 questions; it takes about 10 minutes. Some questions ask about money, and you can skip any of them. We will not ask your name. You can stop at any time. Once you press Submit, we can’t remove your answers, because we won’t know which are yours. Questions? Contact Hana at the community centre.”", label:"Worked example"}
     ]},
     {h:"Who reviews research, and what they’re called", body:[
-      "Most countries require research with people to be approved by an independent committee before it starts. The committee checks the risks, the consent process, data protection and whether the study can answer its question at all (badly designed research wastes participants’ time, which is itself an ethical problem). Its name depends on where you are:",
+      "In most countries, an independent committee must approve research with people before it starts. The committee checks the risks, the consent process and data protection. It also checks whether the study can answer its question at all. Badly designed research wastes participants’ time, which is itself an ethical problem. The committee’s name depends on where you are:",
       {table:[
         ["Place","Review body","Key guidance"],
         ["United States","Institutional review board (IRB)","Common Rule (45 CFR 46)"],
@@ -204,12 +204,12 @@ ICA.addUnit({
       ]},
       "The general term is a [[ethics-review-board|research ethics committee or board]]. Many universities have their own committees for student and staff projects, and hospitals often have separate ones. International studies may need approval in every country involved.",
       {h:"Does my project need review?"},
-      "Usually, if it is **research** (aiming to produce generalizable knowledge) and involves **people or their identifiable data**. Many systems offer lighter or faster review for [[minimal-risk]] studies, such as anonymous surveys on everyday topics, and some activities may not count as research at all, such as an internal service evaluation, a clinical audit or journalism. The boundaries differ by country and institution, so the committee decides, not the researcher.",
-      {warn:"Never start recruiting or collecting data before approval. Data collected without it may be unusable, and journals increasingly ask for the approval reference when you submit."},
-      {tip:"A typical application includes a protocol (aims, methods, recruitment, analysis), information sheets and consent forms, questionnaires or interview guides, a data management plan and a risk assessment. Committees often send applications back because documents are unclear, not because the study is unethical. Write for a lay reader and review usually goes faster."}
+      "Usually, yes, if it is **research** (it aims to produce generalizable knowledge) and involves **people or their identifiable data**. Many systems offer lighter or faster review for [[minimal-risk]] studies, such as anonymous surveys on everyday topics. Some activities may not count as research at all, such as an internal service evaluation, a clinical audit or journalism. The rules differ by country and institution. So the committee decides, not the researcher.",
+      {warn:"Never start recruiting or collecting data before approval. Data collected without approval may be unusable. Journals also ask more and more for the approval reference when you submit."},
+      {tip:"A typical application includes these documents: a protocol (aims, methods, recruitment, analysis), information sheets and consent forms, questionnaires or interview guides, a data management plan and a risk assessment. Committees often send applications back because documents are unclear, not because the study is unethical. Write for a non-expert reader and review usually goes faster."}
     ]},
     {h:"People in vulnerable situations", body:[
-      "[[vulnerable-participants|Vulnerable participants]] are people who may have less ability to protect their own interests, or who face extra risk from taking part. Vulnerability is often about the **situation**, not the person. India’s ICMR guidelines, for example, list legal status (children), clinical conditions (such as cognitive impairment or unconsciousness) and situations (economic or social disadvantage, hierarchical relationships, living in institutions, humanitarian emergencies, language barriers).",
+      "[[vulnerable-participants|Vulnerable participants]] are people who may have less ability to protect their own interests, or who face extra risk from taking part. Vulnerability is often about the **situation**, not the person. India’s ICMR guidelines, for example, list three kinds. Legal status (children). Clinical conditions (such as cognitive impairment or unconsciousness). Situations (economic or social disadvantage, hierarchical relationships, living in institutions, humanitarian emergencies, language barriers).",
       {table:[
         ["Situation","Extra protection often used"],
         ["Children","Parent or guardian permission plus the child’s own **[[assent]]** (agreement in words they understand)"],
@@ -219,13 +219,13 @@ ICA.addUnit({
         ["Crisis, poverty, insecure legal status","Small, fair compensation; careful data protection; local partners"]
       ]},
       "Payment deserves care in these situations. It should recognize people’s time and costs without being so large that it overrides their judgment. Many committees prefer a set rate for time and expenses, and paying people who withdraw for the time they have already given.",
-      "Protection must not turn into exclusion. Leaving whole groups out of research (for example, older adults or pregnant people from many drug trials) means treatments and policies are tested on others and then used on them. The Declaration of Helsinki’s 2024 revision and the Belmont principle of justice both point to fair **inclusion** with the right safeguards.",
+      "Protection must not turn into exclusion. Some research leaves whole groups out (for example, many drug trials exclude older adults or pregnant people). Then treatments and policies are tested on other people and later used on these groups. The Declaration of Helsinki’s 2024 revision and the Belmont principle of justice both point to fair **inclusion** with the right safeguards.",
       {key:"Ask two questions: can this person say no freely, and could taking part hurt them more than others? If either answer worries you, add protections, but don’t simply leave them out."}
     ]}
    ],
    try:[
     {id:"t4u9-l2-x1", type:"sort", q:"Each part of a consent process is described. Is it **sound**, or does it **undermine** informed consent?", buckets:["Sound","Undermines consent"], items:[
-      {t:"The information page starts with a short summary of what taking part involves", b:0, why:"A concise key-information summary helps comprehension; the revised US Common Rule has required one since 2019."},
+      {t:"The information page starts with a short summary of what taking part involves", b:0, why:"A short key-information summary helps comprehension. The revised US Common Rule has required one since 2019."},
       {t:"“By continuing you waive any right to complain about this study.”", b:1, why:"Consent documents must not ask people to give up their legal rights (US rules, for example, ban this “exculpatory” language). Telling people whom to contact with complaints is required, not banned."},
       {t:"A lecturer hands out a survey in class and waits at the door to collect it", b:1, why:"Students may feel unable to refuse someone who grades them. Anonymous online submission, or a colleague collecting forms, protects voluntariness."},
       {t:"Participants are told they may skip any question", b:0, why:"Letting people decline parts of a study supports voluntary, ongoing consent."},
@@ -234,7 +234,7 @@ ICA.addUnit({
     ]},
     {id:"t4u9-l2-x2", type:"match", q:"Match each place to the usual name of its research ethics review body.", pairs:[
       ["United States","Institutional review board (IRB)","US federal rules (the Common Rule) use the term IRB."],
-      ["United Kingdom (health and social care)","Research ethics committee (REC)","In health and social care, RECs belong to the UK-wide Research Ethics Service, run by the Health Research Authority in England with the devolved administrations."],
+      ["United Kingdom (health and social care)","Research ethics committee (REC)","In health and social care, RECs belong to the UK-wide Research Ethics Service. The Health Research Authority in England runs it with the devolved administrations (Scotland, Wales and Northern Ireland)."],
       ["Australia","Human research ethics committee (HREC)","Australia’s National Statement refers to HRECs."],
       ["Canada","Research ethics board (REB)","Canada’s TCPS 2 uses the term REB."],
       ["India","Ethics committee (EC)","The ICMR’s 2017 National Ethical Guidelines call it an ethics committee."]
@@ -242,7 +242,7 @@ ICA.addUnit({
     {id:"t4u9-l2-x3", type:"mcq", q:"Tomás is designing a psychology study in which participants are told it tests memory, when it really tests how a confederate’s behavior affects their choices. Which plan fits most ethics codes?", options:[
       {t:"Use mild deception only with minimal risk, committee approval and full debriefing.", ok:true, why:"Right. There must also be no non-deceptive way to answer the question, and everyone must be offered the chance to withdraw their data. That’s the usual set of conditions for deception, for example in the American Psychological Association’s and American Sociological Association’s ethics codes, and in most committee rules."},
       {t:"Deception is never allowed, so he must drop the study.", why:"Many codes permit limited deception under strict conditions. A blanket ban isn’t the rule."},
-      {t:"Deception is fine as long as the consent form is signed.", why:"Consent obtained through deception isn’t fully informed, which is why debriefing and committee approval are required."},
+      {t:"Deception is fine as long as the consent form is signed.", why:"Consent obtained through deception isn’t fully informed. This is why debriefing and committee approval are required."},
       {t:"He should debrief only the participants who ask afterwards what the study was really about.", why:"Debriefing is owed to everyone who was deceived, not only to those who ask."}
     ]},
     {id:"t4u9-l2-x4", type:"order", q:"Put the steps of an interview study’s consent process in order.", items:[
@@ -275,10 +275,10 @@ ICA.addUnit({
     {id:"t4u9-l2-x7", type:"explain", q:"A researcher says: “They signed the consent form at the start, so consent is done.” Explain why consent is better thought of as a process than a signature.", size:"3–4 sentences", hint:"What can change during a study, and what can participants still do?", model:"A signature records one moment in a continuing conversation. People can change their minds, so they must be free to stop at any time, with no penalty and no reason needed, and know in advance what happens to data already collected. If the study changes, for example adding recordings, new risks or new uses of the data, fresh consent is needed. Good researchers check in as the study goes on, because valid consent also needs understanding and voluntariness, not just paperwork.", points:["Says the form records only one point in time", "Mentions the right to withdraw at any time", "Says new procedures, risks or data uses need fresh consent", "Mentions checking in or understanding and voluntariness during the study"]}
    ],
    apply:{intro:"Practice the paperwork side of ethics. Nothing here involves recruiting anyone.", tasks:[
-     {t:"Write a one-page information sheet", how:["Imagine a small, low-risk study: for example, interviewing two friends about how they learned to cook.","Write a plain-language information sheet using the elements in the table: purpose, what they’ll do, time, risks, benefits, privacy, withdrawal (and until when), contact.","Read it aloud. Cut any sentence a 12-year-old wouldn’t follow."], write:"Title… What we’re asking… Risks… Privacy… How to withdraw, and until when… Contact…"},
+     {t:"Write a one-page information sheet", how:["Imagine a small, low-risk study: for example, interviewing two friends about how they learned to cook.","Write a plain-language information sheet. Use the elements in the table: purpose, what they will do, time, risks, benefits, privacy, withdrawal (and until when) and contact.","Read it aloud. Cut any sentence a 12-year-old wouldn’t follow."], write:"Title… What we’re asking… Risks… Privacy… How to withdraw, and until when… Contact…"},
      {t:"Map who would review your study", how:["Using what you found in Lesson 1, find the page for your institution’s or country’s ethics review process.","Note whether there is a lighter route for low-risk studies, how long review usually takes, and what documents you must submit.","If you have no institution, note which body would review a health study in your country."], write:"Review body… Low-risk route? … Typical time… Documents required…"},
-     {t:"Spot the vulnerable situation", how:["Think of three groups you might want to study in your field (for example, gig workers, secondary school students, people recently arrived in a country).","For each, write what could make it hard for them to say no, or what extra risk they face.","Write one protection for each that does not exclude them."], write:"Group 1: risk… protection… Group 2… Group 3…"}
-   ], proof:"A plain-language information sheet for a small imaginary study, notes on how ethics review works where you are, and protections for three groups."},
+     {t:"Spot the vulnerable situation", how:["Think of three groups you might want to study in your field. For example: gig workers, secondary school students, or people who recently arrived in a country.","For each, write what could make it hard for them to say no, or what extra risk they face.","Write one protection for each that does not exclude them."], write:"Group 1: risk… protection… Group 2… Group 3…"}
+   ], proof:"A plain-language information sheet for a small imaginary study. Notes on how ethics review works where you are. Protections for three groups."},
    read:[
      {book:"bhatt", where:"Chapter 16, “Research Ethics”", note:"See its parts on voluntary participation and harmlessness, and on institutional review boards (some adapted online copies call them human research ethics committees)."},
      {book:"soc", where:"Chapter 2, Section 2.3 “Ethical Concerns” (on LibreTexts: 2.4)"}
@@ -288,9 +288,9 @@ ICA.addUnit({
   {id:"t4u9-l3", title:"Privacy, anonymization and research data", minutes:55,
    hook:{q:"Kenji replaces each participant’s name with a code such as P07 and keeps the list linking codes to names in a separate, locked file. Under the EU’s GDPR, what is his coded dataset?", options:["Anonymous, so the GDPR no longer applies","Pseudonymized, and still personal data","Anonymous, as long as the list is encrypted","Not personal data, because names are removed"], answer:1, reveal:"**Pseudonymized, and still personal data.** Because Kenji holds a key that can link codes back to people, the GDPR treats the coded data as personal data in his hands. Pseudonymization is still a valuable safeguard, but it isn’t anonymization. This lesson untangles these words, which even experienced researchers mix up."},
    goals:[
-     "Tell confidentiality from anonymity, and anonymization from pseudonymization, using the GDPR’s definitions",
+     "Tell confidentiality from anonymity, and anonymization from pseudonymization. Use the definitions in the GDPR",
      "Spot direct and indirect identifiers, and explain why removing names is often not enough",
-     "Apply data-protection principles to research data, including special category data, with several laws as examples",
+     "Apply data-protection principles to research data, including special category data. Use several laws as examples",
      "Outline a data management plan and explain the FAIR principles"
    ],
    learn:[
@@ -301,30 +301,30 @@ ICA.addUnit({
         ["[[confidentiality|Confidentiality]]","The researcher knows who said what but won’t reveal it"],
         ["[[anonymity|Anonymity]]","Nobody, not even the researcher, can link answers to a person"],
         ["[[pseudonymisation|Pseudonymization]]","Identifiers are replaced with codes; a separate key can re-link them"],
-        ["[[anonymisation-term|Anonymization]]","Data are changed so people can no longer be identified by any reasonably likely means"]
+        ["[[anonymisation-term|Anonymization]]","Data are changed so that nobody can identify people by any means that is reasonably likely to be used"]
       ]},
-      "An interview study is almost never anonymous: you met the person. You can promise **confidentiality**, and later produce an anonymized or pseudonymized dataset. An online survey that collects no names, emails or IP addresses may be anonymous.",
+      "An interview study is almost never anonymous, because you met the person. You can promise **confidentiality**. Later you can make an anonymized or pseudonymized dataset. An online survey that collects no names, emails or IP addresses may be anonymous.",
       {warn:"Don’t write “your answers are anonymous” on an information sheet unless they are. Promising more privacy than you can deliver is a broken promise, and in many places a legal problem too."}
     ]},
     {h:"What the GDPR says", body:[
-      "The EU’s [[gdpr|General Data Protection Regulation]] (GDPR) gives precise definitions that many other laws and ethics committees borrow:",
+      "The EU’s [[gdpr|General Data Protection Regulation]] (GDPR) gives exact definitions. Many other laws and ethics committees use them too:",
       {list:[
-        "**[[personal-data|Personal data]]** is any information relating to an identified or identifiable person, directly or indirectly (Article 4(1)).",
-        "**Pseudonymization** means processing personal data so they can no longer be attributed to a specific person **without additional information**, provided that information is kept separately and protected (Article 4(5)). For the researcher who holds the key, pseudonymized data are still personal data (Recital 26). (In 2025 the EU Court of Justice added that, for a recipient with no reasonable means of re-identifying anyone, the same data may not count as personal data. That is a legal judgment for your data protection officer, not something to assume.)",
-        "**Anonymous information** doesn’t relate to an identifiable person. To decide, you consider all the means **reasonably likely** to be used to identify someone, such as singling a person out, taking into account cost, time and available technology. Anonymous data fall outside the GDPR (Recital 26)."
+        "**[[personal-data|Personal data]]** is any information about a person who is identified or can be identified, directly or indirectly (Article 4(1)).",
+        "**Pseudonymization** means processing personal data so that they can no longer be linked to a specific person **without additional information**. That information must be kept separately and protected (Article 4(5)). For the researcher who holds the key, pseudonymized data are still personal data (Recital 26). In 2025 the EU Court of Justice added a point. If a recipient has no reasonable means of re-identifying anyone, the same data may not count as personal data for them. That is a legal judgment for your data protection officer. Do not assume it.",
+        "**Anonymous information** doesn’t relate to an identifiable person. To decide, think about all the means that are **reasonably likely** to be used to identify someone, such as singling a person out. Take into account cost, time and available technology. Anonymous data fall outside the GDPR (Recital 26)."
       ]},
       {fig:'<svg viewBox="0 0 340 470"><defs><marker id="ar3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><rect class="d-rose" x="10" y="8" width="320" height="120" rx="12" stroke-width="1.5"/><text x="170" y="32" text-anchor="middle">Identifiable</text><rect class="d-panel" x="26" y="44" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="66" text-anchor="middle">Ana Silva · 34 · nurse · Hilltown</text><text class="s" x="170" y="100" text-anchor="middle">personal data: full data protection rules</text><text class="s" x="170" y="117" text-anchor="middle">apply</text><path class="d-ink" d="M170 128 V 148" stroke-width="2" marker-end="url(#ar3)"/><rect class="d-gold" x="10" y="152" width="320" height="150" rx="12" stroke-width="1.5"/><text x="170" y="176" text-anchor="middle">Pseudonymized</text><rect class="d-panel" x="26" y="188" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="210" text-anchor="middle">P07 · 34 · nurse · Hilltown</text><rect class="d-panel" x="60" y="230" width="220" height="30" rx="6" stroke-width="1"/><text class="s" x="170" y="250" text-anchor="middle">key: P07 = Ana Silva (kept apart)</text><text class="s" x="170" y="278" text-anchor="middle">still personal data: the key can</text><text class="s" x="170" y="294" text-anchor="middle">re-link it</text><path class="d-ink" d="M170 302 V 322" stroke-width="2" marker-end="url(#ar3)"/><rect class="d-sage" x="10" y="326" width="320" height="136" rx="12" stroke-width="1.5"/><text x="170" y="350" text-anchor="middle">Anonymized</text><rect class="d-panel" x="26" y="362" width="288" height="34" rx="6" stroke-width="1"/><text x="170" y="384" text-anchor="middle">age 30–39 · health worker · region</text><text class="s" x="170" y="418" text-anchor="middle">key destroyed, details coarsened:</text><text class="s" x="170" y="434" text-anchor="middle">no reasonably likely way to</text><text class="s" x="170" y="450" text-anchor="middle">identify anyone</text></svg>', alt:"Three stacked panels showing one invented record. Identifiable: Ana Silva, 34, nurse, Hilltown; personal data, full data protection rules apply. Pseudonymized: P07, 34, nurse, Hilltown, with a key that says P07 equals Ana Silva, kept apart; still personal data because the key can re-link it. Anonymized: age 30 to 39, health worker, region; the key is destroyed and details are coarsened, so there is no reasonably likely way to identify anyone.", cap:"Replacing a name with a code is pseudonymization. Anonymization needs more: no key, and details coarse enough that no one can be singled out. (Invented example.)"}
     ]},
     {h:"Why removing names isn’t enough", body:[
-      "**Direct identifiers** point straight to a person: name, email, phone number, ID number, face, voice. **Indirect identifiers** (sometimes called quasi-identifiers) are harmless alone but identifying together: exact age, job, small town, rare illness, dates of events, an unusual story.",
+      "**Direct identifiers** point straight to a person: name, email, phone number, ID number, face, voice. **Indirect identifiers** (sometimes called quasi-identifiers) are harmless alone but identify a person when put together. Examples are exact age, job, small town, rare illness, dates of events and an unusual story.",
       {ex:"Dataset: “P12, 41, the only female head teacher in a village of 800, diagnosed with MS in 2023.”\nNo name, yet anyone from that village knows exactly who this is.\n\nFixes: age band (40–49); “school leader”; “rural district”; drop the diagnosis year unless it’s essential to the research question.", label:"Worked example"},
       "Re-identification really happens. In 2006 a search company released “anonymized” search logs, and journalists identified at least one user from what she had searched for. Combining datasets, small numbers in tables and detailed free-text answers are the usual weak points.",
       {list:[
-        "**Qualitative data** (interviews, fieldnotes) is hardest: stories themselves identify people. Change or remove details, and ask participants how they want to be described.",
+        "**Qualitative data** (interviews, fieldnotes) is hardest, because the stories themselves identify people. Change or remove details. Ask participants how they want to be described.",
         "**Small cells:** a table showing “1 respondent aged over 80 in District C” identifies that person. Many statistical agencies suppress counts below a threshold.",
-        "**Free text and metadata:** comments, photos and file metadata (such as location data in images) can carry identities."
+        "**Free text and metadata:** comments, photos and file metadata (such as location data in images) can show who people are."
       ]},
-      {tip:"For interview quotes, ask yourself: would the participant’s colleagues, family or neighbors recognize them from this sentence? If so, trim the identifying detail or paraphrase, and consider asking participants to check how they are described."}
+      {tip:"For interview quotes, ask yourself: would the participant’s colleagues, family or neighbors recognize them from this sentence? If so, cut the identifying detail or paraphrase. You can also ask participants to check how they are described."}
     ]},
     {h:"Data protection principles for research", body:[
       "Data protection laws differ, but most share principles close to the GDPR’s Article 5. Here is what they mean for a research project:",
@@ -339,24 +339,24 @@ ICA.addUnit({
         ["Accountability","Be able to show what you did and why"]
       ]},
       {ex:"Lucía’s draft survey on commuting asked for full date of birth, home address and employer.\nHer research question needs only: age band, district and job sector.\nCutting the rest means less risk for participants, a shorter survey and less data to secure.", label:"Worked example: data minimization"},
-      "**[[special-category-data|Special category data]]** need extra protection. Under the GDPR (Article 9) these are data revealing racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership, plus genetic data, biometric data used to identify someone, health data, and data about a person’s sex life or sexual orientation. Processing them is banned unless a listed condition applies; one condition covers scientific research with safeguards set by law. Criminal records have separate rules.",
+      "**[[special-category-data|Special category data]]** need extra protection. Under the GDPR (Article 9) they are data that reveal racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership. They also include genetic data, biometric data used to identify someone, health data, and data about a person’s sex life or sexual orientation. Processing them is banned unless a listed condition applies. One condition covers scientific research with safeguards set by law. Criminal records have separate rules.",
       "One subtle point: **consent to take part** (an ethical requirement) and the **lawful basis** for using the data (a legal one) are separate. In some countries, universities rely on a basis such as “public task” for the data while still asking for ethical consent to take part. Your institution’s data protection officer can tell you which applies.",
-      "Laws vary. Examples: the **GDPR** (EU) and **UK GDPR** with the Data Protection Act 2018 (both amended by the Data (Use and Access) Act 2025); in the US, the **HIPAA Privacy Rule** for health information held by health plans, most health care providers and their contractors, alongside the Common Rule; **Brazil’s LGPD**; **South Africa’s POPIA**; **India’s Digital Personal Data Protection Act 2023**; **Japan’s APPI**; **Australia’s Privacy Act 1988**. See {{data-protection-laws}} for more, and check the rules where you and your participants are."
+      "Laws vary. Here are some examples. The **GDPR** (EU). The **UK GDPR** with the Data Protection Act 2018 (both amended by the Data (Use and Access) Act 2025). In the US, the **HIPAA Privacy Rule** covers health information held by health plans, most health care providers and their contractors, alongside the Common Rule. **Brazil’s LGPD**. **South Africa’s POPIA**. **India’s Digital Personal Data Protection Act 2023**. **Japan’s APPI**. **Australia’s Privacy Act 1988**. See {{data-protection-laws}} for more, and check the rules where you and your participants are."
     ]},
     {h:"Managing research data: plans and FAIR", body:[
-      "**Research data management** means looking after data from collection to deletion or archiving: naming and organizing files, documenting what each variable means, storing safely, backing up, and deciding what to share. A **[[data-management-plan-term|data management plan]]** (DMP) writes this down at the start. Many funders require one: the US NIH has required a data management and sharing plan for applications that generate scientific data since 25 January 2023, and EU Horizon Europe projects must submit a DMP within their first six months. Free tools such as DMPonline and DMPTool offer templates.",
-      "Good everyday habits make a DMP easy to follow: consistent file names with dates (for example `2026-03-14_interview-P07.docx`), one master copy of the data, a README explaining each file, and backups kept in more than one place (see {{file-naming}} and {{backup}}).",
+      "**Research data management** means looking after data from collection to deletion or archiving. It includes naming and organizing files, writing down what each variable means, storing data safely, backing up, and deciding what to share. A **[[data-management-plan-term|data management plan]]** (DMP) writes all this down at the start. Many funders require one. The US NIH has required a data management and sharing plan since 25 January 2023 for applications that produce scientific data. EU Horizon Europe projects must submit a DMP within their first six months. Free tools such as DMPonline and DMPTool offer templates.",
+      "Good everyday habits make a DMP easy to follow. Use consistent file names with dates (for example `2026-03-14_interview-P07.docx`). Keep one master copy of the data. Add a README that explains each file. Keep backups in more than one place (see {{file-naming}} and {{backup}}).",
       {list:[
         "What data will you collect, in what formats, and how much?",
         "How will you document it (a codebook, a README, metadata)?",
         "Ethics and law: consent for sharing, anonymization, special category data",
-        "Storage, backup and security during the project (for example, encrypted institutional storage, not a personal USB stick)",
+        "Storage, backup and security during the project (for example, encrypted storage at your institution, not a personal USB stick)",
         "What will be kept long term, shared, where, and under what license?",
         "Who is responsible, and what will it cost?"
       ]},
-      "The **[[fair-principles|FAIR principles]]**, published by Wilkinson and colleagues in *Scientific Data* in 2016, describe data that are **Findable** (a persistent identifier such as a DOI, rich metadata), **Accessible** (retrievable by a standard method; metadata stay available even if data are restricted), **Interoperable** (common formats and vocabularies) and **Reusable** (clear license, provenance and documentation). They stress making data usable by machines as well as people.",
+      "The **[[fair-principles|FAIR principles]]**, published by Wilkinson and colleagues in *Scientific Data* in 2016, describe data that are **Findable**, **Accessible**, **Interoperable** and **Reusable**. Findable means the data have a persistent identifier such as a DOI, and rich metadata. Accessible means people can retrieve them by a standard method, and the metadata stay available even if the data are restricted. Interoperable means the data use common formats and vocabularies. Reusable means there is a clear license, a record of where the data came from (provenance) and documentation. The principles ask that machines, as well as people, can use the data.",
       {key:"FAIR doesn’t mean open. Sensitive data can be FAIR: findable through a catalog record, accessible only under an agreement. Europe’s research integrity code puts it as “as open as possible, as closed as necessary”."},
-      "FAIR is about data; the **CARE principles** for Indigenous data governance (Collective benefit, Authority to control, Responsibility, Ethics) add that communities should keep a say over data about them.",
+      "FAIR is about the data. The **CARE principles** for Indigenous data governance (Collective benefit, Authority to control, Responsibility, Ethics) add another point. Communities should keep a say over data about them.",
       {h:"Common misconceptions"},
       {list:[
         "“Encrypted means anonymous.” Encryption protects data from outsiders; the people who hold the key can still see who is who.",
@@ -371,7 +371,7 @@ ICA.addUnit({
       {t:"Survey answers labeled R001, R002…, with a separate spreadsheet linking codes to email addresses", b:1, why:"A key exists that can re-link codes to people, so this is pseudonymized and still personal data."},
       {t:"National statistics showing average income by region, with no small groups", b:2, why:"Aggregated figures with no small cells can’t reasonably identify anyone."},
       {t:"Coded health records analyzed by a research team that also keeps the code list, in a separate locked file", b:1, why:"The team holds a key that can re-link the records, so the data are pseudonymized, and still personal data for the team. Keeping the key separate is a safeguard, not anonymization."},
-      {t:"An online poll that never collected names, emails or IP addresses, reporting only broad age bands", b:2, why:"No identifiers were collected and details are coarse, so it is reasonably anonymous."},
+      {t:"An online poll that never collected names, emails or IP addresses, reporting only broad age bands", b:2, why:"No identifiers were collected and the details are broad, so the data are reasonably anonymous."},
       {t:"Recorded video interviews with faces visible", b:0, why:"A face is a direct identifier, so video with visible faces is identifiable."}
     ]},
     {id:"t4u9-l3-x2", type:"spot", q:"Mei is preparing a “de-identified” interview extract to share. Tap each detail that could still identify the participant.", ask:"could identify the person", parts:[
@@ -416,10 +416,10 @@ ICA.addUnit({
     {id:"t4u9-l3-x7", type:"explain", q:"A researcher removes all names from her interview transcripts and says the data is now anonymous. Explain why that may not be true, with an example.", size:"3–4 sentences", hint:"Think about indirect identifiers, which are harmless alone but identifying together.", model:"Names are only direct identifiers. Indirect identifiers, such as exact age, job, a small town or a rare illness, can identify someone when combined. For example, “the only female head teacher in a village of 800, diagnosed with MS in 2023” points to one person even without a name. Interview stories are especially identifying. To reduce the risk she could use age bands, broader job and place descriptions and drop details the question doesn’t need; and while she keeps a key linking codes to names, the data are pseudonymized, not anonymous.", points:["Distinguishes direct from indirect identifiers", "Gives an example of details that identify someone together", "Suggests a fix such as coarsening or removing details", "Notes that keeping a re-linking key makes data pseudonymized, not anonymous"]}
    ],
    apply:{intro:"Practice on invented data and on your own devices. Don’t use anyone’s real data for these tasks.", tasks:[
-     {t:"De-identify an invented record", how:["Copy this invented record: “Dmitri Volkov, 52, the only ferry captain in Port Linden, told us about his heart surgery in May 2025 and his daughter’s wedding.”","Rewrite it twice: first pseudonymized (with a code, and note what the separate key would hold), then anonymized (coarsen or remove every indirect identifier).","Write one sentence on what research value you lost in the anonymized version."], write:"Pseudonymized version… What the key holds… Anonymized version… What was lost…"},
+     {t:"De-identify an invented record", how:["Copy this invented record: “Dmitri Volkov, 52, the only ferry captain in Port Linden, told us about his heart surgery in May 2025 and his daughter’s wedding.”","Rewrite it twice. First, pseudonymize it: use a code, and note what the separate key would hold. Then anonymize it: make every indirect identifier less exact, or remove it.","Write one sentence on what research value you lost in the anonymized version."], write:"Pseudonymized version… What the key holds… Anonymized version… What was lost…"},
      {t:"Check your device is encrypted before it holds research data", how:{win:["Open **Settings → Privacy & security**.","Look for **Device encryption** (shown on many PCs). On Windows 11 Pro, Enterprise or Education you can instead search the Start menu for **Manage BitLocker**, which opens **BitLocker Drive Encryption** in Control Panel. Turn encryption on if it’s off, and save the recovery key somewhere safe.","If neither appears, your device may not support it; use your institution’s secure storage for research data."], mac:["Open **Apple menu → System Settings → Privacy & Security**.","Scroll to **FileVault**. If it’s off, choose **Turn On** and keep the recovery key safe."], chromeos:["Chromebooks encrypt user data automatically. Keep the device updated and protected with a strong password or PIN."], phone:["iPhone: setting a passcode turns on data protection (encryption) automatically. Check **Settings → Face ID & Passcode** (or **Touch ID & Passcode**); at the bottom it should say “Data protection is enabled”.","Android: most phones from recent years encrypt by default once a screen lock is set. Check **Settings → Security** (or **Security & privacy**; names vary by maker) and set a PIN, pattern or password."]}},
      {t:"Draft a one-page data management plan", how:["Use the six questions in the lesson for an imaginary study (for example, a survey of 100 people about cycling to work).","Answer each in two or three sentences.","Optional: create a free account on DMPonline or DMPTool and look at a funder template to compare."], write:"Data… Documentation… Ethics and law… Storage and security… Sharing and license… Responsibilities…"}
-   ], proof:"An invented record rewritten as pseudonymized and anonymized, confirmation that your device is encrypted (or that you’ll use secure storage instead), and a short data management plan."},
+   ], proof:"An invented record rewritten two ways (pseudonymized and anonymized). Confirmation that your device is encrypted, or that you will use secure storage instead. A short data management plan."},
    read:[
      {book:"bhatt", where:"Chapter 16, “Research Ethics”", note:"See its sections on anonymity and confidentiality. Written before the GDPR, so use this lesson for current definitions."},
      {book:"soc", where:"Chapter 2, Section 2.3 “Ethical Concerns” (on LibreTexts: 2.4)", note:"Background reading on confidentiality."}
@@ -432,12 +432,12 @@ ICA.addUnit({
      "Define fabrication, falsification and plagiarism, and tell misconduct from honest error",
      "Recognize questionable research practices, including p-hacking, HARKing and selective reporting",
      "Explain how preregistration and registered reports protect against them",
-     "Apply authorship criteria, write a CRediT contribution statement and disclose conflicts of interest"
+     "Apply authorship criteria. Write a CRediT contribution statement. Disclose conflicts of interest"
    ],
    learn:[
     {h:"Integrity: honesty in how research is done", body:[
-      {lead:"Ethics protects participants; integrity protects the research record that everyone else relies on."},
-      "A nurse changing practice, a government setting policy, and the next researcher building on a result all assume the work was done and reported honestly. Europe’s code of conduct for research integrity (ALLEA, revised 2023) rests on four principles: **reliability** (quality of design, method and analysis), **honesty** (transparent, fair and complete reporting), **respect** (for colleagues, participants, society and the environment) and **accountability** (from idea to publication).",
+      {lead:"Ethics protects participants. Integrity protects the research record that everyone else depends on."},
+      "A nurse who changes practice, a government that sets policy, and the next researcher who builds on a result all assume the work was done and reported honestly. Europe’s code of conduct for research integrity (ALLEA, revised 2023) has four principles. **Reliability** means quality of design, method and analysis. **Honesty** means open, fair and complete reporting. **Respect** is for colleagues, participants, society and the environment. **Accountability** applies from the first idea to publication.",
       "Problems fall on a spectrum, from responsible practice through gray-zone shortcuts to serious misconduct:",
       {table:[
         ["Zone","Examples"],
@@ -450,40 +450,40 @@ ICA.addUnit({
       "**[[research-misconduct|Research misconduct]]** is usually defined as **FFP**. The US Office of Research Integrity (ORI) uses these definitions:",
       {list:[
         "**[[fabrication|Fabrication]]:** making up data or results and recording or reporting them.",
-        "**[[falsification|Falsification]]:** manipulating research materials, equipment or processes, or changing or omitting data or results, so the research isn’t accurately represented. Editing an image to hide a band, or secretly deleting inconvenient participants, are examples.",
-        "**[[plagiarism-term|Plagiarism]]:** using another person’s ideas, processes, results or words without giving appropriate credit (Unit 4 covers this in depth: {{plagiarism}})."
+        "**[[falsification|Falsification]]:** changing research materials, equipment or processes, or changing or leaving out data or results, so that the research is not accurately represented. Two examples are editing an image to hide a band and secretly deleting inconvenient participants.",
+        "**[[plagiarism-term|Plagiarism]]:** using another person’s ideas, processes, results or words without giving proper credit (Unit 4 covers this in depth: {{plagiarism}})."
       ]},
-      "Note that research misconduct **does not include honest error or differences of opinion**. A coding mistake you discover and correct, or an interpretation colleagues disagree with, isn’t misconduct. Correcting the record openly, through a correction or, for serious errors, a [[retraction]], is what honest researchers do.",
+      "Research misconduct **does not include honest error or differences of opinion**. A coding mistake that you find and correct is not misconduct. Neither is an interpretation that colleagues disagree with. Honest researchers correct the record openly, with a correction or, for serious errors, a [[retraction]].",
       {tip:"Keep raw data, analysis code and a dated log of decisions. They protect you if anyone questions your work, and they make honest mistakes easy to find and fix."}
     ]},
     {h:"The gray zone: p-hacking and HARKing", body:[
-      "**Questionable research practices** aren’t always deliberate. They often come from pressure to publish “positive” findings plus the many small choices any analysis involves. Statisticians call this the **garden of forking paths**: each choice is defensible on its own, but choosing after seeing the data inflates false positives.",
+      "**Questionable research practices** aren’t always deliberate. They often come from pressure to publish “positive” findings, together with the many small choices that any analysis involves. Statisticians call this the **garden of forking paths**. Each choice is reasonable on its own. But if you choose after seeing the data, you get more false positives than you should.",
       {fig:'<svg viewBox="0 0 340 420"><defs><marker id="ar4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><rect class="d-lup" x="95" y="8" width="150" height="40" rx="10" stroke-width="1.5"/><text x="170" y="33" text-anchor="middle">One dataset</text><path class="d-ink" d="M170 48 V 64 M50 64 H 290 M50 64 V 82 M130 64 V 82 M210 64 V 82 M290 64 V 82" stroke-width="2"/><rect class="d-panel" x="14" y="84" width="72" height="56" rx="8" stroke-width="1"/><text class="s" x="50" y="106" text-anchor="middle">drop</text><text class="s" x="50" y="124" text-anchor="middle">outliers?</text><rect class="d-panel" x="94" y="84" width="72" height="56" rx="8" stroke-width="1"/><text class="s" x="130" y="106" text-anchor="middle">which</text><text class="s" x="130" y="124" text-anchor="middle">outcome?</text><rect class="d-panel" x="174" y="84" width="72" height="56" rx="8" stroke-width="1"/><text class="s" x="210" y="106" text-anchor="middle">add a</text><text class="s" x="210" y="124" text-anchor="middle">control?</text><rect class="d-panel" x="254" y="84" width="72" height="56" rx="8" stroke-width="1"/><text class="s" x="290" y="106" text-anchor="middle">stop</text><text class="s" x="290" y="124" text-anchor="middle">early?</text><path class="d-ink" d="M50 140 V 160 M130 140 V 160 M210 140 V 160 M290 140 V 160" stroke-width="2"/><rect class="d-soft" x="14" y="162" width="72" height="34" rx="8" stroke-width="1.5"/><text x="50" y="184" text-anchor="middle">p=.31</text><rect class="d-soft" x="94" y="162" width="72" height="34" rx="8" stroke-width="1.5"/><text x="130" y="184" text-anchor="middle">p=.12</text><rect class="d-rose" x="174" y="162" width="72" height="34" rx="8" stroke-width="2.5"/><text x="210" y="184" text-anchor="middle">p=.04</text><rect class="d-soft" x="254" y="162" width="72" height="34" rx="8" stroke-width="1.5"/><text x="290" y="184" text-anchor="middle">p=.58</text><path class="d-ink" d="M210 196 V 222" stroke-width="2" marker-end="url(#ar4)"/><rect class="d-rose" x="30" y="226" width="280" height="56" rx="10" stroke-width="1.5"/><text x="170" y="249" text-anchor="middle">Only p = .04 is reported</text><text class="s" x="170" y="269" text-anchor="middle">a chance result looks like a discovery</text><rect class="d-sage" x="10" y="302" width="320" height="110" rx="12" stroke-width="1.5"/><text x="170" y="326" text-anchor="middle">Preregistration</text><text class="s" x="170" y="348" text-anchor="middle">choose the path before seeing the data,</text><text class="s" x="170" y="366" text-anchor="middle">time-stamp the plan, report every test,</text><text class="s" x="170" y="384" text-anchor="middle">and label any extra analysis</text><text class="s" x="170" y="402" text-anchor="middle">as exploratory</text></svg>', alt:"One dataset branches into four analysis choices: drop outliers, which outcome, add a control variable, or stop data collection early. They give p values of .31, .12, .04 and .58. Only the p = .04 result is reported, so a chance result looks like a discovery. Below, a box labeled Preregistration says: choose the path before seeing the data, time-stamp the plan, report every test, and label any extra analysis as exploratory.", cap:"Each choice can be reasonable. The problem is choosing after seeing which one “works”, then reporting only that one. (Invented p-values.)"},
       {list:[
-        "**[[p-hacking|P-hacking]]:** trying analyses (outcomes, exclusions, control variables, when to stop collecting data) until a result crosses p < 0.05, then reporting it as if it had been the plan. Simmons, Nelson and Simonsohn showed in 2011 how a few such flexible choices can make false positives far more likely than the nominal 5%.",
-        "**[[harking|HARKing]]** (“Hypothesizing After the Results are Known”), named by Norbert Kerr in 1998: presenting a hypothesis invented after seeing the results as if it had been predicted in advance.",
+        "**[[p-hacking|P-hacking]]:** trying analyses (outcomes, exclusions, control variables, when to stop collecting data) until a result passes p < 0.05, then reporting it as if it had been the plan. In 2011 Simmons, Nelson and Simonsohn showed that a few such flexible choices can make false positives far more likely than the stated 5%.",
+        "**[[harking|HARKing]]** (“Hypothesizing After the Results are Known”) was named by Norbert Kerr in 1998. It means presenting a hypothesis that you invented after seeing the results as if you had predicted it in advance.",
         "**Selective reporting:** publishing only the studies, outcomes or subgroups that “worked”. Across a field this creates **[[publication-bias|publication bias]]**: the literature looks more certain than the evidence is.",
-        "Others: splitting one study into many small papers (“salami slicing”), citing selectively, and misusing statistics to suggest significance."
+        "Others: splitting one study into many small papers (“salami slicing”), citing only some sources, and misusing statistics to suggest significance."
       ]},
       "Exploring data isn’t wrong. Exploration is how new ideas start. The problem is **presenting** exploration as confirmation. Label exploratory findings clearly and treat them as hypotheses for the next study.",
       {h:"Common misconceptions"},
       {list:[
-        "“If p < 0.05, the finding is real.” A [[p-value]] doesn’t tell you the probability that a hypothesis is true, and a “significant” result is much easier to get by chance when many analyses were tried (see {{reading-results|Unit 3 on reading results}}).",
+        "“If p < 0.05, the finding is real.” A [[p-value]] doesn’t tell you the probability that a hypothesis is true. A “significant” result is also much easier to get by chance when many analyses were tried (see {{reading-results|Unit 3 on reading results}}).",
         "“Only fraudsters cause false findings.” Honest researchers making many small, flexible choices can produce misleading results without intending to.",
         "“Null results are failures.” A well-designed study that finds no effect tells everyone something useful."
       ]}
     ]},
     {h:"Preregistration and registered reports", body:[
-      "**[[preregistration|Preregistration]]** means writing your hypotheses, design, sample size and analysis plan, and time-stamping them in a public registry **before** collecting or analyzing the data. Later, readers can compare the plan with the paper. Changes are allowed, but must be reported and explained.",
+      "**[[preregistration|Preregistration]]** means writing down your hypotheses, design, sample size and analysis plan. You time-stamp them in a public registry **before** you collect or analyze the data. Later, readers can compare the plan with the paper. You may make changes, but you must report and explain them.",
       {list:[
-        "Clinical trials: registration before enrolling the first participant is expected internationally, for example on ClinicalTrials.gov or registries in the WHO’s International Clinical Trials Registry Platform; major medical journals require it.",
+        "Clinical trials: you are expected to register a trial before you enroll the first participant. This is the international norm. Examples are ClinicalTrials.gov and the registries in the WHO’s International Clinical Trials Registry Platform. Major medical journals require it.",
         "Other fields: free platforms such as OSF Registries and AsPredicted.",
         "Systematic reviews: [[review-protocol|protocols]] are often registered too (see {{systematic-reviews|Unit 5}})."
       ]},
       "A **[[registered-report|registered report]]** goes further. A journal peer-reviews the question and methods **before** the data exist (Stage 1). If they’re sound, it gives **in-principle acceptance**: a promise to publish whatever the results, provided the authors follow the plan. Stage 2 reviews the finished paper and checks the plan was followed, not whether the results are exciting. That removes the reward for p-hacking and helps null results get published."
     ]},
     {h:"Authorship, CRediT and conflicts of interest", body:[
-      "**[[authorship|Authorship]]** is credit and responsibility. The International Committee of Medical Journal Editors (ICMJE) recommends that each author meets **all four** criteria:",
+      "**[[authorship|Authorship]]** means credit and responsibility. The International Committee of Medical Journal Editors (ICMJE) recommends that each author meets **all four** criteria:",
       {ol:[
         "Substantial contributions to the conception or design of the work, or to acquiring, analyzing or interpreting data;",
         "Drafting the work or revising it critically for important intellectual content;",
@@ -491,10 +491,10 @@ ICA.addUnit({
         "Agreement to be accountable for all aspects of the work."
       ]},
       "People who helped but don’t meet all four (a technician, a translator, someone who gave advice) belong in the **acknowledgments**, with their permission. Europe’s integrity code sets out similar expectations. Two problems to avoid: **gift (guest) authorship**, adding someone who didn’t contribute (a senior colleague, a friend), and **ghost authorship**, leaving out someone who did substantial work. Author order conventions vary: many sciences put the main contributor first and the senior author last; some fields, such as economics and mathematics, often list authors alphabetically. Agree on order early and write it down.",
-      "**[[credit-taxonomy|CRediT]]** (Contributor Roles Taxonomy), now the US standard ANSI/NISO Z39.104-2022, describes **14 roles** so readers see who did what: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Software, Supervision, Validation, Visualization, Writing – original draft, and Writing – review & editing. Many journals ask for a CRediT statement.",
+      "**[[credit-taxonomy|CRediT]]** (Contributor Roles Taxonomy) is now the US standard ANSI/NISO Z39.104-2022. It lists **14 roles**, so readers can see who did what: Conceptualization, Data curation, Formal analysis, Funding acquisition, Investigation, Methodology, Project administration, Resources, Software, Supervision, Validation, Visualization, Writing – original draft, and Writing – review & editing. Many journals ask for a CRediT statement.",
       {tip:"Agree authorship and roles at the start of a project, write the agreement down, and revisit it if people’s contributions change. Most authorship disputes come from assumptions nobody said aloud."},
       {ex:"Author contributions (CRediT): Priya Nair: Conceptualization, Methodology, Writing – original draft. Kofi Mensah: Investigation, Data curation. Hana Sato: Formal analysis, Visualization, Writing – review & editing. Ana Ruiz: Supervision, Funding acquisition, Writing – review & editing.", label:"Worked example (invented team)"},
-      "A **[[conflict-of-interest|conflict of interest]]** is any interest that could affect, or look as though it affects, your judgment: funding from a company whose product you test, shares, consulting fees, patents, but also personal relationships or rivalries. Having one isn’t wrong; **hiding** it is. Journals ask authors (and reviewers) to declare them, often on a standard form such as the ICMJE’s."
+      "A **[[conflict-of-interest|conflict of interest]]** is any interest that could affect your judgment, or look as if it does. Examples are funding from a company whose product you test, shares, consulting fees and patents. Personal relationships or rivalries also count. Having a conflict of interest isn’t wrong. **Hiding** it is. Journals ask authors (and reviewers) to declare conflicts, often on a standard form such as the ICMJE’s."
     ]}
    ],
    try:[
@@ -545,10 +545,10 @@ ICA.addUnit({
     {id:"t4u9-l4-x7", type:"explain", q:"Explain how trying several analyses and reporting only the one with p < 0.05 can make a chance result look like a discovery, and how preregistration helps prevent this.", size:"3–4 sentences", hint:"Think about the garden of forking paths.", model:"Every analysis involves choices, such as which outcome to use, whether to drop outliers or when to stop collecting data. Each is defensible, but if you try many and report only the one that crosses p < 0.05, you greatly raise the chance of a false positive: that’s p-hacking. Preregistration means writing down and time-stamping your hypotheses and analysis plan before seeing the data, so readers can compare the plan with the paper, and any extra analyses must be labeled as exploratory.", points:["Describes making several analysis choices after seeing the data", "Says reporting only the significant one inflates false positives", "Defines preregistration as a time-stamped plan made before seeing the data", "Says it lets readers compare plan and paper or forces exploratory analyses to be labeled"]}
    ],
    apply:{intro:"These tasks use invented or your own past work. None involves collecting data.", tasks:[
-     {t:"Write a short preregistration (don’t submit it)", how:["Pick an imaginary study: for example, does a reminder text increase library book returns?","Answer: Have data been collected yet? What is the main question and hypothesis? What is the key outcome and how is it measured? What groups or conditions? Exactly which analysis? What are the rules for excluding data? How many participants, and why?","Short templates such as AsPredicted’s ask questions like these; compare yours if you like."], write:"Hypothesis… Outcome measure… Conditions… Planned analysis… Exclusion rules… Sample size and why…"},
+     {t:"Write a short preregistration (don’t submit it)", how:["Pick an imaginary study. For example: does a reminder text increase library book returns?","Answer: Have data been collected yet? What is the main question and hypothesis? What is the key outcome and how is it measured? What groups or conditions? Exactly which analysis? What are the rules for excluding data? How many participants, and why?","Short templates such as AsPredicted’s ask questions like these; compare yours if you like."], write:"Hypothesis… Outcome measure… Conditions… Planned analysis… Exclusion rules… Sample size and why…"},
      {t:"Write a CRediT statement", how:["Think of a group project you have done (at school, work or in a community group), or invent a team of four.","List each person and assign CRediT roles from the 14.","Note anyone who should be acknowledged rather than listed as an author, and why."], write:"Person 1: roles… Person 2… Acknowledged: … because…"},
      {t:"Read a real conflict-of-interest statement", how:["Open any open-access research article in a field you care about (for example, through DOAJ or PubMed Central).","Find its funding, conflict-of-interest and author contribution sections.","Note what was declared and whether it changes how you read the paper."], write:"Article… What was declared… Does it change how I read it?…"}
-   ], proof:"A short preregistration for an imaginary study, a CRediT statement for a real or invented team, and notes on one real article’s declarations."},
+   ], proof:"A short preregistration for an imaginary study. A CRediT statement for a real or invented team. Notes on the declarations in one real article."},
    read:[
      {book:"bhatt", where:"Chapter 16, “Research Ethics”", note:"See its sections on analysis and reporting and on professional codes of ethics."},
      {book:"acrl", where:"Frame “Information Has Value”", note:"Why credit and attribution matter in scholarship."}
@@ -580,18 +580,18 @@ ICA.addUnit({
     {h:"Why AI can’t be an author", body:[
       "In February 2023 the **Committee on Publication Ethics (COPE)**, whose guidance many journals follow, published a position statement on authorship and AI tools. Its points:",
       {list:[
-        "AI tools **cannot meet the requirements for authorship**, because they cannot take responsibility for the submitted work.",
-        "As non-legal entities, they can’t declare conflicts of interest or manage copyright and license agreements.",
-        "Authors who use AI tools in writing, in producing images or graphics, or in collecting or analyzing data must **disclose** how and which tool they used, in the methods or a similar section.",
+        "AI tools **cannot meet the requirements for authorship**. They cannot take responsibility for the submitted work.",
+        "They are not legal entities. So they can’t declare conflicts of interest or manage copyright and license agreements.",
+        "Authors may use AI tools for writing, for making images or graphics, or for collecting or analyzing data. If so, they must **disclose** which tool they used and how. This goes in the methods or a similar section.",
         "Authors are **fully responsible** for the content of their manuscript, including the parts an AI tool produced."
       ]},
-      "The **ICMJE Recommendations** (updated since 2023 to cover AI) say much the same: chatbots should not be listed as authors, because they can’t be responsible for the accuracy, integrity and originality of the work; authors should say at submission whether and how they used AI-assisted technologies (for example, writing assistance in the acknowledgments, and AI used for data collection, analysis or figures in the methods); and authors should not cite AI as an author.",
+      "The **ICMJE Recommendations** (updated since 2023 to cover AI) say much the same. Chatbots should not be listed as authors, because they can’t be responsible for the accuracy, integrity and originality of the work. Authors should say at submission whether and how they used AI-assisted technologies. Writing help goes in the acknowledgments. AI used for data collection, analysis or figures goes in the methods. Authors should also not cite AI as an author.",
       "This links to the four authorship criteria from Lesson 4: an AI can’t give final approval or be accountable. It also explains why style guides tell you to cite an AI tool as software, not as a person.",
       {lab:"cl-apa-ai", t:"Practice: cite an AI tool"}
     ]},
     {h:"Disclosing AI use", body:[
-      "[[ai-disclosure|Disclosure]] means stating openly which AI tools you used, for what, and how you checked the output. Europe’s research integrity code (2023) lists **hiding the use of AI or automated tools** in creating content or drafting publications as an unacceptable practice, and asks reviewers to disclose their AI use too.",
-      "A good disclosure answers four questions: **which tool** (name, version or model if known, and dates used), **what for**, **how the output was checked**, and **who is responsible**.",
+      "[[ai-disclosure|Disclosure]] means saying openly which AI tools you used, what you used them for, and how you checked the output. Europe’s research integrity code (2023) lists **hiding the use of AI or automated tools** as an unacceptable practice. This applies to creating content or drafting publications. The code also asks reviewers to disclose their AI use.",
+      "A good disclosure answers four questions. **Which tool?** Give the name, the version or model if you know it, and the dates you used it. **What for?** **How was the output checked?** **Who is responsible?**",
       {ex:"AI use statement: We used ChatGPT (OpenAI; accessed March–April 2026) to suggest alternative search terms and to improve the grammar of the Introduction and Discussion. All suggested terms were tested in the databases, and all edits were reviewed by the authors. No AI tool was used to analyze data or generate references. The authors take full responsibility for the content.", label:"Worked example"},
       "Where it goes depends on the venue: a methods section, the acknowledgments, a dedicated declaration, or a cover letter. Some publishers don’t require disclosure for basic spelling and grammar checkers; others do. For coursework, your course or institution decides what is allowed at all; some assignments permit AI for brainstorming but not for writing.",
       {warn:"AI-text “detectors” are unreliable. Research has found they can wrongly flag human writing, particularly by people writing in a second language. Honest disclosure protects you far better than trying to avoid detection."}
@@ -612,16 +612,16 @@ ICA.addUnit({
       "Pasting text into an AI tool sends it to a company’s servers. Depending on the tool and settings, it may be stored, reviewed by staff or used to train future models. For research, that can break promises and laws:",
       {list:[
         "**Participant data.** Your consent forms and ethics approval said who would see the data. An external AI service probably wasn’t on that list, and personal data may cross borders, triggering data protection rules (Lesson 3).",
-        "**Peer review.** Manuscripts and grant applications under review are confidential. In June 2023 the US NIH told its peer reviewers they may not use generative AI tools to analyze or write critiques of applications (notice NOT-OD-23-149), and many journals tell reviewers not to upload manuscripts to AI tools.",
+        "**Peer review.** Manuscripts and grant applications under review are confidential. In June 2023 the US NIH told its peer reviewers not to use generative AI tools to analyze applications or write critiques of them (notice NOT-OD-23-149). Many journals also tell reviewers not to upload manuscripts to AI tools.",
         "**Unpublished work and others’ ideas.** A colleague’s draft, commercially sensitive data or a patentable idea shouldn’t go into a public tool."
       ]},
       {fig:'<svg viewBox="0 0 340 512"><defs><marker id="ar5" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 z"/></marker></defs><rect class="d-lup" x="6" y="6" width="328" height="52" rx="10" stroke-width="1.5"/><text x="170" y="27" text-anchor="middle">Personal, confidential or</text><text x="170" y="46" text-anchor="middle">unpublished material?</text><path class="d-ink" d="M60 58 V 120" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="68" y="94">then</text><path class="d-ink" d="M250 58 V 70" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="258" y="68">if yes</text><rect class="d-rose" x="150" y="72" width="184" height="40" rx="8" stroke-width="1.5"/><text class="s" x="242" y="89" text-anchor="middle">approved tool only,</text><text class="s" x="242" y="105" text-anchor="middle">or don’t upload</text><rect class="d-lup" x="6" y="124" width="328" height="52" rx="10" stroke-width="1.5"/><text x="170" y="145" text-anchor="middle">Do your course, institution,</text><text x="170" y="164" text-anchor="middle">funder and journal allow it?</text><path class="d-ink" d="M60 176 V 238" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="68" y="212">then</text><path class="d-ink" d="M250 176 V 188" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="258" y="186">if unsure</text><rect class="d-gold" x="150" y="190" width="184" height="40" rx="8" stroke-width="1.5"/><text class="s" x="242" y="207" text-anchor="middle">read the policy</text><text class="s" x="242" y="223" text-anchor="middle">or ask first</text><rect class="d-lup" x="6" y="242" width="328" height="52" rx="10" stroke-width="1.5"/><text x="170" y="263" text-anchor="middle">Will AI output shape the work?</text><text class="s" x="170" y="282" text-anchor="middle">text, code, analysis, images</text><path class="d-ink" d="M60 294 V 356" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="68" y="330">then</text><path class="d-ink" d="M250 294 V 306" stroke-width="2" marker-end="url(#ar5)"/><text class="s" x="258" y="304">if yes</text><rect class="d-sage" x="150" y="308" width="184" height="40" rx="8" stroke-width="1.5"/><text class="s" x="242" y="325" text-anchor="middle">disclose tool, purpose</text><text class="s" x="242" y="341" text-anchor="middle">and how you checked</text><rect class="d-lup" x="6" y="360" width="328" height="52" rx="10" stroke-width="1.5"/><text x="170" y="381" text-anchor="middle">Did it give facts or references?</text><text class="s" x="170" y="400" text-anchor="middle">→ verify each in the original</text><path class="d-ink" d="M170 412 V 438" stroke-width="2" marker-end="url(#ar5)"/><rect class="d-inkf" x="40" y="442" width="260" height="62" rx="12" stroke-width="1.5"/><rect class="d-panel" x="44" y="446" width="252" height="54" rx="10" stroke-width="1"/><text x="170" y="469" text-anchor="middle">You stay responsible</text><text class="s" x="170" y="489" text-anchor="middle">for everything in the work</text></svg>', alt:"A decision flow with four questions. One: is the material personal, confidential or unpublished? If yes, use an approved tool only, or don’t upload. Two: do your course, institution, funder and journal allow this use? If unsure, read the policy or ask first. Three: will AI output shape the work, such as text, code, analysis or images? If yes, disclose the tool, the purpose and how you checked. Four: did it give facts or references? Verify each in the original source. At the end: you stay responsible for everything in the work.", cap:"Four questions before and after using an AI tool in research. Policies differ, so the second question changes from place to place."},
       "Many universities now provide AI tools under contracts that keep data private and out of training. Those may be approved for some data. Even then, remove identifiers first and check with your ethics committee or data protection officer for anything sensitive."
     ]},
     {h:"Rules vary and change: how to keep up", body:[
-      "There is no single rulebook. Publishers began publishing AI policies in 2023 and have revised them since. Large publishers such as Elsevier, Springer Nature, Wiley and Taylor & Francis broadly agree that AI can’t be an author, that use must be disclosed and that reviewers must protect confidentiality. They differ on details: which exceptions they allow for AI-generated images (several ban them in research figures unless AI is the subject of the research), where disclosure goes, and which uses need disclosing at all. Funders, universities and individual courses add their own rules.",
+      "There is no single rulebook. Publishers began to publish AI policies in 2023 and have revised them since. Large publishers such as Elsevier, Springer Nature, Wiley and Taylor & Francis mostly agree on three points. AI can’t be an author. Use of AI must be disclosed. Reviewers must protect confidentiality. They differ on details. One is which exceptions they allow for AI-generated images (several ban them in research figures unless AI is the subject of the research). Others are where disclosure goes and which uses need disclosing at all. Funders, universities and individual courses add their own rules.",
       {list:[
-        "Before you start, find the policies that apply: your course or institution, your ethics approval, your funder, and the target journal’s author and reviewer guidelines.",
+        "Before you start, find the policies that apply to you. Look at your course or institution, your ethics approval, your funder, and the author and reviewer guidelines of the journal you aim for.",
         "Note the **date** you read each policy; they change.",
         "Keep a simple log of AI use: tool, date, purpose, what you kept. Writing the disclosure then takes minutes.",
         "When rules conflict, follow the strictest one that applies, and ask."
@@ -631,8 +631,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"t4u9-l5-x1", type:"mcq", q:"Why does COPE say an AI tool can’t be listed as an author?", options:[
-      {t:"It can’t take responsibility for the work, and as a non-legal entity can’t declare conflicts of interest or manage copyright.", ok:true, why:"Right. Authorship means accountability, which a tool can’t have."},
-      {t:"AI writing is always lower quality than human writing.", why:"COPE’s reasoning isn’t about quality. Even excellent AI text can’t carry responsibility."},
+      {t:"It can’t take responsibility for the work. It is not a legal entity, so it can’t declare conflicts of interest or manage copyright.", ok:true, why:"Right. Authorship means accountability, which a tool can’t have."},
+      {t:"AI writing is always lower quality than human writing.", why:"COPE’s reasoning isn’t about quality. Even excellent AI text can’t take responsibility."},
       {t:"Journals don’t want readers to know AI was used.", why:"The opposite: COPE requires authors to disclose AI use."},
       {t:"Only because AI tools don’t have an ORCID iD.", why:"Identifiers aren’t the reason. The core issue is responsibility and accountability."}
     ]},
@@ -642,7 +642,7 @@ ICA.addUnit({
       {t:"Full interview transcripts, to ask for themes", b:1, why:"Transcripts are personal and often sensitive data. His consent forms almost certainly didn’t cover a public AI service."},
       {t:"A manuscript he has been sent to peer review", b:1, why:"Manuscripts under review are confidential. Many journals and funders forbid uploading them to AI tools."},
       {t:"A participant’s email complaining about the study", b:1, why:"It is personal data and identifies the sender."},
-      {t:"A list of search terms he plans to use", b:0, why:"Nothing confidential, and AI can usefully suggest synonyms, which he then tests in the databases."}
+      {t:"A list of search terms he plans to use", b:0, why:"Nothing is confidential, and AI can suggest synonyms, which he then tests in the databases."}
     ]},
     {id:"t4u9-l5-x3", type:"order", q:"Put these steps for checking an AI-suggested reference in a sensible order.", items:[
       {t:"Search for the title yourself in a database or library catalog", why:"First, confirm independently that the work exists, without asking the AI again."},
@@ -663,10 +663,10 @@ ICA.addUnit({
       {t:"The AI tool is responsible for any errors in the sections it wrote.", flag:true, why:"Authors are fully responsible for everything in the manuscript, including AI-produced parts."}
     ]},
     {id:"t4u9-l5-x5", type:"mcq", q:"Hana is peer reviewing a manuscript for a journal. She is short of time and considers uploading it to an AI tool to summarize it. What should she do?", options:[
-      {t:"Not upload it unless the journal explicitly allows a specific tool.", ok:true, why:"Right. Manuscripts under review are confidential. If she can’t review in time, she should tell the editor. Confidentiality is a reviewer’s core duty; ICMJE guidance says confidentiality may rule out uploading a manuscript to AI tools unless the journal explicitly allows it, and many journals forbid it outright."},
-      {t:"Upload it, as long as she deletes the chat afterwards.", why:"Deleting the chat may not remove the data from the provider’s systems, and the upload itself already breaches confidentiality."},
+      {t:"Not upload it unless the journal explicitly allows a specific tool.", ok:true, why:"Right. Manuscripts under review are confidential. If she can’t review in time, she should tell the editor. Confidentiality is a reviewer’s main duty. ICMJE guidance says that confidentiality may rule out uploading a manuscript to AI tools unless the journal clearly allows it. Many journals forbid it."},
+      {t:"Upload it, as long as she deletes the chat afterwards.", why:"Deleting the chat may not remove the data from the provider’s systems. The upload itself already breaks confidentiality."},
       {t:"Upload it, but remove the authors’ names first.", why:"The unpublished content itself is confidential, not just the names."},
-      {t:"Ask a friend outside the field to read and summarize it for her instead.", why:"Sharing the manuscript with anyone not authorized by the editor also breaches confidentiality."}
+      {t:"Ask a friend outside the field to read and summarize it for her instead.", why:"Sharing the manuscript with anyone the editor has not authorized also breaks confidentiality."}
     ]},
     {id:"t4u9-l5-x6", type:"match", q:"Match each situation to the best first step.", pairs:[
       ["You aren’t sure if your course allows AI for drafting","Read the course or assignment policy, or ask the instructor","Coursework rules are set locally and vary a lot."],
@@ -677,10 +677,10 @@ ICA.addUnit({
     {id:"t4u9-l5-x7", type:"explain", q:"An AI tool drafted a large part of a paper’s discussion section. Explain why it still can’t be listed as an author, and what the human authors should do instead.", size:"3–4 sentences", hint:"What does authorship require besides writing words?", model:"Authorship means credit and responsibility. COPE and the ICMJE say AI tools can’t be authors because they can’t take responsibility for the work’s accuracy and integrity, give final approval, be accountable, or declare conflicts of interest. The human authors are fully responsible for everything in the paper, including the AI-drafted text, so they must check it carefully. They should disclose which tool they used, what for and how they checked the output, in the methods, acknowledgments or wherever the journal asks.", points:["Says authorship involves responsibility or accountability", "Says AI can’t take responsibility or meet the authorship criteria", "Says the human authors remain responsible for all content", "Says they should disclose the tool, purpose and how output was checked"]}
    ],
    apply:{intro:"Practice with public material and your own writing. Don’t paste anyone else’s personal or confidential information into an AI tool.", tasks:[
-     {t:"Find and compare two AI policies", how:["Find the AI policy of a journal or publisher in a field you care about (search the journal name plus “AI policy” or “generative AI”; it is usually in the author guidelines).","Find the AI guidance of a university or your own institution, or a funder in your country.","Note for each: can AI be an author? What must be disclosed, and where? What do reviewers have to avoid? The date of the policy."], write:"Policy 1 (name, date)… Authorship… Disclosure… Reviewers… Policy 2…"},
-     {t:"Test an AI tool’s references", how:["If you use an AI chatbot, ask it for three scholarly references on a topic you know (for example, “three peer-reviewed studies on urban trees and summer temperatures, with DOIs”).","Check each using the five-step routine from the lesson.","Record which were real and accurate, real but wrong in details, real but not supporting the claim, or not found."], write:"Reference 1: result… Reference 2… Reference 3… What I learned…"},
+     {t:"Find and compare two AI policies", how:["Find the AI policy of a journal or publisher in a field you care about. Search for the journal name plus “AI policy” or “generative AI”. It is usually in the author guidelines.","Find the AI guidance of a university or your own institution, or a funder in your country.","Note for each: can AI be an author? What must be disclosed, and where? What do reviewers have to avoid? The date of the policy."], write:"Policy 1 (name, date)… Authorship… Disclosure… Reviewers… Policy 2…"},
+     {t:"Test an AI tool’s references", how:["If you use an AI chatbot, ask it for three scholarly references on a topic you know. For example: “three peer-reviewed studies on urban trees and summer temperatures, with DOIs”.","Check each using the five-step routine from the lesson.","Record which were real and accurate, real but wrong in details, real but not supporting the claim, or not found."], write:"Reference 1: result… Reference 2… Reference 3… What I learned…"},
      {t:"Write your own AI-use statement", how:["Choose a piece of your own writing where you used, or might use, an AI tool.","Write a statement that names the tool and dates, the purpose, how you checked the output, and who is responsible.","Keep it as a template for future work."], write:"My AI-use statement…"}
-   ], proof:"Notes comparing two real AI policies with their dates, a record of checking three AI-suggested references, and an AI-use statement you can reuse."},
+   ], proof:"Notes comparing two real AI policies, with their dates. A record of how you checked three AI-suggested references. An AI-use statement that you can reuse."},
    read:[
      {book:"acrl", where:"Frame “Scholarship as Conversation”", note:"Why every claim needs a traceable source, which AI output can’t replace."},
      {book:"wlsf", where:"Background reading: Part III, Chapter 7 “Go Upstream to Find the Source”", note:"Written before generative AI, but its habit of tracing claims to the original is exactly what AI output needs."}
@@ -696,13 +696,13 @@ ICA.addUnit({
      {t:"Accountability", why:"Accountability is one of Europe’s research integrity principles, not one of the Belmont Report’s three."}]},
    {id:"t4u9-cp02", lesson:"t4u9-l2", level:1, q:"Farmers are given a 30-page consent form in formal legal English. Most of them read a different language, and they have ten minutes to sign. Which element of informed consent fails most clearly?", options:[
      {t:"Information", why:"The information is there, all 30 pages of it. The problem is whether people can understand it."},
-     {t:"Comprehension", ok:true, why:"Comprehension means information explained so people can actually understand it: in their language, at their reading level, with time to ask questions."},
+     {t:"Comprehension", ok:true, why:"Comprehension means information explained so that people can understand it: in their language, at their reading level, with time to ask questions."},
      {t:"Debriefing", why:"Debriefing comes after a study that used approved deception. It isn’t one of the three elements of consent."},
-     {t:"Confidentiality", why:"Confidentiality is about protecting what participants share, and nothing here concerns it. The three elements of consent are information, comprehension and voluntariness."}]},
+     {t:"Confidentiality", why:"Confidentiality is about protecting what participants share, and nothing here is about that. The three elements of consent are information, comprehension and voluntariness."}]},
    {id:"t4u9-cp03", lesson:"t4u9-l3", level:1, q:"An information sheet for face-to-face interviews says, “Your answers will be anonymous.” What is the accurate promise to make instead?", options:[
      {t:"“Anonymous” is correct, because names won’t be published", why:"Anonymity means nobody, not even the researcher, can link answers to a person. The interviewer has met each participant."},
      {t:"No promise is needed, because the data will be pseudonymized", why:"Participants should be told plainly how their information is protected. Pseudonymized data can still be re-linked with the key."},
-     {t:"“Confidential”: who said what is known but kept private", ok:true, why:"An interview study is almost never anonymous. Confidentiality is the honest promise, perhaps with an anonymized dataset later."},
+     {t:"“Confidential”: who said what is known but kept private", ok:true, why:"An interview study is almost never anonymous. Confidentiality is the promise you can truthfully make, perhaps with an anonymized dataset later."},
      {t:"“Anonymous” is correct if the recordings are encrypted", why:"Encryption protects data from outsiders. The people who hold the key can still see who is who."}]},
    {id:"t4u9-cp04", lesson:"t4u9-l3", level:2, q:"Kalani’s information sheet promised that nobody could be identified. Her results table includes one cell: **District D, aged 80+: 1 respondent, treated for depression**. What should she do?", options:[
      {t:"Nothing: the table contains no names", why:"Small cells are a classic weak point. Anyone who knows District D may know who the one person over 80 is."},
@@ -712,10 +712,10 @@ ICA.addUnit({
    {id:"t4u9-cp05", lesson:"t4u9-l4", level:2, q:"After seeing his results, a researcher secretly deletes three participants whose scores didn’t fit his hypothesis, and doesn’t report it. Under the US ORI definitions, what is this?", options:[
      {t:"Fabrication", why:"Fabrication means making up data or results. These participants were real; their data were removed."},
      {t:"Plagiarism", why:"Plagiarism is using others’ ideas, results or words without credit. Nothing here is taken from someone else."},
-     {t:"Falsification", ok:true, why:"Falsification includes changing or omitting data so the research isn’t accurately represented. Secretly deleting inconvenient participants is a textbook example."},
+     {t:"Falsification", ok:true, why:"Falsification includes changing or leaving out data so that the research is not accurately represented. Secretly deleting inconvenient participants is a standard example."},
      {t:"An honest mistake", why:"An honest error is a mistake you didn’t intend. Deleting data because it didn’t fit, and hiding it, is deliberate."}]},
    {id:"t4u9-cp06", lesson:"t4u9-l4", level:2, q:"A PhD student ran all the data analysis and drafted half of a paper, but her name is left off the author list. What is this problem called?", options:[
-     {t:"Ghost authorship", ok:true, why:"Ghost authorship leaves out someone who did substantial work. Her contributions meet the authorship criteria, if she also approves the final version and accepts accountability."},
+     {t:"Ghost authorship", ok:true, why:"Ghost authorship leaves out someone who did substantial work. Her contributions meet the authorship criteria if she also approves the final version and accepts accountability."},
      {t:"Guest authorship", why:"Gift (guest) authorship is the opposite: adding someone who didn’t contribute."},
      {t:"HARKing", why:"HARKing is presenting a hypothesis made up after the results as if it were predicted. It isn’t about who is credited."},
      {t:"Salami slicing", why:"Salami slicing is splitting one study into many small papers. It isn’t about who is listed."}]},
@@ -745,10 +745,10 @@ ICA.addUnit({
      {t:"It’s fine because p < 0.05 shows the effect is real", why:"When many analyses are tried, a “significant” result is much easier to get by chance."},
      {t:"It’s p-hacking; he must report all the analyses he tried", ok:true, why:"Exploration isn’t wrong; presenting it as confirmation is. He remains responsible for the analysis, whoever or whatever ran it."}]},
    {id:"t4u9-cp12", lesson:"t4u9-l1", level:2, q:"Kemal says: “The Nuremberg Code covers consent, so my interview study doesn’t need an ethics committee.” What is the best reply?", options:[
-     {t:"He is right: the Nuremberg Code covers all research with people", why:"The Code’s legal force was never firmly established, and it lacked independent review, which later standards added."},
+     {t:"He is right: the Nuremberg Code covers all research with people", why:"The Code was never clearly given legal force, and it had no independent review. Later standards added review."},
      {t:"Committee review is only needed for medical trials", why:"Ethics review covers research with people or their identifiable data in many fields, including interview studies."},
      {t:"He can start now and apply for approval later", why:"Never recruit or collect data before approval. Data collected without it may be unusable."},
-     {t:"Helsinki’s later revisions added independent committee review", ok:true, why:"The Declaration of Helsinki’s revisions added review by an independent research ethics committee before research begins. Written principles needed independent review behind them."}]},
+     {t:"Helsinki’s later revisions added independent committee review", ok:true, why:"The Declaration of Helsinki’s revisions added review by an independent research ethics committee before research begins. Written principles needed independent review to support them."}]},
   ],
   codex:[
    {id:"ethics-history", title:"How research ethics began", aka:["Nuremberg Code","Declaration of Helsinki","Tuskegee","Henrietta Lacks","HeLa"], tags:["research","ethics","history"],
@@ -1176,13 +1176,13 @@ ICA.addUnit({
    /* ---- Lesson 1 ---- */
    {id:"t4u9-q01", lesson:"t4u9-l1", level:1, q:"What does the first point of the Nuremberg Code (1947) say?", options:[
      {t:"The voluntary consent of the human subject is absolutely essential.", ok:true, why:"That is its first and longest point, written after the Doctors’ Trial."},
-     {t:"All research must be approved by a national government.", why:"The Code doesn’t require government approval; independent committee review came later through other documents."},
-     {t:"Research must always benefit the participant directly.", why:"The Code asks for results valuable to society, not necessarily direct benefit to each participant."},
+     {t:"All research must be approved by a national government.", why:"The Code doesn’t require government approval. Independent committee review came later, through other documents."},
+     {t:"Research must always benefit the participant directly.", why:"The Code asks for results that are valuable to society. They do not have to benefit each participant directly."},
      {t:"Results must be published within a year.", why:"Publication timing isn’t part of the Code."}
    ]},
    {id:"t4u9-q02", lesson:"t4u9-l1", level:1, q:"Which three principles does the Belmont Report (1979) set out?", options:[
      {t:"Respect for persons, beneficence, justice", ok:true, why:"These are the report’s three basic ethical principles."},
-     {t:"Consent, confidentiality, publication", why:"Consent is an application of respect for persons; confidentiality and publication aren’t the three principles."},
+     {t:"Consent, confidentiality, publication", why:"Consent is one way to apply respect for persons. Confidentiality and publication are not among the three principles."},
      {t:"Reliability, honesty, respect, accountability", why:"Those are the four principles of Europe’s research integrity code (ALLEA)."},
      {t:"Findable, accessible, interoperable, reusable", why:"Those are the FAIR principles for data."}
    ]},
@@ -1190,7 +1190,7 @@ ICA.addUnit({
      {t:"It ran until 1972, and the men weren’t offered penicillin even once it was standard.", ok:true, why:"Correct, according to the CDC’s history of the study. It ran from 1932 to 1972. Penicillin became the treatment of choice, but the men with syphilis were not offered it."},
      {t:"It ended in 1947 when the Nuremberg Code was published.", why:"It continued for 25 more years and ended only after a 1972 news report."},
      {t:"The men gave full informed consent at the start, but were later not told about penicillin.", why:"Informed consent was never collected; the men were told they were being treated for “bad blood”."},
-     {t:"It was a secret study that was never acknowledged by the US government.", why:"A federal panel judged it unjustified in 1972, there was a settlement in 1974, and a formal presidential apology in 1997."}
+     {t:"It was a secret study that was never acknowledged by the US government.", why:"A federal panel judged the study unjustified in 1972. There was a settlement in 1974 and a formal presidential apology in 1997."}
    ]},
    {id:"t4u9-q04", lesson:"t4u9-l1", level:1, q:"When was the Declaration of Helsinki most recently revised?", options:[
      {t:"October 2024", ok:true, why:"The World Medical Association adopted the latest revision at its General Assembly in Helsinki in October 2024."},
@@ -1199,7 +1199,7 @@ ICA.addUnit({
      {t:"It has never been revised.", why:"It has been revised many times."}
    ]},
    {id:"t4u9-q05", lesson:"t4u9-l1", level:3, q:"A health charity plans to test a new app only with people living in one low-income housing estate, because they are easy to reach and unlikely to complain. Which Belmont principle is most clearly at risk?", options:[
-     {t:"Justice", ok:true, why:"Choosing participants because they are convenient or less able to object, so one group carries the burden, is the injustice Belmont warns about."},
+     {t:"Justice", ok:true, why:"Belmont warns about this injustice: choosing participants because they are convenient or less able to object, so that one group carries the burden."},
      {t:"Respect for persons", why:"Consent could still be properly obtained. The core problem is who was selected and why."},
      {t:"Beneficence", why:"The app’s risks aren’t described. The described problem is the unfair choice of participants."},
      {t:"Accountability", why:"Accountability is an ALLEA integrity principle, not one of Belmont’s three."}
@@ -1218,7 +1218,7 @@ ICA.addUnit({
    ]},
    {id:"t4u9-q08", lesson:"t4u9-l1", level:3, q:"Ana is writing an essay on research ethics history. Which sentence is written most accurately and respectfully?", options:[
      {t:"“The US Public Health Service withheld effective treatment from Black men with syphilis in its study at Tuskegee, without their informed consent.”", ok:true, why:"It names the responsible institution, states the facts precisely and doesn’t blame the men."},
-     {t:"“The Tuskegee men agreed to be experimented on.”", why:"Inaccurate: they never gave informed consent. It also shifts responsibility onto those harmed."},
+     {t:"“The Tuskegee men agreed to be experimented on.”", why:"This is inaccurate, because they never gave informed consent. It also puts the responsibility on the people who were harmed."},
      {t:"“Tuskegee Institute ran an experiment on its own students.”", why:"Inaccurate: the US Public Health Service ran the study with the institute, and the participants were local men, not students."},
      {t:"“The Tuskegee subjects were a useful natural experiment.”", why:"This treats people who were harmed as material and ignores the ethical violation."}
    ]},
@@ -1260,7 +1260,7 @@ ICA.addUnit({
      {t:"The school head’s permission covers everyone.", why:"A school’s permission to access students doesn’t replace parents’ permission and children’s assent."}
    ]},
    {id:"t4u9-q15", lesson:"t4u9-l2", level:2, q:"Which statement about vulnerability in research is most accurate?", options:[
-     {t:"It often depends on the situation as well as on who the person is.", ok:true, why:"For example, a dependent relationship or a crisis. Guidelines such as India’s ICMR list situational vulnerability alongside legal status and health conditions."},
+     {t:"It often depends on the situation as well as on who the person is.", ok:true, why:"For example, a dependent relationship or a crisis. Guidelines such as India’s ICMR list vulnerability from the situation next to legal status and health conditions."},
      {t:"Vulnerable people should always be excluded from research to protect them.", why:"Exclusion means they miss out on evidence about their own needs; safeguards are preferred."},
      {t:"Only children can be vulnerable.", why:"Adults in many situations can be vulnerable too."},
      {t:"Vulnerability is decided by the participant’s age alone.", why:"Age is one factor among many."}
@@ -1280,7 +1280,7 @@ ICA.addUnit({
    ]},
    {id:"t4u9-q18", lesson:"t4u9-l3", level:2, q:"A researcher replaces names with codes and keeps the code list on a separate encrypted drive. Under the GDPR, the coded data are…", options:[
      {t:"Pseudonymized, and still personal data", ok:true, why:"A key exists that can re-link the data, so Recital 26 treats it as personal data."},
-     {t:"Anonymous, so the GDPR no longer applies", why:"Data are anonymous only if no one can reasonably re-identify people; here a key exists."},
+     {t:"Anonymous, so the GDPR no longer applies", why:"Data are anonymous only if no one can reasonably re-identify people. Here a key exists."},
      {t:"Special category data", why:"Special category depends on content such as health or religion, not on coding."},
      {t:"Not data at all", why:"The coded records are still information about people."}
    ]},
@@ -1309,7 +1309,7 @@ ICA.addUnit({
      {t:"FAIR means data are anonymized.", why:"FAIR is about findability and reuse, not identifiability."}
    ]},
    {id:"t4u9-q23", lesson:"t4u9-l3", level:3, q:"Fatima plans to store interview recordings on her personal phone and a free file-sharing app until her project ends. What is the best advice?", options:[
-     {t:"Move them to secure institutional storage and set a deletion date.", ok:true, why:"Secure storage means access control and encryption; the deletion date goes in her data management plan. Integrity and confidentiality, and storage limitation, call for secure storage and planned deletion."},
+     {t:"Move them to secure institutional storage and set a deletion date.", ok:true, why:"Secure storage means access control and encryption. The deletion date goes in her data management plan. The GDPR principles of integrity and confidentiality, and of storage limitation, call for secure storage and planned deletion."},
      {t:"It’s fine if her phone has a passcode.", why:"A passcode helps, but a free sharing app and a personal phone may not meet her consent promises or institutional rules."},
      {t:"Email the files to herself for backup.", why:"Email copies spread sensitive data to more places, often unencrypted."},
      {t:"Delete the recordings immediately after each interview, before transcribing them.", why:"She may need them for transcription and checking; the point is secure storage and planned deletion."}
@@ -1334,10 +1334,10 @@ ICA.addUnit({
      {t:"A researcher copies paragraphs from another paper without credit.", why:"That is plagiarism."}
    ]},
    {id:"t4u9-q27", lesson:"t4u9-l4", level:3, q:"Tomás runs his analysis with and without outliers, with three different outcome measures and with two sets of control variables, then reports only the version with p = 0.03. What is this?", options:[
-     {t:"P-hacking: choosing the analysis to report because it was significant.", ok:true, why:"The other analyses are hidden. Choosing among many analyses by their results inflates false positives."},
+     {t:"P-hacking: choosing the analysis to report because it was significant.", ok:true, why:"The other analyses are hidden. If you choose among many analyses by their results, you get more false positives."},
      {t:"Good practice: he was thorough and checked his results in several ways.", why:"Trying alternatives is fine if all are reported; hiding them is the problem."},
      {t:"Fabrication.", why:"He didn’t invent data; this is a questionable practice, not fabrication."},
-     {t:"HARKing.", why:"HARKing is about presenting a post hoc hypothesis as predicted; this is about choosing analyses."}
+     {t:"HARKing.", why:"HARKing means presenting a post hoc hypothesis (one made after the results) as if it were predicted. This case is about choosing analyses."}
    ]},
    {id:"t4u9-q28", lesson:"t4u9-l4", level:1, q:"Who named HARKing, and when?", options:[
      {t:"Norbert Kerr, in 1998", ok:true, why:"Kerr’s paper “HARKing: Hypothesizing After the Results are Known” appeared in Personality and Social Psychology Review in 1998."},
@@ -1378,7 +1378,7 @@ ICA.addUnit({
    ]},
    {id:"t4u9-q34", lesson:"t4u9-l5", level:3, q:"Amara used an AI tool to improve the English of her methods section and to suggest code for a chart. What is the best course?", options:[
      {t:"Check the edits and test the code, then disclose both uses.", ok:true, why:"She stays responsible, checks the output, and is transparent about it. Follow the journal’s policy on disclosure."},
-     {t:"Say nothing, since the ideas are hers.", why:"Many policies require disclosure of AI assistance, and hiding it is listed as unacceptable in Europe’s integrity code."},
+     {t:"Say nothing, since the ideas are hers.", why:"Many policies require disclosure of AI help. Europe’s integrity code lists hiding it as unacceptable."},
      {t:"List the AI tool as a co-author.", why:"AI tools can’t be authors."},
      {t:"Cite the AI tool as the source of her methods and her chart.", why:"The methods are hers; AI use is disclosed, not cited as the source of the research."}
    ]},
@@ -1404,7 +1404,7 @@ ICA.addUnit({
      {t:"A reference produced by AI that doesn’t exist, has wrong details or doesn’t support the claim", ok:true, why:"That’s the definition used in this unit."},
      {t:"Any citation of an AI tool", why:"Citing an AI tool correctly isn’t a hallucination."},
      {t:"A citation to a retracted paper", why:"Retracted papers exist; citing them is a different problem."},
-     {t:"A citation with a typo in the page numbers", why:"A typo is a minor error; hallucination covers invented or unsupported references."}
+     {t:"A citation with a typo in the page numbers", why:"A typo is a minor error. Hallucination means invented or unsupported references."}
    ]},
    {id:"t4u9-q39", lesson:"t4u9-l5", level:2, q:"Which is the best AI-use statement?", options:[
      {t:"“We used [tool name] in March 2026 to edit grammar; we checked all edits and take responsibility.”", ok:true, why:"It names the tool, the date and the purpose, says how output was checked and who is responsible."},
@@ -1413,7 +1413,7 @@ ICA.addUnit({
      {t:"“No disclosure is needed because we didn’t copy and paste any text from [tool name] into the paper.”", why:"Disclosure depends on how the tool was used, not on copying."}
    ]},
    {id:"t4u9-q40", lesson:"t4u9-l5", level:3, q:"Sione finds that his journal allows AI for language editing, but his university’s ethics approval says transcripts may be stored only on university systems. He wants AI help to code the transcripts. What should he do?", options:[
-     {t:"Follow the stricter rule, which is his university’s ethics approval.", ok:true, why:"He should use only a university-approved tool covered by the approval, or ask the committee for an amendment first. When policies differ, the strictest applicable rule wins, and changes to data handling need approval."},
+     {t:"Follow the stricter rule, which is his university’s ethics approval.", ok:true, why:"He should use only a tool that the university has approved and that the ethics approval covers. Or he should first ask the committee for an amendment. When policies differ, the strictest rule that applies wins. Changes to data handling need approval."},
      {t:"Use any AI tool, because the journal allows AI.", why:"The journal’s rule is about language editing; it doesn’t override his ethics approval."},
      {t:"Paste the transcripts into any AI tool, but delete the chat history afterwards.", why:"That still sends data outside approved systems."},
      {t:"Stop using AI for anything, including language editing.", why:"That’s more than needed; he can still use AI where all applicable rules allow."}
