@@ -22,9 +22,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../shared/style.css?v=102">
+<link rel="stylesheet" href="../shared/style.css?v=103">
 <script src="../shared/catalog.js"></script>
-<script src="../shared/engine.js?v=102"></script>
+<script src="../shared/engine.js?v=103"></script>
 <style>
 /* The built-in reader: openly licensed books, reformatted for easy reading. One section per page. */
 .rd{max-width:40em;margin:0 auto;font-size:calc(1.08rem * var(--rz,1));line-height:1.7}
@@ -183,7 +183,7 @@ function contents(id){
   book(id).then(function(b){
     if (!b){ shelf(); return; } setTitle(b.title);
     app.innerHTML = '<div class="stack rd">'+backLink()+'<div><div class="eyebrow">'+esc(b.by)+'</div><h1>'+esc(b.title)+'</h1></div><div class="epubrow">'+epubLink(id, "btn")+'<span class="small muted">One file for your e-reader app, such as NeoReader on a Boox.</span></div>'+einkRow()+'<div class="toc">'+
-      b.toc.map(function(c){ return '<details><summary>'+chName(c)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
+      b.toc.map(function(c){ return '<details><summary>'+chName(c)+'</summary><ol>'+c.secs.map(function(s){ return '<li><a href="#'+esc(id)+'/'+esc(s[0])+'"><span class="num">'+esc(s[0].indexOf(".")>0 && c.label !== "" ? s[0] : "")+'</span>'+esc(s[1])+'</a></li>'; }).join("")+'</ol></details>'; }).join("")+'</div>'+credit(b)+'</div>';
   }).catch(function(){ app.innerHTML = '<p>That book isn’t available here.</p><p><a href="#">← All books</a></p>'; });
 }
 function tocIdx(b, cn){ for (var k = 0; k < b.toc.length; k++) if (b.toc[k].n === cn) return k; return -1; }
@@ -197,7 +197,7 @@ function printChapter(id, cn){
       '<div class="rtools"><a class="back small" href="#'+id+'/'+(secs[0] ? secs[0].n : cn)+'">← Back to reading</a><div class="rbtns">'+einkBtn()+'</div></div>'+
       '<div class="printrow noprint" style="margin-top:0"><button class="btn primary" data-print>🖨️ Print or save as PDF</button><span class="small muted">'+chLabel(c)+(secs.length > 1 ? ', all '+secs.length+' parts on one page' : '')+'. Choose “Save as PDF” in the print window to keep a copy.</span></div>'+
       '<div class="eyebrow">'+esc(b.title)+'</div><h1>'+chLabel(c)+'</h1>'+
-      secs.map(function(s){ return '<section class="chsec"><h2>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h2>'+(s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+'<p class="credit">Original: '+esc(s.src)+'</p></section>'; }).join("")+
+      secs.map(function(s){ return '<section class="chsec"><h2>'+(s.n.indexOf(".")>0 && c.label !== "" ? esc(s.n)+' ' : '')+esc(s.title)+'</h2>'+(s.goals ? '<div class="goals">'+s.goals+'</div>' : '')+s.html+'<p class="credit">Original: '+esc(s.src)+'</p></section>'; }).join("")+
       credit(b)+'</article>';
     window.scrollTo(0, 0);
   }).catch(function(){ app.innerHTML = '<p>That chapter isn’t available here.</p><p><a href="#">← All books</a></p>'; });
@@ -211,12 +211,12 @@ function page(id, num){
     var prevC = !prev && ti > 0 ? b.toc[ti-1] : null, nextC = !next && ti < b.toc.length - 1 ? b.toc[ti+1] : null;
     setTitle(s.title);
     var nav = '<nav class="rnav" aria-label="Pages">'+
-      (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? prev.n+" "+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+prevC.n+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
-      (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc(next.n+" "+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+nextC.n+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
+      (prev ? '<a href="#'+id+'/'+prev.n+'"><span>← Previous</span>'+esc(prev.n.indexOf(".")>0 ? (c.label === "" ? "" : prev.n+" ")+prev.title : "Introduction")+'</a>' : prevC ? '<a href="#'+id+'/'+prevC.n+'"><span>← Previous chapter</span>'+esc(prevC.title)+'</a>' : '<span></span>')+
+      (next ? '<a class="nx" href="#'+id+'/'+next.n+'"><span>Next →</span>'+esc((c.label === "" ? "" : next.n+" ")+next.title)+'</a>' : nextC ? '<a class="nx" href="#'+id+'/'+nextC.n+'"><span>Next chapter →</span>'+esc(nextC.title)+'</a>' : '<span></span>')+'</nav>';
     app.innerHTML = '<article class="rd">'+
       '<div class="rtools">'+backLink()+'<div class="rbtns">'+einkBtn()+'<div class="sz" role="group" aria-label="Text size"><button class="btn small ghost" data-sz="-1" aria-label="Smaller text">A−</button><button class="btn small ghost" data-sz="1" aria-label="Larger text">A+</button></div></div></div>'+
       '<div class="eyebrow"><a href="#'+esc(id)+'">'+esc(b.title)+'</a>'+(s.n.indexOf(".") > 0 ? ' · '+chLabel(c) : c.label === "" ? '' : ' · Chapter '+c.n)+'</div>'+
-      '<h1>'+(s.n.indexOf(".")>0 ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
+      '<h1>'+(s.n.indexOf(".")>0 && c.label !== "" ? esc(s.n)+' ' : '')+esc(s.title)+'</h1>'+
       (s.goals ? (s.goals.indexOf('<p class="by">') === 0 ? s.goals : '<div class="goals">'+s.goals+'</div>') : '')+s.html+
       '<div class="printrow"><button class="btn small" data-print>🖨️ Print this section</button>'+(secs.length > 1 ? '<a class="btn small" href="#'+id+'/print/'+cn+'">🖨️ Print the whole chapter</a>' : '')+'</div>'+nav+credit(b, s)+'</article>';
     var at = anchor && document.getElementById(anchor);
