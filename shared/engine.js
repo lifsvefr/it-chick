@@ -45,7 +45,7 @@ ICA.capstones = {};
 ICA.addCapstone = function(c){ ICA.capstones[c.track] = c; };
 ICA.loadAll = function(base, done, opt){
   ICA.base = base; opt = opt || {};
-  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/reader-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.concat(ICA.preview ? (window.ICA_CATALOG||{}).preview || [] : []).map(function(u){ return "data/"+u+".js"; }));
+  var files = ["data/tracks.js","data/books.js","data/audio-index.js","data/audio-listen.js","data/listen-credits.js","data/reader-index.js","data/capstones.js"].concat((window.ICA_CATALOG||{units:[]}).units.concat(ICA.preview ? (window.ICA_CATALOG||{}).preview || [] : []).map(function(u){ return "data/"+u+".js"; }));
   var total = files.length, n = 0, failed = [], finished = false, ui = null;
   /* a loading screen appears only if loading takes more than a moment */
   var showT = setTimeout(function(){ if (!finished) ui = ICA.loadingScreen(opt.pixel); upd(); }, 250);
@@ -543,7 +543,7 @@ ICA.topbar = function(title){
    ===================================================================== */
 var KIND = {mcq:"Choose", sort:"Sort", order:"Put in order", match:"Match", spot:"Spot it", number:"Work it out", type:"Type it"};
 /* English listening clips (data/audio-listen.js): a passage or exercise with `listen` gets a Listen button; `hearAfter` shows one once you've answered */
-function listenBtn(key, label){ return '<div class="row lrow"><button type="button" class="btn small" data-listen="'+ICA.esc(key)+'">'+(label || "▶ Listen")+'</button></div>'; }
+function listenBtn(key, label){ var c = (window.ICA_LISTEN_CREDIT||{})[key]; return '<div class="row lrow"><button type="button" class="btn small" data-listen="'+ICA.esc(key)+'">'+(label || "▶ Listen")+'</button>'+(c ? ' <span class="small muted lcredit">'+ICA.md(c)+'</span>' : '')+'</div>'; }
 document.addEventListener("click", function(e){ var b = e.target.closest && e.target.closest("[data-listen]"); if (!b) return; e.preventDefault(); if (ICA.say("listen", b.getAttribute("data-listen"), b) === false && ICA.toast) ICA.toast("That recording isn’t available yet."); });
 function head(ex){ return '<div class="kind">'+(KIND[ex.type]||"Try")+'</div><div class="q">'+ICA.md(ex.q)+'</div>'+(ex.listen ? listenBtn(ex.listen) : "")+(ex.hint ? '<div class="small muted">'+ICA.md(ex.hint)+'</div>' : ""); }
 function fbBox(cls, title, body){ return '<div class="fb '+cls+'" role="status"><b>'+title+'</b>'+(body||"")+'</div>'; }
