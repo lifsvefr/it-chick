@@ -1,13 +1,13 @@
 /* International Studies · Unit 17 · Environment and climate governance */
 ICA.addUnit({
   id:"e4u16", track:"e4", n:17, title:"Environment and climate governance", icon:"🌍",
-  blurb:"Environmental politics at seminar level: the ideas that frame it (commons, sustainable development, the Anthropocene, planetary boundaries, environmental justice); the UN climate regime from Rio to Paris and the IPCC; climate justice, finance, loss and damage and the 2025 ICJ advisory opinion; ozone, biodiversity, oceans and plastics; and the contested politics of the energy transition, with a method for analyzing a climate negotiation. Figures and treaty status as of November 2026.",
+  blurb:"This unit covers environmental politics at seminar level. It starts with the ideas that frame the field: the commons, sustainable development, the Anthropocene, planetary boundaries and environmental justice. It covers the UN climate regime from Rio to Paris and the IPCC. It covers climate justice, finance, loss and damage, and the 2025 ICJ advisory opinion. It covers ozone, biodiversity, oceans and plastics. It ends with the contested politics of the energy transition, and a method for analyzing a climate negotiation. Figures and treaty status are as of November 2026.",
   goals:[
-    "Use the commons literature (Hardin, Ostrom, polycentric governance) and the ideas of sustainable development, the Anthropocene, planetary boundaries and environmental justice accurately, with their critics",
+    "Use the commons literature (Hardin, Ostrom, polycentric governance) accurately. Use the ideas of sustainable development, the Anthropocene, planetary boundaries and environmental justice accurately too, with their critics",
     "Explain how the climate regime’s design changed from the UNFCCC and Kyoto to Copenhagen and Paris, and how the IPCC links science and policy",
     "Describe the main arguments about climate justice, the state of climate finance and loss and damage, and what the ICJ’s 2025 advisory opinion actually says",
-    "Compare the ozone, biodiversity, ocean and plastics regimes, and explain why some environmental treaties work better than others",
-    "Lay out the competing positions on the energy transition, critical minerals and green industrial policy neutrally, attributing each one",
+    "Compare the ozone, biodiversity, ocean and plastics regimes. Explain why some environmental treaties work better than others",
+    "Set out the competing positions on the energy transition, critical minerals and green industrial policy neutrally. Attribute each one",
     "Analyze a climate negotiation step by step and argue a position in a seminar, with a counter-argument"
   ],
   read:[
@@ -22,7 +22,7 @@ ICA.addUnit({
   {id:"e4u16-l1", title:"Ideas: commons, sustainability, the Anthropocene and justice", minutes:60,
    hook:{q:"Elinor Ostrom’s *Governing the Commons* (1990) showed that communities can manage shared resources for centuries. Alongside a Swiss Alpine village, which country’s mountain villages did she use as a leading example of long-lasting common land?", options:["Japan","Norway","Peru","Kenya"], answer:0, reveal:"**Japan.** Drawing on Margaret McKean’s research, Ostrom described the villages of Hirano, Nagaike and Yamanoka. Their households shared forests and meadows (*iriai* land) under detailed village rules for generations. Like Törbel in Switzerland, they showed that a commons need not end in tragedy. This lesson starts there, then turns to sustainable development, the Anthropocene, planetary boundaries and environmental justice."},
    goals:[
-     "Classify resources by rivalry and excludability, and separate open access from common property",
+     "Classify resources by rivalry and excludability. Separate open access from common property",
      "Explain Ostrom’s design principles and polycentric governance, and their limits at the global scale",
      "Trace the idea of sustainable development from Stockholm (1972) to Rio (1992), and compare weak and strong sustainability",
      "Describe the Anthropocene debate and the planetary boundaries framework as of 2026, with critiques",
@@ -46,8 +46,8 @@ ICA.addUnit({
     ]},
     {h:"Sustainable development: Stockholm to Rio", body:[
       "The 1972 UN Conference on the Human Environment in Stockholm created the UN Environment Programme (UNEP), based in Nairobi. Developing countries feared that environmental rules would block their growth. India’s prime minister Indira Gandhi asked the conference: “Are not poverty and need the greatest polluters?” The same year, *The Limits to Growth* (Meadows and colleagues, for the Club of Rome) used computer models to argue that exponential growth would hit physical limits. This was the start of the [[limits-to-growth|limits to growth]] debate.",
-      "The World Commission on Environment and Development, chaired by Norway’s Gro Harlem Brundtland, tried to join the two concerns. Its report *Our Common Future* (1987) defined [[sustainable-development|sustainable development]] as development “that meets the needs of the present without compromising the ability of future generations to meet their own needs”. Two ideas are built into it: priority to the needs of the world’s poor, and limits set by technology and social organization.",
-      "The 1992 Earth Summit in Rio de Janeiro turned this into texts: the climate and biodiversity conventions, Agenda 21 and the Rio Declaration. The Declaration’s Principle 7 states common but differentiated responsibilities, and Principle 15 the [[precautionary-principle|precautionary approach]]. Twenty years later, Rio+20 (2012) launched the process that produced the Sustainable Development Goals (see [[sustainable-development-goals]] and Unit 18).",
+      "The World Commission on Environment and Development was chaired by Norway’s Gro Harlem Brundtland. It tried to join the two concerns. Its report *Our Common Future* (1987) defined [[sustainable-development|sustainable development]] as development “that meets the needs of the present without compromising the ability of future generations to meet their own needs”. Two ideas are built into it. One is priority to the needs of the world’s poor. The other is limits set by technology and social organization.",
+      "The 1992 Earth Summit in Rio de Janeiro turned this into texts: the climate and biodiversity conventions, Agenda 21 and the Rio Declaration. The Declaration’s Principle 7 states common but differentiated responsibilities. Principle 15 states the [[precautionary-principle|precautionary approach]]. Twenty years later, Rio+20 (2012) launched the process that produced the Sustainable Development Goals (see [[sustainable-development-goals]] and Unit 18).",
       {table:[
         ["Position","Core claim","Associated with"],
         ["[[weak-sustainability|Weak sustainability]]","Natural capital can be replaced by human-made capital if total capital does not fall","Neoclassical environmental economics"],
@@ -55,7 +55,7 @@ ICA.addUnit({
         ["[[green-growth|Green growth]]","Growth can be decoupled from environmental harm","OECD *Towards Green Growth* (2011); South Korea’s 2008 strategy"],
         ["[[degrowth|Degrowth]]","Rich economies must shrink material use, and so output, by design","Tim Jackson (2009); Jason Hickel (2020)"]
       ]},
-      "Post-development critics add that “sustainable development” can carry one model of the good life worldwide (see {{post-development}} and [[buen-vivir]])."
+      "Post-development critics add that “sustainable development” can carry one model of the good life to the whole world (see {{post-development}} and [[buen-vivir]])."
     ]},
     {h:"The Anthropocene and planetary boundaries", body:[
       "In 2000 the atmospheric chemist Paul Crutzen and the biologist Eugene Stoermer proposed that Earth had entered the [[anthropocene|Anthropocene]]. In their view, this is an age in which humans are the main force changing the planet. A working group of geologists later proposed a formal epoch starting in the mid-20th century. In March 2024 the relevant stratigraphy body voted the proposal down. So the Anthropocene is **not** a formal unit of the geological time scale. The geologists’ own statement says the term will remain an invaluable descriptor of human impact.",
@@ -65,9 +65,9 @@ ICA.addUnit({
       "The framework is influential and contested. Critics say global averages hide local thresholds (a river basin can collapse while the global freshwater figure looks fine). They add that choosing where a boundary sits is a political judgment, and that “planetary management” can sideline the poor. Kate Raworth’s [[doughnut-economics|doughnut]] (2012 Oxfam paper; book 2017) adds an inner ring. This is a **social foundation** of needs such as food, water and housing, below which, she argues, no one should fall."
     ]},
     {h:"Environmental justice, from Warren County to the world", body:[
-      "The sociology primer covered [[environmental-racism|environmental racism]] and the US movement that began with protests in Warren County, North Carolina, in 1982 (see {{environmental-sociology}}). International studies widens the lens.",
+      "The sociology primer covered [[environmental-racism|environmental racism]]. It also covered the US movement that began with protests in Warren County, North Carolina, in 1982 (see {{environmental-sociology}}). International studies looks at a wider picture.",
       "Ramachandra Guha and Joan Martínez-Alier wrote *Varieties of Environmentalism* (1997), and Martínez-Alier wrote *The Environmentalism of the Poor* (2002). They argued that the poor often defend nature as a source of livelihood, not as wilderness or leisure. They called this the [[environmentalism-of-the-poor|environmentalism of the poor]]. Examples include the Chipko movement of village women hugging trees in the Indian Himalaya (from 1973). Another is the Ogoni campaign against oil pollution in Nigeria’s Niger Delta. Its leader, Ken Saro-Wiwa, was executed by the military government in 1995. Rob Nixon’s *Slow Violence and the Environmentalism of the Poor* (2011) named harms that unfold over years and so escape the news: [[slow-violence|slow violence]].",
-      "Japan offers a defining case. Minamata disease, mercury poisoning from a chemical factory’s wastewater, was officially identified in 1956; victims spent decades seeking recognition in court. The global treaty on mercury, adopted in 2013 at a conference in Kumamoto Prefecture, is named the Minamata Convention (in force 2017).",
+      "Japan offers a defining case. Minamata disease is mercury poisoning from a chemical factory’s wastewater. It was officially identified in 1956, and victims spent decades seeking recognition in court. The global treaty on mercury was adopted in 2013 at a conference in Kumamoto Prefecture. It is named the Minamata Convention (in force 2017).",
       "David Schlosberg’s *Defining Environmental Justice* (2007) gives a toolkit with three dimensions. They are **distribution** (who bears harms and benefits), **recognition** (whose identity and knowledge are respected) and **participation** (who has a say). [[environmental-justice|Environmental justice]] research uses all three. Unit 6 discussed [[indigenous-peoples|Indigenous peoples’]] rights, which touch all three."
     ]},
     {h:"Worked example: one mangrove coast, four lenses", body:[
@@ -105,10 +105,10 @@ ICA.addUnit({
       {t:"Rio+20 launches the process that leads to the Sustainable Development Goals", why:"2012: the SDGs followed in 2015."}
     ]},
     {id:"e4u16-l1-x5", type:"mcq", q:"A government argues: “Clearing this wetland is fine, because the timber revenue will be invested in schools, so the country’s total capital rises.” Which position is this, and who would object most strongly?", options:[
-      {t:"Weak sustainability; supporters of strong sustainability would object that wetland functions such as flood control have no full substitute", ok:true, why:"Right. Weak sustainability accepts swapping natural for human-made capital; strong sustainability says some natural capital is critical."},
+      {t:"Weak sustainability. Supporters of strong sustainability would object that wetland functions such as flood control have no full substitute", ok:true, why:"Right. Weak sustainability accepts swapping natural capital for human-made capital. Strong sustainability says some natural capital is critical."},
       {t:"Strong sustainability; degrowth scholars would agree", why:"Strong sustainability rejects this kind of substitution."},
       {t:"Degrowth; green growth advocates would object", why:"The argument is about substituting capital, not shrinking the economy."},
-      {t:"The precautionary principle; ecological economists would agree", why:"The precautionary principle points the other way: avoid serious, irreversible harm even under uncertainty."}
+      {t:"The precautionary principle; ecological economists would agree", why:"The precautionary principle points the other way. It says to avoid serious, irreversible harm even under uncertainty."}
     ]},
     {id:"e4u16-l1-x6", type:"spot", q:"A student summary of the Anthropocene and planetary boundaries. Tap each sentence that is **wrong**.", ask:"is wrong", parts:[
       {t:"Crutzen and Stoermer proposed the term “Anthropocene” in 2000.", flag:false, why:"Correct."},
@@ -125,7 +125,7 @@ ICA.addUnit({
       {t:"Toxic waste sites are concentrated in poorer districts", b:0, why:"Who bears the harm: distribution."},
       {t:"Officials dismissed fishers’ knowledge of the river as “anecdotal”", b:1, why:"Whose knowledge counts: recognition."},
       {t:"The hearing on the new mine was held in a language most villagers do not speak", b:2, why:"Who can take part in decisions: participation."},
-      {t:"Mercury victims waited decades to be officially acknowledged as patients", b:1, why:"Being recognized as harmed is a recognition issue (it also had distributional consequences)."},
+      {t:"Mercury victims waited decades to be officially acknowledged as patients", b:1, why:"Being recognized as harmed is a recognition issue. (It also had distributional consequences.)"},
       {t:"Most of a dam’s electricity goes to a distant city while upstream farmers lose land", b:0, why:"Benefits and burdens fall on different people: distribution."}
     ]},
     {id:"e4u16-l1-x8", type:"explain", q:"Hardin argued that shared resources end in tragedy. Explain why Ostrom and others disagreed, using the difference between open access and common property. Then say why her design principles are harder to apply to the atmosphere.", size:"3–5 sentences", hint:"Ask who could enter Hardin’s pasture, and who made the rules.", model:"Hardin’s pasture was open access: anyone could enter and no one made rules, so each herder’s extra animal imposed a cost on the others. Ciriacy-Wantrup and Bishop pointed out that historic commons were usually common property, owned and policed by a defined group. Ostrom studied long-lasting commons, from a Swiss village to Philippine irrigation societies, and found shared design principles, such as clear boundaries, users making the rules, monitoring and graduated sanctions. But those principles came from small groups with face-to-face monitoring, which the atmosphere lacks. So for climate she argued for polycentric governance rather than waiting for one global treaty.", points:["Defines open access: anyone may enter and no one makes rules", "Defines common property: a defined group owns and polices the resource", "Names some of Ostrom’s design principles", "Explains the scale problem: the atmosphere has no small group or clear boundary", "Mentions polycentric governance as her answer for climate"]}
@@ -160,7 +160,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e4u16-l2", title:"The climate regime: from Rio to Paris, and the IPCC", minutes:60,
-   hook:{q:"In the World Meteorological Organization’s consolidated analysis, which was the first calendar year in which the global average temperature was more than 1.5 °C above the 1850–1900 average?", options:["2016","2020","2024","No year has yet passed 1.5 °C"], answer:2, reveal:"**2024**, at about 1.55 °C (± 0.13 °C), the warmest year on record. But the Paris Agreement’s 1.5 °C goal refers to long-term warming averaged over about two decades. So one hot year does not by itself mean the goal is missed. This lesson explains how the climate regime was built, why its design changed, and how the IPCC turns science into texts governments approve."},
+   hook:{q:"The World Meteorological Organization published a consolidated analysis. In it, which was the first calendar year in which the global average temperature was more than 1.5 °C above the 1850–1900 average?", options:["2016","2020","2024","No year has yet passed 1.5 °C"], answer:2, reveal:"**2024**, at about 1.55 °C (± 0.13 °C), the warmest year on record. But the Paris Agreement’s 1.5 °C goal refers to long-term warming averaged over about two decades. So one hot year does not by itself mean the goal is missed. This lesson explains how the climate regime was built, why its design changed, and how the IPCC turns science into texts governments approve."},
    goals:[
      "Explain the UNFCCC’s objective, principles and annexes, and why the annex “firewall” mattered",
      "Compare Kyoto’s top-down targets with Paris’s bottom-up pledges, and judge Copenhagen fairly",
@@ -172,7 +172,7 @@ ICA.addUnit({
     {h:"A framework built for a hard problem", body:[
       {lead:"Cutting emissions costs each country now; the benefits are shared by all and arrive later. How do you design a treaty for that?"},
       "The primer set out the basics (see {{climate-politics}}). Scholars such as Scott Barrett (*Environment and Statecraft*, 2003) and David Victor (*Global Warming Gridlock*, 2011) argue that climate is close to the hardest kind of [[collective-action-problem|collective action problem]]. In their account, every economy emits, and the costs of cutting are concentrated and immediate. And, they note, no one can enforce a deal on sovereign states.",
-      "The [[unfccc|UN Framework Convention on Climate Change]] (1992; in force 1994) followed the **framework–protocol** model used for ozone. Under this model, parties agree on goals and institutions first and add commitments later. Its Article 2 objective is to stabilize greenhouse gas concentrations at a level that would prevent “dangerous anthropogenic interference with the climate system”. Article 3 sets out [[cbdr-rc|common but differentiated responsibilities and respective capabilities]] (CBDR-RC) and a precautionary approach.",
+      "The [[unfccc|UN Framework Convention on Climate Change]] (1992; in force 1994) followed the **framework–protocol** model used for ozone. Under this model, parties first agree on goals and institutions. They add commitments later. The Article 2 objective is to stabilize greenhouse gas concentrations at a level that would prevent “dangerous anthropogenic interference with the climate system”. Article 3 sets out [[cbdr-rc|common but differentiated responsibilities and respective capabilities]] (CBDR-RC) and a precautionary approach.",
       "The Convention also split the world. [[annex-i-parties|Annex I]] listed industrialized countries and economies in transition, expected to lead. Annex II, the richer subset, was to pay for developing countries’ efforts. Everyone else was “non-Annex I”. This binary, later called the **firewall**, shaped every negotiation for twenty years."
     ]},
     {h:"Kyoto: binding targets for some", body:[
@@ -185,7 +185,7 @@ ICA.addUnit({
       "Yet the Accord contained the seeds of Paris. It had a 2 °C goal and national pledges submitted by each country, including developing ones. It also set a goal for developed countries to mobilize 100 billion US dollars a year by 2020. Daniel Bodansky’s “The Copenhagen Climate Change Conference: A Postmortem” (*American Journal of International Law*, 2010) argued that it marked a shift from top-down targets to [[pledge-and-review|pledge and review]]. The Cancún Agreements (2010) brought its content into the formal process. The Durban Platform (2011) launched talks for a new agreement “applicable to all” by 2015."
     ]},
     {h:"Who sits at the table", body:[
-      "Almost 200 parties negotiate, mostly through coalitions that pool expertise and bargaining power (see {{climate-negotiating-coalitions}}):",
+      "Almost 200 parties negotiate. They mostly work through coalitions that pool expertise and bargaining power (see {{climate-negotiating-coalitions}}):",
       {table:[
         ["Coalition","Members (examples)","Typical priorities"],
         ["[[g77-and-china|G77 and China]]","More than 130 developing countries","Finance, CBDR-RC, development"],
@@ -233,7 +233,7 @@ ICA.addUnit({
    ],
    try:[
     {id:"e4u16-l2-x1", type:"match", q:"Match each text to its defining feature.", pairs:[
-      ["UNFCCC (1992)","Objective of avoiding dangerous interference with the climate system; annexes of countries","The framework convention set goals and institutions."],
+      ["UNFCCC (1992)","Objective of avoiding dangerous interference with the climate system. Annexes of countries","The framework convention set goals and institutions."],
       ["Kyoto Protocol (1997)","Binding emission targets for industrialized countries only","Annex B targets for 2008–2012."],
       ["Copenhagen Accord (2009)","Leaders’ text of which the COP only “took note”","Some parties objected, so it was not adopted by consensus."],
       ["Paris Agreement (2015)","Every party submits a nationally determined contribution every five years","The bottom-up design."],
@@ -265,7 +265,7 @@ ICA.addUnit({
       {v:160, tol:0, why:"That adds the two numbers; budgets are divided by the annual rate."}
     ]},
     {id:"e4u16-l2-x6", type:"mcq", q:"Mei is writing about why the IPCC could not agree its AR7 timeline. Which summary is accurate and neutral?", options:[
-      {t:"Many wanted reports by 2028; others, including India and Russia, wanted later ones, citing rigor", ok:true, why:"Right. Many developed and vulnerable countries wanted reports by 2028 to inform the second global stocktake; some governments, including Saudi Arabia, India and Russia, favored a later schedule, citing scientific rigor and inclusiveness. It gives both positions and reasons without endorsing either."},
+      {t:"Many wanted reports by 2028; others, including India and Russia, wanted later ones, citing rigor", ok:true, why:"Right. Many developed and vulnerable countries wanted reports by 2028 to inform the second global stocktake. Some governments favored a later schedule, citing scientific rigor and inclusiveness. They included Saudi Arabia, India and Russia. The answer gives both positions and reasons without endorsing either."},
       {t:"Scientists refused to write the reports on time", why:"The disagreement was among governments in the plenary, not a refusal by authors."},
       {t:"All governments agreed but the budget ran out", why:"Funding pressures exist, but the core problem was the lack of consensus on the timeline."},
       {t:"Oil-producing states blocked the reports because their governments reject the science of climate change", why:"That attributes motives rather than reporting stated positions; a neutral summary says what each side argues."}
@@ -288,7 +288,7 @@ ICA.addUnit({
     tasks:[
      {t:"Read one NDC", how:[
        "Open the UNFCCC’s NDC Registry and choose the latest NDC of a country outside your own region (for example Indonesia, Kenya, Chile, Viet Nam or Fiji).",
-       "Record: target type (absolute, intensity, below business-as-usual), base or reference year, target year, conditional and unconditional parts, sectors covered, adaptation section, finance needs.",
+       "Record these items: target type (absolute, intensity, below business-as-usual), base or reference year, target year, conditional and unconditional parts, sectors covered, adaptation section, finance needs.",
        "Write two sentences on how it reflects “different national circumstances”."
      ], write:"Country and date… Target type… Base year… Target year… Conditional part… Sectors… Adaptation… Finance needs… National circumstances…"},
      {t:"From science to summary", how:[
@@ -315,7 +315,7 @@ ICA.addUnit({
   {id:"e4u16-l3", title:"Climate justice, finance and the law", minutes:60,
    hook:{q:"On 23 July 2025 the International Court of Justice gave its advisory opinion on states’ obligations in respect of climate change. How did the judges divide on its main conclusions?", options:["They were unanimous","9 votes to 6","12 votes to 3","There was no vote: the Court declined to answer"], answer:0, reveal:"**Unanimous.** The request came from the UN General Assembly in 2023. Law students from Pacific island countries had begun a campaign for it in 2019, and Vanuatu’s government took it up. The opinion is not binding, but a unanimous statement of the law by the world court carries great weight. This lesson covers who should pay for climate change, how climate finance and loss and damage evolved, and what the Court actually said."},
    goals:[
-     "Distinguish historical, current, per-person and consumption-based views of responsibility, and the principles built on them",
+     "Distinguish four views of responsibility: historical, current, per-person and consumption-based. Distinguish the principles built on them",
      "Trace climate finance from the 100 billion dollar goal to the New Collective Quantified Goal and the COP30 outcome",
      "Explain how loss and damage moved from taboo to a fund, and the debate over compensation",
      "Describe the diplomacy of small island states, especially in the Pacific",
@@ -357,7 +357,7 @@ ICA.addUnit({
         "**NDCs are not a free choice.** Their content is not entirely at a party’s discretion. Each must reflect its highest possible ambition, and together they must be capable of meeting the temperature goal.",
         "**Custom binds everyone.** The [[no-harm-rule|duty to prevent significant harm]] to the environment applies to the climate system, as does a duty to cooperate. This binds states that are not parties to the climate treaties.",
         "**Other law matters.** UNCLOS and human rights law apply. The Court called a clean, healthy and sustainable environment essential to enjoying other human rights (see [[right-to-healthy-environment]]).",
-        "**Fossil fuels.** Failing to take appropriate action to protect the climate system may constitute an internationally wrongful act. This includes failures through fossil fuel production, consumption, exploration licenses or subsidies. The usual consequences would apply: cessation, guarantees of non-repetition and reparation.",
+        "**Fossil fuels.** Failing to take appropriate action to protect the climate system may be an internationally wrongful act. This includes failures through fossil fuel production, consumption, exploration licenses or subsidies. The usual consequences would apply: cessation, guarantees of non-repetition and reparation.",
         "**Statehood.** Once a state exists, losing territory to the sea would not necessarily end its existence ([[statehood-continuity|statehood continuity]])."
       ]},
       "What it did **not** do: it gave no binding judgment, named no state as responsible, and left causation for particular harms to future cases. Vanuatu and many vulnerable states called it a historic victory. Several large emitters had argued in the proceedings that the climate treaties are a special regime that displaces general rules. The Court did not accept that view. Scholars now debate how national courts and negotiators will use it. Regional courts are adding to the body of law. The Inter-American Court of Human Rights issued its own climate opinion in 2025 (see {{icj-in-practice}} for how the ICJ works).",
@@ -401,7 +401,7 @@ ICA.addUnit({
       " ",
       {t:"The Court found the United States and China responsible for climate damage.", flag:true, why:"Wrong. The Court named no state as responsible; it set out the law in general."},
       " ",
-      {t:"States outside the Paris Agreement are still bound by customary duties such as preventing significant environmental harm.", flag:false, why:"Correct: custom binds all states."}
+      {t:"States outside the Paris Agreement are still bound by customary duties. One example is preventing significant environmental harm.", flag:false, why:"Correct: custom binds all states."}
     ]},
     {id:"e4u16-l3-x6", type:"match", q:"Match each legal step to the body that took it.", pairs:[
       ["Advised in 2024 that greenhouse gas emissions are marine pollution under UNCLOS","ITLOS","Requested by the Commission of Small Island States."],
@@ -415,7 +415,7 @@ ICA.addUnit({
       {t:"Small island states emit a great deal themselves, so they should pay for their own losses", why:"Small island states’ emissions are tiny; this is inaccurate."},
       {t:"The ICJ banned compensation in 2025", why:"The Court said breaches can entail reparation; it did not ban compensation."}
     ]},
-    {id:"e4u16-l3-x8", type:"explain", q:"Explain why the question “Who caused climate change?” gets different answers depending on what you count. Link each way of counting to a principle of who should pay.", size:"3–5 sentences", hint:"There are four counts: cumulative, current annual, per person and consumption-based.", model:"Cumulative emissions since the industrial revolution point to the United States and Europe, because CO₂ stays in the air for centuries; this supports historical responsibility, or “polluter pays”. Current annual emissions point to China, the largest emitter today, which fits a view based on the ability to act now. Per person, emissions in many African and South Asian countries are a small fraction of those in North America or the Gulf. That count, like consumption-based accounts, which move emissions to the country that buys the goods, supports arguments from equality. Each government tends to prefer the count that favors it, so choosing a count is already a moral argument.", points:["Explains cumulative emissions and links them to historical responsibility or polluter pays", "Explains current annual emissions and who leads on them", "Explains per-person emissions and links them to equality", "Explains consumption-based accounting and links it to equality", "Says that choosing the count is itself a moral or political choice"]}
+    {id:"e4u16-l3-x8", type:"explain", q:"Explain why the question “Who caused climate change?” gets different answers depending on what you count. Link each way of counting to a principle of who should pay.", size:"3–5 sentences", hint:"There are four counts: cumulative, current annual, per person and consumption-based.", model:"Cumulative emissions since the industrial revolution point to the United States and Europe, because CO₂ stays in the air for centuries; this supports historical responsibility, or “polluter pays”. Current annual emissions point to China, the largest emitter today, which fits a view based on the ability to act now. Per person, emissions in many African and South Asian countries are a small fraction of those in North America or the Gulf. That count, like consumption-based accounts, which move emissions to the country that buys the goods, supports arguments from equality. Each government tends to prefer the count that favors it, so choosing a count is already a moral argument.", points:["Explains cumulative emissions. Links them to historical responsibility or polluter pays", "Explains current annual emissions and who leads on them", "Explains per-person emissions and links them to equality", "Explains consumption-based accounting and links it to equality", "Says that choosing the count is itself a moral or political choice"]}
    ],
    apply:{
     intro:"Work with primary legal and financial sources.",
@@ -426,7 +426,7 @@ ICA.addUnit({
        "Note one question the Court left open."
      ], write:"Finding 1… Finding 2… Finding 3… A question left open…"},
      {t:"Two positions on climate finance", how:[
-       "Find a statement on the NCQG or on loss and damage from a small island or least developed country, and one from a developed country or the EU (closing plenary speeches and press releases are good sources).",
+       "Find a statement on the NCQG or on loss and damage from a small island or least developed country. Also find one from a developed country or the EU. Closing plenary speeches and press releases are good sources.",
        "Summarize each in one neutral sentence beginning “X’s government argues that…”, with the date.",
        "List the words each uses that the other avoids (for example “compensation”, “solidarity”, “contributor base”)."
      ], write:"Statement 1, date, position… Statement 2, date, position… Words each uses…"},
@@ -449,8 +449,8 @@ ICA.addUnit({
   {id:"e4u16-l4", title:"Beyond climate: ozone, biodiversity, oceans and plastics", minutes:60,
    hook:{q:"The Montreal Protocol was built to protect the ozone layer. Its Kigali Amendment (2016) phases down HFCs, chemicals that do not harm ozone but are powerful greenhouse gases. How much warming by 2100 does the Protocol’s scientific panel estimate Kigali will avoid?", options:["None: it is only an ozone measure","About 0.3–0.5 °C","About 2 °C","About 0.01 °C"], answer:1, reveal:"**About 0.3–0.5 °C**, according to the Montreal Protocol’s Scientific Assessment Panel (2022 assessment, reported by WMO in January 2023). An ozone treaty has become one of the most effective climate measures. This lesson asks why the ozone regime worked so well, and compares it with the regimes for biodiversity, the oceans and plastics."},
    goals:[
-     "Explain why the ozone regime succeeded, using epistemic communities and an interest-based model",
-     "Describe the Convention on Biological Diversity and the Kunming-Montreal framework, including “30 by 30” and the 2026 global review",
+     "Explain why the ozone regime succeeded. Use epistemic communities and an interest-based model",
+     "Describe the Convention on Biological Diversity and the Kunming-Montreal framework. Include “30 by 30” and the 2026 global review",
      "Summarize the BBNJ Agreement’s status, fisheries rules and the deep-seabed debate as of 2026",
      "Describe the plastics treaty negotiations and the divisions within them, neutrally",
      "Compare regimes by legal form, finance and results"
@@ -471,12 +471,12 @@ ICA.addUnit({
       {ex:"**Task:** use Sprinz and Vaahtoranta’s model to predict three fictional countries’ positions in the plastics treaty talks.\n1. First I define the two axes for **this** problem, because the model is general: **vulnerability** = how much plastic pollution harms the country (coasts, fisheries, tourism, health); **abatement cost** = how costly it would be to limit production and harmful chemicals (size of its petrochemical industry and exports).\n2. Next I score each country.\n• Coralia, a small island state: plastic washes up on its reefs and beaches (high vulnerability); it makes almost no plastic (low cost). Predicted: **pusher**.\n• Petrovia, a large oil and petrochemical exporter with an inland capital: low vulnerability, high cost. Predicted: **dragger**.\n• Midland, a coastal manufacturing economy with a big plastics industry: high vulnerability, high cost. Predicted: **intermediate**, likely to favor waste rules over production limits and to bargain for finance.\n3. Then I compare predictions with **stated positions** in the talks. In the real negotiations, a High Ambition Coalition seeks production limits, while many oil and petrochemical producers argue for a focus on waste. That broad pattern fits the model.\n4. Then I note **what the model misses**: ideas, domestic coalitions such as waste pickers’ groups, and how a treaty’s design (finance, flexibility) could lower costs and move countries along the cost axis, as substitutes did for ozone.\n**Result:** “The interest-based model predicts the main split in the plastics talks, between vulnerable low-cost states and invulnerable high-cost producers. Its weakness is that it treats costs as fixed; treaty design aims precisely to change them.”\n**Common mistake:** treating the boxes as fixed identities. A country moves boxes when technology, prices or politics change, which is how ozone succeeded.", label:"Worked example: predicting positions with the interest-based model"}
     ]},
     {h:"Biodiversity: from Rio to Kunming-Montreal", body:[
-      "The [[convention-on-biological-diversity|Convention on Biological Diversity]] (CBD; 1992, in force 1993) has three objectives: conservation, sustainable use, and fair sharing of the benefits from genetic resources. Almost every state is a party; the United States signed but has not ratified. Protocols followed on biosafety (Cartagena, 2000) and on [[access-and-benefit-sharing|access and benefit-sharing]] (Nagoya, 2010).",
+      "The [[convention-on-biological-diversity|Convention on Biological Diversity]] (CBD; 1992, in force 1993) has three objectives. They are conservation, sustainable use, and fair sharing of the benefits from genetic resources. Almost every state is a party. The United States signed but has not ratified. Protocols followed on biosafety (Cartagena, 2000) and on [[access-and-benefit-sharing|access and benefit-sharing]] (Nagoya, 2010).",
       "Biodiversity is harder to govern than ozone. Its main drivers are land-use change, overexploitation, pollution, invasive species and climate change. They run through farming, trade and everyday consumption, and there is no single unit to count, like tonnes of CO₂. The record is sobering. None of the twenty Aichi Biodiversity Targets agreed in 2010 was fully met by 2020. The response was the [[kunming-montreal-gbf|Kunming-Montreal Global Biodiversity Framework]], adopted in December 2022 at COP15, held in Montreal under China’s presidency. It sets four goals for 2050 and 23 targets for 2030.",
       {table:[
         ["Target","What it asks"],
         ["2","At least 30% of degraded ecosystems under effective restoration by 2030"],
-        ["3 (“[[thirty-by-thirty|30 by 30]]”)","At least 30% of land, inland waters and coastal and marine areas effectively conserved by 2030, recognizing Indigenous and traditional territories"],
+        ["3 (“[[thirty-by-thirty|30 by 30]]”)","At least 30% of land, inland waters, and coastal and marine areas effectively conserved by 2030. This recognizes Indigenous and traditional territories"],
         ["18","Identify harmful subsidies by 2025 and cut them by at least 500 billion dollars a year by 2030"],
         ["19","At least 200 billion dollars a year from all sources by 2030, including international finance to developing countries"]
       ]},
@@ -537,7 +537,7 @@ ICA.addUnit({
       {t:"It entered into force on 17 January 2026", ok:true, why:"Right: the dated, accurate status. It passed 100 parties in September 2026, and its first COP is scheduled for January 2027."},
       {t:"It was abandoned in 2023", why:"It was adopted in June 2023, not abandoned."},
       {t:"It entered into force in 1994, together with UNCLOS", why:"1994 is UNCLOS; BBNJ is a separate, later agreement."},
-      {t:"It only covers fishing quotas", why:"It covers genetic resources, protected areas, impact assessments and capacity-building; fishing quotas stay with fisheries bodies."}
+      {t:"It only covers fishing quotas", why:"It covers genetic resources, protected areas, impact assessments and capacity-building. Fishing quotas stay with fisheries bodies."}
     ]},
     {id:"e4u16-l4-x6", type:"spot", q:"A briefing on the plastics talks. Tap each sentence that is **wrong**.", ask:"is wrong", parts:[
       {t:"UNEA resolution 5/14 (2022) launched negotiations covering the full life cycle of plastic.", flag:false, why:"Correct."},
@@ -594,7 +594,7 @@ ICA.addUnit({
    goals:[
      "Explain the position of fossil-fuel producers, the idea of stranded assets and the supply-side turn in climate politics",
      "Describe just transition and the Just Energy Transition Partnerships, with their status as of 2026",
-     "Explain the politics of critical minerals and clean-technology supply chains, attributing each position",
+     "Explain the politics of critical minerals and clean-technology supply chains. Attribute each position",
      "Compare green industrial policies, including the EU’s carbon border adjustment, neutrally",
      "Analyze a climate negotiation with a step-by-step method, using COP31 as a live example"
    ],
@@ -625,11 +625,11 @@ ICA.addUnit({
       "Positions on China’s role differ and should be attributed. The IEA and many developing-country governments note that low-cost Chinese panels and batteries have made clean energy cheaper worldwide. US, EU and some Asian governments warn of overcapacity and dependence. China’s government rejects the “overcapacity” label and says its industries reflect competitiveness and help the world meet climate goals."
     ]},
     {h:"Green industrial policy", body:[
-      "[[green-industrial-policy|Green industrial policy]] means governments steering investment into clean industries with subsidies, tax credits, public procurement, local-content rules or trade measures (see [[industrial-policy]]). Dani Rodrik (2014) argued that it can correct market failures in new technologies. Critics warn of subsidy races, waste and protectionism.",
+      "[[green-industrial-policy|Green industrial policy]] means governments steer investment into clean industries. They use subsidies, tax credits, public procurement, local-content rules or trade measures (see [[industrial-policy]]). Dani Rodrik (2014) argued that it can correct market failures in new technologies. Critics warn of subsidy races, waste and protectionism.",
       {list:[
         "**China**: long-running support for solar, batteries and electric vehicles.",
         "**United States**: the Inflation Reduction Act (2022) offered large clean-energy tax credits; a 2025 law cut many of them back.",
-        "**European Union**: the Green Deal Industrial Plan (2023), the Net-Zero Industry Act (2024) and the [[cbam|Carbon Border Adjustment Mechanism]] (CBAM). The CBAM’s definitive period began on 1 January 2026 for cement, iron and steel, aluminum, fertilizers, electricity and hydrogen.",
+        "**European Union**: the Green Deal Industrial Plan (2023), the Net-Zero Industry Act (2024) and the [[cbam|Carbon Border Adjustment Mechanism]] (CBAM). The CBAM’s definitive period began on 1 January 2026. It covers cement, iron and steel, aluminum, fertilizers, electricity and hydrogen.",
         "**Japan**: the GX (Green Transformation) Promotion Act (2023), with 20 trillion yen of GX transition bonds over a decade. Japan’s approach also includes a mandatory emissions trading scheme from fiscal year 2026 for companies emitting 100,000 tonnes of CO₂ or more a year.",
         "**India**: production-linked incentives for solar modules and batteries."
       ]},
@@ -668,7 +668,7 @@ ICA.addUnit({
       {t:"The EU proposed it to protect its own coal plants", why:"The EU was among those disappointed by the change."},
       {t:"It was a translation error", why:"It was a deliberate, much-reported amendment."}
     ]},
-    {id:"e4u16-l5-x4", type:"mcq", q:"According to the IEA’s *Global Critical Minerals Outlook 2026*, what happened to supply concentration in mineral refining?", options:[
+    {id:"e4u16-l5-x4", type:"mcq", q:"The IEA published its *Global Critical Minerals Outlook 2026*. According to it, what happened to supply concentration in mineral refining?", options:[
       {t:"Excluding rare earths, the top refining country’s average share rose to 72 percent in 2025", ok:true, why:"Right: concentration increased, from 70 percent in 2023."},
       {t:"Refining spread evenly across all continents", why:"The report found the opposite: more concentration."},
       {t:"China’s share fell below 20 percent", why:"China remains the top refiner for most key minerals."},
@@ -704,11 +704,11 @@ ICA.addUnit({
     tasks:[
      {t:"Analyze one negotiation day", how:[
        "Open an *Earth Negotiations Bulletin* daily report from COP31 (or from COP30 if you prefer a finished case).",
-       "Choose one agenda item and fill in the seven steps: text, coalitions, interests, domestic politics, institutions, ideas, outcome so far.",
+       "Choose one agenda item and fill in the seven steps. They are text, coalitions, interests, domestic politics, institutions, ideas and outcome so far.",
        "Mark which steps the report could not answer and where you would look next."
      ], write:"Agenda item… Text and brackets… Coalitions… Interests… Domestic politics… Institutions… Ideas… Outcome so far… Gaps…"},
      {t:"Producer and importer: two positions", how:[
-       "Find one official statement on the energy transition from a major fossil-fuel producer and one from a large energy importer (for example a G20 or COP statement).",
+       "Find one official statement on the energy transition from a major fossil-fuel producer. Also find one from a large energy importer (for example a G20 or COP statement).",
        "Summarize each neutrally in two sentences beginning “X’s government argues that…”, with the date.",
        "Note where their win-sets might overlap."
      ], write:"Producer, date, position… Importer, date, position… Possible overlap…"},
@@ -736,7 +736,7 @@ ICA.addUnit({
      {t:"The precautionary principle", why:"That is a rule for acting under scientific uncertainty, not a name for a kind of harm."},
      {t:"Strong sustainability", why:"That is a position on whether natural capital can be replaced, not a description of gradual harm."}]},
    {id:"e4u16-cp02", lesson:"e4u16-l1", level:2, q:"A minister says the economy can keep growing while emissions and resource use fall. An activist replies that rich economies must shrink material use, and so output, by design. Which positions are these?", options:[
-     {t:"Weak sustainability and strong sustainability", why:"Those positions are about whether natural capital can be replaced by human-made capital, not about whether output must shrink."},
+     {t:"Weak sustainability and strong sustainability", why:"Those positions are about whether human-made capital can replace natural capital. They are not about whether output must shrink."},
      {t:"Limits to growth and the Anthropocene", why:"The Anthropocene names an age of human impact; it is not a position on growth policy."},
      {t:"Polluter pays and ability to pay", why:"Those are principles for sharing the costs of climate action between countries."},
      {t:"Green growth and degrowth", ok:true, why:"Right. Green growth claims growth can be decoupled from harm (OECD, 2011); degrowth (Jackson, Hickel) argues rich economies must shrink material use."}]},
@@ -1445,7 +1445,7 @@ ICA.addUnit({
      {t:"Open access versus common property", why:"That debate is about property regimes for shared resources."},
      {t:"Mitigation versus adaptation", why:"Those are climate policy strategies, not views on substitution."}]},
    {id:"e4u16-q07", lesson:"e4u16-l1", level:1, q:"What happened to the proposal to make the Anthropocene a formal geological epoch?", options:[
-     {t:"It was rejected in March 2024", ok:true, why:"Right: the stratigraphy bodies voted it down, though the term remains widely used informally; their statement calls it a valuable descriptor."},
+     {t:"It was rejected in March 2024", ok:true, why:"Right: the stratigraphy bodies voted it down. The term is still widely used informally, and their statement calls it a valuable descriptor."},
      {t:"It was adopted in 2024, starting in the 1950s", why:"The proposal was rejected, not adopted."},
      {t:"It was adopted in 2000 by Crutzen and Stoermer", why:"They proposed the term; formal adoption is up to geological bodies."},
      {t:"It is still awaiting a vote", why:"The vote took place in 2024."}]},
@@ -1557,18 +1557,18 @@ ICA.addUnit({
      {t:"Fines countries that miss climate targets", why:"It is a funding mechanism under the ozone regime, not a penalty system."},
      {t:"Funds the IPCC", why:"The IPCC has its own trust fund."},
      {t:"Buys carbon credits", why:"It is not a carbon market."}]},
-   {id:"e4u16-q29", lesson:"e4u16-l4", level:2, q:"In Sprinz and Vaahtoranta’s model, how would you classify a country barely harmed by a pollutant but heavily dependent on producing it?", options:[
+   {id:"e4u16-q29", lesson:"e4u16-l4", level:2, q:"In Sprinz and Vaahtoranta’s model, how would you classify a country that is barely harmed by a pollutant but heavily dependent on producing it?", options:[
      {t:"A dragger", ok:true, why:"Right: low vulnerability and high abatement costs."},
      {t:"A pusher", why:"Pushers are highly vulnerable with low abatement costs."},
      {t:"An intermediate", why:"Intermediates are highly vulnerable but face high costs."},
      {t:"A bystander", why:"Bystanders have low vulnerability and low costs."}]},
    {id:"e4u16-q30", lesson:"e4u16-l4", level:3, q:"Ana argues that climate negotiators should simply copy the Montreal Protocol. What is the strongest qualification?", options:[
-     {t:"Ozone had few chemicals with substitutes; climate involves all energy use", ok:true, why:"Right. Ozone involved a few chemicals with available substitutes made by few firms; climate involves energy for the whole economy, so costs and draggers are far greater, though finance and trade measures may still transfer."},
+     {t:"Ozone had few chemicals with substitutes; climate involves all energy use", ok:true, why:"Right. Ozone involved a few chemicals with available substitutes made by few firms. Climate involves energy for the whole economy, so costs and draggers are far greater. Finance and trade measures may still transfer."},
      {t:"The Montreal Protocol failed, so there is nothing that climate negotiators can learn", why:"It is widely judged a success."},
      {t:"Ozone depletion was never a real problem", why:"The science and the Antarctic ozone loss are well established."},
      {t:"Montreal has no funding mechanism", why:"Its Multilateral Fund is one of its key features."}]},
    {id:"e4u16-q31", lesson:"e4u16-l4", level:1, q:"What is “30 by 30” in the Kunming-Montreal Global Biodiversity Framework?", options:[
-     {t:"Conserving at least 30 percent of land and sea by 2030", ok:true, why:"Right: Target 3, at least 30 percent of land, inland waters and coastal and marine areas effectively conserved by 2030, recognizing Indigenous and traditional territories."},
+     {t:"Conserving at least 30 percent of land and sea by 2030", ok:true, why:"Right: Target 3, at least 30 percent of land, inland waters, and coastal and marine areas effectively conserved by 2030. It recognizes Indigenous and traditional territories."},
      {t:"Cutting greenhouse gas emissions 30 percent by 2030", why:"That is not a biodiversity framework target."},
      {t:"Thirty new protected species by 2030", why:"The target concerns areas, not a species count."},
      {t:"Restoring at least 30 percent of degraded ecosystems by 2030", why:"That is Target 2, on restoration; “30 by 30” is Target 3, on conserving areas."}]},
@@ -1583,7 +1583,7 @@ ICA.addUnit({
      {t:"1994", why:"1994 is when UNCLOS entered into force."},
      {t:"It has not entered into force", why:"It passed the ratification threshold in 2025 and entered into force in January 2026."}]},
    {id:"e4u16-q34", lesson:"e4u16-l4", level:3, q:"A minister says: “The plastics treaty failed because countries disagree about recycling technology.” Which description of the divisions is more accurate and neutral?", options:[
-     {t:"Some want limits on production; others, many of them producers, want a focus on waste", ok:true, why:"Right. Some countries want global limits on production and harmful chemicals; others, many of them petrochemical producers, want the treaty to focus on waste management; parties also disagree on decision rules and finance. Positions are attributed without taking sides."},
+     {t:"Some want limits on production; others, many of them producers, want a focus on waste", ok:true, why:"Right. Some countries want global limits on production and harmful chemicals. Others, many of them petrochemical producers, want the treaty to focus on waste management. Parties also disagree on decision rules and finance. Positions are attributed without taking sides."},
      {t:"All countries want production caps but cannot agree on the date, so the talks are stuck on timing", why:"Production limits are themselves the central disagreement."},
      {t:"The talks were canceled in 2024", why:"Talks continued after Busan and Geneva, with a new chair elected in 2026."},
      {t:"Only NGOs oppose production limits", why:"The positions in the negotiations are those of governments."}]},
@@ -1614,7 +1614,7 @@ ICA.addUnit({
      {t:"Viet Nam", why:"Viet Nam’s JETP was announced in December 2022."},
      {t:"Senegal", why:"Senegal’s JETP was announced in 2023."}]},
    {id:"e4u16-q40", lesson:"e4u16-l5", level:2, q:"What happened to US participation in the JETPs in March 2025?", options:[
-     {t:"It withdrew from the partner groups; other partners said work would continue", ok:true, why:"Right: it withdrew from the partner groups for South Africa, Indonesia and Viet Nam; Germany and other partners said the work would continue, per South African and German government statements."},
+     {t:"It withdrew from the partner groups; other partners said work would continue", ok:true, why:"Right: it withdrew from the partner groups for South Africa, Indonesia and Viet Nam. Germany and other partners said the work would continue, according to South African and German government statements."},
      {t:"The United States doubled its pledges", why:"It withdrew its pledges."},
      {t:"All JETPs were dissolved", why:"Other partners continued."},
      {t:"The United States moved its pledges from South Africa to become the lead partner for Senegal", why:"No such change occurred."}]},

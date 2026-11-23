@@ -1,14 +1,14 @@
 /* International Studies · Unit 9 · International organizations in depth */
 ICA.addUnit({
   id:"e4u9", track:"e4", n:9, title:"International organizations in depth", icon:"🏛️",
-  blurb:"Why states build international organizations, how those organizations come to act on their own, and how the UN system, the world’s regional bodies and their critics work in practice. Functionalism to principal–agent theory, Barnett and Finnemore’s bureaucracies, Security Council reform and the 2026 Secretary-General race, regionalism from the EU to the SCO, and the politics of exit, funding cuts and contested multilateralism.",
+  blurb:"Learn why states build international organizations and how those organizations come to act on their own. See how the UN system, the world’s regional bodies and their critics work in practice. Topics run from functionalism to principal–agent theory, Barnett and Finnemore’s bureaucracies, Security Council reform and the 2026 Secretary-General race. They also cover regionalism from the EU to the SCO, and the politics of exit, funding cuts and contested multilateralism.",
   goals:[
-    "Explain and compare the main theories of why states create international organizations: functionalism, neofunctionalism, rational design and principal–agent theory",
-    "Analyze international organizations as actors with their own authority, power and pathologies, using the IMF and the World Bank as cases",
-    "Describe how the UN system works in practice: Security Council politics and reform positions, the General Assembly, the Secretary-General’s selection and roles, and how the system is funded",
+    "Explain and compare the main theories of why states create international organizations. These are functionalism, neofunctionalism, rational design and principal–agent theory",
+    "Analyze international organizations as actors with their own authority, power and pathologies (harmful habits), using the IMF and the World Bank as cases",
+    "Describe how the UN system works in practice. Cover Security Council politics and reform positions, the General Assembly, how the Secretary-General is selected and what the role does, and how the system is funded",
     "Compare regional organizations (EU, ASEAN, AU, OAS, SCO) by design, decision rules and norms, without treating any one region as the model",
-    "Assess the legitimacy and effectiveness of an international organization, and explain withdrawal, funding cuts, forum shopping and contested multilateralism",
-    "Build a balanced, evidence-based evaluation of a real international organization for a seminar"
+    "Assess the legitimacy and effectiveness of an international organization. Explain withdrawal, funding cuts, forum shopping and contested multilateralism",
+    "Build a balanced evaluation of a real international organization for a seminar, based on evidence"
   ],
   read:[
     {book:"eir", where:"Chapter 6 “International Organisations” (Shazelina Z. Abidin)", note:"A short, free overview of what IOs are and do. Read it first as a refresher."},
@@ -18,12 +18,12 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e4u9-l1", title:"Why states create international organizations", minutes:60,
-   hook:{q:"Which of these is usually described as the oldest international organization still working today?", options:["The International Committee of the Red Cross (1863)","A commission that manages shipping on the river Rhine (1815)","The Universal Postal Union (1874)","The League of Nations (1920)"], answer:1, reveal:"**The Rhine commission.** The Central Commission for the Navigation of the Rhine was set up by the Congress of Vienna in 1815 to keep one busy river open to boats from every riverside state. It still meets in Strasbourg. The Red Cross committee is a private Swiss association, not an organization of states, and the League no longer exists. The story of IOs starts with practical problems like this one, which is exactly what the first theory in this lesson builds on."},
+   hook:{q:"Which of these is usually called the oldest international organization still working today?", options:["The International Committee of the Red Cross (1863)","A commission that manages shipping on the river Rhine (1815)","The Universal Postal Union (1874)","The League of Nations (1920)"], answer:1, reveal:"**The Rhine commission.** The Central Commission for the Navigation of the Rhine was set up by the Congress of Vienna in 1815. Its job was to keep one busy river open to boats from every riverside state. It still meets in Strasbourg. The Red Cross committee is a private Swiss association, not an organization of states, and the League no longer exists. The story of IOs starts with practical problems like this one. The first theory in this lesson builds on that idea."},
    goals:[
      "State the puzzle: why sovereign states bind themselves to international organizations",
      "Explain Mitrany’s functionalism and Haas’s neofunctionalism, with their critics",
-     "Use the rational design framework to explain why IOs differ in membership, scope, centralization, control and flexibility",
-     "Apply principal–agent theory: delegation, agency slack, control mechanisms and the collective principal",
+     "Use the rational design framework to explain why IOs differ in membership, scope, centralization, control and flexibility (how easily the rules can change)",
+     "Apply principal–agent theory. Use delegation, agency slack, control mechanisms and the collective principal",
      "Compare the four explanations on one real organization"
    ],
    learn:[
@@ -55,7 +55,7 @@ ICA.addUnit({
       "Two rivals now dominate debates about the EU. Andrew Moravcsik’s [[liberal-intergovernmentalism|liberal intergovernmentalism]] (*The Choice for Europe*, 1998) argues that national governments bargain hard, driven by economic interests at home. In his account, they delegate only to make their deals credible. Liesbet Hooghe and Gary Marks’s “postfunctionalism” (2009) adds that once integration became a matter of identity and public debate, voters and parties could stop it. Many later read the United Kingdom’s 2016 referendum and its exit in 2020 this way."
     ]},
     {h:"Rational design: institutions as tools", body:[
-      "In 2001 Barbara Koremenos, Charles Lipson and Duncan Snidal edited a special issue of *International Organization* on “The Rational Design of International Institutions”. Their claim: states design IOs deliberately, to solve specific cooperation problems, so different problems should produce different designs. This approach is called [[rational-design|rational design]] (see {{rational-design}}).",
+      "In 2001 Barbara Koremenos, Charles Lipson and Duncan Snidal edited a special issue of *International Organization* on “The Rational Design of International Institutions”. Their claim is that states design IOs on purpose to solve specific cooperation problems. So different problems should lead to different designs. This approach is called [[rational-design|rational design]] (see {{rational-design}}).",
       "They compared IOs on five dimensions:",
       {table:[
         ["Dimension","The question","An Asia-Pacific example"],
@@ -66,7 +66,7 @@ ICA.addUnit({
         ["Flexibility","Can members adapt or escape the rules?","Safeguard clauses that let a state pause trade commitments"]
       ]},
       "The problems that drive design include **distribution** (who gains most), **enforcement** (the temptation to cheat) and the **number of actors**. They also include **uncertainty** about others’ behavior, the state of the world or each other’s preferences. For example, the more uncertain the future, the more [[flexibility-provisions|flexibility provisions]] such as escape clauses states should write in.",
-      "Kenneth Abbott and Snidal had earlier asked “Why States Act through Formal International Organizations” (1998). Their answer: IOs offer **centralization** (one place to pool information and resources) and **independence** (a neutral party that can monitor, mediate or judge).",
+      "Kenneth Abbott and Snidal had earlier asked “Why States Act through Formal International Organizations” (1998). Their answer is that IOs offer two things. One is **centralization**: one place to pool information and resources. The other is **independence**: a neutral party that can monitor, mediate or judge.",
       {warn:"Critics, including Alexander Wendt in the same 2001 issue, warn against what is often called the “functionalist fallacy”. This is the assumption that because an IO does something useful, it was designed to do it. Many features are accidents, compromises or leftovers from earlier crises. A good paper checks the negotiating record."},
       {ex:"**Task:** three fictional coastal states, Norland, Ostavia and Sudmark, share one fish stock. Explain the design of the commission they create, using {{rational-design}}.\n1. First I name the cooperation problem, because rational design predicts design from the problem. Each state gains by catching a little more than its quota, so the main problem is **enforcement**. Nobody knows how fast the stock will recover, so there is also **uncertainty about the state of the world**.\n2. Next I turn each problem into a prediction. Enforcement problems call for **centralization**: a body that collects catch data and inspects boats, so cheating is seen. Uncertainty calls for **flexibility**: quotas reviewed every year rather than fixed for ever.\n3. Then I check membership. Only three states fish the stock, so a small, closed membership makes sense; adding distant states would add bargaining costs without adding fish.\n4. Finally I compare the predictions with the treaty text and, if possible, the negotiating record. Here the commission has a joint inspection service and an annual quota meeting, which fits. But it decides by unanimity, so Sudmark, the largest fleet, can block cuts. That points to **distribution** (who gains most) and power, which the theory also expects to shape control rules.\n**Result:** “The Norland–Ostavia–Sudmark commission combines central monitoring with annual quota reviews, as rational design predicts for an enforcement problem under uncertainty. Its unanimity rule, however, reflects the largest fleet’s bargaining power more than any cooperation problem.”\n**Common mistake:** stopping at step 2. If you never check the record, you risk the functionalist fallacy: assuming a feature exists *because* it is useful.", label:"Worked example: using rational design step by step"}
     ]},
@@ -88,9 +88,9 @@ ICA.addUnit({
     {id:"e4u9-l1-x1", type:"sort", q:"Which theory makes each claim?", buckets:["Functionalism (Mitrany)","Neofunctionalism (Haas)","Rational design","Principal–agent theory"], items:[
       {t:"Peace grows best from separate agencies, each shaped by a practical task such as health or transport.", b:0, why:"That is Mitrany’s working peace system: task by task, with the function deciding the form."},
       {t:"Integrating coal and steel creates pressure from business groups to integrate transport and trade too.", b:1, why:"Spillover driven by self-interested groups is Haas’s neofunctionalism."},
-      {t:"When the future is very uncertain, states write more escape clauses into agreements.", b:2, why:"A link between a cooperation problem (uncertainty) and a design feature (flexibility) is the rational design argument."},
+      {t:"When the future is very uncertain, states write more escape clauses into agreements.", b:2, why:"This links a cooperation problem (uncertainty) to a design feature (flexibility). That link is the rational design argument."},
       {t:"An agency’s staff may pursue their own goals unless states monitor them through reports and budgets.", b:3, why:"Agency slack and control mechanisms are the core of principal–agent theory."},
-      {t:"Weighted voting gives the biggest contributors more control so that they are willing to pay.", b:2, why:"Choosing voting rules to solve a distribution and participation problem is a design choice in Koremenos, Lipson and Snidal’s sense."},
+      {t:"Weighted voting gives the biggest contributors more control so that they are willing to pay.", b:2, why:"Voting rules solve a problem of distribution and participation. Choosing them is a design choice in the sense of Koremenos, Lipson and Snidal."},
       {t:"Supranational officials actively propose the next step of integration.", b:1, why:"“Cultivated spillover” by supranational actors is a neofunctionalist mechanism."}
     ]},
     {id:"e4u9-l1-x2", type:"match", q:"Match each work to its author or editors.", pairs:[
@@ -103,7 +103,7 @@ ICA.addUnit({
     {id:"e4u9-l1-x3", type:"mcq", q:"Negotiators of a new regional fisheries agreement cannot predict how fish stocks will respond to warming seas. Rational design theory predicts they will most likely include…", options:[
       {t:"Flexibility provisions, such as review clauses and the right to adjust catch limits", ok:true, why:"Right. Uncertainty about the state of the world is the classic reason for flexibility in Koremenos, Lipson and Snidal’s framework."},
       {t:"Universal membership open to every state in the world", why:"Membership is driven by other problems, such as who must take part for the deal to work. Uncertainty points to flexibility."},
-      {t:"No secretariat at all, because experts cannot help", why:"Uncertainty is usually a reason to centralize information, for example in a scientific committee, not to abolish it."},
+      {t:"No secretariat at all, because experts cannot help", why:"Uncertainty is usually a reason to centralize information, for example in a scientific committee. It is not a reason to abolish information."},
       {t:"A permanent ban on changing the agreement", why:"A rigid agreement is the opposite of what uncertainty calls for: it would break when conditions change."}
     ]},
     {id:"e4u9-l1-x4", type:"order", q:"Put this neofunctionalist story of integration in order.", items:[
@@ -142,8 +142,8 @@ ICA.addUnit({
     intro:"Apply the theories to a real organization. Everything here is free and public.",
     tasks:[
      {t:"Read a founding text as a design", how:[
-       "Choose one IO with a short founding treaty or charter available online (for example the 1995 Mekong Agreement, the ASEAN Charter, the Pacific Islands Forum’s agreement, or the constitution of any UN specialized agency).",
-       "Find the articles on membership, scope, decision-making and votes, any central body, and any amendment, withdrawal or escape clauses.",
+       "Choose one IO with a short founding treaty or charter available online. Examples are the 1995 Mekong Agreement, the ASEAN Charter, the Pacific Islands Forum’s agreement, or the constitution of any UN specialized agency.",
+       "Find the articles on membership, scope, decision-making and votes, and any central body. Also find any amendment, withdrawal or escape clauses.",
        "For each of the five rational design dimensions, write one sentence and the article number."
      ], write:"Organization… Membership (Art.)… Scope… Centralization… Control… Flexibility… Which cooperation problem does the design seem to answer?"},
      {t:"Map a chain of delegation", how:[
@@ -158,7 +158,7 @@ ICA.addUnit({
        "3. Can rational design explain IOs created in a hurry during a crisis?"
      ], write:"My question… My position… Evidence… Counter-argument…"}
     ],
-    proof:"A five-dimension design analysis of one real IO with article numbers, a sketch of its chain of delegation, and a seminar paragraph with a counter-argument."
+    proof:"A five-dimension design analysis of one real IO with article numbers, a sketch of its chain of delegation (who gives authority to whom), and a seminar paragraph with a counter-argument."
    },
    read:[
     {book:"eir", where:"Chapter 6 “International Organisations” (Shazelina Z. Abidin)", note:"Read it first as a refresher on what IOs are."},
@@ -171,7 +171,7 @@ ICA.addUnit({
    hook:{q:"Major decisions at the IMF, such as changing its Articles or its quotas, need 85% of the votes. Why can the United States block them on its own?", options:["The Articles give the host country of the headquarters a formal veto","It holds about 16.5% of the votes, so the rest cannot reach 85% without it","Every one of the 191 members has a veto on major decisions","It is the largest borrower from the Fund"], answer:1, reveal:"**About 16.5% of the votes.** Votes at the IMF follow each member’s quota, which broadly reflects its economic size. With the US holding more than 15%, everyone else together cannot reach 85%. No formal veto is written anywhere: it comes from arithmetic and design. This lesson asks a different question too: once states have designed an IO, can its staff shape the world in ways states never planned?"},
    goals:[
      "Explain Barnett and Finnemore’s view of IOs as bureaucracies with authority of their own",
-     "Distinguish rational-legal, delegated, moral and expert authority, and the ways IOs exercise power",
+     "Distinguish rational-legal, delegated, moral and expert authority. Describe the ways IOs exercise power",
      "Identify the five bureaucratic pathologies and give an example of each",
      "Describe the role of secretariats and their leaders",
      "Analyze the IMF and the World Bank as actors, with their governance and critics"
@@ -179,13 +179,13 @@ ICA.addUnit({
    learn:[
     {h:"Do IOs have minds of their own?", body:[
       {lead:"An official of the UN refugee agency must decide whether a war-torn region is “safe” enough for refugees to go home. No government wrote that decision. Whose power is she exercising?"},
-      "Lesson 1 treated IOs as tools of states. In 1999 Michael Barnett and {{martha-finnemore|Martha Finnemore}} challenged that view in “The Politics, Power, and Pathologies of International Organizations” (*International Organization*). Their book *Rules for the World: International Organizations in Global Politics* (2004) developed it (see {{ios-as-bureaucracies}}).",
+      "Lesson 1 treated IOs as tools of states. In 1999 Michael Barnett and {{martha-finnemore|Martha Finnemore}} challenged that view. Their article was “The Politics, Power, and Pathologies of International Organizations” (*International Organization*). Their book *Rules for the World: International Organizations in Global Politics* (2004) developed the idea (see {{ios-as-bureaucracies}}).",
       "Their starting point was {{max-weber|Max Weber}}’s analysis of [[bureaucracy]]. Bureaucracies are powerful because they apply impersonal rules, rely on experts and are trusted as rational and neutral. IOs, they argued, are bureaucracies too. So, in their view, IOs have **autonomy** (they act in ways their members did not dictate) and **power** (they shape how others see the world). This is a {{constructivism|constructivist}} argument: IOs help construct the social world, not just regulate it."
     ]},
     {h:"Where IO authority comes from", body:[
       "Barnett and Finnemore traced IO [[bureaucratic-authority|bureaucratic authority]] to four sources:",
       {fig:'<svg viewBox="0 0 340 340"><rect class="d-panel" x="95" y="135" width="150" height="70" rx="12" stroke-width="2"/><text x="170" y="164" text-anchor="middle">An IO’s</text><text x="170" y="184" text-anchor="middle">authority</text><rect class="d-soft" x="20" y="14" width="300" height="56" rx="10" stroke-width="2"/><text x="170" y="37" text-anchor="middle">Rational-legal</text><text class="s" x="170" y="57" text-anchor="middle">impersonal rules, seen as neutral</text><rect class="d-gold" x="10" y="80" width="150" height="46" rx="10" stroke-width="2"/><text x="85" y="100" text-anchor="middle">Delegated</text><text class="s" x="85" y="117" text-anchor="middle">lent by states</text><rect class="d-sage" x="180" y="80" width="150" height="46" rx="10" stroke-width="2"/><text x="255" y="100" text-anchor="middle">Moral</text><text class="s" x="255" y="117" text-anchor="middle">defends shared values</text><rect class="d-lup" x="20" y="214" width="300" height="56" rx="10" stroke-width="2"/><text x="170" y="237" text-anchor="middle">Expert</text><text class="s" x="170" y="257" text-anchor="middle">specialized knowledge and data</text><rect class="d-rose" x="20" y="280" width="300" height="50" rx="10" stroke-width="2"/><text x="170" y="301" text-anchor="middle">Power: classify, fix meanings,</text><text x="170" y="320" text-anchor="middle">spread norms</text><path class="d-ink" d="M170,70 V135" stroke-width="2"/><path class="d-ink" d="M170,205 V214" stroke-width="2"/></svg>', alt:"Diagram: an IO’s authority is at the center, drawing on rational-legal authority (impersonal rules seen as neutral), delegated authority (lent by states), moral authority (defending shared values) and expert authority (specialized knowledge and data); below, the power this produces: to classify, fix meanings and spread norms.", cap:"Four sources of authority, and the three kinds of power they make possible (after Barnett and Finnemore 2004)."},
-      {list:["**Rational-legal**: the authority of impersonal rules and procedures (see [[rational-legal-authority]]).","**Delegated**: authority lent by member states for a task.","**Moral**: the claim to defend shared values, such as protecting refugees or children, above narrow national interests ([[moral-authority]]).","**Expert**: specialized knowledge, data and professional training ([[expert-authority]])."]},
+      {list:["**Rational-legal**: the authority of impersonal rules and procedures (see [[rational-legal-authority]]).","**Delegated**: authority lent by member states for a task.","**Moral**: the claim to defend shared values, such as protecting refugees or children, even above narrow national interests ([[moral-authority]]).","**Expert**: specialized knowledge, data and professional training ([[expert-authority]])."]},
       "With that authority, IOs exercise power in three ways. They **classify**: who counts as a refugee, a least developed country, a pandemic. They **fix meanings**: what “development” or “good governance” means in practice. And they **diffuse norms**, spreading models of how a state should run elections or a central bank (compare {{norm-dynamics}}).",
       {ex:"When WHO’s Director-General declares a public health emergency of international concern under the [[international-health-regulations|International Health Regulations]], no state is ordered to do anything new. Yet the label changes what governments, airlines and markets expect, and what they will be judged against. That is the power to classify.", label:"Worked example: the power of a label"}
     ]},
@@ -288,12 +288,12 @@ ICA.addUnit({
     intro:"Look at IOs as actors with ideas, labels and cultures. Use free official pages.",
     tasks:[
      {t:"Find a classification", how:[
-       "Pick one IO list or category: the UN list of least developed countries, WHO’s list of essential medicines, the World Bank’s income groups, UNESCO’s World Heritage in Danger list, or another.",
+       "Pick one IO list or category. Examples are the UN list of least developed countries, WHO’s list of essential medicines, the World Bank’s income groups, and UNESCO’s World Heritage in Danger list. You can also pick another.",
        "Find who decides it, by what criteria, and what changes for a state that is on or off the list.",
        "Write which source of authority the classification rests on."
      ], write:"Category… Who decides… Criteria… Consequences of being listed… Source of authority…"},
      {t:"Read an evaluation", how:[
-       "Open the website of an IO evaluation office (for example the IMF’s Independent Evaluation Office, the World Bank’s Independent Evaluation Group or the Inspection Panel, or a UN agency’s evaluation office).",
+       "Open the website of an IO evaluation office. Examples are the IMF’s Independent Evaluation Office, the World Bank’s Independent Evaluation Group or the Inspection Panel, or a UN agency’s evaluation office.",
        "Read the summary of one recent report.",
        "Note whether it points to a pathology from the lesson, and what it recommends."
      ], write:"Office and report… Main finding… Pathology, if any… Recommendation… Who has to act on it?"},
@@ -316,7 +316,7 @@ ICA.addUnit({
   {id:"e4u9-l3", title:"The UN system in practice", minutes:65,
    hook:{q:"The UN has had nine Secretaries-General since 1946. How many of them have been women?", options:["None","One","Two","Three"], answer:0, reveal:"**None.** All nine, from Trygve Lie of Norway to António Guterres of Portugal, have been men. In November 2025 the presidents of the General Assembly and the Security Council opened the race for the tenth, whose term starts on 1 January 2027. Their joint letter encouraged states to nominate women. This lesson looks at how that choice is really made, and at the informal rules, groups and money that run the UN behind the organ chart."},
    goals:[
-     "Explain the informal practices of the Security Council: penholders, elected members, Arria-formula meetings and the veto initiative",
+     "Explain the informal practices of the Security Council. These are penholders (the members who draft resolutions), elected members, Arria-formula meetings and the veto initiative",
      "Compare the main positions on Security Council reform and explain why reform stalls",
      "Describe how the General Assembly works through regional groups and negotiating blocs",
      "Explain how the Secretary-General is selected and what the job involves, including the 2026 process",
@@ -330,11 +330,11 @@ ICA.addUnit({
     ]},
     {h:"Inside the Security Council", body:[
       "The [[permanent-five|permanent five]] (P5) sit on the Council forever; the ten elected members (often called the **E10**) serve two-year terms. Several informal practices matter a great deal:",
-      {list:["**Penholders.** On each country file, one member, the [[penholder]], drafts resolutions and leads negotiations. France, the United Kingdom and the United States hold most pens, which elected members have long criticized. Since the late 2010s more files have had an elected co-penholder.","**The presidency** rotates every month in English alphabetical order, giving every member, large or small, a turn to shape the agenda.","**Arria-formula meetings**, named after Venezuela’s ambassador Diego Arria, who started them in 1992, let members hear from civil society and experts informally.","**The veto initiative.** Since a General Assembly resolution of April 2022 (76/262), the Assembly meets within ten working days after any veto. The state that cast it is invited to explain."]},
+      {list:["**Penholders.** On each country file, one member, the [[penholder]], drafts resolutions and leads negotiations. France, the United Kingdom and the United States hold most pens, which elected members have long criticized. Since the late 2010s more files have had an elected co-penholder.","**The presidency** rotates every month in English alphabetical order. Every member, large or small, gets a turn to shape the agenda.","**Arria-formula meetings** are named after Diego Arria, Venezuela’s ambassador, who started them in 1992. They let members hear from civil society and experts informally.","**The veto initiative.** Since a General Assembly resolution of April 2022 (76/262), the Assembly meets within ten working days after any veto. The state that cast it is invited to explain."]},
       "Elected members are not passengers. Small states use their two years to champion themes such as climate and security, children in armed conflict or sanctions procedures. Some co-ordinate as a group. But they leave just as they learn the system, while the P5 accumulate decades of expertise: an informal advantage on top of the veto."
     ]},
     {h:"Reform: why it stalls", body:[
-      "Since February 2009 reform has been discussed in the General Assembly’s [[intergovernmental-negotiations|intergovernmental negotiations]] (IGN). The talks cover five key issues: categories of membership, the veto, regional representation, the size of an enlarged Council and its working methods, and the Council’s relationship with the General Assembly.",
+      "Since February 2009 the General Assembly has discussed reform in its [[intergovernmental-negotiations|intergovernmental negotiations]] (IGN). The talks cover five key issues. They are categories of membership, the veto, regional representation, the size of an enlarged Council and its working methods, and the Council’s relationship with the General Assembly.",
       {table:[
         ["Group","Position","Main argument"],
         ["[[g4-reform-group|G4]] (Brazil, Germany, India, Japan)","New permanent and elected seats; G4 seats for themselves","The Council should reflect today’s powers and contributors"],
@@ -347,7 +347,7 @@ ICA.addUnit({
       {ex:"**Task:** a seminar asks whether this proposal could pass: “Add six elected seats with four-year renewable terms, and no new permanent seats.”\n1. First I sort the proposal by **category of membership**, because that is the deepest divide in the {{un-security-council-reform|reform debate}}. It adds only elected seats, so it is close to the [[uniting-for-consensus|Uniting for Consensus]] position.\n2. Next I check each group in the table. The [[g4-reform-group|G4]] want permanent seats for themselves, so they are likely to object. The African Union’s [[ezulwini-consensus|Ezulwini Consensus]] asks for two permanent African seats, so it is likely to object too. The L.69 group wants expansion in both categories. Only Uniting for Consensus gets most of what it wants.\n3. Then I apply the legal hurdle, because support in a debate is not enough. Article 108 needs two-thirds of all members to adopt the amendment, and ratification by two-thirds **including all five permanent members**. Two-thirds of 193 members is 129 votes.\n4. Finally I state what would have to change: for example, a clause to review the arrangement after some years, so that the G4 and Africa could keep their hopes for permanent seats alive.\n**Result:** “The proposal would probably fail as written. It meets the Uniting for Consensus position but not the G4’s or the African Union’s. With the 54 African states opposed, it would need 129 of the remaining 139 members, a very narrow path, even before ratification by the permanent members.”\n**Common mistake:** counting only the P5. The veto over ratification matters, but most reform proposals have stalled earlier, in the General Assembly’s own blocs.", label:"Worked example: testing a reform proposal against the blocs"}
     ]},
     {h:"The General Assembly: groups and blocs", body:[
-      "In the General Assembly every member has one vote, but few states act alone. Elections to UN bodies run through five **regional groups**: African; Asia-Pacific; Eastern European; Latin American and Caribbean; and Western European and Others (which includes Australia, Canada, New Zealand and, for voting, the United States).",
+      "In the General Assembly every member has one vote, but few states act alone. Elections to UN bodies run through five **regional groups**. They are African, Asia-Pacific, Eastern European, Latin American and Caribbean, and Western European and Others. The last group includes Australia, Canada, New Zealand and, for voting, the United States.",
       "Negotiations run through **blocs**. The Group of 77 and China, founded in 1964 and now with more than 130 members, speaks for developing countries on economic and budget matters. The EU’s members coordinate positions. Small island states, Arab states and the Non-Aligned Movement have their own groupings. Budget decisions in the Fifth Committee are usually reached by consensus, which gives any determined group leverage.",
       "Assembly resolutions mostly recommend, but they set agendas and shape norms, and in deadlocks the Assembly can act under [[uniting-for-peace|Uniting for Peace]]. Voting records are a rich data source for researchers who study alignments between states."
     ]},
@@ -379,7 +379,7 @@ ICA.addUnit({
       {t:"“We seek permanent seats for Brazil, Germany, India and Japan.”", b:0, why:"The G4 support one another’s bids for permanent seats."},
       {t:"“Adding permanent members would only multiply privilege; expand the elected seats instead.”", b:1, why:"Opposition to new permanent seats is Uniting for Consensus’s core position."},
       {t:"“Our continent must have two permanent seats with the same rights as the current five.”", b:2, why:"This is the Ezulwini Consensus of 2005."},
-      {t:"“Longer, renewable elected terms are a fair compromise.”", b:1, why:"Uniting for Consensus proposes longer-term elected seats as an alternative to new permanent ones."},
+      {t:"“Longer, renewable elected terms are a fair compromise.”", b:1, why:"Uniting for Consensus proposes elected seats with longer terms. It offers them as an alternative to new permanent seats."},
       {t:"“As long as the veto exists, new permanent members should have it too.”", b:2, why:"The African position asks for all prerogatives, including the veto, while it exists."}
     ]},
     {id:"e4u9-l3-x3", type:"number", q:"Under Article 108, a Charter amendment must first be adopted by two-thirds of the **members** of the General Assembly. With 193 members, what is the **smallest number** of “yes” votes needed?", answer:129, tol:0, unit:"votes", why:"Two-thirds of 193 is 128.67. You cannot cast a fraction of a vote, so you need the next whole number: 129. Then two-thirds of members, including all five permanent members, must ratify.", wrongs:[
@@ -404,7 +404,7 @@ ICA.addUnit({
     {id:"e4u9-l3-x6", type:"spot", q:"A news story reports on the UN. Tap the claims that are **inaccurate or misleading**.", ask:"inaccurate or misleading", parts:[
       {t:"The UN ordered all countries to adopt the new climate targets, the Assembly resolution said.", flag:true, why:"Misleading. General Assembly resolutions on such matters are recommendations; on matters like this, only Security Council decisions can bind all members."},
       " ",
-      {t:"The Secretary-General is appointed by the General Assembly on the Security Council’s recommendation.", flag:false, why:"Correct: this is Article 97."},
+      {t:"The General Assembly appoints the Secretary-General. It acts on the Security Council’s recommendation.", flag:false, why:"Correct: this is Article 97."},
       " ",
       {t:"Because the US pays 22% of the regular budget, it has 22% of the votes in the Assembly.", flag:true, why:"Wrong. Every member has one vote in the Assembly, whatever it pays."},
       " ",
@@ -418,13 +418,13 @@ ICA.addUnit({
       {t:"The Charter forbids any change to the Security Council", why:"The Charter can be amended; it was in 1965, when the Council grew from 11 to 15 members."},
       {t:"The Secretary-General has vetoed every proposal", why:"The Secretary-General has no vote or veto on Charter amendments."}
     ]},
-    {id:"e4u9-l3-x8", type:"explain", q:"Ian Hurd argues that the Security Council’s power rests partly on its legitimacy. Use this to explain why elected members argue over informal practices such as penholding, and why the permanent five hold an advantage beyond the veto.", size:"3–5 sentences", hint:"Procedures that look fair add authority. Who drafts, and who stays long enough to learn the system?", model:"Hurd argues that the Council’s power rests partly on legitimacy: states seek its approval because others see it as the rightful voice on peace and security. So procedures matter. Those that look fair add to its authority, and those that look rigged drain it. That is why elected members criticize the practice by which France, the United Kingdom and the United States hold most pens, drafting resolutions and leading negotiations, and why more files now have an elected co-penholder. Elected members serve only two years and leave just as they learn the system, while the P5 build up decades of expertise: an informal advantage on top of the veto.", points:["States Hurd’s argument that the Council’s power rests partly on legitimacy", "Explains that fair-looking procedures add authority and rigged-looking ones drain it", "Explains penholding and why elected members criticize it", "Explains the P5’s informal advantage of accumulated expertise"]}
+    {id:"e4u9-l3-x8", type:"explain", q:"Ian Hurd argues that the Security Council’s power rests partly on its legitimacy. Use this to explain why elected members argue over informal practices such as penholding, and why the permanent five hold an advantage beyond the veto.", size:"3–5 sentences", hint:"Procedures that look fair add authority. Who drafts, and who stays long enough to learn the system?", model:"Hurd argues that the Council’s power rests partly on legitimacy. States seek its approval because others see it as the rightful voice on peace and security. So procedures matter. Those that look fair add to its authority, and those that look rigged drain it. That is why elected members criticize the practice by which France, the United Kingdom and the United States hold most pens. They draft resolutions and lead negotiations. It also explains why more files now have an elected co-penholder. Elected members serve only two years and leave just as they learn the system. The P5 build up decades of expertise. This is an informal advantage on top of the veto.", points:["States Hurd’s argument that the Council’s power rests partly on legitimacy", "Explains that fair-looking procedures add authority and rigged-looking ones drain it", "Explains penholding and why elected members criticize it", "Explains the P5’s informal advantage of accumulated expertise"]}
    ],
    apply:{
     intro:"Watch the UN at work. All the sources here are free and public.",
     tasks:[
      {t:"Follow one Council file", how:[
-       "Open Security Council Report’s monthly forecast (securitycouncilreport.org) and choose one country or theme on this month’s program.",
+       "Open Security Council Report’s monthly forecast (securitycouncilreport.org). Choose one country or theme on this month’s program.",
        "Find who holds the pen, which elected members are active on it, and what the Council is expected to do.",
        "Then find the UN press release (press.un.org) for the meeting and note how each member voted or spoke."
      ], write:"File… Penholder… Active elected members… Expected outcome… Actual outcome and votes…"},
@@ -461,7 +461,7 @@ ICA.addUnit({
    learn:[
     {h:"From one model to many regions", body:[
       {lead:"For decades textbooks measured every region against Europe and found the others “behind”. Most specialists now reject that yardstick."},
-      "The primer introduced [[regionalism]], the ladder of economic integration, and the difference between [[intergovernmentalism|intergovernmental]] and [[supranationalism|supranational]] bodies ({{regional-organizations}}). Here we compare designs more closely.",
+      "The primer introduced [[regionalism]], the ladder of economic integration, and the difference between [[intergovernmentalism|intergovernmental]] bodies (states keep control) and [[supranationalism|supranational]] bodies (they can overrule states) ({{regional-organizations}}). Here we compare designs more closely.",
       "Scholars distinguish an “old” regionalism of the 1950s–70s, driven by states and inward-looking development plans, from a [[new-regionalism|new regionalism]] after the Cold War. In their account, the new regionalism was more open to world markets, with business and civil society involved and many overlapping bodies. Björn Hettne and Fredrik Söderbaum were leading voices of this approach.",
       "Today’s field is **comparative regionalism**. Key works include Amitav Acharya and Alastair Iain Johnston’s *Crafting Cooperation* (2007), which compares regional institutions across the world. Peter Katzenstein’s *A World of Regions* (2005) looks at Asia and Europe. Tanja Börzel and Thomas Risse edited *The Oxford Handbook of Comparative Regionalism* (2016). A common message: regions differ because their histories, power structures and ideas differ, not because some are failing to become the EU (see [[eurocentrism]]).",
       {ex:"**Task:** a draft seminar paper says: “ASEAN has failed because, unlike the EU, it has no court and cannot punish members.” Rewrite it as comparative analysis.\n1. First I find the hidden yardstick, because that is the flaw. The sentence measures ASEAN by the EU’s tools and treats any difference as failure ([[eurocentrism]]).\n2. Next I ask what ASEAN’s members set out to do. The ASEAN Charter keeps consultation and consensus as the basic rule (Article 20). A court with power over members was never the aim.\n3. Then I choose a fair test: did ASEAN do what its own design is meant to do? A common claim is that disputes among members have rarely become wars. Critics point to the Cambodia–Thailand border fighting of 2025, with further clashes in 2026, and to its limited influence over Myanmar since 2021.\n4. Finally I explain the difference instead of ranking it. Members that won independence from colonial rule placed a high value on non-interference, so they chose weak enforcement on purpose. Acharya and his critics (Jones and Smith, 2007) disagree on what that design has achieved.\n**Result:** “ASEAN was designed without a court or sanctions, because its members valued non-interference. Judged by its own aims, its record is debated: Acharya credits the ASEAN Way with keeping peace among members, while Jones and Smith argue that it produces process rather than progress.”\n**Common mistake:** swapping one yardstick for another. Saying “ASEAN is better than the EU because it respects sovereignty” is just as much a ranking. Describe designs, then explain them.", label:"Worked example: rewriting a Eurocentric sentence"},
@@ -493,7 +493,7 @@ ICA.addUnit({
         ["ASEAN","Consultation and consensus","Very little: no sanctions or suspension","Non-interference"],
         ["SCO","Consensus","Very little","Sovereignty, the “Shanghai Spirit”"]
       ]},
-      "Two lessons follow. First, rules on paper and behavior in practice differ. The AU has strong texts and cautious practice. ASEAN has weak texts but a long record in which disputes among members have rarely turned into armed conflict. (Critics point to the deadly Cambodia–Thailand border clashes, most recently in 2025.) Second, ideas travel between regions and are adapted on arrival: rules against coups, for example, now appear in both African and American regional texts. Acharya calls this kind of adaptation [[norm-localization|norm localization]]: outside ideas are reshaped to fit local beliefs.",
+      "Two lessons follow. First, rules on paper and behavior in practice differ. The AU has strong texts and cautious practice. ASEAN has weak texts but a long record in which disputes among members have rarely turned into armed conflict. (Critics point to the deadly Cambodia–Thailand border clashes, most recently in 2025.) Second, ideas travel between regions and are adapted when they arrive. Rules against coups, for example, now appear in both African and American regional texts. Acharya calls this adaptation [[norm-localization|norm localization]]. Outside ideas are reshaped to fit local beliefs.",
       {list:["**Misconception: “Regional bodies compete with the UN.”** The Charter’s Chapter VIII expects them to work together. In practice the UN and the AU, for example, co-deploy and co-fund missions.","**Misconception: “Consensus means unanimity in every vote.”** Consensus usually means no member objects strongly enough to block. It is often reached by quiet bargaining, not formal votes."]}
     ]},
     {h:"Newer bodies: the SCO and beyond", body:[
@@ -549,7 +549,7 @@ ICA.addUnit({
       {t:"The Commission brokered a compromise and pushed the next step.", b:0, why:"Cultivated spillover by supranational actors."},
       {t:"Governments delegated to a court to make each other’s promises credible.", b:1, why:"Delegation for credible commitments is a liberal intergovernmentalist argument."}
     ]},
-    {id:"e4u9-l4-x7", type:"mcq", q:"Why might a newly independent group of states choose an intergovernmental, consensus-based regional body rather than a supranational one?", options:[
+    {id:"e4u9-l4-x7", type:"mcq", q:"Why might a newly independent group of states choose a regional body that is intergovernmental and based on consensus, rather than a supranational one?", options:[
       {t:"Because states that recently won sovereignty guard it closely", ok:true, why:"Right. Often after colonial rule, they tend to prefer bodies they can each block. History and identity are central explanations of design in comparative regionalism."},
       {t:"Because supranational bodies are illegal under the UN Charter", why:"The Charter does not forbid them; the EU exists alongside it, and Chapter VIII welcomes regional arrangements."},
       {t:"Because consensus bodies can never achieve anything", why:"Consensus slows decisions but does not make them impossible; this is not why states choose it."},
@@ -561,7 +561,7 @@ ICA.addUnit({
     intro:"Compare regional bodies from their own documents. All are free online.",
     tasks:[
      {t:"Compare two decision rules", how:[
-       "Choose two regional organizations from different continents (for example ASEAN and the AU, the OAS and the Pacific Islands Forum, or the EU and Mercosur).",
+       "Choose two regional organizations from different continents. Examples are ASEAN and the AU, the OAS and the Pacific Islands Forum, or the EU and Mercosur.",
        "In each founding text, find the article on how decisions are made and any article on suspension or withdrawal.",
        "Write one sentence on what each rule says about how much sovereignty members share."
      ], write:"Organizations… Decision rule (article)… Suspension or withdrawal (article)… What it says about sovereignty…"},
@@ -589,10 +589,10 @@ ICA.addUnit({
   {id:"e4u9-l5", title:"Legitimacy, effectiveness and contestation", minutes:65,
    hook:{q:"Only one state has ever announced its withdrawal from the United Nations itself. Which one, and what happened next?", options:["The United States, in 1950, and it never returned","Indonesia, in 1965, and it returned in 1966","South Africa, in 1974, and it returned in 1994","Taiwan, in 1971, and it returned in 1990"], answer:1, reveal:"**Indonesia, in January 1965**, in protest at Malaysia’s election to the Security Council. After a change of government it resumed full cooperation in September 1966. South Africa was suspended from the Assembly’s work, not withdrawn. In 1971 the General Assembly recognized the People’s Republic of China’s representatives as the only lawful representatives of China at the UN. Exit from the UN itself is almost unknown. Exit from other IOs is common, and it is one of several ways states contest organizations, the subject of this lesson."},
    goals:[
-     "Define legitimacy and distinguish input, throughput and output legitimacy, and sociological from normative legitimacy",
+     "Define legitimacy. Distinguish input, throughput and output legitimacy. Also distinguish sociological from normative legitimacy",
      "Explain why judging IO effectiveness is hard, and how scholars measure it",
      "Analyze withdrawal and funding cuts as exit and voice, with cases from 2017–2026",
-     "Explain contested multilateralism (Morse and Keohane 2014): regime shifting, competitive regime creation, forum shopping and regime complexes",
+     "Explain contested multilateralism (Morse and Keohane 2014). Cover regime shifting, competitive regime creation, forum shopping and regime complexes",
      "Evaluate a real IO for a seminar using a structured framework"
    ],
    learn:[
@@ -620,12 +620,12 @@ ICA.addUnit({
         ["United States and UNESCO","Left in 1984 and 2018, rejoined in 2003 and 2023; a new withdrawal announced in July 2025 takes effect at the end of 2026"],
         ["United States and WHO","Withdrawal completed on 22 January 2026"]
       ]},
-      "On 7 January 2026 the United States also announced withdrawal from 66 international organizations and bodies, 31 of them UN entities, including the UN climate convention. The US government argued that these bodies did not serve American interests, wasted money or pursued agendas it opposed. Many other governments and the organizations themselves warned of lost capacity and influence and of harm to the people they serve.",
+      "On 7 January 2026 the United States also announced it would withdraw from 66 international organizations and bodies. Thirty-one of them were UN entities, including the UN climate convention. The US government argued that these bodies did not serve American interests, wasted money or pursued agendas it opposed. Many other governments and the organizations themselves warned of lost capacity and influence. They also warned of harm to the people the bodies serve.",
       "Exit has a mirror image: **entry**. States still line up to join IOs because membership brings voice, markets and status. Timor-Leste campaigned for over a decade before it became ASEAN’s eleventh member in 2025. Several states have applied to join the EU, BRICS or the OECD. Who wants in tells you as much about an IO’s legitimacy as who wants out.",
       "Funding cuts and late payment can work as **voice**: pressure for reform without leaving. They can also become exit by stealth. For a seminar, keep the analytical questions apart from the political ones. What triggered the move? How did the IO adapt (cuts, new donors, reform)? Did other members step in?"
     ]},
     {h:"Contested multilateralism and forum shopping", body:[
-      "Exit is not the only option. Julia Morse and Robert Keohane’s article “Contested Multilateralism” (*Review of International Organizations*, 2014) described how dissatisfied states and coalitions **use multilateral institutions to challenge others** (see {{contested-multilateralism}}). For [[multilateralism]] itself and its future, see Unit 13 and {{multilateralism-debates}}. [[contested-multilateralism|Contested multilateralism]] takes two main forms:",
+      "Exit is not the only option. Julia Morse and Robert Keohane wrote the article “Contested Multilateralism” (*Review of International Organizations*, 2014). It described how dissatisfied states and coalitions **use multilateral institutions to challenge others** (see {{contested-multilateralism}}). For [[multilateralism]] itself and its future, see Unit 13 and {{multilateralism-debates}}. [[contested-multilateralism|Contested multilateralism]] takes two main forms:",
       {fig:'<svg viewBox="0 0 340 330"><defs><marker id="m9e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="40" y="10" width="260" height="58" rx="10" stroke-width="2"/><text x="170" y="34" text-anchor="middle">A coalition is unhappy</text><text class="s" x="170" y="54" text-anchor="middle">with an existing institution</text><path class="d-ink" d="M110,68 L80,108" stroke-width="2" marker-end="url(#m9e)"/><path class="d-ink" d="M230,68 L260,108" stroke-width="2" marker-end="url(#m9e)"/><rect class="d-gold" x="10" y="112" width="152" height="96" rx="10" stroke-width="2"/><text x="86" y="136" text-anchor="middle">Regime shifting</text><text class="s" x="86" y="158" text-anchor="middle">move the issue to</text><text class="s" x="86" y="174" text-anchor="middle">another existing</text><text class="s" x="86" y="190" text-anchor="middle">institution</text><rect class="d-sage" x="178" y="112" width="152" height="96" rx="10" stroke-width="2"/><text x="254" y="136" text-anchor="middle">Competitive</text><text x="254" y="154" text-anchor="middle">creation</text><text class="s" x="254" y="174" text-anchor="middle">build a new body</text><text class="s" x="254" y="190" text-anchor="middle">with other rules</text><rect class="d-soft" x="10" y="220" width="152" height="100" rx="10" stroke-width="2"/><text class="s" x="86" y="244" text-anchor="middle">e.g. intellectual</text><text class="s" x="86" y="260" text-anchor="middle">property from WIPO</text><text class="s" x="86" y="276" text-anchor="middle">into the WTO’s</text><text class="s" x="86" y="292" text-anchor="middle">TRIPS rules (1994)</text><rect class="d-soft" x="178" y="220" width="152" height="100" rx="10" stroke-width="2"/><text class="s" x="254" y="244" text-anchor="middle">e.g. a new</text><text class="s" x="254" y="260" text-anchor="middle">development bank</text><text class="s" x="254" y="276" text-anchor="middle">beside existing</text><text class="s" x="254" y="292" text-anchor="middle">lenders</text></svg>', alt:"Decision tree: a coalition unhappy with an existing institution can choose regime shifting, moving the issue to another existing institution (for example intellectual property moved from WIPO into the WTO’s TRIPS rules in 1994), or competitive regime creation, building a new body with other rules (for example a new development bank beside existing lenders).", cap:"Two forms of contested multilateralism, after Morse and Keohane (2014)."},
       {list:["[[regime-shifting|Regime shifting]]: moving an issue to a different existing forum. Laurence Helfer (2004) showed how industrialized states moved intellectual property rules from WIPO into the trade regime, producing the WTO’s TRIPS agreement (1994). He also showed how developing countries later shifted parts of the issue back to WHO and other bodies.","[[competitive-regime-creation|Competitive regime creation]]: building a new institution. Many observers read the Asian Infrastructure Investment Bank (opened 2016) and the BRICS New Development Bank this way. In this reading, they respond to slow voice reform at the IMF and World Bank. Their founders present them as complements, not rivals."]},
       "Overlap also creates workarounds when one forum stalls. Since December 2019 the WTO’s Appellate Body has been unable to hear appeals, because the United States blocked new appointments. The United States argued that the body had overstepped its role. In 2020 a group of members, including the EU and China (Japan joined in 2023), set up the Multi-Party Interim Appeal Arbitration Arrangement (MPIA). It is a stopgap among themselves: a small case of building around a blocked institution rather than leaving it.",
@@ -648,7 +648,7 @@ ICA.addUnit({
       {t:"“Its board meets in secret and publishes no minutes.”", b:1, why:"Transparency of the decision process is throughput legitimacy."},
       {t:"“Its programs have not reduced the problem they were meant to solve.”", b:2, why:"Results are output legitimacy."},
       {t:"“Votes depend on how much money a member puts in.”", b:0, why:"Who has a voice, and how much, is input legitimacy."},
-      {t:"“No independent body reviews complaints about how its decisions were made.”", b:1, why:"Accountability and review of the decision process are part of throughput legitimacy."}
+      {t:"“No independent body reviews complaints about how its decisions were made.”", b:1, why:"Accountability and review of how a decision is made are part of throughput legitimacy."}
     ]},
     {id:"e4u9-l5-x2", type:"match", q:"Match each concept to its meaning.", pairs:[
       ["Regime shifting","Moving an issue to a different existing institution","Morse and Keohane’s first form; Helfer’s TRIPS case."],
@@ -694,14 +694,14 @@ ICA.addUnit({
       {t:"Voluntary funding is a legal obligation", why:"Voluntary contributions are not legal obligations; assessed contributions are."},
       {t:"Voice means leaving quietly", why:"That describes exit; voice means staying and protesting."}
     ]},
-    {id:"e4u9-l5-x8", type:"explain", q:"An international organization can’t arrest or tax anyone. Explain why legitimacy matters so much to it, and use input, throughput and output legitimacy to show how the Security Council and the IMF are criticized in different ways.", size:"3–5 sentences", hint:"Who has a voice, how decisions are made, and what is delivered.", model:"Without armies or taxes, an IO depends on people believing it has the right to rule. Ian Hurd argued that states comply with rules they see as legitimate, not only out of fear or self-interest. Scholars split legitimacy into three sources: input (who has a voice), throughput (how decisions are made) and output (what is delivered). The Security Council is criticized mainly on input, because of who sits on it. The IMF is criticized on input, because votes follow money, and on output, because of its record in crises. Many agencies are also criticized on throughput, for closed decisions.", points:["Explains why legitimacy matters to a body without force (Hurd)", "Defines input, throughput and output legitimacy", "Applies input legitimacy to the Security Council", "Applies input or output legitimacy to the IMF"]}
+    {id:"e4u9-l5-x8", type:"explain", q:"An international organization can’t arrest or tax anyone. Explain why legitimacy matters so much to it. Use input, throughput and output legitimacy to show how the Security Council and the IMF are criticized in different ways.", size:"3–5 sentences", hint:"Who has a voice, how decisions are made, and what is delivered.", model:"Without armies or taxes, an IO depends on people believing it has the right to rule. Ian Hurd argued that states comply with rules they see as legitimate, not only out of fear or self-interest. Scholars split legitimacy into three sources: input (who has a voice), throughput (how decisions are made) and output (what is delivered). The Security Council is criticized mainly on input, because of who sits on it. The IMF is criticized on input, because votes follow money, and on output, because of its record in crises. Many agencies are also criticized on throughput, for closed decisions.", points:["Explains why legitimacy matters to a body without force (Hurd)", "Defines input, throughput and output legitimacy", "Applies input legitimacy to the Security Council", "Applies input or output legitimacy to the IMF"]}
    ],
    apply:{
     intro:"Bring the unit together by evaluating a real organization. All sources are free.",
     tasks:[
      {t:"Evaluate an IO in six questions", how:[
-       "Choose one IO you find interesting, from any region (a UN agency, a regional body, a development bank, a river or fisheries commission).",
-       "Answer the six evaluation questions from the lesson in two or three sentences each, using at least one official source and one independent source (a study, an evaluation report or quality journalism).",
+       "Choose one IO you find interesting, from any region. It can be a UN agency, a regional body, a development bank, or a river or fisheries commission.",
+       "Answer the six evaluation questions from the lesson in two or three sentences each. Use at least one official source and one independent source (a study, an evaluation report or quality journalism).",
        "End with a conditional verdict: effective at…, limited at…, because…"
      ], write:"IO… Mandate… Design… Authority… Performance… Legitimacy… Contestation… Verdict…"},
      {t:"Trace one withdrawal or rival body", how:[
@@ -739,7 +739,7 @@ ICA.addUnit({
      {t:"Pooling: states agree to take decisions by majority vote rather than unanimity", why:"Pooling is about how members vote. Article 100 is about staff independence from governments."}]},
    {id:"e4u9-cp03", lesson:"e4u9-l2", level:2, q:"Over twenty years, a global health agency moves from delivering vaccines into nutrition, health data systems and climate projects. Which pair of readings fits the unit?", options:[
      {t:"Both lenses agree that it was simply what the agency’s largest donor ordered", why:"Only one lens stresses the principals’ wishes. The constructivist lens looks at how staff expertise reshaped the agency’s goals."},
-     {t:"Functionalism says it proves loyalty has shifted from states to the agency", why:"Mitrany expected loyalty to shift over time, but the expansion itself doesn’t show that, and the unit’s debate here is between principal–agent and constructivist readings."},
+     {t:"Functionalism says it proves loyalty has shifted from states to the agency", why:"Mitrany expected loyalty to shift over time, but the expansion itself doesn’t show that. The unit’s debate here is between principal–agent and constructivist readings."},
      {t:"Rational design says such growth is impossible without a new founding treaty", why:"Mandates often grow without treaty changes, as the World Bank’s history shows."},
      {t:"Principal–agent: donors wanted it or staff used slack; constructivist: experts redefined the problem", ok:true, why:"Right. This combines Lesson 1 (principal–agent theory) with Lesson 2 (IOs as bureaucracies that redefine problems) on a new case. Critics would call it mission creep; supporters would call it learning."}]},
    {id:"e4u9-cp04", lesson:"e4u9-l2", level:2, q:"An IO’s annual reports slowly define “good governance” as including independent central banks and anti-corruption agencies. Donors start using that definition. Which kind of IO power is this?", options:[
@@ -748,14 +748,14 @@ ICA.addUnit({
      {t:"Delegated authority", why:"Delegated authority is lent by states for a task. The power here comes from the IO’s reports shaping others’ understanding."},
      {t:"Agency slack", why:"Slack is an agent shirking or slipping from its principals’ wishes. Defining a concept that donors adopt is a form of power, not shirking."}]},
    {id:"e4u9-cp05", lesson:"e4u9-l3", level:1, q:"Several Security Council members invite a women’s rights group and two academics to brief them informally, outside the Council’s formal meetings. What is this kind of meeting called?", options:[
-     {t:"A straw poll", why:"Straw polls are informal votes on Secretary-General candidates, not briefings by civil society."},
+     {t:"A straw poll", why:"Straw polls are informal votes on Secretary-General candidates. They are not briefings by civil society."},
      {t:"An Arria-formula meeting", ok:true, why:"Right. Arria-formula meetings, started in 1992, let members hear informally from civil society and experts."},
      {t:"A penholder meeting", why:"A penholder is the member who drafts resolutions on a file. That is a role, not a type of informal briefing."},
      {t:"A veto-initiative debate", why:"Under the 2022 veto initiative, the General Assembly meets after a veto. It is not an informal Council briefing."}]},
    {id:"e4u9-cp06", lesson:"e4u9-l3", level:3, q:"A powerful state dislikes parts of a Security Council draft. Yet it still lobbies hard for a resolution instead of acting alone, because other states see the Council as the rightful voice on peace and security. Which reading fits best?", options:[
      {t:"The Council is purely a tool of the P5; this is output legitimacy", why:"Hurd’s point is that the Council’s power rests partly on legitimacy, not only on the P5’s power. And the state is responding to beliefs, not to results."},
      {t:"Article 108 forces states to seek the Council’s approval; this is normative legitimacy", why:"Article 108 is about amending the Charter. Normative legitimacy asks whether an IO deserves belief; the scenario is about what states actually believe."},
-     {t:"Hurd: the Council’s power rests partly on legitimacy, here sociological legitimacy", ok:true, why:"Right. This combines Lesson 3 (Hurd’s *After Anarchy*) with Lesson 5 (sociological versus normative legitimacy)."},
+     {t:"Hurd: the Council’s power rests partly on legitimacy, here sociological legitimacy", ok:true, why:"Right. This combines Lesson 3 (Hurd’s *After Anarchy*) with Lesson 5 (sociological and normative legitimacy)."},
      {t:"The Council has become a zombie organization", why:"Zombie IOs are formally alive but do little. A body whose approval states fight for is the opposite."}]},
    {id:"e4u9-cp07", lesson:"e4u9-l4", level:1, q:"Six ASEAN members want to open their digital-trade markets now; four are not ready. Which ASEAN Charter provision lets the willing members move first?", options:[
      {t:"Qualified majority voting", why:"That is an EU rule. ASEAN’s basic rule is consultation and consensus."},
@@ -1248,7 +1248,7 @@ ICA.addUnit({
      {t:"States leaving an organization", why:"That is withdrawal, a different concept."}]},
    {id:"e4u9-q06", lesson:"e4u9-l1", level:3, q:"An agency’s members are deeply split over a controversial program. Its secretariat continues the program, and members cannot agree on a resolution to stop it. Which concept best explains the secretariat’s freedom?", options:[
      {t:"The collective principal problem", ok:true, why:"Right. With many principals who disagree, no instruction or sanction can be agreed, so the agent gains room to act."},
-     {t:"Mitrany’s ramification", why:"Ramification is Mitrany’s idea of cooperation spreading between fields, not about controlling staff."},
+     {t:"Mitrany’s ramification", why:"Ramification is Mitrany’s idea that cooperation spreads between fields. It is not about controlling staff."},
      {t:"Weighted voting on the board", why:"Voting rules matter, but the main point is that divided principals cannot act together."},
      {t:"Functional spillover between sectors", why:"Spillover concerns integration spreading across sectors, not agency autonomy."}]},
    {id:"e4u9-q07", lesson:"e4u9-l1", level:3, q:"Negotiators expect large shocks in a commodity market but cannot predict when. According to rational design, which feature are they most likely to include in a new agreement?", options:[
@@ -1256,12 +1256,12 @@ ICA.addUnit({
      {t:"A ban on any future amendment", why:"Rigidity is what uncertainty argues against."},
      {t:"Membership limited to one state", why:"An agreement needs several members; uncertainty does not predict this."},
      {t:"A permanent veto for the smallest member", why:"Nothing in the uncertainty argument predicts this control rule."}]},
-   {id:"e4u9-q08", lesson:"e4u9-l1", level:2, q:"Which theory of European integration would explain the 2016 UK referendum and its exit in 2020 by the rise of identity politics and mass public debate about integration?", options:[
+   {id:"e4u9-q08", lesson:"e4u9-l1", level:2, q:"Which theory of European integration would explain the 2016 UK referendum and its exit in 2020? It points to the rise of identity politics and mass public debate about integration.", options:[
      {t:"Postfunctionalism (Hooghe and Marks)", ok:true, why:"Right. Their “constraining dissensus” describes how politicized identity can block or reverse integration."},
      {t:"Mitrany’s functionalism", why:"Functionalism expected loyalties to shift toward agencies; it does not explain a populist exit."},
      {t:"Rational design", why:"Rational design explains institutional features, not referendum politics."},
      {t:"Neofunctionalism", why:"Neofunctionalism predicts spreading integration; Haas himself struggled to explain reversals."}]},
-   {id:"e4u9-q09", lesson:"e4u9-l1", level:1, q:"Which is usually described as the oldest international organization still working today?", options:[
+   {id:"e4u9-q09", lesson:"e4u9-l1", level:1, q:"Which is usually called the oldest international organization still working today?", options:[
      {t:"The Rhine navigation commission (1815)", ok:true, why:"Right. The Central Commission for the Navigation of the Rhine was created by the Congress of Vienna; it still meets in Strasbourg."},
      {t:"The United Nations (1945)", why:"The UN is much younger than several technical bodies."},
      {t:"The World Health Organization in Geneva (1948)", why:"WHO was created after the Second World War."},
@@ -1359,7 +1359,7 @@ ICA.addUnit({
      {t:"The state loses its permanent seat", why:"No such rule exists."},
      {t:"The Secretary-General decides the matter", why:"The Secretary-General has no power to decide in place of the Council."}]},
    /* Lesson 4 */
-   {id:"e4u9-q28", lesson:"e4u9-l4", level:1, q:"Which court rulings established that European Community law can give rights directly to individuals and takes precedence over conflicting national law?", options:[
+   {id:"e4u9-q28", lesson:"e4u9-l4", level:1, q:"Which court rulings established two points? First, European Community law can give rights directly to individuals. Second, it takes precedence over conflicting national law.", options:[
      {t:"*Van Gend en Loos* (1963) and *Costa v ENEL* (1964)", ok:true, why:"Right. Direct effect and primacy, two foundations of EU supranationalism."},
      {t:"The *Lotus* case (1927) and *Nicaragua v United States* (1986)", why:"These are cases of the Permanent Court and the ICJ on general international law."},
      {t:"The Bangkok and Vienna Declarations (1993)", why:"These are human rights declarations, not court rulings."},
@@ -1376,7 +1376,7 @@ ICA.addUnit({
      {t:"All members must use one currency", why:"ASEAN has no common currency."}]},
    {id:"e4u9-q31", lesson:"e4u9-l4", level:3, q:"A military takes power in an African state. Which AU response is most consistent with its rules and practice?", options:[
      {t:"Suspension of the state from AU activities until constitutional order returns", ok:true, why:"Right. Unconstitutional changes of government lead to suspension, as several cases in the 2020s show."},
-     {t:"An automatic invasion under Article 4(h)", why:"Article 4(h) concerns war crimes, genocide and crimes against humanity, needs an Assembly decision, and has never been used against a government’s will."},
+     {t:"An automatic invasion under Article 4(h)", why:"Article 4(h) concerns war crimes, genocide and crimes against humanity. It needs an Assembly decision. It has never been used against a government’s will."},
      {t:"Nothing, because the AU follows strict non-interference", why:"That was the OAU’s rule; the AU moved toward non-indifference."},
      {t:"Expulsion from the United Nations", why:"The AU cannot expel anyone from the UN."}]},
    {id:"e4u9-q32", lesson:"e4u9-l4", level:1, q:"Which members joined the SCO in 2017?", options:[
@@ -1400,7 +1400,7 @@ ICA.addUnit({
      {t:"Expulsion of any member that criticizes the OAS", why:"No such rule exists."},
      {t:"A common currency for the Americas", why:"The Charter concerns democracy, not money."}]},
    {id:"e4u9-q36", lesson:"e4u9-l4", level:3, q:"East Asian trade and investment networks grew strongly for decades before formal agreements such as RCEP came into force in 2022. Which distinction does this illustrate?", options:[
-     {t:"Regionalization can run ahead of regionalism", ok:true, why:"Right. Market-driven integration (regionalization) can run ahead of state-led projects (regionalism). East Asia was long described as highly regionalized but lightly institutionalized."},
+     {t:"Regionalization can run ahead of regionalism", ok:true, why:"Right. Market-driven integration (regionalization) can run ahead of state-led projects (regionalism). East Asia was long called highly regionalized but lightly institutionalized."},
      {t:"Pooling versus delegation", why:"That distinction concerns ways of sharing sovereignty in institutions."},
      {t:"Input versus output legitimacy of institutions", why:"That concerns how institutions are judged."},
      {t:"Regime shifting versus competitive creation", why:"That concerns contesting institutions."}]},
