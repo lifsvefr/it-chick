@@ -1,15 +1,15 @@
 /* Social Science Primers · Sociology Unit 4 · Institutions and social change */
 ICA.addUnit({
   id:"e2u4", track:"e2", n:4, title:"Institutions and social change", icon:"🏛️",
-  blurb:"The big structures every society builds to meet its needs. These are the family, education, religion, government, the economy, health care and the media. The blurb also covers the forces that change them: population, aging, cities, the environment, technology, algorithms and AI, and social movements.",
+  blurb:"The big structures every society builds to meet its needs. These are the family, education, religion, government, the economy, health care and the media. It also covers the forces that change them: population, aging, cities, the environment, technology, algorithms and AI, and social movements.",
   goals:[
     "Explain what a social institution is and how family and education shape life chances",
-    "Analyze religion, power and forms of government with Durkheim’s, Weber’s and Marx’s ideas, without taking sides",
+    "Analyze religion, power and forms of government with the ideas of Durkheim, Weber and Marx. Do not take sides",
     "Compare economic systems, describe how work is changing, and explain why health is shaped by society",
-    "Calculate simple population rates, read the demographic transition model critically, and explain urbanization and environmental justice",
-    "Use the life-course perspective and dependency ratios to compare how societies handle aging, care and pensions",
-    "Explain how media, technology and social movements change societies, using the main sociological theories",
-    "Analyze algorithms, platform work, surveillance and border technologies as social systems, presenting the debates fairly"
+    "Calculate simple population rates. Read the demographic transition model with a critical eye. Explain urbanization (the growth of cities) and environmental justice",
+    "Use the life-course perspective and dependency ratios. Compare how societies handle aging, care and pensions",
+    "Explain how media, technology and social movements change societies. Use the main sociological theories",
+    "Analyze algorithms, platform work, surveillance and border technologies as social systems. Present both sides of the debates fairly"
   ],
   read:[
     {book:"soc", where:"Chapter 14 “Marriage and Family”, Chapter 15 “Religion”, Chapter 16 “Education”, Chapter 17 “Government and Politics”, Chapter 18 “Work and the Economy”, Chapter 19 “Health and Medicine”, Chapter 20 “Population, Urbanization, and the Environment”, Chapter 13 “Aging and the Elderly”, Chapter 21 “Social Movements and Social Change” and Chapter 8 “Media and Technology”", note:"Section numbers here follow the OpenStax website. The LibreTexts copy adds an “Introduction” page as x.1, so its section numbers are one higher (OpenStax 14.1 is LibreTexts 14.2). Many examples are from the United States; the lessons add examples from around the world."}
@@ -21,33 +21,33 @@ ICA.addUnit({
    goals:[
      "Explain what a social institution is and how institutions depend on each other",
      "Compare family forms, kinship systems and marriage patterns across cultures",
-     "Tell education’s manifest functions from its latent ones and spot the hidden curriculum",
-     "Explain how credentialism and tracking can turn school into a sorting machine, using several sociological lenses"
+     "Tell the manifest functions of education from its latent ones. Spot the hidden curriculum",
+     "Explain how credentialism and tracking can turn school into a sorting machine. Use several sociological lenses"
    ],
    guide:true,
    learn:[
     {h:"Before you read", body:[
       "Read Chapter 14 “Marriage and Family”, sections **14.1** “What Is Marriage? What Is a Family?” and **14.2** “Variations in Family Life”, then Chapter 16 “Education”, sections **16.1** “Education around the World”, **16.2** “Theoretical Perspectives on Education” and **16.3** “Issues in Education”. (On LibreTexts these are 14.2–14.3 and 16.2–16.4.) Family and school are the first institutions most people grow up inside. They shape life chances long before work begins.",
       {look:[
-        "What makes a group a family, and how do marriage patterns, residence rules and lines of descent differ between societies? (14.1)",
+        "What makes a group a family? How do marriage patterns, residence rules and lines of descent differ between societies? (14.1)",
         "Which family forms are becoming more common, and how does the family life course differ from the family life cycle? (14.1, 14.2)",
         "What does universal access mean, and why does access to schooling still differ between and within countries? (16.1, 16.3)",
-        "What are education’s manifest and latent functions? How do the other lenses explain tracking, cultural capital, the hidden curriculum and credentialism? (16.2)"
+        "What are the manifest and latent functions of education? How do the other lenses explain tracking, cultural capital, the hidden curriculum and credentialism? (16.2)"
       ]}
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "A [[social-institution|social institution]] is a lasting pattern of roles, rules and organizations that meets a basic need. Examples are family, education, religion, government, the economy, health care and media. A school is an organization; education is the institution. Institutions depend on each other: when factory work replaced farm work, families shrank and schooling grew longer. (14.1, 21.3)",
+        "A [[social-institution|social institution]] is a lasting pattern of roles, rules and organizations that meets a basic need. Examples are family, education, religion, government, the economy, health care and media. A school is an organization. Education is the institution. Institutions depend on each other. When factory work replaced farm work, families got smaller and schooling got longer. (14.1, 21.3)",
         "A [[family]] is a socially recognized group joined by blood, marriage or adoption. It shares emotional ties and works as an economic unit. You are born into a **family of orientation** and may form a **family of procreation**. A [[nuclear-family|nuclear family]] is parents and children. An [[extended-family|extended family]] adds other relatives. (14.1)",
-        "[[kinship|Kinship]] is traced differently: through both parents (bilateral), the father ([[patrilineal]]) or the mother ([[matrilineal]]). A new couple may live with the husband’s family (patrilocal) or the wife’s (matrilocal). (14.1)",
+        "[[kinship|Kinship]] is traced in different ways: through both parents (bilateral), through the father ([[patrilineal]]) or through the mother ([[matrilineal]]). A new couple may live with the husband’s family (patrilocal) or the wife’s (matrilocal). (14.1)",
         "[[monogamy|Monogamy]] is one spouse at a time, the only legal form in most countries. [[polygamy|Polygamy]] has two forms: [[polygyny]] (one man, several wives) and the rare [[polyandry]] (one woman, several husbands). (14.1)",
-        "Families are diversifying: more cohabitation, single parents, same-sex couples and people staying single. The flexible **family life course** has largely replaced the fixed stages of the **family life cycle**. (14.1, 14.2)",
-        "Functionalists split education’s functions into two kinds. Its intended [[manifest-function|manifest functions]] are socialization, cultural transmission, social control, social placement and cultural innovation. Its unintended [[latent-function|latent functions]] are courtship, social networks, group work, a generation gap, and political and social integration. (16.2)",
+        "Families are becoming more varied: more cohabitation, single parents, same-sex couples and people who stay single. The flexible **family life course** has mostly replaced the fixed stages of the **family life cycle**. (14.1, 14.2)",
+        "Functionalists divide the functions of education into two kinds. The intended ones are [[manifest-function|manifest functions]]. They are socialization, cultural transmission, social control, social placement and cultural innovation. The unintended ones are [[latent-function|latent functions]]. They are courtship, social networks, group work, a generation gap, and political and social integration. (16.2)",
         "Conflict theorists point to [[tracking]], biased tests, the [[hidden-curriculum|hidden curriculum]] (unspoken lessons such as obeying bells) and [[cultural-capital|cultural capital]] (Pierre Bourdieu). They argue these let schools pass on advantage while looking neutral. Interactionists show how labels become a **self-fulfilling prophecy**, and discuss [[credentialism]]. (16.2)"
       ]}
     ]},
     {h:"Picture it", body:[
-      {fig:'<svg viewBox="0 0 340 404"><g class="d-soft" stroke-width="1.5"><path d="M170 210 L170 40"/><path d="M170 210 L262 112"/><path d="M170 210 L272 232"/><path d="M170 210 L236 330"/><path d="M170 210 L104 330"/><path d="M170 210 L68 232"/><path d="M170 210 L78 112"/><path d="M170 40 L262 112 L272 232 L236 330 L104 330 L68 232 L78 112 Z" stroke-dasharray="4 4"/></g><circle class="d-panel" cx="170" cy="210" r="40" stroke-width="2"/><text x="170" y="215" text-anchor="middle">Society</text><rect class="d-rose" x="110" y="20" width="120" height="40" rx="8" stroke-width="2"/><text x="170" y="37" text-anchor="middle">Family</text><text class="s" x="170" y="53" text-anchor="middle">care, kinship</text><rect class="d-lup" x="202" y="92" width="120" height="40" rx="8" stroke-width="2"/><text x="262" y="109" text-anchor="middle">Education</text><text class="s" x="262" y="125" text-anchor="middle">knowledge, skills</text><rect class="d-gold" x="212" y="212" width="120" height="40" rx="8" stroke-width="2"/><text x="272" y="229" text-anchor="middle">Economy</text><text class="s" x="272" y="245" text-anchor="middle">goods, services</text><rect class="d-sage" x="176" y="310" width="120" height="40" rx="8" stroke-width="2"/><text x="236" y="327" text-anchor="middle">Government</text><text class="s" x="236" y="343" text-anchor="middle">order, decisions</text><rect class="d-rose" x="44" y="310" width="120" height="40" rx="8" stroke-width="2"/><text x="104" y="327" text-anchor="middle">Health care</text><text class="s" x="104" y="343" text-anchor="middle">wellbeing</text><rect class="d-lup" x="8" y="212" width="120" height="40" rx="8" stroke-width="2"/><text x="68" y="229" text-anchor="middle">Religion</text><text class="s" x="68" y="245" text-anchor="middle">meaning, ritual</text><rect class="d-gold" x="18" y="92" width="120" height="40" rx="8" stroke-width="2"/><text x="78" y="109" text-anchor="middle">Media</text><text class="s" x="78" y="125" text-anchor="middle">information</text><text class="s" x="170" y="378" text-anchor="middle">Dashed ring: a change in one institution</text><text class="s" x="170" y="394" text-anchor="middle">pushes on its neighbors.</text></svg>', alt:"Seven institutions arranged in a ring around society, each linked to the center and to its neighbors. They are family, education, economy, government, health care, religion and media.", cap:"Institutions are connected. When factory work replaced farm work, families got smaller, schooling got longer and governments took on new jobs such as pensions."},
+      {fig:'<svg viewBox="0 0 340 404"><g class="d-soft" stroke-width="1.5"><path d="M170 210 L170 40"/><path d="M170 210 L262 112"/><path d="M170 210 L272 232"/><path d="M170 210 L236 330"/><path d="M170 210 L104 330"/><path d="M170 210 L68 232"/><path d="M170 210 L78 112"/><path d="M170 40 L262 112 L272 232 L236 330 L104 330 L68 232 L78 112 Z" stroke-dasharray="4 4"/></g><circle class="d-panel" cx="170" cy="210" r="40" stroke-width="2"/><text x="170" y="215" text-anchor="middle">Society</text><rect class="d-rose" x="110" y="20" width="120" height="40" rx="8" stroke-width="2"/><text x="170" y="37" text-anchor="middle">Family</text><text class="s" x="170" y="53" text-anchor="middle">care, kinship</text><rect class="d-lup" x="202" y="92" width="120" height="40" rx="8" stroke-width="2"/><text x="262" y="109" text-anchor="middle">Education</text><text class="s" x="262" y="125" text-anchor="middle">knowledge, skills</text><rect class="d-gold" x="212" y="212" width="120" height="40" rx="8" stroke-width="2"/><text x="272" y="229" text-anchor="middle">Economy</text><text class="s" x="272" y="245" text-anchor="middle">goods, services</text><rect class="d-sage" x="176" y="310" width="120" height="40" rx="8" stroke-width="2"/><text x="236" y="327" text-anchor="middle">Government</text><text class="s" x="236" y="343" text-anchor="middle">order, decisions</text><rect class="d-rose" x="44" y="310" width="120" height="40" rx="8" stroke-width="2"/><text x="104" y="327" text-anchor="middle">Health care</text><text class="s" x="104" y="343" text-anchor="middle">wellbeing</text><rect class="d-lup" x="8" y="212" width="120" height="40" rx="8" stroke-width="2"/><text x="68" y="229" text-anchor="middle">Religion</text><text class="s" x="68" y="245" text-anchor="middle">meaning, ritual</text><rect class="d-gold" x="18" y="92" width="120" height="40" rx="8" stroke-width="2"/><text x="78" y="109" text-anchor="middle">Media</text><text class="s" x="78" y="125" text-anchor="middle">information</text><text class="s" x="170" y="378" text-anchor="middle">Dashed ring: a change in one institution</text><text class="s" x="170" y="394" text-anchor="middle">pushes on its neighbors.</text></svg>', alt:"Seven institutions arranged in a ring around society. Each is linked to the center and to its neighbors. They are family, education, economy, government, health care, religion and media.", cap:"Institutions are connected. When factory work replaced farm work, families got smaller, schooling got longer and governments took on new jobs such as pensions."},
       {fig:'<svg viewBox="0 0 340 326"><defs><marker id="e2u4-l1-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="8" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="29" text-anchor="middle">An early test or judgment</text><text class="s" x="148" y="47" text-anchor="middle">often reflects home advantages</text><path class="d-ink" d="M148 60 L148 84" stroke-width="2" marker-end="url(#e2u4-l1-a)"/><rect class="d-rose" x="8" y="86" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="107" text-anchor="middle">Placed in a lower track</text><text class="s" x="148" y="125" text-anchor="middle">the label sticks</text><path class="d-ink" d="M148 138 L148 162" stroke-width="2" marker-end="url(#e2u4-l1-a)"/><rect class="d-gold" x="8" y="164" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="185" text-anchor="middle">Easier work, lower expectations</text><text class="s" x="148" y="203" text-anchor="middle">fewer chances to catch up</text><path class="d-ink" d="M148 216 L148 240" stroke-width="2" marker-end="url(#e2u4-l1-a)"/><rect class="d-sage" x="8" y="242" width="280" height="50" rx="8" stroke-width="2"/><text x="148" y="263" text-anchor="middle">Lower results</text><text class="s" x="148" y="281" text-anchor="middle">“the placement was right”</text><path class="d-ink" d="M290 267 L314 267 L314 33 L291 33" fill="none" stroke-width="2" marker-end="url(#e2u4-l1-a)"/><text class="s" x="148" y="316" text-anchor="middle">a self-fulfilling prophecy</text></svg>', alt:"Four boxes stacked top to bottom, joined into a loop. An early test leads to placement in a lower track. This brings easier work and lower expectations, which produces lower results. An arrow runs back up to the top, as the results seem to confirm the original judgment.", cap:"How tracking can become a loop. Supporters argue tracking lets teaching match students’ levels; critics point to this loop."}
     ]},
     {h:"Key terms", body:[ {terms:["social-institution","family","nuclear-family","extended-family","kinship","matrilineal","polygamy","hidden-curriculum","credentialism","tracking","cultural-capital"]} ]},
@@ -57,25 +57,25 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u4-l1-x1", type:"mcq", q:"Kaito, a first-year student, says: “My local university is a social institution.” A sociologist would gently correct him. What is the most accurate version?", options:[
-      {t:"The university is an organization; education is the institution it belongs to.", ok:true, why:"Right. An institution is the society-wide pattern of roles and rules (teachers, students, exams, qualifications). A single university is one organization working inside it."},
-      {t:"He’s right: any large building with a public purpose is an institution.", why:"Sociologists don’t define institutions by buildings. Education would still be an institution if every class moved online."},
-      {t:"Only governments count as institutions; universities are private bodies.", why:"Family, religion, the economy and education are all institutions, whoever runs the organizations inside them."},
+      {t:"The university is an organization. Education is the institution that it belongs to.", ok:true, why:"Right. An institution is the pattern of roles and rules across the whole society (teachers, students, exams, qualifications). A single university is one organization inside it."},
+      {t:"He’s right: any large building with a public purpose is an institution.", why:"Sociologists do not define institutions by buildings. Education would still be an institution if every class moved online."},
+      {t:"Only governments count as institutions; universities are private bodies.", why:"Family, religion, the economy and education are all institutions. It does not matter who runs the organizations inside them."},
       {t:"Universities aren’t part of any institution because they’re optional.", why:"Being optional doesn’t matter. The pattern of higher education still meets a basic social need: passing on knowledge and sorting people into roles."}
     ]},
-    {id:"e2u4-l1-x2", type:"sort", q:"Is each effect of schooling a manifest function (intended, openly stated) or a latent function (an unintended side effect)?", buckets:["Manifest function","Latent function"], items:[
+    {id:"e2u4-l1-x2", type:"sort", q:"Is each effect of schooling a manifest function (intended and openly stated)? Or is it a latent function (an unintended side effect)?", buckets:["Manifest function","Latent function"], items:[
       {t:"Students learn to read, write and do arithmetic.", b:0, why:"Teaching core knowledge is the stated purpose of schooling."},
-      {t:"Exam results help decide who gets into which jobs and courses.", b:0, why:"Social placement is an openly stated function: qualifications are meant to sort people."},
+      {t:"Exam results help decide who gets into which jobs and courses.", b:0, why:"Social placement is an openly stated function. Qualifications are meant to sort people."},
       {t:"Ana meets her future spouse in a university club.", b:1, why:"Courtship is a side effect. No school lists matchmaking as its purpose."},
       {t:"Classmates from different neighborhoods form a lasting friendship network.", b:1, why:"Social networks are a latent function: useful, but not why schools exist."},
       {t:"Students learn their country’s history and shared language.", b:0, why:"Cultural transmission is a manifest function of schooling."},
-      {t:"Teenagers pick up ideas at school that their parents don’t share, widening a generation gap.", b:1, why:"The generation gap is an unintended consequence of spending years learning alongside peers."}
+      {t:"Teenagers pick up ideas at school that their parents don’t share, widening a generation gap.", b:1, why:"The generation gap is an unintended result of spending years learning alongside peers."}
     ]},
     {id:"e2u4-l1-x3", type:"match", q:"Match each description to the family or kinship pattern it shows.", pairs:[
       ["Land and family name pass from mother to daughter.","Matrilineal descent","Tracing kinship and inheritance through the mother’s line is matrilineal descent."],
       ["Three generations, including grandparents and an aunt, share one home and budget.","Extended family","A household with parents, children and other relatives is an extended family."],
       ["A woman is married to two brothers at the same time.","Polyandry","One woman with more than one husband is polyandry, the rarer form of polygamy."],
       ["A man has three wives, recognized under his country’s family law.","Polygyny","One man with more than one wife is polygyny, the more common form of polygamy."],
-      ["Two parents and their children live in their own apartment, apart from other relatives.","Nuclear family","Parents and children in one household, without other relatives, is a nuclear family."]
+      ["Two parents and their children live in their own apartment, apart from other relatives.","Nuclear family","Parents and children in one household, with no other relatives, make a nuclear family."]
     ]},
     {id:"e2u4-l1-x4", type:"spot", q:"Here is a description of Priya’s school day. Tap the parts that show the **hidden curriculum** (unofficial lessons about how to behave), not the formal curriculum.", ask:"shows the hidden curriculum", parts:[
       "The day starts when ",
@@ -87,18 +87,18 @@ ICA.addUnit({
       ". In science they ",
       {t:"label the parts of a plant cell", flag:false, why:"Again formal curriculum: a planned topic that will be tested."},
       ". Before lunch, ",
-      {t:"students must ask permission to use the toilet", flag:true, why:"Needing permission for basic needs teaches acceptance of institutional authority, an unwritten lesson."},
+      {t:"students must ask permission to use the toilet", flag:true, why:"Needing permission for basic needs teaches people to accept the authority of institutions. This is an unwritten lesson."},
       ", and in the afternoon they ",
       {t:"read a chapter of a history textbook", flag:false, why:"Reading assigned history is part of the formal, stated curriculum."},
       "."
     ]},
     {id:"e2u4-l1-x5", type:"sort", q:"Which sociological lens does each claim come from?", buckets:["Functionalism","Conflict theory","Symbolic interactionism"], items:[
-      {t:"Schools sort talented people into the jobs society needs most.", b:0, why:"Seeing education as sorting talent for society’s benefit is functionalist social placement."},
+      {t:"Schools sort talented people into the jobs society needs most.", b:0, why:"Seeing education as a way to sort talent for the good of society is the functionalist idea of social placement."},
       {t:"Children from richer homes arrive with cultural capital that schools reward, so advantage passes down.", b:1, why:"Explaining how schools reproduce inequality between groups is the conflict view."},
-      {t:"A student called “a slow learner” starts to see herself that way and stops trying.", b:2, why:"Focusing on labels, meanings and self-image in everyday interaction is symbolic interactionism."},
+      {t:"A student called “a slow learner” starts to see herself that way and stops trying.", b:2, why:"Symbolic interactionism looks at labels, meanings and self-image in daily life."},
       {t:"Families exist to raise children and pass on culture, keeping society stable.", b:0, why:"Explaining an institution by the needs it meets for society is functionalism."},
       {t:"Within a couple, the partner who earns more often has more say in decisions.", b:1, why:"Linking power inside the family to unequal resources is conflict theory."},
-      {t:"What counts as a “good mother” has changed a great deal over the last century.", b:2, why:"Treating family roles as meanings people create and revise is symbolic interactionism."}
+      {t:"What counts as a “good mother” has changed a great deal over the last century.", b:2, why:"Treating family roles as meanings that people create and change is symbolic interactionism."}
     ]},
     {id:"e2u4-l1-x6", type:"mcq", q:"Tomás was put in the lowest math set at age 11 after one test. Three years later his results are still low, and his school says this proves the placement was right. What is the strongest sociological objection?", options:[
       {t:"The placement itself may have produced the low results.", ok:true, why:"Exactly. Easier work and lower expectations can create a self-fulfilling prophecy. If the track itself limits what Tomás is taught and expected to achieve, his low results can’t be used as proof that the label was accurate."},
@@ -125,7 +125,7 @@ ICA.addUnit({
      "Explain how Durkheim, Weber and Marx analyzed religion, and how each sociological lens sees it",
      "Describe the secularization debate fairly, with the evidence on each side",
      "Classify authority as traditional, rational-legal or charismatic, using Weber’s types",
-     "Compare democracy, monarchy, authoritarianism and totalitarianism, and describe how people take part in politics"
+     "Compare democracy, monarchy, authoritarianism and totalitarianism. Describe how people take part in politics"
    ],
    guide:true,
    learn:[
@@ -135,7 +135,7 @@ ICA.addUnit({
         "How did Durkheim, Weber and Marx each explain what religion does for society? (15.1)",
         "How are religions classified by belief, and how do ecclesia, denomination, sect and cult differ? (15.2)",
         "What is the difference between power and authority, and what are Weber’s three types of authority? (17.1)",
-        "How do monarchy, oligarchy, dictatorship and democracy differ, and how do the lenses explain who really holds power? (17.2, 17.4)"
+        "How do monarchy, oligarchy, dictatorship and democracy differ? How do the lenses explain who really holds power? (17.2, 17.4)"
       ]}
     ]},
     {h:"The big ideas", body:[
@@ -144,13 +144,13 @@ ICA.addUnit({
         "{{emile-durkheim|Durkheim}} (“The Elementary Forms of Religious Life”, 1912) saw religion as a line a community draws. On one side is the [[sacred]] (set apart, treated with awe); on the other is the [[profane]] (everyday). Sacredness is a status the group gives: one river can be washing water in the morning and a ritual bath at dawn. Shared ritual brings cohesion, social control and meaning. (15.1)",
         "{{max-weber|Weber}} (“The Protestant Ethic and the Spirit of Capitalism”, 1904–05) argued that beliefs can drive economic change. {{karl-marx|Marx}} (1844) called religion “the opium of the people” and “the sigh of the oppressed creature”. He meant that religion gives real comfort that can also distract from changing conditions. (15.1)",
         "Religions are classified by belief. The types are monotheism, polytheism, animism, and non-theistic traditions such as many forms of Buddhism. They are also classified by organization, from most to least established: ecclesia (state religion), denomination, sect and cult. A cult is also called a new religious movement. (15.2)",
-        "[[power|Power]] is the ability to impose your will on others; [[authority]] is power people accept as legitimate. Weber’s types: [[traditional-authority|traditional]] (custom and inheritance), [[rational-legal-authority|rational-legal]] (laws and offices) and [[charismatic-authority|charismatic]] (devotion to an extraordinary person). Real rulers often mix them. (17.1)",
+        "[[power|Power]] is the ability to make others do what you want. [[authority]] is power that people accept as right. Weber named three types. [[traditional-authority|Traditional]] authority rests on custom and inheritance. [[rational-legal-authority|Rational-legal]] authority rests on laws and offices. [[charismatic-authority|Charismatic]] authority rests on devotion to an extraordinary person. Real rulers often mix them. (17.1)",
         "Governments differ in who rules and how much they control. Types include [[democracy]] (direct or representative), [[monarchy]] (absolute or constitutional, as in Japan or Sweden), [[oligarchy]] (a small elite) and dictatorship ([[authoritarianism|authoritarian]] rule). The extreme [[totalitarian]] form of dictatorship tries to control nearly all of life. Classify by observable features. Ask how leaders are chosen. Ask whether they can be voted out. Ask whether courts and media are independent. (17.2)",
-        "Functionalists (pluralists) see many groups bargaining while government keeps order; conflict theorists follow {{c-wright-mills|C. Wright Mills}}’s “The Power Elite” (1956): business, military and political leaders decide; interactionists study flags, slogans and how issues are framed. (17.4)"
+        "Functionalists (pluralists) see many groups bargaining while the government keeps order. Conflict theorists follow {{c-wright-mills|C. Wright Mills}}’s “The Power Elite” (1956): business, military and political leaders decide. Interactionists study flags, slogans and how issues are framed. (17.4)"
       ]}
     ]},
     {h:"Picture it", body:[
-      {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e2u4-l2-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><circle class="d-gold" cx="170" cy="58" r="48" stroke-width="2"/><text x="170" y="54" text-anchor="middle">Charismatic</text><text class="s" x="170" y="72" text-anchor="middle">the leader</text><text class="s" x="8" y="24">after the leader:</text><text class="s" x="8" y="40">charisma becomes</text><text class="s" x="8" y="56">custom</text><text class="s" x="332" y="24" text-anchor="end">after the leader:</text><text class="s" x="332" y="40" text-anchor="end">charisma becomes</text><text class="s" x="332" y="56" text-anchor="end">rules</text><circle class="d-lup" cx="70" cy="250" r="54" stroke-width="2"/><text x="70" y="246" text-anchor="middle">Traditional</text><text class="s" x="70" y="264" text-anchor="middle">custom</text><circle class="d-sage" cx="270" cy="250" r="54" stroke-width="2"/><text x="270" y="246" text-anchor="middle">Rational-legal</text><text class="s" x="270" y="264" text-anchor="middle">rules and law</text><path class="d-ink" d="M138 94 L100 199" stroke-width="2" marker-end="url(#e2u4-l2-a)"/><path class="d-ink" d="M202 94 L240 199" stroke-width="2" marker-end="url(#e2u4-l2-a)"/><path class="d-ink" d="M127 250 L213 250" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#e2u4-l2-a)"/><text class="s" x="170" y="326" text-anchor="middle">Weber: modern states shift toward rules</text><text x="170" y="350" text-anchor="middle">Routinization of charisma</text></svg>', alt:"Three circles: charismatic authority at the top, traditional at bottom left, rational-legal at bottom right. Arrows show charisma turning into custom or rules after the leader, and a dashed arrow from traditional to rational-legal.", cap:"Charismatic authority is powerful but unstable: when the leader dies, followers must turn it into tradition or rules. Weber called this the routinization of charisma."},
+      {fig:'<svg viewBox="0 0 340 360"><defs><marker id="e2u4-l2-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><circle class="d-gold" cx="170" cy="58" r="48" stroke-width="2"/><text x="170" y="54" text-anchor="middle">Charismatic</text><text class="s" x="170" y="72" text-anchor="middle">the leader</text><text class="s" x="8" y="24">after the leader:</text><text class="s" x="8" y="40">charisma becomes</text><text class="s" x="8" y="56">custom</text><text class="s" x="332" y="24" text-anchor="end">after the leader:</text><text class="s" x="332" y="40" text-anchor="end">charisma becomes</text><text class="s" x="332" y="56" text-anchor="end">rules</text><circle class="d-lup" cx="70" cy="250" r="54" stroke-width="2"/><text x="70" y="246" text-anchor="middle">Traditional</text><text class="s" x="70" y="264" text-anchor="middle">custom</text><circle class="d-sage" cx="270" cy="250" r="54" stroke-width="2"/><text x="270" y="246" text-anchor="middle">Rational-legal</text><text class="s" x="270" y="264" text-anchor="middle">rules and law</text><path class="d-ink" d="M138 94 L100 199" stroke-width="2" marker-end="url(#e2u4-l2-a)"/><path class="d-ink" d="M202 94 L240 199" stroke-width="2" marker-end="url(#e2u4-l2-a)"/><path class="d-ink" d="M127 250 L213 250" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#e2u4-l2-a)"/><text class="s" x="170" y="326" text-anchor="middle">Weber: modern states shift toward rules</text><text x="170" y="350" text-anchor="middle">Routinization of charisma</text></svg>', alt:"Three circles: charismatic authority at the top, traditional at bottom left, rational-legal at bottom right. Arrows show charisma turning into custom or rules after the leader. A dashed arrow goes from traditional to rational-legal.", cap:"Charismatic authority is powerful but unstable. When the leader dies, followers must turn it into tradition or rules. Weber called this the routinization of charisma."},
       {fig:'<svg viewBox="0 0 340 452"><defs><marker id="e2u4-l2-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><path class="d-ink" d="M24 420 L332 420" stroke-width="2" marker-end="url(#e2u4-l2-b)"/><path class="d-ink" d="M24 420 L24 36" stroke-width="2" marker-end="url(#e2u4-l2-b)"/><text class="s" x="34" y="24">how much of life the state controls</text><text class="s" x="24" y="442">power shared by many</text><text class="s" x="332" y="442" text-anchor="end">held by one or a few</text><circle class="d-sage" cx="56" cy="395" r="9" stroke-width="2"/><text x="70" y="400">direct democracy</text><circle class="d-sage" cx="83" cy="355" r="9" stroke-width="2"/><text x="97" y="360">representative democracy</text><circle class="d-gold" cx="106" cy="315" r="9" stroke-width="2"/><text x="120" y="320">constitutional monarchy</text><circle class="d-lup" cx="200" cy="250" r="9" stroke-width="2"/><text x="188" y="255" text-anchor="end">oligarchy</text><circle class="d-gold" cx="290" cy="272" r="9" stroke-width="2"/><text x="332" y="298" text-anchor="end">absolute monarchy</text><circle class="d-rose" cx="256" cy="194" r="9" stroke-width="2"/><text x="244" y="199" text-anchor="end">authoritarian rule</text><circle class="d-rose" cx="300" cy="85" r="11" stroke-width="2"/><text x="285" y="90" text-anchor="end">totalitarian rule</text></svg>', alt:"A chart. The horizontal axis runs from power shared by many to power held by one or a few. The vertical axis shows how much of life the state controls. Democracies sit bottom left, oligarchy and absolute monarchy in the middle right, authoritarian rule higher, and totalitarian rule at the top right.", cap:"A rough map, not a ranking of real countries. Positions are typical; real governments mix features and can move over time."}
     ]},
     {h:"Key terms", body:[ {terms:["religion","sacred","profane","secularization","power","authority","traditional-authority","rational-legal-authority","charismatic-authority","democracy","totalitarian"]} ]},
@@ -161,8 +161,8 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u4-l2-x1", type:"match", q:"Match each thinker to the idea sociologists most associate with them.", pairs:[
-      ["Émile Durkheim","Religion separates the sacred from the profane and binds people into a moral community","Durkheim’s *Elementary Forms of Religious Life* (1912) built his theory on the sacred–profane distinction."],
-      ["Max Weber","Some Protestant beliefs encouraged the disciplined work and saving that helped capitalism grow","This is the argument of *The Protestant Ethic and the Spirit of Capitalism* (1904–05)."],
+      ["Émile Durkheim","Religion separates the sacred from the profane and joins people into a moral community","Durkheim’s *Elementary Forms of Religious Life* (1912) built his theory on the sacred–profane distinction."],
+      ["Max Weber","Some Protestant beliefs encouraged the hard work and saving that helped capitalism grow","This is the argument of *The Protestant Ethic and the Spirit of Capitalism* (1904–05)."],
       ["Karl Marx","Religion comforts the oppressed but can distract them from changing their conditions","Marx’s 1844 “opium of the people” passage sees religion as both a sigh of the oppressed and a barrier to change."],
       ["Peter Berger","First argued strongly for secularization, later said most of the world is as religious as ever","Berger’s change of mind (1967 to 1999) is a key moment in the secularization debate."],
       ["C. Wright Mills","A small power elite of business, military and political leaders makes the key decisions","*The Power Elite* (1956) is a classic conflict view of power."]
@@ -173,7 +173,7 @@ ICA.addUnit({
       {t:"Thousands follow a young preacher because they believe she has an extraordinary gift.", b:2, why:"Devotion to a person’s exceptional qualities is charismatic authority."},
       {t:"A newly elected mayor takes office after the votes are counted under the city charter.", b:1, why:"Power comes from following set rules and procedures: rational-legal."},
       {t:"In a family business, the eldest son takes over because that’s how it has always been done.", b:0, why:"Custom, not rules or personal gifts, legitimates him: traditional authority."},
-      {t:"An independence movement rallies around a leader whose speeches inspire devotion.", b:2, why:"The leader’s personal appeal, not office or custom, is the source: charismatic authority."}
+      {t:"An independence movement rallies around a leader whose speeches inspire devotion.", b:2, why:"The source is the leader’s personal appeal, not an office or custom. That is charismatic authority."}
     ]},
     {id:"e2u4-l2-x3", type:"mcq", q:"Which statement describes the secularization debate most accurately?", options:[
       {t:"Religion has declined in some regions but not others, so the debate continues.", ok:true, why:"Religion has declined on some measures in some regions, especially Western Europe. It has persisted or grown elsewhere. So sociologists still disagree about how far secularization applies. This reflects the evidence: decline in some places, growth or change in others, and a real scholarly debate."},
@@ -182,14 +182,14 @@ ICA.addUnit({
       {t:"Secularization only means that fewer people believe in God.", why:"It also means religion separating from other institutions and becoming a private matter. Mixing these meanings up causes many arguments."}
     ]},
     {id:"e2u4-l2-x4", type:"sort", q:"These countries are invented. Which form of government does each description fit best?", buckets:["Constitutional monarchy","Representative democracy (republic)","Absolute monarchy","Totalitarian rule"], items:[
-      {t:"Velmora’s king opens parliament each year, but the elected prime minister and parliament make the laws.", b:0, why:"A monarch who is mainly symbolic, with an elected parliament governing, is a constitutional monarchy."},
-      {t:"In Ostrava Nova, citizens elect a president and a legislature every four years, and courts can overrule both.", b:1, why:"Elected representatives, no monarch and independent courts describe a representative democratic republic."},
+      {t:"Velmora’s king opens parliament each year, but the elected prime minister and parliament make the laws.", b:0, why:"A monarch who is mostly symbolic, with an elected parliament that governs, is a constitutional monarchy."},
+      {t:"In Ostrava Nova, citizens elect a president and a legislature every four years. Courts can overrule both.", b:1, why:"Elected representatives, no monarch and courts that are free from control make a representative democratic republic."},
       {t:"Qasmir’s sultan makes the laws, appoints the judges and can’t be removed by any vote.", b:2, why:"One hereditary ruler with real, unchecked power is an absolute monarchy."},
-      {t:"In Drevnia, the single party assigns jobs, decides family size, bans all religion and requires daily loyalty rituals.", b:3, why:"Control over nearly every area of life, including private life and belief, is totalitarian."},
-      {t:"Lusenne has a queen with no political power, and voters elect members of parliament who choose the government.", b:0, why:"A symbolic monarch alongside an elected parliament is again a constitutional monarchy."}
+      {t:"In Drevnia, the single party assigns jobs, decides family size, bans all religion and demands daily loyalty rituals.", b:3, why:"Control over almost every part of life, including private life and belief, is totalitarian."},
+      {t:"Lusenne has a queen with no political power, and voters elect members of parliament who choose the government.", b:0, why:"A monarch who is only symbolic, with an elected parliament, is a constitutional monarchy again."}
     ]},
     {id:"e2u4-l2-x5", type:"spot", q:"A website posts this summary. Tap the parts that are problems with the claim.", ask:"is a problem with the claim", parts:[
-      {t:"“New survey proves religion is dying worldwide.”", flag:true, why:"Overgeneralization: one survey can’t “prove” a worldwide trend, especially from the sample described next."},
+      {t:"“New survey proves religion is dying worldwide.”", flag:true, why:"Overgeneralization: one survey cannot “prove” a trend in the whole world, especially from the sample described next."},
       " Researchers ",
       {t:"asked 2,000 adults", flag:false, why:"A sample of 2,000 can be perfectly adequate if it’s drawn well. Size isn’t the problem here."},
       " ",
@@ -210,9 +210,9 @@ ICA.addUnit({
       {t:"A teacher with an extraordinary personal appeal gathers devoted followers.", why:"It starts with charismatic authority, based on the leader’s personal qualities."},
       {t:"The leader dies, and followers face the question of who leads now.", why:"Charismatic authority is unstable because it rests on one person."},
       {t:"Followers agree on rules for choosing successors and write down the teachings.", why:"Routinization begins: charisma is turned into rules or customs."},
-      {t:"A formal organization with offices, ranks and procedures runs the movement.", why:"The end point is rational-legal (or traditional) authority, which can outlast any single leader."}
+      {t:"A formal organization with offices, ranks and procedures runs the movement.", why:"The end point is rational-legal (or traditional) authority. This kind of authority can last longer than any single leader."}
     ]},
-    {id:"e2u4-l2-x8", type:"explain", q:"A movement grows around a famous, inspiring founder. Using Weber’s types of authority, explain why the movement faces a crisis when the founder dies, and how it might survive.", size:"3–5 sentences", model:"Weber separated power from authority. Power is the ability to impose your will. Authority is power that people accept as legitimate. The founder holds charismatic authority: followers obey out of devotion to an extraordinary person. It is powerful but unstable, because it lives in one individual. When the founder dies, the movement must turn charisma into something lasting. Weber called this the routinization of charisma. It might become traditional authority, for example by passing leadership to a relative. Or it might become rational-legal authority, with written rules, offices and elections.", points:["Identifies the founder’s authority as charismatic", "Explains why charismatic authority is unstable", "Names or describes the routinization of charisma", "Gives a way it could become traditional or rational-legal authority"]}
+    {id:"e2u4-l2-x8", type:"explain", q:"A movement grows around a famous, inspiring founder. Using Weber’s types of authority, explain why the movement faces a crisis when the founder dies, and how it might survive.", size:"3–5 sentences", model:"Weber separated power from authority. Power is the ability to make others do what you want. Authority is power that people accept as legitimate. The founder holds charismatic authority: followers obey out of devotion to an extraordinary person. It is powerful but unstable, because it depends on one individual. When the founder dies, the movement must turn charisma into something lasting. Weber called this the routinization of charisma. It might become traditional authority, for example by passing leadership to a relative. Or it might become rational-legal authority, with written rules, offices and elections.", points:["Identifies the founder’s authority as charismatic", "Explains why charismatic authority is unstable", "Names or describes the routinization of charisma", "Gives a way it could become traditional or rational-legal authority"]}
    ],
    apply:{intro:"Look at religion and power around you, as an observer. Be respectful: don’t photograph or record people, and don’t enter a ceremony unless visitors are welcome.", tasks:[
      {t:"Find the sacred and the profane", how:["Choose one ritual you can observe respectfully or remember well. Examples are a religious service, a wedding, a funeral, a national holiday or a memorial day.","List the objects, places, words or times treated as sacred (special rules, special behavior).","List the profane, ordinary uses of the same things at other times.","Note how the ritual brings people together (cohesion) and what behavior it expects (social control)."], write:"The ritual, what was treated as sacred, how it created cohesion…"},
@@ -228,7 +228,7 @@ ICA.addUnit({
   {id:"e2u4-l3", title:"Work, the economy and health", minutes:55,
    hook:{q:"The British civil servants in the Whitehall studies all had jobs and access to health care. Did their health differ by rank?", options:["No: equal access to care made health equal","Only the very top rank was healthier","Yes: health got worse at each step down the job ladder","Lower ranks were healthier, because their work was more active"], answer:2, reveal:"**Yes, at each step down.** Researchers call this a social gradient: health follows position in society, even when everyone can see a doctor. This lesson shows how the economy decides who gets what. It also shows how that shapes who stays healthy, through what WHO calls the [[social-determinants|social determinants of health]]."},
    goals:[
-     "Compare capitalism, socialism and mixed economies without treating any as automatically good or bad",
+     "Compare capitalism, socialism and mixed economies. Do not treat any of them as automatically good or bad",
      "Explain the informal economy, global commodity chains, deindustrialization and automation",
      "Explain why health is shaped by social conditions, using the social determinants of health",
      "Analyze medicalization and global health inequalities through the sociological lenses"
@@ -238,7 +238,7 @@ ICA.addUnit({
     {h:"Before you read", body:[
       "Read Chapter 18 “Work and the Economy”. Read sections **18.1** “Economic Systems” and **18.2** “Globalization and the Economy”. Skim **18.3** for outsourcing, automation and polarization. Then read Chapter 19 “Health and Medicine”. Read sections **19.1** “The Social Construction of Health”, **19.2** “Global Health”, **19.4** “Comparative Health and Medicine” and **19.5** “Theoretical Perspectives on Health and Medicine”. (On LibreTexts: 18.2–18.4, 19.2–19.3 and 19.5–19.6.) Section 19.3 is about the US and optional. The economy decides who gets what, and that shapes who stays healthy.",
       {look:[
-        "How do capitalism, socialism and mixed economies differ, and what does convergence theory predict? (18.1)",
+        "How do capitalism, socialism and mixed economies differ? What does convergence theory predict? (18.1)",
         "What is a global commodity chain, and who gains and loses from globalization? (18.2)",
         "What does it mean to say health is socially constructed, and what does social epidemiology study? (19.1, 19.2)",
         "How do health systems differ between countries, and how do the lenses explain the sick role and medicalization? (19.4, 19.5)"
@@ -246,13 +246,13 @@ ICA.addUnit({
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "The **economy** is the institution that manages a society’s goods and services. Societies have moved from farming to industrial to post-industrial economies, where most people work in services. (18.1)",
+        "The **economy** is the institution that manages the goods and services of a society. Societies have moved from farming to industry. Now they are post-industrial, and most people work in services. (18.1)",
         "[[capitalism|Capitalism]] rests on private ownership and profit. [[socialism|Socialism]] rests on state or collective ownership, aimed at meeting needs and sharing wealth. Almost every real economy is a [[mixed-economy|mixed economy]]. Market socialism allows some markets. **Convergence theory** predicts that economies grow more alike as they develop. (18.1)",
         "[[globalization|Globalization]] spreads production along **global commodity chains**. One T-shirt may be grown, spun, sewn, branded and sold in different countries, and each link captures a different share of the price. (18.2)",
         "**Outsourcing** and [[automation]] can **polarize** work: more high-pay and low-pay jobs, fewer in the middle. [[deindustrialization|Deindustrialization]], the loss of factory jobs, ripples into families, schools and health. (18.3)",
         "Health is social: culture shapes what counts as illness and who gets blamed. [[social-epidemiology|Social epidemiology]] studies how disease is caused and distributed. Rich countries face mostly chronic illness such as heart disease and cancer. Poorer ones must also fight infectious disease and high infant mortality with too few staff. (19.1, 19.2)",
         "**Universal health care** guarantees everyone coverage, through taxes or social insurance. Other systems rely on private insurance or paying at the point of care. (19.4)",
-        "Talcott Parsons’s [[sick-role|sick role]] (functionalism) excuses sick people from duties if they try to get well and seek competent help. [[medicalization|Medicalization]] redefines once-deviant or ordinary behavior as illness. **Demedicalization** reverses it. One example is the American Psychiatric Association removing homosexuality from its manual in 1973. Conflict theorists ask how class, racism and profit shape illness and care. Interactionists study meaning and [[stigma]]. (19.5)"
+        "Talcott Parsons’s [[sick-role|sick role]] (functionalism) excuses sick people from their duties if they try to get well and seek good help. [[medicalization|Medicalization]] means redefining ordinary or once-deviant behavior as illness. **Demedicalization** reverses this. One example is the American Psychiatric Association removing homosexuality from its manual in 1973. Conflict theorists ask how class, racism and profit shape illness and care. Interactionists study meaning and [[stigma]]. (19.5)"
       ]}
     ]},
     {h:"Picture it", body:[
@@ -275,8 +275,8 @@ ICA.addUnit({
     {id:"e2u4-l3-x2", type:"mcq", q:"Fatima cooks meals at home and sells them to office workers for cash. She has no business registration, no pension and no sick pay, but the food is legal and safe. Which concept best describes her work?", options:[
       {t:"The informal economy", ok:true, why:"Right. Legal work outside formal contracts, registration and social protection is informal employment."},
       {t:"The criminal economy", why:"Nothing she sells is illegal. Informal is not the same as criminal."},
-      {t:"Deindustrialization", why:"Deindustrialization is the decline of manufacturing jobs across a region, not one person’s work arrangement."},
-      {t:"Automation", why:"Automation is machines replacing human work. Fatima’s work is entirely human and unprotected."}
+      {t:"Deindustrialization", why:"Deindustrialization is the loss of manufacturing jobs across a whole region. It is not about one person’s work arrangement."},
+      {t:"Automation", why:"Automation means machines replace human work. Fatima’s work is entirely human, and she has no protection."}
     ]},
     {id:"e2u4-l3-x3", type:"number", q:"A survey of a town finds that 3,150 of its 4,500 workers have no written contract or social protection. What **percentage** of the town’s workers are in informal employment?", answer:70, tol:0.5, unit:"%", why:"Percentage = (part ÷ whole) × 100 = (3,150 ÷ 4,500) × 100 = 0.7 × 100 = 70%. For comparison, the ILO’s estimate for the whole world in 2024 was about 58%.", wrongs:[
       {v:30, tol:0.5, why:"That’s the formal share: (4,500 − 3,150) ÷ 4,500 = 30%. The question asks about informal workers."},
@@ -291,7 +291,7 @@ ICA.addUnit({
       {t:"A brand sells the shirt in shops and online, where it’s bought.", why:"The chain ends with branding and retail, where a large share of the final price is often captured."}
     ]},
     {id:"e2u4-l3-x5", type:"sort", q:"Is each factor a **social** determinant of health, or a **biological** factor that no social policy can change?", buckets:["Social determinant","Biological factor"], items:[
-      {t:"Whether a family can afford fresh food", b:0, why:"Income and food access are social conditions, among WHO’s examples of social determinants."},
+      {t:"Whether a family can afford fresh food", b:0, why:"Income and food access are social conditions. They are among the WHO’s examples of social determinants."},
       {t:"A person’s age", b:1, why:"Age is in the core of the Dahlgren–Whitehead model: a fixed individual factor, not a social condition."},
       {t:"Damp, overcrowded housing", b:0, why:"Housing quality is a living condition shaped by income and policy."},
       {t:"An inherited gene that raises the risk of a disease", b:1, why:"Inherited factors are biological. (Whether the person can get screening is a social question, though.)"},
@@ -306,14 +306,14 @@ ICA.addUnit({
       ". ",
       {t:"So buying a dog will add years to your life", flag:true, why:"Correlation read as causation. Dog owners may differ in income, housing, health and free time; healthier, better-off people may be more able to keep dogs."},
       ". ",
-      {t:"Income, housing and existing health weren’t measured", flag:true, why:"Without measuring these social determinants, the study can’t rule them out as the real explanation (see {{correlation-causation}})."},
+      {t:"Income, housing and existing health weren’t measured", flag:true, why:"If these social determinants are not measured, the study cannot rule them out as the real cause (see {{correlation-causation}})."},
       ", and ",
-      {t:"the results apply equally to everyone everywhere", flag:true, why:"Overgeneralization: a study from one setting can’t be assumed to hold in countries with very different housing, incomes and health systems."},
+      {t:"the results apply equally to everyone everywhere", flag:true, why:"Overgeneralization: you cannot assume that a study from one place holds in countries with very different housing, incomes and health systems."},
       "."
     ]},
     {id:"e2u4-l3-x7", type:"mcq", q:"Which of these is the clearest example of **medicalization**?", options:[
-      {t:"Behavior once seen as laziness is redefined as a disorder.", ok:true, why:"Behavior once condemned as laziness or bad character comes to be treated by doctors. Medicalization is exactly this: moving something from the moral or normal domain into the medical one."},
-      {t:"A new vaccine reduces deaths from an infectious disease.", why:"That’s medical progress against an already-medical problem, not redefining something as medical."},
+      {t:"Behavior once seen as laziness is redefined as a disorder.", ok:true, why:"Behavior that people once blamed on laziness or bad character comes to be treated by doctors. This is exactly medicalization: it moves something from the moral or normal area into the medical one."},
+      {t:"A new vaccine reduces deaths from an infectious disease.", why:"That is medical progress on a problem that was already medical. Nothing is being redefined as medical."},
       {t:"A government builds more hospitals in rural areas.", why:"That changes access to health care, not what counts as illness."},
       {t:"A medical association decides a condition is no longer a disorder.", why:"That’s the opposite process: demedicalization."}
     ]},
@@ -343,10 +343,10 @@ ICA.addUnit({
     {h:"Before you read", body:[
       "Read all three sections of Chapter 20 “Population, Urbanization, and the Environment”: **20.1** “Demography and Population”, **20.2** “Urbanization” and **20.3** “The Environment and Society” (LibreTexts 20.2–20.4). Births, deaths and moves decide how many people live where, which shapes cities and the pressure on the environment. The book’s figures are from the 2010s; newer ones are in the Textbook check below.",
       {look:[
-        "How do fertility, mortality and migration change a population, and what does a population pyramid show? (20.1)",
-        "What do Malthusian theory, zero population growth, cornucopian theory and demographic transition theory each claim? (20.1)",
+        "How do fertility, mortality and migration change a population? What does a population pyramid show? (20.1)",
+        "What do Malthusian theory, zero population growth, cornucopian theory and demographic transition theory each say about population? (20.1)",
         "How did cities and suburbs grow, and how do the human ecology (concentric zone) and conflict views explain city life? (20.2)",
-        "Why do poorer and disadvantaged communities carry more pollution, and what is environmental racism? (20.3)"
+        "Why do poorer communities have more pollution? What is environmental racism? (20.3)"
       ]}
     ]},
     {h:"The big ideas", body:[
@@ -354,8 +354,8 @@ ICA.addUnit({
         "[[demography|Demography]] studies a population’s size, composition and change. A population changes only through births, deaths and migration: next year = this year + births − deaths + people moving in − people moving out. (20.1)",
         "A [[crude-rate|crude rate]] is events per 1,000 people per year: (events ÷ population) × 1,000. The book’s [[fertility-rate|fertility rate]] and [[mortality-rate|mortality rate]] measure births and deaths; a population pyramid shows the age and sex structure. (20.1)",
         "The [[demographic-transition|demographic transition]] has four stages: high births and deaths; deaths fall first, so growth is fast; births fall; both stay low. (20.1)",
-        "[[malthusian-theory|Malthusian theory]] (1798): population outruns food until **positive checks** (famine, disease, war) or **preventive checks** (fewer births) hold it back. [[cornucopian-theory|Cornucopian theory]] trusts human ingenuity; zero population growth aims for balance. (20.1)",
-        "[[urbanization|Urbanization]] brings jobs and services but also crowding and pollution. [[suburbanization|Suburbs]] grew around cities; [[gentrification]] brings wealthier residents into historically poorer areas, raising rents and often displacing long-term residents. Burgess’s concentric zone model pictures the city as rings. (20.2)",
+        "[[malthusian-theory|Malthusian theory]] (1798): population grows faster than food, until **positive checks** (famine, disease, war) or **preventive checks** (fewer births) hold it back. [[cornucopian-theory|Cornucopian theory]] trusts human ingenuity. Zero population growth aims for balance. (20.1)",
+        "[[urbanization|Urbanization]] brings jobs and services, but also crowding and pollution. [[suburbanization|Suburbs]] grew around cities. [[gentrification]] brings wealthier residents into areas that were poorer before. Rents rise, and long-term residents are often forced to leave. Burgess’s concentric zone model pictures the city as rings. (20.2)",
         "[[environmental-sociology|Environmental sociology]] studies how people and the environment shape each other. [[environmental-racism|Environmental racism]] is the heavier load of hazards on poor and minority communities. NIMBY (“not in my back yard”) campaigns by better-off areas often push facilities there. (20.2, 20.3)"
       ]}
     ]},
@@ -397,11 +397,11 @@ ICA.addUnit({
       {t:"A cousin already living in the capital offers a room and job leads.", b:1, why:"Networks at the destination pull migrants and lower the cost of moving."},
       {t:"Armed conflict makes the home town unsafe.", b:0, why:"Conflict is a strong push factor, often producing forced migration."},
       {t:"A coastal city has many new factory and service jobs.", b:1, why:"Job opportunities at the destination are classic pull factors."},
-      {t:"The village has no secondary school.", b:0, why:"Missing services at the origin push families, especially those with teenagers, to move."},
+      {t:"The village has no secondary school.", b:0, why:"Missing services at the origin push families to move. This is most true for families with teenagers."},
       {t:"Universities in another country offer scholarships.", b:1, why:"Educational opportunity at the destination pulls students abroad."}
     ]},
     {id:"e2u4-l4-x6", type:"mcq", q:"In Mei’s inner-city neighborhood, rents have doubled in five years. New cafés have replaced the hardware shop and the community laundry, and many older tenants have moved to the city’s edge. Which concept best describes this?", options:[
-      {t:"Gentrification", ok:true, why:"Wealthier newcomers and investment arriving in a historically lower-income area, with rising rents displacing longer-term residents, is gentrification."},
+      {t:"Gentrification", ok:true, why:"New wealthier residents and new investment arrive in an area that was poor before. Rents rise and longer-term residents have to leave. That is gentrification."},
       {t:"Suburbanization", why:"Suburbanization is growth at the city’s edge. Here the main change is inside the inner city; the displaced tenants moving out are a consequence."},
       {t:"Deindustrialization", why:"Deindustrialization is the loss of manufacturing jobs, which doesn’t describe new cafés and rising rents."},
       {t:"The demographic transition", why:"That model is about birth and death rates over national development, not neighborhood change."}
@@ -419,12 +419,12 @@ ICA.addUnit({
       {t:"so the only solution is to reduce the number of births", flag:true, why:"A false single cause leading to a single solution. It ignores distribution, incomes and drought relief, and risks justifying coercive policies."},
       "."
     ]},
-    {id:"e2u4-l4-x8", type:"explain", q:"Explain why a country’s population grows fastest in stage 2 of the demographic transition. Also explain why the model shouldn’t be read as a fixed path that every country will follow.", size:"4–5 sentences", model:"In stage 1, births and deaths are both high, so they roughly cancel out. In stage 2, deaths fall first while births stay high for a while, so the gap between them is wide and the population grows fast. Growth slows only when births fall too, in stage 3. But the model has limits. It is based on European history, and countries need not follow the same path or pace: the Republic of Korea moved through it in decades. It also ignores migration and stops early, although UN figures show more than half of countries now have fertility below the replacement level of 2.1.", points:["Explains that deaths fall first while births stay high in stage 2", "Links fast growth to the gap between births and deaths", "Gives one limit, such as its basis in European history or different speeds", "Gives another limit, such as ignoring migration or stopping before below-replacement fertility"]}
+    {id:"e2u4-l4-x8", type:"explain", q:"Explain why a country’s population grows fastest in stage 2 of the demographic transition. Also explain why the model shouldn’t be read as a fixed path that every country will follow.", size:"4–5 sentences", model:"In stage 1, births and deaths are both high, so they roughly cancel out. In stage 2, deaths fall first while births stay high for a while, so the gap between them is wide and the population grows fast. Growth slows only when births fall too, in stage 3. But the model has limits. It is based on European history, and countries need not follow the same path or pace: the Republic of Korea moved through it in decades. It also ignores migration and stops early, although UN figures show more than half of countries now have fertility below the replacement level of 2.1.", points:["Explains that deaths fall first while births stay high in stage 2", "Links fast growth to the gap between births and deaths", "Gives one limit, such as its basis in European history or different speeds", "Gives another limit. Examples are ignoring migration, or stopping before the birth rate falls below the level that replaces the population"]}
    ],
    apply:{intro:"Work with real population data and look at your own surroundings. Stay on public streets and don’t photograph people.", tasks:[
-     {t:"Find your country’s demographic numbers", how:["Open the World Bank’s data site and search for **Birth rate, crude (per 1,000 people)** and **Death rate, crude (per 1,000 people)**: [World Bank: Birth rate, crude](https://data.worldbank.org/indicator/SP.DYN.CBRT.IN).","Note the latest values and their year for your country and for one country on a different continent.","Calculate each country’s rate of natural increase (birth rate − death rate) and turn it into a percentage (divide by 10).","Using the lesson’s table, which stage of the demographic transition does each look like? What might the model miss for each country (migration, aging, very low fertility)?"], write:"Country, year, birth rate, death rate, natural increase, likely stage, what the model misses…"},
-     {t:"Walk a changing neighborhood", how:["Choose a neighborhood you know or can safely walk through (or use street-level imagery from different years in an online map).","Note signs of change: new businesses, closed ones, renovations, “for sale” signs, new housing, rent advertisements.","Decide whether you see signs of gentrification, decline, suburban growth or something else.","Who seems to benefit, and who might be losing out?"], write:"Where, signs of change, what process it suggests, who gains and loses…"},
-     {t:"Make an environmental justice map", how:["On an online map of your city or region, find major roads, industrial sites, waste facilities and power plants, and large parks or green spaces.","Compare which neighborhoods are closest to the hazards and which to the green spaces.","If public data on income or housing types is available from your national statistics office, compare.","Write what you notice, being careful to describe patterns rather than blame residents."], write:"Hazards, green spaces, which areas are nearest each, the pattern I see…"}
+     {t:"Find your country’s demographic numbers", how:["Open the World Bank’s data site. Search for **Birth rate, crude (per 1,000 people)** and **Death rate, crude (per 1,000 people)**: [World Bank: Birth rate, crude](https://data.worldbank.org/indicator/SP.DYN.CBRT.IN).","Note the latest values and their year for your country and for one country on a different continent.","Calculate each country’s rate of natural increase (birth rate − death rate) and turn it into a percentage (divide by 10).","Using the lesson’s table, which stage of the demographic transition does each look like? What might the model miss for each country (migration, aging, very low fertility)?"], write:"Country, year, birth rate, death rate, natural increase, likely stage, what the model misses…"},
+     {t:"Walk a changing neighborhood", how:["Choose a neighborhood you know or can safely walk through (or use street-level imagery from different years in an online map).","Note signs of change: new businesses, closed ones, renovations, “for sale” signs, new housing and rent advertisements.","Decide whether you see signs of gentrification, decline, suburban growth or something else.","Who seems to benefit, and who might be losing out?"], write:"Where, signs of change, what process it suggests, who gains and loses…"},
+     {t:"Make an environmental justice map", how:["On an online map of your city or region, find major roads, industrial sites, waste facilities and power plants, and large parks or green spaces.","Compare which neighborhoods are closest to the hazards and which to the green spaces.","If your national statistics office has public data on income or housing types, compare it.","Write what you notice, being careful to describe patterns rather than blame residents."], write:"Hazards, green spaces, which areas are nearest each, the pattern I see…"}
    ], proof:"Three things. First, notes with real birth and death rates (with years) for two countries, and your calculations. Second, a description of one neighborhood’s changes and who gains or loses. Third, a simple environmental-justice map comparison."},
    read:[
      {book:"soc", where:"Chapter 20 “Population, Urbanization, and the Environment”: Sections 20.1 “Demography and Population”, 20.2 “Urbanization” and 20.3 “The Environment and Society”", note:"The textbook’s population figures are from the 2010s and its urban figure from 2018; this lesson gives the UN’s 2024 and 2025 figures."}
@@ -434,10 +434,10 @@ ICA.addUnit({
   {id:"e2u4-l6", title:"Aging and the life course", minutes:60,
    hook:{q:"The UN projects the world’s age structure decades ahead. By the late 2070s, which group will be larger worldwide?", options:["Children under 18","People aged 65 and over","Both groups will be exactly the same size","Neither: both groups will shrink sharply"], answer:1, reveal:"**People aged 65 and over.** The UN’s *World Population Prospects 2024* projects about 2.2 billion people aged 65+ by the late 2070s, more than all children under 18. By the mid-2030s, people aged 80+ are projected to outnumber babies under one. Aging is mostly a sign of success: fewer children dying, longer lives and smaller families. This lesson looks at age the way sociologists do. They see it as a life course shaped by history and as a population trend. They also see it as institutions (care and pensions) and attitudes (ageism) that every society has to build."},
    goals:[
-     "Explain the life-course perspective and how advantage and disadvantage build up over a lifetime",
+     "Explain the life-course perspective. Explain how advantage and disadvantage build up over a lifetime",
      "Calculate dependency ratios from official figures and say what they hide",
      "Compare how Japan, East Asia, Europe, Latin America and sub-Saharan Africa share care and pensions. Look at the roles of families, markets and the state",
-     "Recognize ageism and compare the main sociological theories of aging, with their critiques",
+     "Recognize ageism. Compare the main sociological theories of aging, with their critiques",
      "Discuss relations between generations without stereotyping any of them"
    ],
    learn:[
@@ -451,11 +451,11 @@ ICA.addUnit({
       {list:[
         "**Time and place**: the events and places people live through, such as a war, a boom or a pandemic.",
         "**Timing**: the same event has different effects at different ages. Losing a job at 25 is not losing it at 58.",
-        "**Linked lives**: a parent’s migration or a grandparent’s illness changes other family members’ lives.",
+        "**Linked lives**: a parent’s migration or a grandparent’s illness changes the lives of other family members.",
         "**Agency**: people make choices within the limits their history and society set."
       ]},
       "[[cumulative-advantage|Cumulative advantage and disadvantage]] (Dale Dannefer, 2003, building on Robert Merton’s “Matthew effect”, 1968) explains why inequality often grows with age. A good school leads to a stable job, a pension, savings and better health care, while early setbacks pile up too. So older people are often **more unequal** than younger ones.",
-      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e2u4-l6-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="34" y="22">health, money, networks</text><path class="d-ink" d="M30 300 L30 30" stroke-width="1.5"/><path class="d-ink" d="M30 300 L330 300" stroke-width="1.5"/><path class="d-ink" d="M40 232 L110 214 L190 150 L260 104 L310 82" fill="none" stroke-width="3"/><path class="d-ink" d="M40 238 L110 236 L190 232 L260 240 L310 238" fill="none" stroke-width="3" stroke-dasharray="7 5"/><circle class="d-sage" cx="110" cy="214" r="6" stroke-width="2"/><circle class="d-sage" cx="190" cy="150" r="6" stroke-width="2"/><circle class="d-sage" cx="260" cy="104" r="6" stroke-width="2"/><circle class="d-rose" cx="110" cy="236" r="6" stroke-width="2"/><circle class="d-rose" cx="190" cy="232" r="6" stroke-width="2"/><circle class="d-rose" cx="260" cy="240" r="6" stroke-width="2"/><text class="s" x="102" y="200" text-anchor="end">degree</text><text class="s" x="182" y="140" text-anchor="end">stable job</text><text class="s" x="252" y="94" text-anchor="end">pension, savings</text><text class="s" x="110" y="262" text-anchor="middle">left school</text><text class="s" x="190" y="280" text-anchor="middle">informal work</text><text class="s" x="262" y="262" text-anchor="middle">cares for parent</text><text x="306" y="70" text-anchor="end">Life A</text><text x="306" y="226" text-anchor="end">Life B</text><path class="d-ink" d="M322 92 L322 226" stroke-width="1.5" marker-start="url(#e2u4-l6-a)" marker-end="url(#e2u4-l6-a)"/><text class="s" x="314" y="165" text-anchor="end">gap widens</text><text class="s" x="40" y="318">birth</text><text class="s" x="185" y="318" text-anchor="middle">age</text><text class="s" x="330" y="318" text-anchor="end">old age</text></svg>', alt:"A chart with age along the bottom and health, money and networks up the side. Two invented lives start close together at birth. Life A rises through a degree, a stable job and a pension with savings. Life B stays low through leaving school early, informal work and caring for a parent. A double arrow at the right shows the gap between them widening in old age.", cap:"Two invented lives that start close together. Small early advantages and setbacks compound over decades: cumulative advantage and disadvantage."},
+      {fig:'<svg viewBox="0 0 340 330"><defs><marker id="e2u4-l6-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="34" y="22">health, money, networks</text><path class="d-ink" d="M30 300 L30 30" stroke-width="1.5"/><path class="d-ink" d="M30 300 L330 300" stroke-width="1.5"/><path class="d-ink" d="M40 232 L110 214 L190 150 L260 104 L310 82" fill="none" stroke-width="3"/><path class="d-ink" d="M40 238 L110 236 L190 232 L260 240 L310 238" fill="none" stroke-width="3" stroke-dasharray="7 5"/><circle class="d-sage" cx="110" cy="214" r="6" stroke-width="2"/><circle class="d-sage" cx="190" cy="150" r="6" stroke-width="2"/><circle class="d-sage" cx="260" cy="104" r="6" stroke-width="2"/><circle class="d-rose" cx="110" cy="236" r="6" stroke-width="2"/><circle class="d-rose" cx="190" cy="232" r="6" stroke-width="2"/><circle class="d-rose" cx="260" cy="240" r="6" stroke-width="2"/><text class="s" x="102" y="200" text-anchor="end">degree</text><text class="s" x="182" y="140" text-anchor="end">stable job</text><text class="s" x="252" y="94" text-anchor="end">pension, savings</text><text class="s" x="110" y="262" text-anchor="middle">left school</text><text class="s" x="190" y="280" text-anchor="middle">informal work</text><text class="s" x="262" y="262" text-anchor="middle">cares for parent</text><text x="306" y="70" text-anchor="end">Life A</text><text x="306" y="226" text-anchor="end">Life B</text><path class="d-ink" d="M322 92 L322 226" stroke-width="1.5" marker-start="url(#e2u4-l6-a)" marker-end="url(#e2u4-l6-a)"/><text class="s" x="314" y="165" text-anchor="end">gap widens</text><text class="s" x="40" y="318">birth</text><text class="s" x="185" y="318" text-anchor="middle">age</text><text class="s" x="330" y="318" text-anchor="end">old age</text></svg>', alt:"A chart with age along the bottom and health, money and networks up the side. Two invented lives start close together at birth. Life A rises through a degree, a stable job and a pension with savings. Life B stays low through leaving school early, informal work and caring for a parent. A double arrow at the right shows the gap between them widening in old age.", cap:"Two invented lives that start close together. Small early advantages and setbacks add up over decades. This is cumulative advantage and disadvantage."},
       "Lives lengthen, but schools, jobs and pension rules still assume a three-stage life of study, work and retirement. Matilda White Riley and colleagues (1994) called this **structural lag**: a cousin of Ogburn’s cultural lag (Lesson 6)."
     ]},
     {h:"Population aging: why, and where", body:[
@@ -477,23 +477,23 @@ ICA.addUnit({
       {fix:"OpenStax (13.1) defines the dependency ratio by **labor force** (people not working compared with people working), which is an economic ratio. UN and World Bank figures use **age groups**. Check which one a source means."}
     ]},
     {h:"Who cares? Families, markets and the state", body:[
-      "Longer lives usually include years of needing help with daily life: [[long-term-care|long-term care]]. Every society divides it between **families**, the **state**, **markets** (paid services) and **communities**. Feminist sociologists stress that women do most unpaid family care ({{unpaid-care-work}}).",
+      "Longer lives usually include years of needing help with daily life. This help is called [[long-term-care|long-term care]]. Every society divides it between **families**, the **state**, **markets** (paid services) and **communities**. Feminist sociologists stress that women do most unpaid family care ({{unpaid-care-work}}).",
       {list:[
         "**Japan** created public long-term care insurance in 2000: everyone aged 40+ pays in, and older people assessed as needing care can use home help, day centers or care homes. It moved part of the work from daughters and daughters-in-law to paid professionals. Germany (1995) and the Republic of Korea (2008) have similar schemes.",
         "**China and much of East Asia** value [[filial-piety|filial piety]]. China’s revised law on older people’s rights, in force since July 2013, tells adult children who live apart to visit often. Singapore’s Maintenance of Parents Act (1995) lets parents claim support. With smaller families and young people in distant cities, governments are also building community care.",
         "**Sub-Saharan Africa**: care is mostly family-based, and older people are carers too. Many grandparents raise grandchildren whose parents have died of AIDS or work far away (Lesson 1).",
-        "**Global care chains**: migrant women do much paid care work in richer countries ([[global-care-chain]], {{gender-and-migration}}). Japan has admitted foreign care workers under partnership agreements with Indonesia (2008), the Philippines (2009) and Viet Nam (2014). Later it added the Specified Skilled Worker status ({{japan-immigration-policy}})."
+        "**Global care chains**: migrant women do much of the paid care work in richer countries ([[global-care-chain]], {{gender-and-migration}}). Japan has let in foreign care workers under partnership agreements with Indonesia (2008), the Philippines (2009) and Viet Nam (2014). Later it added the Specified Skilled Worker status ({{japan-immigration-policy}})."
       ]},
       "Japan also tests care robots and sensors. Supporters see help for a shrinking workforce; critics, including some care workers, worry they could replace human contact rather than support it."
     ]},
     {h:"Pensions: who pays for later life?", body:[
-      {table:[["Design","How it works","Examples"],["[[pay-as-you-go|Pay-as-you-go]] public pension","Today’s workers’ contributions and taxes pay today’s pensioners: a contract between generations","Japan’s national and employees’ pensions; most of Europe"],["Funded pension","Each worker or fund saves; the pension depends on what was paid in and on investment returns","Chile’s individual accounts (from 1981); workplace funds in many countries"],["[[social-pension|Social (non-contributory) pension]]","Paid from taxes to older people whatever their work history, sometimes only to the poor","Bolivia’s Renta Dignidad (2008); South Africa’s older persons’ grant; Kenya’s Inua Jamii for people aged 70+"]]},
+      {table:[["Design","How it works","Examples"],["[[pay-as-you-go|Pay-as-you-go]] public pension","Today’s workers pay contributions and taxes, and this money pays today’s pensioners. It is a contract between generations","Japan’s national and employees’ pensions; most of Europe"],["Funded pension","Each worker or fund saves; the pension depends on what was paid in and on investment returns","Chile’s individual accounts (from 1981); workplace funds in many countries"],["[[social-pension|Social (non-contributory) pension]]","Paid from taxes to older people whatever their work history, sometimes only to the poor","Bolivia’s Renta Dignidad (2008). South Africa’s older persons’ grant. Kenya’s Inua Jamii for people aged 70+"]]},
       "Pay-as-you-go systems feel the dependency ratio directly. Fewer contributors per pensioner means higher contributions, lower pensions, later retirement or more tax money. Contributory systems reach mainly people with formal jobs. They miss many [[informal-economy|informal]] workers (Lesson 3). This is one reason social pensions have spread in Africa, Asia and Latin America. The ILO estimates that 52.4% of the world’s people are covered by at least one social protection benefit (*World Social Protection Report 2024–26*). So in many places the family is still the main pension.",
       "**China** began raising its statutory retirement ages on 1 January 2025, over 15 years: men from 60 to 63, women from 50 or 55 (depending on the job) to 55 or 58. **Japan** lets people start the basic pension at any age from 60 to 75 (smaller payments if early, larger if late). It requires employers to offer work up to 65 to employees who want it, and to try to up to 70.",
       "Raising pension ages is debated. Supporters argue it keeps systems affordable as lives lengthen. Critics note that manual workers and poorer groups often have shorter, less healthy lives, so one later age can be unfair. The trade-off is partly about values."
     ]},
     {h:"Theories of aging", body:[
-      {table:[["Lens","Theory","Main critique"],["Functionalism","**Disengagement** (Cumming and Henry, 1961): withdrawing from roles is natural and lets society hand them on","Arlie Hochschild (1975) and others: many older people don’t want to withdraw, and the theory can excuse pushing them out"],["Functionalism","**Activity** (Havighurst, 1961) and **continuity** (Atchley): staying active, and keeping one’s habits and identity, bring well-being","Assumes people have the health and money to stay active"],["Conflict","**Age stratification** (Riley, Johnson and Foner, 1972): age groups get unequal resources. **Modernization** (Cowgill and Holmes, 1972): older people lose status as societies industrialize","Too simple: older people’s status also varies by class, gender and policy"],["Symbolic interactionism","**Subculture of aging** (Rose, 1962), **selective optimization with compensation** (Baltes and Baltes, 1990), **gerotranscendence** (Tornstam, 2005)","A focus on individuals can overlook structures such as pensions and ageism"]]},
+      {table:[["Lens","Theory","Main critique"],["Functionalism","**Disengagement** (Cumming and Henry, 1961): it is natural to withdraw from roles, and this lets society hand the roles on","Arlie Hochschild (1975) and others: many older people don’t want to withdraw, and the theory can excuse pushing them out"],["Functionalism","**Activity** (Havighurst, 1961) and **continuity** (Atchley): staying active, and keeping your habits and identity, bring well-being","Assumes people have the health and money to stay active"],["Conflict","**Age stratification** (Riley, Johnson and Foner, 1972): age groups get unequal resources. **Modernization** (Cowgill and Holmes, 1972): older people lose status as societies industrialize","Too simple: older people’s status also varies by class, gender and policy"],["Symbolic interactionism","**Subculture of aging** (Rose, 1962). **Selective optimization with compensation** (Baltes and Baltes, 1990). **Gerotranscendence** (Tornstam, 2005)","A focus on individuals can overlook structures such as pensions and ageism"]]},
       "Feminist scholars add that aging is gendered. Susan Sontag wrote of “the double standard of aging” (1972): women are judged as old earlier than men. Women also live longer on average and earn less over a lifetime, so in many countries they are more likely to be poor in old age ({{feminist-theory}})."
     ]},
     {h:"Ageism and relations between generations", body:[
@@ -523,7 +523,7 @@ ICA.addUnit({
     {id:"e2u4-l6-x3", type:"match", q:"Match each theory of aging to its main claim.", pairs:[
       ["Disengagement theory","Withdrawing from roles in later life is natural and lets younger people take them over","Cumming and Henry (1961), a functionalist theory. Critics say many older people don’t want to withdraw."],
       ["Activity theory","The more active and involved older people are, the happier they tend to be","Havighurst (1961); later critics note that staying active needs health and money."],
-      ["Continuity theory","Older people keep their habits, beliefs and relationships consistent as they adapt","Atchley’s theory stresses continuity of identity rather than activity for its own sake."],
+      ["Continuity theory","Older people keep their habits, beliefs and relationships consistent as they adapt","Atchley’s theory stresses continuity of identity. It does not stress activity for its own sake."],
       ["Age stratification theory","Different age groups have unequal access to society’s resources","Riley, Johnson and Foner (1972), a conflict-perspective theory that treats age like class."],
       ["Modernization theory of aging","Older people lose status as societies industrialize","Cowgill and Holmes (1972). Critics say status also depends on class, gender and policy."]
     ]},
@@ -543,7 +543,7 @@ ICA.addUnit({
     {id:"e2u4-l6-x5", type:"mcq", q:"Ana sold vegetables at a city market for 40 years with no contract and no registration. Now 70, she has no pension from her work. Which pension design is most likely to reach someone like her?", options:[
       {t:"A social pension paid from taxes", ok:true, why:"Right. Social (non-contributory) pensions don’t depend on a work record, so they can reach people who worked informally, like Bolivia’s Renta Dignidad or Kenya’s Inua Jamii."},
       {t:"An employees’ pension based on payroll contributions", why:"This pays out only to people who paid contributions through formal jobs. Ana never had one."},
-      {t:"A funded individual account built from monthly savings", why:"Ana would have needed to save into a registered account during her working life, which informal workers rarely can."},
+      {t:"A funded individual account built from monthly savings", why:"Ana would have needed to save into a registered account during her working life. Informal workers rarely can do this."},
       {t:"A higher retirement age for everyone in the country", why:"Raising the age changes when existing pensions start. It doesn’t create a pension for someone who has none."}
     ]},
     {id:"e2u4-l6-x6", type:"sort", q:"WHO describes three forms of ageism. Which form does each example show?", buckets:["Institutional","Interpersonal","Self-directed"], items:[
@@ -557,14 +557,14 @@ ICA.addUnit({
     {id:"e2u4-l6-x7", type:"mcq", q:"A study finds that at age 30 the health and income gaps between people who left school at 16 and university graduates are small, but at age 70 they are large. Which idea explains this pattern best?", options:[
       {t:"Cumulative advantage and disadvantage", ok:true, why:"Yes. Small early differences compound over decades: jobs, pensions, savings and health care build on each other."},
       {t:"Disengagement theory", why:"Disengagement is about withdrawing from roles in later life. It doesn’t explain why gaps between groups grow."},
-      {t:"The demographic transition", why:"That model describes birth and death rates across a whole population, not inequality within a cohort."},
+      {t:"The demographic transition", why:"That model describes birth and death rates across a whole population. It does not describe inequality within a cohort."},
       {t:"Gerotranscendence", why:"Gerotranscendence describes a shift in outlook in later life, not widening gaps in health and income."}
     ]},
     {id:"e2u4-l6-x8", type:"explain", q:"Two countries have the same old-age dependency ratio. Explain why the real pressure on workers and pensions could still be very different.", size:"3–5 sentences", model:"The old-age dependency ratio only compares people aged 65 and over with people aged 15–64. It measures age, not work. In one country, many older people may still work, volunteer, mind grandchildren and pay taxes. In the other, many people aged 15–64 may be studying, unemployed or caring full time. Employment, productivity, migration and policy all change the real burden. An economic dependency ratio (people not in work ÷ people in work) captures this better. Pension design matters too. Pay-as-you-go systems feel the ratio most directly.", points:["Explains that the ratio measures age, not work", "Gives an example of older people working or working-age people not working", "Names factors that change the real burden, such as employment, migration or policy", "Mentions the economic dependency ratio or pension design"]}
    ],
    apply:{intro:"Look at aging in your own world. Be respectful: talk only with people who agree, let them skip any question, and don’t record anyone without permission.", tasks:[
      {t:"Draw a life-course timeline", how:["With a consenting older relative or friend (or using a published memoir or biography), draw a timeline of their life from birth to now.","Mark three historical events they lived through (time and place) and how old they were at each (timing).","Mark two moments when another person’s life changed theirs (linked lives) and one choice they made against the odds (agency).","Note one advantage or setback that seems to have built up over time."], write:"Whose life, three events and ages, linked lives, one choice, what built up over time…"},
-     {t:"Calculate your country’s dependency ratios", how:["Open the World Bank data pages for “Population ages 65 and above (% of total population)” and “Age dependency ratio, old (% of working-age population)”. You can also use your national statistics office.","Note the latest values and their year for your country, for Japan and for one country on another continent.","Check one old-age ratio yourself from the age shares: 65+ share ÷ 15–64 share × 100.","Write one thing each ratio hides (for example, older people in work, young people studying, informal work)."], write:"Country, year, 65+ share, old-age ratio (with my check), what it hides…"},
+     {t:"Calculate your country’s dependency ratios", how:["Open the World Bank data pages for “Population ages 65 and above (% of total population)” and “Age dependency ratio, old (% of working-age population)”. You can also use the data of your national statistics office.","Note the latest values and their year for your country, for Japan and for one country on another continent.","Check one old-age ratio yourself from the age shares: 65+ share ÷ 15–64 share × 100.","Write one thing each ratio hides (for example, older people in work, young people studying, informal work)."], write:"Country, year, 65+ share, old-age ratio (with my check), what it hides…"},
      {t:"Run a small ageism audit", how:["Choose one source of images: television adverts, a shop’s birthday cards, a news website or a social media feed.","Look at 15–20 images or adverts that show people of different ages.","Count how often older people appear, and in what roles (active, ill, comic, wise, consumer, worker).","Note any examples of the three forms of ageism, and anything that breaks the stereotypes."], write:"Source, number of images, how older people are shown, examples of ageism, counter-examples…"}
    ], proof:"Three things. First, notes with a life-course timeline marked with the four principles. Second, dated dependency ratios for three countries, with your own check and one thing each hides. Third, a small coded audit of how older people are shown in one media source."},
    read:[
@@ -589,23 +589,23 @@ ICA.addUnit({
         "What is the digital divide, and what knowledge gap does it create? (8.1)",
         "What do gatekeeping and media consolidation mean, and how does each lens see media and technology? (8.2, 8.4)",
         "What are Aberle’s five types of social movement, and what stages do movements pass through? (21.2)",
-        "How do resource mobilization, framing and new social movement theory explain movements, and what four forces cause social change? (21.2, 21.3)"
+        "How do resource mobilization, framing and new social movement theory explain movements? What four forces cause social change? (21.2, 21.3)"
       ]}
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "**Technology** is applying science to everyday problems; **media** are all print, digital and electronic communication; **new media** are interactive. Media are also an {{agents-of-socialization|agent of socialization}}. (8.1, 8.2)",
+        "**Technology** is the use of science to solve everyday problems. **Media** are all print, digital and electronic communication. **New media** are interactive. Media are also an {{agents-of-socialization|agent of socialization}}. (8.1, 8.2)",
         "The [[digital-divide|digital divide]] is unequal access to technology along lines of income, race, class, gender and place. It builds a [[knowledge-gap|knowledge gap]]. **E-readiness**, the skill to find and use digital information, matters as much as owning a device. (8.1)",
         "[[gatekeeping|Gatekeeping]] filters countless possible messages into the few that reach the public. [[media-consolidation|Media consolidation]] puts most outlets in a few owners’ hands, an **oligopoly**. (8.2, 8.4)",
-        "Functionalists see media informing, entertaining and socializing, but warn of a **narcotizing dysfunction**: knowing about a problem feels like acting. Conflict theorists see ownership, the divide and surveillance reinforcing power. Feminists study stereotyped images and who builds technology. Interactionists see devices as status symbols and media helping construct reality. (8.4)",
-        "A [[social-movement|social movement]] is an organized group working toward a shared goal. Aberle’s types are **reform** (one specific change), **revolutionary** (change everything), **resistance** (stop or undo a change), **religious/redemptive** (inner change) and **alternative** (limited self-improvement). The typical stages are preliminary (emergence), coalescence, institutionalization and decline. Decline can mean success. (21.2)",
+        "Functionalists see media informing, entertaining and socializing. But they warn of a **narcotizing dysfunction**: knowing about a problem feels like acting on it. Conflict theorists see ownership, the digital divide and surveillance as ways to keep power. Feminists study stereotyped images and who builds technology. Interactionists see devices as status symbols and see media as helping to construct reality. (8.4)",
+        "A [[social-movement|social movement]] is an organized group with a shared goal. Aberle’s types are **reform** (one specific change), **revolutionary** (change everything), **resistance** (stop or undo a change), **religious/redemptive** (inner change) and **alternative** (limited self-improvement). The usual stages are preliminary (emergence), coalescence, institutionalization and decline. A movement in decline may be one that succeeded. (21.2)",
         "[[resource-mobilization|Resource mobilization]] (McCarthy and Zald, 1977): success depends on money, skills, networks and organizations. [[framing|Framing]] (Snow and Benford): **diagnostic** (the problem and who is to blame), **prognostic** (the solution), **motivational** (the call to act). [[new-social-movements|New social movement theory]] explains movements about identity and quality of life. (21.2)",
-        "[[social-change|Social change]] comes from technology, social institutions, population and the environment, usually together. Ogburn’s [[cultural-lag|cultural lag]]: norms trail technology. [[modernization|Modernization]] increases specialization, but judging it by Western technology carries an ethnocentric bias. (21.3)"
+        "[[social-change|Social change]] comes from technology, social institutions, population and the environment, usually together. Ogburn’s [[cultural-lag|cultural lag]] means that norms fall behind new technology. [[modernization|Modernization]] increases specialization. But judging it only by Western technology shows an ethnocentric bias (a bias toward one’s own culture). (21.3)"
       ]}
     ]},
     {h:"Picture it", body:[
       {fig:'<svg viewBox="0 0 340 310"><defs><marker id="e2u4-l5-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text class="s" x="170" y="20" text-anchor="middle">events and messages</text><g class="d-soft" stroke-width="1.5"><circle cx="40" cy="40" r="7"/><circle cx="84" cy="52" r="7"/><circle cx="124" cy="36" r="7"/><circle cx="164" cy="58" r="7"/><circle cx="204" cy="38" r="7"/><circle cx="244" cy="56" r="7"/><circle cx="290" cy="40" r="7"/><circle cx="30" cy="76" r="7"/><circle cx="104" cy="80" r="7"/><circle cx="184" cy="82" r="7"/><circle cx="264" cy="80" r="7"/><circle cx="312" cy="70" r="7"/></g><path class="d-panel" d="M20 100 L320 100 L230 210 L110 210 Z" stroke-width="2"/><text x="170" y="132" text-anchor="middle">Gatekeepers</text><text class="s" x="170" y="152" text-anchor="middle">owners, editors,</text><text class="s" x="170" y="168" text-anchor="middle">algorithms, moderators</text><rect class="d-lup" x="92" y="222" width="74" height="26" rx="5" stroke-width="2"/><text class="s" x="129" y="239" text-anchor="middle">story</text><rect class="d-lup" x="174" y="222" width="74" height="26" rx="5" stroke-width="2"/><text class="s" x="211" y="239" text-anchor="middle">story</text><path class="d-ink" d="M170 252 L170 280" stroke-width="2" marker-end="url(#e2u4-l5-a)"/><text x="170" y="300" text-anchor="middle">public agenda</text></svg>', alt:"Many small circles representing events at the top pass down into a funnel labeled gatekeepers: owners, editors, algorithms and moderators. Two stories come out of the bottom and lead to the public agenda.", cap:"Gatekeeping. On social platforms, recommendation algorithms and content moderation now do much of the sorting that editors once did."},
-      {fig:'<svg viewBox="0 0 340 582"><defs><marker id="e2u4-l5-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="8" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="30" text-anchor="middle">1 Preliminary (emergence)</text><text class="s" x="170" y="49" text-anchor="middle">people notice a problem; leaders appear</text><path class="d-ink" d="M170 64 L170 84" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-gold" x="8" y="86" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="108" text-anchor="middle">2 Coalescence</text><text class="s" x="170" y="127" text-anchor="middle">groups form, publicize, recruit, protest</text><path class="d-ink" d="M170 142 L170 162" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-sage" x="8" y="164" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="186" text-anchor="middle">3 Institutionalized</text><text class="s" x="170" y="205" text-anchor="middle">formal organization, paid staff, budgets</text><path class="d-ink" d="M170 220 L170 240" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-rose" x="8" y="242" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="264" text-anchor="middle">4 Decline</text><text class="s" x="170" y="283" text-anchor="middle">the movement winds down</text><path class="d-ink" d="M28 296 L28 497" stroke-width="2"/><path class="d-ink" d="M28 329 L46 329" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="312" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="334" text-anchor="middle">success</text><path class="d-ink" d="M28 371 L46 371" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="354" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="376" text-anchor="middle">co-optation</text><path class="d-ink" d="M28 413 L46 413" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="396" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="418" text-anchor="middle">repression</text><path class="d-ink" d="M28 455 L46 455" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="438" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="460" text-anchor="middle">failure</text><path class="d-ink" d="M28 497 L46 497" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="480" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="502" text-anchor="middle">goes mainstream</text><text class="s" x="170" y="540" text-anchor="middle">Decline isn’t always defeat: winning, or</text><text class="s" x="170" y="556" text-anchor="middle">becoming part of normal politics, also</text><text class="s" x="170" y="572" text-anchor="middle">ends the movement phase.</text></svg>', alt:"Four stages stacked top to bottom: preliminary (emergence), coalescence, institutionalization and decline. From decline, a line branches to five possible outcomes listed below it: success, co-optation, repression, failure, and going mainstream.", cap:"The social movement life cycle. Co-optation means leaders are absorbed into the institutions they challenged."}
+      {fig:'<svg viewBox="0 0 340 582"><defs><marker id="e2u4-l5-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><rect class="d-lup" x="8" y="8" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="30" text-anchor="middle">1 Preliminary (emergence)</text><text class="s" x="170" y="49" text-anchor="middle">people notice a problem; leaders appear</text><path class="d-ink" d="M170 64 L170 84" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-gold" x="8" y="86" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="108" text-anchor="middle">2 Coalescence</text><text class="s" x="170" y="127" text-anchor="middle">groups form, publicize, recruit, protest</text><path class="d-ink" d="M170 142 L170 162" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-sage" x="8" y="164" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="186" text-anchor="middle">3 Institutionalized</text><text class="s" x="170" y="205" text-anchor="middle">formal organization, paid staff, budgets</text><path class="d-ink" d="M170 220 L170 240" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-rose" x="8" y="242" width="324" height="54" rx="8" stroke-width="2"/><text x="170" y="264" text-anchor="middle">4 Decline</text><text class="s" x="170" y="283" text-anchor="middle">the movement winds down</text><path class="d-ink" d="M28 296 L28 497" stroke-width="2"/><path class="d-ink" d="M28 329 L46 329" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="312" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="334" text-anchor="middle">success</text><path class="d-ink" d="M28 371 L46 371" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="354" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="376" text-anchor="middle">co-optation</text><path class="d-ink" d="M28 413 L46 413" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="396" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="418" text-anchor="middle">repression</text><path class="d-ink" d="M28 455 L46 455" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="438" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="460" text-anchor="middle">failure</text><path class="d-ink" d="M28 497 L46 497" stroke-width="2" marker-end="url(#e2u4-l5-b)"/><rect class="d-panel" x="48" y="480" width="184" height="34" rx="6" stroke-width="2"/><text x="140" y="502" text-anchor="middle">goes mainstream</text><text class="s" x="170" y="540" text-anchor="middle">Decline isn’t always defeat: winning, or</text><text class="s" x="170" y="556" text-anchor="middle">becoming part of normal politics, also</text><text class="s" x="170" y="572" text-anchor="middle">ends the movement phase.</text></svg>', alt:"Four stages stacked from top to bottom: preliminary (emergence), coalescence, institutionalization and decline. From decline, a line branches to five possible outcomes listed below it. The outcomes are success, co-optation, repression, failure and going mainstream.", cap:"The social movement life cycle. Co-optation means leaders are absorbed into the institutions they challenged."}
     ]},
     {h:"Key terms", body:[ {terms:["digital-divide","knowledge-gap","gatekeeping","agenda-setting","media-consolidation","social-movement","resource-mobilization","framing","new-social-movements","social-change"]} ]},
     {h:"Beyond the book", body:[
@@ -622,7 +622,7 @@ ICA.addUnit({
       {t:"A campaign for a national law requiring wheelchair access to public buildings", b:0, why:"A specific change within the existing system is reform."}
     ]},
     {id:"e2u4-l5-x2", type:"order", q:"A neighborhood campaign for safer streets for cyclists grows over ten years. Put its stages in life-cycle order.", items:[
-      {t:"After several accidents, residents start talking about dangerous roads, and a few people start speaking out.", why:"Emergence (the preliminary stage): awareness grows and leaders appear."},
+      {t:"After several accidents, residents start to talk about dangerous roads, and a few people start to speak out.", why:"Emergence (the preliminary stage): awareness grows and leaders appear."},
       {t:"Local groups join together, hold rides and meetings, and get media coverage.", why:"Coalescence: people organize, publicize and recruit."},
       {t:"A registered charity with paid staff lobbies the council and runs training.", why:"Institutionalization: the movement becomes a formal organization."},
       {t:"New cycle lanes are built; membership falls as people feel the goal is met.", why:"Decline, here through success. Decline doesn’t always mean defeat."}
@@ -632,20 +632,20 @@ ICA.addUnit({
       ["“Close the discharge pipe and make the factory pay for the clean-up.”","Prognostic framing","Offering a solution and how to carry it out is prognostic framing."],
       ["“Come to the town hall on Monday at 6 pm.”","Motivational framing","A call to action is motivational framing."],
       ["The campaign wins a grant, hires an organizer and borrows a church hall for meetings.","Resource mobilization","Gathering money, skills and space to act is resource mobilization."],
-      ["A movement centers on dignity and recognition for a group’s identity rather than wages.","New social movement theory","Focusing on identity, culture and quality of life is what new social movement theory explains."]
+      ["A movement focuses on dignity and recognition for a group’s identity, not on wages.","New social movement theory","Focusing on identity, culture and quality of life is what new social movement theory explains."]
     ]},
     {id:"e2u4-l5-x4", type:"mcq", q:"Sione has a smartphone with a data plan, but he struggles to fill in online job applications, can’t tell which websites are trustworthy, and gives up. Which level of the digital divide does this show most clearly?", options:[
       {t:"Skills and use: he has access but lacks the digital skills to use it effectively.", ok:true, why:"Right. The access gap is closed, but a second-level divide in skills and use remains, so he can’t turn access into outcomes."},
       {t:"Access: he has no way to get online.", why:"He has a phone and data, so access isn’t the problem here."},
       {t:"There’s no digital divide, because he owns a smartphone.", why:"Owning a device closes only the first level. Skills and outcomes are also part of the divide."},
-      {t:"Media consolidation: too few companies own job websites.", why:"Consolidation is about media ownership, not one person’s ability to use online services."}
+      {t:"Media consolidation: too few companies own job websites.", why:"Consolidation is about who owns the media. It is not about one person being able to use online services."}
     ]},
     {id:"e2u4-l5-x5", type:"spot", q:"A blog post sums up a protest movement like this. Tap the problems with the reasoning.", ask:"is a problem with the reasoning", parts:[
       {t:"Activists used social media to share videos and plan marches", flag:false, why:"That’s a reasonable, well-documented description of how many recent movements organized."},
       ". ",
-      {t:"So social media caused the uprising", flag:true, why:"Using a tool isn’t the same as causing the event. Grievances, organizations, resources and political opportunities matter too."},
+      {t:"So social media caused the uprising", flag:true, why:"Using a tool is not the same as causing the event. Grievances, organizations, resources and political opportunities matter too."},
       ". ",
-      {t:"Older networks such as trade unions, mosques, churches and student groups also mobilized people", flag:false, why:"Correct and important: offline networks are a key resource in resource-mobilization terms."},
+      {t:"Older networks such as trade unions, mosques, churches and student groups also mobilized people", flag:false, why:"Correct and important. Offline networks are a key resource in the resource-mobilization view."},
       ". ",
       {t:"Before social media, people could never organize mass protests", flag:true, why:"False history: movements from women’s suffrage to the anti-apartheid struggle organized mass action without the internet."},
       ". ",
@@ -653,12 +653,12 @@ ICA.addUnit({
       "."
     ]},
     {id:"e2u4-l5-x6", type:"sort", q:"Which lens does each claim about media come from?", buckets:["Functionalism","Conflict theory","Feminist theory","Symbolic interactionism"], items:[
-      {t:"Television news gives a whole country shared information during a disaster.", b:0, why:"Highlighting how media meet a society’s need for shared information is functionalist."},
+      {t:"Television news gives a whole country shared information during a disaster.", b:0, why:"Pointing out how media meet a society’s need for shared information is a functionalist view."},
       {t:"A few owners control most newspapers, so their interests shape what is covered.", b:1, why:"Linking ownership and power to whose voices are heard is the conflict view."},
       {t:"Video games often show women only as rewards or decoration.", b:2, why:"Examining gendered representation is feminist theory."},
-      {t:"People show their status through which phone brand they carry.", b:3, why:"Treating technology as a symbol whose meaning people create is symbolic interactionism."},
+      {t:"People show their status through which phone brand they carry.", b:3, why:"Seeing technology as a symbol whose meaning people create is symbolic interactionism."},
       {t:"Recommendation algorithms show richer users different job ads from poorer users.", b:1, why:"Technology reproducing inequality between groups is a conflict concern."},
-      {t:"Friends online come to treat a celebrity as almost a personal acquaintance.", b:3, why:"How media shape relationships and people’s sense of reality is a symbolic interactionist topic."}
+      {t:"Friends online come to treat a celebrity as almost a personal acquaintance.", b:3, why:"How media shape relationships and people’s sense of reality is a topic for symbolic interactionists."}
     ]},
     {id:"e2u4-l5-x7", type:"number", q:"ITU figures show the share of the world’s population using the internet rose from 71% in 2024 to 74% in 2025. By what **percentage** did the share grow? (Round to one decimal place.)", answer:4.2, tol:0.06, unit:"%", why:"Percentage change = (new − old) ÷ old × 100 = (74 − 71) ÷ 71 × 100 = 3 ÷ 71 × 100 ≈ 4.2%. The rise was 3 **percentage points**, which is a growth of about 4.2 **percent**. News reports often mix these up.", wrongs:[
       {v:3, tol:0.05, why:"That’s the change in percentage points (74 − 71). The question asks for percentage change: divide the 3 points by the starting value of 71."},
@@ -670,7 +670,7 @@ ICA.addUnit({
    apply:{intro:"Look at the media you use and the movements around you. Observe, read and reflect; you don’t need to join or oppose anything.", tasks:[
      {t:"Audit your media diet", how:["For two days, note every source of news or information you use: apps, websites, broadcasters, social feeds, group chats.","For each, find out who owns it (look for an “About” page) and whether a person or an algorithm chose what you saw.","Count how many different owners you rely on.","Reflect: where are the gatekeepers in your information diet?"], write:"Sources, owners, human or algorithm, what I notice…"},
      {t:"Compare three front pages", how:["On the same day, open the home pages of three news outlets. Include at least one from another country. If you can, include one public service broadcaster.","Note the top three stories on each.","Which stories appear everywhere, and which only on one? How is the same story framed differently (headline words, photos, who is quoted)?","Write what this shows about gatekeeping and agenda-setting."], write:"Outlets, top stories, differences in framing…"},
-     {t:"Analyze one social movement", how:["Choose any movement, past or present, from your region or one you have read about.","Classify it with Aberle’s types and place it in the life cycle.","Identify its resources (money, people, organizations, networks) and its diagnostic, prognostic and motivational frames, using its own published materials.","Describe it fairly, in the terms its supporters use, and note what its critics argue."], write:"Movement, type, stage, resources, frames, what critics say…"}
+     {t:"Analyze one social movement", how:["Choose any movement, past or present, from your region or one you have read about.","Classify it with Aberle’s types and place it in the life cycle.","Identify its resources: money, people, organizations and networks. Identify its diagnostic, prognostic and motivational frames. Use the group’s own published materials.","Describe it fairly, in the terms its supporters use, and note what its critics argue."], write:"Movement, type, stage, resources, frames, what critics say…"}
    ], proof:"Three things. First, notes with a two-day media audit naming owners and gatekeepers. Second, a three-outlet comparison of framing. Third, a balanced analysis of one social movement by type, stage, resources and frames."},
    read:[
      {book:"soc", where:"Chapter 8 “Media and Technology”: Sections 8.1 “Technology Today” (for the digital divide), 8.2 “Media and Technology in Society”, 8.3 “Global Implications of Media and Technology” and 8.4 “Theoretical Perspectives on Media and Technology”"},
@@ -681,11 +681,11 @@ ICA.addUnit({
   {id:"e2u4-l7", title:"Algorithms, platforms and borders: a sociology of AI", minutes:60,
    hook:{q:"In 2020 the UK Home Office stopped using an algorithm that sorted visa applications into red, amber and green. What led to the pause?", options:["A legal challenge arguing it discriminated by nationality","A cyber-attack that leaked applicants’ personal data","A new law banning computers in visa decisions","Complaints that it approved applications too slowly"], answer:0, reveal:"**A legal challenge.** The Joint Council for the Welfare of Immigrants, with the campaign group Foxglove, argued that the “streaming tool” used nationality and fed on its own past decisions. In August 2020 the Home Office agreed to stop using it pending a redesign, while denying that it discriminated. Sociologists study cases like this to ask who designs automated systems, whose data they learn from, and who can challenge them. This lesson applies those questions to welfare, work, surveillance and borders."},
    goals:[
-     "Explain why sociologists treat algorithms and AI as social systems: goals, data, institutions and feedback loops",
-     "Analyze cases of biased automated decisions from several regions, and explain why fairness definitions can conflict",
+     "Explain why sociologists treat algorithms and AI as social systems. Look at goals, data, institutions and feedback loops",
+     "Analyze cases of biased automated decisions from several regions. Explain why the definitions of fairness can conflict",
      "Describe platform labor and algorithmic management, and the 2024 EU and 2026 ILO rules",
      "Compare sociological views of surveillance, from the panopticon to surveillance capitalism",
-     "Describe border technologies (biometrics, travel authorizations, risk scoring) and give the main arguments for and against them, attributed"
+     "Describe border technologies (biometrics, travel authorizations, risk scoring). Give the main arguments for and against them, and say who makes each argument"
    ],
    learn:[
     {h:"Algorithms are social, not only technical", body:[
@@ -708,15 +708,15 @@ ICA.addUnit({
     ]},
     {h:"Automated decisions and bias", body:[
       "[[automated-decision|Automated decision-making]] means decisions made by systems with little or no human involvement. Governments and firms use it because it is fast and consistent at scale. Supporters point to evidence that well-built models can beat human judgment. Jon Kleinberg and colleagues (2018) estimated that a model could have cut jailing in US bail decisions without raising crime. Critics document what goes wrong:",
-      {table:[["Case","What happened"],["Netherlands, childcare benefits","Officials and a risk model wrongly treated thousands of parents as fraudsters, and nationality was used in the model. The government resigned in January 2021; the data protection authority fined the Tax Administration €2.75 million (December 2021)."],["Australia, “Robodebt” (2016–2019)","Averaging yearly tax data into income for each two-week period raised false welfare debts. A Royal Commission (2023) called it “a crude and cruel mechanism, neither fair nor legal”."],["England, exam grades (2020)","With exams canceled, an algorithm adjusted teachers’ grades using schools’ past results; nearly 40% of teachers’ A-level grades were lowered. After protests, the government dropped the algorithm’s grades."],["United States, court risk scores (2016)","ProPublica reported that Black defendants who did not reoffend were labeled high risk about twice as often as white defendants. The company replied that scores predicted reoffending equally well for both groups."]]},
+      {table:[["Case","What happened"],["Netherlands, childcare benefits","Officials and a risk model wrongly treated thousands of parents as fraudsters. The model used nationality. The government resigned in January 2021. The data protection authority fined the Tax Administration €2.75 million (December 2021)."],["Australia, “Robodebt” (2016–2019)","Averaging yearly tax data into income for each two-week period raised false welfare debts. A Royal Commission (2023) called it “a crude and cruel mechanism, neither fair nor legal”."],["England, exam grades (2020)","Exams were canceled. An algorithm adjusted teachers’ grades using the schools’ past results. Nearly 40% of teachers’ A-level grades were lowered. After protests, the government dropped the algorithm’s grades."],["United States, court risk scores (2016)","ProPublica reported that Black defendants who did not reoffend were labeled high risk about twice as often as white defendants. The company replied that scores predicted reoffending equally well for both groups."]]},
       "How can both sides of the last case be right? Researchers (Kleinberg, Mullainathan and Raghavan, 2016; Chouldechova, 2017) showed that when groups have different underlying rates, a score usually cannot have equal accuracy and equal error rates for both at once. Choosing which kind of fairness comes first is a value choice, not only a technical one.",
-      "Virginia Eubanks (*Automating Inequality*, 2018), Safiya Umoja Noble (*Algorithms of Oppression*, 2018) and Ruha Benjamin (*Race After Technology*, 2019) make a shared argument. Such systems fall hardest on poor and racialized groups. These groups are watched most and can contest least ([[algorithmic-bias]]). Proposed remedies include audits by group, published explanations, human review and appeal. The EU’s GDPR (Article 22) limits purely automated decisions with significant effects. The EU AI Act treats uses in welfare, jobs, education, policing and migration as **high-risk** ({{ai-governance}})."
+      "Virginia Eubanks (*Automating Inequality*, 2018), Safiya Umoja Noble (*Algorithms of Oppression*, 2018) and Ruha Benjamin (*Race After Technology*, 2019) make a shared argument. Such systems fall hardest on poor and racialized groups. These groups are watched the most and can challenge the system the least ([[algorithmic-bias]]). Proposed remedies include audits by group, published explanations, human review and appeal. The EU’s GDPR (Article 22) limits decisions made only by machines when they have a big effect on people. The EU AI Act treats uses in welfare, jobs, education, policing and migration as **high-risk** ({{ai-governance}})."
     ]},
     {h:"Platform labor: managed by an app", body:[
       "[[platform-work|Platform work]] is paid work found and organised through a digital platform. It includes ride-hailing and delivery in cities from Jakarta to São Paulo, cleaning and care, and online tasks such as translation or labeling data to train AI. Mary Gray and Siddharth Suri called the hidden human labor behind “automated” services [[ghost-work|ghost work]] (2019).",
       "Platforms use [[algorithmic-management|algorithmic management]]. Apps assign tasks, set prices, rate workers and can suspend (“deactivate”) them, often with no human manager. Alex Rosenblat and Luke Stark (2016) showed that Uber drivers faced **information asymmetries**. This means the app knew far more than they did.",
       "The core dispute is status. Platforms and many workers value **flexibility**: choosing hours, easy entry, and income for people shut out of other jobs, including many migrants. Unions, many researchers and some courts stress **precarity**: unpredictable pay, no sick pay or pension, and unexplained decisions. The UK Supreme Court ruled in 2021 that Uber drivers were “workers” with rights such as paid vacation ({{work-globalization}}).",
-      "Rules are arriving. The EU Platform Work Directive (2024; member states must apply it by 2 December 2026) presumes an employment relationship where facts show control. It also requires human oversight of automated decisions. On 12 June 2026 the International Labour Conference adopted the **Decent Work in the Platform Economy Convention (No. 193)** by 406 votes to 8, with 36 abstentions. It extends key protections whatever a worker’s legal status. It also requires transparency about automated systems and a route to human review of decisions such as deactivation. Employers’ representatives had argued for more flexible, less prescriptive rules. A convention binds only states that ratify it."
+      "Rules are arriving. The EU Platform Work Directive (2024; member states must apply it by 2 December 2026) presumes an employment relationship where the facts show control. It also requires human oversight of automated decisions. On 12 June 2026 the International Labour Conference adopted the **Decent Work in the Platform Economy Convention (No. 193)** by 406 votes to 8, with 36 abstentions. It extends key protections whatever a worker’s legal status. It also requires openness about automated systems and a route to human review of decisions such as deactivation. Employers’ representatives had argued for more flexible rules with less detail. A convention binds only the states that ratify it."
     ]},
     {h:"Surveillance: watching and sorting", body:[
       "Surveillance is collecting and using personal data in order to manage or influence people. Michel Foucault (*Discipline and Punish*, 1975) used Jeremy Bentham’s design for a [[panopticon]] prison, where inmates can always be seen but never know when. He used it to argue that modern institutions teach people to discipline themselves. David Lyon (2003) stressed [[social-sorting|social sorting]]. Data place people in categories that bring different treatment, such as trusted and risky travelers.",
@@ -727,11 +727,11 @@ ICA.addUnit({
         "**Symbolic interactionism**: people adapt, perform for cameras, resist or watch back.",
         "**Feminist theory**: who is watched at home and online, for example through partner tracking."
       ]},
-      "Human rights law does not ban surveillance; it asks whether it is lawful, necessary and proportionate ({{digital-rights-surveillance}})."
+      "Human rights law does not ban surveillance. It asks if surveillance is lawful, necessary and proportionate ({{digital-rights-surveillance}})."
     ]},
     {h:"Border technologies", body:[
       "Borders are where these threads meet ({{borders-and-sovereignty}}). States now check people long before they reach a frontier and record them as they cross. Ayelet Shachar (2020) calls this **the shifting border**; Dennis Broeders (2007) wrote of Europe’s “new digital borders”.",
-      {table:[["Technology","What it does","Examples (November 2026)"],["[[biometrics|Biometric]] databases","Store fingerprints and face images to identify people","EU Entry/Exit System (from October 2025, fully running from 10 April 2026); Eurodac (from June 2026 adds face images and children from age 6); UNHCR’s refugee registration"],["[[travel-authorisation|Travel authorizations]] and e-visas","Online permission before travel, checked against databases and rules","Australia’s ETA (1996), the US ESTA, the UK ETA (£20), India’s e-Visa; the EU’s ETIAS is planned (EU states expect 2027) but not yet running"],["[[risk-scoring|Risk scoring]]","Ranks people for extra checks","The UK streaming tool (paused 2020); ETIAS screening rules (planned)"]]},
+      {table:[["Technology","What it does","Examples (November 2026)"],["[[biometrics|Biometric]] databases","Store fingerprints and face images to identify people","EU Entry/Exit System (from October 2025, fully running from 10 April 2026). Eurodac (from June 2026 it adds face images and children from age 6). UNHCR’s refugee registration"],["[[travel-authorisation|Travel authorizations]] and e-visas","Online permission before travel, checked against databases and rules","Australia’s ETA (1996), the US ESTA, the UK ETA (£20), India’s e-Visa; the EU’s ETIAS is planned (EU states expect 2027) but not yet running"],["[[risk-scoring|Risk scoring]]","Ranks people for extra checks","The UK streaming tool (paused 2020); ETIAS screening rules (planned)"]]},
       {fig:'<svg viewBox="0 0 340 372"><defs><marker id="e2u4-l7-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="22" text-anchor="middle">One trip, many checkpoints</text><path class="d-ink" d="M30 48 L30 336" stroke-width="2" marker-end="url(#e2u4-l7-b)"/><circle class="d-lup" cx="30" cy="60" r="12" stroke-width="2"/><text x="30" y="65" text-anchor="middle">1</text><text x="54" y="58">Before travel</text><text class="s" x="54" y="76">e-visa or travel authorization;</text><text class="s" x="54" y="92">data checked against databases</text><text class="s" x="54" y="108">and risk rules</text><circle class="d-gold" cx="30" cy="150" r="12" stroke-width="2"/><text x="30" y="155" text-anchor="middle">2</text><text x="54" y="148">At check-in</text><text class="s" x="54" y="166">the airline checks permission</text><text class="s" x="54" y="182">to travel</text><circle class="d-sage" cx="30" cy="225" r="12" stroke-width="2"/><text x="30" y="230" text-anchor="middle">3</text><text x="54" y="223">At the border</text><text class="s" x="54" y="241">fingerprints and face</text><text class="s" x="54" y="257">recorded or matched</text><circle class="d-rose" cx="30" cy="300" r="12" stroke-width="2"/><text x="30" y="305" text-anchor="middle">4</text><text x="54" y="298">During the stay and at exit</text><text class="s" x="54" y="316">entry and exit dates logged;</text><text class="s" x="54" y="332">overstays flagged</text><text class="s" x="170" y="364" text-anchor="middle">The border now starts far from the frontier.</text></svg>', alt:"A vertical timeline of one trip with four numbered checkpoints. Before travel: an e-visa or travel authorization is checked against databases and risk rules. At check-in: the airline checks permission to travel. At the border: fingerprints and face are recorded or matched. During the stay and at exit: entry and exit dates are logged and overstays flagged.", cap:"The shifting border: checks now happen before, at and after the frontier."},
       "**Governments and the European Commission** argue that these systems make crossings faster and more secure. They replace passport stamps, detect identity fraud and overstays, and free officers to focus on real risks. **UNHCR** uses biometric registration to give refugees a secure identity and to make sure aid reaches the right people.",
       "**Critics** see risks. Tendayi Achiume, then UN Special Rapporteur on racism, warned in a 2020 report that digital border technologies can reproduce racial and xenophobic discrimination. She added that they can turn migrants into testing grounds for new tools. Petra Molnar (*The Walls Have Eyes*, 2024) documents surveillance along migration routes from the Mediterranean to the US–Mexico border. Human Rights Watch (2021) criticized the sharing of data from Rohingya refugees in Bangladesh with Myanmar. UNHCR said refugees had been asked for consent ({{refugees-and-displacement}}).",
@@ -752,7 +752,7 @@ ICA.addUnit({
     {id:"e2u4-l7-x2", type:"sort", q:"Which source of algorithmic bias does each example mainly show?", buckets:["Historical data","Proxy","Unrepresentative data","Feedback loop"], items:[
       {t:"A hiring model learns from ten years of mostly male hires and marks down résumés that mention a women’s club.", b:0, why:"The labels it learned from encode past decisions: historical bias."},
       {t:"A health program uses past spending on care to stand for how sick people are.", b:1, why:"Spending stands in for need, and groups who got less care look healthier than they are: a proxy problem."},
-      {t:"A face-matching system trained mostly on lighter-skinned faces makes more errors on darker-skinned women.", b:2, why:"Some groups were under-represented in the training data."},
+      {t:"A face-matching system was trained mostly on lighter-skinned faces. It makes more errors on darker-skinned women.", b:2, why:"Some groups were under-represented in the training data."},
       {t:"Police patrol where the model predicts crime, record more crime there, and the model then predicts even more.", b:3, why:"Outputs shape the next round of inputs: a feedback loop."},
       {t:"A loan model uses postal code, which closely tracks ethnicity in a segregated city.", b:1, why:"Postal code works as a stand-in for a protected characteristic: a proxy."},
       {t:"A voice assistant tested mainly on one accent misunderstands speakers from other regions.", b:2, why:"The data didn’t represent the people who use it."}
@@ -772,9 +772,9 @@ ICA.addUnit({
       {v:999900, tol:0.5, why:"That is everyone who isn’t a threat. The question asks only about those the tool flagged."}
     ], hint2:"Start with the number flagged, then take away the real threats among them."},
     {id:"e2u4-l7-x5", type:"mcq", q:"Oluwaseun, a delivery rider, is suddenly deactivated by an app after his ratings drop. No person explains why. Under ILO Convention No. 193 (2026), in a country that has ratified it, what should he be able to ask for?", options:[
-      {t:"An explanation and a review of the decision with human involvement", ok:true, why:"Right. The Convention requires transparency about automated systems and a route to human review of significant decisions such as deactivation."},
+      {t:"An explanation and a review of the decision with human involvement", ok:true, why:"Right. The Convention requires openness about automated systems. It also requires a route to human review of important decisions, such as deactivation."},
       {t:"Automatic reinstatement and full back pay in every single case", why:"A review can lead to reinstatement, but the Convention doesn’t guarantee it whatever the facts."},
-      {t:"A ban on the platform using any customer ratings at all", why:"The Convention regulates how automated systems are used and explained; it doesn’t ban ratings."},
+      {t:"A ban on the platform using any customer ratings at all", why:"The Convention regulates how automated systems are used and explained. It does not ban ratings."},
       {t:"Full employee status in every country, whatever the facts of his work", why:"It extends key protections regardless of status, but it doesn’t make every platform worker an employee."}
     ]},
     {id:"e2u4-l7-x6", type:"sort", q:"Which kind of border technology does each example show?", buckets:["Biometric database","Travel authorization or e-visa","Risk scoring"], items:[
@@ -782,7 +782,7 @@ ICA.addUnit({
       {t:"A tourist applies online for permission to travel to the UK and pays £20 before booking.", b:1, why:"Online permission before travel is a travel authorization, the UK ETA."},
       {t:"Software rates each visa application red, amber or green for extra checks.", b:2, why:"Ranking applications for scrutiny is risk scoring."},
       {t:"A refugee’s iris scan confirms her identity when she collects food aid.", b:0, why:"Identification by a body feature stored in a database is biometric."},
-      {t:"Before visiting India, a traveler uploads a passport scan and photo and receives approval by email.", b:1, why:"An online visa granted before travel is an e-visa."},
+      {t:"Before visiting India, a traveler uploads a passport scan and photo. The traveler gets approval by email.", b:1, why:"An online visa granted before travel is an e-visa."},
       {t:"Rules compare applicants’ answers with patterns linked to overstays to decide who needs a manual check.", b:2, why:"Screening rules that flag people for extra checks are risk scoring."}
     ]},
     {id:"e2u4-l7-x7", type:"spot", q:"A press release announces a new border system. Tap the claims that are problems.", ask:"is a problem with the claim", parts:[
@@ -823,21 +823,21 @@ ICA.addUnit({
      {t:"Power without authority", ok:true, why:"Right. Power is the ability to impose your will. Authority is power that people accept as legitimate, and the residents don’t accept it."},
      {t:"Traditional authority", why:"Traditional authority rests on long custom and inheritance that people accept. This group has neither."},
      {t:"Rational-legal authority", why:"Rational-legal authority comes from laws and offices that people accept. The group took control by force."},
-     {t:"Charismatic authority", why:"Charismatic authority rests on followers’ devotion to an extraordinary leader. The residents are forced, not devoted."}]},
+     {t:"Charismatic authority", why:"Charismatic authority rests on followers’ devotion to an extraordinary leader. The residents are forced to obey. They are not devoted."}]},
    {id:"e2u4-cp03", lesson:"e2u4-l5", level:1, q:"A group asks its members to give up sugar for one month to improve their own health. It doesn’t try to change laws or society. In Aberle’s terms, what type of movement is this?", options:[
      {t:"A reform movement", why:"A reform movement seeks one specific change in society, such as a new law. This group only asks members to change their own habits."},
      {t:"A religious/redemptive movement", why:"Redemptive movements seek deep inner change in a person. Cutting out sugar for a month is limited self-improvement."},
      {t:"A resistance movement", why:"A resistance movement tries to stop or undo a change in society. Nothing here opposes a change."},
-     {t:"An alternative movement", ok:true, why:"Yes. Alternative movements seek limited self-improvement in individuals, like changing one habit."}]},
+     {t:"An alternative movement", ok:true, why:"Yes. Alternative movements seek limited self-improvement in individuals, such as changing one habit."}]},
    {id:"e2u4-cp04", lesson:"e2u4-l1", level:2, q:"After marrying, Lin and Marco rent their own apartment, away from both sets of parents. Their children treat relatives on both sides as equally close family. Which pair of terms fits?", options:[
      {t:"Patrilocal residence; patrilineal descent", why:"Patrilocal means living with the husband’s family, and patrilineal means tracing kinship through the father. Neither fits."},
      {t:"Neolocal residence; bilateral descent", ok:true, why:"Correct. Living in a new home of their own is neolocal. Tracing kinship through both parents equally is bilateral."},
      {t:"Matrilocal residence; matrilineal descent", why:"Matrilocal means living with the wife’s family, and matrilineal means tracing kinship through the mother. Neither fits."},
      {t:"Neolocal residence; matrilineal descent", why:"Neolocal is right, but matrilineal descent traces kinship only through the mother. These children count both sides."}]},
    {id:"e2u4-cp05", lesson:"e2u4-l3", level:2, q:"Maya has bad flu. Her manager accepts that she stays home but expects her to see a doctor and follow the treatment. Which idea describes these expectations?", options:[
-     {t:"Medicalization", why:"Medicalization is redefining ordinary or once-deviant behavior as illness. Flu has always been treated as illness."},
+     {t:"Medicalization", why:"Medicalization means redefining ordinary or once-deviant behavior as illness. Flu has always been treated as an illness."},
      {t:"Social epidemiology", why:"Social epidemiology studies how disease is caused and spread across a population. It doesn’t describe one person’s duties when ill."},
-     {t:"Demedicalization", why:"Demedicalization removes something from the medical domain. Maya’s flu is being treated medically."},
+     {t:"Demedicalization", why:"Demedicalization takes something out of the medical area. Maya’s flu is being treated medically."},
      {t:"The sick role", ok:true, why:"Yes. Parsons’s sick role excuses people from normal duties, as long as they try to get well and seek competent help."}]},
    {id:"e2u4-cp06", lesson:"e2u4-l3", level:2, q:"In a large company, all staff have the same health insurance. Yet at each step down the job ladder, staff report more illness. Which idea does this match?", options:[
      {t:"A social gradient in health", ok:true, why:"Right. Like the Whitehall studies, health worsens at each step down the job ladder, even when everyone has jobs and health care."},
@@ -858,7 +858,7 @@ ICA.addUnit({
      {t:"It is cultural lag: norms are trailing a new technology", why:"Cultural lag is about norms catching up with technology. The driving force here is population change, not a new technology."},
      {t:"It shows Malthus was right that population outruns food", why:"Malthus worried about population growth outrunning food. This country’s population is shrinking, and food isn’t the issue."},
      {t:"Population change ripples through linked institutions, so they adjust together", ok:true, why:"Right. Population is one of the four forces of social change, and institutions depend on each other: fewer children affects schools and family care at once."},
-     {t:"Institutions change separately, so the school closures and elder care are unrelated", why:"Institutions depend on each other. The same fall in births explains both changes."}]},
+     {t:"Institutions change separately, so the school closures and elder care are not related", why:"Institutions depend on each other. The same fall in births explains both changes."}]},
    {id:"e2u4-cp10", lesson:"e2u4-l3", level:3, q:"Old phones from rich countries are shipped to a poorer country. There, low-paid workers burn them to recover metals and breathe toxic smoke. Which conclusion would an environmental sociologist most likely draw?", options:[
      {t:"It is only a technology problem, so social factors don’t matter", why:"Environmental sociology studies how people and the environment shape each other. Who carries the hazard is a social question."},
      {t:"The workers chose these jobs, so the health risk is only a personal trouble", why:"Many people face the same risk because of how global trade is organized. That makes it a public issue, not only a personal trouble."},
@@ -866,7 +866,7 @@ ICA.addUnit({
      {t:"Global trade moves hazards to poorer places with less power to refuse", ok:true, why:"Yes. Globalization spreads production and waste along chains, and the heavier load of hazards falls on poorer, less powerful communities, as environmental racism does within countries."}]},
    {id:"e2u4-cp11", lesson:"e2u4-l2", level:3, q:"A campaign grew around one gifted speaker whose followers were devoted to her. After she retires, members elect a board, hire staff and write formal rules. Which pair of ideas fits?", options:[
      {t:"Traditional authority; the preliminary stage", why:"Nothing rests on custom or inheritance, and the preliminary stage is when a movement first emerges. This movement is becoming established."},
-     {t:"Routinization of charisma; the institutionalization stage", ok:true, why:"Correct. When a charismatic leader leaves, followers build offices and rules (Weber’s routinization). A board, staff and rules mark a movement’s institutionalization stage."},
+     {t:"Routinization of charisma; the institutionalization stage", ok:true, why:"Correct. When a charismatic leader leaves, followers build offices and rules (Weber’s routinization). A board, staff and rules show that a movement has reached the institutionalization stage."},
      {t:"Charismatic authority growing stronger; the coalescence stage", why:"Charisma rests on one person, so it weakens when she leaves. Writing rules and hiring staff goes beyond coalescence."},
      {t:"Rational-legal authority giving way to charisma; the decline stage", why:"The change goes the other way: from charisma toward rules and offices. And the movement is getting organized, not declining."}]},
    {id:"e2u4-cp12", lesson:"e2u4-l2", level:3, q:"In a democracy, a researcher finds that most top ministers, generals and company heads went to the same few expensive schools, and many move between each other’s jobs. Which reading fits best?", options:[
@@ -1776,28 +1776,28 @@ ICA.addUnit({
   bank:[
    /* ---- Lesson 1 ---- */
    {id:"e2u4-q01", lesson:"e2u4-l1", level:1, q:"What is a social institution?", options:[
-     {t:"A lasting social pattern that meets a basic need", ok:true, why:"An institution is a lasting pattern of roles, rules and organizations that meets a basic social need. That’s the sociological definition: family, education, religion, government, the economy, health care and media are examples."},
-     {t:"Any large public building, such as a hospital or university", why:"Buildings and organizations are inside institutions, but an institution is the society-wide pattern, not a building."},
-     {t:"A government department that runs public services", why:"Government is one institution, but institutions also include family, religion and the economy, which aren’t government departments."},
+     {t:"A lasting social pattern that meets a basic need", ok:true, why:"An institution is a lasting pattern of roles, rules and organizations that meets a basic social need. This is the sociological definition. Examples are family, education, religion, government, the economy, health care and media."},
+     {t:"Any large public building, such as a hospital or university", why:"Buildings and organizations are inside institutions. But an institution is the pattern across the whole society. It is not a building."},
+     {t:"A government department that runs public services", why:"Government is one institution. But institutions also include family, religion and the economy. These are not government departments."},
      {t:"A group of friends who meet regularly", why:"That’s a small group. Institutions are society-wide and outlast any particular members."}
    ]},
    {id:"e2u4-q02", lesson:"e2u4-l1", level:2, q:"When factory work replaced farm work in many countries, families got smaller and schooling got longer. What does this show about institutions?", options:[
-     {t:"Institutions are interdependent: a change in the economy reshapes family and education.", ok:true, why:"Right. OpenStax uses industrialization as its main example of institutions changing each other."},
+     {t:"Institutions depend on each other. A change in the economy reshapes family and education.", ok:true, why:"Right. OpenStax uses industrialization as its main example of institutions changing each other."},
      {t:"Institutions never change once established.", why:"The example shows them changing a lot; institutions are durable, not fixed."},
      {t:"Families and schools are part of the economy, so they aren’t separate institutions.", why:"They are separate institutions that influence each other. Interdependence isn’t the same as being one institution."},
      {t:"Smaller families caused factories to be built.", why:"The causal direction in this example runs mainly from economic change to family size."}
    ]},
    {id:"e2u4-q03", lesson:"e2u4-l1", level:1, q:"In a matrilineal society, how is kinship traced?", options:[
-     {t:"Through the mother’s line", ok:true, why:"Matrilineal descent traces kinship and inheritance through the mother, as among the Minangkabau of Indonesia."},
+     {t:"Through the mother’s line", ok:true, why:"Matrilineal descent traces kinship and inheritance through the mother. The Minangkabau of Indonesia are an example."},
      {t:"Through the father’s line", why:"That’s patrilineal descent."},
      {t:"Through both parents equally", why:"That’s bilateral descent, common in Europe, the Americas and the Philippines."},
      {t:"Through the oldest living relative, whichever side they’re on", why:"Descent rules follow a line (mother’s, father’s or both), not the age of a relative."}
    ]},
    {id:"e2u4-q04", lesson:"e2u4-l1", level:2, q:"Lucía’s grandparents, her parents, her aunt and two cousins all live in one house and share expenses. What kind of family household is this?", options:[
-     {t:"An extended family", ok:true, why:"Parents and children plus other relatives (grandparents, an aunt, cousins) in one household is an extended family."},
+     {t:"An extended family", ok:true, why:"Parents and children plus other relatives (grandparents, an aunt, cousins) in one household make an extended family."},
      {t:"A nuclear family", why:"A nuclear family is only parents and their children."},
      {t:"A polygamous family", why:"Polygamy is about having more than one spouse; nothing here says that."},
-     {t:"A family of procreation", why:"That term refers to the family a person forms through partnership, not to a multi-generation household."}
+     {t:"A family of procreation", why:"That term refers to the family a person forms through partnership. It does not mean a household with several generations."}
    ]},
    {id:"e2u4-q05", lesson:"e2u4-l1", level:1, q:"Which is an example of a **latent** function of education?", options:[
      {t:"Students form friendships that become lifelong professional networks", ok:true, why:"Networks are an unintended side effect of schooling, so they’re a latent function."},
@@ -1806,28 +1806,28 @@ ICA.addUnit({
      {t:"Students learn their country’s history", why:"Cultural transmission is a manifest function."}
    ]},
    {id:"e2u4-q06", lesson:"e2u4-l1", level:3, q:"A job that was once done by school-leavers now requires a university degree, although the tasks haven’t changed. Which concept best explains this, and from which perspective?", options:[
-     {t:"Credentialism, often analyzed from a conflict perspective as competition for status", ok:true, why:"Rising credential requirements without changing skill needs is credentialism. Randall Collins argued it reflects status competition."},
-     {t:"The hidden curriculum, from a functionalist perspective", why:"The hidden curriculum is about unofficial lessons learned at school, not employers’ requirements."},
-     {t:"Tracking, from a feminist perspective", why:"Tracking is sorting students into ability groups within education, not degree requirements for jobs."},
-     {t:"Cultural transmission, a manifest function of education", why:"Cultural transmission is passing on shared culture; it doesn’t explain rising job requirements."}
+     {t:"Credentialism, often analyzed from a conflict perspective as competition for status", ok:true, why:"Credentialism means rising credential requirements while the skills needed stay the same. Randall Collins argued that it reflects competition for status."},
+     {t:"The hidden curriculum, from a functionalist perspective", why:"The hidden curriculum is about the unofficial lessons learned at school. It is not about what employers require."},
+     {t:"Tracking, from a feminist perspective", why:"Tracking means sorting students into ability groups inside education. It does not mean degree requirements for jobs."},
+     {t:"Cultural transmission, a manifest function of education", why:"Cultural transmission means passing on shared culture. It does not explain rising job requirements."}
    ]},
    {id:"e2u4-q07", lesson:"e2u4-l1", level:2, q:"Which statement about the hidden curriculum is accurate?", options:[
-     {t:"It is what students learn from how school is organized.", ok:true, why:"Examples are punctuality and obedience to authority. The hidden curriculum is the unofficial, unwritten set of lessons carried by school routines."},
+     {t:"It is what students learn from how school is organized.", ok:true, why:"Examples are punctuality and obedience to authority. The hidden curriculum is the unofficial, unwritten set of lessons that school routines teach."},
      {t:"It is a secret syllabus that teachers keep from inspectors.", why:"It isn’t secret or deliberate; it’s built into everyday routines."},
      {t:"It only exists in private schools.", why:"All schools have one, though its content may differ between schools."},
-     {t:"It is the optional extra-curricular activities a school offers.", why:"Clubs and sports are visible, chosen activities, not unofficial lessons carried by routines."}
+     {t:"It is the optional extra-curricular activities a school offers.", why:"Clubs and sports are visible activities that students choose. They are not unofficial lessons taught by routines."}
    ]},
    {id:"e2u4-q08", lesson:"e2u4-l1", level:3, q:"Amara’s parents read to her every night and took her to museums. At school, teachers call her “naturally gifted”. A conflict theorist would most likely say:", options:[
-     {t:"School rewards her cultural capital as if it were talent.", ok:true, why:"Her cultural capital from home is mistaken for natural talent, which passes advantage down. This is Bourdieu’s argument: schools reward the knowledge and habits of advantaged homes while appearing neutral."},
+     {t:"School rewards her cultural capital as if it were talent.", ok:true, why:"Her cultural capital from home is mistaken for natural talent, and this passes advantage down. This is Bourdieu’s argument. Schools reward the knowledge and habits of advantaged homes while they appear neutral."},
      {t:"Schools are fair, so her success proves her talent.", why:"That ignores how home resources shape what schools recognize as talent, which is the conflict theorist’s point."},
-     {t:"Her success is a latent function of education.", why:"Latent functions are unintended effects for society, such as courtship; this doesn’t explain inequality between students."},
-     {t:"The hidden curriculum harms only students from wealthy homes.", why:"Conflict theorists argue the opposite: school routines and expectations tend to favor already-advantaged students."}
+     {t:"Her success is a latent function of education.", why:"Latent functions are unintended effects for society, such as courtship. They do not explain inequality between students."},
+     {t:"The hidden curriculum harms only students from wealthy homes.", why:"Conflict theorists argue the opposite. School routines and expectations tend to favor students who already have advantages."}
    ]},
    {id:"e2u4-q09", lesson:"e2u4-l1", level:2, q:"How would a symbolic interactionist most likely study the family?", options:[
      {t:"By studying the meanings people give to family roles", ok:true, why:"They examine how people create and change the meanings of roles such as “good father” or “chosen family”. Interactionists treat family as a social construction whose meanings are negotiated in everyday life."},
      {t:"By listing the functions the family performs for society", why:"That’s the functionalist approach, for example Murdock’s four functions."},
      {t:"By measuring who holds economic power in the household", why:"Focusing on power and resources is the conflict approach."},
-     {t:"By counting how many households are nuclear in a census", why:"Counting forms is useful demography, but it isn’t the interactionist focus on meaning."}
+     {t:"By counting how many households are nuclear in a census", why:"Counting forms is useful demography. But it is not the interactionist focus on meaning."}
    ]},
 
    /* ---- Lesson 2 ---- */
@@ -1837,10 +1837,10 @@ ICA.addUnit({
      {t:"The sacred is anything old; the profane is anything new.", why:"Age has nothing to do with it; communities give sacred status by how they treat things."},
      {t:"The sacred belongs to religious leaders; the profane belongs to ordinary people.", why:"Ordinary believers treat things as sacred too. The distinction is about objects and practices, not who owns them."}
    ]},
-   {id:"e2u4-q11", lesson:"e2u4-l2", level:1, q:"Which work argued that certain Protestant beliefs encouraged the disciplined work and saving that helped capitalism develop?", options:[
+   {id:"e2u4-q11", lesson:"e2u4-l2", level:1, q:"Which work argued that some Protestant beliefs encouraged the hard work and saving that helped capitalism grow?", options:[
      {t:"Max Weber, *The Protestant Ethic*", ok:true, why:"Weber published this argument in *The Protestant Ethic and the Spirit of Capitalism* (1904–05). It shows how ideas can shape economic life."},
      {t:"Émile Durkheim, *The Elementary Forms of Religious Life*", why:"Durkheim’s book is about the sacred, the profane and social cohesion."},
-     {t:"Karl Marx’s 1844 critique of Hegel", why:"Marx argued religion comforts the oppressed while distracting them; he didn’t make Weber’s argument about Protestant work discipline."},
+     {t:"Karl Marx’s 1844 critique of Hegel", why:"Marx argued that religion comforts the oppressed and distracts them. He did not make Weber’s argument about Protestant work discipline."},
      {t:"C. Wright Mills, *The Power Elite*", why:"Mills’s book is about a ruling elite in the US, not religion and capitalism."}
    ]},
    {id:"e2u4-q12", lesson:"e2u4-l2", level:2, q:"Which of these is the best evidence **against** a simple, universal secularization thesis?", options:[
@@ -1850,16 +1850,16 @@ ICA.addUnit({
      {t:"Some people say religion is less important to them than it was to their grandparents.", why:"That anecdote points toward secularization, not against it."}
    ]},
    {id:"e2u4-q13", lesson:"e2u4-l2", level:2, q:"A judge’s ruling is obeyed because the judge holds an office created by law and followed the correct legal procedure. Which type of authority is this?", options:[
-     {t:"Rational-legal authority", ok:true, why:"Obedience to an office defined by laws and procedures is rational-legal authority."},
+     {t:"Rational-legal authority", ok:true, why:"Obeying an office that is set by laws and rules is rational-legal authority."},
      {t:"Traditional authority", why:"Traditional authority rests on custom and inheritance, not written legal procedure."},
-     {t:"Charismatic authority", why:"Charismatic authority rests on a leader’s personal qualities, not on the office."},
+     {t:"Charismatic authority", why:"Charismatic authority rests on a leader’s personal qualities. It does not rest on the office."},
      {t:"Coercion, not authority", why:"People obey because they accept the office as legitimate, which is authority, not mere force."}
    ]},
    {id:"e2u4-q14", lesson:"e2u4-l2", level:3, q:"A religious movement grew rapidly around a gifted founder. After the founder’s death, members argued over leadership until they wrote rules for electing leaders and set up formal offices. What did Weber call this process?", options:[
-     {t:"The routinization of charisma", ok:true, why:"Turning charismatic authority into rules or traditions so it can outlast the leader is routinization of charisma."},
-     {t:"Secularization", why:"Secularization is religion losing social importance; this group is reorganizing, not declining."},
-     {t:"Medicalization", why:"Medicalization is redefining things as medical problems; it has nothing to do with succession."},
-     {t:"Traditional authority", why:"Traditional authority is one possible destination, but the process of transforming charisma is called routinization."}
+     {t:"The routinization of charisma", ok:true, why:"Routinization of charisma means turning a leader’s personal appeal into rules or traditions, so it can last after the leader."},
+     {t:"Secularization", why:"Secularization means religion is losing importance in society. This group is changing its form. It is not declining."},
+     {t:"Medicalization", why:"Medicalization means redefining things as medical problems. It has nothing to do with succession."},
+     {t:"Traditional authority", why:"Traditional authority is one possible result. But the process of turning charisma into lasting rules has its own name: routinization."}
    ]},
    {id:"e2u4-q15", lesson:"e2u4-l2", level:1, q:"What distinguishes a totalitarian government from other authoritarian governments?", options:[
      {t:"It tries to control nearly every part of life.", ok:true, why:"That includes work, family, religion and belief. Totalitarian rule aims at total control, extending into private life and thought."},
@@ -1868,13 +1868,13 @@ ICA.addUnit({
      {t:"It allows independent courts and media.", why:"Independent courts and media are exactly what totalitarian rule eliminates."}
    ]},
    {id:"e2u4-q16", lesson:"e2u4-l2", level:3, q:"In the invented country of Varenia, a king inherits the throne and opens parliament each year, but an elected parliament passes the laws and chooses the prime minister. How should a sociologist classify Varenia?", options:[
-     {t:"A constitutional monarchy with a representative democracy", ok:true, why:"A symbolic hereditary monarch combined with an elected parliament that governs is a constitutional monarchy. The parliament is a representative democracy."},
+     {t:"A constitutional monarchy with a representative democracy", ok:true, why:"A monarch who is only symbolic, with an elected parliament that governs, is a constitutional monarchy. The parliament is a representative democracy."},
      {t:"An absolute monarchy", why:"In an absolute monarchy the monarch makes the laws. Here the parliament does."},
      {t:"A totalitarian state", why:"Nothing suggests control of all areas of life; citizens elect parliament."},
      {t:"An oligarchy, because there’s a king", why:"Oligarchy is rule by a small elite. A symbolic king doesn’t make the system an oligarchy."}
    ]},
    {id:"e2u4-q17", lesson:"e2u4-l2", level:2, q:"How do sociologists approach the truth of religious beliefs?", options:[
-     {t:"They set it aside and study what religions do.", ok:true, why:"They study what religions do and how they are organized. Sociology is about social causes, effects and organization; judging truth belongs to theology and philosophy."},
+     {t:"They set it aside and study what religions do.", ok:true, why:"They study what religions do and how they are organized. Sociology is about social causes, effects and organization. Judging whether a religion is true belongs to theology and philosophy."},
      {t:"They test religious claims scientifically to see which are true.", why:"That isn’t sociology’s task, and many religious claims can’t be tested that way."},
      {t:"They assume all religions are false.", why:"That would be taking a side. Sociologists aim to be neutral on truth claims."},
      {t:"They rank religions by how useful they are to society.", why:"Ranking faiths would be a value judgment. Sociologists describe functions and effects without ranking traditions."}
@@ -1882,8 +1882,8 @@ ICA.addUnit({
    {id:"e2u4-q18", lesson:"e2u4-l2", level:3, q:"Dmitri reads: “Turnout is lower among young and poorer citizens.” Which conclusion follows most directly?", options:[
      {t:"Officials may hear older and better-off citizens more.", ok:true, why:"If officials hear these citizens’ concerns more, it can tilt policy. Unequal participation means unequal voice, a central concern in the sociology of politics."},
      {t:"Young and poorer citizens simply don’t care about politics.", why:"Lower turnout can reflect barriers, distrust or lack of time, not lack of interest. The statistic doesn’t show motives."},
-     {t:"Making voting compulsory always fixes inequality.", why:"Compulsory voting raises turnout in places like Australia and Belgium, but it doesn’t remove all inequalities in political influence."},
-     {t:"The country can’t be a democracy.", why:"Unequal turnout exists in many democracies. It raises questions about representation, not the basic classification."}
+     {t:"Making voting compulsory always fixes inequality.", why:"Compulsory voting raises turnout in places like Australia and Belgium. But it does not remove all inequality in political influence."},
+     {t:"The country can’t be a democracy.", why:"Unequal turnout exists in many democracies. It raises questions about representation. It does not change the basic type of government."}
    ]},
 
    /* ---- Lesson 3 ---- */
@@ -1894,15 +1894,15 @@ ICA.addUnit({
      {t:"Capitalism exists only in rich countries", why:"Capitalist arrangements exist at every income level."}
    ]},
    {id:"e2u4-q20", lesson:"e2u4-l3", level:1, q:"About what share of the world’s employed people worked in the informal economy in 2024, according to ILO estimates?", options:[
-     {t:"About 58%", ok:true, why:"ILO modeled estimates put informal employment at about 58% of world employment, much higher in low-income countries."},
+     {t:"About 58%", ok:true, why:"ILO estimates from models put informal employment at about 58% of world employment. It is much higher in low-income countries."},
      {t:"About 5%", why:"Far too low. Informal work is the majority of employment worldwide."},
      {t:"About 20%", why:"That is closer to the level in high-income countries (about 13%). Globally the figure is much higher."},
      {t:"About 95%", why:"Too high globally. Even in low-income countries the ILO estimate is about 88%."}
    ]},
    {id:"e2u4-q21", lesson:"e2u4-l3", level:3, q:"A coastal town loses its shipyard, its main employer. Over ten years, young people move away, the school merges with another, and rates of depression rise. Which concept best describes the economic change, and what does the sequence show?", options:[
-     {t:"Deindustrialization; institutions are interdependent", ok:true, why:"Losing manufacturing is deindustrialization. One institution’s change spreads to family, education and health, which shows how institutions are interdependent."},
+     {t:"Deindustrialization; institutions are interdependent", ok:true, why:"Losing manufacturing is deindustrialization. The change in one institution spreads to family, education and health. This shows that institutions depend on each other."},
      {t:"Gentrification; wealthier people moved into the town", why:"Nothing suggests wealthier newcomers. The town is losing people and jobs."},
-     {t:"Medicalization; depression was redefined as an illness", why:"The scenario is about rising rates after job loss, not about redefining depression."},
+     {t:"Medicalization; depression was redefined as an illness", why:"The scenario is about rising rates after job loss. It is not about redefining depression."},
      {t:"The informal economy; the shipyard workers had no contracts", why:"Nothing suggests the shipyard jobs were informal. The core change is loss of manufacturing."}
    ]},
    {id:"e2u4-q22", lesson:"e2u4-l3", level:2, q:"Which is the best example of a global commodity chain?", options:[
@@ -1919,12 +1919,12 @@ ICA.addUnit({
    ]},
    {id:"e2u4-q24", lesson:"e2u4-l3", level:3, q:"Two neighborhoods in the same city have a 9-year gap in average life expectancy. A newspaper blames residents’ lifestyles. What would a medical sociologist most likely add?", options:[
      {t:"Social conditions shape lifestyles and affect health directly.", ok:true, why:"Social determinants include income, housing, work and food access. This is the social determinants approach: personal habits happen inside conditions people don’t choose, and those conditions matter in their own right."},
-     {t:"The gap must be genetic, because lifestyles don’t matter at all.", why:"Large differences between nearby neighborhoods are very unlikely to be mainly genetic, and lifestyles do matter."},
+     {t:"The gap must be genetic, because lifestyles don’t matter at all.", why:"Large differences between nearby neighborhoods are very unlikely to come mainly from genes. Lifestyles do matter."},
      {t:"Nothing: lifestyles fully explain the gap.", why:"That ignores the social gradient documented in studies such as the Whitehall studies."},
-     {t:"The gap must be caused by medicalization.", why:"Medicalization is about redefining conditions as illnesses; it doesn’t explain a life-expectancy gap."}
+     {t:"The gap must be caused by medicalization.", why:"Medicalization means redefining a condition as an illness. It does not explain a gap in life expectancy."}
    ]},
    {id:"e2u4-q25", lesson:"e2u4-l3", level:2, q:"Which is an example of **demedicalization**?", options:[
-     {t:"The APA removing homosexuality from its diagnostic manual", ok:true, why:"The American Psychiatric Association did this in 1973. Removing something from the category of illness is demedicalization."},
+     {t:"The APA removing homosexuality from its diagnostic manual", ok:true, why:"The American Psychiatric Association did this in 1973. Taking something out of the list of illnesses is demedicalization."},
      {t:"Heavy drinking being redefined as alcohol-use disorder by doctors", why:"That’s medicalization: moving behavior into the medical domain."},
      {t:"Childbirth moving from homes into hospitals", why:"That brought childbirth further under medical control: medicalization."},
      {t:"A new drug being approved for a known disease", why:"That’s treatment of an already-medical condition, not demedicalization."}
@@ -1938,7 +1938,7 @@ ICA.addUnit({
    {id:"e2u4-q27", lesson:"e2u4-l3", level:3, q:"Oluwaseun says: “Informal workers are criminals avoiding tax.” What is the most accurate response?", options:[
      {t:"Most informal work is legal; informal isn’t criminal.", ok:true, why:"Informal work simply lacks contracts, protection and registration. Street vendors, domestic workers and farm laborers are usually doing legal work without formal protection."},
      {t:"He’s right; informal work and crime are the same thing.", why:"Crime involves illegal goods or acts. Informality is about missing formal arrangements."},
-     {t:"Informal work only exists in rich countries.", why:"It’s most common in low-income countries, where the ILO estimates about 88% of employment is informal."},
+     {t:"Informal work only exists in rich countries.", why:"It is most common in low-income countries. There the ILO estimates that about 88% of employment is informal."},
      {t:"Informal workers are always employers, not employees.", why:"Informal workers include employees without contracts, own-account workers and family helpers."}
    ]},
 
@@ -1956,7 +1956,7 @@ ICA.addUnit({
      {t:"Birth and death rates are both low.", why:"That’s stage 4."}
    ]},
    {id:"e2u4-q30", lesson:"e2u4-l4", level:2, q:"Which is a recognized limitation of the demographic transition model?", options:[
-     {t:"It is based mainly on Europe’s history and ignores migration.", ok:true, why:"Both are standard criticisms; many countries moved faster, and migration now drives much population change."},
+     {t:"It is based mainly on Europe’s history and ignores migration.", ok:true, why:"Both are standard criticisms. Many countries moved faster, and migration now drives much population change."},
      {t:"It predicts that death rates fall after birth rates.", why:"It predicts the opposite: deaths fall first."},
      {t:"It only applies to small towns.", why:"It describes national populations, not towns."},
      {t:"It was invented in 2024.", why:"It dates from the first half of the 20th century."}
@@ -1968,13 +1968,13 @@ ICA.addUnit({
      {t:"Ernest Burgess: the city grew in concentric zones", why:"The concentric zone model is about city layout, not famine."}
    ]},
    {id:"e2u4-q32", lesson:"e2u4-l4", level:2, q:"Tomás leaves his drought-hit village for the capital, where his sister has found him a job. Which pair describes the factors?", options:[
-     {t:"Push: drought; pull: a job and family in the capital", ok:true, why:"Hardship at the origin pushes; opportunities and networks at the destination pull."},
+     {t:"Push: drought; pull: a job and family in the capital", ok:true, why:"Hardship at the origin pushes people away. Opportunities and networks at the destination pull them in."},
      {t:"Push: the job in the capital; pull: the drought", why:"Reversed. Push factors are at the place people leave."},
      {t:"Both are intervening obstacles", why:"Intervening obstacles are things such as cost and borders that make moving harder."},
      {t:"It’s international migration because he changed regions", why:"Moving to the capital of his own country is internal migration."}
    ]},
    {id:"e2u4-q33", lesson:"e2u4-l4", level:2, q:"One source says about 55% of the world’s population is urban; another says about 45% live in cities. What is the most likely reason?", options:[
-     {t:"They use different definitions and years", ok:true, why:"One uses countries’ own urban definitions (2018); the other uses the UN’s 2025 cities-towns-rural method. That method counts cities separately from towns, so its city share isn’t comparable with older ‘urban’ figures."},
+     {t:"They use different definitions and years", ok:true, why:"One uses each country’s own definition of urban (2018). The other uses the UN’s 2025 cities-towns-rural method. That method counts cities separately from towns. So its city share cannot be compared with older ‘urban’ figures."},
      {t:"Half of all cities disappeared between 2018 and 2025", why:"Nothing like that happened; the change is in measurement."},
      {t:"One of the sources must be fake", why:"Both are UN figures; they measure different things."},
      {t:"Rural populations doubled after 2018", why:"No such change happened. Check definitions before assuming real change."}
@@ -1986,7 +1986,7 @@ ICA.addUnit({
      {t:"Max Weber, in 1922", why:"Weber wrote about authority and bureaucracy, not gentrification."}
    ]},
    {id:"e2u4-q35", lesson:"e2u4-l4", level:3, q:"A city plans a new waste incinerator. Two wealthy districts organize lawyers and media campaigns and the plan moves to a low-income district with a large minority population that had little warning. Which concepts best describe this?", options:[
-     {t:"NIMBY politics leading to environmental racism", ok:true, why:"Wealthier groups pushing hazards away (NIMBY) onto a low-income community of color fits the definition of environmental racism."},
+     {t:"NIMBY politics leading to environmental racism", ok:true, why:"Wealthier groups push hazards (NIMBY, “not in my backyard”) onto a low-income community of color. This fits the definition of environmental racism."},
      {t:"Gentrification and suburbanization", why:"No one is moving into or out of the districts; this is about where a hazard is placed."},
      {t:"The tragedy of the commons", why:"That’s about overuse of a shared resource, not where hazards are sited."},
      {t:"The demographic transition", why:"That model concerns birth and death rates, not facility siting."}
@@ -2024,7 +2024,7 @@ ICA.addUnit({
      {t:"This is an example of media consolidation.", why:"Consolidation concerns media ownership, not access to education technology."}
    ]},
    {id:"e2u4-q41", lesson:"e2u4-l5", level:1, q:"In Aberle’s classification, a movement that seeks to prevent or undo a change in society is a:", options:[
-     {t:"Resistance movement", ok:true, why:"Resistance movements aim to stop or reverse change, like the Luddites resisting textile machinery."},
+     {t:"Resistance movement", ok:true, why:"Resistance movements aim to stop or reverse change. An example is the Luddites, who resisted textile machinery."},
      {t:"Reform movement", why:"Reform movements seek a specific change, not to stop one."},
      {t:"Revolutionary movement", why:"Revolutionary movements seek to change everything."},
      {t:"Alternative movement", why:"Alternative movements seek limited self-improvement in individuals."}
@@ -2036,22 +2036,22 @@ ICA.addUnit({
      {t:"Decline", why:"Nothing suggests it is winding down; it is becoming established."}
    ]},
    {id:"e2u4-q43", lesson:"e2u4-l5", level:2, q:"Two movements share the same grievance, but one gets donations, volunteers, office space and experienced organizers, and it grows much faster. Which theory best explains the difference?", options:[
-     {t:"Resource mobilization theory", ok:true, why:"McCarthy and Zald explain success by the ability to gather resources and mobilize people, which is exactly the difference here."},
+     {t:"Resource mobilization theory", ok:true, why:"McCarthy and Zald explain success by the ability to gather resources and mobilize people. That is exactly the difference here."},
      {t:"Relative deprivation theory", why:"Both movements share the grievance, so deprivation doesn’t explain why one grows faster."},
      {t:"The demographic transition", why:"That’s a population model, unrelated to movement growth."},
      {t:"Agenda-setting", why:"Agenda-setting is about media influence on public priorities, not movement resources."}
    ]},
    {id:"e2u4-q44", lesson:"e2u4-l5", level:3, q:"A campaign poster reads: “Our children breathe toxic air because the city lets trucks idle outside schools. Ban idling within 200 metres of schools. Sign the petition today!” Which framing types does it use, in order?", options:[
-     {t:"Diagnostic, then prognostic, then motivational", ok:true, why:"It names the problem and who is responsible (diagnostic), proposes a solution (prognostic), then calls for action (motivational)."},
+     {t:"Diagnostic, then prognostic, then motivational", ok:true, why:"It names the problem and who is responsible (diagnostic). It proposes a solution (prognostic). Then it calls for action (motivational)."},
      {t:"Motivational, then diagnostic, then prognostic", why:"The call to action comes last, not first."},
      {t:"Prognostic only", why:"It also diagnoses the problem and calls for action."},
      {t:"Resource mobilization, then frame transformation", why:"Those aren’t what the poster’s three sentences do; it uses the three core frames."}
    ]},
    {id:"e2u4-q45", lesson:"e2u4-l5", level:3, q:"Hana reads: “Social media caused the Arab Spring.” Which response reflects sociological thinking best?", options:[
-     {t:"Social media helped, but grievances and networks mattered too.", ok:true, why:"Social media lowered the cost of organizing, but grievances, existing networks, resources and political opportunities also mattered. Single-cause claims oversimplify: sociologists treat change as multi-causal; tools like social media interact with organizations, resources and opportunities."},
-     {t:"Social media had nothing to do with it.", why:"Researchers found social media helped share information and coordinate, so dismissing it is also too simple."},
+     {t:"Social media helped, but grievances and networks mattered too.", ok:true, why:"Social media made it cheaper to organize. But grievances, existing networks, resources and political opportunities also mattered. Claims with a single cause are too simple. Sociologists see change as having many causes. Tools like social media work together with organizations, resources and opportunities."},
+     {t:"Social media had nothing to do with it.", why:"Researchers found that social media helped people share information and coordinate. So dismissing it is also too simple."},
      {t:"It’s true, because the protests happened after social media was invented.", why:"Timing alone doesn’t prove causation."},
-     {t:"Only charismatic leaders cause social change.", why:"That’s another single-cause claim; many of these uprisings were noted for loose, decentralized leadership."}
+     {t:"Only charismatic leaders cause social change.", why:"That is another claim with a single cause. Many of these uprisings were known for loose leadership with no single center."}
    ]},
 
    /* ---- Lesson 5 (e2u4-l6) ---- */
@@ -2062,9 +2062,9 @@ ICA.addUnit({
      {t:"Half of all older people depend on others for daily care.", why:"The ratio is about age groups only. It says nothing about who needs care or who works."}
    ]},
    {id:"e2u4-q47", lesson:"e2u4-l6", level:1, q:"In the life-course perspective, what does “linked lives” mean?", options:[
-     {t:"Events in one person’s life change the lives of others.", ok:true, why:"Lives are interdependent: a parent’s migration, a partner’s illness or a child’s schooling reshapes other family members’ lives."},
-     {t:"Every generation repeats the same life stages as the last.", why:"The life-course perspective stresses that cohorts live through different histories, so lives are not simply repeated."},
-     {t:"People born in the same year have identical experiences.", why:"A cohort shares historical timing, but class, gender, place and migration make experiences very different."},
+     {t:"Events in one person’s life change the lives of others.", ok:true, why:"Lives depend on each other. A parent’s migration, a partner’s illness or a child’s schooling changes the lives of other family members."},
+     {t:"Every generation repeats the same life stages as the last.", why:"The life-course perspective stresses that cohorts live through different histories. So lives are not simply repeated."},
+     {t:"People born in the same year have identical experiences.", why:"A cohort shares the same historical timing. But class, gender, place and migration make experiences very different."},
      {t:"Lives move through fixed stages from childhood to old age.", why:"That is the older idea of a fixed life cycle, which the life-course perspective moved away from."}
    ]},
    {id:"e2u4-q48", lesson:"e2u4-l6", level:2, q:"Japan’s 2025 census counted 29.4% of people aged 65+ and 10.9% under 15. Roughly what was the old-age dependency ratio?", options:[
@@ -2092,34 +2092,34 @@ ICA.addUnit({
      {t:"A private long-term care insurance policy", why:"Long-term care insurance pays for care services, not a regular income in old age."}
    ]},
    {id:"e2u4-q52", lesson:"e2u4-l6", level:3, q:"A country’s pensions are pay-as-you-go. Over 20 years its old-age dependency ratio rises from 30 to 50. Which pressure follows most directly?", options:[
-     {t:"Each pensioner is supported by fewer contributors.", ok:true, why:"In pay-as-you-go systems today’s workers fund today’s pensioners, so contributions, benefits, retirement ages or tax funding must adjust."},
-     {t:"Returns on workers’ individual investment accounts fall.", why:"Pay-as-you-go schemes don’t rely on individual investment accounts; that describes funded schemes."},
-     {t:"Informal workers automatically start receiving pensions.", why:"An aging population doesn’t extend coverage; informal workers are usually left out of contributory schemes."},
+     {t:"Each pensioner is supported by fewer contributors.", ok:true, why:"In pay-as-you-go systems, today’s workers pay for today’s pensioners. So contributions, benefits, retirement ages or tax funding must change."},
+     {t:"Returns on workers’ individual investment accounts fall.", why:"Pay-as-you-go schemes do not depend on individual investment accounts. That describes funded schemes."},
+     {t:"Informal workers automatically start receiving pensions.", why:"An aging population does not widen coverage. Informal workers are usually left out of contributory schemes."},
      {t:"Life expectancy in the country starts to fall quickly.", why:"A rising ratio is usually caused partly by longer lives, not by falling life expectancy."}
    ]},
    {id:"e2u4-q53", lesson:"e2u4-l6", level:2, q:"A bank refuses all new loans to people aged over 65, whatever their income or health. Which form of ageism does WHO’s classification call this?", options:[
      {t:"Institutional ageism", ok:true, why:"An age rule built into an organization’s policies is institutional ageism."},
-     {t:"Interpersonal ageism", why:"Interpersonal ageism happens in face-to-face interaction, such as patronizing talk. This is a written rule."},
+     {t:"Interpersonal ageism", why:"Interpersonal ageism happens in face-to-face contact, such as talking down to someone. This is a written rule."},
      {t:"Self-directed ageism", why:"Self-directed ageism is applying age stereotypes to yourself."},
      {t:"Age stratification theory", why:"That is a theory about unequal resources between age groups, not one of WHO’s forms of ageism."}
    ]},
    {id:"e2u4-q54", lesson:"e2u4-l6", level:3, q:"After retiring, an engineer in Lagos keeps the same morning routine, stays in her professional association and mentors young engineers in the way she always did. Which theory of aging fits her best?", options:[
-     {t:"Continuity theory", ok:true, why:"She keeps her habits, relationships and identity consistent as she adapts to retirement, as Atchley’s theory describes."},
+     {t:"Continuity theory", ok:true, why:"She keeps her habits, relationships and identity the same as she adapts to retirement. This is what Atchley’s theory describes."},
      {t:"Disengagement theory", why:"Disengagement expects withdrawal from roles; she stays involved."},
-     {t:"Modernization theory of aging", why:"Modernization theory is about older people’s status across whole societies, not one person’s choices."},
-     {t:"Age stratification theory", why:"Age stratification is about unequal resources between age groups, not personal continuity."}
+     {t:"Modernization theory of aging", why:"Modernization theory is about the status of older people across whole societies. It is not about one person’s choices."},
+     {t:"Age stratification theory", why:"Age stratification is about unequal resources between age groups. It is not about personal continuity."}
    ]},
    {id:"e2u4-q55", lesson:"e2u4-l6", level:3, q:"A headline says: “Generation X are all selfish homeowners who pulled up the ladder.” Which response reflects sociological thinking best?", options:[
      {t:"A cohort shares historical timing, but class, gender and place divide it.", ok:true, why:"Cohorts meet history at the same ages, but their members live very different lives, so one label can’t describe them all."},
      {t:"The claim is true because every cohort shares the same experiences.", why:"Members of a cohort share timing, not identical lives or attitudes."},
      {t:"The claim is false because generations never differ in any way.", why:"Cohorts can differ, for example in housing costs when they were young. The problem is overgeneralizing."},
-     {t:"The claim shows disengagement theory working as Cumming and Henry predicted.", why:"Disengagement is about withdrawal from roles in later life, not about generation labels."}
+     {t:"The claim shows disengagement theory working as Cumming and Henry predicted.", why:"Disengagement is about withdrawing from roles in later life. It is not about labels for generations."}
    ]},
 
    /* ---- Lesson 7 (e2u4-l7) ---- */
    {id:"e2u4-q56", lesson:"e2u4-l7", level:1, q:"What is a feedback loop in an algorithmic system?", options:[
      {t:"The system’s decisions shape the data it learns from next.", ok:true, why:"Outputs become future inputs, so an early bias can confirm and strengthen itself."},
-     {t:"Users rate the system so that designers can improve it.", why:"User feedback is useful, but in sociology a feedback loop means outputs turning into the system’s own future data."},
+     {t:"Users rate the system so that designers can improve it.", why:"User feedback is useful. But in sociology, a feedback loop means that outputs become the system’s own future data."},
      {t:"The system gives exactly the same answer however often you ask it.", why:"Giving consistent answers isn’t a loop between decisions and data."},
      {t:"Designers retrain the model every year on brand-new data.", why:"Retraining can help or not; the loop is about where the new data come from."}
    ]},
@@ -2154,8 +2154,8 @@ ICA.addUnit({
      {t:"The digital divide", why:"The digital divide is unequal access to technology, not categorizing travelers."}
    ]},
    {id:"e2u4-q62", lesson:"e2u4-l7", level:1, q:"What does Shoshana Zuboff mean by “surveillance capitalism”?", options:[
-     {t:"Turning data about behavior into predictions sold for profit", ok:true, why:"Zuboff (2019) argued firms extract behavioral data and sell predictions; critics such as Morozov say it is ordinary capitalism."},
-     {t:"Governments buying surveillance cameras from the cheapest supplier", why:"Public procurement isn’t her concept; she focuses on business models built on behavioral data."},
+     {t:"Turning data about behavior into predictions sold for profit", ok:true, why:"Zuboff (2019) argued that firms take behavioral data and sell predictions. Critics such as Morozov say this is just ordinary capitalism."},
+     {t:"Governments buying surveillance cameras from the cheapest supplier", why:"Public procurement is not her concept. She focuses on business models built on behavioral data."},
      {t:"Workers watching their managers to prevent abuse", why:"Watching back is sometimes called sousveillance; it isn’t Zuboff’s concept."},
      {t:"A prison design in which inmates can always be seen", why:"That is Bentham’s panopticon, used by Foucault."}
    ]},
@@ -2172,9 +2172,9 @@ ICA.addUnit({
      {t:"The tool must be using nationality as an input.", why:"The numbers alone don’t show which inputs it uses; they show a base-rate problem."}
    ]},
    {id:"e2u4-q65", lesson:"e2u4-l7", level:3, q:"Which sentence presents the debate on border technologies in a neutral, attributed way?", options:[
-     {t:"Officials cite speed and security; a UN rapporteur and others warn of discrimination.", ok:true, why:"It names who argues what on each side (for example the European Commission, and Tendayi Achiume as UN Special Rapporteur). It does not take a side."},
+     {t:"Officials cite speed and security. A UN rapporteur and others warn of discrimination.", ok:true, why:"It names who argues what on each side (for example the European Commission, and Tendayi Achiume as UN Special Rapporteur). It does not take a side."},
      {t:"Border technologies are obviously good, because keeping the country secure matters more than anything else.", why:"This takes a side and gives no attribution or evidence."},
-     {t:"Border technologies are obviously racist, so every one of them should be banned immediately.", why:"This also takes a side, without naming who argues it or the evidence."},
+     {t:"Border technologies are obviously racist, so every one of them should be banned right now.", why:"This also takes a side, without naming who argues it or the evidence."},
      {t:"Nobody disagrees about border technology, so there is no debate.", why:"Governments, UN experts, NGOs and researchers disagree openly."}
    ]}
   ]

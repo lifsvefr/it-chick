@@ -4,10 +4,10 @@ ICA.addUnit({
   blurb:"How societies decide who counts as deviant, how they rank people by wealth, class and country, and how race, ethnicity, gender and sexuality shape life chances. Each topic is taught through evidence and through several theories, with their critiques.",
   goals:[
     "Explain why deviance is socially defined, how social control works, and how to read crime statistics critically",
-    "Describe stratification systems, the difference between income and wealth, and the main types of social mobility",
-    "Explain how global inequality is measured today and compare modernization, dependency and world-systems theories",
-    "Explain why race is a social construction, and tell prejudice, discrimination and institutional racism apart",
-    "Distinguish sex, gender, gender identity and sexual orientation, and use evidence to describe gender inequality"
+    "Describe stratification systems. Explain the difference between income and wealth. Name the main types of social mobility.",
+    "Explain how global inequality is measured today. Compare modernization, dependency and world-systems theories.",
+    "Explain why race is a social construction. Tell prejudice, discrimination and institutional racism apart.",
+    "Tell sex, gender, gender identity and sexual orientation apart. Use evidence to describe gender inequality."
   ],
   read:[
     {book:"soc", where:"Chapter 7, “Deviance, Crime, and Social Control”", note:"The LibreTexts mirror numbers sections one higher than OpenStax because it counts the chapter introduction as section 1 (for example, OpenStax 7.1 is LibreTexts 7.2). These lessons use the OpenStax numbers."},
@@ -34,7 +34,7 @@ ICA.addUnit({
       {look:[
         "What makes an act deviant, and how is deviance different from crime? (7.1)",
         "What are the four kinds of sanction, and how do you tell formal from informal? (7.1)",
-        "Which theories sit under functionalism, conflict theory and symbolic interactionism, and what question does each ask? (7.2)",
+        "Which theories belong under functionalism, conflict theory and symbolic interactionism? What question does each ask? (7.2)",
         "Where do US crime statistics come from, and what does each source miss? (7.3)"
       ]}
     ]},
@@ -45,7 +45,7 @@ ICA.addUnit({
         "{{functionalism|Functionalists}} ask what deviance does for society. Durkheim saw it as normal and even useful. Punishing it shows everyone where the line is, and shared outrage unites people. Some deviance also exposes unjust rules. [[social-disorganization|Social disorganization theory]] links crime to neighborhoods where poverty and turnover weaken ties. (7.2)",
         "Merton’s [[strain-theory|strain theory]], also functionalist, says strain arises when society promotes goals such as wealth but blocks the legitimate means. Sort people by goals and means. **Conformity** accepts both. **Innovation** accepts the goal but uses illegitimate means such as fraud. **Ritualism** gives up the goal but follows the rules. **Retreatism** rejects both. **Rebellion** replaces both with new ones. (7.2)",
         "{{conflict-theory|Conflict theorists}} ask who makes and enforces the rules. Following Marx, they argue that law tends to protect those who own resources; C. Wright Mills (1956) described a **power elite** able to shape the rules. The book compares how the crimes of the rich and the poor are punished. (7.2)",
-        "{{symbolic-interactionism|Symbolic interactionists}} look at learning and labels. Sutherland’s [[differential-association|differential association]]: deviance is learned from close associates. [[labeling-theory|Labeling theory]] (Edwin Lemert): [[primary-deviance|primary deviance]] leaves self-image unchanged. [[secondary-deviance|Secondary deviance]] follows when a label sticks, and the label can become a [[master-status|master status]]. Hirschi’s [[control-theory|control theory]] (1969) asks why most people conform: bonds of attachment, commitment, involvement and belief. (7.2)",
+        "{{symbolic-interactionism|Symbolic interactionists}} look at learning and labels. Sutherland’s [[differential-association|differential association]] says deviance is learned from close associates. In [[labeling-theory|labeling theory]] (Edwin Lemert), [[primary-deviance|primary deviance]] leaves self-image unchanged. [[secondary-deviance|Secondary deviance]] follows when a label sticks. The label can become a [[master-status|master status]]. Hirschi’s [[control-theory|control theory]] (1969) asks why most people conform. The answer is bonds of attachment, commitment, involvement and belief. (7.2)",
         "US crime data come from two main sources. The FBI’s Uniform Crime Reports, now collected through the more detailed NIBRS, count crimes known to police. The National Crime Victimization Survey asks people what happened to them. The survey finds more crime, because many victims never report it, out of fear, shame or distrust of police. (7.3)"
       ]}
     ]},
@@ -62,11 +62,11 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u3-l1-x1", type:"sort", q:"Sort each sanction into the right box.", buckets:["Positive and informal","Positive and formal","Negative and informal","Negative and formal"], items:[
-      {t:"Lucía’s classmates applaud after her presentation.", b:0, why:"Applause is a reward (positive) given in everyday interaction, with no official rule behind it (informal)."},
+      {t:"Lucía’s classmates applaud after her presentation.", b:0, why:"Applause is a reward (positive) given in everyday interaction. No official rule is behind it (informal)."},
       {t:"Oluwaseun receives a community award from the city council.", b:1, why:"An award from an official body, following its procedures, is a formal reward."},
       {t:"Fatima’s aunt frowns when Fatima checks her phone during a family meal.", b:2, why:"A frown is disapproval (negative) in face-to-face interaction (informal)."},
       {t:"A football club bans a fan from its stadium for throwing objects.", b:3, why:"A ban issued by an organization under its official rules is a formal punishment."},
-      {t:"Mei’s manager writes a formal warning into her personnel file.", b:3, why:"It is recorded under the employer’s official procedures, so it is formal, and it punishes, so it is negative."},
+      {t:"Mei’s manager writes a formal warning into her personnel file.", b:3, why:"It is recorded under the employer’s official procedures, so it is formal. It punishes, so it is negative."},
       {t:"Sione’s friends tease him for wearing the “wrong” team shirt.", b:2, why:"Teasing is an informal punishment for breaking the group’s expectations."},
       {t:"Ana gets a scholarship for her exam results.", b:1, why:"A scholarship is an official reward given under set rules."},
       {t:"A stranger smiles and nods when Kenji gives up his seat.", b:0, why:"A smile is an informal reward for following a courtesy norm."}
@@ -74,16 +74,16 @@ ICA.addUnit({
     {id:"e2u3-l1-x2", type:"match", q:"Match each person to Merton’s adaptation. Assume each society holds up financial success as the main goal.", pairs:[
       ["Amara studies at night, works two jobs and saves steadily, hoping to buy a home.","Conformity","She accepts both the goal (financial success) and the approved means (work, study, saving)."],
       ["Dmitri wants to be rich and runs an online investment scam.","Innovation","He accepts the goal but uses illegitimate means to reach it."],
-      ["Hana has stopped hoping for promotion but still follows every procedure exactly.","Ritualism","She has given up on the goal while sticking rigidly to the approved means."],
+      ["Hana has stopped hoping for a promotion but still follows every procedure exactly.","Ritualism","She has given up on the goal while sticking rigidly to the approved means."],
       ["Tomás leaves his job and home and lives withdrawn from mainstream society, chasing neither money nor a career.","Retreatism","He has rejected both the goal and the approved means."],
       ["Priya joins a movement that wants to replace a profit-based economy with a cooperative one.","Rebellion","She rejects the existing goals and means and works to replace them with new ones."]
     ], why:"Merton’s question is always the same: does the person accept society’s goals, and do they accept the approved ways of reaching them?"},
     {id:"e2u3-l1-x3", type:"sort", q:"A teenager is caught shoplifting. Which theoretical lens does each explanation come from?", buckets:["Functionalist","Conflict","Interactionist"], items:[
-      {t:"The shop’s public prosecution reminds the whole community where the line is.", b:0, why:"Showing everyone the boundaries of acceptable behavior is one of Durkheim’s functions of deviance."},
-      {t:"She learned it from friends who treat shoplifting as a harmless game.", b:2, why:"Learning deviance from close associates is Sutherland’s differential association, an interactionist theory."},
+      {t:"The shop’s public prosecution reminds the whole community where the line is.", b:0, why:"Showing everyone the limits of acceptable behavior is one of Durkheim’s functions of deviance."},
+      {t:"She learned it from friends who treat shoplifting as a harmless game.", b:2, why:"Learning deviance from close friends and family is Sutherland’s differential association. It is an interactionist theory."},
       {t:"Shoplifting by poor teenagers is policed more heavily than tax evasion by wealthy people.", b:1, why:"Asking who is policed and who benefits is the conflict lens."},
       {t:"She wants the same brands everyone is told to own but can’t afford them.", b:0, why:"A gap between society’s goals and the means to reach them is Merton’s strain theory, part of the functionalist family."},
-      {t:"After being called “a thief” at school, she starts to see herself as one.", b:2, why:"A label changing self-concept is labeling theory (secondary deviance), an interactionist idea."},
+      {t:"After being called “a thief” at school, she starts to see herself as one.", b:2, why:"A label that changes self-concept is labeling theory (secondary deviance). It is an interactionist idea."},
       {t:"Laws protecting property were written mainly by and for those who own the most property.", b:1, why:"Linking law to the interests of the powerful is the conflict perspective."}
     ], why:"The same act can be explained at three levels. One is society’s needs (functionalist). Another is power and inequality (conflict). The third is everyday learning and labels (interactionist)."},
     {id:"e2u3-l1-x4", type:"order", q:"Put the labeling process in order, from the first act to secondary deviance.", items:[
@@ -91,7 +91,7 @@ ICA.addUnit({
       {t:"Others react and apply a label such as “troublemaker”.", why:"Labeling theory says the reaction, not the act, is the turning point."},
       {t:"The label brings stigma: some doors close and some people keep their distance.", why:"Stigma follows the label and changes the person’s opportunities and company."},
       {t:"The person begins to accept the label as part of who they are.", why:"The self-concept shifts in response to how others treat them."},
-      {t:"Further rule-breaking follows that fits the new identity (secondary deviance).", why:"Secondary deviance comes last: it flows from the adopted identity, which seems to confirm the original label."}
+      {t:"Further rule-breaking follows that fits the new identity (secondary deviance).", why:"Secondary deviance comes last. It follows from the adopted identity, which seems to confirm the original label."}
     ]},
     {id:"e2u3-l1-x5", type:"number", q:"A city of 240,000 people recorded 1,800 burglaries last year. What is the burglary rate **per 100,000 people**?", answer:750, tol:0.5, unit:"per 100,000", why:"Rate = count ÷ population × 100,000 = 1,800 ÷ 240,000 × 100,000 = 0.0075 × 100,000 = **750 per 100,000**. Rates let you compare places of different sizes.", wrongs:[
       {v:7.5, tol:0.05, why:"That’s the rate **per 1,000** people (0.0075 × 1,000). The question asks per 100,000, so multiply by 100,000 instead."},
@@ -125,7 +125,7 @@ ICA.addUnit({
     {id:"e2u3-l1-x8", type:"explain", q:"A 14-year-old is caught shoplifting once. Using labeling theory, explain how this could lead to more deviance, and why the reaction may matter more than the first act.", size:"3–4 sentences", model:"Labeling theory, from Edwin Lemert, separates primary from secondary deviance. The first theft may be primary deviance: the teenager still sees themselves as an ordinary student. Then the school, police or neighbors may label them a ‘thief’. Others may treat them with suspicion and close doors, and the teenager may start to see themselves that way. That is secondary deviance. The label can become a master status that overshadows everything else. So the reaction can start a loop that produces more of the behavior it condemns.", points:["Describes the first act as primary deviance that leaves self-image unchanged", "Explains how a label changes how others treat the person", "Explains how the label can change the person’s self-image (secondary deviance)", "Mentions master status or the loop that produces more deviance"]}
    ],
    apply:{intro:"Look at deviance and social control in your own surroundings. Observe behavior in public, but never record, photograph or follow anyone, and never break a rule yourself to see what happens.", tasks:[
-     {t:"Notice sanctions in one everyday setting", how:["Spend 20 minutes somewhere public and ordinary: a bus, a café, a library, a park, a line in a shop.","Note small moments when someone breaks an unwritten rule (pushing in, talking loudly, blocking a doorway) and how others react.","Classify each reaction you see as positive or negative, formal or informal.","Note any signs of internalized control: people following a rule when nobody is watching."], write:"Where and when, each norm broken or followed, the reaction, and which of the four sanction types it was…"},
+     {t:"Notice sanctions in one everyday setting", how:["Spend 20 minutes somewhere public and ordinary: a bus, a café, a library, a park, a line in a shop.","Note small moments when someone breaks an unwritten rule (pushing in, talking loudly, blocking a doorway) and how others react.","Classify each reaction you see as positive or negative, formal or informal.","Note any signs of internalized control. An example is people following a rule when nobody is watching."], write:"Where and when, each norm broken or followed, the reaction, and which of the four sanction types it was…"},
      {t:"Trace how one norm has changed", how:["Choose something that was deviant in your society a generation ago and is accepted now, or the reverse. Examples are smoking in cafés, tattoos, men caring for babies, using phones at meals, or living together before marriage.","If someone older is happy to talk, ask them how people reacted to it when they were young. They can skip any question.","Write down what changed: the act, the norm, or the audience?"], write:"The norm, how reactions changed, and what you think caused the change…"},
      {t:"Read one official crime statistic properly", how:["Find a crime figure from your country’s national statistics office or justice ministry (search for “crime statistics” with your country’s name).","Note whether it comes from police records or a victim survey.","Check whether it’s a count or a rate, and what period it covers.","Look for a note about changes in recording rules or definitions."], write:"The figure, its source, count or rate, police-recorded or survey, and one reason it might not show the full picture…"}
    ], proof:"Three things. First, notes classifying at least five sanctions you observed. Second, one norm that changed, and why. Third, one crime statistic with its source, its type (count or rate) and a limitation you identified."},
@@ -159,7 +159,7 @@ ICA.addUnit({
         "[[stratification|Social stratification]] ranks a society’s people into layers by wealth, income, education, occupation and power. It belongs to society, not individuals. The layers exist before you are born, tend to last across generations, and come with beliefs that justify them. (9.1)",
         "[[income|Income]] is money coming in, such as wages or dividends. [[wealth|Wealth]] is the net value of what you own minus what you owe (assets − debts; a salary isn’t part of it). Wealth divides more deeply, because it cushions shocks and can be inherited. (9.1, 9.2)",
         "A [[caste-system|caste system]] is closed. Position is fixed at birth, marriage is within the group (endogamous) and occupation follows the group. A [[class-system|class system]] is open. Position mixes birth and achievement, and marriage across groups (exogamous) is possible. A [[meritocracy]] is a hypothetical system based purely on merit. No society is one. (9.1)",
-        "[[status-consistency|Status consistency]] is how evenly a person ranks across education, occupation and income. A surgeon trained abroad who works as a porter while her qualifications are assessed has **low** consistency. (9.1)",
+        "[[status-consistency|Status consistency]] is how evenly a person ranks across education, occupation and income. Take a surgeon trained abroad who works as a porter while her qualifications are checked. She has **low** consistency. (9.1)",
         "[[social-class|Social class]] groups people with similar income, wealth, education and occupation, and shapes standard of living and life chances. The book uses upper, middle and lower classes, with shared **class traits** such as tastes and leisure. (9.2)",
         "[[social-mobility|Social mobility]] can go up or down. [[intergenerational-mobility|Intergenerational]]: between parents and children. [[intragenerational-mobility|Intragenerational]]: within one lifetime. Think of a hotel cleaner who becomes manager, or a miner who loses his job at 50 and takes lower-paid work. [[structural-mobility|Structural]]: whole groups move because the economy changes, through industrialization or closures. (9.2)",
         "The [[davis-moore|Davis–Moore thesis]] (1945, functionalist) says important jobs need rare talent and long training, so they must pay more. In this view, inequality fills vital roles. Melvin Tumin (1953) replied that stratification blocks talented people from poorer backgrounds. He also said it ignores inequalities of race and gender. (9.4)",
@@ -174,7 +174,7 @@ ICA.addUnit({
     ]},
     {h:"Beyond the book", body:[
       {beyond:"**Weber’s three dimensions.** The book leaves out Max Weber. His *Economy and Society* (published after his death, 1922) separated **class** (economic position), **status** (social honor or prestige) and **party** (power to influence decisions). A poorly paid religious leader or a respected village elder can rank high on status or power but low on class. Most sociologists now measure position with several indicators for this reason.\n\n**Wealth and mobility evidence.** An OECD study (2018) covered a range of OECD countries. It found that across them, the richest 10% of households held on average 52% of household wealth, and wealth was about twice as concentrated as income. The OECD’s *A Broken Social Elevator?* (2018) found low mobility between generations in many countries, with “sticky floors” and “sticky ceilings”. More unequal countries tend to have less mobility (the “Great Gatsby curve”). This is a correlation, and it doesn’t show which causes which. One family’s rise can’t show how common mobility is, and may be structural.\n\n**Names and examples.** Thorstein Veblen coined “conspicuous consumption” (1899); Michael Young popularized “meritocracy” in a 1958 satire warning against it. Caste-like systems also include apartheid South Africa and the hereditary outcaste groups of feudal Japan, whose descendants (buraku people) still face discrimination. Marx’s critics point to the growth of a large middle class; supporters reply that ownership of capital still shapes life chances."},
-      {fix:"The book says India’s caste system “has been officially dismantled” and calls it “defunct”. More precisely, India’s 1950 Constitution abolished “untouchability” and banned caste discrimination, but it did not abolish caste. Caste still shapes many marriages and social networks, and caste-based discrimination persists. The state officially lists Scheduled Castes and other groups for reserved places in education, government jobs and legislatures."}
+      {fix:"The book says India’s caste system “has been officially dismantled” and calls it “defunct”. More precisely, India’s 1950 Constitution abolished “untouchability” and banned caste discrimination. But it did not abolish caste. Caste still shapes many marriages and social networks, and caste-based discrimination continues. The state officially lists Scheduled Castes and other groups for reserved places in education, government jobs and legislatures."}
     ]}
    ],
    try:[
@@ -195,7 +195,7 @@ ICA.addUnit({
     {id:"e2u3-l2-x3", type:"match", q:"Match each situation to the type of social mobility it shows best.", pairs:[
       ["Oluwaseun’s parents were market traders; he is now a software engineer.","Intergenerational mobility","The comparison is between generations: parents’ position versus the child’s."],
       ["Ana started as a cleaner at a hotel and, over 20 years, became its general manager.","Intragenerational mobility","The change happens within one person’s working life."],
-      ["When a country rapidly industrializes, millions of rural families move into factory and office work.","Structural mobility","Whole groups move because the economy’s structure changed, not because of individual effort alone."],
+      ["When a country industrializes fast, millions of rural families move into factory and office work.","Structural mobility","Whole groups move because the structure of the economy changed, not because of individual effort alone."],
       ["After the mine closes, a skilled miner in his fifties ends up in lower-paid, insecure work.","Downward intragenerational mobility","He moves down within his own lifetime. (The mine closure also has a structural cause, which is worth noticing.)"]
     ]},
     {id:"e2u3-l2-x4", type:"mcq", q:"Priya has a master’s degree, works as a delivery rider and earns a low income. Which concept best describes her position?", options:[
@@ -205,7 +205,7 @@ ICA.addUnit({
       {t:"Conspicuous consumption.", why:"That means buying visible goods to show status, which isn’t described here."}
     ]},
     {id:"e2u3-l2-x5", type:"sort", q:"Which thinker’s view does each statement express?", buckets:["Davis and Moore","Marx","Weber"], items:[
-      {t:"Surgeons must be paid more, or too few people would endure the long training.", b:0, why:"Higher rewards for functionally important, hard-to-fill roles is the Davis–Moore thesis."},
+      {t:"Surgeons must be paid more, or too few people would endure the long training.", b:0, why:"Higher rewards for roles that matter most and are hard to fill is the Davis–Moore thesis."},
       {t:"Owners profit from the labor of workers who own nothing but their ability to work.", b:1, why:"The split between owners of the means of production and workers is Marx’s core idea."},
       {t:"A poorly paid religious leader can still have great social honor.", b:2, why:"Separating status (honor) from class (economic position) is Weber’s contribution."},
       {t:"Inequality motivates people to fill the most important positions.", b:0, why:"This is the functional argument that stratification benefits society."},
@@ -228,14 +228,14 @@ ICA.addUnit({
       " ",
       {t:"So everyone who moved into office work did it purely through personal effort.", flag:true, why:"Suppose the number of office jobs doubles. Many people then move up because the structure changed. That is structural mobility, not effort alone."},
       " ",
-      {t:"Official data show children of high earners are far more likely to become high earners themselves.", flag:false, why:"A reasonable statement of intergenerational evidence; it’s the kind of data mobility research uses."},
+      {t:"Official data show children of high earners are far more likely to become high earners themselves.", flag:false, why:"This is a fair statement of intergenerational evidence. It is the kind of data that mobility research uses."},
       " ",
       {t:"That just shows talent is inherited, so no other explanation is needed.", flag:true, why:"Parents also pass on wealth, schooling, contacts and expectations. Jumping to one cause ignores the rest."}
     ]},
     {id:"e2u3-l2-x8", type:"explain", q:"A surgeon earns many times more than a care worker. Explain how Davis and Moore’s functionalist argument would justify this difference, and how Melvin Tumin replied.", size:"3–4 sentences", model:"Kingsley Davis and Wilbert Moore (1945), in a functionalist argument, said that jobs which are important and need rare talent and long training must pay more. Otherwise not enough people would take them on, so inequality helps fill vital roles such as surgery. Melvin Tumin (1953) replied that stratification itself blocks talented people from poorer backgrounds, who may not afford the long training, so rewards don’t simply follow talent. He also argued that their view ignores inequalities of race and gender.", points:["States that Davis and Moore link high pay to important jobs needing rare talent and long training", "Identifies it as a functionalist argument that inequality fills vital roles", "Gives Tumin’s point that stratification blocks talented people from poorer backgrounds", "Mentions Tumin’s point about race and gender"]}
    ],
    apply:{intro:"Apply stratification ideas to your own world. Keep personal and family details private: these notes are for you.", tasks:[
-     {t:"Map a family across generations", how:["Ask an older relative or family friend who is happy to talk. They can skip any question. Or use what you already know about your own family.","Note the main occupation and education of three generations if you can: grandparents, parents, you or someone your age.","Mark each change as upward, downward or stable, and as intergenerational or intragenerational.","Ask what changed in the economy at the time: new industries, closures, migration, more schooling. That’s the structural part."], write:"Three generations, their work and schooling, the type of mobility, and the structural changes behind it…"},
+     {t:"Map a family across generations", how:["Ask an older relative or family friend who is happy to talk. They can skip any question. Or use what you already know about your own family.","Note the main occupation and education of three generations if you can: grandparents, parents, you or someone your age.","Mark each change as upward, downward or stable. Also mark it as intergenerational or intragenerational.","Ask what changed in the economy at the time: new industries, closures, migration, more schooling. That’s the structural part."], write:"Three generations, their work and schooling, the type of mobility, and the structural changes behind it…"},
      {t:"Income or wealth? A quick sort", how:["List ten money-related things in your life or an imagined household. Examples are a salary, a pension, a phone, a loan, savings, a rented apartment or a car.","Mark each as income, an asset (wealth) or a debt.","Work out a rough net worth for the imagined household. You don’t need to use your own real figures."], write:"Your list, sorted into income, assets and debts, and a rough net worth…"},
      {t:"Spot class markers around you", how:["For a week, notice signals of class or status in adverts, social media, shops or speech: brands, accents, schools, holidays, ways of dressing.","For each, note whether it signals class (money), status (honor) or power, in Weber’s terms.","Be respectful: describe signals, not individual people."], write:"Five or more class markers, where you saw them, and which of Weber’s dimensions each signals…"}
    ], proof:"Three things. First, a three-generation mobility map with the type of each change. Second, a sorted income–wealth list. Third, five class markers linked to Weber’s dimensions."},
@@ -249,7 +249,7 @@ ICA.addUnit({
    goals:[
      "Explain global stratification and why the country you are born in matters so much",
      "Use the current World Bank income groups and the Human Development Index, and say what each misses",
-     "Tell absolute from relative poverty and apply the current international poverty line",
+     "Tell absolute poverty from relative poverty. Apply the current international poverty line.",
      "Compare modernization, dependency and world-systems theories, with their critiques"
    ],
    guide:true,
@@ -260,18 +260,18 @@ ICA.addUnit({
         "Which ways of classifying countries does the book describe, and what does each assume? (10.1)",
         "What does the Human Development Index measure that income alone doesn’t? (10.1)",
         "How do relative, extreme (absolute) and subjective poverty differ, and who is most likely to be poor? (10.2)",
-        "How do modernization and dependency theory explain global inequality, and how are they criticized? (10.3)"
+        "How do modernization and dependency theory explain global inequality? How are they criticized? (10.3)"
       ]}
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "[[global-stratification|Global stratification]] is unequal wealth, power and opportunity **between** nations, alongside inequality **within** each. The country you are born in shapes life expectancy, schooling and work more than almost anything else. (10.1)",
+        "[[global-stratification|Global stratification]] is unequal wealth, power and opportunity **between** nations, alongside inequality **within** each. The country you are born in shapes how long you live, how much school you get and what work you do, more than almost anything else. (10.1)",
         "First, Second and Third World are Cold War labels, now outdated. The World Bank groups countries by **GNI per capita** into low, lower-middle, upper-middle and high income. GNI per capita is an average: it can rise while many people stay poor, and it ignores health and education. (10.1)",
         "Wallerstein’s [[world-systems-theory|world-systems approach]] sees one world economy with three zones. The **core** is industrialized, high-wage and dominant. The **semi-periphery** is exploited by the core while able to exploit the periphery. The **periphery** supplies raw materials and cheap labor, with little control over prices. Countries can change position. (10.1)",
         "The [[human-development-index|Human Development Index]] combines a long and healthy life, knowledge and a decent standard of living. Countries with similar incomes can have very different HDI values. (10.1)",
         "[[relative-poverty|Relative poverty]] means having much less than most people in your own society. [[absolute-poverty|Extreme (absolute) poverty]] means lacking basics such as food, clean water and shelter, measured with one global line. **Subjective** poverty is whether people feel their income meets their needs. (10.2)",
         "Diana Pearce named the **feminization of poverty** (1978): women are poorer than men in almost every society. Much work is in the **informal economy**, which has no contracts or protection. The worst consequences of poverty include slavery and **debt bondage**. (10.2)",
-        "[[modernization-theory|Modernization theory]] says poorer countries can develop by changing cultural values and industrializing. Critics call it ethnocentric: it treats Western countries as the model and assumes everyone starts with the same resources. (10.3)",
+        "[[modernization-theory|Modernization theory]] says poorer countries can develop by changing cultural values and industrializing. Critics call it ethnocentric. It treats Western countries as the model and assumes everyone starts with the same resources. (10.3)",
         "[[dependency-theory|Dependency theory]] says rich core nations keep poorer ones dependent, through colonial history, loans and trade, so profits flow out. Its main critique: it struggles to explain countries such as China that have risen through world trade. (10.3)"
       ]}
     ]},
@@ -321,9 +321,9 @@ ICA.addUnit({
     ]},
     {id:"e2u3-l3-x6", type:"sort", q:"Which theory would most likely offer each explanation of a country’s poverty?", buckets:["Modernization","Dependency","World-systems"], items:[
       {t:"It needs more investment, technology and modern institutions to reach take-off.", b:0, why:"Industrializing by adopting new institutions and technology is the modernization recipe."},
-      {t:"Colonial rule set it up to export cheap raw materials, and the pattern never ended.", b:1, why:"Poverty created by exploitative ties to rich countries is the dependency argument."},
+      {t:"Colonial rule set it up to export cheap raw materials, and the pattern never ended.", b:1, why:"Poverty caused by unfair ties to rich countries is the dependency argument."},
       {t:"It is in the periphery of a single global economy but could move to the semi-periphery.", b:2, why:"Core, semi-periphery and periphery, with movement possible, is Wallerstein’s world-systems model."},
-      {t:"Traditional attitudes to saving and innovation slow its growth.", b:0, why:"Emphasis on cultural attitudes as a barrier is typical of modernization theory."},
+      {t:"Traditional attitudes to saving and innovation slow its growth.", b:0, why:"Stressing cultural attitudes as a barrier is typical of modernization theory."},
       {t:"Foreign debt and trade rules keep profits flowing out to rich nations.", b:1, why:"Outflows of wealth to rich countries through debt and trade are central to dependency theory."},
       {t:"Some middle-ranking countries both exploit poorer ones and are exploited by richer ones.", b:2, why:"That in-between role describes the semi-periphery, a world-systems idea."}
     ]},
@@ -340,12 +340,12 @@ ICA.addUnit({
       " ",
       {t:"At $3 a day converted at today’s exchange rate, few people there are poor.", flag:true, why:"The international poverty line is in PPP dollars, not market exchange rates. Using exchange rates gives the wrong picture."}
     ]},
-    {id:"e2u3-l3-x8", type:"explain", q:"A country earns most of its export income from raw coffee beans and stays poor. Explain how modernization theory and dependency theory would each explain this, and give the main critique of each.", size:"4 sentences", model:"Modernization theory would say the country can develop by changing cultural values and industrializing. For example, it could build factories to process its own coffee. Critics call this ethnocentric. It treats Western countries as the model and assumes every country starts with the same resources. Dependency theory would say rich core nations keep the country dependent through colonial history, loans and trade, so the profits from coffee flow out. Its main critique is that it struggles to explain countries such as China that have risen through world trade.", points:["Gives the modernization explanation (values and industrialization)", "Gives its critique (ethnocentric, unequal starting resources)", "Gives the dependency explanation (core nations keep periphery dependent; profits flow out)", "Gives its critique (countries that rose through trade)"]}
+    {id:"e2u3-l3-x8", type:"explain", q:"A country earns most of its export income from raw coffee beans and stays poor. Explain how modernization theory and dependency theory would each explain this, and give the main critique of each.", size:"4 sentences", model:"Modernization theory would say the country can develop by changing cultural values and industrializing. For example, it could build factories to process its own coffee. Critics call this ethnocentric. It treats Western countries as the model and assumes every country starts with the same resources. Dependency theory would say rich core nations keep the country dependent through colonial history, loans and trade, so the profits from coffee flow out. Its main critique is that it struggles to explain countries such as China that have risen through world trade.", points:["Gives the modernization explanation (values and industrialization)", "Gives its critique (ethnocentric, unequal starting resources)", "Gives the dependency explanation (core nations keep periphery nations dependent; profits flow out)", "Gives its critique (countries that rose through trade)"]}
    ],
    apply:{intro:"Use official sources to look at your own country, or any country that interests you, in global perspective.", tasks:[
      {t:"Place one country in the global picture", how:["Find the country’s current World Bank income group (search “World Bank country and lending groups”).","Find its HDI value and group on the UNDP Human Development Reports website (hdr.undp.org).","Compare the two. Does the HDI tell a different story from income?","Note one thing neither measure shows, such as inequality inside the country or unpaid work."], write:"Country, income group, HDI value and group, what differs, and what both miss…"},
-     {t:"Find your country’s poverty line", how:["Search your national statistics office for its official poverty measure.","Note whether it is absolute or relative, and how it is defined (for example, “60% of median household income”).","Compare it with the World Bank’s $3.00, $4.20 and $8.30 lines. Which is closest to your country’s situation, and why?"], write:"The national definition, absolute or relative, and how it compares to the international lines…"},
-     {t:"Follow one product around the world", how:["Pick an everyday object: a T-shirt, a phone, a chocolate bar, a cup of coffee.","Use labels and the company’s own website to find where it was designed, where raw materials came from and where it was made.","Sketch the chain and label each place as likely core, semi-periphery or periphery.","Note which step probably captures the most value, and what evidence you’d need to check."], write:"The product, each step and place, your core / semi-periphery / periphery labels, and where value is likely captured…"}
+     {t:"Find your country’s poverty line", how:["Search your national statistics office for its official poverty measure.","Note whether it is absolute or relative, and how it is defined (for example, “60% of median household income”).","Compare it with the World Bank’s $3.00, $4.20 and $8.30 lines. Which is closest to your country’s situation, and why?"], write:"The national definition, absolute or relative, and how it compares with the international lines…"},
+     {t:"Follow one product around the world", how:["Pick an everyday object: a T-shirt, a phone, a chocolate bar, a cup of coffee.","Use labels and the company’s own website to find where it was designed, where raw materials came from and where it was made.","Sketch the chain and label each place as likely core, semi-periphery or periphery.","Note which step probably captures the most value, and what evidence you’d need to check."], write:"The product, each step and place, your core / semi-periphery / periphery labels, and where value is likely kept…"}
    ], proof:"Three things. First, notes placing one country by income group and HDI. Second, a comparison of your national poverty line with the international lines. Third, a product chain labeled with world-systems positions."},
    read:[
      {book:"soc", where:"Chapter 10, Section 10.1 “Global Stratification and Classification”, Section 10.2 “Global Wealth and Poverty” and Section 10.3 “Theoretical Perspectives on Global Stratification”", note:"LibreTexts numbers these 10.2–10.4. The thresholds and poverty lines in the book are out of date; use the current figures in this lesson."},
@@ -357,10 +357,10 @@ ICA.addUnit({
    hook:{q:"Roughly how much of their DNA do any two people share, wherever their families come from?", options:["About 50%","About 75%","About 90%","About 99.9%"], answer:3, reveal:"About **99.9%**, and there is more genetic variation within self-identified racial groups than between them. That is one reason sociologists see [[race]] as a social construction. Races are categories societies create and give meaning to, and they still have very real effects. This lesson explains how those categories work, how prejudice and discrimination differ, and the range of relations between groups."},
    goals:[
      "Explain why race is a social construction rather than a biological category, and why it still has real effects",
-     "Distinguish race from ethnicity, and minority group in the sociological sense from a numerical minority",
-     "Tell stereotypes, prejudice, discrimination and racism apart, and individual from institutional racism",
+     "Tell race from ethnicity. Tell a minority group in the sociological sense from a numerical minority.",
+     "Tell stereotypes, prejudice, discrimination and racism apart. Tell individual racism from institutional racism.",
      "Describe the main patterns of intergroup relations, with examples from several regions",
-     "Apply functionalist, conflict and interactionist theories, intersectionality and Du Bois’s double consciousness"
+     "Apply functionalist, conflict and interactionist theories. Also apply intersectionality and Du Bois’s double consciousness."
    ],
    guide:true,
    learn:[
@@ -369,13 +369,13 @@ ICA.addUnit({
       {look:[
         "Why is race called a social construction, how does ethnicity differ from it, and what makes a group a minority group? (11.1)",
         "How does each theoretical perspective explain racial and ethnic inequality? (11.2)",
-        "How do stereotypes, prejudice, discrimination and racism differ, and what is systemic racism? (11.3)",
+        "How do stereotypes, prejudice, discrimination and racism differ? What is systemic racism? (11.3)",
         "What patterns of intergroup relations does the book describe, from pluralism to genocide? (11.4)"
       ]}
     ]},
     {h:"The big ideas", body:[
       {list:[
-        "[[race|Race]] is a **social construction**: societies create categories, usually from visible features, and give them meaning. The categories aren’t biological boxes, and they differ between countries and change over time, but they have real effects. [[ethnicity|Ethnicity]] rests on shared culture: language, religion, customs, ancestry and history. (11.1)",
+        "[[race|Race]] is a **social construction**. Societies create categories, usually from visible features, and give them meaning. The categories aren’t biological boxes. They differ between countries and change over time. But they have real effects. [[ethnicity|Ethnicity]] rests on shared culture: language, religion, customs, ancestry and history. (11.1)",
         "A [[minority-group|minority group]] is about **power, not numbers** (Louis Wirth): a group singled out for unequal treatment. The [[dominant-group|dominant group]] holds more power. Under apartheid, Black South Africans were the majority but a minority group. Wagley and Harris listed five shared traits, such as unequal treatment and involuntary membership. (11.1)",
         "Functionalists note that prejudice can strengthen in-group bonds but wastes the talent of excluded groups. Conflict theorists ask who gains from racial divisions. **Intersection theory** (Kimberlé Crenshaw, 1989; Patricia Hill Collins, 1990) adds that race, class and gender combine. Interactionists study how race and its symbols gain meaning in everyday interaction (Herbert Blumer, 1958). A **culture of prejudice** weaves stereotypes into media and everyday talk. (11.2)",
         "Keep four ideas apart. A [[stereotype]] is an oversimplified belief. [[prejudice|Prejudice]] is an attitude, often not based on experience. [[discrimination|Discrimination]] is an action. [[racism|Racism]] is prejudice and discrimination used to rank races and justify inequality. They don’t always go together: a rule can discriminate without anyone feeling prejudice. (11.3)",
@@ -396,17 +396,17 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u3-l4-x1", type:"sort", q:"Classify each example.", buckets:["Stereotype (a belief)","Prejudice (an attitude)","Discrimination (an action)","Institutional racism (a system)"], items:[
-      {t:"Believing that everyone from a certain country is good at math.", b:0, why:"An oversimplified generalization about a whole group is a stereotype, even if it sounds positive."},
+      {t:"Believing that everyone from a certain country is good at math.", b:0, why:"A too-simple generalization about a whole group is a stereotype, even if it sounds positive."},
       {t:"Feeling suspicious of a new colleague because of his ethnic background.", b:1, why:"A negative feeling toward someone because of their group is prejudice. No action has been taken yet."},
       {t:"A manager who never shortlists applicants with foreign-sounding names.", b:2, why:"Treating people unequally because of their group is discrimination."},
       {t:"A bank policy refusing loans in neighborhoods where most residents are from one ethnic group.", b:3, why:"A rule built into an organization’s routine, with unequal racial effects, is institutional racism."},
       {t:"Assuming an older woman in a headscarf can’t speak the local language.", b:0, why:"Applying a generalization about a group to an individual is a stereotype at work."},
-      {t:"A school entrance exam held only in the dominant language, in a region where many children speak another.", b:3, why:"A routine rule that systematically disadvantages a group, whatever anyone intends, is an institutional problem."},
+      {t:"A school entrance exam held only in the dominant language, in a region where many children speak another.", b:3, why:"A routine rule that puts a group at a disadvantage in a systematic way, whatever anyone intends, is an institutional problem."},
       {t:"A landlord telling a caller the apartment is taken after hearing his accent.", b:2, why:"Acting to deny someone housing because of their group is discrimination."},
       {t:"Disliking a neighboring ethnic group without ever having met its members.", b:1, why:"An attitude formed before experience is the root meaning of prejudice (pre-judging)."}
     ], why:"Belief, attitude, action and system are four different things, and each needs a different response."},
     {id:"e2u3-l4-x2", type:"match", q:"Match each pattern of intergroup relations to an example.", pairs:[
-      ["Pluralism","A country recognizes four official languages and the groups keep their distinct cultures with equal standing.","Distinct identities kept with equal standing is pluralism, the “salad bowl”."],
+      ["Pluralism","A country recognizes four official languages, and the groups keep their distinct cultures with equal standing.","Distinct identities kept with equal standing is pluralism, the “salad bowl”."],
       ["Forced assimilation","Children are taken to boarding schools and punished for speaking their own language.","Making a group abandon its culture for the dominant one, by force, is forced assimilation."],
       ["De jure segregation","Laws decide which residential areas each racial category may live in.","Separation enforced by law is de jure segregation, as under apartheid."],
       ["Expulsion","A government orders a whole ethnic group to leave the country within 90 days.","Forcing a group out of a territory is expulsion, as in Uganda in 1972."],
@@ -423,11 +423,11 @@ ICA.addUnit({
       {t:"Census race categories have changed over time.", ok:true, why:"Changes in official categories show that the lines are social decisions."},
       {t:"Because race is socially constructed, it has no effects on people’s lives.", why:"Socially constructed doesn’t mean unreal. Race shapes treatment, wealth and health; the AABA stresses race and racism have real biological consequences."},
       {t:"There is more genetic variation within self-identified racial groups than between them.", ok:true, why:"The NHGRI states this, which is why race doesn’t map neatly onto biology."},
-      {t:"Racial categories are fixed by clear genetic boundaries.", why:"Human variation mostly changes gradually across geography; there are no clear genetic boundaries matching social race categories."}
+      {t:"Racial categories are fixed by clear genetic boundaries.", why:"Human variation mostly changes little by little across geography. There are no clear genetic boundaries that match social race categories."}
     ]},
     {id:"e2u3-l4-x5", type:"sort", q:"Which perspective does each explanation of ethnic inequality come from?", buckets:["Functionalist","Conflict","Interactionist"], items:[
       {t:"Excluding a group wastes its talent, which harms the whole society.", b:0, why:"Pointing to a dysfunction for society as a whole is a functionalist argument."},
-      {t:"Employers benefit when workers are divided along ethnic lines and can’t organize together.", b:1, why:"Asking who gains from division is the conflict lens."},
+      {t:"Employers gain when workers are divided along ethnic lines and can’t organize together.", b:1, why:"Asking who gains from division is the conflict lens."},
       {t:"A child learns what her skin color “means” from how teachers and classmates react to her.", b:2, why:"Meaning created through everyday interaction is the interactionist focus."},
       {t:"Shared hostility to an out-group strengthens loyalty inside the in-group.", b:0, why:"Seeing what prejudice does to maintain group solidarity is functionalist."},
       {t:"Race, class and gender combine to shape a Black working-class woman’s experience at work.", b:1, why:"Intersection theory focuses on overlapping systems of power. So of these three lenses it sits closest to conflict theory. (The textbook gives it its own heading.)"},
@@ -446,11 +446,11 @@ ICA.addUnit({
       " ",
       {t:"The gap is evidence of discrimination at the first step of hiring.", flag:false, why:"That’s what the study measures: who gets invited. It says less about later steps such as interviews or pay."}
     ], why:"Field experiments are strong because they hold everything equal except the group signal. But their results apply only to the setting studied."},
-    {id:"e2u3-l4-x7", type:"explain", q:"A friend says, ‘If race isn’t biological, it can’t really matter.’ Explain why sociologists say race is socially constructed and also has real effects.", size:"3–4 sentences", model:"Sociologists call race a social construction because societies create the categories, usually from visible features, and give them meaning. The categories aren’t biological boxes. Any two people share about 99.9% of their DNA. There is more variation within groups than between them. The categories also differ between countries and change over time. But constructed doesn’t mean unreal. People and institutions act on these categories. So race shapes real outcomes through prejudice, discrimination and systemic racism. These can produce unequal effects even when no one intends harm.", points:["Explains that societies create racial categories and give them meaning", "Gives evidence that the categories aren’t biological, such as shared DNA or variation by country", "Explains that people and institutions act on the categories", "Names a real effect, such as discrimination or systemic racism"]}
+    {id:"e2u3-l4-x7", type:"explain", q:"A friend says, ‘If race isn’t biological, it can’t really matter.’ Explain why sociologists say race is socially constructed and also has real effects.", size:"3–4 sentences", model:"Sociologists call race a social construction because societies create the categories, usually from visible features, and give them meaning. The categories aren’t biological boxes. Any two people share about 99.9% of their DNA. There is more variation within groups than between them. The categories also differ between countries and change over time. But constructed doesn’t mean unreal. People and institutions act on these categories. So race shapes real outcomes through prejudice, discrimination and systemic racism. These can produce unequal effects even when no one intends harm.", points:["Explains that societies create racial categories and give them meaning", "Gives evidence that the categories aren’t biological, such as shared DNA or differences between countries", "Explains that people and institutions act on the categories", "Names a real effect, such as discrimination or systemic racism"]}
    ],
    apply:{intro:"Look at how race and ethnicity are defined and shown where you live. Be respectful: describe categories and patterns, not individual people.", tasks:[
-     {t:"How does your country count people?", how:["Find the latest census or national survey questionnaire from your national statistics office.","Copy the exact wording of any question on race, ethnicity, ancestry, language, religion or Indigenous identity.","Compare it with one other country’s census question. Two examples are Brazil’s color or race categories and the UK census ethnic group question.","Note what each set of categories suggests about how that society understands difference."], write:"Your country’s question and categories, the comparison country’s, and what the differences reveal…"},
-     {t:"Who appears, in which roles?", how:["Choose one hour of television, a set of 20 adverts, or a news website’s front page.","For each person shown in a main role, note the role (expert, criminal, victim, hero, background). Note their ethnic or racial presentation only where the content clearly signals it.","Count the patterns. Are some groups mostly in certain roles?","Remember the limits: you’re studying representation in the media, not guessing anyone’s real identity."], write:"The source, a simple tally of roles by group, and the patterns you noticed…"},
+     {t:"How does your country count people?", how:["Find the latest census or national survey questionnaire from your national statistics office.","Copy the exact words of any question on race, ethnicity, ancestry, language, religion or Indigenous identity.","Compare it with one other country’s census question. Two examples are Brazil’s color or race categories and the UK census ethnic group question.","Note what each set of categories suggests about how that society understands difference."], write:"Your country’s question and categories, the comparison country’s, and what the differences show…"},
+     {t:"Who appears, in which roles?", how:["Choose one hour of television, a set of 20 adverts, or a news website’s front page.","For each person shown in a main role, note the role (expert, criminal, victim, hero, background). Note their ethnic or racial presentation only where the content clearly signals it.","Count the patterns. Are some groups mostly in certain roles?","Remember the limits. You are studying how people are shown in the media, not guessing anyone’s real identity."], write:"The source, a simple tally of roles by group, and the patterns you noticed…"},
      {t:"Reflect on double consciousness (private)", how:["Think of a setting where you felt seen through someone else’s assumptions. It can also be a setting from the life of someone you know who is happy to share. Examples are being a newcomer, a migrant, or the only one of your background in a room. If you’d rather not draw on your own life, use a published memoir, essay or interview instead.","Write how it felt (or how the writer describes it) to be seen through others’ eyes, and what was done about it. You don’t need to name or describe anyone’s identity beyond what you choose.","Connect it to Du Bois’s idea, and note how your experience differs from the one he described."], write:"The setting, the experience, and how it connects to (and differs from) Du Bois’s double consciousness…"}
    ], proof:"Three things. First, notes comparing two countries’ census categories. Second, a tally of media representation with the patterns you noticed. Third, a short private reflection linked to double consciousness."},
    read:[
@@ -464,7 +464,7 @@ ICA.addUnit({
    goals:[
      "Distinguish sex, gender, gender identity, gender expression and sexual orientation",
      "Explain how gender roles are learned and how people “do gender” in everyday life",
-     "Describe gender stratification in work, pay, care and politics using current, sourced evidence",
+     "Describe gender stratification in work, pay, care and politics. Use current evidence with sources.",
      "Compare functionalist, conflict, feminist and interactionist perspectives, and apply intersectionality",
      "Use respectful, current language and separate research findings from public debate"
    ],
@@ -486,13 +486,13 @@ ICA.addUnit({
         "[[gender-role|Gender roles]] vary by culture. Murdock’s survey of world cultures (1954) found every society divides work by gender, but which tasks go to whom varies. Samoa recognizes *fa’afafine* as a third gender. (12.1, 12.2)",
         "[[gender-socialization|Gender socialization]] works mainly through four [[agent-of-socialization|agents]]: family, school, peers and media. (12.2)",
         "West and Zimmerman (1987): we [[doing-gender|do gender]] in everyday interaction, knowing we’ll be judged against expectations for our gender. So the same firm point can be called “decisive” from a man and “aggressive” from a woman. (12.2)",
-        "Gender stratification shows in pay, the division of labor and the [[glass-ceiling|glass ceiling]], an invisible barrier to top positions. [[patriarchy|Patriarchy]] is a system where men hold more power; [[sexism]] is prejudice and discrimination based on sex or gender. (12.2)",
+        "Gender stratification shows in pay, the division of labor and the [[glass-ceiling|glass ceiling]], an invisible barrier to top positions. [[patriarchy|Patriarchy]] is a system where men hold more power. [[sexism]] is prejudice and discrimination based on sex or gender. (12.2)",
         "Theories: functionalists see gender roles as keeping the family working. Conflict theory (Friedrich Engels) compares women’s position at home to workers’ under owners. Feminist theory, a type of conflict theory, centers patriarchy. Interactionists study how gender’s meanings are made in interaction. (12.2)",
         "**Sexuality** is a person’s capacity for sexual feelings. Sociologists study attitudes and practices, which vary widely between countries. The **sexual double standard** judges the same behavior differently for women and men. **Queer theory** questions fixed categories of gender and sexuality. (12.3)"
       ]}
     ]},
     {h:"Picture it", body:[
-      {fig:'<svg viewBox="0 0 340 332"><rect class="d-sage" x="8" y="8" width="158" height="84" rx="10" stroke-width="2"/><text x="87" y="30" text-anchor="middle">Sex</text><text class="s" x="87" y="50" text-anchor="middle">body: chromosomes,</text><text class="s" x="87" y="66" text-anchor="middle">hormones, anatomy</text><rect class="d-lup" x="174" y="8" width="158" height="84" rx="10" stroke-width="2"/><text x="253" y="30" text-anchor="middle">Gender identity</text><text class="s" x="253" y="50" text-anchor="middle">inner sense of being a</text><text class="s" x="253" y="66" text-anchor="middle">woman, man, or</text><text class="s" x="253" y="82" text-anchor="middle">another gender</text><rect class="d-gold" x="8" y="216" width="158" height="84" rx="10" stroke-width="2"/><text x="87" y="238" text-anchor="middle">Gender expression</text><text class="s" x="87" y="258" text-anchor="middle">outward presentation:</text><text class="s" x="87" y="274" text-anchor="middle">clothes, hair, voice</text><rect class="d-rose" x="174" y="216" width="158" height="84" rx="10" stroke-width="2"/><text x="253" y="238" text-anchor="middle">Sexual orientation</text><text class="s" x="253" y="258" text-anchor="middle">who a person is</text><text class="s" x="253" y="274" text-anchor="middle">attracted to</text><path class="d-ink" d="M122 92 L132 116 M218 92 L208 116 M122 216 L132 192 M218 216 L208 192" stroke-width="2"/><circle class="d-panel" cx="170" cy="154" r="54" stroke-width="2"/><text x="170" y="150" text-anchor="middle">a person</text><text class="s" x="170" y="168" text-anchor="middle">four dimensions</text><text class="s" x="170" y="322" text-anchor="middle">separate dimensions</text></svg>', alt:"A person in the center linked to four separate boxes in a two-by-two grid. The boxes are: sex (body: chromosomes, hormones, anatomy), gender identity (inner sense of gender), gender expression (outward presentation) and sexual orientation (who a person is attracted to).", cap:"Four separate dimensions. Knowing one doesn’t tell you the others."}
+      {fig:'<svg viewBox="0 0 340 332"><rect class="d-sage" x="8" y="8" width="158" height="84" rx="10" stroke-width="2"/><text x="87" y="30" text-anchor="middle">Sex</text><text class="s" x="87" y="50" text-anchor="middle">body: chromosomes,</text><text class="s" x="87" y="66" text-anchor="middle">hormones, anatomy</text><rect class="d-lup" x="174" y="8" width="158" height="84" rx="10" stroke-width="2"/><text x="253" y="30" text-anchor="middle">Gender identity</text><text class="s" x="253" y="50" text-anchor="middle">inner sense of being a</text><text class="s" x="253" y="66" text-anchor="middle">woman, man, or</text><text class="s" x="253" y="82" text-anchor="middle">another gender</text><rect class="d-gold" x="8" y="216" width="158" height="84" rx="10" stroke-width="2"/><text x="87" y="238" text-anchor="middle">Gender expression</text><text class="s" x="87" y="258" text-anchor="middle">outward presentation:</text><text class="s" x="87" y="274" text-anchor="middle">clothes, hair, voice</text><rect class="d-rose" x="174" y="216" width="158" height="84" rx="10" stroke-width="2"/><text x="253" y="238" text-anchor="middle">Sexual orientation</text><text class="s" x="253" y="258" text-anchor="middle">who a person is</text><text class="s" x="253" y="274" text-anchor="middle">attracted to</text><path class="d-ink" d="M122 92 L132 116 M218 92 L208 116 M122 216 L132 192 M218 216 L208 192" stroke-width="2"/><circle class="d-panel" cx="170" cy="154" r="54" stroke-width="2"/><text x="170" y="150" text-anchor="middle">a person</text><text class="s" x="170" y="168" text-anchor="middle">four dimensions</text><text class="s" x="170" y="322" text-anchor="middle">separate dimensions</text></svg>', alt:"A person in the center is linked to four separate boxes in a two-by-two grid. The boxes are: sex (body: chromosomes, hormones, anatomy), gender identity (inner sense of gender), gender expression (outward presentation) and sexual orientation (who a person is attracted to).", cap:"Four separate dimensions. Knowing one doesn’t tell you the others."}
     ]},
     {h:"Key terms", body:[
       {terms:["sex","intersex","gender","gender-identity","gender-expression","transgender","sexual-orientation","gender-socialization","doing-gender","heteronormativity","patriarchy","glass-ceiling"]}
@@ -519,10 +519,10 @@ ICA.addUnit({
       {v:540, tol:0.5, why:"That’s the difference in money. Divide by men’s earnings to turn it into a percentage."}
     ], hint2:"Find the difference, divide by men’s earnings, then multiply by 100."},
     {id:"e2u3-l5-x3", type:"match", q:"Match each perspective to its explanation of why women do more unpaid care work.", pairs:[
-      ["Functionalist","Dividing roles into earning and caring helps the family run smoothly.","Explaining a pattern by the function it serves for family stability is functionalist (Parsons’s instrumental and expressive roles)."],
+      ["Functionalist","Dividing roles into earning and caring helps the family run smoothly.","Explaining a pattern by the job it does for family stability is functionalist (Parsons’s instrumental and expressive roles)."],
       ["Conflict","Women’s economic dependence on men, like workers’ dependence on owners, leaves them doing the unpaid work.","Comparing gender to the power relation between owners and workers, as Engels did, is the conflict view."],
       ["Feminist","Patriarchal norms define care as women’s duty and undervalue it.","Feminist theory centers gender inequality and how norms value women’s work less."],
-      ["Interactionist","Each time a couple divides chores, they reinforce what “a wife” and “a husband” do.","Gender produced in everyday interaction is the interactionist idea of doing gender."],
+      ["Interactionist","Each time a couple divides chores, they reinforce what “a wife” and “a husband” do.","Gender that is produced in everyday interaction is the interactionist idea of doing gender."],
       ["Intersectional","A migrant care worker and the professional she works for experience care work very differently.","Looking at how gender combines with class, migration and race is intersectional."]
     ]},
     {id:"e2u3-l5-x4", type:"mcq", q:"At a meeting, Oluwaseun (a man) and Lucía (a woman) make the same firm point. Colleagues later call him “decisive” and her “aggressive”. Which concept best explains this?", options:[
@@ -538,7 +538,7 @@ ICA.addUnit({
       " ",
       {t:"Part of the gap reflects differences in occupation and hours.", flag:false, why:"Researchers do find this; it’s a fair summary."},
       " ",
-      {t:"So none of the gap could involve discrimination.", flag:true, why:"Explained factors don’t rule out discrimination. Researchers usually find an unexplained part. Occupation and hours can themselves reflect unequal norms."},
+      {t:"So none of the gap could involve discrimination.", flag:true, why:"Explained factors don’t rule out discrimination. Researchers usually find a part that stays unexplained. Occupation and hours can themselves reflect unequal norms."},
       " ",
       {t:"UN Women reports that women spend more than 2.5 times as many hours on unpaid care as men.", flag:false, why:"An accurate figure from an authoritative source, relevant to hours in paid work."},
       " ",
@@ -552,7 +552,7 @@ ICA.addUnit({
     ]},
     {id:"e2u3-l5-x7", type:"explain", q:"Arjun picks up his children from school every day. Neighbors praise him for ‘helping out’, while mothers who do the same get no comment. Explain this using West and Zimmerman’s idea of ‘doing gender’.", size:"3–4 sentences", model:"West and Zimmerman (1987) argued that gender isn’t only something we have. It is something we do in everyday interaction, knowing we will be judged against expectations for our gender. Arjun and the mothers do the same task, but onlookers judge it by different expectations. Childcare is expected of mothers, so it goes unnoticed. From a father, it counts as extra. Through small judgments like these, people learn what is expected of each gender. Those expectations are kept going in daily life.", points:["Says gender is something people do in interaction, not only have", "Explains that people are judged against expectations for their gender", "Applies this to Arjun and the mothers", "Explains how such judgments keep gender expectations going"]}
    ],
-   apply:{intro:"Observe how gender is done and organized around you. Keep notes about general patterns, not about identifiable people, and keep any personal reflections private.", tasks:[
+   apply:{intro:"Observe how gender is done and organized around you. Keep notes about general patterns, not about identifiable people. Keep any personal reflections private.", tasks:[
      {t:"Gender in a toy or clothing aisle", how:["Visit a shop (or a shop’s website) that sells children’s toys or clothes.","Note how products are grouped, the colors, the words on packaging (“brave”, “pretty”, “builder”), and who appears in the pictures.","List what each kind of product teaches about gender roles.","Note any products that break the pattern."], write:"The shop, how products were grouped, words and images used, and what they teach…"},
      {t:"Who does what at home? A time-use sketch", how:["Do this with the agreement of the people you live with, or for your own household only. List the regular unpaid tasks for one week. Examples are cooking, cleaning, laundry, care for children or older relatives, repairs and paperwork.","Estimate who does each and roughly how long it takes.","Compare your pattern with the UN Women finding on unpaid care. Is your household similar or different, and why?","Keep these notes private."], write:"Tasks, who does them, rough hours, and how it compares with the global pattern…"},
      {t:"Find one statistic, properly sourced", how:["Visit the WEF Global Gender Gap Report, the IPU’s data on women in parliament, or your national statistics office.","Find one figure about gender for your country: parliament share, pay gap, labor force participation or time use.","Write down the exact figure, the source, the year and what was measured.","Note one thing the figure can’t tell you."], write:"The figure, source, year, what it measures, and one limitation…"}
@@ -615,7 +615,7 @@ ICA.addUnit({
      {t:"Downward mobility; a sign that industrialization has failed", why:"Farmers’ children moving into factory and office jobs is mostly upward movement, and it reflects growth, not failure."},
      {t:"Structural mobility; a move from the periphery toward the semi-periphery", ok:true, why:"Yes. Whole groups moved because the economy changed (structural mobility). And countries can change position in the world system, here from raw materials toward manufacturing."}]},
    {id:"e2u3-cp11", lesson:"e2u3-l5", level:3, q:"Ji-woo, a 12-year-old boy, joins a ballet class. Classmates tease him and say ballet is “for girls”. Within a month he quits, and the teasing stops. Which pair of ideas fits best?", options:[
-     {t:"An informal negative sanction; peers acting as an agent of gender socialization", ok:true, why:"Right. Teasing is an unofficial punishment (informal, negative). The classmates are teaching gender expectations, and peers are one of the four main agents of gender socialization."},
+     {t:"An informal negative sanction. Peers act as an agent of gender socialization.", ok:true, why:"Right. Teasing is an unofficial punishment (informal, negative). The classmates are teaching gender expectations, and peers are one of the four main agents of gender socialization."},
      {t:"A formal negative sanction; the glass ceiling", why:"Teasing has no official rule or body behind it, so it is informal. The glass ceiling is a barrier to top jobs, not playground pressure."},
      {t:"A positive informal sanction; doing gender", why:"Teasing is a punishment, not a reward, so it is negative. (Doing gender is related, but this option gets the sanction wrong.)"},
      {t:"Secondary deviance; patriarchy", why:"Secondary deviance means a label sticks and the person continues the deviance. Ji-woo stopped, so the label did not lead to more deviance."}]},
@@ -1426,7 +1426,7 @@ ICA.addUnit({
      {t:"The rise may mostly reflect changes in reporting or recording.", ok:true, why:"The figures can’t be read as a doubling of offenses. When recording practice changes and the survey shows no rise, recorded crime is measuring counting as much as crime. The UK ONS reported exactly this kind of effect."},
      {t:"Sexual offenses definitely doubled; the survey must be wrong.", why:"Victim surveys capture unreported crime, so a mismatch is a reason for caution, not for dismissing the survey."},
      {t:"Recorded crime and surveys always agree, so there must be a calculation error.", why:"They often diverge because they measure different things in different ways."},
-     {t:"The rise proves the police are failing.", why:"Better recording or more willingness to report can raise figures; it may even reflect improvement."}
+     {t:"The rise proves the police are failing.", why:"Better recording or more willingness to report can raise figures. It may even reflect improvement."}
    ]},
    {id:"e2u3-q06", lesson:"e2u3-l1", level:2, q:"Kenji, 16, is caught once with stolen sweets. Teachers start calling him “the thief”, and he begins hanging out with older boys who steal. According to labeling theory, his later thefts are best described as:", options:[
      {t:"Secondary deviance", ok:true, why:"Deviance that follows when a label sticks and shapes identity is secondary deviance."},
@@ -1441,10 +1441,10 @@ ICA.addUnit({
      {t:"The Davis–Moore thesis", why:"That’s a theory of stratification, not deviance."}
    ]},
    {id:"e2u3-q08", lesson:"e2u3-l1", level:3, q:"A company’s directors knowingly dump toxic waste and receive a regulatory fine. A teenager who steals a phone receives a criminal record. Which perspective most directly asks why these are treated so differently?", options:[
-     {t:"Conflict theory", ok:true, why:"Conflict theorists examine how power shapes which harms are criminalized and how harshly they are punished."},
-     {t:"Functionalism", why:"Functionalists ask what deviance does for society, not mainly why the powerful are treated differently."},
+     {t:"Conflict theory", ok:true, why:"Conflict theorists look at how power shapes which harms are made crimes and how hard they are punished."},
+     {t:"Functionalism", why:"Functionalists ask what deviance does for society. They do not mainly ask why the powerful are treated differently."},
      {t:"Differential association", why:"That explains how deviance is learned, not how enforcement differs by power."},
-     {t:"Control theory", why:"Control theory explains conformity through bonds; it doesn’t focus on unequal enforcement."}
+     {t:"Control theory", why:"Control theory explains conformity through bonds. It doesn’t focus on unequal enforcement."}
    ]},
    {id:"e2u3-q09", lesson:"e2u3-l1", level:2, q:"Town A has 300 robberies and 150,000 people; Town B has 120 robberies and 40,000 people. Which statement is correct?", options:[
      {t:"Town B has the higher robbery rate (300 vs 200 per 100,000).", ok:true, why:"A: 300 ÷ 150,000 × 100,000 = 200. B: 120 ÷ 40,000 × 100,000 = 300. B has fewer robberies but a higher rate."},
@@ -1478,7 +1478,7 @@ ICA.addUnit({
      {t:"Proof that the society is a meritocracy", why:"Mass upward movement caused by new jobs says nothing about whether chances are equal."}
    ]},
    {id:"e2u3-q14", lesson:"e2u3-l2", level:3, q:"A politician says: “Surgeons earn far more than care workers because surgery is more important to society.” Which response reflects Tumin’s critique of the Davis–Moore thesis?", options:[
-     {t:"Rewards also reflect inherited advantage, so talent can be blocked.", ok:true, why:"Rewards reflect who can afford long training, so stratification can block talented people rather than sorting them. Tumin (1953) argued stratification limits the discovery of talent and that ‘importance’ is hard to measure objectively."},
+     {t:"Rewards also reflect inherited advantage, so talent can be blocked.", ok:true, why:"Rewards reflect who can afford long training, so stratification can block talented people instead of sorting them. Tumin (1953) argued that stratification limits the discovery of talent. He also said that ‘importance’ is hard to measure objectively."},
      {t:"Surgeons should earn less than care workers.", why:"Tumin’s critique is analytical, not a pay recommendation."},
      {t:"Davis and Moore were right that inequality always rewards the most important jobs.", why:"That’s the thesis Tumin was criticizing."},
      {t:"Pay is decided only by government.", why:"Tumin’s point is about how stratification works, not who sets pay."}
@@ -1496,7 +1496,7 @@ ICA.addUnit({
      {t:"Merton: strain theory", why:"Strain theory is about deviance, not dimensions of rank."}
    ]},
    {id:"e2u3-q17", lesson:"e2u3-l2", level:3, q:"Amara’s grandparents were street vendors; her parents were teachers; Amara is a doctor. A newspaper says this proves “anyone can make it” in her country. What’s the strongest critique?", options:[
-     {t:"One family’s story can’t show how common mobility is.", ok:true, why:"Mobility must be measured across the whole population. Individual stories are real but can be exceptional. Rates of mobility, and whether chances differ by family background, need population data."},
+     {t:"One family’s story can’t show how common mobility is.", ok:true, why:"Mobility must be measured across the whole population. Individual stories are real but can be exceptional. To know the rates of mobility, and whether chances differ by family background, you need data on the whole population."},
      {t:"Her family experienced downward mobility.", why:"Each generation moved up, so this is upward intergenerational mobility."},
      {t:"Doctors aren’t part of any social class.", why:"Occupation is a key indicator of class."},
      {t:"Mobility between generations isn’t possible in class systems.", why:"Class systems allow mobility; the question is how much and for whom."}
@@ -1533,7 +1533,7 @@ ICA.addUnit({
      {t:"Status consistency", why:"That concerns how evenly someone ranks across factors, not poverty."}
    ]},
    {id:"e2u3-q23", lesson:"e2u3-l3", level:1, q:"Which theory argues that poorer countries were made poor by colonialism and unequal ties to rich countries?", options:[
-     {t:"Dependency theory", ok:true, why:"Dependency theorists such as Frank argued rich countries created and maintain underdevelopment."},
+     {t:"Dependency theory", ok:true, why:"Dependency theorists such as Frank argued that rich countries created underdevelopment and keep it going."},
      {t:"Modernization theory", why:"Modernization theory says poorer countries are at an earlier stage and can catch up."},
      {t:"Labeling theory", why:"That’s a theory of deviance."},
      {t:"The Davis–Moore thesis", why:"That’s a functionalist theory of stratification within societies."}
@@ -1567,7 +1567,7 @@ ICA.addUnit({
      {t:"Societies create the categories, which have real effects.", ok:true, why:"Racial categories vary across places and times. They are social decisions, not natural boundaries, yet they shape people’s lives."},
      {t:"Race has no effect on people’s lives.", why:"Socially constructed doesn’t mean unreal; race shapes treatment, wealth and health."},
      {t:"Racial categories are fixed by genetics.", why:"Human genetic variation is mostly gradual and greater within groups than between them."},
-     {t:"Race and ethnicity mean exactly the same thing in every society.", why:"Ethnicity is about shared culture; race is about perceived physical difference given meaning."}
+     {t:"Race and ethnicity mean exactly the same thing in every society.", why:"Ethnicity is about shared culture. Race is about visible physical difference that is given meaning."}
    ]},
    {id:"e2u3-q29", lesson:"e2u3-l4", level:1, q:"Which is an example of ethnicity rather than race?", options:[
      {t:"Identifying as Kurdish through shared culture", ok:true, why:"Ethnicity is based on shared culture and history, such as language and customs."},
@@ -1582,12 +1582,12 @@ ICA.addUnit({
      {t:"Pluralism", why:"Pluralism is a pattern of equal standing between groups, the opposite of this situation."}
    ]},
    {id:"e2u3-q31", lesson:"e2u3-l4", level:1, q:"What is the difference between prejudice and discrimination?", options:[
-     {t:"Prejudice is an attitude; discrimination is an action.", ok:true, why:"Feeling or believing something about a group is prejudice; treating people unequally is discrimination."},
+     {t:"Prejudice is an attitude; discrimination is an action.", ok:true, why:"Feeling or believing something about a group is prejudice. Treating people unequally is discrimination."},
      {t:"Prejudice is illegal; discrimination is legal.", why:"Laws usually target discriminatory actions, not attitudes."},
      {t:"They are the same thing.", why:"They often go together but can occur separately."},
      {t:"Discrimination is a belief; prejudice is a law.", why:"Neither is right: prejudice is an attitude, discrimination an action."}
    ]},
-   {id:"e2u3-q32", lesson:"e2u3-l4", level:2, q:"Under apartheid, Black South Africans were the majority of the population. Sociologically, they were:", options:[
+   {id:"e2u3-q32", lesson:"e2u3-l4", level:2, q:"Under apartheid, Black South Africans were the majority of the population. In sociological terms, they were:", options:[
      {t:"A minority group, because they had less power", ok:true, why:"They had less power and faced unequal treatment. Minority status in sociology is about power, not numbers."},
      {t:"The dominant group, because they were the majority", why:"A smaller white population held power, making it the dominant group."},
      {t:"Neither, because minority means under 50%", why:"Wirth’s definition is based on unequal treatment, not percentages."},
@@ -1619,7 +1619,7 @@ ICA.addUnit({
    ]},
    /* ---- Lesson 5 ---- */
    {id:"e2u3-q37", lesson:"e2u3-l5", level:1, q:"What is the difference between sex and gender in sociology?", options:[
-     {t:"Sex is biological; gender is socially constructed.", ok:true, why:"Sex refers to biological characteristics; gender to socially constructed roles, behaviors and expectations. This is the textbook’s and the WHO’s distinction."},
+     {t:"Sex is biological; gender is socially constructed.", ok:true, why:"Sex refers to biological characteristics. Gender refers to socially constructed roles, behaviors and expectations. This is the textbook’s and the WHO’s distinction."},
      {t:"They mean the same thing.", why:"Sociologists separate them because they have different causes and vary differently."},
      {t:"Gender refers to chromosomes; sex refers to clothing.", why:"That reverses and distorts the definitions."},
      {t:"Sex is about attraction; gender about bodies.", why:"Attraction is sexual orientation; bodies relate to sex."}
@@ -1666,8 +1666,8 @@ ICA.addUnit({
      {t:"Half as much", why:"It’s the other way round."},
      {t:"Exactly ten times as much", why:"The reported figure is more than 2.5 times."}
    ]},
-   {id:"e2u3-q45", lesson:"e2u3-l5", level:3, q:"Which explanation of the gender division of labor reflects the functionalist perspective, and what is its main critique?", options:[
-     {t:"Separate roles help families function; critics say this ignores inequality.", ok:true, why:"Critics also say it treats one family form as natural. Parsons’s instrumental (earning) and expressive (caring) roles are the classic functionalist view, criticized for ignoring power and change."},
+   {id:"e2u3-q45", lesson:"e2u3-l5", level:3, q:"Which explanation of the gender division of labor reflects the functionalist perspective? What is its main critique?", options:[
+     {t:"Separate roles help families function; critics say this ignores inequality.", ok:true, why:"Critics also say it treats one family form as natural. Parsons’s instrumental (earning) and expressive (caring) roles are the classic functionalist view. It is criticized for ignoring power and change."},
      {t:"Men benefit from women’s unpaid labor; critics say it’s too focused on biology.", why:"That’s a conflict view, and the critique doesn’t fit it."},
      {t:"Gender is done in everyday interaction; critics say it’s a macro theory.", why:"That’s interactionist and it’s a micro theory, so the critique is reversed."},
      {t:"Race, class and gender combine; critics say it ignores gender.", why:"That’s intersectionality, which centers gender along with other positions."}

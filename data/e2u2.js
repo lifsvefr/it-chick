@@ -3,9 +3,9 @@ ICA.addUnit({
   id:"e2u2", track:"e2", n:2, title:"Culture, society and the self", icon:"🎭",
   blurb:"How shared ways of living are built, passed on and changed. How societies are organized. How each of us becomes a self through other people. How groups and organizations shape what we do.",
   goals:[
-    "Describe culture using values, beliefs, norms, sanctions, symbols and language, and explain the Sapir–Whorf hypothesis accurately",
-    "Look at unfamiliar customs with cultural relativism instead of ethnocentrism, while still thinking critically",
-    "Explain how cultures change through innovation, diffusion and globalization, and what cultural lag is",
+    "Describe culture using values, beliefs, norms, sanctions, symbols and language. Explain the Sapir–Whorf hypothesis accurately.",
+    "Look at unfamiliar customs through cultural relativism, not ethnocentrism. Keep thinking critically.",
+    "Explain how cultures change through innovation, diffusion and globalization. Say what cultural lag is.",
     "Classify types of societies and use Durkheim, Marx and Weber to describe modern life",
     "Explain how a self develops (Cooley, Mead) and how agents of socialization shape us across the life course",
     "Analyze groups, conformity, leadership and formal organizations, including bureaucracy and McDonaldization"
@@ -24,15 +24,15 @@ ICA.addUnit({
      "Tell material from nonmaterial culture, and values from beliefs",
      "Classify norms as folkways, mores or laws, and sanctions as positive or negative, formal or informal",
      "Explain the Sapir–Whorf hypothesis in its strong and weak forms, and what the evidence supports",
-     "Use cultural relativism instead of ethnocentrism, and recognize culture shock and xenocentrism"
+     "Use cultural relativism, not ethnocentrism. Recognize culture shock and xenocentrism."
    ],
    guide:true,
    learn:[
     {h:"Before you read", body:[
       "Sections 3.1 and 3.2 define culture and break it into parts you can name: values, beliefs, norms, sanctions, symbols and language. You will use these words in every later unit.",
       {look:[
-        "(3.1) What separates material from nonmaterial culture, and what makes something a cultural universal?",
-        "(3.1) How do ethnocentrism, cultural relativism and xenocentrism differ, and what is culture shock?",
+        "(3.1) What separates material from nonmaterial culture? What makes something a cultural universal?",
+        "(3.1) How do ethnocentrism, cultural relativism and xenocentrism differ? What is culture shock?",
         "(3.2) How do values differ from beliefs, and folkways from mores and laws?",
         "(3.2) What does the Sapir–Whorf hypothesis claim about language and thought?"
       ]}
@@ -40,8 +40,8 @@ ICA.addUnit({
     {h:"The big ideas", body:[
       {list:[
         "[[culture|Culture]] is a group’s shared, learned way of life; a [[society]] is the people who share it. [[material-culture|Material culture]] is objects (chopsticks, a metro card). [[nonmaterial-culture|Nonmaterial culture]] is the values, rules and meanings attached to them, such as what a wedding ring *means*. (3.1)",
-        "George Murdock’s [[cultural-universal|cultural universals]] appear in every society: language, names, jokes, families, funerals. The form is universal; the content varies hugely. (3.1)",
-        "[[ethnocentrism|Ethnocentrism]] (William Graham Sumner, 1906) judges other cultures by your own standards. Taken further, it becomes [[cultural-imperialism|cultural imperialism]]. This means imposing one culture’s values on others, as colonial governments did with language and schooling. [[cultural-relativism|Cultural relativism]] tries to understand a practice by its own setting. [[xenocentrism]] assumes another culture is better than your own. (3.1)",
+        "George Murdock’s [[cultural-universal|cultural universals]] appear in every society. Examples are language, names, jokes, families and funerals. The form is universal, but the content varies a lot. (3.1)",
+        "[[ethnocentrism|Ethnocentrism]] (William Graham Sumner, 1906) means judging other cultures by your own standards. Taken further, it becomes [[cultural-imperialism|cultural imperialism]]. This means forcing one culture’s values on others, as colonial governments did with language and schooling. [[cultural-relativism|Cultural relativism]] tries to understand a practice by its own setting. [[xenocentrism]] assumes another culture is better than your own. (3.1)",
         "[[culture-shock|Culture shock]], Kalervo Oberg’s term, is the stress of unfamiliar norms. Excitement gives way to frustration, often with ethnocentric thoughts (“at home we do it properly”), before people adjust. (3.1)",
         "[[value|Values]] say what is good or important; [[belief|beliefs]] say what is true. **Ideal culture** (what a society says it values) often differs from **real culture** (what people actually do). (3.2)",
         "A [[norm]] is a shared expectation. [[formal-norm|Formal norms]] are written and enforced; [[informal-norm|informal norms]] are learned by watching. [[more|Mores]] carry moral weight (no plagiarism, respect for the dead); [[folkway|folkways]] don’t (greetings, queuing). A [[law]] is a formal norm enforced by the state. It may carry great moral weight (theft) or almost none (which side of the road to drive on). (3.2)",
@@ -73,15 +73,15 @@ ICA.addUnit({
       {t:"Ana receives a long-service award at her workplace ceremony", b:1, why:"A reward (positive) given through an organization’s official procedure (formal)."},
       {t:"Friends stop inviting Dmitri after he keeps canceling at the last minute", b:2, why:"A punishment (negative) applied without any rule or official body (informal)."},
       {t:"Fatima’s library charges her a fee for a book returned two months late", b:3, why:"A penalty (negative) set out in written rules and applied by the organization (formal)."},
-      {t:"Classmates roll their eyes when Kenji checks his phone during a presentation", b:2, why:"Disapproval (negative) expressed informally. Small signals like this enforce most everyday norms."},
+      {t:"Classmates roll their eyes when Kenji checks his phone during a presentation", b:2, why:"This is disapproval (negative) shown informally. Small signals like this enforce most everyday norms."},
       {t:"A city gives a community group a certificate for its clean-up project", b:1, why:"A reward (positive) given officially by an authority (formal)."}
     ]},
     {id:"e2u2-l1-x3", type:"match", q:"Match each situation to the concept it shows best.", pairs:[
       ["Oluwaseun visits another country and says their food is “strange and dirty” because it isn’t cooked the way his family cooks.","Ethnocentrism","He judges another culture by his own culture’s standards and assumes his way is the right one."],
-      ["Hana insists that only imported clothing is good quality and local brands are always inferior.","Xenocentrism","She assumes another culture’s products are superior to her own, which is the reverse of ethnocentrism."],
+      ["Hana insists that only imported clothing is good quality and local brands are always inferior.","Xenocentrism","She assumes that another culture’s products are better than her own. This is the reverse of ethnocentrism."],
       ["A researcher asks why families in a region without pensions want many children, and learns that adult children support their parents in old age.","Cultural relativism","She explains the practice in terms of the culture’s own circumstances before judging it."],
-      ["Three weeks after moving abroad, Amara feels exhausted, irritable and homesick over small daily differences.","Culture shock","The stress of unfamiliar norms after the first excitement wears off is culture shock."],
-      ["A colonial government bans the local language in schools and teaches only its own.","Cultural imperialism","Imposing one culture’s language and values on another people is cultural imperialism."]
+      ["Three weeks after moving abroad, Amara feels tired, irritable and homesick over small daily differences.","Culture shock","The stress of unfamiliar norms after the first excitement wears off is culture shock."],
+      ["A colonial government bans the local language in schools and teaches only its own.","Cultural imperialism","Forcing one culture’s language and values on another people is cultural imperialism."]
     ]},
     {id:"e2u2-l1-x4", type:"spot", q:"A blog post summarizes language research. Tap each claim that goes beyond what the evidence shows.", ask:"overstates the evidence", parts:[
       "In a 2007 experiment, ",
@@ -98,14 +98,14 @@ ICA.addUnit({
     {id:"e2u2-l1-x5", type:"mcq", q:"Lucía says: “If we practise cultural relativism, we’re never allowed to criticise any custom.” What is the best response?", options:[
       {t:"No: you understand a custom in context first, then evaluate it.", ok:true, why:"Right. Cultural relativism is a method for understanding practices in context first; you can still evaluate them afterwards, for example against human rights standards. It guards against snap ethnocentric judgments. It doesn’t forbid careful moral evaluation once you understand the practice."},
       {t:"She’s right: sociologists must treat every practice as equally good.", why:"That confuses a research method with a moral claim. Sociologists regularly study practices that cause harm and say so, based on evidence."},
-      {t:"Cultural relativism only applies to foreign cultures, not to your own.", why:"Relativism applies to any culture, including subcultures within your own society. It is about understanding practices in their setting, wherever they are."},
+      {t:"Cultural relativism only applies to foreign cultures, not to your own.", why:"Relativism applies to any culture, including subcultures in your own society. It means understanding practices in their setting, wherever they are."},
       {t:"Cultural relativism means you should adopt other cultures’ customs yourself.", why:"Understanding a custom doesn’t mean adopting it. Believing other cultures’ ways are better is xenocentrism, a different idea."}
     ]},
     {id:"e2u2-l1-x6", type:"mcq", q:"Which of these are part of **nonmaterial** culture? Choose all that apply.", options:[
       {t:"The belief that elders should be served first at a meal", ok:true, why:"A belief and norm: ideas and rules, not objects."},
       {t:"The meaning of a wedding ring", ok:true, why:"The ring is material, but what it *means* is nonmaterial culture: a shared symbol."},
       {t:"The value placed on punctuality", ok:true, why:"Values are ideas about what matters: nonmaterial."},
-      {t:"A pair of chopsticks", why:"Chopsticks are physical objects: material culture. The rules about using them politely are nonmaterial."},
+      {t:"A pair of chopsticks", why:"Chopsticks are physical objects, so they are material culture. The rules about using them politely are nonmaterial."},
       {t:"A mosque, temple or church building", why:"The building is material culture. The rituals and beliefs practiced inside it are nonmaterial."}
     ]},
     {id:"e2u2-l1-x7", type:"order", q:"Put the phases of culture shock in the order they are often described. (Real experiences vary, but this is the common model.)", items:[
@@ -116,10 +116,10 @@ ICA.addUnit({
     ]},
     {id:"e2u2-l1-x8", type:"explain", q:"Ana is staying with a family in another country. They leave a little food on their plates, and she thinks, ‘How wasteful. At home we do it properly.’ Explain her reaction using ethnocentrism, and describe what a culturally relativist response would look like.", size:"3–5 sentences", model:"Ana’s reaction is ethnocentrism, William Graham Sumner’s term for judging another culture by the standards of your own. It is a common part of culture shock, when unfamiliar norms cause stress and thoughts like ‘at home we do it properly’. Cultural relativism means trying to understand a practice within its own setting. Here, leaving a little food may be a polite signal that the host has given more than enough. A relativist response would be to watch or ask what the practice means before judging it. That differs from xenocentrism, which would assume the other culture is simply better.", points:["Identifies Ana’s reaction as ethnocentrism", "Defines cultural relativism as understanding a practice in its own setting", "Describes a relativist response, such as asking what the practice means", "Links the reaction to culture shock or tells relativism apart from xenocentrism"]}
    ],
-   apply:{intro:"Notice culture around you. Everything here is observation and reflection: no recording or photographing people, and nothing that could embarrass anyone.", tasks:[
+   apply:{intro:"Notice culture around you. Everything here is observation and reflection. Do not record or photograph people, and do nothing that could embarrass anyone.", tasks:[
      {t:"Spend 15 minutes in a public place (a café, bus, park or a line in a shop) and list five unwritten rules people follow.", how:["Sit somewhere comfortable and simply watch. Don’t take photos or notes about identifiable people.","Write down five behaviors that almost everyone follows without being told.","For each, decide: folkway or more? Then note any sanction you saw (a look, a thank-you, a comment)."], write:"Where you were, the five rules you saw, folkway or more for each, and any sanctions you noticed…"},
      {t:"Pick one object in your home and describe the nonmaterial culture attached to it.", how:["Choose something ordinary: a cooking pot, a calendar, a school uniform, a phone.","List the values, beliefs and norms connected with it (who uses it, when, what counts as using it properly).","Imagine explaining it to a visitor from a very different culture. What would surprise them?"], write:"The object, the norms and values around it, and what a visitor might find surprising…"},
-     {t:"Recall a time you found another group’s custom strange. Rewrite your first reaction using cultural relativism.", how:["Write your honest first reaction in one or two sentences.","Then ask: what circumstances, values or beliefs might make this custom sensible to the people who practice it? Look it up if you can.","Finally, note whether your view changed, and whether any genuine concerns remain after understanding it."], write:"The custom, your first reaction, the relativist explanation, and what you think now…"}
+     {t:"Recall a time you found another group’s custom strange. Rewrite your first reaction using cultural relativism.", how:["Write your honest first reaction in one or two sentences.","Then ask: what circumstances, values or beliefs might make this custom sensible to the people who practice it? Look it up if you can.","Finally, note whether your view changed. Note whether any real concerns remain after understanding it."], write:"The custom, your first reaction, the relativist explanation, and what you think now…"}
    ], proof:"Three things. First, notes with five observed norms classified as folkways or mores (with sanctions). Second, one object analyzed for its nonmaterial culture. Third, one before-and-after reflection showing ethnocentrism replaced by cultural relativism."},
    read:[
      {book:"soc", where:"Chapter 3 “Culture”, Section 3.1 “What Is Culture?” and Section 3.2 “Elements of Culture”"}
@@ -132,7 +132,7 @@ ICA.addUnit({
      "Distinguish high culture from popular culture, and subcultures from countercultures",
      "Explain how cultures change through innovation (invention and discovery) and diffusion",
      "Identify cultural lag in a real situation",
-     "Weigh the homogenization and glocalization views of globalization using examples from several regions"
+     "Compare the homogenization view and the glocalization view of globalization. Give examples from several regions."
    ],
    guide:true,
    learn:[
@@ -153,7 +153,7 @@ ICA.addUnit({
         "[[diffusion|Diffusion]] is the spread of objects and ideas from one group to another, from noodle dishes to TV sitcoms. Everett Rogers showed that innovations spread from a few innovators and early adopters to the majority and, last, to the laggards. Material culture usually spreads faster than nonmaterial culture. (3.3)",
         "[[cultural-lag|Cultural lag]] (William F. Ogburn, 1922) is the time between new material culture arriving and society’s norms and rules adjusting to it. Drones and ride-hailing apps spread before the rules that govern them. (3.3)",
         "[[globalization|Globalization]] is growing interaction between regions and peoples, which links markets and makes nations depend on each other. Trade and technology carry culture along with goods. (3.3)",
-        "Three lenses on culture: functionalists see its parts meeting society’s needs. Conflict theorists see it reinforcing inequality. Symbolic interactionists study how people experience it in daily interaction. (3.4)"
+        "Three lenses on culture. Functionalists see its parts meeting society’s needs. Conflict theorists see it reinforcing inequality. Symbolic interactionists study how people experience it in daily interaction. (3.4)"
       ]}
     ]},
     {h:"Picture it", body:[ {fig:'<svg viewBox="0 0 340 298"><defs><marker id="e2u2-l2-cl1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><path class="d-ink" d="M24 262 L334 262" stroke-width="2" fill="none" marker-end="url(#e2u2-l2-cl1)"/><path class="d-ink" d="M24 262 L24 30" stroke-width="2" fill="none" marker-end="url(#e2u2-l2-cl1)"/><text x="170" y="288" text-anchor="middle">time →</text><text class="s" x="34" y="22">how much has changed</text><path class="d-soft" d="M150 82 L150 214" stroke-width="2" fill="none" stroke-dasharray="3 4" marker-end="url(#e2u2-l2-cl1)"/><path class="d-ink" d="M40 240 C 92 236 116 80 168 60 L 326 52" stroke-width="3" fill="none"/><path class="d-ink" d="M40 240 C 145 238 190 210 236 120 C 262 74 288 60 326 56" stroke-width="3" fill="none" stroke-dasharray="8 6"/><text x="158" y="124">cultural lag</text><text class="s" x="158" y="142">the gap</text><text x="250" y="42" text-anchor="middle">technology (material)</text><text x="272" y="180" text-anchor="middle">norms and laws</text><text x="272" y="198" text-anchor="middle">(nonmaterial)</text></svg>', alt:"A chart over time. A solid line for technology rises steeply early. A dashed line for norms and laws rises later. The gap between them is labeled cultural lag, and the lines meet again near the end.", cap:"Ogburn’s idea: technology changes first and norms and laws catch up later. The period in between is cultural lag."} ]},
@@ -170,14 +170,14 @@ ICA.addUnit({
     {id:"e2u2-l2-x1", type:"sort", q:"Subculture or counterculture? Decide whether each group mainly adds to mainstream life or rejects major parts of it.", buckets:["Subculture","Counterculture"], items:[
       {t:"Skateboarders who share slang, style and video channels, while going to school and work as usual", b:0, why:"They add a distinctive identity but accept the main norms of the wider society: a subculture."},
       {t:"A commune that refuses to use money, rejects private property and lives apart from the wider economy", b:1, why:"It rejects core economic norms of the mainstream and builds an alternative: a counterculture."},
-      {t:"An amateur astronomy society with its own jargon and night-time meet-ups", b:0, why:"A shared interest and vocabulary, with no rejection of mainstream values: a subculture."},
-      {t:"The 1960s Western youth movement that rejected consumerism, conventional careers and the war in Vietnam", b:1, why:"It openly opposed major values of the dominant culture: the classic example of a counterculture."},
+      {t:"An amateur astronomy society with its own jargon and night-time meet-ups", b:0, why:"A shared interest and vocabulary, with no rejection of mainstream values, make a subculture."},
+      {t:"The 1960s youth movement in the West that rejected consumerism, conventional careers and the war in Vietnam", b:1, why:"It openly opposed major values of the dominant culture. This is the classic example of a counterculture."},
       {t:"An online gaming community with its own in-jokes and tournaments", b:0, why:"Members share norms and slang within the game but live ordinary lives outside it: a subculture."},
-      {t:"A movement that tells members to refuse all state authority, including laws and taxes, and withdraw from society", b:1, why:"Rejecting the legitimacy of the state’s laws is rejecting core norms: a counterculture."}
+      {t:"A movement that tells members to refuse all state authority, including laws and taxes, and withdraw from society", b:1, why:"Rejecting the legitimacy of the state’s laws is rejecting core norms. This is a counterculture."}
     ]},
     {id:"e2u2-l2-x2", type:"match", q:"Match each example to the process of cultural change it shows.", pairs:[
-      ["Engineers combine a phone, a camera and an internet connection into one device.","Invention","Combining existing things into something new is invention, one form of innovation."],
-      ["Scientists identify a plant compound that had existed all along and turns out to treat a disease.","Discovery","Revealing something that already existed but was unknown is discovery, the other form of innovation."],
+      ["Engineers combine a phone, a camera and an internet connection into one device.","Invention","Combining existing things into something new is invention. It is one form of innovation."],
+      ["Scientists identify a plant compound that had existed all along and turns out to treat a disease.","Discovery","Revealing something that already existed but was unknown is discovery. It is the other form of innovation."],
       ["Tea drinking spreads from China to Central Asia, Russia, Britain and East Africa.","Diffusion","A practice moving from one culture to others is diffusion."],
       ["Drones become cheap and popular years before rules on where they may fly are agreed.","Cultural lag","Material culture (the drones) changed faster than the nonmaterial culture (rules) meant to govern it."],
       ["A global coffee chain adds locally inspired drinks and closes for local religious holidays.","Glocalization","A global product adapted to fit local tastes and norms is glocalization."]
@@ -187,27 +187,27 @@ ICA.addUnit({
       {t:"The app spreads quickly to cities in many countries.", why:"Diffusion follows: the technology spreads faster than rules can be written."},
       {t:"Existing taxi licensing laws don’t clearly cover the new kind of driver.", why:"The gap appears: old nonmaterial culture (laws, norms) doesn’t fit the new technology. This is the lag."},
       {t:"Disputes arise over safety, insurance and drivers’ rights.", why:"The mismatch produces conflict, which pushes for change."},
-      {t:"Governments pass new rules, and new norms settle down.", why:"Finally nonmaterial culture catches up, closing the lag (until the next innovation)."}
+      {t:"Governments pass new rules, and new norms settle down.", why:"Finally, nonmaterial culture catches up and closes the lag (until the next innovation)."}
     ]},
     {id:"e2u2-l2-x4", type:"mcq", q:"Kabuki began as popular entertainment in Edo-period Japan and is now treated as a classical art form. What does this best illustrate?", options:[
       {t:"High and popular culture are social labels that shift.", ok:true, why:"Right. The line between high and popular culture is socially defined and shifts over time. The art form’s status changed because of how society came to regard it and who attended, not because the art itself became “better”."},
       {t:"Popular culture is always lower in quality than high culture.", why:"If quality decided the label, the same art couldn’t move from one category to the other. The shift shows the label is social."},
-      {t:"Kabuki is a counterculture.", why:"A counterculture rejects major mainstream values. Kabuki is a theater tradition, not a movement opposing society’s norms."},
+      {t:"Kabuki is a counterculture.", why:"A counterculture rejects major mainstream values. Kabuki is a theater tradition, not a movement against society’s norms."},
       {t:"It is an example of cultural lag.", why:"Cultural lag is the gap between technological change and the norms that govern it. Nothing here involves technology outpacing rules."}
     ]},
-    {id:"e2u2-l2-x5", type:"spot", q:"An opinion column says this about globalization. Tap each claim that oversimplifies or overgeneralizes.", ask:"oversimplifies", parts:[
+    {id:"e2u2-l2-x5", type:"spot", q:"An opinion column says this about globalization. Tap each claim that is too simple or overgeneralizes.", ask:"oversimplifies", parts:[
       {t:"Global trade, travel and media connect more people than ever before.", flag:false, why:"A fair description of globalization that most researchers would accept."},
       " ",
-      {t:"As a result, every culture on Earth is becoming identical.", flag:true, why:"An overgeneralization. Evidence shows homogenization in some areas alongside hybridity and local adaptation (glocalization) in others."},
+      {t:"As a result, every culture on Earth is becoming identical.", flag:true, why:"This is an overgeneralization. Evidence shows homogenization in some areas, but hybridity and local adaptation (glocalization) in others."},
       " ",
       {t:"Cultural influence only ever flows from Western countries to the rest of the world.", flag:true, why:"Wrong. K-pop, anime, Bollywood, Afrobeats, yoga and telenovelas are just a few examples of culture flowing outward from non-Western places."},
       " ",
       {t:"Some languages are losing speakers as younger generations switch to more widely used ones.", flag:false, why:"Accurate, and a real concern raised by linguists and UNESCO."},
       " ",
-      {t:"Local cultures simply copy foreign products exactly as they arrive.", flag:true, why:"Diffusion almost always involves selection and adaptation. That is the whole point of glocalization."}
-    ], why:"Good analysis notes real homogenizing pressures without ignoring hybridity, local reworking and flows in many directions."},
+      {t:"Local cultures simply copy foreign products exactly as they arrive.", flag:true, why:"Diffusion almost always involves selection and adaptation. This is what glocalization means."}
+    ], why:"Good analysis notes real pressures toward sameness. It does not ignore hybridity, local reworking and flows in many directions."},
     {id:"e2u2-l2-x6", type:"mcq", q:"A global fast-food chain’s restaurants in India leave beef off the menu and add vegetarian items made with local spices. Which concept fits best?", options:[
-      {t:"Glocalization", ok:true, why:"A global business adapting its product to local values and tastes is the textbook example of glocalization."},
+      {t:"Glocalization", ok:true, why:"A global business that changes its product to fit local values and tastes is the textbook example of glocalization."},
       {t:"Homogenization", why:"Homogenization would mean the same menu everywhere, erasing local differences. Here the menu has been changed to fit local norms."},
       {t:"Counterculture", why:"A counterculture rejects mainstream norms. Adjusting a menu to respect local norms is the opposite."},
       {t:"Cultural lag", why:"Cultural lag is about norms trailing behind technology. This is about adapting a product to a culture."}
@@ -216,8 +216,8 @@ ICA.addUnit({
       {t:"Chilli peppers from the Americas becoming central to Thai and Korean cooking", ok:true, why:"A food moving from one region and being adopted elsewhere is diffusion."},
       {t:"Mobile money spreading from Kenya to other countries", ok:true, why:"A practice spreading from where it took off to other societies is diffusion."},
       {t:"A Brazilian martial art, capoeira, being taught in clubs across Europe and Asia", ok:true, why:"A cultural practice spreading to new countries is diffusion."},
-      {t:"An engineer combining a battery and a bicycle to build an e-bike", why:"Combining existing things into something new is invention, a form of innovation, not diffusion."},
-      {t:"An astronomer spotting a moon nobody had seen before", why:"Revealing something that already existed is discovery, a form of innovation, not diffusion."}
+      {t:"An engineer combining a battery and a bicycle to build an e-bike", why:"Combining existing things into something new is invention. It is a form of innovation, not diffusion."},
+      {t:"An astronomer spotting a moon nobody had seen before", why:"Revealing something that already existed is discovery. Discovery is one form of innovation. It is not diffusion."}
     ]},
     {id:"e2u2-l2-x8", type:"explain", q:"Home-sharing apps let people rent out rooms to short-stay visitors. They spread quickly, long before many cities had rules about them. Explain this using Ogburn’s idea of cultural lag.", size:"3–4 sentences", model:"Cultural lag, William F. Ogburn’s idea, is the time between new material culture arriving and society’s norms and rules adjusting to it. The apps are the new material culture, and they spread fast. Nonmaterial culture took longer to catch up: neighbors’ expectations about strangers in the building, tax and safety rules, and housing laws. In the gap, conflicts and confusion appear, such as complaints about noise or uncertainty over whether hosts owe hotel taxes. The lag closes as norms and laws adjust.", points:["Defines cultural lag as the gap between new material culture and adjusted norms or rules", "Identifies the apps as the new material culture", "Names norms or rules that lagged behind", "Describes problems that arise during the gap"]}
    ],
@@ -236,9 +236,9 @@ ICA.addUnit({
    hook:{q:"Farming can feel as old as humanity. Until roughly how long ago did all humans live by hunting and gathering?", options:["About 2,000 years ago","About 10,000–12,000 years ago","About 50,000 years ago","About 200,000 years ago"], answer:1, reveal:"About **10,000–12,000 years ago**. Since then, each new way of making a living has reshaped how people live together. The list runs from herding and gardening to ploughs, factories and information work. This lesson follows those types of society. Then it asks what modern life does to the bonds between people, and how everyday interaction builds the reality we take for granted."},
    goals:[
      "Classify societies by how they make a living, from hunter-gatherer to postindustrial. Do not treat the sequence as a ladder of worth",
-     "Use Durkheim (solidarity), Marx (alienation) and Weber (rationalization) to describe modern life",
+     "Use Durkheim (solidarity), Marx (alienation) and Weber (rationalization) to describe modern life.",
      "Explain the social construction of reality and the Thomas theorem with examples",
-     "Analyze a person’s statuses and roles, including role conflict and role strain, and use Goffman’s dramaturgy"
+     "Analyze a person’s statuses and roles, including role conflict and role strain. Use Goffman’s dramaturgy."
    ],
    guide:true,
    learn:[
@@ -254,7 +254,7 @@ ICA.addUnit({
     {h:"The big ideas", body:[
       {list:[
         "Gerhard Lenski classified societies by how they make a living. **Hunter-gatherer** societies use wild plants and animals; this is how all humans lived until about 10,000–12,000 years ago. **Pastoral** (herding) and **horticultural** (garden plots, hand tools) societies appeared around the same time. **Agricultural** societies, including feudal ones, have ploughs, surpluses, cities and classes. **Industrial** societies, which began in 18th-century Europe, run on fuel-powered factories. **Postindustrial** societies run on information and services. These are categories, not a ranking of human worth. (4.1)",
-        "Émile Durkheim (*The Division of Labor in Society*, 1893): traditional societies hold together through [[mechanical-solidarity|mechanical solidarity]], people being alike. Modern ones hold together through [[organic-solidarity|organic solidarity]], specialized people depending on each other. When shared norms weaken, [[anomie]] (normlessness) can follow. (4.2)",
+        "Émile Durkheim (*The Division of Labor in Society*, 1893): traditional societies hold together through [[mechanical-solidarity|mechanical solidarity]], which means people being alike. Modern ones hold together through [[organic-solidarity|organic solidarity]], which means specialized people depending on each other. When shared norms weaken, [[anomie]] (normlessness) can follow. (4.2)",
         "Karl Marx: under capitalism, workers suffer [[alienation]] from the product, the work process, other workers and themselves. (4.2)",
         "Max Weber: [[rationalization]] organizes life by efficiency, rules and calculation instead of tradition. It can trap people in an “iron cage”. (4.2)",
         "Peter Berger and Thomas Luckmann (1966): habits harden into institutions that later generations treat as natural. This is [[social-construction|social construction]]. Constructed is not unreal: money has value only because people agree it does, and that agreement shapes every life. (4.3)",
@@ -275,19 +275,19 @@ ICA.addUnit({
    ],
    try:[
     {id:"e2u2-l3-x1", type:"match", q:"Match each description to the type of society.", pairs:[
-      ["Small mobile bands live on wild plants and animals, sharing food within kin groups.","Hunter-gatherer","Relying on wild resources, without farming or herding, defines a hunter-gatherer society."],
-      ["Families move seasonally with their herds of cattle, sheep or reindeer.","Pastoral","Living mainly from domesticated animals is the mark of a pastoral society."],
+      ["Small mobile bands live on wild plants and animals, sharing food within kin groups.","Hunter-gatherer","Getting food from wild plants and animals, without farming or herding, defines a hunter-gatherer society."],
+      ["Families move seasonally with their herds of cattle, sheep or reindeer.","Pastoral","Living mainly from domesticated animals marks a pastoral society."],
       ["Villagers clear small garden plots with hand tools and move them as the soil tires.","Horticultural","Small-scale cultivation with hand tools, without ploughs, is horticulture."],
-      ["Ploughs, draft animals and irrigation canals produce surpluses that feed cities and a ruling class.","Agricultural","Large-scale farming with ploughs and irrigation, producing surpluses and sharp inequality, defines an agricultural society."],
+      ["Ploughs, draft animals and irrigation canals produce surpluses that feed cities and a ruling class.","Agricultural","Large-scale farming with ploughs and irrigation makes surpluses and big gaps between rich and poor. This defines an agricultural society."],
       ["Most people work in factories powered by fuel-driven machines and live in fast-growing cities.","Industrial","Mechanized production and urbanization mark an industrial society."],
-      ["Most jobs involve producing information or services such as software, finance, education and health care.","Postindustrial","An economy based on information and services rather than goods is postindustrial."]
+      ["Most jobs involve making information or services, such as software, finance, education and health care.","Postindustrial","An economy based on information and services, not goods, is postindustrial."]
     ]},
     {id:"e2u2-l3-x2", type:"order", q:"Put these types of society in the order in which they first appeared in human history.", items:[
       {t:"Hunter-gatherer", why:"The way all humans lived until roughly 10,000–12,000 years ago."},
       {t:"Horticultural", why:"Small-scale gardening with hand tools appeared after the domestication of plants. (Pastoral societies emerged at roughly the same time.)"},
-      {t:"Agricultural", why:"Plow agriculture and irrigation came later, around 5,000 years ago, allowing cities and states."},
+      {t:"Agricultural", why:"Plow agriculture and irrigation came later, around 5,000 years ago. They allowed cities and states."},
       {t:"Industrial", why:"Machine production began in Britain in the late 18th century."},
-      {t:"Postindustrial", why:"Economies dominated by services and information emerged in the late 20th century."}
+      {t:"Postindustrial", why:"Economies based mainly on services and information began in the late 20th century."}
     ]},
     {id:"e2u2-l3-x3", type:"match", q:"Match each thinker or pair of thinkers to their idea.", pairs:[
       ["Émile Durkheim","Organic solidarity: modern societies hold together through interdependence","Durkheim contrasted mechanical solidarity (likeness) with organic solidarity (interdependence) in 1893."],
@@ -308,14 +308,14 @@ ICA.addUnit({
     {id:"e2u2-l3-x5", type:"sort", q:"Role conflict or role strain? Ask whether the tension is between two different statuses or inside one.", buckets:["Role conflict (between statuses)","Role strain (within one status)"], items:[
       {t:"Kenji’s manager wants him to work late on the night of his daughter’s school concert.", b:0, why:"Employee and parent are different statuses making incompatible demands: role conflict."},
       {t:"As a teacher, Ana must be both friendly with students and a strict, fair marker.", b:1, why:"Both demands come from the single status of teacher: role strain."},
-      {t:"Sione is a police officer called to an incident involving his own cousin.", b:0, why:"Officer and family member are different statuses pulling in opposite directions: role conflict."},
+      {t:"Sione is a police officer called to an incident involving his own cousin.", b:0, why:"Officer and family member are different statuses that pull in opposite directions. This is role conflict."},
       {t:"A new manager must keep her team happy while cutting their budget.", b:1, why:"Both expectations come from the one status of manager: role strain."},
       {t:"Rodrigo, who studies at a language school and works part-time at the town’s seafood plant, has an exam on the same day as a compulsory staff training.", b:0, why:"Student and employee are two statuses with clashing demands: role conflict."},
       {t:"A doctor must spend time listening to each patient and also see thirty patients a day.", b:1, why:"The tension is inside the single status of doctor: role strain."}
     ]},
     {id:"e2u2-l3-x6", type:"mcq", q:"A false rumor spreads that a town’s water supply is unsafe. Shops quickly run out of bottled water, and some families who can’t buy any start using an unsafe well. Which idea best explains how the rumor created a real problem?", options:[
       {t:"The Thomas theorem: situations people define as real are real in their consequences", ok:true, why:"People acted on their definition of the situation. Their actions produced real shortages and real risks, even though the original claim was false."},
-      {t:"Organic solidarity", why:"Organic solidarity describes how specialized, interdependent people hold modern society together. It doesn’t explain how a false belief creates real consequences."},
+      {t:"Organic solidarity", why:"Organic solidarity describes how specialized people who need each other hold modern society together. It doesn’t explain how a false belief causes real results."},
       {t:"Role strain", why:"Role strain is tension within a single status. No one’s role is the issue here."},
       {t:"Cultural lag", why:"Cultural lag is norms trailing behind technology. Here the problem comes from people acting on a false belief."}
     ]},
@@ -346,9 +346,9 @@ ICA.addUnit({
    hook:{q:"In Harry Harlow’s experiments, baby monkeys had two artificial “mothers”. One was made of bare wire and gave milk; the other was soft cloth and gave none. Which did they spend most of their time with?", options:["The wire mother, because it fed them","The cloth mother","Neither: they kept away from both","They split their time evenly"], answer:1, reveal:"**The soft cloth mother.** The infants clung to it for most of the day and went to the wire one mainly to feed. Harlow’s work is now widely criticized for the distress it caused the animals. It showed that young primates need comfort and contact, not only food. This lesson follows how early care grows into a [[self]] through [[socialization]], which starts in the family and never really stops."},
    goals:[
      "Explain what socialization does for individuals and for society",
-     "Weigh evidence on nature and nurture carefully, including its limits and ethical problems",
+     "Weigh the evidence on nature and nurture with care. Include its limits and ethical problems.",
      "Explain Cooley’s looking-glass self and Mead’s I, me and generalized other",
-     "Identify agents of socialization and explain anticipatory socialization, resocialization and total institutions"
+     "Identify agents of socialization. Explain anticipatory socialization, resocialization and total institutions."
    ],
    guide:true,
    learn:[
@@ -358,28 +358,28 @@ ICA.addUnit({
         "(5.1) How do Cooley’s looking-glass self and Mead’s stages explain where a self comes from, and how did Gilligan challenge Kohlberg?",
         "(5.2) What does socialization do for society and for the individual, and what can twins tell us about nature and nurture?",
         "(5.3) Which agents of socialization does the book name, and what is the hidden curriculum?",
-        "(5.4) How do anticipatory socialization and resocialization differ, and what happens in a total institution?"
+        "(5.4) How do anticipatory socialization and resocialization differ? What goes on in a total institution?"
       ]}
     ]},
     {h:"The big ideas", body:[
       {list:[
         "[[socialization|Socialization]] is the lifelong process of learning a society’s norms, values, beliefs and roles. It passes culture to new members and builds each person’s [[self]]. (5.2)",
-        "[[nature-nurture|Nature versus nurture]]: identical twins raised apart show striking similarities and real differences. One example is Paula Bernstein and Elyse Schein (separated as babies in 1968, reunited at 35). Most researchers now see genes and environment as interacting. (5.2)",
-        "Psychologists described stages of development: Freud (personality), Erikson (eight life stages), Piaget (thinking). Harry Harlow’s experiments with infant monkeys showed how much young primates need comfort and contact. (5.1)",
+        "[[nature-nurture|Nature versus nurture]]: identical twins raised apart show striking similarities and real differences. One example is Paula Bernstein and Elyse Schein (separated as babies in 1968, reunited at 35). Most researchers now see genes and environment as working together. (5.2)",
+        "Psychologists described stages of development. Freud described personality, Erikson eight life stages and Piaget thinking. Harry Harlow’s experiments with infant monkeys showed how much young primates need comfort and contact. (5.1)",
         "Charles Horton Cooley’s [[looking-glass-self|looking-glass self]] (1902): we imagine how we appear to others and imagine their judgment. Then we feel pride or doubt as a result. The mirror is our *imagination* of their view, which may be wrong. (5.1)",
         "George Herbert Mead: the self grows by taking the role of others, in stages. **Preparatory**: imitation. **Play**: pretending to be one other person. **Game**: many roles and the rules linking them, as in a team sport. Finally comes the [[generalized-other|generalized other]], society’s shared expectations. (5.1)",
         "Lawrence Kohlberg described three levels of moral reasoning: preconventional, conventional and postconventional. Carol Gilligan (*In a Different Voice*, 1982) noted that his studies used only boys and men. She proposed a care-and-responsibility perspective alongside justice. The book links her differences to gender socialization. (5.1)",
         "[[agent-of-socialization|Agents of socialization]]: family, [[peer-group|peer groups]], school, workplace, religion, government and mass media. School has a [[hidden-curriculum|hidden curriculum]] of punctuality, obedience and competition. Government sets ages for rights and duties. (5.3)",
-        "[[anticipatory-socialization|Anticipatory socialization]] prepares you for a role before you hold it; [[resocialization]] replaces old norms with new ones. It is most intense in a [[total-institution|total institution]] such as a prison or military camp. Entry there often begins with a **degradation ceremony**: uniforms, haircuts, belongings removed. (5.4)"
+        "[[anticipatory-socialization|Anticipatory socialization]] prepares you for a role before you hold it. [[resocialization]] replaces old norms with new ones. It is most intense in a [[total-institution|total institution]] such as a prison or military camp. Entry there often begins with a **degradation ceremony**: uniforms, haircuts, belongings removed. (5.4)"
       ]}
     ]},
-    {h:"Picture it", body:[ {fig:'<svg viewBox="0 0 340 430"><defs><marker id="e2u2-l4-md1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-sage" x="30" y="8" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="31" text-anchor="middle">Preparatory</text><text class="s" x="170" y="52" text-anchor="middle">imitates people nearby,</text><text class="s" x="170" y="69" text-anchor="middle">without understanding</text><path class="d-ink" d="M170 82 L170 102" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-lup" x="30" y="104" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="127" text-anchor="middle">Play</text><text class="s" x="170" y="148" text-anchor="middle">takes the role of one other</text><text class="s" x="170" y="165" text-anchor="middle">person: “I’m the teacher”</text><path class="d-ink" d="M170 178 L170 198" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-gold" x="30" y="200" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="223" text-anchor="middle">Game</text><text class="s" x="170" y="244" text-anchor="middle">grasps many roles at once</text><text class="s" x="170" y="261" text-anchor="middle">and the rules linking them</text><path class="d-ink" d="M170 274 L170 294" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-rose" x="30" y="296" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="319" text-anchor="middle">Generalized other</text><text class="s" x="170" y="340" text-anchor="middle">takes the view of</text><text class="s" x="170" y="357" text-anchor="middle">“society” as a whole</text><text class="s" x="170" y="402" text-anchor="middle">each step widens whose point of</text><text class="s" x="170" y="420" text-anchor="middle">view the child can take</text></svg>', alt:"Four boxes in sequence, one above the other, joined by downward arrows. The boxes are: Preparatory (imitation), Play (taking the role of one other), Game (many roles at once), and Generalized other (the view of society as a whole).", cap:"Mead’s stages of self-development, as summarized in OpenStax."}, {fig:'<svg viewBox="0 0 340 442"><path class="d-ink" d="M170 156 L170 56" stroke-width="2" fill="none"/><path class="d-ink" d="M208 178 L250 140" stroke-width="2" fill="none"/><path class="d-ink" d="M208 222 L250 260" stroke-width="2" fill="none"/><path class="d-ink" d="M170 244 L170 344" stroke-width="2" fill="none"/><path class="d-ink" d="M132 222 L90 260" stroke-width="2" fill="none"/><path class="d-ink" d="M132 178 L90 140" stroke-width="2" fill="none"/><circle class="d-gold" cx="170" cy="200" r="44" stroke-width="2"/><text x="170" y="196" text-anchor="middle">a growing</text><text x="170" y="214" text-anchor="middle">person</text><rect class="d-rose" x="115" y="12" width="110" height="44" rx="10" stroke-width="2"/><text x="170" y="39" text-anchor="middle">family</text><rect class="d-lup" x="224" y="96" width="110" height="44" rx="10" stroke-width="2"/><text x="279" y="123" text-anchor="middle">peers</text><rect class="d-sage" x="224" y="260" width="110" height="44" rx="10" stroke-width="2"/><text x="279" y="287" text-anchor="middle">school</text><rect class="d-panel" x="115" y="344" width="110" height="44" rx="10" stroke-width="2"/><text x="170" y="371" text-anchor="middle">workplace</text><rect class="d-soft" x="6" y="260" width="110" height="44" rx="10" stroke-width="2"/><text x="61" y="287" text-anchor="middle">religion</text><rect class="d-lup" x="6" y="96" width="110" height="44" rx="10" stroke-width="2"/><text x="61" y="123" text-anchor="middle">media</text><text class="s" x="170" y="414" text-anchor="middle">government also sets ages and</text><text class="s" x="170" y="432" text-anchor="middle">rules for many transitions</text></svg>', alt:"A person in the center linked to six agents of socialization: family, peers, school, workplace, religion and media.", cap:"Agents of socialization. Their influence varies over a lifetime and from one society to another."} ]},
+    {h:"Picture it", body:[ {fig:'<svg viewBox="0 0 340 430"><defs><marker id="e2u2-l4-md1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0 L10 5 L0 10 Z"/></marker></defs><rect class="d-sage" x="30" y="8" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="31" text-anchor="middle">Preparatory</text><text class="s" x="170" y="52" text-anchor="middle">imitates people nearby,</text><text class="s" x="170" y="69" text-anchor="middle">without understanding</text><path class="d-ink" d="M170 82 L170 102" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-lup" x="30" y="104" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="127" text-anchor="middle">Play</text><text class="s" x="170" y="148" text-anchor="middle">takes the role of one other</text><text class="s" x="170" y="165" text-anchor="middle">person: “I’m the teacher”</text><path class="d-ink" d="M170 178 L170 198" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-gold" x="30" y="200" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="223" text-anchor="middle">Game</text><text class="s" x="170" y="244" text-anchor="middle">grasps many roles at once</text><text class="s" x="170" y="261" text-anchor="middle">and the rules linking them</text><path class="d-ink" d="M170 274 L170 294" stroke-width="2" fill="none" marker-end="url(#e2u2-l4-md1)"/><rect class="d-rose" x="30" y="296" width="280" height="72" rx="10" stroke-width="2"/><text x="170" y="319" text-anchor="middle">Generalized other</text><text class="s" x="170" y="340" text-anchor="middle">takes the view of</text><text class="s" x="170" y="357" text-anchor="middle">“society” as a whole</text><text class="s" x="170" y="402" text-anchor="middle">each step widens whose point of</text><text class="s" x="170" y="420" text-anchor="middle">view the child can take</text></svg>', alt:"Four boxes in order, one above the other, joined by downward arrows. The boxes are: Preparatory (imitation), Play (taking the role of one other), Game (many roles at once), and Generalized other (the view of society as a whole).", cap:"Mead’s stages of self-development, as summarized in OpenStax."}, {fig:'<svg viewBox="0 0 340 442"><path class="d-ink" d="M170 156 L170 56" stroke-width="2" fill="none"/><path class="d-ink" d="M208 178 L250 140" stroke-width="2" fill="none"/><path class="d-ink" d="M208 222 L250 260" stroke-width="2" fill="none"/><path class="d-ink" d="M170 244 L170 344" stroke-width="2" fill="none"/><path class="d-ink" d="M132 222 L90 260" stroke-width="2" fill="none"/><path class="d-ink" d="M132 178 L90 140" stroke-width="2" fill="none"/><circle class="d-gold" cx="170" cy="200" r="44" stroke-width="2"/><text x="170" y="196" text-anchor="middle">a growing</text><text x="170" y="214" text-anchor="middle">person</text><rect class="d-rose" x="115" y="12" width="110" height="44" rx="10" stroke-width="2"/><text x="170" y="39" text-anchor="middle">family</text><rect class="d-lup" x="224" y="96" width="110" height="44" rx="10" stroke-width="2"/><text x="279" y="123" text-anchor="middle">peers</text><rect class="d-sage" x="224" y="260" width="110" height="44" rx="10" stroke-width="2"/><text x="279" y="287" text-anchor="middle">school</text><rect class="d-panel" x="115" y="344" width="110" height="44" rx="10" stroke-width="2"/><text x="170" y="371" text-anchor="middle">workplace</text><rect class="d-soft" x="6" y="260" width="110" height="44" rx="10" stroke-width="2"/><text x="61" y="287" text-anchor="middle">religion</text><rect class="d-lup" x="6" y="96" width="110" height="44" rx="10" stroke-width="2"/><text x="61" y="123" text-anchor="middle">media</text><text class="s" x="170" y="414" text-anchor="middle">government also sets ages and</text><text class="s" x="170" y="432" text-anchor="middle">rules for many transitions</text></svg>', alt:"A person in the center is linked to six agents of socialization: family, peers, school, workplace, religion and media.", cap:"Agents of socialization. Their influence varies over a lifetime and from one society to another."} ]},
     {h:"Key terms", body:[ {terms:["socialization","self","nature-nurture","looking-glass-self","generalized-other","agent-of-socialization","peer-group","hidden-curriculum","anticipatory-socialization","resocialization","total-institution"]} ]},
     {h:"Beyond the book", body:[
       {beyond:"**Weak and strong evidence.** “Genie”, found in California in 1970 aged 13 after years of isolation, learned many words but never fully mastered grammar. Such cases are rare and tangled with abuse, malnutrition and unknown conditions from birth, so they can’t isolate one cause. The **Bucharest Early Intervention Project** (from 2000) is stronger. Half of 136 young children in Romanian institutions were *randomly* placed with foster families, so differences could be put down to the care itself. Children in families did better, especially those placed early."},
       {beyond:"**Reading twin studies.** The Minnesota Study of Twins Reared Apart (Bouchard and colleagues, 1990) suggested large genetic contributions to many traits. But samples were small. And such estimates describe variation in a population, never “100% genetic” for any one person. One coincidence in one pair proves nothing."},
       {beyond:"**More on Mead.** He split the self into the spontaneous “I” and the “me” built from others’ attitudes. He said children first learn from **significant others** such as parents."},
-      {beyond:"**Gilligan revisited.** Later reviews found only small average gender differences in moral reasoning. Critics warn that a neat justice-versus-care contrast can become a stereotype."}
+      {beyond:"**Gilligan revisited.** Later reviews found only small average gender differences in moral reasoning. Critics warn that a neat contrast between justice and care can become a stereotype."}
     ]}
    ],
    try:[
@@ -394,19 +394,19 @@ ICA.addUnit({
       ["At 14, Tomás starts using the slang and clothes of his friends at the skate park.","Peers","Peers of similar age and status teach group norms and style."],
       ["Students learn to wait their turn, follow a schedule and accept being ranked by grades.","School","These are lessons of the hidden curriculum, taught by school alongside the official subjects."],
       ["On his first week as a bank teller, Oluwaseun learns how colleagues really expect him to dress and talk.","Workplace","Organizational norms learned on the job: the workplace as an agent."],
-      ["A video platform’s recommendations shape which body types and lifestyles Hana sees as normal.","Media","Mass and social media present images and norms that shape what people see as normal."]
+      ["A video platform’s suggestions shape which body types and lifestyles Hana sees as normal.","Media","Mass and social media present images and norms that shape what people see as normal."]
     ]},
     {id:"e2u2-l4-x3", type:"spot", q:"A magazine article reports on twins. Tap each claim that the evidence can’t support.", ask:"goes beyond the evidence", parts:[
       {t:"Two identical twins, separated as babies and reunited at 35, both turned out to love the same brand of toothpaste.", flag:false, why:"This is just a reported fact about one pair. Interesting, but not yet a claim about anything else."},
       " ",
-      {t:"This proves that personality is 100% genetic.", flag:true, why:"One coincidence in one pair proves nothing about everyone. Even large twin studies estimate genetic *contributions* to population variation, never 100%, and environments clearly matter."},
+      {t:"This proves that personality is 100% genetic.", flag:true, why:"One coincidence in one pair proves nothing about everyone. Even large twin studies estimate genetic *contributions* to variation in a population, never 100%. Environments clearly matter."},
       " ",
-      {t:"Large studies that compare twins raised apart with twins raised together suggest genes contribute substantially to many personality traits.", flag:false, why:"A fair summary of studies such as the Minnesota Study of Twins Reared Apart, which used comparison groups."},
+      {t:"Large studies compare twins raised apart with twins raised together. They suggest that genes add a lot to many personality traits.", flag:false, why:"A fair summary of studies such as the Minnesota Study of Twins Reared Apart, which used comparison groups."},
       " ",
       {t:"So the way parents raise their children makes no difference at all.", flag:true, why:"Genetic contribution to some traits doesn’t mean environment has no effect. Evidence such as the Bucharest Early Intervention Project shows care environments matter a great deal."},
       " ",
       {t:"Separated twins are rare, so these studies have small samples.", flag:false, why:"A correct and important caveat."}
-    ], why:"Watch for single cases turned into sweeping rules, and for “some genetic contribution” being stretched into “nothing else matters”."},
+    ], why:"Watch for single cases turned into sweeping rules. Also watch for “some genetic contribution” being stretched into “nothing else matters”."},
     {id:"e2u2-l4-x4", type:"mcq", q:"A manager praises a colleague’s confident presentation. Fatima imagines that the manager sees her own quiet style as weak. She starts to feel she isn’t good at her job. Which concept describes this?", options:[
       {t:"Cooley’s looking-glass self", ok:true, why:"She imagines how she appears, imagines the manager’s judgment and feels self-doubt. Note that the “mirror” is her imagination, which may not match the manager’s real view."},
       {t:"Mead’s play stage", why:"The play stage is a childhood phase of taking on one other person’s role in pretend play. Fatima is an adult interpreting others’ views of her."},
@@ -415,8 +415,8 @@ ICA.addUnit({
     ]},
     {id:"e2u2-l4-x5", type:"sort", q:"Anticipatory socialization or resocialization?", buckets:["Anticipatory socialization (preparing for a future role)","Resocialization (replacing old norms with new ones)"], items:[
       {t:"A medical student shadows doctors on hospital rounds", b:0, why:"Rehearsing a role you will hold later is anticipatory socialization."},
-      {t:"A new army recruit is given a uniform, a haircut and a strict daily schedule", b:1, why:"Old habits are stripped away and replaced inside a total institution: resocialization."},
-      {t:"Ana, aged 62, joins a pre-retirement planning course", b:0, why:"Preparing for the retiree role before you have it is anticipatory socialization."},
+      {t:"A new army recruit is given a uniform, a haircut and a strict daily schedule", b:1, why:"Old habits are taken away and replaced inside a total institution. This is resocialization."},
+      {t:"Ana, aged 62, joins a pre-retirement planning course", b:0, why:"Getting ready for the retiree role before you have it is anticipatory socialization."},
       {t:"Kenji, after leaving prison, learns how to use online job applications and daily routines outside", b:1, why:"Unlearning institutional routines and learning new ones is resocialization."},
       {t:"A teenager practices interview answers before applying for a first job", b:0, why:"Rehearsing for a future role: anticipatory socialization."},
       {t:"Lucía, after a spinal injury, relearns how to travel, work and socialize using a wheelchair", b:1, why:"Adapting old routines and norms after a major change is resocialization."}
@@ -427,9 +427,9 @@ ICA.addUnit({
       {t:"Because she eventually learned to speak perfectly, so isolation had no effect.", why:"She learned many words but never fully mastered grammar. The problem with the evidence is confounding, not a complete recovery."},
       {t:"Because case studies are never allowed in sociology.", why:"Case studies are a recognized method. They can suggest ideas but can’t, alone, establish general causes."}
     ]},
-    {id:"e2u2-l4-x7", type:"mcq", q:"What was Carol Gilligan’s main criticism of Lawrence Kohlberg’s theory of moral development?", options:[
+    {id:"e2u2-l4-x7", type:"mcq", q:"What was Carol Gilligan’s main criticism of Lawrence Kohlberg’s theory of moral growth?", options:[
       {t:"He studied only males and ranked justice above care.", ok:true, why:"His research was based only on boys and men. It treated a justice perspective as the highest form of morality and overlooked a care perspective. That is Gilligan’s argument in *In a Different Voice* (1982). Later studies found only small average gender differences. But her critique changed how researchers think about moral reasoning."},
-      {t:"He proved that girls are morally superior to boys.", why:"Kohlberg claimed nothing of the kind, and Gilligan argued for two different perspectives, not superiority."},
+      {t:"He proved that girls are morally superior to boys.", why:"Kohlberg made no such claim. Gilligan argued for two different perspectives, not for one being better."},
       {t:"He ignored the role of the generalized other in moral growth.", why:"The generalized other is Mead’s concept. Gilligan’s critique concerned gender bias in Kohlberg’s samples and his ranking of perspectives."},
       {t:"He studied monkeys rather than humans.", why:"That describes Harry Harlow’s research on rhesus monkeys, not Kohlberg’s interviews with boys and young men."}
     ]},
@@ -451,17 +451,17 @@ ICA.addUnit({
      "Distinguish groups from crowds and categories, and primary from secondary groups",
      "Explain in-groups, out-groups and reference groups, and how group size changes interaction",
      "Describe leadership styles, the Asch and Milgram studies (including the ethical debate) and groupthink",
-     "Classify formal organizations and analyze bureaucracy, the iron rule of oligarchy and McDonaldization"
+     "Sort formal organizations into types. Analyze bureaucracy, the iron rule of oligarchy and McDonaldization."
    ],
    guide:true,
    learn:[
     {h:"Before you read", body:[
       "Chapter 6 looks at the groups between you and society as a whole, from a pair of friends to a government department. It also looks at how group pressure and organization shape what people do.",
       {look:[
-        "(6.1) What makes a group different from an aggregate or a category, and how do primary and secondary groups differ?",
+        "(6.1) What makes a group different from an aggregate or a category? How do primary and secondary groups differ?",
         "(6.1) What are in-groups, out-groups and reference groups?",
         "(6.2) How does size change a group, which leadership styles does the book describe, and what did Asch and Milgram find?",
-        "(6.3) What are Etzioni’s three types of organization, the features of bureaucracy and the principles of McDonaldization?"
+        "(6.3) What are Etzioni’s three types of organization? What are the features of bureaucracy and the principles of McDonaldization?"
       ]}
     ]},
     {h:"The big ideas", body:[
@@ -472,7 +472,7 @@ ICA.addUnit({
         "Georg Simmel: a [[dyad]] (two people) is close but ends if one leaves. A [[triad]] (three) is more stable and allows a mediator, but also two-against-one coalitions. A group is large once it is too big for one shared conversation. (6.2)",
         "Leaders are **instrumental** (task-focused) or **expressive** (morale-focused). Leadership styles are of three kinds. **Democratic** leaders involve members, so the group is committed but slower. **Laissez-faire** leaders are hands-off, which suits skilled, motivated groups. **Authoritarian** leaders give orders, which is fast in emergencies but can alienate people. (6.2)",
         "[[conformity|Conformity]] is how far people go along with group norms. In Solomon Asch’s line studies, 37 of 50 participants gave an obviously wrong answer at least once to match the group. Conformity fell sharply with one ally, or with private written answers. Stanley Milgram found most people obeyed an authority who told them to give what they believed were dangerous shocks. (6.2)",
-        "Amitai Etzioni’s types of [[formal-organization|formal organization]]: **normative** (joined for shared values; non-material rewards). **Coercive** (people are forced to be there: prisons). **Utilitarian** (joined for material reward: a job, a degree). (6.3)",
+        "Amitai Etzioni’s types of [[formal-organization|formal organization]]: **normative** (joined for shared values; non-material rewards). **Coercive** (people are forced to be there, as in prisons). **Utilitarian** (joined for a material reward, such as a job or a degree). (6.3)",
         "Max Weber’s ideal-type [[bureaucracy]] has a hierarchy, a division of labor, explicit rules and impersonality. Robert Michels’ [[iron-rule-of-oligarchy|iron rule of oligarchy]] (1911) says large organizations end up ruled by a few. George Ritzer’s [[mcdonaldization|McDonaldization]] (1993) has four principles. They are **efficiency** (fastest route), **calculability** (quantity over quality), **predictability** (same everywhere) and **control** (rules and machines replace judgment). (6.3)"
       ]}
     ]},
@@ -482,11 +482,11 @@ ICA.addUnit({
       {beyond:"**Groupthink.** Irving Janis (1972) described [[groupthink]]: in close-knit groups the wish to agree overrides realistic judgment. Warning signs: an illusion that the group can’t fail, self-censorship, pressure on dissenters, stereotyped outsiders and false unanimity. Remedies: outside advisers, someone arguing the opposite case, leaders giving their view last."},
       {beyond:"**Milgram and research ethics.** In his best-known version (Yale, early 1960s) about two-thirds of participants went to the maximum 450 volts. No shocks were real; the learner was an actor. But participants were deceived and many were distressed. Diana Baumrind (1964) argued the harm wasn’t justified, and the debate helped shape [[informed-consent|informed consent]] and ethics review. Jerry Burger’s 2009 partial replication stopped at 150 volts, and about 70% were still ready to go on."},
       {beyond:"**Counting links.** A group of *n* people has *n* × (*n* − 1) ÷ 2 possible pairs: 3 for a triad, 15 for six people. **Leadership in context:** the three styles come from Kurt Lewin’s studies in the late 1930s. No style is always best; a flood evacuation needs quick direction."},
-      {beyond:"**The irrationality of rationality.** Ritzer warns that efficient systems can become dehumanizing or even inefficient, as when counting papers replaces judging their quality. Critics reply that many people value predictability, and that chains adapt to local cultures (glocalization, Lesson 2)."}
+      {beyond:"**The irrationality of rationality.** Ritzer warns that efficient systems can become dehumanizing or even inefficient. One example is when counting papers replaces judging their quality. Critics reply that many people like predictability. They also say that chains adapt to local cultures (glocalization, Lesson 2)."}
     ]}
    ],
    try:[
-    {id:"e2u2-l5-x1", type:"sort", q:"Primary or secondary group? Consider whether the bond is emotional and personal or task-focused.", buckets:["Primary group","Secondary group"], items:[
+    {id:"e2u2-l5-x1", type:"sort", q:"Primary or secondary group? Think about whether the bond is emotional and personal or focused on a task.", buckets:["Primary group","Secondary group"], items:[
       {t:"Sione’s extended family, who gather every Sunday", b:0, why:"Long-term, emotional and personal: a primary group, serving expressive needs."},
       {t:"The 200 students in a first-year lecture course", b:1, why:"Large, impersonal and organized around a task (passing the course): a secondary group."},
       {t:"Three friends who have supported each other since primary school", b:0, why:"Small, long-lasting and emotionally close: a primary group."},
@@ -518,10 +518,10 @@ ICA.addUnit({
       ["A clinic’s booking app lets patients skip phone calls and book in under a minute.","Efficiency","The fastest route from need to result is efficiency."],
       ["Lecturers are evaluated mainly on how many papers they publish per year.","Calculability","Judging by quantity rather than quality is calculability."],
       ["A hotel chain makes every room identical, from Nairobi to Nagoya.","Predictability","The same experience everywhere is predictability."],
-      ["A delivery app tracks riders’ routes by GPS and sets their deadlines automatically.","Control","Replacing human judgment with rules and technology is control."]
+      ["A delivery app tracks the routes of riders by GPS and sets their deadlines on its own.","Control","Replacing human judgment with rules and technology is control."]
     ]},
     {id:"e2u2-l5-x6", type:"spot", q:"Read these notes from a planning meeting. Tap each sign of **groupthink**.", ask:"is a sign of groupthink", parts:[
-      {t:"The team leader opens by saying she is “certain this launch can’t fail”.", flag:true, why:"An illusion of invulnerability, especially stated by the leader first, is a classic symptom and discourages doubt."},
+      {t:"The team leader opens by saying she is “certain this launch can’t fail”.", flag:true, why:"An illusion of invulnerability, especially when the leader states it first, is a classic symptom. It discourages doubt."},
       " ",
       {t:"Members review last year’s sales figures together.", flag:false, why:"Looking at evidence together is good practice, not a symptom."},
       " ",
@@ -532,7 +532,7 @@ ICA.addUnit({
       {t:"The rival company is described as “too slow and stupid to react”.", flag:true, why:"Stereotyping outsiders as weak or foolish is one of Janis’s symptoms."},
       " ",
       {t:"The team agrees to ask an outside adviser to check the plan.", flag:false, why:"Bringing in outside views is one of Janis’s recommended remedies."}
-    ], why:"Janis’s warning signs: illusions of invulnerability, self-censorship, pressure on dissenters, stereotyped outsiders and false unanimity."},
+    ], why:"Janis’s warning signs are illusions of invulnerability, self-censorship, pressure on dissenters, stereotyped outsiders and false unanimity."},
     {id:"e2u2-l5-x7", type:"mcq", q:"A flood hits a town and volunteers must evacuate an elderly care home within 30 minutes. Which leadership style is most likely to work best for that task?", options:[
       {t:"Authoritarian: a clear leader gives quick, direct instructions", ok:true, why:"In an emergency with little time, quick top-down decisions usually work best. The same style might alienate people in a slower, everyday project."},
       {t:"Laissez-faire: everyone decides for themselves what to do", why:"Without coordination, volunteers may duplicate work or miss residents. Hands-off leadership suits skilled groups with time, not emergencies."},
@@ -542,14 +542,14 @@ ICA.addUnit({
     {id:"e2u2-l5-x8", type:"mcq", q:"Why are Milgram’s obedience studies a turning point in research ethics?", options:[
       {t:"Participants were deceived, and many suffered real distress.", ok:true, why:"Right. This fueled debate that helped shape today’s rules on informed consent and ethics review. The studies remain famous both for their findings and for the ethical questions they raised, which is why later replications such as Burger’s added strict safeguards."},
       {t:"The learners received real, dangerous electric shocks during the study.", why:"No shocks were given. The learner was an actor. The ethical problem was deception and the stress on the real participants."},
-      {t:"Milgram published his results without analyzing them.", why:"His results were analyzed and published. The controversy concerned his treatment of participants, not missing analysis."},
+      {t:"Milgram published his results without analyzing them.", why:"His results were analyzed and published. The controversy was about how he treated people in the study, not about missing analysis."},
       {t:"The studies showed that nobody obeys authority.", why:"The opposite: in his best-known version about two-thirds of participants obeyed to the end. And that finding isn’t the ethics issue."}
     ]},
     {id:"e2u2-l5-x9", type:"explain", q:"In Asch’s line studies, conformity fell sharply when just one other person gave the right answer, or when answers were written privately. Explain what this suggests about why people conform, and apply it to a work meeting where everyone seems to agree with a weak plan.", size:"3–4 sentences", model:"Asch’s results suggest that much conformity comes from group pressure. It does not come from people believing the wrong answer. In his study, 37 of 50 participants gave an obviously wrong answer at least once to match the group. When one ally broke the agreement, or answers were private, the pressure dropped and so did conformity. In a meeting, a doubtful colleague may stay quiet because everyone else seems to agree. Two things could let real doubts come out: collecting written views privately first, or asking one person to argue the other side.", points:["Says conformity often comes from group pressure rather than real belief", "Explains why one ally or private answers reduce conformity", "Applies the idea to the meeting", "Suggests a change, such as private written views or a dissenting voice"]}
    ],
    apply:{intro:"Look at the groups and organizations in your own life. Keep observations general and don’t name or describe identifiable people.", tasks:[
-     {t:"Map your groups.", how:["List every group you have taken part in this week (family, friends, work, classes, teams, online communities).","Label each as primary or secondary, and note whether its main function is expressive or instrumental.","Name one reference group you compare yourself with, and one out-group you notice yourself defining as “them”."], write:"Your groups (primary or secondary, expressive or instrumental), one reference group and one out-group…"},
-     {t:"Spot McDonaldization in one everyday service.", how:["Pick a service you use: a supermarket, a bank app, a fast-food outlet, an online course, a government website.","Find one example each of efficiency, calculability, predictability and control.","Note one moment of “irrationality of rationality”, when the system was frustrating or dehumanizing."], write:"The service, one example of each principle, and one irrational moment…"},
+     {t:"Map your groups.", how:["List every group you have taken part in this week (family, friends, work, classes, teams, online communities).","Label each one as primary or secondary. Note whether its main function is expressive or instrumental.","Name one reference group you compare yourself with, and one out-group you notice yourself defining as “them”."], write:"Your groups (primary or secondary, expressive or instrumental), one reference group and one out-group…"},
+     {t:"Spot McDonaldization in one everyday service.", how:["Pick a service you use: a supermarket, a bank app, a fast-food outlet, an online course, a government website.","Find one example each of efficiency, calculability, predictability and control.","Note one moment of “irrationality of rationality”. This is when the system was frustrating or dehumanizing."], write:"The service, one example of each principle, and one irrational moment…"},
      {t:"Recall a decision where you went along with a group.", how:["Think of a time you agreed with a group decision even though you had doubts.","Which pressures were at work: wanting to belong, a strong leader, unanimity, time pressure?","Write what might have helped someone voice a doubt (an outside view, a devil’s advocate, private voting)."], write:"The situation (no names), the pressures, and what could have helped…"}
    ], proof:"Three things. First, notes with your group map (including a reference group and an out-group). Second, one service analyzed with all four McDonaldization principles. Third, one reflection on conformity with a possible remedy."},
    read:[
@@ -596,8 +596,8 @@ ICA.addUnit({
      {t:"Government", ok:true, why:"Correct. Government is an agent of socialization: it sets the ages at which people gain rights and duties, which mark stages of life."}]},
    {id:"e2u2-cp08", lesson:"e2u2-l5", level:2, q:"A coffee chain installs machines that pour exactly measured milk and time each drink. Baristas no longer use their own judgment. Which McDonaldization principle is this, and which wider idea of Weber’s does it extend?", options:[
      {t:"Predictability; organic solidarity", why:"Organic solidarity is Durkheim’s idea of interdependence, not Weber’s. And the key change here is machines replacing workers’ judgment."},
-     {t:"Control; rationalization", ok:true, why:"Right. Rules and machines replacing human judgment is Ritzer’s control. McDonaldization extends Weber’s rationalization: life organized by efficiency, rules and calculation."},
-     {t:"Calculability; anomie", why:"Calculability is quantity over quality, and anomie is Durkheim’s normlessness. Neither fits machines taking over decisions."},
+     {t:"Control; rationalization", ok:true, why:"Right. Rules and machines that replace human judgment are Ritzer’s control. McDonaldization extends Weber’s rationalization: life organized by efficiency, rules and calculation."},
+     {t:"Calculability; anomie", why:"Calculability is quantity over quality. Anomie is Durkheim’s normlessness. Neither fits machines taking over decisions."},
      {t:"Efficiency; mechanical solidarity", why:"Mechanical solidarity is Durkheim’s idea of unity through likeness. The point here is machines controlling the work."}]},
    {id:"e2u2-cp09", lesson:"e2u2-l1", level:3, q:"A visitor in Mumbai says the local street food is “not real cooking” because it isn’t made the way it is at home. Nearby, a global burger chain sells a spiced paneer burger made for local tastes. Which pair of concepts fits?", options:[
      {t:"Culture shock; homogenization", why:"Homogenization would mean the same menu everywhere. The chain adapted its menu, which is the opposite."},
@@ -608,12 +608,12 @@ ICA.addUnit({
      {t:"The looking-glass self and a self-fulfilling prophecy", ok:true, why:"Right. Tariq builds his self-image from the judgment he imagines (Cooley). And the teacher’s false belief brings about the very result it predicted (Merton)."},
      {t:"The hidden curriculum and an ascribed status", why:"The hidden curriculum teaches norms like punctuality, and an ascribed status is unchosen, like age. Neither explains how Tariq’s self-image and grades changed."},
      {t:"Mead’s play stage and role strain", why:"The play stage is a young child pretending to be one other person. Role strain is tension within one status. Neither fits."},
-     {t:"Resocialization and organic solidarity", why:"Resocialization replaces old norms, as in a total institution. Organic solidarity is about interdependence in modern society. Neither fits."}]},
+     {t:"Resocialization and organic solidarity", why:"Resocialization replaces old norms, as in a total institution. Organic solidarity is about people needing each other in modern society. Neither fits."}]},
    {id:"e2u2-cp11", lesson:"e2u2-l5", level:3, q:"Matteo chooses to join a monastery. He gives up his possessions, wears the same robe as everyone else and follows a strict daily schedule. In Etzioni’s terms, what type of organization has he joined, and what process is he going through?", options:[
      {t:"A coercive organization; resocialization", why:"Strict rules don’t make an organization coercive. Coercive means people are compelled to be there, as in a prison. Matteo chose to join."},
      {t:"A normative organization; anticipatory socialization", why:"Anticipatory socialization prepares you for a role you don’t hold yet. Matteo is already living the new life and his old habits are being replaced."},
      {t:"A normative organization; resocialization", ok:true, why:"Correct. He joined for shared values, with non-material rewards (normative). Giving up old ways for new norms in an all-encompassing setting is resocialization."},
-     {t:"A utilitarian organization; resocialization", why:"Utilitarian organizations are joined for material rewards, like wages. Matteo has given up his possessions."}]},
+     {t:"A utilitarian organization; resocialization", why:"People join utilitarian organizations for material rewards, like wages. Matteo has given up his things."}]},
    {id:"e2u2-cp12", lesson:"e2u2-l5", level:3, q:"On a five-person hiring panel, the chair always gives her opinion first, and the others nearly always agree. Which change would most likely reduce conformity, based on what the unit taught?", options:[
      {t:"Add three more members so decisions have a stronger majority", why:"A larger majority doesn’t encourage independent views. Asch found conformity fell when people had an ally or answered privately."},
      {t:"Have members write their scores privately before discussion, and the chair speak last", ok:true, why:"Yes. In Asch’s studies private written answers cut conformity sharply, and a leader giving her view last is a remedy for groupthink."},
@@ -1480,10 +1480,10 @@ ICA.addUnit({
      {t:"Language has some effects on perception but doesn’t limit thought.", ok:true, why:"Language can influence some aspects of perception and memory, but it doesn’t determine what people are able to think. This is the weak form (linguistic relativity), supported by studies such as the 2007 Russian blues experiment."},
      {t:"People cannot think about anything their language has no word for.", why:"That is the strong (determinist) form, which most researchers reject: people learn new concepts and translate ideas all the time."},
      {t:"Language has no connection at all with thought.", why:"Too strong in the other direction. Experiments show some specific, modest effects."},
-     {t:"Sapir and Whorf proved it together in a joint experiment.", why:"They never published a joint hypothesis or experiment; the label was applied to their ideas later."}
+     {t:"Sapir and Whorf proved it together in a joint experiment.", why:"They never published a joint hypothesis or experiment. The label was applied to their ideas later."}
    ]},
    {id:"e2u2-q05", lesson:"e2u2-l1", level:2, q:"Priya returns a library book late and must pay a fee set out in the library’s rules. What kind of sanction is this?", options:[
-     {t:"Negative and formal", ok:true, why:"It is a penalty (negative) applied through written rules by an organization (formal)."},
+     {t:"Negative and formal", ok:true, why:"It is a penalty (negative) given through written rules by an organization (formal)."},
      {t:"Negative and informal", why:"Informal sanctions are unofficial reactions like frowns or gossip. This fee follows written rules."},
      {t:"Positive and formal", why:"Positive sanctions reward behavior. A fee punishes it."},
      {t:"It isn’t a sanction because it’s only money", why:"Fines and fees are classic formal sanctions."}
@@ -1495,19 +1495,19 @@ ICA.addUnit({
      {t:"Role strain and role conflict", why:"These describe tensions between or within roles, not adjusting to an unfamiliar culture."}
    ]},
    {id:"e2u2-q07", lesson:"e2u2-l1", level:2, q:"Hana insists that only foreign universities give a “real” education and that degrees from her own country are worthless. Which concept fits?", options:[
-     {t:"Xenocentrism", ok:true, why:"Believing another culture’s institutions are automatically superior to your own is xenocentrism."},
+     {t:"Xenocentrism", ok:true, why:"Believing that another culture’s institutions are automatically better than yours is xenocentrism."},
      {t:"Ethnocentrism", why:"Ethnocentrism is judging others by your own culture’s standards and favoring your own. Hana favors foreign culture instead."},
-     {t:"Cultural relativism", why:"Relativism means understanding practices in their own context, not ranking one culture above another."},
-     {t:"Culture shock", why:"Culture shock is disorientation in an unfamiliar culture, not a preference for foreign institutions."}
+     {t:"Cultural relativism", why:"Relativism means understanding practices in their own context. It does not mean ranking one culture above another."},
+     {t:"Culture shock", why:"Culture shock is feeling lost in an unfamiliar culture. It is not a liking for foreign institutions."}
    ]},
    {id:"e2u2-q08", lesson:"e2u2-l1", level:3, q:"A researcher studying a farming village asks why families there want many children, and finds that adult children are the main support for parents in old age. She later also reports that girls in the village leave school early, which limits their options. Is she contradicting cultural relativism?", options:[
-     {t:"No. Relativism asks for understanding first, not a ban on evaluation.", ok:true, why:"Cultural relativism means understanding practices in context first; it doesn’t forbid evidence-based evaluation afterwards. She explained the practice by its setting, then evaluated an outcome using evidence. That is good sociology, not a contradiction."},
-     {t:"Yes. Relativism means she may only describe, never evaluate.", why:"That confuses methodological relativism with the claim that no practice can ever be judged. Sociologists routinely report harms."},
+     {t:"No. Relativism asks for understanding first, not a ban on evaluation.", ok:true, why:"Cultural relativism means understanding practices in context first. It doesn’t forbid evaluation based on evidence afterwards. She explained the practice by its setting, then judged an outcome using evidence. That is good sociology, not a contradiction."},
+     {t:"Yes. Relativism means she may only describe, never evaluate.", why:"That confuses methodological relativism with the claim that no practice can ever be judged. Sociologists report harms all the time."},
      {t:"Yes, because only people from the village may study it.", why:"Relativism is about how you interpret practices, not who is allowed to study them."},
      {t:"No, because she is being ethnocentric, which is required in research.", why:"Ethnocentrism is what relativism tries to avoid. It is never required."}
    ]},
    {id:"e2u2-q09", lesson:"e2u2-l1", level:2, q:"Driving on the left in Japan and on the right in Brazil are both enforced by law, yet neither choice is morally better. What does this show?", options:[
-     {t:"A formal law can carry little moral weight.", ok:true, why:"Formality (written and enforced) and moral weight are separate dimensions. Traffic-side rules are formal but morally neutral conventions."},
+     {t:"A formal law can carry little moral weight.", ok:true, why:"Formality (written and enforced) and moral weight are separate dimensions. Rules about which side of the road to drive on are formal but morally neutral conventions."},
      {t:"All laws are mores, so they carry moral weight.", why:"Some laws express mores (against theft), but this example shows laws without moral content."},
      {t:"Laws are always folkways.", why:"Laws are formal norms; folkways are informal customs. They are different categories."},
      {t:"Norms are the same everywhere.", why:"The example shows the opposite: the same kind of rule differs between countries."}
@@ -1515,14 +1515,14 @@ ICA.addUnit({
    /* ---- Lesson 2 ---- */
    {id:"e2u2-q10", lesson:"e2u2-l2", level:1, q:"What distinguishes a counterculture from a subculture?", options:[
      {t:"A counterculture rejects mainstream values; a subculture doesn’t.", ok:true, why:"A counterculture rejects major values and norms of the wider culture. A subculture adds its own layer but still takes part in mainstream life. The key difference is rejection versus participation with a distinctive identity."},
-     {t:"A counterculture is always violent; a subculture is peaceful.", why:"Many countercultures are peaceful. The defining feature is rejecting mainstream values, not violence."},
+     {t:"A counterculture is always violent; a subculture is peaceful.", why:"Many countercultures are peaceful. What defines them is rejecting mainstream values, not violence."},
      {t:"A subculture is larger than a counterculture.", why:"Size doesn’t define either. Both can be large or small."},
      {t:"A subculture is high culture; a counterculture is popular culture.", why:"High and popular culture are a separate distinction, about prestige and mainstream reach."}
    ]},
    {id:"e2u2-q11", lesson:"e2u2-l2", level:1, q:"According to William F. Ogburn (1922), what is cultural lag?", options:[
-     {t:"The gap when technology changes faster than the norms and laws that govern it", ok:true, why:"Ogburn noticed that material culture often outpaces the nonmaterial culture meant to regulate it."},
+     {t:"The gap when technology changes faster than the norms and laws that govern it", ok:true, why:"Ogburn saw that material culture often moves faster than the nonmaterial culture that is meant to guide it."},
      {t:"The time it takes a traveler to recover from culture shock", why:"That is adjustment to culture shock, a different idea about individuals."},
-     {t:"When a culture refuses to adopt any new technology", why:"Cultural lag is about norms trailing technology that has already arrived, not refusing technology."},
+     {t:"When a culture refuses to adopt any new technology", why:"Cultural lag is about norms falling behind technology that has already arrived. It is not about refusing technology."},
      {t:"When one culture copies another’s products", why:"Spreading from one culture to another is diffusion."}
    ]},
    {id:"e2u2-q12", lesson:"e2u2-l2", level:2, q:"Small delivery drones become cheap and common in a city, but there are no clear rules about flying them over homes. Neighbors argue about privacy and noise. What is this an example of?", options:[
@@ -1532,7 +1532,7 @@ ICA.addUnit({
      {t:"High culture", why:"High culture refers to elite cultural forms such as opera. It has nothing to do with this situation."}
    ]},
    {id:"e2u2-q13", lesson:"e2u2-l2", level:1, q:"Which is an example of **discovery** rather than invention?", options:[
-     {t:"Scientists find a fever-lowering compound in a plant", ok:true, why:"The compound already existed in a plant long used in folk remedies; revealing it is discovery."},
+     {t:"Scientists find a fever-lowering compound in a plant", ok:true, why:"The compound already existed in a plant long used in folk remedies. Revealing it is discovery."},
      {t:"An engineer combines a bicycle and a battery to build an e-bike", why:"Combining existing things into something new is invention."},
      {t:"A designer creates a new app by combining maps and payments", why:"Combining existing tools into a new product is invention."},
      {t:"A recipe spreads from one country to another", why:"Spreading between cultures is diffusion, not discovery."}
@@ -1541,10 +1541,10 @@ ICA.addUnit({
      {t:"Diffusion", ok:true, why:"A food spreading from one region and being adopted and adapted by other cultures is diffusion."},
      {t:"Invention", why:"Chillies weren’t invented in Asia or Africa. They arrived through trade and were adopted."},
      {t:"Cultural lag", why:"Cultural lag is norms trailing technology, not a food spreading between cultures."},
-     {t:"Xenocentrism", why:"Xenocentrism is believing another culture is superior. Adopting an ingredient doesn’t require that belief."}
+     {t:"Xenocentrism", why:"Xenocentrism is believing another culture is better. Using one of its ingredients doesn’t need that belief."}
    ]},
-   {id:"e2u2-q15", lesson:"e2u2-l2", level:3, q:"A columnist writes: “K-pop proves globalization is making every culture American.” Which response is most sociologically accurate?", options:[
-     {t:"K-pop shows hybridity: Korean traditions blended with global styles.", ok:true, why:"It blends Korean language and performance traditions with global styles, and it flows outward from Korea to the world. K-pop is a standard example of hybridity and of non-Western culture reaching global audiences, which challenges simple homogenization claims."},
+   {id:"e2u2-q15", lesson:"e2u2-l2", level:3, q:"A columnist writes: “K-pop proves globalization is making every culture American.” Which answer is best from a sociological view?", options:[
+     {t:"K-pop shows hybridity: Korean traditions blended with global styles.", ok:true, why:"It blends Korean language and performance traditions with global styles. It also flows outward from Korea to the world. K-pop is a standard example of hybridity and of non-Western culture reaching global audiences. This challenges simple homogenization claims."},
      {t:"The columnist is right: K-pop is identical to American pop music.", why:"K-pop draws on global pop, but it has distinctive Korean language, performance and industry features. Identical is an overstatement."},
      {t:"K-pop is a counterculture, so it has nothing to do with globalization.", why:"K-pop is mainstream popular culture, and it is very much a product of globalization."},
      {t:"Globalization only affects economies, not culture.", why:"Globalization clearly affects culture; the debate is about *how*, not whether."}
@@ -1556,13 +1556,13 @@ ICA.addUnit({
      {t:"Shakespeare is a counterculture.", why:"Counterculture means rejecting mainstream values. This is about prestige, not rejection."}
    ]},
    {id:"e2u2-q17", lesson:"e2u2-l2", level:1, q:"What does **glocalization** describe?", options:[
-     {t:"Global and local cultures adapting to and shaping each other", ok:true, why:"Global products and ideas are adapted to local cultures, and local cultures reach global audiences. The term, popularized by Roland Robertson, stresses that global and local shape each other."},
+     {t:"Global and local cultures adapting to and shaping each other", ok:true, why:"Global products and ideas are adapted to local cultures, and local cultures reach global audiences. The term, made popular by Roland Robertson, stresses that global and local shape each other."},
      {t:"The complete disappearance of local cultures under global ones", why:"That describes the strongest homogenization claim, which glocalization challenges."},
      {t:"A country closing its borders to foreign products", why:"That is protectionism or isolation, not glocalization."},
      {t:"The spread of high culture to the elite", why:"Glocalization concerns global–local adaptation, not class-based culture."}
    ]},
    {id:"e2u2-q18", lesson:"e2u2-l2", level:3, q:"Fatima notices that a punk-style jacket that once signaled rebellion is now sold in a chain store at the shopping mall. Which idea best explains this?", options:[
-     {t:"The mainstream market has absorbed a subcultural style.", ok:true, why:"Commercializing the style weakens its oppositional meaning. Commodification of rebellious styles is a well-documented process in the study of subcultures."},
+     {t:"The mainstream market has absorbed a subcultural style.", ok:true, why:"Selling the style as a product weakens its oppositional meaning. Commodification of rebellious styles is a well-documented process in the study of subcultures."},
      {t:"The chain store has become a counterculture.", why:"Selling a style doesn’t mean rejecting mainstream values; the store is part of the mainstream."},
      {t:"Punk has become high culture, so elite stores now sell it.", why:"A mass-market store is popular culture, not elite high culture."},
      {t:"This is cultural lag.", why:"Cultural lag is norms trailing technology. This is about a style moving from subculture to mainstream market."}
@@ -1575,9 +1575,9 @@ ICA.addUnit({
      {t:"Postindustrial", why:"Postindustrial societies are based on services and information."}
    ]},
    {id:"e2u2-q20", lesson:"e2u2-l3", level:2, q:"In a large city, Oluwaseun depends on farmers, truck drivers, software engineers and nurses he will never meet. Which concept from Durkheim describes how such a society holds together?", options:[
-     {t:"Organic solidarity", ok:true, why:"Modern societies hold together through interdependence among people with specialized, different roles."},
-     {t:"Mechanical solidarity", why:"Mechanical solidarity is unity based on people being alike, typical of small traditional societies."},
-     {t:"Alienation", why:"Alienation is Marx’s concept about workers’ separation from their work, not what holds society together."},
+     {t:"Organic solidarity", ok:true, why:"Modern societies hold together because people depend on each other. They have specialized, different roles."},
+     {t:"Mechanical solidarity", why:"Mechanical solidarity is unity based on people being alike. It is typical of small, traditional societies."},
+     {t:"Alienation", why:"Alienation is Marx’s concept about workers being separated from their work. It is not about what holds society together."},
      {t:"Master status", why:"Master status is about one status overshadowing others in how a person is seen."}
    ]},
    {id:"e2u2-q21", lesson:"e2u2-l3", level:1, q:"What does the Thomas theorem state?", options:[
@@ -1602,11 +1602,11 @@ ICA.addUnit({
      {t:"Master status", ok:true, why:"Fame has become the status that overshadows all her others in how people see her."},
      {t:"Role strain", why:"Role strain is tension within one status’s demands, not how others perceive a person."},
      {t:"Ascribed status", why:"An award is earned, so the status is achieved. The point is that it dominates the others."},
-     {t:"Mechanical solidarity", why:"Mechanical solidarity describes how traditional societies are unified, not an individual’s status."}
+     {t:"Mechanical solidarity", why:"Mechanical solidarity describes how traditional societies are held together. It is not about one person’s status."}
    ]},
    {id:"e2u2-q25", lesson:"e2u2-l3", level:2, q:"A call-center worker follows a fixed script, has every call timed and has no say in how the work is organized. Which pair of concepts best describes this job?", options:[
-     {t:"Weber’s rationalization and Marx’s alienation", ok:true, why:"The job is organized for efficiency and calculation (rationalization) and denies the worker control over the process (alienation)."},
-     {t:"Mechanical solidarity and xenocentrism", why:"Mechanical solidarity is about likeness in traditional societies; xenocentrism is preferring other cultures. Neither describes the job."},
+     {t:"Weber’s rationalization and Marx’s alienation", ok:true, why:"The job is organized for speed and counting (rationalization). It takes away the worker’s control over the process (alienation)."},
+     {t:"Mechanical solidarity and xenocentrism", why:"Mechanical solidarity is about likeness in traditional societies. Xenocentrism is liking other cultures better. Neither describes the job."},
      {t:"Cultural lag and diffusion", why:"These concern cultural change, not the organization of work."},
      {t:"Ascribed status and folkways", why:"Neither explains the scripted, timed, controlled nature of the work."}
    ]},
@@ -1627,7 +1627,7 @@ ICA.addUnit({
      {t:"The lifelong process of learning a society’s norms, values, beliefs and roles", ok:true, why:"Socialization starts at birth and continues through every life stage."},
      {t:"Making friends at school", why:"Peer friendships are one part of socialization, but the concept is much broader."},
      {t:"A political system based on shared ownership", why:"That describes socialism, an economic and political system."},
-     {t:"Learning only in childhood", why:"Socialization continues throughout life, for example in new jobs or after migrating."}
+     {t:"Learning only in childhood", why:"Socialization goes on all through life, for example in new jobs or after a move to another country."}
    ]},
    {id:"e2u2-q29", lesson:"e2u2-l4", level:1, q:"In Mead’s theory, what is the **generalized other**?", options:[
      {t:"The shared expectations of society as a whole", ok:true, why:"A person learns to take these expectations into account. It is the final step in Mead’s account: seeing yourself from the viewpoint of the wider community."},
@@ -1642,13 +1642,13 @@ ICA.addUnit({
      {t:"The generalized other", why:"Taking the viewpoint of society as a whole comes later."}
    ]},
    {id:"e2u2-q31", lesson:"e2u2-l4", level:3, q:"A website says: “Twins separated at birth both became firefighters, which proves careers are genetic.” What is the main problem with this claim?", options:[
-     {t:"One case can’t establish a general rule about careers.", ok:true, why:"You need large studies with comparison groups, and even those estimate contributions, not total causes. Single cases are weak evidence, and twin studies describe variation in populations, not fixed destinies."},
+     {t:"One case can’t establish a general rule about careers.", ok:true, why:"You need large studies with comparison groups. Even those estimate contributions, not total causes. Single cases are weak evidence. Twin studies describe variation in populations, not fixed destinies."},
      {t:"Twins can never be studied scientifically, so the story means nothing.", why:"Twin studies are a legitimate method. The problem is drawing a sweeping conclusion from one case."},
      {t:"Careers are entirely random.", why:"That is a different overclaim. Careers reflect many social and personal factors."},
      {t:"Firefighting is a folkway.", why:"Irrelevant: folkways are customs, and this question is about evidence."}
    ]},
-   {id:"e2u2-q32", lesson:"e2u2-l4", level:2, q:"Why is the Bucharest Early Intervention Project stronger evidence about the effects of care than individual cases of isolated children?", options:[
-     {t:"Children were randomly assigned to different types of care.", ok:true, why:"Children went either to foster care or institutional care, so differences can be attributed to the type of care. Random assignment rules out many alternative explanations that single cases can’t."},
+   {id:"e2u2-q32", lesson:"e2u2-l4", level:2, q:"Why is the Bucharest Early Intervention Project stronger evidence about the effects of care than single cases of children raised in isolation?", options:[
+     {t:"Children were randomly assigned to different types of care.", ok:true, why:"Children went either to foster care or institutional care, so differences can be linked to the type of care. Random assignment rules out many other explanations that single cases can’t."},
      {t:"It studied only one child, in great detail, over many years.", why:"It studied 136 children; studying one child would be a case study, which is weaker for causal claims."},
      {t:"It involved no children at all, only animals.", why:"It studied children in Romanian institutions. Harlow’s studies used monkeys."},
      {t:"It proved that genes don’t matter.", why:"It showed that care environments matter a lot; it didn’t claim genes are irrelevant."}
@@ -1660,19 +1660,19 @@ ICA.addUnit({
      {t:"Cultural lag", why:"Cultural lag concerns norms trailing technology."}
    ]},
    {id:"e2u2-q34", lesson:"e2u2-l4", level:3, q:"Dmitri, a new military recruit, receives a uniform and haircut, loses his personal belongings and is called by a number. Which concepts fit best?", options:[
-     {t:"Resocialization in a total institution, starting with a degradation ceremony", ok:true, why:"Stripping the old identity on entry (degradation ceremony) begins resocialization inside a total institution."},
+     {t:"Resocialization in a total institution, starting with a degradation ceremony", ok:true, why:"Taking away the old identity on entry (degradation ceremony) starts resocialization in a total institution."},
      {t:"Anticipatory socialization in a primary group", why:"He is not preparing for a future role; he is being remade inside one. A training camp is not a primary group."},
      {t:"Cultural relativism and diffusion", why:"These concern understanding cultures and spreading practices, not institutional identity change."},
      {t:"The looking-glass self and the play stage", why:"These describe self-image and childhood development, not institutional resocialization."}
    ]},
    {id:"e2u2-q35", lesson:"e2u2-l4", level:2, q:"Ana, a student nurse, spends months on hospital placements observing and practicing nursing tasks before she qualifies. What is this?", options:[
-     {t:"Anticipatory socialization", ok:true, why:"Learning and rehearsing a role before you hold it is anticipatory socialization."},
+     {t:"Anticipatory socialization", ok:true, why:"Learning and practicing a role before you have it is anticipatory socialization."},
      {t:"Resocialization", why:"Resocialization replaces old norms, often after a major change. Ana is preparing for a new role."},
      {t:"A degradation ceremony", why:"That strips old identities on entry to a total institution; it doesn’t fit a placement."},
      {t:"Role strain", why:"Role strain is tension within one status’s demands, not preparing for a role."}
    ]},
    {id:"e2u2-q36", lesson:"e2u2-l4", level:1, q:"What did Carol Gilligan argue in *In a Different Voice* (1982)?", options:[
-     {t:"Kohlberg’s male-based theory overlooked a care perspective.", ok:true, why:"Gilligan argued for a care perspective, focused on relationships and responsibility, alongside justice, and criticized Kohlberg’s all-male samples."},
+     {t:"Kohlberg’s male-based theory overlooked a care perspective.", ok:true, why:"Gilligan argued for a care perspective, based on relationships and duty to others, alongside justice. She also criticized Kohlberg’s all-male samples."},
      {t:"Moral reasoning is entirely genetic and can’t be changed by upbringing.", why:"Gilligan focused on socialization and perspectives, not genetics."},
      {t:"Children develop through four cognitive stages.", why:"That is Piaget’s theory."},
      {t:"The self has an “I” and a “me”.", why:"That is Mead’s theory."}
@@ -1709,27 +1709,27 @@ ICA.addUnit({
      {t:"The results were never published.", why:"They were widely published from 1963 onward."}
    ]},
    {id:"e2u2-q42", lesson:"e2u2-l5", level:3, q:"A project team’s leader opens by saying failure is impossible, doubters stay silent, and critics are called disloyal. Six months later the project collapses. Which concept best explains the decision process?", options:[
-     {t:"Groupthink", ok:true, why:"Illusions of invulnerability, self-censorship and pressure on dissenters are Janis’s symptoms of groupthink."},
+     {t:"Groupthink", ok:true, why:"Illusions of invulnerability, self-censorship and pressure on dissenters are Janis’s signs of groupthink."},
      {t:"Cultural lag", why:"Cultural lag is norms trailing technology, not a flawed group decision process."},
-     {t:"The iron rule of oligarchy", why:"Michels’ concept describes power concentrating in large organizations, not the dynamics of one decision."},
+     {t:"The iron rule of oligarchy", why:"Michels’ concept describes power gathering in large organizations. It does not describe how one decision is made."},
      {t:"Organic solidarity", why:"Organic solidarity is how interdependent modern societies hold together."}
    ]},
    {id:"e2u2-q43", lesson:"e2u2-l5", level:2, q:"Kenji joins a hiking club because he loves the mountains; there is no pay. In Etzioni’s terms, what kind of organization is it?", options:[
-     {t:"Normative", ok:true, why:"People join normative (voluntary) organizations for shared interests or values, with non-material rewards."},
-     {t:"Utilitarian", why:"Utilitarian organizations are joined for material rewards such as wages or qualifications."},
+     {t:"Normative", ok:true, why:"People join normative (voluntary) organizations for shared interests or values. The rewards are not material."},
+     {t:"Utilitarian", why:"People join utilitarian organizations for pay or other material rewards, such as wages or qualifications."},
      {t:"Coercive", why:"Coercive organizations are ones people are forced into, such as prisons."},
      {t:"Total institution", why:"A total institution controls all of life under one authority. A hiking club doesn’t."}
    ]},
    {id:"e2u2-q44", lesson:"e2u2-l5", level:1, q:"Which is **not** one of the features of Weber’s ideal-type bureaucracy?", options:[
-     {t:"Decisions based on personal friendships and family ties", ok:true, why:"Weber’s bureaucracy is impersonal: decisions follow rules, not personal ties. This option describes the opposite."},
+     {t:"Decisions based on personal friendships and family ties", ok:true, why:"Weber’s bureaucracy is impersonal. Decisions follow rules, not personal ties. This option says the opposite."},
      {t:"A hierarchy of authority", why:"A clear chain of command is one of Weber’s core features."},
      {t:"Explicit written rules", why:"Standardized written rules are a core feature."},
      {t:"A clear division of labor", why:"Specialized roles are a core feature."}
    ]},
    {id:"e2u2-q45", lesson:"e2u2-l5", level:3, q:"A university starts judging lecturers mainly by the number of papers they publish each year, rather than their quality. Which principle of McDonaldization is this, and what risk does Ritzer warn about?", options:[
-     {t:"Calculability; the irrationality of rationality", ok:true, why:"Emphasizing quantity over quality is calculability. As counting replaces judgments of quality, Ritzer warns such systems can produce irrational results, such as many weak papers."},
-     {t:"Predictability; cultural lag", why:"Predictability means sameness everywhere, and cultural lag concerns technology outpacing norms. Neither fits counting papers."},
-     {t:"Control; groupthink", why:"Control replaces human judgment with rules or machines; groupthink is a group decision problem. Counting outputs is calculability."},
+     {t:"Calculability; the irrationality of rationality", ok:true, why:"Stressing quantity over quality is calculability. When counting replaces judgments of quality, Ritzer warns that such systems can give irrational results, such as many weak papers."},
+     {t:"Predictability; cultural lag", why:"Predictability means sameness everywhere. Cultural lag means technology moves faster than norms. Neither fits counting papers."},
+     {t:"Control; groupthink", why:"Control replaces human judgment with rules or machines. Groupthink is a group decision problem. Counting outputs is calculability."},
      {t:"Efficiency; the iron rule of oligarchy in universities", why:"Efficiency is the fastest route to a result, and oligarchy concerns power concentration. The key feature here is quantity over quality."}
    ]}
   ]
