@@ -45,7 +45,7 @@ ICA.addUnit({
         "**Some adjectives have no *-er* form.** *Beautiful* and *wooden* are adjectives. They pass the function test: *a beautiful day, The box is wooden.*",
         "**Many words end in the same letters.** *Friendly* ends in *-ly* but is an adjective. *Quickly* is an adverb. The ending alone does not decide."
       ]},
-      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e5u4a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">One word, three jobs: light</text><rect class="d-sage" x="14" y="36" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="56" text-anchor="middle">The light in the hall is on.</text><text class="s" x="170" y="73" text-anchor="middle">follows “The”, is the subject</text><path class="d-ink" d="M170 82V100" stroke-width="2" marker-end="url(#e5u4a)"/><text x="170" y="116" text-anchor="middle">noun (plural: lights)</text><rect class="d-lup" x="14" y="130" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="150" text-anchor="middle">Please light the candle.</text><text class="s" x="170" y="167" text-anchor="middle">has -s, -ed, -ing forms; follows “Please”</text><path class="d-ink" d="M170 176V194" stroke-width="2" marker-end="url(#e5u4a)"/><text x="170" y="210" text-anchor="middle">verb (lights, lit, lighting)</text><rect class="d-gold" x="14" y="224" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="244" text-anchor="middle">She carries a light bag.</text><text class="s" x="170" y="261" text-anchor="middle">sits before a noun; can follow “very”</text><text x="170" y="290" text-anchor="middle">adjective (lighter, lightest)</text></svg>', alt:"Three boxes, each with a sentence using the word light. In The light in the hall is on, light follows The and is the subject, so it is a noun. In Please light the candle, it has verb forms, so it is a verb. In She carries a light bag, it comes before a noun and can follow very, so it is an adjective.", cap:"The same spelling does three different jobs. The tests look at the form and the position, not the meaning."}
+      {fig:'<svg viewBox="0 0 340 300"><defs><marker id="e5u4a" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path class="d-inkf" d="M0 0L10 5L0 10z"/></marker></defs><text x="170" y="20" text-anchor="middle">One word, three jobs: light</text><rect class="d-sage" x="14" y="36" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="56" text-anchor="middle">The light in the hall is on.</text><text class="s" x="170" y="73" text-anchor="middle">follows “The”, is the subject</text><path class="d-ink" d="M170 82V100" stroke-width="2" marker-end="url(#e5u4a)"/><text x="170" y="116" text-anchor="middle">noun (plural: lights)</text><rect class="d-lup" x="14" y="130" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="150" text-anchor="middle">Please light the candle.</text><text class="s" x="170" y="167" text-anchor="middle">has -s, -ed, -ing forms; follows “Please”</text><path class="d-ink" d="M170 176V194" stroke-width="2" marker-end="url(#e5u4a)"/><text x="170" y="210" text-anchor="middle">verb (lights, lit, lighting)</text><rect class="d-gold" x="14" y="224" width="312" height="44" rx="8" stroke-width="2"/><text x="170" y="244" text-anchor="middle">She carries a light bag.</text><text class="s" x="170" y="261" text-anchor="middle">comes before a noun; can follow “very”</text><text x="170" y="290" text-anchor="middle">adjective (lighter, lightest)</text></svg>', alt:"Three boxes, each with a sentence using the word light. In The light in the hall is on, light follows The and is the subject, so it is a noun. In Please light the candle, it has verb forms, so it is a verb. In She carries a light bag, it comes before a noun and can follow very, so it is an adjective.", cap:"The same spelling does three different jobs. The tests look at the form and the position, not the meaning."}
     ]},
     {h:"Testing real words", body:[
       "Here is how the tests settle the hard cases from the table above.",
@@ -66,7 +66,7 @@ ICA.addUnit({
     ]},
     {h:"Habits and misconceptions", body:[
       {list:[
-        "**“A word belongs to one class for ever.”** Many words belong to two or more. Check the class in the sentence you have.",
+        "**“A word belongs to one class forever.”** Many words belong to two or more. Check the class in the sentence you have.",
         "**“Class depends on meaning.”** Meaning is a clue only. *Destruction* is a noun and *seem* is a verb, whatever they mean.",
         "**“Words ending in *-ly* are adverbs.”** Many are, but *friendly* and *lovely* are adjectives. Lesson 2 has more.",
         "**“Closed classes are minor.”** They are the smallest classes and the most frequent words. A learner who skips *the*, *of* and *can* cannot build a sentence.",
@@ -109,7 +109,7 @@ ICA.addUnit({
     ]},
     {id:"e5u4-l1-x6", type:"number", q:"How many **nouns** are in this sentence? “My brother and his friend watch a film after work on Tuesday.”", answer:5, tol:0, unit:"nouns", why:"The nouns are *brother, friend, film, work* and *Tuesday*. *My* and *his* are determiners, *and* is a conjunction, *watch* is a verb, *a* is a determiner, and *after* and *on* are prepositions.", wrongs:[
       {v:3, tol:0, why:"This counts only people and things (*brother, friend, film*). *Work* and *Tuesday* are nouns too, even though one names an activity and the other a time."},
-      {v:7, tol:0, why:"This counts *my* and *his* as nouns because they point to people. They are determiners. They sit before a noun."}
+      {v:7, tol:0, why:"This counts *my* and *his* as nouns because they point to people. They are determiners. They come before a noun."}
     ], hint2:"Test each word: can it follow *the* or *a* and have a plural? *Work* can follow *the*. *Tuesday* can follow *this*."},
     {id:"e5u4-l1-x7", type:"order", q:"Put these steps in a sensible order for finding the class of an unfamiliar word in a sentence.", items:[
       {t:"Read the whole sentence and find the word’s position.", why:"Start with the evidence in front of you. Class depends on the sentence."},
@@ -195,7 +195,7 @@ ICA.addUnit({
       {table:[["Word","As adjective","As adverb","Note"],["fast","*a fast car*","*She drives fast.*","No *fastly*."],["hard","*a hard test*","*He works hard.*","*Hardly* is a different word."],["hardly","","*She hardly slept.*","Means “almost not”."],["late","*a late bus*","*We arrived late.*","*Lately* means “recently”."],["well","*I am well.* (healthy)","*She plays well.*","The adverb of *good*."],["early","*an early train*","*They left early.*","Ends in *-ly* but is both."]]},
       "Pairs such as *high/highly* and *near/nearly* also have different meanings. *She jumped high* is about height. *A highly paid job* means “very well paid”. *It is nearly noon* means “almost noon”, and *come near* means “come close”. When a word has both a plain adverb and an *-ly* adverb, the meanings often differ. Check a dictionary.",
       {h:"Adjectives that end in -ly"},
-      "*Friendly, lovely, lonely, lively, silly, ugly, elderly* and *costly* are adjectives. There is no adverb *friendlily*, and *friendly* does not work as an adverb. To express the idea, use a phrase: *She spoke in a friendly way* or *She spoke in a friendly manner*. Some words, such as *daily, weekly* and *early*, are both adjectives and adverbs: *a daily visit, They meet daily.*",
+      "*Friendly, lovely, lonely, lively, silly, ugly, elderly* and *costly* are adjectives. A few large dictionaries list the adverb *friendlily*, but it is very rare, and most speakers avoid it. To express the idea, use a phrase: *She spoke in a friendly way* or *She spoke in a friendly manner*. Some words, such as *daily, weekly* and *early*, are both adjectives and adverbs: *a daily visit, They meet daily.*",
       {warn:"Do not add *-ly* to every adjective and do not remove it from every adverb. *Hard* and *fast* are adverbs without it. *Hardly* and *lately* are adverbs with a new meaning."},
       {h:"A corpus check"},
       "A **corpus** is a large collection of real texts that you can search. The Corpus of Contemporary American English (COCA) at english-corpora.org is free after you register. It can search by class. A search for *hard* in the adverb class shows phrases such as *work hard* and *try hard*. A search for *hard* in the adjective class shows *hard work* and *hard time*. You will use this in the Apply tasks.",
@@ -252,14 +252,14 @@ ICA.addUnit({
       ["“I don’t feel well today.”","Right. *Well* follows *feel* and describes the speaker’s health. It is an adjective."],
       ["“Well done!”","*Well* changes the participle *done*. It is an adverb."]
     ]),
-    {id:"e5u4-l2-x8", type:"explain", q:"Sione, a learner of English, asks: “*Quick* becomes *quickly*, so *friendly* must be the adverb of *friend*. How do I say that she talked in a friendly way, with one word?” Explain what you would tell him.", size:"3–4 sentences", prompt:"I would say: …", hint:"Say what class *friendly* is, then give a useful alternative.", model:"*Friendly* already ends in *-ly*, but it is an adjective, made from the noun *friend* plus *-ly*. English has no standard adverb *friendlily*, so there is no one-word form. The usual solution is a phrase, such as *She talked in a friendly way* or *She talked in a friendly manner*. So the *-ly* ending is a clue for many adverbs, but it is not a test, and *fast* and *hard* show the opposite pattern.", points:["Says that friendly is an adjective, not an adverb", "Explains that -ly is a clue, not a test (it can make adjectives from nouns)", "Gives a way to say the idea, such as in a friendly way", "Mentions or hints at a contrasting case, such as fast or hard"]}
+    {id:"e5u4-l2-x8", type:"explain", q:"Sione, a learner of English, asks: “*Quick* becomes *quickly*, so *friendly* must be the adverb of *friend*. How do I say that she talked in a friendly way, with one word?” Explain what you would tell him.", size:"3–4 sentences", prompt:"I would say: …", hint:"Say what class *friendly* is, then give a useful alternative.", model:"*Friendly* already ends in *-ly*, but it is an adjective, made from the noun *friend* plus *-ly*. The adverb *friendlily* is very rare, so there is no natural one-word form. The usual solution is a phrase, such as *She talked in a friendly way* or *She talked in a friendly manner*. So the *-ly* ending is a clue for many adverbs, but it is not a test, and *fast* and *hard* show the opposite pattern.", points:["Says that friendly is an adjective, not an adverb", "Explains that -ly is a clue, not a test (it can make adjectives from nouns)", "Gives a way to say the idea, such as in a friendly way", "Mentions or hints at a contrasting case, such as fast or hard"]}
    ],
    apply:{
     intro:"These tasks use the Corpus of Contemporary American English (COCA, english-corpora.org, free with a registered account; daily search limits apply) and a free dictionary.",
     tasks:[
      {t:"Corpus check: hard as adjective and adverb", how:[
        "Go to english-corpora.org and open COCA. Sign in or register with the free account.",
-       "Search for *hard* and use the part-of-speech option to choose adjective, or type `hard.[j*]`. Note the three words that most often come right after it. Then search `hard.[r*]` (adverb) and note the three words that most often come right before it.",
+       "Search for *hard*, and use the part-of-speech (POS) list on the search page to choose adjective. In the example lines, note three words that often come right after it. Then search again with adverb chosen, and note three words that often come right before it. (The search syntax changes between versions of the site, so use the POS list or the site’s help page.)",
        "Do the same for *hardly*. Write what you see: which meaning does each word have?",
        "Write two sentences of your own for each of the three searches."
      ], write:"hard (adjective) next to… hard (adverb) next to… hardly means…"},
@@ -357,13 +357,13 @@ ICA.addUnit({
     {id:"e5u4-l3-x3", type:"match", q:"Match each auxiliary test to a sentence that shows it.", pairs:[
       ["Negation with *n’t*","She hasn’t left.","The auxiliary *has* takes *n’t* directly."],
       ["Inversion for a question","Can she swim?","The auxiliary *can* moves in front of the subject."],
-      ["Code (the verb is not repeated)","She can swim, and so can he.","*Can* stands for *swim* in the second part."],
+      ["Code (the verb is not repeated)","She can swim, and so can he.","*So can he* means *he can swim*. The auxiliary *can* stands in for the whole verb phrase, so *swim* is not repeated."],
       ["Emphasis","She CAN swim.","The auxiliary carries the stress."]
     ]},
     {id:"e5u4-l3-x4", type:"spot", q:"Ana is learning English. Tap each word that needs a **change** in standard English.", ask:"needs a change", parts:[
       "“I will meet her ", {t:"in", flag:true, why:"*On* goes with days: *on Monday*. *In* goes with months and years."}, " Monday. She is ", {t:"a", flag:true, why:"*Engineer* starts with a vowel sound, so the article is *an*: *an engineer*."}, " engineer and she works ", {t:"at", flag:false, why:"Correct. *At a hospital* is the usual way to give a workplace."}, " a hospital. She ", {t:"don’t", flag:true, why:"With *she*, the auxiliary is *doesn’t*: *She doesn’t like coffee*."}, " like coffee, but she ", {t:"can", flag:false, why:"Correct. A modal is followed by the base verb: *she can drink tea*."}, " drink tea.”"
     ]},
-    {id:"e5u4-l3-x5", type:"number", q:"How many **function words** (closed-class words) are in this sentence? “She can speak English and she will teach it to her friends in the evening.”", answer:10, tol:0, unit:"words", why:"The function words are *she, can, and, she, will, it, to, her, in, the* (pronouns, auxiliaries, a conjunction, a preposition, a determiner and another preposition). The content words are *speak, English, teach, friends* and *evening*.", wrongs:[
+    {id:"e5u4-l3-x5", type:"number", q:"How many **function words** (closed-class words) are in this sentence? “She can speak English and she will teach it to her friends in the evening.”", answer:10, tol:0, unit:"words", why:"The function words are *she, can, and, she, will, it, to, her, in, the*: three pronouns, two auxiliaries, one conjunction, two prepositions and two determiners. The content words are *speak, English, teach, friends* and *evening*.", wrongs:[
       {v:5, tol:0, why:"This counts the content words (*speak, English, teach, friends, evening*). The question asks for the function words."},
       {v:7, tol:0, why:"This forgets the three pronouns (*she, she, it*). Pronouns are a closed class and are function words."}
     ], hint2:"Mark the open-class words first (nouns, main verbs). Every other word is closed class."},
@@ -381,7 +381,7 @@ ICA.addUnit({
       ["“They have lunch at noon.”","Here *have* means “eat” and is a main verb. The question is *Do they have lunch?*"],
       ["“They have a good time.”","*Have* is a main verb in this expression. It needs *do* in questions: *Do they have a good time?*"]
     ]),
-    {id:"e5u4-l3-x8", type:"explain", q:"Mariya, who studies English interpreting and gets nervous speaking English, asks: “Why do we say *in the morning* but *at night*? I cannot find a reason, and it makes me worry before I speak.” Explain what you would tell her.", size:"3–4 sentences", prompt:"I would say: …", hint:"Say whether there is a reason, and give her a way to learn them.", model:"There is no meaning-based reason, so it is not a problem with her thinking. Preposition choices are often fixed habits of the language, and they are learned with the words around them. The best method is to learn them in chunks, such as *in the morning, in the afternoon, at night, at the weekend*, and to say them aloud until they feel natural. A mistake in a small word like this almost never stops a listener from understanding, so she can relax a little when she speaks.", points:["Says that there is no logical reason; it is a fixed habit of the language", "Suggests learning prepositions in chunks, with the nouns they go with", "Mentions that Japanese particles do not map one to one onto English prepositions, or that a translation habit does not help", "Is kind and reassures her that such errors rarely stop understanding"]}
+    {id:"e5u4-l3-x8", type:"explain", q:"Mariya, who studies English interpreting and gets nervous speaking English, asks: “Why do we say *in the morning* but *at night*? I cannot find a reason, and it makes me worry before I speak.” Explain what you would tell her.", size:"3–4 sentences", prompt:"I would say: …", hint:"Say whether there is a reason, and give her a way to learn them.", model:"There is no meaning-based reason, so it is not a problem with her thinking. Preposition choices are often fixed habits of the language, and they are learned with the words around them. The best method is to learn them in chunks, such as *in the morning, in the afternoon, at night, on the weekend* (British English: *at the weekend*), and to say them aloud until they feel natural. Japanese particles such as *ni* do not match English prepositions one to one, so translating word by word does not help here. A mistake in a small word like this almost never stops a listener from understanding, so she can relax a little when she speaks.", points:["Says that there is no logical reason; it is a fixed habit of the language", "Suggests learning prepositions in chunks, with the nouns they go with", "Mentions that Japanese particles do not map one to one onto English prepositions, or that a translation habit does not help", "Is kind and reassures her that such errors rarely stop understanding"]}
    ],
    apply:{
     intro:"These tasks use a free dictionary and a short text or recording. Nothing needs an account.",
@@ -451,17 +451,17 @@ ICA.addUnit({
         "**in-** is a Latin prefix. It attaches to many adjectives of Latin origin: *inactive, incorrect, indirect, incomplete*.",
         "**im-**, **il-**, **ir-** are the same prefix, with the end changed to match the next sound. It is *im-* before *p, b, m* (*impossible, imbalance, immature*), *il-* before *l* (*illegal, illogical*) and *ir-* before *r* (*irregular, irrelevant*)."
       ]},
-      "This change is an example of **assimilation**, the same process you met in Unit 3 (*ten pounds* said as /tɛm paʊndz/). The /n/ of *in-* becomes /m/ before /p/, which is why *impossible* has *m* in the spelling. In the same way, the /n/ becomes /l/ before /l/, and /r/ before /r/.",
+      "This change is an example of **assimilation**, the same kind of process you met in Unit 3 (*ten pounds* said as /tɛm paʊndz/). It happened in Latin, before these words came into English. The /n/ of *in-* became /m/ before /p/, /l/ before /l/ and /r/ before /r/. English kept these spellings, so *impossible* has *m* and *illegal* has *ll*.",
       {table:[["Prefix","Before","Examples"],["in-","most sounds","inactive, incorrect, indirect"],["im-","p, b, m","impossible, imbalance, immature"],["il-","l","illegal, illogical, illiterate"],["ir-","r","irregular, irrelevant, irresponsible"]]},
       "Which prefix a word takes is mostly a fact about that word, so check a dictionary. We say *unhappy*, not *inhappy*, and *impossible*, not *unpossible*. *Un-* tends to go with everyday words, and *in-* with words from Latin and French. Both are tendencies. A word to watch is *inflammable*: here *in-* is the Latin “in, into”, not “not”, so it means the same as *flammable*. Use *flammable* for safety.",
       {tip:"Some words with *un-* have two readings. *Unlockable* can mean “cannot be locked” (*un-* + *lockable*) or “can be unlocked” (*unlock* + *-able*). The same morphemes can join in two orders, and the order changes the meaning."}
     ]},
     {h:"-ness, -ity and the class and stress of suffixes", body:[
-      "Two suffixes make nouns from adjectives: *-ness* and *-ity*. *Happy* gives *happiness*. *Active* gives *activity*. *-ness* is the more open one. It attaches to almost any adjective, native or borrowed: *kindness, awareness, sadness*. *-ity* is choosier. It goes mostly with adjectives from Latin and French: *possibility, activity, nationality*. For many adjectives, only one is normal in everyday use: *kindness* (not *kindity*), *possibility* (the form *possibleness* is rare).",
+      "Two suffixes make nouns from adjectives: *-ness* and *-ity*. *Happy* gives *happiness*. *Active* gives *activity*. *-ness* is the more open one. It attaches to almost any adjective, native or borrowed: *kindness, politeness, sadness*. *-ity* is choosier. It goes mostly with adjectives from Latin and French: *possibility, activity, nationality*. For many adjectives, only one is normal in everyday use: *kindness* (not *kindity*), *possibility* (the form *possibleness* is rare).",
       "Suffixes also change the class of the base. A few common patterns:",
       {table:[["Suffix","Makes","Examples"],["-er, -or","noun (a person or thing that does it), from a verb","teacher, actor, printer"],["-ment, -tion","noun, from a verb","movement, education"],["-ness, -ity","noun, from an adjective","happiness, activity"],["-ize, -ify, -en","verb, from an adjective or noun","modernize, simplify, widen"],["-ful, -less, -ous, -able, -al","adjective","useful, careless, famous, readable, national"],["-ly","adverb from an adjective, or adjective from a noun","slowly (adverb), friendly (adjective)"]]},
       "Remember Unit 3: some suffixes move the stress and some do not. This is partly predictable from the suffix.",
-      {table:[["Suffix","Stress","Examples (GA)"],["-ness, -ful, -er, -ly, -ize, -ify","stays where it was","ˈhappy → ˈhappiness; ˈmodern → ˈmodernize"],["-ity, -ic, -ion","moves to the syllable before the suffix","ˈactive → acˈtivity; ˈorganize → ˌorganiˈzation"]]},
+      {table:[["Suffix","Stress","Examples (GA)"],["-ness, -ful, -er, -ly, -ize","stays where it was","ˈhappy → ˈhappiness; ˈmodern → ˈmodernize"],["-ity, -ic, -ion","moves to the syllable before the suffix","ˈactive → acˈtivity; ˈorganize → ˌorganiˈzation"],["-ify","moves to the syllable before the suffix","ˈsolid → soˈlidify; ˈhumid → huˈmidify"]]},
       "Suffixes can also change the vowels. *Sane* is /ˈseɪn/ in GA, but *sanity* is /ˈsænəti/, with a short vowel. *Nation* is /ˈneɪʃən/ and *national* is /ˈnæʃənəl/. Check a dictionary when it matters, because there are exceptions.",
       {h:"Why this matters"},
       "Word-building lets you guess new words. If you know *happy*, *un-* and *-ness*, you can understand *unhappiness* without a dictionary. It also lets you predict class (*-ize* makes a verb) and stress (*-ity* moves it). Teachers use the same ideas to explain why a learner’s *informations* or *inpossible* is wrong."
@@ -559,7 +559,7 @@ ICA.addUnit({
       "How do you know it is conversion and not a new word? The new class behaves in the new way. A noun that has become a verb takes verb endings: *emailed, emailing*. A verb that has become a noun takes a plural and can follow *a*: *two downloads*. The class test from Lesson 1 settles it.",
       {ex:"We will text you the time.       (verb: texted, texting)\nShe sent me a text.             (noun: two texts)\n\nPlease google the address.       (verb: googled, googling)\nThat meeting is a must.         (noun: musts)", label:"Worked example", mono:true},
       "Conversion is common in English because the language has so few endings. Many noun/verb pairs also change stress (*ˈrecord* and *reˈcord*, Unit 3), but many do not (*a ˈtext* and *to ˈtext*). Dictionaries now list *google* as a verb. The company name stays a trademark, written with a capital letter. People sometimes object to a new conversion, but this is a normal way for English to grow, and many words that people now use without a thought began this way, such as *to host* and *to access*.",
-      {tip:"If a word is new and you cannot find it, try another class. A new verb may be an old noun, or the other way round. Look up the noun form in the dictionary, then ask whether the new use has verb or noun endings."}
+      {tip:"If a word is new and you cannot find it, try another class. A new verb may be an old noun, or the other way around. Look up the noun form in the dictionary, then ask whether the new use has verb or noun endings."}
     ]},
     {h:"Clipping, blending and abbreviations", body:[
       "Three more ways of making new words work on the form of existing words.",
@@ -598,7 +598,7 @@ ICA.addUnit({
       {t:"phone", b:1, why:"A fore-clipping of *telephone*."},
       {t:"brunch", b:2, why:"*Br-* from *breakfast* and *-unch* from *lunch*. Parts of both words, not the whole words."},
       {t:"to email (as in “Please email me.”)", b:3, why:"A noun used as a verb with no change of form. The class changed."},
-      {t:"bookshop", b:0, why:"*Book* + *shop*, two whole words."},
+      {t:"bookstore", b:0, why:"*Book* + *store*, two whole words."},
       {t:"exam", b:1, why:"A back-clipping of *examination*."},
       {t:"smog", b:2, why:"*Sm-* from *smoke* and *-og* from *fog*."},
       {t:"a download", b:3, why:"A verb (*to download*) used as a noun with no change of form."}
@@ -636,14 +636,14 @@ ICA.addUnit({
       ["It is probably a blend that is new or informal. She can check a larger dictionary or a corpus to see how common it is.","Right. The evidence for a new word is its use, so a corpus or a current dictionary is the next check."],
       ["She should not use it in any situation.","Informal blends are fine in informal speech, with a label such as *informal*."]
     ]),
-    {id:"e5u4-l5-x8", type:"explain", q:"Toby, who taught English in Japanese schools and now studies Japanese linguistics, is asked by a former student: “My teacher said never to use a brand name as a verb. Is *to google* really English?” Explain what Toby could say.", size:"3–5 sentences", prompt:"Toby could say: …", hint:"Name the process, give a test, and say what a dictionary does.", model:"Yes, it is English. It is an example of conversion: a word that was a name (and a noun) is used as a verb, with no change in form. You can tell it is a real verb because it takes verb endings (*googled, googling*). Dictionaries record words that many people use over time, and several now list *google* as a verb, though the company name stays a trademark. Her teacher may mean that it can sound informal in formal writing, and in careful writing *search* is an alternative. English has done this for a long time with words like *to host* and *to text*.", points:["Names the process as conversion (a name or noun used as a verb)", "Gives evidence that it behaves like a verb (googled, googling)", "Says that dictionaries record use over time, not permission", "Notes that register matters, such as informal vs formal writing"]}
+    {id:"e5u4-l5-x8", type:"explain", q:"Toby, who taught English in the Japanese countryside for two years and now studies Japanese linguistics, is asked by a former student: “My teacher said never to use a brand name as a verb. Is *to google* really English?” Explain what Toby could say.", size:"3–5 sentences", prompt:"Toby could say: …", hint:"Name the process, give a test, and say what a dictionary does.", model:"Yes, it is English. It is an example of conversion: a word that was a name (and a noun) is used as a verb, with no change in form. You can tell it is a real verb because it takes verb endings (*googled, googling*). Dictionaries record words that many people use over time, and several now list *google* as a verb, though the company name stays a trademark. Her teacher may mean that it can sound informal in formal writing, and in careful writing *search* is an alternative. English has done this for a long time with words like *to host* and *to text*.", points:["Names the process as conversion (a name or noun used as a verb)", "Gives evidence that it behaves like a verb (googled, googling)", "Says that dictionaries record use over time, not permission", "Notes that register matters, such as informal vs formal writing"]}
    ],
    apply:{
     intro:"These tasks use the Corpus of Contemporary American English (COCA, english-corpora.org, free with a registered account; daily search limits apply), a free dictionary, and your own reading.",
     tasks:[
      {t:"Corpus check: google, text and download", how:[
-       "Open COCA at english-corpora.org and sign in. Search for *google* and use the part-of-speech option, or type `google.[v*]` for verbs. Note the verb forms you find (*googled, googling, googles*).",
-       "Search for *text* as a verb (`text.[v*]`) and as a noun (`text.[n*]`). Compare the first ten results for each.",
+       "Open COCA at english-corpora.org and sign in. Search for *google*, and use the part-of-speech (POS) list on the search page to choose verb. Note the verb forms you find (*googled, googling, googles*).",
+       "Search for *text* twice: once with verb chosen in the POS list, and once with noun chosen. Compare the first ten example lines for each.",
        "Look up the same three words in the Cambridge Dictionary or Merriam-Webster. Does the dictionary list each class?",
        "Write two sentences on what the evidence says about conversion."
      ], write:"google as a verb… text noun and verb… The dictionary shows… What the evidence says…"},
@@ -668,7 +668,7 @@ ICA.addUnit({
   checkpoint:["e5u4-q03","e5u4-q07","e5u4-q12","e5u4-q16","e5u4-q22","e5u4-q25","e5u4-q31","e5u4-q34","e5u4-q36","e5u4-q39","e5u4-q43","e5u4-q44"],
   cpBank:[
    Q("e5u4-cp01","e5u4-l1",1,"Which statement about word classes is correct?",2,[
-     ["A word belongs to one class for ever, whatever sentence it is in.","Many words belong to several classes. *Light* can be a noun, a verb or an adjective."],
+     ["A word belongs to one class forever, whatever sentence it is in.","Many words belong to several classes. *Light* can be a noun, a verb or an adjective."],
      ["A word’s class is decided by its meaning alone.","Meaning is only a clue. *Destruction* names an event but behaves as a noun."],
      ["A word’s class is decided by how it behaves: the forms it takes and the job it does in a phrase.","Right. This is why form tests and function tests are used."],
      ["A word’s class is decided by its spelling.","Spelling can help with endings, but *friendly* ends in *-ly* and is an adjective."]]),
@@ -760,7 +760,7 @@ ICA.addUnit({
     levels:{
      starter:[
       "An **adjective** says something about a noun: *a tall man, The man is tall.* An **adverb** changes a verb, an adjective, another adverb or a whole clause: *runs quickly, very tall, Probably it will rain.*",
-      "Many adverbs end in *-ly* (*quickly, carefully*). But some adjectives end in *-ly* too: *friendly, lovely, lonely, elderly*. There is no adverb *friendlily*. To express the idea, say *in a friendly way*.",
+      "Many adverbs end in *-ly* (*quickly, carefully*). But some adjectives end in *-ly* too: *friendly, lovely, lonely, elderly*. The adverb *friendlily* is very rare. To express the idea, say *in a friendly way*.",
       "Some words are both: *fast* (*a fast car, She drives fast*), *hard* (*a hard test, He works hard*), *early* and *late*. Do not add *-ly* to these. And note that *hardly* and *lately* are different words: *hardly* means “almost not”, and *lately* means “recently”.",
       "*Good* is an adjective (*a good player*). Its adverb is *well* (*She plays well*). *Well* is also an adjective meaning “healthy” (*I don’t feel well*).",
       {key:"The ending -ly is a clue, not a test. Ask what the word changes."}
@@ -799,7 +799,7 @@ ICA.addUnit({
       "Compared with Japanese: Japanese has no articles, so a noun such as *hon* can mean “a book”, “the book” or “books”. Japanese particles follow the noun, and one particle can match several English prepositions (*ni* is “to” and “in”). Negation is part of the Japanese verb (*tabenai*), so English *do*-support is new."
      ],
      pro:[
-      "The Cambridge Grammar of the English Language uses the term *determinative* for the class and *determiner* for the function. It also includes words such as *after* and *before* among the prepositions, even when a clause follows (*after we ate*), where traditional grammars use the term subordinating conjunction. This shows that class lists depend on the analysis.",
+      "The Cambridge Grammar of the English Language uses the term *determinative* for the class and *determiner* for the function. It also includes words such as *after* and *before* among the prepositions, even when a clause follows (*after we ate*), where traditional grammars use the term subordinating conjunction. This is one modern analysis, and many teaching grammars and dictionaries keep the traditional label. It shows that class lists depend on the analysis.",
       "The NICE properties (Negation, Inversion, Code, Emphasis) are the standard test for auxiliaries. The auxiliary *do* is a late development: *do*-support spread through Early Modern English, and it is now the way to form questions and negatives with main verbs. Earlier English could say *Know you him?* Modern English cannot.",
       "The articles come from older words. The indefinite *a(n)* comes from the Old English word for *one*, and *the* comes from a demonstrative. This is typical of closed classes: their members often come from older content or demonstrative words by a long process of change. New members are rare because that process is slow.",
       "Some forms are ambiguous between classes: *that* is a determiner (*that book*), a pronoun (*I like that*), a conjunction (*I know that she left*) and a relative word (*the book that I read*). Dictionaries give each use its own label. A teacher should show learners the frame for each use."
@@ -950,7 +950,7 @@ ICA.addUnit({
    Q("e5u4-q12","e5u4-l2",1,"Which word is both an adjective and an adverb, with the same spelling?",0,[
      ["fast","Right. *A fast car* (adjective) and *She drives fast* (adverb)."],
      ["quick","*Quick* is an adjective. The adverb is *quickly*."],
-     ["friendly","An adjective only. There is no adverb *friendlily*."],
+     ["friendly","An adjective in normal use. The adverb *friendlily* is very rare, so people say *in a friendly way*."],
      ["careful","An adjective. The adverb is *carefully*."]]),
    Q("e5u4-q13","e5u4-l2",2,"What is the difference between “He works hard” and “He hardly works”?",1,[
      ["There is no difference.","The two sentences have almost opposite meanings."],
@@ -1053,7 +1053,7 @@ ICA.addUnit({
      ["4","Right. *Dis-* + *agree* + *-ment* + *-s*."]]),
    Q("e5u4-q32","e5u4-l4",2,"Which form is correct?",1,[
      ["inlegal","Before *l*, the prefix *in-* changes to *il-*."],
-     ["illegal","Right. The /n/ becomes /l/ before /l/, and the spelling shows it."],
+     ["illegal","Right. In Latin, the /n/ of *in-* became /l/ before /l/, and the English spelling keeps it."],
      ["unlegal","*Un-* does not go with this word in standard English."],
      ["imlegal","*Im-* is used before *p, b* and *m*, not before *l*."]]),
    Q("e5u4-q33","e5u4-l4",2,"What happens to the word class when *-ness* is added to *kind*?",0,[
@@ -1108,11 +1108,11 @@ ICA.addUnit({
      ["An acronym of the English phrase *personal computer*.","It is not made of initials. It is made of the first parts of the Japanese forms."],
      ["A mistake that English speakers do not understand.","It is a normal Japanese word."],
      ["A clipping of *pāsonaru konpyūtā* (“personal computer”)","Right. The first parts of the two words are kept."]]),
-   Q("e5u4-q43","e5u4-l5",3,"Mei hears a colleague say “I will bin that report.” She asks what kind of word *bin* is. What is the best answer?",2,[
-     ["It is a clipping of *binary*.","There is no evidence for this, and the meaning does not fit."],
+   Q("e5u4-q43","e5u4-l5",3,"Mei hears a colleague say “I will trash that report.” She asks what kind of word *trash* is here. What is the best answer?",2,[
+     ["It is a clipping of *trash can*.","*Trash* is an older word, and *trash can* is built from it. Nothing has been cut off."],
      ["It is an acronym.","It is not made of first letters."],
-     ["It is the noun *bin* used as a verb with no change of form, so it is conversion.","Right. It takes verb endings (*binned, binning*)."],
-     ["It is a blend of *bin* and *in*.","Nothing is blended. There is only the one word."]]),
+     ["It is the noun *trash* used as a verb with no change of form, so it is conversion.","Right. It takes verb endings (*trashed, trashing*)."],
+     ["It is a blend of *trash* and *crash*.","Nothing is blended. There is only the one word."]]),
    Q("e5u4-q44","e5u4-l5",3,"A friend says: “*Hangry* is not a real word, because it is not in my dictionary.” Which reply is best?",1,[
      ["She is right. If a dictionary does not list a word, nobody uses it.","A dictionary records use. It may not list new or informal words."],
      ["A word is real when many people use it, and a dictionary follows that use. A newer or bigger dictionary, or a corpus, can show whether *hangry* is common.","Right. The evidence is use over time."],

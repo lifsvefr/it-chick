@@ -1,12 +1,12 @@
 /* Academic Language · Academic English Unit 2 (e1u2) · Sentences and paragraphs */
 ICA.addUnit({
   id:"e1u2", track:"e1", n:2, title:"Sentences and paragraphs", icon:"✍️",
-  blurb:"The language of academic writing, sentence by sentence: formal and informal choices, sentence patterns that join ideas clearly, the grammar points that trouble most writers (articles, countable nouns, agreement, tense and the passive), paragraphs that hold together, and claims that are exactly as strong as the evidence, in as few words as clarity allows.",
+  blurb:"The language of academic writing, sentence by sentence. Formal and informal choices. Sentence patterns that join ideas clearly. The grammar points that trouble most writers (articles, countable nouns, agreement, tense and the passive). Paragraphs that hold together. Claims that are exactly as strong as the evidence, in as few words as clarity allows.",
   goals:[
-    "Choose formal wording for an academic essay (full forms, precise verbs, specific words, no casual “you”) while knowing which phrasal verbs are perfectly normal",
-    "Build simple, compound and complex sentences, join ideas with the right subordinator or transition, and fix run-ons, comma splices, fragments and faulty parallel structure",
-    "Use articles, countable and uncountable nouns, subject–verb agreement, tense and the passive accurately in academic writing, and know where conventions vary",
-    "Write paragraphs with a clear topic sentence, support and a closing or linking sentence, held together by given-to-new order, clear reference and accurate transition signals",
+    "Choose formal wording for an academic essay (full forms, precise verbs, specific words, no casual “you”). Know which phrasal verbs are perfectly normal",
+    "Build simple, compound and complex sentences. Join ideas with the right subordinator or transition. Fix run-ons, comma splices, fragments and faulty parallel structure",
+    "Use articles, countable and uncountable nouns, subject–verb agreement, tense and the passive accurately in academic writing. Know where conventions vary",
+    "Write paragraphs with a clear topic sentence, support and a closing or linking sentence. Hold them together with given-to-new order, clear reference and accurate transition signals",
     "Hedge and boost claims with modal verbs, adverbs and phrases such as “appears to” and “it is likely that”, and cut empty words without cutting meaning"
   ],
   read:[
@@ -16,7 +16,7 @@ ICA.addUnit({
   lessons:[
   /* ===================== LESSON 1 ===================== */
   {id:"e1u2-l1", title:"Formal and informal choices", minutes:50,
-   hook:{q:"A classmate tells you: “Never use phrasal verbs in academic writing.” Which sentence shows that this advice is too simple?", options:["The team carried out interviews in four districts.","We didn’t get much data.","Lots of studies say this.","The results were really nice."], answer:0, reveal:"**“Carried out” is a phrasal verb, and it is completely normal in research articles.** So are “set up” and “point out”, and other multi-word verbs such as “focus on” and “rely on”. The real advice is narrower: some phrasal verbs, such as “look into” or “come up with”, sound conversational, and a single verb such as “investigate” or “devise” is often more precise. The other three sentences each have a different informal feature (a contraction, “lots of”, “really nice”). This lesson sorts out which choices matter and why."},
+   hook:{q:"A classmate tells you: “Never use phrasal verbs in academic writing.” Which sentence shows that this advice is too simple?", options:["The team carried out interviews in four districts.","We didn’t get much data.","Lots of studies say this.","The results were really nice."], answer:0, reveal:"**“Carried out” is a phrasal verb, and it is completely normal in research articles.** So are “set up” and “point out”, and other multi-word verbs such as “focus on” and “rely on”. The real advice is narrower. Some phrasal verbs, such as “look into” or “come up with”, sound conversational. A single verb such as “investigate” or “devise” is often more precise. The other three sentences each have a different informal feature (a contraction, “lots of”, “really nice”). This lesson sorts out which choices matter and why."},
    goals:[
      "Explain what “formal” means in academic English, and why it is about precision more than long words",
      "Replace contractions, conversational phrasal verbs, the general “you” and vague words in a formal essay",
@@ -50,11 +50,11 @@ ICA.addUnit({
       "Contractions are fine inside direct quotations (copy the speaker’s words exactly) and in less formal genres. If you are unsure, check two or three recent texts of the same type in your field, or ask your tutor."
     ]},
     {h:"Phrasal verbs: which ones to change", body:[
-      "A [[phrasal-verb]] is a verb plus a small word such as “up”, “out”, “into” or “off”, often with a meaning you can’t guess from the parts: “come up with” means “think of an idea”, not “come” and “up”. English has thousands of them.",
-      {tip:"Grammar books often separate **phrasal verbs** in the strict sense (a verb plus an adverb particle, such as “carry out” or “set up”) from **prepositional verbs** (a verb plus a preposition, such as “focus on”, “rely on” or “look into”). Many learner books and dictionaries call them all phrasal verbs or multi-word verbs, and this lesson does the same, because the style question is the same for both."},
+      "A [[phrasal-verb]] is a verb plus a small word such as “up”, “out”, “into” or “off”. Its meaning is often one you can’t guess from the parts: “come up with” means “think of an idea”, not “come” and “up”. English has thousands of them.",
+      {tip:"Grammar books often separate **phrasal verbs** in the strict sense from **prepositional verbs**. A phrasal verb is a verb plus an adverb particle, such as “carry out” or “set up”. A prepositional verb is a verb plus a preposition, such as “focus on”, “rely on” or “look into”. Many learner books and dictionaries call them all phrasal verbs or multi-word verbs. This lesson does the same, because the style question is the same for both."},
       "They are not all the same. It helps to think of three groups.",
       {h:"1. Normal in academic writing: keep them"},
-      "Many multi-word verbs are standard in research articles, often because there is no better single verb: **carry out** (a study), **set up** (a system), **point out**, **focus on**, **rely on**, **consist of**, **account for**, **result in**, **depend on**. Write “The survey was carried out in March” without worrying.",
+      "Many multi-word verbs are standard in research articles, often because there is no better single verb. Examples: **carry out** (a study), **set up** (a system), **point out**, **focus on**, **rely on**, **consist of**, **account for**, **result in**, **depend on**. Write “The survey was carried out in March” without worrying.",
       {h:"2. Conversational: often better as a single verb"},
       {table:[
         ["Conversational","More formal and precise"],
@@ -95,8 +95,8 @@ ICA.addUnit({
         ["kind of, sort of","Is this a hedge?","somewhat, partly, to some extent"],
         ["etc., and so on","What else is in the list?","name the items, or write “such as” plus two or three examples"]
       ]},
-      "Other conversational habits to avoid in a formal essay: exclamation marks, lots of rhetorical questions (one, well placed, can work), “like” as a filler, and clichés such as “in today’s world” or “since the dawn of time”.",
-      {tip:"Watch “much” and “many” when you replace “a lot of”. “Many” goes with countable plurals (many studies, many farmers). “Much” goes with uncountable nouns (much research, much evidence), and in positive statements “much” can sound stiff, so “a great deal of” or “considerable” often reads better: “There is considerable evidence that…”. Lesson 3 explains countable and uncountable nouns."},
+      "Avoid other conversational habits in a formal essay. These are exclamation marks, lots of rhetorical questions (one, well placed, can work), “like” as a filler, and clichés such as “in today’s world” or “since the dawn of time”.",
+      {tip:"Watch “much” and “many” when you replace “a lot of”. “Many” goes with countable plurals (many studies, many farmers). “Much” goes with uncountable nouns (much research, much evidence). In positive statements “much” can sound stiff, so “a great deal of” or “considerable” often reads better: “There is considerable evidence that…”. Lesson 3 explains countable and uncountable nouns."},
       {warn:"“And” or “But” at the start of a sentence is not a grammar mistake, and many good writers do it. In formal essays, though, many tutors prefer “In addition,” or “However,”. Follow your tutor or style guide; it is a style choice, not a rule of English."}
     ]},
     {h:"Spelling: pick one variety and stay with it", body:[
@@ -175,7 +175,7 @@ ICA.addUnit({
     {id:"e1u2-l1-x8", type:"explain", q:"Your draft essay says: “In this essay I’ll talk about how rents went up a lot in Accra.” Rewrite it for a formal essay, and explain each change you made, including one grammar trap you avoided.", size:"3–4 sentences", prompt:"My version: … I changed …", hint:"Look at the contraction, the conversational phrasal verbs and the vague words.", model:"Formal version: “This essay discusses the sharp rise in rents in Accra.” I removed the contraction “I’ll” and let the essay be the subject. I replaced the conversational phrasal verbs “talk about” and “went up” with precise single words, “discusses” and “rise”, and changed the vague “a lot” to “sharp” (a real figure would be better still). The grammar trap: “discuss” takes no “about”, so “discusses about” would be wrong.", points:["Removes the contraction", "Replaces conversational phrasal verbs with single, more precise words", "Replaces vague “a lot” with something precise", "Notes that “discuss” takes no “about”"]}
    ],
    apply:{intro:"Short tasks with your own writing or a text from your field. Use the notes box for each.", tasks:[
-    {t:"Rewrite a paragraph more formally", how:["Find a paragraph you wrote informally: a message, a social media post or an old draft (or write five sentences about your day at work or study, as you would say them to a friend).","Underline every contraction, conversational phrasal verb, general “you” and vague word (thing, stuff, a lot, really, get).","Rewrite the paragraph for a formal report. Use a learner dictionary to check the grammar of each new verb.","Read both versions. Note one place where the formal version forced you to be more precise."], write:"My original… The features I underlined… My formal version… Where I had to be more precise…"},
+    {t:"Rewrite a paragraph more formally", how:["Find a paragraph you wrote informally, such as a message, a social media post or an old draft. Or write five sentences about your day at work or study, as you would say them to a friend.","Underline every contraction, conversational phrasal verb, general “you” and vague word (thing, stuff, a lot, really, get).","Rewrite the paragraph for a formal report. Use a learner dictionary to check the grammar of each new verb.","Read both versions. Note one place where the formal version forced you to be more precise."], write:"My original… The features I underlined… My formal version… Where I had to be more precise…"},
     {t:"Collect phrasal verbs from your field", how:["Open a free research article or textbook chapter in your subject.","Find five phrasal or multi-word verbs (for example carry out, focus on, consist of, set up).","For each one, write the whole phrase it appears in.","Decide: is it standard here, or could a single verb do the job better?"], write:"1. Phrase from the text… standard or replace?… 2. …"},
     {t:"Choose your spelling variety", how:["Check whether your university, department or target journal states a spelling preference (style guides and author instructions usually say).","Set your word processor’s language to that variety (for example English (United Kingdom) or English (United States)).","Write down five words you often use that differ between US and UK spelling, in your chosen form."], write:"My variety… Where the rule comes from… Five words in my variety…"}
    ], proof:"A before-and-after paragraph, a list of five phrasal verbs from your field with your decision on each, and a note of the spelling variety you will use."},
@@ -186,7 +186,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 2 ===================== */
   {id:"e1u2-l2", title:"Building clear sentences", minutes:55,
-   hook:{q:"Which of these is a complete sentence in formal written English?", options:["Because the sample was small.","The sample was small.","Although the data were limited.","Which made the results hard to generalize."], answer:1, reveal:"**Only “The sample was small.” can stand alone.** The other three are **fragments**: they start with a word (because, although, which) that makes them depend on another idea, so the reader is left waiting for the rest. In speech we say fragments all the time, and they sound fine. In formal writing they look unfinished. This lesson shows how English sentences are built, how to join ideas, and how to fix the most common sentence errors."},
+   hook:{q:"Which of these is a complete sentence in formal written English?", options:["Because the sample was small.","The sample was small.","Although the data were limited.","Which made the results hard to generalize."], answer:1, reveal:"**Only “The sample was small.” can stand alone.** The other three are **fragments**. They start with a word (because, although, which) that makes them depend on another idea, so the reader is left waiting for the rest. In speech we say fragments all the time, and they sound fine. In formal writing they look unfinished. This lesson shows how English sentences are built, how to join ideas, and how to fix the most common sentence errors."},
    goals:[
      "Identify clauses, and tell simple, compound and complex sentences apart",
      "Join ideas with coordinators (and, but, so) and subordinators (because, although, whereas) that show the right relationship",
@@ -196,12 +196,12 @@ ICA.addUnit({
    learn:[
     {h:"The building block: the clause", body:[
       {lead:"Think of a sentence as a building made of blocks. The basic block is the **clause**."},
-      "A [[clause]] is a group of words with a **subject** (who or what the sentence is about) and a **verb that shows tense** (such as “rose”, “is”, “has changed”, “will open”). “Rainfall declined” is a clause. “The decline in rainfall” is not: it has no verb, so it is just a noun phrase.",
+      "A [[clause]] is a group of words with a **subject** (who or what the sentence is about) and a **verb that shows tense** (such as “rose”, “is”, “has changed”, “will open”). “Rainfall declined” is a clause. “The decline in rainfall” is not. It has no verb, so it is just a noun phrase.",
       "(Grammar books also describe **non-finite clauses**, built on an -ing form or a “to” infinitive with no tense, such as “showing that demand was high”. They can’t make a sentence on their own. In this lesson, “clause” means a clause with a verb that shows tense, the kind every full sentence needs.)",
       "There are two kinds of clause:",
       {list:[
         "An [[independent-clause]] can stand alone as a sentence: “Rainfall declined.”",
-        "A [[dependent-clause]] can’t stand alone. It begins with a word such as “because”, “although”, “when”, “if”, “which” or “who”, and it needs an independent clause to lean on: “because rainfall declined…” leaves the reader waiting for the main point."
+        "A [[dependent-clause]] can’t stand alone. It begins with a word such as “because”, “although”, “when”, “if”, “which” or “who”. It needs an independent clause to go with it. For example, “because rainfall declined…” leaves the reader waiting for the main point."
       ]},
       "Once you can see the clauses in a sentence, most punctuation decisions and most sentence errors become easy to understand. A useful habit when you check a long sentence: underline each verb that shows tense, then find its subject. Each pair is one clause."
     ]},
@@ -214,7 +214,7 @@ ICA.addUnit({
         ["Complex","One independent clause plus one or more dependent clauses","Because rainfall declined, crop yields fell."],
         ["Compound-complex","Two or more independent clauses plus at least one dependent clause","Because rainfall declined, crop yields fell, and many families left the region."]
       ]},
-      {warn:"“Simple” does not mean short. “The rapid growth of informal settlements on the edges of large cities has put pressure on water supplies” is a simple sentence: it has only one clause, with one subject (“the rapid growth…”) and one verb (“has put”). Academic English often packs a lot of information into the [[noun-phrase|noun phrases]] of simple sentences ([[nominalisation]] is one way it does this; see {{noun-phrases-nominalisation|Unit 1}})."},
+      {warn:"“Simple” does not mean short. Take “The rapid growth of informal settlements on the edges of large cities has put pressure on water supplies”. This is a simple sentence: it has only one clause, with one subject (“the rapid growth…”) and one verb (“has put”). Academic English often packs a lot of information into the [[noun-phrase|noun phrases]] of simple sentences. [[nominalisation]] is one way it does this; see {{noun-phrases-nominalisation|Unit 1}}."},
       "Good academic writing mixes all four types. A paragraph made only of short simple sentences feels choppy and hides the links between ideas. A paragraph of very long compound-complex sentences tires the reader. Use the structure that shows how the ideas relate."
     ]},
     {h:"Joining ideas: coordinators and subordinators", body:[
@@ -229,7 +229,7 @@ ICA.addUnit({
         ["Time","when, after, before, until, once","Once the data were cleaned, the analysis began."],
         ["Purpose","so that","The forms were translated so that all residents could take part."]
       ]},
-      "Punctuation: when the dependent clause comes **first**, put a comma after it (some writers leave it out after a very short clause, but the comma is never wrong there). When it comes **second**, you usually don’t need a comma: “The clinic closed because the road flooded.” With contrast words such as “although”, “whereas” and “while”, many writers do use a comma in the second position too.",
+      "Punctuation: when the dependent clause comes **first**, put a comma after it. Some writers leave it out after a very short clause, but the comma is never wrong there. When it comes **second**, you usually don’t need a comma: “The clinic closed because the road flooded.” With contrast words such as “although”, “whereas” and “while”, many writers do use a comma in the second position too.",
       {tip:"Three subordinators have two meanings. “Since” can mean time (“since 2015”) or reason; “while” can mean time or contrast; “as” can mean time or reason. If a reader could take it either way, choose a clearer word: “because” for reason, “whereas” for contrast."}
     ]},
     {h:"Two joining errors to avoid", body:[
@@ -267,7 +267,7 @@ ICA.addUnit({
         ["Showing that demand was high.","An -ing phrase on its own, with no subject","Lines formed every morning, showing that demand was high."]
       ]},
       "The usual fix is to **attach** the fragment to the sentence before it, or to **add** the missing subject or verb.",
-      "Watch “such as” too. It introduces examples inside a sentence (“crops such as maize and cassava”), so a sentence can’t begin with it and stop: “Such as maize and cassava.” is a fragment."
+      "Watch “such as” too. It introduces examples inside a sentence (“crops such as maize and cassava”). So a sentence can’t begin with it and stop: “Such as maize and cassava.” is a fragment."
     ]},
     {h:"Parallel structure", body:[
       "[[parallel-structure|Parallel structure]] means that items doing the same job in a sentence have the same grammatical form. It makes lists and comparisons easy to read.",
@@ -277,7 +277,7 @@ ICA.addUnit({
         ["The program aimed not only to reduce costs but also improving access.","The program aimed not only to reduce costs but also to improve access."],
         ["Participants were asked to read the text, summarizing it and then a discussion.","Participants were asked to read the text, summarize it and then discuss it."]
       ]},
-      "Pairs such as **both … and**, **either … or**, **neither … nor** and **not only … but also** need the same form after each part: “both in rural and urban areas” is less balanced than “in both rural and urban areas”.",
+      "Pairs such as **both … and**, **either … or**, **neither … nor** and **not only … but also** need the same form after each part. “Both in rural and urban areas” is less balanced than “in both rural and urban areas”.",
       "Parallel structure matters in **bullet lists and headings** too. If one bullet starts with a verb (“Collect the data”), they all should.",
       {tip:"The comma before “and” at the end of a list (“income, education, and car ownership”) is called the serial or Oxford comma. Some style guides, APA among them, require it; others usually leave it out. This unit’s examples leave it out. Both are correct. Follow your guide and be consistent."},
       {terms:["clause","independent-clause","dependent-clause","compound-sentence","complex-sentence","coordinating-conjunction","subordinator","conjunctive-adverb","comma-splice","run-on-sentence","sentence-fragment","parallel-structure"]}
@@ -340,7 +340,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 3 ===================== */
   {id:"e1u2-l3", title:"Grammar trouble spots", minutes:60,
-   hook:{q:"Which of these nouns is usually **uncountable** in academic English, so you would not normally put “a” before it or add -s?", options:["study","result","evidence","finding"], answer:2, reveal:"**Evidence.** You can write “a study”, “two results” and “the main findings”, but not “an evidence” or “evidences”. To count it, say “a piece of evidence” or name what the evidence is: “three studies”. “Research” and “information” work the same way. Countable and uncountable nouns control which articles, verbs and words such as “many” or “much” you use, so this lesson starts there and then moves to articles, agreement, tense and the passive."},
+   hook:{q:"Which of these nouns is usually **uncountable** in academic English, so you would not normally put “a” before it or add -s?", options:["study","result","evidence","finding"], answer:2, reveal:"**Evidence.** You can write “a study”, “two results” and “the main findings”, but not “an evidence” or “evidences”. To count it, say “a piece of evidence” or name what the evidence is: “three studies”. “Research” and “information” work the same way. Countable and uncountable nouns control which articles, verbs and words such as “many” or “much” you use. So this lesson starts there, and then moves to articles, agreement, tense and the passive."},
    goals:[
      "Tell countable from uncountable nouns, including research, evidence, information and data",
      "Choose a, an, the or no article using a clear set of questions",
@@ -376,10 +376,10 @@ ICA.addUnit({
         "**Data.** Traditionally plural (“the data **are**”; the rare singular is “datum”), and APA Style treats it as plural. Many writers, especially in computing and everyday English, treat it as uncountable (“the data **is**”). Both are widely used. Follow your style guide and be consistent.",
         "**Latin and Greek plurals.** criterion → criteria, phenomenon → phenomena, analysis → analyses, hypothesis → hypotheses, thesis → theses. “Criteria” is plural: “These criteria **are**…”, not “This criteria is…”."
       ]},
-      {tip:"[[learner-dictionary|Learner dictionaries]] (such as Cambridge, Oxford, Longman or Collins COBUILD) mark each noun as countable or uncountable, with labels such as [C] and [U] or the words “countable” and “uncountable” (see {{dictionaries-corpora}}). When a noun matters in your field, look it up once and note the label."}
+      {tip:"[[learner-dictionary|Learner dictionaries]] (such as Cambridge, Oxford, Longman or Collins COBUILD) mark each noun as countable or uncountable. They use labels such as [C] and [U] or the words “countable” and “uncountable” (see {{dictionaries-corpora}}). When a noun matters in your field, look it up once and note the label."}
     ]},
     {h:"Articles: a, an, the or nothing", body:[
-      "Articles are among the hardest parts of English for many learners, partly because many languages, including Chinese, Japanese, Korean, Russian and Polish, have no articles at all. Others, such as Spanish, French and Arabic, have articles but use them in different places. (Spanish says “El agua es esencial”, with an article, where English says “Water is essential”, without one.) Few native speakers could explain all the rules, but a short set of questions covers most academic sentences. Grammar books call the “nothing” option the **zero article**; see [[article-grammar]].",
+      "Articles are among the hardest parts of English for many learners. Many languages, including Chinese, Japanese, Korean, Russian and Polish, have no articles at all. Others, such as Spanish, French and Arabic, have articles but use them in different places. (Spanish says “El agua es esencial”, with an article, where English says “Water is essential”, without one.) Few native speakers could explain all the rules, but a short set of questions covers most academic sentences. Grammar books call the “nothing” option the **zero article**; see [[article-grammar]].",
       {fig:'<svg viewBox="0 0 340 352"><defs><marker id="e1u2m2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path class="d-inkf" d="M0,0 L10,5 L0,10 z"/></marker></defs><rect class="d-panel" x="50" y="8" width="240" height="48" rx="8" stroke-width="2"/><text x="170" y="28" text-anchor="middle">Is the noun countable</text><text x="170" y="46" text-anchor="middle">and singular?</text><path class="d-ink" d="M120,56 L88,100" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><path class="d-ink" d="M220,56 L252,100" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><text class="s" x="82" y="80" text-anchor="middle">yes</text><text class="s" x="268" y="74" text-anchor="middle">no: plural or</text><text class="s" x="268" y="88" text-anchor="middle">uncountable</text><rect class="d-lup" x="10" y="104" width="155" height="52" rx="8" stroke-width="2"/><text x="87" y="125" text-anchor="middle">Does the reader</text><text x="87" y="143" text-anchor="middle">know which one?</text><rect class="d-lup" x="175" y="104" width="155" height="52" rx="8" stroke-width="2"/><text x="252" y="125" text-anchor="middle">Specific ones the</text><text x="252" y="143" text-anchor="middle">reader can identify?</text><path class="d-ink" d="M60,156 L46,196" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><path class="d-ink" d="M114,156 L128,196" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><path class="d-ink" d="M225,156 L211,196" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><path class="d-ink" d="M279,156 L293,196" stroke-width="2" fill="none" marker-end="url(#e1u2m2)"/><text class="s" x="40" y="178" text-anchor="middle">yes</text><text class="s" x="134" y="178" text-anchor="middle">no</text><text class="s" x="205" y="178" text-anchor="middle">yes</text><text class="s" x="300" y="178" text-anchor="middle">no</text><rect class="d-sage" x="10" y="200" width="74" height="40" rx="6" stroke-width="2"/><text x="47" y="225" text-anchor="middle">the</text><rect class="d-gold" x="91" y="200" width="74" height="40" rx="6" stroke-width="2"/><text x="128" y="225" text-anchor="middle">a / an</text><rect class="d-sage" x="175" y="200" width="74" height="40" rx="6" stroke-width="2"/><text x="212" y="225" text-anchor="middle">the</text><rect class="d-rose" x="256" y="200" width="74" height="40" rx="6" stroke-width="2"/><text x="293" y="225" text-anchor="middle">nothing</text><text class="s" x="47" y="260" text-anchor="middle">the survey</text><text class="s" x="47" y="276" text-anchor="middle">(named before)</text><text class="s" x="128" y="260" text-anchor="middle">a survey</text><text class="s" x="128" y="276" text-anchor="middle">(one of many)</text><text class="s" x="212" y="260" text-anchor="middle">the results</text><text class="s" x="212" y="276" text-anchor="middle">(of this study)</text><text class="s" x="293" y="260" text-anchor="middle">evidence</text><text class="s" x="293" y="276" text-anchor="middle">(in general)</text><text class="s" x="170" y="318" text-anchor="middle">A starting point: names, fixed phrases and</text><text class="s" x="170" y="336" text-anchor="middle">set expressions have their own patterns.</text></svg>', alt:"A decision tree. Top question: is the noun countable and singular? If yes: does the reader know which one? Yes gives the (the survey, named before); no gives a or an (a survey, one of many). If no, meaning plural or uncountable: specific ones the reader can identify? Yes gives the (the results, of this study); no gives no article (evidence, in general). Note: names, fixed phrases and set expressions have their own patterns.", cap:"Two questions decide most articles. A singular countable noun almost always needs a word in front of it."},
       {h:"Use “the” when the reader knows which one"},
       {list:[
@@ -393,7 +393,7 @@ ICA.addUnit({
       {h:"Use no article for things in general"},
       "Plural and uncountable nouns used in a general sense take no article: “Water is essential for life.” “Students often underestimate living costs.” “Research on sleep has grown.” Compare a specific case: “**The** water in the village well was contaminated.”",
       {key:"A singular countable noun almost never stands alone. “Survey shows…” is wrong in a sentence; write “A survey shows…”, “The survey shows…” or “Surveys show…”."},
-      {warn:"**Names.** Most names of people, cities and countries take no article (Nairobi, Brazil), but plural names and names with words such as “Republic”, “Kingdom” or “States” usually do: the Philippines, the Netherlands, the United Kingdom, the United States. Rivers and oceans take “the” (the Nile, the Pacific). There are also variety differences: UK English says “in hospital” and “at university”, while US English says “in the hospital” and “in college”. Both are correct."}
+      {warn:"**Names.** Most names of people, cities and countries take no article (Nairobi, Brazil). But plural names and names with words such as “Republic”, “Kingdom” or “States” usually do: the Philippines, the Netherlands, the United Kingdom, the United States. Rivers and oceans take “the” (the Nile, the Pacific). The varieties of English also differ: UK English says “in hospital” and “at university”, while US English says “in the hospital” and “in college”. Both are correct."}
     ]},
     {h:"Subject–verb agreement", body:[
       "[[subject-verb-agreement|Subject–verb agreement]] means that a singular subject takes a singular verb and a plural subject takes a plural verb. In the present simple, the singular form usually ends in -s: “The study **shows**”, “The studies **show**”. The rule is simple; the trouble is finding the real subject in a long academic sentence.",
@@ -406,8 +406,8 @@ ICA.addUnit({
         ["Uncountable nouns","Research **shows**… Evidence **suggests**…","Uncountable nouns take a singular verb."],
         ["Subjects in -ics","Economics **is** a popular subject. The statistics **show** a rise.","A field of study is singular; “statistics” meaning figures is plural."]
       ]},
-      "**Collective nouns** (committee, government, team, staff) usually take a singular verb in US English. In UK English they can take a singular verb when the group acts as one (“The committee **has** decided”) or a plural verb when you think of the members (“The committee **have** different views”). Both patterns are correct; be consistent.",
-      {tip:"To check a long sentence, mentally remove everything between the main noun and its verb. In “The quality of the water samples from the three villages was poor”, remove “of the water samples from the three villages” and you are left with “The quality … was poor”: singular subject, singular verb."}
+      "**Collective nouns** (committee, government, team, staff) usually take a singular verb in US English. In UK English they can take a singular verb when the group acts as one (“The committee **has** decided”). They can take a plural verb when you think of the members (“The committee **have** different views”). Both patterns are correct; be consistent.",
+      {tip:"To check a long sentence, mentally remove everything between the main noun and its verb. Take “The quality of the water samples from the three villages was poor”. Remove “of the water samples from the three villages” and you are left with “The quality … was poor”: singular subject, singular verb."}
     ]},
     {h:"Tense in academic writing", body:[
       "There is no single rule for [[tense-in-academic-writing|tense in academic writing]], but there are strong conventions. This table shows the pattern in most fields, based on the APA Style guidance on verb tense and the OpenStax *Writing Guide* handbook. Your field or style guide may differ.",
@@ -508,7 +508,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 4 ===================== */
   {id:"e1u2-l4", title:"Paragraphs that hold together", minutes:55,
-   hook:{q:"Two paragraphs contain exactly the same facts, but readers find one much easier to follow. What is most likely to be different?", options:["The easier one uses longer, more academic words","The order of information and the links between sentences","The easier one uses more passive verbs","The easier one has more sentences"], answer:1, reveal:"**Order and links.** Readers follow a paragraph best when each sentence starts from something they already know and moves to something new, and when words such as “this”, “however” and “as a result” show exactly how the ideas connect. Linguists call these qualities **cohesion** and **coherence**. This lesson shows how to build paragraphs that have them."},
+   hook:{q:"Two paragraphs contain exactly the same facts, but readers find one much easier to follow. What is most likely to be different?", options:["The easier one uses longer, more academic words","The order of information and the links between sentences","The easier one uses more passive verbs","The easier one has more sentences"], answer:1, reveal:"**Order and links.** Readers follow a paragraph best when each sentence starts from something they already know and moves to something new. They also need words such as “this”, “however” and “as a result” to show exactly how the ideas connect. Linguists call these qualities **cohesion** and **coherence**. This lesson shows how to build paragraphs that have them."},
    goals:[
      "Build a paragraph from a topic sentence, supporting sentences and a concluding or linking sentence",
      "Write topic sentences with a clear controlling idea, and keep every sentence on that idea",
@@ -529,7 +529,7 @@ ICA.addUnit({
       {tip:"Paragraph length varies by genre and field. In most academic essays a body paragraph has several sentences: enough to state, support and explain one point. A one-sentence paragraph is rare in formal essays; very long paragraphs usually contain two ideas and can be split."}
     ]},
     {h:"Topic sentences with a controlling idea", body:[
-      "A good topic sentence has two parts: the **topic** (what the paragraph is about) and the **controlling idea** (what you will say about it). In “Community health workers have improved access to basic care in many rural areas”, the topic is community health workers and the controlling idea is that they have improved access.",
+      "A good topic sentence has two parts: the **topic** (what the paragraph is about) and the **controlling idea** (what you will say about it). Take “Community health workers have improved access to basic care in many rural areas”. The topic is community health workers. The controlling idea is that they have improved access.",
       {table:[
         ["Problem","Example","Better"],
         ["Too broad","Health is important.","Community health workers have improved access to basic care in many rural areas."],
@@ -550,7 +550,7 @@ ICA.addUnit({
       "These two words sound alike and are often confused.",
       {list:[
         "[[cohesion|Cohesion]] is about the **language links** between sentences: pronouns, repeated words, “this” plus a noun, and transition signals. You can point to cohesion in the text.",
-        "[[coherence|Coherence]] is about whether the **ideas make sense together** for the reader: a clear main point, a logical order, and no gaps in the reasoning."
+        "[[coherence|Coherence]] is about whether the **ideas make sense together** for the reader. It needs a clear main point, a logical order, and no gaps in the reasoning."
       ]},
       "The classic book on the first idea is M. A. K. Halliday and Ruqaiya Hasan’s *Cohesion in English* (1976), which describes the different kinds of tie between sentences. The most useful ones for academic writers are in this table. Each one is a [[cohesive-device]].",
       {table:[
@@ -571,7 +571,7 @@ ICA.addUnit({
       "Two other tools help keep the order:",
       {list:[
         "**This/these + a summary noun** at the start of a sentence picks up the whole previous idea: “This decline…”, “These findings…”, “This approach…”.",
-        "**The passive** can move the given information to the front: “Fishing is threatened by warmer seas” keeps “fishing” first, where the active (“Warmer seas threaten fishing”) would not."
+        "**The passive** can move the given information to the front. “Fishing is threatened by warmer seas” keeps “fishing” first, where the active (“Warmer seas threaten fishing”) would not."
       ]}
     ]},
     {h:"Pronouns and “this”: make the reference clear", body:[
@@ -582,7 +582,7 @@ ICA.addUnit({
         ["The report compared the new policy with the old one, and it was criticized.","…with the old one, and the report was criticized."]
       ]},
       "A good habit: after “this” or “these” at the start of a sentence, add a noun that names what you mean. “This” alone often forces the reader to look back and guess.",
-      {tip:"For a person whose gender is unknown or not relevant, APA Style endorses singular “they”, and many other style guides accept it: “Each participant signed the form before they began.” Another option is to make the subject plural: “Participants signed the form before they began.”"}
+      {tip:"For a person whose gender is unknown or not relevant, APA Style endorses singular “they”. Many other style guides accept it too: “Each participant signed the form before they began.” Another option is to make the subject plural: “Participants signed the form before they began.”"}
     ]},
     {h:"Transition signals with exact meanings", body:[
       "A [[transition-signal]] tells the reader how the next idea relates to the last one. Each one makes a specific logical claim, so a wrong one is worse than none. (Research Skills calls this [[signposting]]; Unit 4 of this elective looks at the spoken versions used in lectures, [[lecture-signpost|lecture signposts]].)",
@@ -660,8 +660,8 @@ ICA.addUnit({
    apply:{intro:"Work on paragraphs from your own writing or from a text in your field.", tasks:[
     {t:"Write a 150-word paragraph and check it", how:["Choose a topic you know well (from your work, studies or community).","Write a topic sentence with a clear controlling idea.","Add three or four supporting sentences and a concluding or linking sentence (about 150 words in total).","Check it: Does every sentence support the controlling idea? Does each sentence start from something given? Is every “this” followed by a noun? Is every transition signal accurate?"], write:"My paragraph… What the check found… What I changed…"},
     {t:"Map the links in a published paragraph", how:["Choose one paragraph from a free article or textbook in your field.","Underline the topic sentence.","Circle every cohesive device: pronouns, this/these + noun, repeated key terms and transition signals.","Draw arrows from each pronoun or “this” to what it refers to."], write:"The topic sentence… The devices I found… One link I would make clearer…"},
-    {t:"Start a transition-signal list", how:["Open the free Academic Phrasebank (phrasebank.manchester.ac.uk): its pages “Comparing and contrasting”, “Explaining causality” and “Giving examples” list linking words between sentences. Open a free article in your field too.","Collect eight signals you would really use, two for each of: addition, contrast, result, example (the table in this lesson gives addition signals).","Write one sentence of your own for each, about your subject."], write:"Addition… Contrast… Result… Example…"}
-   ], proof:"A 150-word paragraph you have checked, one published paragraph with its links mapped, and a personal list of eight transition signals with your own example sentences."},
+    {t:"Start a transition-signal list", how:["Open the free Academic Phrasebank (phrasebank.manchester.ac.uk). Its pages “Comparing and contrasting”, “Explaining causality” and “Giving examples” list linking words between sentences. Open a free article in your field too.","Collect eight signals you would use, two for each of these: addition, contrast, result and example (the table in this lesson gives addition signals).","Write one sentence of your own for each, about your subject."], write:"Addition… Contrast… Result… Example…"}
+   ], proof:"A note with three parts. A 150-word paragraph you have checked. One published paragraph with its links mapped. A personal list of eight transition signals with your own example sentences."},
    read:[
      {book:"owg", where:"Handbook, section H2 “Paragraphs and Transitions”", note:"Effective paragraphs (main point, evidence and analysis, opening and closing paragraphs), flow and a table of transitional words and phrases."},
      {book:"owg", where:"Section 10.6 “Editing Focus: Paragraphs and Transitions”", note:"Practice using transitions in an argument."},
@@ -671,7 +671,7 @@ ICA.addUnit({
   },
   /* ===================== LESSON 5 ===================== */
   {id:"e1u2-l5", title:"Hedging, boosting and concise writing", minutes:55,
-   hook:{q:"How many separate hedges (words that make a claim more cautious) are in this sentence? “These findings might possibly suggest a link between diet and sleep.”", options:["One","Two","Three","Four"], answer:2, reveal:"**Three: “might”, “possibly” and “suggest”.** Each one softens the claim, and together they make the writer sound unsure even about what they found. One well-chosen hedge is usually enough: “These findings suggest a link between diet and sleep.” This lesson goes deeper into the grammar of hedges and their opposites, boosters, and then into writing concisely: saying exactly what you mean in as few words as clarity allows."},
+   hook:{q:"How many separate hedges (words that make a claim more cautious) are in this sentence? “These findings might possibly suggest a link between diet and sleep.”", options:["One","Two","Three","Four"], answer:2, reveal:"**Three: “might”, “possibly” and “suggest”.** Each one softens the claim, and together they make the writer sound unsure even about what they found. One well-chosen hedge is usually enough: “These findings suggest a link between diet and sleep.” This lesson goes deeper into the grammar of hedges and their opposites, boosters. Then it covers writing concisely: saying exactly what you mean in as few words as clarity allows."},
    goals:[
      "Use modal verbs, verbs such as “appear to”, adverbs, adjectives and phrases such as “it is likely that” to hedge a claim, with correct grammar",
      "Use boosters for claims the evidence strongly supports, and avoid over-claiming",
@@ -810,7 +810,7 @@ ICA.addUnit({
       {t:"may increased", why:"After a modal, use the base form. For the past, use “may have increased”."}
     ]},
     {id:"e1u2-l5-x3", type:"mcq", q:"Dmitri surveyed 300 adults in one city. Those who walked more reported better sleep. Which sentence is best for his discussion section?", options:[
-      {t:"In this sample, adults who walked more reported better sleep, which suggests a link worth testing in other settings.", ok:true, why:"It reports the finding accurately (reported sleep, in this sample), uses one hedge (“suggests”), and doesn’t claim cause or generalize beyond the city."},
+      {t:"In this sample, adults who walked more reported better sleep, which suggests a link worth testing in other settings.", ok:true, why:"It reports the finding accurately (reported sleep, in this sample). It uses one hedge (“suggests”). It doesn’t claim cause or generalize beyond the city."},
       {t:"Walking improves sleep.", why:"A causal claim about everyone, from one survey in one city. A survey shows an association, not a cause, and the sample was one city."},
       {t:"It might possibly be that walking could perhaps be linked to sleep.", why:"Over-hedged: four hedges make Dmitri sound unsure of what he found. He did find an association; say so once, carefully."},
       {t:"Walking clearly causes better sleep in all adults.", why:"Two boosters (“clearly”, “all”) and a causal claim the design can’t support."}
@@ -841,10 +841,10 @@ ICA.addUnit({
    ],
    apply:{intro:"Use your own writing, or a draft you are working on now.", tasks:[
     {t:"Do a hedge and booster audit", how:["Take a discussion or conclusion section you have written (or 200 words of any argument you have written).","Highlight every hedge in one color and every booster in another.","For each claim, ask: is this something I measured, or an interpretation, generalization or prediction?","Remove hedges from measured facts, add one to any unhedged interpretation, and remove stacked hedges."], write:"Hedges I found… Boosters I found… Changes I made, and why…"},
-    {t:"Borrow cautious phrases well", how:["Open the Academic Phrasebank page “Being cautious” (phrasebank.manchester.ac.uk).","Choose four phrases you would really use: one for explaining results, one for implications, one for recommendations and one for avoiding over-generalization.","Write each into a sentence about your own topic, replacing the example content with yours."], write:"Explaining results… Implications… Recommendations… Avoiding over-generalization…"},
+    {t:"Borrow cautious phrases well", how:["Open the Academic Phrasebank page “Being cautious” (phrasebank.manchester.ac.uk).","Choose four phrases you would use: one for explaining results, one for implications, one for recommendations and one for avoiding over-generalization.","Write each into a sentence about your own topic, replacing the example content with yours."], write:"Explaining results… Implications… Recommendations… Avoiding over-generalization…"},
     {t:"Cut 15% without losing meaning", how:["Choose a paragraph of about 150–200 words that you have written.","Count the words. Your target is about 15% fewer.","Cut empty phrases, redundant pairs and overloaded nominalizations. Keep every hedge, definition, limitation and citation that is needed.","Ask: is anything less clear or less accurate now? If so, put it back."], write:"Word count before… after… Three cuts I made… Anything I put back…"},
     {t:"Run the final checklist", how:["Take the 150-word paragraph you wrote in Lesson 4 (or write a new one).","Go through the eight questions in this lesson’s checklist, one at a time.","Fix one kind of problem at a time, rather than everything at once."], write:"Checklist results… What I fixed…"}
-   ], proof:"A paragraph with its hedges and boosters audited, four cautious phrases rewritten for your own topic, a paragraph cut by about 15% with nothing important lost, and a checked paragraph."},
+   ], proof:"A note with four parts. A paragraph with its hedges and boosters audited. Four cautious phrases rewritten for your own topic. A paragraph cut by about 15% with nothing important lost. A checked paragraph."},
    read:[
      {book:"phrasebank", where:"“Being cautious”", note:"Phrases for distancing, explaining results cautiously, advising caution and avoiding over-generalization."},
      {book:"owg", where:"Handbook, section H3 “Clear and Effective Sentences”: “Conciseness” (“Use Action Verbs” and “Cut Unnecessary Words and Phrases”)", note:"More examples of wordy phrases and their replacements."}
@@ -1386,7 +1386,7 @@ ICA.addUnit({
    {id:"e1u2-q32", lesson:"e1u2-l4", level:2, q:"“The policy did not reduce costs. _____, costs rose by 15%.” Which signal fits?", options:[
      {t:"On the contrary", ok:true, why:"It rejects the idea that costs fell and gives the opposite fact."},
      {t:"In contrast", why:"“In contrast” compares two different things; here the writer is correcting an expectation about one thing."},
-     {t:"Moreover", why:"“Moreover” adds a point in the same direction; the second sentence intensifies the denial rather than adding a separate point."},
+     {t:"Moreover", why:"“Moreover” adds a point in the same direction. The second sentence strengthens the denial instead of adding a separate point."},
      {t:"For instance", why:"Rising costs are not an example of “did not reduce”; they go further."}
    ]},
    {id:"e1u2-q33", lesson:"e1u2-l4", level:3, q:"Priya’s paragraph uses “participants”, “subjects”, “respondents” and “people” for the same group. Her reader is confused. Why?", options:[
